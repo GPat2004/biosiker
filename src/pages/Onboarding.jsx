@@ -12,8 +12,8 @@ const Onboarding = () => {
   
   const steps = [
     {
-      title: "Milyen szintű vizsgára készülsz?",
-      options: ["Középszintű érettségi", "Emelt szintű érettségi", "Gyógyszerészeti egyetemi vizsga"],
+      title: "Milyen szintű érettségire készülsz?",
+      options: ["Középszintű érettségi", "Emelt szintű érettségi"],
       icon: <GraduationCap className="w-12 h-12 text-primary-500" />
     },
     {
@@ -80,7 +80,7 @@ const Onboarding = () => {
 
             <div className="mt-10 flex items-center space-x-2 text-slate-400 text-sm font-medium">
               <Sparkles size={16} />
-              <span>AI-alapú tanulási terv generálása...</span>
+              <span>Személyre szabott tanulási terv összeállítása...</span>
             </div>
           </motion.div>
         </AnimatePresence>

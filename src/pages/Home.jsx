@@ -45,7 +45,7 @@ const DemoQuiz = () => {
           <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white">
             <Sparkles size={18} />
           </div>
-          <span className="font-bold text-sm">AI Demo Kvíz</span>
+          <span className="font-bold text-sm">Demo Kvíz</span>
         </div>
         <div className="flex items-center space-x-4">
            <div className="flex items-center text-orange-500 font-bold text-sm">
@@ -96,7 +96,7 @@ const DemoQuiz = () => {
 
               <div className="bg-primary-50 dark:bg-primary-900/20 rounded-2xl p-4 border border-primary-100 dark:border-primary-900/30">
                 <div className="flex items-center text-primary-700 dark:text-primary-400 font-bold text-sm mb-1">
-                  <Lightbulb size={16} className="mr-2" /> AI Extra Tipp
+                  <Lightbulb size={16} className="mr-2" /> Extra tipp
                 </div>
                 <p className="text-sm text-slate-600 dark:text-slate-300 italic">
                   {question.aiProTip}
@@ -107,7 +107,7 @@ const DemoQuiz = () => {
                 to="/register"
                 className="mt-6 w-full py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold flex items-center justify-center transition-all"
               >
-                Folytatás AI kvízzel <ArrowRight size={18} className="ml-2" />
+                Folytatás regisztrációval <ArrowRight size={18} className="ml-2" />
               </Link>
             </motion.div>
           )}
@@ -142,15 +142,15 @@ const Home = () => {
               <Sparkles size={14} className="mr-2" /> Érettségi felkészítés 2.0
             </Badge>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1]">
-              Tanulj biológiát <br />
+              Ne magolj. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-blue-600">
-                okosabban, 
+                Értsd meg.
               </span> <br />
-              ne többet.
+              Aztán hozd a maximumot.
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0">
-              A BioSiker az első magyar platform, ami személyre szabott AI-mentorral készít fel az érettségire. 
-              Gyakorolj, mérd a haladásod, és érd el a 100%-ot.
+              A BioSiker strukturált modulokkal, gyakorló kvízekkel és valós idejű fejlődés-követéssel 
+              készít fel a közép- és emelt szintű biológia érettségire — a te tempódban.
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
@@ -158,7 +158,7 @@ const Home = () => {
                   to="/onboarding"
                   className="px-8 py-5 rounded-2xl bg-primary-600 text-white font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:scale-105 flex items-center justify-center"
                 >
-                  Ingyenes AI Kvíz <ArrowRight className="ml-2 h-5 w-5" />
+                  Ingyenes Demo Kvíz <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               <div className="flex items-center space-x-4 px-4 py-2">
                 <div className="flex -space-x-3">
@@ -199,8 +199,8 @@ const Home = () => {
               <div className="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-900/30 text-orange-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Brain size={30} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Személyre szabott AI</h3>
-              <p className="text-slate-500 leading-relaxed">Az AI felismeri a gyenge pontjaidat, és célzottan azokat a kérdéseket adja fel neked többször.</p>
+              <h3 className="text-2xl font-bold mb-4">Személyre szabott gyakorlás</h3>
+              <p className="text-slate-500 leading-relaxed">Felismerjük a gyenge pontjaidat, és célzottan azokat a kérdéseket adjuk fel újra, amíg magabiztos nem leszel bennük.</p>
             </div>
             
             <div className="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all group">
@@ -270,7 +270,7 @@ const Home = () => {
                 </div>
                 <div className="p-4 bg-primary-500/10 border border-primary-500/20 rounded-2xl">
                    <div className="flex items-center text-primary-400 font-bold text-sm mb-2">
-                      <Sparkles size={16} className="mr-2" /> AI Elemzés:
+                      <Sparkles size={16} className="mr-2" /> Kiértékelés:
                    </div>
                    <p className="text-sm text-slate-300">
                       "Kiváló eredmény! A keringési rendszerből hibátlanul teljesítettél, a genetika feladatoknál viszont érdemes átnézned a mendeli szabályokat."
@@ -307,7 +307,7 @@ const Home = () => {
                 Készen állsz a sikeres <br /> érettségire?
               </h2>
               <p className="text-primary-100 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium">
-                Regisztrálj ingyen, és kezdj el tanulni az AI mentoroddal még ma. Nincs bankkártya, nincs kötelezettség.
+                Regisztrálj ingyen, és kezdj el tanulni még ma. Nincs bankkártya, nincs kötelezettség.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                  <Link
