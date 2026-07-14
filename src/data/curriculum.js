@@ -226,7 +226,56 @@ export const CURRICULUM = [
         order: 2,
         isFree: false,
         estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'Az élő szervezetek anyagcseréje felépítő (asszimilációs) és lebontó (disszimilációs) folyamatokból áll, amelyek szorosan összekapcsolódnak.',
+            sections: [
+              {
+                heading: 'Felépítés és lebontás kapcsolata',
+                paragraphs: [
+                  'Energiaforrás szerint fototróf (fényenergiát hasznosító) és kemotróf (kémiai energiát hasznosító) szervezeteket különböztetünk meg; szénforrás szerint autotróf (szervetlen szénforrást használó) és heterotróf (szerves szénforrásra szoruló) élőlényeket.',
+                  'Fontos alapelv, hogy minden átépítés energiaveszteséggel jár.',
+                ],
+              },
+              {
+                heading: 'Felépítő folyamat: a fotoszintézis',
+                paragraphs: [
+                  'A növények fotoszintézise nélkülözhetetlen a földi élet fenntartásához. A fényszakaszban a víz fényenergia hatására bomlik, molekuláris oxigén keletkezik, a hidrogén szállítómolekulára kerül, és ATP képződik.',
+                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, glükóz, majd más vegyületek keletkeznek. A folyamatban a fotoszintetikus színanyagok (karotinoidok, klorofillok) nyelik el a fényenergiát.',
+                ],
+              },
+              {
+                heading: 'Lebontó folyamatok',
+                paragraphs: [
+                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat.',
+                  'A biológiai oxidáció és az erjedés összehasonlítható biológiai funkciójuk, sejten belüli helyszínük és energiamérlegük alapján.',
+                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'fotoszintézis', 'glikolízis'],
+          },
+          emelt: {
+            intro: 'Emelt szinten az anyagcsere-folyamatok molekuláris részletei és a citromsavciklus is a követelmények közé tartozik.',
+            sections: [
+              {
+                heading: 'Hidrolízis, kondenzáció, sejtszállítás',
+                paragraphs: [
+                  'A makromolekulák alapegységei kondenzációval kapcsolódnak össze, hidrolízissel bomlanak szét - minden ilyen átépítés energiával jár.',
+                  'Az endocitózis és az exocitózis folyamata teszi lehetővé nagyobb anyagmennyiségek sejtbe juttatását, illetve onnan történő kijuttatását.',
+                ],
+              },
+              {
+                heading: 'A citrátkör (citromsavciklus)',
+                paragraphs: [
+                  'A citrátkör a mitokondriumban zajlik: a szerves molekulák szénvázából szén-dioxid keletkezik, a felszabaduló hidrogén szállítómolekulára kerül.',
+                  'Az aminosavak lebomlásakor és átalakításakor a nitrogén ammónia, illetve karbamid formájában kiválasztódik, vagy más aminosavba épül be.',
+                ],
+              },
+            ],
+            keyTerms: ['hidrolízis', 'kondenzáció', 'citrátkör', 'exocitózis'],
+          },
+        },
       },
       {
         id: 'sejtalkotok',
@@ -234,7 +283,60 @@ export const CURRICULUM = [
         order: 3,
         isFree: false,
         estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'Az eukarióta sejt felépítését meghatározó sejtalkotók (organellumok) mindegyike sajátos szerepet tölt be a sejt életében.',
+            sections: [
+              {
+                heading: 'Elhatárolás',
+                paragraphs: [
+                  'A biológiai hártyák (membránok) szerepe sokrétű: anyagforgalom, határolás, összekötés, jelölés, jelfogás.',
+                  'A passzív szállítás energiabefektetés nélkül, koncentráció-különbség mentén zajlik; az aktív szállítás energiát igényel. Endocitózissal anyagok juttathatók a sejtbe, exocitózissal a sejtből.',
+                ],
+              },
+              {
+                heading: 'Mozgás és anyagcsere',
+                paragraphs: [
+                  'Az emberi szervezetben példák az állábas, ostoros és csillós mozgásra.',
+                  'A sejt belső hártyarendszere (endoplazmatikus hálózat) számos funkciót lát el. A mitokondrium a biológiai oxidáció, a színtest a fotoszintézis helyszíne. A lizoszóma a sejtbe bejutó, illetve a belső felesleges anyagok lebontását végzi.',
+                ],
+              },
+              {
+                heading: 'Osztódás és a sejtműködések vezérlése',
+                paragraphs: [
+                  'A számtartó osztódás (mitózis) a testi sejtek, a számfelező osztódás (meiózis) az ivarsejtek létrejöttében játszik szerepet, és biztosítja a genetikai sokféleséget. Az emberi testi sejtek 46, az ivarsejtek 23 kromoszómát tartalmaznak.',
+                  'A sejt külső és belső ingerekre válaszolhat: koncentrációváltozással, alakváltozással, elválasztással vagy elektromos változással. Megkülönböztetünk programozott (apoptózis) és nem programozott sejthalált.',
+                ],
+              },
+            ],
+            keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'mitózis', 'meiózis', 'lizoszóma'],
+          },
+          emelt: {
+            intro: 'Emelt szinten a szállítási mechanizmusok végrehajtóit és a sejtciklus részletes szakaszait is ismerni kell.',
+            sections: [
+              {
+                heading: 'A szállítás végrehajtói',
+                paragraphs: [
+                  'A passzív és az aktív szállítást a kettős lipidréteg, a membráncsatornák, a szállítók és a pumpák valósítják meg, különböző hajtóerők segítségével.',
+                ],
+              },
+              {
+                heading: 'Sejtciklus és osztódás',
+                paragraphs: [
+                  'A sejtciklus jól elkülöníthető szakaszokra bontható. A mitózis és a meiózis összehasonlítható folyamataik, előfordulásuk, valamint a genetikai információ mennyiségi és minőségi változása alapján.',
+                  'A mitokondriumban zajló citromsavciklus és a végoxidáció szerkezete és működése szorosan összefügg.',
+                ],
+              },
+              {
+                heading: 'Szabályozás',
+                paragraphs: [
+                  'A K-Na-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget.',
+                ],
+              },
+            ],
+            keyTerms: ['sejtciklus', 'K-Na-pumpa', 'citromsavciklus'],
+          },
+        },
       },
     ],
   },

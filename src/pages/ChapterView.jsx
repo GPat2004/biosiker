@@ -10,8 +10,7 @@ const ChapterView = () => {
   const { moduleId, chapterId } = useParams();
   const module = getModuleById(moduleId);
   const chapter = getChapterById(moduleId, chapterId);
-  const { canAccessChapter, isChapterComplete, markChapterComplete, examLevel, setExamLevel } =
-    useUserData();
+  const { canAccessChapter, isChapterComplete, markChapterComplete, examLevel } = useUserData();
 
   if (!module || !chapter) return <Navigate to="/tananyag" replace />;
 
@@ -39,22 +38,14 @@ const ChapterView = () => {
             <Clock className="h-4 w-4 mr-1" />
             {chapter.estimatedMinutes} perc olvasás
           </span>
-          <div className="inline-flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-slate-800">
-            {['kozep', 'emelt'].map((level) => (
-              <button
-                key={level}
-                onClick={() => setExamLevel(level)}
-                className={`px-3 py-1 rounded-md text-xs font-bold transition-all flex items-center ${
-                  examLevel === level
-                    ? 'bg-white dark:bg-slate-900 shadow text-primary-600'
-                    : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
-                }`}
-              >
-                <GraduationCap className="h-3.5 w-3.5 mr-1" />
-                {LEVEL_LABEL[level]}
-              </button>
-            ))}
-          </div>
+          <Link
+            to="/tananyag"
+            className="inline-flex items-center px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            title="A szintet a Tananyag oldalon válthatod"
+          >
+            <GraduationCap className="h-3.5 w-3.5 mr-1" />
+            {LEVEL_LABEL[examLevel]}
+          </Link>
         </div>
       </div>
 
