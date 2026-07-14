@@ -7,6 +7,7 @@ const TABLE = 'user_progress';
 
 const rowToState = (row) => ({
   subscription: { plan: row.subscription_plan, since: row.subscription_since },
+  examLevel: row.exam_level || 'kozep',
   progress: row.progress || {},
   xp: row.xp,
   streak: {
@@ -20,6 +21,7 @@ const stateToRow = (userId, state) => ({
   user_id: userId,
   subscription_plan: state.subscription.plan,
   subscription_since: state.subscription.since,
+  exam_level: state.examLevel || 'kozep',
   progress: state.progress,
   xp: state.xp,
   streak_current: state.streak.current,

@@ -59,7 +59,7 @@ const ModuleCard = ({ module }) => {
 };
 
 const Curriculum = () => {
-  const { isPremium, xp, streak } = useUserData();
+  const { isPremium, xp, streak, examLevel, setExamLevel } = useUserData();
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -78,6 +78,29 @@ const Curriculum = () => {
             ⚡ {xp} XP
           </div>
         </div>
+      </div>
+
+      <div className="mb-8 inline-flex items-center p-1 rounded-xl bg-slate-100 dark:bg-slate-800">
+        <button
+          onClick={() => setExamLevel('kozep')}
+          className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${
+            examLevel === 'kozep'
+              ? 'bg-white dark:bg-slate-900 shadow text-primary-600'
+              : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+          }`}
+        >
+          Középszint
+        </button>
+        <button
+          onClick={() => setExamLevel('emelt')}
+          className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${
+            examLevel === 'emelt'
+              ? 'bg-white dark:bg-slate-900 shadow text-primary-600'
+              : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+          }`}
+        >
+          Emelt szint
+        </button>
       </div>
 
       {!isPremium && (

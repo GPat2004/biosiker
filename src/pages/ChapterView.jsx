@@ -1,19 +1,23 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Clock, ChevronRight } from 'lucide-react';
+import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap } from 'lucide-react';
 import { getModuleById, getChapterById } from '../data/curriculum';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
+
+const LEVEL_LABEL = { kozep: 'Középszint', emelt: 'Emelt szint' };
 
 const ChapterView = () => {
   const { moduleId, chapterId } = useParams();
   const module = getModuleById(moduleId);
   const chapter = getChapterById(moduleId, chapterId);
-  const { canAccessChapter, isChapterComplete, markChapterComplete } = useUserData();
+  const { canAccessChapter, isChapterComplete, markChapterComplete, examLevel, setExamLevel } =
+    useUserData();
 
   if (!module || !chapter) return <Navigate to="/tananyag" replace />;
 
   const accessible = canAccessChapter(moduleId, chapterId);
   const done = isChapterComplete(moduleId, chapterId);
+  const levelContent = chapter.content?.[examLevel];
 
   const currentIndex = module.chapters.findIndex((c) => c.id === chapterId);
   const nextChapter = module.chapters[currentIndex + 1];
@@ -30,28 +34,44 @@ const ChapterView = () => {
       <div className="mb-8">
         <p className="text-sm font-bold text-primary-600 mb-2">{module.title}</p>
         <h1 className="text-3xl md:text-4xl font-extrabold mb-3">{chapter.title}</h1>
-        <div className="flex items-center text-sm text-slate-500">
-          <Clock className="h-4 w-4 mr-1" />
-          {chapter.estimatedMinutes} perc olvasás
+        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
+          <span className="flex items-center">
+            <Clock className="h-4 w-4 mr-1" />
+            {chapter.estimatedMinutes} perc olvasás
+          </span>
+          <div className="inline-flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-slate-800">
+            {['kozep', 'emelt'].map((level) => (
+              <button
+                key={level}
+                onClick={() => setExamLevel(level)}
+                className={`px-3 py-1 rounded-md text-xs font-bold transition-all flex items-center ${
+                  examLevel === level
+                    ? 'bg-white dark:bg-slate-900 shadow text-primary-600'
+                    : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+                }`}
+              >
+                <GraduationCap className="h-3.5 w-3.5 mr-1" />
+                {LEVEL_LABEL[level]}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       {!accessible ? (
         <PaywallGate chapterTitle={chapter.title} />
-      ) : chapter.content?.comingSoon ? (
+      ) : levelContent?.comingSoon || !levelContent ? (
         <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-slate-600 dark:text-slate-400">
-            Ennek a fejezetnek a tartalma jelenleg fejlesztés alatt áll. Hamarosan elérhető
-            lesz!
+            Ennek a fejezetnek a(z) {LEVEL_LABEL[examLevel].toLowerCase()}ű tartalma jelenleg
+            fejlesztés alatt áll. Hamarosan elérhető lesz!
           </p>
         </div>
       ) : (
         <div className="prose dark:prose-invert max-w-none">
-          <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
-            {chapter.content.intro}
-          </p>
+          <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">{levelContent.intro}</p>
 
-          {chapter.content.sections.map((section, i) => (
+          {levelContent.sections.map((section, i) => (
             <div key={i} className="mb-8">
               <h2 className="text-xl font-bold mb-3">{section.heading}</h2>
               {section.paragraphs.map((p, j) => (
@@ -62,11 +82,11 @@ const ChapterView = () => {
             </div>
           ))}
 
-          {chapter.content.keyTerms && (
+          {levelContent.keyTerms && (
             <div className="mt-8 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
               <p className="text-sm font-bold mb-3">Kulcsfogalmak</p>
               <div className="flex flex-wrap gap-2">
-                {chapter.content.keyTerms.map((term) => (
+                {levelContent.keyTerms.map((term) => (
                   <span
                     key={term}
                     className="px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm"
@@ -80,7 +100,7 @@ const ChapterView = () => {
         </div>
       )}
 
-      {accessible && !chapter.content?.comingSoon && (
+      {accessible && !(levelContent?.comingSoon || !levelContent) && (
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
           <button
             onClick={() => markChapterComplete(moduleId, chapterId)}

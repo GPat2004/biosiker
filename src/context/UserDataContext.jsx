@@ -8,12 +8,17 @@ const UserDataContext = createContext();
 
 const DEFAULT_STATE = {
   subscription: { plan: 'free', since: null }, // 'free' | 'pro' | 'mentor'
+  examLevel: 'kozep', // 'kozep' | 'emelt'
   progress: {}, // { [moduleId]: { [chapterId]: { completed: true, completedAt } } }
   xp: 0,
   streak: { current: 0, longest: 0, lastActiveDate: null },
 };
 
 const todayISO = () => new Date().toISOString().slice(0, 10);
+
+// Régi mentéseknél hiányozhat egy-egy újabb mező (pl. examLevel) - ez
+// biztosítja, hogy mindig legyen érvényes alapérték minden kulcshoz.
+const withDefaults = (data) => ({ ...DEFAULT_STATE, ...data });
 
 export const UserDataProvider = ({ children }) => {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
@@ -22,7 +27,7 @@ export const UserDataProvider = ({ children }) => {
   // EGYETLEN state-objektumban el, hogy egy useEffect-agban sose kelljen
   // ket kulon setState-et hivni (a React Compiler linter ezt jelzi).
   const [bundle, setBundle] = useState(() => ({
-    data: storage.get('user-data', DEFAULT_STATE),
+    data: withDefaults(storage.get('user-data', DEFAULT_STATE)),
     source: 'local', // 'local' -> vendeg, localStorage | 'cloud' -> Supabase
   }));
   const isSyncingRef = useRef(false);
@@ -34,7 +39,7 @@ export const UserDataProvider = ({ children }) => {
     if (authLoading) return;
 
     if (!isAuthenticated || !user) {
-      setBundle({ data: storage.get('user-data', DEFAULT_STATE), source: 'local' });
+      setBundle({ data: withDefaults(storage.get('user-data', DEFAULT_STATE)), source: 'local' });
       return;
     }
 
@@ -45,9 +50,9 @@ export const UserDataProvider = ({ children }) => {
       const { data: remote } = await fetchUserProgress(user.id);
       if (cancelled) return;
 
-      let nextData = remote;
+      let nextData = remote ? withDefaults(remote) : remote;
       if (!nextData) {
-        nextData = storage.get('user-data', DEFAULT_STATE);
+        nextData = withDefaults(storage.get('user-data', DEFAULT_STATE));
         await upsertUserProgress(user.id, nextData);
         if (cancelled) return;
       }
@@ -97,6 +102,13 @@ export const UserDataProvider = ({ children }) => {
       subscription: { plan: 'free', since: null },
     }));
   }, [updateData]);
+
+  const setExamLevel = useCallback(
+    (level) => {
+      updateData((prev) => ({ ...prev, examLevel: level }));
+    },
+    [updateData]
+  );
 
   const isPremium = bundle.data.subscription.plan !== 'free';
 
@@ -181,6 +193,8 @@ export const UserDataProvider = ({ children }) => {
         isPremium,
         subscribe,
         unsubscribe,
+        examLevel: bundle.data.examLevel,
+        setExamLevel,
         canAccessChapter,
         markChapterComplete,
         isChapterComplete,

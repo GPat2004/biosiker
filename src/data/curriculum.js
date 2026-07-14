@@ -1,320 +1,452 @@
-// A BioSiker tananyag-struktúrája.
+// A BioSiker tananyag-strukturaja.
 //
-// Minden modul egy nagyobb érettségi témakört fed le, ami fejezetekre (chapter)
-// bomlik. Minden modul első fejezete ingyenesen elérhető ízelítőként — a többi
-// előfizetéshez kötött (lásd: UserDataContext -> canAccessChapter).
+// A modulok es fejezetek PONTOSAN a hivatalos erettsegi kovetelmenyrendszert
+// kovetik (1. mellekletet a 33/2015. (VI. 24.) EMMI rendelethez), hogy se
+// tobbet, se kevesebbet ne tanitsunk a megfelelo szinten.
 //
-// Új modul/fejezet hozzáadásához NEM kell máshol kódot módosítani, elég ide
-// felvenni egy új objektumot. A `content` mező egyelőre részben placeholder —
-// ez egy külön, folyamatos tartalom-fejlesztési munka.
+// Minden fejezet ket valtozatban letezik: content.kozep es content.emelt.
+// Az emelt szint mindig a kozepszint TARTALMAT IS MAGABAN FOGLALJA, plusz
+// tobblet-tudast ad hozza - soha nem kevesebbet.
+//
+// isFree: minden modul elso fejezete ingyenesen elerheto (fuggetlenul a
+// vizsgaszinttol). A tobbi elofizetest igenyel.
+//
+// content.comingSoon: true, ha az adott szinten meg nincs feltoltve valodi
+// tartalom - ez folyamatos, sorban halado munka.
 
 export const CURRICULUM = [
   {
-    id: 'biokemia',
-    title: 'Biokémia',
-    description: 'A sejtek kémiai felépítése: biogén elemek, víz, makromolekulák.',
+    id: 'bevezetes',
+    title: 'Bevezetés a biológiába',
+    description: 'A biológia tudománya, az élet jellemzői, fizikai-kémiai alapismeretek.',
     icon: 'FlaskConical',
     color: 'from-emerald-500 to-teal-500',
     chapters: [
       {
-        id: 'biogen-elemek',
-        title: 'Biogén elemek és szervetlen vegyületek',
+        id: 'a-biologia-tudomanya',
+        title: 'A biológia tudománya',
         order: 1,
         isFree: true,
         estimatedMinutes: 12,
         content: {
-          intro: 'A biogén elemek azok a kémiai elemek, amelyek nélkülözhetetlenek az élő szervezetek felépítésében és működésében.',
-          sections: [
-            {
-              heading: 'Makroelemek',
-              paragraphs: [
-                'A szervezet tömegének 95-99%-át hat elem adja: szén (C), hidrogén (H), oxigén (O), nitrogén (N), foszfor (P) és kén (S). Ezek alkotják a szerves molekulák (fehérjék, szénhidrátok, lipidek, nukleinsavak) vázát.',
-                'Emellett fontos makroelemek még a kalcium (Ca), kálium (K), nátrium (Na), klór (Cl) és magnézium (Mg) — ezek elsősorban ionos formában, az anyagcsere-folyamatok szabályozásában játszanak szerepet.',
-              ],
-            },
-            {
-              heading: 'Mikroelemek',
-              paragraphs: [
-                'Jóval kisebb mennyiségben, de éppolyan nélkülözhetetlenül vannak jelen olyan elemek, mint a vas (Fe, a hemoglobin része), a jód (I, a pajzsmirigyhormonok alkotója), a cink (Zn) és a réz (Cu), amelyek számos enzim működéséhez szükségesek.',
-              ],
-            },
-          ],
-          keyTerms: ['biogén elem', 'makroelem', 'mikroelem', 'nyomelem'],
+          kozep: {
+            intro: 'A biológia tudománya rendszerezi és vizsgálja az élővilágot - ehhez alapvető vizsgálati szempontokra és módszerekre van szükség.',
+            sections: [
+              {
+                heading: 'Vizsgálati szempontok',
+                paragraphs: [
+                  'A rendszerezés alapegysége a faj. Az élőlények csoportosítása során meghatározott rendszerezési alapelveket alkalmazunk, amelyek segítenek eligazodni az élővilág sokféleségében.',
+                ],
+              },
+              {
+                heading: 'Vizsgáló módszerek',
+                paragraphs: [
+                  'A fénymikroszkóp a biológiai vizsgálatok egyik alapeszköze. A nagyítást az objektív és az okulár nagyításának szorzata adja meg.',
+                  'Kaparék- és nyúzatkészítés, valamint metszetelemzés segítségével vizsgálhatók a sejtek és szövetek mikroszkóp alatt.',
+                ],
+              },
+            ],
+            keyTerms: ['faj', 'rendszerezés', 'fénymikroszkóp', 'nagyítás'],
+          },
+          emelt: {
+            intro: 'Emelt szinten a rendszerezés elveinek mélyebb megértése és a tudományos vizsgálati módszerek tudatos alkalmazása is elvárás.',
+            sections: [
+              {
+                heading: 'Mesterséges és természetes rendszer',
+                paragraphs: [
+                  'A mesterséges rendszerek (pl. Linné rendszere) egy-két kiválasztott jellemző alapján csoportosítanak, míg a fejlődéstörténeti (természetes) rendszer az evolúciós rokonságot tükrözi. Ehhez ma már molekuláris törzsfákat is használunk.',
+                  'Fontos különbséget tenni a feltevés (hipotézis) - egy még nem igazolt magyarázat - és az elmélet (teória) - egy sokszorosan alátámasztott magyarázó rendszer - között.',
+                ],
+              },
+              {
+                heading: 'Kísérlet és modellalkotás',
+                paragraphs: [
+                  'Egy biológiai kísérlet értelmezéséhez fel kell ismerni a kísérleti változót (amit változtatunk) és a kontrollt (amihez viszonyítunk).',
+                  'Az élettani állapot leírására szolgáló eszközök (EKG, EEG, CT, UH, röntgen, elektronmikroszkóp) mindegyike más-más szempontból modellezi a szervezet működését.',
+                ],
+              },
+            ],
+            keyTerms: ['hipotézis', 'elmélet', 'kísérleti változó', 'molekuláris törzsfa'],
+          },
         },
       },
       {
-        id: 'viz-es-sok',
-        title: 'Víz és sók biológiai szerepe',
+        id: 'az-elet-jellemzoi',
+        title: 'Az élet jellemzői',
         order: 2,
         isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'Az élő rendszerek különböző szerveződési szinteken vizsgálhatók, a sejtszint alattitól a bioszféráig.',
+            sections: [
+              {
+                heading: 'Szerveződési szintek',
+                paragraphs: [
+                  'Megkülönböztetünk egyed alatti szinteket (sejt alatti, sejtszintű, szövet, szerv, szervrendszer), az egyed szintjét, és egyed feletti szinteket (populáció, társulás, biom, bioszféra).',
+                ],
+              },
+            ],
+            keyTerms: ['szerveződési szint', 'populáció', 'bioszféra'],
+          },
+          emelt: {
+            intro: 'Emelt szinten az élő rendszereket nyílt rendszerként, egymással összefüggő tulajdonságok együtteseként értelmezzük.',
+            sections: [
+              {
+                heading: 'Az élő rendszerek mint nyílt rendszerek',
+                paragraphs: [
+                  'Az élő rendszerek nyitottak: folyamatosan anyagot és energiát cserélnek a környezetükkel. Jellemző tulajdonságaik - anyagcsere, elhatárolódás, homeosztázis, ingerlékenység, mozgás, alkalmazkodás, belső egység, növekedés, szaporodás, öröklődés és öröklődő változékonyság, evolúció, halandóság - szorosan összefüggenek egymással.',
+                ],
+              },
+              {
+                heading: 'Körfolyamatok',
+                paragraphs: [
+                  'Az élő rendszerekben számos körfolyamat zajlik: sejtciklus, szívciklus, nemi ciklus, valamint évszakos jelenségek (aszpektusok) - ezek mind az élő rendszerek ismétlődő, önfenntartó működését mutatják.',
+                ],
+              },
+            ],
+            keyTerms: ['nyílt rendszer', 'homeosztázis', 'sejtciklus'],
+          },
+        },
       },
       {
-        id: 'szenhidratok',
-        title: 'Szénhidrátok',
+        id: 'fizikai-kemiai-alapismeretek',
+        title: 'Fizikai, kémiai alapismeretek',
         order: 3,
         isFree: false,
-        estimatedMinutes: 18,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'lipidek',
-        title: 'Lipidek (zsírok)',
-        order: 4,
-        isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'feherjek',
-        title: 'Fehérjék',
-        order: 5,
-        isFree: false,
-        estimatedMinutes: 20,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'nukleinsavak',
-        title: 'Nukleinsavak (DNS, RNS)',
-        order: 6,
-        isFree: false,
-        estimatedMinutes: 20,
-        content: { comingSoon: true },
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'Néhány alapvető fizikai-kémiai jelenség (diffúzió, ozmózis, enzimműködés) megértése nélkülözhetetlen a biológiai folyamatok magyarázatához.',
+            sections: [
+              {
+                heading: 'Diffúzió és ozmózis',
+                paragraphs: [
+                  'A diffúzió és az ozmózis alapvető biológiai jelentőséggel bír: ezek teszik lehetővé az anyagok sejten belüli és sejtek közötti mozgását.',
+                ],
+              },
+              {
+                heading: 'Enzimek',
+                paragraphs: [
+                  'Az enzimek minden sejtben működnek, és katalizátorként csökkentik a kémiai reakciók aktiválási energiáját. Optimális működésükhöz meghatározott hőmérséklet és pH szükséges, ami összefügg a szervezet jellemző élettani értékeivel.',
+                  'Egy enzim hibás működése (enzimhiba) emberi betegséghez vezethet.',
+                ],
+              },
+            ],
+            keyTerms: ['diffúzió', 'ozmózis', 'enzim', 'aktiválási energia', 'katalizátor'],
+          },
+          emelt: {
+            intro: 'Emelt szinten az ozmotikusan aktív anyagok élettani szerepét és az enzimműködés energetikai hátterét is ismerni kell.',
+            sections: [
+              {
+                heading: 'Ozmotikusan aktív anyagok',
+                paragraphs: [
+                  'A szervezet ozmotikusan aktív anyagai (pl. vérfehérjék) fontos szerepet játszanak a visszaszívási és nyirokképzési folyamatokban.',
+                  'A kromatográfia a keverékek komponenseinek szétválasztására szolgáló módszer, aminek elvi alapjait és egy leírt kísérlet eredményét is tudni kell értelmezni.',
+                ],
+              },
+              {
+                heading: 'ATP és energiaigényes folyamatok',
+                paragraphs: [
+                  'Az ATP-bontó enzimek (pl. a miozin, a Na-K pumpa) energiaigényes folyamatokat hajtanak végre, míg az ATP-szintézis az egyenlőtlen ioneloszláson alapul (mitokondrium).',
+                ],
+              },
+            ],
+            keyTerms: ['ozmotikusan aktív anyag', 'kromatográfia', 'ATP-szintézis', 'Na-K pumpa'],
+          },
+        },
       },
     ],
   },
   {
-    id: 'sejtbiologia',
-    title: 'Sejtbiológia',
-    description: 'A sejt felépítése, működése és osztódása.',
+    id: 'egyed-alatti',
+    title: 'Egyed alatti szerveződési szint',
+    description: 'A sejtek kémiai felépítése, anyagcseréje és a sejtalkotók működése.',
     icon: 'Microscope',
     color: 'from-blue-500 to-indigo-500',
     chapters: [
       {
-        id: 'prokariota-eukariota',
-        title: 'Prokarióta és eukarióta sejtek',
+        id: 'szervetlen-szerves-alkotoelemek',
+        title: 'Szervetlen és szerves alkotóelemek',
         order: 1,
         isFree: true,
-        estimatedMinutes: 14,
+        estimatedMinutes: 20,
         content: {
-          intro: 'Minden élőlény sejtes felépítésű. A sejtek két nagy csoportba sorolhatók a belső felépítésük alapján.',
-          sections: [
-            {
-              heading: 'Prokarióta sejtek',
-              paragraphs: [
-                'A prokarióta sejtekben (baktériumok, archeák) nincs valódi, hártyával határolt sejtmag — a genetikai állomány a citoplazmában, egy körkörös DNS-molekula formájában található. Membránnal határolt sejtszervecskéik sincsenek.',
-              ],
-            },
-            {
-              heading: 'Eukarióta sejtek',
-              paragraphs: [
-                'Az eukarióta sejtekben (növények, állatok, gombák, protiszták) valódi, kettős membránnal határolt sejtmag található, benne a DNS kromoszómákba rendeződve. Az eukarióta sejtekben ezen kívül számos membránnal határolt sejtszervecske (organellum) is van, pl. mitokondrium, endoplazmatikus retikulum, Golgi-készülék.',
-              ],
-            },
-          ],
-          keyTerms: ['prokarióta', 'eukarióta', 'sejtmag', 'organellum'],
+          kozep: {
+            intro: 'Az élő szervezetek felépítésében meghatározott elemek, ionok és molekulák (víz, lipidek, szénhidrátok, fehérjék, nukleinsavak) vesznek részt.',
+            sections: [
+              {
+                heading: 'Elemek és ionok',
+                paragraphs: [
+                  'A szervezet tömegének 95-99%-át hat elem adja: szén (C), hidrogén (H), oxigén (O), nitrogén (N), foszfor (P) és kén (S). Fontos ionok még a H⁺, Ca²⁺, Mg²⁺, Fe²⁺/³⁺, Na⁺, K⁺, Cl⁻, HCO₃⁻, CO₃²⁻, NO₃⁻.',
+                  'A só jódozása és a fogkrémek fluorozása is ezen elemek élettani szerepével függ össze.',
+                ],
+              },
+              {
+                heading: 'Lipidek, szénhidrátok, fehérjék',
+                paragraphs: [
+                  'A lipidek (zsírok, foszfatidok) oldódási tulajdonságaik miatt energiaraktározásra, hőszigetelésre és mechanikai védelemre alkalmasak.',
+                  'A szénhidrátok (szőlőcukor, keményítő, glikogén, cellulóz) íz, vízoldhatóság és emészthetőség szerint különböznek egymástól.',
+                  'A fehérjék peptidláncból épülnek fel; szerkezetük hő, nehézfémsók vagy mechanikai hatásra megváltozhat (denaturáció).',
+                ],
+              },
+              {
+                heading: 'Nukleinsavak',
+                paragraphs: [
+                  'A DNS szerkezetében rejlik az információhordozó, önmegkettőződő (örökítő) szerep.',
+                ],
+              },
+            ],
+            keyTerms: ['biogén elem', 'lipid', 'szénhidrát', 'fehérje', 'DNS'],
+          },
+          emelt: {
+            intro: 'Emelt szinten a molekulák részletes szerkezetét és a köztük lévő kölcsönhatásokat is ismerni kell.',
+            sections: [
+              {
+                heading: 'További elemek és ionok',
+                paragraphs: [
+                  'A jód (I), fluor (F) és szilícium (Si) is fontos szerepet tölt be az élő szervezetben, csakúgy mint a NO₂⁻ és PO₄³⁻ ionok.',
+                ],
+              },
+              {
+                heading: 'Molekulaszerkezet',
+                paragraphs: [
+                  'Ismerni kell a zsírok (glicerin + zsírsavak) és a foszfatidok (glicerin + zsírsavak + foszforsav) pontos szerkezetét, valamint az α- és β-glükóz, ribóz, dezoxiribóz, amilóz és cellulóz molekulájának felépítését.',
+                  'A fehérjéknél az aminosavak általános képletét, az oldalláncok kölcsönhatásait, valamint az elsődleges, másodlagos, harmadlagos és negyedleges szerkezetet kell érteni.',
+                ],
+              },
+            ],
+            keyTerms: ['α- és β-glükóz', 'peptidkötés', 'harmadlagos szerkezet'],
+          },
         },
       },
       {
-        id: 'sejtmembran',
-        title: 'Sejtmembrán és anyagszállítás',
+        id: 'anyagcsere-folyamatai',
+        title: 'Az anyagcsere folyamatai',
         order: 2,
         isFree: false,
-        estimatedMinutes: 16,
-        content: { comingSoon: true },
+        estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'sejtorganellumok',
-        title: 'Sejtorganellumok',
+        id: 'sejtalkotok',
+        title: 'Sejtalkotók (az eukarióta sejtben)',
         order: 3,
         isFree: false,
-        estimatedMinutes: 18,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'mitozis',
-        title: 'Sejtosztódás - Mitózis',
-        order: 4,
-        isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'meiozis',
-        title: 'Sejtosztódás - Meiózis',
-        order: 5,
-        isFree: false,
-        estimatedMinutes: 18,
-        content: { comingSoon: true },
+        estimatedMinutes: 20,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
     ],
   },
   {
-    id: 'genetika',
-    title: 'Genetika',
-    description: 'Öröklődési szabályok, molekuláris genetika, mutációk.',
+    id: 'egyed-szintje',
+    title: 'Az egyed szerveződési szintje',
+    description: 'Vírusok, önálló sejtek, többsejtűség, szövetek és szervrendszerek.',
     icon: 'Dna',
     color: 'from-purple-500 to-pink-500',
     chapters: [
       {
-        id: 'mendeli-oroklodes',
-        title: 'Mendeli öröklődés alapjai',
+        id: 'nem-sejtes-rendszerek',
+        title: 'Nem sejtes rendszerek (vírusok)',
         order: 1,
         isFree: true,
-        estimatedMinutes: 16,
-        content: {
-          intro: 'Gregor Mendel borsónövényeken végzett kísérletei alapozták meg a modern genetika törvényszerűségeit.',
-          sections: [
-            {
-              heading: 'Az uralkodás elve (dominancia)',
-              paragraphs: [
-                'Ha egy egyed egy adott tulajdonságra nézve két különböző allélt hordoz (heterozigóta), a domináns allél által meghatározott tulajdonság jelenik meg a fenotípusban, míg a recesszív allél hatása rejtve marad.',
-              ],
-            },
-            {
-              heading: 'Az egyeduralkodás törvénye',
-              paragraphs: [
-                'Két homozigóta, egymástól különböző szülő keresztezésekor az F1 generáció minden egyede egyforma, a domináns tulajdonságot mutatja.',
-              ],
-            },
-          ],
-          keyTerms: ['allél', 'domináns', 'recesszív', 'genotípus', 'fenotípus'],
-        },
+        estimatedMinutes: 12,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'kapcsolt-oroklodes',
-        title: 'Kapcsolt öröklődés és rekombináció',
+        id: 'onallo-sejtek',
+        title: 'Önálló sejtek (baktériumok, egysejtű eukarióták)',
         order: 2,
         isFree: false,
-        estimatedMinutes: 18,
-        content: { comingSoon: true },
+        estimatedMinutes: 15,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'molekularis-genetika',
-        title: 'Molekuláris genetika - DNS-replikáció',
+        id: 'tobbsejtuseg',
+        title: 'Többsejtűség',
         order: 3,
         isFree: false,
-        estimatedMinutes: 20,
-        content: { comingSoon: true },
+        estimatedMinutes: 15,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'feherjeszintezis',
-        title: 'Fehérjeszintézis',
+        id: 'szovetek-szervek',
+        title: 'Szövetek, szervek, szervrendszerek, testtájak',
         order: 4,
         isFree: false,
         estimatedMinutes: 22,
-        content: { comingSoon: true },
-      },
-      {
-        id: 'mutaciok',
-        title: 'Mutációk',
-        order: 5,
-        isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
     ],
   },
   {
-    id: 'ember-keringes-legzes',
-    title: 'Emberi szervezet - Keringés és légzés',
-    description: 'A szív, az érrendszer és a légzőrendszer működése.',
+    id: 'emberi-szervezet',
+    title: 'Az emberi szervezet',
+    description: 'Homeosztázis, kültakaró, mozgás, táplálkozás, légzés, keringés, kiválasztás, szabályozás, szaporodás.',
     icon: 'HeartPulse',
     color: 'from-red-500 to-orange-500',
     chapters: [
       {
-        id: 'sziv-felepitese',
-        title: 'A szív felépítése és működése',
+        id: 'homeosztazis',
+        title: 'Homeosztázis',
         order: 1,
         isFree: true,
-        estimatedMinutes: 14,
-        content: {
-          intro: 'A szív egy izmos szerv, amely a vérkeringést tartja fenn folyamatos, ritmikus összehúzódásokkal.',
-          sections: [
-            {
-              heading: 'A szív üregei',
-              paragraphs: [
-                'Az emberi szív négyüregű: két pitvarból és két kamrából áll. A jobb szívfél vénás (oxigénszegény), a bal szívfél artériás (oxigéndús) vért szállít.',
-              ],
-            },
-          ],
-          keyTerms: ['pitvar', 'kamra', 'szívbillentyű', 'szívciklus'],
-        },
+        estimatedMinutes: 10,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'verkeringes',
-        title: 'Vérkeringés (kis és nagy vérkör)',
+        id: 'kultakaro',
+        title: 'Kültakaró',
         order: 2,
         isFree: false,
-        estimatedMinutes: 16,
-        content: { comingSoon: true },
+        estimatedMinutes: 14,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'legzorendszer',
-        title: 'A légzőrendszer felépítése',
+        id: 'mozgas',
+        title: 'A mozgás',
         order: 3,
         isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
+        estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'gazcsere',
-        title: 'Gázcsere és légzésszabályozás',
+        id: 'taplalkozas',
+        title: 'A táplálkozás',
         order: 4,
         isFree: false,
+        estimatedMinutes: 20,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'legzes',
+        title: 'A légzés',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'anyagszallitas',
+        title: 'Az anyagszállítás (vér, keringés)',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 22,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'kivalasztas',
+        title: 'A kiválasztás',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'szabalyozas',
+        title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 30,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'szaporodas-egyedfejlodes',
+        title: 'Szaporodás és egyedfejlődés',
+        order: 9,
+        isFree: false,
         estimatedMinutes: 18,
-        content: { comingSoon: true },
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
     ],
   },
   {
-    id: 'okologia',
-    title: 'Ökológia',
-    description: 'Populációk, életközösségek és globális ökológiai kérdések.',
+    id: 'egyed-feletti',
+    title: 'Egyed feletti szerveződési szintek',
+    description: 'Populációk, életközösségek, bioszféra, ökoszisztéma, környezetvédelem.',
     icon: 'Leaf',
     color: 'from-lime-500 to-green-600',
     chapters: [
       {
-        id: 'populaciok',
-        title: 'Populációk és életközösségek',
+        id: 'populacio',
+        title: 'Populáció',
         order: 1,
         isFree: true,
-        estimatedMinutes: 13,
-        content: {
-          intro: 'Az ökológia az élőlények egymással és környezetükkel való kapcsolatát vizsgálja.',
-          sections: [
-            {
-              heading: 'Populáció',
-              paragraphs: [
-                'Populációnak nevezzük egy adott faj egyedeinek egy meghatározott területen, egy időben élő, egymással szaporodó közösségét.',
-              ],
-            },
-            {
-              heading: 'Életközösség (biocönózis)',
-              paragraphs: [
-                'Az életközösség egy adott élőhelyen együtt élő, egymással kölcsönhatásban lévő különböző populációk összessége.',
-              ],
-            },
-          ],
-          keyTerms: ['populáció', 'életközösség', 'élőhely', 'ökológiai niche'],
-        },
+        estimatedMinutes: 14,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'anyag-energiaforgalom',
-        title: 'Anyag- és energiaforgalom az ökoszisztémákban',
+        id: 'eletkozossegek',
+        title: 'Életközösségek (élőhelytípusok)',
         order: 2,
         isFree: false,
-        estimatedMinutes: 17,
-        content: { comingSoon: true },
+        estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
       {
-        id: 'globalis-okologia',
-        title: 'Globális ökológiai problémák',
+        id: 'bioszfera',
+        title: 'Bioszféra',
         order: 3,
         isFree: false,
-        estimatedMinutes: 15,
-        content: { comingSoon: true },
+        estimatedMinutes: 14,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'okoszisztema',
+        title: 'Ökoszisztéma',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'kornyezetvedelem',
+        title: 'Környezet- és természetvédelem',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+    ],
+  },
+  {
+    id: 'oroklodes-evolucio',
+    title: 'Öröklődés, változékonyság, evolúció',
+    description: 'Molekuláris genetika, Mendeli genetika, populációgenetika, evolúció.',
+    icon: 'Sparkle',
+    color: 'from-violet-500 to-fuchsia-500',
+    chapters: [
+      {
+        id: 'molekularis-genetika',
+        title: 'Molekuláris genetika',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'mendeli-genetika',
+        title: 'Mendeli genetika',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 20,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'populaciogenetika-evolucio',
+        title: 'Populációgenetika és evolúciós folyamatok',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 20,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
+      },
+      {
+        id: 'bioszfera-evolucioja',
+        title: 'A bioszféra evolúciója',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emelt: { comingSoon: true } },
       },
     ],
   },

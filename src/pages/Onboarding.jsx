@@ -6,11 +6,13 @@ import {
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useUserData } from '../context/UserDataContext';
 
 const Onboarding = () => {
   const [step, setStep] = useState(0);
   const navigate = useNavigate();
   const { isAuthenticated } = useAuth();
+  const { setExamLevel } = useUserData();
   
   const steps = [
     {
@@ -30,7 +32,11 @@ const Onboarding = () => {
     }
   ];
 
-  const handleNext = () => {
+  const handleNext = (selectedOption) => {
+    if (step === 0) {
+      setExamLevel(selectedOption === 'Emelt szintű érettségi' ? 'emelt' : 'kozep');
+    }
+
     if (step < steps.length - 1) {
       setStep(step + 1);
     } else {
@@ -71,7 +77,7 @@ const Onboarding = () => {
               {steps[step].options.map((opt, i) => (
                 <button
                   key={i}
-                  onClick={handleNext}
+                  onClick={() => handleNext(opt)}
                   className="w-full py-5 px-6 rounded-2xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900/10 text-left font-bold transition-all flex justify-between items-center group"
                 >
                   <span>{opt}</span>
