@@ -21,6 +21,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/tananyag" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tananyag</Link>
             <Link to="/quizzes" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kvízek</Link>
             <Link to="/flashcards" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tanulókártyák</Link>
             <Link to="/simulation" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Vizsga szimuláció</Link>
@@ -60,6 +61,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link to="/tananyag" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Tananyag</Link>
             <Link to="/quizzes" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Kvízek</Link>
             <Link to="/flashcards" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Tanulókártyák</Link>
             <Link to="/simulation" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Vizsga szimuláció</Link>

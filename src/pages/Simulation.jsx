@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ClipboardList, Timer, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 const Simulation = () => {

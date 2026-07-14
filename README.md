@@ -1,16 +1,45 @@
-# React + Vite
+# BioSiker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BioSiker egy AI-alapú biológia tanulási platform magyar középiskolásoknak, akik a Biológia Érettségire készülnek. A cél a legjobb magyar biológia-tanulási élmény felépítése: adaptív, gamifikált, AI-vezérelt tanulás — nem egy újabb generikus kvízoldal.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite** — frontend build
+- **Tailwind CSS** — styling
+- **Framer Motion** — animációk
+- **React Router** — routing
+- **Vercel** — deploy
 
-## React Compiler
+## Fejlesztés indítása
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Az alkalmazás alapértelmezetten a `http://localhost:5176` címen fut.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Projekt struktúra
+
+```
+src/
+  components/   # Újrahasználható UI komponensek (Layout, Navbar, stb.)
+  context/      # React Context providerek (pl. ThemeContext)
+  pages/        # Route-szintű oldalak
+  assets/       # Statikus képek
+```
+
+## Jelenlegi állapot
+
+A projekt jelenleg egy frontend UI-váz: a felület kész és reszponzív, de valódi backend, AI-integráció és adatperzisztencia még nincs bekötve. Ez a fejlesztés soron következő fő iránya.
+
+## Fontos: nincs backend
+
+Jelenleg **nincs API réteg, adatbázis vagy autentikáció** — a Login/Register formok, a kvíz-generálás és a felhasználói progressz mind mock/placeholder állapotban vannak. Ezt tudatosan, lépésről lépésre építjük ki.

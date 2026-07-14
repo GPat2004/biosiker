@@ -1,8 +1,8 @@
-import React from 'react';
 import { Check, X, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useUserData } from '../context/UserDataContext';
 
-const PricingCard = ({ title, price, features, recommended, cta, ctaLink }) => (
+const PricingCard = ({ planId, title, price, features, recommended, isCurrent, onSelect }) => (
   <div className={`relative p-8 rounded-3xl border ${
     recommended 
       ? 'border-primary-500 bg-white dark:bg-slate-900 shadow-2xl scale-105 z-10' 
@@ -32,64 +32,84 @@ const PricingCard = ({ title, price, features, recommended, cta, ctaLink }) => (
         </li>
       ))}
     </ul>
-    <Link
-      to={ctaLink}
+    <button
+      onClick={() => onSelect(planId)}
+      disabled={isCurrent}
       className={`w-full py-3 px-4 rounded-xl font-bold text-center transition-all ${
-        recommended 
-          ? 'bg-primary-600 text-white hover:bg-primary-700' 
+        isCurrent
+          ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-900/20 cursor-default'
+          : recommended
+          ? 'bg-primary-600 text-white hover:bg-primary-700'
           : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50'
       }`}
     >
-      {cta}
-    </Link>
+      {isCurrent ? 'Ez a jelenlegi csomagod' : planId === 'free' ? 'Kezdés most' : `${title} tagság igénylése`}
+    </button>
   </div>
 );
 
 const Pricing = () => {
+  const { subscription, subscribe, unsubscribe } = useUserData();
+
+  const handleSelect = (planId) => {
+    if (planId === 'free') {
+      unsubscribe();
+    } else {
+      subscribe(planId);
+    }
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-20">
-      <div className="text-center mb-16">
+      <div className="text-center mb-6">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Válaszd a sikert</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           Férj hozzá minden funkcióhoz, és hozd ki magadból a maximumot a biológia vizsgán.
         </p>
       </div>
 
+      <div className="max-w-2xl mx-auto mb-12 px-4 py-3 rounded-xl bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30 text-center text-sm text-amber-700 dark:text-amber-400">
+        Demó mód: nincs bekötve valódi fizetés, a csomagválasztás helyben, azonnal aktiválódik tesztelés céljából.
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
         <PricingCard
+          planId="free"
           title="Alap"
           price="Ingyenes"
-          cta="Kezdés most"
-          ctaLink="/register"
+          isCurrent={subscription.plan === 'free'}
+          onSelect={handleSelect}
           features={[
+            { text: 'Minden modul első fejezete', included: true },
             { text: 'Napi 3 AI kvíz', included: true },
             { text: 'Alapvető tanulókártyák', included: true },
-            { text: 'Közösségi fórum', included: true },
+            { text: 'Teljes tananyag hozzáférés', included: false },
             { text: 'Vizsga szimulációk', included: false },
-            { text: 'PDF feldolgozás', included: false },
             { text: 'Személyre szabott statisztika', included: false },
           ]}
         />
         <PricingCard
+          planId="pro"
           title="Pro"
           price="2.490 Ft"
           recommended={true}
-          cta="Pro tagság igénylése"
-          ctaLink="/register"
+          isCurrent={subscription.plan === 'pro'}
+          onSelect={handleSelect}
           features={[
+            { text: 'Teljes tananyag - minden modul, minden fejezet', included: true },
             { text: 'Korlátlan AI kvíz', included: true },
             { text: 'Összes tanulókártya pakli', included: true },
             { text: 'Vizsga szimulációk', included: true },
             { text: 'Havi 5 PDF feldolgozás', included: true },
             { text: 'Személyre szabott statisztika', included: true },
-            { text: 'Reklámmentes élmény', included: true },
           ]}
         />
         <PricingCard
+          planId="mentor"
           title="Mentor"
           price="4.990 Ft"
-          cta="Mentor tagság igénylése"
-          ctaLink="/register"
+          isCurrent={subscription.plan === 'mentor'}
+          onSelect={handleSelect}
           features={[
             { text: 'Minden Pro funkció', included: true },
             { text: 'Korlátlan PDF feldolgozás', included: true },
@@ -100,6 +120,10 @@ const Pricing = () => {
           ]}
         />
       </div>
+
+      <p className="text-center text-sm text-slate-500 mt-10">
+        Nincs még fiókod? <Link to="/register" className="font-bold text-primary-600 hover:text-primary-500">Regisztrálj ingyen</Link>
+      </p>
     </div>
   );
 };
