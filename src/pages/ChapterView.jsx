@@ -1,6 +1,6 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap } from 'lucide-react';
-import { getModuleById, getChapterById } from '../data/curriculum';
+import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info } from 'lucide-react';
+import { getModuleById, getChapterById, getLevelContent } from '../data/curriculum';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
 
@@ -16,7 +16,7 @@ const ChapterView = () => {
 
   const accessible = canAccessChapter(moduleId, chapterId);
   const done = isChapterComplete(moduleId, chapterId);
-  const levelContent = chapter.content?.[examLevel];
+  const levelContent = getLevelContent(chapter, examLevel);
 
   const currentIndex = module.chapters.findIndex((c) => c.id === chapterId);
   const nextChapter = module.chapters[currentIndex + 1];
@@ -51,15 +51,23 @@ const ChapterView = () => {
 
       {!accessible ? (
         <PaywallGate chapterTitle={chapter.title} />
-      ) : levelContent?.comingSoon || !levelContent ? (
+      ) : levelContent?.comingSoon ? (
         <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-slate-600 dark:text-slate-400">
-            Ennek a fejezetnek a(z) {LEVEL_LABEL[examLevel].toLowerCase()}ű tartalma jelenleg
-            fejlesztés alatt áll. Hamarosan elérhető lesz!
+            Ennek a fejezetnek a tartalma jelenleg fejlesztés alatt áll. Hamarosan elérhető lesz!
           </p>
         </div>
       ) : (
         <div className="prose dark:prose-invert max-w-none">
+          {levelContent.emeltPending && (
+            <div className="flex items-start gap-2 p-4 mb-6 rounded-xl bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30 text-amber-700 dark:text-amber-400 text-sm">
+              <Info className="h-4 w-4 shrink-0 mt-0.5" />
+              <span>
+                Az emelt szintű kiegészítés ehhez a fejezethez még fejlesztés alatt áll - addig is
+                a középszintű tartalmat mutatjuk.
+              </span>
+            </div>
+          )}
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">{levelContent.intro}</p>
 
           {levelContent.sections.map((section, i) => (
@@ -91,7 +99,7 @@ const ChapterView = () => {
         </div>
       )}
 
-      {accessible && !(levelContent?.comingSoon || !levelContent) && (
+      {accessible && !levelContent?.comingSoon && (
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
           <button
             onClick={() => markChapterComplete(moduleId, chapterId)}
