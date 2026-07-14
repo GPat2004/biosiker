@@ -1,6 +1,8 @@
-import { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
 import { storage } from '../lib/storage';
-import { getChapterById, CURRICULUM } from '../data/curriculum';
+import { CURRICULUM, getChapterById } from '../data/curriculum';
+import { useAuth } from './AuthContext';
+import { fetchUserProgress, upsertUserProgress } from '../lib/progressApi';
 
 const UserDataContext = createContext();
 
@@ -14,34 +16,91 @@ const DEFAULT_STATE = {
 const todayISO = () => new Date().toISOString().slice(0, 10);
 
 export const UserDataProvider = ({ children }) => {
-  const [state, setState] = useState(() => storage.get('user-data', DEFAULT_STATE));
+  const { user, isAuthenticated, loading: authLoading } = useAuth();
 
+  // A "data" (tanulasi allapot) es a "source" (hova mentunk: local/cloud)
+  // EGYETLEN state-objektumban el, hogy egy useEffect-agban sose kelljen
+  // ket kulon setState-et hivni (a React Compiler linter ezt jelzi).
+  const [bundle, setBundle] = useState(() => ({
+    data: storage.get('user-data', DEFAULT_STATE),
+    source: 'local', // 'local' -> vendeg, localStorage | 'cloud' -> Supabase
+  }));
+  const isSyncingRef = useRef(false);
+
+  // Amint eldol az auth-allapot, betoltjuk (vagy letrehozzuk) a megfelelo
+  // progressz-forrast. Elso bejelentkezeskor a helyi (vendeg) progresszt
+  // egyszer atvisszuk a felhobe, hogy ne vesszen el semmi.
   useEffect(() => {
-    storage.set('user-data', state);
-  }, [state]);
+    if (authLoading) return;
 
-  // --- Előfizetés -----------------------------------------------------
-  // FONTOS: ez egyelőre egy LOKÁLIS, DEMO-jellegű kapcsoló, nincs mögötte
-  // valódi fizetési folyamat. Éles indulás előtt egy tényleges fizetési
-  // szolgáltatóra (pl. Stripe) kell cserélni, ami a szerver oldalon
-  // validálja az előfizetés állapotát.
-  const subscribe = useCallback((plan) => {
-    setState((prev) => ({
-      ...prev,
-      subscription: { plan, since: new Date().toISOString() },
-    }));
+    if (!isAuthenticated || !user) {
+      setBundle({ data: storage.get('user-data', DEFAULT_STATE), source: 'local' });
+      return;
+    }
+
+    let cancelled = false;
+
+    (async () => {
+      isSyncingRef.current = true;
+      const { data: remote } = await fetchUserProgress(user.id);
+      if (cancelled) return;
+
+      let nextData = remote;
+      if (!nextData) {
+        nextData = storage.get('user-data', DEFAULT_STATE);
+        await upsertUserProgress(user.id, nextData);
+        if (cancelled) return;
+      }
+
+      setBundle({ data: nextData, source: 'cloud' });
+      isSyncingRef.current = false;
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isAuthenticated, authLoading, user]);
+
+  // Mentes a megfelelo helyre. A betoltes alatti setState-eket nem irjuk
+  // vissza (isSyncingRef), hogy ne irjuk felul onmagunkat feleslegesen.
+  useEffect(() => {
+    if (isSyncingRef.current) return;
+
+    if (bundle.source === 'cloud' && user?.id) {
+      upsertUserProgress(user.id, bundle.data);
+    } else if (bundle.source === 'local') {
+      storage.set('user-data', bundle.data);
+    }
+  }, [bundle, user?.id]);
+
+  const updateData = useCallback((updater) => {
+    setBundle((prev) => ({ ...prev, data: updater(prev.data) }));
   }, []);
 
+  // --- Elofizetes -----------------------------------------------------
+  // FONTOS: ez egyelore egy DEMO-jellegu kapcsolo, nincs mogotte valodi
+  // fizetesi folyamat. Eles inditas elott egy tenyleges fizetesi
+  // szolgaltatora (pl. Stripe) kell cserelni.
+  const subscribe = useCallback(
+    (plan) => {
+      updateData((prev) => ({
+        ...prev,
+        subscription: { plan, since: new Date().toISOString() },
+      }));
+    },
+    [updateData]
+  );
+
   const unsubscribe = useCallback(() => {
-    setState((prev) => ({
+    updateData((prev) => ({
       ...prev,
       subscription: { plan: 'free', since: null },
     }));
-  }, []);
+  }, [updateData]);
 
-  const isPremium = state.subscription.plan !== 'free';
+  const isPremium = bundle.data.subscription.plan !== 'free';
 
-  // --- Hozzáférés-vezérlés (paywall) -----------------------------------
+  // --- Hozzaferes-vezerles (paywall) -----------------------------------
   const canAccessChapter = useCallback(
     (moduleId, chapterId) => {
       const chapter = getChapterById(moduleId, chapterId);
@@ -51,42 +110,35 @@ export const UserDataProvider = ({ children }) => {
     [isPremium]
   );
 
-  // --- Streak (napi aktivitás) ------------------------------------------
-  const registerActivity = useCallback(() => {
-    setState((prev) => {
-      const today = todayISO();
-      const { lastActiveDate, current, longest } = prev.streak;
-
-      if (lastActiveDate === today) return prev; // már regisztráltuk ma
-
-      let newCurrent = 1;
-      if (lastActiveDate) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        if (lastActiveDate === yesterday.toISOString().slice(0, 10)) {
-          newCurrent = current + 1; // folytatódik a streak
-        }
-      }
-
-      return {
-        ...prev,
-        streak: {
-          current: newCurrent,
-          longest: Math.max(longest, newCurrent),
-          lastActiveDate: today,
-        },
-      };
-    });
-  }, []);
-
-  // --- Fejezet-progressz -------------------------------------------------
+  // --- Streak (napi aktivitas) + fejezet-progressz ------------------------
   const markChapterComplete = useCallback(
     (moduleId, chapterId) => {
-      registerActivity();
-      setState((prev) => {
+      updateData((prev) => {
+        const today = todayISO();
+        const { lastActiveDate, current, longest } = prev.streak;
+
+        let newStreak = prev.streak;
+        if (lastActiveDate !== today) {
+          let newCurrent = 1;
+          if (lastActiveDate) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            if (lastActiveDate === yesterday.toISOString().slice(0, 10)) {
+              newCurrent = current + 1;
+            }
+          }
+          newStreak = {
+            current: newCurrent,
+            longest: Math.max(longest, newCurrent),
+            lastActiveDate: today,
+          };
+        }
+
         const alreadyDone = prev.progress[moduleId]?.[chapterId]?.completed;
+
         return {
           ...prev,
+          streak: newStreak,
           xp: alreadyDone ? prev.xp : prev.xp + 20,
           progress: {
             ...prev.progress,
@@ -98,12 +150,12 @@ export const UserDataProvider = ({ children }) => {
         };
       });
     },
-    [registerActivity]
+    [updateData]
   );
 
   const isChapterComplete = useCallback(
-    (moduleId, chapterId) => Boolean(state.progress[moduleId]?.[chapterId]?.completed),
-    [state.progress]
+    (moduleId, chapterId) => Boolean(bundle.data.progress[moduleId]?.[chapterId]?.completed),
+    [bundle.data.progress]
   );
 
   const getModuleProgress = useCallback(
@@ -119,13 +171,13 @@ export const UserDataProvider = ({ children }) => {
   );
 
   const resetProgress = useCallback(() => {
-    setState(DEFAULT_STATE);
-  }, []);
+    updateData(() => DEFAULT_STATE);
+  }, [updateData]);
 
   return (
     <UserDataContext.Provider
       value={{
-        subscription: state.subscription,
+        subscription: bundle.data.subscription,
         isPremium,
         subscribe,
         unsubscribe,
@@ -133,9 +185,10 @@ export const UserDataProvider = ({ children }) => {
         markChapterComplete,
         isChapterComplete,
         getModuleProgress,
-        xp: state.xp,
-        streak: state.streak,
+        xp: bundle.data.xp,
+        streak: bundle.data.streak,
         resetProgress,
+        progressSource: bundle.source,
       }}
     >
       {children}
