@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 const Register = () => {
   const { signUp } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', password: '' });
+  const [formData, setFormData] = useState({ name: '', username: '', email: '', password: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [registered, setRegistered] = useState(false);
@@ -22,7 +22,7 @@ const Register = () => {
 
     setIsSubmitting(true);
     const { error: signUpError } = await signUp(formData.email, formData.password, {
-      data: { full_name: formData.name },
+      data: { full_name: formData.name, username: formData.username },
     });
     setIsSubmitting(false);
 
@@ -96,6 +96,28 @@ const Register = () => {
                   placeholder="Kovács János"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                Felhasználónév
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <User className="h-5 w-5" />
+                </div>
+                <input
+                  type="text"
+                  required
+                  minLength={3}
+                  pattern="[a-zA-Z0-9_]+"
+                  title="Csak betűk, számok és aláhúzás használható."
+                  className="block w-full pl-10 pr-3 py-3 border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all"
+                  placeholder="biosbajnok"
+                  value={formData.username}
+                  onChange={(e) => setFormData({ ...formData, username: e.target.value })}
                 />
               </div>
             </div>

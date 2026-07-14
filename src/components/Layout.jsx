@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Menu, X, Sun, Moon, GraduationCap, LogOut, User } from 'lucide-react';
+import { Menu, X, Sun, Moon, GraduationCap, LogOut, User, Settings as SettingsIcon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 
@@ -44,10 +44,20 @@ const Navbar = () => {
 
             {isAuthenticated ? (
               <div className="flex items-center space-x-3">
-                <span className="flex items-center text-sm text-slate-600 dark:text-slate-300">
+                <Link
+                  to="/beallitasok"
+                  className="flex items-center text-sm text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                >
                   <User className="h-4 w-4 mr-1.5" />
-                  {user?.user_metadata?.full_name?.split(' ')[0] || user?.email}
-                </span>
+                  {user?.user_metadata?.username || user?.user_metadata?.full_name?.split(' ')[0] || user?.email}
+                </Link>
+                <Link
+                  to="/beallitasok"
+                  className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                  title="Beállítások"
+                >
+                  <SettingsIcon className="h-5 w-5" />
+                </Link>
                 <button
                   onClick={handleSignOut}
                   className="flex items-center px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors font-medium"
@@ -93,12 +103,17 @@ const Navbar = () => {
             <Link to="/simulation" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Vizsga szimuláció</Link>
             <Link to="/pricing" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Árazás</Link>
             {isAuthenticated ? (
-              <button
-                onClick={handleSignOut}
-                className="block w-full text-left px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600"
-              >
-                Kijelentkezés ({user?.email})
-              </button>
+              <>
+                <Link to="/beallitasok" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">
+                  Beállítások ({user?.user_metadata?.username || user?.email})
+                </Link>
+                <button
+                  onClick={handleSignOut}
+                  className="block w-full text-left px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600"
+                >
+                  Kijelentkezés
+                </button>
+              </>
             ) : (
               <Link to="/login" className="block px-3 py-2 text-primary-600 font-medium">Bejelentkezés</Link>
             )}

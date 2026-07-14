@@ -56,6 +56,11 @@ export const AuthProvider = ({ children }) => {
     return { data, error };
   }, []);
 
+  const updateProfile = useCallback(async (metadata) => {
+    const { data, error } = await supabase.auth.updateUser({ data: metadata });
+    return { data, error };
+  }, []);
+
   return (
     <AuthContext.Provider
       value={{
@@ -68,6 +73,7 @@ export const AuthProvider = ({ children }) => {
         signOut,
         requestPasswordReset,
         updatePassword,
+        updateProfile,
       }}
     >
       {children}
