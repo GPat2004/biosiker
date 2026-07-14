@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  ArrowRight, Brain, Target, Star, 
+  Brain, Target, Star, 
   CheckCircle2, Sparkles, GraduationCap 
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Onboarding = () => {
   const [step, setStep] = useState(0);
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
   
   const steps = [
     {
@@ -32,7 +34,9 @@ const Onboarding = () => {
     if (step < steps.length - 1) {
       setStep(step + 1);
     } else {
-      navigate('/register');
+      // Ha már be van jelentkezve, nincs értelme regisztrációt kérni tőle -
+      // egyenesen a tananyaghoz irányítjuk.
+      navigate(isAuthenticated ? '/tananyag' : '/register');
     }
   };
 

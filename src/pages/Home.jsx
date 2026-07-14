@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Sparkles, CheckCircle2, ChevronRight, Brain, Zap, 
@@ -6,6 +6,7 @@ import {
   Lightbulb, Info
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 // --- Sub-components ---
 
@@ -19,6 +20,7 @@ const DemoQuiz = () => {
   const [step, setStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
+  const { isAuthenticated } = useAuth();
 
   const question = {
     text: "Melyik sejtalkotó felelős az elsődleges fehérjeszintézisért?",
@@ -104,10 +106,10 @@ const DemoQuiz = () => {
               </div>
               
               <Link 
-                to="/register"
+                to={isAuthenticated ? "/tananyag" : "/register"}
                 className="mt-6 w-full py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold flex items-center justify-center transition-all"
               >
-                Folytatás regisztrációval <ArrowRight size={18} className="ml-2" />
+                {isAuthenticated ? 'Folytatás a tananyaggal' : 'Folytatás regisztrációval'} <ArrowRight size={18} className="ml-2" />
               </Link>
             </motion.div>
           )}
@@ -115,7 +117,9 @@ const DemoQuiz = () => {
       </div>
       
       <div className="px-8 pb-6 text-center">
-        <p className="text-xs text-slate-400">Próbáld ki regisztráció nélkül!</p>
+        <p className="text-xs text-slate-400">
+          {isAuthenticated ? 'Ez csak egy ízelítő volt.' : 'Próbáld ki regisztráció nélkül!'}
+        </p>
       </div>
     </div>
   );
@@ -160,17 +164,9 @@ const Home = () => {
                 >
                   Ingyenes Demo Kvíz <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              <div className="flex items-center space-x-4 px-4 py-2">
-                <div className="flex -space-x-3">
-                  {[1,2,3,4].map(i => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 bg-slate-200 overflow-hidden">
-                      <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" />
-                    </div>
-                  ))}
-                </div>
-                <div className="text-sm font-medium text-slate-500">
-                  <span className="text-slate-900 dark:text-white font-bold">1,200+</span> diák tanul itt
-                </div>
+              <div className="flex items-center px-4 py-2 text-sm font-medium text-slate-500">
+                <CheckCircle2 className="h-4 w-4 mr-2 text-primary-500" />
+                Ingyenes, bankkártya nélkül
               </div>
             </div>
           </motion.div>
@@ -215,8 +211,8 @@ const Home = () => {
               <div className="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <ShieldCheck size={30} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Garancia a sikerre</h3>
-              <p className="text-slate-500 leading-relaxed">Statisztikáink szerint a BioSiker diákjai átlagosan 25%-kal jobb eredményt érnek el.</p>
+              <h3 className="text-2xl font-bold mb-4">Semmi nem marad ki</h3>
+              <p className="text-slate-500 leading-relaxed">A teljes közép- és emelt szintű tananyagot lefedjük, fejezetről fejezetre — hogy a vizsgán ne érjen meglepetés.</p>
             </div>
           </div>
         </div>
