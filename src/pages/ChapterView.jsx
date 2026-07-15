@@ -8,10 +8,12 @@ import { renderWithGlossary } from '../lib/glossaryRender';
 import { GLOSSARY } from '../data/glossary';
 import MaltozKepzodes from '../components/diagrams/MaltozKepzodes';
 import ElemekMegoszlasa from '../components/diagrams/ElemekMegoszlasa';
+import VizDipolus from '../components/diagrams/VizDipolus';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
   'elemek-megoszlasa': ElemekMegoszlasa,
+  'viz-dipolus': VizDipolus,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,

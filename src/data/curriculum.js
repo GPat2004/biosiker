@@ -268,23 +268,61 @@ export const CURRICULUM = [
         title: 'Szervetlen molekulák',
         order: 2,
         isFree: false,
-        estimatedMinutes: 10,
+        estimatedMinutes: 16,
+        diagramId: 'viz-dipolus',
         content: {
           kozep: {
-            intro: 'Néhány egyszerű szervetlen molekula - a víz, a szén-dioxid és az ammónia - kulcsszerepet játszik az élővilág működésében.',
+            intro: 'Három egyszerű szervetlen molekula - a víz, a szén-dioxid és az ammónia - kulcsszerepet játszik az élővilág működésében, jelentőségük messze túlmutat egyszerű szerkezetükön.',
             sections: [
               {
-                heading: 'Víz, szén-dioxid, ammónia',
+                heading: 'A víz szerkezete és különleges tulajdonságai',
                 paragraphs: [
-                  'A víz az élő szervezetek legfontosabb alkotórésze: oldószerként, reakcióközegként és hőszabályozásban is nélkülözhetetlen szerepet tölt be.',
-                  'A szén-dioxid a fotoszintézis nyersanyaga és a sejtlégzés végterméke - jelenléte meszes vízzel (mészvízzel) mutatható ki: a szén-dioxid hatására a mészvíz elhomályosodik, mivel vízben rosszul oldódó kalcium-karbonát csapadék keletkezik.',
-                  'Az ammónia a nitrogéntartalmú anyagok (pl. fehérjék, nukleinsavak) lebontásakor keletkező, mérgező melléktermék, amelyet a szervezet gyakran kevésbé mérgező formává (pl. karbamiddá) alakít át.',
+                  'A vízmolekulában az oxigénatom jobban vonzza az elektronokat, mint a hidrogénatomok, ezért a molekula dipólussá válik: az oxigén oldala enyhén negatív, a hidrogének oldala enyhén pozitív töltésű.',
+                  'Ez a dipólus jelleg teszi lehetővé, hogy a vízmolekulák egymással hidrogénkötéseket alakítsanak ki - egy molekula pozitív töltésű hidrogénje a szomszédos molekula negatív töltésű oxigénjéhez kapcsolódik. Ez a kötéshálózat felelős a víz sok különleges tulajdonságáért.',
+                  'A hidrogénkötések miatt a víznek nagy a fajhője (sok energia kell a felmelegítéséhez, illetve sok energia szabadul fel lehűléskor), ami stabilizálja a szervezetek és a környezet hőmérsékletét. A víz emellett kiváló oldószer a poláris anyagok (pl. sók, cukrok) számára.',
+                  'A hidrogénkötések adják a víz kohézióját (a vízmolekulák egymáshoz tapadását, ami például a felületi feszültségért felelős) és az adhézióját (más anyagokhoz való tapadását, ami a kapillaritás alapja).',
+                ],
+              },
+              {
+                heading: 'A víz biológiai szerepe',
+                paragraphs: [
+                  'A víz a legtöbb biokémiai reakció közege: a sejten belüli anyagcsere-folyamatok szinte kivétel nélkül vizes közegben zajlanak.',
+                  'Szállítóközegként is nélkülözhetetlen: a vér plazmájának, illetve a növények nedvkeringésének fő alkotórésze a víz.',
+                  'A víz párolgása jelentős hőelvonással jár, ami fontos szerepet játszik a szervezetek hőszabályozásában (pl. izzadás, kutyáknál a zihálás).',
+                  'A növényi sejtekben a víz a sejt belső nyomását (turgorát) is fenntartja, ami a növény merevségéhez, alakjának megtartásához szükséges.',
+                ],
+              },
+              {
+                heading: 'Szén-dioxid és ammónia',
+                paragraphs: [
+                  'A szén-dioxid a sejtlégzés (biológiai oxidáció) végterméke, ugyanakkor a fotoszintézis nélkülözhetetlen nyersanyaga is - ez a két folyamat egymást kiegészítve tartja fenn a légkör oxigén- és szén-dioxid-egyensúlyát.',
+                  'A szén-dioxid jelenléte meszes vízzel (mészvízzel) mutatható ki: a szén-dioxid hatására a mészvízben rosszul oldódó kalcium-karbonát csapadék keletkezik, ami a folyadék elhomályosodásaként figyelhető meg.',
+                  'Az ammónia a fehérjék és aminosavak lebontásakor keletkező, nitrogéntartalmú melléktermék. Mivel az ammónia mérgező a sejtekre, a szervezetek jellemzően kevésbé mérgező vegyületté (pl. karbamiddá) alakítják, mielőtt kiválasztanák.',
                 ],
               },
             ],
-            keyTerms: ['mészvízpróba'],
+            keyTerms: ['dipólus', 'hidrogénkötés', 'kohézió', 'adhézió', 'mészvízpróba', 'ammónia', 'karbamid'],
           },
-          emeltExtra: { sections: [], keyTerms: [] },
+          emeltExtra: {
+            intro: 'Emelt szinten a szén-dioxid vérbeli szállítási formáit és a nitrogén-kiválasztás állatcsoportonként eltérő stratégiáit is ismerni kell.',
+            sections: [
+              {
+                heading: 'A szén-dioxid szállítása a vérben',
+                paragraphs: [
+                  'A szövetekben keletkező szén-dioxid többféle formában szállítódik a vérben: egy része fizikailag oldott állapotban, nagyobb része hidrogén-karbonát (HCO₃⁻) ionná alakulva, kisebb hányada pedig a hemoglobinhoz kötődve, karbamino-vegyület formájában jut el a tüdőbe, ahol újra szén-dioxiddá alakulva kilélegzésre kerül.',
+                ],
+              },
+              {
+                heading: 'Nitrogén-kiválasztási stratégiák',
+                paragraphs: [
+                  'Az élővilágban háromféle fő nitrogén-kiválasztási stratégia alakult ki, attól függően, mennyi víz áll az adott élőlény rendelkezésére. Az ammonotelikus szervezetek (pl. sok vízi állat) közvetlenül ammóniát választanak ki, amit a bőséges víz gyorsan felhígít.',
+                  'Az ureotelikus szervezetek (pl. az emlősök, köztük az ember, valamint a kétéltűek) a mérgező ammóniát kevésbé mérgező karbamiddá alakítják a májban, amely vizelettel ürül.',
+                  'Az urikotelikus szervezetek (pl. a madarak, a hüllők és a rovarok) húgysav formájában választják ki a nitrogént - ez alig oldódik vízben, így pépes vagy szilárd formában, minimális vízveszteséggel üríthető, ami szárazföldi, illetve tojásban fejlődő szervezeteknél különösen előnyös.',
+                ],
+              },
+            ],
+            keyTerms: ['hidrogén-karbonát', 'karbamino-vegyület', 'ammonotelikus', 'ureotelikus', 'urikotelikus'],
+          },
         },
       },
       {
