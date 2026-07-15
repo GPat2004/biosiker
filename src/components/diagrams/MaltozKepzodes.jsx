@@ -2,7 +2,7 @@
 // maltózzá kapcsolódik, víz kilépése mellett. A cél a FOLYAMAT (kondenzáció
 // vs. hidrolízis) megértése, nem a pontos térszerkezet ábrázolása.
 const MaltozKepzodes = () => (
-  <svg viewBox="0 0 640 220" className="w-full h-auto max-w-xl mx-auto" role="img" aria-label="A maltóz képződése két glükóz molekula kondenzációjával">
+  <svg viewBox="0 0 720 220" className="w-full h-auto max-w-xl mx-auto" role="img" aria-label="A maltóz képződése két glükóz molekula kondenzációjával">
     {/* Glükóz 1 */}
     <g transform="translate(40,40)">
       <polygon points="60,0 110,25 110,75 60,100 10,75 10,25" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-500" />
