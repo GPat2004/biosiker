@@ -374,24 +374,155 @@ export const CURRICULUM = [
         title: 'Nem sejtes rendszerek (vírusok)',
         order: 1,
         isFree: true,
-        estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A vírusok nem sejtes szerveződésű biológiai rendszerek, amelyek csak élő sejtekben képesek szaporodni - jelentős egészségügyi szerepük miatt megértésük kulcsfontosságú.',
+            sections: [
+              {
+                heading: 'Felépítés és fertőzés',
+                paragraphs: [
+                  'A vírusok felépítése egyszerű: egy fehérjeburokban (kapszid) örökítőanyag (DNS vagy RNS) található. Önálló anyagcserét nem folytatnak, kizárólag a gazdasejt anyagcsere-gépezetét felhasználva szaporodnak.',
+                  'A megfertőződés módjai sokfélék lehetnek: cseppfertőzés, közvetlen érintkezés, testnedvekkel történő átvitel, illetve rovarcsípés. Vírus okozta emberi megbetegedésre példa az influenza, a kanyaró vagy a HIV-fertőzés.',
+                ],
+              },
+              {
+                heading: 'Fertőzés, megbetegedés, járvány',
+                paragraphs: [
+                  'A fertőzés a kórokozó szervezetbe jutását jelenti, a megbetegedés a tünetek megjelenését, a járvány pedig egy fertőző betegség egy adott területen, rövid idő alatt nagyszámú embert érintő terjedését.',
+                  'A megelőzés legfontosabb eszközei a védőoltás, a higiéniai szabályok betartása és a fertőzött egyedek elkülönítése.',
+                ],
+              },
+            ],
+            keyTerms: ['vírus', 'kapszid', 'fertőzés', 'járvány'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a vírusok eredetére vonatkozó elméleteket és a prionok jelenségét is ismerni kell.',
+            sections: [
+              {
+                heading: 'A vírusok eredete és a fágfertőzés',
+                paragraphs: [
+                  'A vírusok kialakulására több elmélet is született - az egyik szerint korábban önálló, sejtes szervezetek redukálódtak nem sejtes formává, a másik szerint sejtekből "kiszabadult" genetikai elemekből alakultak ki.',
+                  'A fágfertőzés (bakteriofágok baktériumot fertőző folyamata) jól modellezi a vírusfertőzés általános lépéseit: a fág a baktérium felszínéhez tapad, örökítőanyagát a sejtbe juttatja, majd a gazdasejt gépezetét felhasználva új vírusrészecskék épülnek fel.',
+                ],
+              },
+              {
+                heading: 'A prion',
+                paragraphs: [
+                  'A prion a vírusnál is egyszerűbb fertőző ágens: kizárólag egy rendellenesen feltekeredett fehérjéből áll, nukleinsavat nem tartalmaz. A prion a normál fehérjéket is a saját, kóros térszerkezetére "kényszeríti át", ami idegrendszeri betegségekhez (pl. kergemarhakór) vezethet.',
+                ],
+              },
+            ],
+            keyTerms: ['fág', 'prion'],
+          },
+        },
       },
       {
         id: 'onallo-sejtek',
         title: 'Önálló sejtek (baktériumok, egysejtű eukarióták)',
         order: 2,
         isFree: false,
-        estimatedMinutes: 15,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'Az önálló sejtek - a baktériumok és az egysejtű eukarióták - teljes életműködésüket egyetlen sejt keretein belül végzik.',
+            sections: [
+              {
+                heading: 'Baktériumok',
+                paragraphs: [
+                  'A prokarióta sejtekben (baktériumok) nincs valódi, hártyával határolt sejtmag, míg az eukarióta sejtekben igen - ez a sejtszerveződés legalapvetőbb különbsége.',
+                  'A baktériumok ökológiai szerep szerint lehetnek termelők, lebontók, kórokozók vagy szimbionták. Jelentőségük sokrétű: környezeti (anyagforgalom), evolúciós, ipari (pl. joghurtkészítés), mezőgazdasági (talajjavítás) és egészségügyi (fertőzések, de gyógyszergyártás is).',
+                  'A felelőtlen antibiotikum-szedés (pl. idő előtti abbahagyás) hozzájárul a kórokozók antibiotikum-rezisztens (ellenálló) formáinak elterjedéséhez, ami komoly egészségügyi veszélyt jelent.',
+                  'A fertőtlenítés és a sterilizálás a kórokozók elpusztítására vagy eltávolítására szolgáló eljárások, amelyek nélkülözhetetlenek az egészségügyben.',
+                ],
+              },
+              {
+                heading: 'Egysejtű eukarióták',
+                paragraphs: [
+                  'Az egysejtű eukarióták (pl. óriás amőba, papucsállatka, zöld szemesostoros) egyetlen sejten belül végzik el az emésztést, a mozgást és a víztartalom-szabályozást is.',
+                  'Testszerveződésük változatos: az amőba állábakkal mozog és táplálkozik, a papucsállatka csillókkal, a zöld szemesostoros ostorral mozog, és fényben fotoszintézisre is képes.',
+                ],
+              },
+            ],
+            keyTerms: ['prokarióta', 'eukarióta', 'antibiotikum-rezisztencia', 'fertőtlenítés', 'sterilizálás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a baktériumok anyagcsere-típusok szerinti azonosítását és az endoszimbióta elméletet is ismerni kell.',
+            sections: [
+              {
+                heading: 'Baktériumok anyagcsere-típusai',
+                paragraphs: [
+                  'Életfolyamataik leírása alapján a baktériumok lehetnek heterotrófok (szerves anyagból élnek), fotoautotrófok (fényenergiával szintetizálnak szerves anyagot) vagy kemoautotrófok (szervetlen vegyületek energiáját hasznosítva).',
+                  'A különböző fertőtlenítési eljárások (pl. hő, UV-sugárzás, vegyszerek) biológiai alapja mindig a kórokozók fehérjéinek vagy örökítőanyagának károsítása.',
+                ],
+              },
+              {
+                heading: 'Az endoszimbióta elmélet',
+                paragraphs: [
+                  'Az endoszimbióta elmélet szerint az eukarióta sejtek egyes organellumai (a mitokondrium és a színtest) egykor önállóan élő, prokarióta szervezetekből alakultak ki, amelyeket egy ősi eukarióta sejt bekebelezett, és a kapcsolat kölcsönösen előnyössé, majd elválaszthatatlanná vált.',
+                  'Az elmélet mellett szóló érvek közé tartozik, hogy a mitokondriumnak és a színtestnek saját, körkörös DNS-e és saját riboszómái vannak, amelyek méretükben a baktériumokéhoz hasonlítanak.',
+                ],
+              },
+            ],
+            keyTerms: ['heterotróf baktérium', 'fotoautotróf', 'kemoautotróf', 'endoszimbióta elmélet'],
+          },
+        },
       },
       {
         id: 'tobbsejtuseg',
         title: 'Többsejtűség',
         order: 3,
         isFree: false,
-        estimatedMinutes: 15,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A többsejtű szerveződés megjelenése alapvető fejlődéstörténeti lépés volt - a sejtek specializálódásával (differenciálódásával) új, összetettebb életformák jöttek létre.',
+            sections: [
+              {
+                heading: 'A növények, gombák és állatok elkülönülése',
+                paragraphs: [
+                  'A növények, a gombák és az állatok testszerveződésük és anyagcsere-folyamataik alapján alkotnak külön országot az élővilág rendszerében.',
+                  'A differenciálódás a sejtek szerkezeti és működésbeli specializálódását jelenti: a soksejtű szervezetben a sejtek egy adott feladatra "szakosodnak".',
+                  'A zöldmoszatok példáján jól bemutatható az egysejtű szerveződés és a többsejtű, nem szövetes szerveződés típusai: a sejttársulás (laza kapcsolatban lévő sejtek csoportja), a sejtfonal (sorban egymáshoz kapcsolódó sejtek) és a teleptest (bonyolultabb, de szövetekre még nem tagolódó testforma).',
+                ],
+              },
+              {
+                heading: 'Fonalas és teleptestes gombák',
+                paragraphs: [
+                  'Fonalas testfelépítésű gombák például a peronoszpóra, a fejespenész és az ecsetpenész, valamint számos emberi megbetegedést okozó gombafaj. A gombák jellemzően spórákkal szaporodnak.',
+                  'A teleptestes szerveződés megfigyelhető a vörös- és barnamoszatoknál, a zöldmoszatoknál, a kalapos gombáknál és a moháknál. A mohák egyedfejlődése kétszakaszos.',
+                  'Fontos gyakorlati tudnivaló a halálosan mérgező gyilkos galóca felismerése és a gombaszedés-tárolás alapvető biztonsági szabályainak ismerete.',
+                ],
+              },
+              {
+                heading: 'Zuzmók és a gombák ökológiai szerepe',
+                paragraphs: [
+                  'A zuzmók egy gomba és egy alga (vagy cianobaktérium) szimbiózisából jönnek létre, és mivel érzékenyek a szennyezésre, a levegőszennyezés indikátorai (jelzőszervezetei) lehetnek.',
+                  'A gombák ökológiai szerepe sokrétű: lehetnek lebontók, paraziták (élősködők) vagy szimbionták.',
+                ],
+              },
+            ],
+            keyTerms: ['differenciálódás', 'teleptest', 'zuzmó', 'gyilkos galóca'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a növények és állatok szaporodási stratégiáinak összehasonlítását, valamint a szivacsok testfelépítését is ismerni kell.',
+            sections: [
+              {
+                heading: 'Növények és állatok összehasonlítása',
+                paragraphs: [
+                  'A növények és az állatok összehasonlíthatók az életszakaszok típusa, a haploid és a diploid szakasz hossza, valamint az ivarsejt- és spóraképzés módja alapján - a növényeknél jellemző a kétszakaszos (haploid és diploid szakaszt is tartalmazó) egyedfejlődés.',
+                ],
+              },
+              {
+                heading: 'A szivacsok testfelépítése',
+                paragraphs: [
+                  'A szivacsok testfelépítésének főbb jellemzői (pl. a vázat alkotó tűk, a vízáramlást biztosító pórusok) szoros kapcsolatban állnak a különböző sejttípusok specializált funkcióival.',
+                ],
+              },
+            ],
+            keyTerms: ['haploid szakasz', 'diploid szakasz'],
+          },
+        },
       },
       {
         id: 'szovetek-szervek',
@@ -399,7 +530,53 @@ export const CURRICULUM = [
         order: 4,
         isFree: false,
         estimatedMinutes: 22,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A szövetek, szervek és szervrendszerek megjelenése tette lehetővé az élővilág legösszetettebb testfelépítésű csoportjainak - a magasabb rendű növényeknek és állatoknak - a kialakulását.',
+            sections: [
+              {
+                heading: 'A növényvilág fejlődéstörténeti "újításai"',
+                paragraphs: [
+                  'A harasztoknál jelentek meg először valódi szövetek és szervek (pl. gyökér, szár, levél), ami hatékonyabb alkalmazkodást tett lehetővé a szárazföldi élethez.',
+                  'A nyitvatermőknél megjelenő újítások (virág, mag, a víztől független szaporodás) tovább növelték az alkalmazkodóképességet.',
+                  'A zárvatermőknél megjelenő újítások - takarólevelek, bibe, zárt magház, termés, szállítócsövek, gyökérszőrök - a szárazföldi élethez való még hatékonyabb alkalmazkodást, valamint a fényért és vízért folyó versengésben való helytállást szolgálják. A termés biológiai szerepe a magok védelme és terjesztése.',
+                ],
+              },
+              {
+                heading: 'Az állatvilág főbb csoportjai',
+                paragraphs: [
+                  'Az állatvilág főbb csoportjainál (szivacsok, laposférgek, gyűrűsférgek, rovarok, csigák, valamint a gerincesek nagy csoportjai: csontos halak, kétéltűek, hüllők, madarak, emlősök) a testfelépítés, az életműködések (kültakaró, mozgás, táplálkozás, légzés, anyagszállítás, szaporodás, érzékelés) és a környezet szoros kapcsolatban állnak egymással.',
+                ],
+              },
+              {
+                heading: 'Növényi és állati szövetek',
+                paragraphs: [
+                  'A növényi szövetek közül az osztódószövet a növekedésért felelős, míg az állandósult szövetek közé tartozik a bőrszövet (védelem), a táplálékkészítő alapszövet és a szállítószövet (anyagszállítás).',
+                  'Az állati szövetek négy fő típusa: a hámszövet (határoló és mirigyes funkciók), az izomszövet (mozgás), a kötőszövet (összekötés, védelem, tápanyagraktározás) és az idegszövet (ingerület vezetése).',
+                ],
+              },
+            ],
+            keyTerms: ['haraszt', 'nyitvatermő', 'zárvatermő', 'osztódószövet', 'hámszövet', 'izomszövet', 'kötőszövet', 'idegszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a kétszakaszos egyedfejlődés részletei és a kettős megtermékenyítés folyamata is a követelmények közé tartozik.',
+            sections: [
+              {
+                heading: 'Kétszakaszos egyedfejlődés',
+                paragraphs: [
+                  'A harasztok és a zárvatermők kétszakaszos egyedfejlődésében a haploid és a diploid szakaszok aránya jelentősen eltér: a zárvatermőknél a diploid szakasz dominál, ami fejlődéstörténeti szempontból előrelépést jelent.',
+                ],
+              },
+              {
+                heading: 'Kettős megtermékenyítés',
+                paragraphs: [
+                  'A zárvatermőkre jellemző kettős megtermékenyítés során az egyik hímivarsejt a petesejttel egyesül (ebből lesz az embrió), a másik pedig a központi sejttel (ebből lesz a tápláló szövet, az endospermium) - ez a folyamat kizárólag a zárvatermőknél fordul elő.',
+                ],
+              },
+            ],
+            keyTerms: ['kettős megtermékenyítés'],
+          },
+        },
       },
     ],
   },
