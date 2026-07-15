@@ -7,9 +7,11 @@ import DefinedTerm from '../components/DefinedTerm';
 import { renderWithGlossary } from '../lib/glossaryRender';
 import { GLOSSARY } from '../data/glossary';
 import MaltozKepzodes from '../components/diagrams/MaltozKepzodes';
+import ElemekMegoszlasa from '../components/diagrams/ElemekMegoszlasa';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
+  'elemek-megoszlasa': ElemekMegoszlasa,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,
