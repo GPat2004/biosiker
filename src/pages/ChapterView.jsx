@@ -3,6 +3,9 @@ import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info } f
 import { getModuleById, getChapterById, getLevelContent } from '../data/curriculum';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
+import DefinedTerm from '../components/DefinedTerm';
+import { renderWithGlossary } from '../lib/glossaryRender';
+import { GLOSSARY } from '../data/glossary';
 
 const LEVEL_LABEL = { kozep: 'Középszint', emelt: 'Emelt szint' };
 
@@ -68,14 +71,16 @@ const ChapterView = () => {
               </span>
             </div>
           )}
-          <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">{levelContent.intro}</p>
+          <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
+            {renderWithGlossary(levelContent.intro)}
+          </p>
 
           {levelContent.sections.map((section, i) => (
             <div key={i} className="mb-8">
               <h2 className="text-xl font-bold mb-3">{section.heading}</h2>
               {section.paragraphs.map((p, j) => (
                 <p key={j} className="text-slate-600 dark:text-slate-400 mb-3 leading-relaxed">
-                  {p}
+                  {renderWithGlossary(p)}
                 </p>
               ))}
             </div>
@@ -85,14 +90,23 @@ const ChapterView = () => {
             <div className="mt-8 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
               <p className="text-sm font-bold mb-3">Kulcsfogalmak</p>
               <div className="flex flex-wrap gap-2">
-                {levelContent.keyTerms.map((term) => (
-                  <span
-                    key={term}
-                    className="px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm"
-                  >
-                    {term}
-                  </span>
-                ))}
+                {levelContent.keyTerms.map((term) => {
+                  const definition = GLOSSARY[term.toLowerCase()];
+                  return (
+                    <span
+                      key={term}
+                      className="px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm"
+                    >
+                      {definition ? (
+                        <DefinedTerm term={term} definition={definition}>
+                          {term}
+                        </DefinedTerm>
+                      ) : (
+                        term
+                      )}
+                    </span>
+                  );
+                })}
               </div>
             </div>
           )}
