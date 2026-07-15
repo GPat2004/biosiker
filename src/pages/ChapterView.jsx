@@ -6,6 +6,20 @@ import PaywallGate from '../components/PaywallGate';
 import DefinedTerm from '../components/DefinedTerm';
 import { renderWithGlossary } from '../lib/glossaryRender';
 import { GLOSSARY } from '../data/glossary';
+import MaltozKepzodes from '../components/diagrams/MaltozKepzodes';
+
+const DIAGRAMS = {
+  'maltoz-kepzodes': MaltozKepzodes,
+};
+
+// Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,
+// mint a ModuleIcon: render kozben nem hozunk letre helyi valtozoban
+// komponens-referenciat.
+const ChapterDiagram = ({ diagramId }) => {
+  const Diagram = DIAGRAMS[diagramId];
+  if (!Diagram) return null;
+  return <Diagram />;
+};
 
 const LEVEL_LABEL = { kozep: 'Középszint', emelt: 'Emelt szint' };
 
@@ -74,6 +88,12 @@ const ChapterView = () => {
           <p className="text-lg text-slate-700 dark:text-slate-300 mb-8">
             {renderWithGlossary(levelContent.intro)}
           </p>
+
+          {chapter.diagramId && (
+            <div className="mb-8 p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
+              <ChapterDiagram diagramId={chapter.diagramId} />
+            </div>
+          )}
 
           {levelContent.sections.map((section, i) => (
             <div key={i} className="mb-8">

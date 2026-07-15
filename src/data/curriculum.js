@@ -189,175 +189,505 @@ export const CURRICULUM = [
     color: 'from-blue-500 to-indigo-500',
     chapters: [
       {
-        id: 'szervetlen-szerves-alkotoelemek',
-        title: 'Szervetlen és szerves alkotóelemek',
+        id: 'elemek-ionok',
+        title: 'Elemek, ionok',
         order: 1,
         isFree: true,
-        estimatedMinutes: 20,
+        estimatedMinutes: 12,
         content: {
           kozep: {
-            intro: 'Az élő szervezetek felépítésében meghatározott elemek, ionok és molekulák (víz, lipidek, szénhidrátok, fehérjék, nukleinsavak) vesznek részt.',
+            intro: 'Az élő szervezetek felépítésében meghatározott kémiai elemek és ionok vesznek részt, amelyek nélkülözhetetlenek a megfelelő működéshez.',
             sections: [
               {
-                heading: 'Elemek és ionok',
+                heading: 'Makroelemek',
                 paragraphs: [
-                  'A szervezet tömegének 95-99%-át hat elem adja: szén (C), hidrogén (H), oxigén (O), nitrogén (N), foszfor (P) és kén (S). Fontos ionok még a H⁺, Ca²⁺, Mg²⁺, Fe²⁺/³⁺, Na⁺, K⁺, Cl⁻, HCO₃⁻, CO₃²⁻, NO₃⁻.',
-                  'A só jódozása és a fogkrémek fluorozása is ezen elemek élettani szerepével függ össze.',
+                  'A szervezet tömegének 95-99%-át hat elem adja: szén (C), hidrogén (H), oxigén (O), nitrogén (N), foszfor (P) és kén (S). Ezek adják a szerves molekulák (fehérjék, szénhidrátok, lipidek, nukleinsavak) vázát.',
+                  'További fontos makroelemek: kalcium (Ca), kálium (K), nátrium (Na), klór (Cl) és magnézium (Mg) - ezek jellemzően ionos formában, az anyagcsere-folyamatok szabályozásában (pl. idegműködés, izomösszehúzódás) vesznek részt.',
+                  'Fontos ionok a szervezetben: H⁺, Ca²⁺, Mg²⁺, Fe²⁺/Fe³⁺, Na⁺, K⁺, Cl⁻, HCO₃⁻, CO₃²⁻ és NO₃⁻ - mindegyiknek meghatározott élettani szerepe van.',
                 ],
               },
               {
-                heading: 'Lipidek, szénhidrátok, fehérjék',
+                heading: 'Mikroelemek',
                 paragraphs: [
-                  'A lipidek (zsírok, foszfatidok) oldódási tulajdonságaik miatt energiaraktározásra, hőszigetelésre és mechanikai védelemre alkalmasak.',
-                  'A szénhidrátok (szőlőcukor, keményítő, glikogén, cellulóz) íz, vízoldhatóság és emészthetőség szerint különböznek egymástól.',
-                  'A fehérjék peptidláncból épülnek fel; szerkezetük hő, nehézfémsók vagy mechanikai hatásra megváltozhat (denaturáció).',
-                ],
-              },
-              {
-                heading: 'Nukleinsavak',
-                paragraphs: [
-                  'A DNS szerkezetében rejlik az információhordozó, önmegkettőződő (örökítő) szerep.',
+                  'A mikroelemek (nyomelemek) jóval kisebb mennyiségben vannak jelen, de éppolyan nélkülözhetetlenek. A vas (Fe) a hemoglobin, a jód (I) a pajzsmirigyhormonok alkotórésze, a cink (Zn) és a réz (Cu) pedig számos enzim működéséhez szükséges.',
+                  'Gyakorlati példa a mikroelemek jelentőségére: a konyhasó jódozása a jódhiányos golyva megelőzését szolgálja, a fogkrémek fluorozása pedig a fogzománc ellenállóképességét növeli a fogszuvasodással szemben.',
                 ],
               },
             ],
-            keyTerms: ['biogén elem', 'lipid', 'szénhidrát', 'fehérje', 'DNS'],
+            keyTerms: ['makroelem', 'mikroelem', 'nyomelem', 'biogén elem'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a molekulák részletes szerkezetét és a köztük lévő kölcsönhatásokat is ismerni kell.',
+            intro: 'Emelt szinten további elemek és ionok élettani szerepét is ismerni kell.',
             sections: [
               {
-                heading: 'További elemek és ionok',
+                heading: 'További elemek',
                 paragraphs: [
-                  'A jód (I), fluor (F) és szilícium (Si) is fontos szerepet tölt be az élő szervezetben, csakúgy mint a NO₂⁻ és PO₄³⁻ ionok.',
-                ],
-              },
-              {
-                heading: 'Molekulaszerkezet',
-                paragraphs: [
-                  'Ismerni kell a zsírok (glicerin + zsírsavak) és a foszfatidok (glicerin + zsírsavak + foszforsav) pontos szerkezetét, valamint az α- és β-glükóz, ribóz, dezoxiribóz, amilóz és cellulóz molekulájának felépítését.',
-                  'A fehérjéknél az aminosavak általános képletét, az oldalláncok kölcsönhatásait, valamint az elsődleges, másodlagos, harmadlagos és negyedleges szerkezetet kell érteni.',
+                  'A jód (I) mellett a fluor (F) és a szilícium (Si) is fontos szerepet tölt be egyes élőlények felépítésében - a szilícium például egyes egysejtűek (kovamoszatok) vázának alkotórésze.',
+                  'További, kis mennyiségben előforduló, de jelentős ionok a NO₂⁻ (nitrit) és a PO₄³⁻ (foszfát), amelyek a nitrogén- és foszforforgalomban játszanak szerepet.',
                 ],
               },
             ],
-            keyTerms: ['α- és β-glükóz', 'peptidkötés', 'harmadlagos szerkezet'],
+            keyTerms: ['szilícium biológiai szerepe', 'nitrit', 'foszfát'],
           },
         },
       },
       {
-        id: 'anyagcsere-folyamatai',
-        title: 'Az anyagcsere folyamatai',
+        id: 'szervetlen-molekulak',
+        title: 'Szervetlen molekulák',
         order: 2,
         isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'Néhány egyszerű szervetlen molekula - a víz, a szén-dioxid és az ammónia - kulcsszerepet játszik az élővilág működésében.',
+            sections: [
+              {
+                heading: 'Víz, szén-dioxid, ammónia',
+                paragraphs: [
+                  'A víz az élő szervezetek legfontosabb alkotórésze: oldószerként, reakcióközegként és hőszabályozásban is nélkülözhetetlen szerepet tölt be.',
+                  'A szén-dioxid a fotoszintézis nyersanyaga és a sejtlégzés végterméke - jelenléte meszes vízzel (mészvízzel) mutatható ki: a szén-dioxid hatására a mészvíz elhomályosodik, mivel vízben rosszul oldódó kalcium-karbonát csapadék keletkezik.',
+                  'Az ammónia a nitrogéntartalmú anyagok (pl. fehérjék, nukleinsavak) lebontásakor keletkező, mérgező melléktermék, amelyet a szervezet gyakran kevésbé mérgező formává (pl. karbamiddá) alakít át.',
+                ],
+              },
+            ],
+            keyTerms: ['mészvízpróba'],
+          },
+          emeltExtra: { sections: [], keyTerms: [] },
+        },
+      },
+      {
+        id: 'lipidek',
+        title: 'Lipidek',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A lipidek (zsírszerű anyagok) sokféle biológiai szerepet töltenek be, oldódási tulajdonságuk és szerkezetük szorosan összefügg funkciójukkal.',
+            sections: [
+              {
+                heading: 'Oldódás és szerkezet',
+                paragraphs: [
+                  'A lipidek vízben nem, szerves oldószerekben (pl. alkoholban, benzinben) viszont jól oldódnak - ez a hétköznapokban is megfigyelhető, például amikor az olaj nem elegyedik a vízzel.',
+                  'A zsírok glicerinből és zsírsavakból épülnek fel, a foszfatidok pedig glicerinből, zsírsavakból és foszforsavból. A zsírban oldódó vitaminok (A, D, E, K) könnyen felhalmozódhatnak a szervezetben, ezért túladagolásuk veszélyesebb, mint a vízoldékony vitaminoké.',
+                ],
+              },
+              {
+                heading: 'Biológiai szerep',
+                paragraphs: [
+                  'A zsírok és olajok fő biológiai szerepe az energiaraktározás, a hőszigetelés és a mechanikai védelem - ez összefügg azzal, hogy a zsírszövet jellemzően a bőr alatt és a belső szervek körül helyezkedik el.',
+                  'A foszfatidok kettős (poláris és apoláris) tulajdonsága miatt alkalmasak a biológiai membránok (sejthártyák) kialakítására: poláris fejcsoportjuk a vizes közeg felé, apoláris "farkuk" pedig egymás felé fordul, kettősréteget alkotva.',
+                  'Az epesav polaritása lehetővé teszi, hogy az epesavsók stabilizálják a zsírok vizes közegben történő apró cseppekre bontását (emulgeálását), ami elősegíti a zsírok emésztését.',
+                ],
+              },
+            ],
+            keyTerms: ['lipid', 'foszfatid', 'emulgeálás', 'zsírszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szteránváz és a karotinoidok szerkezete, valamint fotokémiai szerepük is a követelmények közé tartozik.',
+            sections: [
+              {
+                heading: 'Szteránváz és karotinoidok',
+                paragraphs: [
+                  'A szteránváz (pl. a koleszterin alapváza) és a karotinoidok jellegzetes molekulaszerkezettel rendelkeznek, amelyeket ábráról fel kell tudni ismerni.',
+                  'A karotinoidok molekulájában található konjugált kettőskötés-rendszer felelős a fény elnyeléséért - ez áll a növényi karotinoidok (karotin, xantofill) fotoszintézisben betöltött szerepének, valamint az emberi látásban részt vevő A-vitamin és rodopszin működésének hátterében is.',
+                ],
+              },
+            ],
+            keyTerms: ['szteránváz', 'konjugált kettőskötés', 'rodopszin'],
+          },
+        },
+      },
+      {
+        id: 'szenhidratok',
+        title: 'Szénhidrátok',
+        order: 4,
+        isFree: false,
         estimatedMinutes: 18,
+        diagramId: 'maltoz-kepzodes',
+        content: {
+          kozep: {
+            intro: 'A szénhidrátok az élő szervezetek fontos energiaforrásai és építőanyagai, tulajdonságaik szorosan összefüggenek szerkezetükkel.',
+            sections: [
+              {
+                heading: 'Egyszerű és összetett szénhidrátok',
+                paragraphs: [
+                  'A szőlőcukor (glükóz), a keményítő, a glikogén és a cellulóz íz, vízoldhatóság és emészthetőség szempontjából jelentősen különböznek egymástól, annak ellenére, hogy mindegyik glükózegységekből épül fel.',
+                  'A glükóz, a ribóz és a dezoxiribóz molekulavázát fel kell tudni ismerni. A glükóz összegképlete C₆H₁₂O₆, a poliszacharidok (pl. keményítő, cellulóz) általános képlete (C₆H₁₀O₅)ₙ.',
+                  'A laktóz (tejcukor) és a szacharóz (répacukor, nádcukor) mindennapi táplálkozásunk fontos szénhidrátjai - mindkettő diszacharid, azaz két egyszerű cukoregységből épül fel.',
+                ],
+              },
+              {
+                heading: 'Kimutatás és lebontás',
+                paragraphs: [
+                  'A keményítő jóddal (Lugol-oldattal) mutatható ki: a keményítő-jód komplex jellegzetes kék-lila elszíneződést ad. A keményítőszemcsék mikroszkópban is jól felismerhetők jellegzetes rétegzett szerkezetükről.',
+                  'A sokáig rágott kenyérhéj azért válik édessé, mert a nyál amiláz enzime elkezdi bontani a keményítőt kisebb egységekre - végül maltózra, majd glükózra -, amelyek már édes ízűek. Ez a folyamat (hidrolízis) a maltóz kondenzációval történő képződésének fordítottja.',
+                ],
+              },
+            ],
+            keyTerms: ['glükóz', 'poliszacharid', 'diszacharid', 'Lugol-próba', 'maltóz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a cukrok pontos molekulaszerkezetét (α- és β-forma) is ismerni kell.',
+            sections: [
+              {
+                heading: 'Molekulaszerkezet',
+                paragraphs: [
+                  'A glükóz két izomer (α- és β-) formában fordulhat elő, amelyek a gyűrűs szerkezet 1-es szénatomján lévő -OH csoport térállásában térnek el egymástól - ez a különbség meghatározza, hogy a belőlük felépülő poliszacharid (pl. keményítő vagy cellulóz) emészthető-e az emberi szervezet számára.',
+                  'A ribóz, a dezoxiribóz, az amilóz (a keményítő egyik alkotórésze) és a cellulóz molekulájának felépítését ábráról fel kell ismerni.',
+                ],
+              },
+            ],
+            keyTerms: ['α-glükóz', 'β-glükóz', 'amilóz'],
+          },
+        },
+      },
+      {
+        id: 'feherjek',
+        title: 'Fehérjék',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 20,
+        content: {
+          kozep: {
+            intro: 'A fehérjék az élő szervezetek egyik legsokoldalúbb molekulacsoportját alkotják - szinte minden életfolyamatban részt vesznek.',
+            sections: [
+              {
+                heading: 'Szerkezet és denaturáció',
+                paragraphs: [
+                  'A fehérjék általános szerkezeti alapegysége a peptidlánc, amely aminosavakból épül fel.',
+                  'A fehérjék térszerkezete hő, nehézfémsók vagy mechanikai hatás következtében megváltozhat (denaturálódhat) - ez figyelhető meg például a tojás vagy a hús sütésekor, amikor a fehérje megszilárdul és megváltozik a színe, állaga.',
+                ],
+              },
+              {
+                heading: 'Biológiai szerep',
+                paragraphs: [
+                  'A fehérjék rendkívül sokféle biológiai szerepet töltenek be: enzimekként katalizálják a reakciókat, összehúzékony fehérjerendszerekként (aktin, miozin) mozgást hoznak létre, vázanyagként (pl. kollagén) mechanikai tartást adnak, receptorként ingereket érzékelnek, szállítófehérjeként anyagokat (pl. oxigént a hemoglobin) szállítanak, tartalék tápanyagként raktározódnak, antitestként a védekezésben vesznek részt, jelölő fehérjeként a sejtfelismerésben szerepelnek, részt vesznek a véralvadásban, és szabályozó fehérjeként (pl. egyes hormonok) is működnek.',
+                  'Az eszenciális aminosavakat a szervezet nem képes előállítani, ezért ezeket kizárólag a táplálékkal vehetjük fel - hiányuk súlyos egészségügyi következményekkel járhat.',
+                ],
+              },
+            ],
+            keyTerms: ['peptidlánc', 'denaturáció', 'eszenciális aminosav', 'antitest'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a fehérjék négy szerkezeti szintjét és a stresszfehérjék szerepét is ismerni kell.',
+            sections: [
+              {
+                heading: 'Az aminosavak és a fehérjeszerkezet szintjei',
+                paragraphs: [
+                  'Az aminosavak általános képlete közös vázat mutat, az oldalláncok (R-csoportok) közötti kölcsönhatások (pl. hidrogénkötés, ionos kölcsönhatás, kovalens kötés) alakítják ki a fehérjék jellegzetes térszerkezetét.',
+                  'A fehérjéknek négy szerkezeti szintje van: az elsődleges szerkezet az aminosavak sorrendje (amit a peptidkötések tartanak össze), a másodlagos szerkezet jellegzetes térbeli mintázatokat (pl. hélix) alkot, a harmadlagos szerkezet a teljes lánc térbeli feltekeredése, a negyedleges szerkezet pedig több fehérjelánc együttes elrendeződése.',
+                ],
+              },
+              {
+                heading: 'Stresszfehérjék',
+                paragraphs: [
+                  'A stresszfehérjék (hősokkfehérjék) segítik a sejtet a károsodott fehérjék helyreállításában vagy lebontásában, így szerepet játszanak a sejt öngyógyító folyamataiban, különösen stresszhatások (pl. hőstressz) idején.',
+                ],
+              },
+            ],
+            keyTerms: ['elsődleges szerkezet', 'harmadlagos szerkezet', 'negyedleges szerkezet', 'stresszfehérje'],
+          },
+        },
+      },
+      {
+        id: 'nukleinsavak-nukleotidok',
+        title: 'Nukleinsavak, nukleotidok',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A nukleinsavak hordozzák és adják tovább az élőlények genetikai információját.',
+            sections: [
+              {
+                heading: 'A DNS örökítő szerepe',
+                paragraphs: [
+                  'A DNS szerkezetében rejlik az információhordozó, önmegkettőződő (örökítő) szerep - ez teszi lehetővé, hogy a genetikai információ sejtosztódáskor pontosan átadódjon az utódsejteknek.',
+                  'A nukleotidok és a nukleinsavak közös, általános szerkezeti váza cukor-bázis-foszfát egységekből épül fel: egy cukormolekulához egy nitrogéntartalmú bázis és egy foszfátcsoport kapcsolódik.',
+                ],
+              },
+              {
+                heading: 'Fontos nukleotidok',
+                paragraphs: [
+                  'Nem minden nukleotid épül be nukleinsavba: a NAD⁺, a NADP⁺ és az ATP önálló nukleotidokként is fontos biológiai szerepet töltenek be, elsősorban az anyagcsere-folyamatok energiaszállításában.',
+                ],
+              },
+            ],
+            keyTerms: ['nukleotid', 'DNS', 'ATP'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a DNS örökítő szerepét bizonyító klasszikus kísérleteket is ismerni kell.',
+            sections: [
+              {
+                heading: 'A DNS örökítő szerepét bizonyító kísérletek',
+                paragraphs: [
+                  'Griffith és Avery kísérletei során kimutatták, hogy egy baktériumtörzs genetikai tulajdonságai átvihetők egy másik törzsbe (transzformáció), és Avery igazolta, hogy az átvitt anyag maga a DNS.',
+                  'Hershey és Chase kísérlete radioaktívan jelölt bakteriofágok segítségével bizonyította, hogy a vírusfertőzés során a fertőző örökítőanyag a DNS jut be a gazdasejtbe, nem a fehérjeburok.',
+                ],
+              },
+            ],
+            keyTerms: ['transzformáció', 'Hershey-Chase kísérlet'],
+          },
+        },
+      },
+      {
+        id: 'felepites-lebontas-kapcsolata',
+        title: 'Felépítés és lebontás kapcsolata',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 12,
         content: {
           kozep: {
             intro: 'Az élő szervezetek anyagcseréje felépítő (asszimilációs) és lebontó (disszimilációs) folyamatokból áll, amelyek szorosan összekapcsolódnak.',
             sections: [
               {
-                heading: 'Felépítés és lebontás kapcsolata',
+                heading: 'Energia- és szénforrás szerinti csoportosítás',
                 paragraphs: [
                   'Energiaforrás szerint fototróf (fényenergiát hasznosító) és kemotróf (kémiai energiát hasznosító) szervezeteket különböztetünk meg; szénforrás szerint autotróf (szervetlen szénforrást használó) és heterotróf (szerves szénforrásra szoruló) élőlényeket.',
-                  'Fontos alapelv, hogy minden átépítés energiaveszteséggel jár.',
-                ],
-              },
-              {
-                heading: 'Felépítő folyamat: a fotoszintézis',
-                paragraphs: [
-                  'A növények fotoszintézise nélkülözhetetlen a földi élet fenntartásához. A fényszakaszban a víz fényenergia hatására bomlik, molekuláris oxigén keletkezik, a hidrogén szállítómolekulára kerül, és ATP képződik.',
-                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, glükóz, majd más vegyületek keletkeznek.',
-                ],
-              },
-              {
-                heading: 'Lebontó folyamatok',
-                paragraphs: [
-                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat.',
-                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik.',
+                  'Alapvető fizikai törvényszerűség, hogy minden anyagátépítés energiaveszteséggel jár - ezért nincs 100%-osan hatékony biológiai folyamat.',
                 ],
               },
             ],
-            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'fotoszintézis', 'glikolízis'],
+            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten az anyagcsere-folyamatok molekuláris részletei és a citromsavciklus is a követelmények közé tartozik.',
+            intro: 'Emelt szinten a molekulák kapcsolódásának és a sejten belüli/kívüli anyagszállításnak a részletei is ismerendők.',
             sections: [
               {
                 heading: 'Hidrolízis, kondenzáció, sejtszállítás',
                 paragraphs: [
-                  'A makromolekulák alapegységei kondenzációval kapcsolódnak össze, hidrolízissel bomlanak szét.',
+                  'A makromolekulák alapegységei kondenzációval (vízkilépéssel) kapcsolódnak össze, hidrolízissel (vízfelvétellel) bomlanak szét.',
                   'Az endocitózis és az exocitózis folyamata teszi lehetővé nagyobb anyagmennyiségek sejtbe juttatását, illetve onnan történő kijuttatását.',
                 ],
               },
+            ],
+            keyTerms: ['hidrolízis', 'kondenzáció', 'exocitózis'],
+          },
+        },
+      },
+      {
+        id: 'fotoszintezis',
+        title: 'Felépítő folyamatok: a fotoszintézis',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A fotoszintézis a legfontosabb felépítő (asszimilációs) folyamat, amely a földi élet energiaellátásának alapja.',
+            sections: [
               {
-                heading: 'A citrátkör (citromsavciklus)',
+                heading: 'Fényszakasz és sötétszakasz',
+                paragraphs: [
+                  'A fényszakaszban a víz fényenergia hatására bomlik, molekuláris oxigén keletkezik, a hidrogén szállítómolekulára kerül, és ATP képződik.',
+                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, aminek eredményeként glükóz, majd más vegyületek keletkeznek.',
+                  'A fotoszintézis egyszerűsített egyenlete: szén-dioxid és víz fényenergia jelenlétében glükózzá és oxigénné alakul.',
+                ],
+              },
+            ],
+            keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a fotoszintetikus színanyagok típusait és molekulavázát is ismerni kell.',
+            sections: [
+              {
+                heading: 'Fotoszintetikus színanyagok',
+                paragraphs: [
+                  'A fotoszintetikus színanyagok két fő típusa a klorofillok és a karotinoidok - mindkettő jellegzetes molekulavázzal rendelkezik, amelyet ábráról fel kell tudni ismerni, és mindkettő szerepet játszik a fényenergia elnyelésében.',
+                ],
+              },
+            ],
+            keyTerms: ['klorofill'],
+          },
+        },
+      },
+      {
+        id: 'lebonto-folyamatok',
+        title: 'Lebontó folyamatok',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A lebontó (disszimilációs) folyamatok során a szerves molekulák lebontásával energia szabadul fel, amelyet a sejt ATP formájában tárol.',
+            sections: [
+              {
+                heading: 'Glikolízis és végoxidáció',
+                paragraphs: [
+                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat.',
+                  'A biológiai oxidáció és az erjedés összehasonlítható biológiai funkciójuk, sejten belüli helyszínük és energiamérlegük alapján - a biológiai oxidáció oxigént igényel és lényegesen több ATP-t termel, mint az erjedés.',
+                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['glikolízis', 'biológiai oxidáció', 'erjedés', 'végoxidáció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a citrátkör (citromsavciklus) és az aminosav-lebontás sorsa is ismerendő.',
+            sections: [
+              {
+                heading: 'A citrátkör',
                 paragraphs: [
                   'A citrátkör a mitokondriumban zajlik: a szerves molekulák szénvázából szén-dioxid keletkezik, a felszabaduló hidrogén szállítómolekulára kerül.',
                   'Az aminosavak lebomlásakor és átalakításakor a nitrogén ammónia, illetve karbamid formájában kiválasztódik, vagy más aminosavba épül be.',
                 ],
               },
             ],
-            keyTerms: ['hidrolízis', 'kondenzáció', 'citrátkör', 'exocitózis'],
+            keyTerms: ['citrátkör'],
           },
         },
       },
       {
-        id: 'sejtalkotok',
-        title: 'Sejtalkotók (az eukarióta sejtben)',
-        order: 3,
+        id: 'elhatarolas',
+        title: 'Elhatárolás',
+        order: 10,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 14,
         content: {
           kozep: {
-            intro: 'Az eukarióta sejt felépítését meghatározó sejtalkotók (organellumok) mindegyike sajátos szerepet tölt be a sejt életében.',
+            intro: 'A sejtet határoló biológiai hártyák (membránok) nélkülözhetetlenek a sejt életének fenntartásához.',
             sections: [
               {
-                heading: 'Elhatárolás',
+                heading: 'A membránok szerepe és a szállítás típusai',
                 paragraphs: [
                   'A biológiai hártyák (membránok) szerepe sokrétű: anyagforgalom, határolás, összekötés, jelölés, jelfogás.',
-                  'A passzív szállítás energiabefektetés nélkül, koncentráció-különbség mentén zajlik; az aktív szállítás energiát igényel. Endocitózissal anyagok juttathatók a sejtbe, exocitózissal a sejtből.',
-                ],
-              },
-              {
-                heading: 'Mozgás és anyagcsere',
-                paragraphs: [
-                  'Az emberi szervezetben példák az állábas, ostoros és csillós mozgásra.',
-                  'A sejt belső hártyarendszere (endoplazmatikus hálózat) számos funkciót lát el. A mitokondrium a biológiai oxidáció, a színtest a fotoszintézis helyszíne. A lizoszóma a sejtbe bejutó, illetve a belső felesleges anyagok lebontását végzi.',
-                ],
-              },
-              {
-                heading: 'Osztódás és a sejtműködések vezérlése',
-                paragraphs: [
-                  'A számtartó osztódás (mitózis) a testi sejtek, a számfelező osztódás (meiózis) az ivarsejtek létrejöttében játszik szerepet, és biztosítja a genetikai sokféleséget. Az emberi testi sejtek 46, az ivarsejtek 23 kromoszómát tartalmaznak.',
-                  'A sejt külső és belső ingerekre válaszolhat: koncentrációváltozással, alakváltozással, elválasztással vagy elektromos változással. Megkülönböztetünk programozott (apoptózis) és nem programozott sejthalált.',
+                  'A passzív szállítás energiabefektetés nélkül, koncentráció-különbség mentén zajlik; az aktív szállítás energiát igényel, mivel a koncentráció-különbséggel szemben történik.',
+                  'Endocitózissal nagyobb anyagmennyiségek juttathatók a sejtbe, exocitózissal a sejtből - mindkét folyamat a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul.',
                 ],
               },
             ],
-            keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'mitózis', 'meiózis', 'lizoszóma'],
+            keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'endocitózis'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a szállítási mechanizmusok végrehajtóit és a sejtciklus részletes szakaszait is ismerni kell.',
+            intro: 'Emelt szinten a szállítás pontos végrehajtóit és hajtóerőit is ismerni kell.',
             sections: [
               {
                 heading: 'A szállítás végrehajtói',
                 paragraphs: [
-                  'A passzív és az aktív szállítást a kettős lipidréteg, a membráncsatornák, a szállítók és a pumpák valósítják meg, különböző hajtóerők segítségével.',
-                ],
-              },
-              {
-                heading: 'Sejtciklus és osztódás',
-                paragraphs: [
-                  'A sejtciklus jól elkülöníthető szakaszokra bontható. A mitózis és a meiózis összehasonlítható folyamataik, előfordulásuk, valamint a genetikai információ mennyiségi és minőségi változása alapján.',
-                  'A mitokondriumban zajló citromsavciklus és a végoxidáció szerkezete és működése szorosan összefügg.',
-                ],
-              },
-              {
-                heading: 'Szabályozás',
-                paragraphs: [
-                  'A K-Na-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget.',
+                  'A passzív és az aktív szállítást a kettős lipidréteg, a membráncsatornák, a szállítók és a pumpák valósítják meg, különböző hajtóerők (pl. koncentráció-különbség, elektromos potenciál, ATP-energia) segítségével.',
                 ],
               },
             ],
-            keyTerms: ['sejtciklus', 'K-Na-pumpa', 'citromsavciklus'],
+            keyTerms: ['membráncsatorna'],
           },
+        },
+      },
+      {
+        id: 'mozgas-a-sejtben',
+        title: 'Mozgás',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A sejtek egy része önálló mozgásra is képes, amit specializált sejtfelszíni struktúrák tesznek lehetővé.',
+            sections: [
+              {
+                heading: 'Mozgásformák az emberi szervezetben',
+                paragraphs: [
+                  'Az emberi szervezetben is találunk példát az állábas mozgásra (pl. a fehérvérsejtek), az ostoros mozgásra (pl. a hímivarsejt) és a csillós mozgásra (pl. a légutak hámsejtjei, amelyek a nyálkát mozgatják).',
+                ],
+              },
+            ],
+            keyTerms: ['állábas mozgás', 'csillós mozgás'],
+          },
+          emeltExtra: { sections: [], keyTerms: [] },
+        },
+      },
+      {
+        id: 'sejt-anyagcsere',
+        title: 'Anyagcsere (sejtszinten)',
+        order: 12,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A sejt egyes sejtalkotói (organellumai) meghatározott anyagcsere-funkciókat látnak el.',
+            sections: [
+              {
+                heading: 'Sejtalkotók anyagcsere-szerepe',
+                paragraphs: [
+                  'A sejt belső hártyarendszere (endoplazmatikus hálózat) számos funkciót lát el: fehérjék és lipidek szintézisét, valamint anyagok szállítását a sejten belül.',
+                  'A mitokondrium a biológiai oxidáció, a színtest a fotoszintézis helyszíne.',
+                  'A lizoszóma a sejtbe bejutó, illetve a belső felesleges anyagok lebontását végzi emésztőenzimei segítségével.',
+                ],
+              },
+            ],
+            keyTerms: ['endoplazmatikus hálózat', 'mitokondrium', 'lizoszóma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mitokondriumban zajló folyamatok szerkezet-működés kapcsolatát is ismerni kell.',
+            sections: [
+              {
+                heading: 'A mitokondrium szerkezete és működése',
+                paragraphs: [
+                  'A mitokondriumban folyó citromsavciklus, illetve a végoxidáció szorosan összefügg a mitokondrium belső, redőzött szerkezetével (kristák), amely nagy felületet biztosít a folyamatokhoz.',
+                  'A glikolízis a sejt citoplazmájában, az erjedés szintén a citoplazmában zajlik.',
+                ],
+              },
+            ],
+            keyTerms: ['kristák'],
+          },
+        },
+      },
+      {
+        id: 'sejtosztodas',
+        title: 'Osztódás',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A sejtosztódás biztosítja az élőlények növekedését, megújulását és szaporodását.',
+            sections: [
+              {
+                heading: 'Számtartó és számfelező osztódás',
+                paragraphs: [
+                  'A számtartó osztódás (mitózis) a testi sejtek osztódásának módja, amely során a keletkező sejtek kromoszómaszáma megegyezik az eredeti sejtével.',
+                  'A számfelező osztódás (meiózis) az ivarsejtek létrejöttében játszik szerepet: megfelezi a kromoszómaszámot, és biztosítja a genetikai sokféleséget.',
+                  'Az emberi testi sejtek 46, az ivarsejtek 23 kromoszómát tartalmaznak.',
+                ],
+              },
+            ],
+            keyTerms: ['mitózis', 'meiózis', 'kromoszóma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a sejtciklus szakaszait és a mitózis-meiózis részletes összehasonlítását is ismerni kell.',
+            sections: [
+              {
+                heading: 'A sejtciklus és az osztódások összehasonlítása',
+                paragraphs: [
+                  'A sejtciklus jól elkülöníthető szakaszokra bontható: a növekedési szakaszokat (amikor a sejt felkészül az osztódásra és megkettőződik a DNS-e) az osztódás szakasza követi.',
+                  'A mitózis és a meiózis összehasonlítható folyamataik, előfordulásuk, valamint a genetikai információ mennyiségi és minőségi változása alapján - a meiózis során rekombináció is történik, ami tovább növeli a genetikai változatosságot.',
+                ],
+              },
+            ],
+            keyTerms: ['sejtciklus', 'rekombináció'],
+          },
+        },
+      },
+      {
+        id: 'sejtmukodesek-vezerlese',
+        title: 'A sejtműködések vezérlése',
+        order: 14,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A sejt folyamatosan reagál a külső és belső környezetéből érkező ingerekre.',
+            sections: [
+              {
+                heading: 'Válasz az ingerekre és a sejthalál',
+                paragraphs: [
+                  'A sejt külső és belső ingerekre válaszolhat: koncentrációváltozással, alakváltozással, elválasztással vagy elektromos változással.',
+                  'A K-Na-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget.',
+                  'Megkülönböztetünk programozott sejthalált (apoptózis), amely a szervezet számára hasznos, szabályozott folyamat, és nem programozott sejthalált, amely sérülés vagy károsodás következménye.',
+                ],
+              },
+            ],
+            keyTerms: ['K-Na-pumpa', 'apoptózis'],
+          },
+          emeltExtra: { sections: [], keyTerms: [] },
         },
       },
     ],
