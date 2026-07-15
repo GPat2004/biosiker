@@ -28,8 +28,8 @@ const VizDipolus = () => (
     <svg viewBox="0 0 320 160" className="w-full h-auto max-w-sm mx-auto" role="img" aria-label="Két vízmolekula dipólus jellege és a köztük lévő hidrogénkötés">
       <VizMolekula x={80} y={60} />
       <VizMolekula x={230} y={90} />
-      <line x1="102" y1="80" x2="200" y2="105" stroke="currentColor" strokeDasharray="4 4" strokeWidth="1.5" className="text-emerald-500" />
-      <text x="150" y="70" textAnchor="middle" className="fill-current text-[10px] font-bold text-emerald-600">
+      <line x1="110" y1="81" x2="216" y2="89" stroke="currentColor" strokeDasharray="4 4" strokeWidth="1.5" className="text-emerald-500" />
+      <text x="163" y="70" textAnchor="middle" className="fill-current text-[10px] font-bold text-emerald-600">
         hidrogénkötés
       </text>
     </svg>

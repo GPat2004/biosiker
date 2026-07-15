@@ -94,6 +94,10 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 3. fejezet: Lipidek
+  'zsír': 'Glicerinből és három zsírsavból felépülő lipid, amely elsősorban energiaraktározásra szolgál.',
+  'koleszterin': 'Szteránvázas lipid, amely a sejtmembránok fontos alkotórésze, és számos szteroid hormon kiindulási anyaga.',
+
   // 2. modul, 2. fejezet: Szervetlen molekulák
   'dipólus': 'Olyan molekula, amelyben a töltés egyenlőtlenül oszlik el, így a molekula egyik vége enyhén negatív, másik vége enyhén pozitív töltésű - ilyen a vízmolekula is.',
   'hidrogénkötés': 'Gyenge, de nagy számban jelentős kölcsönhatás, amely egy molekula pozitív részleges töltésű hidrogénje és egy másik molekula negatív részleges töltésű atomja között alakul ki - a vízmolekulák közötti hidrogénkötések felelősek a víz sok különleges tulajdonságáért.',
