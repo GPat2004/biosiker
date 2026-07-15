@@ -9,11 +9,13 @@ import { GLOSSARY } from '../data/glossary';
 import MaltozKepzodes from '../components/diagrams/MaltozKepzodes';
 import ElemekMegoszlasa from '../components/diagrams/ElemekMegoszlasa';
 import VizDipolus from '../components/diagrams/VizDipolus';
+import AldozKetoz from '../components/diagrams/AldozKetoz';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
   'elemek-megoszlasa': ElemekMegoszlasa,
   'viz-dipolus': VizDipolus,
+  'aldoz-ketoz': AldozKetoz,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,
@@ -109,6 +111,12 @@ const ChapterView = () => {
               ))}
             </div>
           ))}
+
+          {levelContent.extraDiagramId && (
+            <div className="mb-8 p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
+              <ChapterDiagram diagramId={levelContent.extraDiagramId} />
+            </div>
+          )}
 
           {levelContent.keyTerms && (
             <div className="mt-8 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">

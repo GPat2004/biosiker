@@ -387,64 +387,80 @@ export const CURRICULUM = [
         title: 'Szénhidrátok',
         order: 4,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 26,
         diagramId: 'maltoz-kepzodes',
         content: {
           kozep: {
-            intro: 'A szénhidrátok az élő szervezetek fontos energiaforrásai és építőanyagai - tulajdonságaik szorosan összefüggenek szerkezetükkel.',
+            intro: 'A szénhidrátok adják a bioszféra szerves anyagainak fő tömegét - energiaforrásként, tartaléktápanyagként, vázanyagként és a nukleinsavak építőköveiként egyaránt nélkülözhetetlenek.',
             sections: [
               {
-                heading: 'Egyszerű cukrok (monoszacharidok)',
+                heading: 'Általános jellemzés',
                 paragraphs: [
-                  'A glükóz (szőlőcukor) a legfontosabb sejten belüli energiaforrás, összegképlete C₆H₁₂O₆. A sejtek szinte minden energiaigényes folyamathoz elsőként a glükózt használják fel.',
-                  'A ribóz és a dezoxiribóz szintén öt szénatomos egyszerű cukrok, amelyek nem energiaforrásként, hanem építőanyagként fontosak: a ribóz az RNS, a dezoxiribóz a DNS gerincét adja.',
-                  'A glükóz, a ribóz és a dezoxiribóz molekulavázát fel kell tudni ismerni ábráról.',
+                  'A szénhidrátok általános képlete Cₙ(H₂O)ₘ - ez a képlet adta a nevüket is, hiszen régen úgy gondolták, a szén és a víz vegyületei. Kémiailag a szénhidrátok olyan molekulák, amelyek több hidroxilcsoportot (-OH) és egy karbonilcsoportot (C=O) tartalmaznak.',
+                  'Biológiai jelentőségük sokrétű: a glükóz a sejtek elsődleges energiaforrása, a keményítő és a glikogén tartaléktápanyagok, a cellulóz vázanyagként ad szilárdságot a növényi sejtfalnak, a ribóz és a dezoxiribóz pedig a nukleinsavak (RNS, DNS) építőkövei.',
+                ],
+              },
+              {
+                heading: 'Egyszerű cukrok mérete szerint',
+                paragraphs: [
+                  'A triózok (3 szénatomos cukrok, pl. a glicerin-aldehid) az anyagcsere fontos köztes termékei (intermedierjei); a sejtekben jellemzően foszforsavval alkotott vegyülettel (észterrel) fordulnak elő, ami megakadályozza, hogy egyszerűen átjussanak a sejthártyán, így a sejt "csapdába ejtve" tudja őket energiaforrásként hasznosítani.',
+                  'A pentózok (5 szénatomos cukrok) közül a legfontosabbak a ribóz és a dezoxiribóz - a kettő között mindössze egyetlen oxigénatom a különbség, a dezoxiribóz 2-es szénatomjához oxigén helyett csak hidrogén kapcsolódik. A ribóz az RNS, a dezoxiribóz a DNS építőköve.',
+                  'A hexózok (6 szénatomos cukrok) közé tartozik a glükóz (szőlőcukor) - a sejtek elsődleges, közvetlen energiaforrása, és a vérben is ilyen formában szállítódik a szénhidrát -, a fruktóz (gyümölcscukor) - a legédesebb ízű egyszerű cukor -, valamint a galaktóz.',
                 ],
               },
               {
                 heading: 'Diszacharidok',
                 paragraphs: [
-                  'A maltóz két glükózegységből épül fel kondenzációval (vízkilépéssel) - ez a folyamat fordítottja a hidrolízisnek, amikor vízfelvétellel bomlik szét a kötés.',
-                  'A laktóz (tejcukor) és a szacharóz (répacukor, nádcukor) mindennapi táplálkozásunk fontos szénhidrátjai. A laktóz glükózból és galaktózból, a szacharóz glükózból és fruktózból épül fel.',
+                  'A diszacharidok két monoszacharid kondenzációjával (vízkilépéssel) jönnek létre; a köztük kialakuló kötést glikozidos kötésnek nevezzük.',
+                  'A maltóz (malátacukor) két glükózegységből épül fel - a keményítő bomlásakor keletkezik. A laktóz (tejcukor) galaktózból és glükózból, a szacharóz (répacukor, nádcukor) pedig glükózból és fruktózból épül fel - ez utóbbi a legfontosabb természetes édesítőszerünk.',
                 ],
               },
               {
                 heading: 'Poliszacharidok',
                 paragraphs: [
-                  'A keményítő, a glikogén és a cellulóz mind glükózegységekből épülnek fel, mégis íz, vízoldhatóság és emészthetőség szempontjából jelentősen különböznek egymástól - ez a bennük lévő glükózegységek kapcsolódási módjából adódik.',
-                  'A keményítő a növények, a glikogén az állatok (és az ember) tartalék szénhidrátja - a glikogén jellemzően a májban és az izmokban raktározódik.',
-                  'A cellulóz a növényi sejtfal fő alkotórésze; az emberi emésztőrendszer nem képes lebontani, mert hiányoznak a szükséges enzimek - ez adja a "rost" táplálkozás-élettani jelentőségét.',
-                  'A poliszacharidok általános képlete (C₆H₁₀O₅)ₙ.',
+                  'A poliszacharidok monoszacharidokból kondenzációval felépülő óriásmolekulák, amelyekben akár több ezer egyszerű cukoregység is kapcsolódhat egymáshoz. Általános képletük (C₆H₁₀O₅)ₙ.',
+                  'A keményítő a növények tartalék szénhidrátja, amely a fotoszintézis eredményeként keletkezik. A glikogén ugyanezt a szerepet tölti be az állatoknál (és az embernél is) - jellemzően a májban és az izmokban raktározódik.',
+                  'A cellulóz a növényi sejtfal fő szilárdító anyaga - a Földön előforduló biomassza tömegének nagy részét ez adja. Az emberi emésztőrendszer nem képes lebontani, mert hiányoznak a szükséges enzimek - ez adja a táplálkozási "rost" jelentőségét.',
+                  'A kitin egy nitrogéntartalmú poliszacharid, amely az ízeltlábúak külső vázának (kutikulájának), valamint a gombák sejtfalának szilárdító anyaga.',
                 ],
               },
               {
                 heading: 'Kimutatás és lebontás a gyakorlatban',
                 paragraphs: [
-                  'A keményítő jóddal (Lugol-oldattal) mutatható ki: a keményítő-jód komplex jellegzetes kék-lila elszíneződést ad. A keményítőszemcsék mikroszkópban is jól felismerhetők jellegzetes rétegzett szerkezetükről.',
-                  'A sokáig rágott kenyérhéj azért válik édessé, mert a nyál amiláz enzime elkezdi bontani a keményítőt kisebb egységekre - végül maltózra, majd glükózra -, amelyek már édes ízűek. Ez a folyamat (hidrolízis) a maltóz kondenzációval történő képződésének fordítottja - ezt mutatja az ábra is.',
+                  'A keményítő jóddal (Lugol-oldattal) mutatható ki: az apoláris jódmolekulák "beépülnek" a keményítő spirálisan feltekeredett szerkezetébe, ahonnan kiszorítják a vízmolekulákat - ebben az apoláris környezetben a jód jellegzetes kék-lila színt vesz fel. Melegítés hatására a hőmozgás miatt a jód kilép a spirálból, a szín elhalványodik, majd lehűléskor a szín visszatér.',
+                  'A sokáig rágott kenyérhéj azért válik édessé, mert a nyál amiláz enzime elkezdi bontani a keményítőt - a folyamat végül maltózra, majd glükózra bontja azt, amelyek már édes ízűek. Ez a lebontás (hidrolízis) a maltóz kondenzációval történő képződésének (lásd az ábrát) pontos fordítottja.',
                 ],
               },
             ],
-            keyTerms: ['glükóz', 'ribóz', 'dezoxiribóz', 'poliszacharid', 'diszacharid', 'Lugol-próba', 'maltóz', 'keményítő', 'glikogén', 'cellulóz'],
+            keyTerms: ['trióz', 'pentóz', 'hexóz', 'glükóz', 'fruktóz', 'ribóz', 'dezoxiribóz', 'diszacharid', 'glikozidos kötés', 'maltóz', 'keményítő', 'glikogén', 'cellulóz', 'kitin', 'Lugol-próba'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a cukrok pontos molekulaszerkezetét (α- és β-forma) és ennek gyakorlati következményeit is ismerni kell.',
+            intro: 'Emelt szinten a szénhidrátok kémiai osztályozását (funkciós csoport szerint), valamint a keményítő belső szerkezetét is részletesen ismerni kell.',
+            diagramId: 'aldoz-ketoz',
             sections: [
               {
-                heading: 'Az α- és β-glükóz',
+                heading: 'Aldózok és ketózok',
                 paragraphs: [
-                  'A glükóz két izomer (α- és β-) formában fordulhat elő, amelyek a gyűrűs szerkezet 1-es szénatomján lévő -OH csoport térállásában térnek el egymástól.',
-                  'Ez a látszólag apró különbség meghatározza, hogy a belőlük felépülő poliszacharid emészthető-e az emberi szervezet számára: az α-glükózból felépülő keményítőt az emberi emésztőenzimek le tudják bontani, míg a β-glükózból felépülő cellulózt nem - pedig mindkettő "csak" glükózláncokból áll.',
+                  'A monoszacharidok kémiailag polihidroxi-aldehidek vagy polihidroxi-ketonok - vagyis a több hidroxilcsoport mellett vagy egy aldehid-, vagy egy ketocsoportot tartalmaznak. Ez alapján két nagy csoportba sorolhatók.',
+                  'Az aldózoknál a karbonilcsoport a lánc végén helyezkedik el (aldehidcsoportot alkotva) - ilyen például a glükóz. A ketózoknál a karbonilcsoport a lánc belsejében, jellemzően a második szénatomon található (ketocsoportot alkotva) - ilyen például a fruktóz.',
+              ],
+              },
+              {
+                heading: 'Redukáló és nem redukáló diszacharidok',
+                paragraphs: [
+                  'A diszacharidok aszerint is csoportosíthatók, hogy marad-e bennük szabad, ún. glikozidos -OH csoport. Ha igen, a molekula vizes oldatban képes felnyílni, és kialakulhat benne egy szabad aldehidcsoport - az ilyen diszacharidokat redukáló diszacharidoknak nevezzük (pl. a maltóz és a laktóz).',
+                  'A szacharóz esetében mindkét monoszacharid a glikozidos -OH csoportjával vesz részt a kötésben, ezért nem marad szabad, felnyílni képes rész - ezt nem redukáló diszachariddá teszi.',
                 ],
               },
               {
-                heading: 'Molekulaszerkezetek',
+                heading: 'A keményítő belső szerkezete: amilóz és amilopektin',
                 paragraphs: [
-                  'A ribóz, a dezoxiribóz, az amilóz (a keményítő egyik alkotórésze) és a cellulóz molekulájának felépítését ábráról fel kell ismerni.',
+                  'A keményítő valójában két, szerkezetében eltérő poliszacharid keveréke. Az amilóz elágazás nélküli, spirálisan feltekeredett glükózlánc, amelyet hidrogénkötések stabilizálnak - ez teszi lehetővé, hogy a jódmolekulák beépüljenek a spirál belsejébe (lásd a Lugol-próbát).',
+                  'Az amilopektin ezzel szemben erősen elágazó szerkezetű, és a keményítőszemcsék felszínén helyezkedik el. Ez a szerkezeti különbség magyarázza, hogy a keményítő hideg vízben nem, meleg vízben viszont részlegesen (kolloidálisan) oldódik.',
                 ],
               },
             ],
-            keyTerms: ['α-glükóz', 'β-glükóz', 'amilóz'],
+            keyTerms: ['aldóz', 'ketóz', 'karbonilcsoport', 'glikozidos -OH csoport', 'redukáló diszacharid', 'amilopektin'],
           },
         },
       },
@@ -1114,5 +1130,6 @@ export const getLevelContent = (chapter, level) => {
     intro: kozep.intro,
     sections: [...(kozep.sections || []), ...(extra.sections || [])],
     keyTerms: [...new Set([...(kozep.keyTerms || []), ...(extra.keyTerms || [])])],
+    extraDiagramId: extra.diagramId,
   };
 };
