@@ -387,37 +387,59 @@ export const CURRICULUM = [
         title: 'Szénhidrátok',
         order: 4,
         isFree: false,
-        estimatedMinutes: 18,
+        estimatedMinutes: 20,
         diagramId: 'maltoz-kepzodes',
         content: {
           kozep: {
-            intro: 'A szénhidrátok az élő szervezetek fontos energiaforrásai és építőanyagai, tulajdonságaik szorosan összefüggenek szerkezetükkel.',
+            intro: 'A szénhidrátok az élő szervezetek fontos energiaforrásai és építőanyagai - tulajdonságaik szorosan összefüggenek szerkezetükkel.',
             sections: [
               {
-                heading: 'Egyszerű és összetett szénhidrátok',
+                heading: 'Egyszerű cukrok (monoszacharidok)',
                 paragraphs: [
-                  'A szőlőcukor (glükóz), a keményítő, a glikogén és a cellulóz íz, vízoldhatóság és emészthetőség szempontjából jelentősen különböznek egymástól, annak ellenére, hogy mindegyik glükózegységekből épül fel.',
-                  'A glükóz, a ribóz és a dezoxiribóz molekulavázát fel kell tudni ismerni. A glükóz összegképlete C₆H₁₂O₆, a poliszacharidok (pl. keményítő, cellulóz) általános képlete (C₆H₁₀O₅)ₙ.',
-                  'A laktóz (tejcukor) és a szacharóz (répacukor, nádcukor) mindennapi táplálkozásunk fontos szénhidrátjai - mindkettő diszacharid, azaz két egyszerű cukoregységből épül fel.',
+                  'A glükóz (szőlőcukor) a legfontosabb sejten belüli energiaforrás, összegképlete C₆H₁₂O₆. A sejtek szinte minden energiaigényes folyamathoz elsőként a glükózt használják fel.',
+                  'A ribóz és a dezoxiribóz szintén öt szénatomos egyszerű cukrok, amelyek nem energiaforrásként, hanem építőanyagként fontosak: a ribóz az RNS, a dezoxiribóz a DNS gerincét adja.',
+                  'A glükóz, a ribóz és a dezoxiribóz molekulavázát fel kell tudni ismerni ábráról.',
                 ],
               },
               {
-                heading: 'Kimutatás és lebontás',
+                heading: 'Diszacharidok',
+                paragraphs: [
+                  'A maltóz két glükózegységből épül fel kondenzációval (vízkilépéssel) - ez a folyamat fordítottja a hidrolízisnek, amikor vízfelvétellel bomlik szét a kötés.',
+                  'A laktóz (tejcukor) és a szacharóz (répacukor, nádcukor) mindennapi táplálkozásunk fontos szénhidrátjai. A laktóz glükózból és galaktózból, a szacharóz glükózból és fruktózból épül fel.',
+                ],
+              },
+              {
+                heading: 'Poliszacharidok',
+                paragraphs: [
+                  'A keményítő, a glikogén és a cellulóz mind glükózegységekből épülnek fel, mégis íz, vízoldhatóság és emészthetőség szempontjából jelentősen különböznek egymástól - ez a bennük lévő glükózegységek kapcsolódási módjából adódik.',
+                  'A keményítő a növények, a glikogén az állatok (és az ember) tartalék szénhidrátja - a glikogén jellemzően a májban és az izmokban raktározódik.',
+                  'A cellulóz a növényi sejtfal fő alkotórésze; az emberi emésztőrendszer nem képes lebontani, mert hiányoznak a szükséges enzimek - ez adja a "rost" táplálkozás-élettani jelentőségét.',
+                  'A poliszacharidok általános képlete (C₆H₁₀O₅)ₙ.',
+                ],
+              },
+              {
+                heading: 'Kimutatás és lebontás a gyakorlatban',
                 paragraphs: [
                   'A keményítő jóddal (Lugol-oldattal) mutatható ki: a keményítő-jód komplex jellegzetes kék-lila elszíneződést ad. A keményítőszemcsék mikroszkópban is jól felismerhetők jellegzetes rétegzett szerkezetükről.',
-                  'A sokáig rágott kenyérhéj azért válik édessé, mert a nyál amiláz enzime elkezdi bontani a keményítőt kisebb egységekre - végül maltózra, majd glükózra -, amelyek már édes ízűek. Ez a folyamat (hidrolízis) a maltóz kondenzációval történő képződésének fordítottja.',
+                  'A sokáig rágott kenyérhéj azért válik édessé, mert a nyál amiláz enzime elkezdi bontani a keményítőt kisebb egységekre - végül maltózra, majd glükózra -, amelyek már édes ízűek. Ez a folyamat (hidrolízis) a maltóz kondenzációval történő képződésének fordítottja - ezt mutatja az ábra is.',
                 ],
               },
             ],
-            keyTerms: ['glükóz', 'poliszacharid', 'diszacharid', 'Lugol-próba', 'maltóz'],
+            keyTerms: ['glükóz', 'ribóz', 'dezoxiribóz', 'poliszacharid', 'diszacharid', 'Lugol-próba', 'maltóz', 'keményítő', 'glikogén', 'cellulóz'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a cukrok pontos molekulaszerkezetét (α- és β-forma) is ismerni kell.',
+            intro: 'Emelt szinten a cukrok pontos molekulaszerkezetét (α- és β-forma) és ennek gyakorlati következményeit is ismerni kell.',
             sections: [
               {
-                heading: 'Molekulaszerkezet',
+                heading: 'Az α- és β-glükóz',
                 paragraphs: [
-                  'A glükóz két izomer (α- és β-) formában fordulhat elő, amelyek a gyűrűs szerkezet 1-es szénatomján lévő -OH csoport térállásában térnek el egymástól - ez a különbség meghatározza, hogy a belőlük felépülő poliszacharid (pl. keményítő vagy cellulóz) emészthető-e az emberi szervezet számára.',
+                  'A glükóz két izomer (α- és β-) formában fordulhat elő, amelyek a gyűrűs szerkezet 1-es szénatomján lévő -OH csoport térállásában térnek el egymástól.',
+                  'Ez a látszólag apró különbség meghatározza, hogy a belőlük felépülő poliszacharid emészthető-e az emberi szervezet számára: az α-glükózból felépülő keményítőt az emberi emésztőenzimek le tudják bontani, míg a β-glükózból felépülő cellulózt nem - pedig mindkettő "csak" glükózláncokból áll.',
+                ],
+              },
+              {
+                heading: 'Molekulaszerkezetek',
+                paragraphs: [
                   'A ribóz, a dezoxiribóz, az amilóz (a keményítő egyik alkotórésze) és a cellulóz molekulájának felépítését ábráról fel kell ismerni.',
                 ],
               },
