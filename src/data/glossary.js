@@ -94,6 +94,12 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 7-9. fejezet: Az anyagcsere folyamatai
+  'kemoheterotróf': 'Olyan szervezet, amely kémiai energiát hasznosít és szerves szénforrásra szorul - ide tartozik a legtöbb állat, gomba és baktérium.',
+  'fotoheterotróf': 'Olyan szervezet, amely fényenergiát hasznosít, de szerves szénforrásra szorul - néhány különleges baktériumcsoportra jellemző, ritka kombináció.',
+  'tejsavas erjedés': 'Oxigénhiányos körülmények között, jellemzően az izomsejtekben zajló erjedéstípus, amelynek végterméke a tejsav.',
+  'alkoholos erjedés': 'Élesztőgombákra jellemző erjedéstípus, amely során a cukor etil-alkohollá és szén-dioxiddá bomlik.',
+
   // 2. modul, 6. fejezet: Nukleinsavak, nukleotidok
   'rns': 'Ribonukleinsav; ribózt tartalmazó nukleinsav, amely jellemzően a genetikai információ felhasználásában (pl. fehérjeszintézisben) vesz részt.',
   'purin': 'Kétgyűrűs nitrogéntartalmú bázis-típus (adenin, guanin).',

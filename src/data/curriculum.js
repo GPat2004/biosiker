@@ -594,33 +594,48 @@ export const CURRICULUM = [
         title: 'Felépítés és lebontás kapcsolata',
         order: 7,
         isFree: false,
-        estimatedMinutes: 12,
+        estimatedMinutes: 16,
         content: {
           kozep: {
-            intro: 'Az élő szervezetek anyagcseréje felépítő (asszimilációs) és lebontó (disszimilációs) folyamatokból áll, amelyek szorosan összekapcsolódnak.',
+            intro: 'Az élő szervezetek anyagcseréje felépítő (asszimilációs) és lebontó (disszimilációs) folyamatokból áll, amelyek szorosan összekapcsolódnak - a kettő együtt tartja fenn az élő rendszerek működését.',
             sections: [
               {
                 heading: 'Energia- és szénforrás szerinti csoportosítás',
                 paragraphs: [
                   'Energiaforrás szerint fototróf (fényenergiát hasznosító) és kemotróf (kémiai energiát hasznosító) szervezeteket különböztetünk meg; szénforrás szerint autotróf (szervetlen szénforrást használó) és heterotróf (szerves szénforrásra szoruló) élőlényeket.',
-                  'Alapvető fizikai törvényszerűség, hogy minden anyagátépítés energiaveszteséggel jár - ezért nincs 100%-osan hatékony biológiai folyamat.',
+                  'Alapvető fizikai törvényszerűség, hogy minden anyagátépítés energiaveszteséggel jár - ezért nincs 100%-osan hatékony biológiai folyamat, a felszabaduló energia egy része mindig hő formájában távozik.',
+                ],
+              },
+              {
+                heading: 'Kondenzáció és hidrolízis',
+                paragraphs: [
+                  'A makromolekulák alapegységei kondenzációval (vízkilépéssel) kapcsolódnak össze - ilyen folyamat például, amikor két glükózból maltóz épül fel, vagy amikor aminosavakból peptidkötéssel fehérjelánc jön létre.',
+                  'A hidrolízis (vízfelvétellel járó bontás) a kondenzáció fordítottja - ez zajlik például az emésztés során, amikor a nagy tápanyagmolekulák felszívható, kisebb egységekre bomlanak.',
+                ],
+              },
+              {
+                heading: 'Endocitózis és exocitózis',
+                paragraphs: [
+                  'Az endocitózis és az exocitózis folyamata teszi lehetővé nagyobb anyagmennyiségek sejtbe juttatását, illetve onnan történő kijuttatását - mindkettő a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul, és fontos szerepük van a felépítő és lebontó anyagcsere-folyamatok sejten belüli összehangolásában is.',
                 ],
               },
             ],
-            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf'],
+            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'hidrolízis', 'kondenzáció', 'exocitózis'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a molekulák kapcsolódásának és a sejten belüli/kívüli anyagszállításnak a részletei is ismerendők.',
+            intro: 'Emelt szinten hasznos a fenti csoportosítási szempontokat kombinálva alkalmazni: egy élőlény egyszerre jellemezhető energiaforrás és szénforrás szerint is.',
             sections: [
               {
-                heading: 'Hidrolízis, kondenzáció, sejtszállítás',
+                heading: 'A négyféle anyagcsere-típus',
                 paragraphs: [
-                  'A makromolekulák alapegységei kondenzációval (vízkilépéssel) kapcsolódnak össze, hidrolízissel (vízfelvétellel) bomlanak szét.',
-                  'Az endocitózis és az exocitózis folyamata teszi lehetővé nagyobb anyagmennyiségek sejtbe juttatását, illetve onnan történő kijuttatását.',
+                  'A fotoautotróf szervezetek (pl. a növények, algák, cianobaktériumok) fényenergiát használnak, és szervetlen szénforrásból (CO₂-ból) építik fel szerves anyagaikat.',
+                  'A kemoautotróf szervezetek (pl. egyes talajbaktériumok, mint a nitrifikáló baktériumok) kémiai energiát hasznosítanak, de szintén szervetlen szénforrásból építkeznek.',
+                  'A kemoheterotróf szervezetek (ide tartozik a legtöbb állat, gomba és baktérium, köztük az ember is) kémiai energiát nyernek, és szerves szénforrásra szorulnak.',
+                  'A fotoheterotróf szervezetek (néhány különleges baktériumcsoport) fényenergiát hasznosítanak, de a szénforrásuk szerves eredetű - ez a legritkább kombináció a természetben.',
                 ],
               },
             ],
-            keyTerms: ['hidrolízis', 'kondenzáció', 'exocitózis'],
+            keyTerms: ['fotoautotróf', 'kemoautotróf', 'kemoheterotróf', 'fotoheterotróf'],
           },
         },
       },
@@ -629,29 +644,44 @@ export const CURRICULUM = [
         title: 'Felépítő folyamatok: a fotoszintézis',
         order: 8,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 20,
+        diagramId: 'fotoszintezis-folyamatabra',
         content: {
           kozep: {
-            intro: 'A fotoszintézis a legfontosabb felépítő (asszimilációs) folyamat, amely a földi élet energiaellátásának alapja.',
+            intro: 'A fotoszintézis a legfontosabb felépítő (asszimilációs) folyamat, amely a földi élet energiaellátásának alapja - ez teszi lehetővé, hogy a Napból érkező fényenergia a táplálékláncokon keresztül eljusson szinte minden élőlényhez.',
             sections: [
+              {
+                heading: 'Hely és jelentőség',
+                paragraphs: [
+                  'A fotoszintézis a növények, algák és egyes baktériumok színtestjeiben (kloroplasztiszaiban) zajlik.',
+                  'A folyamat kettős jelentőségű: egyrészt ez a bioszféra elsődleges energiaforrása (szinte minden táplálékhálózat ezen a felépítő folyamaton alapul), másrészt ez tartja fenn a légkör oxigénkészletét is.',
+                ],
+              },
               {
                 heading: 'Fényszakasz és sötétszakasz',
                 paragraphs: [
                   'A fényszakaszban a víz fényenergia hatására bomlik, molekuláris oxigén keletkezik, a hidrogén szállítómolekulára kerül, és ATP képződik.',
-                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, aminek eredményeként glükóz, majd más vegyületek keletkeznek.',
-                  'A fotoszintézis egyszerűsített egyenlete: szén-dioxid és víz fényenergia jelenlétében glükózzá és oxigénné alakul.',
+                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, aminek eredményeként glükóz, majd más vegyületek keletkeznek. Ez a szakasz - a nevével ellentétben - nem feltétlenül sötétben zajlik, csak nincs közvetlen fényigénye, mert a fényszakaszból kapja a szükséges ATP-t és hidrogént.',
+                  'A fotoszintézis egyszerűsített egyenlete: szén-dioxid és víz fényenergia jelenlétében glükózzá és oxigénné alakul (lásd az ábrát).',
                 ],
               },
             ],
             keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a fotoszintetikus színanyagok típusait és molekulavázát is ismerni kell.',
+            intro: 'Emelt szinten a fotoszintetikus színanyagok típusait és molekulavázát, valamint az ATP-termelés hátterét is ismerni kell.',
             sections: [
               {
                 heading: 'Fotoszintetikus színanyagok',
                 paragraphs: [
                   'A fotoszintetikus színanyagok két fő típusa a klorofillok és a karotinoidok - mindkettő jellegzetes molekulavázzal rendelkezik, amelyet ábráról fel kell tudni ismerni, és mindkettő szerepet játszik a fényenergia elnyelésében.',
+                  'A klorofill elsősorban a kék és a vörös fényt nyeli el, a zöld fényt visszaveri - ez adja a növények zöld színét.',
+                ],
+              },
+              {
+                heading: 'Az ATP keletkezésének háttere',
+                paragraphs: [
+                  'A fényszakaszban keletkező ATP hátterében az áll, hogy a víz bomlásakor felszabaduló elektronok egy elektronszállító láncon haladnak végig, aminek eredményeként a kloroplasztisz membránján át egy hidrogénion-grádiens (koncentráció-különbség) alakul ki - ennek a grádiensnek a "kiegyenlítődése" hajtja meg az ATP-t termelő enzimet.',
                 ],
               },
             ],
@@ -664,30 +694,48 @@ export const CURRICULUM = [
         title: 'Lebontó folyamatok',
         order: 9,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 22,
+        diagramId: 'sejtlegzes-folyamatabra',
         content: {
           kozep: {
-            intro: 'A lebontó (disszimilációs) folyamatok során a szerves molekulák lebontásával energia szabadul fel, amelyet a sejt ATP formájában tárol.',
+            intro: 'A lebontó (disszimilációs) folyamatok során a szerves molekulák lebontásával energia szabadul fel, amelyet a sejt ATP formájában tárol - ez a sejtlégzés lényege.',
             sections: [
               {
-                heading: 'Glikolízis és végoxidáció',
+                heading: 'Glikolízis',
                 paragraphs: [
-                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat.',
-                  'A biológiai oxidáció és az erjedés összehasonlítható biológiai funkciójuk, sejten belüli helyszínük és energiamérlegük alapján - a biológiai oxidáció oxigént igényel és lényegesen több ATP-t termel, mint az erjedés.',
-                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik.',
+                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat, amely során egy glükózmolekulából két piruvátmolekula keletkezik, miközben nettó 2 ATP szabadul fel.',
+                ],
+              },
+              {
+                heading: 'Biológiai oxidáció és erjedés',
+                paragraphs: [
+                  'A biológiai oxidáció és az erjedés összehasonlítható biológiai funkciójuk, sejten belüli helyszínük és energiamérlegük alapján - a biológiai oxidáció oxigént igényel, a mitokondriumban zajlik, és lényegesen több ATP-t termel (glükózonként összesen mintegy 30 vagy annál is több ATP-t), mint az erjedés, amely oxigén hiányában, a citoplazmában zajlik, és csak a glikolízis 2 ATP-jét "hasznosítja".',
+                  'Erjedés akkor zajlik, ha a sejt oxigénhez nem jut hozzá - például erős izommunka közben tejsavas erjedés indul be az izomsejtekben (ilyenkor keletkezik a tejsav, ami az izomfáradtság érzetét is okozhatja), míg az élesztőgombák alkoholos erjedéssel bontják a cukrot etil-alkohollá és szén-dioxiddá.',
+                ],
+              },
+              {
+                heading: 'Végoxidáció',
+                paragraphs: [
+                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik - ez a lépés a mitokondriumban zajlik, és itt keletkezik a glükóz lebontása során felszabaduló energia nagy része.',
                 ],
               },
             ],
-            keyTerms: ['glikolízis', 'biológiai oxidáció', 'erjedés', 'végoxidáció'],
+            keyTerms: ['glikolízis', 'biológiai oxidáció', 'erjedés', 'tejsavas erjedés', 'alkoholos erjedés', 'végoxidáció'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a citrátkör (citromsavciklus) és az aminosav-lebontás sorsa is ismerendő.',
+            intro: 'Emelt szinten a citrátkör (citromsavciklus) lépéseit és az aminosav-lebontás sorsát is ismerni kell.',
             sections: [
               {
                 heading: 'A citrátkör',
                 paragraphs: [
-                  'A citrátkör a mitokondriumban zajlik: a szerves molekulák szénvázából szén-dioxid keletkezik, a felszabaduló hidrogén szállítómolekulára kerül.',
-                  'Az aminosavak lebomlásakor és átalakításakor a nitrogén ammónia, illetve karbamid formájában kiválasztódik, vagy más aminosavba épül be.',
+                  'A citrátkör a mitokondrium mátrixában zajlik: a szerves molekulák szénvázából szén-dioxid keletkezik, a felszabaduló hidrogén szállítómolekulára kerül.',
+                  'A folyamat ciklikus jellegű: minden "kör" végén regenerálódik az a kiindulási molekula, amelyhez egy újabb belépő anyag kapcsolódhat - innen a "citromsavciklus" elnevezés.',
+                ],
+              },
+              {
+                heading: 'Az aminosavak lebontásának sorsa',
+                paragraphs: [
+                  'Az aminosavak lebomlásakor és átalakításakor a nitrogén ammónia, illetve karbamid formájában kiválasztódik, vagy más aminosavba épül be - az aminosav szénváza pedig bekapcsolódhat a citromsavciklusba, így az energiatermelésbe is.',
                 ],
               },
             ],
