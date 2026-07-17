@@ -469,36 +469,54 @@ export const CURRICULUM = [
         title: 'Fehérjék',
         order: 5,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 24,
+        diagramId: 'peptidkotes-kialakulasa',
         content: {
           kozep: {
-            intro: 'A fehérjék az élő szervezetek egyik legsokoldalúbb molekulacsoportját alkotják - szinte minden életfolyamatban részt vesznek.',
+            intro: 'A fehérjék az élő szervezetek egyik legsokoldalúbb molekulacsoportját alkotják - alig van olyan életfolyamat, amelyben ne vennének részt.',
             sections: [
               {
                 heading: 'Szerkezet és denaturáció',
                 paragraphs: [
-                  'A fehérjék általános szerkezeti alapegysége a peptidlánc, amely aminosavakból épül fel.',
-                  'A fehérjék térszerkezete hő, nehézfémsók vagy mechanikai hatás következtében megváltozhat (denaturálódhat) - ez figyelhető meg például a tojás vagy a hús sütésekor, amikor a fehérje megszilárdul és megváltozik a színe, állaga.',
+                  'A fehérjék általános szerkezeti alapegysége a peptidlánc, amely aminosavakból épül fel - az aminosavak közötti kapcsolódást peptidkötésnek nevezzük, amely kondenzációval (vízkilépéssel) alakul ki.',
+                  'A fehérjék térszerkezete hő, nehézfémsók vagy mechanikai hatás következtében megváltozhat (denaturálódhat) - ez a folyamat jellemzően visszafordíthatatlan. Ez figyelhető meg például a tojás vagy a hús sütésekor, amikor a fehérje megszilárdul és megváltozik a színe, állaga.',
+                  'A denaturációt kísérletileg is be lehet mutatni: hő hatására, nehézfémsók (pl. ólom- vagy higanysók) hozzáadásával, vagy mechanikai hatásra (pl. tojásfehérje felverésével) is kicsapódnak a fehérjék.',
                 ],
               },
               {
-                heading: 'Biológiai szerep',
+                heading: 'A fehérjék biológiai szerepe',
                 paragraphs: [
-                  'A fehérjék rendkívül sokféle biológiai szerepet töltenek be: enzimekként katalizálják a reakciókat, összehúzékony fehérjerendszerekként (aktin, miozin) mozgást hoznak létre, vázanyagként (pl. kollagén) mechanikai tartást adnak, receptorként ingereket érzékelnek, szállítófehérjeként anyagokat (pl. oxigént a hemoglobin) szállítanak, tartalék tápanyagként raktározódnak, antitestként a védekezésben vesznek részt, jelölő fehérjeként a sejtfelismerésben szerepelnek, részt vesznek a véralvadásban, és szabályozó fehérjeként (pl. egyes hormonok) is működnek.',
-                  'Az eszenciális aminosavakat a szervezet nem képes előállítani, ezért ezeket kizárólag a táplálékkal vehetjük fel - hiányuk súlyos egészségügyi következményekkel járhat.',
+                  'A fehérjék rendkívül sokféle biológiai szerepet töltenek be. Enzimekként katalizálják a kémiai reakciókat; összehúzékony fehérjerendszerekként (aktin, miozin) mozgást hoznak létre az izmokban; vázanyagként (pl. a kollagén) mechanikai tartást adnak a szöveteknek.',
+                  'Receptorként ingereket érzékelnek (pl. a sejtfelszíni receptorok), szállítófehérjeként anyagokat mozgatnak (pl. a hemoglobin oxigént szállít), tartalék tápanyagként raktározódnak (pl. a tojásfehérje), antitestként a szervezet védekezésében vesznek részt.',
+                  'Jelölő fehérjeként a sejtek egymás felismerésében segítenek, részt vesznek a véralvadásban (pl. a fibrinogén), és szabályozó fehérjeként is működnek - számos hormon (pl. az inzulin) maga is fehérje természetű.',
+                ],
+              },
+              {
+                heading: 'Eszenciális aminosavak',
+                paragraphs: [
+                  'Az eszenciális aminosavakat a szervezet nem képes előállítani, ezért ezeket kizárólag a táplálékkal vehetjük fel - hiányuk súlyos egészségügyi következményekkel (pl. növekedési zavarral) járhat.',
                 ],
               },
             ],
-            keyTerms: ['peptidlánc', 'denaturáció', 'eszenciális aminosav', 'antitest'],
+            keyTerms: ['peptidlánc', 'peptidkötés', 'denaturáció', 'eszenciális aminosav', 'antitest'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a fehérjék négy szerkezeti szintjét és a stresszfehérjék szerepét is ismerni kell.',
+            intro: 'Emelt szinten az aminosavak pontos szerkezetét és a fehérjék négy szerkezeti szintjét is ismerni kell.',
             sections: [
               {
-                heading: 'Az aminosavak és a fehérjeszerkezet szintjei',
+                heading: 'Az aminosavak felépítése',
                 paragraphs: [
-                  'Az aminosavak általános képlete közös vázat mutat, az oldalláncok (R-csoportok) közötti kölcsönhatások (pl. hidrogénkötés, ionos kölcsönhatás, kovalens kötés) alakítják ki a fehérjék jellegzetes térszerkezetét.',
-                  'A fehérjéknek négy szerkezeti szintje van: az elsődleges szerkezet az aminosavak sorrendje (amit a peptidkötések tartanak össze), a másodlagos szerkezet jellegzetes térbeli mintázatokat (pl. hélix) alkot, a harmadlagos szerkezet a teljes lánc térbeli feltekeredése, a negyedleges szerkezet pedig több fehérjelánc együttes elrendeződése.',
+                  'Minden aminosav közös váza egy központi szénatomból, egy amino-csoportból (-NH₂), egy karboxil-csoportból (-COOH) és egy hidrogénatomból áll - az aminosavakat egymástól az úgynevezett oldallánc (R-csoport) különbözteti meg, amely aminosavtípusonként eltérő.',
+                  'Az oldalláncok közötti kölcsönhatások - hidrogénkötések, ionos kölcsönhatások, kéntartalmú aminosavak közötti diszulfidhidak, valamint a vízkerülő (hidrofób) oldalláncok egymáshoz rendeződése - alakítják ki a fehérje jellegzetes, egyedi térszerkezetét.',
+                ],
+              },
+              {
+                heading: 'A fehérjeszerkezet négy szintje',
+                paragraphs: [
+                  'Az elsődleges szerkezet a fehérjelánc aminosav-sorrendje, amelyet a peptidkötések tartanak össze.',
+                  'A másodlagos szerkezet a lánc egyes szakaszainak jellegzetes, ismétlődő térbeli mintázata - a leggyakoribb formák a csavarodott hélix és a lapos, ráncolt redő, amelyeket a lánc gerince mentén kialakuló hidrogénkötések stabilizálnak.',
+                  'A harmadlagos szerkezet a teljes lánc egyedi, térbeli feltekeredése, amelyet az oldalláncok közötti kölcsönhatások alakítanak ki.',
+                  'A negyedleges szerkezet több, önállóan is feltekeredett fehérjelánc együttes elrendeződése egyetlen funkcionális egységgé - például a hemoglobin négy alegységből épül fel.',
                 ],
               },
               {
@@ -508,7 +526,7 @@ export const CURRICULUM = [
                 ],
               },
             ],
-            keyTerms: ['elsődleges szerkezet', 'harmadlagos szerkezet', 'negyedleges szerkezet', 'stresszfehérje'],
+            keyTerms: ['oldallánc', 'diszulfidhíd', 'elsődleges szerkezet', 'másodlagos szerkezet', 'harmadlagos szerkezet', 'negyedleges szerkezet', 'stresszfehérje'],
           },
         },
       },

@@ -10,12 +10,14 @@ import MaltozKepzodes from '../components/diagrams/MaltozKepzodes';
 import ElemekMegoszlasa from '../components/diagrams/ElemekMegoszlasa';
 import VizDipolus from '../components/diagrams/VizDipolus';
 import AldozKetoz from '../components/diagrams/AldozKetoz';
+import PeptidkotesKialakulasa from '../components/diagrams/PeptidkotesKialakulasa';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
   'elemek-megoszlasa': ElemekMegoszlasa,
   'viz-dipolus': VizDipolus,
   'aldoz-ketoz': AldozKetoz,
+  'peptidkotes-kialakulasa': PeptidkotesKialakulasa,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,

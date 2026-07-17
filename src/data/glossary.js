@@ -94,6 +94,11 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 5. fejezet: Fehérjék
+  'oldallánc': 'Az aminosav egyedi, aminosavtípusonként eltérő része (R-csoport), amely meghatározza az adott aminosav tulajdonságait és a fehérje térszerkezetének kialakításában betöltött szerepét.',
+  'diszulfidhíd': 'Két kéntartalmú aminosav (cisztein) oldallánca között kialakuló kovalens kötés, amely stabilizálja a fehérjék térszerkezetét.',
+  'másodlagos szerkezet': 'A fehérjelánc egyes szakaszainak jellegzetes, ismétlődő térbeli mintázata (pl. hélix, redő), amelyet a lánc gerince menti hidrogénkötések stabilizálnak.',
+
   // 2. modul, 4. fejezet: Szénhidrátok (kémiai osztályozással bővítve)
   'trióz': 'Három szénatomos egyszerű cukor (pl. glicerin-aldehid), amely az anyagcsere fontos köztes terméke.',
   'pentóz': 'Öt szénatomos egyszerű cukor (pl. ribóz, dezoxiribóz), amely a nukleinsavak építőköve.',
