@@ -94,6 +94,12 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 6. fejezet: Nukleinsavak, nukleotidok
+  'rns': 'Ribonukleinsav; ribózt tartalmazó nukleinsav, amely jellemzően a genetikai információ felhasználásában (pl. fehérjeszintézisben) vesz részt.',
+  'purin': 'Kétgyűrűs nitrogéntartalmú bázis-típus (adenin, guanin).',
+  'pirimidin': 'Egygyűrűs nitrogéntartalmú bázis-típus (citozin, timin, illetve az RNS-ben az uracil).',
+  'chargaff-szabály': 'Megfigyelés, amely szerint a DNS-ben az adenin mennyisége megegyezik a timinével, a guaniné pedig a citozinéval - ez a bázispárosodás alapja.',
+
   // 2. modul, 5. fejezet: Fehérjék
   'oldallánc': 'Az aminosav egyedi, aminosavtípusonként eltérő része (R-csoport), amely meghatározza az adott aminosav tulajdonságait és a fehérje térszerkezetének kialakításában betöltött szerepét.',
   'diszulfidhíd': 'Két kéntartalmú aminosav (cisztein) oldallánca között kialakuló kovalens kötés, amely stabilizálja a fehérjék térszerkezetét.',

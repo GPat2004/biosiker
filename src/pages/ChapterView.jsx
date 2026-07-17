@@ -11,6 +11,8 @@ import ElemekMegoszlasa from '../components/diagrams/ElemekMegoszlasa';
 import VizDipolus from '../components/diagrams/VizDipolus';
 import AldozKetoz from '../components/diagrams/AldozKetoz';
 import PeptidkotesKialakulasa from '../components/diagrams/PeptidkotesKialakulasa';
+import NukleotidFelepitese from '../components/diagrams/NukleotidFelepitese';
+import DNSBazisparositas from '../components/diagrams/DNSBazisparositas';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
@@ -18,6 +20,8 @@ const DIAGRAMS = {
   'viz-dipolus': VizDipolus,
   'aldoz-ketoz': AldozKetoz,
   'peptidkotes-kialakulasa': PeptidkotesKialakulasa,
+  'nukleotid-felepitese': NukleotidFelepitese,
+  'dns-bazisparositas': DNSBazisparositas,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,

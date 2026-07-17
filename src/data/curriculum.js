@@ -535,29 +535,39 @@ export const CURRICULUM = [
         title: 'Nukleinsavak, nukleotidok',
         order: 6,
         isFree: false,
-        estimatedMinutes: 14,
+        estimatedMinutes: 20,
+        diagramId: 'nukleotid-felepitese',
         content: {
           kozep: {
-            intro: 'A nukleinsavak hordozzák és adják tovább az élőlények genetikai információját.',
+            intro: 'A nukleinsavak hordozzák és adják tovább az élőlények genetikai információját, a nukleotidok pedig - önállóan is - fontos szerepet töltenek be az anyagcserében.',
             sections: [
               {
-                heading: 'A DNS örökítő szerepe',
+                heading: 'A nukleotidok felépítése',
                 paragraphs: [
-                  'A DNS szerkezetében rejlik az információhordozó, önmegkettőződő (örökítő) szerep - ez teszi lehetővé, hogy a genetikai információ sejtosztódáskor pontosan átadódjon az utódsejteknek.',
                   'A nukleotidok és a nukleinsavak közös, általános szerkezeti váza cukor-bázis-foszfát egységekből épül fel: egy cukormolekulához egy nitrogéntartalmú bázis és egy foszfátcsoport kapcsolódik.',
+                  'Sok nukleotid egymáshoz kapcsolódva alkotja a nukleinsavláncot - a lánc "gerincét" a cukor- és foszfátegységek váltakozása adja, a bázisok pedig erről a gerincről állnak ki.',
                 ],
               },
               {
-                heading: 'Fontos nukleotidok',
+                heading: 'DNS és RNS - a két nukleinsav',
                 paragraphs: [
-                  'Nem minden nukleotid épül be nukleinsavba: a NAD⁺, a NADP⁺ és az ATP önálló nukleotidokként is fontos biológiai szerepet töltenek be, elsősorban az anyagcsere-folyamatok energiaszállításában.',
+                  'A DNS (dezoxiribonukleinsav) és az RNS (ribonukleinsav) abban különbözik, hogy melyik cukrot tartalmazzák: a DNS-ben dezoxiribóz, az RNS-ben ribóz található.',
+                  'A DNS szerkezetében rejlik az információhordozó, önmegkettőződő (örökítő) szerep - ez teszi lehetővé, hogy a genetikai információ sejtosztódáskor pontosan átadódjon az utódsejteknek. Az RNS ezzel szemben jellemzően a genetikai információ "felhasználásában" (pl. a fehérjeszintézisben) vesz részt.',
+                ],
+              },
+              {
+                heading: 'Fontos önálló nukleotidok',
+                paragraphs: [
+                  'Nem minden nukleotid épül be nukleinsavba: az ATP önálló nukleotidként a sejt "energiapénzeként" működik, a legtöbb energiaigényes folyamathoz ez szolgáltatja az energiát.',
+                  'A NAD⁺ és a NADP⁺ szintén önálló nukleotidok, amelyek a sejtlégzésben és a fotoszintézisben hidrogén- (és ezzel elektron-) szállítómolekulaként vesznek részt.',
                 ],
               },
             ],
-            keyTerms: ['nukleotid', 'DNS', 'ATP'],
+            keyTerms: ['nukleotid', 'DNS', 'RNS', 'ATP'],
           },
           emeltExtra: {
-            intro: 'Emelt szinten a DNS örökítő szerepét bizonyító klasszikus kísérleteket is ismerni kell.',
+            intro: 'Emelt szinten a DNS örökítő szerepét bizonyító klasszikus kísérleteket és a bázisok mennyiségi összefüggését is ismerni kell.',
+            diagramId: 'dns-bazisparositas',
             sections: [
               {
                 heading: 'A DNS örökítő szerepét bizonyító kísérletek',
@@ -566,8 +576,16 @@ export const CURRICULUM = [
                   'Hershey és Chase kísérlete radioaktívan jelölt bakteriofágok segítségével bizonyította, hogy a vírusfertőzés során a fertőző örökítőanyag a DNS jut be a gazdasejtbe, nem a fehérjeburok.',
                 ],
               },
+              {
+                heading: 'A bázisok típusai és a Chargaff-szabály',
+                paragraphs: [
+                  'A nitrogéntartalmú bázisok két nagy csoportba sorolhatók: a purinok (adenin, guanin) kétgyűrűs, a pirimidinek (citozin, timin, illetve az RNS-ben a timint helyettesítő uracil) egygyűrűs vegyületek.',
+                  'Chargaff megfigyelése szerint a DNS-ben az adenin mennyisége mindig megegyezik a timinével, a guaniné pedig a citozinéval - ez a szabályszerűség arra utal, hogy ezek a bázisok mindig párban fordulnak elő, méghozzá úgy, hogy egy purin mindig egy pirimidinnel párosodik.',
+                  'Az adenin és a timin között két, a guanin és a citozin között három hidrogénkötés alakul ki - ez a különbség magyarázza, hogy a guanin-citozin gazdag DNS-szakaszok stabilabbak (nehezebben "nyílnak fel").',
+                ],
+              },
             ],
-            keyTerms: ['transzformáció', 'Hershey-Chase kísérlet'],
+            keyTerms: ['purin', 'pirimidin', 'Chargaff-szabály'],
           },
         },
       },
