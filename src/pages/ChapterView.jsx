@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info } from 'lucide-react';
+import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info, AlertTriangle, Lightbulb, ListChecks } from 'lucide-react';
 import { getModuleById, getChapterById, getLevelContent } from '../data/curriculum';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
@@ -15,6 +15,8 @@ import NukleotidFelepitese from '../components/diagrams/NukleotidFelepitese';
 import DNSBazisparositas from '../components/diagrams/DNSBazisparositas';
 import FotoszintezisFolyamatabra from '../components/diagrams/FotoszintezisFolyamatabra';
 import SejtlegzesFolyamatabra from '../components/diagrams/SejtlegzesFolyamatabra';
+import PasszivAktivSzallitas from '../components/diagrams/PasszivAktivSzallitas';
+import MitozisMeiozis from '../components/diagrams/MitozisMeiozis';
 
 const DIAGRAMS = {
   'maltoz-kepzodes': MaltozKepzodes,
@@ -26,6 +28,8 @@ const DIAGRAMS = {
   'dns-bazisparositas': DNSBazisparositas,
   'fotoszintezis-folyamatabra': FotoszintezisFolyamatabra,
   'sejtlegzes-folyamatabra': SejtlegzesFolyamatabra,
+  'passziv-aktiv-szallitas': PasszivAktivSzallitas,
+  'mitozis-meiozis': MitozisMeiozis,
 };
 
 // Dedikalt komponens a dinamikus diagram-feloldashoz, ugyanazon okbol,
@@ -128,6 +132,60 @@ const ChapterView = () => {
             </div>
           )}
 
+          {chapter.comparisonTable && (
+            <div className="mb-8 overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800">
+                    {chapter.comparisonTable.headers.map((h) => (
+                      <th key={h} className="text-left px-4 py-3 font-bold">
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {chapter.comparisonTable.rows.map((row, i) => (
+                    <tr key={i} className="border-t border-slate-200 dark:border-slate-800">
+                      {row.map((cell, j) => (
+                        <td key={j} className={`px-4 py-3 ${j === 0 ? 'font-bold' : 'text-slate-600 dark:text-slate-400'}`}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {chapter.commonMistakes && (
+            <div className="mb-8 p-5 rounded-2xl bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-900/30">
+              <p className="text-sm font-bold mb-3 flex items-center text-red-700 dark:text-red-400">
+                <AlertTriangle className="h-4 w-4 mr-2" />
+                Gyakori hibák és érettségi csapdák
+              </p>
+              <ul className="space-y-2">
+                {chapter.commonMistakes.map((m, i) => (
+                  <li key={i} className="text-sm text-slate-700 dark:text-slate-300 flex items-start">
+                    <span className="text-red-500 mr-2">•</span>
+                    {renderWithGlossary(m)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {chapter.mnemonic && (
+            <div className="mb-8 p-5 rounded-2xl bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30">
+              <p className="text-sm font-bold mb-2 flex items-center text-amber-700 dark:text-amber-400">
+                <Lightbulb className="h-4 w-4 mr-2" />
+                Mnemonika
+              </p>
+              <p className="text-sm text-slate-700 dark:text-slate-300">{chapter.mnemonic}</p>
+            </div>
+          )}
+
           {levelContent.keyTerms && (
             <div className="mt-8 p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
               <p className="text-sm font-bold mb-3">Kulcsfogalmak</p>
@@ -150,6 +208,16 @@ const ChapterView = () => {
                   );
                 })}
               </div>
+            </div>
+          )}
+
+          {chapter.summary && (
+            <div className="mt-8 p-5 rounded-2xl bg-primary-50 dark:bg-primary-900/10 border border-primary-200 dark:border-primary-900/30">
+              <p className="text-sm font-bold mb-2 flex items-center text-primary-700 dark:text-primary-400">
+                <ListChecks className="h-4 w-4 mr-2" />
+                Összefoglaló
+              </p>
+              <p className="text-sm text-slate-700 dark:text-slate-300">{chapter.summary}</p>
             </div>
           )}
         </div>

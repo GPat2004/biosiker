@@ -94,6 +94,10 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 10-14. fejezet: Sejtalkotók
+  'ostoros mozgás': 'Az ostor (hosszú, csapkodó sejtfelszíni nyúlvány) mozgásával létrejövő mozgásforma, pl. a hímivarsejtnél.',
+  'nekrózis': 'Nem programozott, sérülés vagy károsodás okozta sejthalál, amely - az apoptózissal ellentétben - gyulladásos reakciót válthat ki a környező szövetben.',
+
   // 2. modul, 7-9. fejezet: Az anyagcsere folyamatai
   'kemoheterotróf': 'Olyan szervezet, amely kémiai energiát hasznosít és szerves szénforrásra szorul - ide tartozik a legtöbb állat, gomba és baktérium.',
   'fotoheterotróf': 'Olyan szervezet, amely fényenergiát hasznosít, de szerves szénforrásra szorul - néhány különleges baktériumcsoportra jellemző, ritka kombináció.',

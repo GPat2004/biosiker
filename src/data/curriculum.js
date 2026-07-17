@@ -748,10 +748,25 @@ export const CURRICULUM = [
         title: 'Elhatárolás',
         order: 10,
         isFree: false,
-        estimatedMinutes: 14,
+        estimatedMinutes: 18,
+        diagramId: 'passziv-aktiv-szallitas',
+        comparisonTable: {
+          headers: ['Szempont', 'Passzív szállítás', 'Aktív szállítás'],
+          rows: [
+            ['Energiaigény', 'nincs', 'van (ATP)'],
+            ['Irány', 'nagyobb → kisebb koncentráció felé', 'kisebb → nagyobb koncentráció felé'],
+            ['Példa', 'diffúzió, ozmózis', 'Na-K pumpa'],
+          ],
+        },
+        commonMistakes: [
+          'Sokan azt hiszik, hogy minden sejtmembránon átjutó anyag passzívan mozog - valójában a koncentráció-különbséggel szemben történő szállítás mindig energiát (ATP-t) igényel.',
+          'Az endocitózist és az exocitózist gyakran összekeverik: az endocitózis a sejtbe való, az exocitózis a sejtből kifelé irányuló anyagfelvétel/-leadás.',
+        ],
+        mnemonic: 'PASSZÍV = "Pihen" (nem fogyaszt energiát), AKTÍV = "Aktívan dolgozik" (ATP-t fogyaszt, ezért tud a koncentráció-különbséggel szemben szállítani.',
+        summary: 'A sejtmembrán szabályozza az anyagforgalmat: a passzív szállítás energia nélkül, a koncentráció-grádiens mentén zajlik, az aktív szállítás ezzel szemben ATP-t igényel. Nagyobb anyagmennyiségek endo-, illetve exocitózissal jutnak be, illetve ki a sejtből.',
         content: {
           kozep: {
-            intro: 'A sejtet határoló biológiai hártyák (membránok) nélkülözhetetlenek a sejt életének fenntartásához.',
+            intro: 'A sejtet határoló biológiai hártyák (membránok) nélkülözhetetlenek a sejt életének fenntartásához - ezek szabályozzák, mi juthat be és ki a sejtből.',
             sections: [
               {
                 heading: 'A membránok szerepe és a szállítás típusai',
@@ -771,6 +786,7 @@ export const CURRICULUM = [
                 heading: 'A szállítás végrehajtói',
                 paragraphs: [
                   'A passzív és az aktív szállítást a kettős lipidréteg, a membráncsatornák, a szállítók és a pumpák valósítják meg, különböző hajtóerők (pl. koncentráció-különbség, elektromos potenciál, ATP-energia) segítségével.',
+                  'A membráncsatornák specifikusak: egy adott csatorna jellemzően csak egyfajta iont vagy molekulát enged át, ami lehetővé teszi a sejt számára az anyagforgalom finom szabályozását.',
                 ],
               },
             ],
@@ -783,7 +799,11 @@ export const CURRICULUM = [
         title: 'Mozgás',
         order: 11,
         isFree: false,
-        estimatedMinutes: 8,
+        estimatedMinutes: 10,
+        commonMistakes: [
+          'Diákok gyakran összekeverik, melyik emberi sejttípus milyen mozgásformát használ - érdemes konkrét példákhoz kötni: fehérvérsejt = állábas, hímivarsejt = ostoros, légúti hámsejt = csillós.',
+        ],
+        summary: 'A sejtek egy része önálló mozgásra képes: állábas mozgás (pl. fehérvérsejtek), ostoros mozgás (pl. hímivarsejt) és csillós mozgás (pl. légúti hámsejtek) - mindegyik specializált sejtfelszíni struktúrán alapul.',
         content: {
           kozep: {
             intro: 'A sejtek egy része önálló mozgásra is képes, amit specializált sejtfelszíni struktúrák tesznek lehetővé.',
@@ -791,11 +811,11 @@ export const CURRICULUM = [
               {
                 heading: 'Mozgásformák az emberi szervezetben',
                 paragraphs: [
-                  'Az emberi szervezetben is találunk példát az állábas mozgásra (pl. a fehérvérsejtek), az ostoros mozgásra (pl. a hímivarsejt) és a csillós mozgásra (pl. a légutak hámsejtjei, amelyek a nyálkát mozgatják).',
+                  'Az emberi szervezetben is találunk példát az állábas mozgásra (pl. a fehérvérsejtek, amelyek ezzel a mozgásformával jutnak el a fertőzés helyére), az ostoros mozgásra (pl. a hímivarsejt, amely az ostor csapkodásával halad előre) és a csillós mozgásra (pl. a légutak hámsejtjei, amelyek a csillók összehangolt mozgásával mozgatják a nyálkát és az abban megrekedt szennyeződéseket kifelé).',
                 ],
               },
             ],
-            keyTerms: ['állábas mozgás', 'csillós mozgás'],
+            keyTerms: ['állábas mozgás', 'csillós mozgás', 'ostoros mozgás'],
           },
           emeltExtra: { sections: [], keyTerms: [] },
         },
@@ -805,7 +825,12 @@ export const CURRICULUM = [
         title: 'Anyagcsere (sejtszinten)',
         order: 12,
         isFree: false,
-        estimatedMinutes: 14,
+        estimatedMinutes: 16,
+        commonMistakes: [
+          'Sokan felcserélik a mitokondrium és a színtest szerepét: a mitokondrium a biológiai oxidáció (lebontás), a színtest a fotoszintézis (felépítés) helyszíne - ez a kettő ellentétes irányú folyamat.',
+          'A lizoszóma szerepét néha összekeverik a sejtmag szerepével - a lizoszóma emésztő funkciójú, nem genetikai információt tárol.',
+        ],
+        summary: 'Az endoplazmatikus hálózat fehérje- és lipidszintézisben, a mitokondrium a biológiai oxidációban, a színtest a fotoszintézisben, a lizoszóma pedig a sejten belüli emésztésben vesz részt.',
         content: {
           kozep: {
             intro: 'A sejt egyes sejtalkotói (organellumai) meghatározott anyagcsere-funkciókat látnak el.',
@@ -841,7 +866,24 @@ export const CURRICULUM = [
         title: 'Osztódás',
         order: 13,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 20,
+        diagramId: 'mitozis-meiozis',
+        comparisonTable: {
+          headers: ['Szempont', 'Mitózis', 'Meiózis'],
+          rows: [
+            ['Osztódások száma', '1', '2'],
+            ['Keletkező sejtek száma', '2', '4'],
+            ['Kromoszómaszám', 'változatlan (pl. 46 → 46)', 'megfeleződik (pl. 46 → 23)'],
+            ['Előfordulás', 'testi sejtekben', 'ivarsejt-képzéskor'],
+            ['Genetikai változatosság', 'nem növeli', 'növeli (rekombináció)'],
+          ],
+        },
+        commonMistakes: [
+          'Gyakori hiba azt hinni, hogy a meiózis egyetlen osztódás - valójában két egymást követő osztódásból áll, ez adja a négy keletkező sejtet.',
+          'Sokan elfelejtik, hogy a mitózis eredményeként keletkező sejtek kromoszómaszáma NEM csökken - csak a meiózisnál felezõdik.',
+        ],
+        mnemonic: 'MEIÓZIS = "kEttő" (két osztódás, négy sejt, felezett kromoszómaszám) - a "M"-hez kösd a "kEttőt".',
+        summary: 'A mitózis egyetlen osztódással két, az eredetivel megegyező kromoszómaszámú testi sejtet hoz létre. A meiózis két egymást követő osztódással négy, felezett kromoszómaszámú ivarsejtet eredményez, és rekombináció révén genetikai változatosságot is teremt.',
         content: {
           kozep: {
             intro: 'A sejtosztódás biztosítja az élőlények növekedését, megújulását és szaporodását.',
@@ -877,7 +919,11 @@ export const CURRICULUM = [
         title: 'A sejtműködések vezérlése',
         order: 14,
         isFree: false,
-        estimatedMinutes: 12,
+        estimatedMinutes: 14,
+        commonMistakes: [
+          'Az apoptózist (programozott sejthalál) gyakran összekeverik a nekrózissal (nem programozott, sérülés okozta sejthalál) - a kettő oka és lefolyása is teljesen eltérő.',
+        ],
+        summary: 'A sejt külső és belső ingerekre koncentrációváltozással, alakváltozással, elválasztással vagy elektromos jellel válaszolhat. A K-Na-pumpa alapvető a sejtműködés szabályozásában, a sejthalál pedig lehet programozott (apoptózis) vagy nem programozott.',
         content: {
           kozep: {
             intro: 'A sejt folyamatosan reagál a külső és belső környezetéből érkező ingerekre.',
@@ -887,11 +933,11 @@ export const CURRICULUM = [
                 paragraphs: [
                   'A sejt külső és belső ingerekre válaszolhat: koncentrációváltozással, alakváltozással, elválasztással vagy elektromos változással.',
                   'A K-Na-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget.',
-                  'Megkülönböztetünk programozott sejthalált (apoptózis), amely a szervezet számára hasznos, szabályozott folyamat, és nem programozott sejthalált, amely sérülés vagy károsodás következménye.',
+                  'Megkülönböztetünk programozott sejthalált (apoptózis), amely a szervezet számára hasznos, szabályozott folyamat, és nem programozott sejthalált (nekrózis), amely sérülés vagy károsodás következménye, és - az apoptózissal ellentétben - gyulladásos reakciót is kiválthat a környező szövetben.',
                 ],
               },
             ],
-            keyTerms: ['K-Na-pumpa', 'apoptózis'],
+            keyTerms: ['K-Na-pumpa', 'apoptózis', 'nekrózis'],
           },
           emeltExtra: { sections: [], keyTerms: [] },
         },
