@@ -715,11 +715,11 @@ export const CURRICULUM = [
         title: 'Felépítő folyamatok: a fotoszintézis',
         order: 8,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 26,
         diagramId: 'fotoszintezis-folyamatabra',
         content: {
           kozep: {
-            intro: 'A fotoszintézis a legfontosabb felépítő (asszimilációs) folyamat, amely a földi élet energiaellátásának alapja - ez teszi lehetővé, hogy a Napból érkező fényenergia a táplálékláncokon keresztül eljusson szinte minden élőlényhez.',
+            intro: 'A fotoszintézis a legfontosabb felépítő (asszimilációs) folyamat, amely a földi élet energiaellátásának alapja - ez a témakör kiemelten fontos, ezért érdemes minden részletét alaposan végiggondolni.',
             sections: [
               {
                 heading: 'Hely és jelentőség',
@@ -729,35 +729,47 @@ export const CURRICULUM = [
                 ],
               },
               {
-                heading: 'Fényszakasz és sötétszakasz',
+                heading: 'A kloroplasztisz felépítése',
                 paragraphs: [
-                  'A fényszakaszban a víz fényenergia hatására bomlik, molekuláris oxigén keletkezik, a hidrogén szállítómolekulára kerül, és ATP képződik.',
-                  'A sötétszakaszban a szén-dioxid redukálódik a hidrogén és az ATP segítségével, aminek eredményeként glükóz, majd más vegyületek keletkeznek. Ez a szakasz - a nevével ellentétben - nem feltétlenül sötétben zajlik, csak nincs közvetlen fényigénye, mert a fényszakaszból kapja a szükséges ATP-t és hidrogént.',
-                  'A fotoszintézis egyszerűsített egyenlete: szén-dioxid és víz fényenergia jelenlétében glükózzá és oxigénné alakul (lásd az ábrát).',
-                ],
-              },
-            ],
-            keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz'],
-          },
-          emeltExtra: {
-            intro: 'Emelt szinten a fotoszintetikus színanyagok típusait és molekulavázát, valamint az ATP-termelés hátterét is ismerni kell.',
-            sections: [
-              {
-                heading: 'Fotoszintetikus színanyagok',
-                paragraphs: [
-                  'A fotoszintetikus színanyagok két fő típusa a klorofillok és a karotinoidok - mindkettő jellegzetes molekulavázzal rendelkezik, amelyet ábráról fel kell tudni ismerni, és mindkettő szerepet játszik a fényenergia elnyelésében.',
-                  'A klorofill elsősorban a kék és a vörös fényt nyeli el, a zöld fényt visszaveri - ez adja a növények zöld színét.',
+                  'A kloroplasztiszt kettős membrán határolja. Belsejében található a tilakoidrendszer: lapos, membránnal határolt zsákocskák (tilakoidok), amelyek gyakran egymásra rendeződve gránumokat alkotnak. A tilakoidmembránban helyezkednek el a fotoszintetikus színanyagok - itt zajlik a fényszakasz.',
+                  'A tilakoidokat körülvevő folyékony állományt sztrómának nevezzük - itt zajlik a sötétszakasz. Ez a térbeli elkülönülés (fényszakasz a tilakoidmembránban, sötétszakasz a sztrómában) nem véletlen: mindkét szakasz más-más típusú reakciókörülményeket igényel.',
                 ],
               },
               {
-                heading: 'Az ATP keletkezésének háttere',
+                heading: 'Fényszakasz - részletesen',
                 paragraphs: [
-                  'A fényszakaszban keletkező ATP hátterében az áll, hogy a víz bomlásakor felszabaduló elektronok egy elektronszállító láncon haladnak végig, aminek eredményeként a kloroplasztisz membránján át egy hidrogénion-grádiens (koncentráció-különbség) alakul ki - ennek a grádiensnek a "kiegyenlítődése" hajtja meg az ATP-t termelő enzimet.',
+                  'A fényszakasz a tilakoidmembránban zajlik. A fényenergia hatására a víz molekulái elbomlanak (ezt a folyamatot fotolízisnek nevezzük): a vízből molekuláris oxigén (O₂) szabadul fel - ez a folyamat felelős a légkör oxigénjének nagy részéért -, a hidrogén pedig egy szállítómolekulára (NADP⁺-ra) kerül, amiből így NADPH keletkezik.',
+                  'A fényenergia hatására emellett ATP is képződik - ezt a folyamatot fotofoszforilációnak nevezzük, mivel fényenergia hajtja a foszforilációt (az ATP előállítását).',
+                  'A fényszakasz végterméke tehát kétféle "csomagolt energia": az ATP és a NADPH - mindkettőt a sötétszakasz használja fel.',
+                ],
+              },
+              {
+                heading: 'Sötétszakasz - részletesen',
+                paragraphs: [
+                  'A sötétszakasz a sztrómában zajlik, és - a nevével ellentétben - nem feltétlenül sötétben megy végbe, csak nincs közvetlen fényigénye, mert a fényszakaszból kapja a szükséges ATP-t és NADPH-t.',
+                  'Ebben a szakaszban a légköri szén-dioxid megkötődik (ezt a lépést szén-dioxid-megkötésnek vagy CO₂-fixációnak nevezzük), majd az ATP és a NADPH energiájával redukálódik, és glükózzá, majd más szerves vegyületekké (pl. keményítővé) alakul. Ezt a ciklikusan ismétlődő reakciósorozatot Calvin-ciklusnak is nevezik.',
+                  'A fotoszintézis egyszerűsített összegegyenlete: 6 szén-dioxid és 6 víz fényenergia jelenlétében 1 glükózzá és 6 oxigénné alakul (lásd az ábrát).',
+                ],
+              },
+              {
+                heading: 'Fotoszintetikus színanyagok és a fényelnyelés',
+                paragraphs: [
+                  'A fotoszintetikus színanyagok két fő típusa a klorofillok és a karotinoidok. A klorofill-a a fő színanyag, amely elsősorban a kék (kb. 430 nm hullámhosszú) és a vörös (kb. 662 nm hullámhosszú) fényt nyeli el a leghatékonyabban. A klorofill-b hasonló, de kissé eltérő elnyelési tartománnyal rendelkezik (kb. 453 nm a kék, kb. 642 nm a vörös tartományban), és kiegészítő színanyagként a klorofill-a által kevésbé hatékonyan elnyelt hullámhosszakon is gyűjt fényenergiát, amit aztán átad a klorofill-a-nak.',
+                  'A zöld hullámhossz-tartományt (kb. 500-565 nm) egyik klorofill-forma sem nyeli el hatékonyan, hanem visszaveri - ez magyarázza, hogy a növények zöldnek látszanak: azt a színt látjuk, amit a levél NEM használt fel, hanem visszavert.',
+                  'A karotinoidok (pl. a karotin) a kék-zöld tartományban (kb. 450-500 nm) nyelik el hatékonyan a fényt - pontosan abban a tartományban, ahol a klorofillok kevésbé hatékonyak -, így kiegészítik a klorofillok fényelnyelését, és emellett védik is a növényt a túl erős fény károsító hatásától.',
+                ],
+              },
+              {
+                heading: 'A fotoszintézis sebességét befolyásoló tényezők',
+                paragraphs: [
+                  'A fotoszintézis sebességét több környezeti tényező is korlátozhatja (limitálhatja): a fény intenzitása (alacsony fényerősségnél ez a korlátozó tényező), a szén-dioxid koncentrációja (mivel ez a sötétszakasz nyersanyaga), és a hőmérséklet (mivel a sötétszakasz reakcióit enzimek katalizálják, amelyeknek optimális hőmérséklet-tartományuk van).',
+                  'Mindig az a tényező szabja meg ténylegesen a folyamat sebességét, amelyik a legkevésbé van jelen a szükséges mennyiséghez képest - ezt nevezzük a minimum-elvnek, amellyel részletesebben az ökológiai témakörnél találkozunk majd.',
                 ],
               },
             ],
-            keyTerms: ['klorofill'],
+            keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz', 'fotolízis', 'NADPH', 'Calvin-ciklus', 'klorofill-a', 'klorofill-b'],
           },
+          emeltExtra: { comingSoon: true },
         },
       },
       {

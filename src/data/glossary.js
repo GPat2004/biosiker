@@ -104,6 +104,13 @@ export const GLOSSARY = {
   'tejsavas erjedés': 'Oxigénhiányos körülmények között, jellemzően az izomsejtekben zajló erjedéstípus, amelynek végterméke a tejsav.',
   'alkoholos erjedés': 'Élesztőgombákra jellemző erjedéstípus, amely során a cukor etil-alkohollá és szén-dioxiddá bomlik.',
 
+  // 2. modul, 8. fejezet: Fotoszintézis (részletesen)
+  'fotolízis': 'A víz fényenergia hatására bekövetkező bomlása a fotoszintézis fényszakaszában - ennek eredménye a molekuláris oxigén.',
+  'nadph': 'A fényszakaszban keletkező hidrogén- (elektron-) szállítómolekula, amelyet a sötétszakasz a szén-dioxid redukálásához használ fel.',
+  'calvin-ciklus': 'A fotoszintézis sötétszakaszának ciklikusan ismétlődő reakciósorozata, amely során a szén-dioxid megkötődik és glükózzá alakul.',
+  'klorofill-a': 'A fotoszintézis fő színanyaga, amely elsősorban a kék (kb. 430 nm) és a vörös (kb. 662 nm) fényt nyeli el a leghatékonyabban.',
+  'klorofill-b': 'Kiegészítő fotoszintetikus színanyag, amely a klorofill-a-tól kissé eltérő hullámhossz-tartományban (kb. 453 nm és 642 nm) nyeli el hatékonyan a fényt, és az elnyelt energiát átadja a klorofill-a-nak.',
+
   // 2. modul, 7. fejezet emelt kiegészítés: Felépítés-lebontás
   'receptor-mediált endocitózis': 'Az endocitózis célzott formája, amelynél a sejtmembrán felszíni receptorfehérjéi ismernek fel és kötnek meg egy adott anyagot (pl. lipoproteint), mielőtt a sejt felvenné azt.',
 
