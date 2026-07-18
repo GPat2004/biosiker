@@ -110,6 +110,15 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 12. fejezet emelt kiegészítés: crossing over, ivarsejt-képzés
+  'szinapszis': 'A homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején - itt zajlik a crossing over.',
+  'tetrád': 'Négy kromatidából álló szerkezet (bivalens), amely a szinapszis során, a homológ kromoszómapár összetapadásakor jön létre.',
+  'kiazma': 'Az a pont, ahol a homológ kromatidák fizikailag elszakadnak és szakaszt cserélnek egymással a crossing over során.',
+  'spermatogenezis': 'A hímivarsejt-képzés folyamata, amelynek során mind a négy meiózisból keletkező sejt működőképes spermiummá alakul.',
+  'oogenezis': 'A női ivarsejt-képzés folyamata, amelynek során egyenlőtlen citoplazma-elosztással egyetlen nagy petesejt és három elpusztuló sarkitest keletkezik.',
+  'sarkitest': 'Az oogenezis során keletkező, kis méretű, elpusztuló sejt (poláris test), amely nem válik petesejtté.',
+  'ellenőrzőpont': 'A sejtciklus azon pontjai (checkpoint), ahol a sejt megvizsgálja, hogy az adott szakasz megfelelően zajlott-e le, mielőtt továbblépne.',
+
   // 2. modul, 10-14. fejezet: Sejtalkotók
   'ostoros mozgás': 'Az ostor (hosszú, csapkodó sejtfelszíni nyúlvány) mozgásával létrejövő mozgásforma, pl. a hímivarsejtnél.',
   'nekrózis': 'Nem programozott, sérülés vagy károsodás okozta sejthalál, amely - az apoptózissal ellentétben - gyulladásos reakciót válthat ki a környező szövetben.',

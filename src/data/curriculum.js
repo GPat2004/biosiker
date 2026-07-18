@@ -1088,7 +1088,34 @@ export const CURRICULUM = [
             ],
             keyTerms: ['kromoszóma', 'kromatida', 'centromér', 'kapcsoltsági csoport', 'sejtciklus', 'interfázis', 'G1-szakasz', 'S-szakasz', 'G2-szakasz', 'mitózis', 'profázis', 'metafázis', 'anafázis', 'telofázis', 'meiózis', 'homológ kromoszóma', 'független szétválás', 'nemleválás'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a crossing over pontos mechanizmusát, a hím és női ivarsejt-képzés közötti különbséget, valamint a sejtciklus szabályozásának ellenőrzőpontjait is ismerni kell.',
+            sections: [
+              {
+                heading: 'A crossing over (rekombináció) mechanizmusa',
+                paragraphs: [
+                  'A meiózis I elején a homológ kromoszómapárok szorosan egymás mellé rendeződnek (ezt a folyamatot szinapszisnak nevezzük), és négy kromatidából álló szerkezetet, ún. tetrádot (bivalenst) alkotnak.',
+                  'A szorosan összetapadt homológ kromatidák meghatározott pontokon (ezeket kiazmának nevezzük) fizikailag elszakadhatnak, majd a szomszédos kromatida megfelelő szakaszához kapcsolódhatnak vissza - ezáltal a két homológ kromoszóma szakaszokat cserél egymással.',
+                  'Ennek eredménye, hogy egyetlen kromoszómán belül is új allél-kombinációk jönnek létre, amelyek korábban nem léteztek együtt: egy kromoszóma egy szakasza az egyik szülőtől, egy másik szakasza a másik szülőtől származhat. Ez a mechanizmus a független szétváláson túl egy második, még finomabb szintű forrása a genetikai változatosságnak.',
+                ],
+              },
+              {
+                heading: 'Hím és női ivarsejt-képzés - miért nem egyforma az eredmény?',
+                paragraphs: [
+                  'Bár a meiózis alapelve azonos mindkét nemnél, az eredmény eltérő. A hímivarsejt-képzés (spermatogenezis) során mind a négy meiózisból keletkező sejt működőképes hímivarsejtté (spermiummá) alakul.',
+                  'A női ivarsejt-képzés (petesejt-képzés, oogenezis) során ezzel szemben a sejtosztódások nem egyenlő méretű sejteket hoznak létre: a citoplazma egyenlőtlenül oszlik el, így végül csak egyetlen, nagy méretű, tápanyagban gazdag petesejt jön létre, a másik három sejt (ún. sarkitest, poláris test) elpusztul. Ennek biológiai értelme, hogy a leendő embriónak a megtermékenyítés után azonnal jelentős tápanyag-tartalékra van szüksége, amíg saját táplálkozása (pl. a méhlepényen keresztül) ki nem alakul.',
+                ],
+              },
+              {
+                heading: 'A sejtciklus ellenőrzőpontjai',
+                paragraphs: [
+                  'A sejtciklus nem "vakon" halad előre: több ellenőrzőponton (checkpoint) is megvizsgálja, hogy az adott szakasz megfelelően zajlott-e le, mielőtt a következő lépésre engedné a sejtet. Például a G1/S ellenőrzőpontnál a sejt "megnézi", nincs-e DNS-károsodás, mielőtt engedélyezné a DNS megkettőződését.',
+                  'Ha egy ellenőrzőpontnál javíthatatlan hibát észlel a sejt, gyakran a korábban (A sejtműködések vezérlése fejezetben) megismert programozott sejthalál (apoptózis) indul be - ez megakadályozza, hogy a hibás, potenciálisan károsodott genetikai állományú sejt tovább osztódjon és elszaporodjon. Az ellenőrzőpontok hibás működése az egyik oka annak, hogy egyes sejtek kontrollálatlanul osztódni kezdenek, ami a daganatos elváltozások kialakulásának egyik alapja.',
+                ],
+              },
+            ],
+            keyTerms: ['szinapszis', 'tetrád', 'kiazma', 'spermatogenezis', 'oogenezis', 'sarkitest', 'ellenőrzőpont'],
+          },
         },
       },
       {
