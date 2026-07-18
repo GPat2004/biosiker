@@ -104,6 +104,9 @@ export const GLOSSARY = {
   'tejsavas erjedés': 'Oxigénhiányos körülmények között, jellemzően az izomsejtekben zajló erjedéstípus, amelynek végterméke a tejsav.',
   'alkoholos erjedés': 'Élesztőgombákra jellemző erjedéstípus, amely során a cukor etil-alkohollá és szén-dioxiddá bomlik.',
 
+  // 2. modul, 7. fejezet emelt kiegészítés: Felépítés-lebontás
+  'receptor-mediált endocitózis': 'Az endocitózis célzott formája, amelynél a sejtmembrán felszíni receptorfehérjéi ismernek fel és kötnek meg egy adott anyagot (pl. lipoproteint), mielőtt a sejt felvenné azt.',
+
   // 2. modul, 6. fejezet: Nukleinsavak, nukleotidok
   'rns': 'Ribonukleinsav; ribózt tartalmazó nukleinsav, amely jellemzően a genetikai információ felhasználásában (pl. fehérjeszintézisben) vesz részt.',
   'purin': 'Kétgyűrűs nitrogéntartalmú bázis-típus (adenin, guanin).',

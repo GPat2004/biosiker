@@ -680,7 +680,34 @@ export const CURRICULUM = [
             ],
             keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'hidrolízis', 'kondenzáció', 'exocitózis', 'fotoautotróf', 'kemoheterotróf', 'kemoautotróf'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a kozépszinten megismert csoportokat egy teljes rendszerbe kell tudni foglalni, és mélyebben kell érteni az energiaátalakítás hatásfokát, valamint a sejt anyagfelvételének finomabb mechanizmusait is.',
+            sections: [
+              {
+                heading: 'A teljes anyagcsere-tipológia',
+                paragraphs: [
+                  'A középszinten megismert fotoautotróf, kemoautotróf és kemoheterotróf típusok mellett létezik egy negyedik, jóval ritkább kombináció is: a fotoheterotróf szervezetek (néhány különleges baktériumcsoport) fényenergiát hasznosítanak, de szerves szénforrásra szorulnak.',
+                  'Érdemes ezt a négy típust egy táblázatként elképzelni, ahol az egyik tengelyen az energiaforrás (fény vagy kémiai energia), a másikon a szénforrás (szervetlen vagy szerves) szerepel - a négy mező adja ki a négy típust. A természetben a fotoautotróf (pl. növények) és a kemoheterotróf (pl. állatok) a leggyakoribb, a kemoautotróf ritkább, de fontos szerepű (pl. a nitrogénkörforgásban), a fotoheterotróf pedig kifejezetten ritka.',
+                ],
+              },
+              {
+                heading: 'Az energiaátalakítás hatásfoka',
+                paragraphs: [
+                  'A korábban megismert energiaveszteség-elv mögött a termodinamika alaptörvényei állnak: az energia nem vész el, csak átalakul, de minden átalakuláskor egy része hő formájában, felhasználhatatlanul távozik a rendszerből.',
+                  'A biológiai oxidáció hatásfoka - vagyis hogy a tápanyagokban tárolt energia hány százaléka alakul át ténylegesen felhasználható ATP-vé - hozzávetőlegesen 40% körüli; a fennmaradó rész hőként távozik. Ez a "veszteség" azonban nem tisztán negatív: az emlősöknél és madaraknál éppen ez a hőtermelés tartja fenn az állandó testhőmérsékletet, vagyis amit az egyik szempontból "hatékonyságvesztésnek" tekintünk, az egy másik szempontból (hőszabályozás) hasznos melléktermék.',
+                  'Ez a szemlélet magyarázza azt is, hogy a táplálékláncokban miért csökken jelentősen (kb. tizedére) az átadható energia mennyisége minden egyes trófikus szint között: a termelők által megkötött energia nagy része már a termelők saját anyagcseréjében hő formájában elvész, mielőtt egyáltalán a fogyasztókhoz jutna.',
+                ],
+              },
+              {
+                heading: 'Receptor-mediált endocitózis - egy finomabb felvételi mechanizmus',
+                paragraphs: [
+                  'Az endocitózisnak létezik egy célzottabb formája is: a receptor-mediált endocitózis során a sejtmembrán felszínén lévő specifikus receptorfehérjék ismernek fel és kötnek meg egy adott anyagot, mielőtt a membrán körbezárná és a sejtbe juttatná azt.',
+                  'Ez pontosan az a mechanizmus, amellyel a Lipidek fejezetben megismert lipoproteinek (pl. az LDL, "rossz koleszterin" hordozó részecske) bejutnak a sejtekbe: a sejtfelszíni LDL-receptorok felismerik a lipoprotein fehérjeburkát, majd a sejt receptor-mediált endocitózissal veszi fel a teljes részecskét, benne a koleszterinnel. Ez szemlélteti, hogy az endocitózis nem "vaktában" történő anyagfelvétel, hanem a sejt nagyon is szelektíven tudja szabályozni, mit enged be.',
+                ],
+              },
+            ],
+            keyTerms: ['fotoheterotróf', 'receptor-mediált endocitózis'],
+          },
         },
       },
       {
