@@ -605,7 +605,36 @@ export const CURRICULUM = [
             ],
             keyTerms: ['nukleotid', 'DNS', 'RNS', 'ATP'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a DNS örökítő szerepét bizonyító klasszikus kísérleteket, a bázisok pontos osztályozását és a bázispárosodás kémiai hátterét is ismerni kell.',
+            diagramId: 'dns-bazisparositas',
+            sections: [
+              {
+                heading: 'A DNS örökítő szerepét bizonyító kísérletek',
+                paragraphs: [
+                  'Sokáig vitatott volt, hogy a sejtmagban egyszerre jelen lévő DNS vagy a fehérjék hordozzák-e az örökítő információt - hiszen mindkét molekulatípus elég összetett ehhez. A kérdést végül gondosan megtervezett kísérletek döntötték el.',
+                  'Griffith kísérletében két baktériumtörzset vizsgált: egy betegséget okozó, tokos törzset és egy ártalmatlan, tok nélküli törzset. Amikor elpusztított (hőkezelt) tokos baktériumokat kevert élő, ártalmatlan baktériumokkal, az utóbbiak egy része "átalakult" betegséget okozó törzsé - ez a jelenség a transzformáció. Griffith még nem tudta, mi az átalakulást okozó anyag, csak azt bizonyította, hogy létezik ilyen "transzformáló elv".',
+                  'Avery és munkatársai folytatták a kutatást, és tisztított anyagokkal (külön fehérjével, külön DNS-sel) ismételték meg a kísérletet - kimutatták, hogy kizárólag a DNS képes kiváltani a transzformációt, a fehérje nem. Ez volt az első erős bizonyíték arra, hogy a DNS az örökítő anyag.',
+                  'Hershey és Chase kísérlete radioaktívan jelölt bakteriofágok (baktériumot fertőző vírusok) segítségével erősítette meg ugyanezt: a fehérjeburkot és a DNS-t külön-külön radioaktív izotóppal jelölték meg, majd megfigyelték, hogy fertőzéskor csak a DNS jelölése jut be a baktériumsejtbe, a fehérjeburoké kívül marad - vagyis a fertőző, örökítő anyag valóban a DNS.',
+                ],
+              },
+              {
+                heading: 'A bázisok típusai és a Chargaff-szabály',
+                paragraphs: [
+                  'A nitrogéntartalmú bázisok két nagy csoportba sorolhatók: a purinok (adenin, guanin) kétgyűrűs, a pirimidinek (citozin, timin, illetve az RNS-ben a timint helyettesítő uracil) egygyűrűs vegyületek.',
+                  'Chargaff megfigyelése szerint a DNS-ben az adenin mennyisége mindig megegyezik a timinével, a guaniné pedig a citozinéval - ez a szabályszerűség (Chargaff-szabály) arra utal, hogy ezek a bázisok mindig párban fordulnak elő, méghozzá úgy, hogy egy purin mindig egy pirimidinnel párosodik.',
+                ],
+              },
+              {
+                heading: 'Miért pont így párosodnak a bázisok?',
+                paragraphs: [
+                  'A bázispárosodás nem véletlenszerű, hanem két okra vezethető vissza. Egyrészt geometriai okra: mivel a purinok nagyobbak (kétgyűrűsek), mint a pirimidinek (egygyűrűsek), egy purin-pirimidin pár mindig ugyanakkora szélességű - ez teszi lehetővé, hogy a kettős lánc mindvégig egyenletes, "létraszerű" szerkezetet alkosson. Ha két purin párosodna, túl széles, ha két pirimidin, túl keskeny lenne az adott szakasz.',
+                  'Másrészt kémiai okra: az adenin és a timin között két, a guanin és a citozin között három hidrogénkötés alakul ki - ugyanaz a kötéstípus, amit a Szervetlen molekulák fejezetben a víznél már megismertünk, csak itt a bázisok közötti, nem a vízmolekulák közötti kapcsolatot hozza létre. Mivel a guanin-citozin párban eggyel több hidrogénkötés van, a guanin-citozin gazdag DNS-szakaszok stabilabbak, nehezebben "nyílnak fel" - ennek biológiai jelentősége is van: például egyes hőkedvelő baktériumok DNS-ében magasabb a guanin-citozin arány, ami segít a molekulának ellenállni a magas hőmérsékletnek.',
+                ],
+              },
+            ],
+            keyTerms: ['transzformáció', 'Hershey-Chase kísérlet', 'purin', 'pirimidin', 'Chargaff-szabály'],
+          },
         },
       },
       {
