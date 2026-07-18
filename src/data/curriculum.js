@@ -342,56 +342,49 @@ export const CURRICULUM = [
         title: 'Lipidek',
         order: 3,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 22,
         content: {
           kozep: {
-            intro: 'A lipidek (zsírszerű anyagok) sokféle biológiai szerepet töltenek be, oldódási tulajdonságuk és szerkezetük szorosan összefügg a funkciójukkal.',
+            intro: 'A lipidek (zsírszerű anyagok) sokféle biológiai szerepet töltenek be - energiaraktározástól a membránépítésig -, és ahogy eddig is láttuk, ez a sokféleség szoros összefüggésben áll a molekulák szerkezetével.',
             sections: [
               {
-                heading: 'Oldódási tulajdonságok',
+                heading: 'Oldódási tulajdonságok - visszautalás a víz polaritására',
                 paragraphs: [
-                  'A lipidek vízben nem, szerves oldószerekben (pl. alkoholban, benzinben) viszont jól oldódnak - ez a hétköznapokban is megfigyelhető, például amikor az olaj nem elegyedik a vízzel, hanem külön rétegben úszik rajta.',
-                  'A zsírban oldódó vitaminok (A, D, E, K) könnyen felhalmozódhatnak a zsírszövetben, ezért túladagolásuk veszélyesebb, mint a vízoldékony vitaminoké, amelyek fölöslege könnyebben kiürül a vizelettel.',
+                  'A lipidek vízben nem, szerves oldószerekben (pl. alkoholban, benzinben) viszont jól oldódnak. Ennek oka ugyanaz az alapelv, amit a víz dipólus jellegénél már megismertünk: "hasonló a hasonlót oldja". Mivel a lipidek molekulái apolárisak (nincs bennük egyenlőtlen töltéseloszlás), nem tudnak hidrogénkötést kialakítani a poláris vízmolekulákkal - emiatt nem elegyednek vízzel, hanem külön fázist alkotnak (ez figyelhető meg, amikor az olaj a víz felszínén úszik).',
+                  'A zsírban oldódó vitaminok (A, D, E, K) apoláris jellegűek, ezért a zsírszövetben könnyen felhalmozódhatnak - ezzel szemben a vízoldékony vitaminok fölöslege egyszerűen kiürül a vizelettel. Emiatt a zsírban oldódó vitaminok túladagolása jóval veszélyesebb: a szervezet nem tudja őket olyan könnyen "kimosni" magából, mint a vízoldékonyakat.',
                 ],
               },
               {
                 heading: 'A zsírok és a foszfatidok szerkezete',
                 paragraphs: [
-                  'A zsírok glicerinből és zsírsavakból épülnek fel: egy glicerinmolekulához három zsírsav kapcsolódik.',
-                  'A foszfatidok hasonló felépítésűek, de bennük a glicerinhez csak két zsírsav és egy foszforsav-egység kapcsolódik. Ez a szerkezeti különbség adja a foszfatidok kettős (poláris és apoláris) tulajdonságát.',
+                  'A zsírok glicerinből és zsírsavakból épülnek fel: egy glicerinmolekulához három zsírsav kapcsolódik (ezért nevezik ezt a molekulát triglicaridnak is).',
+                  'A foszfatidok hasonló felépítésűek, de bennük a glicerinhez csak két zsírsav és egy foszforsav-egység kapcsolódik. Ez a látszólag apró szerkezeti különbség - egy zsírsav lecserélése egy foszforsav-egységre - alapvetően más tulajdonságot ad a molekulának, ahogy azt lentebb látni fogjuk.',
                 ],
               },
               {
-                heading: 'Biológiai szerep',
+                heading: 'Biológiai szerep: miért pont a zsír az energiaraktár?',
                 paragraphs: [
                   'A zsírok és olajok fő biológiai szerepe az energiaraktározás, a hőszigetelés és a mechanikai védelem - ez összefügg azzal, hogy a zsírszövet jellemzően a bőr alatt és a belső szervek körül helyezkedik el.',
-                  'A foszfatidok poláris fejcsoportja a vizes közeg felé, apoláris "farka" pedig egymás felé fordul - ez a tulajdonság teszi alkalmassá a foszfatidokat a biológiai membránok (sejthártyák) kettősréteges felépítésére.',
-                  'Az epesav polaritása lehetővé teszi, hogy az epesavsók stabilizálják a zsírok vizes közegben történő apró cseppekre bontását (emulgeálását), ami elősegíti a zsírok hatékony emésztését a bélben.',
+                  'Nem véletlen, hogy a szervezet elsősorban zsírban raktározza a hosszú távú energiatartalékot, nem szénhidrátban: a zsírok molekulái sokkal "redukáltabbak" (kevesebb oxigént, több hidrogént tartalmaznak grammonként), ezért lebontásukkor közel kétszer annyi energia szabadul fel, mint ugyanannyi szénhidrát lebontásakor. Ugyanakkora energiatartalékot így jóval kisebb tömegben és térfogatban lehet elraktározni zsír formájában, mint szénhidrátként - ez jelentős előny egy mozgó szervezet számára.',
+                ],
+              },
+              {
+                heading: 'A membránépítés kémiai háttere',
+                paragraphs: [
+                  'A korábban tanultak (lásd az Elhatárolás fejezetet) szerint a sejtmembrán foszfatidokból épül fel. Most már azt is látjuk, miért éppen ezek a molekulák alkalmasak erre: a foszfatid egyik "vége" (a foszforsavat tartalmazó fejrész) poláris, tehát vízbarát, a másik "vége" (a két zsírsavlánc) apoláris, tehát vízkerülő.',
+                  'Vizes közegben ez a kettősség arra kényszeríti a foszfatid-molekulákat, hogy kettős réteget alkossanak: a poláris fejrészek kifelé, a vizes közeg felé fordulnak, az apoláris láncok pedig egymás felé, elzárva a vizet. Ez a kettősréteg adja a sejtmembrán alapszerkezetét.',
+                ],
+              },
+              {
+                heading: 'Az epe szerepe a zsírok emésztésében',
+                paragraphs: [
+                  'Az epesavak szerkezete hasonló elven működik, mint a foszfatidoké: egyik részük poláris, másik részük apoláris. Emiatt az epesavak "mosószerként" viselkednek - az apoláris részükkel a zsírcseppekhez kapcsolódnak, a poláris részükkel pedig a vizes bélnedv felé fordulnak, így apró cseppekre (emulzióra) bontják a zsírt. Ez jelentősen megnöveli a zsír felületét, ami elősegíti az emésztőenzimek hatékony munkáját.',
                 ],
               },
             ],
             keyTerms: ['lipid', 'zsír', 'foszfatid', 'emulgeálás', 'zsírszövet'],
           },
-          emeltExtra: {
-            intro: 'Emelt szinten a szteránváz és a karotinoidok szerkezete, valamint fotokémiai szerepük is a követelmények közé tartozik.',
-            sections: [
-              {
-                heading: 'Szteránváz',
-                paragraphs: [
-                  'A szteránváz négy összekapcsolódó gyűrűből álló, jellegzetes molekulaszerkezet, amely számos fontos biológiai molekula (pl. a koleszterin és az abból származó szteroid hormonok) alapváza.',
-                ],
-              },
-              {
-                heading: 'Karotinoidok és fotokémiai szerepük',
-                paragraphs: [
-                  'A karotinoidok molekulájában található konjugált kettőskötés-rendszer felelős a fény elnyeléséért.',
-                  'Ez a tulajdonság áll a növényi karotinoidok (karotin, xantofill) fotoszintézisben betöltött szerepének hátterében: a klorofill mellett kiegészítő fényelnyelő pigmentként működnek, és védik a növényt a túl erős fénytől.',
-                  'Az emberi szervezetben az A-vitamin (amely karotinoidból, például béta-karotinból alakul át) a rodopszin nevű fényérzékeny fehérje alkotórésze, amely a szem pálcikáiban a látás folyamatában vesz részt.',
-                ],
-              },
-            ],
-            keyTerms: ['szteránváz', 'koleszterin', 'konjugált kettőskötés', 'rodopszin'],
-          },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
