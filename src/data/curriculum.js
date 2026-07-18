@@ -642,49 +642,45 @@ export const CURRICULUM = [
         title: 'Felépítés és lebontás kapcsolata',
         order: 7,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 20,
         content: {
           kozep: {
-            intro: 'Az élő szervezetek anyagcseréje felépítő (asszimilációs) és lebontó (disszimilációs) folyamatokból áll, amelyek szorosan összekapcsolódnak - a kettő együtt tartja fenn az élő rendszerek működését.',
+            intro: 'Eddig sok különálló molekuláról tanultunk - most itt az ideje, hogy összekössük ezeket, és megnézzük az általános elveket, amelyek az összes felépítő és lebontó folyamatot mozgatják.',
             sections: [
               {
                 heading: 'Energia- és szénforrás szerinti csoportosítás',
                 paragraphs: [
                   'Energiaforrás szerint fototróf (fényenergiát hasznosító) és kemotróf (kémiai energiát hasznosító) szervezeteket különböztetünk meg; szénforrás szerint autotróf (szervetlen szénforrást használó) és heterotróf (szerves szénforrásra szoruló) élőlényeket.',
-                  'Alapvető fizikai törvényszerűség, hogy minden anyagátépítés energiaveszteséggel jár - ezért nincs 100%-osan hatékony biológiai folyamat, a felszabaduló energia egy része mindig hő formájában távozik.',
+                  'A növények tipikusan fotoautotrófok: fényenergiát használnak, és szervetlen szén-dioxidból építik fel szerves anyagaikat - erről a folyamatról (fotoszintézis) a következő fejezetben lesz szó részletesen. Az ember és a legtöbb állat ezzel szemben kemoheterotróf: kémiai energiát nyer a táplálékból, és szerves szénforrásra (vagyis már valaki más által előállított szerves anyagra) szorul.',
+                  'Vannak azonban különleges szervezetek is: egyes talajbaktériumok kemoautotrófok - kémiai energiát (pl. ammónia vagy kén-hidrogén oxidációjából) nyernek, de a szénforrásuk mégis szervetlen (szén-dioxid), akárcsak a növényeké. Ez mutatja, hogy az energiaforrás és a szénforrás egymástól függetlenül is variálódhat egy adott élőlénynél.',
                 ],
               },
               {
-                heading: 'Kondenzáció és hidrolízis',
+                heading: 'Kondenzáció és hidrolízis - egy visszatérő minta',
                 paragraphs: [
-                  'A makromolekulák alapegységei kondenzációval (vízkilépéssel) kapcsolódnak össze - ilyen folyamat például, amikor két glükózból maltóz épül fel, vagy amikor aminosavakból peptidkötéssel fehérjelánc jön létre.',
-                  'A hidrolízis (vízfelvétellel járó bontás) a kondenzáció fordítottja - ez zajlik például az emésztés során, amikor a nagy tápanyagmolekulák felszívható, kisebb egységekre bomlanak.',
+                  'Ha visszagondolunk az eddig tanultakra, észrevehetünk egy ismétlődő mintázatot: a szénhidrátoknál láttuk, hogy két glükózból maltóz épül fel vízkilépéssel (kondenzáció), a fehérjéknél pedig azt, hogy két aminosav peptidkötéssel, szintén vízkilépéssel kapcsolódik össze. Ezek nem különálló esetek, hanem ugyanannak az egyetlen kémiai alapelvnek a megnyilvánulásai.',
+                  'A kondenzáció során két kisebb molekula egy nagyobbá kapcsolódik össze, miközben egy vízmolekula szabadul fel. A hidrolízis ennek pontos fordítottja: egy nagyobb molekula víz felvételével bomlik kisebb egységekre - ilyen történt például akkor is, amikor a keményítő a nyál amiláz enzimének hatására maltózra, majd glükózra bomlott.',
+                  'Az emésztés valójában nem más, mint hidrolízisek sorozata: a szénhidrátok poliszacharidokból monoszacharidokká, a fehérjék peptidláncokból aminosavakká, a zsírok trigliceridekből glicerinné és zsírsavakká bomlanak - mindhárom molekulacsoportnál ugyanaz a vízfelvételes bontási elv érvényesül, csak más-más enzimek (pl. amiláz, pepszin, lipáz) végzik el.',
+                  'Ez az elv gyakorlatilag minden makromolekula (szénhidrátok, lipidek, fehérjék, nukleinsavak) felépítésére és lebontására igaz - érdemes ezt egy általános "sablonként" megjegyezni, nem soronként külön-külön megtanulni minden molekulacsoportnál.',
                 ],
               },
               {
                 heading: 'Endocitózis és exocitózis',
                 paragraphs: [
-                  'Az endocitózis és az exocitózis folyamata teszi lehetővé nagyobb anyagmennyiségek sejtbe juttatását, illetve onnan történő kijuttatását - mindkettő a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul, és fontos szerepük van a felépítő és lebontó anyagcsere-folyamatok sejten belüli összehangolásában is.',
+                  'Míg a kondenzáció és a hidrolízis molekuláris szinten történő átalakulás, addig nagyobb anyagmennyiségek sejtbe, illetve sejtből történő mozgatására az endocitózis és az exocitózis szolgál. Mindkét folyamat a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul: endocitózisnál a sejtmembrán "beöblösödik" és körbezárja a bejuttatandó anyagot, exocitózisnál pedig egy belső hólyagocska összeolvad a sejtmembránnal, kijuttatva a tartalmát.',
                 ],
               },
-            ],
-            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'hidrolízis', 'kondenzáció', 'exocitózis'],
-          },
-          emeltExtra: {
-            intro: 'Emelt szinten hasznos a fenti csoportosítási szempontokat kombinálva alkalmazni: egy élőlény egyszerre jellemezhető energiaforrás és szénforrás szerint is.',
-            sections: [
               {
-                heading: 'A négyféle anyagcsere-típus',
+                heading: 'Az energiaveszteség elve',
                 paragraphs: [
-                  'A fotoautotróf szervezetek (pl. a növények, algák, cianobaktériumok) fényenergiát használnak, és szervetlen szénforrásból (CO₂-ból) építik fel szerves anyagaikat.',
-                  'A kemoautotróf szervezetek (pl. egyes talajbaktériumok, mint a nitrifikáló baktériumok) kémiai energiát hasznosítanak, de szintén szervetlen szénforrásból építkeznek.',
-                  'A kemoheterotróf szervezetek (ide tartozik a legtöbb állat, gomba és baktérium, köztük az ember is) kémiai energiát nyernek, és szerves szénforrásra szorulnak.',
-                  'A fotoheterotróf szervezetek (néhány különleges baktériumcsoport) fényenergiát hasznosítanak, de a szénforrásuk szerves eredetű - ez a legritkább kombináció a természetben.',
+                  'Alapvető fizikai törvényszerűség, hogy minden anyagátépítés energiaveszteséggel jár - ezért nincs 100%-osan hatékony biológiai folyamat, a felszabaduló energia egy része mindig hő formájában távozik.',
+                  'Ez az oka annak is, hogy a Nukleinsavak fejezetben megismert ATP-t a sejtnek folyamatosan újra kell "termelnie": az energiaátalakítások sohasem veszteségmentesek, ezért a sejt állandóan pótolja az elhasznált energiapénzt a tápanyagokból felszabaduló energiából.',
                 ],
               },
             ],
-            keyTerms: ['fotoautotróf', 'kemoautotróf', 'kemoheterotróf', 'fotoheterotróf'],
+            keyTerms: ['fototróf', 'kemotróf', 'autotróf', 'heterotróf', 'hidrolízis', 'kondenzáció', 'exocitózis', 'fotoautotróf', 'kemoheterotróf', 'kemoautotróf'],
           },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
