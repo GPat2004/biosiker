@@ -954,37 +954,11 @@ export const CURRICULUM = [
         },
       },
       {
-        id: 'mozgas-a-sejtben',
-        title: 'Mozgás',
-        order: 11,
-        isFree: false,
-        estimatedMinutes: 10,
-        commonMistakes: [
-          'Diákok gyakran összekeverik, melyik emberi sejttípus milyen mozgásformát használ - érdemes konkrét példákhoz kötni: fehérvérsejt = állábas, hímivarsejt = ostoros, légúti hámsejt = csillós.',
-        ],
-        summary: 'A sejtek egy része önálló mozgásra képes: állábas mozgás (pl. fehérvérsejtek), ostoros mozgás (pl. hímivarsejt) és csillós mozgás (pl. légúti hámsejtek) - mindegyik specializált sejtfelszíni struktúrán alapul.',
-        content: {
-          kozep: {
-            intro: 'A sejtek egy része önálló mozgásra is képes, amit specializált sejtfelszíni struktúrák tesznek lehetővé.',
-            sections: [
-              {
-                heading: 'Mozgásformák az emberi szervezetben',
-                paragraphs: [
-                  'Az emberi szervezetben is találunk példát az állábas mozgásra (pl. a fehérvérsejtek, amelyek ezzel a mozgásformával jutnak el a fertőzés helyére), az ostoros mozgásra (pl. a hímivarsejt, amely az ostor csapkodásával halad előre) és a csillós mozgásra (pl. a légutak hámsejtjei, amelyek a csillók összehangolt mozgásával mozgatják a nyálkát és az abban megrekedt szennyeződéseket kifelé).',
-                ],
-              },
-            ],
-            keyTerms: ['állábas mozgás', 'csillós mozgás', 'ostoros mozgás'],
-          },
-          emeltExtra: { sections: [], keyTerms: [] },
-        },
-      },
-      {
         id: 'sejt-anyagcsere',
         title: 'Anyagcsere (sejtszinten)',
-        order: 12,
+        order: 11,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 18,
         commonMistakes: [
           'Sokan felcserélik a mitokondrium és a színtest szerepét: a mitokondrium a biológiai oxidáció (lebontás), a színtest a fotoszintézis (felépítés) helyszíne - ez a kettő ellentétes irányú folyamat.',
           'A lizoszóma szerepét néha összekeverik a sejtmag szerepével - a lizoszóma emésztő funkciójú, nem genetikai információt tárol.',
@@ -992,14 +966,26 @@ export const CURRICULUM = [
         summary: 'Az endoplazmatikus hálózat fehérje- és lipidszintézisben, a mitokondrium a biológiai oxidációban, a színtest a fotoszintézisben, a lizoszóma pedig a sejten belüli emésztésben vesz részt.',
         content: {
           kozep: {
-            intro: 'A sejt egyes sejtalkotói (organellumai) meghatározott anyagcsere-funkciókat látnak el.',
+            intro: 'A sejt egyes sejtalkotói (organellumai) meghatározott anyagcsere-funkciókat látnak el - ez a fejezet arról szól, melyik sejtalkotó miért felelős, a mögöttük álló folyamatok részletei pedig már megvannak a korábbi fejezetekben.',
             sections: [
               {
-                heading: 'Sejtalkotók anyagcsere-szerepe',
+                heading: 'Az endoplazmatikus hálózat',
                 paragraphs: [
-                  'A sejt belső hártyarendszere (endoplazmatikus hálózat) számos funkciót lát el: fehérjék és lipidek szintézisét, valamint anyagok szállítását a sejten belül.',
-                  'A mitokondrium a biológiai oxidáció, a színtest a fotoszintézis helyszíne.',
-                  'A lizoszóma a sejtbe bejutó, illetve a belső felesleges anyagok lebontását végzi emésztőenzimei segítségével.',
+                  'A sejt belső hártyarendszere (endoplazmatikus hálózat) számos funkciót lát el: fehérjék és lipidek szintézisét, valamint anyagok szállítását a sejten belül. A hálózat két típusa - a riboszómákkal borított durva, illetve a riboszómamentes sima felszínű endoplazmatikus hálózat - feladata is eltérő: a durva elsősorban fehérjeszintézisben, a sima elsősorban lipidszintézisben és méregtelenítésben vesz részt.',
+                ],
+              },
+              {
+                heading: 'A mitokondrium és a színtest - két ellentétes irányú "erőmű"',
+                paragraphs: [
+                  'A mitokondrium a biológiai oxidáció, a színtest a fotoszintézis helyszíne - ez a két folyamat ellentétes irányú: a fotoszintézis szervetlen anyagokból épít fel szerves anyagot fényenergia felhasználásával, a biológiai oxidáció pedig szerves anyagokat bont le, hogy energiát (ATP-t) nyerjen belőlük.',
+                  'A fotoszintézis lépéseit (fényszakasz, sötétszakasz, Calvin-ciklus) a Fotoszintézis fejezet tárgyalja részletesen, a biológiai oxidáció lépéseit (glikolízis, citromsavciklus, terminális oxidáció) pedig a Lebontó folyamatok fejezet - érdemes ezt a két fejezetet együtt átismételni, amikor a mitokondrium és a színtest szerepét tanuljuk, hiszen ugyanazoknak a folyamatoknak csak a "helyszínét" nézzük itt.',
+                ],
+              },
+              {
+                heading: 'A lizoszóma',
+                paragraphs: [
+                  'A lizoszóma a sejtbe bejutó, illetve a belső felesleges anyagok lebontását végzi emésztőenzimei segítségével - ezek az enzimek jellemzően savas környezetben (a lizoszóma belsejében) aktívak, ami megvédi a sejt többi részét attól, hogy a lizoszóma esetleges sérülése esetén az enzimek kárt tegyenek benne.',
+                  'A lizoszómák fontos szerepet játszanak a sejt "önfelújításában" is: elhasználódott, károsodott sejtalkotókat is képesek lebontani, amelyek építőelemeit a sejt aztán újra felhasználhatja - ez a folyamat különösen fontos hosszú élettartamú sejteknél (pl. idegsejteknél), amelyek nem tudnak egyszerűen "kicserélődni" osztódással.',
                 ],
               },
             ],
@@ -1023,7 +1009,7 @@ export const CURRICULUM = [
       {
         id: 'sejtosztodas',
         title: 'Osztódás',
-        order: 13,
+        order: 12,
         isFree: false,
         estimatedMinutes: 20,
         diagramId: 'mitozis-meiozis',
@@ -1076,7 +1062,7 @@ export const CURRICULUM = [
       {
         id: 'sejtmukodesek-vezerlese',
         title: 'A sejtműködések vezérlése',
-        order: 14,
+        order: 13,
         isFree: false,
         estimatedMinutes: 14,
         commonMistakes: [
