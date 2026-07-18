@@ -104,6 +104,12 @@ export const GLOSSARY = {
   'tejsavas erjedés': 'Oxigénhiányos körülmények között, jellemzően az izomsejtekben zajló erjedéstípus, amelynek végterméke a tejsav.',
   'alkoholos erjedés': 'Élesztőgombákra jellemző erjedéstípus, amely során a cukor etil-alkohollá és szén-dioxiddá bomlik.',
 
+  // 2. modul, 8. fejezet emelt kiegészítés: Fotoszintézis mechanizmusa
+  'fotorendszer': 'A tilakoidmembránban található fehérje-színanyag komplex (fotorendszer I és II), amely a fényenergia elnyeléséért és az elektronok "elindításáért" felelős.',
+  'elektronszállító lánc': 'Egymást követő fehérjékből álló rendszer a membránban, amely a rajta áthaladó elektronok energiáját protongrádiens létrehozására használja fel.',
+  'kemiozmózis': 'Az a mechanizmus, amelynek során egy membránon átívelő protongrádiens kiegyenlítődése, az ATP-szintáz enzimen keresztül, ATP termelését hajtja.',
+  'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
+
   // 2. modul, 8. fejezet: Fotoszintézis (részletesen)
   'fotolízis': 'A víz fényenergia hatására bekövetkező bomlása a fotoszintézis fényszakaszában - ennek eredménye a molekuláris oxigén.',
   'nadph': 'A fényszakaszban keletkező hidrogén- (elektron-) szállítómolekula, amelyet a sötétszakasz a szén-dioxid redukálásához használ fel.',

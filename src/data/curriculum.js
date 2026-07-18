@@ -769,7 +769,39 @@ export const CURRICULUM = [
             ],
             keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz', 'fotolízis', 'NADPH', 'Calvin-ciklus', 'klorofill-a', 'klorofill-b'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a fényszakasz molekuláris lépéseit - a fotorendszereket, az elektronszállító láncot és az ATP keletkezésének kemiozmózis-mechanizmusát - is részletesen ismerni kell.',
+            sections: [
+              {
+                heading: 'Fotorendszer II és a vízbontás',
+                paragraphs: [
+                  'A tilakoidmembránban két, egymástól elkülönülő fotorendszer működik együtt, amelyeket felfedezésük sorrendje alapján neveztek el (nem működési sorrendjük szerint). A folyamat a fotorendszer II-nél kezdődik: az itt található klorofill-a molekulák elnyelik a fényenergiát, aminek hatására egy elektron gerjesztett (magasabb energiájú) állapotba kerül, és elhagyja a fotorendszert.',
+                  'A fotorendszer II az elveszített elektront a víz bontásából (fotolízis) pótolja - ez a lépés termeli a fotoszintézis során felszabaduló oxigént.',
+                ],
+              },
+              {
+                heading: 'Az elektronszállító lánc és a protongrádiens',
+                paragraphs: [
+                  'A fotorendszer II-től elszabadult, magas energiájú elektron egy elektronszállító láncon halad végig a tilakoidmembránban. Az elektron energiájának egy részét a lánc arra használja fel, hogy hidrogénionokat (protonokat) pumpáljon a tilakoid belsejébe (lumenébe) - így egy koncentráció-különbség (protongrádiens) alakul ki a tilakoidmembrán két oldala között.',
+                  'A lánc végén az elektron a fotorendszer I-be jut, ahol egy újabb fényelnyelés újra megemeli az energiaszintjét, majd végül a NADP⁺ redukálására használódik fel, aminek eredményeként NADPH keletkezik.',
+                ],
+              },
+              {
+                heading: 'Kemiozmózis: hogyan keletkezik pontosan az ATP?',
+                paragraphs: [
+                  'A kialakult protongrádiens "kiegyenlítődése" hajtja meg az ATP termelését: a protonok egy speciális enzimen, az ATP-szintázon keresztül áramlanak vissza a tilakoid lumenéből a sztróma felé, és ez az áramlás biztosítja az ATP előállításához szükséges energiát. Ezt a mechanizmust kemiozmózisnak nevezzük.',
+                  'Érdemes megjegyezni, hogy ugyanez az alapelv - elektronszállító lánc által létrehozott protongrádiens, amelyet egy ATP-szintáz enzim "használ ki" - a sejtlégzés végoxidációjában is megjelenik, csak ott a mitokondrium belső membránjában. A fotoszintézis és a sejtlégzés tehát, bár ellentétes irányú folyamatok, hasonló molekuláris "trükköt" alkalmaznak az ATP előállítására.',
+                ],
+              },
+              {
+                heading: 'Egy érdekesség: a C4-es fotoszintézis',
+                paragraphs: [
+                  'Egyes növények (pl. a kukorica) a Calvin-cikluson kívül egy kiegészítő szén-dioxid-megkötő lépést is alkalmaznak, amivel hatékonyabban tudnak fotoszintetizálni meleg, száraz körülmények között - ezt C4-es fotoszintézisnek nevezik. Ez a téma már túlmutat az érettségi követelményén, de érdemes tudni, hogy a fotoszintézis "alapmodellje", amit ebben a fejezetben tanultunk, nem az egyetlen létező változat a növényvilágban.',
+                ],
+              },
+            ],
+            keyTerms: ['fotorendszer', 'elektronszállító lánc', 'kemiozmózis', 'ATP-szintáz'],
+          },
         },
       },
       {
