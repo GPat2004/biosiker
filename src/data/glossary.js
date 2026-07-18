@@ -111,6 +111,10 @@ export const GLOSSARY = {
   'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
 
   // 2. modul, 8. fejezet: Fotoszintézis (részletesen)
+  'rubp': 'Ribulóz-1,5-biszfoszfát; a Calvin-ciklus öt szénatomos kiindulási molekulája, amelyhez a belépő szén-dioxid kötődik, és amely a ciklus végén regenerálódik.',
+  'rubisco': 'A szén-dioxid RuBP-hez kötődését katalizáló enzim - a Föld legnagyobb mennyiségben előforduló fehérjéje.',
+  '3-foszfoglicerát': 'A Calvin-ciklusban a szén-dioxid megkötése után elsőként keletkező, háromszénatomos stabil vegyület (PGA).',
+  'g3p': 'Glicerinaldehid-3-foszfát; a Calvin-ciklusban az ATP és a NADPH felhasználásával keletkező vegyület, amelynek egy része glükózzá épül tovább, más része a RuBP regenerálására szolgál.',
   'fotolízis': 'A víz fényenergia hatására bekövetkező bomlása a fotoszintézis fényszakaszában - ennek eredménye a molekuláris oxigén.',
   'nadph': 'A fényszakaszban keletkező hidrogén- (elektron-) szállítómolekula, amelyet a sötétszakasz a szén-dioxid redukálásához használ fel.',
   'calvin-ciklus': 'A fotoszintézis sötétszakaszának ciklikusan ismétlődő reakciósorozata, amely során a szén-dioxid megkötődik és glükózzá alakul.',

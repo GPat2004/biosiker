@@ -736,7 +736,7 @@ export const CURRICULUM = [
                 ],
               },
               {
-                heading: 'Fényszakasz - részletesen',
+                heading: 'Fényszakasz',
                 paragraphs: [
                   'A fényszakasz a tilakoidmembránban zajlik. A fényenergia hatására a víz molekulái elbomlanak (ezt a folyamatot fotolízisnek nevezzük): a vízből molekuláris oxigén (O₂) szabadul fel - ez a folyamat felelős a légkör oxigénjének nagy részéért -, a hidrogén pedig egy szállítómolekulára (NADP⁺-ra) kerül, amiből így NADPH keletkezik.',
                   'A fényenergia hatására emellett ATP is képződik - ezt a folyamatot fotofoszforilációnak nevezzük, mivel fényenergia hajtja a foszforilációt (az ATP előállítását).',
@@ -744,10 +744,11 @@ export const CURRICULUM = [
                 ],
               },
               {
-                heading: 'Sötétszakasz - részletesen',
+                heading: 'Sötétszakasz',
                 paragraphs: [
                   'A sötétszakasz a sztrómában zajlik, és - a nevével ellentétben - nem feltétlenül sötétben megy végbe, csak nincs közvetlen fényigénye, mert a fényszakaszból kapja a szükséges ATP-t és NADPH-t.',
-                  'Ebben a szakaszban a légköri szén-dioxid megkötődik (ezt a lépést szén-dioxid-megkötésnek vagy CO₂-fixációnak nevezzük), majd az ATP és a NADPH energiájával redukálódik, és glükózzá, majd más szerves vegyületekké (pl. keményítővé) alakul. Ezt a ciklikusan ismétlődő reakciósorozatot Calvin-ciklusnak is nevezik.',
+                  'A sötétszakasz reakciósorozatát Calvin-ciklusnak nevezzük, és - mivel ez egy kiemelten fontos, gyakran számonkért folyamat - érdemes megjegyezni a legfontosabb résztvevő anyagait is, nem csak a folyamat lényegét. A belépő szén-dioxid egy már meglévő, öt szénatomos molekulához, a ribulóz-1,5-biszfoszfáthoz (RuBP) kötődik, ezt a lépést a RuBiSCO nevű enzim katalizálja - ez egyébként a Föld legnagyobb mennyiségben előforduló fehérjéje.',
+                  'A szén-dioxid megkötése után elsőként egy háromszénatomos vegyület, a 3-foszfoglicerát (PGA) keletkezik. Ez az ATP és a NADPH energiájával (a fényszakasz "termékeivel") glicerinaldehid-3-foszfáttá (G3P) alakul - ennek egy része glükózzá, majd más szerves vegyületekké (pl. keményítővé) épül tovább, másik, nagyobb része pedig felhasználódik a kiindulási molekula, a RuBP újratermelésére, hogy a ciklus folytatódhasson.',
                   'A fotoszintézis egyszerűsített összegegyenlete: 6 szén-dioxid és 6 víz fényenergia jelenlétében 1 glükózzá és 6 oxigénné alakul (lásd az ábrát).',
                 ],
               },
@@ -767,7 +768,7 @@ export const CURRICULUM = [
                 ],
               },
             ],
-            keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz', 'fotolízis', 'NADPH', 'Calvin-ciklus', 'klorofill-a', 'klorofill-b'],
+            keyTerms: ['fotoszintézis', 'fényszakasz', 'sötétszakasz', 'fotolízis', 'NADPH', 'Calvin-ciklus', 'RuBP', 'RuBiSCO', '3-foszfoglicerát', 'G3P', 'klorofill-a', 'klorofill-b'],
           },
           emeltExtra: {
             intro: 'Emelt szinten a fényszakasz molekuláris lépéseit - a fotorendszereket, az elektronszállító láncot és az ATP keletkezésének kemiozmózis-mechanizmusát - is részletesen ismerni kell.',
