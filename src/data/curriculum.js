@@ -384,7 +384,34 @@ export const CURRICULUM = [
             ],
             keyTerms: ['lipid', 'zsír', 'foszfatid', 'emulgeálás', 'zsírszövet'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a szteránváz és a karotinoidok szerkezetét, illetve azt is látni kell, hogyan oldja meg a szervezet a vízben nem oldódó lipidek szállítását a vérben.',
+            sections: [
+              {
+                heading: 'A szteránváz - egyetlen molekulaváz, sok különböző hormon alapja',
+                paragraphs: [
+                  'A szteránváz négy összekapcsolódó gyűrűből álló, jellegzetes molekulaszerkezet, amely a koleszterin alapváza is - a koleszterin pedig nem csupán a sejtmembrán egyik alkotórésze, hanem a szervezet szinte összes szteroid típusú hormonjának kiindulási anyaga is.',
+                  'Ugyanabból a szteránvázból, csak a rajta lévő oldalláncok apró módosításával épül fel a nemi hormonok (pl. tesztoszteron, ösztrogén), a mellékvesekéreg hormonjainak (pl. kortizol) és a D-vitamin aktív formájának szerkezete is. Ez jó példa arra, hogy a szervezet gazdaságosan "újrahasznosítja" ugyanazt az alapszerkezetet sokféle, egymástól teljesen eltérő élettani hatású molekula előállításához.',
+                ],
+              },
+              {
+                heading: 'Karotinoidok: fényelnyelés növényben és emberi szemben',
+                paragraphs: [
+                  'A karotinoidok molekulájában található konjugált kettőskötés-rendszer (váltakozó egyes és kettős kötések sorozata) felelős a fény elnyeléséért - minél hosszabb ez a váltakozó rendszer, annál hosszabb hullámhosszú fényt képes elnyelni a molekula, ez adja a karotinoidok jellegzetes sárga-narancs-vörös színét.',
+                  'Ez a tulajdonság áll a növényi karotinoidok (karotin, xantofill) fotoszintézisben betöltött szerepének hátterében: a klorofill mellett kiegészítő fényelnyelő pigmentként működnek, a klorofill által kevésbé hatékonyan elnyelt hullámhossz-tartományban is képesek energiát gyűjteni, ráadásul feleslegesen erős fény esetén védik is a növényt a károsodástól.',
+                  'Az emberi szervezetben az A-vitamin (amely karotinoidból, például béta-karotinból alakul át) a retina nevű molekulává alakul, amely a rodopszin nevű fényérzékeny fehérje alkotórésze a szem pálcikáiban. Amikor fény éri a retinát, a molekula konjugált kettőskötés-rendszerében térszerkezeti változás (izomerizáció) történik - ez a apró szerkezeti változás indítja el azt az idegi jelet, amelyet végül képként érzékelünk. Vagyis ugyanaz a konjugált kettőskötés-rendszer, amely a növényi fényelnyelést lehetővé teszi, az emberi látás molekuláris alapját is adja.',
+                ],
+              },
+              {
+                heading: 'Hogyan szállítódnak a lipidek a vérben?',
+                paragraphs: [
+                  'Korábban láttuk, hogy a lipidek apoláris jellegük miatt nem oldódnak vízben - ez komoly problémát jelentene a vér (ami túlnyomórészt víz) általi szállításukhoz. A szervezet ezt úgy oldja meg, hogy a lipideket fehérjeburokba csomagolva, ún. lipoproteinek formájában szállítja: a lipoprotein külső rétege poláris fehérjékből és foszfatid-fejekből áll (ezek a vizes közeg felé fordulnak), belsejében pedig apoláris lipidek (pl. koleszterin, trigliceridek) helyezkednek el.',
+                  'Ez a "csomagolási elv" ugyanazon a fizikai-kémiai alapon nyugszik, mint a sejtmembrán felépítése vagy az epesavak emulgeáló hatása: mindegyik esetben egy poláris-apoláris kettősséggel rendelkező molekula (vagy molekulacsoport) teszi lehetővé, hogy egy egyébként vízzel nem elegyedő anyag mégis funkcionálhasson egy vizes közegben.',
+                ],
+              },
+            ],
+            keyTerms: ['szteránváz', 'koleszterin', 'konjugált kettőskötés', 'rodopszin', 'lipoprotein'],
+          },
         },
       },
       {

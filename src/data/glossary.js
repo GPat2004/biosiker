@@ -135,6 +135,9 @@ export const GLOSSARY = {
   'glikogén': 'Glükózegységekből felépülő, erősen elágazó poliszacharid - az állatok (és az ember) tartalék szénhidrátja, elsősorban a májban és az izmokban raktározódik.',
   'cellulóz': 'β-glükózegységekből felépülő poliszacharid, a növényi sejtfal fő alkotórésze - az emberi emésztőrendszer nem képes lebontani.',
 
+  // 2. modul, 3. fejezet emelt kiegészítés: Lipidek
+  'lipoprotein': 'Fehérjéből és lipidből felépülő szállító részecske, amely lehetővé teszi a vízben nem oldódó lipidek (pl. koleszterin, trigliceridek) szállítását a vérben.',
+
   // 2. modul, 3. fejezet: Lipidek
   'zsír': 'Glicerinből és három zsírsavból felépülő lipid, amely elsősorban energiaraktározásra szolgál.',
   'koleszterin': 'Szteránvázas lipid, amely a sejtmembránok fontos alkotórésze, és számos szteroid hormon kiindulási anyaga.',
