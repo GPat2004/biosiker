@@ -842,7 +842,39 @@ export const CURRICULUM = [
             ],
             keyTerms: ['glikolízis', 'piruvát', 'NADH', 'biológiai oxidáció', 'erjedés', 'tejsavas erjedés', 'alkoholos erjedés', 'végoxidáció'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a piruvát mitokondriumba jutása utáni lépéseket, a citromsavciklus kulcsmolekuláit és a terminális oxidáció (légzési lánc) működését is ismerni kell - a teljes lépéssor memorizálása helyett elég a folyamatot meghatározó, "anchor" molekulákra fókuszálni.',
+            sections: [
+              {
+                heading: 'A piruvát belépése: az acetil-KoA képződése',
+                paragraphs: [
+                  'A glikolízisből érkező piruvát a mitokondriumba jutva egy szén-dioxid-molekulát veszít (ezt dekarboxileződésnek nevezzük), és egy szállítómolekulához, a koenzim-A-hoz kapcsolódva acetil-KoA-vá alakul. Ez a lépés köti össze a glikolízist a citromsavciklussal - az acetil-KoA a citromsavciklus "belépőjegye".',
+                ],
+              },
+              {
+                heading: 'A citromsavciklus kulcsmolekulái',
+                paragraphs: [
+                  'A citromsavciklus egy négyszénatomos molekulával, az oxálecetsavval indul, amely egyesül a belépő acetil-KoA-val, és így jön létre a ciklust elindító hatszénatomos molekula, a citromsav (innen a folyamat neve).',
+                  'A ciklus további lépései során a citromsav fokozatosan visszaalakul oxálecetsavvá - eközben két szén-dioxid-molekula szabadul fel (ezzel "adja vissza" azt a két szénatomot, amit az acetil-KoA hozott be), és a felszabaduló hidrogén szállítómolekulákra (NADH-ra és FADH₂-ra) kerül.',
+                  'A regenerálódott oxálecetsav ezután újra felveheti a következő acetil-KoA-t, így a ciklus folyamatosan ismétlődhet - éppen ezért nem "fogy el" az oxálecetsav, hanem állandóan újratermelődik, amíg van elegendő acetil-KoA utánpótlás.',
+                ],
+              },
+              {
+                heading: 'Terminális oxidáció (légzési lánc)',
+                paragraphs: [
+                  'A citromsavciklusban (és korábban a glikolízisben) keletkező NADH és FADH₂ hidrogénjét a terminális oxidáció - más néven légzési lánc - használja fel: ez a mitokondrium belső membránjában található elektronszállító lánc, amely ugyanazon az elven működik, mint amit a fotoszintézis fényszakaszánál már megismertünk.',
+                  'A hidrogénből leváló elektronok a láncon végighaladva protonokat pumpálnak a mitokondrium két membránja közötti térbe, létrehozva egy protongrádienst. Ennek kiegyenlítődése az ATP-szintáz enzimen keresztül (kemiozmózis) hajtja az ATP nagy részének termelését. A lánc végén az elektron és a hidrogénion oxigénnel egyesül, víz keletkezik - ez az oxigén "végső rendeltetése" a sejtlégzésben.',
+                ],
+              },
+              {
+                heading: 'Az aminosavak lebontásának bekapcsolódása',
+                paragraphs: [
+                  'Az aminosavak lebomlásakor a nitrogéntartalmú rész ammónia, illetve karbamid formájában kiválasztódik, a megmaradó szénváz pedig - az aminosav típusától függően - a citromsavciklus különböző pontjain kapcsolódhat be az energiatermelésbe. Ez magyarázza, hogy szükség esetén (pl. hosszan tartó éhezéskor) a szervezet a fehérjéket is képes energiaforrásként hasznosítani, nem csak a szénhidrátokat és a zsírokat.',
+                ],
+              },
+            ],
+            keyTerms: ['acetil-KoA', 'oxálecetsav', 'citromsav', 'FADH₂', 'terminális oxidáció', 'légzési lánc'],
+          },
         },
       },
       {

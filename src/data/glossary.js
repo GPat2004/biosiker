@@ -110,6 +110,14 @@ export const GLOSSARY = {
   'kemiozmózis': 'Az a mechanizmus, amelynek során egy membránon átívelő protongrádiens kiegyenlítődése, az ATP-szintáz enzimen keresztül, ATP termelését hajtja.',
   'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
 
+  // 2. modul, 9. fejezet emelt kiegészítés: citromsavciklus kulcsmolekulái
+  'acetil-koa': 'A piruvát dekarboxileződése után keletkező, koenzim-A-hoz kapcsolt kétszénatomos molekula - a citromsavciklus "belépőjegye".',
+  'oxálecetsav': 'A citromsavciklus négyszénatomos kiindulási és regenerálódó molekulája, amely egyesül a belépő acetil-KoA-val.',
+  'citromsav': 'A citromsavciklus első, hatszénatomos terméke, amely az oxálecetsav és az acetil-KoA egyesüléséből keletkezik - erről kapta a nevét a ciklus.',
+  'fadh₂': 'A citromsavciklusban keletkező hidrogénszállító molekula, amely - a NADH-hoz hasonlóan - a terminális oxidációhoz szállítja a hidrogént.',
+  'terminális oxidáció': 'A sejtlégzés utolsó szakasza (más néven légzési lánc), amely során a NADH és a FADH₂ hidrogénje végül oxigénnel egyesül, víz és ATP keletkezik.',
+  'légzési lánc': 'A terminális oxidáció másik elnevezése: a mitokondrium belső membránjában található elektronszállító lánc, amely a sejtlégzés energiatermelésének nagy részéért felelős.',
+
   // 2. modul, 9. fejezet: Lebontó folyamatok (részletesen)
   'piruvát': 'A glikolízis végterméke: háromszénatomos molekula, amely oxigén jelenlétében a mitokondriumba kerül és tovább bomlik, oxigén hiányában erjedésen megy keresztül.',
   'nadh': 'A glikolízis és a citromsavciklus során keletkező hidrogén- (elektron-) szállítómolekula, amelyet a végoxidáció használ fel ATP termelésére.',
