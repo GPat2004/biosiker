@@ -139,6 +139,14 @@ export const GLOSSARY = {
   'zsír': 'Glicerinből és három zsírsavból felépülő lipid, amely elsősorban energiaraktározásra szolgál.',
   'koleszterin': 'Szteránvázas lipid, amely a sejtmembránok fontos alkotórésze, és számos szteroid hormon kiindulási anyaga.',
 
+  // 2. modul, 1. fejezet emelt kiegészítés: Elemek, ionok szabályozása
+  'parathormon': 'A mellékpajzsmirigy által termelt hormon, amely csökkenő vér-kalciumszint esetén mozgósítja a kalciumot a csontokból, fokozza a vese kalcium-visszaszívását és aktiválja a D-vitamint.',
+  'kalcitonin': 'A pajzsmirigy által termelt hormon, amely magas vér-kalciumszint esetén csökkenti a vér kalciumkoncentrációját - a parathormon ellentétes hatású párja.',
+  'nyugalmi membránpotenciál': 'A sejtmembrán két oldala közötti elektromos potenciálkülönbség nyugalmi állapotban, amelyet elsősorban a Na⁺/K⁺-pumpa és az ionkoncentráció-különbségek tartanak fenn.',
+  'transzferrin': 'A vérben a vasat szállító fehérje, amely megvédi a szervezetet a szabad vasionok károsító hatásától.',
+  'ferritin': 'A sejteken belül vasat raktározó fehérje.',
+  'pufferrendszer': 'Olyan kémiai rendszer (pl. a hidrogén-karbonát-puffer), amely sav vagy lúg hozzáadásakor is csak kis mértékben változtatja meg egy oldat (pl. a vér) pH-ját.',
+
   // 2. modul, 2. fejezet: Szervetlen molekulák
   'dipólus': 'Olyan molekula, amelyben a töltés egyenlőtlenül oszlik el, így a molekula egyik vége enyhén negatív, másik vége enyhén pozitív töltésű - ilyen a vízmolekula is.',
   'hidrogénkötés': 'Gyenge, de nagy számban jelentős kölcsönhatás, amely egy molekula pozitív részleges töltésű hidrogénje és egy másik molekula negatív részleges töltésű atomja között alakul ki - a vízmolekulák közötti hidrogénkötések felelősek a víz sok különleges tulajdonságáért.',

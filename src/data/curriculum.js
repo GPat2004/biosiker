@@ -231,7 +231,48 @@ export const CURRICULUM = [
             ],
             keyTerms: ['szén', 'hidrogén', 'oxigén', 'nitrogén', 'foszfor', 'kén', 'kalcium', 'kálium', 'nátrium', 'klór', 'magnézium', 'vas', 'jód', 'cink', 'réz', 'fluor'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten nemcsak további elemeket és ionokat kell ismerni, hanem azt is látni kell, hogyan szabályozza a szervezet ezeknek az elemeknek a szintjét - és mi történik, ha ez a szabályozás nem működik megfelelően.',
+            sections: [
+              {
+                heading: 'További nyomelemek és ionok',
+                paragraphs: [
+                  'A szilícium (Si) egyes élőlényeknél (pl. kovamoszatoknál) a sejtfal, illetve a váz felépítésében játszik szerepet - ezek a szervezetek a vízből felvett szilícium-dioxidból építik fel jellegzetes, mintázott vázukat.',
+                  'A nitrit (NO₂⁻) és a nitrát (NO₃⁻) a nitrogénforgalom fontos állomásai - a talajban élő baktériumok alakítják át egymásba ezeket a formákat, amelyeket a növények felvehetnek. Ez azt is jelenti, hogy a növények számára elérhető nitrogén mennyisége nem csak a talaj nitrogéntartalmától, hanem az ott élő baktériumközösség aktivitásától is függ.',
+                  'A foszfát (PO₄³⁻) ion nemcsak a csontok és fogak felépítésében játszik szerepet, hanem a nukleinsavak (DNS, RNS) és az ATP gerincét is ez alkotja - minden foszfátcsoport egy-egy "kapocs" a nukleotidláncban. Ez összeköti a foszfor makroelemként betöltött szerepét (lásd fentebb) az energiaanyagcserével és az örökítő anyaggal is.',
+                ],
+              },
+              {
+                heading: 'A kalciumszint szabályozása - egy összetett visszacsatolási rendszer',
+                paragraphs: [
+                  'A vér kalciumszintjét a szervezet szűk határok között tartja, mert - ahogy fentebb szó volt róla - a kalcium jelmolekulaként is működik, így koncentrációjának ingadozása komoly zavarokat okozna.',
+                  'Ha a vér kalciumszintje csökken, a mellékpajzsmirigy parathormont (PTH) választ ki. Ez a hormon három helyen hat egyszerre: mozgósítja a kalciumot a csontokból, fokozza a vese kalcium-visszaszívását, és aktiválja a D-vitamint, amely ezután a bélben fokozza a kalcium felszívódását a táplálékból. Ha a vér kalciumszintje túl magasra emelkedik, a pajzsmirigy kalcitonint választ ki, amely ellentétes irányban hat, és csökkenti a vér kalciumszintjét.',
+                  'Ez a mechanizmus jó példa arra, hogy egy elem élettani szintjének szabályozása szinte sohasem egyetlen szervre vagy folyamatra korlátozódik, hanem több szerv (csont, vese, bél) összehangolt működését igényli.',
+                ],
+              },
+              {
+                heading: 'A Na⁺/K⁺-pumpa molekuláris működése',
+                paragraphs: [
+                  'A korábban említett nátrium-kálium koncentráció-különbséget egy aktív szállítást végző fehérje, a Na⁺/K⁺-pumpa tartja fenn: minden működési ciklusában 3 nátriumiont juttat ki a sejtből, miközben 2 káliumiont juttat be, ATP elhasználása mellett.',
+                  'Mivel a kijuttatott pozitív töltés több, mint a bejuttatott, a pumpa maga is hozzájárul a sejt belsejének negatív elektromos potenciáljához (nyugalmi membránpotenciál) - vagyis a Na⁺ és K⁺ nem csak "egyensúlyban van", hanem a fenntartásukhoz szükséges munka maga is részt vesz az elektromos jel létrehozásában, amelyre az idegműködés épül.',
+                ],
+              },
+              {
+                heading: 'A vas szervezeten belüli szállítása és tárolása',
+                paragraphs: [
+                  'A felszívódott vas nem szabadon "úszik" a vérben, hanem egy szállítófehérjéhez, a transzferrinhez kötődve jut el a szövetekhez - ez védi a szervezetet a szabad vasionok károsító (sejtkárosító, oxidatív stressz-fokozó) hatásától.',
+                  'A sejteken belül a felesleges vas a ferritin nevű fehérjéhez kötve raktározódik - így amikor a szervezetnek hirtelen több vasra van szüksége (pl. vérveszteség után), gyorsan mobilizálható tartalék áll rendelkezésre.',
+                ],
+              },
+              {
+                heading: 'A hidrogén-karbonát mint pufferrendszer',
+                paragraphs: [
+                  'A korábban már említett hidrogén-karbonát (HCO₃⁻) ion nemcsak a szén-dioxid vérbeli szállításában vesz részt, hanem a vér pH-jának állandóságát biztosító pufferrendszer alapja is: sav hozzáadásakor a hidrogén-karbonát megköti a felesleges hidrogéniont, lúg hozzáadásakor pedig hidrogéniont ad le - így a vér pH-ja még jelentős sav- vagy lúgterhelés esetén is csak kis mértékben változik.',
+                ],
+              },
+            ],
+            keyTerms: ['szilícium', 'nitrát', 'parathormon', 'kalcitonin', 'nyugalmi membránpotenciál', 'transzferrin', 'ferritin', 'pufferrendszer'],
+          },
         },
       },
       {

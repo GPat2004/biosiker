@@ -13,6 +13,7 @@ const adatok = [
 
 const ElemekMegoszlasa = () => {
   const maxSzazalek = 65;
+  const maxSavSzelesseg = 260; // kisebb, mint korabban, hogy a felirat mindig beferjen mellette
   return (
     <div>
       <p className="text-xs font-bold text-slate-500 mb-4 text-center">
@@ -21,7 +22,7 @@ const ElemekMegoszlasa = () => {
       <svg viewBox="0 0 500 260" className="w-full h-auto max-w-lg mx-auto" role="img" aria-label="Az emberi szervezet elemi összetétele, sávdiagram">
         {adatok.map((d, i) => {
           const y = i * 34 + 10;
-          const width = (d.szazalek / maxSzazalek) * 320;
+          const width = (d.szazalek / maxSzazalek) * maxSavSzelesseg;
           return (
             <g key={d.elem}>
               <text x="0" y={y + 14} className="fill-current text-[11px]">
