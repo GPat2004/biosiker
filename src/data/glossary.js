@@ -213,7 +213,7 @@ export const GLOSSARY = {
   'fluor': 'A fogzománcba épülve növeli annak ellenállóképességét a fogszuvasodással szemben.',
   'szilícium': 'Egyes élőlények (pl. kovamoszatok) sejtfalának, vázának felépítésében szerepet játszó elem.',
   'nitrát': 'A nitrogénforgalom egyik állomása (NO₃⁻); a talajban a nitrifikáló baktériumok termelik, a növények ebben a formában is felvehetik a nitrogént.',
-  'citokróm': 'A sejtlégzés végoxidációjában elektronszállításban részt vevő, vastartalmú fehérjecsalád.',
+  'citokróm': 'A sejtlégzés terminális oxidációjában (légzési láncban) elektronszállításban részt vevő, vastartalmú fehérjecsalád - a bennük lévő vasion Fe³⁺ és Fe²⁺ állapot között váltakozva adja tovább az elektronokat.',
   'makroelem': 'Az élő szervezet tömegének nagy részét adó kémiai elem (pl. C, H, O, N, P, S, Ca, K, Na, Cl, Mg).',
   'mikroelem': 'Kis mennyiségben, de nélkülözhetetlenül jelen lévő kémiai elem (pl. vas, jód, cink, réz) - más néven nyomelem.',
   'nyomelem': 'Kis mennyiségben, de nélkülözhetetlenül jelen lévő kémiai elem - más néven mikroelem.',

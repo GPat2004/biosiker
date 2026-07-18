@@ -863,6 +863,7 @@ export const CURRICULUM = [
                 heading: 'Terminális oxidáció (légzési lánc)',
                 paragraphs: [
                   'A citromsavciklusban (és korábban a glikolízisben) keletkező NADH és FADH₂ hidrogénjét a terminális oxidáció - más néven légzési lánc - használja fel: ez a mitokondrium belső membránjában található elektronszállító lánc, amely ugyanazon az elven működik, mint amit a fotoszintézis fényszakaszánál már megismertünk.',
+                  'A légzési lánc egyik legfontosabb fehérjecsaládja a citokrómok csoportja - ezek olyan fehérjék, amelyek egy vasat (Fe) tartalmazó hem-csoportot hordoznak, hasonlót ahhoz, amit a hemoglobinnál is megismertünk. Az elektronszállítás során a citokrómokban lévő vasion Fe³⁺ és Fe²⁺ állapot között váltakozik: amikor a vasion elfogad egy elektront, Fe³⁺-ból Fe²⁺-má redukálódik, amikor pedig továbbadja azt a következő citokrómnak, Fe²⁺-ból Fe³⁺-má oxidálódik. Ez az ismétlődő oxidáció-redukció (redoxi) ciklus mozgatja végig az elektronokat a láncon.',
                   'A hidrogénből leváló elektronok a láncon végighaladva protonokat pumpálnak a mitokondrium két membránja közötti térbe, létrehozva egy protongrádienst. Ennek kiegyenlítődése az ATP-szintáz enzimen keresztül (kemiozmózis) hajtja az ATP nagy részének termelését. A lánc végén az elektron és a hidrogénion oxigénnel egyesül, víz keletkezik - ez az oxigén "végső rendeltetése" a sejtlégzésben.',
                 ],
               },
@@ -873,13 +874,13 @@ export const CURRICULUM = [
                 ],
               },
             ],
-            keyTerms: ['acetil-KoA', 'oxálecetsav', 'citromsav', 'FADH₂', 'terminális oxidáció', 'légzési lánc'],
+            keyTerms: ['acetil-KoA', 'oxálecetsav', 'citromsav', 'FADH₂', 'terminális oxidáció', 'légzési lánc', 'citokróm'],
           },
         },
       },
       {
         id: 'elhatarolas',
-        title: 'Elhatárolás',
+        title: 'Membránok szerepe',
         order: 10,
         isFree: false,
         estimatedMinutes: 18,
