@@ -64,6 +64,22 @@ export const GLOSSARY = {
   'meiózis': 'Számfelező sejtosztódás, amely az ivarsejtek keletkezésekor megfelezi a kromoszómaszámot, és genetikai változatosságot hoz létre.',
   'lizoszóma': 'A sejtbe bejutó, illetve a sejten belüli felesleges anyagok lebontását végző, emésztőenzimeket tartalmazó sejtalkotó.',
 
+  // 2. modul, 12. fejezet: Osztódás (részletesen)
+  'g1-szakasz': 'Az interfázis első szakasza, amelyben a sejt növekszik és fehérjéket termel.',
+  's-szakasz': 'Az interfázis szintézis szakasza, amelyben megkettőződik a sejt DNS-állománya.',
+  'g2-szakasz': 'Az interfázis utolsó szakasza, amelyben a sejt közvetlenül felkészül az osztódásra.',
+  'nemleválás': 'A meiózis során előforduló hiba (nondiszjunkció), amikor egy kromoszómapár nem válik szét megfelelően - ez a Down-szindróma egyik lehetséges genetikai háttere.',
+  'homológ kromoszóma': 'Egymáshoz hasonló, de nem teljesen egyező kromoszómapár egyik tagja - az egyik anyai, a másik apai eredetű, ugyanazokat a géneket hordozzák, de gyakran eltérő allélokkal.',
+  'független szétválás': 'A meiózis I során a homológ kromoszómapárok véletlenszerű, egymástól független szétválása az utódsejtek között - a genetikai változatosság egyik fő forrása.',
+  'kromatida': 'A megkettőződött DNS-t tartalmazó kromoszóma egyik "fele" - egy osztódás előtti kromoszóma két, egymással megegyező kromatidából áll.',
+  'centromér': 'A kromoszóma összeszűkülő pontja, amely a két testvérkromatidát összekapcsolja, és amelyhez az osztódási orsó fonalai kapcsolódnak.',
+  'kapcsoltsági csoport': 'Egy adott kromoszómán elhelyezkedő gének összessége, amelyek - mivel fizikailag ugyanahhoz a DNS-molekulához tartoznak - együtt öröklődnek.',
+  'interfázis': 'A sejtciklus osztódás közötti szakasza, amely alatt a sejt növekszik, felkészül, és megkettőződik a DNS-e.',
+  'profázis': 'A mitózis első szakasza, amelyben a DNS kromoszómákká tömörödik, és kialakul az osztódási orsó.',
+  'metafázis': 'A mitózis szakasza, amelyben a kromoszómák a sejt egyenlítői síkjában rendeződnek el.',
+  'anafázis': 'A mitózis szakasza, amelyben a testvérkromatidák szétválnak és a sejt ellentétes pólusai felé húzódnak.',
+  'telofázis': 'A mitózis utolsó szakasza, amelyben kialakul a két új sejtmag, majd a citoplazma is kettéválik.',
+
   // 3. modul: Az egyed szerveződési szintje
   'vírus': 'Nem sejtes szerveződésű biológiai rendszer, amely csak élő sejtekben, azok anyagcsere-gépezetét felhasználva képes szaporodni.',
   'kapszid': 'A vírus örökítőanyagát körülvevő fehérjeburok.',

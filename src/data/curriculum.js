@@ -1006,7 +1006,7 @@ export const CURRICULUM = [
         title: 'Osztódás',
         order: 12,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 30,
         diagramId: 'mitozis-meiozis',
         comparisonTable: {
           headers: ['Szempont', 'Mitózis', 'Meiózis'],
@@ -1015,43 +1015,80 @@ export const CURRICULUM = [
             ['Keletkező sejtek száma', '2', '4'],
             ['Kromoszómaszám', 'változatlan (pl. 46 → 46)', 'megfeleződik (pl. 46 → 23)'],
             ['Előfordulás', 'testi sejtekben', 'ivarsejt-képzéskor'],
-            ['Genetikai változatosság', 'nem növeli', 'növeli (rekombináció)'],
+            ['Genetikai változatosság', 'nem növeli', 'növeli'],
           ],
         },
-        commonMistakes: [
-          'Gyakori hiba azt hinni, hogy a meiózis egyetlen osztódás - valójában két egymást követő osztódásból áll, ez adja a négy keletkező sejtet.',
-          'Sokan elfelejtik, hogy a mitózis eredményeként keletkező sejtek kromoszómaszáma NEM csökken - csak a meiózisnál felezõdik.',
-        ],
-        mnemonic: 'MEIÓZIS = "kEttő" (két osztódás, négy sejt, felezett kromoszómaszám) - a "M"-hez kösd a "kEttőt".',
-        summary: 'A mitózis egyetlen osztódással két, az eredetivel megegyező kromoszómaszámú testi sejtet hoz létre. A meiózis két egymást követő osztódással négy, felezett kromoszómaszámú ivarsejtet eredményez, és rekombináció révén genetikai változatosságot is teremt.',
         content: {
           kozep: {
-            intro: 'A sejtosztódás biztosítja az élőlények növekedését, megújulását és szaporodását.',
+            intro: 'A sejtosztódás az élet egyik legalapvetőbb folyamata: ez biztosítja az élőlények növekedését, sejtjeik megújulását és a szaporodást is. Mivel ez a témakör kiemelten fontos és gyakran számonkért, minden részletét érdemes alaposan végiggondolni.',
             sections: [
               {
-                heading: 'Számtartó és számfelező osztódás',
+                heading: 'A kromoszóma fogalma',
                 paragraphs: [
-                  'A számtartó osztódás (mitózis) a testi sejtek osztódásának módja, amely során a keletkező sejtek kromoszómaszáma megegyezik az eredeti sejtével.',
-                  'A számfelező osztódás (meiózis) az ivarsejtek létrejöttében játszik szerepet: megfelezi a kromoszómaszámot, és biztosítja a genetikai sokféleséget.',
-                  'Az emberi testi sejtek 46, az ivarsejtek 23 kromoszómát tartalmaznak.',
+                  'A kromoszóma a DNS és a hozzá kapcsolódó fehérjék tömör, sejtosztódáskor mikroszkópban is látható formája - osztódás előtt a DNS ugyanis erősen feltekeredik, hogy könnyebben, sértetlenül szétosztható legyen a két utódsejt között.',
+                  'Osztódás előtt (miután a DNS már megkettőződött) egy kromoszóma két, egymással teljesen megegyező kromatidából áll, amelyeket egy összeszűkülő pont, a centromér köt össze. A kromoszóma genetikai értelemben egy kapcsoltsági csoportot is jelent: a rajta elhelyezkedő gének "együtt öröklődnek", hiszen fizikailag ugyanahhoz a DNS-molekulához tartoznak.',
+                  'Az emberi testi sejtek 46, az ivarsejtek 23 kromoszómát tartalmaznak - ez a különbség kulcsfontosságú a mitózis és a meiózis megértéséhez.',
+                ],
+              },
+              {
+                heading: 'A sejtciklus',
+                paragraphs: [
+                  'A sejt élete nem folyamatos osztódásból áll: a legtöbb idejét egy növekedési és felkészülési szakaszban, az interfázisban tölti, és csak ennek végén, viszonylag rövid ideig zajlik maga az osztódás.',
+                  'Az interfázis három részre bontható. A G1-szakaszban a sejt növekszik, és termeli azokat a fehérjéket és sejtalkotókat, amelyekre a további működéséhez szüksége van. Az S-szakaszban ("szintézis" szakasz) megkettőződik a DNS-állomány - enélkül ugyanis nem tudná a két utódsejt is megkapni a teljes genetikai információt. A G2-szakaszban a sejt tovább növekszik, és közvetlenül felkészül az osztódásra.',
+                  'Az interfázist követi az osztódás szakasza (M-szakasz), amely alatt a mitózis vagy a meiózis lépései zajlanak le.',
+                ],
+              },
+              {
+                heading: 'A mitózis (számtartó osztódás) szakaszai',
+                paragraphs: [
+                  'A mitózis eredményeként két, egymással és az eredeti sejttel genetikailag megegyező testi sejt jön létre - ez biztosítja a szervezet növekedését és a sejtek pótlását.',
+                  'A profázis szakaszában a korábban lazán elhelyezkedő DNS-állomány kromoszómákká tömörödik, és megkezdődik egy speciális fehérjékből (mikrotubulusokból) álló szerkezet, az osztódási orsó kialakulása - az állati sejtekben ezt két centriólum szervezi, amelyek az osztódás során a sejt két ellentétes pólusára vándorolnak.',
+                  'A metafázis során a kromoszómák a sejt "egyenlítői síkjában" rendeződnek el, az orsó fonalai pedig minden kromoszóma centromérjéhez kapcsolódnak - ez a lépés biztosítja, hogy az osztódás pontos és rendezett legyen.',
+                  'Az anafázis szakaszában az orsó fonalai összehúzódnak, és a testvérkromatidák szétválnak egymástól, a sejt két ellentétes pólusa felé húzódva. Ettől kezdve minden kromatida önálló kromoszómának számít.',
+                  'A telofázis során a két pólusnál összegyűlt kromoszómák körül újra kialakul a sejtmaghártya, létrejön a két új sejtmag, majd a citoplazma is kettéválik (ez utóbbi lépést sejttestosztódásnak nevezzük), és két, egymással genetikailag azonos utódsejt keletkezik.',
+                ],
+              },
+              {
+                heading: 'A meiózis (számfelező osztódás) lényege',
+                paragraphs: [
+                  'A meiózis az ivarsejtek (petesejt, hímivarsejt) létrejöttében játszik szerepet - ha az ivarsejtek is a testi sejtekkel megegyező (46-os) kromoszómaszámmal rendelkeznének, akkor a megtermékenyítéskor létrejövő zigóta kromoszómaszáma minden generációban megduplázódna. A meiózis pontosan ezt előzi meg azzal, hogy megfelezi a kromoszómaszámot.',
+                  'A meiózis két egymást követő osztódásból áll (ellentétben a mitózis egyetlen osztódásával), de a DNS csak egyszer, az első osztódás előtt kettőződik meg - emiatt az egy kiindulási sejtből végül négy, felezett (23-as) kromoszómaszámú ivarsejt keletkezik.',
+                ],
+              },
+              {
+                heading: 'Az I. és a II. meiotikus osztódás közötti különbség',
+                paragraphs: [
+                  'Az első meiotikus osztódás (meiózis I) során az egymáshoz hasonló, de nem teljesen egyező (egyik anyai, egyik apai eredetű) homológ kromoszómapárok válnak szét egymástól, és kerülnek a két utódsejtbe - ekkor még minden kromoszóma két kromatidából áll, csak a homológ párok száma feleződik meg.',
+                  'A második meiotikus osztódás (meiózis II) ezután lényegében a mitózishoz hasonlóan zajlik: itt már a testvérkromatidák válnak szét egymástól - ez a lépés adja a végleges, egyszeres kromatidájú, felezett kromoszómaszámú ivarsejteket.',
+                  'Ez a kétlépcsős folyamat magyarázza, hogy miért pont négy sejt keletkezik egyetlen kiindulási sejtből: az első osztódás kettéosztja a homológ párokat (2 sejt), a második osztódás pedig mindkét sejtben szétválasztja a testvérkromatidákat (2×2 = 4 sejt).',
+                ],
+              },
+              {
+                heading: 'Hogyan hoz létre a meiózis genetikai változatosságot?',
+                paragraphs: [
+                  'A meiózis nemcsak megfelezi a kromoszómaszámot, hanem genetikai változatosságot is teremt. Ennek egyik forrása, hogy a meiózis I során az anyai és apai eredetű homológ kromoszómák véletlenszerűen, egymástól függetlenül kerülnek szét az utódsejtekbe - ezt független szétválásnak nevezzük. Mivel az embernek 23 pár kromoszómája van, ez önmagában több millió különböző kombinációt tesz lehetővé egyetlen ivarsejtben.',
+                  'A változatosság másik forrása, hogy a homológ kromoszómák a meiózis I elején szorosan egymás mellé rendeződnek, és apró szakaszokat cserélhetnek egymással (ezt a folyamatot a Genetika témakörben tanuljuk majd részletesen) - ez tovább növeli az esélyét annak, hogy egy adott ivarsejt genetikailag egyedi kombinációt hordozzon.',
+                  'Ez a kettős forrás (független szétválás és szakaszcsere) az oka annak, hogy egy szülőpár gyermekei - egypetéjű ikreket kivéve - genetikailag sosem egyeznek meg egymással, még akkor sem, ha ugyanattól a két szülőtől származnak.',
+                ],
+              },
+              {
+                heading: 'Miért van szükség mindkét osztódástípusra?',
+                paragraphs: [
+                  'A mitózis és a meiózis két, egymást kiegészítő szerepet tölt be: a mitózis biztosítja, hogy a szervezet sejtjei növekedni, megújulni tudjanak, méghozzá genetikailag pontosan az eredetivel megegyező formában - ez elengedhetetlen ahhoz, hogy egy szervezet minden sejtje ugyanazt a genetikai információt hordozza.',
+                  'A meiózis ezzel szemben kifejezetten a szaporodáshoz szükséges: nemcsak a kromoszómaszám állandóságát tartja fenn generációról generációra, hanem az általa létrehozott genetikai változatosság az evolúció egyik alapvető forrása is - enélkül minden utód genetikailag azonos lenne a szüleivel, ami jelentősen csökkentené egy faj alkalmazkodóképességét a változó környezethez.',
+                ],
+              },
+              {
+                heading: 'Amikor a folyamat hibázik: nemleválás',
+                paragraphs: [
+                  'Ritkán előfordulhat, hogy a meiózis során egy homológ kromoszómapár (vagy a második osztódásnál egy testvérkromatida-pár) nem válik szét megfelelően - ezt a hibát nemleválásnak (nondiszjunkciónak) nevezzük. Ennek eredményeként olyan ivarsejtek keletkezhetnek, amelyekben egy adott kromoszómából eggyel több vagy eggyel kevesebb van a szokásosnál.',
+                  'Ha egy ilyen rendellenes ivarsejt vesz részt a megtermékenyítésben, a létrejövő magzat sejtjeiben is eltérő lesz egy adott kromoszóma száma - ez áll például a Down-szindróma hátterében, amelynél a 21-es kromoszómából három (kettő helyett) található meg a sejtekben. A nemleválás esélye az anyai életkor előrehaladtával nő, ami az egyik oka annak, hogy idősebb várandós anyáknál gyakrabban javasolnak genetikai szűrővizsgálatot.',
                 ],
               },
             ],
-            keyTerms: ['mitózis', 'meiózis', 'kromoszóma'],
+            keyTerms: ['kromoszóma', 'kromatida', 'centromér', 'kapcsoltsági csoport', 'sejtciklus', 'interfázis', 'G1-szakasz', 'S-szakasz', 'G2-szakasz', 'mitózis', 'profázis', 'metafázis', 'anafázis', 'telofázis', 'meiózis', 'homológ kromoszóma', 'független szétválás', 'nemleválás'],
           },
-          emeltExtra: {
-            intro: 'Emelt szinten a sejtciklus szakaszait és a mitózis-meiózis részletes összehasonlítását is ismerni kell.',
-            sections: [
-              {
-                heading: 'A sejtciklus és az osztódások összehasonlítása',
-                paragraphs: [
-                  'A sejtciklus jól elkülöníthető szakaszokra bontható: a növekedési szakaszokat (amikor a sejt felkészül az osztódásra és megkettőződik a DNS-e) az osztódás szakasza követi.',
-                  'A mitózis és a meiózis összehasonlítható folyamataik, előfordulásuk, valamint a genetikai információ mennyiségi és minőségi változása alapján - a meiózis során rekombináció is történik, ami tovább növeli a genetikai változatosságot.',
-                ],
-              },
-            ],
-            keyTerms: ['sejtciklus', 'rekombináció'],
-          },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
