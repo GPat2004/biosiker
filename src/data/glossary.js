@@ -110,6 +110,12 @@ export const GLOSSARY = {
   'kemiozmózis': 'Az a mechanizmus, amelynek során egy membránon átívelő protongrádiens kiegyenlítődése, az ATP-szintáz enzimen keresztül, ATP termelését hajtja.',
   'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
 
+  // 2. modul, 10. fejezet: Membránok szerepe
+  'megkönnyített diffúzió': 'Poláris molekulák vagy ionok passzív szállítása csatorna- vagy szállítófehérjéken keresztül - energiát nem igényel, de fehérje közreműködése szükséges hozzá.',
+  'másodlagos aktív szállítás': 'Olyan aktív szállítási forma, amely nem közvetlenül ATP-t használ, hanem egy másik ion (jellemzően a nátrium) koncentráció-grádiensét "használja ki" az energiaigényes szállításhoz.',
+  'csatornafehérje': 'Membránfehérje, amely pórust alkot, lehetővé téve meghatározott ionok vagy kisebb molekulák átjutását a membránon.',
+  'receptorfehérje': 'Membránfehérje, amely külső jelmolekulákat (pl. hormonokat) ismer fel, és ennek hatására sejten belüli választ indít el.',
+
   // 2. modul, 9. fejezet emelt kiegészítés: citromsavciklus kulcsmolekulái
   'acetil-koa': 'A piruvát dekarboxileződése után keletkező, koenzim-A-hoz kapcsolt kétszénatomos molekula - a citromsavciklus "belépőjegye".',
   'oxálecetsav': 'A citromsavciklus négyszénatomos kiindulási és regenerálódó molekulája, amely egyesül a belépő acetil-KoA-val.',

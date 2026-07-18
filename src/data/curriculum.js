@@ -883,7 +883,7 @@ export const CURRICULUM = [
         title: 'Membránok szerepe',
         order: 10,
         isFree: false,
-        estimatedMinutes: 18,
+        estimatedMinutes: 22,
         diagramId: 'passziv-aktiv-szallitas',
         comparisonTable: {
           headers: ['Szempont', 'Passzív szállítás', 'Aktív szállítás'],
@@ -893,40 +893,38 @@ export const CURRICULUM = [
             ['Példa', 'diffúzió, ozmózis', 'Na-K pumpa'],
           ],
         },
-        commonMistakes: [
-          'Sokan azt hiszik, hogy minden sejtmembránon átjutó anyag passzívan mozog - valójában a koncentráció-különbséggel szemben történő szállítás mindig energiát (ATP-t) igényel.',
-          'Az endocitózist és az exocitózist gyakran összekeverik: az endocitózis a sejtbe való, az exocitózis a sejtből kifelé irányuló anyagfelvétel/-leadás.',
-        ],
-        mnemonic: 'PASSZÍV = "Pihen" (nem fogyaszt energiát), AKTÍV = "Aktívan dolgozik" (ATP-t fogyaszt, ezért tud a koncentráció-különbséggel szemben szállítani.',
-        summary: 'A sejtmembrán szabályozza az anyagforgalmat: a passzív szállítás energia nélkül, a koncentráció-grádiens mentén zajlik, az aktív szállítás ezzel szemben ATP-t igényel. Nagyobb anyagmennyiségek endo-, illetve exocitózissal jutnak be, illetve ki a sejtből.',
         content: {
           kozep: {
-            intro: 'A sejtet határoló biológiai hártyák (membránok) nélkülözhetetlenek a sejt életének fenntartásához - ezek szabályozzák, mi juthat be és ki a sejtből.',
+            intro: 'A sejtet határoló biológiai hártyák (membránok) nélkülözhetetlenek a sejt életének fenntartásához - ezek szabályozzák, mi juthat be és ki a sejtből, és ahogy a Lipidek fejezetben már láttuk, szerkezetük szorosan összefügg ezzel a funkcióval.',
             sections: [
               {
-                heading: 'A membránok szerepe és a szállítás típusai',
+                heading: 'A membrán felépítése és funkciói',
                 paragraphs: [
-                  'A biológiai hártyák (membránok) szerepe sokrétű: anyagforgalom, határolás, összekötés, jelölés, jelfogás.',
-                  'A passzív szállítás energiabefektetés nélkül, koncentráció-különbség mentén zajlik; az aktív szállítás energiát igényel, mivel a koncentráció-különbséggel szemben történik.',
-                  'Endocitózissal nagyobb anyagmennyiségek juttathatók a sejtbe, exocitózissal a sejtből - mindkét folyamat a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul.',
+                  'A Lipidek fejezetben megismertük, hogy a foszfatidok kettős természete (poláris fej, apoláris "farok") teszi lehetővé, hogy vizes közegben kettősréteget alkossanak - ez adja a sejtmembrán alapszerkezetét. A membránban emellett fehérjék is találhatók, amelyek csatornákat, szállítókat, receptorokat és jelfelismerő struktúrákat alkotnak.',
+                  'A biológiai hártyák szerepe sokrétű: anyagforgalom (mi juthat be és ki a sejtből), határolás (a sejt belső terének elkülönítése a külvilágtól), összekötés (szomszédos sejtek kapcsolódása), jelölés (a sejt "azonosítása" mások számára) és jelfogás (ingerek érzékelése).',
+                  'A membránfehérjék közül a csatornafehérjék pórust alkotnak, amelyen keresztül meghatározott ionok vagy kisebb molekulák áramolhatnak át; a szállítófehérjék (transzporterek) az anyaghoz kötődve, alakváltozással juttatják azt a membrán túloldalára; a receptorfehérjék pedig külső jelmolekulákat (pl. hormonokat) ismernek fel, és ennek hatására indítanak el egy sejten belüli választ.',
+                  'A membrán felszínén található, sejtenként jellegzetes szénhidrátláncok (amelyek fehérjékhez vagy lipidekhez kapcsolódnak) teszik lehetővé, hogy a sejtek felismerjék egymást - ez a "jelölő" funkció alapja, és fontos szerepet játszik például az immunrendszer működésében is, amikor a szervezet megkülönbözteti a saját sejtjeit az idegenektől.',
+                ],
+              },
+              {
+                heading: 'Passzív és aktív szállítás',
+                paragraphs: [
+                  'A passzív szállítás energiabefektetés nélkül, koncentráció-különbség mentén zajlik - ilyen a diffúzió és az ozmózis, amelyeket a Szervetlen molekulák fejezetben már megismertünk. A kisebb, apoláris molekulák (pl. oxigén, szén-dioxid) közvetlenül át tudnak diffundálni a membrán lipidrétegén, a poláris molekulák és ionok azonban csak csatornafehérjéken vagy szállítófehérjéken keresztül tudnak átjutni - ezt nevezzük megkönnyített diffúziónak.',
+                  'Az aktív szállítás ezzel szemben energiát igényel, mivel a koncentráció-különbséggel szemben történik - ilyen például a korábban (Elemek, ionok fejezet) megismert Na⁺/K⁺-pumpa működése, amely ATP felhasználásával tartja fenn a nátrium és a kálium ellentétes irányú koncentráció-különbségét a sejtmembrán két oldalán.',
+                  'Fontos megjegyezni, hogy az aktív szállítás nem mindig közvetlenül ATP-t használ fel: létezik ún. másodlagos aktív szállítás is, amikor egy anyag szállítása egy másik ion (jellemzően a nátrium) koncentráció-grádiensének "kihasználásával" történik - ehhez az energiát végső soron szintén a Na⁺/K⁺-pumpa munkája biztosítja, csak közvetett módon.',
+                ],
+              },
+              {
+                heading: 'Endocitózis és exocitózis',
+                paragraphs: [
+                  'Nagyobb anyagmennyiségek szállítására a sejt endocitózist és exocitózist alkalmaz - mindkét folyamat a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul, ahogy azt a Felépítés és lebontás kapcsolata fejezetben már érintettük.',
+                  'Endocitózissal nagyobb anyagmennyiségek juttathatók a sejtbe (a membrán "beöblösödik" és körbezárja a bejuttatandó anyagot), exocitózissal pedig a sejtből (egy belső hólyagocska összeolvad a sejtmembránnal, kijuttatva a tartalmát).',
                 ],
               },
             ],
-            keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'endocitózis'],
+            keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'endocitózis', 'csatornafehérje', 'receptorfehérje', 'megkönnyített diffúzió', 'másodlagos aktív szállítás'],
           },
-          emeltExtra: {
-            intro: 'Emelt szinten a szállítás pontos végrehajtóit és hajtóerőit is ismerni kell.',
-            sections: [
-              {
-                heading: 'A szállítás végrehajtói',
-                paragraphs: [
-                  'A passzív és az aktív szállítást a kettős lipidréteg, a membráncsatornák, a szállítók és a pumpák valósítják meg, különböző hajtóerők (pl. koncentráció-különbség, elektromos potenciál, ATP-energia) segítségével.',
-                  'A membráncsatornák specifikusak: egy adott csatorna jellemzően csak egyfajta iont vagy molekulát enged át, ami lehetővé teszi a sejt számára az anyagforgalom finom szabályozását.',
-                ],
-              },
-            ],
-            keyTerms: ['membráncsatorna'],
-          },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
