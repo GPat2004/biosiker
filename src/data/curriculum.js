@@ -193,74 +193,45 @@ export const CURRICULUM = [
         title: 'Elemek, ionok',
         order: 1,
         isFree: true,
-        estimatedMinutes: 22,
+        estimatedMinutes: 26,
         diagramId: 'elemek-megoszlasa',
         content: {
           kozep: {
-            intro: 'Az élő szervezetek felépítésében viszonylag kevés kémiai elem vesz részt, ezek aránya és szerepe azonban rendkívül fontos - fontossági sorrendben végigvesszük, melyik elem miért nélkülözhetetlen.',
+            intro: 'Az élő szervezet felépítésében viszonylag kevés kémiai elem vesz részt - de ezek nem elszigetelt tények halmazaként érdemes megtanulni őket, hanem egy egymásra épülő, egymást feltételező rendszerként. Egy-egy elem gyakran több, látszólag távoli élettani folyamatban is kulcsszerepet játszik.',
             sections: [
               {
-                heading: 'A négy legfontosabb elem: szén, hidrogén, oxigén, nitrogén',
+                heading: 'A négy legfontosabb elem és az összefüggéseik',
                 paragraphs: [
-                  'Ez a négy elem adja a szervezet tömegének döntő többségét, és ezek építik fel az összes szerves molekulát (szénhidrátokat, lipideket, fehérjéket, nukleinsavakat).',
-                  'A szén (C) a szerves kémia alapja: egy szénatom négy kovalens kötést tud kialakítani, így hosszú láncokat és gyűrűket képezhet - emiatt válhat a szén az összes szerves molekula vázává. Gyakorlatilag nincs olyan élő szervezetben előforduló nagy molekula, amelynek ne a szén adná a "gerincét".',
-                  'A hidrogén (H) a víz és szinte minden szerves molekula alkotórésze. Kiemelt szerepe van az energiaátadási folyamatokban is: a sejtlégzés során a hidrogén "szállítómolekulákra" (pl. NAD⁺) kerül, majd a végoxidáció során oxigénnel egyesülve víz és ATP keletkezik belőle.',
-                  'Az oxigén (O) szintén a víz alkotóeleme, emellett a biológiai oxidáció (a sejtlégzés) végső elektron- és hidrogénfelvevője - enélkül a sejtek nem tudnák hatékonyan kinyerni az energiát a tápanyagokból. Az oxigén ezenkívül számos szerves molekula (cukrok, zsírsavak, aminosavak) építőeleme is.',
-                  'A nitrogén (N) nélkülözhetetlen alkotóeleme a fehérjéknek (az aminosavak amino-csoportjában) és a nukleinsavaknak (a bázisokban). Nitrogén nélkül nem létezne sem DNS, sem fehérje - vagyis nem létezne örökítőanyag és enzim sem.',
+                  'A szén (C), a hidrogén (H), az oxigén (O) és a nitrogén (N) adja a szervezet tömegének döntő többségét - de érdemes végiggondolni, miért pont ezek váltak ilyen meghatározóvá.',
+                  'A szén különleges kémiai tulajdonsága (négy kovalens kötés kialakítására képes, stabil láncokat és gyűrűket hozhat létre) teszi lehetővé, hogy a szerves kémia teljes "váza" legyen - enélkül nem alakulhatott volna ki a szerves molekulák (szénhidrátok, lipidek, fehérjék, nukleinsavak) sokfélesége.',
+                  'A hidrogén és az oxigén nemcsak a vizet alkotja: ugyanez a két elem áll a sejt energiatermelő rendszerének középpontjában is. A sejtlégzés során a hidrogén "szállítómolekulákra" kerül, majd a végoxidáció lépésében az oxigénnel egyesülve víz és ATP keletkezik belőle - vagyis a víz alkotóelemei és az energiatermelés kulcsszereplői ugyanazok az atomok.',
+                  'A nitrogén köti össze a szerkezeti és az információs rendszert: nélküle nem lenne fehérjeszintézis (az aminosavak amino-csoportjában van jelen), és nem létezne genetikai információtárolás sem (a nukleinsav-bázisok nitrogéntartalmúak). Egyetlen elem tehát két, teljesen különböző biológiai rendszer működését is lehetővé teszi.',
                 ],
               },
               {
-                heading: 'További fontos makroelemek',
+                heading: 'Makroelemek - egymással összefüggő szerepkörök',
                 paragraphs: [
-                  'A foszfor (P) a nukleinsavak (DNS, RNS), az ATP és a sejtmembránt felépítő foszfolipidek nélkülözhetetlen alkotórésze, emellett - kalciummal együtt - a csontok és a fogak fő ásványi alkotóeleme.',
-                  'A kén (S) egyes aminosavak (pl. a cisztein) alkotórésze; a kéntartalmú aminosavak közötti kötések (diszulfidhidak) fontos szerepet játszanak a fehérjék térszerkezetének kialakításában és stabilizálásában.',
-                  'A kalcium (Ca) a csontok és a fogak fő ásványi alkotóeleme, emellett nélkülözhetetlen az izomösszehúzódásban, a véralvadási folyamatban és az idegi ingerületátvitelben is.',
-                  'A kálium (K) a sejten belüli tér fő pozitív töltésű ionja (kationja); kulcsszerepe van az idegi ingerületátvitelben és az izomműködésben, a nátriummal együttműködve.',
-                  'A nátrium (Na) a sejten kívüli tér fő kationja; a káliummal ellentétes irányú mozgása hozza létre azt az elektromos potenciálkülönbséget, amely az idegsejtek ingerületvezetésének alapja. Emellett meghatározó szerepe van a szervezet vízháztartásának szabályozásában is.',
-                  'A klór (Cl) a sejten kívüli tér fő negatív töltésű ionja (anionja); a gyomorban termelődő sósav (HCl) alkotóeleme, amely az emésztésben és a kórokozók elpusztításában is szerepet játszik.',
-                  'A magnézium (Mg) számos enzim működéséhez szükséges kísérő anyag (kofaktor), és a növényekben a klorofill molekula központi atomja is magnézium.',
+                  'A foszfor (P) nemcsak a csontok és fogak ásványi alkotórésze, hanem az energiaháztartás (ATP) és az örökítő anyag (nukleinsavak) felépítésében is nélkülözhetetlen - ugyanaz az elem köti tehát össze a vázrendszert, az energiaanyagcserét és a genetikai rendszert.',
+                  'A kálium (K) és a nátrium (Na) koncentrációja ellentétes irányban oszlik meg a sejtmembrán két oldalán (a kálium a sejten belül, a nátrium a sejten kívül van túlsúlyban). Ez a koncentráció-különbség hozza létre azt az elektromos potenciált, amely az idegi ingerületvezetés és az izomösszehúzódás alapja - ha ez az egyensúly felborul (például súlyos folyadékvesztés esetén), életveszélyes szívritmuszavar is kialakulhat. Ez jól mutatja, hogy egy látszólag egyszerű ionegyensúly hogyan határozhatja meg a legösszetettebb élettani folyamatokat is.',
+                  'A kalcium (Ca) nemcsak csontalkotó elem, hanem a szervezet egyik legfontosabb "jelmolekulája" is: koncentrációjának pillanatnyi megváltozása indítja be az izomösszehúzódást, a véralvadási folyamatot és számos hormon kiválasztását. Emiatt a szervezet rendkívül szigorúan szabályozza a vér kalciumszintjét.',
+                  'A klór (Cl) a nátriummal "együtt mozog" (mivel ellentétes elektromos töltésű részecskeként követi azt), emellett a gyomorsav (sósav) alkotóeleme is - vagyis ugyanaz az ion egyszerre vesz részt a sejten kívüli folyadéktér egyensúlyának fenntartásában és az emésztésben.',
+                  'A magnézium (Mg) számos enzim működéséhez szükséges "segédmolekula" (kofaktor) - hiánya izomgörcshöz és szívritmuszavarhoz is vezethet, mivel enélkül több száz enzim nem tudna megfelelően működni. Növényekben ráadásul a klorofill molekula központi atomja is magnézium.',
+                  'A kén (S) a fehérjék térszerkezetét stabilizáló diszulfidhidak alkotóeleme - enélkül sok fehérje nem tudná felvenni a működéséhez szükséges térbeli formát.',
                 ],
               },
               {
-                heading: 'Mikroelemek (nyomelemek)',
+                heading: 'Mikroelemek - kis mennyiség, aránytalanul nagy hatás',
                 paragraphs: [
-                  'A mikroelemek jóval kisebb mennyiségben fordulnak elő a szervezetben, de hiányuk éppúgy súlyos zavarokhoz vezethet, mint a makroelemeké.',
-                  'A vas (Fe) a hemoglobin (a vörösvértestek oxigénszállító fehérjéje) és a mioglobin (az izmok oxigéntároló fehérjéje) nélkülözhetetlen alkotóeleme, emellett a sejtlégzésben részt vevő egyes fehérjéknek is fontos alkotórésze.',
-                  'A jód (I) a pajzsmirigyhormonok (pl. a tiroxin) alkotóeleme, amelyek az egész szervezet anyagcseréjét szabályozzák - emiatt vezettek be sok országban kötelező sójódozást a jódhiány (és az általa okozott golyva) megelőzésére.',
-                  'A cink (Zn) számos enzim működéséhez szükséges, és fontos szerepet játszik az immunrendszer megfelelő működésében is.',
-                  'A réz (Cu) szintén több enzim (pl. a sejtlégzésben szerepet játszó enzimek) kofaktora.',
-                  'A fluor (F) beépülve a fogzománcba jelentősen növeli annak ellenállóképességét a fogszuvasodással szemben - ez áll a fogkrémek fluorozásának hátterében.',
+                  'A vas (Fe) egyszerre alkotóeleme a hemoglobinnak (a vörösvértestek oxigénszállító fehérjéjének), a mioglobinnak (az izmok oxigéntároló fehérjéjének), és a sejtlégzésben szereplő citokróm fehérjéknek is. Emiatt a vashiány nemcsak vérszegénységet okoz (kevesebb oxigénszállítás miatt), hanem a sejtek energiatermelését is rontja (a citokrómok hiányos működése miatt) - ez a kettős hatás magyarázza, miért olyan kifejezetten fárasztó állapot a vashiányos vérszegénység.',
+                  'A jód (I) a pajzsmirigyhormonok alkotóeleme, amelyek az egész szervezet anyagcsere-sebességét szabályozzák. Jódhiány esetén nemcsak golyva (a pajzsmirigy megnagyobbodása) alakulhat ki, hanem az anyagcsere lelassulása miatt fáradékonyság, fokozott hidegérzékenység és súlygyarapodás is jelentkezhet - ez is jól mutatja, hogy egyetlen elem hiánya hogyan gyűrűzhet végig a szervezet egészén.',
+                  'A cink (Zn) és a réz (Cu) számos enzim kofaktora, és mindkettő fontos szerepet játszik az immunrendszer megfelelő működésében is.',
+                  'A fluor (F) a fogzománcba épülve jelentősen növeli annak ellenállóképességét a fogszuvasodással szemben - ez áll a fogkrémek fluorozásának hátterében.',
                 ],
               },
             ],
             keyTerms: ['szén', 'hidrogén', 'oxigén', 'nitrogén', 'foszfor', 'kén', 'kalcium', 'kálium', 'nátrium', 'klór', 'magnézium', 'vas', 'jód', 'cink', 'réz', 'fluor'],
           },
-          emeltExtra: {
-            intro: 'Emelt szinten további, ritkábban előforduló, de fontos elemeket és ionokat is ismerni kell, valamint mélyebben meg kell érteni néhány makroelem működési mechanizmusát.',
-            sections: [
-              {
-                heading: 'További nyomelemek',
-                paragraphs: [
-                  'A szilícium (Si) egyes élőlényeknél (pl. kovamoszatoknál) a sejtfal, illetve a váz felépítésében játszik szerepet - ezek a szervezetek a vízből felvett szilícium-dioxidból építik fel jellegzetes, mintázott vázukat.',
-                ],
-              },
-              {
-                heading: 'További fontos ionok',
-                paragraphs: [
-                  'A nitrit (NO₂⁻) és a nitrát (NO₃⁻) a nitrogénforgalom fontos állomásai - a talajban élő baktériumok alakítják át egymásba ezeket a formákat, amelyeket a növények felvehetnek.',
-                  'A foszfát (PO₄³⁻) ion nemcsak a csontok és fogak felépítésében játszik szerepet, hanem a nukleinsavak (DNS, RNS) és az ATP gerincét is ez alkotja - minden foszfátcsoport egy-egy "kapocs" a nukleotidláncban.',
-                ],
-              },
-              {
-                heading: 'Mélyebb összefüggések',
-                paragraphs: [
-                  'A vas nemcsak a hemoglobinban, hanem a sejtlégzés végoxidációjában szereplő citokróm fehérjékben is jelen van, ahol az elektronok szállításában vesz részt - ez az oka annak, hogy a vashiány nemcsak vérszegénységet, hanem energiahiányos állapotot is okozhat.',
-                  'A kalcium szerepe a véralvadásban és az izomösszehúzódásban azon alapul, hogy koncentrációjának hirtelen megváltozása "jelként" működik, amely beindítja az adott folyamat fehérjéinek működését.',
-                ],
-              },
-            ],
-            keyTerms: ['szilícium', 'nitrát', 'citokróm'],
-          },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
