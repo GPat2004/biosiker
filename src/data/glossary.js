@@ -110,6 +110,10 @@ export const GLOSSARY = {
   'kemiozmózis': 'Az a mechanizmus, amelynek során egy membránon átívelő protongrádiens kiegyenlítődése, az ATP-szintáz enzimen keresztül, ATP termelését hajtja.',
   'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
 
+  // 2. modul, 9. fejezet: Lebontó folyamatok (részletesen)
+  'piruvát': 'A glikolízis végterméke: háromszénatomos molekula, amely oxigén jelenlétében a mitokondriumba kerül és tovább bomlik, oxigén hiányában erjedésen megy keresztül.',
+  'nadh': 'A glikolízis és a citromsavciklus során keletkező hidrogén- (elektron-) szállítómolekula, amelyet a végoxidáció használ fel ATP termelésére.',
+
   // 2. modul, 8. fejezet: Fotoszintézis (részletesen)
   'rubp': 'Ribulóz-1,5-biszfoszfát; a Calvin-ciklus öt szénatomos kiindulási molekulája, amelyhez a belépő szén-dioxid kötődik, és amely a ciklus végén regenerálódik.',
   'rubisco': 'A szén-dioxid RuBP-hez kötődését katalizáló enzim - a Föld legnagyobb mennyiségben előforduló fehérjéje.',

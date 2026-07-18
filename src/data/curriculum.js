@@ -810,53 +810,39 @@ export const CURRICULUM = [
         title: 'Lebontó folyamatok',
         order: 9,
         isFree: false,
-        estimatedMinutes: 22,
+        estimatedMinutes: 26,
         diagramId: 'sejtlegzes-folyamatabra',
         content: {
           kozep: {
-            intro: 'A lebontó (disszimilációs) folyamatok során a szerves molekulák lebontásával energia szabadul fel, amelyet a sejt ATP formájában tárol - ez a sejtlégzés lényege.',
+            intro: 'A lebontó (disszimilációs) folyamatok során a szerves molekulák lebontásával energia szabadul fel, amelyet a sejt ATP formájában tárol - ez a sejtlégzés lényege, és a fotoszintézishez hasonlóan ez is egy kiemelten fontos, gyakran számonkért témakör.',
             sections: [
               {
                 heading: 'Glikolízis',
                 paragraphs: [
-                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat, amely során egy glükózmolekulából két piruvátmolekula keletkezik, miközben nettó 2 ATP szabadul fel.',
+                  'A glikolízis a sejt citoplazmájában zajló, oxigént nem igénylő lebontási folyamat. Egyetlen, hatszénatomos glükózmolekulából két, háromszénatomos piruvátmolekula keletkezik.',
+                  'A folyamat során nettó 2 ATP szabadul fel (bár a lépések során összesen 4 ATP is képződik, ebből 2-t a sejt maga használ fel a folyamat beindításához, ezért a nettó nyereség csak 2). Emellett hidrogén is átkerül egy szállítómolekulára (NAD⁺-ra), aminek eredményeként NADH keletkezik - ezt a molekulát a következő lépések már felhasználják.',
                 ],
               },
               {
                 heading: 'Biológiai oxidáció és erjedés',
                 paragraphs: [
-                  'A biológiai oxidáció és az erjedés összehasonlítható biológiai funkciójuk, sejten belüli helyszínük és energiamérlegük alapján - a biológiai oxidáció oxigént igényel, a mitokondriumban zajlik, és lényegesen több ATP-t termel (glükózonként összesen mintegy 30 vagy annál is több ATP-t), mint az erjedés, amely oxigén hiányában, a citoplazmában zajlik, és csak a glikolízis 2 ATP-jét "hasznosítja".',
+                  'A glikolízis után a sejt "választás előtt áll": ha van elegendő oxigén, a piruvát a mitokondriumba jut, és biológiai oxidáción megy keresztül - ez oxigént igényel, és lényegesen több ATP-t termel (glükózonként összesen mintegy 30 vagy annál is több ATP-t).',
+                  'Ha nincs elegendő oxigén, a sejt erjedéssel próbálja "kezelni" a glikolízis végtermékét - ez oxigén nélkül, a citoplazmában zajlik, és csak a glikolízis már megtermelt 2 ATP-jét "hasznosítja", további energiát nem nyer.',
+                  'Az erjedésnek fontos szerepe van: a glikolízis működéséhez folyamatosan "szabad" (oxidált) NAD⁺-ra van szükség, hogy a hidrogént fel tudja venni. Ha nincs oxigén, a NADH nem tudja leadni a hidrogénjét a végoxidációban, és "elfogyna" a szabad NAD⁺ készlet, ami leállítaná a glikolízist is. Az erjedés lépése éppen ezt oldja meg: a piruvátra (vagy annak származékára) adja vissza a NADH hidrogénjét, így regenerálva a NAD⁺-ot, hogy a glikolízis folytatódhasson - ez az igazi "értelme" az erjedésnek, nem az energiatermelés.',
                   'Erjedés akkor zajlik, ha a sejt oxigénhez nem jut hozzá - például erős izommunka közben tejsavas erjedés indul be az izomsejtekben (ilyenkor keletkezik a tejsav, ami az izomfáradtság érzetét is okozhatja), míg az élesztőgombák alkoholos erjedéssel bontják a cukrot etil-alkohollá és szén-dioxiddá.',
                 ],
               },
               {
                 heading: 'Végoxidáció',
                 paragraphs: [
-                  'A végső oxidáció során a szállítómolekulához kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik - ez a lépés a mitokondriumban zajlik, és itt keletkezik a glükóz lebontása során felszabaduló energia nagy része.',
+                  'A végső oxidáció során a szállítómolekulákhoz (NADH-hoz és a citromsavciklusból érkező hasonló molekulákhoz) kötött hidrogén molekuláris oxigénnel egyesül, aminek eredményeként víz és ATP keletkezik - ez a lépés a mitokondrium belső membránján zajlik, és itt keletkezik a glükóz lebontása során felszabaduló energia nagy része.',
+                  'Ez a mechanizmus - membránon átívelő elektronszállítás, amely energiát szabadít fel az ATP előállításához - hasonló elven működik, mint amit a fotoszintézis fényszakaszánál tanultunk, csak itt a mitokondrium belső membránjában zajlik.',
                 ],
               },
             ],
-            keyTerms: ['glikolízis', 'biológiai oxidáció', 'erjedés', 'tejsavas erjedés', 'alkoholos erjedés', 'végoxidáció'],
+            keyTerms: ['glikolízis', 'piruvát', 'NADH', 'biológiai oxidáció', 'erjedés', 'tejsavas erjedés', 'alkoholos erjedés', 'végoxidáció'],
           },
-          emeltExtra: {
-            intro: 'Emelt szinten a citrátkör (citromsavciklus) lépéseit és az aminosav-lebontás sorsát is ismerni kell.',
-            sections: [
-              {
-                heading: 'A citrátkör',
-                paragraphs: [
-                  'A citrátkör a mitokondrium mátrixában zajlik: a szerves molekulák szénvázából szén-dioxid keletkezik, a felszabaduló hidrogén szállítómolekulára kerül.',
-                  'A folyamat ciklikus jellegű: minden "kör" végén regenerálódik az a kiindulási molekula, amelyhez egy újabb belépő anyag kapcsolódhat - innen a "citromsavciklus" elnevezés.',
-                ],
-              },
-              {
-                heading: 'Az aminosavak lebontásának sorsa',
-                paragraphs: [
-                  'Az aminosavak lebomlásakor és átalakításakor a nitrogén ammónia, illetve karbamid formájában kiválasztódik, vagy más aminosavba épül be - az aminosav szénváza pedig bekapcsolódhat a citromsavciklusba, így az energiatermelésbe is.',
-                ],
-              },
-            ],
-            keyTerms: ['citrátkör'],
-          },
+          emeltExtra: { comingSoon: true },
         },
       },
       {
