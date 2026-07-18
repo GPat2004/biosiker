@@ -924,7 +924,33 @@ export const CURRICULUM = [
             ],
             keyTerms: ['membrán', 'passzív szállítás', 'aktív szállítás', 'endocitózis', 'csatornafehérje', 'receptorfehérje', 'megkönnyített diffúzió', 'másodlagos aktív szállítás'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a szállítás pontos hajtóerőit, a csatornafehérjék működési elvét és egy különösen érdekes, specializált membránfehérje-típust, az akvaporinokat is meg kell ismerni.',
+            sections: [
+              {
+                heading: 'Elektrokémiai grádiens - két hajtóerő együtt',
+                paragraphs: [
+                  'Az ionok mozgását a membránon át nem csak a koncentráció-különbség hajtja, hanem az elektromos potenciálkülönbség is - a kettő együttesét elektrokémiai grádiensnek nevezzük. Ez azért fontos, mert egy ion mozgásának iránya nem mindig egyezik meg azzal, amit a koncentráció-különbség önmagában sugallna - egy pozitív töltésű iont a negatív belső membránpotenciál akkor is "befelé húzhat", ha a koncentrációja már magasabb a sejt belsejében.',
+                  'Ez a jelenség áll a korábban (Elemek, ionok fejezet) megismert nyugalmi membránpotenciál hátterében is: a Na⁺/K⁺-pumpa és az ioncsatornák együttes működése alakítja ki azt az elektrokémiai egyensúlyt, amely az idegsejtek ingerületvezetésének alapja.',
+                ],
+              },
+              {
+                heading: 'A csatornafehérjék "kapui"',
+                paragraphs: [
+                  'A csatornafehérjék nem folyamatosan nyitottak, hanem szabályozottan nyílnak és záródnak - ezt a tulajdonságukat "kapuzásnak" (gating) nevezzük. A feszültségfüggő csatornák a membránpotenciál megváltozására nyílnak ki - ez a mechanizmus áll az idegi ingerület (akciós potenciál) terjedésének hátterében. A ligandfüggő csatornák ezzel szemben egy adott jelmolekula (ligand, pl. egy neurotranszmitter) megkötődésére nyílnak meg.',
+                  'Ez a kétféle szabályozási mód magyarázza, hogy a sejt miért képes rendkívül pontosan és gyorsan reagálni a különböző típusú ingerekre: a feszültségfüggő csatornák az elektromos jelekre, a ligandfüggő csatornák a kémiai jelekre specializálódtak.',
+                ],
+              },
+              {
+                heading: 'Akvaporinok - specializált víz-csatornák',
+                paragraphs: [
+                  'Bár a víz kis mérete miatt lassan, közvetlenül is át tud diffundálni a membrán lipidrétegén, sok sejtben (pl. a vese csatornáinak sejtjeiben) szükség van ennél sokkal gyorsabb vízszállításra. Erre szolgálnak az akvaporinok: kifejezetten víz szállítására specializálódott csatornafehérjék, amelyek a víz-molekulákat úgy engedik át magukon, hogy közben kiszűrik az egyéb oldott anyagokat és ionokat.',
+                  'Az akvaporinok jó példát adnak arra, hogy a passzív szállítás (hiszen a víz itt is csak a koncentráció-különbség, vagyis az ozmózis mentén mozog) hogyan válhat mégis "célzottá" és rendkívül hatékonnyá egy specializált fehérje közreműködésével - anélkül, hogy ehhez energia befektetésére lenne szükség.',
+                ],
+              },
+            ],
+            keyTerms: ['elektrokémiai grádiens', 'feszültségfüggő csatorna', 'ligandfüggő csatorna', 'akvaporin'],
+          },
         },
       },
       {

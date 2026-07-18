@@ -110,6 +110,12 @@ export const GLOSSARY = {
   'kemiozmózis': 'Az a mechanizmus, amelynek során egy membránon átívelő protongrádiens kiegyenlítődése, az ATP-szintáz enzimen keresztül, ATP termelését hajtja.',
   'atp-szintáz': 'Az az enzim, amely a membránon átáramló protonok energiáját felhasználva ATP-t állít elő.',
 
+  // 2. modul, 10. fejezet emelt kiegészítés: szállítás hajtóerői
+  'elektrokémiai grádiens': 'A koncentráció-különbség és az elektromos potenciálkülönbség együttes hatása, amely meghatározza egy ion mozgásának irányát a membránon át.',
+  'feszültségfüggő csatorna': 'Olyan csatornafehérje, amely a membránpotenciál megváltozására nyílik ki - az idegi ingerületvezetés alapja.',
+  'ligandfüggő csatorna': 'Olyan csatornafehérje, amely egy adott jelmolekula (ligand) megkötődésére nyílik ki.',
+  'akvaporin': 'Kifejezetten víz szállítására specializálódott csatornafehérje, amely felgyorsítja a víz passzív átjutását a membránon.',
+
   // 2. modul, 10. fejezet: Membránok szerepe
   'megkönnyített diffúzió': 'Poláris molekulák vagy ionok passzív szállítása csatorna- vagy szállítófehérjéken keresztül - energiát nem igényel, de fehérje közreműködése szükséges hozzá.',
   'másodlagos aktív szállítás': 'Olyan aktív szállítási forma, amely nem közvetlenül ATP-t használ, hanem egy másik ion (jellemzően a nátrium) koncentráció-grádiensét "használja ki" az energiaigényes szállításhoz.',
