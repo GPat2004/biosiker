@@ -959,11 +959,6 @@ export const CURRICULUM = [
         order: 11,
         isFree: false,
         estimatedMinutes: 18,
-        commonMistakes: [
-          'Sokan felcserélik a mitokondrium és a színtest szerepét: a mitokondrium a biológiai oxidáció (lebontás), a színtest a fotoszintézis (felépítés) helyszíne - ez a kettő ellentétes irányú folyamat.',
-          'A lizoszóma szerepét néha összekeverik a sejtmag szerepével - a lizoszóma emésztő funkciójú, nem genetikai információt tárol.',
-        ],
-        summary: 'Az endoplazmatikus hálózat fehérje- és lipidszintézisben, a mitokondrium a biológiai oxidációban, a színtest a fotoszintézisben, a lizoszóma pedig a sejten belüli emésztésben vesz részt.',
         content: {
           kozep: {
             intro: 'A sejt egyes sejtalkotói (organellumai) meghatározott anyagcsere-funkciókat látnak el - ez a fejezet arról szól, melyik sejtalkotó miért felelős, a mögöttük álló folyamatok részletei pedig már megvannak a korábbi fejezetekben.',
@@ -1065,10 +1060,6 @@ export const CURRICULUM = [
         order: 13,
         isFree: false,
         estimatedMinutes: 14,
-        commonMistakes: [
-          'Az apoptózist (programozott sejthalál) gyakran összekeverik a nekrózissal (nem programozott, sérülés okozta sejthalál) - a kettő oka és lefolyása is teljesen eltérő.',
-        ],
-        summary: 'A sejt külső és belső ingerekre koncentrációváltozással, alakváltozással, elválasztással vagy elektromos jellel válaszolhat. A K-Na-pumpa alapvető a sejtműködés szabályozásában, a sejthalál pedig lehet programozott (apoptózis) vagy nem programozott.',
         content: {
           kozep: {
             intro: 'A sejt folyamatosan reagál a külső és belső környezetéből érkező ingerekre.',
