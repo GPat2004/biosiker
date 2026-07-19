@@ -1158,7 +1158,33 @@ export const CURRICULUM = [
             ],
             keyTerms: ['receptorfehérje', 'jelátvitel', 'K-Na-pumpa', 'apoptózis', 'nekrózis'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a jelátvitel pontos mechanizmusát (receptor-típusok, másodlagos hírvivők) és a sejtek közötti kommunikáció különböző formáit is ismerni kell.',
+            sections: [
+              {
+                heading: 'Receptor-típusok',
+                paragraphs: [
+                  'A sejtfelszíni receptorok három fő típusba sorolhatók. Az ioncsatorna-kapcsolt receptorok (a Membránok szerepe fejezetben megismert ligandfüggő csatornák) közvetlenül megnyílnak a jelmolekula kötődésére, azonnali elektromos vagy ionkoncentráció-változást okozva - ez a leggyorsabb válaszforma, jellemzően az idegrendszerben fordul elő.',
+                  'Az enzimkapcsolt receptorok a jelmolekula kötődésére saját maguk válnak enzimatikusan aktívvá, vagy egy hozzájuk kapcsolt enzimet aktiválnak. A G-fehérjéhez kapcsolt receptorok pedig a jel megérkezésekor egy közvetítő fehérjét (G-fehérjét) aktiválnak, amely aztán egy másik enzimet indít be.',
+                ],
+              },
+              {
+                heading: 'Másodlagos hírvivők és a jelerősítés',
+                paragraphs: [
+                  'A G-fehérjéhez kapcsolt receptorok működésének klasszikus példája, amikor az aktivált G-fehérje egy enzimet (adenilát-cikláz) indít be, amely ATP-ből egy másodlagos hírvivő molekulát, ciklikus AMP-t (cAMP) állít elő.',
+                  'A másodlagos hírvivők jelentősége a jelerősítésben rejlik: egyetlen aktivált receptor több G-fehérjét is aktiválhat, minden G-fehérje sok cAMP-molekulát termelhet, és minden cAMP-molekula tovább aktiválhat egy enzimkaszkádot - így egyetlen jelmolekula kötődéséből a sejten belül több ezerszeres válasz keletkezhet. Ez magyarázza, hogy a szervezetben gyakran rendkívül kis mennyiségű hormon is jelentős élettani hatást tud kiváltani.',
+                ],
+              },
+              {
+                heading: 'A sejtek közötti kommunikáció formái',
+                paragraphs: [
+                  'A sejtek közötti jelátvitel többféle "hatótávolságon" valósulhat meg. Az endokrin jelátvitel során a jelmolekula (hormon) a véráramba jutva távoli sejtekhez is eljut. A parakrin jelátvitel esetén a jelmolekula csak a közeli sejtekre hat, mielőtt lebomlana. Az autokrin jelátvitel során a sejt saját maga által termelt jelmolekulára reagál. A szinaptikus jelátvitel pedig az idegsejtekre jellemző, rendkívül gyors és célzott forma, ahol a jelmolekula (neurotranszmitter) egy szűk résen (szinapszison) át közvetlenül a szomszédos sejthez jut el.',
+                  'Ezekkel a jelátviteli formákkal részletesebben a Szabályozás (idegrendszer, hormonrendszer) témakörben találkozunk majd - érdemes már most megjegyezni a négy típus közötti alapvető különbséget, mert ez adja majd a keretet az idegi és a hormonális szabályozás összehasonlításához.',
+                ],
+              },
+            ],
+            keyTerms: ['enzimkapcsolt receptor', 'G-fehérjéhez kapcsolt receptor', 'másodlagos hírvivő', 'cAMP', 'endokrin jelátvitel', 'parakrin jelátvitel', 'autokrin jelátvitel', 'szinaptikus jelátvitel'],
+          },
         },
       },
     ],

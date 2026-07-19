@@ -110,6 +110,16 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 13. fejezet emelt kiegészítés: jelátvitel mechanizmusa
+  'enzimkapcsolt receptor': 'Receptortípus, amely a jelmolekula kötődésére saját maga válik enzimatikusan aktívvá, vagy egy hozzá kapcsolt enzimet aktivál.',
+  'g-fehérjéhez kapcsolt receptor': 'Receptortípus, amely a jelmolekula kötődésekor egy közvetítő fehérjét (G-fehérjét) aktivál, amely aztán egy másik enzimet indít be.',
+  'másodlagos hírvivő': 'A sejten belüli jelátvitelben szereplő molekula (pl. cAMP), amely a receptor aktiválódása után erősíti fel és továbbítja a jelet a sejten belül.',
+  'camp': 'Ciklikus AMP; az adenilát-cikláz enzim által ATP-ből előállított másodlagos hírvivő molekula, amely a G-fehérjéhez kapcsolt receptorok jelátvitelében vesz részt.',
+  'endokrin jelátvitel': 'Sejtek közötti kommunikáció, amelynél a jelmolekula (hormon) a véráramba jutva távoli sejtekhez is eljut.',
+  'parakrin jelátvitel': 'Sejtek közötti kommunikáció, amelynél a jelmolekula csak a közeli sejtekre hat.',
+  'autokrin jelátvitel': 'Sejtek közötti kommunikáció, amelynél a sejt saját maga által termelt jelmolekulára reagál.',
+  'szinaptikus jelátvitel': 'Idegsejtekre jellemző, gyors és célzott jelátviteli forma, amelynél a jelmolekula egy szinapszison át jut a szomszédos sejthez.',
+
   // 2. modul, 13. fejezet: A sejtműködések vezérlése
   'jelátvitel': 'Az a folyamat, amelynek során egy jelmolekula receptorhoz kötődése sejten belüli válaszfolyamatot indít el, megváltoztatva a sejt működését.',
 
