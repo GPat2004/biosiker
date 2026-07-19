@@ -81,6 +81,9 @@ export const GLOSSARY = {
   'telofázis': 'A mitózis utolsó szakasza, amelyben kialakul a két új sejtmag, majd a citoplazma is kettéválik.',
 
   // 3. modul: Az egyed szerveződési szintje
+  'bakteriofág': 'Baktériumot fertőző vírus - egyszerű, jól elkülöníthető szerkezete (fehérjefej + DNS, fehérjefarok) tette lehetővé a DNS örökítő szerepének bizonyítását (Hershey-Chase kísérlet).',
+  'inkubációs idő': 'A kórokozóval való fertőződés és a tünetek megjelenése közötti lappangási idő.',
+  'védőoltás': 'Olyan eljárás, amely a szervezet immunrendszerét egy adott kórokozó felismerésére "tanítja meg", mielőtt valódi fertőzés érné.',
   'vírus': 'Nem sejtes szerveződésű biológiai rendszer, amely csak élő sejtekben, azok anyagcsere-gépezetét felhasználva képes szaporodni.',
   'kapszid': 'A vírus örökítőanyagát körülvevő fehérjeburok.',
   'fertőzés': 'A kórokozó szervezetbe jutása, amely nem feltétlenül jár azonnal tünetekkel.',
