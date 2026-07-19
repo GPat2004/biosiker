@@ -80,7 +80,13 @@ export const GLOSSARY = {
   'anafázis': 'A mitózis szakasza, amelyben a testvérkromatidák szétválnak és a sejt ellentétes pólusai felé húzódnak.',
   'telofázis': 'A mitózis utolsó szakasza, amelyben kialakul a két új sejtmag, majd a citoplazma is kettéválik.',
 
+  // 3. modul, 2. fejezet: Baktériumok
+  'kokkusz': 'Gömb alakú baktériumsejt.',
+  'bacilus': 'Pálcika alakú baktériumsejt.',
+  'spirillum': 'Csavarodott alakú baktériumsejt.',
+
   // 3. modul emelt kiegészítés: vírus-állapotok, litikus/lizogén ciklus
+  'természetes szelekció': 'Az evolúció egyik alapmechanizmusa: a környezethez jobban alkalmazkodó egyedek nagyobb eséllyel maradnak életben és szaporodnak, ezáltal az előnyös tulajdonságok gyakorisága nő a populációban.',
   'virion': 'A sejten kívül létező, önálló, fertőzőképes vírusrészecske - a vírus "nyugvó", sejten kívüli formája.',
   'vegetatív vírus': 'A gazdasejtbe jutott, aktívan szaporodó vírus állapota, amikor genetikai anyaga irányítja új vírusalkotó elemek szintézisét.',
   'litikus ciklus': 'A fágszaporodás olyan formája, amelynél a fág azonnal új vírusrészecskéket termel, majd a gazdasejt lízisével szabadulnak ki.',

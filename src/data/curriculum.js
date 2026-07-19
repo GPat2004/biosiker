@@ -1291,8 +1291,41 @@ export const CURRICULUM = [
         title: 'Baktériumok',
         order: 2,
         isFree: false,
-        estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 24,
+        content: {
+          kozep: {
+            intro: 'A baktériumok önálló, prokarióta sejtszerveződésű élőlények - a Sejtalkotók fejezetben megismert prokarióta/eukarióta fogalompár itt egy konkrét, teljes élőlénycsoporton keresztül válik igazán érthetővé.',
+            sections: [
+              {
+                heading: 'Prokarióta és eukarióta sejtszerveződés összehasonlítása',
+                paragraphs: [
+                  'A baktériumok sejtjeiben nincs valódi, hártyával határolt sejtmag - genetikai állományuk egyetlen, körkörös DNS-molekula formájában, közvetlenül a citoplazmában található. Nincsenek bennük a korábban (Anyagcsere sejtszinten fejezet) megismert membránnal határolt sejtszervecskék sem: se mitokondrium, se endoplazmatikus hálózat, se Golgi-készülék.',
+                  'Ezzel szemben az eukarióta sejtekben (mint amilyenek a növények, állatok, gombák sejtjei) valódi sejtmag található, és a sejt belsejét membránnal határolt organellumok tagolják, amelyek mindegyike specializált feladatot lát el - ezt a fajta "belső munkamegosztást" a prokarióta sejtek nem ismerik, minden folyamatuk közvetlenül a citoplazmában zajlik.',
+                  'A baktériumsejtek jellegzetes alakok szerint is csoportosíthatók: a gömb alakúakat kokkusznak, a pálcika alakúakat bacilusnak, a csavarodott alakúakat spirillumnak nevezzük - ezek az alaki különbségek mikroszkóp alatt jól megfigyelhetők, és segítenek a baktériumfajok azonosításában.',
+                ],
+              },
+              {
+                heading: 'A baktériumok sokoldalú jelentősége',
+                paragraphs: [
+                  'A baktériumok környezeti jelentősége óriási: a korábban (Elemek, ionok fejezet) megismert nitrogénkörforgásban a nitrifikáló baktériumok alakítják át a nitrogént a növények számára felvehető formákba - enélkül a szárazföldi életközösségek táplálékláncai összeomlanának.',
+                  'Evolúciós jelentőségük is kiemelkedő: a baktériumok voltak a Föld első élőlényei, és a korábban (Anyagcsere sejtszinten fejezet) megismert endoszimbióta elmélet szerint a mitokondrium és a színtest is egykor önállóan élő baktériumokból alakult ki.',
+                  'Ipari jelentőségük is jelentős: egyes baktériumok (pl. tejsavbaktériumok) segítségével készül a joghurt és a sajt - ugyanaz a tejsavas erjedés áll a háttérben, amit korábban (Lebontó folyamatok fejezet) az izomsejteknél már megismertünk, csak itt tudatosan, élelmiszer-előállítás céljából használjuk ki.',
+                  'Mezőgazdasági jelentőségük is számottevő: egyes talajbaktériumok (pl. a hüvelyesek gyökerén élő nitrogénkötő baktériumok) képesek a légköri nitrogént a növények számára hasznosítható formává alakítani, ezáltal természetes módon javítva a talaj termékenységét.',
+                  'Egészségügyi szempontból a baktériumok kettős szerepet töltenek be: egyes fajok kórokozók (fertőző betegségeket okoznak), mások viszont a gyógyszeriparban is fontos szerepet kapnak - például géntechnológiával módosított baktériumok állítanak elő emberi inzulint a cukorbetegek számára.',
+                ],
+              },
+              {
+                heading: 'Antibiotikum-rezisztencia',
+                paragraphs: [
+                  'A felelőtlen antibiotikum-szedés (pl. a kúra idő előtti abbahagyása) azért vezet a kórokozók ellenálló formáinak elterjedéséhez, mert egy baktériumpopuláción belül természetes genetikai változatosság áll fenn: néhány egyed véletlenszerűen ellenállóbb lehet egy adott antibiotikummal szemben. Ha a kezelés nem pusztítja el a teljes populációt, az érzékeny egyedek elpusztulnak, de az ellenálló egyedek túlélnek és tovább szaporodnak - ez a jelenség a természetes szelekció egy közvetlenül megfigyelhető, gyakorlati példája, amellyel az Evolúció témakörben találkozunk majd részletesebben.',
+                  'Baktérium által okozott emberi megbetegedésre példa a tuberkulózis (TBC), a szalmonellózis vagy a Lyme-kór. Megelőzésükben és a védekezésben fontos szerepe van a higiéniának, a védőoltásoknak (ahol létezik ilyen), valamint a fertőtlenítési és sterilizálási eljárásoknak, amelyeket a Vírusok fejezetben már részben érintettünk.',
+                ],
+              },
+            ],
+            keyTerms: ['prokarióta', 'eukarióta', 'kokkusz', 'bacilus', 'spirillum', 'antibiotikum-rezisztencia', 'természetes szelekció', 'fertőtlenítés', 'sterilizálás'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
       },
       {
         id: 'egysejtu-eukariotak',
