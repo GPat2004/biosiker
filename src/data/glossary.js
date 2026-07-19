@@ -80,6 +80,15 @@ export const GLOSSARY = {
   'anafázis': 'A mitózis szakasza, amelyben a testvérkromatidák szétválnak és a sejt ellentétes pólusai felé húzódnak.',
   'telofázis': 'A mitózis utolsó szakasza, amelyben kialakul a két új sejtmag, majd a citoplazma is kettéválik.',
 
+  // 3. modul emelt kiegészítés: vírus-állapotok, litikus/lizogén ciklus
+  'virion': 'A sejten kívül létező, önálló, fertőzőképes vírusrészecske - a vírus "nyugvó", sejten kívüli formája.',
+  'vegetatív vírus': 'A gazdasejtbe jutott, aktívan szaporodó vírus állapota, amikor genetikai anyaga irányítja új vírusalkotó elemek szintézisét.',
+  'litikus ciklus': 'A fágszaporodás olyan formája, amelynél a fág azonnal új vírusrészecskéket termel, majd a gazdasejt lízisével szabadulnak ki.',
+  'lizogén ciklus': 'A fágszaporodás olyan formája, amelynél a fág DNS-e beépül a gazdasejt genomjába, és profágként, a gazdasejt osztódásaival együtt öröklődik tovább.',
+  'profág': 'A gazdasejt genomjába beépült fág-DNS - a lizogén ciklus "rejtőzködő" állapota, amely stresszhatásra kiléphet és litikus ciklusba kezdhet.',
+  'temperáns fág': 'Olyan bakteriofág, amely képes a lizogén ciklust követni (a virulens fágokkal ellentétben, amelyek mindig litikus ciklust követnek).',
+  'burkos vírus': 'Olyan vírus, amelynek kapszidját egy külső, lipid membránból álló burok veszi körül (pl. influenzavírus, HIV, koronavírusok) - jellemzően sarjadzással hagyja el a gazdasejtet.',
+
   // 3. modul: Az egyed szerveződési szintje
   'retrovírus': 'Olyan RNS-vírus (pl. a HIV), amely szaporodása során saját RNS-ét DNS-sé írja át, és beépíti a gazdasejt DNS-állományába.',
   'lízis': 'A sejt szétesése, elpusztulása - a vírusszaporodás során ez teszi lehetővé az újonnan összeszerelt vírusrészecskék kiszabadulását a gazdasejtből.',

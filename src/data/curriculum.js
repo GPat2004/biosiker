@@ -1256,7 +1256,34 @@ export const CURRICULUM = [
             ],
             keyTerms: ['vírus', 'kapszid', 'bakteriofág', 'DNS-vírus', 'RNS-vírus', 'retrovírus', 'lízis', 'fertőzés', 'inkubációs idő', 'járvány', 'védőoltás', 'prion'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a vírus különböző "állapotainak" pontos elnevezéseit, valamint a bakteriofágok kétféle szaporodási stratégiáját is ismerni kell.',
+            sections: [
+              {
+                heading: 'Virion és vegetatív vírus',
+                paragraphs: [
+                  'A sejten kívül létező, önálló, fertőzőképes vírusrészecskét virionnak nevezzük - ez a vírus "nyugvó", átmeneti formája, amely fehérjeburokból (kapszidból) és a benne rejtett örökítőanyagból áll, és amíg nem talál gazdasejtet, semmiféle életjelenséget nem mutat.',
+                  'Amint a virion bejut egy gazdasejtbe, és megkezdi a szaporodását a sejt anyagcsere-gépezetét felhasználva, a vírust vegetatív állapotúnak (vegetatív vírusnak) nevezzük - ekkor a vírus genetikai anyaga aktívan "működik", új vírusalkotó elemek szintézisét irányítva. A virion tehát a vírus sejten kívüli, a vegetatív forma a sejten belüli, aktívan szaporodó állapotát jelöli.',
+                ],
+              },
+              {
+                heading: 'Litikus és lizogén ciklus',
+                paragraphs: [
+                  'A bakteriofágok (és néhány más vírus) kétféle stratégiát követhetnek a gazdasejten belül. A litikus ciklus során a fág azonnal megkezdi a szaporodását, új vírusrészecskéket termel, majd - ahogy azt korábban megismertük - a gazdasejt lízisével (szétesésével) szabadulnak ki az új virionok. Az ilyen viselkedésű fágokat virulens fágoknak nevezzük.',
+                  'A lizogén ciklus ezzel szemben egy "rejtőzködő" stratégia: a fág DNS-e beépül a gazdasejt (baktérium) genomjába, ahol profágként (provírusként) marad jelen - ilyenkor a fág nem termel azonnal új vírusrészecskéket, hanem a baktérium minden osztódásakor a saját DNS-ével együtt öröklődik tovább. Az ilyen viselkedésre képes fágokat mérsékelt (temperáns) fágoknak nevezzük.',
+                  'Ez a mechanizmus szoros rokonságban áll azzal, amit korábban a HIV kapcsán megismertünk: ott is a vírus genetikai anyagának a gazdasejt genomjába való beépüléséről volt szó. A profág (illetve a HIV esetében provírus) egy bizonyos ideig "alvó állapotban" maradhat, majd - jellemzően stresszhatásra (pl. UV-sugárzás, vegyi károsodás) - "kilépve" a genomból, litikus ciklusba kezdhet, és elpusztíthatja a gazdasejtet.',
+                ],
+              },
+              {
+                heading: 'Kilépés a sejtből: lízis vagy sarjadzás',
+                paragraphs: [
+                  'Nem minden vírus lízissel hagyja el a gazdasejtet. Egyes vírusok - így az influenzavírus, a HIV és a koronavírusok is - burkos vírusok: kapszidjukat egy külső, lipid membránból álló burok veszi körül, amelyre membránfehérjéik is kiállnak.',
+                  'A burkos vírusok jellemzően sarjadzással (bimbózással) hagyják el a sejtet: a vírusrészecske a gazdasejt membránjának egy darabját "magával viszi" burokként, miközben áthalad rajta - ez a folyamat nem feltétlenül öli meg azonnal a gazdasejtet, ellentétben a lízissel járó kilépéssel.',
+                ],
+              },
+            ],
+            keyTerms: ['virion', 'vegetatív vírus', 'litikus ciklus', 'lizogén ciklus', 'profág', 'temperáns fág', 'burkos vírus'],
+          },
         },
       },
       {
