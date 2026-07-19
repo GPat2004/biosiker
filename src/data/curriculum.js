@@ -1123,23 +1123,42 @@ export const CURRICULUM = [
         title: 'A sejtműködések vezérlése',
         order: 13,
         isFree: false,
-        estimatedMinutes: 14,
+        estimatedMinutes: 20,
         content: {
           kozep: {
-            intro: 'A sejt folyamatosan reagál a külső és belső környezetéből érkező ingerekre.',
+            intro: 'A sejt nem elszigetelten létezik: folyamatosan reagál a külső és belső környezetéből érkező ingerekre, és ez a válaszkészség teszi lehetővé, hogy a szervezet sejtjei összehangoltan működjenek.',
             sections: [
               {
-                heading: 'Válasz az ingerekre és a sejthalál',
+                heading: 'Az inger-válasz típusai',
                 paragraphs: [
-                  'A sejt külső és belső ingerekre válaszolhat: koncentrációváltozással, alakváltozással, elválasztással vagy elektromos változással.',
-                  'A K-Na-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget.',
+                  'A sejt többféle módon válaszolhat egy ingerre. Koncentrációváltozással reagálhat, például amikor egy hormon hatására megváltozik egy adott anyag mennyisége a sejten belül. Alakváltozással válaszolhat, ahogy azt a fehérvérsejtek állábas mozgásánál is látjuk. Elválasztással (szekrécióval) reagálhat, amikor egy mirigysejt egy jelre elkezd egy anyagot (pl. hormont vagy enzimet) termelni és kibocsátani. Elektromos változással válaszolhat, ahogy az idegsejtek teszik, amikor egy inger hatására megváltozik a membránjuk potenciálja.',
+                ],
+              },
+              {
+                heading: 'Receptorok és a jelátvitel alapja',
+                paragraphs: [
+                  'A Membránok szerepe fejezetben megismert receptorfehérjék adják a sejt "érzékelő rendszerét": egy jelmolekula (pl. hormon) receptorhoz kötődése elindít egy sejten belüli válaszfolyamatot, amely végül megváltoztatja a sejt működését - ezt nevezzük jelátvitelnek.',
+                  'Ez a mechanizmus teszi lehetővé, hogy a szervezet távoli sejtjei is összehangoltan reagáljanak egyetlen jelre - például amikor egy hormon a véráramon keresztül eljut sok különböző sejthez, de csak azok reagálnak rá érdemben, amelyeknek van hozzá illeszkedő receptoruk.',
+                ],
+              },
+              {
+                heading: 'A Na-K-pumpa szerepe',
+                paragraphs: [
+                  'A korábban (Elemek, ionok és Membránok szerepe fejezetek) megismert Na⁺/K⁺-pumpa kulcsfontosságú a sejtműködés szabályozásában, mivel fenntartja a sejtmembrán két oldala közötti ionkoncentráció-különbséget - enélkül a sejt nem tudna elektromos jeleket létrehozni és továbbítani, ami különösen az idegsejtek és az izomsejtek működéséhez elengedhetetlen.',
+                ],
+              },
+              {
+                heading: 'Programozott és nem programozott sejthalál',
+                paragraphs: [
                   'Megkülönböztetünk programozott sejthalált (apoptózis), amely a szervezet számára hasznos, szabályozott folyamat, és nem programozott sejthalált (nekrózis), amely sérülés vagy károsodás következménye, és - az apoptózissal ellentétben - gyulladásos reakciót is kiválthat a környező szövetben.',
+                  'Az apoptózisnak fontos szerepe van az egyedfejlődés során is: embrionális korban például az ujjak közötti úszóhártyaszerű szövet apoptózissal tűnik el, így alakulnak ki a különálló ujjak. Az apoptózis emellett a szervezet védelmét is szolgálja: a károsodott DNS-t hordozó, potenciálisan veszélyessé váló sejtek gyakran ezen az úton pusztulnak el, mielőtt kárt tehetnének.',
+                  'Az immunrendszer fejlődése során is kulcsszerepe van az apoptózisnak: azok az immunsejtek, amelyek tévesen a szervezet saját sejtjeit ismernék fel idegenként, jellemzően még érésük során apoptózissal elpusztulnak - ez az egyik mechanizmus, amely megakadályozza, hogy az immunrendszer a saját szervezet ellen forduljon.',
                 ],
               },
             ],
-            keyTerms: ['K-Na-pumpa', 'apoptózis', 'nekrózis'],
+            keyTerms: ['receptorfehérje', 'jelátvitel', 'K-Na-pumpa', 'apoptózis', 'nekrózis'],
           },
-          emeltExtra: { sections: [], keyTerms: [] },
+          emeltExtra: { comingSoon: true },
         },
       },
     ],

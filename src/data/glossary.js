@@ -110,6 +110,9 @@ export const GLOSSARY = {
   'izomszövet': 'Összehúzódásra képes állati szövet, amely a mozgásért felelős.',
   'kötőszövet': 'Az állati szervezet szerveit összekötő, védő és tápanyagot raktározó szövettípus.',
   'idegszövet': 'Az ingerület felvételét és vezetését végző állati szövettípus.',
+  // 2. modul, 13. fejezet: A sejtműködések vezérlése
+  'jelátvitel': 'Az a folyamat, amelynek során egy jelmolekula receptorhoz kötődése sejten belüli válaszfolyamatot indít el, megváltoztatva a sejt működését.',
+
   // 2. modul, 12. fejezet emelt kiegészítés: crossing over, ivarsejt-képzés
   'szinapszis': 'A homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején - itt zajlik a crossing over.',
   'tetrád': 'Négy kromatidából álló szerkezet (bivalens), amely a szinapszis során, a homológ kromoszómapár összetapadásakor jön létre.',
