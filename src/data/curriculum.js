@@ -1201,29 +1201,60 @@ export const CURRICULUM = [
         title: 'Vírusok',
         order: 1,
         isFree: true,
-        estimatedMinutes: 20,
+        estimatedMinutes: 26,
         content: {
           kozep: {
             intro: 'A vírusok nem sejtes szerveződésű biológiai rendszerek, amelyek csak élő sejtekben képesek szaporodni - jelentős egészségügyi szerepük miatt megértésük kulcsfontosságú, és szerencsére a felépítésükhöz szükséges alapfogalmakat (DNS, RNS, fehérje) már ismerjük a korábbi fejezetekből.',
             sections: [
               {
-                heading: 'Felépítés',
+                heading: 'Felfedezésük története: Ivanovszkij kísérlete',
                 paragraphs: [
-                  'A vírusok felépítése egyszerű: egy fehérjeburokban (kapszid) örökítőanyag található, amely - a sejtes élőlényekkel ellentétben, amelyek mindig DNS-t hordoznak - lehet DNS vagy RNS is. Ezt a Nukleinsavak fejezetben megismert kétféle nukleinsav-típust itt egy konkrét, gyakorlati példán keresztül is látjuk viszont.',
-                  'A vírusok mérete rendkívül kicsi (jellemzően 20-300 nanométer közötti), ezért fénymikroszkóppal nem, csak elektronmikroszkóppal láthatók. Alakjuk is változatos lehet: vannak gömb alakú, pálcika alakú, és bonyolultabb, "fejjel és farokkal" rendelkező vírusok is - ilyenek például a baktériumokat fertőző bakteriofágok, amelyeknek pontosan ez az egyszerű, jól elkülöníthető szerkezete (fehérjefej + DNS, illetve fehérjefarok) tette lehetővé, hogy a Nukleinsavak fejezetben megismert Hershey-Chase kísérletben egyértelműen bizonyítható legyen: a fertőző, örökítő anyag a DNS, nem a fehérje.',
+                  'A vírusok létezését elsőként Dmitrij Ivanovszkij orosz botanikus bizonyította 1892-ben, a dohánynövények mozaikbetegségét vizsgálva - ez a betegség jellegzetes, foltos, mozaikszerű elszíneződést okoz a levélen.',
+                  'Ivanovszkij a beteg növény kivonatát olyan finom pórusú (porcelán) szűrőn engedte át, amely minden addig ismert baktériumot visszatartott. Meglepő módon a leszűrt, baktériummentes folyadék továbbra is képes volt megfertőzni az egészséges növényeket - ez azt bizonyította, hogy a kórokozó minden addig ismert baktériumnál kisebb.',
+                  'Ez a kísérlet volt az első tudományos bizonyíték egy addig ismeretlen, baktériumnál kisebb kórokozó-típus létezésére - ez a felfedezés vezetett el végül a vírusok azonosításához és jellemzéséhez.',
+                ],
+              },
+              {
+                heading: 'Felépítés és méret',
+                paragraphs: [
+                  'A vírusok felépítése egyszerű: egy fehérjeburokban (kapszid) örökítőanyag található, amely - a sejtes élőlényekkel ellentétben, amelyek mindig DNS-t hordoznak - lehet DNS vagy RNS is.',
+                  'A vírusok mérete rendkívül kicsi, jellemzően 20-300 nanométer közötti - ez lényegesen kisebb a legtöbb baktériumnál (amelyek mikrométeres nagyságrendűek), ezért a vírusok fénymikroszkóppal nem, csak elektronmikroszkóppal láthatók. Alakjuk is változatos: vannak gömb alakú, pálcika alakú, és bonyolultabb, "fejjel és farokkal" rendelkező vírusok is, mint amilyenek a baktériumokat fertőző bakteriofágok.',
                   'A vírusok önálló anyagcserét nem folytatnak, saját riboszómájuk, enzimrendszerük nincs - kizárólag a gazdasejt anyagcsere-gépezetét felhasználva képesek szaporodni. Éppen emiatt áll vitatott kérdés elé a biológia: a vírusok az élő és az élettelen határán helyezkednek el, hiszen nem rendelkeznek önálló anyagcserével, de genetikai információt hordoznak és szaporodni képesek (ha van hozzá gazdasejtük).',
+                ],
+              },
+              {
+                heading: 'A vírusok szaporodási ciklusa',
+                paragraphs: [
+                  'A vírus szaporodása jellegzetes lépéssorozatban zajlik. Először a vírus a gazdasejt felszínén lévő, korábban (Membránok szerepe fejezet) megismert receptorfehérjékhez kötődik - egy vírus jellemzően csak azokat a sejttípusokat képes megfertőzni, amelyeknek van a számára megfelelő receptora.',
+                  'Ezután a vírus genetikai anyaga bejut a sejtbe, és "eltéríti" annak anyagcsere-gépezetét: a gazdasejt riboszómái, enzimei innentől a vírus genetikai információja alapján kezdenek dolgozni, új vírus-alkotóelemeket (kapszidfehérjéket, genetikai anyagot) termelve.',
+                  'Az újonnan összeszerelt vírusrészecskék végül kiszabadulnak a sejtből - gyakran úgy, hogy a gazdasejt szétesik (ezt lízisnek nevezzük), és elpusztul. Az így felszabaduló új vírusok újabb sejteket fertőzhetnek meg, a folyamat pedig ismétlődik.',
+                ],
+              },
+              {
+                heading: 'DNS-vírusok és RNS-vírusok',
+                paragraphs: [
+                  'A vírusokat aszerint is csoportosíthatjuk, hogy milyen típusú nukleinsavat hordoznak örökítőanyagként. A DNS-vírusok közé tartozik például a himlővírus, a herpeszvírus és a hepatitis B vírus.',
+                  'Az RNS-vírusok közé tartozik az influenzavírus, a HIV, a koronavírusok (pl. a SARS-CoV-2) és a kanyaróvírus. Az RNS-vírusok jellemzően gyorsabban mutálódnak, mint a DNS-vírusok, mert a DNS megkettőződésekor a sejt hatékony hibajavító mechanizmusokat is alkalmaz, míg az RNS-alapú szaporodás során ilyen javítás jellemzően nem történik. Ez magyarázza, hogy miért kell évről évre új összetételű influenza elleni oltást kifejleszteni: a vírus gyors mutálódása miatt a korábbi oltás által kiváltott immunválasz egy idő után már nem illeszkedik pontosan az aktuálisan terjedő vírustörzshöz.',
+                  'A HIV egy különleges RNS-vírus, ún. retrovírus: szaporodása során saját RNS-ét DNS-sé írja át (ez a folyamat a genetikai információ szokásos áramlási irányával ellentétes, innen a "retro" előtag), majd ezt a DNS-t beépíti a gazdasejt (egy bizonyos típusú immunsejt) saját DNS-állományába. Ez a beépülés az oka annak, hogy a HIV-fertőzés a szervezetből ma még nem gyógyítható ki teljesen: a vírus genetikai anyaga tartósan "elrejtőzik" a fertőzött sejtek saját DNS-ében.',
                 ],
               },
               {
                 heading: 'Fertőzés, megbetegedés, járvány',
                 paragraphs: [
-                  'A megfertőződés módjai sokfélék lehetnek: cseppfertőzés (pl. köhögéskor, tüsszentéskor kijutó apró cseppekkel), közvetlen érintkezés, testnedvekkel történő átvitel, illetve rovarcsípés. Vírus okozta emberi megbetegedésre példa az influenza (cseppfertőzéssel terjed), a kanyaró (szintén cseppfertőzéssel, rendkívül fertőző), vagy a HIV-fertőzés (testnedvekkel terjed, és az immunrendszer sejtjeit támadja meg).',
-                  'A fertőzés a kórokozó szervezetbe jutását jelenti, a megbetegedés a tünetek megjelenését, a járvány pedig egy fertőző betegség egy adott területen, rövid idő alatt nagyszámú embert érintő terjedését. Fontos, hogy a fertőzés nem mindig vezet azonnal megbetegedéshez - a kórokozó és a tünetek megjelenése között lappangási idő (inkubációs idő) telhet el.',
-                  'A megelőzés legfontosabb eszközei a védőoltás (amely a szervezet immunrendszerét "megtanítja" felismerni egy adott vírust, mielőtt valódi fertőzés érné), a higiéniai szabályok betartása (pl. kézmosás, amely csökkenti az érintkezéssel terjedő fertőzések esélyét) és a fertőzött egyedek elkülönítése, amely lassítja a járvány terjedését.',
+                  'A megfertőződés módjai sokfélék lehetnek: cseppfertőzés (pl. köhögéskor, tüsszentéskor kijutó apró cseppekkel), közvetlen érintkezés, testnedvekkel történő átvitel, illetve rovarcsípés.',
+                  'A fertőzés a kórokozó szervezetbe jutását jelenti, a megbetegedés a tünetek megjelenését, a járvány pedig egy fertőző betegség egy adott területen, rövid idő alatt nagyszámú embert érintő terjedését. A fertőzés és a tünetek megjelenése között lappangási idő (inkubációs idő) telhet el.',
+                  'A megelőzés legfontosabb eszközei a védőoltás, a higiéniai szabályok betartása (pl. kézmosás) és a fertőzött egyedek elkülönítése, amely lassítja a járvány terjedését.',
+                ],
+              },
+              {
+                heading: 'A prion - a vírusnál is egyszerűbb kórokozó',
+                paragraphs: [
+                  'A prion a vírusnál is egyszerűbb fertőző ágens: kizárólag egy rendellenesen feltekeredett fehérjéből áll, nukleinsavat egyáltalán nem tartalmaz - ezzel a legegyszerűbb ismert kórokozó-típus.',
+                  'A prion a szervezetben található normál fehérjéket "kényszeríti át" a saját, kóros térszerkezetére, ami láncreakciószerűen terjed tovább, és idegrendszeri betegségekhez vezet - ilyen például a szarvasmarhákat érintő kergemarhakór.',
                 ],
               },
             ],
-            keyTerms: ['vírus', 'kapszid', 'bakteriofág', 'fertőzés', 'inkubációs idő', 'járvány', 'védőoltás'],
+            keyTerms: ['vírus', 'kapszid', 'bakteriofág', 'DNS-vírus', 'RNS-vírus', 'retrovírus', 'lízis', 'fertőzés', 'inkubációs idő', 'járvány', 'védőoltás', 'prion'],
           },
           emeltExtra: { comingSoon: true },
         },

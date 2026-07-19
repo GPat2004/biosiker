@@ -81,6 +81,10 @@ export const GLOSSARY = {
   'telofázis': 'A mitózis utolsó szakasza, amelyben kialakul a két új sejtmag, majd a citoplazma is kettéválik.',
 
   // 3. modul: Az egyed szerveződési szintje
+  'retrovírus': 'Olyan RNS-vírus (pl. a HIV), amely szaporodása során saját RNS-ét DNS-sé írja át, és beépíti a gazdasejt DNS-állományába.',
+  'lízis': 'A sejt szétesése, elpusztulása - a vírusszaporodás során ez teszi lehetővé az újonnan összeszerelt vírusrészecskék kiszabadulását a gazdasejtből.',
+  'dns-vírus': 'DNS-t hordozó vírustípus (pl. himlővírus, herpeszvírus, hepatitis B vírus) - a DNS hatékony hibajavító mechanizmusai miatt lassabban mutálódik, mint az RNS-vírusok.',
+  'rns-vírus': 'RNS-t hordozó vírustípus (pl. influenzavírus, HIV, koronavírusok) - hatékony hibajavítás hiányában gyorsabban mutálódik, mint a DNS-vírusok.',
   'bakteriofág': 'Baktériumot fertőző vírus - egyszerű, jól elkülöníthető szerkezete (fehérjefej + DNS, fehérjefarok) tette lehetővé a DNS örökítő szerepének bizonyítását (Hershey-Chase kísérlet).',
   'inkubációs idő': 'A kórokozóval való fertőződés és a tünetek megjelenése közötti lappangási idő.',
   'védőoltás': 'Olyan eljárás, amely a szervezet immunrendszerét egy adott kórokozó felismerésére "tanítja meg", mielőtt valódi fertőzés érné.',
