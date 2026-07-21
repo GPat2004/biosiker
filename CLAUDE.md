@@ -19,3 +19,14 @@
 ## Commit üzenetek formátuma
 Rövid, magyar nyelvű, leíró jellegű, pl.:
 "Egysejtű eukarióták fejezet közép szint hozzáadva"
+
+## Pull Request szabály
+Minden munkamenet végén, sikeres build+lint után, nyiss egy Pull Requestet
+a `claude-work`-ből a `main` felé a GitHub CLI-vel:
+
+gh pr create --base main --head claude-work \
+  --title "Rövid cím a változásról" \
+  --body "Részletes összefoglaló: mi változott, mely fejezetek, miért"
+
+Ha már létezik nyitott PR a claude-work-ből, frissítsd a leírását ahelyett,
+hogy újat nyitnál.
