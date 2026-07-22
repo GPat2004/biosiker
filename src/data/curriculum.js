@@ -1324,7 +1324,36 @@ export const CURRICULUM = [
             ],
             keyTerms: ['prokarióta', 'eukarióta', 'kokkusz', 'bacilus', 'spirillum', 'antibiotikum-rezisztencia', 'természetes szelekció', 'fertőtlenítés', 'sterilizálás'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a baktériumok anyagcsere- és ökológiai típusainak pontos azonosítását, a fertőtlenítési eljárások biológiai hátterét, valamint az endoszimbióta elmélet mellett szóló bizonyítékokat is ismerni kell.',
+            sections: [
+              {
+                heading: 'Anyagcsere- és ökológiai típusok a baktériumok között',
+                paragraphs: [
+                  'A korábban (Anyagcsere fejezet) megismert fotoautotróf és kemoautotróf fogalompár mellett a baktériumok között megtalálható a heterotróf (pontosabban kemoheterotróf) típus is - ez a három anyagcsere-típus az energiaforrás és a szénforrás alapján különíthető el egymástól, és életfolyamataik leírása alapján bármelyik baktériumfaj besorolható valamelyik kategóriába.',
+                  'A heterotróf baktériumok (a legtöbb ismert baktériumfaj) szerves anyagból nyerik mind az energiájukat, mind az építőanyagaikat - ide tartoznak a bélbaktériumok és a legtöbb kórokozó baktérium is. A fotoautotróf baktériumok (pl. a cianobaktériumok) fényenergiát hasznosítva, szervetlen szén-dioxidból építik fel szerves anyagaikat, hasonlóan a növényekhez. A kemoautotróf baktériumok (pl. a korábban már említett nitrifikáló talajbaktériumok) szervetlen vegyületek - például ammónia - oxidációjából nyert kémiai energiával szintén szervetlen szén-dioxidból építkeznek.',
+                  'Az anyagcsere-típus mellett a baktériumok az életközösségben betöltött szerepük (ökológiai típusuk) alapján is csoportosíthatók. A termelő baktériumok (a fotoautotróf és kemoautotróf fajok) szerves anyagot állítanak elő, amelyet mások felhasználhatnak - ugyanaz az elv, amit a termelők tápláléklánc-beli szerepéről az Anyagcsere fejezetben már megismertünk. A lebontó baktériumok elhalt szerves anyagot bontanak le, ezzel zárva az anyagforgalom körforgását. A kórokozó baktériumok más élőlények kárára szaporodnak, míg a szimbionta baktériumok (pl. a bélflóra tagjai) kölcsönösen előnyös kapcsolatban élnek gazdaszervezetükkel.',
+                ],
+              },
+              {
+                heading: 'A fertőtlenítési eljárások biológiai alapja',
+                paragraphs: [
+                  'A középszinten megismert fertőtlenítési és sterilizálási eljárások mindegyike a kórokozó valamely alapvető sejtszerkezetét károsítja - emelt szinten ennek konkrét biológiai mechanizmusát is érteni kell.',
+                  'A magas hőmérséklet (forralás, gőzölés) roncsolja a fehérjék térszerkezetét, vagyis - ahogy azt a Fehérjék fejezetben már megismertük - denaturálja azokat, ami működésképtelenné teszi a kórokozó enzimeit. Az alkohol- és más vegyszeralapú fertőtlenítőszerek a sejtmembrán lipidrétegét oldják fel, illetve szintén fehérjéket denaturálnak, így a sejt elveszti a határoló funkcióját.',
+                  'Az ultraibolya (UV) sugárzás közvetlenül a DNS-t károsítja: a szomszédos timinbázisok között kóros kötéseket, ún. timindimereket hoz létre, amelyek megakadályozzák a DNS helyes megkettőződését és leolvasását. Az autoklávban alkalmazott túlnyomás azért hatékonyabb sterilizálási eljárás az egyszerű forralásnál, mert a nyomás növelésével a víz forráspontja 100 °C fölé emelhető, így a fehérjedenaturáció minden mikroorganizmusnál gyorsabban és biztosabban következik be.',
+                ],
+              },
+              {
+                heading: 'Az endoszimbióta elmélet és a mellette szóló bizonyítékok',
+                paragraphs: [
+                  'A korábban (Anyagcsere fejezet, illetve e fejezet középszintje) már érintőlegesen említett endoszimbióta elmélet szerint a mitokondrium és a színtest egykor önállóan élő, baktérium jellegű prokarióta szervezetek voltak, amelyeket egy ősi eukarióta sejt bekebelezett, de nem emésztett meg - a bekebelezett sejtek helyette tartós, kölcsönösen előnyös együttélésbe (szimbiózisba) kerültek a befogadó sejttel: az utóbbi védelmet és tápanyagot biztosított, míg az endoszimbionta hatékony energiatermeléssel (mitokondrium), illetve fotoszintézissel (színtest) "fizetett" ezért cserébe.',
+                  'Az elmélet mellett több meggyőző bizonyíték is szól. Mindkét sejtszervecskét kettős membrán határolja (ahogy azt a Fotoszintézis, illetve a Lebontó folyamatok fejezetben már megfigyeltük) - ez pontosan annak felel meg, ahogyan egy bekebelezés során a befogadó sejt membránja körülveszi a bekebelezett sejtet, miközben annak saját, eredeti membránja is megmarad.',
+                  'A mitokondrium és a színtest saját, körkörös DNS-molekulával rendelkezik, amely - a sejtmagi DNS-től eltérően - felépítésében a baktériumok DNS-éhez hasonlít. Saját riboszómáik mérete és típusa is inkább a baktériumok riboszómáira, mint az eukarióta sejt citoplazmatikus riboszómáira emlékeztet, osztódásuk pedig a baktériumok osztódásához hasonlóan, a sejt osztódásától függetlenül is végbemehet. Végül ezek a sejtszervecskék egyes, kifejezetten a baktériumok fehérjeszintézisét gátló antibiotikumokra érzékenyek maradtak, míg a sejt sejtmagi eredetű fehérjeszintézise nem - ez is arra utal, hogy a mitokondrium és a színtest fehérjeszintézis-gépezete eredetileg baktériumi eredetű.',
+                ],
+              },
+            ],
+            keyTerms: ['heterotróf baktérium', 'fotoautotróf', 'kemoautotróf', 'termelő', 'lebontó', 'kórokozó', 'szimbionta', 'timindimer', 'endoszimbióta elmélet'],
+          },
         },
       },
       {

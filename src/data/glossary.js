@@ -85,6 +85,13 @@ export const GLOSSARY = {
   'bacilus': 'Pálcika alakú baktériumsejt.',
   'spirillum': 'Csavarodott alakú baktériumsejt.',
 
+  // 3. modul, 2. fejezet emelt kiegészítés: anyagcsere-/ökológiai típusok, fertőtlenítés, endoszimbióta elmélet
+  'termelő': 'Olyan élőlény (pl. fotoautotróf vagy kemoautotróf baktérium), amely szerves anyagot állít elő, amelyet más élőlények felhasználhatnak.',
+  'lebontó': 'Olyan élőlény (pl. egyes baktériumok), amely elhalt szerves anyagot bont le, ezzel zárva az anyagforgalom körforgását.',
+  'kórokozó': 'Olyan mikroorganizmus (pl. egyes baktériumok, vírusok), amely más élőlények kárára szaporodva betegséget okoz.',
+  'szimbionta': 'Olyan élőlény (pl. a bélflóra baktériumai), amely egy másik fajjal kölcsönösen előnyös, tartós együttélésben (szimbiózisban) él.',
+  'timindimer': 'Az UV-sugárzás által a DNS-ben okozott kóros kötés két szomszédos timinbázis között, amely megakadályozza a DNS helyes megkettőződését és leolvasását.',
+
   // 3. modul emelt kiegészítés: vírus-állapotok, litikus/lizogén ciklus
   'természetes szelekció': 'Az evolúció egyik alapmechanizmusa: a környezethez jobban alkalmazkodó egyedek nagyobb eséllyel maradnak életben és szaporodnak, ezáltal az előnyös tulajdonságok gyakorisága nő a populációban.',
   'virion': 'A sejten kívül létező, önálló, fertőzőképes vírusrészecske - a vírus "nyugvó", sejten kívüli formája.',
