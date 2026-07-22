@@ -83,6 +83,11 @@ if not found:
 Rövid, magyar nyelvű, leíró jellegű, pl.:
 "Egysejtű eukarióták fejezet közép szint hozzáadva"
 
+## Subagent-használat KÖTELEZŐ
+Minden fejezet megírása után hívd meg a content-reviewer subagentet.
+Minden commit előtt hívd meg a lint-fixer subagentet.
+Csak akkor nyiss PR-t, ha mindkettő ✅-t adott vissza.
+
 ## Pull Request szabály
 Minden munkamenet végén, sikeres build+lint után, nyiss egy Pull Requestet
 a `claude-work`-ből a `main` felé a GitHub CLI-vel:
