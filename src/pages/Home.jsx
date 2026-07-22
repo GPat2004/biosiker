@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Sparkles, CheckCircle2, ChevronRight, Brain, Zap, 
-  Target, GraduationCap, Flame, ArrowRight, ShieldCheck, 
+import {
+  Sparkles, CheckCircle2, Brain,
+  Target, Flame, ArrowRight, ShieldCheck,
   Lightbulb, Info
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -17,7 +17,6 @@ const Badge = ({ children, className }) => (
 );
 
 const DemoQuiz = () => {
-  const [step, setStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const { isAuthenticated } = useAuth();

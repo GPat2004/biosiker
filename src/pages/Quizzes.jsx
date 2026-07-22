@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Sparkles, Play, Clock, BookOpen, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+import { Sparkles, Play, Clock, BookOpen } from 'lucide-react';
 
 const QUIZ_TOPICS = [
   { id: 1, name: 'Genetika alapjai', questions: 15, duration: '20 perc', level: 'Emelt' },

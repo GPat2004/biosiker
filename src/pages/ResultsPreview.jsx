@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-import { 
-  Trophy, CheckCircle2, XCircle, Sparkles, 
-  ArrowRight, BookOpen, Clock, Target, 
-  ChevronRight, Brain, Zap, MessageSquare, Info
+import {
+  Trophy, XCircle, Sparkles,
+  ChevronRight, Brain, MessageSquare
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
