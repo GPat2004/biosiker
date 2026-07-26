@@ -1423,7 +1423,61 @@ export const CURRICULUM = [
         order: 4,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Növények', 'Állatok'],
+          rows: [
+            ['Domináns életszakasz', 'haploid ÉS diploid szakasz is hosszú, önálló (generációváltakozás)', 'diploid szakasz domináns és hosszú'],
+            ['Haploid szakasz', 'önálló, spórákkal szaporodó egyed is lehet', 'csak az ivarsejtekre korlátozódik'],
+            ['Ivarsejtképzés', 'a haploid egyed mitózissal termeli', 'közvetlenül meiózissal, a diploid egyedben'],
+            ['Spóraképzés', 'jellemző (a diploid szakasz meiózisával)', 'nem jellemző'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Egysejtű eukarióták fejezet) megismert rendszertani hierarchiában (faj → nem → család → rend → osztály → törzs → ország) eddig két országgal találkoztunk: a Monera (baktériumok) és a Protiszták országával. Ez a fejezet a hagyományos rendszertan három további, kifejezetten többsejtű országát mutatja be - a növényeket, a gombákat és az állatokat -, így mind az öt ország a helyére kerül; azt is megvizsgáljuk, mi indokolja, hogy ezek külön országot alkotnak, és hogyan vezetett az evolúció az egysejtűségtől a valódi többsejtűségig.',
+            sections: [
+              {
+                heading: 'Miért alkotnak külön országot a növények, a gombák és az állatok?',
+                paragraphs: [
+                  'A három ország elkülönítésének alapja a testszerveződés és az anyagcsere-folyamatok különbsége. A növények fotoautotróf módon táplálkoznak - ahogy azt korábban (Anyagcsere sejtszinten fejezet) megismertük -, sejtjeiket pedig a korábban (Szénhidrátok fejezet) tanult cellulózból felépülő sejtfal határolja.',
+                  'A gombák és az állatok ezzel szemben heterotrófok, de eltérő módon táplálkoznak: a gombák sejtjeit kitinből álló sejtfal veszi körül (ahogy azt szintén a Szénhidrátok fejezetben megismertük), és jellemzően a testükön kívül emésztik meg táplálékukat, majd a már megemésztett tápanyagokat szívják fel. Az állati sejteknek nincs sejtfaluk, táplálkozásuk pedig jellemzően bekebelezéssel történik - ehhez hasonló folyamatot (fagocitózis) már megismertünk az Egysejtű eukarióták fejezetben, az óriás amőba és a papucsállatka táplálkozásánál.',
+                ],
+              },
+              {
+                heading: 'A differenciálódás: a többsejtűség kulcsa',
+                paragraphs: [
+                  'A többsejtű szerveződés alapfeltétele a differenciálódás: a sejtek szerkezeti és működésbeli specializálódása egy adott feladat ellátására. Minél összetettebb egy élőlény testfelépítése, annál inkább elkülönülnek egymástól a különböző feladatokat ellátó sejtek - ez a folyamat vezet el végül a valódi szövetek kialakulásához, amelyeket egy későbbi fejezetben (Szövetek, szervek) ismerünk majd meg részletesen.',
+                  'Egy egysejtű élőlénynél - mint amilyeneket a korábban (Egysejtű eukarióták fejezet) megismertünk - minden életműködést egyetlen sejtnek kell ellátnia. Egy differenciálódott, többsejtű szervezetnél viszont a különböző sejtcsoportok - és a belőlük felépülő szövetek - egymás között megosztva, hatékonyabban látják el ugyanezeket a feladatokat.',
+                ],
+              },
+              {
+                heading: 'Az egysejtűségtől a többsejtűségig - a zöldmoszatok példáján',
+                paragraphs: [
+                  'A zöldmoszatok azért különösen alkalmasak a szerveződési szintek bemutatására, mert közöttük mindhárom fokozat - az egysejtű szerveződés, valamint a többsejtű, de még nem szövetes szerveződés két típusa - egyaránt megtalálható.',
+                  'A sejttársulás (kolónia) esetén az egyes sejtek önállóan is életképesek maradnak, csupán lazán kapcsolódnak egymáshoz, érdemi munkamegosztás nélkül. A sejtfonál esetén a sejtek egymáshoz kapcsolódva, egy sorban helyezkednek el, fonalszerű alakzatot alkotva - ezt a szerveződési formát a következő fejezetben (Sejtfonalak) ismerjük meg részletesebben, a gombák példáján is. A teleptest ezeknél bonyolultabb: a sejtek már részleges munkamegosztást mutatnak, de valódi, elkülönült szövetek még nem alakulnak ki - ezzel egy későbbi fejezetben (Teleptest és álszövet) foglalkozunk majd részletesen.',
+                  'Ez a fokozatosság jól szemlélteti, hogy a többsejtűség nem egyetlen lépésben, hanem fokozatosan alakult ki az evolúció során - és éppen ez az oka annak, hogy a növények, a gombák és az állatok, testszerveződésük és anyagcseréjük alapvető különbségei miatt, a rendszertanban külön országot alkotnak.',
+                ],
+              },
+            ],
+            keyTerms: ['differenciálódás', 'sejttársulás', 'sejtfonal', 'teleptest'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a növények és az állatok életciklusát kell összehasonlítani: azt, hogy a kromoszómakészlet szempontjából kétféle (haploid és diploid) állapot hogyan és milyen arányban váltja egymást a két országban.',
+            sections: [
+              {
+                heading: 'Növények és állatok életciklusának összehasonlítása',
+                paragraphs: [
+                  'Az állatoknál a diploid szakasz a domináns és hosszú életszakasz - egy állat teste egész életében diploid sejtekből áll, a haploid állapot pedig kizárólag az ivarsejtekre (a petesejtre és a hímivarsejtre) korlátozódik, amelyek közvetlenül meiózissal keletkeznek a diploid egyed ivarszerveiben - ahogy azt korábban (Osztódás fejezet emelt része) a spermatogenezis és az oogenezis folyamatánál részletesen láttuk. Az állatoknál spóraképzés nem fordul elő.',
+                  'A növényeknél ezzel szemben - a legtöbb csoportnál - mind a haploid, mind a diploid szakasz hosszú, önálló életszakaszként jelenik meg: ezt nevezzük generációváltakozásnak. A diploid szakasz sejtjei meiózissal nem közvetlenül ivarsejteket, hanem spórákat hoznak létre; ezekből a haploid spórákból fejlődik ki egy önálló, haploid egyed, amely már mitózissal termeli az ivarsejteket.',
+                  'A generációváltakozás pontos lépéseit és a haploid, illetve diploid szakasz egymáshoz viszonyított hosszát a következő fejezetekben (Teleptest és álszövet, A növényvilág főbb csoportjai), a mohák és a harasztok példáján ismerjük meg részletesen - itt elegendő megjegyezni az alapvető különbséget: az állatoknál a haploid szakasz rövid és csak az ivarsejtekre szorítkozik, a növényeknél viszont a haploid szakasz önálló, spórákkal szaporodó életszakaszt is jelenthet.',
+                  'Az "életszakaszok típusa" kifejezés éppen erre a különbségre utal: állatoknál egyetlen domináns (diploid) életszakaszról beszélünk, amelyet csak rövid ideig szakít meg a haploid ivarsejt-állapot, míg a legtöbb növénynél két, egymást váltó, önálló életszakaszról - egy haploidról és egy diploidról - van szó, ez utóbbi az, amit generációváltakozásnak nevezünk.',
+                  'Érdemes megjegyezni a spóra és az ivarsejt közötti alapvető különbséget is: a spóra - szemben az ivarsejttel - önmagában, megtermékenyítés nélkül is képes új egyeddé fejlődni, míg egy ivarsejtnek mindenképp egy másik ivarsejttel kell egyesülnie ehhez.',
+                ],
+              },
+            ],
+            keyTerms: ['haploid szakasz', 'diploid szakasz', 'generációváltakozás', 'spóraképzés', 'ivarsejtképzés'],
+          },
+        },
       },
       {
         id: 'sejtfonalak',
