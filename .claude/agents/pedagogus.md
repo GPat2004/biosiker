@@ -20,8 +20,17 @@ semmit - kizárólag ellenőrzöl és pontos, számszerű visszajelzést adsz.
 
 A `docs/erettsegi-kovetelmeny.pdf` (33/2015 EMMI rendelet 1. melléklete)
 tartalmazza a HIVATALOS alfogalom-listát minden témakörhöz. Minden
-ellenőrzésnél ELŐSZÖR ezt olvasd el a releváns fejezethez tartozó
+ellenőrzésnél ELŐSZÖR ezt nézd meg a releváns fejezethez tartozó
 alfogalom-listáért, és ehhez viszonyíts.
+
+NE olvasd be minden alkalommal a teljes (23 oldalas) dokumentumot - ez
+pazarló és lassú. Célzottan, a `Read` tool `pages` paraméterével csak
+azt a szűk oldaltartományt olvasd el, amely az aktuális fejezet
+témaköréhez (pl. "3.2.1 Baktériumok") tartozik - jellemzően 1-3 oldal
+elég. Ha nem tudod pontosan, melyik oldalon van a témakör, először egy
+szűk, 2-3 oldalas tartományt olvass be a témakör-táblázat közelében
+sejtett helyen (a fejezet modulján/sorrendjén tájékozódva), és onnan
+lépj tovább - ne olvasd be a teljes PDF-et "biztonságból".
 
 # Ellenőrzési checklist - MINDEGYIKET kötelező végigmenni
 
@@ -90,7 +99,14 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
   NEM sorolja-e fel az összes intermediert
 
 ## 8. Duplikáció más fejezetekkel
-- Grep-eld a kulcsfogalmakat a teljes curriculum.js-ben
+- NE olvasd be (Read) a teljes curriculum.js fájlt a duplikáció-
+  ellenőrzéshez - ez feleslegesen sok kontextust fogyaszt. Kizárólag a
+  `Grep` toollal keresd meg a fejezet kulcsfogalmait, jellegzetes
+  kifejezéseit és faj-/elmélet-neveit a fájlban (célzott mintákkal,
+  pl. `-C 2` kontextussal)
+- Csak akkor olvasd el (Read) egy talált részlet közvetlen környezetét,
+  ha a Grep-találat alapján valódi átfedés gyanúja merül fel - ekkor is
+  csak a releváns pár tucat sort, ne a teljes fejezetet vagy fájlt
 - ⚠️ jelezd, ha egy másik fejezet SZÓ SZERINT vagy majdnem szó szerint
   ugyanazt a bekezdést tartalmazza
 
