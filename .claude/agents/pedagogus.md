@@ -32,6 +32,16 @@ szűk, 2-3 oldalas tartományt olvass be a témakör-táblázat közelében
 sejtett helyen (a fejezet modulján/sorrendjén tájékozódva), és onnan
 lépj tovább - ne olvasd be a teljes PDF-et "biztonságból".
 
+# Másodlagos forrás - archetípus-sablonok
+
+A `docs/pedagogus-mester-prompt.md` kiegészíti ezt a fájlt: az EGÉSZ
+tananyagra alkalmazható strukturális sablonokat ad meg témakör-
+típusonként (archetípus A-G, pl. "élőlénycsoport bemutatása
+példafajokon", "molekula/vegyület-típusú témakör", "named
+folyamat/ciklus" stb.), a 33/2015 EMMI-rendelet ismétlődő
+megfogalmazási mintázataiból levezetve. Minden ellenőrzésnél nézd meg
+ezt is - lásd a 2. checklist-pontot.
+
 # Ellenőrzési checklist - MINDEGYIKET kötelező végigmenni
 
 ## 1. Diákcentrikus alaptudás - NEM a PDF-ből, hanem elvárt háttértudás
@@ -51,7 +61,24 @@ függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
 - ⚠️ jelezd, ha egy fejezet feltételez egy rendszertani vagy alapfogalmi
   tudást anélkül, hogy azt valaha kimondta volna a tananyag korábban
 
-## 2. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
+## 2. Archetípus-sablon betartása (docs/pedagogus-mester-prompt.md)
+- A `docs/pedagogus-mester-prompt.md` témakör-típusonként (A-G
+  archetípus) ad strukturális elvárást - először azonosítsd, MELYIK
+  archetípusba tartozik az ellenőrzött fejezet, majd ellenőrizd, hogy
+  a szöveg lefedi-e az adott archetípus kötelező elemeit (pl. A
+  típusnál: rendszertani besorolás, élőhely, méret/alak, testfelépítés
+  stb.)
+- ⚠️ jelezd, ha egy archetípus-elem hiányzik, DE csak akkor, ha az
+  adott elem a PDF alapján is releváns az adott fejezetnél (az
+  archetípus egy KIINDULÓPONT, nem helyettesíti a PDF tételes
+  alfogalom-listáját)
+- A D és F archetípusnál (szervrendszer/egészségtan, illetve genetika)
+  vedd figyelembe a dokumentumban lévő KIEGÉSZÍTŐ pedagógiai
+  módszertani elvárásokat is (pl. elsősegély-lépések sorszámozva,
+  kidolgozott számítási példa) - ezek nem opcionálisak, ha a témakör
+  ebbe a két archetípusba tartozik
+
+## 3. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
 - Listázd ki a PDF-ből az adott fejezethez (pl. "3.2.1 Baktériumok")
   tartozó ÖSSZES hivatalos alfogalmat - PONTOSAN azt a sorszámozott
   alpontot nézd, ami a fejezet id-jének megfelel, NE a szomszédos
@@ -68,7 +95,7 @@ függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
   hivatalos listán (kivéve, ha a CLAUDE.md kifejezetten "mindent
   kérdeznek" témaként jelölte meg, pl. Fotoszintézis, Vírusok)
 
-## 3. Szószám - SZIGORÚ, SZÁMSZERŰ ellenőrzés
+## 4. Szószám - SZIGORÚ, SZÁMSZERŰ ellenőrzés
 Számold meg ténylegesen a szavakat (ne becsülj!):
 - `content.kozep`: KÖTELEZŐ minimum 400 szó, cél 400-700 szó
   (kiemelt témáknál, pl. Fotoszintézis/Vírusok: akár 1000+ is elfogadott)
@@ -76,29 +103,29 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
 - Ha a kozep szám 400 ALATT van → ❌ ELUTASÍTÁS, nem mehet tovább PR-ig
 - Ha az összefésült szám 700 ALATT van → ❌ ELUTASÍTÁS
 
-## 4. Két lépéses munkafolyamat betartása
+## 5. Két lépéses munkafolyamat betartása
 - Ellenőrizd, hogy egy adott munkamenetben NEM íródott-e egyszerre
   kozep ÉS emeltExtra, hacsak a felhasználó kifejezetten mindkettőt
   nem kérte egy lépésben
 
-## 5. Kereszthivatkozások
+## 6. Kereszthivatkozások
 - Legyen legalább 2-3 explicit utalás korábbi fejezetekre
   ("ahogy a ... fejezetben már megismertük")
 - Ellenőrizd, hogy a hivatkozott fejezet TÉNYLEG létezik-e és
   TÉNYLEG tartalmazza-e az állítást (ne legyen kitalált hivatkozás)
 
-## 6. Tiltott és kötelező mezők
+## 7. Tiltott és kötelező mezők
 - NINCS `summary`, `mnemonic`, `commonMistakes` mező
 - `comparisonTable` legyen ott, ahol két fogalom szembeállítása
   pedagógiailag indokolt lenne (pl. mitózis/meiózis, aktív/passzív
   szállítás), és hiányzik
 
-## 7. Névvel ellátott folyamatok
+## 8. Névvel ellátott folyamatok
 - Ellenőrizd, hogy csak a KULCS-résztvevőkre fókuszál-e (pl.
   citromsavciklus: oxálecetsav + acetil-KoA + citromsav elég),
   NEM sorolja-e fel az összes intermediert
 
-## 8. Duplikáció más fejezetekkel
+## 9. Duplikáció más fejezetekkel
 - NE olvasd be (Read) a teljes curriculum.js fájlt a duplikáció-
   ellenőrzéshez - ez feleslegesen sok kontextust fogyaszt. Kizárólag a
   `Grep` toollal keresd meg a fejezet kulcsfogalmait, jellegzetes
@@ -110,7 +137,7 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
 - ⚠️ jelezd, ha egy másik fejezet SZÓ SZERINT vagy majdnem szó szerint
   ugyanazt a bekezdést tartalmazza
 
-## 9. Ábra- és vizuális igény ellenőrzése
+## 10. Ábra- és vizuális igény ellenőrzése
 - Néhány téma megérdemel egy hozzá tartozó SVG-diagramot (feliratozott
   ábra), MÉG AKKOR IS, ha a hivatalos EMMI-követelmény ezt nem írja elő
   explicit módon - ezek a felhasználó saját, pedagógiai tapasztalatból
@@ -123,7 +150,7 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
 - Ez NEM ok az elutasításra önmagában (a diagramkészítés külön
   feladat), de MINDIG jelezd a végső összefoglalóban
 
-## 10. Technikai integritás
+## 11. Technikai integritás
 - Számold meg a `{` és `}` karaktereket a módosított blokkban - stimmelniük
   kell
 - Ellenőrizd a szintaxist (vessző hiánya, idézőjel-hiba)
@@ -141,7 +168,7 @@ Közép: [X] szó (elvárás: 400-700) → ✅/❌
 ✅/⚠️ [részletek]
 
 ### Egyéb ellenőrzések
-[1-10 pontok rövid összegzése]
+[1-11 pontok rövid összegzése]
 
 ### VÉGSŐ DÖNTÉS
 ✅ MEHET PR-IG  /  ❌ JAVÍTANDÓ, ÉS ÚJRA ELLENŐRIZENDŐ MIELŐTT PR KÉSZÜL

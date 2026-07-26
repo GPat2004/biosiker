@@ -18,6 +18,15 @@
 
 ## Tananyag-írási szabályok (KÖTELEZŐ minden fejezetnél)
 
+### Archetípus-sablonok
+Fejezet megírása ELŐTT azonosítsd (a `docs/pedagogus-mester-prompt.md`
+alapján), melyik strukturális archetípusba (A-G, pl. élőlénycsoport
+bemutatása, molekula/vegyület, named folyamat, szervrendszer, ökológiai,
+genetikai, evolúciós témakör) tartozik a fejezet, és kövesd az ahhoz
+tartozó kötelező elemlistát. A pedagogus subagent is ez alapján ellenőriz
+(lásd `.claude/agents/pedagogus.md` 2. checklist-pont). Az archetípus egy
+kiindulópont, NEM helyettesíti a PDF tételes alfogalom-listáját.
+
 ### Alapelv
 A hivatalos érettségi követelmény (33/2015. EMMI rendelet) az elsődleges
 forrás. Minden fejezet PONTOSAN annyi alfogalmat fed le, amennyit a rendelet
