@@ -1538,7 +1538,63 @@ export const CURRICULUM = [
         order: 6,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (A gombák, növények, állatok elkülönülése fejezet) megismert teleptest fogalmát ebben a fejezetben konkrét példákon - moszatokon, gombákon és mohákon - mélyítjük el, majd megvizsgáljuk, hogyan jelenik meg egy hasonlóan egyszerű, még nem szövetes testfelépítés az állatvilágban (szivacsok), végül egy különösen fontos, biztonsági szempontból kritikus gombafajjal, a gyilkos galócával ismerkedünk meg.',
+            sections: [
+              {
+                heading: 'Teleptestes szerveződés a moszatok és a gombák világában',
+                paragraphs: [
+                  'A teleptestes szerveződés - ahogy azt korábban megismertük - az egysejtű és a valódi, szövetes többsejtű szerveződés közötti átmeneti forma: a sejtek között már van bizonyos munkamegosztás, de valódi, egységes eredetű, differenciálódott szövetek még nem alakulnak ki. A vörös-, barna- és zöldmoszatok - hasonlóan a korábban (Egysejtű eukarióták fejezet) megismert egysejtű példákhoz - szintén a Protiszták országába tartoznak, annak ellenére, hogy testfelépítésük (teleptest) már összetettebb az egysejtű formáknál. A vörösmoszatok és a barnamoszatok szinte kizárólag tengeri élőlények, teleptestük gyakran méteres nagyságot is elérhet (pl. az óriás barnamoszatok), míg a zöldmoszatok - amelyeket korábban (Sejtfonalak fejezet) fonalas formájukban is megismertünk - édesvízben és tengerben egyaránt előfordulnak.',
+                  'A kalapos gombák teleptestét (termőtestét) - amit köznyelvben "gombának" nevezünk - szintén nem valódi szövetek, hanem összefonódott hifák alkotják; ezt a szövetszerű, de nem valódi szövetből álló felépítést álszövetnek nevezzük. A termőtest feladata a spóraképzés és -szórás: a kalap alsó felén (lemezeken vagy csövecskékben) képződnek a spórák, amelyek innen szóródnak szét.',
+                ],
+              },
+              {
+                heading: 'A mohák testfelépítése',
+                paragraphs: [
+                  'A mohák - a teleptestes szerveződésnél már bonyolultabb, de a valódi szövetes növényeknél (harasztok, magvas növények) egyszerűbb testfelépítésű csoport - nem rendelkeznek valódi gyökérrel, csak rizoidoknak nevezett, egyszerű rögzítőképletekkel, és hiányzik belőlük a szállítószövet is - emiatt méretük néhány centiméterre korlátozódik.',
+                  'Társulásokban gyakran úttörő (pionír) szerepet töltenek be: csupasz sziklafelszíneken, leégett területeken elsőként telepednek meg, elősegítve a talajképződést. A tőzegmohák (Sphagnum) kiemelkedő vízmegkötő képességükkel tőzeglápokat hoznak létre, amelyek jelentős szén-raktárak.',
+                ],
+              },
+              {
+                heading: 'A szivacsok: szövet nélküli testfelépítés az állatvilágban',
+                paragraphs: [
+                  'A szivacsok a korábban (A gombák, növények, állatok elkülönülése fejezet) bevezetett Állatok országának első konkrét képviselői ebben a tananyagban - rendszertani helyük a Szivacsok törzse (Porifera). Testüket pórusok hálózzák be, amelyeken keresztül vizet szűrnek át - ezt a folyamatot a testfalukat bélelő, ostoros gallérsejtek hajtják, amelyek egyúttal a vízáramban lévő táplálékrészecskéket fagocitózissal (ahogy azt az Egysejtű eukarióták fejezetben már megismertük) be is kebelezik.',
+                  'A vázsejtek mésztűket, kovatűket vagy rugalmas fehérjerostokat választanak ki, amelyek megtartják a test alakját, az amőboid sejtek pedig - alakváltoztató mozgásukkal - a tápanyagokat szállítják a test különböző pontjaira. Bár ezek a sejttípusok már egyértelmű munkamegosztást mutatnak, a szivacsoknak sincsenek valódi, elkülönült szöveteik vagy szerveik.',
+                ],
+              },
+              {
+                heading: 'A gyilkos galóca: azonosítás és a mérgezés veszélyei',
+                paragraphs: [
+                  'A gyilkos galóca (Amanita phalloides) Magyarország egyik legveszélyesebb, halálosan mérgező gombafaja. Azonosítására szolgáló legfontosabb bélyegek: fehér lemezek, a tönk felső részén egy fehér gallér (gyűrű), a tönk alján pedig egy hüvelyszerű képlet (volva, "bocskor") - ezek együttes megléte a legbiztosabb figyelmeztető jel, függetlenül a kalap színétől, amely zöldes-olívától akár fehéresig is változhat.',
+                  'A mérgezés különösen veszélyes, mert a tünetek (hasi görcs, hányás, hasmenés) csak jelentős késéssel, jellemzően 6-24 órával a fogyasztás után jelentkeznek - mire ezek megjelennek, a méreganyagok már felszívódtak, és súlyos, akár halálos máj- és vesekárosodást okozhatnak. Éppen ezért gomba gyűjtésekor és fogyasztásakor kiemelten fontos a biztos azonosítás.',
+                ],
+              },
+            ],
+            keyTerms: ['teleptest', 'álszövet', 'rizoid', 'Szivacsok törzse', 'gallérsejt', 'vázsejt', 'amőboid sejt', 'gyilkos galóca'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mohák kétszakaszos egyedfejlődését (életciklusát) kell lépésről lépésre értelmezni, megérteni ennek fejlődéstörténeti jelentőségét, valamint összefüggésbe hozni a mohák testfelépítését a társulásokban elfoglalt helyükkel.',
+            sections: [
+              {
+                heading: 'A mohák kétszakaszos egyedfejlődése',
+                paragraphs: [
+                  'A mohák életciklusában két, egymástól jól elkülönülő nemzedék váltja egymást - ezt korábban (A gombák, növények, állatok elkülönülése fejezet emelt része) generációváltakozásként ismertük meg. A szemmel is jól látható, zöld, leveles "mohapárnát" a haploid nemzedék, a gametofiton alkotja, amely ivarszerveket - petesejtet termelő archegóniumokat és ostoros hímivarsejtet termelő antheridiumokat - fejleszt.',
+                  'A megtermékenyítéshez víz szükséges, mert az ostoros hímivarsejtnek úsznia kell az archegóniumban ülő petesejthez - ez magyarázza, hogy a mohák miért kötődnek szorosan a nedves élőhelyekhez. A megtermékenyítés eredményeként létrejövő diploid zigóta a gametofitonon marad, és ott fejlődik tovább a diploid nemzedékké, a sporofitonná (nyél és spóratok), amely tápanyagait is a gametofitontól kapja.',
+                  'A sporofiton spóratokjában meiózissal haploid spórák keletkeznek, amelyek szétszóródva, kedvező körülmények között új gametofitonná csíráznak ki - ezzel a ciklus újrakezdődik. Fejlődéstörténeti szempontból különösen fontos, hogy a moháknál a haploid gametofiton a domináns, önállóan élő nemzedék, míg a diploid sporofiton attól függ - ez élesen elüt a később (A növényvilág főbb csoportjai fejezet) megismerendő harasztoktól és magvas növényektől, amelyeknél éppen fordított a helyzet: a diploid sporofiton a domináns, önálló nemzedék.',
+                ],
+              },
+              {
+                heading: 'A mohák testfelépítése és társulásokban elfoglalt helye',
+                paragraphs: [
+                  'A mohák - a korábban középszinten megismert rizoidok és a hiányzó szállítószövet miatt - nem képesek a talajból hatékonyan vizet felvenni és azt a testükben nagy távolságra szállítani, ezért méretük néhány centiméterre korlátozódik, és jellemzően nedves, árnyékos élőhelyeken (erdők alján, sziklákon, lápokban) fordulnak elő.',
+                  'Ez a testfelépítésbeli korlátozottság határozza meg a társulásokban elfoglalt helyüket is: a mohák jellemzően úttörő (pionír) fajok, amelyek elsőként telepednek meg csupasz, más növény számára még alkalmatlan felszíneken (sziklákon, leégett területeken), és ezzel elősegítik a talajképződést, megnyitva az utat a később megtelepedő, fejlettebb növények előtt.',
+                ],
+              },
+            ],
+            keyTerms: ['gametofiton', 'sporofiton', 'archegónium', 'antheridium'],
+          },
+        },
       },
       {
         id: 'novenyvilag-csoportjai',

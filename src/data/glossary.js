@@ -158,6 +158,18 @@ export const GLOSSARY = {
   'csúcsnövekedés': 'A gombafonál (hifa) növekedési módja, amelynél kizárólag a fonál csúcsán zajlik az anyagszállítás és a sejtfalépítés.',
   'petespóra': 'A peronoszpóra és néhány más gomba vastag falú, ellenálló ivaros spórája, amely két eltérő hifa találkozásakor keletkezik, és akár évekig is életképes maradhat.',
 
+  // 3. modul, 6. fejezet: Teleptest és álszövet
+  'álszövet': 'Összefonódott hifákból álló, szövetszerű, de nem valódi, egységes eredetű, differenciálódott sejtekből álló felépítés (pl. a kalapos gombák termőtestében).',
+  'rizoid': 'A mohák egyszerű, gyökérszerű rögzítőképlete, amely - a valódi gyökérrel ellentétben - elsősorban nem a vízfelvételt, hanem a talajhoz rögzítést szolgálja.',
+  'szivacsok törzse': 'Az Állatok országának törzse, amelynek tagjai (a szivacsok) pórusos testfelépítésűek, és nem rendelkeznek valódi szövetekkel.',
+  'gametofiton': 'A növények (pl. mohák) haploid, ivarszerveket termelő nemzedéke a generációváltakozás során.',
+  'sporofiton': 'A növények (pl. mohák) diploid, meiózissal spórákat termelő nemzedéke a generációváltakozás során.',
+  'archegónium': 'A mohák (és más spórás növények) petesejtet termelő, női ivarszerve.',
+  'antheridium': 'A mohák (és más spórás növények) ostoros hímivarsejtet termelő, hím ivarszerve.',
+  'gallérsejt': 'A szivacsok testfalát bélelő, ostoros sejt, amely a vízáramlást kelti és a táplálékrészecskéket fagocitózissal bekebelezi.',
+  'vázsejt': 'A szivacsok testének alakját fenntartó, mésztűket, kovatűket vagy rugalmas fehérjerostokat kiválasztó sejt.',
+  'amőboid sejt': 'A szivacsokban előforduló, alakváltoztató mozgásra képes sejt, amely a tápanyagokat szállítja a test különböző pontjaira.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
