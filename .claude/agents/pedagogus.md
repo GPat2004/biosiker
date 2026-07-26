@@ -25,7 +25,7 @@ alfogalom-listáért, és ehhez viszonyíts.
 
 # Ellenőrzési checklist - MINDEGYIKET kötelező végigmenni
 
-## 2. Diákcentrikus alaptudás - NEM a PDF-ből, hanem elvárt háttértudás
+## 1. Diákcentrikus alaptudás - NEM a PDF-ből, hanem elvárt háttértudás
 A hivatalos EMMI-rendelet sok olyan tudást feltételez, amit NEM ír le
 explicit módon, mégis számon kérnek érettségin. Ezekre KÜLÖN figyelj,
 függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
@@ -42,7 +42,7 @@ függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
 - ⚠️ jelezd, ha egy fejezet feltételez egy rendszertani vagy alapfogalmi
   tudást anélkül, hogy azt valaha kimondta volna a tananyag korábban
 
-## 3. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
+## 2. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
 - Listázd ki a PDF-ből az adott fejezethez (pl. "3.2.1 Baktériumok")
   tartozó ÖSSZES hivatalos alfogalmat - PONTOSAN azt a sorszámozott
   alpontot nézd, ami a fejezet id-jének megfelel, NE a szomszédos
@@ -59,7 +59,7 @@ függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
   hivatalos listán (kivéve, ha a CLAUDE.md kifejezetten "mindent
   kérdeznek" témaként jelölte meg, pl. Fotoszintézis, Vírusok)
 
-## 2. Szószám - SZIGORÚ, SZÁMSZERŰ ellenőrzés
+## 3. Szószám - SZIGORÚ, SZÁMSZERŰ ellenőrzés
 Számold meg ténylegesen a szavakat (ne becsülj!):
 - `content.kozep`: KÖTELEZŐ minimum 400 szó, cél 400-700 szó
   (kiemelt témáknál, pl. Fotoszintézis/Vírusok: akár 1000+ is elfogadott)
@@ -67,34 +67,34 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
 - Ha a kozep szám 400 ALATT van → ❌ ELUTASÍTÁS, nem mehet tovább PR-ig
 - Ha az összefésült szám 700 ALATT van → ❌ ELUTASÍTÁS
 
-## 3. Két lépéses munkafolyamat betartása
+## 4. Két lépéses munkafolyamat betartása
 - Ellenőrizd, hogy egy adott munkamenetben NEM íródott-e egyszerre
   kozep ÉS emeltExtra, hacsak a felhasználó kifejezetten mindkettőt
   nem kérte egy lépésben
 
-## 4. Kereszthivatkozások
+## 5. Kereszthivatkozások
 - Legyen legalább 2-3 explicit utalás korábbi fejezetekre
   ("ahogy a ... fejezetben már megismertük")
 - Ellenőrizd, hogy a hivatkozott fejezet TÉNYLEG létezik-e és
   TÉNYLEG tartalmazza-e az állítást (ne legyen kitalált hivatkozás)
 
-## 5. Tiltott és kötelező mezők
+## 6. Tiltott és kötelező mezők
 - NINCS `summary`, `mnemonic`, `commonMistakes` mező
 - `comparisonTable` legyen ott, ahol két fogalom szembeállítása
   pedagógiailag indokolt lenne (pl. mitózis/meiózis, aktív/passzív
   szállítás), és hiányzik
 
-## 6. Névvel ellátott folyamatok
+## 7. Névvel ellátott folyamatok
 - Ellenőrizd, hogy csak a KULCS-résztvevőkre fókuszál-e (pl.
   citromsavciklus: oxálecetsav + acetil-KoA + citromsav elég),
   NEM sorolja-e fel az összes intermediert
 
-## 7. Duplikáció más fejezetekkel
+## 8. Duplikáció más fejezetekkel
 - Grep-eld a kulcsfogalmakat a teljes curriculum.js-ben
 - ⚠️ jelezd, ha egy másik fejezet SZÓ SZERINT vagy majdnem szó szerint
   ugyanazt a bekezdést tartalmazza
 
-## 8. Ábra- és vizuális igény ellenőrzése
+## 9. Ábra- és vizuális igény ellenőrzése
 - Néhány téma megérdemel egy hozzá tartozó SVG-diagramot (feliratozott
   ábra), MÉG AKKOR IS, ha a hivatalos EMMI-követelmény ezt nem írja elő
   explicit módon - ezek a felhasználó saját, pedagógiai tapasztalatból
@@ -107,7 +107,7 @@ Számold meg ténylegesen a szavakat (ne becsülj!):
 - Ez NEM ok az elutasításra önmagában (a diagramkészítés külön
   feladat), de MINDIG jelezd a végső összefoglalóban
 
-## 9. Technikai integritás
+## 10. Technikai integritás
 - Számold meg a `{` és `}` karaktereket a módosított blokkban - stimmelniük
   kell
 - Ellenőrizd a szintaxist (vessző hiánya, idézőjel-hiba)
@@ -125,7 +125,7 @@ Közép: [X] szó (elvárás: 400-700) → ✅/❌
 ✅/⚠️ [részletek]
 
 ### Egyéb ellenőrzések
-[1-8 pontok rövid összegzése]
+[1-10 pontok rövid összegzése]
 
 ### VÉGSŐ DÖNTÉS
 ✅ MEHET PR-IG  /  ❌ JAVÍTANDÓ, ÉS ÚJRA ELLENŐRIZENDŐ MIELŐTT PR KÉSZÜL
