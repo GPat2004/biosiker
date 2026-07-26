@@ -88,6 +88,40 @@ Minden fejezet megírása után hívd meg a content-reviewer subagentet.
 Minden commit előtt hívd meg a lint-fixer subagentet.
 Csak akkor nyiss PR-t, ha mindkettő ✅-t adott vissza.
 
+## Push- és merge-határok (SZIGORÚ, kivétel nélküli szabály)
+
+- A `claude-work` branch-re történő commit + push MINDIG automatikus,
+  soha nem kell hozzá emberi jóváhagyás egyetlen fejezetnél sem.
+- A Pull Request `main`-be MINDIG megnyílik automatikusan, amint a
+  pedagogus subagent ✅-t ad.
+- A PR **MERGE-elése a `main`-be (= éles, publikus weboldal) SOHA nem
+  történhet automatikusan.** Ez mindig, kivétel nélkül a felhasználó
+  saját, kézi jóváhagyása után történik a GitHub felületén. Sem a fő
+  munkamenet, sem semmilyen subagent nem jogosult a `main`-be merge-elni.
+
+## Modulonkénti (batch) haladás - ne kérj visszajelzést fejezetenként
+
+Ha a felhasználó egy teljes modul (vagy több fejezet) megírására ad
+utasítást, és nem kér közbenső visszajelzést:
+
+1. Dolgozz végig AUTONÓM módon az összes fejezeten a modulban
+2. Minden egyes fejezet után futtasd le a pedagogus subagentet - ha
+   ⚠️-t ad, ELŐSZÖR próbáld magad kijavítani, és csak ismételt sikertelen
+   kísérlet esetén állj meg és kérj emberi segítséget
+3. Csak a TELJES modul végén nyiss egyetlen összesített PR-t (ne
+   fejezetenként külön PR-t), és a PR leírásában foglald össze:
+   - mely fejezetek készültek el
+   - a pedagogus subagent végső döntése mindegyiknél
+   - mely fejezeteknél van "Hiányzó ábra-javaslat" jelzés
+4. Csak ezután jelezz a felhasználónak - egyetlen összefoglaló
+   üzenetben, ne fejezetenként megszakítva a munkát
+
+## Diagram-igény jelzése
+
+A pedagogus subagent "Hiányzó ábra-javaslat" jelzéseit gyűjtsd össze
+egy listába a modul végi összefoglalóban - ezekhez a felhasználó külön
+fog utasítást adni, ne készíts SVG-t magadtól kérés nélkül.
+
 ## Pull Request szabály
 Minden munkamenet végén, sikeres build+lint után, nyiss egy Pull Requestet
 a `claude-work`-ből a `main` felé a GitHub CLI-vel:
