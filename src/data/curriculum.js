@@ -1485,7 +1485,52 @@ export const CURRICULUM = [
         order: 5,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (A gombák, növények, állatok elkülönülése fejezet) megismert Gombák országának első konkrét képviselőit ismerjük meg ebben a fejezetben: a fonalas testfelépítésű gombákat, valamint - összehasonlításképpen - a fonalas zöldmoszatokat.',
+            sections: [
+              {
+                heading: 'A fonalas testfelépítés: hifa és micélium',
+                paragraphs: [
+                  'A fonalas gombák teste vékony, elágazó fonalakból, ún. hifákból épül fel - ezek összessége alkotja a micéliumot, amely gyakran a talajban vagy a tápanyagforrás belsejében terjed szét, láthatatlanul, és csak a szaporítóképletek (pl. a penész "bolyhos" felszíne) jelennek meg a felszínen.',
+                  'A gombák - ahogy azt korábban (A gombák, növények, állatok elkülönülése fejezet) megismertük - heterotróf módon, a testükön kívül megemésztett táplálékukat felszívva táplálkoznak: a hifák nagy felülete kiválóan alkalmas erre a sejten kívüli emésztésre és tápanyagfelvételre.',
+                ],
+              },
+              {
+                heading: 'Fonalas gombák: peronoszpóra, fejespenész, ecsetpenész',
+                paragraphs: [
+                  'A peronoszpóra növénykórokozó gomba, amely elsősorban a szőlő és a burgonya leveleit támadja meg, jelentős gazdasági kárt okozva - felismerése és az ellene való védekezés (pl. rézgálicos permetezés) máig fontos szőlészeti feladat.',
+                  'A fejespenész (más néven kenyérpenész) jellegzetes, gömb alakú spóratokjairól ("fejeiről") ismerhető fel, amelyek a hifák végén, egyenes szárakon ülnek - ez a penészfaj gyakran jelenik meg a megromlott kenyéren és más szénhidráttartalmú élelmiszereken. Az ecsetpenész spóratartói ezzel szemben ecsetszerűen, többszörösen elágaznak - ez a gombanemzetség adta a penicillin nevű antibiotikumot, amelyet Alexander Fleming fedezett fel véletlenül, amikor észrevette, hogy egy ecsetpenésszel szennyeződött baktériumtenyészetben a penész körül nem nőttek baktériumok.',
+                  'Egyes fonalas gombák emberi megbetegedéseket is okozhatnak - ilyenek a bőrgombásodások (pl. a lábgomba), amelyek a bőr felső rétegében szaporodó gombafonalak miatt alakulnak ki, és megfelelő higiéniával, illetve gombaellenes szerekkel kezelhetők.',
+                  'A három gombafaj mikroszkóp vagy akár szabad szem alatt is megkülönböztethető egymástól: a fejespenész spóratokjai gömb alakúak és egyenes száron ülnek, az ecsetpenészé ecsetszerűen elágazó fürtökben helyezkednek el, a peronoszpóra pedig jellemzően a levelek fonákján megjelenő, szürkésfehér penészbevonat formájában ismerhető fel.',
+                ],
+              },
+              {
+                heading: 'Szaporodás, lebontó szerep és mikroszkópos vizsgálat',
+                paragraphs: [
+                  'A gombák - a fonalas fajok is - jellemzően spórákkal szaporodnak: a hifák végén képződő spóratokokban nagy számú, apró spóra keletkezik, amelyek szétszóródva, kedvező körülmények között új micéliummá csíráznak ki.',
+                  'A fonalas gombák (és általában a gombák) az életközösségekben elsősorban lebontó szerepet töltenek be: elhalt növényi és állati maradványokat bontanak le, ezzel kulcsszerepet játszva az anyagforgalom fenntartásában - ezt a szerepkört a Baktériumok fejezet emelt része is tárgyalja, a baktériumok esetében.',
+                  'Fénymikroszkóp alatt vizsgálva a kenyérpenész elágazó hifái és jellegzetes, gömb alakú spóratokjai jól megfigyelhetők. Összehasonlításképpen a fonalas zöldmoszatok (pl. a Spirogyra) is fonalas testfelépítésűek, de esetükben a fonál valódi, egymástól elkülönült sejtekből áll, amelyek mindegyike a korábban (Szénhidrátok fejezet) megismert cellulózból álló sejtfallal rendelkezik - ez a különbség (osztatlan gombafonál vs. sejtekre tagolt moszatfonál) mikroszkóp alatt is jól látható.',
+                ],
+              },
+            ],
+            keyTerms: ['Gombák országa', 'hifa', 'micélium', 'peronoszpóra', 'fejespenész', 'ecsetpenész', 'penicillin', 'lebontó'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni a gombafonalak sejtszintű felépítését és növekedési módját, mert ez sok, egyébként meglepőnek tűnő tulajdonságukat megmagyarázza.',
+            sections: [
+              {
+                heading: 'A gombafonalak sejtszintű felépítése és növekedése',
+                paragraphs: [
+                  'A legtöbb gombafonalat nem valódi, elkülönült sejtek alkotják: a hifát csak helyenként tagolják keresztfalak (szeptumok), amelyeken pórusok maradnak, így a citoplazma - és gyakran a sejtmagok is - szabadon áramolhatnak a "rekeszek" között. Az ilyen felépítést cönocitikus felépítésnek nevezzük - ez lényegesen eltér attól a sejtes felépítéstől, amit a legtöbb élőlénynél (pl. a fonalas zöldmoszatoknál) megszoktunk.',
+                  'A hifa növekedése kizárólag a csúcsán történik (csúcsnövekedés): itt zajlik a legintenzívebb anyagszállítás és sejtfalépítés, míg a fonál idősebb, hátrébb eső szakaszai már nem növekednek tovább. Ez a növekedési mód teszi lehetővé, hogy a gomba rendkívül gyorsan és hatékonyan terjeszkedjen egy új tápanyagforrás (pl. egy darab kenyér) belsejében.',
+                  'A fonalas gombák szaporodása lehet ivartalan (a hifák végén képződő spóratokokban, mitózissal keletkező spórákkal, ahogy azt középszinten megismertük) vagy ivaros: a peronoszpóránál például két, genetikailag eltérő hifa találkozásakor vastag falú, ellenálló ivaros spórák (petespórák) képződnek, amelyek akár évekig is életképesek maradhatnak a talajban, mielőtt kedvező körülmények között kicsíráznának.',
+                ],
+              },
+            ],
+            keyTerms: ['cönocitikus felépítés', 'csúcsnövekedés', 'petespóra'],
+          },
+        },
       },
       {
         id: 'teleptest-alszovet',

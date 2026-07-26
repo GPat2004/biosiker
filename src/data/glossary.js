@@ -145,6 +145,19 @@ export const GLOSSARY = {
   'generációváltakozás': 'A növények többségére jellemző életciklus, amelyben egy hosszú, önálló haploid és egy hosszú, önálló diploid életszakasz váltja egymást.',
   'spóraképzés': 'A diploid szakasz sejtjeinek meiózisával létrejövő haploid spórák képzése, amelyekből - az ivarsejtekkel ellentétben - megtermékenyítés nélkül is új egyed fejlődhet.',
   'ivarsejtképzés': 'Az ivarsejtek (petesejt, hímivarsejt) létrejöttének folyamata - állatoknál közvetlenül meiózissal, a legtöbb növénynél a haploid egyed mitózisával.',
+
+  // 3. modul, 5. fejezet: Sejtfonalak
+  'gombák országa': 'A rendszertan egyik országa, amelybe a heterotróf, kitines sejtfallal rendelkező, jellemzően testükön kívül emésztő élőlények tartoznak.',
+  'hifa': 'A fonalas gombák testét felépítő vékony, elágazó fonál.',
+  'micélium': 'A gombafonalak (hifák) összessége, amely a gomba test nagy részét, gyakran láthatatlanul, a táptalajban vagy a tápanyagforrás belsejében alkotja.',
+  'peronoszpóra': 'Növénykórokozó fonalas gomba, amely elsősorban a szőlő és a burgonya leveleit támadja meg.',
+  'fejespenész': 'Fonalas gomba (más néven kenyérpenész), amelyet a hifák végén ülő, gömb alakú spóratokok ("fejek") jellemeznek.',
+  'ecsetpenész': 'Fonalas gomba, amelynek spóratartói ecsetszerűen elágaznak - erről a gombanemzetségről nevezték el a penicillin antibiotikumot.',
+  'penicillin': 'Az ecsetpenészből (Penicillium) származó antibiotikum, amelyet Alexander Fleming fedezett fel véletlenül.',
+  'cönocitikus felépítés': 'Sejthatárokkal nem (vagy csak pórusos keresztfalakkal) tagolt, sok sejtmagot tartalmazó, közös citoplazmájú testfelépítés, amely a legtöbb gombafonalra jellemző.',
+  'csúcsnövekedés': 'A gombafonál (hifa) növekedési módja, amelynél kizárólag a fonál csúcsán zajlik az anyagszállítás és a sejtfalépítés.',
+  'petespóra': 'A peronoszpóra és néhány más gomba vastag falú, ellenálló ivaros spórája, amely két eltérő hifa találkozásakor keletkezik, és akár évekig is életképes maradhat.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
