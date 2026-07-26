@@ -1362,7 +1362,60 @@ export const CURRICULUM = [
         order: 3,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Baktériumok fejezet) megismert prokarióta/eukarióta sejtszerveződés fogalompárja itt egy új szempontból válik fontossá: az egysejtű eukarióták olyan önálló élőlények, amelyek egyetlen sejtből állnak, mégis rendelkeznek valódi sejtmaggal és a hozzá tartozó sejtszervecskékkel - ez a fejezet az élővilág rendszerezésének egy új, első alkalommal megismert országát, a Protiszták országát mutatja be.',
+            sections: [
+              {
+                heading: 'Rendszertani helyük: a Protiszták országa',
+                paragraphs: [
+                  'A korábban (A biológia tudománya fejezet) megismert rendszertani hierarchiában (faj → nem → család → rend → osztály → törzs → ország) az "ország" a legtágabb kategória. A korábban megismert baktériumok a Monera (más néven Prokarióták) országába tartoznak; az egysejtű eukarióták ezzel szemben már a Protiszták országának tagjai - ez az első ország, amelynek minden tagja valódi, hártyával határolt sejtmaggal rendelkezik.',
+                  'A Protiszták országán belül az egyes fajok további törzsekbe sorolhatók a mozgásszervecskéik típusa alapján. Az óriás amőba a Gyökérlábúak törzsébe tartozik, a papucsállatka a Csillósok törzsébe, a zöld szemesostoros pedig az Ostorosok törzsébe.',
+                ],
+              },
+              {
+                heading: 'Mozgásformák',
+                paragraphs: [
+                  'Az óriás amőba állábak (ideiglenes sejtnyúlványok) segítségével mozog - ugyanezt a mozgásformát figyeltük meg korábban (Sejtműködések vezérlése fejezet) a fehérvérsejteknél is, amelyek szintén állábakkal változtatják alakjukat.',
+                  'A papucsállatka egész testét sűrű csillósor borítja, amelyek összehangolt, hullámszerű csapkodásával mozog a vízben. A zöld szemesostoros egyetlen hosszú ostorral (flagellummal) hajtja magát előre - mindkét mozgásforma ugyanazon az elven alapul, mint amit emberi sejteknél (légúti hámsejtek csillói, illetve a hímivarsejt ostora) is megfigyelhetünk.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás és felépítő anyagcsere',
+                paragraphs: [
+                  'Az óriás amőba és a papucsállatka heterotróf módon, fagocitózissal táplálkozik: a sejtmembrán körülzárja a táplálékrészecskét, majd a keletkező táplálékvakuólumban - a korábban (Anyagcsere sejtszinten fejezet) megismert lizoszóma enzimeinek segítségével - emésztődik meg.',
+                  'A zöld szemesostoros különleges kivétel: színtestje (kloroplasztisza) van, amellyel fényben fotoautotróf módon szerves anyagot termel, sötétben vagy szerves anyag jelenlétében azonban heterotróf módon is képes táplálkozni. Az ilyen, kétféle anyagcsere-stratégiát egyesítő szervezeteket mixotrófnak nevezzük - ez a tulajdonság teszi a szemesostorost az egyik legérdekesebb, a növény és az állat közötti hagyományos határvonalat elmosó példává.',
+                  'Az emésztés után vissza nem szívódott, emésztetlen maradékot a sejt a membránon keresztül üríti ki - az amőbánál ez a sejtfelszín bármely pontján megtörténhet, a papucsállatkánál viszont egy meghatározott helyen, az úgynevezett sejtvégbélen (citoprokton) keresztül távozik a salakanyag.',
+                ],
+              },
+              {
+                heading: 'Víztartalom-szabályozás és felismerésük mikroszkóp alatt',
+                paragraphs: [
+                  'Mindhárom faj édesvízben él, amely a sejtjükhöz képest hipotóniás közeg - a korábban (Membránok szerepe fejezet) megismert ozmózis miatt ezért folyamatosan víz áramlik be a sejtbe. A fölösleges víz eltávolítására egy különleges sejtszervecske, a lüktető (kontraktilis) vacuolum szolgál, amely rendszeres időközönként összehúzódva kiüríti a felgyülemlett vizet a sejtből.',
+                  'Fénymikroszkóp alatt mindhárom faj jellegzetes sejtalkotói alapján felismerhető: az amőbánál az állandóan változó alak és az állábak, a papucsállatkánál a testet borító csillók és a két sejtmag (egy nagyobb és egy kisebb), a szemesostorosnál pedig az ostor, a színtest és a fényérzékelő szemfolt.',
+                  'A három faj tehát ugyanazokat az alapvető életműködéseket (mozgás, táplálkozás, víztartalom-szabályozás) különböző, egymástól jól megkülönböztethető szervecskékkel valósítja meg - ez a sokféleség jól szemlélteti, hogy az egysejtű lét nem jelenti a funkciók egyszerűségét: egyetlen sejtnek kell ellátnia mindazt, amit egy többsejtű szervezetnél már specializálódott sejtek és szövetek végeznek.',
+                ],
+              },
+            ],
+            keyTerms: ['Protiszták országa', 'gyökérlábúak', 'csillósok', 'ostorosok', 'állábas mozgás', 'ostoros mozgás', 'csillós mozgás', 'fagocitózis', 'mixotróf', 'lüktető vacuolum'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a Protiszták országának kialakulásához köthető, nagy jelentőségű elméletet, az endoszimbióta elméletet kell részletesen ismerni - ez az elmélet éppen az itt tanult egysejtű eukarióta sejtszerveződés kialakulására ad magyarázatot.',
+            sections: [
+              {
+                heading: 'Az endoszimbióta elmélet',
+                paragraphs: [
+                  'Az endoszimbióta elmélet szerint az eukarióta sejt két fontos sejtszervecskéje, a mitokondrium és a színtest, egykor önállóan élő, baktérium jellegű prokarióta szervezetek voltak, amelyeket egy ősi eukarióta sejt bekebelezett, de nem emésztett meg - a bekebelezett sejtek helyette tartós, kölcsönösen előnyös együttélésbe (szimbiózisba) kerültek a befogadó sejttel.',
+                  'Az elmélet mellett szóló legfontosabb bizonyítékok - a kettős membrán, a saját körkörös DNS, a baktériumokéra emlékeztető méretű és típusú riboszómák, az önálló osztódás, valamint a baktériumellenes antibiotikumokra való érzékenység - részletes kifejtését a Baktériumok fejezet emelt része tartalmazza, hiszen ezek a bizonyítékok éppen a baktériumokkal való rokonságot támasztják alá.',
+                  'Az elmélet jelentősége itt, az egysejtű eukarióták fejezetében abban áll, hogy megmagyarázza, miért rendelkezik minden ma élő eukarióta sejt - legyen az egysejtű (mint az óriás amőba vagy a papucsállatka) vagy egy többsejtű szervezet része - energiatermelő mitokondriummal: ez a sejtszervecske egyetlen közös, ősi endoszimbiotikus eseményből származik, amely még az első eukarióta sejtek megjelenésekor történt.',
+                  'A színtest endoszimbiotikus eredete konkrétan is megfigyelhető ebben a fejezetben: a zöld szemesostoros - amely, ahogy azt középszinten megismertük, mixotróf módon képes fotoszintetizálni - éppen azért rendelkezik színtesttel, mert egy távoli őse egykor egy fotoszintetizáló, cianobaktérium jellegű sejtet kebelezett be.',
+                  'Az elméletet az 1960-as-1970-es években Lynn Margulis amerikai biológus dolgozta ki és népszerűsítette részletesen, jelentősen hozzájárulva ahhoz, hogy mára az eukarióta sejt kialakulásának általánosan elfogadott magyarázatává váljon.',
+                ],
+              },
+            ],
+            keyTerms: ['endoszimbióta elmélet'],
+          },
+        },
       },
       {
         id: 'elkulonules',

@@ -92,6 +92,15 @@ export const GLOSSARY = {
   'szimbionta': 'Olyan élőlény (pl. a bélflóra baktériumai), amely egy másik fajjal kölcsönösen előnyös, tartós együttélésben (szimbiózisban) él.',
   'timindimer': 'Az UV-sugárzás által a DNS-ben okozott kóros kötés két szomszédos timinbázis között, amely megakadályozza a DNS helyes megkettőződését és leolvasását.',
 
+  // 3. modul, 3. fejezet: Egysejtű eukarióták
+  'protiszták országa': 'A rendszertan egyik országa, amelybe az egysejtű, valódi sejtmaggal rendelkező (eukarióta) élőlények tartoznak, pl. az óriás amőba, a papucsállatka és a zöld szemesostoros.',
+  'gyökérlábúak': 'A Protiszták országának törzse, amelynek tagjai (pl. az óriás amőba) állábak segítségével mozognak és táplálkoznak.',
+  'csillósok': 'A Protiszták országának törzse, amelynek tagjai (pl. a papucsállatka) egész testüket borító csillókkal mozognak.',
+  'ostorosok': 'A Protiszták országának törzse, amelynek tagjai (pl. a zöld szemesostoros) egy vagy több ostorral mozognak.',
+  'fagocitózis': 'Az endocitózis egyik formája, amelynek során a sejt szilárd táplálékrészecskét kebelez be, körülvéve azt a sejtmembránjával.',
+  'mixotróf': 'Olyan szervezet (pl. a zöld szemesostoros), amely fény jelenlétében fotoautotróf, fény hiányában viszont heterotróf módon táplálkozik.',
+  'lüktető vacuolum': 'Egysejtű élőlények (pl. amőba, papucsállatka) sejtszervecskéje, amely a sejtbe ozmózissal beáramló fölösleges vizet gyűjti össze és rendszeresen kiüríti.',
+
   // 3. modul emelt kiegészítés: vírus-állapotok, litikus/lizogén ciklus
   'természetes szelekció': 'Az evolúció egyik alapmechanizmusa: a környezethez jobban alkalmazkodó egyedek nagyobb eséllyel maradnak életben és szaporodnak, ezáltal az előnyös tulajdonságok gyakorisága nő a populációban.',
   'virion': 'A sejten kívül létező, önálló, fertőzőképes vírusrészecske - a vírus "nyugvó", sejten kívüli formája.',
