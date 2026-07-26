@@ -25,7 +25,24 @@ alfogalom-listáért, és ehhez viszonyíts.
 
 # Ellenőrzési checklist - MINDEGYIKET kötelező végigmenni
 
-## 1. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
+## 2. Diákcentrikus alaptudás - NEM a PDF-ből, hanem elvárt háttértudás
+A hivatalos EMMI-rendelet sok olyan tudást feltételez, amit NEM ír le
+explicit módon, mégis számon kérnek érettségin. Ezekre KÜLÖN figyelj,
+függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
+- Rendszertani beágyazás: minden konkrét faj/példa (pl. papucsállatka,
+  óriás amőba) esetén szerepeljen, MELYIK TÖRZSBE és ORSZÁGBA tartozik
+- Ha egy fejezet első alkalommal vezet be egy új országot/nagy csoportot
+  (pl. Egysejtű eukarióták, Gombák, Állatok), tartalmazzon egy rövid
+  bevezetőt/emlékeztetőt a rendszertani hierarchiáról (ország → törzs →
+  osztály → rend → család → nem → faj), hogy a diák lássa, hol tart
+- Alapvető, magától értetődőnek tűnő tények tudatos kimondása, amikor
+  elsőként kerülnek elő (pl. "az emlősök szőrrel fedettek" - ez
+  triviálisnak tűnik, de mégis alapkövetelmény, amit ki kell mondani,
+  nem csak feltételezni, hogy a diák tudja)
+- ⚠️ jelezd, ha egy fejezet feltételez egy rendszertani vagy alapfogalmi
+  tudást anélkül, hogy azt valaha kimondta volna a tananyag korábban
+
+## 3. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
 - Listázd ki a PDF-ből az adott fejezethez (pl. "3.2.1 Baktériumok")
   tartozó ÖSSZES hivatalos alfogalmat - PONTOSAN azt a sorszámozott
   alpontot nézd, ami a fejezet id-jének megfelel, NE a szomszédos
