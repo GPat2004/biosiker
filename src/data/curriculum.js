@@ -2234,7 +2234,59 @@ export const CURRICULUM = [
         order: 18,
         isFree: false,
         estimatedMinutes: 10,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Chordata-bélyeg', 'Lárva', 'Kifejlett egyed'],
+          rows: [
+            ['Gerinchúr', 'megvan', 'eltűnik'],
+            ['Neurális cső', 'megvan', 'nagy része eltűnik'],
+            ['Farok', 'megvan', 'eltűnik'],
+            ['Kopoltyúrés', 'megvan', 'megmarad'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert állattörzsek (Szivacsok, Csalánozók, Laposférgek, Gyűrűsférgek, Ízeltlábúak, Puhatestűek) után az előgerinchúrosokkal az első olyan állatcsoportot ismerjük meg, amely már a Gerinchúrosok törzsébe (Chordata) tartozik - ugyanabba a törzsbe, mint a később megismerendő gerincesek. Ez a fejezet nem szerepel a hivatalos érettségi követelményben, de fontos áthidaló pontot jelent a gerinctelenek és a gerincesek között.',
+            sections: [
+              {
+                heading: 'A Gerinchúrosok törzs meghatározó bélyegei',
+                paragraphs: [
+                  'A Gerinchúrosok törzsének minden tagját - legalább egyedfejlődésük valamely szakaszában - négy közös bélyeg jellemzi: a hát mentén húzódó, rugalmas támasztóelem, a gerinchúr (notochord); egy háti elhelyezkedésű, cső alakú idegrendszer, a neurális cső (a korábban megismert hasi idegdúcláncokkal szemben); a garatban található kopoltyúrések; valamint a végbélnyílás mögött elhelyezkedő farok.',
+                  'Ez a négy bélyeg nem feltétlenül van jelen egyszerre a kifejlett egyednél - ahogy azt az előgerinchúrosok példáján rögtön látni is fogjuk -, de az egyedfejlődés legalább egy szakaszában (jellemzően embrionálisan vagy lárvaként) minden gerinchúros esetében megjelenik. Ez a rendszertani kritérium teszi lehetővé, hogy olyan, egymástól látszólag nagyon eltérő élőlényeket, mint az előgerinchúrosok, a fejgerinchúrosok és a gerincesek, egyetlen közös törzsbe soroljunk.',
+                ],
+              },
+              {
+                heading: 'Az előgerinchúrosok: lárvában fejlettebb, mint felnőttkorban',
+                paragraphs: [
+                  'Az előgerinchúrosok (Tunicata, pl. a zsákállatok) mérete jellemzően néhány milliméterestől néhány centiméteresig terjed. Lárvájuk szabadon úszó, ebihalszerű alak, amely mind a négy chordata-bélyeget egyértelműen mutatja: van gerinchúrja, csöves idegrendszere és farka is. A kifejlett egyed ezzel szemben helyhez kötötté válik, elveszti a gerinchúrt és a farkat, testét egy különleges, tunicinnak nevezett anyagból álló köpeny (tok) veszi körül - innen ered a csoport másik neve, a tunikások.',
+                  'A felnőtt előgerinchúrosok szűrve táplálkoznak: a garat kopoltyúrésein átáramló vízből szűrik ki a táplálékot, hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz - ez a hasonlóság azonban két, egymással nem rokon állatcsoportnál, egymástól függetlenül alakult ki.',
+                  'A lárva-felnőtt közötti radikális átalakulás (amely során elvész a gerinchúr, a farok és a csöves idegrendszer nagy része) egyfajta "fordított fejlődésnek" is tekinthető: míg a legtöbb állatnál az egyedfejlődés során egyre összetettebb szerkezetek alakulnak ki, itt éppen a legjellemzőbb chordata-bélyegek tűnnek el a kifejlett formában.',
+                ],
+              },
+              {
+                heading: 'Élőhelyük, szaporodásuk és jelentőségük',
+                paragraphs: [
+                  'Az előgerinchúrosok kizárólag tengeri élőlények, a világ minden óceánjában megtalálhatók, a sekély parti vizektől egészen a mélytengerig. Sok fajuk kolóniákban él, ahol az egyes egyedek közös köpenybe ágyazva, összekapcsolódva szűrik a vizet.',
+                  'Szaporodásuk lehet ivaros (a legtöbb faj hímnős) vagy ivartalan (bimbózással, ami kolóniák kialakulásához vezet). Az ivaros szaporodásból származó, szabadon úszó lárva csak rövid ideig (néhány órától néhány napig) él ebben a formában, mielőtt egy szilárd felszínhez rögzülve átalakulna a helyhez kötött, felnőtt alakká.',
+                  'Az előgerinchúrosok fontos szerepet játszanak a tengeri táplálékláncokban: hatékony vízszűrő tevékenységükkel hozzájárulnak a víz tisztításához, és egyes tengeri állatok (pl. néhány halfaj) táplálékként fogyasztják őket.',
+                ],
+              },
+            ],
+            keyTerms: ['Gerinchúrosok törzse', 'gerinchúr', 'neurális cső', 'kopoltyúrés', 'tunikás'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, milyen evolúciós jelentősége van annak, hogy az előgerinchúrosok lárvája fejlettebb testfelépítésű, mint a kifejlett egyed.',
+            sections: [
+              {
+                heading: 'Az előgerinchúrosok evolúciós jelentősége',
+                paragraphs: [
+                  'Az előgerinchúrosok lárvájának chordata-bélyegei fontos bizonyítékot szolgáltatnak arra, hogy a Gerinchúrosok törzse egy közös, feltehetően szabadon úszó, farokkal és gerinchúrral rendelkező ősi formából alakult ki - az előgerinchúrosoknál ez az "ősi" testfelépítés a lárvastádiumban őrződött meg, míg a kifejlett egyednél a helyhez kötött, szűrve táplálkozó életmódhoz alkalmazkodva visszafejlődött.',
+                  'Ez a jelenség - amikor egy fejlettebb, mozgékonyabb lárvaforma egy egyszerűbb, helyhez kötött felnőtt formává alakul át - érdekes párhuzamot mutat a korábban (Kagylók fejezet) megismert evolúciós "egyszerűsödéssel": mindkét esetben a szűrve táplálkozó, mozgásszegény életmód vezetett hasonló irányú, de egymástól teljesen független (konvergens) evolúciós változáshoz két, egymással nem rokon állatcsoportnál.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
       },
       {
         id: 'fejgerinchurosok',

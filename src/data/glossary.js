@@ -279,6 +279,13 @@ export const GLOSSARY = {
   'szűrögető táplálkozás': 'A kagylókra jellemző táplálkozási mód, amelynek során a kopoltyún átáramló vízből szűrik ki a lebegő planktont és szerves törmeléket.',
   'veliger lárva': 'A kagylók (és más puhatestűek) szabadon úszó lárvaformája.',
 
+  // 3. modul, 18. fejezet: Előgerinchúrosok
+  'gerinchúrosok törzse': 'Az Állatok országának törzse (Chordata), amelynek tagjait - legalább egyedfejlődésük egy szakaszában - gerinchúr, háti csöves idegrendszer, kopoltyúrések és farok jellemzi.',
+  'gerinchúr': 'A gerinchúrosok hát menti, rugalmas támasztóeleme (notochord), amely legalább az egyedfejlődés egy szakaszában minden tagnál megjelenik.',
+  'neurális cső': 'A gerinchúrosokra jellemző, háti elhelyezkedésű, cső alakú idegrendszer.',
+  'kopoltyúrés': 'A gerinchúrosok garatjában található nyílás, amely legalább az egyedfejlődés egy szakaszában minden tagnál megjelenik.',
+  'tunikás': 'Az előgerinchúrosok másik neve, amely a kifejlett egyedet körülvevő, tunicin nevű anyagból álló köpenyre (tokra) utal.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
