@@ -2338,7 +2338,72 @@ export const CURRICULUM = [
         order: 20,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Csontos halak', 'Porcos halak'],
+          rows: [
+            ['Váz anyaga', 'csont', 'porc'],
+            ['Úszóhólyag', 'van', 'nincs'],
+            ['Kopoltyúrés', 'kopoltyúfedővel borított', 'nyitott'],
+            ['Fogazat', 'nem cserélődik folyamatosan', 'folyamatosan cserélődik'],
+            ['Megtermékenyítés', 'jellemzően külső', 'jellemzően belső'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Fejgerinchúrosok fejezet) megismert, még gerinchúrral rendelkező csoport után a csontos halakkal a Gerincesek altörzsének (Vertebrata) első képviselőit ismerjük meg - náluk a gerinchúrt egy sokkal erősebb, csontos elemekből álló gerincoszlop váltja fel.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A csontos halak az Állatok országán belül a Gerinchúrosok törzsének (Chordata) egy altörzsét, a Gerincesek (Vertebrata) altörzsét, azon belül pedig a Csontos halak osztályát (Osteichthyes) alkotják. Testük áramvonalas, csontos pikkelyekkel és nyálkaréteggel borított, amely csökkenti az úszás közbeni súrlódást és véd a fertőzésektől.',
+                  'Úszóikat páros (mell- és hasúszó) és páratlan (hát-, farok- és alfarki úszó) csoportba sorolhatjuk - a páros úszók elsősorban a kormányzást és az egyensúlyt, a farokúszó pedig a hajtóerőt biztosítja. Mozgásukat - hasonlóan a korábban (Fejgerinchúrosok fejezet) megismert lándzsahaléhoz - a törzsizomzat oldalirányú, hullámzó összehúzódása hajtja.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A csontos halak táplálkozása rendkívül sokféle: vannak közöttük ragadozók (pl. a csuka), növényevők (pl. az amur), planktonszűrők (pl. egyes heringfélék) és mindenevők is. Ez a sokféleség a szájuk és fogazatuk jelentős eltéréseiben is megmutatkozik: a ragadozó fajoknak éles, hátrahajló fogaik vannak a zsákmány megragadására, míg a szűrögető fajoknál a kopoltyútüskék finom hálót alkotnak a plankton kiszűrésére - hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz.',
+                  'A csontos halak kopoltyúval lélegeznek, amely a vízben oldott oxigént vonja ki. Keringési rendszerük zárt, egyszerű, kétüregű (egy pitvar és egy kamra) szívvel, amelyen a vér egyetlen körben áramlik át: szív → kopoltyú → test → vissza a szívhez.',
+                  'Egyedi érzékszervük az oldalvonal-szerv, amely a vízben terjedő rezgéseket és áramlásokat érzékeli - ez segíti a tájékozódást, a zsákmány és a ragadozók észlelését, valamint a rajban úszó halak összehangolt mozgását. Szaporodásuk ivaros, ivarilag elkülönült egyedekkel, jellemzően külső megtermékenyítéssel: az ikrát és a haltejet egyaránt a vízbe bocsátják, ahol a megtermékenyítés végbemegy - emiatt rendkívül nagyszámú ivadékot hoznak létre, hiszen a külső fejlődés kockázatos.',
+                ],
+              },
+              {
+                heading: 'Az úszóhólyag',
+                paragraphs: [
+                  'A csontos halak egyedi szerve az úszóhólyag: egy gázzal töltött, a hasüregben elhelyezkedő szerv, amelynek térfogatát a hal szabályozni tudja. Ezáltal energiabefektetés nélkül, lebegve tud egy adott mélységben maradni, anélkül, hogy folyamatosan úsznia kellene a süllyedés elkerülése érdekében.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A csontos halak a gerincesek legfajgazdagabb osztálya: méretük néhány milliméterestől több méteresig terjed, élőhelyük pedig a tengerek, óceánok és édesvizek szinte minden típusára kiterjed. Gazdasági jelentőségük kiemelkedő: a halászat és a haltenyésztés (akvakultúra) világszerte fontos élelmiszerforrást biztosít az emberiség számára.',
+                ],
+              },
+              {
+                heading: 'Kitekintés: a porcos halak',
+                paragraphs: [
+                  'A halak másik nagy csoportja a porcos halak (Chondrichthyes, pl. a cápák és a rájak) - ez a témakör nem szerepel a hivatalos érettségi követelményben, de érdemes röviden összevetni a csontos halakkal. Bár ők is a Gerincesek altörzsébe tartoznak, testfelépítésük több ponton eltér: vázuk nem csontból, hanem rugalmasabb, könnyebb porcból épül fel, és nincs úszóhólyaguk - emiatt vagy folyamatosan úszniuk kell, hogy ne süllyedjenek a mélybe, vagy a tengerfenéken pihennek.',
+                  'További jellegzetességük, hogy kopoltyúréseik nyitottak (nincs kopoltyúfedőjük, mint a csontos halaknak), fogaik folyamatosan cserélődnek egész életük során, és sok fajuknál belső megtermékenyítés jellemző - szemben a csontos halak külső megtermékenyítésével.',
+                ],
+              },
+            ],
+            keyTerms: ['Gerincesek altörzse', 'Csontos halak osztálya', 'oldalvonal-szerv', 'úszóhólyag', 'porcos halak'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a csontos halak testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert fejgerinchúrosokhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a fejgerinchúrosokhoz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás a gerincoszlop megjelenése: a korábban (Fejgerinchúrosok fejezet) megismert rugalmas, de viszonylag "puha" gerinchúrt egymáshoz kapcsolódó, kemény csontos elemekből (csigolyákból) álló gerincoszlop váltja fel. Ez sokkal erősebb, terhelhetőbb támasztékot ad a testnek, védi a gerincvelőt, és lehetővé teszi a jóval nagyobb testméret és erősebb izomzat kialakulását, mint amire a fejgerinchúrosok képesek voltak.',
+                  'Az úszóhólyag megjelenése azért is jelentős evolúciós újítás, mert lehetővé tette a nyílt vízi (pelágikus) élettér meghódítását: a fenékhez kötött, folyamatos úszásra vagy pihenésre kényszerülő porcos halakkal szemben a csontos halak a vízoszlop bármely rétegében energiatakarékosan tartózkodhatnak. A gyors mélységváltás azonban korlátozott: az úszóhólyag gáztérfogatának beállítása (gázmirigyekkel történő gáztermelés vagy -felszívás) viszonylag lassú folyamat, ezért a hirtelen, nagy mélységváltozások (pl. horgászáskor a felszínre húzás) károsíthatják a halat.',
+                  'A kétüregű szív (egy pitvar, egy kamra) és az egyetlen keringési kör egyszerű, de hatékony megoldás egy vízi, kopoltyús légzésű élőlény számára: a szív mindig oxigénszegény vért pumpál a kopoltyú felé, ahol az frissül, majd egyetlen körben jut el a test szöveteihez - ez a rendszer a későbbi, szárazföldi gerincesek fejlettebb, többüregű szívéhez képest egyszerűbb, de a vízi életmódhoz tökéletesen elegendő. Ennek egyik oka, hogy a vízben élő állatnak nem kell a testsúlyát tartania (a víz felhajtóereje ezt megoldja), így kevésbé van szüksége a szárazföldi mozgáshoz elengedhetetlen, nagy nyomású, kétkörös keringésre.',
+                ],
+              },
+            ],
+            keyTerms: ['gerincoszlop', 'csigolya'],
+          },
+        },
       },
       {
         id: 'ketelt-uek',

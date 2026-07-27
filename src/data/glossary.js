@@ -291,6 +291,15 @@ export const GLOSSARY = {
   'lándzsahal': 'A fejgerinchúrosok jellemző képviselője (Amphioxus), kis, áttetsző, lándzsa alakú testű, tengerfenéki, szűrve táplálkozó állat.',
   'miotóm': 'A fejgerinchúrosok (és a gerincesek) testében található, szelvényekre tagolt izomköteg, amely a hullámzó úszómozgást teszi lehetővé.',
 
+  // 3. modul, 20. fejezet: Csontos halak
+  'gerincesek altörzse': 'A Gerinchúrosok törzsének altörzse (Vertebrata), amelynek tagjainál a gerinchúrt csontos vagy porcos gerincoszlop váltja fel.',
+  'csontos halak osztálya': 'A Gerincesek altörzsének osztálya (Osteichthyes), amelynek tagjait csontos pikkelyek, kopoltyú és úszóhólyag jellemzi.',
+  'oldalvonal-szerv': 'A halak egyedi érzékszerve, amely a vízben terjedő rezgéseket és áramlásokat érzékeli.',
+  'úszóhólyag': 'A csontos halak gázzal töltött szerve, amellyel a hal szabályozza a felhajtóerejét, és energiabefektetés nélkül lebeghet egy adott mélységben.',
+  'porcos halak': 'A halak másik nagy csoportja (Chondrichthyes, pl. cápák, rájak), amelyeknek vázuk porcból épül fel, és nincs úszóhólyaguk.',
+  'gerincoszlop': 'Egymáshoz kapcsolódó csontos (vagy porcos) elemekből (csigolyákból) álló, a gerinchúrt felváltó támasztóelem, amely a gerincesekre jellemző.',
+  'csigolya': 'A gerincoszlopot felépítő, egymáshoz kapcsolódó csontos (vagy porcos) elem.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
