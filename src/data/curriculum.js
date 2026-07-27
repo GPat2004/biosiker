@@ -2065,7 +2065,59 @@ export const CURRICULUM = [
         order: 15,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Gyűrűsférgek (zárt)', 'Rovarok (nyílt)'],
+          rows: [
+            ['A vér útja', 'mindig erekben áramlik', 'részben szabadon a testüregben'],
+            ['Oxigénszállítás', 'a vér feladata', 'nem a vér feladata (trachea végzi)'],
+            ['Szállítás hatékonysága', 'nagyobb, célzottabb', 'kisebb, de energiatakarékosabb'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gyűrűsférgek fejezet) megismert szelvényezett testű férgek után a rovarokkal a Föld legfajgazdagabb állatcsoportját ismerjük meg - testfelépítésük és életműködéseik számos ponton radikálisan eltérnek az addig tárgyalt csoportokétól.',
+            sections: [
+              {
+                heading: 'Testfelépítés: kitines külső váz és a test hármas tagolódása',
+                paragraphs: [
+                  'A rovarok az Állatok országán belül az Ízeltlábúak törzsének (Arthropoda) egy osztályát, a Rovarok osztályát (Insecta) alkotják - ugyanabba a törzsbe tartoznak, mint a rákok vagy a pókok, de méretük, testfelépítésük és élőhelyeik alapján önálló, jól elkülöníthető csoportot alkotnak. Testüket a korábban (Szénhidrátok fejezet) megismert kitinből álló, kemény, merev külső váz (exoszkeleton) borítja, amely véd, de a növekedést is korlátozza: a rovarok időről időre levetik régi vázukat (vedlenek), és csak addig növekednek, amíg az új váz meg nem szilárdul.',
+                  'Testük három fő tagra osztott: fej, tor és potroh. A fejen található a pár csáp (érintés- és szagérzékelésre), valamint az összetett (facetta-) szem. A torhoz kapcsolódik három pár ízelt láb - ez a rovarok egyik meghatározó bélyege -, és sok fajnál egy vagy két pár szárny is, amelyek a repülést teszik lehetővé: a rovarok voltak a Föld első repülésre képes állatai.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A rovarok szájszervei rendkívül változatosak, a táplálék típusától függően: rágó szájszerv (pl. sáskáknál), szívó szájszerv (pl. lepkéknél) vagy szúró-szívó szájszerv (pl. szúnyogoknál) alakult ki. Légzésüket egy sajátos légzőrendszer, a légzőnyílásokon (stigmákon) keresztül a testbe vezető, elágazó légzőcsövek (tracheák) végzik, amelyek közvetlenül a szövetekhez, sejtekhez szállítják az oxigént.',
+                  'Mivel a légzőrendszer közvetlenül ellátja a sejteket oxigénnel, a vérnek (hemolimfának) nem kell oxigént szállítania - ezért a rovaroknál nyílt keringési rendszer alakult ki, szemben a korábban (Gyűrűsférgek fejezet) megismert zárt keringési rendszerrel: a hemolimfa nem csak erekben, hanem szabadon a testüregben is áramlik, egy hátoldali, pulzáló ér ("szív") hajtja körbe. Kiválasztásukat a Malpighi-edények végzik, amelyek a salakanyagokat közvetlenül a bélbe ürítik.',
+                  'Idegrendszerük agydúcból és hasi idegdúcláncból áll, érzékelésüket összetett (facetta-) szemük és csápjaik szolgálják. Szaporodásuk ivaros, ivarilag elkülönült egyedekkel; egyedfejlődésük során teljes átalakuláson (pete-lárva-báb-imágó, pl. lepkéknél) vagy kevésbé teljes átalakuláson (pete-lárva-imágó, pl. sáskáknál) mennek keresztül.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A rovarok szinte minden szárazföldi élőhelyen megtalálhatók, és a Föld ismert állatfajainak több mint felét ők alkotják - sikerességük hátterében részben éppen a testfelépítésük áll: az exoszkeleton csökkenti a párolgás útján történő vízvesztést (ami a szárazföldi életmódhoz nélkülözhetetlen), a szárnyak pedig lehetővé teszik az új élőhelyek gyors elérését és a táplálékforrások, illetve partnerek hatékony felkutatását. Rendkívül sokfélék: közéjük tartoznak a bogarak (a legfajgazdagabb rovarrend), a lepkék, a hártyásszárnyúak (pl. méhek, hangyák), az egyenesszárnyúak (pl. sáskák) és a kétszárnyúak (pl. legyek, szúnyogok) is - mindegyik rend jellegzetes szájszervvel, szárnyfelépítéssel és életmóddal rendelkezik.',
+                  'Kiemelkedő ökológiai szerepük van beporzóként (pl. a méhek a virágos növények megtermékenyítésében) - a méhek emellett társas rovarok is: egy kaptárban több ezer egyed él együtt, szigorú munkamegosztásban (dolgozók, herék, királynő). Mezőgazdasági kártevőként (pl. egyes lepke- és bogárfajok hernyói) és betegségterjesztőként (pl. a szúnyogok a malária kórokozóját terjesztik) is jelentősek lehetnek.',
+                ],
+              },
+            ],
+            keyTerms: ['Rovarok osztálya', 'exoszkeleton', 'trachea', 'nyílt keringési rendszer', 'Malpighi-edény', 'teljes átalakulás', 'kevésbé teljes átalakulás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a rovarok testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert gyűrűsférgekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a gyűrűsférgekhez képest',
+                paragraphs: [
+                  'A gyűrűsférgek lágy, izmos testfalával szemben a rovaroknál megjelenik a merev, kitines külső váz - ez egyfelől hatékonyabb védelmet nyújt a kiszáradással és a ragadozókkal szemben, másfelől viszont, mivel nem tud folyamatosan növekedni vele a test, szakaszos növekedést (vedlést) tesz szükségessé. Ez egy fontos "kompromisszum" az evolúció során: a védelem előnyéért cserébe a folyamatos növekedés lehetőségét kellett feladni.',
+                  'A tracheás légzőrendszer megjelenése lehetővé tette, hogy a rovarok lemondjanak a korábban (Gyűrűsférgek fejezet) megismert, hatékony, zárt keringési rendszerről anélkül, hogy ez az oxigénellátás rovására menne - ez egy érdekes, evolúciós "visszalépésnek" tűnő, valójában mégis funkcionálisan indokolt megoldás: mivel a légzőrendszer közvetlenül, a véren "megkerülve" látja el a sejteket oxigénnel, a nyílt keringési rendszer energetikailag "elég jó" maradt, nem volt szükség a zárt rendszer fenntartására.',
+                  'A szárny és a repülőképesség megjelenése az egyik legjelentősebb evolúciós újítás az egész állatvilág történetében: a rovarok voltak az első élőlények, amelyek aktív repülésre voltak képesek, ez pedig drámaian megnövelte élőhely-választási és táplálékkeresési lehetőségeiket, valamint segítette elterjedésüket és a ragadozók előli menekülésüket.',
+                  'A teljes átalakulás (metamorfózis) evolúciós előnye, hogy a lárva és az imágó (kifejlett egyed) különböző élőhelyeken élhet és különböző táplálékot fogyaszthat - ezzel elkerülhető a lárvák és a felnőttek közötti táplálékért folyó verseny, és mindkét életszakasz a rá legjellemzőbb feltételekhez optimálisan alkalmazkodhat. A kevésbé teljes átalakulással fejlődő rovaroknál (pl. a sáskáknál) ez a különbség kisebb: a lárva már kis méretben is hasonlít a kifejlett egyedre, és ugyanazt a táplálékot fogyasztja, mint a szülei.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
       },
       {
         id: 'csigak',

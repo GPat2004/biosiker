@@ -255,6 +255,15 @@ export const GLOSSARY = {
   'nyeregöv': 'A hímnős gyűrűsférgek (pl. földigiliszta) testén található duzzanat (clitellum), amely a szaporodáshoz szükséges váladékot termeli.',
   'acoelomata': 'Valódi testüreg nélküli testfelépítés, amelynél a szervek közötti teret parenchima tölti ki (pl. a laposférgeknél).',
 
+  // 3. modul, 15. fejezet: Rovarok
+  'rovarok osztálya': 'Az Ízeltlábúak törzsének osztálya, amelynek tagjait kitines külső váz, három testtag (fej, tor, potroh) és három pár ízelt láb jellemzi.',
+  'exoszkeleton': 'Kitinből álló, kemény, merev külső váz, amely a rovarok (és más ízeltlábúak) testét borítja - védelmet ad, de vedlést igényel a növekedéshez.',
+  'trachea': 'A rovarok légzőrendszerének elágazó légzőcsöve, amely a légzőnyílásokon (stigmákon) keresztül közvetlenül a szövetekhez, sejtekhez szállítja az oxigént.',
+  'nyílt keringési rendszer': 'Olyan keringési rendszer, amelyben a vér (hemolimfa) nem csak erekben, hanem szabadon a testüregben is áramlik - a rovarokra jellemző.',
+  'malpighi-edény': 'A rovarok kiválasztószerve, amely a salakanyagokat közvetlenül a bélbe üríti.',
+  'teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-báb-imágó szakaszok különülnek el (pl. lepkéknél).',
+  'kevésbé teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-imágó szakaszok különülnek el, báb nélkül (pl. sáskáknál).',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
