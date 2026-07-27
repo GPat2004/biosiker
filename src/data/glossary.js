@@ -273,6 +273,12 @@ export const GLOSSARY = {
   'torzió': 'A csigák egyedfejlődése során bekövetkező jelenség, amelynek során a zsigerzacskó és a köpenyüreg mintegy 180 fokban elcsavarodik a fej-láb tengelyhez képest.',
   'detorzió': 'Egyes csigacsoportoknál (pl. tengeri meztelen csigáknál) másodlagosan végbemenő részleges visszacsavarodás a torzióhoz képest, amely higiéniai hátrányokat csökkent.',
 
+  // 3. modul, 17. fejezet: Kagylók
+  'kagylók osztálya': 'A Puhatestűek törzsének osztálya, amelynek tagjait két, zsanérral összekapcsolt mészhéj, redukált fej és szűrögető táplálkozás jellemzi.',
+  'zsanérszalag': 'A kagylók két héjlemezét összekötő rugalmas szalag, amely a záróizmok elernyedésekor nyitja szét a teknőket.',
+  'szűrögető táplálkozás': 'A kagylókra jellemző táplálkozási mód, amelynek során a kopoltyún átáramló vízből szűrik ki a lebegő planktont és szerves törmeléket.',
+  'veliger lárva': 'A kagylók (és más puhatestűek) szabadon úszó lárvaformája.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

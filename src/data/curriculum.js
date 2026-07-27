@@ -2184,7 +2184,49 @@ export const CURRICULUM = [
         order: 17,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Csigák fejezet) megismert Puhatestűek törzsének másik jelentős osztályát, a kagylókat (Bivalvia) ismerjük meg ebben a fejezetben - testfelépítésük és életmódjuk jelentősen eltér a csigákétól, annak ellenére, hogy ugyanabból az alaptervből (fej-láb-zsigerzacskó-köpeny) fejlődtek ki, és jól illusztrálja, hogyan alakíthatja át az evolúció ugyanazt az alapszerkezetet egy egészen más életmódhoz igazodva.',
+            sections: [
+              {
+                heading: 'Testfelépítés: két héjlemez és a redukált fej',
+                paragraphs: [
+                  'A kagylók az Állatok országán belül a Puhatestűek törzsének (Mollusca) egy osztályát, a Kagylók osztályát (Bivalvia) alkotják. Testüket két, zsanérral összekapcsolt mészhéj (teknő) védi, amelyet záróizmok tartanak zárva - ezek elernyedésekor a héj rugalmas szalagja (a zsanérszalag) nyitja szét a két teknőt. Veszély esetén a záróizmok gyors összehúzódásával a kagyló másodpercek alatt bezárhatja héját, ezzel védve puha testét.',
+                  'A kagylóknál - szemben a korábban (Csigák fejezet) megismert csigákkal - a fej szinte teljesen visszafejlődött, radulájuk (reszelőnyelvük) sincs: mivel szűrve táplálkoznak, nincs szükségük aktív táplálékkeresésre vagy -feldarabolásra. Ahogy azt a Csigák fejezet emelt részében is megismertük, ez nem "hiányosság", hanem a szűrve táplálkozó életmódhoz való tökéletes alkalmazkodás eredménye. Lábuk ásásra módosult, ék alakú - ezzel fúrják be magukat a puha aljzatba (homokba, iszapba).',
+                  'Méretük igen változatos: néhány milliméterestől a több mint egy méteres, óriási méretű óriáskagylóig terjed. Szinte kizárólag vízi (tengeri és édesvízi) élőlények, a szárazföldi élethez nem alkalmazkodtak.',
+                ],
+              },
+              {
+                heading: 'Életműködések: a szűrögető táplálkozás',
+                paragraphs: [
+                  'A kagylók kopoltyúja kettős feladatot lát el: a légzés mellett a táplálkozásban is kulcsszerepet játszik - a köpenyüregen átáramló vízből a kopoltyú szűri ki a lebegő planktont és szerves törmeléket, amelyet aztán a szájba továbbít. Ez a szűrögető (filtráló) táplálkozási mód rendkívül hatékony: egyetlen kagyló naponta akár több tíz liter vizet is átszűrhet.',
+                  'Keringési rendszerük - a korábban megismert csigákéhoz hasonlóan - nyílt. A legtöbb faj helyhez kötött vagy csak lassan mozog, beásva magát az aljzatba, de néhány faj (pl. a fésűkagyló) a két héjlemez gyors összecsapásával rövid távolságokra "úszni" is képes. Idegrendszerük a redukált fejnek megfelelően egyszerű, nincs koncentrált agydúcuk; érzékszerveik is egyszerűek, bár néhány fajnál (pl. a fésűkagylónál) apró szemek találhatók a köpeny szélén. Szaporodásuk ivaros, sok tengeri fajnál szabadon úszó lárvaformával (veliger lárva).',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A kagylók fontos ökológiai szerepet töltenek be vízszűrőként: hatékonyan tisztítják a vizet, amelyben élnek, és mivel felhalmozzák a vízben lévő szennyezőanyagokat, kiválóan alkalmasak a vízminőség biológiai jelzésére (bioindikátorként). Gyakorlati jelentőségük is jelentős: sok faj (osztriga, kagyló, fésűkagyló) fontos élelmiszerforrás.',
+                  'A gyöngykagylóknál a gyöngyképződés úgy indul el, hogy egy idegen test (pl. egy homokszemcse vagy parazita) kerül a köpeny és a héj közé - a kagyló ekkor gyöngyházanyaggal vonja be az idegen testet, réteg réteg után, és ez a folyamat hozza létre a gyöngyöt.',
+                ],
+              },
+            ],
+            keyTerms: ['Kagylók osztálya', 'zsanérszalag', 'szűrögető táplálkozás', 'veliger lárva'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, hogyan magyarázható evolúciósan a kagylók "leegyszerűsödött" testfelépítése a korábban megismert csigákhoz és rovarokhoz képest.',
+            sections: [
+              {
+                heading: 'Miért "egyszerűsödött" a kagylók testfelépítése?',
+                paragraphs: [
+                  'A kagylók fej- és idegrendszer-redukciója első pillantásra "visszafejlődésnek" tűnhet a korábban (Csigák, Rovarok fejezetek) megismert cephalizációs tendenciához képest, valójában azonban ez egy funkcionálisan tökéletesen indokolt evolúciós alkalmazkodás: mivel a kagylók helyhez kötött vagy csak lassan mozgó, szűrve táplálkozó életmódot folytatnak, nincs szükségük az aktív táplálékkereséshez és a gyors, célzott mozgáshoz elengedhetetlen fejlett érzékszervekre és koncentrált idegi irányításra.',
+                  'Ez a jelenség jól mutatja, hogy az evolúció nem feltétlenül halad egy "egyre bonyolultabb, egyre fejlettebb" irányba: egy adott szerv vagy testrész elvesztése vagy egyszerűsödése éppúgy lehet sikeres evolúciós stratégia, mint egy új, összetettebb szerkezet kialakulása, ha az adott életmódhoz jobban illeszkedik. A kagylók sikeressége (a Föld egyik legelterjedtebb és leghosszabb ideje fennmaradó állatcsoportja) önmagában bizonyítja, hogy ez az "egyszerűsödött" testfelépítés hatékony túlélési stratégia.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
       },
       {
         id: 'elogerinchurosok',
