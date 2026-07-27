@@ -1949,7 +1949,54 @@ export const CURRICULUM = [
         order: 13,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Csalánozók fejezet) megismert sugaras szimmetriájú állatok után a laposférgekkel az első kétoldalian szimmetrikus állatcsoportot ismerjük meg - ez a fejezet valamennyi életműködés szempontjából bemutatja őket, kiemelt figyelmet fordítva egészségügyi jelentőségükre is.',
+            sections: [
+              {
+                heading: 'Testfelépítés: kétoldali szimmetria és bőrizomtömlő',
+                paragraphs: [
+                  'A laposférgek három nagy csoportra oszthatók: az örvényférgek (pl. a planária) szabadon élnek, a mételyek és a galandférgek pedig élősködő életmódot folytatnak. Az Állatok országán belül a Laposférgek törzsét (Platyhelminthes) alkotják. Testük lapított, szalagszerű, és - a csalánozók sugaras szimmetriájával szemben - kétoldalian szimmetrikus: a test csak egyetlen síkban osztható két egyforma (tükörképi) félre. Ez a testforma teszi lehetővé az egyértelmű elülső-hátulsó, hasi-háti és jobb-bal irányok megkülönböztetését.',
+                  'A laposférgeknél jelenik meg elsőként a valódi izomszövet: a bőr és az alatta lévő izomrétegek egybefonódva bőrizomtömlőt alkotnak, amely lehetővé teszi a test összehúzódását és a mozgást. Testükben nincs valódi testüreg - a szerveik közötti teret laza kötőszövet (parenchima) tölti ki.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A szabadon élő fajok (pl. a planária) csillós kúszással mozognak, és fejük végén egyszerű szemfoltokkal érzékelik a fényt, amelyek segítségével elkerülik az erős megvilágítást. Az élősködő fajok (pl. a mételyek, galandférgek) ezzel szemben tapadókorongokkal vagy horgokkal rögzülnek a gazdaszervezethez, és gyakran elvesztik mozgásszervüket is.',
+                  'Táplálkozásuk és emésztésük a fajtól függ: a szabadon élő laposférgeknek elágazó, egyetlen nyílással rendelkező bélrendszerük van (hasonlóan a csalánozókéhoz), míg egyes élősködők (pl. a galandféreg) bélrendszer nélkül élnek - a gazda már megemésztett tápanyagát közvetlenül a testfelületükön keresztül szívják fel. Önálló légzőszervük nincs: a szabadon élők diffúzióval, az oxigénszegény bélben élő paraziták pedig jellemzően anaerob úton nyerik energiájukat.',
+                  'Önálló keringési (anyagszállító) rendszerük sincs: mivel testük lapított és vékony, a korábban (Membránok szerepe fejezet) megismert diffúzió önmagában is elegendő ahhoz, hogy a tápanyagok és a gázok eljussanak a test minden sejtjéhez - ez az egyik fő oka annak, hogy a laposférgek teste miért maradt lapos és vékony, szemben a később (Gyűrűsférgek fejezet) megismerendő, már önálló keringési rendszerrel rendelkező, vaskosabb testű állatcsoportokkal.',
+                  'A laposférgeknél jelenik meg elsőként egy valódi kiválasztószerv is: a láng-sejtekből (protonefridiumokból) álló, egyszerű csatornarendszer gyűjti össze és üríti ki a fölösleges anyagokat. Szaporodásuk jellemzően ivaros, és a legtöbb faj hímnős - egyes szabadon élő fajok (pl. a planária) emellett kiemelkedő regenerációs képességgel is rendelkeznek: ha testük egy darabra vágódik, minden egyes darabból önálló, teljes értékű egyed nőhet ki, mert a testükben szétszórtan elhelyezkedő, differenciálatlan sejtek (neoblasztok) bármelyik szövettípussá képesek átalakulni.',
+                ],
+              },
+              {
+                heading: 'Egészségügyi jelentőségük',
+                paragraphs: [
+                  'A laposférgek közül számos faj élősködik emberben vagy más gerincesekben, jelentős egészségügyi kockázatot jelentve. A galandférgek a vékonybélben élnek, és a nem megfelelően hőkezelt hús fogyasztásával kerülhetnek az emberi szervezetbe; a mételyek pedig gyakran szennyezett vízzel vagy alulfőzött halhússal terjednek.',
+                  'A galandféreg-fertőzés sokáig tünetmentes maradhat, vagy enyhe hasi panaszokat, fogyást okozhat - a fertőzés felismerése ezért gyakran csak a székletben megjelenő ízek (a galandféreg testének leváló szakaszai) észlelésekor történik meg. A megelőzés legfontosabb eszközei a húsok alapos átsütése/átfőzése és a rendszeres kézmosás.',
+                ],
+              },
+            ],
+            keyTerms: ['Laposférgek törzse', 'kétoldali szimmetria', 'bőrizomtömlő', 'parenchima', 'láng-sejt', 'planária', 'galandféreg', 'neoblaszt'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a laposférgek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert csalánozókhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a csalánozókhoz képest',
+                paragraphs: [
+                  'A csalánozóknál megismert diploblasztikus (két csíralemezű) szerveződéshez képest a laposférgeknél megjelenik a harmadik csíralemez, a mezoderma - ez a triploblasztikus szerveződés teszi lehetővé a valódi izomszövet (bőrizomtömlő) és a belső szervek (pl. a kiválasztószerv) kialakulását, amelyek a csalánozóknál még nem léteztek.',
+                  'A valódi izomréteg sokkal célzottabb és hatékonyabb mozgást tesz lehetővé, mint a csalánozók egyszerű, az egész testfalra kiterjedő összehúzódása: a laposférgek izomrostjai különböző irányokban (hosszanti, körkörös, ferde rétegekben) rendezettek, ami finomabb, irányított mozgásformákat tesz lehetővé.',
+                  'A kétoldali szimmetria megjelenése szoros összefüggésben áll egy másik fontos evolúciós újítással, a cephalizációval: mivel egy kétoldalian szimmetrikus, meghatározott irányba mozgó állatnál van "eleje" és "hátulja", előnyös, ha az érzékszervek (pl. a szemfoltok) és az idegi irányítás (agydúc, idegkötegek) a mozgás irányában lévő elülső testvégen összpontosulnak - ez ellentétben áll a csalánozók sugarasan szimmetrikus, minden irányból egyformán "figyelő" ideghálózatával.',
+                  'A cephalizáció evolúciós logikája abban áll, hogy egy meghatározott irányba, folytonosan mozgó állat számára az a legelőnyösebb, ha a környezetét először az elülső testrészével "érzékeli" - így a veszélyre vagy a táplálékra még azelőtt reagálhat, hogy a teste nagy része elérné az adott pontot. Ez magyarázza, hogy miért pont az elülső testvégen halmozódtak fel az érzékszervek és az idegi feldolgozó központ, nem pedig valamelyik oldalon vagy a hátulján.',
+                  'Az önálló kiválasztószerv (láng-sejtek) megjelenése is jelentős evolúciós előrelépés: a csalánozóknál a sejtek önállóan, közvetlenül a környezetükbe adták le a fölösleges anyagokat, a laposférgeknél viszont már egy specializált szervrendszer végzi ezt a feladatot - ez a "specializált szervek általi feladatmegoldás" elve, amit a további fejezetekben (Gyűrűsférgek, Rovarok) egyre fejlettebb formákban fogunk viszontlátni.',
+                  'A specializált kiválasztószerv megjelenése azért vált szükségessé, mert a triploblasztikus, mezodermával rendelkező testben a sejtek már nem mindegyike érintkezik közvetlenül a külső környezettel - a testen belül elhelyezkedő sejteknek is el kell jutnia a fölösleges anyagoknak, amit egy kiterjedt csatornarendszer (a láng-sejtek hálózata) tud csak hatékonyan biztosítani, szemben a csalánozók vékony, egysejt-rétegnyi testfalával, ahol minden sejt közvetlenül a környezetbe adhatta le a hulladékanyagot.',
+                ],
+              },
+            ],
+            keyTerms: ['mezoderma', 'triploblasztikus', 'cephalizáció'],
+          },
+        },
       },
       {
         id: 'gyurusfergek',

@@ -232,6 +232,19 @@ export const GLOSSARY = {
   'ideghálózat': 'Az egész testet behálózó, nem központosított idegsejt-rendszer, amely a csalánozóknál jelenik meg elsőként az állatvilágban.',
   'sugaras szimmetria': 'Olyan testszimmetria, amelynél a test középpontján átmenő bármely tengely mentén egyforma félre osztható (pl. a csalánozóknál).',
 
+  // 3. modul, 13. fejezet: Laposférgek
+  'laposférgek törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. planária, mételyek, galandférgek) lapított, kétoldalian szimmetrikus, bőrizomtömlővel rendelkező testfelépítésűek.',
+  'kétoldali szimmetria': 'Olyan testszimmetria, amelynél a test csak egyetlen síkban osztható két egyforma (tükörképi) félre - a laposférgeknél jelenik meg elsőként.',
+  'bőrizomtömlő': 'A bőr és az alatta lévő izomrétegek egybefonódásából álló testfal, amely lehetővé teszi a test összehúzódását és a mozgást.',
+  'parenchima': 'A laposférgek testében a szervek közötti teret kitöltő laza kötőszövet, amely a valódi testüreg hiányát pótolja.',
+  'láng-sejt': 'A laposférgek kiválasztószervét (protonefridium) alkotó sejt, amely a fölösleges anyagok összegyűjtésében és kiürítésében vesz részt.',
+  'planária': 'Szabadon élő, csillós kúszással mozgó laposféreg-faj, kiemelkedő regenerációs képességgel.',
+  'galandféreg': 'Bélrendszer nélküli, a gazdaszervezet bélcsatornájában élősködő laposféreg, amely a testfelületén keresztül szívja fel a tápanyagot.',
+  'neoblaszt': 'A laposférgek (pl. planária) testében szétszórtan elhelyezkedő, differenciálatlan sejt, amely bármelyik szövettípussá átalakulhat - a kiemelkedő regenerációs képesség sejtszintű alapja.',
+  'mezoderma': 'A harmadik csíralemez, amely a laposférgeknél jelenik meg először - belőle fejlődik ki a valódi izomszövet és számos belső szerv.',
+  'triploblasztikus': 'Három csíralemezből (ektoderma, mezoderma, entoderma) felépülő testfelépítés, amely a laposférgeknél jelenik meg először.',
+  'cephalizáció': 'Az érzékszervek és az idegi irányítás (agydúc, idegkötegek) koncentrálódása a test elülső végén - a kétoldali szimmetriájú állatoknál jelenik meg.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
