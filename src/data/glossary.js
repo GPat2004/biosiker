@@ -318,6 +318,15 @@ export const GLOSSARY = {
   'részlegesen elkülönült kamra': 'A hüllők szívkamráját részben kettéosztó válaszfal, amely csökkenti (de nem szünteti meg) az oxigénben gazdag és szegény vér keveredését.',
   'húgysav': 'Szilárd, alig vízoldékony nitrogéntartalmú bomlástermék, amelyet a hüllők (és a madarak) választanak ki; kevesebb vizet igényel, mint az ammónia vagy a karbamid kiválasztása.',
 
+  // 3. modul, 23. fejezet: Madarak
+  'madarak osztálya': 'A Gerincesek altörzsének osztálya (Aves), amelynek tagjaira a repülésre specializálódott testfelépítés, a tollazat, az állandó testhőmérséklet és a négyüregű szív jellemző.',
+  'tollazat': 'A madarak szaruból (keratinból) felépülő, módosult pikkelyekből kialakult kültakarója, amely a repülési felületet és a hőszigetelést egyaránt biztosítja.',
+  'légzsák': 'A madarak tüdejéhez kapcsolódó, levegővel telt hártyás zsákrendszer, amely az egyirányú levegőáramlást (kettős légzést) teszi lehetővé.',
+  'zúzógyomor': 'A madarak fogatlansága miatt kialakult gyomorszakasz, amely gyakran lenyelt kavicsok segítségével őrli meg a táplálékot.',
+  'endotermia': 'Az állandó, magas testhőmérséklet fenntartása a szervezet saját anyagcseréje (hőtermelése) révén, függetlenül a környezeti hőmérséklettől; a madaraknál jelenik meg először a gerincesek sorában.',
+  'négyüregű szív': 'Két pitvarból és két, teljesen elkülönült kamrából álló szívtípus, amely teljesen megakadályozza az oxigénben gazdag és szegény vér keveredését; a madaraknál jelenik meg először.',
+  'kettős légzés': 'A madarak légzsákos tüdejére jellemző, egyirányú levegőáramlást biztosító légzési mód, amely hatékonyabb gázcserét tesz lehetővé, mint a kétirányú tüdőlégzés.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

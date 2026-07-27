@@ -2551,7 +2551,71 @@ export const CURRICULUM = [
         order: 23,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Hüllők', 'Madarak'],
+          rows: [
+            ['Testhőmérséklet', 'változó (ektoterm)', 'állandó (endoterm)'],
+            ['Szív', 'háromüregű, részlegesen elkülönült kamra', 'négyüregű, teljesen elkülönült vérkörök'],
+            ['Légzés', 'tüdő', 'tüdő + légzsákok (kettős légzés)'],
+            ['Kültakaró', 'szaruréteges pikkelyek', 'tollazat'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Hüllők fejezet) megismert, még változó testhőmérsékletű csoport után a madarakkal a Gerincesek altörzsének azt az osztályát ismerjük meg, amely a repülésre specializálódott, és elsőként alakított ki állandó testhőmérsékletet.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A madarak (Aves) a Gerincesek altörzsének osztálya. Testük a repülésre specializálódott: elülső végtagjaik szárnnyá alakultak, csontjaik nagy része üreges (pneumatikus), ami jelentősen csökkenti a testsúlyt repülés közben. Állkapcsukból hiányoznak a fogak, helyette könnyű, szaru anyagú csőr alakult ki.',
+                  'Kültakarójuk a hüllők szaruréteges pikkelyeiből módosult, ám azoknál sokkal összetettebb szerkezetű tollazat, amely egyszerre biztosítja a repülési felületet (evezőtollak, faroktollak) és a hatékony hőszigetelést (pehelytollak).',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásuk elsődlegesen a repülés, amelyet az erős mellizomzat és a mellcsonton található, izomtapadási felületet növelő szegycsonttaréj tesz lehetővé; egyes csoportok (pl. strucc, pingvin) másodlagosan elvesztették a repülőképességüket, és futásra vagy úszásra specializálódtak.',
+                  'Táplálkozásuk rendkívül sokféle (magevő, rovarevő, ragadozó, halevő), csőrük alakja szorosan illeszkedik a táplálék típusához; mivel foguk nincs, a táplálékot zúzógyomrukban - gyakran lenyelt kavicsok segítségével - őrlik meg.',
+                  'Légzésük egyedülálló: tüdejükhöz légzsákok kapcsolódnak, amelyek egyirányú levegőáramlást biztosítanak a tüdőn keresztül (kettős légzés) - ez a korábban megismert gerinces csoportoknál tapasztaltnál is hatékonyabb gázcserét tesz lehetővé, ami a repüléshez szükséges magas anyagcsere-igény fedezéséhez elengedhetetlen.',
+                  'Anyagszállító rendszerük szíve négyüregű, két pitvarral és két, teljesen elkülönült kamrával: ez - a korábban (Hüllők fejezet) megismert részleges elkülönüléssel szemben - teljesen megakadályozza az oxigénben gazdag és szegény vér keveredését. Szaporodásuk ivaros, belső megtermékenyítéssel és kemény mészhéjú amniota tojással történik, amelyet a szülők jellemzően fészekben költenek ki, és sok fajnál kiterjedt szülői gondoskodás (etetés, védelem) kíséri.',
+                  'Érzékszerveik közül a látás a legfejlettebb: sok fajnál kiváló élességű, színlátásra is képes szem jellemző (a ragadozó madaraknál különösen éles látással), míg a szaglásuk a legtöbb csoportnál kevésbé fejlett.',
+                ],
+              },
+              {
+                heading: 'Állandó testhőmérséklet és környezeti kapcsolat',
+                paragraphs: [
+                  'A madarak - a korábban megismert halakkal, kétéltűekkel és hüllőkkel ellentétben - állandó testhőmérsékletűek (endotermek): testük a környezeti hőmérséklettől függetlenül, anyagcseréjük hőtermelésével tartja fenn a magas, állandó testhőmérsékletet. Ez a tulajdonság teszi lehetővé, hogy hideg élőhelyeken (pl. sarkvidéken) is aktívan mozogjanak, ám cserébe folyamatos, intenzív táplálékfelvételt igényel.',
+                  'Kiválasztásuk - a korábban (Hüllők fejezet) megismert urikotelikus úthoz hasonlóan - húgysav formájában történik, amely alig igényel vizet; ez az ürülékükben jól látható fehér, pépes rész, amely elkülönül a béltartalom sötétebb, emészthetetlen maradékától.',
+                  'A repülőképesség és az állandó testhőmérséklet együttesen tették lehetővé, hogy a madarak a Föld szinte minden élőhelyét meghódítsák, és sok fajuk hosszú távú vonulásra is képes legyen az évszakos táplálékkínálat változásainak követésére.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A madarak igen sokféle csoportot alkotnak: vannak közöttük kiváló repülők (fecskék, sólymok), futásra specializálódott, repülésképtelen futómadarak (strucc), és úszásra alkalmazkodott, szintén repülésképtelen csoportok (pingvinek) is - jól mutatva, hogy az osztály közös bélyegei (tollazat, endotermia, amniota tojás) mellett igen változatos életmódok alakultak ki.',
+                  'A madarak gyakorlati jelentősége is jelentős: sok rovarevő faj természetes rovarirtóként segíti a mezőgazdaságot, a húsevő gyümölcsöket fogyasztó fajok pedig fontos szerepet játszanak a magterjesztésben, ahogy azt a korábban (Zárvatermők fejezet) megismert magterjesztési stratégiáknál is láttuk. Egyes háziasított fajok (pl. tyúk, kacsa) pedig az emberi élelmezés (hús, tojás) fontos forrásai.',
+                ],
+              },
+            ],
+            keyTerms: ['Madarak osztálya', 'tollazat', 'légzsák', 'zúzógyomor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a madarak testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert hüllőkhöz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a hüllőkhöz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás az állandó testhőmérséklet (endotermia) kialakulása: a korábban (Hüllők fejezet) megismert ektoterm szabályozáshoz képest ez teljesen függetleníti az állat aktivitását a környezeti hőmérséklettől, cserébe azonban jóval magasabb energiaigénnyel jár, amelyet a fokozott táplálékfelvétel és a hatékonyabb anyagcsere fedez.',
+                  'A négyüregű szív és a teljesen elkülönült két vérkör a hüllők részlegesen elkülönült kamrájához képest jelent továbblépést: így a tüdőből visszaérkező, oxigénben gazdag vér egyáltalán nem keveredik az oxigénszegény vérrel, ami az endotermiához szükséges magas anyagcsere-szint fenntartásához elengedhetetlen.',
+                  'A légzsákos, kettős légzésű tüdő szintén az endotermia magas oxigénigényét szolgálja: az egyirányú levegőáramlás biztosítja, hogy a tüdőben mindig friss, oxigéndús levegő legyen jelen, szemben a hüllők (és a legtöbb korábbi gerinces csoport) tüdejének kétirányú, kevésbé hatékony légzésével.',
+                  'A csontozat üregesedése (pneumatikus csontok) a testsúly csökkentését szolgálja, ami a repülés energetikai feltétele; ez a jelenség jól mutatja, hogy egy evolúciós újítás (repülés) hogyan hat vissza több szervrendszer (váz, légzés, anyagcsere) egyidejű átalakulására.',
+                  'A tollazat evolúciós eredete is jól illusztrálja a fokozatos átalakulás elvét: a toll fejlődéstanilag a hüllők szaruréteges pikkelyéből módosult, egyre bonyolultabb szerkezetű képletként alakult ki - a ma élő madarak elődei egyes húsevő dinoszaurusz-csoportokból származnak, amelyeknél a tollazat feltehetően eredetileg hőszigetelő szerepet töltött be, és csak később, a szárny kialakulásával együtt vált alkalmassá a repülésre is - ezt a fokozatos átalakulást számos, tollazat lenyomatát is megőrző kövület (pl. az Archaeopteryx) támasztja alá.',
+                ],
+              },
+            ],
+            keyTerms: ['endotermia', 'négyüregű szív', 'kettős légzés'],
+          },
+        },
       },
       {
         id: 'emlosok',
