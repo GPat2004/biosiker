@@ -220,6 +220,18 @@ export const GLOSSARY = {
   'parazoa': 'A szivacsokat magába foglaló állatcsoport, amelynek tagjai nem rendelkeznek valódi, differenciálódott szövetekkel.',
   'eumetazoa': 'A valódi szövetekkel és idegrendszerrel rendelkező állatok gyűjtőneve - minden állattörzs ide tartozik a szivacsok kivételével.',
 
+  // 3. modul, 12. fejezet: Csalánozók (kiegészítő, nem hivatalos tananyag)
+  'csalánozók törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. hidra, medúzák, korallok) diploblasztikus, sugarasan szimmetrikus testfelépítésűek, és csalánsejtekkel rendelkeznek.',
+  'csalánsejt': 'A csalánozók tapogatóin található, méreganyaggal töltött, spirálisan feltekeredett tűt tartalmazó sejt (nematociszta), amely érintésre kilövell.',
+  'polip': 'A csalánozók helyhez kötött testformája (pl. hidra, tengeri rózsa, korall).',
+  'medúza': 'A csalánozók szabadon úszó testformája (pl. tűzmedúza).',
+  'bélüreg': 'A csalánozók egyetlen nyílással (száj- és végbélnyílás egyben) rendelkező, emésztést végző testüregre (gastrovascularis üreg).',
+  'ektoderma': 'A csalánozók testfalának külső sejtrétege.',
+  'entoderma': 'A csalánozók testfalának belső sejtrétege.',
+  'diploblasztikus': 'Két csíralemezből (ektoderma, entoderma) felépülő testfelépítés, amely a csalánozókra jellemző.',
+  'ideghálózat': 'Az egész testet behálózó, nem központosított idegsejt-rendszer, amely a csalánozóknál jelenik meg elsőként az állatvilágban.',
+  'sugaras szimmetria': 'Olyan testszimmetria, amelynél a test középpontján átmenő bármely tengely mentén egyforma félre osztható (pl. a csalánozóknál).',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

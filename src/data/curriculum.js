@@ -1892,7 +1892,56 @@ export const CURRICULUM = [
         order: 12,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Szivacsok fejezet) megismert Parazoa csoport után a csalánozókkal (pl. hidra, medúzák, korallok) az Eumetazoák, vagyis a valódi szövetekkel rendelkező állatok első képviselőit ismerjük meg - ez a csoport nem szerepel a hivatalos érettségi követelmény listáján, de a szivacsok és a laposférgek közötti evolúciós lépés megértéséhez fontos áthidaló pont. A csalánozók az Állatok országán belül a Csalánozók törzsét (Cnidaria) alkotják, és kizárólag vízi, túlnyomórészt tengeri élőlények, bár néhány fajuk (pl. a hidra) édesvízben is előfordul.',
+            sections: [
+              {
+                heading: 'Testfelépítés: sugaras szimmetria és a bélüreg',
+                paragraphs: [
+                  'A csalánozók teste - a szivacsokkal ellentétben - már valódi szövetekből épül fel, de csak két csíralemezből (diploblasztikus szerveződés): egy külső sejtrétegből (ektoderma) és egy belső sejtrétegből (entoderma), közöttük egy kocsonyás rétegecskével (mezoglea). Testük sugarasan szimmetrikus: a test középpontján átmenő bármely tengely mentén egyforma félre osztható - ez az első szimmetriaforma, amellyel az állatvilágban találkozunk.',
+                  'Két alapvető testformájuk van: a polip (helyhez kötött, pl. a hidra vagy a tengeri rózsák) és a medúza (szabadon úszó, pl. a tűzmedúza). Mindkét forma középpontjában egyetlen nyílással rendelkező bélüreg (gastrovascularis üreg) található, amely egyszerre szolgál szájnyílásként és végbélnyílásként is.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás és a csalánsejtek',
+                paragraphs: [
+                  'A csalánozók ragadozó életmódot folytatnak: tapogatóikon elhelyezkedő csalánsejtek (nematociszták) segítségével bénítják meg vagy ölik meg zsákmányukat - ezekben a sejtekben egy méreganyaggal töltött, spirálisan feltekeredett tű található, amely érintésre kilövell. Innen ered a csoport neve is.',
+                  'A megbénított zsákmányt a tapogatók a szájnyíláson át a bélüregbe juttatják, ahol emésztőenzimek részlegesen lebontják, majd a sejtek fagocitózissal veszik fel a még meg nem emésztett táplálékrészecskéket - a bélüregben tehát sejten kívüli és sejten belüli emésztés egyaránt zajlik.',
+                ],
+              },
+              {
+                heading: 'Idegrendszer, mozgás és szaporodás',
+                paragraphs: [
+                  'A csalánozóknál jelennek meg először az állatvilágban a valódi idegsejtek, amelyek egy egyszerű, az egész testet behálózó ideghálózatot (nem központosított agyat vagy idegdúcot) alkotnak - ez teszi lehetővé, hogy a test összehangoltan reagáljon az ingerekre, például egyszerre húzza össze tapogatóit veszély esetén.',
+                  'A polipformák helyhez kötöttek, a medúzaformák pedig a testfaluk ritmikus összehúzásával, sugárhajtásszerűen úsznak. Sok fajnál nemzedékváltakozás figyelhető meg a polip és a medúza alak között: a polip ivartalanul (bimbózással) medúzákat hoz létre, a medúzák pedig ivarosan szaporodnak, és az utódból ismét polip fejlődik.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A korallok kolóniában élő polipok, amelyek mészvázat választanak ki maguk köré - ezek a vázak generációkon át felhalmozódva hozzák létre a korallzátonyokat, a tengeri élővilág egyik legfajgazdagabb élőhelyét. A korallzátonyok pusztulása (pl. a tengervíz felmelegedése vagy elsavasodása miatt) súlyos következményekkel jár a rájuk épülő életközösségek számára.',
+                  'Egyes csalánozók (pl. a tűzmedúza vagy egyes korallok) csípése, illetve érintése az emberre nézve is veszélyes lehet: a csalánsejtek mérge fájdalmas, allergiás reakciót vagy - ritkán, néhány trópusi fajnál - akár életveszélyes tüneteket is okozhat.',
+                ],
+              },
+            ],
+            keyTerms: ['Csalánozók törzse', 'csalánsejt', 'polip', 'medúza', 'bélüreg', 'ektoderma', 'entoderma', 'diploblasztikus'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes az itt megismert testfelépítést a szivacsokéval összehasonlítva megérteni, pontosan milyen evolúciós újítások jelennek meg először a csalánozóknál.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a szivacsokhoz képest',
+                paragraphs: [
+                  'A korábban (Szivacsok fejezet) megismert szivacsokhoz képest a csalánozóknál három alapvető evolúciós újítás jelenik meg egyszerre: a valódi szövetek (bár még csak két csíralemezből), a szervezett testszimmetria (sugaras szimmetria, szemben a szivacsok aszimmetrikus vagy csak részlegesen szimmetrikus testével), és a valódi idegsejtek megjelenése.',
+                  'Az ideghálózat kialakulása kulcsfontosságú előrelépés: míg a szivacsoknál az egyes sejtek egymástól függetlenül reagáltak az ingerekre, a csalánozóknál már összehangolt, az egész testre kiterjedő válasz jöhet létre - ez teszi lehetővé például, hogy egy csalánozó egyetlen érintésre az egész testével (nem csak az érintett ponton) reagáljon, gyorsan összehúzva tapogatóit.',
+                  'A sugaras szimmetria is funkcionális előny: mivel a csalánozók (különösen a polipformák) minden irányból érkező ingerre és zsákmányra egyformán "figyelnek", ez a testforma ideális a helyhez kötött vagy lassan mozgó, minden irányból táplálékra leső életmódhoz - ezzel szemben a később (Laposférgek fejezet) megismerendő kétoldali szimmetria már egy határozott mozgásirányhoz igazodó, fejlettebb testfelépítést tesz lehetővé.',
+                ],
+              },
+            ],
+            keyTerms: ['ideghálózat', 'sugaras szimmetria'],
+          },
+        },
       },
       {
         id: 'laposfergek',
