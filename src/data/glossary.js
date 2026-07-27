@@ -173,6 +173,13 @@ export const GLOSSARY = {
   'vázsejt': 'A szivacsok testének alakját fenntartó, mésztűket, kovatűket vagy rugalmas fehérjerostokat kiválasztó sejt.',
   'amőboid sejt': 'A szivacsokban előforduló, alakváltoztató mozgásra képes sejt, amely a tápanyagokat szállítja a test különböző pontjaira.',
 
+  // 3. modul, 7. fejezet: Harasztok
+  'szállítószövet': 'Növényi szövet, amely a vizet és a tápanyagokat szállítja a növény különböző részei között - a harasztoknál jelenik meg elsőként.',
+  'páfrány': 'Nagy levelű, szövetekkel és szervekkel rendelkező, spórával szaporodó haraszt-csoport.',
+  'zsurló': 'Ízelt, tagolt szárú, spórával szaporodó haraszt-csoport.',
+  'korpafű': 'Apró levelű, spórával szaporodó haraszt-csoport.',
+  'előtenyész': 'A harasztok apró, rövid életű, haploid gametofiton nemzedéke, amely a kicsírázott spórából fejlődik ki, és az ivarszerveket hordozza.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

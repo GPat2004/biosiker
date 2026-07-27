@@ -1469,7 +1469,7 @@ export const CURRICULUM = [
                 paragraphs: [
                   'Az állatoknál a diploid szakasz a domináns és hosszú életszakasz - egy állat teste egész életében diploid sejtekből áll, a haploid állapot pedig kizárólag az ivarsejtekre (a petesejtre és a hímivarsejtre) korlátozódik, amelyek közvetlenül meiózissal keletkeznek a diploid egyed ivarszerveiben - ahogy azt korábban (Osztódás fejezet emelt része) a spermatogenezis és az oogenezis folyamatánál részletesen láttuk. Az állatoknál spóraképzés nem fordul elő.',
                   'A növényeknél ezzel szemben - a legtöbb csoportnál - mind a haploid, mind a diploid szakasz hosszú, önálló életszakaszként jelenik meg: ezt nevezzük generációváltakozásnak. A diploid szakasz sejtjei meiózissal nem közvetlenül ivarsejteket, hanem spórákat hoznak létre; ezekből a haploid spórákból fejlődik ki egy önálló, haploid egyed, amely már mitózissal termeli az ivarsejteket.',
-                  'A generációváltakozás pontos lépéseit és a haploid, illetve diploid szakasz egymáshoz viszonyított hosszát a következő fejezetekben (Teleptest és álszövet, A növényvilág főbb csoportjai), a mohák és a harasztok példáján ismerjük meg részletesen - itt elegendő megjegyezni az alapvető különbséget: az állatoknál a haploid szakasz rövid és csak az ivarsejtekre szorítkozik, a növényeknél viszont a haploid szakasz önálló, spórákkal szaporodó életszakaszt is jelenthet.',
+                  'A generációváltakozás pontos lépéseit és a haploid, illetve diploid szakasz egymáshoz viszonyított hosszát a következő fejezetekben (Teleptest és álszövet, Harasztok, Zárvatermők), a mohák, a harasztok és a zárvatermők példáján ismerjük meg részletesen - itt elegendő megjegyezni az alapvető különbséget: az állatoknál a haploid szakasz rövid és csak az ivarsejtekre szorítkozik, a növényeknél viszont a haploid szakasz önálló, spórákkal szaporodó életszakaszt is jelenthet.',
                   'Az "életszakaszok típusa" kifejezés éppen erre a különbségre utal: állatoknál egyetlen domináns (diploid) életszakaszról beszélünk, amelyet csak rövid ideig szakít meg a haploid ivarsejt-állapot, míg a legtöbb növénynél két, egymást váltó, önálló életszakaszról - egy haploidról és egy diploidról - van szó, ez utóbbi az, amit generációváltakozásnak nevezünk.',
                   'Érdemes megjegyezni a spóra és az ivarsejt közötti alapvető különbséget is: a spóra - szemben az ivarsejttel - önmagában, megtermékenyítés nélkül is képes új egyeddé fejlődni, míg egy ivarsejtnek mindenképp egy másik ivarsejttel kell egyesülnie ehhez.',
                 ],
@@ -1590,7 +1590,7 @@ export const CURRICULUM = [
                 paragraphs: [
                   'A mohák életciklusában két, egymástól jól elkülönülő nemzedék váltja egymást - ezt korábban (A gombák, növények, állatok elkülönülése fejezet emelt része) generációváltakozásként ismertük meg. A szemmel is jól látható, zöld, leveles "mohapárnát" a haploid nemzedék, a gametofiton alkotja, amely ivarszerveket - petesejtet termelő archegóniumokat és ostoros hímivarsejtet termelő antheridiumokat - fejleszt.',
                   'A megtermékenyítéshez víz szükséges, mert az ostoros hímivarsejtnek úsznia kell az archegóniumban ülő petesejthez - ez magyarázza, hogy a mohák miért kötődnek szorosan a nedves élőhelyekhez. A megtermékenyítés eredményeként létrejövő diploid zigóta a gametofitonon marad, és ott fejlődik tovább a diploid nemzedékké, a sporofitonná (nyél és spóratok), amely tápanyagait is a gametofitontól kapja.',
-                  'A sporofiton spóratokjában meiózissal haploid spórák keletkeznek, amelyek szétszóródva, kedvező körülmények között új gametofitonná csíráznak ki - ezzel a ciklus újrakezdődik. Fejlődéstörténeti szempontból különösen fontos, hogy a moháknál a haploid gametofiton a domináns, önállóan élő nemzedék, míg a diploid sporofiton attól függ - ez élesen elüt a később (A növényvilág főbb csoportjai fejezet) megismerendő harasztoktól és magvas növényektől, amelyeknél éppen fordított a helyzet: a diploid sporofiton a domináns, önálló nemzedék.',
+                  'A sporofiton spóratokjában meiózissal haploid spórák keletkeznek, amelyek szétszóródva, kedvező körülmények között új gametofitonná csíráznak ki - ezzel a ciklus újrakezdődik. Fejlődéstörténeti szempontból különösen fontos, hogy a moháknál a haploid gametofiton a domináns, önállóan élő nemzedék, míg a diploid sporofiton attól függ - ez élesen elüt a később (Harasztok, Nyitvatermők, Zárvatermők fejezetek) megismerendő harasztoktól és magvas növényektől, amelyeknél éppen fordított a helyzet: a diploid sporofiton a domináns, önálló nemzedék.',
                 ],
               },
               {
@@ -1611,7 +1611,51 @@ export const CURRICULUM = [
         order: 7,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Teleptest és álszövet fejezet) megismert mohák után a harasztokkal a Növények országának egy fejlettebb, már valódi szövetekkel és szervekkel rendelkező csoportját ismerjük meg - ez a fejezet azt mutatja be, milyen evolúciós "újítások" tették lehetővé a harasztok számára a hatékonyabb szárazföldi életmódot.',
+            sections: [
+              {
+                heading: 'Szövetek és szervek megjelenése - a szállítószövet jelentősége',
+                paragraphs: [
+                  'A páfrányok, a zsurlók és a korpafüvek a Harasztok törzsén belüli, egymástól jól elkülöníthető alcsoportok - mindegyiküknél a spórákat termelő spóratartók (sporangiumok) jellemzően a levelek fonákján, kisebb csomókban helyezkednek el.',
+                  'A harasztok - közéjük tartoznak a páfrányok, a zsurlók és a korpafüvek is - a mohákkal ellentétben már rendelkeznek valódi szállítószövettel, amely a vizet és a tápanyagokat szállítja a növény különböző részei között. Ez az evolúciós "újítás" teszi lehetővé, hogy a harasztok jóval magasabbra nőjenek, mint a szállítószövet nélküli mohák, hiszen a víz és a tápanyagok hatékonyan eljutnak a föld feletti, magasabban lévő részekhez is.',
+                  'A szállítószövet megjelenésével együtt valódi szervek is kialakultak: a gyökér a vízfelvételt és a rögzítést végzi (sokkal hatékonyabban, mint a mohák egyszerű rizoidjai), a szár a szállítást biztosítja és a növényt magasba emeli, a levél pedig a fotoszintézis fő felülete. Ezekkel a szervekkel a harasztok - a mohákkal együtt - immár a Növények országának tagjai, de azon belül egy fejlettebb, szövetes csoportot alkotnak. Méretük és termetük fajonként igen változatos: az apró korpafüvektől egészen a trópusi, akár fákra hasonlító páfrányokig.',
+                ],
+              },
+              {
+                heading: 'Alkalmazkodás a szárazföldi élethez - és ami még hiányzik',
+                paragraphs: [
+                  'A hatékony vízszállítás és a magasabb növekedés jelentős versenyelőnyt biztosít a fényért folyó versengésben - ez magyarázza, hogy a harasztok miért képesek jóval nagyobb, összetettebb testet felépíteni, mint a mohák.',
+                  'A harasztok szaporodása azonban még mindig nem teljesen független a víztől: bár szövetekkel és szervekkel rendelkeznek, spórákkal szaporodnak, és - a mohákhoz hasonlóan - az ostoros hímivarsejtnek a megtermékenyítéshez vízben kell úsznia a petesejthez. Emiatt a harasztok is jellemzően nedves élőhelyekhez (pl. erdők aljához, patakpartokhoz) kötődnek - a víztől teljesen független szaporodás majd csak a következő fejezetben (Nyitvatermők) megismerendő magvas növényeknél jelenik meg.',
+                  'A nagyobb, összetettebb levelek jóval nagyobb felületet biztosítanak a korábban (Fotoszintézis fejezet) megismert fényszakasz és Calvin-ciklus számára, mint a mohák egyszerű, szövetek nélküli "levélkéi" - ez tovább növeli a harasztok energiatermelő hatékonyságát, és hozzájárul ahhoz, hogy nagyobb testet tudjanak felépíteni és fenntartani.',
+                ],
+              },
+              {
+                heading: 'Rendszertani hely és evolúciós jelentőség',
+                paragraphs: [
+                  'A harasztok - a mohákhoz hasonlóan - a Növények országába tartoznak, de a szövetek és szervek megjelenése miatt már önálló, fejlettebb csoportot alkotnak. Mintegy 400 millió évvel ezelőtt jelentek meg, és a szénkorszakban (kb. 300 millió évvel ezelőtt) a Föld első nagy kiterjedésű erdőit alkották - a ma ismert kőszéntelepek jelentős része ezekből az óriási, elpusztult haraszterdőkből képződött.',
+                  'A kőszén elsősorban azért képződhetett ezekből az ősi haraszterdőkből, mert az akkori mocsaras környezetben az elhalt növényi anyag nem tudott teljesen lebomlani, hanem évmilliók alatt, nyomás és hő hatására szénné alakult át - ez az emberiség egyik legfontosabb fosszilis energiaforrásának eredete.',
+                ],
+              },
+            ],
+            keyTerms: ['haraszt', 'szállítószövet', 'páfrány', 'zsurló', 'korpafű'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a harasztok és a - később (Zárvatermők fejezet) részletesen megismerendő - zárvatermők kétszakaszos egyedfejlődését kell összehasonlítani, különös tekintettel a haploid és a diploid szakasz egymáshoz viszonyított arányára és ennek fejlődéstörténeti jelentőségére.',
+            sections: [
+              {
+                heading: 'A haploid és a diploid szakasz aránya a harasztoknál és a zárvatermőknél',
+                paragraphs: [
+                  'A korábban (Teleptest és álszövet fejezet) megismert moháknál a haploid gametofiton volt a domináns, szemmel is jól látható nemzedék. A harasztoknál ez az arány megfordul: a jól ismert, leveles, gyökeres haraszt-növény már a diploid sporofiton, a haploid gametofiton pedig egy apró, rövid életű, gyakran csak néhány milliméteres képlet (előtenyész), amely a talaj felszínén fejlődik ki a kicsírázott spórából, és csak az ivarszerveket (archegónium, antheridium) hordozza.',
+                  'A megtermékenyítéshez a harasztoknál is - a moháknál megismerthez hasonlóan - víz szükséges, hiszen az apró gametofitonon termelődő ostoros hímivarsejtnek úsznia kell a petesejthez. A megtermékenyítés után a zigótából fejlődik ki az immár domináns, jól látható, diploid sporofiton - ez a haraszt-növény, amelyet a mindennapokban "harasztként" ismerünk.',
+                  'A zárvatermőknél ez a folyamat a legszélsőségesebb: a haploid szakasz olyannyira lecsökken, hogy már nem is önálló, szabadon élő képlet, hanem a diploid sporofiton (a virágos növény) testén belül, védett környezetben fejlődik ki néhány sejtből álló formában - ezzel a víztől teljesen független megtermékenyítés is lehetővé válik. Fejlődéstörténeti szempontból ez a tendencia (a haploid szakasz fokozatos visszaszorulása, a diploid szakasz egyre nagyobb dominanciája) jól mutatja a szárazföldi növények evolúciójának egyik fő irányát: a szaporodás egyre inkább függetlenedik a víztől, miközben a fiatal utódot (embriót) egyre hatékonyabban védi és táplálja az anyanövény.',
+                ],
+              },
+            ],
+            keyTerms: ['előtenyész'],
+          },
+        },
       },
       {
         id: 'nyitvatermok',
