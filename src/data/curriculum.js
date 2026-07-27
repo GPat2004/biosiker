@@ -2023,9 +2023,33 @@ export const CURRICULUM = [
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
       },
       {
+        id: 'kagylok',
+        title: 'Kagylók',
+        order: 17,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+      },
+      {
+        id: 'elogerinchurosok',
+        title: 'Előgerinchúrosok',
+        order: 18,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+      },
+      {
+        id: 'fejgerinchurosok',
+        title: 'Fejgerinchúrosok',
+        order: 19,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+      },
+      {
         id: 'csontos-halak',
         title: 'Csontos halak',
-        order: 17,
+        order: 20,
         isFree: false,
         estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2033,7 +2057,7 @@ export const CURRICULUM = [
       {
         id: 'ketelt-uek',
         title: 'Kétéltűek',
-        order: 18,
+        order: 21,
         isFree: false,
         estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2041,7 +2065,7 @@ export const CURRICULUM = [
       {
         id: 'hullok',
         title: 'Hüllők',
-        order: 19,
+        order: 22,
         isFree: false,
         estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2049,7 +2073,7 @@ export const CURRICULUM = [
       {
         id: 'madarak',
         title: 'Madarak',
-        order: 20,
+        order: 23,
         isFree: false,
         estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2057,7 +2081,7 @@ export const CURRICULUM = [
       {
         id: 'emlosok',
         title: 'Emlősök',
-        order: 21,
+        order: 24,
         isFree: false,
         estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2065,7 +2089,7 @@ export const CURRICULUM = [
       {
         id: 'novenyi-szovetek-szervek',
         title: 'A növények szövetei, szervei',
-        order: 22,
+        order: 25,
         isFree: false,
         estimatedMinutes: 26,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
@@ -2073,7 +2097,7 @@ export const CURRICULUM = [
       {
         id: 'allati-szovetek-szaporodas-viselkedes',
         title: 'Az állatok szövetei, szaporodása, viselkedése',
-        order: 23,
+        order: 26,
         isFree: false,
         estimatedMinutes: 28,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
