@@ -2623,7 +2623,64 @@ export const CURRICULUM = [
         order: 24,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Kloákások', 'Erszényesek', 'Méhlepényesek'],
+          rows: [
+            ['Szaporodás', 'tojásrakó', 'elevenszülő, méhlepény nélkül', 'elevenszülő, méhlepénnyel (placentával)'],
+            ['Utódfejlődés', 'tojásban, majd tejjel táplálva', 'erszényben fejeződik be', 'méhen belül teljesen kifejlődve'],
+            ['Példa', 'kacsacsőrű emlős', 'kenguru', 'ember, kutya, bálna'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Madarak fejezet) megismert, endoterm és négyüregű szívű csoport után az emlősökkel a Gerincesek altörzsének utolsó, ma élő nagy osztályát ismerjük meg - ez az az osztály, amelybe az ember is tartozik.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'Az emlősök (Mammalia) a Gerincesek altörzsének osztálya. Testüket szőrzet borítja, amely - a madarak tollazatához hasonlóan, de attól függetlenül kialakulva - elsősorban hőszigetelő szerepet tölt be.',
+                  'Fogazatuk differenciált (heterodont): metsző-, szem- és zápfogakra tagolódik, szemben a korábban megismert gerinces csoportok egyöntetű vagy hiányzó fogazatával. Ez lehetővé teszi a táplálék szájban történő alapos, mechanikai előfeldolgozását (rágást), ami hatékonyabbá teszi az emésztést.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásuk rendkívül változatos: a legtöbb csoportnál négy végtaggal történő járás/futás jellemző, de egyes csoportok végtagjai úszásra (pl. bálnák uszonya) vagy repülésre (pl. denevérek szárnya) módosultak.',
+                  'Táplálkozásuk a differenciált fogazatnak köszönhetően jól specializálódhat: húsevő, növényevő és mindenevő csoportok egyaránt kialakultak, mindegyik a saját táplálékához illeszkedő fogazattal.',
+                  'Légzésüket - a korábbi gerinces csoportoknál nem tapasztalt - izmos rekeszizom (diafragma) segíti, amely a mellüreg térfogatának változtatásával hatékony szellőztetést biztosít a tüdőben.',
+                  'Anyagszállító rendszerük szíve - a madarakhoz hasonlóan - négyüregű, teljesen elkülönült vérkörökkel, és ők is állandó testhőmérsékletűek (endotermek).',
+                  'Szaporodásuk ivaros, belső megtermékenyítéssel; a legtöbb emlős elevenszülő, az embrió az anya méhében, méhlepényen (placentán) keresztül táplálkozva fejlődik ki. Minden emlősre jellemző a tejmirigyek általi táplálás - erről kapta az osztály a nevét is (Mammalia, a "mamma", azaz emlő szóból).',
+                  'Érzékszerveik közül kiemelkedik a fejlett agy, amelynek nagyagykérge a többi gerinces csoportnál tapasztaltnál jóval fejlettebb, lehetővé téve az összetett viselkedést és a tanulást. Sok fajnál kiemelkedően fejlett a szaglás és a hallás (utóbbit gyakran mozgatható külső fülkagyló is segíti), és számos csoportnál (pl. ragadozóknál) tapintószőrök (bajusz) is kiegészítik az érzékelést.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és környezeti kapcsolat',
+                paragraphs: [
+                  'Az emlősök szaporodási módja szerint három nagy csoportra oszthatók: a kloákások (pl. a kacsacsőrű emlős) még tojást raknak, az erszényesek (pl. a kenguru) méhlepény nélkül, korán megszülik utódaikat, akik ezután az erszényben fejeznek be a fejlődésüket, míg a méhlepényesek (pl. az ember, a kutya, a bálna) utódai a méhben, méhlepényen keresztül táplálkozva, teljesen kifejlődve születnek meg.',
+                  'Az endotermia, a szőrzet és a fejlett agy együttesen tették lehetővé, hogy az emlősök a Föld szinte minden élőhelyét (szárazföld, víz, levegő) meghódítsák, a sarkvidéktől a sivatagokig. Az ember (Homo sapiens) is ebbe az osztályba tartozó, méhlepényes emlős faj, amelynek szervrendszerei ugyanazokat az alapelveket követik, mint a fejezetben tárgyalt többi emlősé.',
+                  'Az emlősök gyakorlati jelentősége kiemelkedő: számos háziasított fajuk (pl. szarvasmarha, kecske, kutya, macska) évezredek óta szorosan összefonódik az emberi társadalommal, élelmiszer- (hús, tej), munkaerő- és társ-forrásként egyaránt.',
+                ],
+              },
+            ],
+            keyTerms: ['Emlősök osztálya', 'szőrzet', 'heterodont fogazat', 'rekeszizom', 'tejmirigy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az emlősök testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert madarakhoz képest, kiemelt figyelmet fordítva arra, hogy egyes hasonlóságok (pl. endotermia, négyüregű szív) a két csoportnál egymástól függetlenül, konvergens evolúcióval alakultak ki.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a madarakhoz képest',
+                paragraphs: [
+                  'Bár mind az emlősök, mind a korábban (Madarak fejezet) megismert madarak endoterm szabályozásúak és négyüregű szívvel rendelkeznek, ez a két csoportnál egymástól függetlenül, konvergens evolúcióval alakult ki - a hüllő ősöktől elágazva, két különböző fejlődési vonalon jutottak hasonló megoldásra.',
+                  'A méhlepényen (placentán) keresztüli, méhen belüli fejlődés a méhlepényes emlősöknél a legfejlettebb szaporodási stratégia a gerincesek között: az embrió az anya szervezetében, annak védelme alatt fejlődik ki, szemben a korábban megismert tojásrakó (hüllők, madarak) vagy vízhez kötött (kétéltűek) szaporodási módokkal. Ez nagyobb energiabefektetést igényel az anyától, cserébe azonban jelentősen megnöveli az utódok túlélési esélyét. A kloákások és az erszényesek fennmaradása jól mutatja, hogy ez a stratégia fokozatosan, köztes formákon át alakult ki.',
+                  'A differenciált (heterodont) fogazat és a rágás - szemben a madarak fogatlan csőrével és zúzógyomrával - lehetővé teszi a táplálék hatékony, szájban történő mechanikai előfeldolgozását, ami gyorsabb és teljesebb emésztést eredményez.',
+                  'A nagyagykéreg jelentős fejlődése olyan evolúciós újítás, amely a korábbi gerinces csoportoknál tapasztaltnál összetettebb viselkedést (tanulás, szociális együttműködés) tesz lehetővé - ez az emlősök (különösen az ember) evolúciós sikerének egyik kulcstényezője.',
+                  'Az emlősökkel lezárul a Gerincesek altörzsének ebben a fejezetsorozatban tárgyalt öt osztálya (csontos halak, kétéltűek, hüllők, madarak, emlősök). Végigkövetve a sorozatot jól látható egy közös evolúciós tendencia: a víztől való fokozatos függetlenedés (kopoltyú → tüdő, ikra → amniota tojás → méhlepényes fejlődés) és a keringési rendszer egyre hatékonyabbá válása (egykörös, kétüregű szív → kettős vérkör, háromüregű szív → négyüregű szív, teljesen elkülönült vérkörök) - ezek az újítások együttesen tették lehetővé egyre nagyobb testméretű, egyre aktívabb életmódú állatok kialakulását, egyre szélesebb körű élőhelyeken.',
+                ],
+              },
+            ],
+            keyTerms: ['méhlepény (placenta)', 'kloákások', 'erszényesek', 'nagyagykéreg'],
+          },
+        },
       },
       {
         id: 'novenyi-szovetek-szervek',

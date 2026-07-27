@@ -327,6 +327,17 @@ export const GLOSSARY = {
   'négyüregű szív': 'Két pitvarból és két, teljesen elkülönült kamrából álló szívtípus, amely teljesen megakadályozza az oxigénben gazdag és szegény vér keveredését; a madaraknál jelenik meg először.',
   'kettős légzés': 'A madarak légzsákos tüdejére jellemző, egyirányú levegőáramlást biztosító légzési mód, amely hatékonyabb gázcserét tesz lehetővé, mint a kétirányú tüdőlégzés.',
 
+  // 3. modul, 24. fejezet: Emlősök
+  'emlősök osztálya': 'A Gerincesek altörzsének osztálya (Mammalia), amelynek tagjaira a szőrzet, a tejmirigy, a differenciált fogazat és (a kloákások kivételével) az elevenszülés jellemző.',
+  'szőrzet': 'Az emlősök keratinból felépülő, hőszigetelő szerepű szálas kültakarója; a madarak tollazatával konvergens módon, attól függetlenül alakult ki.',
+  'heterodont fogazat': 'Metsző-, szem- és zápfogakra tagolódó, differenciált fogazat, amely lehetővé teszi a táplálék szájban történő mechanikai előfeldolgozását (rágást); az emlősökre jellemző.',
+  'rekeszizom': 'Az emlősök mellüreget a hasüregtől elválasztó izmos lemeze, amely összehúzódásával hatékony tüdőszellőzést biztosít.',
+  'tejmirigy': 'Az emlősök bőrmirigyekből kialakult szerve, amely az utódok táplálására szolgáló tejet termeli; erről kapta nevét az osztály (Mammalia).',
+  'méhlepény (placenta)': 'Az anya és a magzat közötti anyagcserét biztosító szerv a méhlepényes emlősök méhében, amelyen keresztül az embrió táplálékot és oxigént kap.',
+  'kloákások': 'Tojásrakó emlősök csoportja (pl. kacsacsőrű emlős), amelyeknél a szaporodás még a hüllőkéhez hasonló, de utódaikat tejjel táplálják.',
+  'erszényesek': 'Méhlepény nélkül szaporodó emlősök csoportja (pl. kenguru), amelyeknél az utód korán megszületik, és fejlődését az anya erszényében fejezi be.',
+  'nagyagykéreg': 'Az emlősagy legfejlettebb, redőzött felszínű része, amely az összetett viselkedést, tanulást és érzékelést teszi lehetővé.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
