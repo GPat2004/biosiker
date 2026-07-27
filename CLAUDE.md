@@ -124,6 +124,10 @@ utasítást, és nem kér közbenső visszajelzést:
    - mely fejezeteknél van "Hiányzó ábra-javaslat" jelzés
 4. Csak ezután jelezz a felhasználónak - egyetlen összefoglaló
    üzenetben, ne fejezetenként megszakítva a munkát
+5. A PR megnyitása és az összefoglaló elküldése UTÁN, mielőtt a
+   következő modulba kezdenél, futtass egy `/clear`-t. Ez minden
+   teljes modul lezárása után kötelező, automatikusan érvényesülő
+   lépés - nem csak egyszeri, aktuális munkamenetre vonatkozó kérés.
 
 ## Diagram-igény jelzése
 
