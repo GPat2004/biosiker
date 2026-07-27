@@ -1713,7 +1713,64 @@ export const CURRICULUM = [
         order: 9,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Egyszikűek', 'Kétszikűek'],
+          rows: [
+            ['Sziklevél száma', '1', '2'],
+            ['Levélerezet', 'párhuzamos', 'hálózatos'],
+            ['Gyökérzet', 'szárgyökérrendszer', 'karógyökér'],
+            ['Példa', 'gabonafélék, liliomfélék', 'hüvelyesek, gyümölcsfák'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Nyitvatermők fejezet) megismert magvas növények után a zárvatermőkkel a növényvilág legelterjedtebb, legváltozatosabb csoportját ismerjük meg - ez a fejezet azokat az újabb evolúciós "újításokat" mutatja be, amelyek a zárvatermőket a nyitvatermőknél is hatékonyabb versenyzővé teszik a fényért és a vízért folyó küzdelemben.',
+            sections: [
+              {
+                heading: 'A virág és a zárt magház',
+                paragraphs: [
+                  'A zárvatermőknél jelenik meg először a valódi virág, amelynek része a takarólevelek (a csésze- és a sziromlevelek), amelyek védik a fejlődő ivarszerveket, és sok esetben - feltűnő színükkel, illatukkal - beporzó rovarokat vonzanak, hatékonyabbá téve a beporzást a korábban (Nyitvatermők fejezet) megismert szélbeporzásnál.',
+                  'A virág termőjének felső, ragadós felszíne a bibe, amely megköti a ráhulló pollent. A magkezdemény itt - szemben a nyitvatermőkkel - zárt magházban fejlődik, amely védi a fejlődő magot, majd a megtermékenyítés után maga is átalakul: ez adja a termést.',
+                  'Bár a virág elsősorban a rovarok általi beporzáshoz alkalmazkodott, egyes zárvatermők (pl. a fűfélék, a nyír vagy a tölgy) visszatértek a szélbeporzáshoz - az ő virágaik jellemzően feltűnés nélküliek, illat és színes szirmok nélküliek, hiszen nem kell beporzó állatokat vonzaniuk.',
+                ],
+              },
+              {
+                heading: 'A termés szerepe és a magterjesztés stratégiái',
+                paragraphs: [
+                  'A termés biológiai szerepe a magok védelme és terjesztésének elősegítése. A magterjesztésnek több stratégiája is kialakult: egyes termések húsosak, édesek (pl. a bogyók) - ezeket az állatok megeszik, a bennük lévő magok pedig sértetlenül áthaladnak az emésztőrendszeren, és az ürülékkel távol a szülőnövénytől jutnak új élőhelyre.',
+                  'Más termések szél általi terjedésre specializálódtak (pl. repülőszőrök, szárnyak), míg megint mások horgas, tapadós felszínükkel az állatok szőrébe vagy tollazatába kapaszkodva jutnak el új helyekre. Ez a sokféleség jól mutatja, hogy a termés nem csupán a mag védelmét szolgálja, hanem aktívan hozzájárul a faj elterjedéséhez is.',
+                ],
+              },
+              {
+                heading: 'Szállítócsövek, gyökérszőrök és a Növényismeret könyv használata',
+                paragraphs: [
+                  'A zárvatermők fejlettebb szállítószövete (a szállítócsövek) hatékonyabban juttatja el a vizet és a tápanyagokat a növény minden részéhez, mint a nyitvatermők szállítószövete - ez teszi lehetővé, hogy a zárvatermők között rendkívül magas fák (pl. tölgyek, bükkök) is kialakulhassanak - ami egyben versenyelőnyt is jelent a fényért folyó küzdelemben, hiszen a magasabbra növő egyedek jutnak több napfényhez. A gyökérszőrök - a gyökér felszínét beborító apró, hajszálvékony sejtnyúlványok - jelentősen megnövelik a gyökér felszínét, ezáltal hatékonyabbá téve a vízfelvételt a talajból, versenyelőnyt biztosítva a vízért folyó küzdelemben.',
+                  'Egy adott terület növényeinek megismeréséhez, illetve élőhelyi és ökológiai igényeik jellemzéséhez a Növényismeret könyv (határozókönyv) használata nyújt segítséget - ez a gyakorlati készség lehetővé teszi, hogy a diák önállóan azonosítsa a környezetében élő fajokat, és jellemezze azok élőhelyi igényeit.',
+                ],
+              },
+              {
+                heading: 'A zárvatermők sikere és sokfélesége',
+                paragraphs: [
+                  'A zárvatermők a Növények országán belül a legfiatalabb, de ma messze a legelterjedtebb és legváltozatosabb törzset alkotják: mintegy 250 000 ismert fajukkal a szárazföldi növényvilág túlnyomó többségét ők teszik ki. Sikerességük hátterében éppen az ebben a fejezetben megismert evolúciós újítások (hatékony beporzás, gyors és sokféle magterjesztés, fejlett szállítószövet) állnak.',
+                ],
+              },
+            ],
+            keyTerms: ['virág', 'takarólevél', 'bibe', 'zárt magház', 'termés', 'szállítócső', 'gyökérszőr'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos, kettős megtermékenyítésre vonatkozó emelt szintű követelmény külön fejezetben (Kettős megtermékenyítés) kerül feldolgozásra - itt egy másik, a zárvatermők sokféleségét megalapozó kérdést járunk körül: mi különbözteti meg egymástól a zárvatermők két nagy csoportját, az egyszikűeket és a kétszikűeket.',
+            sections: [
+              {
+                heading: 'Egyszikűek és kétszikűek',
+                paragraphs: [
+                  'A zárvatermők két nagy csoportra oszthatók aszerint, hogy a mag embriója hány sziklevelet (az embrió első, tartalék tápanyagot felhasználó levélkéjét) tartalmaz: az egyszikűeknél (pl. gabonafélék, hagymafélék, liliomfélék) egy, a kétszikűeknél (pl. a legtöbb gyümölcsfa, hüvelyesek, összetettvirágzatúak) két sziklevél fejlődik.',
+                  'A két csoport a levél erezetében is jellemzően eltér: az egyszikűeknél a levélerek párhuzamosan futnak, a kétszikűeknél hálózatosan elágaznak. A gyökérzet felépítése is különbözik: az egyszikűek jellemzően szárgyökérrendszert (sok, hasonló vastagságú gyökeret) fejlesztenek, míg a kétszikűeknél gyakran karógyökér (egy központi, vastag főgyökér és belőle kiinduló oldalgyökerek) alakul ki.',
+                ],
+              },
+            ],
+            keyTerms: ['egyszikű', 'kétszikű', 'sziklevél'],
+          },
+        },
       },
       {
         id: 'kettos-megtermekenyites',

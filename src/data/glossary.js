@@ -189,6 +189,18 @@ export const GLOSSARY = {
   'mikrospóra': 'A heterospória kisebb spóratípusa, amelyből a hím gametofiton (végül a pollenszem) fejlődik ki.',
   'megaspóra': 'A heterospória nagyobb spóratípusa, amelyből a nő gametofiton fejlődik ki - ez marad a magkezdeményen belül, védett környezetben.',
 
+  // 3. modul, 9. fejezet: Zárvatermők
+  'virág': 'A zárvatermők szaporítóképlete, amely takarólevelekből, ivarszervekből (bibe, porzó) épül fel - elsőként a zárvatermőknél jelenik meg.',
+  'takarólevél': 'A virág csésze- és sziromleveleiből álló része, amely védi a fejlődő ivarszerveket, és sok esetben beporzó rovarokat vonz.',
+  'bibe': 'A virág termőjének felső, ragadós felszíne, amely megköti a ráhulló pollent.',
+  'zárt magház': 'A zárvatermők magkezdeményét körülvevő, védő szövet, amely a megtermékenyítés után termésse alakul.',
+  'termés': 'A zárvatermők megtermékenyített, átalakult magháza, amely a magok védelmét és terjesztését szolgálja.',
+  'szállítócső': 'A zárvatermők fejlett szállítószövetének eleme, amely hatékonyan juttatja el a vizet és a tápanyagokat a növény minden részéhez.',
+  'gyökérszőr': 'A gyökér felszínét beborító apró sejtnyúlvány, amely megnöveli a gyökér felszínét, ezáltal hatékonyabbá téve a vízfelvételt.',
+  'egyszikű': 'Zárvatermő növénycsoport, amelynek embriója egy sziklevelet tartalmaz, levelei párhuzamos erezetűek, gyökérzete szárgyökérrendszer (pl. gabonafélék, liliomfélék).',
+  'kétszikű': 'Zárvatermő növénycsoport, amelynek embriója két sziklevelet tartalmaz, levelei hálózatos erezetűek, gyökérzete jellemzően karógyökér (pl. hüvelyesek, gyümölcsfák).',
+  'sziklevél': 'A növényi embrió első, tartalék tápanyagot felhasználó levélkéje - száma alapján különíthetők el az egyszikű és a kétszikű zárvatermők.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
