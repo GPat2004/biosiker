@@ -2125,7 +2125,58 @@ export const CURRICULUM = [
         order: 16,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Rovarok fejezet) megismert Ízeltlábúak törzse után a csigákkal egy másik nagy állattörzs, a Puhatestűek (Mollusca) képviselőit ismerjük meg - testfelépítésük gyökeresen eltér a rovarokétól, annak ellenére, hogy mindkét csoport a fejlettebb, testüreggel rendelkező állatok közé tartozik. A Puhatestűek törzse a Föld egyik legfajgazdagabb állattörzse a rovarok után, amelybe a csigákon kívül a kagylók és a fejlábúak (pl. polipok, tintahalak) is tartoznak.',
+            sections: [
+              {
+                heading: 'Testfelépítés: fej, láb, zsigerzacskó és a héj',
+                paragraphs: [
+                  'A csigák az Állatok országán belül a Puhatestűek törzsének (Mollusca) egy osztályát, a Csigák osztályát (Gastropoda) alkotják. Testük három fő részre tagolódik: a fejen tapogatók és szemek találhatók, az izmos lábon (erről kapták nevüket) hullámzó összehúzódásokkal csúsznak, a zsigerzacskóban pedig a belső szerveik helyezkednek el.',
+                  'A legtöbb csigafaj testét csavart, mészből álló héj védi, amelyet egy különleges szövet, a köpeny választ el a zsigerzacskótól, és amely magát a héjat is elválasztja (kiválasztja). A köpeny alatt kialakuló köpenyüreg vízi fajoknál a kopoltyút, szárazföldi fajoknál (pl. az éti csigánál) pedig egy erezett, "tüdőként" funkcionáló felületet rejt, amellyel a csiga levegőt lélegzik.',
+                  'Méretük fajonként igen eltérő: néhány milliméteres apró csigáktól egészen a több tíz centiméteres, óriásira növő tengeri fajokig terjed. Veszély esetén sok csigafaj teljesen visszahúzódik a héjába, amelyet egy szaruszerű fedél (operculum) zár el.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás, mozgás és egyéb életműködések',
+                paragraphs: [
+                  'A csigák egyedi táplálkozási szerve a radula (reszelőnyelv): egy kitines, apró fogacskákkal borított szalag, amellyel lekaparják vagy feldarabolják táplálékukat - ez lehet növényi (pl. levelek) vagy állati eredetű, fajtól függően. Mozgásukat izmos talpuk hullámzó összehúzódásai és az általuk termelt nyálka segíti, amely csökkenti a súrlódást a talaj felszínén.',
+                  'Keringési rendszerük - a korábban (Rovarok fejezet) megismerthez hasonlóan - nyílt: egy egyszerű szív pumpálja a vért az erekbe, majd onnan a testüregbe. Idegrendszerüket több pár idegdúc alkotja, érzékszerveik (tapogatók, egyszerű szemek) a fejükön koncentrálódnak. Legtöbbjük hímnős, ivaros szaporodással.',
+                  'Egyedfejlődésük során jellegzetes jelenség a torzió: a zsigerzacskó és a köpenyüreg mintegy 180 fokban elcsavarodik a fej-láb tengelyhez képest - emiatt a végbélnyílás és a köpenyüreg a test elülső részére kerül, ami befolyásolja a belső szervek, köztük az idegrendszer elrendeződését is.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A csigák három nagy csoportra oszthatók: a tengeri csigák (pl. a kürtcsigák), az édesvízi csigák (pl. a fűszálcsiga) és a szárazföldi, tüdővel lélegző csigák (pl. az éti csiga vagy a héj nélküli meztelen csigák).',
+                  'A csigák a legváltozatosabb élőhelyeken fordulnak elő: tengerben, édesvízben és szárazföldön egyaránt megtalálhatók. Egyes fajaik jelentős mezőgazdasági kártevők (kerti növények leveleit rágják le), mások élelmiszerforrásként hasznosulnak (pl. az éti csiga), néhány vízi csigafaj pedig köztigazdaként vesz részt a korábban (Laposférgek fejezet) megismert mételyek fejlődési ciklusában.',
+                ],
+              },
+            ],
+            keyTerms: ['Puhatestűek törzse', 'Csigák osztálya', 'köpeny', 'köpenyüreg', 'radula', 'torzió'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a csigák testfelépítésében megjelenő egyedi evolúciós újításokat, valamint ezek előnyeit és hátrányait kell elemezni, összefüggésbe hozva őket a Puhatestűek törzsének közös alaptervével.',
+            sections: [
+              {
+                heading: 'A torzió és a héj evolúciós előnyei és hátrányai',
+                paragraphs: [
+                  'A torzió evolúciós előnye, hogy az elcsavarodás következtében a köpenyüreg (és benne az érzékeny kopoltyú) a test elülső részére kerül - így egy esetleges veszély esetén a csiga fejjel előre húzódhat vissza a héjába, és a legsebezhetőbb testrészei (a fej és a légzőszerv) kerülnek először védett helyzetbe.',
+                  'A torziónak azonban van egy jelentős hátránya is: mivel a végbélnyílás is a test elülső részére kerül, a csiga saját salakanyaga a fej és a légzőszerv közelébe kerülhet - ez higiéniai szempontból hátrányos, ezért egyes csigacsoportoknál (pl. egyes tengeri "meztelen csigáknál") az evolúció során másodlagosan részleges detorzió (visszacsavarodás) ment végbe.',
+                  'A mészhéj kialakítása és fenntartása jelentős energiabefektetést igényel a csiga részéről, cserébe viszont hatékony védelmet nyújt a kiszáradással és a ragadozókkal szemben. Egyes csigacsoportok (pl. a meztelen csigák) evolúciósan lemondtak a héjról - ez energiát takarít meg, cserébe viszont sebezhetőbbé teszi őket, ami gyorsabb mozgással vagy más védekezési stratégiákkal (pl. nyálkatermeléssel, rejtőszínnel) kompenzálódik.',
+                ],
+              },
+              {
+                heading: 'A Puhatestűek közös alapterve',
+                paragraphs: [
+                  'A köpeny és a belőle kiválasztott héj a Puhatestűek törzsének egyik legjellemzőbb evolúciós újítása: ugyanez az alapterv (fej-láb-zsigerzacskó-köpeny) módosul a törzs más osztályaiban is - a következő fejezetben (Kagylók) megismerendő kagylóknál például a láb ásásra specializálódott, a fej pedig nagyrészt visszafejlődött, mivel a kagylók szűrve táplálkoznak, és nincs szükségük aktív táplálékkeresésre.',
+                  'A radula szintén egyedülálló a Puhatestűek körében: az állatvilágban kizárólag a csigákban és a fejlábúakban (pl. polipokban) alakult ki ez a fajta, kitines fogacskás reszelőszerv - ez az egyik legerősebb bizonyíték a közös eredetre, annak ellenére, hogy testfelépítésük felnőttkorra igen eltérővé válik. A kagylóknál a radula másodlagosan hiányzik: mivel ők - ahogy azt fentebb említettük - szűrve táplálkoznak, nincs szükségük szilárd táplálék lekaparására vagy feldarabolására, ezért ez a szerv az evolúció során elveszett náluk.',
+                ],
+              },
+            ],
+            keyTerms: ['detorzió'],
+          },
+        },
       },
       {
         id: 'kagylok',

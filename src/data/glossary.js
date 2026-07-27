@@ -264,6 +264,15 @@ export const GLOSSARY = {
   'teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-báb-imágó szakaszok különülnek el (pl. lepkéknél).',
   'kevésbé teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-imágó szakaszok különülnek el, báb nélkül (pl. sáskáknál).',
 
+  // 3. modul, 16. fejezet: Csigák
+  'puhatestűek törzse': 'Az Állatok országának törzse, amelynek tagjait (pl. csigák, kagylók) lágy test, jellemzően köpeny és héj jellemzi.',
+  'csigák osztálya': 'A Puhatestűek törzsének osztálya, amelynek tagjai fej-láb-zsigerzacskó testfelépítésűek, jellemzően csavart héjjal.',
+  'köpeny': 'A puhatestűek zsigerzacskóját beborító szövet, amely a héjat elválasztja (kiválasztja), és köpenyüreget képez.',
+  'köpenyüreg': 'A köpeny alatt kialakuló üreg, amely vízi csigáknál a kopoltyút, szárazföldi csigáknál egy tüdőként funkcionáló felületet rejt.',
+  'radula': 'A csigák kitines, apró fogacskákkal borított táplálkozási szerve (reszelőnyelv), amellyel a táplálékot lekaparják vagy feldarabolják.',
+  'torzió': 'A csigák egyedfejlődése során bekövetkező jelenség, amelynek során a zsigerzacskó és a köpenyüreg mintegy 180 fokban elcsavarodik a fej-láb tengelyhez képest.',
+  'detorzió': 'Egyes csigacsoportoknál (pl. tengeri meztelen csigáknál) másodlagosan végbemenő részleges visszacsavarodás a torzióhoz képest, amely higiéniai hátrányokat csökkent.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
