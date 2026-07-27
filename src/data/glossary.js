@@ -201,6 +201,13 @@ export const GLOSSARY = {
   'kétszikű': 'Zárvatermő növénycsoport, amelynek embriója két sziklevelet tartalmaz, levelei hálózatos erezetűek, gyökérzete jellemzően karógyökér (pl. hüvelyesek, gyümölcsfák).',
   'sziklevél': 'A növényi embrió első, tartalék tápanyagot felhasználó levélkéje - száma alapján különíthetők el az egyszikű és a kétszikű zárvatermők.',
 
+  // 3. modul, 10. fejezet: Kettős megtermékenyítés
+  'pollentömlő': 'A kicsírázott pollenszemből növekvő képlet, amely a bibeszálon át a magkezdeményig szállítja a két spermasejtet.',
+  'embriózsák': 'A zárvatermők magkezdeményében található, redukált nő gametofiton, amely a petesejtet és a két poláris magot tartalmazó központi sejtet foglalja magába.',
+  'poláris mag': 'Az embriózsák központi sejtjének két haploid sejtmagja, amelyek a második spermasejttel egyesülve hozzák létre a triploid endospermium-sejtmagot.',
+  'endospermium': 'A zárvatermők magjának hármas (triploid) kromoszómakészletű tápanyag-raktározó szövete, amely a második megtermékenyítési eseményből jön létre, és az embriót táplálja.',
+  'triploid': 'Hármas (3n) kromoszómakészletű - a zárvatermők endospermiumára jellemző állapot, amely egy haploid spermasejt és két haploid poláris mag egyesüléséből jön létre.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

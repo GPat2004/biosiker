@@ -1778,7 +1778,56 @@ export const CURRICULUM = [
         order: 10,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Zárvatermők fejezet) megismert zárvatermőknél a megtermékenyítés különleges, kettős folyamat - ez a fejezet lépésről lépésre mutatja be, hogyan jön létre egyetlen pollentömlőben szállított két spermasejtből egyszerre az embrió és a magot tápláló szövet.',
+            sections: [
+              {
+                heading: 'A pollentömlő és a két spermasejt útja',
+                paragraphs: [
+                  'A bibére hulló pollenszem kicsírázik, és egy hosszú pollentömlőt növeszt, amely a bibeszálon keresztül lenő egészen a magházban lévő magkezdeményig. A pollentömlőben két spermasejt (hímivarsejt) utazik a magkezdeményhez.',
+                  'A magkezdeményben található az embriózsák, amelyben - a petesejt mellett - egy különleges, két sejtmagot (poláris magvakat) tartalmazó központi sejt is található. Amikor a pollentömlő eléri az embriózsákot, mindkét spermasejt egyszerre, két külön megtermékenyítési eseményben vesz részt.',
+                ],
+              },
+              {
+                heading: 'A két megtermékenyítés: embrió és endospermium',
+                paragraphs: [
+                  'Az egyik spermasejt a petesejttel egyesül, létrehozva a diploid zigótát, amelyből a mag embriója fejlődik ki - ez a "hagyományos" megtermékenyítés, amit már a korábban (Osztódás fejezet) megismert állati megtermékenyítésnél is láttunk.',
+                  'A másik spermasejt ezzel egy időben a központi sejt két poláris magjával olvad össze - mivel itt egy haploid spermasejt (n) két haploid poláris maggal (n+n) egyesül, egy különleges, hármas kromoszómakészletű (triploid, 3n) sejtmag jön létre. Ebből fejlődik ki az endospermium, a mag tápanyag-raktározó szövete, amely az embriót táplálja a csírázás kezdeti szakaszában.',
+                ],
+              },
+              {
+                heading: 'Miért "kettős" ez a megtermékenyítés, és miért előnyös?',
+                paragraphs: [
+                  'A folyamatot azért nevezzük kettős megtermékenyítésnek, mert egyetlen pollentömlő két külön megtermékenyítési eseményt indít el egyszerre: az egyik az embriót, a másik a tápanyagraktárt (endospermiumot) hozza létre.',
+                  'Ez energetikailag hatékonyabb stratégia, mint amit a korábban (Nyitvatermők fejezet) megismert nyitvatermőknél láttunk: ott a tápanyagot tároló szövet már a megtermékenyítés ELŐTT kialakul a magkezdeményben, függetlenül attól, hogy egyáltalán sikerül-e a megtermékenyítés. A zárvatermőknél ezzel szemben a tápszövet (endospermium) csak a sikeres megtermékenyítés eredményeként jön létre - így a növény nem "pazarolja" az energiát olyan magkezdeményekre, amelyek végül nem termékenyülnek meg.',
+                  'A folyamat mindössze néhány óra alatt lezajlik, miután a pollentömlő elérte az embriózsákot - ez a gyorsaság is hozzájárul ahhoz, hogy a zárvatermők rendkívül hatékonyan tudjanak szaporodni.',
+                ],
+              },
+              {
+                heading: 'Az endospermium jelentősége az emberi táplálkozásban',
+                paragraphs: [
+                  'Az endospermium nemcsak a csírázó növény számára fontos tápanyagraktár, hanem az emberi táplálkozásban is kiemelkedő szerepet játszik: a gabonaszemek (pl. a búza, a rizs, a kukorica) nagy részét maga az endospermium alkotja, amely keményítőben gazdag, és a liszt fő alapanyagát adja.',
+                  'A kettős megtermékenyítés jelenségét 1898-ban Szergej Nawaschin orosz botanikus fedezte fel és írta le először - ez a felfedezés fontos mérföldkő volt a növényi szaporodásbiológia történetében, hiszen megmutatta, hogy a zárvatermők szaporodása alapvetően eltér minden korábban ismert élőlénycsoportétól.',
+                ],
+              },
+            ],
+            keyTerms: ['pollentömlő', 'embriózsák', 'poláris mag', 'endospermium', 'triploid'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a triploid endospermium genetikai sajátosságait és a jelenség növénynemesítési, gyakorlati alkalmazásait érdemes mélyebben megismerni.',
+            sections: [
+              {
+                heading: 'A triploiditás genetikai sajátosságai és gyakorlati jelentősége',
+                paragraphs: [
+                  'A triploid (3n) endospermium genetikailag különleges: mivel két poláris mag (amelyek ugyanannak az embriózsáknak, tehát ugyanannak az anyanövénynek a sejtmagjai) és egy apai eredetű spermasejt egyesüléséből jön létre, az endospermium genetikai állományának kétharmada anyai, egyharmada apai eredetű - ez eltér a zigóta (és a belőle fejlődő embrió) 50-50%-os arányától.',
+                  'A triploid sejtek jellegzetessége, hogy páratlan kromoszómakészlettel rendelkeznek, ami miatt nem képesek szabályos meiózisra - az endospermium emiatt önmagában nem szaporodóképes szövet, kizárólag tápanyag-raktározó funkciót lát el. Ezt a tulajdonságot a növénynemesítésben is kihasználják: egyes magvatlan gyümölcsök (pl. bizonyos magvatlan görögdinnye-fajták) mesterségesen előidézett triploid növényekből származnak, amelyek - éppen a szabálytalan meiózis miatt - nem képesek életképes magot érlelni.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
       },
       {
         id: 'szivacsok',
