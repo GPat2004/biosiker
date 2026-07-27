@@ -309,6 +309,15 @@ export const GLOSSARY = {
   'tüdő': 'A levegőből történő gázcserét végző légzőszerv, amely a kétéltűeknél jelenik meg először a gerincesek sorában, a bőrlégzést kiegészítve.',
   'amnion': 'Az embriót körülvevő magzatburok, amely a hüllők, madarak és emlősök tojásában/méhében véd a kiszáradástól; a kétéltűek ikrájából ez még hiányzik.',
 
+  // 3. modul, 22. fejezet: Hüllők
+  'hüllők osztálya': 'A Gerincesek altörzsének osztálya (Reptilia), amelynek tagjaira a száraz, szaruréteges bőr, a kizárólagos tüdőlégzés és az amniota tojás jellemző.',
+  'szaruréteg': 'A hüllők bőrét borító, keratinból álló, vízzáró réteg, amely megakadályozza a kiszáradást, de gátolja a bőrlégzést.',
+  'ektoterm szabályozás': 'Olyan testhőmérséklet-szabályozás, amelynél az állat testhőmérséklete a környezeti hőmérséklettől függ (pl. hüllőknél, kétéltűeknél, halaknál).',
+  'jacobson-szerv': 'A szájpadláson elhelyezkedő kémiai érzékszerv, amelyet egyes hüllők (pl. kígyók) a nyelvükkel gyűjtött illatanyagok érzékelésére használnak.',
+  'amniota tojás': 'Magzatburokkal (amnionnal) és szilárd héjjal védett tojás, amely a hüllőknél jelenik meg először, és lehetővé teszi a szaporodás teljes függetlenedését a víztől.',
+  'részlegesen elkülönült kamra': 'A hüllők szívkamráját részben kettéosztó válaszfal, amely csökkenti (de nem szünteti meg) az oxigénben gazdag és szegény vér keveredését.',
+  'húgysav': 'Szilárd, alig vízoldékony nitrogéntartalmú bomlástermék, amelyet a hüllők (és a madarak) választanak ki; kevesebb vizet igényel, mint az ammónia vagy a karbamid kiválasztása.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

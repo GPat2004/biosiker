@@ -2482,7 +2482,68 @@ export const CURRICULUM = [
         order: 22,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Kétéltűek', 'Hüllők'],
+          rows: [
+            ['Kültakaró', 'csupasz, nyálkás bőr', 'száraz, szaruréteggel borított pikkelyek'],
+            ['Légzés', 'tüdő + bőrlégzés', 'kizárólag tüdő'],
+            ['Szaporodás/tojás', 'vízhez kötött ikra, nincs magzatburok', 'szárazföldi, amniota tojás magzatburokkal és héjjal'],
+            ['Szív', 'háromüregű, jelentős vérkeveredés', 'háromüregű, részlegesen elkülönült kamra (krokodiloknál négyüregű)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Kétéltűek fejezet) megismert, még vízhez kötött szaporodású csoport után a hüllőkkel a Gerincesek altörzsének azt az osztályát ismerjük meg, amely már teljesen függetlenedett a víztől, és a szárazföld minden élőhelyét képes volt meghódítani.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A hüllők (Reptilia) a Gerincesek altörzsének osztálya. Testük fejre, törzsre, farokra és jellemzően két pár végtagra tagolódik, bár egyes csoportoknál (pl. kígyók) a végtagok az evolúció során visszafejlődtek, és a mozgást testhullámzással oldják meg.',
+                  'Kültakarójuk száraz, szaruréteggel (keratinnal) borított pikkelyekből áll, amely a korábban (Kétéltűek fejezet) megismert csupasz, nyálkás bőrrel szemben szinte teljesen vízzáró - ez teszi lehetővé, hogy a hüllők a legszárazabb élőhelyeken (pl. sivatagokban) is megéljenek anélkül, hogy kiszáradnának.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásukat a négy végtag (kúszás, futás) vagy - végtagok hiányában - a testhullámzás biztosítja. Táplálkozásuk túlnyomórészt ragadozó jellegű (rovarok, kisebb gerincesek elfogyasztása), bár egyes csoportoknál (pl. egyes teknősfajoknál) növényevés is előfordul.',
+                  'Légzésük - a kétéltűekkel ellentétben - kizárólag tüdővel történik, hiszen a szaruréteg miatt a bőrön keresztül már nem lehetséges a gázcsere; ezt a szaruréteg okozta hátrányt a korábbinál fejlettebb, nagyobb belső felületű tüdő ellensúlyozza.',
+                  'Anyagszállító rendszerük szíve háromüregű, de a kamrában már részleges válaszfal található, amely csökkenti (bár nem szünteti meg teljesen) az oxigénben gazdag és szegény vér keveredését a korábban (Kétéltűek fejezet) megismert állapothoz képest; a krokodiloknál a válaszfal már teljes, így szívük gyakorlatilag négyüregű.',
+                  'Szaporodásuk ivaros, belső megtermékenyítéssel, és jellegzetes szárazföldi, amniota tojással történik: a magzatburok (amnion) és a szilárd, mészhéjú vagy bőrszerű héj együtt védi az embriót a kiszáradástól, így a tojás - a kétéltűek ikrájával ellentétben - szárazföldön is fejlődőképes. Érzékszerveik közül kiemelendő a jól fejlett szem, egyes csoportoknál (pl. kígyóknál) a nyelvvel és a szájpadláson lévő Jacobson-szervvel történő kémiai érzékelés, valamint egyes fajoknál (pl. csörgőkígyók) a hőérzékelő szerv.',
+                ],
+              },
+              {
+                heading: 'Környezeti kapcsolat és testhőmérséklet-szabályozás',
+                paragraphs: [
+                  'A hüllők - a kétéltűekhez és a halakhoz hasonlóan - változó testhőmérsékletűek (ektotermek): testhőmérsékletük a környezeti hőmérséklettől függ, ezért gyakran napoznak a testhőmérséklet emelése, illetve árnyékba húzódnak a hűtés érdekében.',
+                  'A vízzel való takarékos gazdálkodást kiválasztásuk is szolgálja: a korábban (Szervetlen molekulák fejezet) megismert kiválasztási típusok közül a hüllők az urikotelikus utat követik, azaz bomlástermékeiket jellemzően kevés vizet igénylő, szilárd húgysav formájában ürítik, ami tovább csökkenti a szervezet vízveszteségét - ez is hozzájárul ahhoz, hogy száraz élőhelyeken is megéljenek.',
+                  'A szárazságtűrő bőr és az amniota tojás együttesen tették lehetővé, hogy a hüllők a Föld szinte minden szárazföldi élőhelyét meghódítsák, a sivatagoktól a trópusi esőerdőkig, és közülük egyes csoportok (pl. tengeri teknősök, krokodilok) másodlagosan vízi életmódra is áttértek.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük',
+                paragraphs: [
+                  'A hüllők közé tartoznak a pikkelyes hüllők (gyíkok, kígyók), a teknősök (páncéllal védett testű, fogatlan, szarukávával táplálkozó csoport) és a krokodilok (a hüllők legfejlettebb keringési rendszerével rendelkező, vízi ragadozó életmódú csoport) - mindegyik csoport jól példázza a szaruréteg és az amniota tojás közös, ám a testfelépítésben és életmódban igen sokféle megvalósulását.',
+                ],
+              },
+            ],
+            keyTerms: ['Hüllők osztálya', 'szaruréteg', 'ektoterm szabályozás', 'Jacobson-szerv'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hüllők testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert kétéltűekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a kétéltűekhez képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás az amniota tojás megjelenése: a magzatburok (amnion) és a szilárd héj együttesen megszüntetik azt a korlátot, amely a korábban (Kétéltűek fejezet) megismert kétéltűek szaporodását még a vízhez kötötte. Ez a fejlemény tette lehetővé, hogy a gerincesek evolúciója során a szaporodás - és ezáltal az egész életciklus - teljesen függetlenedjen a víztől.',
+                  'A száraz, szaruréteggel borított bőr szintén alapvető újítás: a kétéltűek nedves, kiegészítő légzésre is használt bőréhez képest ez a bőrtípus már nem alkalmas gázcserére, cserébe viszont sokkal hatékonyabban gátolja a párolgást - ez a csere (bőrlégzés elvesztése a jobb vízzáró képességért) tette lehetővé a száraz élőhelyek meghódítását.',
+                  'A szív felépítésében is továbblépés történik: a kamra részleges (krokodiloknál teljes) válaszfala csökkenti az oxigénben gazdag és szegény vér keveredését a kétéltűek háromüregű szívéhez képest, hatékonyabb oxigénellátást biztosítva - ez a folyamat a későbbi (Madarak, Emlősök fejezetekben tárgyalt) csoportoknál a kamra teljes kettéválásával és a négyüregű szív kialakulásával fejeződik be.',
+                  'A kiválasztás átalakulása is a víztől való függetlenedést szolgálja: a kétéltűek (és a legtöbb vízi állat) a mérgező ammóniát nagy mennyiségű vízzel hígítva, vagy kevésbé mérgező, de vízoldékony karbamid formájában ürítik, ami folyamatos vízhozzáférést igényel. A hüllők ezzel szemben szilárd, alig oldódó húgysavat választanak ki, amely az amniota tojáson belül is biztonságosan felhalmozható anélkül, hogy mérgezné a fejlődő embriót - ez az anyagcsere-átalakulás elengedhetetlen előfeltétele volt mind a szárazföldi felnőtt életmódnak, mind a szárazföldi tojásrakásnak.',
+                ],
+              },
+            ],
+            keyTerms: ['amniota tojás', 'részlegesen elkülönült kamra', 'húgysav'],
+          },
+        },
       },
       {
         id: 'madarak',
