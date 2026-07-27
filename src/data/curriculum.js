@@ -2683,17 +2683,369 @@ export const CURRICULUM = [
         },
       },
       {
-        id: 'novenyi-szovetek-szervek',
-        title: 'A növények szövetei, szervei',
+        id: 'novenyi-szovetek',
+        title: 'Növényi szövetek',
         order: 25,
         isFree: false,
-        estimatedMinutes: 26,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Fatest (xilém)', 'Háncsrész (floém)'],
+          rows: [
+            ['Szállított anyag', 'víz és oldott ásványi anyagok', 'szerves tápanyagok (elsősorban cukrok)'],
+            ['Irány', 'egy irányba, felfelé (gyökértől a levelekig)', 'mindkét irányba, az igény szerint'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Harasztok fejezet) megismert, valódi szövetekkel rendelkező növénycsoportok után ebben a fejezetben azt vizsgáljuk meg részletesen, milyen szövettípusok épülnek fel a növények testében, és ezek hogyan szolgálják a növény működését.',
+            sections: [
+              {
+                heading: 'Osztódószövet',
+                paragraphs: [
+                  'Az osztódószövet (más néven merisztéma) sejtjei folyamatosan osztódnak, ezáltal biztosítva a növény egész életén át tartó növekedését - ez alapvető különbség az állatokhoz képest, amelyeknél a növekedés jellemzően egy életszakaszra korlátozódik.',
+                  'Az osztódószövet a növény meghatározott pontjain, például a gyökér- és a hajtáscsúcsban található (csúcsi osztódószövet), és ez felelős a növény hossznövekedéséért; egyes növényeknél (pl. fás szárúaknál) emellett oldalirányú osztódószövet is kialakul, amely a szár és a gyökér vastagodását teszi lehetővé.',
+                ],
+              },
+              {
+                heading: 'Állandósult szövetek',
+                paragraphs: [
+                  'Az osztódószövet sejtjeiből az osztódási képesség elvesztésével, meghatározott alakra és funkcióra differenciálódva jönnek létre az állandósult szövetek: a bőrszövet, a tápanyagkészítő alapszövet és a szállítószövet.',
+                  'A bőrszövet a növény felszínét borítja, és elsődleges szerepe a védelem: megakadályozza a kiszáradást és a kórokozók bejutását. Sejtjei szorosan illeszkednek egymáshoz, felszínüket gyakran vízzáró viaszréteg (kutikula) fedi. A bőrszövetben található apró nyílások, a gázcserenyílások (sztómák) teszik lehetővé a szabályozott gázcserét és páraleadást a növény belseje és a külvilág között - ezek működését a következő (Növényi anyagszállítás) fejezetben ismerjük meg részletesen.',
+                  'A tápanyagkészítő (asszimilációs) alapszövet sejtjei tartalmazzák a fotoszintézishez szükséges klorofillt - ez a szövet végzi a korábban (Fotoszintézis fejezet) megismert fotoszintézis folyamatát, elsősorban a levelekben és a fiatal, zöld hajtásokban.',
+                  'A szállítószövet a víz és a tápanyagok szállítását végzi a növény különböző részei között, és két, eltérő irányban működő részből áll: a fatest (xilém) a gyökér által felvett vizet és az oldott ásványi anyagokat szállítja felfelé, a levelek felé, míg a háncsrész (floém) a levelekben termelt szerves tápanyagokat (elsősorban cukrokat) juttatja el a növény minden részéhez, akár felfelé, akár lefelé. Ez a szövettípus a korábban (Harasztok fejezet) megismertek szerint először a harasztoknál jelenik meg, kialakulása révén tudtak a haraszt-ősök a mohák egyszerű testfelépítéséhez képest jóval nagyobbra nőni.',
+                ],
+              },
+              {
+                heading: 'A szövetek mikroszkópos vizsgálata',
+                paragraphs: [
+                  'A növényi szövetek fénymikroszkóppal jól tanulmányozhatók: egy egyszerű, otthon is elkészíthető preparátum a hagyma alsó (húsos) leveléről lehúzott, egyetlen sejtrétegből álló bőrszövet-nyúzat, amelyen jól megfigyelhető a bőrszövet sejtjeinek szorosan illeszkedő, szabálytalan alakja, valamint - kedvező metszetben - a gázcserenyílások felépítése is.',
+                  'Egyes növényi sejtekben mikroszkóp alatt jól látható kristályzárványok (jellemzően kalcium-oxalát kristályok) figyelhetők meg, amelyek a növény anyagcseréjének melléktermékeként halmozódnak fel a sejtekben, gyakran jellegzetes, tűs vagy csillag alakú formában. Egyes növényeknél (pl. a sóskánál vagy a rebarbaránál) a kristályzárványokat felépítő oxálsav olyan nagy mennyiségben halmozódik fel, hogy ez adja e növények jellegzetes savanykás ízét is.',
+                ],
+              },
+              {
+                heading: 'A szövetek és a növényi szervek kapcsolata',
+                paragraphs: [
+                  'A négy szövettípus (osztódószövet, bőrszövet, alapszövet, szállítószövet) minden növényi szervben - a következő fejezetben tárgyalt gyökérben, szárban és levélben egyaránt - megtalálható, csak eltérő arányban és elrendezésben épülnek fel belőlük: a szervek felépítésének és működésének megértéséhez éppen ezért elengedhetetlen az alkotó szövetek ismerete.',
+                ],
+              },
+            ],
+            keyTerms: ['osztódószövet', 'bőrszövet', 'alapszövet', 'szállítószövet', 'kutikula', 'kristályzárvány'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a kristályzárványok biológiai szerepét, valamint az osztódószövetek két típusa közötti funkcionális különbséget érdemes mélyebben megismerni.',
+            sections: [
+              {
+                heading: 'A kristályzárványok védelmi szerepe és az osztódószövetek két típusa',
+                paragraphs: [
+                  'A növényi sejtekben felhalmozódó kalcium-oxalát kristályzárványoknak nemcsak anyagcsere-melléktermék szerepük van, hanem védelmi funkciót is betöltenek: a kristályok éles, szúrós szerkezete és az oxálsav enyhén maró hatása visszatartja a növényevő állatokat a szövet elfogyasztásától, így a kristályzárvány egyfajta kémiai-mechanikai védekezési stratégiának is tekinthető.',
+                  'Az osztódószövetek két típusa eltérő növekedési irányt szolgál: a csúcsi (elsődleges) osztódószövet a hajtás- és gyökércsúcsban működik, és a növény hossznövekedéséért felel, míg az oldalirányú (másodlagos) osztódószövet - amelyet kambiumnak is neveznek - a szár és a gyökér átmérőjének (vastagságának) növelését teszi lehetővé. Ez utóbbi tevékenysége áll a fás szár kialakulása mögött, amelyet a következő (Gyökér, szár, levél) fejezetben ismerünk meg részletesen - ott azt is látni fogjuk, hogy a kambium tevékenysége az évszakok változásával összhangban szezonálisan ingadozik, ami a fatörzsben jellegzetes, évente egy rétegként megjelenő gyűrűzöttséget (évgyűrűket) eredményez.',
+                  'Az osztódószövet sejtjeinek további különleges tulajdonsága a totipotencia: megfelelő körülmények között akár egyetlen ilyen sejtből is regenerálódhat egy teljes, önálló növény. Ez az elv áll a kertészetben és a növénynemesítésben alkalmazott szövettenyésztéses klónozás hátterében is, amelyet a (Növényi szaporodás és növekedésszabályozás) fejezetben ismerünk meg részletesebben.',
+                  'Ez a tulajdonság jelentősen eltér attól, amit a legtöbb állati sejtnél tapasztalunk: a korábban megismert állatcsoportok (pl. gerincesek) legtöbb kifejlett szövetének sejtjei már véglegesen differenciálódtak, és elvesztették azt a képességüket, hogy önmagukból egy teljesen új egyedet hozzanak létre - ez az egyik legfontosabb szervezeti különbség a növényi és az állati szövetek működése között, és részben magyarázza, hogy a növények miért képesek ilyen könnyen regenerálódni sérülés vagy metszés után.',
+                ],
+              },
+            ],
+            keyTerms: ['kambium', 'totipotencia'],
+          },
+        },
+      },
+      {
+        id: 'gyoker-szar-level',
+        title: 'Gyökér, szár, levél',
+        order: 26,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Lágy szár', 'Fás szár'],
+          rows: [
+            ['Kambium működése', 'nincs vagy csak korlátozott', 'folyamatos, évről évre'],
+            ['Vastagodás', 'nincs másodlagos vastagodás', 'másodlagos vastagodás (évgyűrűk)'],
+            ['Szilárdító szövet', 'kevés, a szár lágy, hajlékony', 'sok, a szár kemény, fás'],
+            ['Példa', 'fűfélék, egynyári dísznövények', 'fák, cserjék'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Növényi szövetek fejezet) megismert négy szövettípusból (osztódószövet, bőrszövet, alapszövet, szállítószövet) épül fel a növény három alapvető vegetatív szerve: a gyökér, a szár és a levél - ebben a fejezetben ezek felépítését és alapfunkcióit ismerjük meg.',
+            sections: [
+              {
+                heading: 'A gyökér, a szár és a levél alapfunkciói',
+                paragraphs: [
+                  'A gyökér elsődleges feladata a növény rögzítése a talajban, valamint a víz és az oldott ásványi anyagok felvétele; egyes növényeknél a gyökér tartalék tápanyagok raktározására is szolgál.',
+                  'A szár a növény tengelye, amely összeköti a gyökeret a levelekkel: biztosítja a növény mechanikai tartását, és a benne futó szállítószöveten keresztül közvetíti a víz és a tápanyagok áramlását a gyökér és a levelek között.',
+                  'A levél a növény fő fotoszintetizáló szerve - itt zajlik a korábban (Fotoszintézis fejezet) megismert folyamat -, emellett a levél felszínén található gázcserenyílásokon keresztül történik a gázcsere és a párologtatás (transzspiráció) is.',
+                ],
+              },
+              {
+                heading: 'A gyökér felépítése',
+                paragraphs: [
+                  'A gyökér hosszmetszetén jól elkülöníthető a gyökércsúcsot védő gyökérsüveg, mögötte az osztódó sejtekből álló zóna, majd a megnyúlási zóna, végül a gyökérszőrös zóna, ahol a gyökér felszínét beborító, a korábban (Zárvatermők fejezet) megismert gyökérszőrök jelentősen megnövelik a felszívó felületet.',
+                  'A gyökér keresztmetszetében kívülről befelé haladva a bőrszövet, majd az alapszövet, legbelül pedig a szállítószövet (fatest és háncsrész) helyezkedik el - ez az elrendezés biztosítja, hogy a gyökérszőrökön felvett víz gyorsan eljusson a szállítószövetbe.',
+                ],
+              },
+              {
+                heading: 'A szár felépítése: lágy szár és fás szár',
+                paragraphs: [
+                  'A lágy szárú növényeknél (pl. a legtöbb egynyári dísznövénynél, fűféléknél) nincs jelentős másodlagos vastagodás, a szár rugalmas és hajlékony marad egész életében. Keresztmetszetükben a szállítónyalábok (amelyekben a fatest és a háncsrész is megtalálható) jellemzően szórtan vagy egy körben elrendezve helyezkednek el, folyamatos kambiumgyűrű nélkül.',
+                  'A fás szárú növényeknél (fák, cserjék) a korábban (Növényi szövetek fejezet) megismert kambium egész életen át folyamatosan új szállítószövetet termel, ami a szár fokozatos vastagodásához (másodlagos vastagodáshoz) vezet. Mivel a kambium tavasszal-nyár elején nagyobb, laza szerkezetű, ősszel-télen pedig kisebb, sűrűbb sejteket hoz létre, ez a szezonális különbség adja a fatest jellegzetes, évente egy-egy gyűrűt alkotó rétegződését (évgyűrűk) - ezek megszámolásával megbecsülhető a fa kora. A fás szár keresztmetszetében kívülről befelé haladva a védő kéreg (bőrszövet), majd a háncsrész, ezt követően a folyamatosan osztódó, vékony kambiumgyűrű, majd a legnagyobb térfogatú farész (fatest, benne az évgyűrűkkel), legbelül pedig a szár közepén elhelyezkedő bél következik.',
+                ],
+              },
+              {
+                heading: 'A levél felépítése',
+                paragraphs: [
+                  'A lomblevél jellemzően levéllemezből és levélnyélből áll, a levéllemezt behálózó levélerek (amelyek a szállítószövet folytatásai) biztosítják a víz és a tápanyagok szállítását, egyúttal mechanikai támasztékot is adnak a levélnek.',
+                  'A lomblevél keresztmetszetében felül és alul egy-egy bőrszövet-réteg található, közöttük az alapszövet két rétegre tagolódik: a felső, oszlopos alapszövetben zajlik a fotoszintézis nagy része (itt a legtöbb a klorofill), az alsó, lazább, sejtközötti járatokkal átszőtt szivacsos alapszövet pedig a gázok (szén-dioxid, oxigén, vízgőz) áramlását segíti a levélen belül.',
+                ],
+              },
+              {
+                heading: 'A felépítés és a működés összefüggése',
+                paragraphs: [
+                  'Mindhárom szerv felépítése jól tükrözi a betöltött funkciót: a gyökér elágazó, nagy felületű, gyökérszőrökkel sűrűn borított szerkezete a hatékony víz- és tápanyagfelvételt szolgálja; a szár szállítószövetének folytonossága biztosítja a gyökér és a levelek közötti zavartalan anyagáramlást; a levél lapos, kiterített formája pedig a lehető legnagyobb felületet biztosítja a fényelnyeléshez és a gázcseréhez.',
+                ],
+              },
+            ],
+            keyTerms: ['gyökérsüveg', 'gyökérszőrös zóna', 'lágy szár', 'fás szár', 'évgyűrű', 'levéllemez', 'oszlopos alapszövet', 'szivacsos alapszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a gyökér, a szár és a levél felépítésének környezethez való anatómiai alkalmazkodását, valamint az e szervek módosulásából kialakuló, speciális funkciójú képleteket kell megismerni.',
+            sections: [
+              {
+                heading: 'Anatómiai alkalmazkodás a környezethez',
+                paragraphs: [
+                  'A száraz élőhelyeken élő növények (xerofiták) anatómiája a vízveszteség csökkentésére rendezkedik be: vastagabb kutikula, kisebb levélfelület (esetenként tövissé módosult levél), valamint mélyre hatoló vagy éppen a talaj felszínén szélesen szétterülő gyökérzet jellemzi őket.',
+                  'A vízben élő növények (hidrofiták) ezzel szemben gyakran vékony kutikulával és kevés gázcserenyílással rendelkeznek (hiszen a víz felől nincs kiszáradási veszély), szöveteikben pedig nagy légjáratok biztosítják a levegő eljutását a víz alatti részekhez is; gyökérzetük emellett gyakran kevésbé fejlett, hiszen a vízfelvétel a test felszínén keresztül is megtörténhet.',
+                ],
+              },
+              {
+                heading: 'Módosult szervek',
+                paragraphs: [
+                  'A gyökér, a szár és a levél az evolúció során gyakran különleges, a törzsfejlődés során kialakult, eltérő funkciót ellátó módosult szervvé alakult: a gyökér módosulhat raktározó gyökérré (pl. répa, cékla - tartalék tápanyagot halmoz fel) vagy léggyökérré (egyes trópusi, nagy páratartalmú esőerdőkben élő növényeknél, amelyek fákra kapaszkodva nőnek, a levegőből is képes nedvességet felvenni).',
+                  'A szár módosulhat föld alatti raktározó gumóvá (pl. a burgonya szárgumója), amely tartalék tápanyagot (keményítőt) halmoz fel, vagy indává, amely a vegetatív szaporodást segíti elő. A levél is módosulhat: a kaktuszok tövissé alakult levele csökkenti a párolgást és egyben védelmet is nyújt, míg egyes rovarfogó növényeknél a levél a tápanyagszegény élőhelyen való túlélést segítő csapdává alakult. A hagyma húsos, tápanyagraktározó rétegei szintén módosult levelek, amelyeket egy rövid, korong alakú módosult szár (a hagymatő) tart össze - ez a példa is jól mutatja, hogy egy adott szerv módosulása gyakran több szomszédos szerv (itt: szár és levél) együttes átalakulásával jár.',
+                ],
+              },
+            ],
+            keyTerms: ['xerofita', 'hidrofita', 'léggyökér', 'szárgumó'],
+          },
+        },
+      },
+      {
+        id: 'novenyi-anyagszallitas',
+        title: 'Növényi anyagszállítás',
+        order: 27,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Nyitott gázcserenyílás', 'Zárt gázcserenyílás'],
+          rows: [
+            ['Zárósejtek állapota', 'vízzel telt (nagy turgornyomás)', 'vizet vesztett (kis turgornyomás)'],
+            ['Gázcsere', 'szabad', 'akadályozott'],
+            ['Párologtatás mértéke', 'nagy', 'lecsökkent'],
+            ['Jellemző körülmény', 'napközben, jó vízellátás mellett', 'szárazság, erős napsütés, éjszaka'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gyökér, szár, levél fejezet) megismert szervek felépítése alapozza meg, hogyan jut el a víz a talajtól egészen a levelek gázcserenyílásáig - ebben a fejezetben ezt az anyagszállítási folyamatot vizsgáljuk meg közelebbről.',
+            sections: [
+              {
+                heading: 'A gázcserenyílás felépítése és működése',
+                paragraphs: [
+                  'A gázcserenyílás (sztóma) a korábban (Növényi szövetek fejezet) megismert bőrszövet két, sajátos alakú zárósejtje által közrefogott apró nyílás, amely elsősorban a levelek alsó felszínén, nagy számban helyezkedik el.',
+                  'A zárósejtek vízfelvétele (turgornyomásuk változása) szabályozza a nyílás méretét: ha a zárósejtek megszívják magukat vízzel, a nyílás kinyílik, ha vizet vesztenek, összezáródik. Ez a mechanizmus teszi lehetővé, hogy a növény a fényviszonyoktól és a vízellátástól függően szabályozza a gázcsere és a párologtatás mértékét.',
+                  'A legtöbb szárazföldi növénynél a gázcserenyílások túlnyomó többsége a levél alsó felszínén helyezkedik el, nem pedig a felsőn: ez csökkenti a közvetlen napsugárzásnak kitett felső felszínen történő túlzott vízvesztést, miközben a gázcsere így is zavartalanul zajlik.',
+                  'A gázcserenyílások szabályozása különösen fontos szárazság idején: ha a növény nem tudná időben bezárni a nyílásokat, a túlzott párologtatás miatt gyorsan kiszáradna - ez a szabályozás tehát nemcsak a gázcserét, hanem a növény vízháztartásának egyensúlyát is védi.',
+                ],
+              },
+              {
+                heading: 'A víz útjának megfigyelése',
+                paragraphs: [
+                  'A víz növényen belüli szállítása egyszerű kísérlettel is megfigyelhető: ha egy fehér virágú növény (pl. szegfű) elvágott szárát színes tintával kevert vízbe állítjuk, a festék felszívódik a szárban futó szállítószöveten keresztül, és néhány óra alatt megszínezi a szár ereit, majd a virág szirmait is.',
+                  'Ez a kísérlet bizonyítja, hogy a víz a szárban egy meghatározott, jól elkülöníthető szöveten keresztül, folyamatosan, alulról felfelé áramlik - ezt a folyamatos vízáramot nevezzük vízszállításnak, a levelek gázcserenyílásain keresztüli vízgőz-leadást pedig párologtatásnak (transzspirációnak).',
+                ],
+              },
+              {
+                heading: 'A szerves tápanyagok szállítása',
+                paragraphs: [
+                  'Amíg a fatest (xilém) kizárólag a talajból felvett vizet és ásványi anyagokat szállítja, alulról felfelé, addig a korábban (Növényi szövetek fejezet) megismert háncsrész (floém) a levelekben a fotoszintézis során termelt szerves tápanyagokat (elsősorban cukrokat) juttatja el a növény minden olyan részéhez, ahol azokra szükség van - ez lehet felfelé (pl. a növekvő hajtáscsúcs) vagy lefelé (pl. a raktározó gyökér) is, a pillanatnyi igényektől függően.',
+                ],
+              },
+              {
+                heading: 'Az anyagszállítás jelentősége',
+                paragraphs: [
+                  'A hatékony anyagszállítás nélkülözhetetlen ahhoz, hogy a növény minden sejtje - még a gyökértől távol eső levelek és hajtáscsúcsok is - folyamatosan hozzájusson a szükséges vízhez, ásványi anyagokhoz és a fotoszintézis során termelt szerves tápanyagokhoz.',
+                  'A korábban (Zárvatermők fejezet) megismertek szerint éppen a fejlett szállítószövet tette lehetővé, hogy egyes növények (pl. a tölgy, a bükk) rendkívül magasra nőjenek: minél magasabb a növény, annál nagyobb utat kell megtennie a víznek a gyökértől a lombkorona csúcsáig, ami csak egy jól működő, folyamatos vízoszlopot fenntartó szállítórendszerrel lehetséges.',
+                  'Ha az anyagszállítás bármilyen okból (pl. tartós szárazság, gyökérkárosodás) akadozik, a növény hervadni, fonnyadni kezd: a sejtek elveszítik a turgornyomásukat fenntartó vizet, ami a levelek és a hajtások lekonyulásában is jól látható - ez a jelenség önmagában is bizonyítja, mennyire létfontosságú a folyamatos vízutánpótlás.',
+                ],
+              },
+            ],
+            keyTerms: ['gázcserenyílás', 'zárósejt', 'transzspiráció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a víz növényen belüli szállítását hajtó kémiai és fizikai erőket, valamint a felvett víz- és szén-dioxid-molekulák sorsát kell megismerni és értelmezni.',
+            sections: [
+              {
+                heading: 'A vízszállítás hajtóerői',
+                paragraphs: [
+                  'A víz növényen belüli, gyökértől a levelekig tartó szállítását négy, egymást kiegészítő hajtóerő teszi lehetővé. A gyökérnyomás a gyökérsejtek aktív, ozmózissal történő anyagfelvételéből ered: a gyökérsejtekben a talajénál nagyobb az oldott anyagok koncentrációja, ezért víz áramlik befelé, ami alulról enyhe nyomást fejt ki a szállítószövetre.',
+                  'A kapillaritás a korábban (Szervetlen molekulák fejezet) megismert kohézió és adhézió együttes hatásából ered: a szállítószövet rendkívül vékony csövecskéiben a vízmolekulák egymáshoz (kohézió) és a cső falához (adhézió) is tapadnak, ami a vizet felfelé "húzza" a csövekben.',
+                  'A legfontosabb hajtóerő a párologtatás (transzspiráció): a levelek gázcserenyílásain keresztül elpárolgó víz szívóhatást (ozmotikus szívóerőt) hoz létre, amely a szállítószövet vízoszlopán keresztül egészen a gyökérig érvényesül, és ez húzza fel a vizet a legmagasabb fák csúcsáig is. Minél nagyobb a párologtatás (pl. száraz, meleg, szeles időben), annál erősebb ez a felfelé húzó hatás.',
+                ],
+              },
+              {
+                heading: 'A víz- és a szén-dioxid-molekula sorsa a növényben',
+                paragraphs: [
+                  'A talajból a gyökérszőrökön felvett vízmolekula a gyökér szállítószövetébe jutva a szárban felfelé áramlik, majd a levélbe érve kétféle sorsra juthat: egy része a gázcserenyíláson keresztül elpárolog (párologtatás), másik része pedig a korábban (Fotoszintézis fejezet) megismert fényszakaszban hasad szét - hidrogénje szerves anyagba épül, oxigénje pedig oxigéngázként távozik a levegőbe.',
+                  'A levegőből a gázcserenyíláson bejutó szén-dioxid-molekula a szivacsos alapszöveten át az oszlopos alapszövet sejtjeibe jut, ahol a fotoszintézis korábban (Fotoszintézis fejezet) megismert sötétszakaszában (Calvin-ciklusban) szerves anyag (szőlőcukor) épül fel belőle.',
+                  'A korábban bemutatott színes tintás kísérlet is jól értelmezhető ezen ismeretek fényében: mivel a festék kizárólag a szállítószövetben, alulról felfelé terjed, a kísérlet egyértelműen bizonyítja, hogy a vízszállítás iránya a gyökértől a levelek felé mutat, és hogy erre a folyamatra kizárólag a fatest (nem pedig a háncsrész) alkalmas - ha ugyanis a háncsrész is részt venne a víz felfelé szállításában, a festéknek a szár belsejében, a fatesttől eltérő helyen is meg kellene jelennie, ezt azonban a kísérlet nem mutatja.',
+                ],
+              },
+            ],
+            keyTerms: ['gyökérnyomás', 'kapillaritás', 'ozmotikus szívóerő'],
+          },
+        },
+      },
+      {
+        id: 'virag-es-termes',
+        title: 'Virág és termés',
+        order: 28,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Egylaki növény', 'Kétlaki növény'],
+          rows: [
+            ['Hím és nő virágok helye', 'ugyanazon az egyeden', 'külön-külön egyedeken'],
+            ['Az egyes virágok típusa', 'egyivarú (hím vagy nő)', 'egyivarú (hím vagy nő)'],
+            ['Példa', 'kukorica, uborka', 'fűzfa, kender'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Zárvatermők fejezet) megismert virágot - amely a takarólevelekből, a bibéből és a zárt magházból áll - ebben a fejezetben az ivarszervek szempontjából vizsgáljuk meg részletesebben, és megismerjük, hogy a virágok milyen eltérő módokon szerveződhetnek egy-egy növényfajon belül.',
+            sections: [
+              {
+                heading: 'A virág biológiai szerepe és részei',
+                paragraphs: [
+                  'A virág biológiai szerepe a zárvatermők szaporodásának biztosítása: ivarszerveket hordoz, és sok esetben - a korábban (Zárvatermők fejezet) megismertek szerint - feltűnő megjelenésével a beporzást végző rovarokat is vonzza. A virág hímivarszerve a porzó, amely a portokból (ahol a pollen termelődik) és az azt tartó porzószálból áll. A virág nőivarszerve a termő, amely a korábban megismert bibéből, az azt a magházhoz kapcsoló bibeszálból és a magházból épül fel.',
+                  'Egy adott hajtáson a virágok elhelyezkedhetnek egyesével, vagy jellegzetes csoportokba (virágzatokba) rendeződve is - ez utóbbira példa a kukorica szárának végén található bugavirágzat, amely önmagában sok apró hímvirágból áll.',
+                ],
+              },
+              {
+                heading: 'Egyivarú és kétivarú virág',
+                paragraphs: [
+                  'Ha egyetlen virágban mind a porzók, mind a termő megtalálhatók, kétivarú virágról beszélünk - a legtöbb ismert virágos növény (pl. a legtöbb gyümölcsfa) ilyen virágot fejleszt.',
+                  'Ha egy virágban csak porzók (hímvirág) vagy csak termő (nővirág) van jelen, egyivarú virágról van szó - ezt figyelhetjük meg például a kukoricánál, amelynek a szárán elhelyezkedő bugavirágzata hímvirágokból, a csövön ülő "selyme" pedig a nővirágokhoz tartozó bibeszálakból áll.',
+                  'A megkülönböztetés gyakorlati szempontból egyszerű: egy adott virágot megvizsgálva azt kell eldönteni, hogy tartalmaz-e egyszerre porzókat és termőt is (ekkor kétivarú), vagy csak az egyiket (ekkor egyivarú, és el kell dönteni, hím- vagy nővirágról van-e szó).',
+                ],
+              },
+              {
+                heading: 'Egylaki és kétlaki növény',
+                paragraphs: [
+                  'Ha egy növényfaj egyedei egyivarú virágokat fejlesztenek, további megkülönböztetés szükséges: az egylaki növényeknél mind a hím-, mind a nővirágok ugyanazon az egyeden találhatók (pl. a kukorica, az uborka vagy a dió esetében), csak a növény különböző részein.',
+                  'A kétlaki növényeknél ezzel szemben a hím- és a nővirágok külön-külön egyeden fejlődnek: vannak "hím" és "nő" egyedek is a fajon belül - ilyen például a fűzfa, a kender vagy a spenót, ahol egy adott növényen csak hímvirágok, egy másikon csak nővirágok találhatók.',
+                  'A kétlaki jelleg gyakorlati jelentőséggel is bír: kertészeti vagy mezőgazdasági termesztésnél oda kell figyelni arra, hogy hím és nő egyedek is jelen legyenek egymás közelében, különben a nővirágok nem termékenyülnek meg, és a növény nem hoz termést.',
+                  'Összefoglalva: a virágok szerveződése (egyivarú vagy kétivarú, egylaki vagy kétlaki) fajonként eltérő stratégiát képvisel ugyanarra a célra - a sikeres megtermékenyítés biztosítására -, és ez a sokféleség jól mutatja, hogy a zárvatermők evolúciója többféle, egymással versengő megoldást is kitermelt ugyanannak az alapproblémának a megoldására.',
+                ],
+              },
+            ],
+            keyTerms: ['porzó', 'termő', 'virágzat', 'egyivarú virág', 'kétivarú virág', 'egylaki növény', 'kétlaki növény'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a nappalhosszúság virágzásra gyakorolt hatását, valamint a virág és a termés részei közötti pontos megfelelést kell megismerni.',
+            sections: [
+              {
+                heading: 'A nappalhosszúság szerepe a virágzásban',
+                paragraphs: [
+                  'Sok növényfaj virágzását nem (csak) a hőmérséklet, hanem a nappal hossza (pontosabban az éjszaka hossza) szabályozza - ezt a jelenséget fotoperiodizmusnak nevezzük. A rövidnappalos növények csak akkor virágoznak, ha a nappal egy kritikus hossznál rövidebb (jellemzően ősszel), a hosszúnappalos növények csak akkor, ha a nappal ennél hosszabb (jellemzően tavasszal-nyáron), míg egyes fajok nappalhossz-semlegesek, virágzásukat más tényezők (pl. a növény kora) határozzák meg.',
+                  'A fotoperiodizmus különösen fontossá válik honosításkor, amikor egy növényt az eredeti élőhelyétől eltérő földrajzi szélességre (és ezáltal eltérő éves nappalhossz-mintázatú területre) telepítenek át: az áttelepített növény virágzási időzítése összezavarodhat, ha az új helyszín nappalhossz-ritmusa jelentősen eltér attól, amihez a faj eredetileg alkalmazkodott - például egy alacsonyabb szélességről (ahol a nappalok egész évben kevésbé ingadoznak) magasabb szélességre telepített, rövidnappalos növény könnyen "elkésik" a virágzással, mielőtt a tél beállna.',
+                ],
+              },
+              {
+                heading: 'A virág és a termés részei közötti kapcsolat',
+                paragraphs: [
+                  'A megtermékenyítés után a virág egyes részei jellegzetes átalakuláson mennek keresztül: a magkezdeményből mag lesz, a magházfalból pedig a termésfal (a termés húsos vagy szilárd, a magot körülvevő része) fejlődik.',
+                  'Egyes növényeknél azonban nem (kizárólag) a magházfal alakul termésfallá, hanem más virágrészek (pl. a vacok, a virág alapját alkotó, kiszélesedett szártag) is részt vesznek a termés kialakításában - az így létrejövő képletet áltermésnek nevezzük. Az almánál például a húsos, ehető rész nagy része a vackból fejlődik, a valódi (magházból származó) termésfal csak a mag körüli, porhanyós "mag ház" belső részét adja. Hasonlóan érdekes eset az eper is: a húsos, piros, ehető rész szintén a vackból alakul ki, míg az apró, magnak tűnő felszíni képletek valójában önálló, apró termések - vagyis botanikai értelemben a magok maguk sem a "gyümölcs" belsejében, hanem annak felszínén helyezkednek el.',
+                ],
+              },
+            ],
+            keyTerms: ['fotoperiodizmus', 'rövidnappalos növény', 'hosszúnappalos növény', 'termésfal', 'áltermés', 'vacok'],
+          },
+        },
+      },
+      {
+        id: 'novenyi-szaporodas-novekedesszabalyozas',
+        title: 'Növényi szaporodás és növekedésszabályozás',
+        order: 29,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Ivaros szaporodás', 'Ivartalan (vegetatív) szaporodás'],
+          rows: [
+            ['Utódok genetikai állománya', 'változatos (a szülőkétől eltérő)', 'azonos az anyanövényével'],
+            ['Sebesség, megbízhatóság', 'lassabb, kevésbé kiszámítható', 'gyors, megbízható'],
+            ['Alkalmazkodóképesség', 'nagyobb (változatosság miatt)', 'kisebb (nincs genetikai változatosság)'],
+            ['Példa', 'mag-, termésképzés', 'tősarj, dugványozás, oltás, szemzés, klónozás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Virág és termés fejezet) megismert virágos szaporodás mellett a növények egy egészen más stratégiával, testrészeikből is képesek új egyedet létrehozni - ebben a fejezetben ezt a kétféle szaporodási stratégiát, valamint a csírázást és a növényi hormonok szerepét ismerjük meg.',
+            sections: [
+              {
+                heading: 'A virágos növények fajfenntartó működései',
+                paragraphs: [
+                  'A virágos növények kétféleképpen tarthatják fenn fajukat: ivaros úton, a korábban (Virág és termés fejezet, illetve Kettős megtermékenyítés fejezet) megismert mag- és termésképzéssel, vagy ivartalan úton, vegetatív szervekkel (gyökérrel, szárral, levéllel) történő szaporodással, amelynek során a szülő növény egy darabjából - megtermékenyítés nélkül - fejlődik ki egy új, önálló egyed.',
+                ],
+              },
+              {
+                heading: 'Ivaros és ivartalan szaporítás összehasonlítása',
+                paragraphs: [
+                  'Az ivaros szaporodás előnye, hogy az utódok genetikailag változatosak (a két szülő tulajdonságainak új kombinációit hordozzák), ami hosszú távon nagyobb alkalmazkodóképességet biztosít a változó környezeti feltételekhez - hátránya viszont, hogy lassabb, energiaigényesebb, és a megtermékenyítés sikere sem garantált.',
+                  'Az ivartalan (vegetatív) szaporodás előnye a gyorsaság és a megbízhatóság: az utód genetikailag azonos az anyanövénnyel, így annak minden - akár gazdaságilag is értékes - tulajdonsága biztosan öröklődik. Hátránya, hogy a genetikai változatosság hiánya miatt az egész állomány egyformán érzékeny lehet egy adott kórokozóra vagy kedvezőtlen környezeti változásra - éppen ezért a kertészetben és a mezőgazdaságban gyakran tudatosan kombinálják a kétféle szaporítási módot, hogy a gazdaságilag értékes tulajdonságokat megőrizzék, miközben a génállomány sem szegényedik el teljesen.',
+                ],
+              },
+              {
+                heading: 'A növények ivartalan szaporítási módjai',
+                paragraphs: [
+                  'A tősarjas szaporodás során az anyanövény tövéből új hajtás nő ki, amely előbb-utóbb önálló gyökérzetet fejleszt (pl. sok gyümölcsfajta természetes szaporodása). A dugványozás során egy levágott szár- vagy levéldarabot gyökereztetnek meg, amelyből teljes új növény fejlődik.',
+                  'Az oltás során egy értékes tulajdonságú fajta ágát (nemes ág) egy másik, ellenállóbb gyökérzetű növénybe (alany) illesztik be, míg a szemzés hasonló elven működik, de csak egyetlen rügyet ültetnek át az alanyba. A klónozás a korábban (Növényi szövetek fejezet) megismert totipotencia elvét használja ki: a növény osztódó szövetének akár egyetlen sejtjéből is szövettenyésztéssel felnevelhető egy, az eredetivel genetikailag megegyező új egyed - ez az eljárás teszi lehetővé, hogy egy különösen értékes, ritka tulajdonságú egyedi növényből nagy tömegben, egységesen jó minőségű utódokat állítsanak elő.',
+                ],
+              },
+              {
+                heading: 'A csírázás feltételei',
+                paragraphs: [
+                  'A mag csírázásához külső feltételekre (megfelelő hőmérséklet, elegendő víz és oxigén, egyes fajoknál fény jelenléte vagy hiánya) és belső feltételekre (életképes embrió, valamint a mag nyugalmi állapotának megszűnése) egyaránt szükség van - ezek hiányában a mag akár évekig is csírázás nélkül, nyugalmi állapotban maradhat.',
+                  'Egy egyszerű csírázási kísérlettel jól vizsgálható ezeknek a feltételeknek a szükségessége: ha azonos fajtájú magvakat (pl. babszemeket) nedves vattán, de eltérő körülmények között (pl. eltérő hőmérsékleten, vagy vízhiányos, illetve oxigénelzárt környezetben) csíráztatunk, összehasonlítható, hogy az egyes feltételek hiánya hogyan gátolja vagy lassítja a csírázást.',
+                ],
+              },
+              {
+                heading: 'Hormonális hatásra bekövetkező növényi életműködések',
+                paragraphs: [
+                  'A növények életműködéseinek jelentős részét hormonok szabályozzák: ilyen hormonális hatásra következik be például a gyümölcsérés, a növekedés üteme, valamint a nyugalmi állapotba lépés (pl. a lombhullás előtti rügy-nyugalom) és az abból való kilépés is - ezek konkrét molekuláris hátterét (pl. az auxinok szerepét) emelt szinten ismerjük meg részletesebben.',
+                ],
+              },
+            ],
+            keyTerms: ['vegetatív szaporodás', 'tősarj', 'dugványozás', 'oltás', 'szemzés', 'klónozás', 'csírázás', 'nyugalmi állapot'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a növényi hormonok közül az auxinok általános szerepét kell megismerni a növények életében.',
+            sections: [
+              {
+                heading: 'Az auxinok szerepe a növények életében',
+                paragraphs: [
+                  'Az auxinok a növényi hormonok egyik legfontosabb csoportja, amelyek elsősorban a hajtáscsúcsban termelődnek, és a növény egész testében kifejtik hatásukat. Az auxinok tartják fenn a hajtáscsúcs-dominanciát: a csúcsi rügyben termelődő auxin gátolja az oldalrügyek kihajtását, ezért ha a csúcsi rügyet eltávolítjuk (pl. metszéskor), az oldalrügyek felszabadulnak a gátlás alól, és a növény bokrosabban kezd nőni.',
+                  'Az auxinok egyenlőtlen eloszlása áll a növény fény és nehézségi erő irányába történő növekedési válaszai (tropizmusok) mögött is: a fénnyel ellentétes oldalon felhalmozódó auxin ott gyorsabb sejtmegnyúlást okoz, ezért a hajtás a fény felé hajlik (fototropizmus); hasonló elven, a gravitáció hatására egyenlőtlenül eloszló auxin irányítja a gyökér lefelé, illetve a hajtás felfelé növekedését (geotropizmus).',
+                  'Az auxinok gyökeresedést serkentő hatását a gyakorlatban is kihasználják: a korábban megismert dugványozásnál és oltásnál alkalmazott gyökereztető szerek jellemzően mesterséges auxin-tartalmú vegyületeket tartalmaznak, amelyek felgyorsítják az új gyökerek kialakulását a levágott növényi részeken.',
+                  'Az auxinszint változása a korábban (középszinten) említett gyümölcsérés és -leválás hátterében is szerepet játszik: amíg a fejlődő magban és a fiatal termésben magas az auxinszint, a termés erősen kapcsolódik a növényhez, az auxintermelés csökkenésével azonban a termés (és ősszel a lombhullás során a levél is) leválik a növényről - ez mutatja, hogy ugyanaz a hormon a növény életének több, egymástól látszólag távoli folyamatát (növekedés, tropizmus, leválás) is képes összehangoltan szabályozni - ez a fajta, egyetlen molekulával megvalósuló, sokrétű szabályozás a növényi hormonok egyik legfontosabb, általános jellemzője.',
+                ],
+              },
+            ],
+            keyTerms: ['auxin', 'hajtáscsúcs-dominancia', 'fototropizmus', 'geotropizmus'],
+          },
+        },
       },
       {
         id: 'allati-szovetek-szaporodas-viselkedes',
         title: 'Az állatok szövetei, szaporodása, viselkedése',
-        order: 26,
+        order: 30,
         isFree: false,
         estimatedMinutes: 28,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
