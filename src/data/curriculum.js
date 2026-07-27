@@ -1835,7 +1835,56 @@ export const CURRICULUM = [
         order: 11,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Teleptest és álszövet fejezet) megismert szivacsok testfelépítését ebben a fejezetben az állatvilág rendszeres bemutatásának első állomásaként, valamennyi életműködés szempontjából mélyítjük el - a szivacsok a legegyszerűbb testfelépítésű állatok, ezért esetükben számos életműködés hiánya éppúgy tanulságos, mint a jelenléte.',
+            sections: [
+              {
+                heading: 'Testfelépítés és kültakaró',
+                paragraphs: [
+                  'A szivacsok teste - ahogy azt korábban megismertük - pórusokkal átjárt, zsákszerű forma, amelynek belsejében egy központi üreg (spongocoel) található; az ide beáramló, megszűrt vizet a test tetején lévő nagyobb nyíláson (oscŭlum) keresztül lövellik ki. Testük aszimmetrikus vagy csak sugarasan szimmetrikus, és - mivel nincsenek valódi szöveteik - külső rétegüket (kültakarójukat) egyszerű, laposhám-szerű sejtréteg alkotja.',
+                ],
+              },
+              {
+                heading: 'Életműködések: amik hiányoznak, és amik jelen vannak',
+                paragraphs: [
+                  'A szivacsok felnőtt formájukban helyhez kötöttek (szesszilisek): nincs önálló mozgásra képes izomszövetük, egész életüket egy adott ponthoz rögzülve töltik - egyedül a szabadon úszó, ostoros lárvaállapotuk képes helyváltoztatásra. A lárva rövid ideig (néhány órától néhány napig) tartó vándorlás után egy alkalmas felszínhez rögzül, és csak ekkor alakul át a jellegzetes, helyhez kötött felnőtt formává. Táplálkozásukat és a vízáramlás keltését - ahogy azt korábban megismertük - a gallérsejtek végzik, önálló légzőszervük és keringési rendszerük nincs: a gázcsere egyszerű diffúzióval zajlik, a tápanyagokat pedig az amőboid sejtek szállítják sejtről sejtre.',
+                  'Idegrendszerük és érzékszervük sincs: az egyes sejtek önállóan reagálhatnak ingerekre, de nincs olyan összehangoló rendszer, amely az egész testet egységes válaszra késztetné. Szaporodásuk kétféle lehet: ivartalanul bimbózással (rügyezéssel) új egyedeket hozhatnak létre, ivarosan pedig - mivel a legtöbb faj hímnős (egy egyeden belül mindkét ivarsejttípus termelődik) - ivarsejteket bocsátanak a vízbe, ahol a megtermékenyítés végbemegy.',
+                ],
+              },
+              {
+                heading: 'Kapcsolat a környezettel',
+                paragraphs: [
+                  'A szivacsok kizárólag vízi (túlnyomórészt tengeri, néhány fajuk édesvízi) élőlények, hiszen táplálkozásuk és gázcseréjük is a vízáramláson alapul. Kiemelkedő regenerációs képességgel rendelkeznek: ha testük egy darabja leválik vagy szétesik, abból akár egy teljesen új egyed is kifejlődhet - ez a tulajdonság a legtöbb állatcsoportnál sokkal korlátozottabb. Méretük rendkívül változatos: néhány milliméteres formáktól a két métert is elérő óriás szivacsokig terjed.',
+                ],
+              },
+              {
+                heading: 'A szivacsok csoportosítása és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A szivacsokat vázuk anyaga szerint csoportosíthatjuk: a mészszivacsok mésztűkből, az üvegszivacsok kovatűkből, a szarúszivacsok pedig rugalmas fehérjerostokból (spongin) építik fel vázukat. Ez utóbbi csoport képviselői (pl. a mosdószivacs) régóta ismertek az emberi felhasználásban is: természetes vázukat egykor tisztálkodásra és festékfelvitelre használták, mára azonban ezt a szerepet többnyire szintetikus szivacsok vették át.',
+                  'A szivacsok fontos szerepet töltenek be a tengeri életközösségekben is: hatékony vízszűrő képességük hozzájárul a víz tisztításához, üregeik pedig számos más tengeri állatnak (pl. rákoknak, férgeknek) nyújtanak búvóhelyet - ez a fajta együttélés jó példa arra, hogyan alakíthat ki egy helyhez kötött, egyszerű testfelépítésű élőlény is összetett kapcsolatokat a környezetében élő más fajokkal.',
+                ],
+              },
+            ],
+            keyTerms: ['spongocoel', 'oscŭlum', 'szesszilis', 'hímnős', 'mészszivacs', 'üvegszivacs', 'szarúszivacs'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szivacsok testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni - vagyis azt, hogy mi különbözteti meg őket a korábban megismert, még nem állati szerveződési formáktól.',
+            sections: [
+              {
+                heading: 'A szivacsok evolúciós újítása: a sejtszintű munkamegosztás',
+                paragraphs: [
+                  'A szivacsoknál jelenik meg először az állatvilágban a sejtszintű differenciálódás: a test különböző funkciókra specializálódott sejttípusokból épül fel (gallérsejt, vázsejt, amőboid sejt, kültakaró-sejt) - ez az evolúciós újítás önmagában is jelentős előrelépés az egysejtű eukariótákhoz és a teleptestes szerveződésű élőlényekhez képest, hiszen lehetővé teszi, hogy különböző sejtek különböző feladatokat lássanak el egyetlen testen belül.',
+                  'Ugyanakkor a szivacsok testfelépítése még nem éri el a valódi szövetes szerveződés szintjét: a differenciálódott sejtek nem szerveződnek egységes eredetű, összehangoltan működő szövetekké, és nincs idegrendszerük sem, amely az egyes sejtek működését koordinálná. Ez a "hiányzó láncszem" jelöli ki a következő fejezetekben (Csalánozók, Laposférgek) megismerendő állatcsoportok fő evolúciós előrelépését: a valódi szövetek és az első idegsejtek megjelenését.',
+                  'A gallérsejtek szerkezete és működése rendkívül hasonlít a korábban (Egysejtű eukarióták fejezet) megismert egysejtű, ostoros protisztákéhoz - ez a hasonlóság az egyik legerősebb bizonyíték amellett, hogy a többsejtű állatok evolúciósan egy hasonló, ostoros egysejtű ősből alakulhattak ki, amelynek sejtjei fokozatosan differenciálódtak és specializálódtak.',
+                  'A szivacsok kiemelkedő regenerációs képességének hátterében differenciálatlan, ún. archeociták állnak: ezek a sejtek bármelyik specializált sejttípussá (gallérsejtté, vázsejtté, amőboid sejtté) képesek átalakulni, hasonlóan ahhoz, ahogy az emberi szervezet őssejtjei is különböző sejttípusokká fejlődhetnek. Ez a rugalmasság teszi lehetővé, hogy egy szétesett vagy szétvágott szivacs testrészből akár egy teljesen új, működőképes egyed regenerálódjon.',
+                  'A szivacsokat éppen a valódi szövetek hiánya miatt sorolják a Parazoa ("féligállatok") csoportjába, szemben minden más állattörzzsel, amelyek Eumetazoának ("valódi állatoknak") számítanak, mivel rendelkeznek valódi szövetekkel és - legalábbis egyszerű formában - idegrendszerrel. Ez az alapvető megkülönböztetés jelöli ki a következő fejezetben (Csalánozók) tárgyalandó nagy evolúciós ugrást.',
+                ],
+              },
+            ],
+            keyTerms: ['archeocita', 'Parazoa', 'Eumetazoa'],
+          },
+        },
       },
       {
         id: 'csalanozok',

@@ -208,6 +208,18 @@ export const GLOSSARY = {
   'endospermium': 'A zárvatermők magjának hármas (triploid) kromoszómakészletű tápanyag-raktározó szövete, amely a második megtermékenyítési eseményből jön létre, és az embriót táplálja.',
   'triploid': 'Hármas (3n) kromoszómakészletű - a zárvatermők endospermiumára jellemző állapot, amely egy haploid spermasejt és két haploid poláris mag egyesüléséből jön létre.',
 
+  // 3. modul, 11. fejezet: Szivacsok
+  'spongocoel': 'A szivacsok testének belsejében található központi üreg, amelybe a pórusokon átszűrt víz áramlik be.',
+  'oscŭlum': 'A szivacsok testének tetején lévő nagyobb nyílás, amelyen keresztül a megszűrt víz kilövell a spongocoelből.',
+  'szesszilis': 'Helyhez kötött, önálló mozgásra nem képes életmód (pl. a felnőtt szivacsoké).',
+  'hímnős': 'Olyan élőlény (pl. sok szivacsfaj), amelynek egyetlen egyede mindkét ivarsejttípust (hím- és petesejtet is) termeli.',
+  'mészszivacs': 'Mésztűkből felépülő vázzal rendelkező szivacscsoport.',
+  'üvegszivacs': 'Kovatűkből felépülő vázzal rendelkező szivacscsoport.',
+  'szarúszivacs': 'Rugalmas fehérjerostokból (spongin) felépülő vázzal rendelkező szivacscsoport (pl. mosdószivacs).',
+  'archeocita': 'A szivacsok differenciálatlan sejtje, amely bármelyik specializált sejttípussá (gallérsejtté, vázsejtté, amőboid sejtté) átalakulhat - a kiemelkedő regenerációs képesség sejtszintű alapja.',
+  'parazoa': 'A szivacsokat magába foglaló állatcsoport, amelynek tagjai nem rendelkeznek valódi, differenciálódott szövetekkel.',
+  'eumetazoa': 'A valódi szövetekkel és idegrendszerrel rendelkező állatok gyűjtőneve - minden állattörzs ide tartozik a szivacsok kivételével.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
