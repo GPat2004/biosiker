@@ -2004,7 +2004,60 @@ export const CURRICULUM = [
         order: 14,
         isFree: false,
         estimatedMinutes: 12,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Laposférgek fejezet) megismert lapított testű férgek után a gyűrűsférgekkel egy jóval fejlettebb testfelépítésű csoportot ismerünk meg - esetükben már megjelenik a szelvényezettség és a valódi testüreg is, amelyek alapjaiban új életműködési lehetőségeket nyitnak meg.',
+            sections: [
+              {
+                heading: 'Testfelépítés: szelvényezettség és testüreg',
+                paragraphs: [
+                  'A gyűrűsférgek (pl. a földigiliszta) az Állatok országán belül a Gyűrűsférgek törzsét (Annelida) alkotják. Testük jellegzetesen szelvényezett (metamer): egymást követő, egymáshoz hasonló felépítésű gyűrűkből (szelvényekből) áll, amelyek mindegyike tartalmazza a fontosabb szervek egy-egy példányát (pl. idegdúcot, kiválasztószervet).',
+                  'A laposférgekkel ellentétben a gyűrűsférgeknek már valódi testüregük (coelomájuk) van: a mezoderma két rétege között kialakuló, folyadékkal telt üreg, amely hidrosztatikus vázként funkcionál - a benne lévő folyadék nyomása és az izmok együttes munkája teszi lehetővé a szelvényenkénti, hullámzó mozgást.',
+                  'A test elülső végén (fejtájékon) koncentrálódnak az érzékszervek és az agydúc - ugyanaz a jelenség, amit a korábban (Laposférgek fejezet) megismert szemfoltok és agydúc elülső elhelyezkedésénél már megfigyeltünk, csak itt szelvényenkénti idegdúcokkal kiegészülve, fejlettebb formában.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A gyűrűsférgek nedves, csupasz kültakarójukon keresztül lélegeznek (bőrlégzés), egyes vízi fajoknál kopoltyú is kialakult. Mozgásukat a testfalban lévő körkörös és hosszanti izmok, valamint a szelvényenként megjelenő serték (apró tüskeszerű képletek) segítik, amelyek megkapaszkodnak a talajban vagy az aljzatban.',
+                  'Táplálkozásukhoz egy elejétől a végéig egyenes, két nyílással (szájnyílással és végbélnyílással) rendelkező bélcsatorna szolgál - ez a korábban (Csalánozók, Laposférgek fejezet) megismert egy nyílású béléhez képest jelentős előrelépés, mert lehetővé teszi az egyirányú, folyamatos táplálékáramlást és a hatékonyabb, szakaszos emésztést.',
+                  'A gyűrűsférgeknél jelenik meg elsőként a zárt keringési rendszer: a vér mindig erekben áramlik (nem szabadon a testüregben), a hát- és hasi ér közötti keringést pedig összehúzódó, szívszerű érszakaszok tartják fenn. Kiválasztásukat szelvényenként megismétlődő metanefridiumok végzik, idegrendszerüket pedig egy agydúc és egy hasi idegdúclánc alkotja, amely szelvényenként újabb dúcokat tartalmaz.',
+                ],
+              },
+              {
+                heading: 'Szaporodás és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A gyűrűsférgek jelentős része hímnős (pl. a földigiliszta), de a megtermékenyítéshez ekkor is két egyed szükséges: a nyeregöv (clitellum) által termelt váladék segíti az ivarsejtek cseréjét és a peték védelmét. Más csoportjaik (pl. a tengeri soksertéjűek) ivarilag elkülönültek.',
+                  'A földigiliszták kiemelkedő ökológiai és mezőgazdasági jelentőséggel bírnak: a talajban ásva lazítják és szellőztetik azt, elhalt szerves anyagokat dolgoznak fel, ezzel javítva a talaj termékenységét. A piócák évszázadokon át az orvosi "érvágás" eszközei voltak, ma pedig a mikrosebészetben alkalmazzák őket, mivel nyáluk véralvadásgátló anyagot tartalmaz.',
+                ],
+              },
+              {
+                heading: 'Csoportjaik és élőhelyük',
+                paragraphs: [
+                  'A gyűrűsférgek három nagy csoportra oszthatók: a tengerben élő soksertéjűek (pl. a nereis), a talajban élő kevéssertéjűek (pl. a földigiliszta), és az édesvízben vagy szárazföldön élő piócák.',
+                  'Élőhelyük rendkívül változatos: megtalálhatók a tengerekben, az édesvizekben és a nedves talajban egyaránt - közös vonásuk, hogy nedves környezetet igényelnek, mivel bőrlégzésükhöz a kültakaró állandó nedvessége elengedhetetlen. Méretük is széles skálán mozog: a néhány milliméteres fajoktól a több méter hosszúságot is elérő óriás soksertéjűekig terjed.',
+                ],
+              },
+            ],
+            keyTerms: ['Gyűrűsférgek törzse', 'szelvényezettség', 'testüreg', 'serte', 'zárt keringési rendszer', 'metanefridium', 'nyeregöv'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a gyűrűsférgek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert laposférgekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a laposférgekhez képest',
+                paragraphs: [
+                  'A laposférgeknél megismert triploblasztikus, de testüreg nélküli (acoelomata) szerveződéshez képest a gyűrűsférgeknél megjelenik a valódi testüreg (coeloma) - ez a folyadékkal telt üreg hidrosztatikus vázként működik, ami sokkal hatékonyabb, erőteljesebb mozgást tesz lehetővé, mint a laposférgek parenchimával kitöltött, testüreg nélküli teste.',
+                  'A szelvényezettség (metaméria) megjelenése is jelentős evolúciós előny: mivel a test ismétlődő, egymáshoz hasonló egységekből áll, egy-egy szelvény sérülése vagy elvesztése nem feltétlenül veszélyezteti az egész állat életét, és az izomzat szelvényenkénti, egymástól független működése finomabb, hullámzó mozgásformákat tesz lehetővé, mint a laposférgek egységes bőrizomtömlője.',
+                  'A kétnyílású bélcsatorna (a laposférgek/csalánozók egy nyílású béléhez képest) és a zárt keringési rendszer megjelenése együttesen sokkal hatékonyabb anyagcserét biztosít: a folyamatos, egyirányú táplálékáramlás lehetővé teszi, hogy a bél különböző szakaszai specializálódjanak (pl. előemésztés, felszívás, salakanyag-tömörítés), a zárt erekben áramló vér pedig gyorsabban és célzottabban szállítja a tápanyagokat és a gázokat a test minden pontjára, mint a laposférgek egyszerű diffúziója.',
+                  'A testüreg megjelenésének további fontos következménye, hogy lehetővé teszi a belső szervek egymástól független mozgását és fejlődését: mivel a bélcsatorna és a testfal között folyadék van, a bél önállóan mozoghat (perisztaltikus mozgással továbbítva a táplálékot), függetlenül a test külső mozgásaitól - ez a laposférgeknél, ahol a szervek közvetlenül a parenchimába vannak "beágyazva", nem lehetséges.',
+                  'Ezek az evolúciós újítások (testüreg, szelvényezettség, zárt keringés, kétnyílású bél) együttesen tették lehetővé, hogy a gyűrűsférgek jelentősen nagyobb testméretet és összetettebb életműködéseket érjenek el, mint a laposférgek - ez az a fejlődési irány, amelyet a következő fejezetekben (Rovarok, Csigák) még tovább fejlesztett formákban fogunk viszontlátni.',
+                ],
+              },
+            ],
+            keyTerms: ['acoelomata'],
+          },
+        },
       },
       {
         id: 'rovarok',

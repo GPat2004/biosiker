@@ -245,6 +245,16 @@ export const GLOSSARY = {
   'triploblasztikus': 'Három csíralemezből (ektoderma, mezoderma, entoderma) felépülő testfelépítés, amely a laposférgeknél jelenik meg először.',
   'cephalizáció': 'Az érzékszervek és az idegi irányítás (agydúc, idegkötegek) koncentrálódása a test elülső végén - a kétoldali szimmetriájú állatoknál jelenik meg.',
 
+  // 3. modul, 14. fejezet: Gyűrűsférgek
+  'gyűrűsférgek törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. földigiliszta, piócák) szelvényezett testfelépítésűek, valódi testüreggel és zárt keringési rendszerrel rendelkeznek.',
+  'szelvényezettség': 'A test ismétlődő, egymáshoz hasonló felépítésű gyűrűkből (szelvényekből) való felépülése - a gyűrűsférgeknél jelenik meg elsőként.',
+  'testüreg': 'A mezoderma két rétege között kialakuló, folyadékkal telt üreg (coeloma), amely hidrosztatikus vázként funkcionál - a gyűrűsférgeknél jelenik meg elsőként.',
+  'serte': 'A gyűrűsférgek testszelvényein található apró, tüskeszerű képlet, amely a mozgás során a talajban vagy az aljzatban való megkapaszkodást segíti.',
+  'zárt keringési rendszer': 'Olyan keringési rendszer, amelyben a vér mindig erekben áramlik, nem szabadon a testüregben - a gyűrűsférgeknél jelenik meg elsőként.',
+  'metanefridium': 'A gyűrűsférgek szelvényenként megismétlődő kiválasztószerve.',
+  'nyeregöv': 'A hímnős gyűrűsférgek (pl. földigiliszta) testén található duzzanat (clitellum), amely a szaporodáshoz szükséges váladékot termeli.',
+  'acoelomata': 'Valódi testüreg nélküli testfelépítés, amelynél a szervek közötti teret parenchima tölti ki (pl. a laposférgeknél).',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
