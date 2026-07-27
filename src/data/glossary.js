@@ -180,6 +180,15 @@ export const GLOSSARY = {
   'korpafű': 'Apró levelű, spórával szaporodó haraszt-csoport.',
   'előtenyész': 'A harasztok apró, rövid életű, haploid gametofiton nemzedéke, amely a kicsírázott spórából fejlődik ki, és az ivarszerveket hordozza.',
 
+  // 3. modul, 8. fejezet: Nyitvatermők
+  'mag': 'Védőburokkal és tartalék tápanyaggal ellátott embriót tartalmazó szaporítóképlet, amely a nyitvatermőknél jelenik meg először.',
+  'toboz': 'A nyitvatermők (pl. fenyők) szaporítóképlete - a hímtobozban pollen, a nőtobozban magkezdemény termelődik.',
+  'pollen': 'A magvas növények hímivarsejtet tartalmazó, szél vagy rovarok által terjesztett szaporítóképlete.',
+  'szélbeporzás': 'A pollen szél általi terjedése, amely lehetővé teszi a víztől független megtermékenyítést.',
+  'heterospória': 'Két, egymástól méretben és funkcióban eltérő spóratípus (mikrospóra, megaspóra) képzése - a nyitvatermőknél és a zárvatermőknél jellemző jelenség.',
+  'mikrospóra': 'A heterospória kisebb spóratípusa, amelyből a hím gametofiton (végül a pollenszem) fejlődik ki.',
+  'megaspóra': 'A heterospória nagyobb spóratípusa, amelyből a nő gametofiton fejlődik ki - ez marad a magkezdeményen belül, védett környezetben.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

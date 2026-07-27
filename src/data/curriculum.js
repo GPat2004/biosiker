@@ -1663,7 +1663,49 @@ export const CURRICULUM = [
         order: 8,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Harasztok fejezet) megismert, még vízhez kötött szaporodású harasztok után a nyitvatermőkkel (pl. fenyőkkel) a magvas növények első csoportját ismerjük meg - ez a fejezet két olyan evolúciós "újítást" mutat be, amelyek végleg függetlenítik a szaporodást a víztől.',
+            sections: [
+              {
+                heading: 'A mag: az embrió védelme és tartalék tápanyaga',
+                paragraphs: [
+                  'A nyitvatermőknél jelenik meg először a mag, amely a harasztok spórájánál sokkal ellenállóbb és "felkészültebb" szaporítóképlet: a magban lévő embriót védőburok veszi körül, és tartalék tápanyag is kíséri, amely a csírázás kezdeti szakaszában táplálja a fejlődő növénykét. A magkezdemény kívülről nincs körülzárva magházzal - innen ered a csoport neve is: nyitvatermő.',
+                  'A spórával szemben a mag jelentős előnye, hogy az embrió a tartalék tápanyagnak köszönhetően akár hosszú, kedvezőtlen időszakokat (pl. szárazságot, telet) is túlélhet nyugalmi állapotban, és csak akkor csírázik ki, amikor a környezeti feltételek ismét kedvezővé válnak - ez sokkal nagyobb túlélési esélyt biztosít, mint a harasztok apró, tartalék tápanyag nélküli spórái.',
+                  'A nyitvatermők jellegzetes szaporítóképletei a tobozok: a hímtobozokban termelődik a pollen (a hímivarsejtet tartalmazó, szél által terjesztett képlet), a nőtobozokban pedig a magkezdemények találhatók. Fontos pontosítani, hogy ez még nem a szó szoros értelmében vett virág - a valódi virágot a következő fejezetben (Zárvatermők) megismerendő csoport "találja fel". Az érettségi anyagok néha lazábban, "virágként" is hivatkoznak a tobozra - ha egy feladatban ezzel a szóhasználattal találkozol, tudd, hogy az valójában a tobozra vonatkozik.',
+                ],
+              },
+              {
+                heading: 'A víztől független szaporodás',
+                paragraphs: [
+                  'A pollen szél általi terjedése (szélbeporzás) kiváltja azt, hogy a hímivarsejtnek - ahogy azt a harasztoknál megismertük - vízben kellene úsznia a petesejthez: a pollenszem a levegőben jut el a nőtobozig, ahol egy pollentömlő nő ki belőle, és ezen keresztül jut el a hímivarsejt közvetlenül a petesejthez. Ez az evolúciós "újítás" teszi lehetővé, hogy a nyitvatermők a harasztoknál jóval szárazabb, kedvezőtlenebb élőhelyeken (pl. hegyvidéki, hideg vagy száraz területeken) is elterjedjenek.',
+                  'A legtöbb nyitvatermő (pl. a fenyők) tűlevelű és örökzöld: a levelek kisebb felülete csökkenti a párologtatás mértékét, ami szintén hozzájárul a szárazabb, hidegebb élőhelyekhez való alkalmazkodáshoz. Jellegzetes hazai és világszerte elterjedt képviselőik az erdeifenyő, a lucfenyő és a jegenyefenyő, de ide tartozik az élő fosszíliaként is emlegetett ginkgo is.',
+                ],
+              },
+              {
+                heading: 'Rendszertani hely és jelentőségük',
+                paragraphs: [
+                  'A nyitvatermők a Növények országán belül önálló törzset alkotnak, és mintegy 300 millió évvel ezelőtt jelentek meg - hosszú ideig, a dinoszauruszok korában ők voltak a szárazföld domináns növényei, mielőtt a később (Zárvatermők fejezet) megismerendő zárvatermők átvették volna vezető szerepüket.',
+                  'Gazdasági jelentőségük ma is jelentős: a fenyőerdők faanyaga az egyik legfontosabb nyersanyag az építőiparban és a papírgyártásban, tűlevelük pedig illóolajokat is tartalmaz, amelyeket többek között a gyógyászatban is felhasználnak. Örökzöld jellegük miatt télen is jelentős szerepet töltenek be az erdei életközösségek táplálék- és élőhelykínálatában.',
+                ],
+              },
+            ],
+            keyTerms: ['nyitvatermő', 'mag', 'toboz', 'pollen', 'szélbeporzás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni, milyen sejtszintű változás tette lehetővé a mag kialakulását: a heterospóriát.',
+            sections: [
+              {
+                heading: 'Heterospória: az út a maghoz',
+                paragraphs: [
+                  'A harasztok - ahogy azt korábban megismertük - egyetlen típusú spórát termelnek, amelyből egy önálló, mindkét ivarszervet (archegónium és antheridium) hordozó előtenyész fejlődik. A nyitvatermőknél ezzel szemben két, egymástól méretben és funkcióban is eltérő spóratípus alakul ki: ezt a jelenséget heterospóriának nevezzük.',
+                  'A kisebb mikrospórákból fejlődik ki a hím gametofiton (amely végül a pollenszemet alkotja), a nagyobb megaspórákból pedig a nő gametofiton, amely a magkezdeményen belül, védett környezetben marad, és soha nem válik önálló, szabadon élő képletté - ellentétben a harasztok előtenyészével. Ez a védett, a sporofitonon belül maradó női gametofiton az, amelyből végül a megtermékenyítés után a mag embriója és a magban tárolt tartalék tápanyag kialakul.',
+                ],
+              },
+            ],
+            keyTerms: ['heterospória', 'mikrospóra', 'megaspóra'],
+          },
+        },
       },
       {
         id: 'zarvatermok',
