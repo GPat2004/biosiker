@@ -2294,7 +2294,43 @@ export const CURRICULUM = [
         order: 19,
         isFree: false,
         estimatedMinutes: 10,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Előgerinchúrosok fejezet) megismert, regresszív fejlődésű csoport után a fejgerinchúrosokkal (Cephalochordata, pl. a lándzsahal) egy olyan chordata csoportot ismerünk meg, amely egész életében megőrzi mind a négy chordata-bélyeget - ezzel a gerincesekhez vezető evolúciós út egyik legfontosabb, ma is élő modelljét adja. Míg az előgerinchúrosoknál a fejlettebb forma csak lárvakorban volt jelen, a fejgerinchúrosoknál ez az állapot végleges és állandó marad. Ez a fejezet nem szerepel a hivatalos érettségi követelményben.',
+            sections: [
+              {
+                heading: 'Testfelépítés: a chordata-bélyegek egész életen át',
+                paragraphs: [
+                  'A fejgerinchúrosok az Állatok országán belül a Gerinchúrosok törzsének (Chordata) egyik alsótörzsét, a Cephalochordata-t alkotják. Jellemző képviselőjük (pl. a lándzsahal, Amphioxus) kis, néhány centiméteres, áttetsző, halványsárgás, hal-szerű, lándzsa alakú testű, és a világ sekély tengerpartjainak homokos aljzatán él, a mérsékelt övtől a trópusi tengerekig. Az előgerinchúrosokkal szemben náluk a gerinchúr, a neurális cső, a kopoltyúrések és a farok a teljes életciklus során, egész felnőtt korukban is megmarad - a gerinchúr a test elejétől (innen a csoport neve) egészen a farok végéig végignyúlik.',
+                  'Testük ízekre (szelvényekre) tagolt izomkötegeket (miotómokat) tartalmaz, amelyek a farokizmokkal együtt oldalirányú, hullámzó mozgást tesznek lehetővé - ez az első alkalom a chordaták között, hogy ilyen hatékony, szelvényezett izomrendszer jelenik meg. A miotómok "V" vagy "W" alakú, egymás mögötti ismétlődő elrendezése jól látható az áttetsző testen keresztül, és ugyanazt az alapelvet követi, mint a később megismerendő halak szelvényezett törzsizomzata.',
+                  'Bár nincs igazi feje a gerinceseknél megismert értelemben (nincs koponyája, nincsenek páros érzékszervei), a neurális cső elülső vége már némileg megvastagodott, kezdetleges agyhólyagszerű képletet alkot - ez az agy kialakulásának egyik legkorábbi evolúciós előfutára.',
+                ],
+              },
+              {
+                heading: 'Életmód és jelentőségük',
+                paragraphs: [
+                  'A fejgerinchúrosok jellemzően a tengerfenék homokjába félig beásva élnek, farokkal előre, csak elülső végük (szájnyílásuk) látszik ki - de szükség esetén (pl. zavarás vagy ragadozó közeledtekor) gyorsan ki is tudnak úszni az üledékből, és rövid ideig szabadon is úszkálhatnak, mielőtt visszaásnák magukat. Táplálkozásuk - a korábban (Kagylók, Előgerinchúrosok fejezetek) megismerthez hasonlóan - szűrve történik: a csillós garaton átáramló vízből szűrik ki a táplálékrészecskéket.',
+                  'A fejgerinchúrosokat a gerincesekhez legközelebb álló, ma is élő, gerincoszlop nélküli chordata csoportnak tartják, ezért fontos modellszervezetei az evolúciós fejlődéstannak: vizsgálatukkal sokat megtudhatunk arról, milyen lehetett a gerincesek közvetlen, még gerinctelen őse. Genomjuk viszonylag egyszerű felépítése miatt a génkutatásban is fontos szerepet töltenek be: segítségükkel tanulmányozható, hogyan alakultak ki a gerincesek összetettebb génkészletei egy egyszerűbb, ősi chordata génkészletből - a lándzsahal genomjában megtalálhatók a gerinceseknél megismert legfontosabb génesaládok egyszerűbb, még nem megsokszorozódott elődei is.',
+                  'Szaporodásuk ivaros, ivarilag elkülönült egyedekkel; a megtermékenyítés a vízben, a testen kívül történik, a megtermékenyített petesejtekből szabadon úszó lárvák kelnek ki, amelyek fokozatosan alakulnak át a felnőtt formává.',
+                ],
+              },
+            ],
+            keyTerms: ['Fejgerinchúrosok', 'lándzsahal', 'miotóm'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, miért tekinthetők a fejgerinchúrosok a gerincesekhez vezető evolúciós út egyik legfontosabb élő modelljének.',
+            sections: [
+              {
+                heading: 'A fejgerinchúrosok mint a gerincesek felé vezető lépés',
+                paragraphs: [
+                  'A fejgerinchúrosok testfelépítése számos ponton előrevetíti a később megismerendő gerincesek szerveződését: a szelvényezett miotómok a gerincesek törzsizomzatának előfutárai, a neurális cső elülső végén kialakuló kezdetleges agyhólyag pedig az agy kialakulásának első lépését mutatja - mindkét szerkezet a gerinceseknél sokkal összetettebb, differenciáltabb formában jelenik meg, de az alapelv (szelvényezett izomzat, elöl elhelyezkedő idegi központ) már itt is felismerhető.',
+                  'Fontos ugyanakkor hangsúlyozni, hogy a fejgerinchúrosok NEM a gerincesek közvetlen ősei - nem "átmeneti fajok", hanem egy önálló, ma is élő ág, amely valószínűleg egy közös őstől ágazott el a gerincesekkel egy időben. Éppen ezért olyan értékesek a kutatás számára: mivel testfelépítésük évmilliók óta viszonylag keveset változott, egyfajta "élő modellként" segítenek megérteni, milyen lehetett az a közös ős, amelyből mind a fejgerinchúrosok, mind a gerincesek kialakultak.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
       },
       {
         id: 'csontos-halak',

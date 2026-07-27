@@ -286,6 +286,11 @@ export const GLOSSARY = {
   'kopoltyúrés': 'A gerinchúrosok garatjában található nyílás, amely legalább az egyedfejlődés egy szakaszában minden tagnál megjelenik.',
   'tunikás': 'Az előgerinchúrosok másik neve, amely a kifejlett egyedet körülvevő, tunicin nevű anyagból álló köpenyre (tokra) utal.',
 
+  // 3. modul, 19. fejezet: Fejgerinchúrosok
+  'fejgerinchúrosok': 'A Gerinchúrosok törzsének csoportja (Cephalochordata, pl. a lándzsahal), amelynek tagjai egész életükben megőrzik mind a négy chordata-bélyeget.',
+  'lándzsahal': 'A fejgerinchúrosok jellemző képviselője (Amphioxus), kis, áttetsző, lándzsa alakú testű, tengerfenéki, szűrve táplálkozó állat.',
+  'miotóm': 'A fejgerinchúrosok (és a gerincesek) testében található, szelvényekre tagolt izomköteg, amely a hullámzó úszómozgást teszi lehetővé.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
