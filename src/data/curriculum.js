@@ -1570,8 +1570,17 @@ export const CURRICULUM = [
                   'A mérgezés különösen veszélyes, mert a tünetek (hasi görcs, hányás, hasmenés) csak jelentős késéssel, jellemzően 6-24 órával a fogyasztás után jelentkeznek - mire ezek megjelennek, a méreganyagok már felszívódtak, és súlyos, akár halálos máj- és vesekárosodást okozhatnak. Éppen ezért gomba gyűjtésekor és fogyasztásakor kiemelten fontos a biztos azonosítás.',
                 ],
               },
+              {
+                heading: 'Gombák gyakorlati és ökológiai jelentősége, zuzmók',
+                paragraphs: [
+                  'Gombászáskor alapvető biztonsági szabály, hogy kizárólag olyan fajt szabad elfogyasztani, amelyet a gyűjtő teljes bizonyossággal felismer - kétség esetén (pl. a gyilkos galócához hasonló fajoknál) a gombát nem szabad megenni. A gombákat szellős, egymástól elkülönített csomagolásban (pl. kosárban, ne műanyag zacskóban) érdemes tárolni és minél előbb feldolgozni, mivel gyorsan romlanak.',
+                  'A korábban (Sejtfonalak fejezet) megismert fonalas gombák gyakorlati jelentősége jelentős: a peronoszpóra és más növénykórokozó gombák elleni védekezés a mezőgazdaság állandó feladata, míg az ecsetpenészből (Penicillium) nyert penicillin az orvostudomány egyik legfontosabb felfedezése. A sütőélesztő - egy egysejtű gombafaj - anyagcseréje (erjedés) teszi lehetővé a kenyér és egyéb tésztafélék megkelesztését: az élesztő a lisztben lévő cukrokat erjeszti, és az eközben keletkező szén-dioxid-buborékok lazítják fel a tésztát - ez ugyanaz az erjedés, amit korábban (Lebontó folyamatok fejezet) az izomsejteknél már megismertünk, csak itt más szervezetnél és más gyakorlati célra.',
+                  'A zuzmók nem önálló fajok, hanem egy gomba és egy alga (vagy cianobaktérium) szoros szimbiózisából létrejövő szervezetek: a gomba vázat és védelmet, az alga (fotoautotróf partnerként) szerves tápanyagot biztosít a közösségnek. A zuzmók rendkívül érzékenyek a levegőszennyezésre, ezért gyakoriságuk és állapotuk egy adott terület levegőminőségének megbízható biológiai indikátora (bioindikátor).',
+                  'A gombák ökológiai szerepük szerint háromfélék lehetnek: lebontók (elhalt szerves anyagot bontanak le), paraziták (élő szervezeteken vagy azok belsejében élősködve táplálkoznak, kárt okozva a gazdaszervezetnek) és szimbionták (pl. a zuzmókban). Kézinagyítóval és mikroszkóppal vizsgálva a lombosmohák leveles szára és a zuzmók testfelépítése (a gomba- és algasejtek elrendeződése) egyaránt jól megfigyelhető és jellemezhető.',
+                ],
+              },
             ],
-            keyTerms: ['teleptest', 'álszövet', 'rizoid', 'Szivacsok törzse', 'gallérsejt', 'vázsejt', 'amőboid sejt', 'gyilkos galóca'],
+            keyTerms: ['teleptest', 'álszövet', 'rizoid', 'Szivacsok törzse', 'gallérsejt', 'vázsejt', 'amőboid sejt', 'gyilkos galóca', 'zuzmó', 'bioindikátor', 'parazita', 'sütőélesztő'],
           },
           emeltExtra: {
             intro: 'Emelt szinten a mohák kétszakaszos egyedfejlődését (életciklusát) kell lépésről lépésre értelmezni, megérteni ennek fejlődéstörténeti jelentőségét, valamint összefüggésbe hozni a mohák testfelépítését a társulásokban elfoglalt helyükkel.',
