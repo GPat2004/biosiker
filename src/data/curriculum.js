@@ -2411,7 +2411,70 @@ export const CURRICULUM = [
         order: 21,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Lárva (ebihal)', 'Kifejlett kétéltű'],
+          rows: [
+            ['Légzés', 'kopoltyú', 'tüdő + bőrlégzés'],
+            ['Mozgás', 'úszás farokkal', 'ugrás/mászás négy végtaggal'],
+            ['Táplálkozás', 'jellemzően növényevő, szűrögető', 'jellemzően ragadozó'],
+            ['Élőhely', 'kizárólag vízi', 'víz és szárazföld (kétlaki)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Csontos halak fejezet) megismert, kizárólag vízi életmódú gerincesek után a kétéltűekkel a Gerincesek altörzsének első olyan osztályát ismerjük meg, amely - bár még szorosan kötődik a vízhez - a szárazföldi élet felé is megtette az első lépéseket.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A kétéltűek (Amphibia) a Gerincesek altörzsének osztálya. Testük fejre, törzsre és két pár végtagra tagolódik; a farkatlan kétéltűeknél (pl. békák) a farok csak lárvakorban van jelen, a farkos kétéltűeknél (pl. gőték, szalamandrák) felnőttkorban is megmarad.',
+                  'Kültakarójuk csupasz, nyálkás bőr, amelyet nyálkamirigyek védenek a kiszáradástól - ellentétben a korábban (Csontos halak fejezet) megismert pikkelyes kültakaróval. Ez a vékony, nedves bőr egyszerre jelent előnyt (légzésre is alkalmas) és korlátot (könnyen kiszárad, ezért kötődnek a nedves élőhelyekhez).',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásukat a két pár végtag biztosítja: a farkatlan kétéltűek erős hátsó végtagjaikkal ugranak, a farkos kétéltűek inkább másznak vagy úsznak. Lárvakorban a mozgás még farokúszóval történik, a csontos halakhoz hasonló módon.',
+                  'Táplálkozásuk életszakaszonként eltérő: a kifejlett kétéltűek jellemzően ragadozók (rovarokat, férgeket, kisebb állatokat fogyasztanak), míg lárváik (pl. az ebihal) jellemzően növényevők vagy mindenevők, gyakran szűrögető táplálkozással - hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz.',
+                  'Légzésük kettős: a lárvák kopoltyúval lélegeznek, akárcsak a csontos halak, a kifejlett egyedek viszont már tüdővel is rendelkeznek, amelyet kiegészítő bőrlégzés egészít ki - ez utóbbi teszi szükségessé a bőr folyamatos nedvességét.',
+                  'Anyagszállító rendszerük szíve háromüregű: két pitvarból és egy kamrából áll. Ez lehetővé teszi a kettős vérkör (kis, azaz tüdő-vérkör és nagy, azaz test-vérkör) kialakulását, bár a kamrában - mivel nincs teljes válaszfal - még keveredik az oxigénben gazdag és szegény vér.',
+                  'Szaporodásuk ivaros, jellemzően vízben lerakott ikrával és külső megtermékenyítéssel, bár néhány fajnál belső megtermékenyítés is előfordul. Érzékszerveik közül kiemelendő a pillás szemhéjjal védett szem és a dobhártyával rendelkező hallószerv, amelyek már a szárazföldi érzékeléshez is alkalmazkodtak.',
+                ],
+              },
+              {
+                heading: 'Az átalakulásos egyedfejlődés',
+                paragraphs: [
+                  'A kétéltűek egyedfejlődésére jellemző az átalakulásos fejlődés (metamorfózis): a vízben kikelő, kopoltyúval és farokúszóval rendelkező lárva (pl. ebihal) fokozatosan alakul át tüdővel és négy végtaggal rendelkező, szárazföldön is életképes kifejlett egyeddé - eközben a kopoltyú eltűnik, a tüdő kialakul, és a végtagok megjelennek.',
+                  'Ez az elv - hogy az egyedfejlődés radikális testfelépítés-váltással jár - más állatcsoportoknál is megjelenik: a korábban (Rovarok fejezet) megismert teljes átalakulás (pete-lárva-báb-imágó) hasonlóan gyökeres átépülést jelent, mint ahogy az Előgerinchúrosok fejezetben megismert zsákállatok lárva-felnőtt átalakulása is.',
+                ],
+              },
+              {
+                heading: 'Kétlaki életmód és környezeti kapcsolat',
+                paragraphs: [
+                  'A "kétéltű" elnevezés arra utal, hogy ezek az állatok életük során két közeghez is kötődnek: a szaporodás és a lárvakor jellemzően vízhez kötött (az ikra kiszáradna szárazon), míg a kifejlett egyedek már szárazföldön is élhetnek, bár a nedves bőr miatt a száraz élőhelyeket továbbra is kerülik.',
+                  'Érzékeny, nedves bőrük miatt a kétéltűek a környezetszennyezés és az élőhelyváltozások kiváló jelzőfajai (bioindikátorok): populációik gyors csökkenése gyakran a vízminőség vagy az élőhely romlását jelzi.',
+                  'Bőrük nyálkamirigyei mellett sok fajnál mérgező váladékot termelő mirigyek is találhatók, amelyek a ragadozók elleni védekezést szolgálják - a hazai fajok közül például a foltos szalamandra bőre enyhén mérgező váladékot bocsát ki, míg trópusi rokonaik (nyílméregbékák) közt rendkívül erős mérgeket termelő fajok is akadnak. Hazánkban él például a zöld levelibéka és az erdei béka is, mindkettő jól példázza a kétéltűekre jellemző, vízhez kötött szaporodást.',
+                ],
+              },
+            ],
+            keyTerms: ['Kétéltűek osztálya', 'bőrlégzés', 'átalakulásos egyedfejlődés', 'bioindikátor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a kétéltűek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert csontos halakhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a csontos halakhoz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás a páros végtagok megjelenése: a csontos halak úszóit ízelt csontokból felépülő, a testsúlyt is megtartani képes végtagok váltják fel, amelyek elengedhetetlenek a szárazföldi mozgáshoz.',
+                  'A tüdő megjelenése szintén alapvető újítás: ez teszi lehetővé a levegőből történő oxigénfelvételt, ami a szárazföldi élet előfeltétele. A kétéltűek tüdeje azonban még egyszerű felépítésű, viszonylag kis belső felülettel, ezért önmagában nem elegendő a teljes oxigénigény fedezésére - ez magyarázza, miért maradt fenn kiegészítésként a bőrlégzés.',
+                  'A háromüregű szív és a kettős vérkör megjelenése az első lépés a csontos halak egyszerű, egykörös keringéséhez képest: a tüdő-vérkör és a test-vérkör elkülönülése hatékonyabb oxigénellátást tesz lehetővé, ugyanakkor a kamrában történő vérkeveredés még korlátozza ennek hatékonyságát - ez a probléma a későbbi (Hüllők, Madarak, Emlősök fejezetekben tárgyalt) gerinces csoportoknál fokozatosan oldódik meg a kamra teljes kettéválásával.',
+                  'A kétéltűek szaporodása azonban még jelentős korlátba ütközik: ikrájuk nem rendelkezik magzatburokkal (amnionnal) és szilárd burokkal, ezért kiszáradna a szárazföldön - emiatt a szaporodás és a lárvakor továbbra is vízhez kötött marad. Ez a korlátozás csak a Hüllők fejezetben tárgyalt, magzatburokkal védett (amniota) tojás megjelenésével oldódik meg, amely lehetővé teszi a szaporodás teljes függetlenedését a víztől.',
+                ],
+              },
+            ],
+            keyTerms: ['kettős vérkör', 'háromüregű szív', 'tüdő', 'amnion'],
+          },
+        },
       },
       {
         id: 'hullok',

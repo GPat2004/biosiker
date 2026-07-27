@@ -139,7 +139,7 @@ export const GLOSSARY = {
   'sejtfonal': 'Egy sorban, egymáshoz kapcsolódó sejtekből álló, fonalszerű testfelépítés (pl. egyes zöldmoszatoknál, fonalas gombáknál).',
   'teleptest': 'Szövetekre még nem tagolódó, de az egysejtű szerveződésnél bonyolultabb testforma (pl. moszatoknál, gombáknál).',
   'zuzmó': 'Egy gomba és egy alga (vagy cianobaktérium) szimbiózisából létrejövő szervezet, amely érzékeny a levegőszennyezésre.',
-  'bioindikátor': 'Olyan élőlény (pl. zuzmó), amelynek jelenléte, gyakorisága vagy állapota megbízhatóan jelzi a környezet (pl. a levegő) minőségét.',
+  'bioindikátor': 'Olyan élőlény (pl. zuzmó, kétéltűek), amelynek jelenléte, gyakorisága vagy állapota megbízhatóan jelzi a környezet (pl. a levegő vagy a víz) minőségét.',
   'parazita': 'Élő szervezeten vagy annak belsejében élősködő élőlény, amely a gazdaszervezet kárára táplálkozik.',
   'sütőélesztő': 'Egysejtű gombafaj, amelynek erjedéses anyagcseréje (a keletkező szén-dioxid) teszi lehetővé a kenyértészta megkelesztését.',
   'gyilkos galóca': 'Halálosan mérgező gombafaj, amelynek felismerése alapvető biztonsági ismeret.',
@@ -299,6 +299,15 @@ export const GLOSSARY = {
   'porcos halak': 'A halak másik nagy csoportja (Chondrichthyes, pl. cápák, rájak), amelyeknek vázuk porcból épül fel, és nincs úszóhólyaguk.',
   'gerincoszlop': 'Egymáshoz kapcsolódó csontos (vagy porcos) elemekből (csigolyákból) álló, a gerinchúrt felváltó támasztóelem, amely a gerincesekre jellemző.',
   'csigolya': 'A gerincoszlopot felépítő, egymáshoz kapcsolódó csontos (vagy porcos) elem.',
+
+  // 3. modul, 21. fejezet: Kétéltűek
+  'kétéltűek osztálya': 'A Gerincesek altörzsének osztálya (Amphibia), amelynek tagjaira a kettős légzés, a háromüregű szív és az átalakulásos egyedfejlődés jellemző.',
+  'bőrlégzés': 'A kétéltűek nedves, csupasz bőrén keresztül történő kiegészítő gázcsere, amely a tüdőlégzést egészíti ki.',
+  'átalakulásos egyedfejlődés': 'Olyan egyedfejlődés, amelynek során a lárva radikális testfelépítés-váltással (metamorfózissal) alakul át kifejlett egyeddé, pl. az ebihal békává.',
+  'kettős vérkör': 'Két, egymástól elkülönülő keringési kör (tüdő-vérkör és test-vérkör) megléte, amely a kétéltűeknél jelenik meg először a gerincesek sorában.',
+  'háromüregű szív': 'A kétéltűekre jellemző szívtípus, amely két pitvarból és egy kamrából áll; a kamrában még keveredik az oxigénben gazdag és szegény vér.',
+  'tüdő': 'A levegőből történő gázcserét végző légzőszerv, amely a kétéltűeknél jelenik meg először a gerincesek sorában, a bőrlégzést kiegészítve.',
+  'amnion': 'Az embriót körülvevő magzatburok, amely a hüllők, madarak és emlősök tojásában/méhében véd a kiszáradástól; a kétéltűek ikrájából ez még hiányzik.',
 
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
