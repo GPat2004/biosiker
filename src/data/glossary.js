@@ -462,6 +462,62 @@ export const GLOSSARY = {
   'kulcsinger': 'Egy inger azon specifikus, jellegzetes tulajdonsága, amely önmagában is képes kiváltani egy adott, jellemzően öröklött viselkedést.',
   'szuperinger': 'Mesterségesen létrehozott vagy ritkán előforduló inger, amely a kulcsinger jellemzőit eltúlzott mértékben tartalmazva az eredetinél is erősebb választ vált ki.',
 
+  // 4. modul, 1. fejezet: Homeosztázis
+  'negatív visszacsatolás': 'Szabályozási elv, amelynél egy mért paraméter (pl. testhőmérséklet) normál tartománytól való eltérése olyan folyamatokat indít el, amelyek az eltérést csökkentik.',
+  'kiválasztás': 'A szervezet anyagcseréje során keletkező, felesleges vagy káros bomlástermékek (salakanyagok) eltávolítása a szervezetből.',
+  'külső elválasztás': 'Mirigyműködési forma (exokrin), amelynél a váladék a testfelszínre vagy egy testüregbe ürül, pl. a verejtékmirigynél vagy a nyálmirigynél.',
+  'belső elválasztás': 'Mirigyműködési forma (endokrin), amelynél a váladék (hormon) közvetlenül a vérbe kerül, és onnan jut el a célszervekhez.',
+  'önvizsgálat': 'Az egyén által rendszeresen végzett, betegségek (pl. daganatos elváltozások) korai felismerését célzó vizsgálat, pl. az anyajegyek ellenőrzése.',
+  'újraélesztés': 'Az eszméletlen, nem lélegző személynél alkalmazott alapfokú elsősegélynyújtási eljárás, amelynek része a segélyhívás és a mellkaskompressziók végzése.',
+
+  // 4. modul, 2. fejezet: Bőr
+  'felhám': 'A bőr külső rétege (epidermisz), amely többrétegű elszarusodott laphámból épül fel, és a testet a külvilágtól választja el.',
+  'irha': 'A bőr középső rétege (dermisz), amely kötőszövetből áll, és amelyben az erek, receptorok, mirigyek és szőrtüszők találhatók.',
+  'verejtékmirigy': 'A bőr mirigye, amely vizes, sótartalmú váladékával (verejtékkel) hűti a testet és kisebb mennyiségű salakanyagot is eltávolít.',
+  'faggyúmirigy': 'A bőr mirigye, amely zsíros váladékával (faggyúval) vékony, védő, vízzáró réteget von a bőr és a szőrszálak felszínére.',
+  'melanocita': 'A felhámban elhelyezkedő festéksejt, amely a melanin nevű bőrpigmentet termeli.',
+  'melanin': 'A melanociták által termelt bőrpigment, amely elnyeli az ultraibolya sugárzás egy részét, védve a mélyebb bőrrétegeket.',
+  'tapintóreceptor': 'A bőrben elhelyezkedő, nyomásra, rezgésre vagy finom érintésre érzékeny érzékelő szerkezet.',
+
+  // 4. modul, 3. fejezet: A bőr gondozása, védelme
+  'anyajegy': 'A festéksejtek (melanociták) helyi felszaporodásából keletkező, jellemzően jóindulatú bőrelváltozás.',
+  'szemölcs': 'Humán papillomavírus (HPV) fertőzés által okozott, jóindulatú, de fertőző bőrelváltozás.',
+  'mitesszer': 'A faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből kialakuló bőrelváltozás.',
+  'pattanás': 'Gyulladásossá vált mitesszer, amely baktériumok elszaporodása miatt alakul ki.',
+  'vízhólyag': 'A felhám rétegeinek elválásából és a köztük felgyülemlő szövetnedvből keletkező bőrelváltozás, pl. dörzsölés vagy enyhébb égés hatására.',
+  'vérhólyag': 'Az irha ereit is érintő, mélyebb sérülésnél kialakuló, vérrel telt hólyag.',
+  'égési sérülés': 'A bőr hő hatására bekövetkező sérülése, amely megszünteti a bőr védőfunkcióját és jelentős folyadékvesztéssel járhat.',
+
+  // 4. modul, 4. fejezet: Vázrendszer
+  'csontváz': 'A test csontos-porcos vázrendszere, amely tartást, védelmet, mozgást, vérképzést és ásványianyag-raktározást biztosít.',
+  'agykoponya': 'A koponya azon része, amely az agyat védő, közvetlenül egymáshoz illeszkedő lapos csontokból áll.',
+  'arckoponya': 'A koponya azon része, amelynek csontjai (pl. orrcsont, járomcsont, állcsontok) az arc formáját és a rágás szervi hátterét adják.',
+  'ízület': 'Két vagy több csont szabad mozgást lehetővé tevő kapcsolódási pontja, amelyet ízületi tok, ízületi porc és ízületi folyadék épít fel.',
+  'kollagén': 'Rostos szerkezetű fehérje, amely a csont (és más kötőszövetek) rugalmasságáért felelős.',
+  'vállöv': 'A felső végtagot a törzshöz kapcsoló függesztőöv, amelyet a kulcscsont és a lapocka alkot.',
+  'medenceöv': 'Az alsó végtagot a törzshöz kapcsoló függesztőöv, amelyet a csípőcsont alkot.',
+  'oszteoporózis': 'Csontritkulás: olyan állapot, amelyben a csontok ásványianyag-tartalma és sűrűsége kórosan lecsökken, ezáltal törékennyé válnak.',
+
+  // 4. modul, 5. fejezet: Izomrendszer
+  'izomköteg': 'Több izomrostot (izomsejtet) összefogó egység a vázizom felépítésében.',
+  'izompálya': 'Több izomköteg együttese, amely a szabad szemmel is látható, teljes izmot alkotja.',
+  'ín': 'Az izmot a csonthoz rögzítő, szívós kötőszöveti képlet.',
+  'izomtónus': 'Az izom nyugalmi állapotban is fennálló, enyhe feszülési állapota, amely a testtartás fenntartásában és a mozgások előkészítésében játszik szerepet.',
+  'aktin': 'A vázizomsejtekben található, a miozinnal együtt az izomösszehúzódásért felelős fehérje.',
+  'miozin': 'A vázizomsejtekben található, az aktinnal együtt az izomösszehúzódásért felelős fehérje.',
+  'kreatin-foszfát': 'Az izomsejtek saját energiatároló molekulája, amely az ATP gyors pótlását segíti.',
+  'mioglobin': 'Az izomsejtek oxigéntároló fehérjéje, amely a vázizom jellegzetes vörös színéért is felelős.',
+
+  // 4. modul, 6. fejezet: A mozgási rendszer egészségtana
+  'törés': 'A csont folytonosságának megszakadása, amelyet erős fájdalom, duzzanat, deformitás és mozgásképtelenség kísér.',
+  'gerincsérülés': 'A gerincoszlop sérülése, amely veszélyes, mert a benne futó gerincvelő is károsodhat, érzészavart vagy bénulást okozva.',
+  'ficam': 'Az ízületi felszínek átmeneti, kóros kimozdulása egymáshoz képest, amelyet erős fájdalom, deformitás és mozgásképtelenség kísér.',
+  'csípőficam': 'A csípőízület kóros helyzete, amely lehet veleszületett fejlődési rendellenesség vagy sérülés következménye; jelei közé tartozik az aszimmetrikus lábhossz és a csípő korlátozott mozgathatósága.',
+  'rándulás': 'Az ízületet stabilizáló szalagok átmeneti túlnyúlása vagy kisebb szakadása, tartós csontelmozdulás nélkül.',
+  'lúdtalp': 'A lábboltozat kóros belapulása, amely kedvezőtlenné teszi a lábfej terhelés-elosztását.',
+  'gerincferdülés': 'A gerincoszlop kóros, oldalirányú elgörbülése (scoliosis).',
+  'anabolikus szteroid': 'Hormonális hatású, tiltott teljesítményfokozó szer, amelynek szakszerűtlen használata súlyos, akár visszafordíthatatlan károsodásokat okozhat.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',

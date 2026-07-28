@@ -3197,7 +3197,7 @@ export const CURRICULUM = [
   },
   {
     id: 'allati-viselkedes',
-    title: 'Állati viselkedés',
+    title: 'Etológia',
     description: 'Öröklött és tanult magatartásformák, önfenntartás, fajfenntartás, motiváció.',
     icon: 'Brain',
     color: 'from-teal-500 to-cyan-600',
@@ -3585,23 +3585,472 @@ export const CURRICULUM = [
     icon: 'HeartPulse',
     color: 'from-red-500 to-orange-500',
     chapters: [
-      { id: 'homeosztazis', title: 'Homeosztázis', order: 1, isFree: true, estimatedMinutes: 10,
+      {
+        id: 'homeosztazis',
+        title: 'Homeosztázis',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 10,
+        comparisonTable: {
+          headers: ['Szempont', 'Külső elválasztás (exokrin)', 'Belső elválasztás (endokrin)'],
+          rows: [
+            ['A váladék útja', 'testfelszínre vagy testüregbe (pl. bélcsőbe) ürül', 'közvetlenül a vérbe kerül'],
+            ['Váladék neve', 'pl. verejték, nyál, emésztőnedv', 'hormon'],
+            ['Példa mirigy', 'verejtékmirigy, nyálmirigy', 'pajzsmirigy'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az élet jellemzői fejezet emelt kiegészítése) röviden már megismert homeosztázis fogalmát ebben a fejezetben mélyítjük el, és megismerjük azt is, hogyan függ össze a kiválasztással, valamint milyen gyakorlati tudás (önvizsgálat, elsősegély) épül erre az alapfogalomra.',
+            sections: [
+              {
+                heading: 'A homeosztázis fogalma és jelentősége',
+                paragraphs: [
+                  'A homeosztázis a szervezet belső környezetének (pl. testhőmérséklet, vércukorszint, a testfolyadékok pH-ja és ozmotikus koncentrációja) dinamikus egyensúlyban tartása, a külső környezet folyamatos változásai ellenére is. A homeosztázis fenntartása létfontosságú: a szervezet sejtjei, szövetei csak egy viszonylag szűk határértékek közötti belső környezetben képesek megfelelően működni.',
+                  'A homeosztázis fenntartásában több szervrendszer is közreműködik: az idegrendszer és a hormonrendszer szabályozó jelekkel hangolja össze a szervek működését, a kiválasztó szervek eltávolítják a felesleges anyagokat, a légző- és keringési rendszer pedig biztosítja a sejtek folyamatos oxigén- és tápanyagellátását - ezekkel a szervrendszerekkel a modul következő fejezeteiben ismerkedünk meg részletesen. A homeosztázis fenntartása jellemzően negatív visszacsatolás elvén működik: ha egy paraméter (pl. a testhőmérséklet) eltér a normál tartománytól, a szervezet olyan folyamatokat indít el, amelyek az eltérést csökkentik, visszatérítve azt a kívánt tartományba. Túl magas testhőmérséklet esetén például izzadás és a bőr felszíni érhálózatának kitágulása fokozza a hőleadást, míg túl alacsony testhőmérséklet esetén a remegés (izomösszehúzódás) és az érszűkület a hőtermeléssel, illetve a hőveszteség csökkentésével ellensúlyozza az eltérést - mindkét esetben a válasz éppen az eredeti eltéréssel ellentétes irányba hat, ezért nevezzük negatív visszacsatolásnak.',
+                ],
+              },
+              {
+                heading: 'Kiválasztás, külső és belső elválasztás',
+                paragraphs: [
+                  'A kiválasztás a szervezet anyagcseréje során keletkező, felesleges vagy káros bomlástermékek (salakanyagok) eltávolítását jelenti a szervezetből - ez a folyamat is a homeosztázis fenntartását szolgálja, hiszen a salakanyagok felhalmozódása felborítaná a belső egyensúlyt.',
+                  'A mirigyek váladéka kétféleképpen távozhat: külső elválasztás (exokrin működés) esetén a váladék a testfelszínre vagy egy testüregbe (pl. a bélcsőbe) ürül, mint például a verejtékmirigy vagy a nyálmirigy esetében. Belső elválasztás (endokrin működés) esetén a mirigy váladéka, a hormon közvetlenül a vérbe kerül, és onnan jut el a célszervekhez - ezt a fajta jelátvitelt korábban (A sejtműködések vezérlése fejezet emelt kiegészítése) endokrin jelátvitelként már megismertük.',
+                  'Egyes mirigyek (pl. a hasnyálmirigy) mindkét működési formát egyesítik: emésztőnedvet választanak ki külső elválasztással a bélbe, ugyanakkor hormonokat (pl. inzulint) is termelnek, amelyeket belső elválasztással közvetlenül a vérbe juttatnak.',
+                ],
+              },
+              {
+                heading: 'Szűrővizsgálatok és önvizsgálat',
+                paragraphs: [
+                  'A rendszeres orvosi szűrővizsgálatok és az önvizsgálat (pl. anyajegyek rendszeres ellenőrzése, emlő-önvizsgálat) kiemelten fontosak, mert sok betegség (köztük daganatos megbetegedések) korai, még tünetmentes szakaszban történő felismerése jelentősen javítja a gyógyulási esélyeket. Az önvizsgálat lényege, hogy az egyén maga is képes legyen felismerni a saját testén megjelenő, aggodalomra okot adó elváltozásokat (pl. egy anyajegy méretének, alakjának vagy színének megváltozását), és ezek esetén időben orvoshoz forduljon.',
+                ],
+              },
+              {
+                heading: 'Alapfokú újraélesztés',
+                paragraphs: [
+                  'Az alapfokú újraélesztés (elsősegélynyújtás) lépései a következők:',
+                  '1. Az eszméletlenség és a légzés hiányának (vagy szabálytalan légzésnek) felismerése: szólítsuk meg és rázzuk meg óvatosan a sérültet, majd ellenőrizzük a légzését.',
+                  '2. Segélyhívás: azonnal hívjuk a mentőket (Magyarországon a 112-es vagy a 104-es számon), és lehetőség szerint kérjünk segítséget másoktól is.',
+                  '3. A mellkaskompressziók (szívmasszázs) megkezdése: a mellkas közepén, erőteljes, ritmusos nyomásokkal, jellemzően 30 kompresszió és 2 lélegeztetés váltakozó ritmusában.',
+                  '4. Az újraélesztés folyamatos, megszakítás nélküli folytatása egészen addig, amíg a sérült magához nem tér, vagy amíg a szakszerű segítség (mentőszolgálat) meg nem érkezik és át nem veszi az ellátást.',
+                  'Az újraélesztés lényege, hogy a mellkaskompressziókkal mesterségesen fenntartjuk a vér áramlását, ezáltal az agy és a többi életfontosságú szerv továbbra is kap valamennyi oxigént - a szívmegállás utáni percek kritikusak, hiszen az oxigénhiány néhány percen belül visszafordíthatatlan agyi károsodáshoz vezethet, ezért a laikusok által is elvégezhető azonnali beavatkozás életmentő lehet. Az elsősegélynyújtás alapjainak ismerete ezért nem csak egészségügyi szakembereknek fontos, hanem minden állampolgár számára hasznos, mindennapi élethelyzetekben is alkalmazható tudás.',
+                ],
+              },
+            ],
+            keyTerms: ['homeosztázis', 'negatív visszacsatolás', 'kiválasztás', 'külső elválasztás', 'belső elválasztás', 'önvizsgálat', 'újraélesztés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a homeosztázis-összetevők határértékeinek változékonyságát, valamint a homeosztázis és az egészség kapcsolatát kell megérteni.',
+            sections: [
+              {
+                heading: 'A homeosztázis határértékei és az egészség kapcsolata',
+                paragraphs: [
+                  'A homeosztázis-összetevők (pl. testhőmérséklet, vércukorszint) határértékei nem rögzítettek, hanem az adott élettani állapottól függően megváltozhatnak: testmozgás közben például a testhőmérséklet és a szívfrekvencia normálisan is jóval magasabb tartományban mozog, mint teljes nyugalomban, terhesség alatt pedig számos élettani paraméter (pl. az anyagcsere-sebesség) átmenetileg egy más "normál" tartományba kerül. Ezért egy adott mérőérték (pl. a szívfrekvencia) önmagában, a pontos helyzet és körülmények ismerete nélkül nem feltétlenül árulja el, hogy az adott pillanatban egészséges vagy éppen kóros állapotról van-e szó.',
+                  'Az egészség a homeosztázis tartós, hatékony fenntartásának képessége: a betegség éppen ennek a szabályozásnak a felborulásaként, illetve a szervezet azon képtelenségeként értelmezhető, hogy a belső környezetet a megváltozott, esetenként szélsőséges körülmények között is a szükséges határértékek között tartsa. Ez a szemlélet magyarázza, hogy miért törekszik a modern orvostudomány gyakran nem csupán egyetlen tünet kezelésére, hanem a szervezet egészének egyensúlyi állapotát figyelembe véve gyógyítani.',
+                  'A homeosztázis fogalma abban is segít megérteni az egészséget, hogy rávilágít: a szervezet folyamatosan, aktívan "dolgozik" az egyensúly fenntartásáért - ez a folyamat energiát igényel, és ha a szabályozó mechanizmusok (pl. az idegrendszer vagy a hormonrendszer) valamiért nem működnek megfelelően, az egyensúly felborulhat annak ellenére is, hogy a szervezet külső körülményei egyáltalán nem változtak meg jelentősen.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'bor',
+        title: 'Bőr',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Felhám (epidermisz)', 'Irha (dermisz)'],
+          rows: [
+            ['Szövettípus', 'hámszövet', 'kötőszövet'],
+            ['Vastagság', 'vékonyabb', 'vastagabb'],
+            ['Tartalma', 'elszarusodó sejtrétegek, festéksejtek', 'erek, receptorok, mirigyek, szőrtüszők'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Homeosztázis fejezet) megismert, a szervezet belső egyensúlyát fenntartó mechanizmusok után a bőrrel az első olyan szervet ismerjük meg részletesen, amely ebben az egyensúly-fenntartásban (pl. a hőszabályozásban) is kulcsszerepet játszik.',
+            sections: [
+              {
+                heading: 'A bőr funkciói',
+                paragraphs: [
+                  'A bőr elsődleges funkciója a védelem: mechanikai sérülésekkel, a kórokozókkal és az ultraibolya sugárzással szemben egyaránt gátat képez. Emellett a bőr kulcsszerepet játszik a hőszabályozásban is - ahogy azt korábban (Homeosztázis fejezet) a negatív visszacsatolásnál már megismertük, az izzadás és a bőr felszíni érhálózatának tágulása/szűkülése szabályozza a hőleadás mértékét.',
+                  'A bőr emellett kiterjedt érzékszerv is: receptorai a fájdalom, a tapintás, a nyomás és a hőingerek (hideg, meleg) érzékelésére specializálódtak - ezek a funkciók szorosan összefüggenek a bőr rétegzett felépítésével, hiszen a különböző típusú receptorok jellemzően a bőr különböző mélységében helyezkednek el.',
+                  'Ez a három fő funkció (védelem, hőszabályozás, érzékelés) szorosan összefügg egymással: a bőr rétegzett, sokféle sejttípust és mirigyet tartalmazó felépítése teszi lehetővé, hogy egyetlen szerv egyszerre lássa el mindhárom, egymástól igen eltérő jellegű feladatot.',
+                ],
+              },
+              {
+                heading: 'A bőr szöveti szerkezete',
+                paragraphs: [
+                  'A bőr három fő rétegből épül fel. A felhám (epidermisz) a korábban (Állati szövetek fejezet) megismert többrétegű elszarusodott laphám egyik konkrét megvalósulása, amely a testet a külvilágtól elválasztja. Alatta helyezkedik el az irha (dermisz), amely kötőszövetből áll, és amelyben az erek, az idegvégződések (receptorok), a mirigyek és a szőrtüszők találhatók.',
+                  'Az irha alatt a bőr alatti kötőszövet (hypodermisz) helyezkedik el, amelynek jelentős részét a korábban (Lipidek fejezet) megismert zsírszövet alkotja - ez hőszigetelő és energiaraktározó szerepet tölt be, emellett mechanikai párnázást is biztosít a mélyebben fekvő szövetek számára. A három réteg vastagsága testtájanként jelentősen eltér: a talpon és a tenyéren például a felhám és az irha is vastagabb, mint a szemhéjon, ahol a bőrnek rendkívül vékonynak és rugalmasnak kell maradnia.',
+                ],
+              },
+              {
+                heading: 'A bőr mirigyei',
+                paragraphs: [
+                  'A bőrben két fő mirigytípus található. A verejtékmirigyek vizes, sótartalmú váladékot (verejtéket) választanak ki, amely elpárolgásával hűti a testet, emellett kisebb mennyiségű salakanyagot (pl. karbamidot) is eltávolít a szervezetből - ez a korábban (Homeosztázis fejezet) megismert külső elválasztás egyik konkrét példája.',
+                  'A faggyúmirigyek zsíros váladékot (faggyút) termelnek, amely a bőr és a szőrszálak felszínét vékony, védő, vízzáró réteggel vonja be, csökkentve a kiszáradást és rugalmasabbá téve a bőrt. A korábban (Emlősök fejezet) megismert tejmirigy is a bőr mirigyeiből, egy módosult verejtékmirigyből fejlődött ki az evolúció során, ez is jól mutatja a bőr mirigyeinek sokféle funkcióra való alkalmazkodóképességét.',
+                ],
+              },
+              {
+                heading: 'A hám megújulása',
+                paragraphs: [
+                  'A felhám legalsó rétegében a sejtek folyamatosan osztódnak; az újonnan keletkező sejtek fokozatosan a felszín felé tolódnak, eközben elszarusodnak (a sejt belsejét egyre inkább a szívós keratin fehérje tölti ki), majd a felszínen elhalt, elszarusodott állapotban leválnak - ez a folyamatos megújulás biztosítja, hogy a bőr védőfunkciója a mindennapi kopás ellenére is fennmaradjon.',
+                ],
+              },
+              {
+                heading: 'Festéksejtek és a bőrszín',
+                paragraphs: [
+                  'A felhámban elhelyezkedő festéksejtek (melanociták) termelik a melanin nevű bőrpigmentet, amely elnyeli az ultraibolya sugárzás egy részét, ezáltal védi a mélyebb bőrrétegeket és a bennük lévő sejtek genetikai állományát a károsodástól.',
+                  'Az emberi faj bőrszín-skálája (a világos bőrtől a sötét bőrig) a melanin mennyiségének genetikailag meghatározott különbségeiből adódik, és a biológiai sokféleség (variabilitás) egyik jól látható példája: a bőrszín az evolúció során az adott földrajzi terület napsugárzás-intenzitásához igazodó alkalmazkodásként alakult ki, nem pedig valamiféle rangsorolható tulajdonságként értelmezendő.',
+                ],
+              },
+            ],
+            keyTerms: ['felhám', 'irha', 'verejtékmirigy', 'faggyúmirigy', 'melanocita', 'melanin'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a napbarnulás mögötti sejtszintű mechanizmust, valamint a bőr tapintóreceptorainak sokféleségét.',
+            sections: [
+              {
+                heading: 'A bőr tapintóreceptorainak sokfélesége',
+                paragraphs: [
+                  'A bőr érzékelő funkciója valójában több, egymástól eltérő szerkezetű receptortípus együttes munkájának eredménye: egyes receptorok a folyamatos nyomásra, mások a rezgésre vagy éppen a finom érintésre érzékenyek leginkább, míg a fájdalomérző receptorok (szabad idegvégződések formájában) a bőr szinte teljes felszínén sűrűn megtalálhatók, hiszen a fájdalomérzet a szervezet sérülés elleni riasztórendszereként létfontosságú.',
+                  'A receptorok eloszlása testtájanként jelentősen eltér: az ujjbegyeken és az ajkakon például sokkal sűrűbben helyezkednek el a tapintóreceptorok, mint a hát bőrén, ami magyarázza, hogy miért sokkal érzékenyebb és pontosabb a tapintásunk ezeken a testtájakon.',
+                ],
+              },
+              {
+                heading: 'A napbarnulás mechanizmusa',
+                paragraphs: [
+                  'Az ultraibolya sugárzás hatására a melanociták fokozott melanintermelésbe kezdenek - ez a folyamat (a napbarnulás) tulajdonképpen a bőr védekező válasza a további UV-károsodás ellen, hiszen a nagyobb mennyiségű melanin hatékonyabban nyeli el a káros sugárzást.',
+                  'Ez a válasz azonban csak korlátozott védelmet nyújt: a napbarnulás megjelenése önmagában is jelzi, hogy a bőrt már érte bizonyos mértékű UV-károsodás, ezért a rendszeres, védelem nélküli napozás hosszú távon növeli a bőrrák kialakulásának kockázatát, még akkor is, ha a bőr közben egyre barnábbá válik.',
+                  'A melanin mennyisége mellett a bőr UV-érzékenysége azt is meghatározza, hogy egy adott egyed mennyi ideig tartózkodhat biztonságosan közvetlen napsütésben - ez az összefüggés áll a bőrtípusok (a világostól a sötét bőrtípusig) elkülönítésének hátterében is, amelyeket a bőrgyógyászati gyakorlatban a napvédelmi ajánlások megalapozására használnak.',
+                ],
+              },
+            ],
+            keyTerms: ['tapintóreceptor'],
+          },
+        },
+      },
+      {
+        id: 'bor-gondozasa-vedelme',
+        title: 'A bőr gondozása, védelme',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Vízhólyag', 'Vérhólyag'],
+          rows: [
+            ['Kiváltó ok', 'súrlódás vagy enyhébb égés', 'mélyebb, nyomó jellegű sérülés'],
+            ['Tartalma', 'szövetnedv (savó)', 'vér'],
+            ['Érintett réteg', 'felhám rétegei válnak el egymástól', 'az irha erei is megsérülnek'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Bőr fejezet) megismert felépítés és működés után ebben a fejezetben azt vizsgáljuk meg, hogyan óvhatjuk meg a bőr egészségét, és milyen gyakori bőrelváltozásokkal, sérülésekkel találkozhatunk a mindennapokban.',
+            sections: [
+              {
+                heading: 'A napsugárzás hatása és a védekezés',
+                paragraphs: [
+                  'A napsugárzás ultraibolya (UV) összetevője a korábban (Bőr fejezet emelt kiegészítése) megismert napbarnulást váltja ki, ugyanakkor túlzott, védelem nélküli napozás esetén tartósan károsítja a bőrsejtek genetikai állományát, ami idő előtti bőröregedéshez és a bőrrák kialakulásának jelentősen megnövekedett kockázatához vezethet.',
+                  'A hatékony védekezés eszközei közé tartozik a napvédő krém rendszeres használata, a megfelelő (a bőrt eltakaró) öltözet, a napszemüveg, valamint a déli, legerősebb sugárzású órákban a közvetlen napsütés kerülése, illetve az árnyék keresése - ezek az intézkedések különösen fontosak világos bőrű, kevesebb melanint termelő egyéneknél, akiknél a bőr UV-károsodás elleni természetes védelme eleve alacsonyabb.',
+                ],
+              },
+              {
+                heading: 'Bőrápolás és hajápolás',
+                paragraphs: [
+                  'A rendszeres, de nem túlzott tisztálkodás eltávolítja a bőr felszínéről a szennyeződéseket és a felesleges faggyút, ugyanakkor a bőr természetes védőrétegének (a faggyúnak) a teljes eltávolítása kiszáradáshoz és irritációhoz vezethet, ezért a bőrápolásnál a kímélő tisztálkodás és a szükség szerinti hidratálás egyaránt fontos. A hajápolás hasonló elveket követ: a hajszálakat és a fejbőrt is óvni kell a túlzott vegyi és mechanikai igénybevételtől, hiszen a fejbőr is a bőr része, amelyre ugyanazok az általános bőrápolási elvek érvényesek.',
+                ],
+              },
+              {
+                heading: 'A bőr baktériumflórája',
+                paragraphs: [
+                  'A bőr felszínén természetes módon nagy számban élnek baktériumok (a bőr normál flórája), amelyek a legtöbb esetben nem okoznak betegséget, sőt védelmet is nyújtanak: elfoglalják a bőrfelszín "élettereit" és tápanyagforrásait, ezzel megnehezítve a valódi kórokozók megtelepedését és elszaporodását. Ez a fajta hasznos együttélés a korábban (Egysejtű eukarióták fejezet emelt kiegészítése) megismert szimbiózis egyik példája - a bőr baktériumflórája cserébe stabil, tápanyagban gazdag élőhelyet kap.',
+                ],
+              },
+              {
+                heading: 'Gyakori bőrelváltozások',
+                paragraphs: [
+                  'Az anyajegy a festéksejtek (melanociták) helyi felszaporodásából keletkező, jellemzően jóindulatú bőrelváltozás, amelyet éppen ezért érdemes a korábban (Homeosztázis fejezet) megismert önvizsgálat keretében rendszeresen ellenőrizni: a méret, az alak vagy a szín hirtelen megváltozása orvosi vizsgálatot indokol. A szemölcs vírusfertőzés (humán papillomavírus) által okozott, jóindulatú, de fertőző bőrelváltozás, amely közvetlen érintkezéssel terjedhet egyik testrészről a másikra, vagy akár egyik személyről a másikra is.',
+                  'A mitesszer a faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből alakul ki; ha ehhez baktériumok elszaporodása és gyulladás is társul, pattanás jön létre - ez különösen a serdülőkorban gyakori, amikor a hormonális változások fokozzák a faggyúmirigyek működését. A vízhólyag (pl. dörzsölés vagy enyhébb égés hatására) a felhám rétegeinek egymástól való elválásából és a köztük felgyülemlő szövetnedvből keletkezik, míg a vérhólyag ennél mélyebb, az irha ereit is érintő sérülésnél alakul ki, ilyenkor a hólyag tartalma vér.',
+                ],
+              },
+              {
+                heading: 'Égési sérülések és ellátásuk',
+                paragraphs: [
+                  'Az égési sérülés azért veszélyes, mert a bőr - amely a korábban (Bőr fejezet) megismert védő funkciót látja el - a sérülés helyén elveszti a kórokozók elleni védekező képességét, emellett a kiterjedt égés jelentős folyadékveszteséggel is járhat, ami súlyos esetben a keringést is veszélyeztetheti. Minél kiterjedtebb a sérült bőrfelület, annál nagyobb ez a kockázat, ezért a nagy kiterjedésű égési sérülések - a fájdalom mértékétől függetlenül is - mindig azonnali szakorvosi ellátást igényelnek.',
+                  'Kisebb égési sérülés ellátásának lépései a következők:',
+                  '1. Azonnali, hosszan tartó hűtés hűvös (nem jéghideg) folyó vízzel, amely csökkenti a fájdalmat és mérsékli a szövetkárosodás mértékét.',
+                  '2. A sérült területről az ékszerek, szoros ruhadarabok eltávolítása, mielőtt a terület esetleg megduzzadna.',
+                  '3. A kialakuló hólyag érintetlenül hagyása - felszakítása megnyitná az utat a fertőzések előtt.',
+                  '4. A sérült terület tiszta, steril kötszerrel történő fedése, majd - kiterjedtebb vagy mélyebb sérülés esetén - orvosi ellátás igénybevétele.',
+                ],
+              },
+            ],
+            keyTerms: ['anyajegy', 'szemölcs', 'mitesszer', 'pattanás', 'vízhólyag', 'vérhólyag', 'égési sérülés'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni az ultraibolya sugárzás két fő típusa közötti különbséget.',
+            sections: [
+              {
+                heading: 'UVA- és UVB-sugárzás',
+                paragraphs: [
+                  'A napfény ultraibolya összetevője két fő típusra osztható: az UVA-sugárzás sokkal mélyebbre hatol a bőrbe, és elsősorban a bőr korai öregedéséért (ráncosodásáért) felelős, míg az UVB-sugárzás a felhám szintjén fejti ki a hatását, és elsősorban a napégésért és a bőrsejtek genetikai károsodásáért felelős, ezáltal nagyobb szerepet játszik a bőrrák kialakulásában. A felhő és az üveg az UVB-sugárzás nagy részét megszűri, de az UVA-sugárzást jóval kevésbé - ez az oka annak, hogy borult időben vagy ablakon keresztül is érheti a bőrt jelentős, öregedést okozó UV-károsodás, még akkor is, ha látható napégés nem alakul ki.',
+                  'A hatékony napvédő szerek mindkét sugárzástípus ellen védelmet nyújtanak (ún. "széles spektrumú" védelem) - ez fontosabb, mint kizárólag a napégés (UVB) elleni védelemre koncentrálni, hiszen az UVA-sugárzás károsító hatása hosszú távon, látható napégés nélkül is felhalmozódhat. A szolárium (mesterséges UV-fényforrás) használata ugyanezen okból kockázatos: a mesterségesen kiváltott barnulás ugyanúgy a bőrsejtek genetikai károsodásán keresztül jön létre, mint a természetes napsugárzás okozta barnulás.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'vazrendszer',
+        title: 'Vázrendszer',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Varratos és porcos kapcsolódás', 'Ízületes kapcsolódás'],
+          rows: [
+            ['Mozgathatóság', 'nincs vagy csak kismértékű', 'szabad mozgás'],
+            ['Példa', 'koponyavarratok, borda-szegycsont kapcsolat', 'könyök-, térd-, csípőízület'],
+            ['Szerkezet', 'közvetlen csontos vagy porcos összeköttetés', 'ízületi tok, ízületi porc, ízületi folyadék'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert gerinces csoportok (pl. a Csontos halak fejezetben tárgyalt gerincoszlop) után az emberi vázrendszert ismerjük meg részletesen - azt a csontos-porcos szerkezetet, amely a testet tartja, védi és a mozgást lehetővé teszi.',
+            sections: [
+              {
+                heading: 'A csontváz funkciói',
+                paragraphs: [
+                  'A csontváz több biológiai funkciót is ellát egyszerre: mechanikai tartást biztosít a testnek, az izmokkal együttműködve lehetővé teszi a mozgást, védi a létfontosságú belső szerveket (pl. a koponya az agyat, a mellkas a szívet és a tüdőt), emellett a csontvelőben vérsejtek képződnek, a csontállomány pedig ásványi anyagok (elsősorban kalcium) raktáraként is szolgál.',
+                ],
+              },
+              {
+                heading: 'A koponya csontjai',
+                paragraphs: [
+                  'A koponya két fő részre osztható: az agykoponya az agyat védő, közvetlenül egymáshoz illeszkedő lapos csontokból áll, míg az arckoponya csontjai (pl. az orrcsont, a járomcsont, valamint a felső és az alsó állcsont) az arc formáját és a rágás szervi hátterét adják. Az alsó állcsont az egyetlen mozgatható koponyacsont, ez teszi lehetővé a rágást és a beszédet.',
+                ],
+              },
+              {
+                heading: 'A gerincoszlop, a csigolya és a kétlábon járás',
+                paragraphs: [
+                  'A korábban (Csontos halak fejezet) megismert gerincoszlop az emberi testben is a gerinchúr helyét foglalja el, egymáshoz kapcsolódó csigolyákból épül fel, amelyek mindegyike egy tömör csigolyatestből, egy azt hátulról körülölelő csigolyaívből (amely a gerincvelőt védi) és a csigolyaívről hátrafelé kiálló tövisnyúlványból áll. A gerincoszlop szakaszai (tájékai) a nyaki, a háti, az ágyéki, a keresztcsonti és a farkcsonti szakasz.',
+                  'Az emberi gerincoszlop jellegzetes, kettős S-alakú görbülete szorosan összefügg a kétlábon járással: ez a rugalmas, hullámos forma egyenletesebben osztja el a felsőtest súlyát és a járás közben fellépő rázkódásokat, mint egy egyenes gerincoszlop tenné - ez az emberi mozgási szervrendszer egyik legjellegzetesebb sajátossága a más gerinces csoportokhoz képest.',
+                ],
+              },
+              {
+                heading: 'A mellkas csontjai',
+                paragraphs: [
+                  'A mellkast a háti csigolyákhoz kapcsolódó bordapár és az elülső oldalon található szegycsont alkotja - ez a csontos "kosár" védi a benne elhelyezkedő szívet és tüdőt, ugyanakkor a bordák rugalmas, ízületes-porcos kapcsolódása lehetővé teszi a légzéshez szükséges mellkasi térfogatváltozást is.',
+                ],
+              },
+              {
+                heading: 'A csont kémiai összetétele és az életkor hatása',
+                paragraphs: [
+                  'A csont két fő alkotórészből épül fel: a szerves alkotók (elsősorban a korábban - Fehérjék fejezet - vázanyagként már megismert kollagén nevű rostos fehérje) rugalmasságot adnak a csontnak, míg a szervetlen alkotók (elsősorban kalcium-sók) a szilárdságáért felelősek. E kettő aránya az életkorral változik: gyermekkorban a szerves alkotók aránya magasabb, ezért a gyermekek csontja rugalmasabb, és ritkábban törik el teljesen (gyakoribb az ún. "zöldgally-törés"), időskorban viszont a szervetlen alkotók aránya nő meg relatíve, a csont rugalmassága csökken, ami miatt az idősek csontjai könnyebben és súlyosabban törnek el.',
+                ],
+              },
+              {
+                heading: 'Csontok szerkezete: lapos és hosszú csöves csont',
+                paragraphs: [
+                  'A lapos csontok (pl. a koponyacsontok, a lapocka) nagy felületet biztosítanak akár védelemre, akár izomtapadásra, szerkezetük két tömör csontréteg közé zárt, szivacsos csontállományból áll. A hosszú csöves csontok (pl. a combcsont) belsejében üreg található, amelyben a csontvelő helyezkedik el; ez a csőszerű felépítés viszonylag kis anyagfelhasználás mellett is nagy szilárdságot és hajlítással szembeni ellenállást biztosít, ami a mozgás és a testsúly tartása szempontjából egyaránt előnyös.',
+                ],
+              },
+              {
+                heading: 'Csontkapcsolódások és az ízület felépítése',
+                paragraphs: [
+                  'A csontok többféleképpen kapcsolódhatnak egymáshoz: a varratos kapcsolódásnál (pl. a koponyacsontok között) a csontok szorosan, mozgás nélkül illeszkednek egymáshoz; a porcos kapcsolódásnál (pl. a bordák és a szegycsont között) porcszövet biztosít kismértékű, rugalmas elmozdulást; az ízületes kapcsolódásnál (pl. a könyök- vagy a térdízületben) a csontvégek szabadon mozgathatók egymáshoz képest. Egyes csontok az egyedfejlődés során teljesen összenőnek egymással: a keresztcsontot alkotó öt csigolya például felnőttkorra egyetlen, egységes csonttá olvad össze, a koponyavarratok pedig időskorra fokozatosan elcsontosodnak, ezzel a korábban még mozgó kapcsolódás mozdulatlanná válik.',
+                  'Az ízület felépítése jól tükrözi a szabad mozgás biztosításának feladatát: az ízületi tok zárja körbe és rögzíti az ízületet, a csontvégeket borító ízületi porc csökkenti a súrlódást, az ízületi folyadék (amelyet az ízületi tok belső rétege termel) pedig kenőanyagként és tápanyagforrásként szolgál a súrlódásmentes mozgáshoz.',
+                ],
+              },
+              {
+                heading: 'A végtagok csontjai és a függesztőövek',
+                paragraphs: [
+                  'A végtagokat a törzshöz a függesztőövek kapcsolják: a felső végtagot a vállöv (kulcscsont és lapocka), az alsó végtagot a medenceöv (csípőcsont) rögzíti a törzshöz. Mindkét végtag felépítése a szárazföldi gerincesekre jellemző ötujjú végtagtípus emberi megvalósulása: a felső végtagon a felkarcsont, majd az orsócsont és a singcsont, végül a kéztőcsontok, a kézközépcsontok és az ujjperecek követik egymást; az alsó végtagon ennek megfelelője a combcsont, a sípcsont és a szárkapocscsont, majd a lábtőcsontok, a lábközépcsontok és a lábujjperecek.',
+                  'A férfi és a női medence felépítése jellegzetesen eltér: a női medence szélesebb és nyitottabb, ami a szülés során a magzat szülőcsatornán történő áthaladását teszi lehetővé, míg a férfi medence keskenyebb és zártabb felépítésű.',
+                ],
+              },
+            ],
+            keyTerms: ['csontváz', 'agykoponya', 'arckoponya', 'gerincoszlop', 'csigolya', 'ízület', 'kollagén', 'vállöv', 'medenceöv'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a csontritkulás (oszteoporózis) hátterét, valamint az emberi kétlábon járás evolúciós jelentőségét.',
+            sections: [
+              {
+                heading: 'Csontritkulás és az emberi kétlábon járás evolúciós háttere',
+                paragraphs: [
+                  'A csontritkulás (oszteoporózis) olyan állapot, amelyben a csontok ásványianyag-tartalma és sűrűsége kórosan lecsökken, ezáltal a csontok törékennyé válnak - ez a jelenség szorosan összefügg a korábban (középszinten) megismert, életkorral változó csontösszetétellel, és különösen a nőknél gyakori a menopauza utáni hormonális változások miatt, amelyek felgyorsítják a csontállomány lebontását.',
+                  'Az emberi kétlábon járás (bipedális mozgás) kialakulása jelentős evolúciós átalakulással járt az emberelődök vázrendszerében: a gerincoszlop kettős S-alakú görbülete, a medence átalakult formája és a lábfej boltozatos szerkezete mind ehhez a mozgásformához igazodva fejlődött ki, lehetővé téve a kezek felszabadulását más feladatokra (pl. eszközhasználatra) a mozgás közben.',
+                ],
+              },
+            ],
+            keyTerms: ['oszteoporózis'],
+          },
+        },
+      },
+      {
+        id: 'izomrendszer',
+        title: 'Izomrendszer',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Hajlító izmok', 'Feszítő izmok'],
+          rows: [
+            ['Hatás', 'csökkentik az ízületi szöget', 'növelik az ízületi szöget'],
+            ['Példa', 'kétfejű karizom (bicepsz)', 'háromfejű karizom (tricepsz)'],
+            ['Együttműködés', 'egymással ellentétesen (antagonistán) működnek', 'egymással ellentétesen (antagonistán) működnek'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vázrendszer fejezet) megismert csontváz önmagában mozdulatlan - a mozgást a hozzá kapcsolódó izmok összehúzódása teszi lehetővé. Ebben a fejezetben az emberi izomrendszer felépítését és néhány jellegzetes izmát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az emberi test néhány jellegzetes izma',
+                paragraphs: [
+                  'A gyűrű alakú záróizmok (pl. a szájnyílás vagy a végbélnyílás körül) az adott testnyílás szűkítésére, elzárására szolgálnak. A mimikai izmok az arc bőrébe tapadnak, összehúzódásuk hozza létre az arckifejezéseket - ez megkülönbözteti őket a legtöbb más vázizomtól, amelyek jellemzően két csonthoz kapcsolódnak.',
+                  'A bordaközi izmok a bordák mozgatásával, a rekeszizom pedig a mellüreg és a hasüreg közötti, kupola alakú elválasztó izomként vesz részt a légzésben - ezekkel a modul egy későbbi fejezetében foglalkozunk majd részletesebben.',
+                  'A mellizom és a hasizmok a törzs és a felső végtag mozgatásában vesznek részt (pl. a hasizmok a törzs előrehajlításában), a gátizmok a medencefenéket alkotják, a fejbiccentő izom a fej fordítását és hajlítását végzi. A végtagok hajlító és feszítő izmai (pl. a kar hajlító kétfejű és feszítő háromfejű izma) párban, egymással ellentétesen (antagonistán) működnek: amikor az egyik összehúzódik, a másik ellazul, ez teszi lehetővé az ízületek mindkét irányú mozgatását.',
+                  'Ez az antagonista elrendeződés minden, a korábban (Vázrendszer fejezet) megismert ízületnél megfigyelhető: az izmok soha nem "tolják vissza" önmagukat, csak összehúzódni képesek, ezért minden mozgásirányhoz szükség van egy ellentétes hatású izomra, amely a visszamozdulást végzi.',
+                ],
+              },
+              {
+                heading: 'A vázizom felépítése',
+                paragraphs: [
+                  'A korábban (Állati szövetek fejezet) megismert vázizomszövet hierarchikus szerkezetű: az egyedi izomsejtek (más néven izomrostok) izomkötegekbe tömörülnek, több izomköteg alkotja magát az izompályát (a szabad szemmel is látható, teljes izmot), amelyet mindkét végén ínak rögzítenek a csontvázhoz.',
+                  'Ez a rétegzett felépítés (sejt → köteg → teljes izom) minden szinten kötőszöveti hártyákkal van körülvéve, amelyek védik és rendezett szerkezetben tartják az izomrostokat, miközben lehetővé teszik, hogy az egyes rostok összehúzódási ereje összeadódva az egész izomra átterjedjen.',
+                ],
+              },
+              {
+                heading: 'Bemelegítés és izomláz',
+                paragraphs: [
+                  'A bemelegítés célja az izmok, ízületek fokozatos felkészítése a terhelésre: a vérkeringés és az izomhőmérséklet emelésével csökkenti a sérülések (pl. izomhúzódás) kockázatát, és javítja az izmok teljesítőképességét. Az izomláz megszüntetésének leghatékonyabb módja a könnyű, fokozatos mozgás és a nyújtás, valamint a megfelelő pihenés - a teljes mozgáshiány éppúgy nem segít, mint a további túlterhelés. Az izomláz jellemzően pár nap alatt magától is elmúlik, ahogy az apró izomsérülések begyógyulnak.',
+                ],
+              },
+              {
+                heading: 'Az izomtónus szerepe',
+                paragraphs: [
+                  'Az izomtónus az izom nyugalmi állapotban is fennálló, enyhe feszülési állapota, amely alapvető szerepet játszik a testtartás fenntartásában (enélkül a test összeroskadna a gravitáció hatására) és a mozgások előkészítésében, hiszen egy már enyhén feszes izom gyorsabban és hatékonyabban tud teljes összehúzódásba lépni, mint egy teljesen ellazult izom. Az izomtónust az idegrendszer folyamatosan, akaratlanul szabályozza, még alvás közben is - ez különbözteti meg a tudatosan, akaratlagosan kiváltott, teljes izomösszehúzódástól.',
+                ],
+              },
+            ],
+            keyTerms: ['vázizom', 'izomköteg', 'izompálya', 'ín', 'izomtónus'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mozgási szervrendszer működését fizikai (emelő-elv), biokémiai (aktin, miozin, ATP) és élettani szempontból is meg kell érteni.',
+            sections: [
+              {
+                heading: 'A mozgás fizikai háttere: az emelő-elv',
+                paragraphs: [
+                  'A csontok, az ízületek és az izmok együttese fizikai értelemben emelőrendszerként működik: a csont az emelőkar, az ízület a forgáspont, az izom összehúzódása pedig a ható mozgatóerő. Az erőkar (az erő hatásvonala és a forgáspont közötti távolság) hossza határozza meg, hogy mekkora erő szükséges egy adott mozgás létrehozásához: rövidebb erőkar esetén nagyobb erőt kell kifejteni, de a végtag távolabbi pontja gyorsabban és arányaiban nagyobb távolságot mozdul el, mint hosszabb erőkar esetén.',
+                ],
+              },
+              {
+                heading: 'Az izomösszehúzódás biokémiai háttere',
+                paragraphs: [
+                  'A korábban (Fehérjék fejezet) megismert összehúzékony fehérjerendszerek konkrét példájaként a vázizomszövet sejtjeiben két fő összehúzódó fehérje, az aktin és a miozin egymáson való elcsúszása hozza létre az izom megrövidülését. Ehhez a folyamathoz elengedhetetlenül szükség van kalciumionokra (Ca²⁺), amelyek az idegi ingerület hatására szabadulnak fel, és teszik lehetővé az aktin és a miozin kapcsolódását.',
+                  'Az izom összehúzódásának közvetlen energiaforrása az ATP, amelynek nagyon gyors pótlását egy saját energiatároló molekula, a kreatin-foszfát segíti, míg az oxigén rövid távú tárolását az izomban a mioglobin nevű fehérje végzi - ez utóbbi felelős a vázizom jellegzetes vörös színéért is, és lehetővé teszi, hogy az izom rövid ideig oxigénhiányos körülmények között is hatékonyan működjön.',
+                ],
+              },
+              {
+                heading: 'Az izomláz kialakulásának oka',
+                paragraphs: [
+                  'Az izomláz a szokatlan vagy különösen intenzív terhelés hatására az izomrostokban kialakuló apró, mikroszkopikus sérülésekből és az ezt követő gyulladásos folyamatból ered - ez a magyarázat pontosítja azt az elterjedt, de téves nézetet, amely szerint az izomlázat a tejsav felhalmozódása okozná: a tejsav valójában már órákkal az edzés befejezése után lebomlik, az izomláz fájdalma pedig jellemzően csak 1-2 nappal később jelentkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['aktin', 'miozin', 'kreatin-foszfát', 'mioglobin'],
+          },
+        },
+      },
+      {
+        id: 'mozgasi-rendszer-egeszsegtana',
+        title: 'A mozgási rendszer egészségtana',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Ficam', 'Rándulás'],
+          rows: [
+            ['Mi történik', 'az ízületi felszínek átmenetileg kimozdulnak egymáshoz képest', 'az ízületi szalagok átmenetileg túlnyúlnak, esetleg kisebb részük megszakad'],
+            ['Csontelmozdulás', 'igen, jellemzően látható deformitással jár', 'nincs, a csontok a helyükön maradnak'],
+            ['Jellemző tünet', 'erős fájdalom, deformitás, mozgásképtelenség', 'fájdalom, duzzanat, korlátozott mozgás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vázrendszer és Izomrendszer fejezetek) megismert csontok, ízületek és izmok együttműködésén alapuló mozgási rendszer épsége könnyen sérülékeny - ebben a fejezetben azt vizsgáljuk meg, hogyan óvhatjuk meg ezt a rendszert, és milyen gyakori sérülésekkel, elváltozásokkal találkozhatunk a mindennapokban, illetve a sportolás során.',
+            sections: [
+              {
+                heading: 'A mozgási rendszer épségét szolgáló alapelvek',
+                paragraphs: [
+                  'A helyes testtartás megőrzése (pl. egyenes hátú ülés, megfelelő emelési technika) csökkenti a gerincoszlopra és az ízületekre nehezedő egyenlőtlen terhelést, ezáltal megelőzi a hosszú távú károsodásokat. A rendszeres, mértékletes testedzés erősíti az izmokat, javítja az ízületek mozgástartományát, és - ahogy azt korábban (Vázrendszer fejezet) a csont kémiai összetételénél érintettük - a csontokra ható mechanikai terhelés fenntartja, sőt növelheti a csontsűrűséget, csökkentve a csontritkulás kockázatát.',
+                  'Fontos ugyanakkor a fokozatosság elve is: a hirtelen, túlzott terhelés éppen azokat a sérüléseket okozhatja (pl. rándulást, izomhúzódást), amelyek megelőzésére a rendszeres testmozgás egyébként szolgálna - ezért a terhelés fokozatos növelése és a megfelelő pihenőidők beiktatása egyaránt szükséges a mozgási rendszer épségének megőrzéséhez.',
+                ],
+              },
+              {
+                heading: 'Törés, gerincsérülés, ficam, csípőficam',
+                paragraphs: [
+                  'A törés a korábban (Vázrendszer fejezet) megismert csont folytonosságának megszakadása, jelei jellemzően az erős fájdalom, a duzzanat, a deformitás (rendellenes testhelyzet) és a mozgásképtelenség. A gerincsérülés különösen veszélyes, mert a gerincoszlopon belül futó gerincvelő is károsodhat - ennek jele lehet az érzészavar vagy akár a bénulás is, ezért gerincsérülés gyanúja esetén a sérültet lehetőleg egyáltalán nem szabad mozgatni a szakszerű ellátás megérkezéséig.',
+                  'A ficam az ízületi felszínek átmeneti, kóros kimozdulása egymáshoz képest, amelyet erős fájdalom, látható deformitás és mozgásképtelenség kísér. A csípőficam a csípőízület kóros helyzete, amely lehet veleszületett fejlődési rendellenesség (ez csecsemőknél viszonylag gyakori, ezért szűrik is), vagy sérülés következménye; jelei lehetnek a láb aszimmetrikus hossza, a csípőízület korlátozott mozgathatósága (pl. nehezített széttárhatóság), illetve mozgatáskor jelentkező kattanó hang. A veleszületett csípőficam korai felismerése és kezelése kiemelten fontos, mert kezeletlenül tartós mozgászavarhoz és a csípőízület idő előtti kopásához vezethet.',
+                ],
+              },
+              {
+                heading: 'Rándulás, lúdtalp, gerincferdülés',
+                paragraphs: [
+                  'A rándulás az ízületet stabilizáló, korábban (Állati szövetek fejezet) megismert szalagok átmeneti túlnyúlása, esetleg kisebb mértékű szakadása, amelynél - a ficammal ellentétben - a csontok nem mozdulnak el tartósan a helyükről; jellemző tünete a fájdalom, a duzzanat és az érintett ízület korlátozott mozgathatósága.',
+                  'A lúdtalp a lábboltozat kóros belapulása (a talp normál esetben boltozatos formájának elvesztése), amely a lábfej terhelés-elosztását teszi kedvezőtlenné, és hosszú távon a boka, a térd, sőt akár a gerincoszlop terhelésében is komoly problémákat okozhat.',
+                  'A gerincferdülés (scoliosis) a gerincoszlop oldalirányú elgörbülése - ez eltér a korábban (Vázrendszer fejezet) megismert, normális, előre-hátra irányú kettős S-alaktól, amely a kétlábon járáshoz szükséges egyenletes teherelosztást szolgálja.',
+                ],
+              },
+              {
+                heading: 'Táplálék-kiegészítők káros hatásai testépítésnél',
+                paragraphs: [
+                  'A testépítés (izomtömeg-növelés) során egyes sportolók szakszerűtlenül alkalmazott táplálék-kiegészítőket (pl. túlzott fehérjebevitelt) vagy tiltott, hormonális hatású szereket (pl. anabolikus szteroidokat) használnak. Ez utóbbiak súlyos, akár visszafordíthatatlan károsodásokat okozhatnak: felboríthatják a szervezet teljes hormonális egyensúlyát, terhelik a májat és a vesét, fiatalkorban pedig korai csontnövekedés-leálláshoz is vezethetnek, mivel a nemi hormonok szintjének mesterséges megemelése a csontok hosszanti növekedési zónáinak idő előtti záródását idézheti elő.',
+                  'Éppen ezért a serdülőkorú, még növésben lévő fiatalok esetében a szakszerűtlen táplálék-kiegészítés és a hormonális hatású szerek használata különösen kockázatos: a rövid távú, látványos izomtömeg-növekedés hosszú távon akár a végleges testmagasság csökkenéséhez és egyéb, tartós egészségkárosodáshoz is vezethet.',
+                ],
+              },
+            ],
+            keyTerms: ['törés', 'gerincsérülés', 'ficam', 'csípőficam', 'rándulás', 'lúdtalp', 'gerincferdülés', 'anabolikus szteroid'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a gerincferdülés osztályozásának alapjait.',
+            sections: [
+              {
+                heading: 'A gerincferdülés típusai',
+                paragraphs: [
+                  'A gerincferdülés kialakulhat funkcionálisan (pl. tartósan rossz testtartás, egyoldalú terhelés miatt, amely még visszafordítható) vagy strukturálisan (a csigolyák tartós, szerkezeti elváltozásával járó, nehezebben kezelhető formában). A korai felismerés és a rendszeres iskolai vagy háziorvosi szűrővizsgálat - ahogy azt korábban (Homeosztázis fejezet) az önvizsgálat és a szűrővizsgálatok jelentőségénél már megismertük - kiemelten fontos, mert a funkcionális elváltozások időben történő, tudatos korrekciója gyakran megelőzheti a súlyosabb, végleges strukturális elváltozások kialakulását.',
+                  'A funkcionális és a strukturális forma megkülönböztetése azért is fontos, mert eltérő kezelési stratégiát igényelnek: a funkcionális elváltozás jellemzően rendszeres testtartás-korrekcióval, célzott gyógytornával kezelhető, míg a kifejezett strukturális elváltozás esetén súlyosabb esetben ortopédiai fűző viselése vagy akár műtéti beavatkozás is szükségessé válhat.',
+                ],
+              },
+              {
+                heading: 'Az izomrendszer és a vázrendszer sérüléseinek megelőzése',
+                paragraphs: [
+                  'A legtöbb, ebben a fejezetben bemutatott sérülés (rándulás, ficam, egyes törések) kockázata jelentősen csökkenthető megfelelő bemelegítéssel, a korábban (Izomrendszer fejezet) megismert fokozatos terheléssel, valamint a mozgásformához illő, megfelelő felszereléssel (pl. sportcipő) - ez is jól mutatja, hogy a vázrendszer és az izomrendszer épsége szorosan összefügg egymással, hiszen egy erős, jól bemelegített izomzat is jelentős, kiegészítő védelmet nyújt az ízületeknek és a csontoknak, tompítva a mozgás közben rájuk ható erőket.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      { id: 'taplalkozas', title: 'A táplálkozás', order: 7, isFree: false, estimatedMinutes: 20,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kultakaro', title: 'Kültakaró', order: 2, isFree: false, estimatedMinutes: 14,
+      { id: 'legzes', title: 'A légzés', order: 8, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'mozgas', title: 'A mozgás', order: 3, isFree: false, estimatedMinutes: 18,
+      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 9, isFree: false, estimatedMinutes: 22,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'taplalkozas', title: 'A táplálkozás', order: 4, isFree: false, estimatedMinutes: 20,
+      { id: 'kivalasztas', title: 'A kiválasztás', order: 10, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'legzes', title: 'A légzés', order: 5, isFree: false, estimatedMinutes: 16,
+      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 11, isFree: false, estimatedMinutes: 30,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 6, isFree: false, estimatedMinutes: 22,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kivalasztas', title: 'A kiválasztás', order: 7, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 8, isFree: false, estimatedMinutes: 30,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 9, isFree: false, estimatedMinutes: 18,
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 12, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
