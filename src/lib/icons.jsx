@@ -1,4 +1,4 @@
-import { FlaskConical, Microscope, Dna, HeartPulse, Leaf, Sparkle, BookOpen } from 'lucide-react';
+import { FlaskConical, Microscope, Dna, HeartPulse, Leaf, Sparkle, Brain, BookOpen } from 'lucide-react';
 
 export const MODULE_ICONS = {
   FlaskConical,
@@ -7,6 +7,7 @@ export const MODULE_ICONS = {
   HeartPulse,
   Leaf,
   Sparkle,
+  Brain,
 };
 
 // Dedikált komponens a dinamikus ikon-feloldáshoz, hogy sehol ne kelljen

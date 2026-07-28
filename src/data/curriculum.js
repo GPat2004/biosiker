@@ -3043,12 +3043,538 @@ export const CURRICULUM = [
         },
       },
       {
-        id: 'allati-szovetek-szaporodas-viselkedes',
-        title: 'Az állatok szövetei, szaporodása, viselkedése',
+        id: 'allati-szovetek',
+        title: 'Állati szövetek',
         order: 30,
         isFree: false,
-        estimatedMinutes: 28,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Növényi szövetek', 'Állati szövetek'],
+          rows: [
+            ['Típusok száma', '4 típus (osztódó-, bőr-, alap-, szállítószövet)', '4 típus (hám-, izom-, kötő-, idegszövet)'],
+            ['Regenerációs képesség', 'nagy (totipotens osztódószövet)', 'jellemzően kisebb (a legtöbb sejt véglegesen differenciálódott)'],
+            ['Mozgásra specializált szövet', 'nincs önálló mozgásszövet', 'izomszövet'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Növényi szövetek fejezet) megismert négyféle növényi szövettel szemben az állatok teste is négy alapvető szövettípusból épül fel - ezeket a szöveteket ebben a fejezetben ismerjük meg részletesen, a bennük rejlő funkció és a felépítésük közötti összefüggésre fókuszálva.',
+            sections: [
+              {
+                heading: 'Hámszövet',
+                paragraphs: [
+                  'A hámszövet a test felszínét és a testüregeket, valamint a belső szervek felszínét borítja. Működés szerint megkülönböztetünk védőhámszövetet (amely a mechanikai sérülésekkel és a kórokozókkal szembeni védelmet látja el) és mirigyhámszövetet (amely anyagok - pl. nyál, verejték, hormonok - elválasztására specializálódott). A korábban (Emlősök fejezet) megismert tejmirigy is mirigyhámszövetből épül fel.',
+                  'Felépítés szerint a hámszövet lehet egyrétegű (egyetlen sejtsor alkotja, jellemzően ott, ahol az anyagok gyors átjutása a cél, pl. a tüdő léghólyagocskáiban) vagy többrétegű (több sejtréteg egymáson, ott alkalmazzák, ahol nagyobb mechanikai védelemre van szükség, pl. a bőr felszínén). A bőr felszínét borító többrétegű elszarusodott laphám jellegzetes felépítése (a felszíni sejtrétegek elszarusodása, majd folyamatos leválása) kiválóan tükrözi ezt a védő funkciót.',
+                ],
+              },
+              {
+                heading: 'Izomszövet',
+                paragraphs: [
+                  'Az izomszövet sejtjei összehúzódásra képesek, ez a szövettípus felelős az állatok mozgásáért - mind a testrészek egymáshoz képesti elmozdulásáért, mind a belső szervek (pl. az emésztőrendszer) működéséért.',
+                  'A vázizom (harántcsíkolt izom) a csontvázhoz kapcsolódva biztosítja az akaratlagos mozgást (pl. a végtagok mozgatását); rostjai mikroszkópban jellegzetes, harántirányú csíkolatot mutatnak, amely a szabályosan rendezett összehúzódó fehérjéknek köszönhető.',
+                ],
+              },
+              {
+                heading: 'Kötőszövet',
+                paragraphs: [
+                  'A kötőszövet a szervezet szerveit összekapcsoló, azokat védő és gyakran tápanyagot is raktározó szövettípus - ide tartozik például a korábban megismert zsírszövet is. A kötőszövet sejtjei jellemzően nagy mennyiségű sejtközötti állományt (mátrixot) termelnek, amelynek összetétele határozza meg az adott kötőszövet-típus tulajdonságait.',
+                  'A csontszövet mátrixa ásványi anyagokkal (elsősorban kalcium-sókkal) átitatott, ezért rendkívül szilárd - ez teszi alkalmassá a testtartás és a belső szervek védelmére. Meglepő módon az emberi vér is kötőszövet: sejtjei (vörösvértestek, fehérvérsejtek) folyékony sejtközötti állományban (vérplazmában) úsznak, és a vér is a szervezet részei közötti anyagszállítást (összekapcsolást) végzi.',
+                  'A kötőszövet családjába tartoznak továbbá az inak (amelyek az izmokat a csontokhoz rögzítik) és a szalagok (amelyek a csontokat kötik össze egymással az ízületeknél) is - ezek rostos szerkezete nagy szakítószilárdságot biztosít, ami elengedhetetlen a mozgás közben fellépő erők elviseléséhez.',
+                ],
+              },
+              {
+                heading: 'Idegszövet',
+                paragraphs: [
+                  'Az idegszövet az ingerület felvételét és vezetését végzi: sejtjei (idegsejtek) hosszú nyúlványaikkal képesek elektromos jeleket gyorsan továbbítani a szervezet távoli pontjai között, ezáltal biztosítva az érzékelés és a mozgásszabályozás összehangolását. Az idegsejtek mellett az idegszövetben ún. gliasejtek is találhatók, amelyek az idegsejteket táplálják, védik és szigetelik, önmaguk azonban nem vezetnek ingerületet.',
+                ],
+              },
+              {
+                heading: 'A funkció és a felépítés kapcsolata',
+                paragraphs: [
+                  'Mind a négy szövettípusnál jól látható, hogy a sejtek alakja, elrendeződése és a köztük lévő anyag mennyisége szorosan tükrözi a betöltött funkciót: a hámszövet sejtjei szorosan illeszkednek (védelem), az izomszövet sejtjei megnyúltak és összehúzódásra képesek (mozgás), a kötőszövet sejtjei köré bőséges sejtközötti anyag rakódik (összekötés, raktározás), az idegszövet sejtjei pedig hosszú nyúlványokkal rendelkeznek (gyors jeltovábbítás).',
+                ],
+              },
+            ],
+            keyTerms: ['hámszövet', 'izomszövet', 'kötőszövet', 'idegszövet', 'vázizom', 'csontszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten további szövettípusokat kell felismerni, és a látott struktúrák szerepét a szövet működésével összefüggésben kell értelmezni.',
+            sections: [
+              {
+                heading: 'További szövettípusok: simaizom, szívizom, csillós hám, üvegporc',
+                paragraphs: [
+                  'A simaizom - a vázizommal ellentétben - akaratlanul (a tudatos irányítástól függetlenül) húzódik össze, és a belső szervek (pl. a bélcsatorna vagy az erek fala) mozgatásáért felelős; mikroszkópban nem mutat harántcsíkolatot, mert összehúzódó fehérjéi kevésbé szabályosan rendezettek, mint a vázizomban.',
+                  'A szívizom a vázizom és a simaizom tulajdonságait egyesíti: harántcsíkolt (mint a vázizom), de akaratlanul, önállóan, ritmikusan húzódik össze (mint a simaizom) - ezt a saját ritmust a szívizomsejtek különleges, egymást gyorsan ingerlő kapcsolatai teszik lehetővé - ez teszi lehetővé, hogy a szív a szervezet idegi vezérlésétől függetlenül is folyamatosan, ütemesen dobogjon.',
+                  'A csillós hám sejtjeinek felszínét apró, mozgásra képes csillók borítják, amelyek összehangolt mozgással anyagokat (pl. nyálkát, benne porszemcséket) képesek továbbítani a hám felszínén - ez a szerkezet jellemzi például a légutak belső felszínét, ahol a becsípődött porszemcséket és baktériumokat a nyálkával együtt a garat felé továbbítja.',
+                  'Az üvegporc sima, rugalmas, de nyomásra ellenálló kötőszövet-típus, amelynek mátrixa nem tartalmaz látható rostokat - ez a szerkezet teszi alkalmassá az ízületi felszínek súrlódásmentes mozgatására és a légutak (pl. a légcső) rugalmas, de formatartó megtámasztására.',
+                  'Jól látható tehát, hogy mind a négy itt tárgyalt szövet a középszinten megismert alap-szövettípusok (izomszövet, hámszövet, kötőszövet) egy-egy speciális, funkciójában eltérő változata: a simaizom és a szívizom az izomszövet, a csillós hám a hámszövet, az üvegporc pedig a kötőszövet családjába tartozik - ez is jól mutatja, hogy egy adott szövettípuson belül is nagy szerkezeti-funkcionális sokféleség alakulhat ki.',
+                ],
+              },
+            ],
+            keyTerms: ['simaizom', 'szívizom', 'csillós hám', 'üvegporc'],
+          },
+        },
+      },
+      {
+        id: 'allati-szaporodas-egyedfejlodes',
+        title: 'Szaporodás és egyedfejlődés',
+        order: 31,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Külső megtermékenyítés', 'Belső megtermékenyítés'],
+          rows: [
+            ['Helyszín', 'a testen kívül, vízben', 'a nőivarú egyed testében'],
+            ['Utódszám', 'jellemzően nagy (kis túlélési esély/utód)', 'jellemzően kisebb (nagyobb túlélési esély/utód)'],
+            ['Ivadékgondozás', 'jellemzően kevés vagy nincs', 'gyakran kiterjedt'],
+            ['Példa', 'csontos halak', 'hüllők, madarak, emlősök'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert állatcsoportok (szivacsoktól az emlősökig) szaporodási módjainak sokfélesége mögött néhány alapvető fogalom és összefüggés húzódik meg - ebben a fejezetben ezeket rendszerezzük, és megvizsgáljuk, hogyan függ össze az állatok szaporodási stratégiája az életkörülményeikkel.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: ivarsejtek és zigóta',
+                paragraphs: [
+                  'A petesejt a nőivarú egyed ivarsejtje: jellemzően nagyméretű, mozdulatlan, és tartalék tápanyagot (szikanyagot) raktároz, amely a korai egyedfejlődést táplálja. A hímivarsejt ezzel szemben apró, jellemzően ostorral rendelkező, mozgékony sejt, amelynek egyetlen "feladata" a petesejt elérése és megtermékenyítése.',
+                  'A megtermékenyítés során a hímivarsejt és a petesejt sejtmagja egyesül, létrehozva a zigótát - ez az új egyed első, még osztatlan sejtje, amelyből az egyedfejlődés minden további lépése kiindul.',
+                ],
+              },
+              {
+                heading: 'Hímnősség és váltivarúság',
+                paragraphs: [
+                  'Egyes állatfajoknál egyetlen egyed mindkét ivarsejttípust (petesejtet és hímivarsejtet is) képes termelni - ezt hímnősségnek nevezzük. Ilyenek például a korábban megismert szivacsok, a földigiliszta (Gyűrűsférgek fejezet) és a csigák nagy része - esetükben azonban a megtermékenyítéshez jellemzően ekkor is két egyed szükséges, amelyek kölcsönösen megtermékenyítik egymást.',
+                  'A legtöbb állatfajnál ezzel szemben az egyedek ivarilag elkülönültek (váltivarúak): egy adott egyed vagy kizárólag petesejtet, vagy kizárólag hímivarsejtet termel - ez jellemzi a korábban megismert gerinces csoportok (csontos halak, kétéltűek, hüllők, madarak, emlősök) mindegyikét.',
+                ],
+              },
+              {
+                heading: 'Ivari kétalakúság',
+                paragraphs: [
+                  'Sok váltivarú fajnál a hím és a nő egyedek külső megjelenésükben is jelentősen eltérnek egymástól - ezt a jelenséget ivari kétalakúságnak (nemi dimorfizmusnak) nevezzük. Jellegzetes példa a pávakakas feltűnő, díszes tollazata a jóval szerényebb megjelenésű pávatyúkhoz képest, vagy az oroszlánhím jellegzetes sörénye - ezek a különbségek jellemzően a partnerválasztásban (a másik nem vonzásában) játszanak szerepet.',
+                ],
+              },
+              {
+                heading: 'Embrionális és posztembrionális fejlődés',
+                paragraphs: [
+                  'Az egyedfejlődés embrionális szakasza a megtermékenyítéstől a születésig (vagy a tojásból/ikrából történő kikelésig) tart, ez alatt alakulnak ki az egyed alapvető szervrendszerei. A posztembrionális fejlődés a születés (kikelés) utáni időszakot jelenti, amely alatt az egyed eléri a kifejlett állapotot - ez lehet fokozatos (ahogy a legtöbb gerincesnél), vagy magában foglalhat radikális átalakulást is, ahogy azt a korábban (Kétéltűek fejezet) megismert átalakulásos egyedfejlődésnél (metamorfózisnál) láttuk.',
+                ],
+              },
+              {
+                heading: 'Az életkörülmények és a szaporodási mód kapcsolata',
+                paragraphs: [
+                  'A megtermékenyítés helyszíne szorosan összefügg az állat élőhelyével: a vízi élőhelyű fajoknál (pl. a korábban megismert csontos halaknál) gyakori a külső megtermékenyítés, amikor mindkét ivarsejt a vízbe kerül, és ott egyesül. A szárazföldi (illetve másodlagosan szárazföldi életmódú) fajoknál - pl. a hüllőknél, madaraknál, emlősöknél - ezzel szemben a belső megtermékenyítés a jellemző, hiszen az ivarsejtek szárazföldön történő egyesülése kiszáradás nélkül csak a nőivarú egyed testében védetten valósulhat meg.',
+                  'Szoros összefüggés figyelhető meg az utódszám és az ivadékgondozás mértéke között is: a külső megtermékenyítésű fajok jellemzően rendkívül sok utódot (pl. ikrát) hoznak létre, mivel ezek túlélési esélye egyenként alacsony és nincs szülői gondoskodás, míg a belső megtermékenyítésű, kiterjedt ivadékgondozást nyújtó fajok (pl. az emlősök) jellemzően kevesebb utódot hoznak világra, de azok túlélési esélye egyedenként jóval nagyobb.',
+                ],
+              },
+              {
+                heading: 'Ivartalan szaporodás és regeneráció az állatvilágban',
+                paragraphs: [
+                  'Az állatvilágban az ivaros szaporodás mellett ivartalan szaporodás is előfordul, amelynek során az utód egyetlen szülőtől, ivarsejtek egyesülése nélkül jön létre - ilyen a korábban (Csalánozók fejezet) megismert bimbózás, amelynek során a polipformájú egyed testén egy kis kinövés fejlődik önálló egyeddé.',
+                  'Az ivartalan szaporodással rokon jelenség a regeneráció: egyes állatok képesek elvesztett testrészeiket újranöveszteni, vagy akár egy leszakadt testrészből egy teljes, új egyedet regenerálni. Erre a legjobb példa a korábban (Laposférgek fejezet) megismert planária, amely testében szétszórtan elhelyezkedő, differenciálatlan neoblasztjai révén akár egyetlen levágott testdarabból is teljes, új egyeddé képes regenerálódni.',
+                ],
+              },
+            ],
+            keyTerms: ['petesejt', 'hímivarsejt', 'zigóta', 'hímnősség', 'váltivarúság', 'ivari kétalakúság', 'embrionális fejlődés', 'posztembrionális fejlődés', 'regeneráció'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni az ivaros és az ivartalan szaporodás határterületén álló, különleges jelenséget, a parthenogenezist (szűznemzést).',
+            sections: [
+              {
+                heading: 'Parthenogenezis (szűznemzés)',
+                paragraphs: [
+                  'A parthenogenezis olyan szaporodási mód, amelynek során a petesejtből megtermékenyítés (hímivarsejttel való egyesülés) nélkül fejlődik ki új egyed - ez formálisan ivarsejtből indul ki (mint az ivaros szaporodás), de a folyamathoz csak egyetlen szülő szükséges (mint az ivartalan szaporodásnál).',
+                  'A méheknél a parthenogenezis a nemek meghatározásának alapja: a megtermékenyített (diploid) petesejtekből dolgozók vagy anyakirálynők, a megtermékenyítetlen (haploid) petesejtekből pedig hímek (herék) fejlődnek - ez azt jelenti, hogy a hím méheknek nincs apjuk, csak anyjuk.',
+                  'Egyes levéltetű-fajoknál szezonálisan váltakozik a szaporodási mód: nyáron, kedvező körülmények között parthenogenezissel gyorsan szaporodnak (ezzel rövid idő alatt hatalmas populációt hozva létre), ősszel viszont áttérnek az ivaros szaporodásra, amely a genetikai változatosság és a télállóbb, megtermékenyített peték létrehozása miatt előnyösebb a kedvezőtlen évszak túlélésére. Egyes gyíkfajoknál pedig olyan populációk is léteznek, amelyek kizárólag parthenogenezissel szaporodó nőstényekből állnak, hím egyedek nélkül.',
+                ],
+              },
+            ],
+            keyTerms: ['parthenogenezis'],
+          },
+        },
+      },
+    ],
+  },
+  {
+    id: 'allati-viselkedes',
+    title: 'Állati viselkedés',
+    description: 'Öröklött és tanult magatartásformák, önfenntartás, fajfenntartás, motiváció.',
+    icon: 'Brain',
+    color: 'from-teal-500 to-cyan-600',
+    chapters: [
+      {
+        id: 'oroklott-tanult-magatartas',
+        title: 'Öröklött és tanult magatartásformák',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Öröklött magatartás', 'Tanult magatartás'],
+          rows: [
+            ['Kialakulás', 'genetikailag kódolt, tapasztalat nélkül is megjelenik', 'egyedi tapasztalat, tanulás alapján alakul ki'],
+            ['Változékonyság', 'fajon belül egységes, nem változik az egyed életében', 'egyedenként eltérhet, az élet során módosulhat'],
+            ['Rugalmasság', 'kicsi - változó körülményekhez nehezen alkalmazkodik', 'nagy - a környezethez igazítható'],
+            ['Kialakulás sebessége/megbízhatósága', 'azonnal rendelkezésre áll, megbízható', 'időt és gyakorlást igényel, hibázhat'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'Ebben a fejezetben - a korábban megismert állatcsoportok testfelépítése és életműködései után - az állatok viselkedésével kezdünk foglalkozni: azt vizsgáljuk meg, hogyan alakul ki egy adott magatartásforma, és milyen fő típusokba sorolhatók az állatok viselkedésformái.',
+            sections: [
+              {
+                heading: 'Öröklött (veleszületett) magatartásformák',
+                paragraphs: [
+                  'Az öröklött magatartásformák genetikailag kódoltak: tanulás vagy előzetes tapasztalat nélkül is megjelennek, és az adott faj minden egyedénél hasonlóan, kiszámítható módon zajlanak le. Jellegzetes példa a keresztes pók hálószövése: a pók - amely az Ízeltlábúak törzsébe tartozik, ahogy azt korábban (Rovarok fejezet) már érintettük, a rovaroktól eltérően azonban a Pókszabásúak osztályát alkotja - korábbi tapasztalat vagy megfigyelés nélkül, első alkalommal is képes a fajára jellemző, bonyolult mintázatú hálót megszőni.',
+                  'Hasonlóan öröklött magatartás a lazacok szülőhelyükre (ahol ők maguk is kikeltek) történő visszavándorlása ívás céljából: ezt az utat korábbi tapasztalat nélkül, kizárólag genetikailag meghatározott mechanizmusok (pl. szaglási emlékek és mágneses tájékozódás) alapján teszik meg. Az öröklött magatartásformák jellemzően a túléléshez (pl. táplálékszerzés, menekülés) vagy a szaporodáshoz kapcsolódó, a faj számára létfontosságú helyzetekben jelennek meg, ahol a hibázás túl nagy kockázattal járna.',
+                ],
+              },
+              {
+                heading: 'Tanult magatartásformák',
+                paragraphs: [
+                  'A tanult magatartásformák egyedi tapasztalat vagy környezeti hatás eredményeként alakulnak ki, ezért egyedenként eltérhetnek, és az egyed élete során módosulhatnak, finomodhatnak. Jellegzetes példa a kutyák betanítása egyszerű parancsokra (pl. "ül"), amely ismételt gyakorlás és megerősítés (jutalmazás) hatására alakul ki.',
+                  'A csimpánzoknál megfigyelhető szerszámhasználat (pl. faágak felhasználása termeszek "kihalászására") szintén tanult magatartás: a fiatal egyedek a csoport tapasztaltabb tagjainak megfigyelésével sajátítják el ezt a technikát, és a technika részletei populációnként eltérhetnek.',
+                  'A macskák egerészési technikája is jó példa a tanulásra: a kölyökmacska ösztönösen ragadozó, de a hatékony vadászati technikát (leselkedés, lopakodás, pontosan időzített ugrás) az anyjától eltanulva finomítja - azok a kölykök, amelyek nem figyelhetik meg élő zsákmány elejtését, jellemzően kevésbé hatékony vadászokká válnak.',
+                ],
+              },
+              {
+                heading: 'Az öröklött és a tanult magatartás összehasonlítása',
+                paragraphs: [
+                  'Az öröklött magatartásformák előnye, hogy azonnal, gyakorlás nélkül is megbízhatóan rendelkezésre állnak - ez különösen fontos olyan helyzetekben, ahol nincs idő tanulásra (pl. egy ragadozó elől menekülésnél). Hátrányuk viszont, hogy rugalmatlanok: ha a környezet a fajra jellemző mintától eltérően változik meg, az öröklött magatartás nem, vagy csak korlátozottan tud alkalmazkodni hozzá.',
+                  'A tanult magatartásformák ezzel szemben rugalmasak, a változó környezeti feltételekhez igazíthatók, ugyanakkor kialakításuk időt és gyakorlást igényel, és a tanulási folyamat közben hibák is előfordulhatnak - ezért azoknál a fajoknál a leghasznosabbak, amelyek hosszú élettartamúak, és így "megtérül" a tanulásba fektetett idő és energia.',
+                  'Ez a különbség magyarázza, hogy a rövid élettartamú, gyorsan szaporodó fajoknál (pl. a rovaroknál) a viselkedés jelentős része öröklött - egyszerűen nincs elég idejük a tanulásra -, míg a hosszú élettartamú, fejlett idegrendszerű fajoknál (pl. az emlősöknél, különösen a főemlősöknél) a tanult magatartásformák aránya jóval nagyobb. Ez utóbbi hátterében a korábban (Emlősök fejezet) megismert, kiemelkedően fejlett nagyagykéreg áll, amely - ahogy azt ott is láttuk - éppen az összetett viselkedés és a tanulás alapja.',
+                ],
+              },
+            ],
+            keyTerms: ['öröklött magatartásforma', 'tanult magatartásforma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt kell megérteni, hogy a tanult magatartásformák sem függetlenek teljesen az öröklött tényezőktől - a kettő gyakran szorosan összefonódik.',
+            sections: [
+              {
+                heading: 'A tanult magatartásformák öröklött háttere',
+                paragraphs: [
+                  'Bár a tanult magatartásformák konkrét tartalma egyedi tapasztalat eredménye, a tanulási képesség maga, valamint az, hogy egy adott faj MIT képes megtanulni, gyakran öröklött korlátok közé szorul. Jellegzetes példa erre az énekesmadarak énektanulása: a fiatal hím madár a saját faja jellegzetes énekmintázatát csak egy genetikailag meghatározott, korlátozott időszakban (kritikus periódusban) képes elsajátítani, és kizárólag a saját fajára jellemző alapmintázatot képes megtanulni - más faj énekét hallva sem sajátítja el azt.',
+                  'Ez azt mutatja, hogy az öröklött és a tanult magatartás nem éles ellentétek, hanem egy folyamatos átmenet két végpontja: a legtöbb valós magatartásforma mindkét tényező (az öröklött "kész keret" és az egyedi tanulási tapasztalat) együttes hatására alakul ki.',
+                  'Hasonló jelenség figyelhető meg a méheknél is: a fiatal dolgozóméhek a táplálékforrás irányát és távolságát jelző, jellegzetes "táncnyelv" alapmozdulatait öröklötten ismerik, ám a tánc pontosságát megfigyeléssel és gyakorlással tovább finomítják - itt is egy öröklött váz épül ki tanult finomhangolással - ez a kettős mechanizmus biztosítja, hogy a méhek kommunikációja egyszerre legyen megbízható és egyre pontosabb.',
+                  'Az öröklött tényezők azt is befolyásolják, hogy egy faj MIT képes könnyen megtanulni: rhesusmajmokkal végzett kísérletek szerint az állatok sokkal könnyebben (akár egyetlen megfigyelés alapján) tanulnak meg félni a kígyóktól, mint a virágoktól, még akkor is, ha mindkettőt semleges tárgyként mutatják be nekik - ez arra utal, hogy az evolúció során veszélyt jelentő ingerekkel (pl. kígyók) szembeni félelem tanulására a fajnak öröklött, "előkészített" hajlama van, míg más, biológiailag közömbös ingerekkel szemben nincs ilyen segítség - ezt a jelenséget a viselkedéstudomány "előkészítettségnek" (preparedness) nevezi - ez is jó példa arra, hogy az evolúció nemcsak a konkrét viselkedést, hanem a tanulási képesség irányultságát is alakíthatja.',
+                ],
+              },
+            ],
+            keyTerms: ['kritikus periódus'],
+          },
+        },
+      },
+      {
+        id: 'onfenntartasi-viselkedesek',
+        title: 'Önfenntartással kapcsolatos viselkedések',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Batesi mimikri', 'Müller-féle mimikri'],
+          rows: [
+            ['Résztvevők', 'egy védtelen és egy védett faj', 'két (vagy több) egyaránt védett faj'],
+            ['A hasonlóság oka', 'a védtelen faj "csal": utánozza a védett fajt', 'kölcsönösen erősítik egymás jelzését'],
+            ['Példa', 'egyes lepkefajok a méhek/darazsak mintázatát utánozzák', 'több egymással rokon, mérgező pillangófaj hasonló mintázata'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák fejezet) megismert alapfogalmak után az önfenntartással kapcsolatos viselkedéseket vizsgáljuk meg: azokat a magatartásformákat, amelyek közvetlenül az egyed túlélését szolgálják, jellemzően négy nagy csoportba sorolva (tájékozódás, táplálkozási magatartás, menekülés, védekezés).',
+            sections: [
+              {
+                heading: 'Tájékozódás',
+                paragraphs: [
+                  'A tájékozódási viselkedés lehetővé teszi, hogy az állatok megtalálják az útjukat élőhelyükön, táplálékforrásukhoz vagy vissza a fészkükhöz. A galambok kiemelkedő tájékozódási képességgel rendelkeznek: több száz kilométerről is haza tudnak találni, feltehetően a Föld mágneses mezejének érzékelése, a nap helyzete és tájékozódási pontok kombinációja alapján.',
+                  'A mézelő méhek a nap helyzetét iránytűként használva tájékozódnak, és képesek a "táncnyelvvel" a táplálékforrás pontos irányát és távolságát is közölni fajtársaikkal - ennek öröklött és tanult összetevőit korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már részletesebben is megvizsgáltuk.',
+                  'A vándorló madarak (pl. a fecskék) hosszú távú vonulásukat több forrás kombinált használatával oldják meg: a csillagok és a nap állása, a Föld mágneses mezeje, valamint - fiatal madaraknál a szülők vezetésével szerzett - tapasztalat egyaránt hozzájárul a helyes útvonal megtalálásához. Ez is jó példa arra, hogy egy önfenntartással kapcsolatos viselkedés ötvözheti az öröklött és a tanult elemeket.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási magatartás',
+                paragraphs: [
+                  'A táplálkozási magatartás a táplálékkeresés, -elfogás és -feldolgozás módjait foglalja magába. A farkasok csoportos (falkában történő) vadászata lehetővé teszi, hogy náluk jóval nagyobb testű zsákmányt (pl. jávorszarvast) is el tudjanak ejteni, mint amire egyetlen egyed önmagában képes lenne.',
+                  'A mókusok ősszel táplálékot (pl. makkot, mogyorót) rejtenek el számos különböző helyen, majd télen memóriájukra és térbeli tájékozódási képességükre támaszkodva keresik meg újra ezeket a raktárakat - ez a viselkedés jelentősen növeli a téli túlélési esélyüket.',
+                  'A pókok hálószövése is táplálkozási magatartás: a háló passzív csapdaként szolgál, amellyel a pók energiabefektetés nélkül, folyamatosan foghat táplálékot, szemben az aktív vadászattal, amely minden egyes alkalommal energiát igényel.',
+                ],
+              },
+              {
+                heading: 'Menekülés',
+                paragraphs: [
+                  'A menekülési viselkedés a ragadozók elől való elmenekülést szolgálja. A gazellák és más patás állatok kiemelkedő futási sebessége és kitartása közvetlen menekülési stratégia, míg a halrajok összehangolt, hirtelen irányváltásokkal teli mozgása megzavarja a ragadozót, megnehezítve egyetlen egyed kiválasztását és üldözését.',
+                  'Egyes fajok a "tettető" halál (thanatózis) stratégiáját alkalmazzák: az oposszum veszély esetén mozdulatlanná dermed, és olyan hitelesen imitálja az elhullott állat állapotát (nyitott szájjal, kilógó nyelvvel), hogy sok ragadozó elveszti érdeklődését az ilyen, számára haszontalannak tűnő zsákmány iránt - ez a stratégia azért működik, mert sok ragadozó kizárólag friss, saját maga ejtette zsákmányt fogyaszt, elkerülve a már elhullott, esetleg megromlott tetemeket.',
+                ],
+              },
+              {
+                heading: 'Védekezés',
+                paragraphs: [
+                  'A védekezési viselkedések és testi adaptációk rendkívül sokfélék: a teknősök páncélja és a sünök tüskéi passzív, mechanikai védelmet nyújtanak, míg a skorpiók fullánkja és a méhek csípése aktív, mérget bevető védekezési eszköz.',
+                  'A bűzösborz és a görény erős szagú váladékot bocsát ki védekezésül, amely elriasztja a ragadozókat. Más fajok álcázással (pl. a levélbogár testalakja és színe a levelekhez hasonlít) vagy mimikrivel (más, veszélyes faj utánzásával) védekeznek a felfedezés, illetve a támadás ellen. A kaméleonok színváltoztató képessége is szolgálhat védekezési célt, bár elsősorban a testhőmérséklet-szabályozásban és a hangulati, illetve társas jelzésekben van ennél is fontosabb szerepe.',
+                ],
+              },
+            ],
+            keyTerms: ['tájékozódási viselkedés', 'táplálkozási magatartás', 'menekülési viselkedés', 'thanatózis', 'védekező viselkedés', 'álcázás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni a mimikri két fő típusát, amelyek jól mutatják, hogy a védekező viselkedés és a testfelépítés hogyan fonódik össze az evolúció során.',
+            sections: [
+              {
+                heading: 'A mimikri két típusa: Batesi és Müller-féle mimikri',
+                paragraphs: [
+                  'A Batesi mimikri esetén egy védtelen (pl. nem mérgező, fullánk nélküli) faj egy védett (pl. mérgező vagy fullánkkal rendelkező) faj külsejét utánozza - ezzel a ragadozókat "megtéveszti", akik elkerülik, mert összetévesztik a veszélyesnek vélt fajjal. Több lepkefaj (pl. egyes lepketrücskök) színezete és mintázata méhekre vagy darazsakra hasonlít, holott ezek a lepkék teljesen ártalmatlanok.',
+                  'A Müller-féle mimikri (amelyet Fritz Müller német természettudósról neveztek el) ezzel szemben két (vagy több), egymástól függetlenül is védett (pl. mindkettő mérgező) faj hasonló megjelenését jelenti: mivel mindkét faj valóban veszélyes vagy kellemetlen ízű, a hasonló, jól felismerhető mintázat kölcsönösen erősíti a tanulási hatást a ragadozóknál - a ragadozónak elég egyetlen fajjal rossz tapasztalatot szereznie ahhoz, hogy mindkét, hasonló megjelenésű fajt elkerülje, ami mindkét faj hosszú távú túlélése szempontjából is előnyös.',
+                  'A két mimikri-típus közötti kulcskülönbség tehát az, hogy a Batesi mimikrinél az egyik faj "csal" (valójában nem veszélyes), a Müller-féle mimikrinél viszont mindkét (vagy minden) résztvevő faj ténylegesen védett - ezért az utóbbi esetben a hasonlóság kölcsönösen, egymást erősítve előnyös, nem pedig kizárólag az egyik fél rovására valósul meg.',
+                ],
+              },
+            ],
+            keyTerms: ['Batesi mimikri', 'Müller-féle mimikri'],
+          },
+        },
+      },
+      {
+        id: 'fajfenntartasi-viselkedesek',
+        title: 'Fajfenntartással kapcsolatos viselkedések',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Önfenntartással kapcsolatos viselkedések fejezet) megismert, az egyed túlélését szolgáló viselkedések után most azokat a magatartásformákat vizsgáljuk meg, amelyek a faj fennmaradását, azaz a sikeres szaporodást és az utódok túlélését szolgálják.',
+            sections: [
+              {
+                heading: 'A partner felkeresése és az udvarlás-nász',
+                paragraphs: [
+                  'A partnerkeresés és az udvarlás fő célja a megfelelő, szaporodásra alkalmas partner megtalálása és a párzási hajlandóság kölcsönös jelzése. Az énekesmadarak hímjei jellegzetes énekükkel egyszerre jelzik territóriumukat és vonzzák a nőstényeket - ennek tanulási hátterét (a kritikus periódust) korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már megismertük.',
+                  'A pávakakas feltűnő tollazatának bemutatása is az udvarlás része, ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) az ivari kétalakúság kapcsán már érintettük. A szentjánosbogarak sajátos módon, fénnyel jelzik magukat: a nőstények jellegzetes fénymintázattal jelzik a hímeknek a párzási készenlétet.',
+                  'A gólyák és sok más madárfaj esetében az udvarlás gyakran a fészek közös építésével vagy díszítésével jár együtt - ez a közös tevékenység egyszerre erősíti a párkapcsolatot, és jelzi a partnernek a leendő szülő elkötelezettségét és alkalmasságát az ivadékgondozásra.',
+                ],
+              },
+              {
+                heading: 'Párzás',
+                paragraphs: [
+                  'A párzás magához a megtermékenyítéshez vezető viselkedés, amelyet gyakran versengés előz meg a hímek között a párzási lehetőségért - a szarvasbikák agancsviadala klasszikus példa erre: a küzdelem győztese szerzi meg a jogot a nőstényekkel való párzásra, ezáltal az erősebb, egészségesebb egyedek génjei nagyobb eséllyel kerülnek át a következő nemzedékbe.',
+                  'A megtermékenyítés konkrét, tényleges módja (külső vagy belső) fajonként eltérő, ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) az élőhely és a szaporodási mód kapcsolatánál részletesen tárgyaltuk - a párzási viselkedés is szorosan ehhez a mechanizmushoz igazodik: a belső megtermékenyítésű fajoknál a párzás jellemzően közelebbi, hosszabb testi kontaktust igényel, mint a külső megtermékenyítésű fajok egyszerű ivarsejt-kibocsátása.',
+                ],
+              },
+              {
+                heading: 'Ivadékgondozás',
+                paragraphs: [
+                  'Az ivadékgondozás a szülők utódaik túlélési esélyét jelentősen növelő viselkedése, amelynek mértéke fajonként igen eltérő. Jó példa erre a korábban (Madarak fejezet) megismert, repülésképtelen pingvinek esete: sok pingvinfajnál a két szülő felváltva jár táplálékért, míg a másik a fiókát melegíti és őrzi - ez a munkamegosztás jelentősen növeli a zord élőhelyen a fióka túlélési esélyét. Az emlősöknél a korábban (Emlősök fejezet) megismert tejmirigyek általi táplálás önmagában is kiterjedt, hosszú ideig tartó szülői gondoskodást feltételez.',
+                ],
+              },
+              {
+                heading: 'Önzetlenség (altruizmus)',
+                paragraphs: [
+                  'Az önzetlen (altruista) viselkedés során az egyed a saját érdekeit tudatosan háttérbe szorítva, akár saját túlélési esélyét is kockáztatva segít a rokonain. A korábban (Rovarok fejezet) megismert méheknél a dolgozók lemondanak saját szaporodásukról, és egész életüket a kaptár (vagyis közeli rokonaik) fenntartásának szentelik.',
+                  'A mókusok és a prérikutyák vészjelzést adnak ragadozó észlelésekor, amivel felhívják magukra a figyelmet, és ezzel megnövelik saját elkapásuk kockázatát - cserébe viszont a csoport (jellemzően rokon) tagjai időben elmenekülhetnek, ami az egyed rövid távú kockázata ellenére hosszú távon előnyös lehet a rokonai számára.',
+                ],
+              },
+              {
+                heading: 'Agresszió',
+                paragraphs: [
+                  'A fajtársak közötti agresszió jellemzően a korlátozott, hozzáférhető erőforrásokért (táplálék, territórium, partner) folyó versengésből fakad. A farkasfalkákban kialakuló rangsor (dominanciahierarchia) szabályozza a hozzáférést az erőforrásokhoz és a szaporodási lehetőségekhez, és jellemzően a nyílt, súlyos sérüléssel járó összecsapások helyett rituális fenyegető testtartásokkal dől el - ez azért is előnyös, mert a rituális küzdelem jóval kisebb sérülési kockázattal jár mindkét fél számára, mint egy komolyabb, akár halálos kimenetelű harc.',
+                ],
+              },
+            ],
+            keyTerms: ['udvarlás', 'párzás', 'ivadékgondozás', 'altruizmus', 'agresszió', 'dominanciahierarchia'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni azt az evolúciós elméletet, amely megmagyarázza, hogyan alakulhatott ki egyáltalán az önzetlen (altruista) viselkedés a természetes szelekció során.',
+            sections: [
+              {
+                heading: 'Rokonszelekció',
+                paragraphs: [
+                  'Első pillantásra ellentmondásosnak tűnhet, hogy a természetes szelekció - amely elvben a saját túlélést és szaporodást előnyben részesítő egyedeket "jutalmazza" - hogyan hozhatott létre olyan viselkedést, amely az egyed saját túlélési esélyét csökkenti mások javára. A megoldást a rokonszelekció elmélete adja: mivel a közeli rokonok genetikailag hasonlóak (pl. egy testvér átlagosan a gének felét örökli a másik testvérrel közösen), egy rokon megsegítése - még ha az egyed saját túlélését veszélyezteti is - közvetve a közös génállomány továbbörökítését szolgálhatja.',
+                  'A korábban (Rovarok fejezet) megismert méheknél ez a jelenség szélsőségesen érvényesül: a dolgozók egymással még szorosabb genetikai rokonságban állnak, mint amilyenben egy szülővel és utóddal állnának, ami tovább erősíti a rokonok (a kaptár) érdekében történő önfeláldozó viselkedés evolúciós "kifizetődését". Ennek hátterében a korábban (Szaporodás és egyedfejlődés fejezet emelt kiegészítése) megismert parthenogenezis áll: mivel a méhkirálynő megtermékenyítetlen petéiből haploid herék, megtermékenyített petéiből pedig diploid nőstények (dolgozók) fejlődnek, a nőstény testvérek (dolgozók) egymással genetikailag szorosabb kapcsolatban állnak, mint amilyenben egy hagyományos, kétszülős szaporodású fajnál a testvérek vagy akár egy szülő és utódja lennének. Ez az egyik legfontosabb magyarázat arra, hogy a rovarok között éppen a hártyásszárnyúaknál (méhek, hangyák) alakult ki a legfejlettebb társas életmód.',
+                  'A mókusok vészjelzésénél hasonló elv érvényesül: a jelzést adó egyed közeli rokonait (a saját génjeit hordozó utódokat és testvéreket) menti meg, ami hosszú távon, sok nemzedéken keresztül nézve a jelzésre "hajlamosító" gének elterjedését segíti elő, még akkor is, ha az adott pillanatban az egyed saját túlélési esélye csökken.',
+                ],
+              },
+            ],
+            keyTerms: ['rokonszelekció'],
+          },
+        },
+      },
+      {
+        id: 'veleszuletett-magatartasformak',
+        title: 'Veleszületett magatartásformák',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Feltétlen reflex', 'Öröklött mozgásmintázat'],
+          rows: [
+            ['Válasz jellege', 'egyszerű, azonnali izom- vagy mirigyválasz', 'összetett, több lépésből álló mozgássorozat'],
+            ['Lefolyás', 'az inger fennállásáig tart', 'egyszer elindulva végig lefut, akkor is, ha az inger közben megszűnik'],
+            ['Példa', 'térdreflex, pupillareflex', 'a lúd tojás-visszagörgetése'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák fejezet) általánosságban megismert öröklött magatartás három jellegzetes, egyre összetettebb típusát különböztetjük meg: a feltétlen reflexet, az irányított mozgást és az öröklött mozgásmintázatot - mindhárom közös jellemzője, hogy genetikailag kódolt, és tanulás nélkül, minden egyeden hasonló módon jelenik meg.',
+            sections: [
+              {
+                heading: 'Feltétlen reflex',
+                paragraphs: [
+                  'A feltétlen reflex egy adott ingerre adott, veleszületett, gyors és egyszerű válasz, amely tanulás nélkül, minden egyeden azonos módon zajlik le. Emberben klasszikus példa a térdreflex (egy ütés hatására a lábszár automatikusan, akaratlanul előrelendül) vagy a pupillareflex (erős fényre a pupilla automatikusan összeszűkül).',
+                  'A csecsemők szopóreflexe szintén feltétlen reflex: az újszülött már születésétől fogva, tanulás nélkül képes a szájába kerülő tárgyra szopó mozdulattal reagálni - ez a fontos reflex biztosítja a táplálékfelvétel azonnali működőképességét. Hasonlóan veleszületett a köhögési és a tüsszentési reflex is, amelyek a légutakba véletlenül bekerülő idegen anyagok gyors eltávolítását szolgálják.',
+                ],
+              },
+              {
+                heading: 'Irányított mozgás (taxis)',
+                paragraphs: [
+                  'Az irányított mozgás (taxis) során az egész állat egy adott ingerforrás felé (pozitív taxis) vagy attól elfelé (negatív taxis) mozog. Az ászkarákok jellemzően a nedvesebb helyek felé mozognak (pozitív higrotaxis), ezáltal elkerülve a kiszáradás veszélyét, míg a legtöbb, korábban (Rovarok fejezet) megismert éjjeli lepkefaj a fényforrások felé repül (pozitív fototaxis) - ez utóbbi teszi lehetővé, hogy éjszaka a mesterséges fényforrások (pl. lámpák) köré gyűljenek.',
+                  'A korábban (Gyűrűsférgek fejezet) megismert földigiliszták a talajban jellemzően lefelé mozognak (pozitív geotaxis), ami segít nekik a felszín kiszáradó, veszélyesebb rétegeit elkerülni, míg egyes baktériumok a tápanyag-koncentráció növekedésének irányába úsznak (pozitív kemotaxis) - a taxis tehát nem csak az állatvilágban, hanem az egysejtű szervezeteknél is jól megfigyelhető, alapvető viselkedésforma.',
+                ],
+              },
+              {
+                heading: 'Öröklött mozgásmintázat',
+                paragraphs: [
+                  'Az öröklött mozgásmintázat (más néven rögzített akcióminta) egy összetett, több lépésből álló, sztereotip mozgássorozat, amelyet egy adott kulcsinger indít el, de amely egyszer elindulva a maga teljességében lezajlik, akkor is, ha az azt eredetileg kiváltó inger időközben megszűnik.',
+                  'Klasszikus, Konrad Lorenz és Niko Tinbergen etológusok által leírt példa a lúd tojás-visszagörgető mozdulata: ha egy kikelt tojás kigördül a fészekből, a lúd nyakát a tojás felé nyújtva, csőrével azt visszagörgeti a fészekbe. Ha kísérletben menet közben eltávolítják a tojást, a lúd akkor is befejezi a teljes görgető mozdulatsort, mintha a tojás még mindig ott lenne - ez bizonyítja, hogy a mozgásmintázat egyszer elindulva önállóan, az eredeti inger nélkül is végigfut.',
+                  'A három bemutatott magatartásforma egyre nagyobb összetettséget mutat: a feltétlen reflex egyetlen izom vagy mirigy egyszerű válasza, az irányított mozgás az egész test elmozdulását igényli, az öröklött mozgásmintázat pedig ezeknél is bonyolultabb, több lépésből álló, időben elhúzódó cselekvéssor - mindhárom azonban közös vonása, hogy genetikailag kódolt, tanulás nélkül is megjelenő viselkedés.',
+                ],
+              },
+              {
+                heading: 'Gyakorlati felismerés',
+                paragraphs: [
+                  'A gyakorlatban a három típus jól elkülöníthető egymástól annak alapján, hogy mekkora testrész vesz részt a válaszban, és mennyi ideig tart: ha csak egyetlen izom vagy mirigy reagál azonnal, feltétlen reflexről van szó; ha az egész állat elmozdul egy inger irányába vagy azzal ellentétes irányba, irányított mozgásról beszélünk; ha pedig egy hosszabb, több lépésből álló, önmagában is összetett cselekvéssor zajlik le, azt öröklött mozgásmintázatnak nevezzük.',
+                ],
+              },
+            ],
+            keyTerms: ['feltétlen reflex', 'irányított mozgás', 'öröklött mozgásmintázat'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a feltétlen reflexek idegrendszeri hátterét, a reflexívet, hiszen ez ad magyarázatot arra, miért olyan gyorsak és megbízhatóak ezek a reakciók.',
+            sections: [
+              {
+                heading: 'A reflexív',
+                paragraphs: [
+                  'A feltétlen reflexek idegrendszeri alapja a reflexív: az inger felvételét végző érzékszerv (a receptor) által keltett ingerület egy érző idegsejten keresztül jut el a gerincvelőbe (vagy egyes esetekben az agytörzsbe), ahol - gyakran egy vagy akár több köztes idegsejt közbeiktatásával - egy megfelelő mozgató idegsejtre tevődik át, amely aztán a választ ténylegesen végrehajtó izmot vagy mirigyet (az effektort) ingerli.',
+                  'A reflexív egyik legfontosabb jellegzetessége, hogy a válasz kialakításához nincs szükség az agykéreg (a tudatos feldolgozás) bevonására - ez teszi lehetővé, hogy a reflexek rendkívül gyorsan, sok esetben már azelőtt lezajoljanak, hogy az egyed tudatosan érzékelné az ingert (pl. a forró tárgytól való kéz-visszahúzás reflexe).',
+                  'Ez a "megkerülő" működés evolúciós szempontból is előnyös: azoknál a helyzeteknél, ahol a válasz sebessége létfontosságú (pl. sérülés elkerülése), a tudatos feldolgozás beiktatása felesleges késleltetést jelentene - a reflexív ezt a késleltetést küszöböli ki azáltal, hogy a döntést gyakorlatilag már a gerincvelő szintjén meghozza, az agy ilyenkor csak utólag, a reflex teljes lezajlása után "értesül" a történtekről - ez az elrendezés jól illusztrálja, hogy az idegrendszer nem minden döntést a legmagasabb szinten (az agyban) hoz meg, hanem a sürgős, egyszerű válaszokat evolúciósan kiszervezi az alacsonyabb, gyorsabban reagáló idegrendszeri szintekre.',
+                ],
+              },
+            ],
+            keyTerms: ['reflexív', 'effektor'],
+          },
+        },
+      },
+      {
+        id: 'tanult-magatartasformak',
+        title: 'Tanult magatartásformák',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Megszokás (habituáció)', 'Érzékenyítés (szenzitizáció)'],
+          rows: [
+            ['Az inger jellege', 'ismétlődő, veszélytelen inger', 'ismétlődő, erős vagy veszélyes inger'],
+            ['A válasz változása', 'fokozatosan csökken, majd megszűnik', 'fokozatosan erősödik'],
+            ['Adaptív jelentősége', 'energiatakarékosság (felesleges válaszok kiszűrése)', 'fokozott éberség valódi veszély esetén'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Veleszületett magatartásformák fejezet) megismert öröklött típusok után most azokat a magatartásformákat vizsgáljuk meg, amelyek egyedi tapasztalat, azaz tanulás eredményeként alakulnak ki.',
+            sections: [
+              {
+                heading: 'Bevésődés és érzékenyítés',
+                paragraphs: [
+                  'A bevésődés (imprinting) során egy fiatal állat egy korai, genetikailag meghatározott kritikus periódusban - amelynek fogalmát korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már megismertük - tartósan rögzíti egy adott inger (jellemzően a szülő) képét, és ehhez kötődik. Konrad Lorenz klasszikus kísérletében a frissen kikelt lúdfiókák az első mozgó tárgyat (esetenként magát Lorenzt) rögzítették szülőként, és attól kezdve mindenhová követték.',
+                  'A bevésődés kizárólag ebben a szigorúan korlátozott időszakban alakulhat ki - ha a kritikus periódus alatt nem volt jelen a megfelelő inger, később már nem, vagy csak jóval nehezebben pótolható, ez pedig jól mutatja, hogy a tanulási képesség maga is öröklötten meghatározott korlátok között működik.',
+                  'Az érzékenyítés (szenzitizáció) során egy ismételten előforduló, erős vagy veszélyes inger hatására az állat válaszkészsége fokozatosan erősödik: minél többször tapasztalja meg az ingert, annál intenzívebben reagál rá, akár egy egyébként enyhébb ingerre is felerősödött válasszal reagálva ezután. A korábban (Csigák fejezet) megismert Puhatestűek törzsébe tartozó tengeri csigáknál (pl. az Aplysia fajnál) jól tanulmányozható jelenség, hogy ismételt fájdalmas inger hatására az állat kopoltyú-visszahúzó válasza egyre erősebbé válik, akár egy egyébként enyhe érintésre is - ez a viszonylag egyszerű idegrendszerű állat az egyik legfontosabb modellszervezet az érzékenyítés sejtszintű mechanizmusának kutatásában.',
+                ],
+              },
+              {
+                heading: 'Megszokás és feltételes reflex',
+                paragraphs: [
+                  'A megszokás (habituáció) az érzékenyítés pontos ellentéte: egy ismétlődő, veszélytelennek bizonyuló inger hatására az állat válaszkészsége fokozatosan csökken, majd meg is szűnhet. A madárijesztőt kezdetben elkerülő madarak idővel megszokják annak jelenlétét, és megtanulják, hogy az nem jelent valódi veszélyt - éppen ezért a kertészek időnként áthelyezik vagy megváltoztatják a madárijesztő kinézetét, hogy a megszokás ne csökkentse a hatását.',
+                  'A feltételes reflex (klasszikus kondicionálás) során egy eredetileg semleges inger és egy feltétlen inger ismételt együttes bemutatása után a semleges inger önmagában is kiváltja a feltétlen reflexhez hasonló választ. Ivan Pavlov klasszikus kísérletében a kutyák eredetileg csak a táplálékra nyáladzottak (feltétlen reflex), de miután a táplálék megjelenését rendszeresen egy csengőhang előzte meg, a kutyák idővel már magára a csengőhangra is nyáladzani kezdtek. Ha a csengőhangot ezután hosszabb ideig táplálék nélkül ismétlik, a tanult válasz fokozatosan elhalványul (kioltódik) - ez mutatja, hogy a feltételes reflex, ellentétben a feltétlen reflexszel, folyamatos "megerősítést" igényel a fennmaradásához.',
+                ],
+              },
+              {
+                heading: 'Operáns és belátásos tanulás',
+                paragraphs: [
+                  'Az operáns tanulás során az állat saját cselekvésének következménye (jutalom vagy büntetés) határozza meg, hogy a jövőben milyen gyakran ismétli meg az adott viselkedést. B. F. Skinner kísérleteiben a patkányok megtanulták, hogy egy kar lenyomásával táplálékot kapnak, ezért egyre gyakrabban nyomták le a kart - ez az elv áll a háziállatok (pl. kutyák) jutalomalapú betanításának hátterében is, ahogy azt korábban (Öröklött és tanult magatartásformák fejezet) a "ül" parancs betanításánál már érintettük. A viselkedést követő jutalom (pl. táplálék) növeli, a büntetés (pl. kellemetlen inger) pedig csökkenti a viselkedés jövőbeli előfordulásának valószínűségét.',
+                  'A belátásos tanulás a legösszetettebb tanulási forma: az állat a problémát nem próba-szerencse alapon, fokozatosan oldja meg, hanem hirtelen, korábbi tapasztalatok kombinálásával, mintegy "felismerve" a megoldást. A német pszichológus, Wolfgang Köhler csimpánzokkal végzett híres kísérleteiben az állatok - hosszabb megfigyelés után, minden előzetes próbálkozás nélkül - hirtelen rájöttek, hogy egymásra pakolt ládákkal elérhetik a magasban lógó banánt. Ez a fajta tanulás a fejlett idegrendszerű, elsősorban a főemlősöknél és néhány más magas intelligenciájú fajnál (pl. hollóknál, delfineknél) figyelhető meg leginkább.',
+                ],
+              },
+            ],
+            keyTerms: ['bevésődés', 'érzékenyítés', 'megszokás', 'feltételes reflex', 'operáns tanulás', 'belátásos tanulás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni egy további tanulási formát, a megfigyeléses tanulást, valamint azt, hogy a megszokás és az érzékenyítés miért éppen ellentétes irányban működik.',
+            sections: [
+              {
+                heading: 'Megfigyeléses tanulás és a válaszkészség adaptív szűrése',
+                paragraphs: [
+                  'A megfigyeléses tanulás (más néven szociális tanulás) során az állat mások (jellemzően fajtársak) viselkedésének megfigyelésével, saját próbálkozás nélkül sajátít el új viselkedésformákat - ezt korábban (Öröklött és tanult magatartásformák fejezet) a csimpánzok szerszámhasználatánál és a macskák vadászati technikájánál már konkrét példákon keresztül megismertük, anélkül hogy magát a tanulási formát megneveztük volna. A megfigyeléses tanulás előnye, hogy az egyed elkerülheti a próba-szerencse tanulással (pl. operáns tanulással) járó kockázatokat és időveszteséget, hiszen közvetlenül mások sikeres (vagy sikertelen) próbálkozásaiból profitálhat.',
+                  'A korábban bemutatott megszokás és érzékenyítés látszólag teljesen ellentétes iránya valójában egyazon adaptív elvet szolgálja: az idegrendszer folyamatosan "szűri" a bejövő ingereket biológiai jelentőségük szerint. A veszélytelen, jelentéktelen ingerekre adott válasz csökkentése (megszokás) energiát takarít meg, míg a valóban veszélyes ingerekre adott válasz erősítése (érzékenyítés) a túlélési esélyt növeli - a kettő együtt biztosítja, hogy az állat idegrendszere a ténylegesen fontos ingerekre koncentráljon.',
+                ],
+              },
+            ],
+            keyTerms: ['megfigyeléses tanulás'],
+          },
+        },
+      },
+      {
+        id: 'motivacio-kulcsinger',
+        title: 'Motiváció és kulcsinger',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Motiváció', 'Kulcsinger'],
+          rows: [
+            ['Eredet', 'belső (fiziológiai állapot)', 'külső (a környezetből érkező inger)'],
+            ['Szerepe', 'meghatározza a válaszkészséget', 'kiváltja magát a viselkedést'],
+            ['Példa', 'éhségérzet', 'a sirálycsőrön lévő piros folt'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák, Veleszületett magatartásformák és Tanult magatartásformák fejezetek) megismert magatartásformák mindegyikének kialakulásában két alapvető, egymással szorosan összefüggő fogalom játszik kulcsszerepet: a motiváció és a kulcsinger.',
+            sections: [
+              {
+                heading: 'Motiváció',
+                paragraphs: [
+                  'A motiváció az állat belső fiziológiai állapota, amely befolyásolja, hogy egy adott inger mennyire váltja ki a rá jellemző viselkedést, illetve hogy az állat mennyire aktívan keresi az adott ingert. Egy éhes állat sokkal intenzívebben keres táplálékot, és sokkal erősebben reagál a táplálékot jelző ingerekre, mint egy jóllakott állat, amely akár teljesen figyelmen kívül is hagyhatja ugyanazt a táplálékforrást - a táplálékkeresési motiváció tehát a belső, fiziológiai éhségérzettel szoros arányban változik.',
+                  'Hasonlóan, a szaporodási motiváció (amelyet gyakran hormonális változások indítanak el) határozza meg, hogy egy állat mikor és mennyire aktívan keres párzási partnert - ezt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az udvarlási viselkedéseknél már érintettük, anélkül hogy a mögöttes motivációs állapotot külön kiemeltük volna.',
+                  'A motiváció szintje idővel változhat: minél tovább nem elégül ki egy szükséglet (pl. minél régebben nem evett az állat), a motiváció jellemzően annál magasabb szintre emelkedik, ami egyre alacsonyabb ingerküszöböt (egyre gyengébb ingerekre is választ) és egyre intenzívebb viselkedést eredményez. Miután a szükséglet kielégült (pl. az állat jóllakott), a motiváció szintje jellemzően csökken, és a hozzá kapcsolódó viselkedés is visszaszorul - amíg a szükséglet a szervezet működése miatt ismét fel nem merül.',
+                ],
+              },
+              {
+                heading: 'Kulcsinger',
+                paragraphs: [
+                  'A kulcsinger egy adott inger azon specifikus, jellegzetes tulajdonsága, amely önmagában, más részletektől függetlenül is képes kiváltani egy adott, jellemzően öröklött viselkedést. Niko Tinbergen klasszikus kísérletében a sirályfiókák a szülő csőrén lévő piros foltra csipegetnek, ami kiváltja a szülő táplálék-felöklendezését - Tinbergen kimutatta, hogy a fiókák egy egyszerű, sematikus modellen is ugyanúgy reagálnak a piros foltra, még akkor is, ha a modell egyébként egyáltalán nem hasonlít egy valódi sirályfejre.',
+                  'A kulcsinger tehát nem a teljes, összetett, valós ingert (pl. a teljes szülőmadarat), hanem annak egyetlen, kiugróan feltűnő jellemzőjét (pl. egy adott színfoltot) jelenti - ez az egyszerűsítés teszi lehetővé, hogy az öröklött magatartásformák gyorsan és megbízhatóan aktiválódjanak, anélkül hogy az idegrendszernek a teljes, összetett ingerhelyzetet fel kellene dolgoznia.',
+                ],
+              },
+              {
+                heading: 'Motiváció és kulcsinger együttes szerepe',
+                paragraphs: [
+                  'A motiváció és a kulcsinger együttesen határozzák meg egy viselkedés tényleges megjelenését: ugyanaz a kulcsinger eltérő erősségű választ válthat ki attól függően, hogy az állat éppen milyen motivációs állapotban van. Egy jóllakott állat gyengébben (vagy egyáltalán nem) reagál egy táplálékot jelző kulcsingerre, mint egy éhes állat, még akkor is, ha a kulcsinger fizikailag pontosan ugyanaz.',
+                  'Ez a kettősség magyarázza, hogy ugyanaz az állat ugyanarra a helyzetre miért reagálhat különbözőképpen az idő múlásával: nem a környezet vagy az inger változik meg, hanem az állat belső, motivációs állapota - ezért a viselkedés magyarázatához mindig mindkét tényezőt (a kiváltó ingert és a belső állapotot) egyszerre kell figyelembe venni.',
+                ],
+              },
+            ],
+            keyTerms: ['motiváció', 'kulcsinger'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni azt a meglepő jelenséget, amikor egy mesterségesen eltúlzott kulcsinger az eredetinél is erősebb választ vált ki.',
+            sections: [
+              {
+                heading: 'A szuperinger jelensége',
+                paragraphs: [
+                  'A szuperinger (szupernormális inger) egy olyan, mesterségesen létrehozott vagy a természetben ritkán előforduló inger, amely a kulcsinger jellemző tulajdonságait eltúlzott mértékben tartalmazza, ezért az eredeti, természetes ingernél is erősebb választ vált ki. Tinbergen kísérleteiben egyes madarak (pl. bizonyos partimadárfajok) a saját, valódi tojásuknál nagyobb, feltűnőbb foltozású műtojást előnyben részesítették a kotlásra, sőt, esetenként még a saját tojásukat is elhagyták a "szuperinger" tojás mellett - hiába volt a mesterséges tojás egyértelműen "irreális" méretű, a madár öröklött felismerő mechanizmusa egyszerűen a nagyobb, feltűnőbb ingerre reagált erősebben.',
+                  'A szuperinger jelensége rávilágít arra, hogy az öröklött magatartásformákat kiváltó kulcsingerek felismerése egy viszonylag egyszerű, néhány jellemzőre (pl. méret, szín, mintázat) épülő mechanizmuson alapul, amely bizonyos, mesterségesen előidézett körülmények között "becsapható" - ez a jelenség egyben magyarázatot ad arra is, hogy egyes emberi ingerek (pl. rikítóan élénk színű, feltűnő csomagolású élelmiszerek) miért képesek a szükségesnél erősebb reakciót kiváltani.',
+                  'A jelenség evolúciós szempontból is tanulságos: mivel a természetben a szuperingerhez hasonló, eltúlzott jellemzőjű ingerek rendkívül ritkán fordulnak elő, az öröklött felismerő mechanizmus "egyszerűsítése" (csak néhány kulcsjellemzőre való hagyatkozás) a valós körülmények között tökéletesen megbízható stratégia volt - a probléma csak akkor jelentkezik, amikor egy mesterséges, ember alkotta inger (pl. a Tinbergen-féle műtojás) váratlanul, a természetes szelekció "felkészülése" nélkül jelenik meg - erre a fajta öröklött, egyszerűsített felismerésre a lassú, sok nemzedéken át zajló evolúció egyszerűen nem tudott megoldást kifejleszteni.',
+                ],
+              },
+            ],
+            keyTerms: ['szuperinger'],
+          },
+        },
       },
     ],
   },

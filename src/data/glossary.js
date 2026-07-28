@@ -397,6 +397,71 @@ export const GLOSSARY = {
   'fototropizmus': 'A növény fény irányába történő növekedési válasza, amelyet az auxin egyenlőtlen eloszlása okoz.',
   'geotropizmus': 'A növény gyökerének és hajtásának a nehézségi erő irányához igazodó növekedési válasza, amelyet az auxin egyenlőtlen eloszlása okoz.',
 
+  // 3. modul, 30. fejezet: Állati szövetek
+  'vázizom': 'Harántcsíkolt izomszövet-típus, amely a csontvázhoz kapcsolódva az akaratlagos mozgást biztosítja.',
+  'csontszövet': 'Ásványi anyagokkal átitatott, rendkívül szilárd kötőszövet-típus, amely a testtartást és a belső szervek védelmét szolgálja.',
+  'simaizom': 'Akaratlanul összehúzódó, harántcsíkolatot nem mutató izomszövet-típus, amely a belső szervek (pl. bélcsatorna, erek) mozgatásáért felelős.',
+  'szívizom': 'Harántcsíkolt, de akaratlanul, önállóan és ritmikusan összehúzódó izomszövet-típus, amely kizárólag a szívben található.',
+  'csillós hám': 'Csillókkal borított hámszövet-típus, amely a csillók összehangolt mozgásával anyagokat továbbít a felszínén (pl. a légutakban).',
+  'üvegporc': 'Sima, rugalmas, nyomásra ellenálló kötőszövet-típus, amely rostokat nem tartalmazó mátrixból épül fel, pl. az ízületi felszíneken.',
+
+  // 3. modul, 31. fejezet: Szaporodás és egyedfejlődés
+  'petesejt': 'A nőivarú egyed ivarsejtje: nagyméretű, mozdulatlan, tartalék tápanyagot (szikanyagot) raktároz.',
+  'hímivarsejt': 'A hímivarú egyed ivarsejtje: apró, jellemzően ostoros, mozgékony sejt, amely a petesejt megtermékenyítésére specializálódott.',
+  'zigóta': 'A megtermékenyítés során a hímivarsejt és a petesejt egyesüléséből létrejövő, osztatlan sejt - az új egyed egyedfejlődésének kiindulópontja.',
+  'hímnősség': 'Az a jelenség, amikor egyetlen egyed mindkét ivarsejttípust (petesejtet és hímivarsejtet is) képes termelni, pl. a földigilisztánál vagy a csigák nagy részénél.',
+  'váltivarúság': 'Az a jelenség, amikor egy adott egyed csak az egyik ivarsejttípust termeli, azaz az egyedek ivarilag elkülönültek.',
+  'ivari kétalakúság': 'A hím és a nő egyedek külső megjelenésében (pl. szín, méret, dísz) megnyilvánuló különbség (nemi dimorfizmus).',
+  'embrionális fejlődés': 'Az egyedfejlődés megtermékenyítéstől a születésig (kikelésig) tartó szakasza, amely alatt kialakulnak az alapvető szervrendszerek.',
+  'posztembrionális fejlődés': 'Az egyedfejlődés születés (kikelés) utáni szakasza, amely alatt az egyed eléri a kifejlett állapotot.',
+  'regeneráció': 'Elvesztett testrész újranövesztésének, vagy akár egy leszakadt testrészből teljes új egyed kialakulásának képessége.',
+  'parthenogenezis': 'Szaporodási mód, amelynek során a petesejtből megtermékenyítés nélkül fejlődik ki új egyed (szűznemzés).',
+
+  // Állati viselkedés modul, 1. fejezet: Öröklött és tanult magatartásformák
+  'öröklött magatartásforma': 'Genetikailag kódolt, tanulás nélkül is megjelenő, fajra jellemző, kiszámítható lefolyású viselkedésforma.',
+  'tanult magatartásforma': 'Egyedi tapasztalat vagy környezeti hatás eredményeként kialakuló, egyedenként eltérő, az élet során módosulható viselkedésforma.',
+  'kritikus periódus': 'Az egyedfejlődés genetikailag meghatározott, korlátozott időszaka, amely alatt egy adott tanulási folyamat (pl. az énekmintázat elsajátítása) végbemehet.',
+
+  // Állati viselkedés modul, 2. fejezet: Önfenntartással kapcsolatos viselkedések
+  'tájékozódási viselkedés': 'Az állat útkeresését, élőhelyén és táplálékforrásaihoz vagy fészkéhez való eligazodását szolgáló magatartásforma.',
+  'táplálkozási magatartás': 'A táplálékkeresést, -elfogást és -feldolgozást szolgáló viselkedésformák összessége.',
+  'menekülési viselkedés': 'A ragadozók elől való elmenekülést szolgáló magatartásforma.',
+  'thanatózis': 'Az elhullott állat állapotát imitáló, "tettető halál" védekezési stratégia, amellyel egyes fajok (pl. az oposszum) elveszik a ragadozó érdeklődését.',
+  'védekező viselkedés': 'A ragadozókkal vagy más veszélyforrásokkal szembeni testi és viselkedésbeli védekezési stratégiák összessége.',
+  'álcázás': 'Az állat testfelépítésének vagy színezetének a környezethez való hasonlítása, amely megnehezíti a ragadozók (vagy a zsákmány) általi felismerést.',
+  'batesi mimikri': 'Olyan mimikri, amelynél egy védtelen faj egy védett faj külsejét utánozza, ezzel megtévesztve a ragadozókat.',
+  'müller-féle mimikri': 'Olyan mimikri, amelynél két vagy több, egymástól függetlenül is védett faj hasonló megjelenése kölcsönösen erősíti a ragadozók tanulási hatását.',
+
+  // Állati viselkedés modul, 3. fejezet: Fajfenntartással kapcsolatos viselkedések
+  'udvarlás': 'A partnerkeresést és a párzási hajlandóság kölcsönös jelzését szolgáló magatartásforma.',
+  'párzás': 'A megtermékenyítéshez vezető viselkedés, amelyet gyakran a hímek közötti versengés előz meg.',
+  'ivadékgondozás': 'A szülők utódaik túlélési esélyét növelő viselkedése, amelynek mértéke fajonként igen eltérő.',
+  'altruizmus': 'Önzetlen viselkedés, amelynek során az egyed saját érdekeit (akár túlélési esélyét) háttérbe szorítva segít rokonain.',
+  'agresszió': 'A fajtársak közötti, jellemzően korlátozott erőforrásokért (táplálék, territórium, partner) folyó versengésből fakadó magatartásforma.',
+  'dominanciahierarchia': 'Egy csoporton belüli rangsor, amely szabályozza az erőforrásokhoz és a szaporodási lehetőségekhez való hozzáférést.',
+  'rokonszelekció': 'Evolúciós elmélet, amely szerint az önzetlen viselkedés azért alakulhatott ki, mert a rokonok megsegítése a közös génállomány továbbörökítését szolgálja.',
+
+  // Állati viselkedés modul, 4. fejezet: Veleszületett magatartásformák
+  'feltétlen reflex': 'Egy adott ingerre adott, veleszületett, gyors és egyszerű válasz, amely tanulás nélkül, minden egyeden azonos módon zajlik le.',
+  'irányított mozgás': 'Az egész állat ingerforrás felé (pozitív taxis) vagy attól elfelé (negatív taxis) történő mozgása.',
+  'öröklött mozgásmintázat': 'Összetett, több lépésből álló, sztereotip mozgássorozat, amely egy kulcsinger hatására elindulva a maga teljességében lezajlik, akkor is, ha a kiváltó inger időközben megszűnik.',
+  'reflexív': 'A feltétlen reflexek idegrendszeri alapja: az érző idegsejttől a gerincvelőn (vagy agytörzsön) át a mozgató idegsejtig, majd az effektorig vezető ingerületi útvonal.',
+  'effektor': 'A választ ténylegesen végrehajtó szerv (izom vagy mirigy) egy reflexívben.',
+
+  // Állati viselkedés modul, 5. fejezet: Tanult magatartásformák
+  'bevésődés': 'Fiatal állatnál egy korai, kritikus periódusban kialakuló, tartós kötődés egy adott ingerhez (jellemzően a szülőhöz).',
+  'érzékenyítés': 'Ismétlődő, erős vagy veszélyes inger hatására a válaszkészség fokozatos erősödése.',
+  'megszokás': 'Ismétlődő, veszélytelen inger hatására a válaszkészség fokozatos csökkenése, akár megszűnése.',
+  'feltételes reflex': 'Egy eredetileg semleges inger és egy feltétlen inger ismételt együttes bemutatása után kialakuló, tanult inger-válasz kapcsolat (klasszikus kondicionálás).',
+  'operáns tanulás': 'Olyan tanulási forma, amelynél a viselkedés következménye (jutalom vagy büntetés) határozza meg a viselkedés jövőbeli gyakoriságát.',
+  'belátásos tanulás': 'A legösszetettebb tanulási forma, amelynél az állat egy problémát próba-szerencse nélkül, korábbi tapasztalatok hirtelen kombinálásával old meg.',
+  'megfigyeléses tanulás': 'Olyan tanulási forma, amelynél az állat mások viselkedésének megfigyelésével, saját próbálkozás nélkül sajátít el új viselkedésformákat.',
+
+  // Állati viselkedés modul, 6. fejezet: Motiváció és kulcsinger
+  'motiváció': 'Az állat belső fiziológiai állapota, amely befolyásolja, hogy egy adott inger mennyire váltja ki a rá jellemző viselkedést.',
+  'kulcsinger': 'Egy inger azon specifikus, jellegzetes tulajdonsága, amely önmagában is képes kiváltani egy adott, jellemzően öröklött viselkedést.',
+  'szuperinger': 'Mesterségesen létrehozott vagy ritkán előforduló inger, amely a kulcsinger jellemzőit eltúlzott mértékben tartalmazva az eredetinél is erősebb választ vált ki.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
