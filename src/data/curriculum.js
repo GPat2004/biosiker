@@ -4113,8 +4113,72 @@ export const CURRICULUM = [
           emeltExtra: { comingSoon: true },
         },
       },
-      { id: 'legzes', title: 'A légzés', order: 8, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'legzes',
+        title: 'A légzés',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Mellkasi légzés', 'Hasi légzés'],
+          rows: [
+            ['Domináns izom', 'elsősorban a bordaközti izmok', 'elsősorban a rekeszizom'],
+            ['Mellkas/has mozgása', 'a mellkas jól láthatóan kitágul, "emelkedik"', 'a mellkas kevésbé mozog, inkább a has domborodik előre'],
+            ['Jellemző előfordulás', 'megerőltető légzéskor, illetve terhesség alatt (amikor a megnagyobbodott méh gátolja a rekeszizom lesüllyedését) felerősödik', 'nyugalmi légzéskor jellemzően ez a hatékonyabb, kevesebb energiát igénylő forma'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Emlősök fejezet) megismert rekeszizom (diafragma) - amely az emlősöket az addig tanult gerinces csoportoktól megkülönbözteti - és a Madarak fejezetben megismert légzsákos, egyirányú kettős légzéssel szemben ebben a fejezetben az emberi (és általában az emlős) légzőrendszer felépítését és működését ismerjük meg részletesen, amelyben a levegő nem egyirányban, hanem oda-vissza (be- és kilégzéssel) áramlik.',
+            sections: [
+              {
+                heading: 'A légzőrendszer felépítése',
+                paragraphs: [
+                  'A légzőrendszer legfontosabb funkciói a szervezet oxigénellátásának biztosítása, a sejtlégzés során keletkező szén-dioxid eltávolítása, valamint a hangképzés. A belélegzett levegő útja: orrüreg (illetve szükség esetén szájüreg) → garat → gégefő → légcső → hörgők → a tüdőben egyre finomabban elágazó légutak, amelyek végül a léghólyagocskákban (alveolusokban) végződnek - itt zajlik a gázcsere a levegő és a vér között. A tüdőt kettős hártya, a mellhártya (pleura) veszi körül, amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé a mellkasfalon.',
+                  'A gégefő (gége) három, ábrán is jól azonosítható része a pajzsporc (ez alkotja a gége elülső, kiemelkedő részét, a "ádámcsutkát"), a gégefedő (amely nyeléskor lezárja a légutat, megakadályozva, hogy táplálék kerüljön a légcsőbe) és a hangszalagok, amelyek a hangképzésben töltenek be kulcsszerepet.',
+                ],
+              },
+              {
+                heading: 'A légzési mozgások: belégzés és kilégzés',
+                paragraphs: [
+                  'A belégzést és a kilégzést elsősorban a rekeszizom és a bordaközti izmok összehangolt működése biztosítja: a rekeszizom összehúzódásakor lelapul, ezáltal megnöveli a mellüreg (és így a tüdő) térfogatát, ami a levegő beáramlását (belégzés) idézi elő; ellazulásakor a mellüreg térfogata csökken, ez okozza a kilégzést. A bordaközti izmok összehúzódása a bordákat megemeli, tovább növelve a mellüreg térfogatát belégzéskor.',
+                  'Nehézlégzés (megerőltető légzés, pl. intenzív testmozgás közben) esetén további, ún. légzési segédizmok (pl. a nyaki és a vállövi izmok egy része) is bekapcsolódnak, hogy még nagyobb mellüreg-térfogatváltozást tegyenek lehetővé.',
+                ],
+              },
+              {
+                heading: 'Légzési mutatók: vitálkapacitás és légzésszám',
+                paragraphs: [
+                  'A vitálkapacitás a maximális erőltetett belégzést követő maximális erőltetett kilégzéssel kifújható levegő térfogata; a légzési perctérfogat pedig a percenkénti légzésszám és az egy légvételre jutó levegőmennyiség (légzési térfogat) szorzata. Az aktívan sportoló fiatalok vitálkapacitása jellemzően nagyobb, mint a nem sportolóké, mivel a rendszeres, intenzív testmozgás fejleszti a légzőizomzatot és a tüdő rugalmasságát, ezáltal hatékonyabb gázcserét és jobb terhelhetőséget biztosít. A fiúk vitálkapacitása azonos edzettségi szint mellett is jellemzően nagyobb, mint a lányoké, mivel átlagosan nagyobb testméretük nagyobb tüdőtérfogattal és fejlettebb légzőizomzattal párosul.',
+                  'A légzésszám nyugalomban jellemzően alacsonyabb, mint munkavégzés (testmozgás) után: a fokozott izomműködés megnöveli a szövetek oxigénigényét és szén-dioxid-termelését, ami a légzésszám (és a légzési térfogat) növekedését váltja ki.',
+                ],
+              },
+              {
+                heading: 'Légcsere, gázcsere, hangképzés',
+                paragraphs: [
+                  'Fontos megkülönböztetni három, egymásra épülő fogalmat: a légcsere a levegő be- és kiáramlását jelenti a tüdőbe, illetve onnan kifelé; a gázcsere az oxigén és a szén-dioxid diffúzión alapuló kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között; a sejtlégzés pedig a sejteken belül lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel. A három folyamat szorosan összefügg: a légcsere biztosítja a gázcseréhez szükséges friss levegőt, a gázcsere pedig a sejtlégzéshez szükséges oxigént juttatja el a sejtekhez, illetve távolítja el az ott képződő szén-dioxidot.',
+                  'A hangképzés során a kilégzett levegő a hangszalagokat rezgésbe hozza, ez kelti a hangot; a hangszalagok feszülésének és a rajtuk átáramló levegő mennyiségének változtatásával alakítható a hang magassága és erőssége.',
+                ],
+              },
+              {
+                heading: 'A légzés szabályozása',
+                paragraphs: [
+                  'A légzés mélységét és gyakoriságát elsősorban a vér szén-dioxid-koncentrációjának emelkedése szabályozza (nem elsősorban az oxigénszint csökkenése): ha a vérben megemelkedik a szén-dioxid mennyisége, a légzés önműködően felgyorsul és elmélyül, ami fokozott szén-dioxid-kiürüléshez, majd a koncentráció csökkenéséhez vezet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén működő szabályozás egy újabb, konkrét példája.',
+                ],
+              },
+              {
+                heading: 'A légzőrendszer egészségtana',
+                paragraphs: [
+                  'Az orron át történő belégzés előnyösebb a szájon át történőnél, mert az orrüregben a levegő megszűrődik (a szennyeződések, kórokozók egy része kiszűrődik), felmelegszik és páratartalmat nyer, mielőtt eléri a mélyebb légutakat - ez védi a tüdőt a kiszáradástól és a károsító hatásoktól.',
+                  'A légzőrendszert leggyakrabban károsító tényezők közé tartozik a dohányzás, a légszennyezettség és az allergének; ezek hozzájárulnak a légzőrendszer gyakori megbetegedéseihez, amelyek lehetnek fertőzéses eredetűek (pl. tüdőgyulladás, hörghurut) vagy daganatos jellegűek (pl. tüdőrák), illetve idetartozik az asztma is. A torokgyulladás gyakran jár együtt középfülgyulladással, mert a garatot és a középfület összekötő fülkürtön (Eustach-kürtön) keresztül a fertőzés könnyen átterjedhet az egyik szervről a másikra.',
+                  'A dohányzás különösen súlyos kockázatot jelent: károsítja a légutak és a tüdő szöveteit, jelentősen megnöveli a légzőrendszeri daganatos és fertőzéses megbetegedések, valamint a szív-érrendszeri betegségek kockázatát is - ezért is fontos a dohányzás elkerülése, illetve a leszokás mellett érvelni.',
+                ],
+              },
+            ],
+            keyTerms: ['léghólyagocska', 'mellhártya', 'rekeszizom', 'vitálkapacitás', 'légzési perctérfogat', 'gázcsere', 'sejtlégzés', 'hangszalag'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
       { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 9, isFree: false, estimatedMinutes: 22,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
       { id: 'kivalasztas', title: 'A kiválasztás', order: 10, isFree: false, estimatedMinutes: 16,
