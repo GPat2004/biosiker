@@ -4042,10 +4042,169 @@ export const CURRICULUM = [
       },
       {
         id: 'taplalkozas',
-        title: 'A táplálkozás',
+        title: 'Táplálkozás',
         order: 7,
         isFree: false,
-        estimatedMinutes: 20,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A mozgási rendszer egészségtana fejezet) lezárt mozgási rendszer után ebben a modulban most a táplálkozási (emésztő-) rendszert kezdjük megismerni: ez a fejezet a táplálkozás alapfogalmait és a szervrendszer felépítését tekinti át, a következő fejezetek (Emésztés, Felszívódás, A táplálkozás szabályozása, Táplálkozás egészségtana) pedig ezt az alapot bontják ki részletesen.',
+            sections: [
+              {
+                heading: 'A táplálkozás jelentősége és fő folyamatai',
+                paragraphs: [
+                  'A táplálkozás a szervezet számára szükséges energia és építőanyag biztosítását szolgálja: a felvett tápanyagokból nyert energia fedezi például a korábban (Izomrendszer fejezet) megismert izomösszehúzódáshoz szükséges ATP-termelést, az építőanyagok pedig a szövetek folyamatos megújulásához és növekedéséhez szükségesek.',
+                  'A táplálkozás fő folyamatai a rágás (a táplálék mechanikai aprítása és nyállal való összekeverése, amely megnöveli a táplálék felületét és ezzel megkönnyíti a későbbi kémiai bontást), a nyelés (a lenyelt falat garaton, majd nyelőcsövön át történő továbbítása a gyomorba), valamint a bélperisztaltika, azaz a bélcsatorna falában lévő izomzat hullámszerű összehúzódása, amely a táplálékot a tápcsatornán végig továbbmozgatja.',
+                ],
+              },
+              {
+                heading: 'Táplálék és tápanyag',
+                paragraphs: [
+                  'Fontos megkülönböztetni a táplálék és a tápanyag fogalmát: a táplálék a szervezetbe felvett étel, amely még emésztésre vár, míg a tápanyag a tápláléknak az az emésztés révén felszabadított alkotórésze (szénhidrát, fehérje, zsír, vitamin, ásványi anyag, víz), amelyet a szervezet ténylegesen fel tud szívni és hasznosítani tud.',
+                  'A víz és az ásványi anyagok különleges helyzetű tápanyagok, mert emésztés nélkül, változatlan formában is felszívódnak - ezzel szemben a szénhidrátoknak, a fehérjéknek és a zsíroknak előbb a következő fejezetben (Emésztés) tárgyalt kémiai lebontáson kell átesniük ahhoz, hogy a szervezet hasznosítani tudja őket.',
+                ],
+              },
+              {
+                heading: 'A tápanyagok energiatartalma és a testtömegindex',
+                paragraphs: [
+                  'A tápanyagok fajlagos energiatartalma eltérő: a szénhidrátok és a fehérjék energiatartalma kb. 17 kJ/g (kb. 4 kcal/g), a zsíroké ennek több mint kétszerese, kb. 38 kJ/g (kb. 9 kcal/g) - egy egyszerű számítási példával: 20 g zsír elfogyasztása kb. 760 kJ energiát biztosít a szervezetnek, míg ugyanennyi szénhidrát csak kb. 340 kJ-t.',
+                  'A testtömegindex (BMI = testtömeg (kg) / testmagasság² (m²)) egy tájékozódásra alkalmas, de nem tökéletes mutató: a szokásos tájékoztató beosztás szerint 18,5 alatt alultápláltságról, 18,5-25 között normál testtömegről, 25 felett túlsúlyról beszélünk, ez a beosztás azonban nem veszi figyelembe a testösszetételt (az izom- és zsírszövet arányát). Éppen ezért a BMI normálértéke valójában a nemtől, az életkortól és a testösszetételtől is függ - például egy nagy izomtömegű sportolónál a BMI tévesen a túlsúly kategóriájába eshet, hiszen az izomszövet nehezebb, mint az azonos térfogatú zsírszövet.',
+                ],
+              },
+              {
+                heading: 'A táplálkozási szervrendszer áttekintése',
+                paragraphs: [
+                  'A táplálkozási szervrendszer fő szervei - a táplálék útját követve - a szájüreg (fogak, nyelv, nyálmirigyek), a garat, a nyelőcső, a gyomor, a vékonybél és a vastagbél, majd a végbél; ehhez kapcsolódik két fontos mirigyes szerv, a máj (epehólyaggal) és a hasnyálmirigy, amelyek emésztőnedveiket a vékonybél elejébe (nyombélbe) ürítik.',
+                  'A teljes tápcsatorna hossza felnőtt embernél összecsavarodott állapotban is eléri a 8-9 métert - ez a jelentős hossz biztosítja, hogy a táplálék elegendő ideig érintkezzen az emésztőnedvekkel és a felszívó felületekkel. Az egyes szervek pontos szerepét (fogazat, emésztőnedvek, felszívódás) a következő fejezetek részletezik.',
+                ],
+              },
+            ],
+            keyTerms: ['táplálék', 'tápanyag', 'bélperisztaltika', 'testtömegindex'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'emesztes',
+        title: 'Emésztés',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Táplálkozás fejezet) áttekintett táplálkozási szervrendszer felépítése után ebben a fejezetben azt vizsgáljuk meg, hogyan zajlik a táplálék mechanikai és kémiai lebontása - ez utóbbi ugyanazt a hidrolízis elvet követi, amelyet korábban (a szénhidrátok fejezetben) az amiláz enzim keményítőbontásánál már megismertünk.',
+            sections: [
+              {
+                heading: 'Fogazat és a szájüreg egészsége',
+                paragraphs: [
+                  'A fog részei a korona (a látható, a legkeményebb testszövetnek számító zománccal borított rész), az alatta lévő fogcsont (dentin), a fog belsejében található, ereket és idegeket tartalmazó fogbél (pulpa), valamint az állcsontban rögzítő gyökér. Az emberi (felnőtt) fogképlet negyedenként 2 metszőfogat, 1 szemfogat, 2 kisőrlőt és 3 nagyőrlőt tartalmaz, összesen 32 fogat - ez a korábban (Emlősök fejezet) megismert differenciált, heterodont fogazat egy konkrét, emberre jellemző megvalósulása.',
+                  'A száj higiéniája (rendszeres fogmosás, fogselyem használata, rendszeres fogorvosi szűrővizsgálat) kiemelten fontos, mert megelőzi a fogszuvasodást (káriészt) és az ínygyulladást, amelyek kezeletlenül akár fogvesztéshez is vezethetnek.',
+                ],
+              },
+              {
+                heading: 'Az emésztőnedvek és az emésztés folyamata',
+                paragraphs: [
+                  'Az emésztés a szájban kezdődik, ahol a rágás mechanikai hatása mellett a nyál amiláz enzime megkezdi a keményítő bontását; a nyál termeléséért három pár nyálmirigy (fültőmirigy, állkapocs alatti és nyelv alatti mirigy) felel. A megrágott, nyállal átitatott falatot a nyelv a garat felé továbbítja, ahonnan a nyelés reflexes mozgássorozata juttatja tovább a nyelőcsőbe. A nyelőcső ezután pusztán szállító szerv: benne emésztés nem történik, kizárólag a bélperisztaltikához hasonló hullámzó izomösszehúzódás továbbítja a lenyelt falatot a gyomorba.',
+                  'A gyomorban a gyomornedv sósavtartalma erősen savas kémhatást (kb. pH 2) hoz létre, amely a fehérjebontó pepszin enzim működéséhez optimális, emellett elpusztítja a táplálékkal bejutó kórokozók jelentős részét is. A gyomor izmos fala a savas gyomornedvet a táplálékkal folyamatosan összekeveri, ezzel folytatva a mechanikai aprítást; a gyomor falát pedig egy vastag nyákréteg védi attól, hogy a szervezet saját magát emésztő nedve károsítsa.',
+                  'A hasnyálmirigy (amelynek - ahogy azt korábban a Homeosztázis fejezetben már megismertük - egyszerre van külső elválasztású, emésztőnedvet termelő és belső elválasztású, hormontermelő szerepe is) által termelt, lúgos kémhatású hasnyál egyszerre semlegesíti a gyomorból érkező savas béltartalmat, és mind a négy fő tápanyagcsoport (fehérjék, szénhidrátok, zsírok, valamint a nukleinsavak) bontásához tartalmaz enzimeket. A máj által termelt, majd az epehólyagban tárolt epe nem enzim, hanem a zsírok emulgeálásával (apró cseppekre bontásával) segíti azok hatékonyabb, nagyobb felületen történő bontását.',
+                ],
+              },
+              {
+                heading: 'Kísérleti értelmezés: az enzimek optimális kémhatása',
+                paragraphs: [
+                  'Ha egy kísérletben a gyomornedvet (vagy a hasnyálat) a természetestől eltérő kémhatásúra állítjuk be, az adott emésztőnedv enzimeinek hatása lecsökken vagy leáll: a gyomornedv pepszinje csak erősen savas közegben, a hasnyál enzimei pedig csak semleges-lúgos közegben fejtik ki hatásukat - ez azt mutatja, hogy minden enzim működéséhez egy adott, optimális kémhatás szükséges, amelytől eltérve az enzim hatékonysága romlik, akár teljesen meg is szűnhet.',
+                  'Ez a jelenség jól szemlélteti, miért van szükség a tápcsatorna mentén többféle, egymástól eltérő kémhatású emésztőnedvre: egyetlen enzimkészlet nem lenne képes hatékonyan működni a gyomor erősen savas, majd a vékonybél inkább semleges-lúgos közegében is - a szervezet ehelyett minden szakaszhoz a helyi kémhatáshoz optimálisan illeszkedő enzimeket termel.',
+                ],
+              },
+            ],
+            keyTerms: ['fogképlet', 'pepszin', 'amiláz', 'hasnyál', 'epe'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'felszivodas',
+        title: 'Felszívódás',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Emésztés fejezet) tárgyalt kémiai lebontás után ebben a fejezetben azt nézzük meg, hova és hogyan kerülnek be a lebontott tápanyagok a szervezetbe, illetve mi történik velük ezután.',
+            sections: [
+              {
+                heading: 'A bélbolyhok és a tápanyagok felszívódása',
+                paragraphs: [
+                  'A vékonybél belső falát beborító bélbolyhok apró, ujjszerű nyúlványok, amelyek hatalmasra növelik a felszívó felületet; a bélbolyhok felszínén elhelyezkedő sejteken további mikroszkopikus nyúlványok, a mikrobolyhok találhatók, amelyek tovább sokszorozzák a felszívó felület nagyságát. Minden egyes bélbolyhban sűrű hajszálér-hálózat és egy központi nyirokér (tejér) fut, ez biztosítja a felszívódott anyagok elszállítását.',
+                  'Itt szívódnak fel a végső bontási termékek: a monoszacharidok és az aminosavak a hajszálereken keresztül közvetlenül a vérbe jutnak, míg a zsírsavak és a glicerin jellemzően a nyirokereken (tejereken) át szívódnak fel, és csak ezután kerülnek be a vérkeringésbe. A felszívódás egy része passzívan (a koncentrációkülönbség mentén, energiafelhasználás nélkül), más része energiaigényes, aktív folyamatokkal zajlik - hasonlóan ahhoz az elvhez, amelyet korábban (Membránok szerepe fejezet) a passzív és az aktív szállítás megkülönböztetésénél már megismertünk.',
+                  'A bélbolyhok kiterjedt felszíne, sűrű érhálózata és a bennük zajló szüntelen mozgás (a bélbolyhok folyamatosan, lassú hullámmozgással "keverednek" a béltartalommal) együttesen biztosítja, hogy a naponta elfogyasztott táplálék tápanyagtartalmának túlnyomó része hatékonyan felszívódjon, mire a béltartalom eléri a vastagbelet.',
+                ],
+              },
+              {
+                heading: 'A vastagbél és a végbél szerepe',
+                paragraphs: [
+                  'A vékonybélből a fel nem szívódott, emészthetetlen anyagok (pl. a növényi rostok) a vastagbélbe kerülnek, amelynek fő feladata a bélsárból még kivonható víz és ásványi anyagok visszaszívása - ez tömöríti a béltartalmat széklet formájúvá. A vastagbélben élő, hatalmas számú baktérium (bélflóra) egy része hasznos, mutualista kapcsolatban él a szervezettel: egyes vitaminokat (pl. K-vitamint) is termel, amelyeket a szervezet fel tud szívni, cserébe a bélflóra tápanyagot és védett élőhelyet kap a vastagbélben - ez az együttélési forma tehát mindkét fél számára előnyös.',
+                  'A végbél a kialakult széklet ideiglenes tárolására és az ürítés (defekáció) lebonyolítására szolgál; az ürítés tudatosan is késleltethető, mivel a végbélnyílást körülvevő záróizomzat egy része akaratlagosan is irányítható. Ez a rendszer együttesen biztosítja, hogy a tápcsatorna elején lezajló emésztés és felszívódás után a fel nem használt maradék szabályozottan, a szervezet számára megfelelő időpontban távozzon.',
+                ],
+              },
+              {
+                heading: 'A máj szerepe a felszívott tápanyagok feldolgozásában',
+                paragraphs: [
+                  'A bélből felszívódó, vérbe jutó tápanyagok elsőként a májon haladnak át, amely sokrétű szerepet tölt be: fehérjéket, glükózt és glikogént szintetizál (a felesleges glükózból glikogént raktároz, majd éhezéskor ezt bontja vissza glükózzá, ezzel puffereli a vércukorszintet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén alapuló szabályozás egyik konkrét példája); raktároz egyes vitaminokat és a vasat; valamint méregteleníti a szervezetbe kerülő káros anyagokat (pl. az alkoholt vagy a gyógyszerek egy részét).',
+                  'A máj emellett igen jelentős regenerációs képességgel rendelkezik: szövetének akár jelentős részének elvesztése után is képes visszanöveszteni eredeti méretét, ami kiemeli, mennyire létfontosságú szerv a felszívódott tápanyagok feldolgozásában. Éppen ezért a máj tartós károsodása (pl. hosszú távú túlzott alkoholfogyasztás következtében) rendkívül súlyos, az egész szervezet anyagcseréjét felborító következményekkel jár.',
+                ],
+              },
+            ],
+            keyTerms: ['bélbolyh', 'vastagbél', 'máj', 'glikogén', 'bélflóra'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'taplalkozas-szabalyozasa',
+        title: 'A táplálkozás szabályozása',
+        order: 10,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Felszívódás fejezet) megismert folyamatok - hogy a tápanyagok hogyan jutnak be a szervezetbe és hogyan hasznosulnak - után ebben a fejezetben azt vizsgáljuk meg, mi váltja ki magát az étkezési késztetést, és hogyan szabályozza a szervezet a tápcsatorna működését.',
+            sections: [
+              {
+                heading: 'Az éhség- és a szomjúságérzet kiváltása',
+                paragraphs: [
+                  'Az éhségérzetet jellemzően a vércukorszint csökkenése és a gyomor kiürülése váltja ki, míg a szomjúságérzetet a testfolyadékok ozmotikus koncentrációjának (a víztartalom csökkenése miatti) megemelkedése idézi elő. Mindkét érzetet az agy egy erre specializálódott központja, a hipotalamusz dolgozza fel, amely folyamatosan érzékeli a vér összetételének változásait, és ezek alapján váltja ki a megfelelő késztetést.',
+                  'Az étkezés befejeztével a jóllakottság érzete alakul ki: a gyomor megtelése (feszülése) és a felszívódó tápanyagok hatására megemelkedő vércukorszint egyaránt jelzést küld a hipotalamusznak, amely ennek hatására csökkenti, majd megszünteti az éhségérzetet - ez az éhség és a jóllakottság folyamatos, egymást kiegyensúlyozó váltakozása biztosítja a rendszeres táplálékfelvételt.',
+                ],
+              },
+              {
+                heading: 'A tápcsatorna reflexes folyamatai',
+                paragraphs: [
+                  'A tápcsatorna számos reflexes folyamata tudatos befolyásolás nélkül, automatikusan zajlik le: a nyelés egy összetett, részben tudatos, részben reflexes mozgássorozat, a hányás pedig a szervezetbe jutott károsanyagok eltávolítását szolgáló védekező reflex.',
+                  'Különösen érdekes, hogy a táplálék puszta látványa vagy illata már önmagában megindíthatja a nyál- és a gyomornedvtermelést, még mielőtt a táplálék ténylegesen a szájba kerülne - ez a jelenség lényegében ugyanazon az elven alapul, mint a korábban (Tanult magatartásformák fejezet) megismert feltételes reflex (klasszikus kondicionálás): a szervezet a táplálék látványát/illatát idővel összekapcsolja magával az étkezéssel, és erre a "jelzőingerre" is reagálni kezd.',
+                  'Ezek a reflexes folyamatok jól mutatják, hogy a tápcsatorna működése nem várja meg a táplálék tényleges megérkezését az adott szervbe, hanem "előre felkészül" rá - ezzel gyorsítva és hatékonyabbá téve az emésztés megindulását, amint a táplálék ténylegesen megérkezik. A nyelés reflexe egyben védekező szerepet is betölt: garantálja, hogy a lenyelt falat mindig a helyes irányba, a nyelőcső felé haladjon, ne a szomszédos légutak felé.',
+                ],
+              },
+              {
+                heading: 'Minőségi és mennyiségi éhezés',
+                paragraphs: [
+                  'Fontos megkülönböztetni a minőségi éhezést (amikor a táplálék mennyisége elegendő, de valamely tápanyag - jellemzően a fehérje - tartósan hiányzik belőle) a mennyiségi éhezéstől (amikor általánosan, tartósan túl kevés az elfogyasztott táplálék energiatartalma). Mindkét forma tartós fennállása súlyos, akár visszafordíthatatlan egészségkárosodáshoz vezethet: a hosszan tartó fehérjehiány (minőségi éhezés) jellemzően duzzanatokkal (ödémával) is jár, míg a tartós, súlyos mennyiségi éhezés a szervezet teljes leépüléséhez, végső esetben halálhoz vezethet.',
+                  'A két éhezésforma gyakran együtt is előfordulhat, hiszen az egyoldalú, kevés táplálék jellemzően nemcsak energiában, hanem egyes tápanyagokban (pl. fehérjében, vitaminokban) is szegény - ez különösen a fejlődő országokban, illetve szélsőséges élethelyzetekben (pl. éhínség, tartós betegség) okoz súlyos, sokrétű egészségkárosodást, amelynek felismerése és kezelése komplex, orvosi felügyeletet igényel.',
+                  'Fontos megjegyezni, hogy az éhezés nemcsak szegénység vagy élelmiszerhiány következménye lehet: bizonyos evészavarok (pl. az önmegtartóztató étkezési magatartás) esetén az érintett tudatosan korlátozza a táplálékfelvételét annak ellenére, hogy a táplálék rendelkezésre áll - ez is a mennyiségi éhezés egyik, orvosi-pszichológiai kezelést igénylő formája.',
+                ],
+              },
+            ],
+            keyTerms: ['éhségérzet', 'szomjúságérzet', 'minőségi éhezés', 'mennyiségi éhezés'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'taplalkozas-egeszsegtana',
+        title: 'Táplálkozás egészségtana',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 16,
         comparisonTable: {
           headers: ['Szempont', 'Alultápláltság', 'Túltápláltság'],
           rows: [
@@ -4056,69 +4215,41 @@ export const CURRICULUM = [
         },
         content: {
           kozep: {
-            intro: 'A korábban (Emlősök fejezet) megismert differenciált, heterodont fogazat, valamint a hasnyálmirigy (Homeosztázis fejezetben tárgyalt) kettős, külső és belső elválasztó szerepe után ebben a fejezetben a teljes emberi táplálkozási szervrendszert ismerjük meg részletesen: hogyan alakul át a lenyelt táplálék a sejtek számára ténylegesen hasznosítható tápanyaggá.',
+            intro: 'A korábban (A táplálkozás szabályozása fejezet) megismert éhség-szabályozás után ebben a záró fejezetben - hasonlóan ahhoz, ahogy a mozgási rendszernél is külön fejezetet szenteltünk az egészségtannak (A mozgási rendszer egészségtana fejezet) - azt tekintjük át, hogyan függ össze a táplálkozás az egészséggel, és milyen kockázatokra érdemes figyelni.',
             sections: [
               {
-                heading: 'A táplálkozás jelentősége, a táplálék és a tápanyag',
+                heading: 'Tápanyagforrások és a vitaminok élettani jelentősége',
                 paragraphs: [
-                  'A táplálkozás a szervezet számára szükséges energia és építőanyag biztosítását szolgálja. Fő folyamatai a rágás (a táplálék mechanikai aprítása és nyállal való összekeverése), a nyelés (a lenyelt falat garaton, majd nyelőcsövön át történő továbbítása a gyomorba), valamint a bélperisztaltika, azaz a bélcsatorna falában lévő izomzat hullámszerű összehúzódása, amely a táplálékot a tápcsatornán végig továbbmozgatja.',
-                  'Fontos megkülönböztetni a táplálék és a tápanyag fogalmát: a táplálék a szervezetbe felvett étel, amely még emésztésre vár, míg a tápanyag a tápláléknak az az emésztés révén felszabadított alkotórésze (szénhidrát, fehérje, zsír, vitamin, ásványi anyag, víz), amelyet a szervezet ténylegesen fel tud szívni és hasznosítani tud.',
-                  'A tápanyagok fajlagos energiatartalma eltérő: a szénhidrátok és a fehérjék energiatartalma kb. 17 kJ/g (kb. 4 kcal/g), a zsíroké ennek több mint kétszerese, kb. 38 kJ/g (kb. 9 kcal/g) - egy egyszerű számítási példával: 20 g zsír elfogyasztása kb. 760 kJ energiát biztosít a szervezetnek, míg ugyanennyi szénhidrát csak kb. 340 kJ-t. A testtömegindex (BMI = testtömeg (kg) / testmagasság² (m²)) egy tájékozódásra alkalmas, de nem tökéletes mutató: nem veszi figyelembe a testösszetételt (az izom- és zsírszövet arányát), ezért normálértéke a nemtől, az életkortól és a testösszetételtől is függ - például egy nagy izomtömegű sportolónál a BMI tévesen a túlsúly kategóriájába eshet.',
+                  'A fehérjék, szénhidrátok, zsírok, növényi rostok és ásványi anyagok (nyomelemek) természetes forrásai (pl. hús, gabona, olajos magvak, zöldségek, gyümölcsök) mellett ismerni kell hiányuk és túlzott fogyasztásuk kockázatait is: a tartós fehérjehiány izomvesztéshez és duzzanatokhoz (ödémához) vezet, a rostszegény étrend székrekedést és a vastagbél megbetegedéseinek fokozott kockázatát okozhatja, a túlzott zsírfogyasztás pedig elhízáshoz és szív-érrendszeri betegségekhez vezethet.',
+                  'A D-vitamin (amely napfény hatására a bőrben is képződik) hiánya a kalcium felszívódásának zavara miatt csontlágyuláshoz (angolkórhoz) vezet; az A-vitamin hiánya a recehártya fényérzékeny pigmentjének károsodása miatt szürkületi vakságot (farkasvakságot) okoz; a B12-vitamin hiánya a vörösvértestek képzésének zavara miatt vérszegénységhez vezet; a C-vitamin hiánya - mivel a kollagén nélkülözhetetlen alkotóeleme - skorbutot okoz; a folsav hiánya pedig különösen terhesség alatt veszélyes, mert magzati idegcső-záródási rendellenességet okozhat.',
                 ],
               },
               {
-                heading: 'A táplálkozási szervrendszer felépítése és a máj szerepe',
+                heading: 'Élelmiszer-biztonság és életmódhoz igazodó étrend',
                 paragraphs: [
-                  'A táplálkozási szervrendszer fő szervei a szájüreg (fogak, nyelv, nyálmirigyek), a garat, a nyelőcső, a gyomor, a vékonybél (nyombél, éhbél, csípőbél), a vastagbél és a végbél; ehhez kapcsolódik két fontos mirigyes szerv, a máj (epehólyaggal) és a hasnyálmirigy, amelyek emésztőnedveiket a nyombélbe ürítik. A vastagbél fő feladata a bélsárból még kivonható víz és ásványi anyagok visszaszívása, míg a végbél a kialakult széklet ideiglenes tárolására és az ürítés (defekáció) lebonyolítására szolgál.',
-                  'A máj sokrétű szerepet tölt be: emésztőnedvet (epét) termel, amely a zsírok emulgeálásához (apró cseppekre bontásához) szükséges; fehérjéket, glükózt és glikogént szintetizál (a felesleges glükózból glikogént raktároz, majd éhezéskor ezt bontja vissza glükózzá, ezzel puffereli a vércukorszintet); raktároz egyes vitaminokat és a vasat; valamint méregteleníti a szervezetbe kerülő káros anyagokat.',
+                  'Az étrendi elvárások a tevékenységtől, a kortól, a nemtől és az adott élettani állapottól (pl. terhesség, szoptatás) függően jelentősen változnak: egy intenzíven sportoló, növésben lévő fiatalnak jelentősen nagyobb energia- és fehérjebevitelre van szüksége, mint egy ülő életmódot folytató felnőttnek, a várandósság és a szoptatás időszaka pedig fokozott energia- és tápanyagigénnyel (pl. megnövekedett folsav- és vasszükséglettel) jár.',
+                  'Az élelmiszerek tartósításának alapelvei (pl. hűtés, fagyasztás, szárítás, tartósítószerek alkalmazása) egyaránt a mikroorganizmusok szaporodásának gátlásán alapulnak, ezáltal lassítva az élelmiszerek romlását - ezért is fontos az élelmiszerek csomagolásán feltüntetett összetevők, illetve az eltarthatósági idő tudatos figyelembevétele. A helytelenül tárolt vagy lejárt élelmiszerekben elszaporodó mikroorganizmusok (illetve az általuk termelt méreganyagok) súlyos ételmérgezést okozhatnak, ami jól mutatja, hogy az élelmiszer-biztonság nem csak elméleti, hanem gyakorlati, mindennapi jelentőségű kérdés. Az életkorhoz igazodó étrend jó példája a csecsemőkori táplálás is, amikor az anyatej összetétele az adott fejlődési szakasz igényeihez igazodik, majd a táplálás fokozatosan egészül ki egyéb, szilárd táplálékkal.',
                 ],
               },
               {
-                heading: 'Fogazat és a szájüreg egészsége',
+                heading: 'A tápcsatorna megbetegedéseinek kockázati tényezői és a megelőzés',
                 paragraphs: [
-                  'A fog részei a korona (a látható, a legkeményebb testszövetnek számító zománccal borított rész), az alatta lévő fogcsont (dentin), a fog belsejében található, ereket és idegeket tartalmazó fogbél (pulpa), valamint az állcsontban rögzítő gyökér. Az emberi (felnőtt) fogképlet negyedenként 2 metszőfogat, 1 szemfogat, 2 kisőrlőt és 3 nagyőrlőt tartalmaz, összesen 32 fogat - ez a korábban (Emlősök fejezet) megismert differenciált, heterodont fogazat egy konkrét, emberre jellemző megvalósulása.',
-                  'A száj higiéniája (rendszeres fogmosás, fogselyem használata, rendszeres fogorvosi szűrővizsgálat) kiemelten fontos, mert megelőzi a fogszuvasodást (káriészt) és az ínygyulladást, amelyek kezeletlenül akár fogvesztéshez is vezethetnek.',
-                ],
-              },
-              {
-                heading: 'Az emésztés folyamata és a felszívódás',
-                paragraphs: [
-                  'Az emésztés a szájban kezdődik, ahol a nyál amiláz enzime megkezdi a keményítő bontását - ahogy azt korábban (a szénhidrátok fejezetben) a hidrolízis elvénél már megismertük. A gyomorban a gyomornedv sósavtartalma erősen savas kémhatást (kb. pH 2) hoz létre, amely a fehérjebontó pepszin enzim működéséhez optimális; ha a gyomornedvet egy kísérletben semlegesítjük, a pepszin hatása leáll, mert az enzimek működéséhez - ahogy azt korábban megismertük - mindig egy adott, optimális kémhatás szükséges. A hasnyálmirigy által termelt, lúgos kémhatású hasnyál egyszerre semlegesíti a gyomorból érkező savas béltartalmat, és mindhárom fő tápanyagcsoport bontásához tartalmaz enzimeket.',
-                  'A negyedik nagy tápanyagcsoport, a nukleinsavak (DNS, RNS) emésztését a hasnyál nukleáz enzime végzi, amely a nukleinsavakat kisebb egységekre bontja. A vékonybél belső falát beborító bélbolyhok apró, ujjszerű nyúlványok, amelyek hatalmasra növelik a felszívó felületet; itt szívódnak fel a végső bontási termékek (a monoszacharidok, az aminosavak, illetve a zsírsavak és a glicerin) a vérbe, illetve a nyirokerekbe.',
-                ],
-              },
-              {
-                heading: 'Szabályozás: éhség, szomjúság és a tápcsatorna reflexei',
-                paragraphs: [
-                  'Az éhségérzetet jellemzően a vércukorszint csökkenése és a gyomor kiürülése váltja ki, míg a szomjúságérzetet a testfolyadékok ozmotikus koncentrációjának (a víztartalom csökkenése miatti) megemelkedése idézi elő. A tápcsatorna számos reflexes folyamata (a táplálék látványára, illatára meginduló nyál- és gyomornedvtermelés, a nyelés, illetve a károsanyagok eltávolítását szolgáló hányás) tudatos befolyásolás nélkül, automatikusan zajlik le.',
-                  'Fontos megkülönböztetni a minőségi éhezést (amikor a táplálék mennyisége elegendő, de valamely tápanyag - pl. egy vitamin vagy a fehérje - tartósan hiányzik belőle) a mennyiségi éhezéstől (amikor általánosan, tartósan túl kevés az elfogyasztott táplálék energiatartalma).',
-                ],
-              },
-              {
-                heading: 'Tápanyagforrások és vitaminok',
-                paragraphs: [
-                  'A fehérjék, szénhidrátok, zsírok, növényi rostok és ásványi anyagok (nyomelemek) természetes forrásai (pl. hús, gabona, olajos magvak, zöldségek, gyümölcsök) mellett ismerni kell hiányuk és túlzott fogyasztásuk kockázatait is: a tartós fehérjehiány izomvesztéshez és duzzanatokhoz (ödémához) vezet, a rostszegény étrend székrekedést és a vastagbél megbetegedéseinek fokozott kockázatát okozhatja, a túlzott zsírfogyasztás pedig elhízáshoz és szív-érrendszeri betegségekhez vezethet. A D-vitamin (amely napfény hatására a bőrben is képződik) hiánya a kalcium felszívódásának zavara miatt csontlágyuláshoz (angolkórhoz) vezet; az A-vitamin hiánya a recehártya fényérzékeny pigmentjének károsodása miatt szürkületi vakságot (farkasvakságot) okoz; a B12-vitamin hiánya a vörösvértestek képzésének zavara miatt vérszegénységhez vezet; a C-vitamin hiánya - mivel a kollagén nélkülözhetetlen alkotóeleme - skorbutot okoz; a folsav hiánya pedig különösen terhesség alatt veszélyes, mert magzati idegcső-záródási rendellenességet okozhat.',
-                ],
-              },
-              {
-                heading: 'Táplálkozás egészségtana',
-                paragraphs: [
-                  'Az étrendi elvárások a tevékenységtől, a kortól, a nemtől és az adott élettani állapottól (pl. terhesség, szoptatás) függően jelentősen változnak, ahogy az élelmiszerek tartósításának alapelvei (pl. hűtés, szárítás) is a mikroorganizmusok szaporodásának gátlásán alapulnak - ezért fontos az élelmiszerek csomagolásán feltüntetett összetevők tudatos figyelembevétele is.',
-                  'A tápcsatorna megbetegedéseinek kialakulását veleszületett hajlamosító tényezők mellett életviteli kockázati tényezők is elősegíthetik: a nem megfelelő szájhigiéné a fogszuvasodás és az ínygyulladás kockázatát növeli, a fokozott stressz fokozhatja a gyomorsav-túltermelést (ezáltal a gyomorfekély kockázatát), a túlzott alkohol- és gyógyszerfogyasztás pedig károsítja a májat és a gyomor nyálkahártyáját; ide sorolható még az egyoldalú, nem megfelelő táplálkozás, valamint egyes kedvezőtlen környezeti hatások (pl. szennyezett élelmiszer vagy ivóvíz) is. Éppen ezért egy kiegyensúlyozott, változatos étrend mellett érdemes érvelni: ez biztosítja mind a hiánybetegségek, mind az elhízással összefüggő betegségek (pl. cukorbetegség, szív-érrendszeri betegségek) alacsonyabb kockázatát.',
+                  'A tápcsatorna megbetegedéseinek kialakulását veleszületett hajlamosító tényezők mellett életviteli kockázati tényezők is elősegíthetik: a nem megfelelő szájhigiéné a fogszuvasodás és az ínygyulladás kockázatát növeli, a fokozott stressz fokozhatja a gyomorsav-túltermelést (ezáltal a gyomorfekély kockázatát), a túlzott alkohol- és gyógyszerfogyasztás pedig károsítja a májat és a gyomor nyálkahártyáját; ide sorolható még az egyoldalú, nem megfelelő táplálkozás, valamint egyes kedvezőtlen környezeti hatások (pl. szennyezett élelmiszer vagy ivóvíz) is.',
+                  'Éppen ezért egy kiegyensúlyozott, változatos étrend mellett érdemes érvelni: ez biztosítja mind a hiánybetegségek, mind az elhízással összefüggő betegségek (pl. cukorbetegség, szív-érrendszeri betegségek) alacsonyabb kockázatát, és hosszú távon hozzájárul a szervezet minden szervrendszerének - így a korábban (Vázrendszer, Izomrendszer fejezetek) megismert mozgási rendszernek is - az egészséges, hosszú távú működéséhez.',
                 ],
               },
             ],
-            keyTerms: ['tápanyag', 'testtömegindex', 'bélbolyh', 'máj', 'hasnyálmirigy', 'pepszin', 'amiláz', 'epe', 'minőségi éhezés', 'mennyiségi éhezés'],
+            keyTerms: ['vitaminhiány', 'alultápláltság', 'túltápláltság', 'élelmiszer-tartósítás'],
           },
           emeltExtra: { comingSoon: true },
         },
       },
       {
-        id: 'legzes',
-        title: 'A légzés',
-        order: 8,
+        id: 'legcsere',
+        title: 'Légcsere',
+        order: 12,
         isFree: false,
-        estimatedMinutes: 16,
+        estimatedMinutes: 14,
         comparisonTable: {
           headers: ['Szempont', 'Mellkasi légzés', 'Hasi légzés'],
           rows: [
@@ -4129,13 +4260,13 @@ export const CURRICULUM = [
         },
         content: {
           kozep: {
-            intro: 'A korábban (Emlősök fejezet) megismert rekeszizom (diafragma) - amely az emlősöket az addig tanult gerinces csoportoktól megkülönbözteti - és a Madarak fejezetben megismert légzsákos, egyirányú kettős légzéssel szemben ebben a fejezetben az emberi (és általában az emlős) légzőrendszer felépítését és működését ismerjük meg részletesen, amelyben a levegő nem egyirányban, hanem oda-vissza (be- és kilégzéssel) áramlik.',
+            intro: 'A korábban (Táplálkozás egészségtana fejezet) lezárt táplálkozási rendszer után ebben a fejezetben a légzőrendszert ismerjük meg: a korábban (Emlősök fejezet) megismert rekeszizom (diafragma) - amely az emlősöket az addig tanult gerinces csoportoktól megkülönbözteti - és a Madarak fejezetben megismert légzsákos, egyirányú kettős légzéssel szemben az emberi (és általában az emlős) légzésben a levegő nem egyirányban, hanem oda-vissza (be- és kilégzéssel) áramlik.',
             sections: [
               {
                 heading: 'A légzőrendszer felépítése',
                 paragraphs: [
-                  'A légzőrendszer legfontosabb funkciói a szervezet oxigénellátásának biztosítása, a sejtlégzés során keletkező szén-dioxid eltávolítása, valamint a hangképzés. A belélegzett levegő útja: orrüreg (illetve szükség esetén szájüreg) → garat → gégefő → légcső → hörgők → a tüdőben egyre finomabban elágazó légutak, amelyek végül a léghólyagocskákban (alveolusokban) végződnek - itt zajlik a gázcsere a levegő és a vér között. A tüdőt kettős hártya, a mellhártya (pleura) veszi körül, amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé a mellkasfalon.',
-                  'A gégefő (gége) három, ábrán is jól azonosítható része a pajzsporc (ez alkotja a gége elülső, kiemelkedő részét, a "ádámcsutkát"), a gégefedő (amely nyeléskor lezárja a légutat, megakadályozva, hogy táplálék kerüljön a légcsőbe) és a hangszalagok, amelyek a hangképzésben töltenek be kulcsszerepet.',
+                  'A légzőrendszer legfontosabb funkciói a szervezet oxigénellátásának biztosítása, a sejtlégzés során keletkező szén-dioxid eltávolítása, valamint a hangképzés. A belélegzett levegő útja: orrüreg (illetve szükség esetén szájüreg) → garat → gégefő → légcső → hörgők → a tüdőben egyre finomabban elágazó légutak (hörgőcskék), amelyek végül a léghólyagocskákban (alveolusokban) végződnek. A jobb tüdő három, a bal tüdő - a szomszédos szív helyet igénylő elhelyezkedése miatt - csak két lebenyre tagolódik.',
+                  'A tüdőt kettős hártya, a mellhártya (pleura) veszi körül: a tüdő felszínéhez tapadó és a mellkas belső falát borító lemez között egy vékony, folyadékkal kitöltött rés húzódik, amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé a mellkasfalon, egyúttal "összetapasztja" a tüdőt a mellkasfallal, ami a légzőmozgások hatékony átvitele szempontjából elengedhetetlen.',
                 ],
               },
               {
@@ -4150,42 +4281,154 @@ export const CURRICULUM = [
                 paragraphs: [
                   'A vitálkapacitás a maximális erőltetett belégzést követő maximális erőltetett kilégzéssel kifújható levegő térfogata; a légzési perctérfogat pedig a percenkénti légzésszám és az egy légvételre jutó levegőmennyiség (légzési térfogat) szorzata. Az aktívan sportoló fiatalok vitálkapacitása jellemzően nagyobb, mint a nem sportolóké, mivel a rendszeres, intenzív testmozgás fejleszti a légzőizomzatot és a tüdő rugalmasságát, ezáltal hatékonyabb gázcserét és jobb terhelhetőséget biztosít. A fiúk vitálkapacitása azonos edzettségi szint mellett is jellemzően nagyobb, mint a lányoké, mivel átlagosan nagyobb testméretük nagyobb tüdőtérfogattal és fejlettebb légzőizomzattal párosul.',
                   'A légzésszám nyugalomban jellemzően alacsonyabb, mint munkavégzés (testmozgás) után: a fokozott izomműködés megnöveli a szövetek oxigénigényét és szén-dioxid-termelését, ami a légzésszám (és a légzési térfogat) növekedését váltja ki.',
-                ],
-              },
-              {
-                heading: 'Légcsere, gázcsere, hangképzés',
-                paragraphs: [
-                  'Fontos megkülönböztetni három, egymásra épülő fogalmat: a légcsere a levegő be- és kiáramlását jelenti a tüdőbe, illetve onnan kifelé; a gázcsere az oxigén és a szén-dioxid diffúzión alapuló kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között; a sejtlégzés pedig a sejteken belül lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel. A három folyamat szorosan összefügg: a légcsere biztosítja a gázcseréhez szükséges friss levegőt, a gázcsere pedig a sejtlégzéshez szükséges oxigént juttatja el a sejtekhez, illetve távolítja el az ott képződő szén-dioxidot.',
-                  'A hangképzés során a kilégzett levegő a hangszalagokat rezgésbe hozza, ez kelti a hangot; a hangszalagok feszülésének és a rajtuk átáramló levegő mennyiségének változtatásával alakítható a hang magassága és erőssége.',
-                ],
-              },
-              {
-                heading: 'A légzés szabályozása',
-                paragraphs: [
-                  'A légzés mélységét és gyakoriságát elsősorban a vér szén-dioxid-koncentrációjának emelkedése szabályozza (nem elsősorban az oxigénszint csökkenése): ha a vérben megemelkedik a szén-dioxid mennyisége, a légzés önműködően felgyorsul és elmélyül, ami fokozott szén-dioxid-kiürüléshez, majd a koncentráció csökkenéséhez vezet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén működő szabályozás egy újabb, konkrét példája.',
-                ],
-              },
-              {
-                heading: 'A légzőrendszer egészségtana',
-                paragraphs: [
-                  'Az orron át történő belégzés előnyösebb a szájon át történőnél, mert az orrüregben a levegő megszűrődik (a szennyeződések, kórokozók egy része kiszűrődik), felmelegszik és páratartalmat nyer, mielőtt eléri a mélyebb légutakat - ez védi a tüdőt a kiszáradástól és a károsító hatásoktól.',
-                  'A légzőrendszert leggyakrabban károsító tényezők közé tartozik a dohányzás, a légszennyezettség és az allergének; ezek hozzájárulnak a légzőrendszer gyakori megbetegedéseihez, amelyek lehetnek fertőzéses eredetűek (pl. tüdőgyulladás, hörghurut) vagy daganatos jellegűek (pl. tüdőrák), illetve idetartozik az asztma is. A torokgyulladás gyakran jár együtt középfülgyulladással, mert a garatot és a középfület összekötő fülkürtön (Eustach-kürtön) keresztül a fertőzés könnyen átterjedhet az egyik szervről a másikra.',
-                  'A dohányzás különösen súlyos kockázatot jelent: károsítja a légutak és a tüdő szöveteit, jelentősen megnöveli a légzőrendszeri daganatos és fertőzéses megbetegedések, valamint a szív-érrendszeri betegségek kockázatát is - ezért is fontos a dohányzás elkerülése, illetve a leszokás mellett érvelni.',
+                  'A légzési teljesítmény és a szervezet energiafelhasználása szorosan összefügg: minél nagyobb a szervezet pillanatnyi energiaigénye (pl. intenzív testmozgás közben), annál több oxigénre van szükség a sejtlégzéshez, ez pedig csak a légzés fokozásával (nagyobb légzési térfogattal és/vagy nagyobb légzésszámmal) biztosítható.',
                 ],
               },
             ],
-            keyTerms: ['léghólyagocska', 'mellhártya', 'rekeszizom', 'vitálkapacitás', 'légzési perctérfogat', 'gázcsere', 'sejtlégzés', 'hangszalag'],
+            keyTerms: ['léghólyagocska', 'mellhártya', 'rekeszizom', 'vitálkapacitás', 'légzési perctérfogat'],
           },
           emeltExtra: { comingSoon: true },
         },
       },
-      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 9, isFree: false, estimatedMinutes: 22,
+      {
+        id: 'gazcsere',
+        title: 'Gázcsere',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Légcsere fejezet) megismert légzőmozgások biztosítják, hogy friss levegő jusson a tüdőbe - ebben a rövid fejezetben azt nézzük meg, mi történik ott a levegővel, és hogyan kapcsolódik ez a korábban (Lebontó folyamatok fejezet) részletesen tárgyalt sejtlégzéshez.',
+            sections: [
+              {
+                heading: 'Légcsere, gázcsere és sejtlégzés - három egymásra épülő fogalom',
+                paragraphs: [
+                  'Fontos megkülönböztetni három, egymásra épülő fogalmat: a légcsere a levegő be- és kiáramlását jelenti a tüdőbe, illetve onnan kifelé; a gázcsere az oxigén és a szén-dioxid kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között; a sejtlégzés pedig a sejteken belül, elsősorban a mitokondriumban lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel - ezt a folyamatot a korábbi (Lebontó folyamatok fejezet) mutatta be részletesen.',
+                  'A három folyamat szorosan összefügg, akár egy szállítási láncként is elképzelhető: a légcsere biztosítja a gázcseréhez szükséges friss levegőt, a gázcsere pedig a sejtlégzéshez szükséges oxigént juttatja el a sejtekhez, illetve távolítja el az ott képződő szén-dioxidot. Ha bármelyik láncszem sérül (pl. a légcsere elakad, vagy a gázcsere felülete lecsökken egy tüdőbetegség miatt), az a sejtek oxigénellátását és így végső soron a sejtlégzést is veszélyezteti.',
+                ],
+              },
+              {
+                heading: 'A gázcsere helyszíne: a léghólyagocskák',
+                paragraphs: [
+                  'A gázcsere a tüdő legmélyebb légúti egységeiben, a léghólyagocskákban (alveolusokban) zajlik, amelyek falát rendkívül sűrű hajszálér-hálózat veszi körül. A léghólyagocskák nagy száma és vékony fala összességében hatalmas felületet biztosít a gázcseréhez - hasonlóan ahhoz, ahogy korábban (a bélbolyhoknál, a Felszívódás fejezetben) a felszívó felület megnövelésének elvét már megismertük -, a vékony fal pedig azt is biztosítja, hogy a levegő és a vér között a gázok gyorsan és hatékonyan kicserélődhessenek.',
+                  'A léghólyagocskákból a vérbe jutó oxigént a vörösvértestekben található hemoglobin nevű fehérje köti meg és szállítja tovább a szövetekhez, a szövetekben keletkező szén-dioxid pedig jórészt a vérplazmában oldva jut vissza a tüdőbe - ezt a szállítási folyamatot a következő fejezetekben, az anyagszállítás témakörében ismerjük meg részletesebben.',
+                  'A gázcsere iránya mindkét helyszínen (a tüdőben és a szövetekben) a koncentrációkülönbségtől függ: a tüdőben a belélegzett levegőben magas az oxigénkoncentráció, ezért az oxigén a levegőből a vérbe áramlik, míg a szövetekben - ahol a sejtlégzés folyamatosan fogyasztja az oxigént és termeli a szén-dioxidot - éppen fordított irányú koncentrációkülönbség alakul ki, ezért ott az oxigén a vérből a sejtek felé, a szén-dioxid pedig a sejtekből a vér felé áramlik.',
+                  'Ez a kettős, de egymással ellentétes irányú gázcsere - a tüdőben oxigénfelvétel és szén-dioxid-leadás, a szövetekben oxigénleadás és szén-dioxid-felvétel - biztosítja, hogy a szervezet minden sejtje folyamatosan hozzájusson a sejtlégzéshez szükséges oxigénhez, és megszabaduljon az anyagcsere során keletkező szén-dioxidtól.',
+                ],
+              },
+            ],
+            keyTerms: ['gázcsere', 'sejtlégzés', 'léghólyagocska', 'hemoglobin'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'hangkepzes',
+        title: 'Hangképzés',
+        order: 14,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Gázcsere fejezet) megismert gázcsere mellett a légzőrendszernek egy másik, egészen más jellegű funkciója is van: ebben a fejezetben a hangképzésben kulcsszerepet játszó gégét és a hangszalagokat ismerjük meg.',
+            sections: [
+              {
+                heading: 'A gége felépítése',
+                paragraphs: [
+                  'A gégefő (gége) három, ábrán is jól azonosítható része a pajzsporc (ez alkotja a gége elülső, kiemelkedő részét, a "ádámcsutkát"), a gégefedő és a hangszalagok. A gégefő a légcső és a garat találkozásánál helyezkedik el, így minden belélegzett, illetve nyelés során továbbított anyag áthalad rajta.',
+                  'A gégefedő nyeléskor reflexesen lezárja a légutat, megakadályozva, hogy táplálék vagy folyadék kerüljön a légcsőbe. Ha ez a védekező mechanizmus meghibásodik (pl. beszéd közbeni nyeléskor), a szervezet egy heves köhögési reflexszel próbálja a légutakba tévedt anyagot kilökni - ez a mindennapi életben is jól ismert "félrenyelés" jelensége.',
+                  'A hangszalagok közötti rés (a hangrés) mérete a légzés és a hangképzés során eltérő: nyugodt légzéskor tágra nyílik, hogy a levegő akadálytalanul áramolhasson a tüdőbe és onnan kifelé, hangképzéskor viszont beszűkül, hogy a rajta átáramló levegő rezgésbe tudja hozni a hangszalagokat.',
+                  'A gégét kívülről tapintható porcvázas szerkezete védi a mechanikai sérülésektől, ugyanakkor rugalmasan mozgatható is: nyeléskor és hangképzéskor egésze felfelé-lefelé, illetve előre-hátra is elmozdulhat, ez a mozgás jól megfigyelhető és tapintható a nyakon (pl. nyeléskor a pajzsporc jellegzetes "fel-le" mozgásaként).',
+                ],
+              },
+              {
+                heading: 'A hangképzés folyamata',
+                paragraphs: [
+                  'A hangképzés során a kilégzett levegő a hangszalagok közötti szűk résen áramlik át, és ezáltal rezgésbe hozza a hangszalagokat - ez az alaphang forrása. A hangszalagok feszülésének és a rajtuk átáramló levegő mennyiségének változtatásával alakítható a hang magassága és erőssége; az így keletkező alaphangot a garat, a szájüreg és az orrüreg üregei rezonátorterekként tovább alakítják.',
+                  'A hangképzés - a beszéd és az ének alapjaként - az emberi kommunikáció egyik nélkülözhetetlen biológiai feltétele. Serdülőkorban a gége és a hangszalagok mérete (különösen fiúknál) jelentősen megnövekszik, ami a jól ismert hangváltozáshoz (mutációhoz), azaz a hang átmeneti tisztátalanná válásához, majd tartós mélyüléséhez vezet.',
+                  'A hangszalagok hosszabb, folyamatos, kíméletlen igénybevétele (pl. túlzott kiabálás, helytelen éneklési technika) átmeneti berekedéshez, tartósan pedig a hangszalagok gyulladásához vagy akár apró csomók kialakulásához is vezethet, ami a hang minőségének tartós romlását okozhatja - ezért a hangképző szervek kímélete is a légzőrendszer egészségtanának fontos, gyakorlati vonatkozású része.',
+                  'A hangképzés minősége nem csak a hangszalagok állapotától függ: egy megfázás vagy torokgyulladás okozta duzzanat, illetve a légutakban felgyülemlő váladék szintén megváltoztathatja a hang jellegzetes csengését (ezt nevezzük köznyelvben "berekedt" hangnak) - ez jól mutatja, hogy a hangképzés a teljes légzőrendszer pillanatnyi állapotát tükrözi, nem csak a gége működését.',
+                ],
+              },
+            ],
+            keyTerms: ['gégefő', 'pajzsporc', 'gégefedő', 'hangszalag'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'legzes-szabalyozasa',
+        title: 'A légzés szabályozása',
+        order: 15,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hangképzés fejezet) megismert gége és hangszalagok után ebben a fejezetben azt nézzük meg, mi szabályozza a légzés mélységét és gyakoriságát - hasonlóan ahhoz, ahogy korábban (A táplálkozás szabályozása fejezet) az éhség- és szomjúságérzet szabályozását is megismertük.',
+            sections: [
+              {
+                heading: 'A légzés szabályozásának alapelve',
+                paragraphs: [
+                  'A légzés mélységét és gyakoriságát elsősorban a vér szén-dioxid-koncentrációjának emelkedése szabályozza (nem elsősorban az oxigénszint csökkenése): ha a vérben megemelkedik a szén-dioxid mennyisége, az agytörzsben, a nyúltvelőben található légzőközpont ezt érzékelve idegi jeleket küld a rekeszizomhoz és a bordaközti izmokhoz, felgyorsítva és elmélyítve a légzést. Ez fokozott szén-dioxid-kiürüléshez, majd a koncentráció csökkenéséhez vezet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén működő szabályozás egy újabb, konkrét példája.',
+                  'Az, hogy elsősorban a szén-dioxid-koncentráció (és nem közvetlenül az oxigénhiány) váltja ki a légzés fokozódását, jól mutatja, hogy a szervezet a saját anyagcseréje által termelt "melléktermék" szintjét folyamatosan, érzékenyen figyeli, és ez alapján avatkozik be, még mielőtt az oxigénhiány ténylegesen veszélyessé válna.',
+                  'A légzés részben akaratlagosan is befolyásolható: rövid ideig visszatarthatjuk a levegőt, vagy tudatosan szaporábban, mélyebben lélegezhetünk (ez utóbbira épül például a korábban, a Hangképzés fejezetben megismert beszéd és éneklés is, hiszen ezekhez a kilégzés hosszának és erősségének tudatos szabályozására van szükség). Ez a tudatos befolyásolás azonban csak korlátozott ideig tartható fenn, mert a vérben egyre emelkedő szén-dioxid-koncentráció végül felülírja az akaratlagos szándékot, és önműködően kikényszeríti a légvételt - ez is jól szemlélteti a negatív visszacsatolásos szabályozás erejét.',
+                  'A rendszeres testmozgás hosszú távon a légzőközpont és a légzőizomzat összehangolt működését is fejleszti: az edzett szervezet ugyanakkora terhelés mellett hatékonyabban, kevesebb energiával tudja fenntartani a megfelelő vér-szén-dioxid-szintet, mint az edzetlen szervezet - ez az egyik oka annak, hogy a korábban (Légcsere fejezet) megismert vitálkapacitás is nagyobb a rendszeresen sportolóknál.',
+                  'A légzésszabályozás tehát egy folyamatosan, öntudatlanul működő rendszer, amely csak szükség esetén enged teret a tudatos befolyásolásnak - ez biztosítja, hogy alvás közben, vagy amikor a figyelmünk máshova irányul, a légzés akkor is zavartalanul, a szervezet igényeihez igazodva folytatódjon.',
+                  'A légzőközpont érzékenysége nem állandó: kisgyermekkorban és idős korban, illetve bizonyos betegségek (pl. súlyos tüdőbetegségek) esetén a légzőközpont a normálistól eltérően reagálhat a szén-dioxid-koncentráció változására, ami a légzésszabályozás zavarához, szélsőséges esetben légzéskimaradáshoz is vezethet - ez az egyik oka annak, hogy csecsemőknél és időseknél a légzés folyamatos megfigyelése különösen fontos.',
+                  'A légzőközpont tehát folyamatosan "monitorozza" a szervezet anyagcseréjének állapotát, és ennek alapján, önműködően, tized másodperces pontossággal hangolja össze a rekeszizom és a bordaközti izmok munkáját - ez a finomhangolt, automatikus együttműködés teszi lehetővé, hogy a légzés a nap 24 órájában, tudatos odafigyelés nélkül is folyamatosan a szervezet aktuális igényeihez igazodjon.',
+                ],
+              },
+            ],
+            keyTerms: ['negatív visszacsatolás', 'légzőközpont', 'szén-dioxid'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      {
+        id: 'legzorendszer-egeszsegtana',
+        title: 'A légzés és a légzőrendszer egészségtana',
+        order: 16,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A légzés szabályozása fejezet) megismert szabályozási mechanizmus után, ebben a záró fejezetben - hasonlóan ahhoz, ahogy a táplálkozási rendszernél is külön fejezetet szenteltünk az egészségtannak (Táplálkozás egészségtana fejezet) - a légzőrendszer egészségtanát tekintjük át.',
+            sections: [
+              {
+                heading: 'Az orron át történő légzés jelentősége',
+                paragraphs: [
+                  'Az orron át történő belégzés előnyösebb a szájon át történőnél, mert az orrüregben a levegő megszűrődik (a szennyeződések, kórokozók egy része kiszűrődik), felmelegszik és páratartalmat nyer, mielőtt eléri a mélyebb légutakat - ez védi a tüdőt a kiszáradástól és a károsító hatásoktól. A szájon át történő légzés (pl. eldugult orr esetén) ezt a védelmet megkerüli, ezért ilyenkor a légutak nagyobb eséllyel száradnak ki és fertőződnek.',
+                ],
+              },
+              {
+                heading: 'A légzőrendszert károsító tényezők és gyakori betegségek',
+                paragraphs: [
+                  'A légzőrendszert leggyakrabban károsító tényezők közé tartozik a dohányzás, a légszennyezettség és az allergének; ezek hozzájárulnak a légzőrendszer gyakori megbetegedéseihez, amelyek lehetnek fertőzéses eredetűek (pl. tüdőgyulladás, hörghurut) vagy daganatos jellegűek (pl. tüdőrák), illetve idetartozik az asztma is. A tüdőgyulladás során a léghólyagocskák meggyulladnak és folyadékkal telítődnek, ami jelentősen lecsökkenti a gázcserére alkalmas felületet, ezért a betegség jellegzetes tünete a nehézlégzés. Az asztma a hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése, amely szintén nehezített, jellegzetesen sípoló légzést okoz.',
+                  'A torokgyulladás gyakran jár együtt középfülgyulladással, mert a garatot és a középfület összekötő fülkürtön (Eustach-kürtön) keresztül a fertőzés könnyen átterjedhet az egyik szervről a másikra - gyermekeknél ez különösen gyakori, mivel náluk a fülkürt rövidebb és vízszintesebb lefutású, ami megkönnyíti a kórokozók átjutását.',
+                ],
+              },
+              {
+                heading: 'A dohányzás kockázatai',
+                paragraphs: [
+                  'A dohányzás különösen súlyos kockázatot jelent: a cigarettafüst károsítja a légutak belső falát borító csillós hámsejteket, amelyek egészséges esetben a beszippantott szennyeződéseket és nyákot folyamatosan kifelé mozgatnák a légutakból - ezek károsodása miatt a szennyeződések és kórokozók tovább maradnak a légutakban, ami jelentősen megnöveli a légzőrendszeri daganatos és fertőzéses megbetegedések, valamint a szív-érrendszeri betegségek kockázatát is.',
+                  'Éppen ezért fontos a dohányzás elkerülése, illetve a leszokás mellett érvelni: a dohányzás abbahagyása után a légutak öntisztuló képessége (a csillós hámsejtek működése) idővel részlegesen helyreállhat, és a súlyos megbetegedések kockázata is fokozatosan csökken - minél korábban történik a leszokás, annál nagyobb ez az egészségnyereség.',
+                  'A dohányzás nemcsak a dohányzó személy légzőrendszerét károsítja: a passzív dohányzás, azaz mások cigarettafüstjének belélegzése ugyanazokat a károsító hatásokat idézheti elő, ráadásul a gyermekek légzőrendszere - mivel még fejlődésben van - különösen érzékeny erre a hatásra, ami tovább erősíti a dohányzás elleni érvelés jogosságát.',
+                  'Összességében a légzőrendszer egészségének megőrzése - hasonlóan ahhoz, ahogy azt korábban (Táplálkozás egészségtana fejezet) a tápcsatornánál is láttuk - nagyrészt tudatos, mindennapi döntéseken (dohányzás elkerülése, tiszta levegőjű környezet, megfelelő testmozgás) múlik, nem csupán a betegségek utólagos kezelésén.',
+                ],
+              },
+            ],
+            keyTerms: ['asztma', 'dohányzás', 'középfülgyulladás', 'fülkürt'],
+          },
+          emeltExtra: { comingSoon: true },
+        },
+      },
+      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 17, isFree: false, estimatedMinutes: 22,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kivalasztas', title: 'A kiválasztás', order: 10, isFree: false, estimatedMinutes: 16,
+      { id: 'kivalasztas', title: 'A kiválasztás', order: 18, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 11, isFree: false, estimatedMinutes: 30,
+      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 19, isFree: false, estimatedMinutes: 30,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 12, isFree: false, estimatedMinutes: 18,
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 20, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
