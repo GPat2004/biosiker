@@ -4081,7 +4081,21 @@ export const CURRICULUM = [
             ],
             keyTerms: ['táplálék', 'tápanyag', 'bélperisztaltika', 'testtömegindex'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a táplálkozás energiamérlegét egy pontosabb fogalommal, az alapanyagcserével egészítjük ki, amely megmagyarázza, miért van szüksége a szervezetnek energiára akkor is, ha egyáltalán nem mozog.',
+            sections: [
+              {
+                heading: 'Az alapanyagcsere fogalma',
+                paragraphs: [
+                  'Az alapanyagcsere (bazális metabolizmus) az a legkisebb energiamennyiség, amelyet a szervezet teljes nyugalmi állapotban (éhgyomorra, testi és lelki nyugalomban, kényelmes hőmérsékleten) is elhasznál az alapvető élettani működések (pl. szívverés, légzés, testhőmérséklet fenntartása, sejtek folyamatos anyagcseréje) fenntartásához.',
+                  'Az alapanyagcsere értéke nem állandó: függ a testtömegtől és a testfelszíntől (nagyobb testű szervezetnek több sejtje van, amelyeket fenn kell tartani), az izomtömeg arányától (az izomszövet nyugalomban is több energiát fogyaszt, mint a zsírszövet, ezért nagyobb izomtömeg mellett magasabb az alapanyagcsere), az életkortól (fiatalabb, növésben lévő szervezetben magasabb), a nemtől (férfiaknál - jellemzően nagyobb izomtömegük miatt - átlagosan magasabb, mint nőknél), valamint a pajzsmirigyhormonok szintjétől (ezek a hormonok közvetlenül fokozzák a sejtek anyagcsere-sebességét).',
+                  'Az alapanyagcsere fogalma jól kiegészíti a korábban (közép szinten) megismert fajlagos energiatartalom és testtömegindex fogalmát: míg az energiatartalom azt mutatja meg, mennyi energiát nyerhetünk egy adott tápanyagból, az alapanyagcsere azt mutatja meg, mennyi energiára van szükségünk minimálisan, a mozgástól függetlenül - a kettő együtt ad reális képet a szervezet napi energiaegyenlegéről.',
+                  'A szervezet napi teljes energiaszükséglete az alapanyagcsere értékéhez adódik hozzá a napi tevékenységek (testmozgás, munkavégzés) energiaigénye, valamint az emésztés energiaköltsége (a táplálék feldolgozása maga is energiát igényel). Ha a felvett energia tartósan meghaladja a teljes energiaszükségletet, a felesleg zsírként raktározódik, ha pedig tartósan alatta marad, a szervezet a saját tartalékait (elsőként a glikogént, majd a zsírraktárakat, végül a fehérjéket) kezdi felhasználni - ez az összefüggés magyarázza az energiamérleg és a testtömeg-változás közötti kapcsolatot. Ez a modell azt is megmutatja, miért nem elegendő az energiabevitel puszta csökkentése egy egészséges testtömeg fenntartásához: a fenntartható testtömeg-szabályozás az energiabevitel és az energiafelhasználás (amelyben az alapanyagcsere a legnagyobb, de a testmozgással befolyásolható tétel) tartós, kiegyensúlyozott összhangját igényli.',
+                ],
+              },
+            ],
+            keyTerms: ['alapanyagcsere'],
+          },
         },
       },
       {
@@ -4119,7 +4133,29 @@ export const CURRICULUM = [
             ],
             keyTerms: ['fogképlet', 'pepszin', 'amiláz', 'hasnyál', 'epe'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a közép szinten megismert emésztőnedveket enzimszinten pontosítjuk: melyik enzim, hol termelődik, és pontosan mit bont - illetve azt is megvizsgáljuk, hogyan kapcsolódik a kémiai emésztés a korábban (Lebontó folyamatok fejezet) megismert sejtszintű energiatermeléshez.',
+            sections: [
+              {
+                heading: 'Emésztőenzimek termelődési helye és hatásai',
+                paragraphs: [
+                  'Az amiláz a nyálmirigyekben és a hasnyálmirigyben is termelődik: a nyálban lévő amiláz a szájban megkezdi, a hasnyálban lévő amiláz pedig a vékonybélben folytatja és befejezi a keményítő (poliszacharid) diszacharidokká (elsősorban maltózzá) bontását.',
+                  'A laktáz a vékonybél nyálkahártyájában termelődik, és a tejcukrot (laktózt) bontja a két egyszerű cukorra, glükózra és galaktózra - hiánya okozza a laktózérzékenységet (tejcukor-intoleranciát), amikor a bontatlan laktóz a vastagbélbe jutva a bélbaktériumok által erjesztve puffadást és hasmenést okoz.',
+                  'A lipáz a hasnyálmirigyben termelődik, és a - korábban (Emésztés fejezet) megismert epe által már emulgeált - trigliceridek (zsírok) zsírsavakra és glicerinre bontását végzi.',
+                  'A nukleáz szintén a hasnyálmirigyben termelődik, és a nukleinsavakat (DNS, RNS) bontja kisebb egységekre (nukleotidokra).',
+                  'A pepszin a gyomorban termelődik (a fősejtek eleve inaktív pepszinogén formában választják ki, amelyet a gyomor sósava aktivál), és a fehérjéket nagyobb peptidláncokká bontja. A tripszin a hasnyálmirigyben termelődik (szintén inaktív előanyagként, amelyet a vékonybélben egy másik enzim aktivál), és a fehérjebontást folytatja tovább, egészen az aminosavakig.',
+                ],
+              },
+              {
+                heading: 'Az emésztés és a sejtszintű lebontás kapcsolata',
+                paragraphs: [
+                  'A szájban, a gyomorban és a vékonybélben zajló kémiai emésztés (amelyet ebben a fejezetben ismertünk meg) és a korábban (Lebontó folyamatok fejezet) megismert sejtszintű lebontás (glikolízis, citromsavciklus, terminális oxidáció) valójában egyetlen, folytonos lebontási folyamat két egymásra épülő szakasza: az emésztés a nagy, komplex tápmolekulákat (poliszacharidok, fehérjék, zsírok) a felszívódásra alkalmas, kisebb egységekre (monoszacharidok, aminosavak, zsírsavak) bontja, a sejtszintű lebontás pedig ezekből az egységekből (elsősorban a glükózból) nyeri ki a bennük tárolt kémiai energiát ATP formájában.',
+                  'Ez a kapcsolat magyarázza, miért nem hasznosítható közvetlenül energiaforrásként egy el nem emésztett, nagy molekula: a sejtek anyagcsere-útjai (pl. a glikolízis) csak a már lebontott, kis egységekkel (pl. a glükózzal) tudnak "elindulni" - az emésztés tehát nem csupán mechanikai előfeltétele, hanem a sejtszintű energiatermelés nélkülözhetetlen "előkészítő szakasza".',
+                ],
+              },
+            ],
+            keyTerms: ['laktáz', 'lipáz', 'nukleáz', 'tripszin', 'pepszinogén'],
+          },
         },
       },
       {
@@ -4157,7 +4193,28 @@ export const CURRICULUM = [
             ],
             keyTerms: ['bélbolyh', 'vastagbél', 'máj', 'glikogén', 'bélflóra'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosítjuk, mi történik a felszívódott tápanyagokkal egészen a testi szövetekbe való beépülésükig, illetve megvizsgáljuk, miért függ össze a máj működése a sárgasággal.',
+            sections: [
+              {
+                heading: 'A tápanyagok útja a felszívódástól a szövetekig',
+                paragraphs: [
+                  'A felszívódott monoszacharidok (elsősorban glükóz) a májon áthaladva vagy azonnal a szövetek felé indulnak sejtlégzésre, vagy - ahogy azt korábban (ebben a fejezetben) megismertük - glikogénként raktározódnak; szükség esetén a glikogén ismét glükózzá bomlik, és a vérárammal jut el az energiaigényes szövetekhez (pl. az izomsejtekhez), ahol a sejtlégzés használja fel.',
+                  'A felszívódott aminosavak a szövetekben fehérjeszintézisre (új, a szervezet saját fehérjéinek felépítésére) használódnak fel; a fehérjeszintézishez szükségtelen felesleg a májban dezaminálódik (a nitrogéntartalmú rész karbamiddá alakul és a vesén át kiválasztódik), a megmaradó szénváz pedig energiatermelésre hasznosulhat.',
+                  'A felszívódott zsírsavak és glicerin a szövetekben (elsősorban a zsírszövetben) trigliceridekké épülnek vissza, és energiatartalék formájában raktározódnak, vagy közvetlenül a sejtlégzés energiaforrásaként hasznosulnak. Mindhárom tápanyagcsoport esetében tehát ugyanaz a mintázat figyelhető meg: a felszívódott egységekből a szövetek részben új, saját anyagokat építenek fel (fehérjeszintézis, zsírraktározás), részben pedig közvetlenül energiát nyernek belőlük a sejtlégzés révén - a szervezet pillanatnyi energia- és építőanyag-igénye szabja meg, melyik út valósul meg éppen.',
+                ],
+              },
+              {
+                heading: 'Májbetegségek és a sárgaság kapcsolata',
+                paragraphs: [
+                  'A sárgaság a bőr és a szemfehérje sárgás elszíneződése, amelyet a vérben felhalmozódó bilirubin (a lebontott vörösvértestekből származó, az epével normál esetben a bélbe ürülő festékanyag) okoz. Mivel a bilirubin feldolgozása és epébe történő kiválasztása a máj feladata, a máj bármilyen károsodása (pl. májgyulladás, májzsugorodás) megzavarhatja ezt a folyamatot, és a bilirubin felhalmozódik a vérben, ez okozza a sárgaságot.',
+                  'A sárgaság tehát nem önálló betegség, hanem egy jellegzetes tünet, amely a máj (vagy az epeelvezető rendszer) működési zavarára utal - ez jól mutatja, miért olyan fontos diagnosztikai jelzés a bőr elszíneződésének megfigyelése a máj egészségének felmérésekor.',
+                  'A sárgaság hátterében többféle mechanizmus állhat: kialakulhat a vörösvértestek szokásosnál gyorsabb, fokozott lebomlása miatt (ekkor a májnak egyszerűen több bilirubint kellene feldolgoznia, mint amennyire képes), a máj saját, károsodott feldolgozó-működése miatt (pl. májgyulladásnál a károsodott májsejtek nem tudják hatékonyan az epébe üríteni a bilirubint), vagy az epeelvezető utak elzáródása miatt (pl. epekő esetén, amikor a már feldolgozott bilirubin nem tud kijutni a bélbe) - a három ok elkülönítése fontos diagnosztikai kérdés, hiszen eltérő kezelést igényelnek.',
+                ],
+              },
+            ],
+            keyTerms: ['dezaminálás', 'karbamid', 'bilirubin', 'sárgaság'],
+          },
         },
       },
       {
@@ -4196,7 +4253,22 @@ export const CURRICULUM = [
             ],
             keyTerms: ['éhségérzet', 'szomjúságérzet', 'minőségi éhezés', 'mennyiségi éhezés'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni, hogy az éhség- és jóllakottság-érzet mögött a hipotalamusz mellett hormonális jelzőrendszer is áll.',
+            sections: [
+              {
+                heading: 'Hormonális éhség- és jóllakottság-szabályozás',
+                paragraphs: [
+                  'A gyomor üres állapotban egy ghrelin nevű hormont választ ki, amely a hipotalamuszra hatva éhségérzetet vált ki; étkezés után a zsírszövet által termelt leptin hormon szintje emelkedik meg, amely ezzel szemben a jóllakottság érzetét erősíti, csökkentve a további táplálékfelvétel iránti igényt.',
+                  'A ghrelin és a leptin egymással ellentétes irányú hatása egy újabb példa a korábban (Homeosztázis fejezet) megismert negatív visszacsatolásra: a szervezet energiaraktárainak (elsősorban a zsírszövetnek) az állapota folyamatosan "visszajelez" az agynak, finoman hangolva az étvágyat a tényleges energiaigényhez.',
+                  'Ez a hormonális szabályozás egyben magyarázatot ad arra is, miért nehéz tartósan fenntartani egy fogyókúra hatását: jelentős testtömegcsökkenés esetén a zsírszövet mérete lecsökken, ezáltal a leptinszint is alacsonyabbá válik, ami a szervezet számára "éhezésjelzésként" értelmeződik, és fokozott éhségérzetet, illetve csökkent energiafelhasználást (alacsonyabb alapanyagcserét) eredményezhet - ez a mechanizmus jelentősen megnehezíti a hosszú távú testtömegcsökkentést pusztán akarati úton.',
+                  'A leptin- és ghrelinszint mellett számos egyéb tényező (pl. alváshiány, tartós stressz) is befolyásolhatja a hormonális éhségjelzést, jellemzően az étvágy fokozásának irányában - ez az egyik biológiai magyarázata annak, hogy a nem megfelelő alvás és a magas stressz-szint miért társul gyakran túlzott energiabevitellel és testtömeg-növekedéssel.',
+                  'A hormonális éhségszabályozás megértése rávilágít arra is, hogy a testtömeg tartós, egészséges szinten tartása miért igényel fokozatos, hosszú távú szemléletváltást a hirtelen, drasztikus étrendi megszorítások helyett: az utóbbiak éppen azt a hormonális választ váltják ki, amely a szervezetet a korábbi étkezési szokások visszaállítására "ösztönzi". Ez a mechanizmus - a korábban (Homeosztázis fejezet) megismert negatív visszacsatolásos szabályozáshoz hasonlóan - a szervezet egyfajta "védekező" reakciója, amely evolúciósan az éhínséggel szembeni túlélést szolgálta, napjaink élelmiszerben bővelkedő környezetében viszont gyakran megnehezíti a tudatos testtömeg-szabályozást.',
+                ],
+              },
+            ],
+            keyTerms: ['ghrelin', 'leptin'],
+          },
         },
       },
       {
@@ -4241,7 +4313,28 @@ export const CURRICULUM = [
             ],
             keyTerms: ['vitaminhiány', 'alultápláltság', 'túltápláltság', 'élelmiszer-tartósítás'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'A közép szinten megismert D-, A-, B12-, C-vitamin és folsav mellett emelt szinten további négy vitamin (E, K, B1, B6) élettani jelentőségét is ismerni kell.',
+            sections: [
+              {
+                heading: 'További vitaminok élettani jelentősége',
+                paragraphs: [
+                  'Az E-vitamin fő szerepe az antioxidáns védelem: megvédi a sejtmembránok zsírsavait a károsító oxidációtól, ezáltal hozzájárul a sejtek épségének megőrzéséhez.',
+                  'A K-vitamin - ahogy azt a keringési rendszer témakörénél is látni fogjuk - nélkülözhetetlen a véralvadási folyamatban részt vevő fehérjék előállításához; hiánya vérzékenységhez vezethet.',
+                  'A B1-vitamin (tiamin) a szénhidrát-anyagcsere egyik kulcsfontosságú koenzimjének alkotórésze, hiánya elsősorban az idegrendszer és a szívizom működését károsítja.',
+                  'A B6-vitamin az aminosav-anyagcsere számos lépésében vesz részt koenzimként, hiánya bőrtünetekkel és idegrendszeri zavarokkal járhat.',
+                ],
+              },
+              {
+                heading: 'Zsírban és vízben oldódó vitaminok',
+                paragraphs: [
+                  'A vitaminok egy fontos szempont szerint két csoportba sorolhatók: a zsírban oldódó vitaminok (D, A, E, K) a zsírokkal együtt szívódnak fel, és a szervezet - elsősorban a májban és a zsírszövetben - képes őket raktározni, ezért túlzott, hosszan tartó bevitelük mérgezést is okozhat. A vízben oldódó vitaminok (a B-vitaminok és a C-vitamin) ezzel szemben nem, vagy csak igen korlátozottan raktározhatók, a szervezet a fölösleget a vizelettel kiválasztja - ezért ezekből folyamatos, rendszeres bevitelre van szükség, viszont a túladagolás veszélye jóval kisebb.',
+                  'Ez a megkülönböztetés magyarázza, miért különösen veszélyes a zsírban oldódó vitaminok (pl. az A-vitamin) hosszú távú, szükségesnél nagyobb adagban történő, tudatos pótlása - ellentétben a vízben oldódó vitaminokkal, amelyeknél a szervezet a fölösleget hatékonyan eltávolítja. Éppen ezért a vitaminpótló készítmények szedése is megfontolást igényel: kiegyensúlyozott étrend mellett a legtöbb egészséges embernek nincs szüksége külön vitaminpótlásra, és a zsírban oldódó vitaminokból tudatosan, orvosi javaslat nélkül bevitt túlzott mennyiség inkább kockázatot, mint hasznot jelent. A K-vitamin jelentőségét különösen jól mutatja, hogy - ahogy azt majd a keringési rendszer témakörében is látni fogjuk - nélkülözhetetlen szerepet játszik a véralvadási folyamatban részt vevő fehérjék előállításában; emiatt a K-vitamin tartós hiánya (amely felnőtteknél ritka, mivel a bélflóra is termel belőle, de bizonyos betegségeknél vagy újszülötteknél előfordulhat) fokozott vérzékenységgel járhat.',
+                ],
+              },
+            ],
+            keyTerms: ['E-vitamin', 'K-vitamin', 'B1-vitamin', 'B6-vitamin', 'zsírban oldódó vitamin', 'vízben oldódó vitamin'],
+          },
         },
       },
       {
@@ -4287,7 +4380,26 @@ export const CURRICULUM = [
             ],
             keyTerms: ['léghólyagocska', 'mellhártya', 'rekeszizom', 'vitálkapacitás', 'légzési perctérfogat'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a légzőmozgásokat nem csak leíró, hanem mennyiségi szinten is meg kell érteni: hogyan változnak a térfogatok és a nyomások a légzési ciklus során, és hogyan szemlélteti ezt egy klasszikus fizikai modell, a Donders-modell.',
+            sections: [
+              {
+                heading: 'Légzési térfogat- és nyomásváltozások',
+                paragraphs: [
+                  'Belégzéskor a rekeszizom és a bordaközti izmok összehúzódása megnöveli a mellüreg térfogatát; mivel a mellhártya két lemeze közötti rés zárt, folyadékkal kitöltött tér, a mellüreg tágulása a mellhártyaűrben (intrapleurális térben) uralkodó nyomást a légköri nyomáshoz képest még negatívabbá teszi. Ez a negatív nyomáskülönbség "húzza tágra" a hozzá tapadó tüdőt, ami a tüdőn belüli (alveoláris) nyomást a légköri nyomás alá csökkenti - ez a nyomáskülönbség hajtja be a levegőt a tüdőbe.',
+                  'Kilégzéskor a folyamat fordítva zajlik: a rekeszizom és a bordaközti izmok elernyednek, a mellüreg térfogata csökken, a mellhártyaűri nyomás kevésbé negatívvá válik, a tüdő összehúzódik, és az alveoláris nyomás a légköri nyomás fölé emelkedik, ami kihajtja a levegőt. Egy ilyen folyamatot bemutató grafikonon tehát a mellhártyaűri nyomás mindvégig negatív, de belégzéskor még inkább lecsökken, míg az alveoláris nyomás a légköri nyomás körül ingadozik, belégzéskor az alá, kilégzéskor fölé kerülve.',
+                ],
+              },
+              {
+                heading: 'A Donders-modell',
+                paragraphs: [
+                  'A Donders-modell (más néven "harang-modell") egy klasszikus fizikai szemléltető eszköz, amely egy zárt, üvegharang alakú edényből áll, amelynek alját egy rugalmas gumimembrán (a rekeszizmot modellezve) zárja le, belsejében pedig egy vagy két léggömb (a tüdőt/tüdőket modellezve) található, amelyek egy csövön keresztül a külvilággal (a légcsövet modellezve) állnak összeköttetésben.',
+                  'Ha a modellben a gumimembránt lefelé húzzuk (ez modellezi a rekeszizom összehúzódását), az edény belsejében a térfogat megnő, a nyomás lecsökken, és a léggömbök (a tüdő) a nyomáskülönbség hatására felfújódnak - ez szemlélteti a belégzést. Ha a membránt elengedjük, az visszaugrik eredeti helyzetébe, a belső térfogat csökken, a nyomás megnő, és a léggömbök kienged(őd)nek - ez szemlélteti a kilégzést. A modell jól mutatja, hogy a tüdő önmagában nem aktív, összehúzódásra képes szerv, hanem a mellüreg térfogatváltozása "mozgatja" passzívan.',
+                ],
+              },
+            ],
+            keyTerms: ['intrapleurális nyomás', 'alveoláris nyomás', 'Donders-modell'],
+          },
         },
       },
       {
@@ -4319,7 +4431,22 @@ export const CURRICULUM = [
             ],
             keyTerms: ['gázcsere', 'sejtlégzés', 'léghólyagocska', 'hemoglobin'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a gázcsere mechanizmusát is meg kell érteni: pontosan milyen fizikai folyamat áll a gázok mozgása mögött.',
+            sections: [
+              {
+                heading: 'A gázcsere diffúzión alapul',
+                paragraphs: [
+                  'A gázcsere mind a tüdőben, mind a szövetekben passzív diffúzión alapul: az oxigén és a szén-dioxid molekulái a nagyobb koncentrációjú (parciális nyomású) hely felől az alacsonyabb koncentrációjú hely felé áramlanak, energiafelhasználás nélkül - ez ugyanaz az elv, amelyet korábban (Membránok szerepe fejezet) a passzív szállításnál már megismertünk.',
+                  'A diffúzió sebessége - és ezáltal a gázcsere hatékonysága - egyenesen arányos a rendelkezésre álló felszínnel és a koncentrációkülönbség nagyságával, fordítottan arányos viszont a diffúziós úttal (a membrán vastagságával). A léghólyagocskák hatalmas összfelülete és rendkívül vékony fala (mindössze egyetlen sejtréteg, amelyet közvetlenül egyetlen sejtréteg vastagságú hajszálér-fal követ) éppen ezért teszi lehetővé a rendkívül gyors és hatékony gázcserét.',
+                  'Ez az összefüggés magyarázza azt is, miért veszélyesek egyes tüdőbetegségek: a tüdőgyulladás vagy a tüdővizenyő során a léghólyagocskák falában felgyülemlő folyadék megnöveli a diffúziós utat, a tüdőtágulás (emfizéma) pedig a léghólyagocskák falának károsodásával csökkenti az összfelületet - mindkét esetben a diffúzió képlete alapján egyértelműen következik, hogy a gázcsere hatékonysága jelentősen romlik, ami nehézlégzéshez vezet.',
+                  'A diffúzió elve azt is megmagyarázza, miért nem segít a gázcserén, ha valaki nagy magasságban egyszerűen gyorsabban lélegzik: a probléma ott nem a légcsere sebességével, hanem a belélegzett levegő alacsonyabb oxigén-parciálisnyomásával (és ezáltal a koncentrációkülönbség lecsökkenésével) van - ezt gyorsabb légzéssel csak részben lehet ellensúlyozni, ezért van szükség hosszabb akklimatizációra vagy - extrém magasságban - pótlólagos oxigénellátásra.',
+                  'A szervezet hosszabb távon (napok, hetek alatt) képes alkalmazkodni a tartósan alacsonyabb oxigén-parciálisnyomáshoz: ilyenkor megnő a vörösvértestek száma, ezáltal a vér oxigénszállító kapacitása is nagyobb lesz, ami részben ellensúlyozza a levegő alacsonyabb oxigéntartalmát - ez a magyarázata annak, hogy a magashegyi régiókban élők, illetve a magassági edzőtáborozó sportolók vére tartósan magasabb vörösvértest-számmal rendelkezik, mint a tengerszinten élőké.',
+                ],
+              },
+            ],
+            keyTerms: ['diffúzió', 'parciális nyomás'],
+          },
         },
       },
       {
@@ -4354,7 +4481,28 @@ export const CURRICULUM = [
             ],
             keyTerms: ['gégefő', 'pajzsporc', 'gégefedő', 'hangszalag'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban meghatározzuk a hangszalagok rögzülési pontjait, illetve azt is megvizsgáljuk, milyen fizikai tényezők határozzák meg a keletkező hang jellemzőit.',
+            sections: [
+              {
+                heading: 'A hangszalagok rögzülése és a gége működése',
+                paragraphs: [
+                  'A hangszalagok a pajzsporc belső fala és a gége hátsó részén elhelyezkedő, elmozdítható kannaporcok között feszülnek ki. A kannaporcok elfordulásukkal képesek a hangszalagok közötti rést (a hangrést) szűkíteni vagy tágítani, illetve a hangszalagok feszességét is szabályozni - ez a mozgékony rögzítés teszi lehetővé a hang tulajdonságainak tudatos, finom szabályozását.',
+                ],
+              },
+              {
+                heading: 'A hang erőssége, magassága és a hangszín',
+                paragraphs: [
+                  'A hang erőssége elsősorban a hangszalagokon átáramló levegő mennyiségétől (a kilégzés erejétől) függ: minél nagyobb nyomással áramlik át a levegő, annál nagyobb amplitúdójú (erősebb) rezgést kelt.',
+                  'A hang magassága a hangszalagok rezgésének frekvenciájától függ, amelyet a hangszalagok feszessége és hossza határoz meg: a feszesebb, rövidebb hangszalagok gyorsabban (magasabb frekvencián) rezegnek, ezáltal magasabb hangot eredményeznek - ez magyarázza, hogy a nőknél és gyermekeknél jellemzően rövidebb hangszalagok miatt átlagosan magasabb a hang, mint a felnőtt férfiaknál.',
+                  'A hangszínt - amely lehetővé teszi, hogy azonos magasságú hangok esetén is megkülönböztessünk egyéni hangokat vagy hangszereket - a garat, a szájüreg és az orrüreg mint rezonátorterek egyedi mérete és alakja befolyásolja: ezek a rezonátorterek az alaphang egyes felharmonikusait (magasabb frekvenciájú összetevőit) különböző mértékben erősítik fel, ez adja a hang egyedi "színezetét".',
+                  'A rezonátorterek tudatos alakítása (pl. a szájüreg és a nyelv helyzetének változtatásával) teszi lehetővé a magánhangzók egymástól való megkülönböztetését is: ugyanaz az alaphang, ugyanolyan magassággal és erősséggel, teljesen eltérő hangzású beszédhanggá alakítható attól függően, hogy a rezonátorterek éppen mely felharmonikusokat erősítik fel leginkább.',
+                  'Ez a három tényező (erősség, magasság, hangszín) együttesen teszi lehetővé, hogy az emberi hang rendkívül változatos legyen: ugyanaz a gégefő és hangszalag-pár képes suttogástól a kiáltásig, mély basszustól a magas szopránig, illetve egymástól tisztán megkülönböztethető magánhangzókig és beszédhangokig terjedő skálát produkálni - ez a sokoldalúság az emberi beszéd és ének biológiai alapja.',
+                ],
+              },
+            ],
+            keyTerms: ['kannaporc', 'hangrés', 'rezonátortér', 'felharmonikus'],
+          },
         },
       },
       {
@@ -4382,7 +4530,23 @@ export const CURRICULUM = [
             ],
             keyTerms: ['negatív visszacsatolás', 'légzőközpont', 'szén-dioxid'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosítjuk, milyen érzékelő struktúrák (receptorok) továbbítják a légzőközpont felé azokat az információkat, amelyek alapján a légzés szabályozása ténylegesen megtörténik.',
+            sections: [
+              {
+                heading: 'Kemoreceptorok és mechanoreceptorok szerepe',
+                paragraphs: [
+                  'A kemoreceptorok kémiai jellegű ingerekre (elsősorban a vér szén-dioxid-koncentrációjának, illetve az ebből következő pH-változásnak a mértékére) érzékeny érzékelő sejtek, amelyek részben magában az agytörzsben (a légzőközpont közelében), részben a nagyerek falában (pl. a nyaki verőérben) találhatók; ezek folyamatosan "jelentik" a légzőközpont felé a vér kémiai állapotát, ez alapján hangolva a légzés mélységét és gyakoriságát.',
+                  'A mechanoreceptorok ezzel szemben mechanikai ingerekre (a tüdő és a mellkas feszülésére, tágulására) érzékenyek: a tüdő falában található nyúlásérzékelő receptorok jelzik a légzőközpont felé, ha a tüdő már kellően kitágult, ez a jelzés váltja ki a belégzés leállítását és a kilégzés megkezdését (ezt a jelenséget Hering-Breuer-reflexnek nevezik) - ezáltal a mechanoreceptorok megvédik a tüdőt a túlzott, károsító mértékű kitágulástól.',
+                  'A kemoreceptorok és a mechanoreceptorok tehát kiegészítik egymást: míg a kemoreceptorok a szervezet anyagcsere-igényéhez igazítják a légzés intenzitását, a mechanoreceptorok a légzőmozgások fizikai határait szabják meg, együtt biztosítva a hatékony és biztonságos légzést.',
+                  'A nagyerekben elhelyezkedő kemoreceptorok (elsősorban a nyaki verőérben és a főverőérben) emellett az oxigénszint jelentős, kritikus mértékű lecsökkenésére is érzékenyek, bár - ahogy azt korábban (közép szinten) megismertük - normál körülmények között elsősorban nem ez, hanem a szén-dioxid-koncentráció változása szabja meg a légzés ütemét. Az oxigénérzékeny kemoreceptorok szerepe elsősorban szélsőséges helyzetekben (pl. nagy magasságban, ahol a levegő oxigéntartalma alacsonyabb) válik meghatározóvá, amikor már ez a "tartalék" szabályozási mechanizmus is aktiválódik.',
+                  'Ez a kettős (elsődlegesen szén-dioxid-, másodlagosan oxigénérzékeny) szabályozási rendszer evolúciósan is jól magyarázható: a szén-dioxid-koncentráció változása gyorsabb és érzékenyebb jelzést ad a szervezet pillanatnyi anyagcsere-állapotáról, mint az oxigénszint, amely csak jóval nagyobb mértékű hiány esetén csökken le észrevehető mértékben - így a szervezet a gyorsabb, megbízhatóbb jelzőrendszerre (a szén-dioxid-érzékelésre) alapozza az elsődleges szabályozást.',
+                  'Ez a kettősség egyben magyarázatot ad egy gyakorlati veszélyre is: mivel a légzést elsősorban a szén-dioxid-szint, nem az oxigénszint szabályozza, elméletileg előfordulhat, hogy valaki tudatos, elhúzódó szapora légzéssel (hiperventilációval) a normálisnál alacsonyabb szén-dioxid-szintet ér el, ezáltal átmenetileg elnyomja a légzési ingert annak ellenére, hogy az oxigénszint közben veszélyesen alacsonyra csökkenhet - ez az egyik oka annak, hogy a hiperventiláció, különösen víz alatti tartózkodás előtt, komoly egészségügyi kockázatot jelenthet.',
+                ],
+              },
+            ],
+            keyTerms: ['kemoreceptor', 'mechanoreceptor', 'Hering-Breuer-reflex'],
+          },
         },
       },
       {
@@ -4414,13 +4578,34 @@ export const CURRICULUM = [
                   'A dohányzás különösen súlyos kockázatot jelent: a cigarettafüst károsítja a légutak belső falát borító csillós hámsejteket, amelyek egészséges esetben a beszippantott szennyeződéseket és nyákot folyamatosan kifelé mozgatnák a légutakból - ezek károsodása miatt a szennyeződések és kórokozók tovább maradnak a légutakban, ami jelentősen megnöveli a légzőrendszeri daganatos és fertőzéses megbetegedések, valamint a szív-érrendszeri betegségek kockázatát is.',
                   'Éppen ezért fontos a dohányzás elkerülése, illetve a leszokás mellett érvelni: a dohányzás abbahagyása után a légutak öntisztuló képessége (a csillós hámsejtek működése) idővel részlegesen helyreállhat, és a súlyos megbetegedések kockázata is fokozatosan csökken - minél korábban történik a leszokás, annál nagyobb ez az egészségnyereség.',
                   'A dohányzás nemcsak a dohányzó személy légzőrendszerét károsítja: a passzív dohányzás, azaz mások cigarettafüstjének belélegzése ugyanazokat a károsító hatásokat idézheti elő, ráadásul a gyermekek légzőrendszere - mivel még fejlődésben van - különösen érzékeny erre a hatásra, ami tovább erősíti a dohányzás elleni érvelés jogosságát.',
+                  'A gyakori légúti fertőzések (pl. a megfázás) terjedését jelentősen elősegíti a cseppfertőzés: köhögéskor és tüsszentéskor apró, kórokozókat tartalmazó váladékcseppek kerülnek a levegőbe, amelyeket mások belélegezhetnek - ez az egyik oka annak, hogy a szájat és orrot eltakaró köhögés/tüsszentés, valamint a rendszeres kézmosás a légúti fertőzések terjedésének egyszerű, de hatékony megelőzési módja.',
                   'Összességében a légzőrendszer egészségének megőrzése - hasonlóan ahhoz, ahogy azt korábban (Táplálkozás egészségtana fejezet) a tápcsatornánál is láttuk - nagyrészt tudatos, mindennapi döntéseken (dohányzás elkerülése, tiszta levegőjű környezet, megfelelő testmozgás) múlik, nem csupán a betegségek utólagos kezelésén.',
                 ],
               },
             ],
             keyTerms: ['asztma', 'dohányzás', 'középfülgyulladás', 'fülkürt'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten két olyan jelenséget vizsgálunk meg, amelyek megértéséhez fizikai alapismeretek is szükségesek: a légmell és a keszonbetegség kialakulását, valamint a tüdő felületi feszültségének és a dohányzásnak az összefüggését.',
+            sections: [
+              {
+                heading: 'A légmell és a keszonbetegség',
+                paragraphs: [
+                  'A légmell (pneumothorax) akkor alakul ki, ha a mellhártya zárt tere (amelyben - ahogy azt korábban, a Légcsere fejezet emelt kiegészítésében megismertük - normál esetben negatív nyomás uralkodik) sérülés (pl. mellkasi szúrt seb, vagy egy léghólyagocska megrepedése) következtében megnyílik a külvilág vagy a tüdő belseje felé, és levegő áramlik be a mellhártyaűrbe. Ez megszünteti a negatív nyomáskülönbséget, amely normál esetben "tágra húzva" tartja a tüdőt - a tüdő ennek hatására összeesik, és az érintett oldalon a légzés hatástalanná válik, ami sürgősségi ellátást igénylő, életveszélyes állapot.',
+                  'A keszonbetegség (dekompressziós betegség) a víz alatti, magas nyomáson végzett munka (pl. mélytengeri búvárkodás) után, a felszínre túl gyorsan történő felemelkedéskor alakulhat ki: a magas nyomáson a vérben és a szövetekben nagy mennyiségű nitrogéngáz oldódik fel, amely a nyomás hirtelen csökkenésekor - hasonlóan ahhoz, ahogyan egy hirtelen kinyitott szénsavas üdítőben is buborékok jelennek meg - nem tud elég gyorsan a tüdőn keresztül eltávozni, ezért apró gázbuborékok formájában szabadul fel az erekben és a szövetekben, elzárva a keringést és súlyos fájdalmat, akár bénulást is okozva.',
+                ],
+              },
+              {
+                heading: 'A léghólyagocskák felületi feszültsége és a dohányzás',
+                paragraphs: [
+                  'A léghólyagocskák belső felszínét vékony folyadékréteg borítja, amelyben a folyadékmolekulák közötti vonzóerő felületi feszültséget hoz létre - ez a felületi feszültség önmagában a léghólyagocskák összeesésének (összetapadásának) irányába hatna, amit egy speciális, felületaktív anyag (surfactant) csökkent, megkönnyítve a léghólyagocskák nyitva tartását.',
+                  'A dohányzás károsítja a surfactant-termelő sejteket, ezáltal a léghólyagocskák felületi feszültsége kontrollálatlanul megnő - ez hozzájárul a léghólyagocskák tartós összeeséséhez és a rugalmas tüdőszövet károsodásához, ami az egyik mechanizmusa annak, hogy a hosszú távú dohányzás krónikus, visszafordíthatatlan tüdőkárosodáshoz (pl. tüdőtáguláshoz) vezethet.',
+                  'Ez a felismerés (a surfactant szerepe és a dohányzás károsító hatása) jól mutatja, hogy egy látszólag egyszerű fizikai jelenség - a folyadékok felületi feszültsége - miért lehet kulcsfontosságú egy élettani működés (a légzés) szempontjából, és miért érdemes a biológiai jelenségeket fizikai alapelvekkel is összekapcsolni, ne csak leíró módon szemlélni.',
+                ],
+              },
+            ],
+            keyTerms: ['légmell', 'keszonbetegség', 'felületi feszültség', 'surfactant'],
+          },
         },
       },
       { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 17, isFree: false, estimatedMinutes: 22,
