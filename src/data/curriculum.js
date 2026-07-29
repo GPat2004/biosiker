@@ -4608,13 +4608,321 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 17, isFree: false, estimatedMinutes: 22,
+      {
+        id: 'testfolyadekok',
+        title: 'A testfolyadékok',
+        order: 17,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A légzés és a légzőrendszer egészségtana fejezet) lezárt légzőrendszer után ebben a fejezetben az anyagszállítás témakörét kezdjük megismerni: azt a három, egymással szoros kapcsolatban álló folyadékteret, amelyeken keresztül a szervezet sejtjei a tápanyagokat, az oxigént és a szabályozó jeleket megkapják, a salakanyagoktól pedig megszabadulnak.',
+            sections: [
+              {
+                heading: 'Vér, szövetnedv, nyirok - a szervezet folyadékterei',
+                paragraphs: [
+                  'A vér zárt érrendszerben, a szív pumpáló munkája által hajtva kering; alkotói a vérplazma (folyékony állomány) és az abban úszó alakos elemek (vörösvérsejtek, fehérvérsejtek, vérlemezkék) - ahogy azt korábban (Állati szövetek fejezet) megismertük, a vér is kötőszövet, amelynek sejtközötti állománya folyékony.',
+                  'A szövetnedv (szöveti folyadék) a hajszálerek faláról a szövetek közötti térbe kiszűrődő, a vérplazmához hasonló összetételű folyadék, amely közvetlenül körülveszi a testi sejteket - ez a folyadék a sejtek és a vér közötti anyagcsere valódi közvetítő közege, hiszen a vér maga nem érintkezik közvetlenül a legtöbb sejttel.',
+                  'A nyirok a szövetnedv azon része, amelyet a hajszálerek nem tudnak visszaszívni, ezért a nyirokerekbe jutva, a nyirokkeringésen át jut vissza a vérkeringésbe. A három folyadéktér tehát szoros kapcsolatban áll egymással: a vérből szövetnedv szűrődik ki, a szövetnedv egy része visszaszívódik a vérbe, más része nyirokká válva a nyirokereken át tér vissza a vérkeringésbe.',
+                ],
+              },
+              {
+                heading: 'A vér mennyisége és összetétele',
+                paragraphs: [
+                  'Egy felnőtt ember teljes vértérfogata átlagosan kb. 5 liter. Ebből az alakos elemek (elsősorban a vörösvértestek) a vér térfogatának kb. 45%-át teszik ki, a vérplazma pedig a fennmaradó kb. 55%-ot.',
+                  'A vérplazma legnagyobb része víz, ebben oldva találhatók a plazmafehérjék (pl. az ozmotikus nyomás fenntartásáért felelős albumin, a szállító- és védekező szerepű globulinok, valamint a véralvadásban kulcsszerepet játszó fibrinogén), a sók és ionok, a felszívódott tápanyagok, a hormonok, valamint a sejtek anyagcseréje során keletkező salakanyagok (pl. a karbamid).',
+                  'Az alakos elemek és a vérplazma pontos arányát hematokritnak nevezzük; ennek értéke tájékoztat a vér vörösvértest-tartalmáról, ezért gyakori laboratóriumi vizsgálati mutató - kórosan alacsony értéke (pl. vérszegénység esetén) vagy kórosan magas értéke (pl. tartós folyadékhiány esetén) egyaránt jelezhet egészségügyi problémát.',
+                ],
+              },
+              {
+                heading: 'Homeosztázis a folyadékterek példáján',
+                paragraphs: [
+                  'A vér kémiai összetételének állandósága - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - létfontosságú: a vér pH-ja csak igen szűk határok között ingadozhat, ezt a korábban (Szervetlen molekulák fejezet) megismert hidrogén-karbonát pufferrendszer, illetve a légzés (a szén-dioxid kilégzésének mértéke, ahogy azt A légzés szabályozása fejezetben megismertük) tartja állandó szinten.',
+                  'A vér glükózszintje is jellemzően szűk tartományban ingadozik: étkezés után a felszívódó glükóz hatására emelkedik, éhezéskor pedig - ahogy azt korábban (Felszívódás fejezet) a máj glikogén-raktározó szerepénél megismertük - a máj glikogénkészletének lebontása pótolja a csökkenő vércukorszintet.',
+                  'A vér kémiai összetételének állandósága azért is kritikus, mert a szervezet szinte minden szövete a véren (pontosabban az abból kiszűrődő szövetnedven) keresztül jut hozzá a szükséges anyagokhoz - ha a vér összetétele (pl. a pH-ja vagy a glükózszintje) tartósan kibillenne az egyensúlyából, az valamennyi szervrendszer működését veszélyeztetné, ezért a szervezet több, egymást kiegészítő szabályozó mechanizmust (pufferrendszer, légzés, máj, majd a következő fejezetekben megismerendő hormonális szabályozás) is működtet ennek megelőzésére. A vér pH-ja normál esetben mindössze egy igen szűk, enyhén lúgos tartományban ingadozhat - már egy ennél jóval kisebb mértékű eltérés is súlyosan zavarná a fehérjék (pl. az enzimek) megfelelő térszerkezetét és működését.',
+                ],
+              },
+            ],
+            keyTerms: ['vérplazma', 'alakos elemek', 'szövetnedv', 'nyirok', 'albumin', 'fibrinogén'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a vércsoportok rendszerét, amely a vérplazma és az alakos elemek témaköréhez szorosan kapcsolódik.',
+            sections: [
+              {
+                heading: 'Az AB0 vércsoportrendszer',
+                paragraphs: [
+                  'A vörösvértestek felszínén jellegzetes szénhidrátláncok (antigének) találhatók - ahogy azt korábban (Membránok szerepe fejezet) a sejtfelismerés kapcsán már megismertük -, amelyek alapján az emberi vér négy fő csoportba (A, B, AB, 0) sorolható: az "A" csoportúak felszínén A-antigén, a "B" csoportúaknál B-antigén, az "AB" csoportúaknál mindkettő, a "0" csoportúaknál egyik sem található meg.',
+                  'A vérplazmában ezekkel ellentétesen jelennek meg az antitestek: az "A" vércsoportúak plazmájában B-antigén elleni, a "B" csoportúakéban A-antigén elleni antitest van jelen - ha összeférhetetlen vércsoportú vért juttatnának valakibe, az antitestek összecsomósítanák (agglutinálnák) az idegen vörösvértesteket, ami életveszélyes reakciót okozna. Éppen ezért a vérátömlesztés előtt mindig gondosan ellenőrzik a vércsoportok összeférhetőségét.',
+                  'A "0" vércsoportú vörösvértesteken egyik antigén sem található, ezért ezek szükség esetén (kis mennyiségben) a legtöbb vércsoportú személynek adhatók anélkül, hogy antigén-antitest reakciót váltanának ki - emiatt nevezik a "0" vércsoportot "univerzális donornak". Az "AB" vércsoportú személyek vérplazmájában viszont egyik antitest sincs jelen, ezért ők (elméletileg) bármilyen vércsoportú vért képesek befogadni, ezért nevezik őket "univerzális recipiensnek". A vércsoport-rendszer mellett az Rh-faktor (Rh-pozitív/Rh-negatív) is fontos szerepet játszik a vérátömlesztés és a várandósság biztonságának megítélésében: egy Rh-negatív édesanya szervezete Rh-pozitív magzat esetén antitesteket termelhet, ami egy esetleges következő terhesség során veszélyeztetheti a magzat egészségét, ezért ezt orvosi felügyelet mellett, célzott kezeléssel meg lehet előzni.',
+                ],
+              },
+            ],
+            keyTerms: ['vércsoport', 'antigén', 'agglutináció'],
+          },
+        },
+      },
+      {
+        id: 'szoveti-keringes',
+        title: 'A szöveti keringés',
+        order: 18,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A testfolyadékok fejezet) megismert vérplazma után ebben a fejezetben a vér alakos elemeit, a véralvadás alapjait, valamint a hajszálér- és nyirokkeringést ismerjük meg részletesen - vagyis azt a szintet, ahol a vér ténylegesen "eléri" a testi szöveteket.',
+            sections: [
+              {
+                heading: 'Az alakos elemek: vörösvérsejt, fehérvérsejt, vérlemezke',
+                paragraphs: [
+                  'A vörösvérsejtek (eritrociták) fő feladata az oxigén (és részben a szén-dioxid) szállítása; mindhárom alakos elem a csontvelőben keletkezik. A normál értéktartománytól való eltérés (pl. tartósan alacsony vörösvérsejtszám) a szervezet oxigénellátásának zavarát jelezheti.',
+                  'A fehérvérsejtek (leukociták) a szervezet védekezésében vesznek részt - ahogy azt korábban (Sejtműködések vezérlése fejezet) megismertük, egyes típusaik állábak segítségével amőboid mozgásra is képesek, így el tudnak jutni a fertőzés helyszínére. A vérlemezkék (trombociták) a véralvadási folyamatban játszanak kulcsszerepet.',
+                  'A vérszegénység (anémia) hátterében állhat vashiány (a vörösvérsejtek nem tudnak elegendő hemoglobint termelni), B12-vitamin- vagy folsavhiány (ahogy azt korábban, a Táplálkozás egészségtana fejezetben megismertük, ezek a vörösvérsejtek képzéséhez szükségesek), illetve jelentős vérveszteség is. Vérszegénység esetén a szövetek oxigénellátása romlik, ami jellegzetesen sápadtságban, fáradékonyságban és teljesítménycsökkenésben nyilvánul meg.',
+                  'A fehérvérsejtek és a vérlemezkék száma is szűk, normál értéktartományban mozog: a normálistól való jelentős eltérés (pl. kórosan magas fehérvérsejtszám fertőzés esetén, vagy alacsony vérlemezkeszám vérzékenység esetén) fontos diagnosztikai jelzés lehet a szervezet aktuális állapotáról.',
+                ],
+              },
+              {
+                heading: 'A véralvadás és rendellenességei',
+                paragraphs: [
+                  'A véralvadás a sérült érfalból induló, a vérlemezkéket és számos plazmafehérjét (pl. a fibrinogént) mozgósító folyamat, amelynek végeredménye egy, a sebet lezáró alvadék. A véralvadási folyamat rendellenessége kétirányú problémát okozhat: ha a véralvadás nem (vagy csak elégtelenül) működik, vérzékenység alakul ki (a sérülések után a vérzés nehezen áll el); ha viszont a véralvadás az erek belsejében, sérülés nélkül is túlzottan aktiválódik, trombózis (kóros vérrögképződés) jöhet létre, amely elzárhatja az adott eret.',
+                  'A trombózis különösen veszélyes, ha a kialakult vérrög leszakad, és a véráramlással egy szűkebb érszakaszhoz sodródva teljesen elzárja azt - ez az elzáródás a mögötte lévő szövet oxigénellátását szüntetheti meg, ami (az elzáródás helyétől függően) akár életveszélyes állapotot is okozhat.',
+                ],
+              },
+              {
+                heading: 'A hajszálér-szintű (szöveti) keringés',
+                paragraphs: [
+                  'A hajszálerek (kapillárisok) rendkívül vékony faluknak köszönhetően teszik lehetővé az anyagcserét a vér és a szövetek között: itt szűrődik ki a korábban (A testfolyadékok fejezetben) megismert szövetnedv, és itt jutnak a sejtekhez a tápanyagok és az oxigén, illetve itt kerülnek a vérbe a sejtek anyagcseretermékei és a szén-dioxid. A hajszálerek olyan sűrű hálózatot alkotnak a szövetekben, hogy gyakorlatilag minden sejt közvetlen közelében található legalább egy hajszálér - ez teszi lehetővé, hogy az anyagcsere-termékek rövid úton, hatékonyan kicserélődhessenek.',
+                ],
+              },
+              {
+                heading: 'A nyirokkeringés',
+                paragraphs: [
+                  'A nyirokerek a szövetek közötti térből gyűjtik össze a fel nem szívódott szövetnedvet (a nyirkot), és egy önálló, a vérkeringéstől elkülönülő, de azzal végül összekapcsolódó útvonalon (a nyirokerek végül nagy vénákba torkollnak) juttatják vissza a vérkeringésbe. A nyirok útja során nyirokcsomókon halad át, amelyek a szervezet védekezésének fontos állomásai: itt szűrődnek ki a kórokozók és egyéb idegen anyagok, és itt aktiválódnak a fehérvérsejtek egy része is - ez magyarázza, miért duzzadnak meg a nyirokcsomók (pl. a nyakon) gyakran egy fertőzés során.',
+                ],
+              },
+            ],
+            keyTerms: ['vörösvérsejt', 'fehérvérsejt', 'vérlemezke', 'vérszegénység', 'trombózis', 'nyirokcsomó'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hemoglobin pontos felépítését, a véralvadás molekuláris mechanizmusát, valamint a nyirok mozgatásának fizikai elvét is ismerni kell.',
+            sections: [
+              {
+                heading: 'A hemoglobin felépítése',
+                paragraphs: [
+                  'A hemoglobin - ahogy azt korábban (a fehérjék fejezetben) a negyedleges szerkezet példájaként már megismertük - négy alegységből álló fehérje. Minden alegység egy globin nevű fehérjeláncból és egy ahhoz kapcsolódó, nem fehérje természetű hem csoportból áll; a hem csoport négy nitrogéntartalmú gyűrűből és egy központi vasionból (Fe) épül fel - az oxigén ehhez a vasionhoz kötődik meg reverzibilisen, majd innen szabadul fel a szövetekben.',
+                ],
+              },
+              {
+                heading: 'A véralvadás mechanizmusa',
+                paragraphs: [
+                  'A véralvadás pontos lépéssora: a sérült érfal felszínre kerülő rostjaihoz a vérlemezkék odatapadnak és aktiválódnak, majd - kalciumion jelenlétében - beindítják a vérplazmában oldott, inaktív trombin-előanyag trombinná alakulását. A trombin ezután a szintén oldott fibrinogént rostos, oldhatatlan fibrinné alakítja, amely sűrű hálót képezve zárja le a sérülést, és amelybe a vérsejtek beleragadva stabilizálják az alvadékot.',
+                  'A folyamathoz K-vitamin is szükséges, mivel több, a véralvadásban részt vevő fehérje előállításához nélkülözhetetlen - ez magyarázza, hogy K-vitamin-hiány esetén (ahogy azt korábban, a Táplálkozás egészségtana fejezetben megismertük) fokozott vérzékenység alakulhat ki, hiszen a véralvadási folyamat egyik láncszeme hiányzik.',
+                ],
+              },
+              {
+                heading: 'A nyirok mozgatásának mechanizmusa',
+                paragraphs: [
+                  'A nyirokerekben - szemben a vérkeringéssel, amelyet a szív pumpál - nincs önálló, központi "szivattyú": a nyirok mozgatását elsősorban a környező vázizmok összehúzódása biztosítja, amely a nyirokereket összenyomva továbblöki a folyadékot, míg a nyirokerekben található billentyűk megakadályozzák a visszaáramlást, biztosítva az egyirányú haladást - ez az elv hasonló ahhoz, ahogy a vénás visszaáramlást is segíti a vázizomzat munkája.',
+                  'Ebből következik, hogy a hosszan tartó mozdulatlanság (pl. hosszú ültés, ágyhoz kötöttség) a nyirok áramlását is lelassítja, ami hozzájárulhat a szövetekben történő folyadék-felhalmozódáshoz (duzzanathoz) - ez az egyik oka annak, hogy az orvosok hosszú utazások vagy műtét utáni felépülés során rendszeres, könnyű mozgást javasolnak.',
+                ],
+              },
+            ],
+            keyTerms: ['hem', 'globin', 'trombin', 'fibrin'],
+          },
+        },
+      },
+      {
+        id: 'sziv-es-erek',
+        title: 'A szív és az erek',
+        order: 19,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Artéria (verőér)', 'Véna (visszér)'],
+          rows: [
+            ['A vér áramlásának iránya', 'a szívtől távolodó irányban', 'a szív felé haladó irányban'],
+            ['Átmérő (lumen)', 'jellemzően szűkebb üregű, de vastag falú', 'jellemzően tágabb üregű, elernyedt állapotban könnyen összenyomható'],
+            ['Fal vastagsága, rugalmassága', 'vastag, izmos, rugalmas fal (bírja a nagy nyomást)', 'vékonyabb, kevésbé rugalmas fal'],
+            ['Billentyűk', 'nincsenek (a szív közelében kivéve)', 'vannak, a visszaáramlást akadályozzák meg'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gerincesek altörzse: Csontos halak kétüregű, Kétéltűek/Hüllők háromüregű, Madarak/Emlősök négyüregű szíve) fokozatosan megismert szívfejlődési sorozat után ebben a fejezetben az emberi (és általában az emlős) szív felépítését és működését, valamint az erek típusait ismerjük meg részletesen.',
+            sections: [
+              {
+                heading: 'A szív felépítése és működése',
+                paragraphs: [
+                  'Az emberi szív - ahogy azt a korábban megismert emlős-jellemzők alapján várható is - négyüregű: két pitvarból és két kamrából áll, amelyek között, valamint a kamrák és a belőlük kiinduló nagy erek között billentyűk találhatók, amelyek megakadályozzák a vér visszaáramlását.',
+                  'A szívciklus (szívverés) során a pitvarok, majd a kamrák felváltva húzódnak össze (szisztolé) és lazulnak el (diasztolé): a pitvarok összehúzódásakor a bennük lévő vér a kamrákba áramlik, majd a kamrák összehúzódásakor a vér a nagy erekbe (a jobb kamrából a tüdőartériába, a bal kamrából a testi nagyartériába) lökődik ki. A szív felépítése (a vastag falú, izmos kamrák, illetve a köztük lévő billentyűk) szorosan összefügg ezzel a működéssel: a bal kamra fala azért vastagabb a jobbénál, mert neki kell a vért az egész testbe eljuttatnia, míg a jobb kamrának csak a tüdőig.',
+                  'A pitvarok és a kamrák közötti billentyűk, valamint a kamrák és a belőlük kiinduló nagy erek közötti billentyűk együttesen biztosítják, hogy a vér mindig egy irányba, a megfelelő ütemben áramoljon: amikor a kamrák összehúzódnak, a megnövekvő nyomás bezárja a pitvar-kamrai billentyűket (megakadályozva a vér visszaáramlását a pitvarokba), és kinyitja a nagy erek felé vezető billentyűket; amikor a kamrák ellazulnak, a folyamat fordítva zajlik.',
+                ],
+              },
+              {
+                heading: 'A koszorúerek',
+                paragraphs: [
+                  'A koszorúerek a szívizom saját vérellátását biztosítják - hiszen a szívizomnak, akárcsak bármely más szövetnek, önmagának is szüksége van oxigénre és tápanyagra, ezt nem tudja a benne áramló vérből "közvetlenül" megszerezni. A koszorúerek elzáródása ezért különösen életveszélyes: az elzáródás mögötti szívizomrész oxigénellátása megszűnik, ami az érintett terület elhalásához (szívinfarktushoz) vezethet - ezt a témát a keringési rendszer egészségtanáról szóló fejezetben részletesebben is tárgyaljuk.',
+                ],
+              },
+              {
+                heading: 'Az erek típusai: artéria, véna, kapilláris',
+                paragraphs: [
+                  'Az artériák (verőerek) a szívtől távolodó irányban szállítják a vért; mivel bennük magas nyomású vér áramlik, faluk vastag és rugalmas, ez a rugalmasság segít kiegyenlíteni a szívverésenkénti nyomáslökéseket. A vénák (visszerek) a szív felé szállítják vissza a vért; bennük a nyomás jóval alacsonyabb, faluk vékonyabb, és - az artériákkal ellentétben - billentyűkkel rendelkeznek, amelyek megakadályozzák a vér visszafolyását, különösen a végtagokban, a nehézségi erővel szemben. A hajszálerek (kapillárisok) - ahogy azt korábban (A szöveti keringés fejezetben) megismertük - rendkívül vékony falú, apró erek, amelyek felépítése tökéletesen illeszkedik az anyagcsere-cserét biztosító funkciójukhoz.',
+                  'Az erek átmérője (belső üregének, a lumennek a mérete) is jellegzetesen eltér: az artériák üregét a vastag, több izomrétegből álló fal viszonylag szűken tartja, ez segít fenntartani a magas nyomást; a vénák ezzel szemben tágabb üregűek és vékonyabb, kevésbé izmos falúak, ezért laposan összenyomhatók (pl. ha egy izom rájuk nyomódik); a hajszálerek egyedi átmérője a legkisebb - mindössze egyetlen vörösvérsejt átférésére elegendő -, ám óriási számuk miatt összesített keresztmetszetük messze a legnagyobb. Mindhárom értípus felépítése tehát szorosan illeszkedik a betöltött funkcióhoz: az artéria a nagy nyomás elviselésére, a véna a visszaáramlás biztosítására, a kapilláris pedig a hatékony anyagcserére "specializálódott" szerkezetileg.',
+                ],
+              },
+            ],
+            keyTerms: ['pitvar', 'kamra', 'billentyű', 'koszorúér', 'artéria', 'véna'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szövetnedv áramlásának fizikai hátterét, a keringési rendszer nyomás- és sebességviszonyait, valamint a szív- és vénás áramlás mennyiségi jellemzőit ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szövetnedv áramlásának mechanizmusa',
+                paragraphs: [
+                  'A hajszálér elején a vér nyomása (amely kifelé, a szövetek felé "nyomja" a folyadékot) nagyobb, mint a korábban (A testfolyadékok fejezetben) megismert plazmafehérjék ozmotikus nyomása (amely befelé, a vér irányába "húzza vissza" a folyadékot, mivel a fehérjék mérete miatt nem tudnak kiszűrődni) - ezért a hajszálér elején a folyadék kifelé, a szövetek felé szűrődik, létrehozva a szövetnedvet.',
+                  'A hajszálér végére haladva a vérnyomás fokozatosan lecsökken (a súrlódás és az ellenállás miatt), miközben az ozmotikus nyomás gyakorlatilag változatlan marad - ezért a hajszálér végén már az ozmotikus nyomás kerül túlsúlyba, ami a szövetnedv jelentős részének visszaszívódását idézi elő a vérbe. Ami ebből a mérlegből "kimarad", az a korábban megismert nyirokerekbe jut.',
+                ],
+              },
+              {
+                heading: 'Nyomás- és sebességviszonyok a keringési rendszerben',
+                paragraphs: [
+                  'A vérnyomás a nagyartériáktól a vénák felé haladva folyamatosan csökken: legmagasabb az aortában, majd fokozatosan esik az artériákban, a hajszálerekben, és a legalacsonyabb a vénákban. Egy ezt bemutató grafikonon tehát a nyomásgörbe monoton csökken a keringési út mentén.',
+                  'A véráramlás sebessége nem az erek egyedi átmérőjétől, hanem az adottérszakasz összkeresztmetszetétől függ: bár egyetlen hajszálér átmérője rendkívül kicsi, a hajszálerek száma olyan nagy, hogy összkeresztmetszetük messze meghaladja az artériákét vagy a vénákét - ezért a véráramlás éppen a hajszálerekben a leglassabb, ami kedvez a hatékony anyagcserének.',
+                ],
+              },
+              {
+                heading: 'Verőtérfogat és perctérfogat',
+                paragraphs: [
+                  'A verőtérfogat az a vérmennyiség, amelyet a szív egyetlen összehúzódás (szisztolé) alkalmával kilök (átlagosan kb. 70 ml); a perctérfogat pedig a verőtérfogat és a szívfrekvencia szorzata, vagyis az egy perc alatt kilökött vérmennyiség. Egy egyszerű számítási példával: ha a verőtérfogat 70 ml, a szívfrekvencia pedig 70/perc, a perctérfogat kb. 70 ml × 70 = 4900 ml, azaz közel 5 liter/perc - ami nagyjából megegyezik a korábban (A testfolyadékok fejezetben) megismert teljes vértérfogattal, vagyis a szív percenként nagyjából a teljes vérmennyiséget végigpumpálja a keringési rendszeren.',
+                ],
+              },
+              {
+                heading: 'A vénás áramlást segítő tényezők',
+                paragraphs: [
+                  'Mivel a vénákban a vérnyomás alacsony, a vér visszaáramlását a szívhez több kiegészítő mechanizmus is segíti: a vázizmok összehúzódása (izompumpa-hatás) a köztük futó vénákat összenyomva előre "löki" a vért, a vénákban lévő billentyűk megakadályozzák, hogy a vér visszafolyjon, a légzőmozgások során a mellüregben kialakuló negatív nyomás pedig "szívó" hatást fejt ki a mellkas felé áramló vénás vérre.',
+                ],
+              },
+            ],
+            keyTerms: ['ozmotikus nyomás', 'verőtérfogat', 'perctérfogat', 'izompumpa'],
+          },
+        },
+      },
+      {
+        id: 'keringes-szabalyozasa',
+        title: 'A keringés szabályozása',
+        order: 20,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A szív és az erek fejezet) megismert szívműködés és érrendszer után ebben a fejezetben azt vizsgáljuk meg, hogyan igazodik a keringés a szervezet pillanatnyi igényeihez, és milyen szervek segítik ezt a folyamatot.',
+            sections: [
+              {
+                heading: 'Szívfrekvencia és vérnyomás',
+                paragraphs: [
+                  'A szívfrekvencia a szív percenkénti összehúzódásainak száma (felnőtt embernél nyugalomban jellemzően kb. 60-100/perc), amelyet tapintással (pulzusméréssel) vagy automata készülékkel lehet meghatározni. A vérnyomás az artériákban uralkodó nyomás, amelynek felnőttkori normál értéke kb. 120/80 Hgmm (a nagyobb szám a szív összehúzódásakor, azaz szisztolés, a kisebb a szív elernyedésekor, azaz diasztolés nyomást jelöli); ezt ma jellemzően automata vérnyomásmérő eszközzel mérik.',
+                  'A pulzus tapintható például a csuklón vagy a nyakon, ott, ahol egy nagyobb artéria a bőr közelében fut - minden tapintható lüktetés egy-egy szívösszehúzódásnak felel meg, hiszen a szívből kilökött vér nyomáshulláma végigfut az artériákon.',
+                  'A mért pulzus- és vérnyomásértékeket mindig az adott körülmények (pl. nyugalmi állapot vagy terhelés) figyelembevételével kell értelmezni: testmozgás, izgalom vagy koffeinfogyasztás átmenetileg megemeli, míg a pihenés és a relaxáció csökkenti mindkét értéket. A rendszeresen sportolók nyugalmi szívfrekvenciája jellemzően alacsonyabb az edzetlen embereknél megszokottnál, mivel az edzett szívizom egyetlen összehúzódással is nagyobb mennyiségű vért képes kilökni, ezért ritkább összehúzódással is fedezni tudja a szervezet nyugalmi igényét.',
+                ],
+              },
+              {
+                heading: 'A lép szerepe',
+                paragraphs: [
+                  'A lép a hasüregben, a gyomor mellett elhelyezkedő szerv, amely egyszerre tölt be keringési és immunológiai szerepet: itt bomlanak le az elhasználódott, elöregedett vörösvértestek, emellett vért is képes raktározni, és fontos szerepet játszik a fehérvérsejtek egy részének "állomáshelyeként", hozzájárulva a szervezet védekezéséhez.',
+                  'A lép a hasüreg egyik viszonylag sérülékeny szerve, mivel dús érhálózata miatt egy erős ütés (pl. baleset során) könnyen megrepesztheti, ami súlyos belső vérzést okozhat - ezért a lép sérülésének gyanúja sürgősségi orvosi ellátást igényel. Bár a lép eltávolítása (pl. súlyos sérülés esetén) nem összeegyeztethetetlen az élettel, hiszen funkcióinak egy részét más szervek (pl. a máj és a csontvelő) részben átveszik, az eltávolított lépű személyeknél a szervezet fertőzésekkel szembeni védekezőképessége valamelyest gyengébb lehet.',
+                ],
+              },
+              {
+                heading: 'A véreloszlás szabályozása',
+                paragraphs: [
+                  'A szervezet a rendelkezésre álló vérmennyiséget nem egyenletesen, hanem az adott pillanatban legnagyobb igényű szervek felé irányítja: az erek fala izomrostokat tartalmaz, amelyek összehúzódásával (érszűkület) vagy elernyedésével (értágulat) szabályozható, mennyi vér jut az adott szervhez. Testmozgás közben például a vázizmok felé irányuló véráramlás nő meg jelentősen, míg emésztés közben a tápcsatorna felé - ez magyarázza, miért érdemes kerülni a megerőltető testmozgást közvetlenül étkezés után, amikor a szervezet vérellátása éppen a tápcsatorna felé összpontosul.',
+                  'A bőr felszíni ereinek tágulása vagy szűkülése - ahogy azt korábban (Homeosztázis fejezet) a hőszabályozásnál megismertük - szintén a véreloszlás szabályozásának egy formája: meleg környezetben a bőr erei kitágulnak (ez segíti a hőleadást), hidegben pedig összeszűkülnek (ez csökkenti a hőveszteséget), és eközben a véráramlás átmenetileg a testmag felé, a belső szervek irányába tolódik el. Ez a mechanizmus jól mutatja, hogy a véreloszlás szabályozása egyszerre szolgálja az anyagcsere-igények kielégítését és a testhőmérséklet állandóságát is.',
+                ],
+              },
+            ],
+            keyTerms: ['szívfrekvencia', 'vérnyomás', 'lép', 'érszűkület', 'értágulat'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szívverés ütemét meghatározó belső ingerképző rendszert, a szív ingerületvezető rendszerét is ismerni kell.',
+            sections: [
+              {
+                heading: 'A szinuszcsomó és a pitvar-kamrai csomó',
+                paragraphs: [
+                  'A szív ritmusos összehúzódását egy különleges, önmagát automatikusan, ritmikusan gerjesztő szövet, a szinuszcsomó irányítja, amely a jobb pitvar falában található - ez a szív "saját ritmusadója" (pacemakere), amelynek köszönhetően a szív a testből kiemelve, önállóan is tovább tud verni egy ideig.',
+                  'A szinuszcsomóból induló ingerület először a pitvarok izomzatán terjed végig, kiváltva azok összehúzódását, majd eléri a pitvar-kamrai csomót, amely egy rövid ideig "visszatartja", késlelteti az ingerület továbbterjedését, mielőtt azt a kamrák felé továbbítaná. Ez a késleltetés élettanilag kulcsfontosságú: biztosítja, hogy a pitvarok összehúzódása (és a bennük lévő vér kamrákba jutása) után, még a kamrák összehúzódásának megkezdése előtt, elegendő idő álljon rendelkezésre a vér átáramlására - ha ez a késleltetés nem történne meg, a pitvarok és a kamrák egyszerre húzódnának össze, ami jelentősen csökkentené a szív pumpáló hatékonyságát.',
+                  'A szinuszcsomó saját, belső ritmusa magyarázza, hogy a szív miért képes önállóan, külső idegi jelek nélkül is ritmikusan verni: bár a szívfrekvenciát az idegrendszer és a hormonrendszer is befolyásolja (pl. felgyorsítva testmozgás vagy izgalom hatására), az alapütemet maga a szinuszcsomó adja meg. Ha a szinuszcsomó működése zavart szenved, a szív ritmusa szabálytalanná válhat (szívritmuszavar), amely - ahogy azt a keringési rendszer egészségtanáról szóló fejezetben is látni fogjuk - komoly egészségügyi kockázatot jelenthet.',
+                  'A pitvar-kamrai csomó egyfajta "tartalék ritmusadóként" is szolgál: ha valamilyen okból a szinuszcsomó jelzése nem érné el, a pitvar-kamrai csomó - jóval alacsonyabb, önálló ütemben - önmaga is képes ritmikus ingerületet kelteni, fenntartva (bár lassabb ütemű) szívműködést. Ez a "beépített tartalék" jól mutatja, mennyire fontos a szív folyamatos, megbízható működése a szervezet számára.',
+                ],
+              },
+            ],
+            keyTerms: ['szinuszcsomó', 'pitvar-kamrai csomó', 'pacemaker'],
+          },
+        },
+      },
+      {
+        id: 'keringesi-rendszer-egeszsegtana',
+        title: 'A keringési rendszer egészségtana',
+        order: 21,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A keringés szabályozása fejezet) megismert szabályozási mechanizmusok után ebben a záró fejezetben - hasonlóan ahhoz, ahogy a táplálkozási és a légzőrendszernél is külön fejezetet szenteltünk az egészségtannak - a keringési rendszer egészségtanát, valamint a vérzéssel járó sérülések ellátásának alapjait tekintjük át.',
+            sections: [
+              {
+                heading: 'Érvelés a testedzés és a helyes táplálkozás mellett',
+                paragraphs: [
+                  'A rendszeres testedzés - ahogy azt korábban (A keringés szabályozása fejezet) az edzett szív alacsonyabb nyugalmi frekvenciájánál megismertük - erősíti a szívizmot, javítja az erek rugalmasságát, és hozzájárul az egészséges testtömeg és vérnyomás fenntartásához. A helyes összetételű étrend - ahogy azt korábban (Táplálkozás egészségtana fejezet) megismertük - szintén jelentősen csökkenti a keringési rendszer megbetegedéseinek kockázatát, ezért a kettő (testmozgás és táplálkozás) együttesen a keringési rendszer egészségének megőrzésének két alappillére.',
+                ],
+              },
+              {
+                heading: 'A keringési rendszer főbb betegségei és kockázati tényezői',
+                paragraphs: [
+                  'Az érelmeszesedés az érfal belső felszínén lerakódó zsíros anyagok (elsősorban koleszterin) miatt kialakuló, az ér belső átmérőjét szűkítő elváltozás, amely megnöveli a trombózis és az érelzáródás kockázatát. A visszértágulat a vénák - főként a lábakban lévő vénák - kóros kitágulása, amely a vénák billentyűinek elégtelen működésével jár együtt, ilyenkor a vér könnyebben visszafolyik, összegyűlik és tovább tágítja az eret. A magasvérnyomás-betegség (hipertónia) a tartósan a normálérték felett maradó vérnyomás állapota, amely - kezeletlenül - tartósan terheli a szívet és az érfalakat.',
+                  'A fő kockázati tényezők közé tartozik a dohányzás, a mozgásszegény életmód, a zsírokban és sóban gazdag, egyoldalú táplálkozás, a tartós stressz, valamint az öröklött hajlam - ugyanezek a tényezők nemcsak az érelmeszesedés és a magasvérnyomás, hanem a trombózis (kóros vérrögképződés) és a szívritmuszavar kialakulásának kockázatát is növelik, hiszen mindkettő gyakran az érelmeszesedés és a magasvérnyomás következményeként alakul ki. Ezek közül az életvitelből eredő tényezők (dohányzás, mozgásszegénység, táplálkozás, stressz) tudatos életmódváltással jelentősen csökkenthetők, míg az öröklött hajlam nem, de a rendszeres szűrővizsgálat ez esetben is segíthet a korai felismerésben.',
+                ],
+              },
+              {
+                heading: 'A szívinfarktus fogalma és tünetei',
+                paragraphs: [
+                  'A szívinfarktus - ahogy azt korábban (A szív és az erek fejezet) a koszorúerek szerepénél megismertük - a szívizom egy részének elhalása a koszorúér elzáródása (jellemzően egy trombus, azaz vérrög) miatt kialakuló oxigénhiány következtében. Jellemző tünetei a mellkas közepén jelentkező, gyakran szorító, nyomó jellegű fájdalom, amely kisugározhat a bal karba, a nyakba vagy az állkapocsba, ezt gyakran légszomj, verejtékezés és rosszullét-érzés kíséri.',
+                ],
+              },
+              {
+                heading: 'Elsősegély vérzéssel járó sérülések ellátásánál',
+                paragraphs: [
+                  'A vérzéssel járó sérülések alapvető ellátásának lépései a következők:',
+                  '1. Súlyos, erőteljes (pl. lüktetve, világospiros vér formájában jelentkező) vérzés esetén azonnal hívjunk mentőt (vagy kérjünk meg valaki mást a hívásra), majd haladéktalanul kezdjük meg az ellátást.',
+                  '2. Közvetlen nyomás alkalmazása: nyomjunk tiszta kötszert vagy ruhát határozottan a sebre, ez segíti a véralvadást és csökkenti a vérveszteséget.',
+                  '3. A sérült testrész megemelése: ha lehetséges, emeljük a sérült végtagot a szív magassága fölé, ez tovább csökkenti a vérzés erősségét.',
+                  '4. Ha a kötés átvérzik, NE vegyük le: tegyünk rá egy újabb réteget, és folytassuk a nyomást, a kötés levétele megzavarná a már megindult alvadást.',
+                  '5. Figyeljünk a sokk jeleire (sápadtság, hidegverejték, szapora, gyenge pulzus): ha ezek jelentkeznek, fektessük le a sérültet, emeljük meg a lábát, és tartsuk melegen, amíg a segítség megérkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['érelmeszesedés', 'visszértágulat', 'magasvérnyomás', 'szívinfarktus', 'sokk'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni, hogyan függ össze egymással a fejezetben tárgyalt több betegség.',
+            sections: [
+              {
+                heading: 'A keringési betegségek egymáshoz kapcsolódó láncolata',
+                paragraphs: [
+                  'A fejezetben tárgyalt betegségek gyakran nem elszigetelten, hanem egymást kiváltó, egymásra épülő láncolatban jelentkeznek: a tartós magasvérnyomás felgyorsítja az érelmeszesedés kialakulását (mert a nagyobb nyomás mikrosérüléseket okozhat az érfalban, amelyekhez könnyebben tapadnak a zsíros lerakódások), az érelmeszesedés pedig - ahogy azt korábban (A szöveti keringés fejezet) a trombózisnál megismertük - megnöveli a vérrögképződés kockázatát; ha egy ilyen vérrög egy koszorúeret zár el, szívinfarktus alakul ki, ha pedig egy agyi eret, agyi érkatasztrófa (stroke) - vagyis a szívinfarktus és a stroke gyakran ugyanannak az alapfolyamatnak (magasvérnyomás → érelmeszesedés → trombózis) két különböző célszervben megjelenő végkimenetele. A szívritmuszavar szintén ehhez a láncolathoz kapcsolódhat: az érelmeszesedés által károsított szívizom-területek megzavarhatják a korábban (A keringés szabályozása fejezet) megismert ingerületvezető rendszer (szinuszcsomó, pitvar-kamrai csomó) szabályos működését is.',
+                  'Ez a láncolat jól magyarázza, miért olyan hatékony megelőzési stratégia egyetlen kockázati tényező (pl. a dohányzás elhagyása vagy a rendszeres testmozgás) csökkentése is: mivel a folyamat több lépése egymásra épül, egy korai láncszem megszakítása az egész folyamatot, és ezáltal több, egymástól látszólag független betegség kockázatát is egyszerre mérsékli.',
+                  'Ez egyben azt is megmagyarázza, hogy a rendszeres vérnyomás- és pulzusmérés - ahogy azt korábban (A keringés szabályozása fejezet) megismertük - miért fontos megelőzési eszköz: a magasvérnyomás önmagában sokáig tünetmentes maradhat, ezért a rendszeres, tudatos önellenőrzés nélkül a lánc első láncszeme (a magas vérnyomás) észrevétlenül fennmaradhat és károsíthatja az érrendszert, mire a súlyosabb következmények (érelmeszesedés, trombózis, szívinfarktus vagy stroke) egyáltalán felismerhetővé válnának.',
+                ],
+              },
+            ],
+            keyTerms: ['stroke'],
+          },
+        },
+      },
+      { id: 'kivalasztas', title: 'A kiválasztás', order: 22, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kivalasztas', title: 'A kiválasztás', order: 18, isFree: false, estimatedMinutes: 16,
+      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 23, isFree: false, estimatedMinutes: 30,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 19, isFree: false, estimatedMinutes: 30,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 20, isFree: false, estimatedMinutes: 18,
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 24, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
