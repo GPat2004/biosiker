@@ -6037,16 +6037,315 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'belso-elvalasztasu-mirigyek', title: 'Belső elválasztású mirigyek', order: 40, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'hormonrendszer-egeszsegtana', title: 'A hormonrendszer egészségtana', order: 41, isFree: false, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'immunitas', title: 'Immunitás', order: 42, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'vercsoportok', title: 'Vércsoportok', order: 43, isFree: false, estimatedMinutes: 10,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'immunrendszer-egeszsegtana', title: 'Az immunrendszer egészségtana', order: 44, isFree: false, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'belso-elvalasztasu-mirigyek',
+        title: 'Belső elválasztású mirigyek',
+        order: 40,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hormonális működések fejezet) megismert általános elveket ebben a fejezetben konkrét mirigyekhez és hormonokhoz kapcsoljuk: áttekintjük, hol helyezkednek el a legfontosabb belső elválasztású mirigyek, és mit termelnek.',
+            sections: [
+              {
+                heading: 'A belső elválasztású mirigyek elhelyezkedése',
+                paragraphs: [
+                  'A szervezet legfontosabb belső elválasztású mirigyei jellegzetes helyeken találhatók: az agyalapi mirigy (hipofízis) az agy alján, a hipotalamusz alatt; a pajzsmirigy a gégeporc alatt, a nyak elülső részén; a mellékvesék a vesék felső pólusán; a hasnyálmirigy a hasüregben, a gyomor mögött (itt a Langerhans-szigetek felelősek a hormontermelésért); az ivarmirigyek (herék, petefészkek) a kismedencében, illetve here esetén a herezacskóban.',
+                  'Ezek a mirigyek - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük - hormonjaikat közvetlenül a véráramba választják ki, innen jutnak el a távoli célsejtekhez.',
+                ],
+              },
+              {
+                heading: 'Exokrin és endokrin mirigyek',
+                paragraphs: [
+                  'Az exokrin (külső elválasztású) és az endokrin (belső elválasztású) mirigyek megkülönböztetését - ahogy azt korábban (Homeosztázis fejezet) megismertük - itt csak felidézzük: a hasnyálmirigy jól szemlélteti, hogy egy szerv egyszerre lehet exokrin és endokrin is - nagy része emésztőenzimeket termel, amelyeket vezetéken át a patkóbélbe juttat (exokrin működés - ahogy azt korábban az Emésztés fejezetben megismertük), míg a benne elszórtan elhelyezkedő Langerhans-szigetek hormonokat (pl. inzulint) választanak közvetlenül a vérbe (endokrin működés).',
+                  'Hasonlóan kettős szerepű mirigy a here és a petefészek is: ivarsejteket (spermiumot, illetve petesejtet) termelnek - a here esetében ez egy vezetékrendszeren (heretubulusok, mellékhere, ondóvezeték) keresztül jut tovább, míg a petefészek esetében az érett petesejt az ovulációkor közvetlenül a hasüregbe szabadul, ahonnan a petevezeték fogja be -, ugyanakkor mindkét szerv - ahogy azt lentebb, a nemi ciklus kapcsán is megismerjük - hormonokat (pl. tesztoszteront, ösztrogént) is termel, amelyeket közvetlenül a vérbe választ ki.',
+                ],
+              },
+              {
+                heading: 'Fontosabb hormonok termelődési helye és hatása',
+                paragraphs: [
+                  'Az inzulin a hasnyálmirigy szigetsejtjeiben termelődik, és - ahogy azt korábban (Homeosztázis fejezet) megismertük - csökkenti a vércukorszintet azáltal, hogy elősegíti a glükóz sejtekbe jutását és glikogénként való raktározását. Az adrenalin a mellékvese velőállományában termelődik, és - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - a szimpatikus idegrendszerrel összehangoltan a "harcolj vagy menekülj" választ erősíti (szívfrekvencia, vércukorszint emelése).',
+                  'A tiroxin a pajzsmirigyben termelődik, és - ahogy azt korábban (Hormonális működések fejezet) az alapanyagcsere kapcsán megismertük - a sejtek anyagcseréjének alapszintjét szabályozza. A tesztoszteron a herékben termelődik, és a másodlagos nemi jellegek (pl. szőrzet, hangmélyülés) kialakulásáért, valamint a spermiumtermelésért felelős. Az oxitocin az agyalapi mirigy hátsó lebenyéből választódik ki, és a szülés során a méh összehúzódásait, szoptatáskor a tejleadási reflexet váltja ki, emellett - ahogy azt korábban (Pszichés fejlődés fejezet) a kötődésnél megismertük - szerepet játszik az anya-gyermek kötődés kialakulásában is. Ezek a mirigyek tehát összességében a szervezet szinte minden fontosabb élettani folyamatát (anyagcsere, stresszválasz, nemi jelleg, szaporodás, szociális kötődés) lefedik.',
+                  'Jól látható, hogy ezek a hormonok igen eltérő élettani folyamatokat szabályoznak (anyagcsere, stresszválasz, nemi jelleg, szülés-szoptatás), mégis közös bennük, hogy mindegyik a véráramon keresztül, a megfelelő célsejtek receptorain keresztül fejti ki hatását - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük. Ez az áttekintés egyben azt is megalapozza, hogy a következő fejezetben (A hormonrendszer egészségtana) miért éppen ezeknek a hormonoknak (elsősorban az inzulinnak és a tiroxinnak) a hiányos vagy túlzott működését tárgyaljuk részletesebben, hiszen ezek zavara okozza a leggyakoribb hormonrendszeri egészségügyi problémákat.',
+                ],
+              },
+            ],
+            keyTerms: ['agyalapi mirigy', 'pajzsmirigy', 'mellékvese', 'inzulin', 'tiroxin', 'tesztoszteron', 'oxitocin', 'exokrin mirigy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az agyalapi mirigy, a hipotalamusz és a mellékvesekéreg együttműködését, valamint a női nemi ciklus hormonális szabályozását ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az agyalapi mirigy, a hipotalamusz és a mellékvesekéreg együttműködése',
+                paragraphs: [
+                  'A hipotalamusz és az agyalapi mirigy elülső lebenye egy szorosan együttműködő szabályozó egységet alkot: a hipotalamusz irányító hormonjai szabályozzák az agyalapi mirigy elülső lebenyének hormontermelését, az agyalapi mirigy pedig további irányító hormonokkal szabályozza a többi mirigy (pl. a pajzsmirigy, a mellékvesekéreg, az ivarmirigyek) működését - ez egy többszintű, egymásra épülő szabályozási hierarchia.',
+                  'A mellékvesekéreg hormonjai (glükokortikoidok, mineralokortikoidok) - ahogy azt korábban (Hormonális működések fejezet) megismertük - szintén ebbe a hierarchiába illeszkednek: termelődésüket az agyalapi mirigy egy irányító hormonja indítja el, ez jól szemlélteti, hogy egyetlen hormonszint felborulása (pl. az agyalapi mirigy egy daganata miatt) az egész alárendelt mirigy működését felboríthatja. Ez a háromszintű felépítés (hipotalamusz → agyalapi mirigy → célmirigy) teszi lehetővé, hogy a szervezet egyetlen, központi ponton (a hipotalamuszban) összehangolja a legkülönfélébb hormonális folyamatokat, miközben minden szinten önálló negatív visszacsatolás is működik.',
+                ],
+              },
+              {
+                heading: 'A női nemi ciklus hormonális szabályozása',
+                paragraphs: [
+                  'A női nemi ciklus során a petefészekben érő tüszők ösztrogént, a tüsző kiszakadása (ovuláció) után kialakuló sárgatest pedig progeszteront termel; ez a két hormon szabályozza a méhnyálkahártya felépülését és leválását, valamint a testhőmérséklet enyhe, ciklus közbeni ingadozását is. Az ösztrogén elsősorban a méhnyálkahártya megvastagodását segíti elő a ciklus első felében, a progeszteron pedig a sárgatest kialakulása után a nyálkahártyát a beágyazódásra készíti fel, és emeli a testhőmérsékletet - ez az apró hőmérséklet-emelkedés az egyik módja annak, hogyan lehet nyomon követni, hogy megtörtént-e az ovuláció.',
+                  'A hormonális fogamzásgátlás ezen a rendszeren alapul: a mesterségesen, tartósan magas hormonszint (a tablettában lévő hormonok) az agyalapi mirigy felé azt "jelzi", hogy már zajlik a ciklus, ezért az agyalapi mirigy nem indítja el az új tüszőérést kiváltó irányító hormonok termelését, így elmarad a peteérés.',
+                ],
+              },
+            ],
+            keyTerms: ['hipotalamusz', 'ösztrogén', 'progeszteron'],
+          },
+        },
+      },
+      {
+        id: 'hormonrendszer-egeszsegtana',
+        title: 'A hormonrendszer egészségtana',
+        order: 41,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', '1-es típusú cukorbetegség', '2-es típusú cukorbetegség'],
+          rows: [
+            ['Háttér', 'a hasnyálmirigy szigetsejtjeinek pusztulása', 'inzulinrezisztencia, kimerülő inzulintermelés'],
+            ['Jellemző életkor', 'gyakran gyermek-, fiatal felnőttkor', 'jellemzően felnőttkor'],
+            ['Fő kockázati tényező', 'autoimmun folyamat', 'túlsúly, mozgásszegény életmód'],
+            ['Kezelés alapja', 'élethosszig tartó inzulinbevitel', 'életmódváltás, gyógyszerek, szükség esetén inzulin'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Belső elválasztású mirigyek fejezet) megismert hormonok és mirigyek után ebben a fejezetben a hormonrendszer egészségtanát, elsősorban a cukorbetegséget tekintjük át.',
+            sections: [
+              {
+                heading: 'A pajzsmirigy példáján: a hormontermelés szabályozásának alapelve',
+                paragraphs: [
+                  'A pajzsmirigy működése jól szemlélteti a hormontermelés negatív visszacsatolásos szabályozását - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük -: ha a vér tiroxinszintje alacsony, az agyalapi mirigy fokozott mennyiségű irányító hormont termel, ami serkenti a pajzsmirigyet; ha a tiroxinszint már megfelelő (vagy magas), ez a serkentés csökken. Ha ez a szabályozás felborul, alul- (hypothyreosis) vagy túlműködés (hyperthyreosis) alakulhat ki, amely a teljes anyagcserét (súlyváltozás, hőérzékelés, szívfrekvencia) érintheti: a hypothyreosis jellemző tünete a lassult anyagcsere, a fáradékonyság, a hidegérzékenység és a hízásra való hajlam, míg a hyperthyreosis felgyorsult anyagcserével, fogyással, fokozott idegességgel és szapora szívveréssel jár.',
+                ],
+              },
+              {
+                heading: 'A hormontermelés szabályozásának általános elve',
+                paragraphs: [
+                  'A hormontermelés szabályozása minden esetben - ahogy azt korábban (Hormonális működések fejezet) megismertük - a negatív visszacsatolás elvén alapul: egy adott hormon szintjének emelkedése idővel csökkenti a további termelést, a szint csökkenése pedig fokozza azt, így a hormonszint egy viszonylag szűk, egészséges tartományban marad. Ha ez a szabályozás bármilyen okból (pl. a mirigy károsodása, daganat vagy autoimmun folyamat miatt) felborul, a hormonszint tartósan a normális tartományon kívülre kerülhet, ami - ahogy azt fentebb a pajzsmirigy és a hasnyálmirigy példáján is láttuk - jellegzetes egészségügyi problémákhoz vezet.',
+                ],
+              },
+              {
+                heading: 'Az adrenalin egészségtani vonatkozásai',
+                paragraphs: [
+                  'Az adrenalin - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - rövid távon életmentő, hiszen felkészíti a szervezetet egy veszélyhelyzetre. Ha azonban a mindennapi, tartós stressz miatt a szervezet folyamatosan magas adrenalin- és glükokortikoidszinttel működik, ez hosszú távon káros: hozzájárulhat a magas vérnyomás kialakulásához, gyengítheti az immunrendszer működését, és - ahogy azt korábban (Az idegrendszer egészségtana fejezet) a stresszbetegségeknél megismertük - fokozhatja a stresszbetegségek kockázatát is. Ez jól mutatja, hogy egy önmagában hasznos, védekező élettani mechanizmus (az adrenalin rövid távú stresszválasza) tartós, indokolatlan aktiválódás esetén a szervezetre nézve károssá válhat.',
+                ],
+              },
+              {
+                heading: 'A cukorbetegség',
+                paragraphs: [
+                  'A cukorbetegség (diabétesz) lényege, hogy a szervezet nem képes megfelelően szabályozni a vércukorszintet - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az inzulinnál megismertük. Az 1-es típusú cukorbetegségben a hasnyálmirigy szigetsejtjei elpusztulnak, és egyáltalán nem (vagy alig) termelnek inzulint, ezért az érintetteknek életük végéig inzulinbevitelre van szükségük. A 2-es típusú cukorbetegségben a szervezet sejtjei egyre kevésbé érzékenyek az inzulinra (inzulinrezisztencia), ezért a hasnyálmirigy egyre több inzulint kényszerül termelni, végül kimerülhet - a két típus közötti fő különbségeket a fenti táblázat foglalja össze.',
+                  'A cukorbetegség jellemző tünetei a tartósan magas vércukorszint (hiperglikémia), a fokozott vizeletürítés és szomjúságérzet, valamint a fáradékonyság; kockázati tényezői közé tartozik (elsősorban a 2-es típusnál) a túlsúly, a mozgásszegény életmód és az öröklött hajlam. Kezelése típustól függően életmódváltásból (táplálkozás, testmozgás), szájon át szedhető gyógyszerekből, illetve - főként az 1-es típusnál - rendszeres inzulinbevitelből és rendszeres vércukor-ellenőrzésből áll. Kezeletlenül a tartósan magas vércukorszint hosszú távon károsíthatja az ereket és az idegeket, ami szem-, vese- és keringési szövődményekhez vezethet.',
+                  'A cukorbetegség napjaink egyik leggyakoribb, tartós odafigyelést igénylő népbetegsége - a rendszeres testmozgás és a kiegyensúlyozott táplálkozás, ahogy azt korábban (Táplálkozás egészségtana fejezet) megismertük, mindkét típus esetén jelentősen csökkentheti a szövődmények kockázatát, a 2-es típus esetén pedig egyenesen megelőzheti a betegség kialakulását.',
+                ],
+              },
+            ],
+            keyTerms: ['cukorbetegség', 'inzulinrezisztencia', 'hypothyreosis'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy a hormontermelés nem korlátozódik a hagyományos belső elválasztású mirigyekre, valamint néhány jellegzetes hormonhiányos és hormontöbbletes állapotot ismerünk meg.',
+            sections: [
+              {
+                heading: 'A hormontermelés nem korlátozódik a klasszikus mirigyekre',
+                paragraphs: [
+                  'Bár hagyományosan a belső elválasztású mirigyekhez kötjük a hormontermelést, valójában gyakorlatilag minden szerv képes valamilyen hormon jellegű anyagot előállítani: a szív is termel egy, a folyadékháztartást befolyásoló hormont, a zsírszövet pedig - ahogy azt korábban (Táplálkozás szabályozása fejezet) a leptinnél megismertük - szintén hormontermelő szövetként működik. Ez a felismerés emelt szinten azért fontos, mert megmutatja, hogy a hormonrendszer és a testfelépítés hagyományos, mirigyközpontú szemlélete leegyszerűsítés: a hormontermelés valójában a szervezet szinte minden szövetére kiterjedő, elosztott folyamat, és egy adott szerv egyszerre lehet a hormonrendszer célpontja és aktív résztvevője is.',
+                ],
+              },
+              {
+                heading: 'Hormonhiányos és hormontöbbletes rendellenességek',
+                paragraphs: [
+                  'A növekedési hormon hiánya gyermekkorban törpenövéshez, többlete pedig - ha a csontok növekedési zónáinak záródása előtt jelentkezik - óriásnövéshez vezethet; ha a többlet felnőttkorban alakul ki (amikor a csontok már nem tudnak hosszúságban növekedni), akromegália (a végtagok, az áll és az arccsontok jellegzetes megvastagodása) a következmény. A tiroxin hiánya (hypothyreosis) lassult anyagcserét, fáradékonyságot, hidegérzékenységet, többlete (hyperthyreosis) felgyorsult anyagcserét, fogyást, szapora szívverést okoz. Az inzulin hiánya - ahogy fentebb megismertük - cukorbetegséghez vezet, míg tartós túlzott inzulinbevitel (pl. téves adagolás) veszélyesen alacsony vércukorszintet (hipoglikémiát) okozhat, amely súlyos esetben zavartsághoz, eszméletvesztéshez is vezethet, ezért az inzulinnal kezelt cukorbetegeknek mindig rendszeresen ellenőrizniük kell a vércukorszintjüket.',
+                  'Ezek a példák jól mutatják az emelt szintű hormonrendszer-szemlélet lényegét: egy adott hormon hiánya és többlete jellemzően egymással ellentétes irányú, de mindkettő súlyos zavart okozó tünetegyüttest eredményez, és a kettő közötti keskeny, normális tartomány fenntartása a korábban (Hormonális működések fejezet) megismert negatív visszacsatolásos szabályozás feladata. Egy adott rendellenesség diagnózisakor ezért az orvosi gyakorlatban mindig meg kell határozni, hogy a tünetegyüttes hiányból vagy éppen túltermelésből ered-e, hiszen a kezelés iránya (a hormon pótlása, vagy éppen termelésének csökkentése) ettől függ - ez az elv minden hormonrendszeri betegségre általánosan érvényes, nemcsak a fent tárgyalt néhány példára. A kezelés emellett gyakran hosszú távú, rendszeres orvosi ellenőrzést is igényel, mivel a hormonpótló vagy hormoncsökkentő kezelés dózisát az életkor, a testtömeg és az aktuális hormonszint változásához igazodva időről időre módosítani kell.',
+                ],
+              },
+            ],
+            keyTerms: ['növekedési hormon', 'akromegália'],
+          },
+        },
+      },
+      {
+        id: 'immunitas',
+        title: 'Immunitás',
+        order: 42,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Természetes immunválasz', 'Adaptív immunválasz'],
+          rows: [
+            ['Kialakulás', 'veleszületett, vagy anyatejjel szerzett', 'a kórokozóval való találkozás során alakul ki'],
+            ['Specifikusság', 'nem specifikus, sokféle kórokozó ellen hat', 'az adott kórokozóra specifikus'],
+            ['Sebesség', 'azonnal működésbe lép', 'napokat vesz igénybe, amíg kialakul'],
+            ['Memória', 'nincs', 'van (memóriasejtek)'],
+            ['Példa', 'falósejtek, bőr mint gát', 'antitest-termelés adott kórokozó ellen'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (A hormonrendszer egészségtana fejezet) lezárt hormonrendszeri témakör után ebben a fejezetben a szervezet másik nagy védekező rendszerét, az immunrendszert kezdjük megismerni.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: antigén, antitest, immunitás',
+                paragraphs: [
+                  'Az antigén egy olyan (jellemzően idegen eredetű) molekula, amely kiváltja az immunrendszer válaszát. Az antitest (immunglobulin) egy olyan fehérje, amelyet az immunrendszer termel, és amely specifikusan felismeri és megköti az adott antigént. Az immunitás a szervezet azon képessége, hogy ellenálljon a kórokozóknak és az általuk okozott betegségeknek.',
+                ],
+              },
+              {
+                heading: 'Természetes és adaptív immunválasz',
+                paragraphs: [
+                  'A természetes (veleszületett, vagy anyatejjel szerzett) immunválasz nem specifikus, azonnal működésbe lép, és nem hagy hátra "emléket" a kórokozóról. Az adaptív immunválasz ezzel szemben az adott kórokozóra specifikusan alakul ki, kialakulása néhány napot vesz igénybe, de emlékezik a kórokozóra - ahogy azt fenti táblázatban összefoglaltuk.',
+                  'Az immunrendszer jellemző sejtjei közé tartoznak a falósejtek (amelyek bekebelezik és lebontják a kórokozókat) és a nyiroksejtek (limfociták, amelyek az adaptív immunválaszért felelősek, és antitesteket termelnek). A memóriasejtek - amelyek egy adott kórokozóval való első találkozás után jönnek létre - biztosítják, hogy egy ismételt fertőzés esetén az immunrendszer sokkal gyorsabb és hatékonyabb másodlagos immunválaszt tudjon adni, mint az első alkalommal: míg az elsődleges immunválasz kialakulása napokat vesz igénybe, a másodlagos válasz a memóriasejteknek köszönhetően órák alatt, gyakran a betegség tüneteinek megjelenése előtt lezajlik.',
+                ],
+              },
+              {
+                heading: 'A gyulladás',
+                paragraphs: [
+                  'A gyulladás a szervezet védekező reakciója egy sérülés vagy fertőzés helyén: jellemző tünetei a bőrpír, a duzzanat, a melegségérzet és a fájdalom, amelyeket a sérült szövet felé áramló, fokozott vérellátás és a odavándorló falósejtek okoznak. A genny a gyulladás helyén elpusztult falósejtekből, elpusztult kórokozókból és szöveti törmelékből álló, sárgás váladék. A gyulladás tehát - bár kellemetlen tünetekkel jár - alapvetően hasznos, célirányos védekező folyamat, amely a kórokozók helyi elszigetelését és elpusztítását szolgálja, és ezért csak akkor indokolt gyógyszeresen elnyomni, ha a tünetek túlzottan erősek, vagy a gyulladás elhúzódik.',
+                ],
+              },
+              {
+                heading: 'Az immunizálás típusai',
+                paragraphs: [
+                  'Az immunizálás lehet aktív (a szervezet saját maga termel antitesteket és memóriasejteket, pl. védőoltás vagy egy lezajlott fertőzés hatására) vagy passzív (a szervezet kész antitesteket kap kívülről, pl. az anyatejjel, vagy antitest-készítmény beadásával); mindkettő lehet természetes (pl. lezajlott betegség, anyatej) vagy mesterséges (pl. védőoltás, antitest-injekció) eredetű. A védőoltás (aktív, mesterséges immunizálás) egy legyengített vagy elölt kórokozóval, illetve annak egy jellegzetes darabjával "tanítja meg" az immunrendszert a kórokozó felismerésére, anélkül hogy a valódi betegséget okozná.',
+                  'Az aktív immunizálás előnye, hogy - mivel memóriasejtek is kialakulnak - tartós, gyakran évekig vagy egész életen át fennmaradó védelmet nyújt, míg a passzív immunizálás hatása csak addig tart, amíg a kapott, kész antitestek le nem bomlanak a szervezetben - ezért a passzív immunizálást elsősorban gyors, azonnali, de átmeneti védelem biztosítására alkalmazzák (pl. súlyos, akut fertőzésveszély esetén). Az anyatejes táplálás jó példa a természetes passzív immunizálásra: a csecsemő - akinek saját adaptív immunrendszere még kevéssé fejlett - az anyatejjel kapott antitestek révén átmeneti védelmet élvez az anya korábban átvészelt fertőzéseivel szemben.',
+                ],
+              },
+            ],
+            keyTerms: ['antigén', 'antitest', 'immunitás', 'falósejt', 'limfocita', 'memóriasejt', 'gyulladás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az immunválasz pontos működési mechanizmusát, az autoimmun betegségeket, valamint a védőoltások és a fertőző betegségek elleni küzdelem tudománytörténeti hátterét ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az immunválasz működésének lényege',
+                paragraphs: [
+                  'Az immunválasz során az immunrendszer sejtjei felismerik az idegen anyag (antigén) jellegzetes felszíni szerkezetét, majd a nyiroksejtek (limfociták) az adott antigénre specifikus immunglobulinokat (antitesteket) kezdenek termelni. Az antitestek megkötik az antigént, ezáltal semlegesítik azt, vagy megjelölik a falósejtek számára, amelyek ezután elpusztítják a kórokozót. A vérszérum a véralvadás után visszamaradó folyadék, amely tartalmazza az antitesteket - ezért alkalmas vizsgálatokra és passzív immunizálásra egyaránt. Ez a felismerés-semlegesítés-megsemmisítés hármas lépéssorozat magyarázza, hogy egy adott kórokozó ellen miért kell mindig specifikusan "megtanulnia" az immunrendszernek védekezni - egy korábban soha nem látott antigén ellen nincs eleve kész antitest.',
+                ],
+              },
+              {
+                heading: 'Autoimmun betegségek és a védőoltások jelentősége',
+                paragraphs: [
+                  'Az autoimmun betegségek lényege, hogy az immunrendszer tévesen a szervezet saját sejtjei ellen fordul, mintha azok idegen antigének lennének, és megtámadja őket. Magyarországon jelenleg is több védőoltás kötelező a gyermekek számára (pl. kanyaró, rubeola, mumpsz, diftéria, szamárköhögés ellen) - ezek indokoltsága abban áll, hogy egyes súlyos, akár halálos kimenetelű fertőző betegségek elterjedését csak a lakosság kellően nagy hányadának immunitása (az ún. nyájimmunitás) képes megakadályozni.',
+                  'A vírus és a baktérium okozta betegségek kezelése alapvetően eltér: az antibiotikumok kizárólag a baktériumok sejtszerkezetét vagy anyagcseréjét célozzák, ezért vírusfertőzések ellen hatástalanok - ez az oka annak, hogy egy megfázást (amelyet jellemzően vírus okoz) nem lehet antibiotikummal gyógyítani, sőt az indokolatlan antibiotikum-használat hozzájárul az antibiotikum-rezisztens baktériumtörzsek kialakulásához is. Pasteur és Semmelweis tudománytörténeti jelentősége abban áll, hogy felismerésükkel megalapozták a modern járványtan és fertőzés-megelőzés tudományát: Semmelweis ismerte fel, hogy az orvosok kézmosás nélküli munkája terjeszti a gyermekágyi lázat, Pasteur pedig igazolta a mikroorganizmusok betegségokozó szerepét, és kidolgozta a veszettség elleni oltást, valamint a róla elnevezett hőkezelési (pasztőrözési) eljárást.',
+                ],
+              },
+            ],
+            keyTerms: ['immunglobulin', 'vérszérum', 'autoimmun betegség'],
+          },
+        },
+      },
+      {
+        id: 'vercsoportok',
+        title: 'Vércsoportok',
+        order: 43,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'Az AB0- és az Rh-vércsoportrendszer alapjait - ahogy azt korábban (A testfolyadékok fejezet) bővebben megismertük - itt nem ismételjük meg, hanem a vérátömlesztés és a véradás gyakorlati jelentőségére, valamint az anyai Rh-összeférhetetlenségre fókuszálunk.',
+            sections: [
+              {
+                heading: 'A vércsoport-rendszerek gyakorlati jelentősége',
+                paragraphs: [
+                  'Bár elméletileg négy AB0-vércsoport és két Rh-típus (Rh-pozitív, Rh-negatív) létezik, ezek kombinációja nyolc gyakorlati vércsoportot ad (pl. A Rh-pozitív, 0 Rh-negatív stb.), és ezek gyakorisága népességenként eltérő. Ez a sokféleség az egyik oka annak, hogy egy adott vércsoportú donor vére nem mindig áll azonnal rendelkezésre, ezért a véradó-szolgálatok folyamatosan igyekeznek minden vércsoportból megfelelő készletet fenntartani.',
+                ],
+              },
+              {
+                heading: 'A vérátömlesztés és a véradás jelentősége',
+                paragraphs: [
+                  'A vérátömlesztés életmentő eljárás lehet súlyos vérveszteség (pl. baleset, műtét, szülés) esetén, de - ahogy azt korábban (A testfolyadékok fejezet) az agglutinációnál megismertük - csak összeférhető vércsoportú vér adható be, ezért az átömlesztés előtt mindig gondos vércsoport-meghatározás és keresztpróba történik: a beteg és a felajánlott véradag vérmintáját összekeverik, és csak akkor kerülhet sor az átömlesztésre, ha nem lép fel agglutinációs reakció. A véradás társadalmi jelentősége abban áll, hogy a mesterségesen előállított vér helyettesítésére ma sincs megoldás - az egészséges donorok rendszeres véradása nélkül a sürgősségi ellátás és sok tervezett műtét sem volna biztonságosan elvégezhető.',
+                  'Mivel a "0" vércsoportú, Rh-negatív vér - ahogy azt korábban (A testfolyadékok fejezet) az univerzális donornál megismertük - a legszélesebb körben felhasználható, ezek a véradók különösen fontosak a véradó-szolgálatok számára; ugyanakkor sürgősségi helyzetben, amikor nincs idő a pontos vércsoport meghatározására, gyakran éppen ezt a vércsoportot alkalmazzák.',
+                  'Éppen ezért is fontos, hogy mindenki ismerje a saját vércsoportját: egy sürgősségi helyzetben (pl. súlyos baleset) ez az ismeret időt takaríthat meg, és megkönnyítheti az ellátást végző orvosok munkáját, még akkor is, ha a végleges vércsoport-meghatározást ilyenkor is mindig elvégzik. A véradás emellett nemcsak a beteg számára életmentő, hanem a donor egészségére nézve is biztonságos: a levett vérmennyiséget a szervezet néhány héten belül teljesen pótolja, ezért az alkalmassági feltételeknek megfelelő, egészséges felnőttek rendszeresen, veszély nélkül adhatnak vért.',
+                ],
+              },
+              {
+                heading: 'Az anyai Rh-összeférhetetlenség',
+                paragraphs: [
+                  'Az anyai Rh-összeférhetetlenség akkor alakulhat ki, ha egy Rh-negatív édesanya Rh-pozitív magzatot hord: a szülés során (amikor a magzati és az anyai vér óhatatlanul kis mértékben érintkezhet) az anya immunrendszere - ahogy azt korábban (A testfolyadékok fejezet) röviden megismertük - antitesteket kezdhet termelni a magzat Rh-pozitív vörösvértestjei ellen. Az első ilyen terhesség általában nem veszélyes, mivel az antitestek csak a szülés után alakulnak ki, de egy következő, szintén Rh-pozitív magzattal járó terhesség esetén ezek az antitestek már a terhesség korai szakaszában átjuthatnak a méhlepényen, és súlyosan károsíthatják a magzat vörösvértestjeit (a vörösvértestek tömeges pusztulása súlyos magzati vérszegénységet, sárgaságot, súlyos esetben magzati halált is okozhat).',
+                  'Éppen ezért minden várandósság elején meghatározzák az édesanya Rh-vércsoportját, és Rh-negatív esetben a terhesség alatt rendszeresen ellenőrzik, kialakult-e már az összeférhetetlenséget jelző antitest a vérében - ez a korai felismerés teszi lehetővé a megelőző kezelés időben történő alkalmazását. Ez a rendszeres, tervszerű ellenőrzés jó példája annak, hogyan lehet egy elméletileg súlyos kockázatot (a magzat vörösvértestjeinek tömeges károsodását) a modern terhesgondozás eszközeivel gyakorlatilag elhanyagolható szintre csökkenteni. Az összeférhetetlenség felismerésének és megelőzésének története egyben azt is szemlélteti, hogyan válhat egy alapkutatásból (a vércsoportrendszerek felfedezéséből) néhány évtized alatt mindennapi, életmentő orvosi gyakorlattá.',
+                ],
+              },
+            ],
+            keyTerms: ['vérátömlesztés', 'véradás', 'Rh-összeférhetetlenség'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az Rh-összeférhetetlenség megelőzésének módját ismerjük meg részletesebben.',
+            sections: [
+              {
+                heading: 'Az Rh-összeférhetetlenség megelőzése',
+                paragraphs: [
+                  'Az Rh-összeférhetetlenség napjainkban jól megelőzhető: az Rh-negatív édesanyák a szülés (vagy egy esetleges vetélés, terhességmegszakítás) után rövid időn belül egy ún. anti-D immunglobulin injekciót kapnak, amely megsemmisíti a vérükbe esetleg bekerült magzati Rh-pozitív vörösvértesteket, mielőtt az anya immunrendszere saját, tartós antitest-termelést indítana el ellenük. Ez a megelőző kezelés biztosítja, hogy egy következő, Rh-pozitív magzattal járó terhesség biztonságosan lezajolhasson, jelentősen csökkentve a magzatot veszélyeztető szövődmények kockázatát.',
+                  'Ez az eljárás - ahogy azt korábban (Immunitás fejezet) a passzív immunizálásnál megismertük - lényegében egy célzott, passzív immunizálási módszer: az anti-D injekció nem az anya saját immunválaszát erősíti, hanem eleve megakadályozza, hogy az anya immunrendszere egyáltalán felismerje és "megjegyezze" a magzati Rh-pozitív antigént, így a védekező mechanizmus meg sem indul.',
+                ],
+              },
+              {
+                heading: 'Vércsoport-öröklődés',
+                paragraphs: [
+                  'Az AB0-vércsoport és az Rh-típus is öröklődő tulajdonság: mindkét szülőtől egy-egy allélt öröklünk, ezért egy adott gyermek vércsoportja a szülők vércsoportjától és a náluk található allélkombinációktól függ - ez az egyik oka annak, hogy egy gyermek vércsoportja eltérhet mindkét szülőjéétől (pl. két A vércsoportú, de heterozigóta szülőtől is születhet 0 vércsoportú gyermek). Hasonlóképpen, egy Rh-pozitív apa és egy Rh-negatív anya gyermeke lehet akár Rh-pozitív, akár Rh-negatív is, attól függően, hogy az apa homozigóta vagy heterozigóta-e az Rh-génre nézve - ez magyarázza, hogy egy Rh-negatív anyának miért nem minden terhessége során áll fenn ténylegesen az Rh-összeférhetetlenség kockázata. Ezt a kockázatot a terhesgondozás keretében genetikai szempontból is érdemes mérlegelni, hiszen az apa Rh-státusának ismerete segíthet előre felmérni az összeférhetetlenség valószínűségét.',
+                ],
+              },
+            ],
+            keyTerms: ['anti-D immunglobulin'],
+          },
+        },
+      },
+      {
+        id: 'immunrendszer-egeszsegtana',
+        title: 'Az immunrendszer egészségtana',
+        order: 44,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Allergia', 'Autoimmun betegség'],
+          rows: [
+            ['Célpont', 'ártalmatlan külső anyag (allergén)', 'a szervezet saját sejtjei, szövetei'],
+            ['Az immunválasz jellege', 'túlzott reakció ártalmatlan antigénre', 'téves reakció saját antigénre'],
+            ['Példa', 'pollenallergia, ételallergia', 'autoimmun ízületi gyulladás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vércsoportok fejezet) megismert vércsoport-ismeretek után ebben, az emberi szervezet modult lezáró fejezetben az immunrendszer egészségtanát tekintjük át: a lázat, az allergiát és a szervátültetést.',
+            sections: [
+              {
+                heading: 'A láz szerepe és a lázcsillapítás',
+                paragraphs: [
+                  'A láz a szervezet védekező reakciója: a testhőmérséklet szabályozott emelése - ahogy azt korábban (Homeosztázis fejezet) a testhőmérséklet-szabályozásnál megismertük - megnehezíti egyes kórokozók szaporodását, és felgyorsítja az immunrendszer sejtjeinek működését, ezért a láz enyhe-közepes mértéke önmagában hasznos, hasznos védekező folyamat, nem pedig "hiba". Lázcsillapításra (pl. magas láz, kellemetlen tünetek esetén) gyógyszeres módszerek (lázcsillapító szerek) és nem gyógyszeres módszerek (pl. bőséges folyadékbevitel, hűtő borogatás) egyaránt alkalmazhatók, de a láz teljes, indokolatlan elnyomása lassíthatja a szervezet védekezését.',
+                  'Néhány jel arra utal, hogy a láz esetén mindenképp orvoshoz kell fordulni: ha a láz 3 napnál tovább tart vagy 39-40 °C fölé emelkedik; ha a lázhoz nehézlégzés, tartós hányás, kiszáradás jelei vagy erős, szokatlan fájdalom társul; ha csecsemőnél vagy krónikus beteg felnőttnél jelentkezik magas láz; illetve ha a lázas állapotban zavartság vagy tudatzavar alakul ki - ezekben az esetekben a láz már egy súlyosabb, önmagában nem gyógyuló folyamat jele lehet.',
+                ],
+              },
+              {
+                heading: 'Az allergia',
+                paragraphs: [
+                  'Gyakori allergén anyagok közé tartozik a virágpor (pollen), a poratka, egyes ételek (pl. földimogyoró, tej, tojás), a penészgombák spórái és egyes állatok szőre vagy nyála - az allergiás tünetek (pl. tüsszögés, orrfolyás, viszketés, súlyosabb esetben légzési nehézség) az adott allergénnel való érintkezés helyétől és az egyén érzékenységétől függően igen eltérőek lehetnek.',
+                  'Az allergia az immunrendszer túlérzékenységi reakciója egy önmagában ártalmatlan anyaggal (allergénnel, pl. pollen, egyes ételek, poratka, állati szőr) szemben: az immunrendszer tévesen veszélyesnek ítéli az allergént, és túlzott, a szervezetre nézve kellemetlen vagy akár veszélyes immunválaszt indít el ellene - ahogy azt korábban (Immunitás fejezet) az immunválasz mechanizmusánál megismertük, ez esetben az antitest-termelés és a gyulladásos folyamat egy valójában ártalmatlan anyag ellen aktiválódik túlzott mértékben. Az allergiák gyakoriságának növekedése összefüggésbe hozható a környezetszennyezéssel is (pl. a légszennyezés fokozhatja a légúti allergiás tüneteket, és egyes kutatások szerint a túlzottan steril, ingerszegény korai környezet is hozzájárulhat az immunrendszer "félrenevelődéséhez").',
+                  'Az allergia jól elkülöníthető a korábban (Immunitás fejezet) megismert autoimmun betegségektől: mindkettő az immunrendszer téves működésén alapul, de az allergia esetén a célpont egy külső, ártalmatlan anyag, míg autoimmun betegségnél a szervezet saját szövetei válnak a téves immunválasz célpontjává - ahogy azt a fenti táblázat összefoglalja.',
+                ],
+              },
+              {
+                heading: 'Az immunrendszer állapota és a betegségek kialakulása',
+                paragraphs: [
+                  'Az immunrendszer állapota szorosan összefügg a betegségek kialakulásának valószínűségével: egy legyengült immunrendszerű szervezet (pl. tartós stressz, alváshiány, alultápláltság vagy egyes betegségek miatt) sokkal fogékonyabb a fertőzésekre, míg egy túlműködő vagy félrevezetett immunrendszer (mint az allergiák vagy az autoimmun betegségek esetén) saját magának okoz kárt - ez is mutatja, hogy az immunrendszer megfelelő, kiegyensúlyozott működése (sem túl gyenge, sem túl erős, félrevezetett reakció) alapvető az egészség megőrzéséhez.',
+                  'Az egészséges életmód (megfelelő alvás, kiegyensúlyozott táplálkozás, rendszeres testmozgás, a tartós stressz kezelése) - ahogy azt korábban (Az idegrendszer egészségtana fejezet) az életmód és az idegrendszeri betegségek kapcsolatánál megismertük - az immunrendszer működésére nézve is jelentős védőhatással bír, hiszen ezek a tényezők együttesen segítik az immunrendszert abban, hogy se ne gyengüljön le feleslegesen, se ne reagáljon túlzottan. Ez a modul egésze - az idegrendszertől a hormonrendszeren át az immunrendszerig - jól mutatja, hogy a szervezet nagy szabályozó és védekező rendszerei nem elszigetelten, hanem egymással szoros kölcsönhatásban tartják fenn az egészséges működést. Ezzel a felismeréssel zárul az emberi szervezet szabályozó és védekező rendszereinek áttekintése.',
+                ],
+              },
+            ],
+            keyTerms: ['láz', 'allergia', 'allergén'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szervátültetéssel kapcsolatos gyakorlati és etikai problémákat ismerjük meg.',
+            sections: [
+              {
+                heading: 'Szervátültetés: gyakorlati és etikai problémák',
+                paragraphs: [
+                  'A szervátültetés egyik legnagyobb gyakorlati kihívása, hogy az immunrendszer - ahogy azt korábban (Immunitás fejezet) az idegen antigének felismerésénél megismertük - az átültetett szervet is idegennek érzékelheti, és megtámadhatja (kilökődési reakció); ennek elkerülésére az átültetett szervet kapó betegeknek tartósan, gyakran életük végéig immunrendszert gyengítő (immunszupresszív) gyógyszereket kell szedniük, ami viszont fokozott fertőzésveszéllyel jár. További gyakorlati probléma a donorszervek tartós hiánya, ami miatt sok beteg hosszú várólistára kerül. A kilökődés kockázata jelentősen csökkenthető a donor és a recipiens szöveti jellemzőinek gondos összeillesztésével (szöveti tipizálással), ez az egyik oka annak, hogy a közeli hozzátartozók (pl. testvérek) közötti szervátültetés gyakran nagyobb sikerrel jár, mivel köztük nagyobb eséllyel egyeznek meg a szöveti jellemzők.',
+                  'Etikai kérdéseket vet fel a donorszervek elosztásának igazságos módja (ki kapja meg elsőként egy szűkösen rendelkezésre álló szervet), az élő donorság kockázatai és önkéntessége, valamint az elhunytak szerveinek felhasználásához szükséges beleegyezés (hozzájárulási vagy tiltakozási rendszer) kérdése is - ezek olyan társadalmi döntések, amelyeket az orvosi lehetőségek mellett jogi és erkölcsi szempontok is alakítanak. Ezek a kérdések jól szemléltetik, hogy egy önmagában életmentő orvosi eljárás (a szervátültetés) alkalmazása a gyakorlatban elválaszthatatlan a társadalmi méltányosság és az egyéni önrendelkezés kérdéseitől. Éppen ezért a szervátültetéssel kapcsolatos döntéshozatalban orvosok, etikai bizottságok és jogalkotók egyaránt részt vesznek, nem csupán az érintett beteg és családja.',
+                ],
+              },
+            ],
+            keyTerms: ['kilökődés', 'immunszupresszió'],
+          },
+        },
+      },
       { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 45, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
