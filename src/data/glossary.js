@@ -998,4 +998,84 @@ export const GLOSSARY = {
   'paraszimpatikus idegrendszer': 'A vegetatív idegrendszer azon része, amely a nyugalmi, "pihenés és emésztés" jellegű állapotot segíti elő.',
   'noradrenalin': 'A szimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
   'acetilkolin': 'A paraszimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
+
+  // 4. modul, 35. fejezet: Öröklött magatartáselemek
+  'szopóreflex': 'Az újszülöttnél már közvetlenül születés után, tanulás nélkül működő öröklött reflex, amely biztosítja az azonnali táplálékfelvételi képességet.',
+  'evolúciós alap': 'Egy adott emberi viselkedésforma hátterében álló, öröklődés útján biztosított genetikai hajlam.',
+  'ökológiai alap': 'Egy adott emberi viselkedésforma konkrét megvalósulását az adott környezeti feltételekhez (pl. éghajlat, elérhető erőforrások) igazító tényező.',
+  'kulturális alap': 'Egy adott emberi viselkedésforma közösségi hagyományokon, normákon és tanult szokásokon keresztül alakuló összetevője.',
+
+  // 4. modul, 36. fejezet: Tanult elemek és emlékezés
+  'rövid távú memória': 'Korlátozott kapacitású, jellemzően csak néhány másodperctől percekig tartó információtárolásra képes memóriarendszer.',
+  'hosszú távú memória': 'Gyakorlatilag korlátlan kapacitású memóriarendszer, amely az információt akár egész életen át képes megőrizni.',
+  'megerősítés': 'Egy viselkedést követő kellemes következmény, amely növeli a viselkedés megismétlődésének valószínűségét.',
+  'utánzásos tanulás': 'Mások viselkedésének puszta megfigyelésével, saját próbálkozás nélkül történő tanulási forma.',
+
+  // 4. modul, 37. fejezet: Pszichés fejlődés
+  'szocializáció': 'Az a folyamat, amelynek során az egyén elsajátítja a közösség alapvető társadalmi normáit, viselkedési mintáit és érzelemkifejezési módjait.',
+  'érzelmi biztonság': 'A gondozóval kialakuló stabil, bizalmi kapcsolat által megalapozott állapot, amely elősegíti a gyermek nyitottságát és értelmi fejlődését.',
+  'kötődés': 'A csecsemő és az elsődleges gondozó között kialakuló, tartós érzelmi kapcsolat, amely biztonságot nyújt a környezet felfedezéséhez.',
+
+  // 4. modul, 38. fejezet: Az idegrendszer egészségtana
+  'stresszbetegség': 'A tartósan magas stressz-szint által kiváltott vagy súlyosbított betegség (pl. tartós fejfájás, alvászavar, szorongásos tünetek).',
+  'migrén': 'Jellemzően féloldali, lüktető fejfájás, amelyet gyakran fény- és hangérzékenység, illetve hányinger kísér, hátterében az agyhártyát ellátó erek átmeneti összehúzódása majd kitágulása áll.',
+  'epilepszia': 'Az agy kóros, rohamszerű elektromos kisülése által kiváltott tünetegyüttes, jellegzetes megnyilvánulása a görcsroham.',
+  'ortorexia': 'Az egészséges táplálkozás iránti túlzott, már károssá váló megszállottság.',
+  'anorexia': 'Tudatos, súlyos éhezéssel járó táplálkozási zavar, amelyben a fogyás iránti vágy túlzott.',
+  'bulímia': 'Falásrohamokkal jellemezhető táplálkozási zavar, amelyeket kompenzáló viselkedés (pl. hánytatás) követ.',
+  'kémiai függőség': 'Egy anyaghoz (pl. drog, alkohol) kötődő függőség, amely tolerancia és elvonási tünetek kialakulásával jár.',
+  'viselkedési függőség': 'Egy tevékenységhez (pl. szerencsejáték, túlzott internethasználat) kötődő függőség, amely a kémiai függőséghez hasonló mechanizmuson alapul.',
+  'pszichoszomatikus betegség': 'Olyan testi betegség, amelynek kialakulásában vagy súlyosbodásában érzelmi-pszichés tényezők (pl. tartós stressz) is jelentős szerepet játszanak.',
+  'alzheimer-kór': 'Fokozatosan súlyosbodó idegrendszeri betegség, amelynek jellemző tünetei a memóriazavar, a térbeli-időbeli tájékozódási nehézség és a mindennapi tevékenységek elvégzésének fokozatos elvesztése.',
+  'parkinson-kór': 'Elsősorban mozgászavarokkal járó idegrendszeri betegség (nyugalmi remegés, izommerevség, mozgáslassulás), hátterében a bazális ganglionok egyes sejtjeinek pusztulása áll.',
+
+  // 4. modul, 39. fejezet: Hormonális működések
+  'hormon': 'A belső elválasztású mirigyek által termelt és közvetlenül a vérbe kiválasztott jelanyag, amely a célsejtek receptorain keresztül fejti ki hatását.',
+  'belső elválasztású mirigy': 'Olyan mirigy, amely váladékát (hormonját) vezeték nélkül, közvetlenül a véráramba választja ki.',
+  'célsejt': 'Az a sejt, amely rendelkezik egy adott hormonhoz illeszkedő receptorral, ezért az adott hormon rá fejti ki a hatását.',
+  'glükokortikoid': 'A mellékvesekéreg által termelt hormoncsoport, amely többek között a vércukorszintet emeli és a stresszválaszban vesz részt.',
+  'mineralokortikoid': 'A mellékvesekéreg által termelt hormoncsoport (pl. aldoszteron), amely a só- és vízháztartás szabályozásában vesz részt.',
+
+  // 4. modul, 40. fejezet: Belső elválasztású mirigyek
+  'agyalapi mirigy': 'Az agy alján, a hipotalamusz alatt elhelyezkedő mirigy (hipofízis), amely irányító hormonjaival számos más mirigy működését szabályozza.',
+  'pajzsmirigy': 'A gégeporc alatt, a nyak elülső részén elhelyezkedő mirigy, amely a tiroxint termeli.',
+  'mellékvese': 'A vesék felső pólusán elhelyezkedő mirigy, amelynek kérge (glükokortikoidok, mineralokortikoidok) és velőállománya (adrenalin) is hormontermelő.',
+  'inzulin': 'A hasnyálmirigy szigetsejtjeiben termelődő hormon, amely csökkenti a vércukorszintet.',
+  'tiroxin': 'A pajzsmirigyben termelődő hormon, amely a sejtek anyagcseréjének alapszintjét szabályozza.',
+  'tesztoszteron': 'A herékben termelődő hormon, amely a másodlagos nemi jellegek kialakulásáért és a spermiumtermelésért felelős.',
+  'oxitocin': 'Az agyalapi mirigy hátsó lebenyéből kiválasztódó hormon, amely a szülés során a méh összehúzódásait, szoptatáskor a tejleadási reflexet váltja ki, és szerepet játszik a kötődés kialakulásában.',
+  'exokrin mirigy': 'Olyan mirigy, amely váladékát egy vezetéken keresztül a testfelszínre vagy egy testüregbe választja ki.',
+  'hipotalamusz': 'Az agy azon területe, amely irányító hormonjaival szabályozza az agyalapi mirigy hormontermelését.',
+  'ösztrogén': 'A petefészekben, elsősorban az érő tüszőkben termelődő hormon, amely a méhnyálkahártya felépülését segíti elő.',
+  'progeszteron': 'A petefészek sárgatestje által termelt hormon, amely a méhnyálkahártyát a beágyazódásra készíti fel.',
+
+  // 4. modul, 41. fejezet: A hormonrendszer egészségtana
+  'cukorbetegség': 'A vércukorszint szabályozásának kóros zavara; 1-es típusban a hasnyálmirigy szigetsejtjeinek pusztulása, 2-es típusban inzulinrezisztencia áll a hátterében.',
+  'inzulinrezisztencia': 'A szervezet sejtjeinek csökkent érzékenysége az inzulinra, ami miatt a hasnyálmirigynek egyre több inzulint kell termelnie.',
+  'hypothyreosis': 'A pajzsmirigy alulműködése, amely lassult anyagcserét, fáradékonyságot és hidegérzékenységet okoz.',
+  'növekedési hormon': 'Az agyalapi mirigy által termelt hormon, amelynek hiánya törpenövéshez, többlete óriásnövéshez vagy akromegáliához vezethet.',
+  'akromegália': 'Felnőttkorban jelentkező növekedésihormon-többlet okozta állapot, amelyre a végtagok, az áll és az arccsontok jellegzetes megvastagodása jellemző.',
+
+  // 4. modul, 42. fejezet: Immunitás
+  'immunitás': 'A szervezet azon képessége, hogy ellenálljon a kórokozóknak és az általuk okozott betegségeknek.',
+  'falósejt': 'Az immunrendszer sejtje, amely bekebelezi és lebontja a kórokozókat.',
+  'limfocita': 'Nyiroksejt, amely az adaptív immunválaszért felelős, és antitesteket termel.',
+  'memóriasejt': 'Egy kórokozóval való első találkozás után kialakuló immunsejt, amely biztosítja, hogy egy ismételt fertőzés esetén gyorsabb, hatékonyabb másodlagos immunválasz alakuljon ki.',
+  'gyulladás': 'A szervezet védekező reakciója egy sérülés vagy fertőzés helyén, jellemző tünetei a bőrpír, a duzzanat, a melegségérzet és a fájdalom.',
+  'immunglobulin': 'Antitest; olyan fehérje, amelyet az immunrendszer termel, és amely specifikusan felismeri és megköti az adott antigént.',
+  'vérszérum': 'A véralvadás után visszamaradó folyadék, amely tartalmazza az antitesteket.',
+  'autoimmun betegség': 'Olyan betegség, amelynek lényege, hogy az immunrendszer tévesen a szervezet saját sejtjei ellen fordul.',
+
+  // 4. modul, 43. fejezet: Vércsoportok
+  'vérátömlesztés': 'Súlyos vérveszteség esetén alkalmazott életmentő eljárás, amely csak összeférhető vércsoportú vérrel végezhető biztonságosan.',
+  'véradás': 'Egészséges donorok önkéntes vérfelajánlása, amely a vérátömlesztéshez szükséges vérkészletek fenntartásához elengedhetetlen.',
+  'rh-összeférhetetlenség': 'Az a jelenség, amikor egy Rh-negatív édesanya immunrendszere antitesteket termel egy Rh-pozitív magzat vörösvértestjei ellen.',
+  'anti-d immunglobulin': 'Rh-negatív édesanyáknak szülés után adott injekció, amely megelőzi az Rh-összeférhetetlenség kialakulását egy következő terhesség során.',
+
+  // 4. modul, 44. fejezet: Az immunrendszer egészségtana
+  'láz': 'A testhőmérséklet szabályozott emelése, amely megnehezíti egyes kórokozók szaporodását és felgyorsítja az immunrendszer sejtjeinek működését.',
+  'allergia': 'Az immunrendszer túlérzékenységi reakciója egy önmagában ártalmatlan anyaggal (allergénnel) szemben.',
+  'allergén': 'Önmagában ártalmatlan anyag (pl. pollen, egyes ételek, poratka), amely allergiás reakciót válthat ki.',
+  'kilökődés': 'Az átültetett szerv immunrendszer általi, idegenként való felismerése és megtámadása.',
+  'immunszupresszió': 'Az immunrendszer működésének gyógyszeres gyengítése, amely a szervátültetés utáni kilökődés megelőzésére szolgál.',
 };
