@@ -5108,9 +5108,316 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 25, isFree: false, estimatedMinutes: 30,
+      {
+        id: 'idegsejtek-mukodese',
+        title: 'Sejtszintű folyamatok',
+        order: 25,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (A kiválasztó szervrendszer egészségtana fejezet) lezárt kiválasztás témakör után ebben a fejezetben a szabályozás egyik legfontosabb rendszerét, az idegrendszert kezdjük megismerni - azzal a sejtszinten zajló alapfolyamattal indulva, amely minden idegi működés hátterében áll.',
+            sections: [
+              {
+                heading: 'Az idegsejt felépítése és funkciója',
+                paragraphs: [
+                  'Az idegsejt (neuron) az idegrendszer alapvető sejtje, amelynek fő feladata az ingerület keletkezése, vezetése, valamint más sejtekre való továbbadása. Felépítése ehhez a funkcióhoz igazodik: a sejttestből (amely a sejtmagot és a többi sejtszervecskét tartalmazza) rövid, elágazó nyúlványok, a dendritek indulnak ki, amelyek a bejövő ingereket fogadják, valamint egy hosszú nyúlvány, az axon, amely a kialakult ingerületet a sejttesttől távolabbra, más sejtek felé továbbítja.',
+                  'Az idegsejtek alakja és mérete rendkívül változatos lehet a betöltött funkciótól függően: vannak rövid axonú, sűrűn elágazó dendritfás idegsejtek (pl. az agykéregben, ahol sok bemenetet kell feldolgozniuk), és vannak igen hosszú axonú idegsejtek is (pl. a gerincvelőtől a lábujjig futó mozgatóidegsejtek), amelyek a jelet nagy távolságra kell, hogy eljuttassák.',
+                  'Az idegsejt tehát háromféle alapvető feladatot lát el egyetlen sejten belül összehangoltan: felveszi a bejövő ingereket (dendritek), feldolgozza és szükség esetén ingerületté alakítja azokat (sejttest), majd továbbítja a keletkező jelet más sejtek (idegsejtek, izomsejtek vagy mirigysejtek) felé (axon) - ez a hármas munkamegosztás teszi lehetővé, hogy az idegrendszer rendkívül gyorsan és pontosan dolgozza fel és közvetítse az információt.',
+                ],
+              },
+              {
+                heading: 'A nyugalmi membránpotenciál',
+                paragraphs: [
+                  'Az élő sejtek membránjának két oldalán az ionok koncentrációja nem azonos: a nátriumionok (Na⁺) koncentrációja a sejten kívül, a káliumionok (K⁺) koncentrációja pedig a sejten belül magasabb - ahogy azt korábban (Elemek, ionok fejezet) a Na⁺/K⁺-pumpa működésénél már megismertük, ez a koncentrációkülönbség (és az azt fenntartó pumpa munkája) alakítja ki a nyugalmi membránpotenciált, vagyis a membrán két oldala közötti elektromos feszültségkülönbséget.',
+                ],
+              },
+              {
+                heading: 'Inger, ingerület, ingerküszöb',
+                paragraphs: [
+                  'Az inger a környezet (vagy a szervezeten belüli állapot) olyan változása, amelyet egy sejt érzékelni képes; ha az inger elég erős, a sejt membránján átmenetileg végigfutó, jellegzetes elektromos jelenség, az ingerület (más néven akciós potenciál) alakul ki. Az ingerküszöb az a minimális ingererősség, amely már éppen kiváltja az ingerületet - egy ennél gyengébb inger nem vált ki választ.',
+                  'Az ingerküszöb nem állandó: külső (pl. hőmérséklet, egyes gyógyszerek vagy mérgek) és belső (pl. fáradtság, éhség, érzelmi állapot) tényezők egyaránt megváltoztathatják - például egy hosszan, megerőltetően dolgozó izom idegsejtjeinek ingerküszöbe megemelkedhet, ezért egyre erősebb ingerre van szükség ugyanolyan mértékű válasz kiváltásához.',
+                  'Az ingerküszöb változékonysága gyakorlati szempontból is fontos: ez magyarázza például, hogy miért érzünk egy adott ingert (pl. egy halk hangot) máskor könnyebben, néha viszont csak nehezebben - a szervezet pillanatnyi állapota folyamatosan finomhangolja, mennyire "érzékenyen" reagálnak idegsejtjeink a környezet ingereire.',
+                ],
+              },
+            ],
+            keyTerms: ['idegsejt', 'dendrit', 'axon', 'nyugalmi membránpotenciál', 'ingerület', 'ingerküszöb'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban megvizsgáljuk, hogyan függ össze a kémiai és az elektromos potenciál az ionmozgásokkal, és hogyan kódolja az idegsejt az inger erősségét.',
+            sections: [
+              {
+                heading: 'A kémiai és az elektromos potenciál összefüggése az ionmozgásokkal',
+                paragraphs: [
+                  'Az ionok mozgását a sejtmembránon át két hajtóerő együttesen szabja meg: a kémiai potenciál (a koncentrációkülönbség, amely a nagyobb koncentrációjú hely felől a kisebb felé "hajtja" az iont) és az elektromos potenciál (a töltéskülönbség, amely az ellentétes töltésű régió felé vonzza az iont). A kettő együttesen alkotja az elektrokémiai grádienst, amely - ahogy azt korábban (Membránok szerepe fejezet) a feszültségfüggő és ligandfüggő csatornáknál megismertük - az ioncsatornákon át valósul meg, amikor azok kinyílnak.',
+                ],
+              },
+              {
+                heading: 'Helyi és tovaterjedő potenciál',
+                paragraphs: [
+                  'A dendriteken és a sejttesten keletkező helyi (lokális) potenciál térben korlátozottan terjed, és útja során fokozatosan gyengül - hasonlóan ahhoz, ahogy egy vízbe dobott kő hulláma is egyre halványul, ahogy távolodik a becsapódás helyétől. Ha azonban a sejttest és az axon találkozásánál (az axoneredésnél) összegződő helyi potenciálok elérik az ingerküszöböt, egy minőségileg más jelenség, a tovaterjedő (csúcs-) potenciál jön létre, amely az axon mentén csillapítatlanul, változatlan nagysággal terjed tovább - ezt nevezzük "mind vagy semmi" elvnek: az akciós potenciál vagy teljes egészében kialakul, vagy egyáltalán nem.',
+                ],
+              },
+              {
+                heading: 'Az inger erősségének kódolása',
+                paragraphs: [
+                  'Mivel az egyes akciós potenciálok mindig azonos nagyságúak (a "mind vagy semmi" elv miatt), az inger erősségét az idegsejt nem az egyes jelek nagyságával, hanem a csúcspotenciálok hullámsorozatának szaporaságával (frekvenciájával) kódolja: minél erősebb az inger, annál sűrűbben, nagyobb gyakorisággal követik egymást az akciós potenciálok az axonon. Ez a frekvenciakódolás elve teszi lehetővé, hogy egyetlen, egységes jelfajtával (az azonos nagyságú akciós potenciállal) az idegrendszer mégis rendkívül finoman, fokozatosan tudja jelezni az ingerek erősségét - hasonlóan ahhoz, ahogyan egy Morse-jel is csak egyetlen jelfajtát (pont-vonás) használ, mégis rendkívül sokféle üzenet közvetítésére alkalmas. Ez a kódolási elv minden idegsejtre és minden érzékszervi modalitásra egyaránt érvényes: legyen szó fájdalomról, nyomásról vagy fényről, az adott inger erősségét mindig ugyanez az elv, a csúcspotenciálok gyakorisága fejezi ki, csak éppen más-más idegpályán.',
+                ],
+              },
+            ],
+            keyTerms: ['elektrokémiai grádiens', 'lokális potenciál', 'csúcspotenciál', 'axoneredés'],
+          },
+        },
+      },
+      {
+        id: 'szinapszis',
+        title: 'Szinapszis',
+        order: 26,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Sejtszintű folyamatok fejezet) megismert akciós potenciál önmagában nem lenne elég: az idegsejtnek valahogyan át is kell adnia a keletkezett ingerületet a következő sejtnek. Ebben a fejezetben azt a kapcsolódási pontot, a szinapszist ismerjük meg, ahol ez az átadás megtörténik.',
+            sections: [
+              {
+                heading: 'A szinapszis fogalma és felépítése',
+                paragraphs: [
+                  'A szinapszis két idegsejt, vagy egy idegsejt és egy izom-, illetve mirigysejt közötti érintkezési, jelátviteli hely. A kémiai szinapszisnál az ingerületet szállító (preszinaptikus) sejt egy jelátvivő anyagot (neurotranszmittert) szabadít fel a köztük lévő keskeny résbe, amely eljutva a következő (posztszinaptikus) sejt felszínéhez, ott specifikus receptorokhoz kötődik.',
+                  'A szinapszis jelentősége abban áll, hogy nem pusztán "átadja" az ingerületet, hanem irányítja is azt: mivel egy idegsejt tipikusan nagyon sok más sejttel áll szinaptikus kapcsolatban, a beérkező jelek (serkentő és gátló hatások) összegződése dönti el, hogy az adott sejtben végül kialakul-e az új ingerület vagy sem - az idegrendszer bonyolult feldolgozó munkájának alapja tehát éppen ez a szinapszisokon zajló "döntéshozatal".',
+                ],
+              },
+              {
+                heading: 'Serkentő és gátló hatás',
+                paragraphs: [
+                  'A jelátvivő anyag és a receptor kölcsönhatása serkentő vagy gátló hatású lehet: serkentő hatás esetén a posztszinaptikus sejt ingerületének kialakulása valószínűbbé válik, gátló hatás esetén pedig éppen ellenkezőleg, nehezebbé. Ugyanaz a jelátvivő anyag a receptor típusától függően különböző sejteken eltérő (akár ellentétes) hatást is kifejthet - ez magyarázza, hogy egyetlen jelátvivő anyag miért képes az idegrendszer különböző pontjain sokféle, egymástól eltérő választ kiváltani.',
+                  'A gátló szinapszisok legalább annyira fontosak, mint a serkentők: enélkül az idegrendszer működése kontrollálatlanná válna, hiszen minden beérkező inger azonnal továbbterjedne, összegződne, felerősödne. A gátló hatások teszik lehetővé a finom szabályozást: azt, hogy a szervezet csak a valóban releváns, kellően erős ingerekre reagáljon, a jelentéktelen vagy ellentmondó jeleket pedig "kiszűrje". Egy idegsejt gyakran egyszerre több ezer szinapszison keresztül is kap serkentő és gátló jeleket, és csak az összegződő hatás dönti el, hogy végül kialakul-e az új ingerület - ez a folyamatos "mérlegelés" adja az idegrendszer feldolgozó képességének alapját.',
+                ],
+              },
+              {
+                heading: 'Drogok hatása és a függőség',
+                paragraphs: [
+                  'A drogok jellemzően éppen a szinapszis működésébe avatkoznak bele: gyakran utánozzák egy természetes jelátvivő anyag hatását, vagy felerősítik, esetleg meghosszabbítják annak jelenlétét a szinaptikus résben. A tartós, ismételt droghasználat a szinapszisok működésének alkalmazkodását (átalakulását) váltja ki, ami idővel függőséghez vezethet: a szervezet egyre nagyobb adagra "szokik rá" ugyanannak a hatásnak az eléréséhez, a drog hiánya pedig kellemetlen, akár súlyos tüneteket okozhat.',
+                  'Ez az alkalmazkodás azért alakul ki, mert a szinapszis - a szervezet többi szabályozási mechanizmusához hasonlóan - igyekszik fenntartani a normál működését: ha egy drog mesterségesen, tartósan felerősíti egy jelátvivő anyag hatását, a szinapszis "ellensúlyozásképpen" csökkentheti a saját érzékenységét (pl. kevesebb receptort termel) - emiatt a drog nélkül a szinapszis működése átmenetileg a normálistól eltérővé, kiegyensúlyozatlanná válik, ami a jellegzetes elvonási tünetekhez vezet.',
+                ],
+              },
+            ],
+            keyTerms: ['szinapszis', 'neurotranszmitter', 'szinaptikus rés', 'preszinaptikus', 'posztszinaptikus'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban megvizsgáljuk, milyen konkrét mechanizmusokkal hatnak a drogok és a mérgek a szinapszisra, valamint megismerjük az idegsejt-hálózatok spontán aktivitását és a gliasejtek szerepét.',
+            sections: [
+              {
+                heading: 'A drogok és mérgek hatásmechanizmusai a szinapszison',
+                paragraphs: [
+                  'A drogok és egyes mérgek jellemzően háromféle módon avatkozhatnak be a szinapszis működésébe: fokozhatják a jelátvivő anyag felszabadulását vagy hatását (ezáltal erősítve a jelet); gátolhatják a jelátvivő anyag visszavételét (reuptake-jét) a preszinaptikus sejtbe, ami miatt az anyag tovább és erősebben hat a résben; vagy közvetlenül módosíthatják, blokkolhatják magát a receptort, meghamisítva vagy megakadályozva a normál jelátvitelt.',
+                ],
+              },
+              {
+                heading: 'Az idegsejt-hálózatok spontán aktivitása',
+                paragraphs: [
+                  'Egyes idegsejt-hálózatok külső inger nélkül is, önmaguktól, ritmikusan aktívvá válnak - ez a spontán aktivitás áll a szervezet biológiai ritmusainak (pl. a napi ébrenlét-alvás ciklusnak) a hátterében: ezek a hálózatok folyamatosan, önfenntartó módon "ketyegnek", függetlenül a pillanatnyi külső ingerektől, és ezzel időzítik a szervezet számos élettani folyamatát.',
+                ],
+              },
+              {
+                heading: 'Gliasejtek és a velőshüvely',
+                paragraphs: [
+                  'A gliasejtek nem továbbítanak ingerületet, mégis nélkülözhetetlen támogató szerepet töltenek be az idegrendszerben: táplálják az idegsejteket, és egyes típusaik (pl. a környéki idegrendszerben a Schwann-sejtek) az axonok köré tekeredve velőshüvelyt (mielinhüvelyt) képeznek. A velőshüvely szigetelő hatása jelentősen felgyorsítja az ingerület vezetési sebességét, mivel az ingerület a szigetelt szakaszokat "átugorva", csak a velőshüvely megszakadásainál keletkezik újra.',
+                  'A velőshüvely károsodása komoly következményekkel jár: a szklerózis multiplex (SM) nevű betegségben a szervezet saját immunrendszere támadja meg és károsítja a velőshüvelyt, ami lelassítja, sőt meg is szakíthatja az ingerületvezetést - ez magyarázza a betegségre jellemző, sokféle idegrendszeri tünetet (pl. izomgyengeség, érzészavarok, koordinációs zavarok).',
+                  'A betegség tünetei éppen azért olyan sokfélék és helyenként eltérőek betegenként, mert a károsodás az idegrendszer bármely pontján kialakulhat: attól függően, hogy melyik idegpálya velőshüvelye sérül, teljesen más funkció (pl. látás, mozgás, érzékelés) károsodhat - ez is jól mutatja, mennyire alapvető, általános szerepet tölt be a velőshüvely az egész idegrendszer gyors és megbízható működésében.',
+                ],
+              },
+            ],
+            keyTerms: ['reuptake', 'gliasejt', 'velőshüvely', 'szklerózis multiplex'],
+          },
+        },
+      },
+      {
+        id: 'idegrendszer-altalanos-jellemzese',
+        title: 'Az idegrendszer általános jellemzése',
+        order: 27,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Reflexív', 'Reflexkör'],
+          rows: [
+            ['Felépítés', 'receptor → érzőidegsejt → központi idegrendszer → mozgatóidegsejt → végrehajtó szerv', 'reflexív kiegészítve a válasz hatását jelző visszacsatolással'],
+            ['Iránya', 'egyirányú jelfolyam', 'a végrehajtás hatását is visszajelzi a központnak'],
+            ['Pontossága', 'nem "tudja", hogy a válasz megfelelő volt-e', 'a visszacsatolás révén finomítható, pontosítható a válasz'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Sejtszintű folyamatok és Szinapszis fejezetek) megismert egyedi idegsejt-működés és jelátvitel után ebben a fejezetben azt tekintjük át, hogyan épül fel és hogyan jellemezhető az idegrendszer mint egész.',
+            sections: [
+              {
+                heading: 'Receptorok és az adekvát inger',
+                paragraphs: [
+                  'A receptor egy inger felvételére specializálódott sejt vagy sejtrész. Minden receptorhoz tartozik egy adekvát inger, vagyis az az ingertípus, amelyre az adott receptor a legérzékenyebb, a legalacsonyabb ingerküszöbbel reagál. A receptorok fő típusai az ingertípus szerint: mechanikai receptorok (nyomás, rezgés, érintés érzékelésére), kémiai receptorok (kemoreceptorok, pl. íz- és szagérzékelésre), fényreceptorok (a látás alapjai) és hőreceptorok (a hőmérséklet érzékelésére).',
+                  'Az adekvát inger fogalma azért fontos, mert egy receptor - kellően erős inger hatására - akár más típusú ingerre is reagálhat, de ilyenkor jellemzően csak a rá jellemző érzetet váltja ki: ha például szemünkre nyomást gyakorlunk, a fényreceptorok ettől is ingerületbe jöhetnek, ám az így keltett érzet ilyenkor is fényérzet lesz, nem nyomásérzet - ez mutatja, hogy az érzet minőségét nem az inger fajtája, hanem az, hogy melyik receptor és melyik idegpálya aktiválódik.',
+                ],
+              },
+              {
+                heading: 'Az idegrendszer felépítésének alapfogalmai',
+                paragraphs: [
+                  'Az idegrendszer két nagy részre osztható: a központi idegrendszerre (az agy és a gerincvelő) és a környéki idegrendszerre (a testben mindenhová elágazó idegek és dúcok). A környéki idegrendszerben az axonok kötegét idegnek, az idegsejttestek csoportosulását dúcnak nevezzük; a központi idegrendszeren belül az axonkötegek neve pálya, az idegsejttestek csoportosulásáé pedig mag. A kéreg az agy felszínén elhelyezkedő, idegsejttestekből álló réteg. A fehérállomány a velőshüvelyes (ezért fehéres színű) axonokból, a szürkeállomány pedig az idegsejttestekből és dendritekből (ezért szürkés színű) áll.',
+                  'A testi (szomatikus) idegrendszer az akaratlagosan irányítható vázizom-mozgásokat szabályozza, a vegetatív (autonóm) idegrendszer pedig a belső szervek (pl. szív, tápcsatorna) akaratlan, önműködő szabályozását végzi - ezzel a témával a fejezet sorozat egy későbbi, önálló fejezete (Vegetatív érző és mozgató rendszerek) foglalkozik részletesen.',
+                ],
+              },
+              {
+                heading: 'Az idegrendszer működésének fő folyamatai és sejttípusai',
+                paragraphs: [
+                  'Az idegrendszer működése jellemzően négy lépésből áll, amelyeket más-más sejttípus valósít meg: a receptorsejt érzékeli az ingert; az érzőidegsejt (afferens idegsejt) az ingerületet a receptortól a központi idegrendszer felé szállítja; az asszociációs idegsejtek a központi idegrendszeren belül dolgozzák fel és kapcsolják össze a beérkező jeleket, alakítva ki a választ; végül a mozgatóidegsejt (efferens idegsejt) a kialakult "parancsot" a központi idegrendszertől a végrehajtó szerv (izom vagy mirigy) felé továbbítja. Ez a négy lépés a legegyszerűbb reflextől a legösszetettebb, tudatos döntésig minden idegi működésben megtalálható, csak az asszociációs feldolgozás mélysége és időtartama változik jelentősen a helyzet bonyolultságától függően.',
+                ],
+              },
+              {
+                heading: 'Reflexív és reflexkör',
+                paragraphs: [
+                  'A reflexív fogalmát - ahogy azt korábban (Veleszületett magatartásformák fejezet emelt kiegészítésében, a feltétlen reflexek idegrendszeri hátteréről szólva) már megismertük - az a legrövidebb idegi útvonal alkotja (receptor → érzőidegsejt → központi idegrendszer → mozgatóidegsejt → végrehajtó szerv), amely egy reflex, azaz egy gyors, automatikus, tudatos befolyásolás nélküli válasz alapját képezi. A reflexkör ezzel szemben a reflexívnek egy visszacsatolási hurokkal kiegészített változata: a végrehajtott válasz hatását érzékelő receptorok jeleznek vissza a központi idegrendszer felé, lehetővé téve a válasz finomítását vagy szükség esetén módosítását.',
+                  'A kettő közötti különbség jól szemlélteti az idegrendszer működésének két alapvető szintjét: a reflexív egy egyszerű, gyors, "nyitott hurkú" válasz, míg a reflexkör egy folyamatosan ellenőrzött, "zárt hurkú" szabályozás - ez utóbbi hasonló elven működik, mint a korábban (Homeosztázis fejezet) megismert negatív visszacsatolás, csak itt a szabályozott paraméter egy testmozgás pontossága, nem egy élettani érték.',
+                ],
+              },
+            ],
+            keyTerms: ['receptor', 'adekvát inger', 'központi idegrendszer', 'környéki idegrendszer', 'fehérállomány', 'szürkeállomány', 'reflexív', 'reflexkör'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten érdemes megismerni, hogyan tér el a fehér- és a szürkeállomány elrendeződése az agyban és a gerincvelőben.',
+            sections: [
+              {
+                heading: 'A fehér- és szürkeállomány elrendeződése az agyban és a gerincvelőben',
+                paragraphs: [
+                  'Az agyban a szürkeállomány jellemzően kívül, a felszínen (az agykéregben) helyezkedik el, míg alatta, beljebb a fehérállomány található - ez utóbbi tartalmazza a különböző agyi területeket összekötő pályákat. A gerincvelőben ezzel szemben fordított az elrendeződés: a szürkeállomány (jellegzetes, pillangó alakú keresztmetszettel) belül, a gerincvelő közepén helyezkedik el, körülötte kívül pedig a fehérállomány húzódik, amely a fel- és leszálló pályákat tartalmazza.',
+                  'Ez az eltérő elrendeződés nem véletlen: az agykéregben a szürkeállomány felszíni elhelyezkedése növeli a rendelkezésre álló feldolgozó felületet (ezt szolgálják az agykéreg jellegzetes redői, a barázdák és tekervények is), míg a gerincvelőben a belül elhelyezkedő szürkeállomány a bejövő és kimenő idegek (gerincvelői idegek) számára biztosít rövid, hatékony kapcsolódási pontot a környező fehérállomány pályáival.',
+                  'A barázdák és tekervények kialakulása jelentősen megnöveli az agykéreg összfelületét anélkül, hogy a koponyaüreg mérete ezzel arányosan nagyobbra kellene, hogy nőjön - hasonló elven, mint ahogyan korábban (Felszívódás fejezet) a bélbolyhok is a felszín növelésével biztosítottak nagyobb "feldolgozó kapacitást" egy korlátozott téren belül. Ez a "felület-optimalizáló" megoldás tehát nem egyedi az idegrendszerben, hanem egy általánosan visszatérő biológiai elv konkrét megvalósulása.',
+                ],
+              },
+            ],
+            keyTerms: ['agykéreg', 'barázda', 'tekervény'],
+          },
+        },
+      },
+      {
+        id: 'gerincvelo-es-agy',
+        title: 'A gerincvelő és az agy',
+        order: 28,
+        isFree: false,
+        estimatedMinutes: 20,
+        content: {
+          kozep: {
+            intro: 'A korábban (Az idegrendszer általános jellemzése fejezet) megismert alapfogalmak (központi idegrendszer, fehér-/szürkeállomány) után ebben a fejezetben a központi idegrendszer két fő szervét, a gerincvelőt és az agyat ismerjük meg részletesen.',
+            sections: [
+              {
+                heading: 'A központi idegrendszer védelme',
+                paragraphs: [
+                  'A központi idegrendszer (az agy és a gerincvelő) sérülékeny, ezért a szervezet több szinten is védi: kívülről csontos tok (a koponyacsont, illetve a gerincoszlop csigolyáiból kialakuló gerinccsatorna) veszi körül, ez alatt agyhártyák (több rétegű, védő kötőszöveti burok) találhatók, a legbelső réteg és az idegszövet között pedig agy-gerincvelői folyadék (liquor) helyezkedik el, amely párnázó, ütéscsillapító szerepet tölt be, és részt vesz az idegszövet tápanyagellátásában is.',
+                  'Ez a többszörös védelem - csontos tok, agyhártyák, folyadékpárna - jól mutatja, mennyire létfontosságú az idegszövet épsége: az idegsejtek felnőttkorban csak igen korlátozott mértékben képesek megújulni, ezért egy súlyos sérülés az idegrendszerben sokkal nehezebben, gyakran egyáltalán nem heverhető ki, szemben például a bőr vagy a máj sejtjeinek regenerálódó képességével. Éppen ezért olyan komolyak a fejsérülések és a gerincvelő-sérülések következményei is: a károsodott idegszövet helyére nem, vagy csak igen korlátozottan tud új, működőképes idegsejt keletkezni.',
+                ],
+              },
+              {
+                heading: 'A gerincvelő funkciói és a gerincvelői reflexek',
+                paragraphs: [
+                  'A gerincvelő fő funkciói közé tartozik az izomtónus kialakítása, egyes védekező mechanizmusok (pl. fájdalmas ingerre adott gyors, reflexes végtag-elrántás) megvalósítása, a bőr ereinek reflexes szabályozása, valamint a nemi szervek vérbőségének (pl. merevedésnek) a szabályozása.',
+                  'A gerincvelői reflexek lehetnek izomeredetűek (pl. a korábban, a Veleszületett magatartásformák fejezetben már megemlített térdreflex, amelyet az inas gyors megütésével lehet kiváltani: az izom hirtelen megnyúlása egy azonnali, ellentétes irányú összehúzódást vált ki, ez a reflex az izomtónus és a testtartás fenntartásában segít) vagy bőreredetűek (pl. egy fájdalmas bőringer hatására bekövetkező, védekező célú végtag-visszahúzás).',
+                ],
+              },
+              {
+                heading: 'Az agy fő részei',
+                paragraphs: [
+                  'Az agy nyílirányú metszetén jól elkülöníthető részek az agytörzs (amely a nyúltvelőből, a hídból és a középagyból áll, és amely az alapvető életfunkciók - pl. légzés, keringés - szabályozásáért felel), a köztiagy (a talamusz, amely az érzőpályák egyik fontos átkapcsoló állomása, és a hipotalamusz, amely - ahogy azt korábban, A táplálkozás szabályozása fejezetben az éhség- és jóllakottságérzet kialakulásánál megismertük - a homeosztázis fenntartásában és a hormonrendszer irányításában játszik kulcsszerepet), a kisagy (amely elsősorban a mozgások összehangolásáért, koordinációjáért felelős) és a nagyagy (amely a magasabb rendű idegi működéseket - pl. a tudatos gondolkodást, az érzékelést és a mozgás irányítását - végzi).',
+                ],
+              },
+              {
+                heading: 'Az alvás jelentősége',
+                paragraphs: [
+                  'Az álomalvás (amely alatt jellegzetes agyi aktivitás és álmodás zajlik) létszükséglet, nem elhagyható, "felesleges" tevékenység: tartós, súlyos alváshiány komoly, akár életveszélyes egészségkárosodáshoz vezethet, ami jól mutatja, mennyire alapvető szerepet tölt be az alvás a szervezet egészséges működésében. Ezt támasztja alá az is, hogy az alvás minden eddig vizsgált, fejlettebb idegrendszerrel rendelkező állatfajnál megfigyelhető, ami arra utal, hogy evolúciósan igen régi és alapvető szükségletről van szó.',
+                ],
+              },
+            ],
+            keyTerms: ['agy-gerincvelői folyadék', 'agyhártya', 'térdreflex', 'agytörzs', 'köztiagy', 'kisagy', 'nagyagy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten megismerjük, mi tartja fenn az alvás-ébrenlét ciklust, milyen elméletek magyarázzák az alvás funkcióját, és hogyan térnek el egymástól az agyféltekék funkciói.',
+            sections: [
+              {
+                heading: 'Az agytörzsi hálózatos állomány és az alvás-ébrenléti ciklus',
+                paragraphs: [
+                  'Az agytörzsben elhelyezkedő hálózatos állomány (retikuláris formáció) kulcsszerepet játszik az éberségi szint, valamint az alvás-ébrenléti ciklus fenntartásában: ez a szerkezet folyamatosan "figyeli" a bejövő érzékszervi információkat, és ennek alapján szabályozza, mennyire éber vagy mennyire álmos állapotban van a szervezet. Ez a mechanizmus magyarázza például, hogy egy hirtelen, erős inger (pl. egy hangos zaj) miért képes alvó állapotból is felébreszteni: a hálózatos állomány ilyenkor gyorsan "éberré kapcsolja" az agykérget.',
+                ],
+              },
+              {
+                heading: 'Elméletek az alvás funkciójáról',
+                paragraphs: [
+                  'Az alvás funkciójára több elmélet is született: az energiatakarékossági elmélet szerint az alvás csökkenti a szervezet energiafelhasználását azokban az órákban, amikor az aktív táplálékkeresés és egyéb tevékenységek amúgy sem lennének hatékonyak; a tanuláshoz kapcsolódó elmélet szerint az alvás alatt zajlik a nap folyamán szerzett információk rendszerezése, rögzítése (memóriakonszolidáció); a feltöltődési elmélet pedig azt hangsúlyozza, hogy alvás közben zajlanak a szövetek regenerálódásához, "helyreállításához" szükséges folyamatok. Ezek az elméletek nem zárják ki egymást - valószínűleg az alvás egyszerre több funkciót is betölt.',
+                ],
+              },
+              {
+                heading: 'A jobb és bal agyfélteke eltérő funkciói',
+                paragraphs: [
+                  'A nagyagy két féltekéje (jobb és bal) nem teljesen egyenrangú a funkciók tekintetében: a legtöbb embernél a bal félteke inkább a nyelvi, logikai és analitikus (részletekre bontó) feldolgozásban játszik meghatározó szerepet, míg a jobb félteke inkább a téri-vizuális tájékozódásban és a holisztikus (egészet átfogó) feldolgozásban erősebb - fontos ugyanakkor hangsúlyozni, hogy a két félteke a mindennapi működés során szorosan együttműködik, nem különül el élesen egymástól.',
+                  'A két félteke közötti munkamegosztás (lateralizáció) mértéke egyénenként is eltérő lehet, és nem jelenti azt, hogy bármelyik félteke önmagában, a másik nélkül teljes értékűen működne - a mindennapi feladatok (pl. egy térkép olvasása, amely nyelvi és téri elemeket is igényel) jellemzően mindkét félteke összehangolt együttműködését igénylik.',
+                ],
+              },
+            ],
+            keyTerms: ['hálózatos állomány', 'agyfélteke'],
+          },
+        },
+      },
+      {
+        id: 'testerzo-rendszerek',
+        title: 'Testérző rendszerek',
+        order: 29,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A gerincvelő és az agy fejezet) megismert agyi részek után ebben a fejezetben azt vizsgáljuk meg, hogyan érzékeli a szervezet a saját testének állapotát: a bőr és a belső szervek receptorait, valamint az érzékelés tudatosulásának helyét.',
+            sections: [
+              {
+                heading: 'Az elsődleges érzőkéreg szerepe',
+                paragraphs: [
+                  'A testérzékelés tudatos megélése az agykéreg egy meghatározott, erre specializálódott területén, az elsődleges érzőkéregben történik. Ennek a területnek a sérülése nem szünteti meg magát az érzékelést a receptorok szintjén, hanem az adott testtájékról érkező érzékelés tudatosulásának kiesését okozza - vagyis az inger fizikailag eljuthat a receptorig és az idegpályákig, de a személy tudatosan már nem érzékeli azt.',
+                  'Az elsődleges érzőkéreg egyes területei nem egyenlő arányban felelnek meg a test egyes tájékainak: azok a testrészek, amelyek különösen sok, sűrűn elhelyezkedő receptorral rendelkeznek (pl. az ujjbegyek, az ajkak), az agykéregben is aránytalanul nagy területet foglalnak el a feldolgozásukhoz képest a kevésbé érzékeny testrészekhez (pl. a hát) képest - ez magyarázza, hogy miért sokkal finomabb és pontosabb a tapintásérzékelésünk az ujjbegyeinken, mint a hátunkon.',
+                ],
+              },
+              {
+                heading: 'A bőr és a belső szervek receptorai',
+                paragraphs: [
+                  'A bőrben és a belső szervekben többféle receptortípus található, mindegyik más-más ingerre specializálódva: a mechanikai receptorok a nyomást, az érintést és a rezgést érzékelik; a fájdalomreceptorok a szöveti károsodást jelző, potenciálisan veszélyes ingerekre reagálnak; a hőreceptorok a hideg és a meleg érzékelését teszik lehetővé; a kemoreceptorok kémiai változásokat (pl. egyes belső szervekben a vér összetételének változását) érzékelik; a szabad idegvégződések pedig egyszerű felépítésű, gyakran fájdalom érzékelésére szolgáló receptorok, amelyek nem kapcsolódnak specializált érzékelő sejthez.',
+                  'A kemoreceptorok belső szervi jelenléte nem csupán elméleti érdekesség: ahogy azt korábban (A légzés szabályozása fejezetben) megismertük, a nyúltvelő közelében és a nagyerekben elhelyezkedő kemoreceptorok a vér szén-dioxid-koncentrációjának érzékelésével szabályozzák a légzést - ez jól mutatja, hogy a testérzékelés nem csupán a tudatos érzetekért felel, hanem az öntudatlan, automatikus szabályozási folyamatok (pl. a légzés) elengedhetetlen "bemeneti" forrása is egyben.',
+                  'Ez a sokféle receptortípus együttesen biztosítja, hogy a szervezet folyamatosan, részletes és pontos képet kapjon saját testének állapotáról - a bőr felszínétől egészen a belső szervekig -, ami elengedhetetlen a testtartás fenntartásához, a veszélyek elkerüléséhez és a belső egyensúly (homeosztázis) fenntartásához egyaránt.',
+                  'A belső szervek receptorai (zsigeri érzékelés) jellemzően kevésbé pontosan, "elmosódottabban" jeleznek, mint a bőr receptorai: egy belső szervi fájdalom gyakran nehezen lokalizálható, sőt néha "áttevődött" fájdalomként a test egy másik, a valódi forrástól távol eső pontján érezzük (pl. bizonyos szívpanaszok jellemzően a bal karba is kisugározhatnak) - ez azzal magyarázható, hogy a belső szervekből és az adott bőrterületről érkező érzőpályák részben ugyanazokon az idegeken, közös útvonalon futnak be a gerincvelőbe. Ez az élettani jelenség orvosi szempontból is fontos: egy adott testtájékra kisugárzó fájdalom felismerése segíthet egy belső szervi probléma korai gyanújának felállításában, még mielőtt egyéb tünetek is megjelennének.',
+                ],
+              },
+            ],
+            keyTerms: ['elsődleges érzőkéreg', 'mechanikai receptor', 'fájdalomreceptor', 'hőreceptor', 'szabad idegvégződés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy az érzékszervi információ nem "nyers" formában jut el a tudatosulás helyére, hanem útközben, a kéreg alatti központokban már előzetes feldolgozáson megy keresztül.',
+            sections: [
+              {
+                heading: 'Előzetes feldolgozás a kéreg alatti központokban',
+                paragraphs: [
+                  'Az érzőpályák nem közvetlenül, "nyers" formában szállítják az információt a receptoroktól az agykéregig: útközben, a kéreg alatti központokban (elsősorban a korábban, A gerincvelő és az agy fejezetben megismert talamuszban) már történik bizonyos előzetes feldolgozás, válogatás és csoportosítás. A talamusz szinte minden érzékszervi információ (a szaglás kivételével) számára fontos átkapcsoló állomás - a látópálya esetében például "kéreg alatti látóközpontként" is szokás emlegetni, mivel itt már megtörténik a vizuális információ egy része a kéregbe jutás előtt.',
+                  'Ez az előzetes feldolgozás azért fontos, mert megszűri és rendszerezi a hatalmas mennyiségű, folyamatosan beérkező érzékszervi információt, mielőtt az elérné a kérget - enélkül az agykéregnek minden egyes, akár jelentéktelen ingert is teljes egészében fel kellene dolgoznia, ami jelentősen lelassítaná és túlterhelné a rendszert.',
+                  'A kéreg alatti feldolgozás egyben magyarázatot ad néhány gyors, még a tudatos észlelés előtt lezajló válaszreakcióra is: bizonyos veszélyt jelző ingerek (pl. hirtelen felénk repülő tárgy) esetén a kéreg alatti központok már azelőtt kiválthatnak egy gyors, védekező mozdulatot, mielőtt az inger tudatosan feldolgozásra kerülne az agykéregben - ez az előny életmentő lehet olyan helyzetekben, amikor a teljes tudatos feldolgozásra nincs elég idő.',
+                  'Ez a kettős útvonal - egy gyorsabb, kéreg alatti "sürgősségi" feldolgozás és egy lassabb, de részletesebb, tudatos kérgi feldolgozás - jól szemlélteti az idegrendszer egyik alapvető szervezési elvét: a fontosabb, sürgősebb döntéseket a rendszer igyekszik minél rövidebb, gyorsabb útvonalon meghozni, míg a részletesebb, árnyaltabb elemzést a lassabb, de pontosabb kérgi feldolgozásra bízza - ez a munkamegosztás optimalizálja mind a reakcióidőt, mind a döntések pontosságát.',
+                ],
+              },
+            ],
+            keyTerms: ['kéreg alatti feldolgozás'],
+          },
+        },
+      },
+      { id: 'erzekeles-latas', title: 'Érzékelés és látás', order: 30, isFree: false, estimatedMinutes: 20,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 26, isFree: false, estimatedMinutes: 18,
+      { id: 'hallas-egyensulyerzes', title: 'Hallás és egyensúlyérzés', order: 31, isFree: false, estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'kemiai-erzekeles', title: 'Kémiai érzékelés', order: 32, isFree: false, estimatedMinutes: 10,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'testmozgato-rendszerek', title: 'Testmozgató rendszerek', order: 33, isFree: false, estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'vegetativ-erzo-mozgato-rendszerek', title: 'Vegetatív érző és mozgató rendszerek', order: 34, isFree: false, estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 35, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
