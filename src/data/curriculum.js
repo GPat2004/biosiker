@@ -5737,7 +5737,317 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 35, isFree: false, estimatedMinutes: 18,
+      {
+        id: 'orokolt-magatartaselemek',
+        title: 'Öröklött magatartáselemek',
+        order: 35,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Vegetatív érző és mozgató rendszerek fejezet) megismert idegrendszeri alapok után ebben a fejezetben az emberi magatartás biológiai-pszichológiai alapjait kezdjük megismerni, elsőként az öröklött, tanulás nélkül is megjelenő magatartáselemekkel.',
+            sections: [
+              {
+                heading: 'Öröklött és tanult elemek együttműködése',
+                paragraphs: [
+                  'Az emberi magatartás - hasonlóan ahhoz, amit korábban (Öröklött és tanult magatartásformák fejezet) általánosságban megismertünk - ritkán tisztán öröklött vagy tisztán tanult: a legtöbb emberi viselkedésforma egy öröklött "alapra" épül, amelyet aztán az egyéni tapasztalatok, a tanulás és a kulturális környezet formál tovább. Az öröklött elemek jellemzően azok a legalapvetőbb, a túléléshez és a korai fejlődéshez nélkülözhetetlen viselkedésformák, amelyeknél nincs idő vagy lehetőség a próba-szerencse alapú tanulásra.',
+                  'Az embernél megfigyelhető, jelentős öröklött összetevővel bíró viselkedés vizsgálatakor mindig érdemes megkülönböztetni azt, hogy egy adott viselkedéselem mennyire jelenik meg egyetemesen, kultúrától és neveltetéstől függetlenül minden emberi közösségben - minél inkább univerzális egy viselkedésforma, annál erősebb a gyanú, hogy jelentős genetikai, öröklött alapja van.',
+                ],
+              },
+              {
+                heading: 'Öröklött emberi magatartásformák',
+                paragraphs: [
+                  'Az embernél is megfigyelhetők olyan magatartásformák, amelyek genetikailag kódoltak, és tanulás nélkül, minden egyeden hasonló módon jelennek meg. Az egyik klasszikus példa a szopóreflex - ahogy azt korábban (Veleszületett magatartásformák fejezet) általánosságban megismertük -, amely már közvetlenül születés után, bármiféle korábbi tapasztalat nélkül működik, és biztosítja az újszülött azonnali táplálékfelvételi képességét.',
+                  'Az öröklött magatartásformák közös jellemzője, hogy nem igényelnek előzetes tapasztalatot vagy gyakorlást: az újszülött nem "tanulja meg" a szopást próba-szerencse alapon, hanem az idegrendszere már születéskor úgy van "bekötve", hogy a megfelelő inger (pl. valami a szájhoz érintése) automatikusan kiváltsa a megfelelő választ. Ez az azonnali működőképesség létfontosságú, hiszen az újszülöttnek nincs ideje kipróbálgatással megtanulnia a táplálékfelvételt.',
+                  'Az érzelmet kifejező mimika (pl. az öröm, a szomorúság vagy a düh arckifejezése) szintén jelentős öröklött összetevővel rendelkezik: ezek az arckifejezések a világ minden kultúrájában feltűnően hasonlóak, és már a veleszületetten vak gyermekeknél is megjelennek, annak ellenére, hogy ők soha nem láthatták mások arckifejezését, amit utánozhattak volna - ez erős bizonyíték arra, hogy ezek a kifejezésformák nem tanulás, hanem genetikai öröklődés útján alakulnak ki.',
+                  'Ez a felismerés fontos gyakorlati (kommunikációs) következménnyel is jár: mivel az alapvető érzelmi arckifejezések univerzálisak, egy idegen kultúrából érkező ember is képes felismerni és értelmezni egy másik ember alapvető érzelmi állapotát pusztán az arckifejezése alapján, közös nyelv vagy előzetes ismeretség nélkül is - ez az egyik legkorábbi és legalapvetőbb emberi kommunikációs csatorna.',
+                  'Az öröklött magatartásformák tehát nem korlátozzák, hanem éppen megalapozzák a későbbi, tanult viselkedésformák kialakulását: a csecsemőkori szopóreflex és az arckifejezések útján történő érzelemkommunikáció olyan biológiai "kiindulópontot" adnak, amelyre a fejlődés során fokozatosan épülnek rá az egyre bonyolultabb, már tanult elemeket is tartalmazó viselkedésformák.',
+                  'Hasonló, jól ismert példa a kapaszkodási reflex is: az újszülött ösztönösen erősen rákulcsolja ujjait a tenyerébe helyezett tárgyra. Ez a reflex a törzsfejlődés során a kapaszkodó életmódot folytató ősök öröksége, és a legtöbb csecsemőnél már néhány hónapos korra fokozatosan eltűnik, ahogy a tanult, célirányos mozgások átveszik a helyét.',
+                ],
+              },
+            ],
+            keyTerms: ['szopóreflex', 'öröklött magatartásforma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy egy konkrét emberi viselkedésforma hátterében jellemzően nem egyetlen tényező, hanem több, egymást kiegészítő hatás (evolúciós, ökológiai és kulturális) együttesen áll.',
+            sections: [
+              {
+                heading: 'Az emberi viselkedés evolúciós, ökológiai és kulturális alapjai',
+                paragraphs: [
+                  'Egy adott emberi viselkedésforma vizsgálatakor (pl. egy esetleírás elemzésekor) érdemes egyszerre több szempontot figyelembe venni: az evolúciós (genetikai) alapot, amely az adott viselkedésre való hajlamot öröklődés útján biztosítja; az ökológiai alapot, amely az adott környezeti feltételekhez (pl. élelemforrások elérhetősége, éghajlat) igazítja a viselkedés konkrét megvalósulását; valamint a kulturális alapot, amely a közösség hagyományain, normáin és tanult szokásain keresztül alakítja tovább a viselkedést.',
+                  'Például a táplálkozási szokások (mit és hogyan eszünk) hátterében egyaránt kimutatható genetikai összetevő (pl. az édes íz iránti veleszületett vonzódás, amely energiadús táplálékra utal), ökológiai alkalmazkodás (az adott terület éghajlatához és növény-/állatvilágához igazodó étrend kialakulása) és kulturális hatás (a közösségben elfogadott étkezési szokások, ízlésvilág átadása nemzedékről nemzedékre) - egyetlen tényező önmagában nem magyarázná meg a viselkedés teljes komplexitását.',
+                  'Egy hasonló, jól elemezhető esetleírás lehet egy közösség jellegzetes lakóhely-választási vagy csoportos védekező viselkedése: az evolúciós alap egy veleszületett hajlamot ad (pl. a biztonságos, védett helyek keresésére, vagy a csoportban rejlő védelem keresésére), az ökológiai tényezők (éghajlat, terep, elérhető erőforrások) meghatározzák, hogy ez a hajlam konkrétan milyen formában valósul meg egy adott területen, a kulturális hagyományok pedig tovább finomítják és nemzedékről nemzedékre továbbadják a kialakult megoldásokat.',
+                  'Egy esetleírás elemzésekor tehát célszerű mindhárom szempontot végigvenni: melyik elem magyarázható egyszerűen az emberi faj közös genetikai öröksége alapján, melyik elem tulajdonítható az adott konkrét élőhely sajátosságainak, és melyik elem az adott közösség egyedi, tanult hagyományainak eredménye - ez a hármas szempontrendszer segít elkerülni azt a hibát, hogy egy összetett viselkedést tévesen kizárólag egyetlen okra vezessünk vissza. Ez a szemléletmód segít elkerülni azt az egyszerűsítő hibát is, hogy egy összetett emberi viselkedést kizárólag "genetikailag meghatározottnak" vagy kizárólag "kulturálisan tanultnak" minősítsünk, hiszen a valóságban szinte mindig mindhárom tényező együttesen alakítja ki a megfigyelhető viselkedésmintát.',
+                ],
+              },
+            ],
+            keyTerms: ['evolúciós alap', 'ökológiai alap', 'kulturális alap'],
+          },
+        },
+      },
+      {
+        id: 'tanult-elemek-emlekezes',
+        title: 'Tanult elemek és emlékezés',
+        order: 36,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött magatartáselemek fejezet) megismert veleszületett viselkedésformák után ebben a fejezetben az emberi magatartás tanult elemeit és az emlékezés alapjait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Feltételes reflexek az ember viselkedésében',
+                paragraphs: [
+                  'A feltételes reflex (klasszikus kondicionálás) - ahogy azt korábban (Tanult magatartásformák fejezet) általánosságban megismertük - az embernél is jelentős szerepet játszik: a félelem gyakran feltételes reflexként alakul ki, amikor egy eredetileg semleges inger (pl. egy adott helyszín vagy hang) egy ijesztő vagy fájdalmas eseménnyel társul, és idővel önmagában is félelmi választ vált ki. Hasonló elven alapul a drogtolerancia egy része is: a szervezet a droghasználat megszokott környezeti jeleihez (helyszín, rituálé) társítja a drog hatását, és felkészülő ellenreakciót fejleszt ki - ez az egyik oka annak, hogy szokatlan környezetben (ahol ez a "felkészülés" elmarad) ugyanaz a dózis súlyosabb, akár életveszélyes túladagolást okozhat.',
+                ],
+              },
+              {
+                heading: 'A tanulás és az érzelmek kapcsolata',
+                paragraphs: [
+                  'A tanulást alapvetően befolyásolják az érzelmi állapotok: a megközelítés-elkerülés elve szerint a kellemes ingerek felé közeledünk, a kellemetlenek elől eltávolodunk, és ez az egyszerű elv alapozza meg számos tanulási folyamat irányát. A játék (különösen gyermekkorban) veszélytelen keretek között teszi lehetővé fontos, később hasznosítható készségek (pl. mozgáskoordináció, szociális viselkedés) begyakorlását. A kíváncsiság az új, ismeretlen ingerek felé fordulást, ezáltal új ismeretek megszerzését ösztönzi, míg az unalom - egy ismételt, változatlan inger hatására kialakuló csökkenő motiváció - éppen az új inger keresésére sarkall.',
+                ],
+              },
+              {
+                heading: 'A beszéd tanulásának kritikus periódusa',
+                paragraphs: [
+                  'A beszéd (nyelv) elsajátítása egy meghatározott életkori időablakhoz, kritikus periódushoz kötött: ez idő alatt a gyermek idegrendszere különösen fogékony a nyelvi ingerekre, és ekkor sajátítható el legkönnyebben, anyanyelvi szinten egy nyelv. Ha ez az időszak megfelelő nyelvi inger nélkül telik el (pl. súlyosan elhanyagolt gyermekeknél), a későbbi nyelvi fejlődés jelentősen és tartósan elmaradhat, még intenzív, utólagos fejlesztés mellett is.',
+                ],
+              },
+              {
+                heading: 'Megerősítés, szokás, rászokás és függőség',
+                paragraphs: [
+                  'A megerősítés (egy viselkedést követő kellemes következmény) növeli annak valószínűségét, hogy a viselkedés megismétlődjön (rászoktató hatás), míg a megerősítés elmaradása vagy egy kellemetlen következmény csökkenti azt (leszoktató hatás). Az ismételt megerősítés fokozatosan szokássá alakulhat, amely - különösen erős, gyorsan ható megerősítők (pl. egyes szerek vagy tevékenységek) esetén - rászokássá, súlyosabb esetben függőséggé fejlődhet. A család, az iskola, a hírközlés és a reklám mind jelentős szerepet játszanak abban, mely viselkedésformákat erősítik meg (vagy éppen szoktatnak le) a társadalom tagjainál - ez felveti a felelősség kérdését is: mennyiben felelős az egyén, és mennyiben a környezete egy kialakult szokásért vagy függőségért.',
+                ],
+              },
+              {
+                heading: 'Rövid és hosszú távú memória',
+                paragraphs: [
+                  'A rövid távú memória korlátozott kapacitású, jellemzően csak néhány másodperctől percekig tartó információtárolásra képes (pl. egy telefonszám megjegyzése tárcsázásig). A hosszú távú memória ezzel szemben gyakorlatilag korlátlan kapacitású, és az információt akár egész életen át képes megőrizni. Az információ a rövid távú memóriából jellemzően ismétlés vagy az információ jelentőségteljessége (pl. érzelmi töltete) révén kerülhet át a hosszú távú memóriába.',
+                ],
+              },
+              {
+                heading: 'Utánzásos tanulás',
+                paragraphs: [
+                  'Az utánzásos (megfigyeléses) tanulás során a gyermek mások viselkedésének puszta megfigyelésével, saját próbálkozás nélkül is képes új mozdulatsorokat vagy viselkedésformákat elsajátítani. Ez az emberi tanulás egyik leghatékonyabb formája, hiszen jelentősen lerövidíti azt az időt, ami egy adott készség önálló, próba-szerencse alapú megtanulásához szükséges lenne.',
+                ],
+              },
+            ],
+            keyTerms: ['feltételes reflex', 'kritikus periódus', 'megerősítés', 'rövid távú memória', 'hosszú távú memória', 'utánzásos tanulás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a feltételes reflex élettani vetületét, valamint a tanuláskutatás módszereinek értékelését ismerjük meg.',
+            sections: [
+              {
+                heading: 'A feltételes reflex élettani vetülete',
+                paragraphs: [
+                  'A fájdalmas ingerekre kialakuló feltételes félelmi válasz nem csupán szubjektív érzés, hanem mérhető élettani változásokkal is együtt jár: vérnyomás-növekedéssel és szívfrekvencia-fokozódással - ezek a testi reakciók, akárcsak a viselkedéses válaszok, ugyanúgy kondicionálhatók. Ez magyarázza, hogy egy korábban semleges helyszín vagy inger, amely egyszer már fájdalmas eseményhez társult, önmagában is kiválthat testi stresszválaszt (megemelkedett vérnyomást, felgyorsult szívverést), még mielőtt bármi ténylegesen fájdalmas történne.',
+                  'Ez az élettani kondicionálás - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - a szimpatikus idegrendszer aktiválódásán keresztül valósul meg: a kondicionált félelmi inger ugyanazt a "harcolj vagy menekülj" élettani választ váltja ki, mint egy valódi veszélyhelyzet, annak ellenére, hogy az adott pillanatban ténylegesen semmilyen közvetlen veszély nincs jelen.',
+                ],
+              },
+              {
+                heading: 'Tanuláskutatási módszerek értékelése',
+                paragraphs: [
+                  'A feltételes reflex (klasszikus kondicionálás), az operáns tanulás és a belátásos tanulás vizsgálatára kidolgozott klasszikus kísérleti módszereknek (pl. Pavlov kísérletei, az operáns tanulást vizsgáló berendezések, a belátásos tanulást vizsgáló feladathelyzetek) megvannak a maguk korlátai: az állatkísérletekből nyert eredmények nem mindig ültethetők át közvetlenül az emberi viselkedésre, a mesterséges laboratóriumi körülmények eltérhetnek a természetes élethelyzetektől, és az emberi tanulásnál a nyelv, valamint a tudatos, reflektív gondolkodás olyan további tényezőket is bevisz a folyamatba, amelyek a legtöbb állatkísérletben nincsenek jelen. Ezért egy esetleírás vagy kísérleti eredmény értékelésekor mindig érdemes mérlegelni, mennyire általánosítható az adott módszer eredménye az emberi viselkedésre, és milyen etikai korlátok érvényesek egy adott kísérleti elrendezés emberen történő alkalmazásánál. Ezért egy tudományos esetleírás vagy kísérleti eredmény kritikus értékelésekor célszerű külön megvizsgálni a minta nagyságát, az alkalmazott kontrollcsoportot, valamint azt is, hogy az eredmények megismételhetők-e független kutatók által.',
+                ],
+              },
+            ],
+            keyTerms: ['operáns tanulás', 'belátásos tanulás'],
+          },
+        },
+      },
+      {
+        id: 'psziches-fejlodes',
+        title: 'Pszichés fejlődés',
+        order: 37,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Tanult elemek és emlékezés fejezet) megismert tanulási folyamatok után ebben a fejezetben azt tekintjük át, hogyan függ össze a gyermekkori érzelmi és értelmi fejlődés, és milyen szerepet játszik ebben a család.',
+            sections: [
+              {
+                heading: 'Az érzelmi fejlődés hatása az értelmi fejlődésre',
+                paragraphs: [
+                  'A kisgyermekkori érzelmi biztonság - amelyet elsősorban a gondozóval (jellemzően a szülővel) kialakuló stabil, bizalmi kapcsolat alapoz meg - alapvetően meghatározza, mennyire nyitottan és hatékonyan képes a gyermek a környezetét felfedezni, és új ismereteket befogadni. Egy érzelmileg biztonságos háttérrel rendelkező gyermek bátrabban próbálkozik, nagyobb kíváncsisággal fordul az ismeretlen felé - ahogy azt korábban (Tanult elemek és emlékezés fejezet) a kíváncsiság tanulásban betöltött szerepénél megismertük -, ami elősegíti az értelmi (kognitív) fejlődést is.',
+                  'Ezzel szemben egy tartósan bizonytalan, stresszes vagy elhanyagoló érzelmi környezetben felnövő gyermek figyelme és energiái jelentős részben a bizonytalanság kezelésére fordítódnak, ami hátráltathatja a tanulási folyamatokat és az értelmi fejlődés ütemét - ez mutatja, hogy az érzelmi és az értelmi fejlődés nem egymástól független, hanem szorosan összefonódó folyamatok.',
+                  'Ez a kapcsolat kétirányú is lehet: nemcsak az érzelmi biztonság segíti elő az értelmi fejlődést, hanem a fejlődő értelmi (kognitív) képességek - például a beszéd és a nyelvi megértés gyarapodása - is visszahatnak az érzelmi fejlődésre, hiszen a gyermek egyre inkább képes szavakba önteni és ezáltal jobban kezelni a saját érzelmi állapotait, illetve egyre árnyaltabban érteni mások érzelmi jelzéseit is.',
+                  'Ez a kölcsönhatás azt is megmagyarázza, miért olyan fontos a kisgyermekkori fejlesztő, támogató környezet: egy olyan környezet, amely egyszerre biztosít érzelmi biztonságot és megfelelő mennyiségű, változatos ingert (pl. beszélgetést, közös játékot, mesehallgatást), egyszerre segíti elő mind az érzelmi, mind az értelmi fejlődés kibontakozását, ahelyett hogy a kettőt egymástól elkülönítve próbálná fejleszteni.',
+                ],
+              },
+              {
+                heading: 'A család szocializációs szerepe',
+                paragraphs: [
+                  'A család az elsődleges szocializációs közeg, amelyben a gyermek megismeri az alapvető társadalmi normákat, viselkedési mintákat és érzelemkifejezési módokat. A családban tapasztalt minták (pl. hogyan kezelik a konfliktusokat, hogyan fejezik ki és szabályozzák az érzelmeiket a családtagok) mélyen beépülnek a gyermek saját viselkedési repertoárjába, és hosszú távon meghatározzák felnőttkori kapcsolati és érzelemszabályozási működését is.',
+                  'A család szocializációs szerepét később - ahogy azt korábban (Tanult elemek és emlékezés fejezet) megismertük - kiegészíti, majd fokozatosan részben át is veszi az iskola, a kortárscsoport és a hírközlési eszközök hatása, de a korai, családi mintázatok alapozó jellege a legtöbb esetben egész életen át kimutatható marad.',
+                  'A szocializáció tehát nem egyetlen esemény, hanem egy folyamatos, életen át tartó folyamat, amelynek azonban a kora gyermekkori szakasza kiemelt jelentőségű: az ekkor kialakuló alapmintázatok (bizalom vagy bizalmatlanság mások iránt, önszabályozási képesség, konfliktuskezelési stratégiák) jelentős mértékben meghatározzák, mennyire könnyen és eredményesen épülnek rá a későbbi életszakaszok szocializációs tapasztalatai.',
+                  'Emellett a testvérkapcsolatok is fontos szocializációs terepet jelentenek: a testvérek egymás között gyakorolják be a megosztás, az alkalmazkodás és a konfliktuskezelés olyan alapvető készségeit, amelyeket később a kortárskapcsolatokban és felnőttkori közösségi élethelyzetekben is alkalmazni tudnak.',
+                ],
+              },
+            ],
+            keyTerms: ['szocializáció', 'érzelmi biztonság'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a kötődés alapfogalmát, amely az érzelmi fejlődés egyik kulcsfontosságú, tudományosan jól vizsgált eleme.',
+            sections: [
+              {
+                heading: 'A kötődés fogalma',
+                paragraphs: [
+                  'A kötődés a csecsemő és az elsődleges gondozó között kialakuló, tartós érzelmi kapcsolat, amely biztonságot nyújt a gyermek számára a környezet felfedezéséhez. Egy biztonságos kötődés esetén a gyermek a gondozót "biztos bázisként" használja: onnan indulva fedezi fel a környezetét, majd - stressz vagy veszély esetén - visszatér hozzá megnyugvásért, ami lehetővé teszi, hogy egyre bátrabban és önállóbban próbálkozzon új helyzetekben.',
+                  'A kötődés kialakulásához nem feltétlenül szükséges, hogy a gondozó a gyermek biológiai szülője legyen: a stabil, kiszámítható, a gyermek jelzéseire érzékenyen reagáló gondoskodás a döntő tényező, ezért örökbefogadó vagy nevelőszülőknél is éppúgy kialakulhat biztonságos kötődés, mint vér szerinti szülőknél. Ez a felismerés fontos gyakorlati (pl. gyermekvédelmi) következményekkel is jár: a biztonságos kötődés kialakulásának lehetősége nem a vérségi kapcsolattól, hanem a gondoskodás minőségétől függ.',
+                  'A korai kötődési tapasztalatok mintaként szolgálnak a későbbi, felnőttkori közeli kapcsolatok kialakításához is: a gyermekkori kötődés minősége összefüggésbe hozható azzal, mennyire képes valaki felnőttként bizalommal, kiegyensúlyozottan viszonyulni a szoros érzelmi kapcsolataihoz - ez is jól mutatja, mennyire hosszú távú hatása van a korai, családi érzelmi tapasztalatoknak.',
+                  'Fontos ugyanakkor hangsúlyozni, hogy a korai kötődési tapasztalatok nem jelentenek megváltoztathatatlan, végleges "sorsot": az idegrendszer - ahogy azt korábban (a tanulási folyamatoknál) megismertük - egész életen át képes alkalmazkodni, ezért egy kevésbé biztonságos korai kötődés később, megfelelő, tartósan biztonságot nyújtó kapcsolatok révén részben módosulhat, javulhat.',
+                  'A kötődés vizsgálata jól szemlélteti azt az általánosabb elvet is, hogy a korai életszakaszban szerzett tapasztalatok - hasonlóan a korábban megismert kritikus periódushoz a nyelvtanulásnál - aránytalanul nagy hatással vannak a későbbi fejlődésre, még akkor is, ha ez a hatás nem teljesen visszafordíthatatlan.',
+                ],
+              },
+            ],
+            keyTerms: ['kötődés'],
+          },
+        },
+      },
+      {
+        id: 'idegrendszer-egeszsegtana',
+        title: 'Az idegrendszer egészségtana',
+        order: 38,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Pszichés fejlődés fejezet) megismert fejlődéslélektani alapok után ebben a fejezetben az idegrendszer egészségtanát, gyakori betegségeit, valamint a drogok és a függőségek témakörét tekintjük át.',
+            sections: [
+              {
+                heading: 'Életmód és az idegrendszeri betegségek megelőzése',
+                paragraphs: [
+                  'Az életmód (rendszeres testmozgás, megfelelő mennyiségű alvás, tudatos stresszkezelés) jelentős szerepet játszik az idegrendszeri eredetű betegségek, köztük a stresszbetegségek (pl. tartós fejfájás, alvászavar, szorongásos tünetek) megelőzésében. A tartósan magas stressz-szint - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) a szimpatikus idegrendszer aktiválódásánál megismertük - hosszú távon kimeríti a szervezet alkalmazkodó képességét, ami hozzájárulhat ezen betegségek kialakulásához.',
+                ],
+              },
+              {
+                heading: 'A fájdalomcsillapítás módjai és veszélyei',
+                paragraphs: [
+                  'A fájdalom csillapítható gyógyszeres úton (pl. egyszerű, vény nélkül kapható fájdalomcsillapítókkal) és nem gyógyszeres módokon is (pl. pihenéssel, hideg vagy meleg alkalmazásával). Mindkét módnak megvannak a maga veszélyei: a fájdalomcsillapítók tartós, szakszerűtlen, túlzott használata mellékhatásokat, egyes erősebb szerek esetén pedig akár függőséget is okozhat, ezért ezek alkalmazását mindig az adott helyzethez és orvosi javaslathoz kell igazítani.',
+                ],
+              },
+              {
+                heading: 'Gyakori idegrendszeri betegségek tünetei',
+                paragraphs: [
+                  'Az agyrázkódás fejsérülés utáni átmeneti tudatzavar, amelyet gyakran szédülés és hányinger kísér. A migrén jellemzően féloldali, lüktető fejfájás, amelyet gyakran fény- és hangérzékenység, illetve hányinger kísér; hátterében az agyhártyát ellátó erek átmeneti összehúzódása, majd kitágulása áll, ez utóbbi ingerli a környező érzőidegvégződéseket, ez magyarázza a lüktető jelleget és a kísérő tüneteket. Az epilepszia az agy kóros, rohamszerű elektromos kisülése által kiváltott tünetegyüttes, amelynek jellegzetes megnyilvánulása a görcsroham. A stroke (agyvérzés vagy agyi infarktus) - ahogy azt korábban (A keringési rendszer egészségtana fejezet) röviden megismertük - hirtelen kialakuló féloldali gyengeséggel, zsibbadással vagy beszédzavarral jár, és azonnali orvosi ellátást igénylő, sürgősségi állapot; a tünetek azért jelentkeznek éppen az adott testfélen vagy funkcióban, mert az elzáródott vagy megrepedt ér által ellátott agyi terület pusztulása pontosan azt a mozgató-, érző- vagy beszédközpontot érinti, amelyet ez az érszakasz táplált.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási zavarok',
+                paragraphs: [
+                  'A táplálkozási zavarok (amelyek eltérnek a korábban, a Táplálkozás egészségtana fejezetben megismert, elsősorban tápanyaghiányból eredő alultápláltságtól, hiszen itt a háttérben pszichés okok állnak) közé tartozik az ortorexia (az egészséges táplálkozás iránti túlzott, már károssá váló megszállottság), az anorexia (a tudatos, súlyos éhezés, a fogyás iránti túlzott vágy), a bulímia (falásrohamok, amelyeket kompenzáló viselkedés, pl. hánytatás követ) és az izomdiszmorfia (olyan testképzavar, amelyben az érintett soha nem érzi elég izmosnak magát). Kialakulásukban egyaránt szerepet játszanak társadalmi tényezők (pl. a média és a közösségi oldalak által közvetített, gyakran irreális testkép-elvárások) és biológiai tényezők (pl. genetikai hajlam, az agy jutalmazó rendszerének zavarai).',
+                ],
+              },
+              {
+                heading: 'Kémiai és viselkedési függőségek',
+                paragraphs: [
+                  'A kémiai függőség egy anyaghoz (pl. drog, alkohol) kötődik, míg a viselkedési függőség egy tevékenységhez (pl. szerencsejáték, túlzott internethasználat). A két típus közös jellegzetessége, hogy mindkettő - ahogy azt korábban (Szinapszis fejezet) megismertük - a szinapszisok tartós, ismételt túlingerlésén alapul, tolerancia (egyre nagyobb "adag" szükségessége ugyanahhoz a hatáshoz) és elvonási tünetek kialakulásával jár, és mindkettő súlyosan károsíthatja az érintett mindennapi életét, kapcsolatait és egészségét.',
+                ],
+              },
+              {
+                heading: 'Érvelés a drogfogyasztás ellen',
+                paragraphs: [
+                  'A drogfogyasztás rövid távú, átmeneti "élvezete" hosszú távon súlyos egészségügyi (szervi károsodás, függőség) és társadalmi (kapcsolati, anyagi, jogi) károkat okoz. A szülőnek, a családnak és a tágabb környezetnek (iskola, közösség) egyaránt fontos szerepe és felelőssége van a megelőzésben: a nyílt kommunikáció, a következetes példamutatás és a problémák korai felismerése mind hozzájárulhatnak ahhoz, hogy a fiatalok kevésbé legyenek kitéve a drogfogyasztás kockázatának.',
+                ],
+              },
+            ],
+            keyTerms: ['stresszbetegség', 'migrén', 'epilepszia', 'ortorexia', 'anorexia', 'bulímia', 'kémiai függőség', 'viselkedési függőség'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a zsigeri működések és az érzelmi-pszichikus állapotok kapcsolatát, valamint két gyakori idegrendszeri betegség, az Alzheimer-kór és a Parkinson-kór tüneteit ismerjük meg.',
+            sections: [
+              {
+                heading: 'Zsigeri működések és pszichoszomatikus betegségek',
+                paragraphs: [
+                  'A belső szervek (zsigeri) működése - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - szoros kapcsolatban áll az érzelmi-pszichikus állapotokkal: a tartós stressz vagy szorongás a vegetatív idegrendszeren (elsősorban a szimpatikus idegrendszer tartós túlaktiválásán) keresztül valódi, testi tüneteket és betegségeket okozhat - ezeket nevezzük pszichoszomatikus betegségeknek. Ilyen lehet például a tartós stressz által súlyosbított gyomorfekély vagy a stressz hatására kialakuló, tartósan emelkedett vérnyomás.',
+                ],
+              },
+              {
+                heading: 'Az Alzheimer-kór és a Parkinson-kór tünetei',
+                paragraphs: [
+                  'Az Alzheimer-kór egy fokozatosan súlyosbodó idegrendszeri betegség, amelynek jellemző tünetei a memóriazavar (kezdetben a rövid távú, majd egyre inkább a régebbi emlékek felidézésének nehezítettsége), a térbeli-időbeli tájékozódási nehézség, valamint a mindennapi tevékenységek önálló elvégzésének fokozatos elvesztése.',
+                  'A Parkinson-kór elsősorban mozgászavarokkal jár: jellemző tünete a nyugalmi remegés (tremor), az izommerevség és a mozgások lelassulása. A betegség hátterében - ahogy azt korábban (Testmozgató rendszerek fejezet) a bazális ganglionoknál megismertük - az automatizált mozgások szabályozásában részt vevő kéreg alatti magvak egyes sejtjeinek pusztulása áll, ami megmagyarázza, miért éppen a mozgás finomsága és összehangoltsága károsodik elsősorban ennél a betegségnél.',
+                  'Mindkét betegség közös jellemzője, hogy az idegsejtek fokozatos, visszafordíthatatlan pusztulásával jár - ez alapvetően különbözteti meg őket a korábban megismert, akut lezajlású állapotoktól (pl. az agyrázkódástól), és egyben magyarázza, hogy a kezelésük miért irányul elsősorban a tünetek enyhítésére és a betegség lassítására, nem pedig a teljes gyógyulásra.',
+                ],
+              },
+            ],
+            keyTerms: ['pszichoszomatikus betegség', 'Alzheimer-kór', 'Parkinson-kór'],
+          },
+        },
+      },
+      {
+        id: 'hormonalis-mukodesek',
+        title: 'Hormonális működések',
+        order: 39,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Idegrendszer', 'Hormonrendszer'],
+          rows: [
+            ['Jelátvivő közeg', 'idegsejt-nyúlvány, szinapszis', 'véráram'],
+            ['Sebesség', 'gyors (ezredmásodperc)', 'lassabb (másodperc-óra)'],
+            ['Hatás időtartama', 'rövid', 'hosszan tartó'],
+            ['Kiterjedés', 'pontosan célzott', 'kiterjedt, több szervrendszert érintő'],
+            ['Példa', 'izom azonnali összehúzódása', 'növekedés, anyagcsere szabályozása'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az idegrendszer egészségtana fejezet) lezárt idegrendszeri témakör után ebben a fejezetben a szabályozás másik nagy rendszerét, a hormonrendszert kezdjük megismerni, összefoglalva és rendszerbe foglalva mindazt, amit a hormonokról már korábbi fejezetekben (pl. Homeosztázis, A kiválasztás szabályozása, Elemek, ionok, Vegetatív érző és mozgató rendszerek) elszórtan megismertünk.',
+            sections: [
+              {
+                heading: 'Az idegrendszeri és a hormonális szabályozás összehasonlítása',
+                paragraphs: [
+                  'A szervezet két nagy szabályozó rendszere, az idegrendszer és a hormonrendszer nem versengenek, hanem kiegészítik egymást: az idegrendszer a gyors, pontosan célzott, rövid ideig tartó válaszokat biztosítja (pl. egy izom azonnali összehúzódását), míg a hormonrendszer a lassabb, de tartósabb, gyakran több szervrendszert egyszerre érintő folyamatokat (pl. a növekedést, az anyagcserét, a szaporodást) szabályozza. Mindkét rendszer gyakran összehangoltan, egymást kiegészítve működik ugyanazon élettani cél elérése érdekében.',
+                  'Erre jó példa a korábban (Vegetatív érző és mozgató rendszerek fejezet) megismert mellékvese-velő is: ez a szerv egyszerre kapcsolódik az idegrendszerhez (szimpatikus beidegzés) és a hormonrendszerhez (adrenalin közvetlen vérbe választásával), így egyetlen szerven belül is jól megfigyelhető a két szabályozó rendszer szoros együttműködése.',
+                ],
+              },
+              {
+                heading: 'A hormonrendszer működésének lényege',
+                paragraphs: [
+                  'A hormonrendszer a belső elválasztású (endokrin) mirigyek segítségével szabályoz: ezek a mirigyek - ahogy azt korábban (Homeosztázis fejezet) megismertük - hormonokat termelnek, amelyeket közvetlenül a vérbe választanak ki. A hormon ezután a véráram által eljut a szervezet szinte minden pontjára, de hatását csak azokon a célsejteken fejti ki, amelyek rendelkeznek a hozzá illeszkedő receptorral.',
+                  'Ez a "szórt", véráramon keresztül történő üzenetküldés alapvetően eltér az idegrendszer korábban (Sejtszintű folyamatok és Szinapszis fejezetek) megismert, pontos, gyors, vezetékszerű jelátvitelétől: a hormonális szabályozás lassabb (a hormonnak el kell jutnia a célsejthez a véráramon át), de hatása jellemzően tartósabb és szélesebb körű, mivel egyetlen hormon egyszerre több, a szervezet különböző pontjain elhelyezkedő célsejtet is elérhet és befolyásolhat.',
+                  'A hormontermelés szabályozása jellemzően - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - a negatív visszacsatolás elvén működik: egy adott paraméter (pl. a vércukorszint vagy a testfolyadékok töménysége) változása kiváltja a megfelelő hormon termelődését, amely a paramétert visszatéríti a normál tartományba, ezután pedig a hormontermelés is csökken.',
+                  'Ez a visszacsatolásos szabályozás biztosítja, hogy a hormonszintek ne emelkedjenek vagy csökkenjenek korlátlanul: amint a szabályozott paraméter visszaáll a normál tartományba, a hormont termelő mirigy "érzékeli" ezt (közvetlenül, vagy egy másik hormon jelzésén keresztül), és ennek megfelelően csökkenti a hormontermelését - enélkül a szabályozás könnyen túllőne a célon, ahelyett hogy stabil egyensúlyt tartana fenn.',
+                  'Ez a folyamatos, önszabályozó működés teszi lehetővé, hogy a szervezet hormonszintjei a napi ritmus, az életkor és a pillanatnyi élettani igények (pl. étkezés, testmozgás, stressz) szerint dinamikusan, mégis kiszámíthatóan, egy viszonylag szűk tartományon belül ingadozzanak.',
+                  'Jó példa erre a pajzsmirigy hormonja, a tiroxin, amely szinte minden testi sejtre hat, és az anyagcsere alapszintjét (alapanyagcserét) szabályozza - ahogy azt korábban (Táplálkozás fejezet) az alapanyagcsere fogalmánál már megismertük.',
+                ],
+              },
+            ],
+            keyTerms: ['hormon', 'belső elválasztású mirigy', 'célsejt'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, miért fejtheti ki ugyanaz a hormon eltérő hatását különböző szerveken, valamint át kell tekinteni a hormonok szerepét a fő anyagcsere-folyamatok szabályozásában.',
+            sections: [
+              {
+                heading: 'A hormonhatás célsejt-függősége',
+                paragraphs: [
+                  'Ez a jelenség (a hormonhatás célsejt-függősége) az egyik kulcsfogalma az emelt szintű hormonrendszer-ismereteknek: ugyanaz a hormon más-más szervben eltérő hatást fejthet ki, mivel a hormon önmagában nem "tudja", mit kell tennie - a hatást a célsejt felszínén (vagy belsejében) található, a hormonhoz illeszkedő receptor típusa és az általa elindított sejten belüli folyamat határozza meg. Ahogy azt korábban (Membránok szerepe fejezet) a receptorfehérjéknél megismertük, egy adott sejt csak akkor reagál egy hormonra, ha rendelkezik a hozzá illeszkedő receptorral - enélkül a hormon hatástalanul "elhalad" a sejt mellett, míg egy másik, megfelelő receptorral rendelkező sejtben jelentős választ vált ki. A receptorok elhelyezkedése alapján két fő típust különböztetünk meg: a fehérje természetű hormonok (pl. az inzulin) jellemzően a sejtmembránon található receptorhoz kötődnek, míg a szteroid természetű hormonok (pl. a mellékvesekéreg hormonjai) képesek átjutni a sejtmembránon, és a sejten belül, gyakran közvetlenül a sejtmagban található receptorhoz kapcsolódnak.',
+                ],
+              },
+              {
+                heading: 'Hormonok szerepe a fő anyagcsere-folyamatok szabályozásában',
+                paragraphs: [
+                  'A szervezet szénhidrát-anyagcseréjét több hormon is befolyásolja: az adrenalin és a glükokortikoidok emelik, az inzulin pedig csökkenti a vércukorszintet - ahogy azt korábban (Homeosztázis fejezet) a hasnyálmirigy kettős elválasztásánál megismertük. A só- és vízháztartás szabályozásában a mineralokortikoidok (pl. az aldoszteron) és a vazopresszin (ADH) vesznek részt - ezek működését korábban (A kiválasztás szabályozása fejezet) már részletesen megismertük. A kalcium-anyagcserét pedig a parathormon, a kalcitonin és a D-vitamin-hormon együttes, egymást kiegészítő hatása szabályozza, ahogy azt korábban (Elemek, ionok fejezet) megismertük.',
+                  'Jól látható, hogy a hormonrendszer egyes elemei nem egymástól elszigetelten, hanem egy nagy, összehangolt szabályozó hálózat részeként működnek, amelynek különböző "szálaival" (vércukorszint, folyadék- és sóháztartás, kalciumszint) a modul korábbi fejezeteiben már külön-külön találkoztunk - ez a fejezet ezeket a szálakat kapcsolja össze egyetlen, áttekinthető rendszerré. A következő fejezetben (Belső elválasztású mirigyek) ezt a rendszerszemléletet folytatva már konkrétan az egyes mirigyek elhelyezkedését és a legfontosabb hormonok termelődési helyét is megismerjük.',
+                ],
+              },
+            ],
+            keyTerms: ['glükokortikoid', 'mineralokortikoid'],
+          },
+        },
+      },
+      { id: 'belso-elvalasztasu-mirigyek', title: 'Belső elválasztású mirigyek', order: 40, isFree: false, estimatedMinutes: 16,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'hormonrendszer-egeszsegtana', title: 'A hormonrendszer egészségtana', order: 41, isFree: false, estimatedMinutes: 14,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'immunitas', title: 'Immunitás', order: 42, isFree: false, estimatedMinutes: 18,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'vercsoportok', title: 'Vércsoportok', order: 43, isFree: false, estimatedMinutes: 10,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'immunrendszer-egeszsegtana', title: 'Az immunrendszer egészségtana', order: 44, isFree: false, estimatedMinutes: 14,
+        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 45, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
