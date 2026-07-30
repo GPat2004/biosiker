@@ -5407,16 +5407,336 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'erzekeles-latas', title: 'Érzékelés és látás', order: 30, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'hallas-egyensulyerzes', title: 'Hallás és egyensúlyérzés', order: 31, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kemiai-erzekeles', title: 'Kémiai érzékelés', order: 32, isFree: false, estimatedMinutes: 10,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'testmozgato-rendszerek', title: 'Testmozgató rendszerek', order: 33, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'vegetativ-erzo-mozgato-rendszerek', title: 'Vegetatív érző és mozgató rendszerek', order: 34, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'erzekeles-latas',
+        title: 'Érzékelés és látás',
+        order: 30,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Rövidlátás (myopia)', 'Távollátás (hyperopia)'],
+          rows: [
+            ['A kép fókuszpontja', 'a retina előtt alakul ki', 'a retina mögött alakulna ki'],
+            ['Jellemző probléma', 'távoli tárgyak elmosódottan látszanak', 'közeli tárgyak elmosódottan látszanak'],
+            ['Korrekció szemüveggel', 'szórólencsével (a fókuszpontot hátrébb tolva)', 'gyűjtőlencsével (a fókuszpontot előrébb hozva)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Testérző rendszerek fejezet) megismert receptorok és a kéreg alatti feldolgozás után ebben a fejezetben azt vizsgáljuk meg részletesen, hogyan épül fel az érzékelés folyamata általánosságban, majd a legösszetettebb érzékszervünket, a szemet és a látás folyamatát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az érzékszervek működésének általános elvei',
+                paragraphs: [
+                  'Minden érzékelési folyamat azonos alapséma szerint zajlik: az adekvát inger (az adott érzékszerv számára megfelelő ingertípus) eléri a receptort, amely ingerületté alakítja azt; az ingerület idegpályákon eljut az agykéregbe, ahol tudatosul, és érzetté válik. Az érzet tehát nem maga a fizikai inger, hanem annak agyi, szubjektív megélése.',
+                ],
+              },
+              {
+                heading: 'Érzékcsalódások',
+                paragraphs: [
+                  'Az illúzió egy valóban létező, fizikai inger téves, a valóságtól eltérő értelmezése (pl. egyes optikai csalódásoknál két azonos hosszúságú vonal különböző hosszúságúnak tűnik a környezetük miatt). A hallucináció ezzel szemben egy olyan érzet, amely valós, külső inger nélkül keletkezik, mégis valóságosnak tűnik az érintett számára. Mindkettő kialakulásában szerepet játszhatnak pszichés tényezők (pl. tartós stressz, kimerültség) és egyes drogok is.',
+                ],
+              },
+              {
+                heading: 'A szem felépítése és működése',
+                paragraphs: [
+                  'A szem fő részei: a szaruhártya (a fény első törése itt történik), a szivárványhártya (közepén a pupillával, amely a beeső fény mennyiségét szabályozza), a lencse (amely alakjának változtatásával - akkomodációval - élesre fókuszálja a képet), az üvegtest (a szemgolyó belsejét kitöltő átlátszó anyag), valamint az ideghártya (retina), amelyben a fényérzékeny receptorok (csapok és pálcikák) helyezkednek el. A retinának van egy receptormentes pontja is, a vakfolt, ahol a látóideg elhagyja a szemet.',
+                ],
+              },
+              {
+                heading: 'Fénytörési hibák és a hályogok',
+                paragraphs: [
+                  'A leggyakoribb fénytörési hibák a rövidlátás (myopia, amikor a szemgolyó hossza vagy a törőközegek törőereje miatt a kép a retina elé fókuszálódik, ezért a távoli tárgyak elmosódottak) és a távollátás (hyperopia, amikor a kép a retina mögé fókuszálódna, ezért a közeli tárgyak elmosódottak); mindkettő megfelelő szemüveglencsével (rövidlátásnál szórólencsével, távollátásnál gyűjtőlencsével) korrigálható.',
+                  'A szürkehályog a szemlencse fokozatos elhomályosodása, amely egyre romló látásélességet okoz. A zöldhályog (glaukóma) a szem belnyomásának kóros emelkedése, amely - kezeletlenül - tartósan károsíthatja a látóideget, és akár vaksághoz is vezethet.',
+                ],
+              },
+              {
+                heading: 'Egyszerű kísérletek a látás vizsgálatára',
+                paragraphs: [
+                  'A vakfolt egyszerű kísérlettel kimutatható: ha egy adott ábrát megfelelő távolságból, félszemmel nézünk, egy bizonyos szögben egy pont vagy jel eltűnik a látómezőből, mert éppen a vakfoltra vetül. A színtévesztés speciális, színes pöttyökből álló táblákkal vizsgálható, amelyeken a színtévesztők más számjegyet vagy alakzatot látnak, mint a normál színlátásúak. A látásélesség táblázatos, egyre kisebb betűkből vagy jelekből álló ábrákkal mérhető. A térbeli tájékozódás vizsgálható például úgy, hogy egy tárgy távolságát egy szemmel, majd mindkét szemmel próbáljuk megbecsülni - ez utóbbi jóval pontosabb.',
+                ],
+              },
+              {
+                heading: 'Pupillareflex, akkomodáció és a szemhéjzáró reflex',
+                paragraphs: [
+                  'A pupillareflex során erős fény hatására a pupilla automatikusan összeszűkül, ezzel védve a retinát a túlzott fénymennyiségtől. Az akkomodáció a lencse alakjának (domborúságának) izmos szabályozás általi megváltoztatása, amely lehetővé teszi, hogy a szem közeli és távoli tárgyakra egyaránt élesen tudjon fókuszálni. A szemhéjzáró reflex egy hirtelen közeledő tárgy vagy váratlan érintés hatására a szemhéj gyors, védekező záródása.',
+                  'A távolságészlelés (mélységérzékelés) egyszerre több támponton alapul: a legfontosabb a kétszemes (binokuláris) látás, amely során a két szem enyhén eltérő szögből látja ugyanazt a jelenetet, és az agy ebből az eltérésből következtet a távolságra; emellett egyszemes (monokuláris) támpontok is segítik a térbeli tájékozódást, mint a tárgyak relatív mérete, egymást takarása (átfedése) vagy a mozgás közben tapasztalt mozgási parallaxis (a közelebbi tárgyak gyorsabbnak tűnnek elmozdulni, mint a távoliak).',
+                ],
+              },
+            ],
+            keyTerms: ['érzet', 'illúzió', 'hallucináció', 'retina', 'vakfolt', 'akkomodáció', 'rövidlátás', 'távollátás', 'zöldhályog'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a retina fényérzékeny sejtjeinek szerepét, valamint a kép- és színlátás élettani alapjait ismerjük meg részletesebben.',
+            sections: [
+              {
+                heading: 'Csapok, pálcikák és dúcsejtek szerepe a látásban',
+                paragraphs: [
+                  'A pálcikák rendkívül fényérzékenyek, ezért elsősorban gyenge megvilágítás (szürkületi és éjszakai látás) mellett működnek, ám színek megkülönböztetésére nem képesek. A csapok ezzel szemben erősebb megvilágítást igényelnek, cserébe lehetővé teszik a színlátást - háromféle csaptípus létezik, amelyek a fény eltérő hullámhosszára (nagyjából a vörös, a zöld és a kék tartományra) a legérzékenyebbek. A csapoktól és pálcikáktól érkező jeleket a retina dúcsejtjei gyűjtik össze és összegzik, mielőtt azok a látóidegen keresztül elhagynák a szemet.',
+                ],
+              },
+              {
+                heading: 'Kép- és színlátás, fényerősség-érzékelés',
+                paragraphs: [
+                  'A lencse a retinára fordított állású, kicsinyített képet vetít, amelyet az agykéreg dolgoz fel és "állít helyre" a tudatosuló, valós állású érzetté. A színlátás alapja, hogy egy adott hullámhosszú fény a háromféle csaptípust eltérő mértékben ingerli - az agy ezt a háromféle jelet egymáshoz viszonyítva értékeli ki, és ebből "számítja ki" az észlelt színt. A fényerősség érzékelését elsősorban az adott receptorok (csapok, pálcikák) ingerületének intenzitása (a keletkező akciós potenciálok gyakorisága) közvetíti - minél erősebb a fény, annál nagyobb gyakorisággal keletkeznek akciós potenciálok az érintett receptorokból induló idegrostokon.',
+                  'A retina középpontjában, az éles látás helyén (a sárgafoltban) elsősorban csapok találhatók, sűrű elrendezésben - ez magyarázza, hogy a legélesebb, legrészletgazdagabb látásunk mindig arra a pontra korlátozódik, amelyre közvetlenül nézünk, míg a látótér szélén (ahol inkább pálcikák dominálnak) a látás kevésbé éles, de a gyenge fényre érzékenyebb, ezért sötétben gyakran a szemünk sarkából jobban észrevehetünk egy halvány fényforrást, mint ha egyenesen ránéznénk.',
+                ],
+              },
+            ],
+            keyTerms: ['csap', 'pálcika', 'dúcsejt'],
+          },
+        },
+      },
+      {
+        id: 'hallas-egyensulyerzes',
+        title: 'Hallás és egyensúlyérzés',
+        order: 31,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Érzékelés és látás fejezet) megismert szem és látás után ebben a fejezetben a fület, a hallás folyamatát, valamint a belső fülben elhelyezkedő egyensúlyérzékelő szerveket ismerjük meg.',
+            sections: [
+              {
+                heading: 'A fül felépítése',
+                paragraphs: [
+                  'A fül három nagy részre osztható. A külső fül (fülkagyló és hallójárat) a hangot összegyűjti és a dobhártya felé irányítja. A középfül a dobhártyát és a hozzá kapcsolódó három apró hallócsontocskát (kalapács, üllő, kengyel) foglalja magába, amelyek a hangrezgést mechanikusan erősítik és továbbítják. A belső fül tartalmazza a hallásért felelős csigát, valamint az egyensúlyérzékelésért felelős tömlőcskét, zsákocskát és a három félkörös ívjáratot.',
+                  'A középfület - ahogy azt korábban (A légzés és a légzőrendszer egészségtana fejezetben) a fülkürtnél már megismertük - a garattal egy vékony járat, a fülkürt köti össze, amely kiegyenlíti a dobhártya két oldala közötti légnyomást; ennek hiányában (pl. légnyomás gyors változásakor, repülés vagy búvárkodás közben) a dobhártya megfeszülhet, ami átmeneti hallásromlást vagy fájdalmat okozhat.',
+                ],
+              },
+              {
+                heading: 'A dobhártya és a hallócsontocskák működése',
+                paragraphs: [
+                  'A beérkező hanghullám rezgésbe hozza a dobhártyát, ez a rezgés a hallócsontocskákon (kalapács → üllő → kengyel) keresztül halad tovább, mechanikusan felerősödve, a belső fül felé. A hallócsontocskákhoz kapcsolódó apró izmok képesek csökkenteni a rezgés átvitelének mértékét túl hangos zaj esetén - ez egyfajta védekező mechanizmus, amely tompítja a belső fület érő, potenciálisan károsító rezgést.',
+                  'Ez a szabályozó mechanizmus azonban nem azonnali és nem korlátlan: egy hirtelen, váratlanul erős hang (pl. egy közeli robbanás) ellen nem tud kellő időben védekezni, ezért az ilyen extrém, hirtelen zajok különösen nagy kockázatot jelentenek a hallásra nézve.',
+                ],
+              },
+              {
+                heading: 'A hangirány érzékelése',
+                paragraphs: [
+                  'A hangforrás irányát az agy a két fülbe érkező hang apró időkülönbsége és hangerő-különbsége alapján állapítja meg. Ez egyszerű kísérlettel is bemutatható: ha valakinek bekötjük a szemét, és különböző irányokból szólaltatunk meg egy hangforrást, mindkét füllel jóval pontosabban be tudja azonosítani a hang irányát, mint ha csak az egyik fülét használhatná - ez igazolja, hogy a hangirány-érzékeléshez elengedhetetlen a két fül közötti összehasonlítás.',
+                ],
+              },
+              {
+                heading: 'A zajszennyeződés hatásai',
+                paragraphs: [
+                  'A zajszennyeződés forrásai közé tartozik a közlekedés zaja, az ipari tevékenységek zaja és a tartósan hangos zene is. A tartós, erős zajterhelés maradandóan károsíthatja a belső fül érzékeny szőrsejtjeit, halláskárosodáshoz vezetve - ezek a szőrsejtek felnőttkorban nem képesek megújulni, ezért a károsodásuk véglegesnek bizonyul. Emellett a zaj pszichés hatása sem elhanyagolható: hozzájárulhat a stressz-szint emelkedéséhez, alvászavarokhoz és koncentrációs nehézségekhez is.',
+                ],
+              },
+              {
+                heading: 'A tömlőcske, a zsákocska és a félkörös ívjáratok szerepe',
+                paragraphs: [
+                  'A belső fülben elhelyezkedő tömlőcske és zsákocska a fej egyenes vonalú (lineáris) gyorsulását, illetve a fej gravitációhoz viszonyított helyzetét érzékeli. A három, egymásra merőlegesen elhelyezkedő félkörös ívjárat ezzel szemben a fej forgó irányú mozgásait (elfordulásait) érzékeli - a három egymásra merőleges sík lefedi a tér mindhárom irányát, ezáltal bármilyen irányú fejfordulás érzékelhetővé válik.',
+                  'Ezek a szervek folyamatosan, tudatos odafigyelés nélkül működnek, mégis alapvető fontosságúak a mindennapi mozgásban: enélkül minden egyes lépésnél, fejfordulásnál tudatosan kellene ellenőriznünk, hogy nem veszítettük-e el az egyensúlyunkat, ami rendkívül lelassítaná és megnehezítené a mozgást.',
+                ],
+              },
+            ],
+            keyTerms: ['dobhártya', 'hallócsontocska', 'csiga', 'tömlőcske', 'zsákocska', 'félkörös ívjárat'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hallószerv részletes felépítését és működését, a helyzetérzékelés receptorait, valamint a látórendszer és az egyensúlyérzés kapcsolatát ismerjük meg.',
+            sections: [
+              {
+                heading: 'A hallószerv részletes felépítése: alaphártya, Corti-szerv, szőrsejtek',
+                paragraphs: [
+                  'A csigában elhelyezkedő alaphártya a hang frekvenciájától függően a hossza mentén más-más ponton rezeg a legerősebben: a magas hangok a csiga bejáratához közelebb, a mély hangok pedig a csiga belsejéhez közelebb váltják ki a legnagyobb rezgést. Az alaphártyán helyezkedik el a Corti-szerv, amely a hallás tényleges érzékelő sejtjeit, a szőrsejteket tartalmazza - ezek alakítják át a mechanikai rezgést idegi ingerületté. Mivel az alaphártya adott pontján elhelyezkedő szőrsejtek egy adott hangmagassághoz tartoznak, a hangmagasság érzékelése lényegében azon alapul, hogy az alaphártya melyik pontjának szőrsejtjei aktiválódnak.',
+                ],
+              },
+              {
+                heading: 'A helyzetérzékelés receptorai',
+                paragraphs: [
+                  'A tömlőcskében és a zsákocskában apró kristályok (otolitok) nyomódnak rá a szőrsejtekre; a fej helyzetének vagy gyorsulásának változásakor ezek a kristályok elmozdulnak, meghajlítva a szőrsejteket, ami ingerületet vált ki. A félkörös ívjáratokban folyadék található, amely a fej forgásakor - a tehetetlensége miatt - kissé "lemarad", és ez a relatív elmozdulás hajlítja meg az ott található szőrsejteket. A testhelyzet és a mozgás érzékeléséhez emellett az izmokban található izomorsók (az izom nyúlásának mértékét érzékelik) és az inakban található ínorsók (az ín feszülését érzékelik) is hozzájárulnak, folyamatos, akaratlagos figyelmet nem igénylő visszajelzést adva a testrészek helyzetéről és mozgásáról.',
+                ],
+              },
+              {
+                heading: 'A látórendszer és az egyensúlyérzés kapcsolata',
+                paragraphs: [
+                  'A látórendszer és az egyensúlyérzékelő rendszer szorosan együttműködik: az egyensúlyszervek jelei segítenek stabilizálni a szemmozgásokat fejmozgás közben, hogy a látott kép éles maradjon (pl. futás közben is), a látás pedig további, vizuális támpontokat szolgáltat a testhelyzet és az egyensúly fenntartásához. Ez a szoros együttműködés magyarázza, hogy csukott szemmel - a vizuális támpontok hiányában - lényegesen nehezebb az egyensúlyozás, mint nyitott szemmel.',
+                  'Az is ebből a kapcsolatból fakad, hogy bizonyos helyzetekben (pl. hajón vagy autóban, amikor a belső fül mozgást érzékel, miközben a szem - mondjuk olvasás közben - viszonylag mozdulatlan tárgyat lát) a két érzékszervi rendszer egymásnak ellentmondó jelet küld az agynak, ami tengeribetegséghez hasonló rosszullétet, szédülést okozhat.',
+                ],
+              },
+            ],
+            keyTerms: ['alaphártya', 'Corti-szerv', 'szőrsejt', 'otolit', 'izomorsó', 'ínorsó'],
+          },
+        },
+      },
+      {
+        id: 'kemiai-erzekeles',
+        title: 'Kémiai érzékelés',
+        order: 32,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hallás és egyensúlyérzés fejezet) megismert mechanikai érzékelés után ebben a fejezetben a kémiai érzékelés két formáját, a szaglást és az ízlelést ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szaglóhám szerepe',
+                paragraphs: [
+                  'Az orrüreg felső részén elhelyezkedő szaglóhám tartalmazza a szagérzékelő receptorsejteket, amelyek a belélegzett levegőben oldott, illékony kémiai anyagokat érzékelik. A szaglás különleges abban a tekintetben, hogy az innen induló idegrostok viszonylag közvetlen, kevés átkapcsolással jutnak el az agykéreg szaglóközpontjába - ez eltér a többi érzékszervtől, amelyeknél - ahogy azt korábban (Testérző rendszerek fejezet) megismertük - jellemzően jelentősebb kéreg alatti (pl. talamuszban történő) feldolgozás előzi meg a kéregbe jutást.',
+                  'Ez a viszonylag közvetlen kapcsolat magyarázza, hogy egy-egy illat miért képes olyan gyorsan és erőteljesen felidézni régi emlékeket vagy érzelmeket: a szaglóközponthoz közeli agyi területek szoros kapcsolatban állnak az érzelmi és emlékezeti feldolgozásért felelős agyi struktúrákkal is. Ez a szoros kapcsolat az egyik oka annak, hogy egy régen nem érzett illat (pl. egy gyermekkori otthon jellegzetes szaga) sokszor élénkebb, hirtelenebb emlékfelidézést vált ki, mint egy vizuális vagy hallási emlék.',
+                ],
+              },
+              {
+                heading: 'Az ízlelőbimbók szerepe',
+                paragraphs: [
+                  'A nyelven (és kisebb mértékben a szájüreg egyéb pontjain) elhelyezkedő ízlelőbimbók az öt alapízt képesek megkülönböztetni: az édeset, a sósat, a savanyút, a keserűt és az umamit (a fehérjében gazdag, "húsos" ízérzetet). Minden ízlelőbimbó több, egy-egy ízirányra specializálódott ízlelősejtet tartalmaz, amelyek folyamatosan megújulnak, néhány hetente lecserélődnek - ez magyarázza, hogy egy nyelvsérülés utáni átmeneti ízérzékelési zavar viszonylag gyorsan helyreállhat.',
+                  'Az öt alapíz felismerése élettani szempontból is fontos tájékozódási funkciót lát el: az édes íz jellemzően energiadús tápanyagra, a keserű íz gyakran mérgező vagy ehetetlen anyagra, a sós íz az ásványi anyagok jelenlétére, a savanyú íz pedig gyakran romlott vagy éretlen élelmiszerre utal - az ízérzékelés tehát nem csupán élvezeti, hanem alapvető védekező és tájékozódási szerepet is betölt a táplálékválasztásban.',
+                ],
+              },
+              {
+                heading: 'A szaglás és az ízlelés kapcsolata',
+                paragraphs: [
+                  'A szaglás és az ízlelés a mindennapi tapasztalatban szorosan összefonódik: egy étel teljes "íz-élménye" nagyrészt nem is az ízlelőbimbók öt alapízéből, hanem a szájüregből a garaton keresztül az orrüregbe jutó illatanyagok érzékeléséből (retronazális szaglásból) származik. Ez magyarázza azt a mindennapi tapasztalatot, hogy nátha idején, amikor az orr eltömődik, az ételek íze is jelentősen "laposabbnak", kevésbé élvezetesnek tűnik, annak ellenére, hogy az ízlelőbimbók önmagukban továbbra is működnek.',
+                  'Ez a jelenség egyszerű, otthon is elvégezhető kísérlettel is igazolható: ha valaki befogott orral kóstol meg egy ételt (különösen olyat, amelynek jellegzetes illata van, de az öt alapíz szempontjából semleges, pl. egy gyümölcslevet), jelentősen nehezebben azonosítja be, pontosan miről van szó, mint szabad orrlégzés mellett - ez jól mutatja, mekkora szerepe van a retronazális szaglásnak a teljes ízérzetben. Hasonló elven alapulnak azok a mindennapi "ízteszt" játékok is, amelyekben befogott orral, bekötött szemmel kell felismerni különböző, hasonló állagú gyümölcsök vagy ételek ízét - ilyenkor a résztvevők gyakran meglepődnek, mennyivel nehezebb a feladat, mint szabad légzéssel.',
+                ],
+              },
+            ],
+            keyTerms: ['szaglóhám', 'ízlelőbimbó', 'alapíz', 'retronazális szaglás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a szaglás kombinatorikus kódolását és a szaglási adaptáció jelenségét.',
+            sections: [
+              {
+                heading: 'A szaglás kombinatorikus kódolása',
+                paragraphs: [
+                  'Az emberi orrban mindössze néhány száz különböző szagreceptor-típus található, mégis több ezer, egymástól jól megkülönböztethető illatot vagyunk képesek érzékelni. Ez azért lehetséges, mert egy adott illatanyag jellemzően nem csak egyetlen receptortípust aktivál, hanem több receptortípust is, csak eltérő mértékben - az agy ezt az egyedi "aktivációs mintázatot" értelmezi egy adott, jellegzetes illatként. Ez a kombinatorikus elv hasonló ahhoz, ahogyan korábban (Érzékelés és látás fejezet) a színlátásnál is csak háromféle csaptípus eltérő arányú aktiválásából "áll össze" rendkívül sokféle szín érzete.',
+                  'Ez a kombinatorikus kódolási elv rendkívül hatékony "tömörítési" megoldás: viszonylag kevés, néhány száz alapvető "építőelemből" (receptortípusból) szinte korlátlan számú, egyedi mintázat állítható elő, hasonlóan ahhoz, ahogyan egy viszonylag kis ábécéből is szinte végtelen számú szó és mondat alkotható a betűk kombinálásával.',
+                ],
+              },
+              {
+                heading: 'A szaglási adaptáció',
+                paragraphs: [
+                  'Egy tartósan jelen lévő szag idővel egyre kevésbé tudatosul, majd gyakorlatilag el is tűnik a tudatos érzékelésből - ezt a jelenséget szaglási adaptációnak nevezzük. Ennek élettani alapja, hogy a szagreceptor-sejtek és az idegrendszer feldolgozó központjai fokozottan reagálnak az újonnan megjelenő vagy változó ingerekre, míg egy állandó, változatlan ingerre egyre gyengébb választ adnak. Ez magyarázza, hogy egy adott térben tartózkodók idővel már nem érzékelik a saját, korábban esetleg zavaróan erősnek tűnő testszaguk vagy otthonuk jellegzetes illatát, miközben egy kívülről érkező látogató azonnal észreveheti azt.',
+                  'A szaglási adaptáció evolúciós szempontból is előnyös: az idegrendszernek nincs értelme folyamatosan, teljes intenzitással feldolgoznia egy olyan ingert, amely már nem hordoz új információt - ehelyett a rendszer szabaddá teszi a figyelmet és a feldolgozó kapacitást az esetlegesen megjelenő, valóban új és releváns illatok érzékelésére. Hasonló adaptációs jelenség más érzékszerveknél is megfigyelhető, bár jellemzően kisebb mértékben, mint a szaglásnál - ez egy általánosan visszatérő idegrendszeri elv, nem csak a kémiai érzékelésre jellemző sajátosság.',
+                ],
+              },
+            ],
+            keyTerms: ['kombinatorikus kódolás', 'szaglási adaptáció'],
+          },
+        },
+      },
+      {
+        id: 'testmozgato-rendszerek',
+        title: 'Testmozgató rendszerek',
+        order: 33,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Kémiai érzékelés fejezet) megismert érzékelési folyamatok után ebben a fejezetben az érme másik oldalát, a mozgás idegrendszeri irányítását tekintjük át: mi váltja ki, hogyan indul el, és hogyan lesz összehangolt egy mozdulat.',
+            sections: [
+              {
+                heading: 'Motivációs állapotok és a magatartás',
+                paragraphs: [
+                  'A motivációs állapotok - ahogy azt korábban (Motiváció és kulcsinger fejezet) az etológiai modulban megismertük - irányítják és aktiválják, hogy egy adott pillanatban milyen magatartásformák valósulnak meg: egy éhes vagy szomjas állapot például élelemkereső, illetve vízkereső mozgásokat indít el, míg egy veszélyt jelző inger menekülési vagy védekező mozgásokat vált ki.',
+                  'Ugyanaz a külső inger tehát a motivációs állapottól függően teljesen eltérő mozgásos választ eredményezhet: egy jóllakott állapotban lévő egyed közömbösen elmegy a táplálék mellett, míg ugyanaz a táplálékinger éhes állapotban azonnal célzott mozgást (odafordulás, megközelítés) vált ki - ez mutatja, hogy a mozgásirányítás nem csupán az ingerre, hanem a szervezet belső állapotára is támaszkodik.',
+                ],
+              },
+              {
+                heading: 'Az agykéreg szerepe az akaratlagos mozgásokban',
+                paragraphs: [
+                  'Az akaratlagos, tudatosan kezdeményezett mozgások tervezése és kiváltása az agykéreg egy erre specializálódott területének (a mozgatókéregnek) a feladata. Innen indulnak azok a mozgatópályák, amelyek az agykéregből a gerincvelőbe, majd onnan a mozgatóidegsejteken keresztül a vázizmokba jutnak el. A mozgatókéreg egyes területei nem egyenlő arányban felelnek meg a test egyes izomcsoportjainak: azok a testrészek, amelyek különösen finom, pontos mozgásokra képesek (pl. az ujjak, az ajkak), a mozgatókéregben is aránytalanul nagy területet foglalnak el - hasonlóan ahhoz, amit korábban (Testérző rendszerek fejezet) az érzőkéregnél is megismertünk.',
+                ],
+              },
+              {
+                heading: 'A mozgatópályák kereszteződése',
+                paragraphs: [
+                  'A mozgatópályák nagy része az agytörzs (a nyúltvelő) szintjén átkereszteződik, ezért a bal agyfélteke a test jobb oldalának mozgását irányítja, a jobb agyfélteke pedig a bal oldalét. Ennek fontos gyakorlati (klinikai) következménye van: ha egy agyféltekét sérülés (pl. agyvérzés) ér, ennek tünete jellemzően az ellenkező oldali testfél mozgászavara vagy bénulása lesz.',
+                ],
+              },
+              {
+                heading: 'A kisagy szerepe: mozgáskoordináció',
+                paragraphs: [
+                  'A kisagy fő funkciója a mozgások összehangolása (koordinációja): ez teszi lehetővé, hogy az egyes izmok mozgásai időben és erősségben pontosan illeszkedjenek egymáshoz, sima, célzott mozdulatsort eredményezve, valamint hozzájárul az egyensúly fenntartásához is. Kisagyi károsodás esetén a mozgások jellemzően szaggatottá, pontatlanná, "remegővé" válnak, még akkor is, ha az érintett izmok önmagukban egészségesek és az akarat is megvan a mozgás végrehajtására - ez jól mutatja, hogy a kisagy nem az izmokat, hanem azok összehangolását irányítja. Az alkohol hatására a kisagy működése az egyik leghamarabb kieső idegrendszeri funkció, ami megmagyarázza az ittas állapotra jellemző bizonytalan járást, összehangolatlan, pontatlan mozdulatokat.',
+                  'A kisagy folyamatosan összeveti a mozgatókéregből induló "tervezett" mozgásparancsot azzal a visszajelzéssel, amelyet a korábban (Hallás és egyensúlyérzés fejezetben) megismert egyensúlyszervektől, illetve az izmokból és ízületekből érkező receptoroktól kap a mozgás tényleges lefolyásáról - ez a folyamatos összehasonlítás teszi lehetővé, hogy útközben, valós időben finomítsa, korrigálja a mozgást, ha az eltér a tervezettől.',
+                ],
+              },
+            ],
+            keyTerms: ['mozgatókéreg', 'mozgatópálya', 'kereszteződés', 'kisagy', 'mozgáskoordináció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogyan válnak egyes, sokat gyakorolt mozgások automatikussá, tudatos odafigyelés nélkül is végrehajthatóvá.',
+            sections: [
+              {
+                heading: 'Kéreg alatti magvak és az automatizált mozgások szabályozása',
+                paragraphs: [
+                  'A gyakran ismételt, jól begyakorolt (automatizált) mozgások - például a kerékpározás vagy a gépelés - végrehajtásában kéreg alatti magvak (pl. a bazális ganglionok) vesznek részt, amelyek átkapcsolási pontként működnek az agykéreg és a mozgatópályák között. Ez az átkapcsolódás lehetővé teszi, hogy egy adott mozgásmintázat aktiválásához a mozgatókéregnek már ne kelljen minden egyes izomösszehúzódást külön-külön, tudatosan megterveznie - elég egy általánosabb "parancsot" adnia, amelyet a kéreg alatti magvak alakítanak konkrét, összehangolt mozgássorozattá. Ezek a magvak fokozatosan "átveszik" az irányítást a jól begyakorolt mozgásminták felett, tehermentesítve az agykérget - ez magyarázza, hogy egy már megtanult mozdulatsort miért lehet tudatos odafigyelés nélkül, gyakorlatilag "automatikusan" végrehajtani, míg egy teljesen új mozgás elsajátításakor még intenzív, tudatos kérgi kontrollra van szükség.',
+                  'Ez az automatizációs folyamat magyarázza a gyakorlás jelentőségét is: minél többször ismétlünk egy mozgást, annál inkább áttevődik annak irányítása a kéreg alatti szintre, ami gyorsabbá, kevésbé fárasztóvá és megbízhatóbbá teszi a mozgás végrehajtását - ez az elv áll a sportbeli és zenei készségek hosszú távú, rendszeres gyakorlás általi fejlesztésének hátterében is.',
+                  'A kéreg alatti magvak és a kisagy tehát kiegészítik egymást az automatizált mozgások szabályozásában: a kéreg alatti magvak elsősorban a mozgás elindításában és az általános mozgásmintázat kiválasztásában, a kisagy pedig a mozgás finom, folyamatos korrekciójában játszik szerepet - a kettő zavara (pl. egyes idegrendszeri betegségekben) ezért jellegzetesen eltérő típusú mozgászavarokat okoz. Ez a munkamegosztás jól illusztrálja az idegrendszer általános szervezési elvét: a magasabb szintű döntéshozatal (mit kell tenni) és a részletes, folyamatos kivitelezés-ellenőrzés (hogyan pontosan) gyakran különálló, egymást kiegészítő agyi struktúrákra van szétosztva - ez a megosztott munka teszi lehetővé, hogy az idegrendszer egyszerre legyen gyors és rugalmas is.',
+                ],
+              },
+            ],
+            keyTerms: ['bazális ganglionok', 'automatizált mozgás'],
+          },
+        },
+      },
+      {
+        id: 'vegetativ-erzo-mozgato-rendszerek',
+        title: 'Vegetatív érző és mozgató rendszerek',
+        order: 34,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Szimpatikus idegrendszer', 'Paraszimpatikus idegrendszer'],
+          rows: [
+            ['Jellemző helyzet', '"harcolj vagy menekülj" - megterhelés, veszély, aktivitás', '"pihenés és emésztés" - nyugalmi állapot'],
+            ['Szívre gyakorolt hatás', 'gyorsítja, erősíti az összehúzódást', 'lassítja az összehúzódást'],
+            ['Pupillára gyakorolt hatás', 'tágítja', 'szűkíti'],
+            ['Tápcsatornára gyakorolt hatás', 'lassítja a mozgást és az emésztést', 'fokozza a mozgást és az emésztést'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Testmozgató rendszerek fejezet) megismert akaratlagos, vázizom-mozgásokat irányító rendszer után ebben a záró fejezetben - ahogy azt korábban, Az idegrendszer általános jellemzése fejezetben már röviden előrevetítettük - a vegetatív (autonóm) idegrendszert ismerjük meg, amely a belső szervek akaratlan, önműködő szabályozásáért felelős.',
+            sections: [
+              {
+                heading: 'A vegetatív szabályozás fogalma',
+                paragraphs: [
+                  'A vegetatív szabályozás a belső szervek (pl. a szív, az erek, a tápcsatorna, a mirigyek) önműködő, tudatos akarattól független szabályozását jelenti, amely a szervezet belső egyensúlyának (homeosztázisának) fenntartását szolgálja anélkül, hogy erről tudatosan kellene döntenünk - miközben olvasunk, a szívünk, az emésztőrendszerünk és a légzésünk (a légzés akaratlagosan is, de alapvetően vegetatívan szabályozott) ekkor is önműködően működik tovább.',
+                  'Ez alapvető különbség a korábban (Testmozgató rendszerek fejezet) megismert szomatikus idegrendszerhez képest: míg a vázizmok mozgását jellemzően tudatosan kezdeményezzük és irányítjuk, a belső szervek működését a vegetatív idegrendszer folyamatosan, tudatos beavatkozásunk nélkül hangolja össze - éppen ezért nem tudjuk pusztán akaraterővel megállítani a szívverésünket vagy leállítani az emésztésünket.',
+                ],
+              },
+              {
+                heading: 'A szimpatikus és a paraszimpatikus idegrendszer összehasonlítása',
+                paragraphs: [
+                  'A vegetatív idegrendszernek két, anatómiailag hasonló felépítésű, de funkciójában ellentétesen ható része van: a szimpatikus és a paraszimpatikus idegrendszer. Mindkettő a központi idegrendszerből indul ki, és mindkettő egy dúcon (idegsejttest-csoporton) keresztül kapcsolódik át, mielőtt elérné a célszervet - felépítésük tehát hasonló elven működik, csak más-más idegpályákon és más-más jelátvivő anyagokkal.',
+                  'Funkcionálisan azonban ellentétes irányban hatnak: a szimpatikus idegrendszer a megterhelést, veszélyt vagy fokozott aktivitást igénylő helyzetekre ("harcolj vagy menekülj" állapotra) készíti fel a szervezetet, míg a paraszimpatikus idegrendszer a nyugalmi, "pihenés és emésztés" jellegű állapotot segíti elő.',
+                ],
+              },
+              {
+                heading: 'Szervspecifikus hatások',
+                paragraphs: [
+                  'A pupillát a szimpatikus idegrendszer tágítja (hogy több fény jusson be, jobb legyen a látótávolság veszély esetén), a paraszimpatikus pedig szűkíti. A szívre a szimpatikus gyorsító és erősítő, a paraszimpatikus lassító hatást fejt ki. Az erek átmérőjét is eltérően befolyásolják: a szimpatikus jellemzően szűkíti azokat (kivéve a dolgozó vázizmok ereit, amelyeket megterhelés közben inkább tágít), a paraszimpatikus hatás pedig jellemzően tágító. A tápcsatorna mozgását és az emésztőnedvek termelését a szimpatikus lassítja, a paraszimpatikus pedig fokozza - ez magyarázza, miért nem javasolt megerőltető testmozgás közvetlenül étkezés után: ilyenkor a szimpatikus és a paraszimpatikus rendszer "igényei" versengenek egymással.',
+                  'Ez a sokrétű, egyszerre több szervre kiterjedő hatás jól mutatja, hogy a szimpatikus és a paraszimpatikus idegrendszer nem egy-egy elszigetelt szervet, hanem a teljes szervezetet egységes, összehangolt módon állítja át az adott helyzethez (megterhelés vagy nyugalom) illeszkedő üzemmódba - ezért beszélhetünk a szimpatikus aktiválódás esetén egy összehangolt "harcolj vagy menekülj" válaszról, nem csupán különálló, egymástól független szervi reakciók véletlen egybeeséséről.',
+                ],
+              },
+              {
+                heading: 'A keringés és a testhőmérséklet szabályozása',
+                paragraphs: [
+                  'A keringést a vegetatív idegrendszer (a szimpatikus és a paraszimpatikus hatások egyensúlya) és a hormonális hatások (pl. az adrenalin) együttesen szabályozzák, a szervezet pillanatnyi igényeihez igazítva a szívfrekvenciát és az erek átmérőjét. A testhőmérséklet szabályozása is vegetatív irányítás alatt áll: ahogy azt korábban (Homeosztázis fejezet) megismertük, az izzadás, illetve a bőr ereinek tágulása vagy szűkülése (mindkettő vegetatív idegi szabályozás alatt áll) segít fenntartani a testhőmérséklet állandóságát a külső hőmérséklet változásai ellenére is.',
+                ],
+              },
+            ],
+            keyTerms: ['vegetatív idegrendszer', 'szimpatikus idegrendszer', 'paraszimpatikus idegrendszer'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten érdemes megismerni, milyen jelátvivő anyagok különböztetik meg a szimpatikus és a paraszimpatikus idegrendszer működését.',
+            sections: [
+              {
+                heading: 'A szimpatikus és a paraszimpatikus idegrendszer jelátvivő anyagai',
+                paragraphs: [
+                  'A szimpatikus és a paraszimpatikus idegrendszer végkészülékei - ahogy azt korábban (Szinapszis fejezet) a jelátvivő anyagok szerepéről általánosságban megismertük - eltérő jelátvivő anyagot használnak a célszervek befolyásolására: a szimpatikus idegrendszer végződései jellemzően noradrenalint szabadítanak fel, míg a paraszimpatikus idegrendszer végződései acetilkolint. A célsejteken található, ezekhez a jelátvivő anyagokhoz kapcsolódó receptorok eltérő típusúak, ez magyarázza, hogy ugyanaz a szerv (pl. a szív) miért reagál ellentétesen a két rendszer aktiválására.',
+                  'Fontos hangsúlyozni, hogy a legtöbb belső szervet mindkét rendszer folyamatosan, egyszerre "figyeli", és az adott pillanatban ténylegesen megvalósuló élettani állapotot a kettő egymáshoz viszonyított, dinamikusan változó egyensúlya határozza meg - nem arról van szó, hogy egyszerre csak az egyik rendszer volna aktív, hanem hogy a kettő súlya tolódik el hol az egyik, hol a másik irányba, a szervezet pillanatnyi igényeitől függően.',
+                  'Ez a kémiai megkülönböztetés gyógyszertani szempontból is jelentős: számos gyógyszer éppen ezen receptorok szelektív serkentésén vagy gátlásán keresztül fejti ki hatását (pl. egyes szívritmuszavar elleni vagy vérnyomáscsökkentő szerek a szimpatikus hatást mérséklik), ami jól mutatja, hogy az alapvető élettani mechanizmusok ismerete közvetlenül megalapozza a gyógyászati alkalmazásokat is.',
+                  'A mellékvese velőállománya - amely fejlődéstanilag és működését tekintve is szoros rokonságban áll a szimpatikus idegrendszerrel - szintén noradrenalinhoz hasonló hatású anyagot, adrenalint termel, amelyet közvetlenül a vérbe választ ki: ez lehetővé teszi, hogy a szimpatikus hatás ne csak a helyi idegvégződéseken, hanem a véráram útján, a test egészében, tartósabban is érvényesüljön - ez az egyik magyarázata annak, hogy egy erős ijedtség hatása (szapora szívverés, kitágult pupilla) miért marad fenn még akkor is, amikor a kiváltó inger már megszűnt.',
+                ],
+              },
+            ],
+            keyTerms: ['noradrenalin', 'acetilkolin'],
+          },
+        },
+      },
       { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 35, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
