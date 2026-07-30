@@ -4918,11 +4918,199 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'kivalasztas', title: 'A kiválasztás', order: 22, isFree: false, estimatedMinutes: 16,
+      {
+        id: 'vizeletkivalaszto-rendszer',
+        title: 'A vizeletkiválasztó rendszer működése',
+        order: 22,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (A keringési rendszer egészségtana fejezet) lezárt keringési rendszer után ebben a fejezetben a kiválasztás témakörét kezdjük megismerni: azt, hogyan szabadul meg a szervezet a felesleges és káros anyagoktól, elsősorban a vizeletkiválasztó rendszeren keresztül.',
+            sections: [
+              {
+                heading: 'A kiválasztásban részt vevő szervek áttekintése',
+                paragraphs: [
+                  'A kiválasztás nem kizárólag a vese feladata: a bőr - ahogy azt korábban (Homeosztázis fejezet) a verejtékmirigyeknél megismertük - a verejtékkel vizet és kisebb mennyiségű salakanyagot (pl. karbamidot) is kiválaszt; a máj - ahogy azt korábban (Felszívódás fejezet) a dezaminálásnál megismertük - itt alakul karbamiddá az ammónia, amely aztán a vesén át ürül, emellett a máj az epével is választ ki anyagokat; a tüdő a sejtlégzés végtermékét, a szén-dioxidot távolítja el a kilégzéssel; a végbél - ahogy azt korábban (Felszívódás fejezet) megismertük - az emészthetetlen anyagokat (a székletet) üríti; a vese pedig a vér folyamatos szűrésével választja ki a vízoldékony salakanyagokat és a fölösleges vizet, sókat.',
+                ],
+              },
+              {
+                heading: 'A vizeletkiválasztó rendszer felépítése',
+                paragraphs: [
+                  'A vizeletkiválasztó rendszer főbb részei a két vese (itt történik a vér szűrése és a vizelet képződése), a húgyvezetékek (amelyek a vesékből a húgyhólyagba szállítják a vizeletet), a húgyhólyag (amely a vizeletet ideiglenesen tárolja) és a húgycső (amelyen keresztül a vizelet a szervezetből távozik).',
+                ],
+              },
+              {
+                heading: 'A vese kiválasztó működésének három fő részfolyamata',
+                paragraphs: [
+                  'A vese kiválasztó működése három, egymásra épülő részfolyamatból áll: a szűrletképzés során a vér egy része (a benne oldott kisebb molekulákkal együtt, de a vérsejtek és a nagyobb fehérjék nélkül) kiszűrődik; a visszaszívás során a szervezet számára még hasznos anyagok (víz, glükóz, sók) nagy része visszakerül a vérbe; a kiválasztás (exkréció) során pedig egyes anyagok (pl. gyógyszerek, felesleges ionok, köztük a hidrogénion) aktívan a keletkező vizeletbe kerülnek.',
+                  'A víz, a glükóz és a sók jelentős része a szűrletből visszaszívódik a vérbe, hiszen ezek a szervezet számára még hasznosak; a karbamid - mint felesleges salakanyag - ezzel szemben csak részlegesen szívódik vissza, nagy része a vizelettel távozik. A vese emellett aktívan is választ ki egyes anyagokat (pl. gyógyszereket, illetve felesleges ionokat, mint a hidrogénion), amelyek így hatékonyan eltávolíthatók a vérből, még akkor is, ha koncentrációjuk a szűrletben eredetileg alacsony volt.',
+                  'Ez a három részfolyamat együttesen biztosítja, hogy a vese szelektíven működjön: nem egyszerűen "kiszűri" a vért, hanem gondosan válogat a hasznos és a felesleges anyagok között, a hasznosakat visszatartva, a feleslegeseket pedig hatékonyan eltávolítva a szervezetből.',
+                ],
+              },
+              {
+                heading: 'A vizelet összetétele',
+                paragraphs: [
+                  'A vizelet fő alkotórészei a víz, a karbamid - ahogy azt korábban (Szervetlen molekulák fejezet) megismertük, ez az ammóniánál kevésbé mérgező, kiválasztásra alkalmas nitrogéntartalmú vegyület -, valamint a nátrium-, kálium- és klorid-ionok; emellett kisebb mennyiségben gyógyszerek és hormonok bomlástermékei is megjelenhetnek benne. A vizelet összetétele és mennyisége nem állandó: számos tényezőtől (pl. folyadékbevitel, hőmérséklet, egészségi állapot) függően változhat, ezt a következő fejezetben (A kiválasztás szabályozása) tárgyaljuk részletesebben.',
+                ],
+              },
+            ],
+            keyTerms: ['vese', 'húgyhólyag', 'szűrletképzés', 'visszaszívás', 'exkréció', 'vizelet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a vese működési egységét, a nefront ismerjük meg részletesen, valamint azt, hogyan alakul a vér összetétele fokozatosan vizeletté.',
+            sections: [
+              {
+                heading: 'A nefron felépítése és működése',
+                paragraphs: [
+                  'A vese működési alapegysége a nefron, amely két fő részből áll: a vesetestecskéből és az abból kiinduló, kanyargós lefutású csatornarendszerből. A vesetestecske egy kettős falú tokból (Bowman-tok) és az abba benyúló, sűrűn tekeredő hajszálér-gomolyagból (glomerulus) épül fel - itt zajlik a szűrletképzés, amikor a vér nyomás hatására a hajszálér faván és a tok falán át a tokba szűrődik.',
+                  'A tokból kiinduló csatornarendszer több, egymást követő szakaszból áll, amelyeket kívülről sűrű hajszálér-hálózat vesz körül - ez a szoros érintkezés teszi lehetővé, hogy a csatornafolyadék és a hajszálerekben áramló vér között anyagok (víz, glükóz, sók, karbamid) cserélődjenek ki a csatorna teljes hossza mentén.',
+                ],
+              },
+              {
+                heading: 'A szűrletképzés és a transzportfolyamatok',
+                paragraphs: [
+                  'A szűrletképzés maga passzív folyamat: a vér nyomása hajtja át a kisebb molekulákat a hajszálér és a tok falán, a vérsejtek és a nagy fehérjemolekulák azonban - méretük miatt - nem tudnak átjutni, ezért a szűrlet ezektől mentes. A csatornaszakaszokban ezt követően mind passzív (koncentrációkülönbség menti, pl. a víz egy része ozmózissal), mind aktív (energiaigényes, pl. a glükóz és egyes ionok szelektív) transzportfolyamatok zajlanak - ahogy azt korábban (Membránok szerepe fejezet) a passzív és az aktív szállítás megkülönböztetésénél már megismertük.',
+                ],
+              },
+              {
+                heading: 'A vizeletképződés folyamatának elemzése',
+                paragraphs: [
+                  'A folyadék összetétele a vér, a vesetestecske tokjában lévő szűrlet, a csatornában áramló folyadék és a végleges vizelet állomásain végighaladva fokozatosan változik: a vérben még jelen lévő nagy fehérjék és vérsejtek a szűrletben már nem találhatók meg; a szűrletben még jelentős mennyiségben jelen lévő glükóz és a víz nagy része a csatornaszakaszokon áthaladva fokozatosan visszaszívódik, ezért a végleges vizeletben egészséges szervezetben glükóz gyakorlatilag nem is található; a karbamid koncentrációja ezzel szemben a visszaszívás során fokozatosan feldúsul, hiszen a víz és más hasznos anyagok kivonása közben a karbamid aránylag nagyobb része a csatornában marad.',
+                ],
+              },
+            ],
+            keyTerms: ['nefron', 'vesetestecske', 'Bowman-tok', 'glomerulus'],
+          },
+        },
+      },
+      {
+        id: 'kivalasztas-szabalyozasa',
+        title: 'A kiválasztás szabályozása',
+        order: 23,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A vizeletkiválasztó rendszer működése fejezet) megismert szűrés-visszaszívás-kiválasztás folyamat után ebben a fejezetben azt vizsgáljuk meg, mi okozza a vizelet mennyiségének és összetételének mindennapi ingadozását.',
+            sections: [
+              {
+                heading: 'A vizelet mennyiségének és összetételének változása',
+                paragraphs: [
+                  'A vizelet mennyisége és összetétele számos tényezőtől függően változhat: bőséges folyadékfogyasztás után a vizelet mennyisége megnő, míg híg lesz (kevésbé koncentrált); meleg időben vagy megerőltető testmozgás közben - ahogy azt korábban (Homeosztázis fejezet) a verejtékezésnél megismertük - a szervezet a bőrön keresztül több vizet veszít, ezért a vese kevesebb, ám töményebb vizeletet termel, hogy a testfolyadék-egyensúlyt fenntartsa.',
+                  'Egyes anyagok fogyasztása is befolyásolja a vizelet mennyiségét: a koffein és az alkohol fokozott vizeletürítést (vizelethajtó hatást) váltanak ki, ezért ezek túlzott fogyasztása hosszabb távon a szervezet kiszáradásához is hozzájárulhat, ha a folyadékbevitel nem kompenzálja a fokozott vízveszteséget.',
+                  'Egyes betegségek is megváltoztathatják a vizelet mennyiségét: kezeletlen cukorbetegségben például a vérben felhalmozódó, vissza nem szívható felesleges glükóz miatt a vizelet mennyisége kórosan megnő (a glükóz "magával vonzza" a vizet is) - ez az egyik jellegzetes, korai tünete a betegségnek. Ezzel szemben egyes vese- vagy szívbetegségek éppen a vizeletmennyiség kóros csökkenéséhez vezethetnek, ha a szervezet a folyadékot visszatartja.',
+                  'A vizelet mennyiségének és összetételének tudatos megfigyelése (pl. a szín és a mennyiség alapján) egyszerű, mindenki számára elérhető módja annak, hogy következtetéseket vonjunk le a szervezet folyadékháztartásának állapotáról: a sötétebb, tömény vizelet jellemzően folyadékhiányra, a nagyon híg, bő mennyiségű vizelet pedig akár túlzott folyadékbevitelre vagy egy alapproblémára (pl. cukorbetegségre) is utalhat.',
+                  'A vese szabályozó képessége nem korlátlan: tartós, súlyos folyadékhiány esetén a vizelet mennyisége csak egy bizonyos minimális szintig csökkenthető, ez alatt a salakanyagok (pl. a karbamid) kiválasztásához mindenképpen szükséges egy minimális vizeletmennyiség - ez az egyik oka annak, hogy a tartós, súlyos kiszáradás még megfelelő vesefunkció mellett is veszélyes lehet.',
+                ],
+              },
+              {
+                heading: 'A vizeletkiválasztás napi ritmusa',
+                paragraphs: [
+                  'A vizeletkiválasztás mennyisége a nap folyamán is ingadozik: éjszaka, alvás közben jellemzően kevesebb, tömény vizelet termelődik, mint napközben, ami lehetővé teszi a megszakítás nélküli alvást - ez a napi ritmus is a szervezet szabályozó rendszereinek finomhangoltságát mutatja.',
+                ],
+              },
+              {
+                heading: 'A folyadékháztartás és a homeosztázis kapcsolata',
+                paragraphs: [
+                  'A vizeletkiválasztás szabályozása - ahogy azt korábban (A testfolyadékok fejezet) a vér kémiai összetételének állandóságánál általánosságban megismertük - a homeosztázis egyik kulcsfontosságú, mindennapi példája: a szervezet folyamatosan érzékeli a testfolyadékok térfogatát és összetételét, és a vese kiválasztó működésének finomhangolásával (a visszaszívás és a kiválasztás arányának módosításával) tartja fenn ezek állandóságát, a külső körülmények (folyadékbevitel, hőmérséklet, testmozgás) jelentős ingadozása ellenére is.',
+                  'Ez a szabályozás azért is különösen fontos, mert a testfolyadékok térfogatának és összetételének akár kis mértékű, tartós eltérése is komoly következményekkel járhat: túl kevés folyadék esetén a vér besűrűsödik, ami megnehezíti a keringést, míg túlzott folyadékfelhalmozódás esetén a szövetekben duzzanat (ödéma) alakulhat ki - a vese szabályozó szerepe tehát mindkét szélsőség ellen véd.',
+                ],
+              },
+            ],
+            keyTerms: ['folyadékháztartás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a vizelet mennyiségét és összetételét hormonálisan szabályozó két kulcsfontosságú hormont, a vazopresszint és az aldoszteront ismerjük meg.',
+            sections: [
+              {
+                heading: 'A vazopresszin (ADH) és az aldoszteron szerepe',
+                paragraphs: [
+                  'A vazopresszin (antidiuretikus hormon, ADH) a testfolyadékok töménységének emelkedésére (pl. folyadékhiány esetén) választódik ki, és a vesében fokozza a víz visszaszívását - ez csökkenti a kiválasztott vizelet mennyiségét, ugyanakkor töményebbé teszi azt, ezáltal a szervezet megőrzi a vizet. Ez a mechanizmus - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - a negatív visszacsatolás elvén működik: a folyadékhiány kiváltja a hormon termelődését, amely csökkenti a további vízveszteséget.',
+                  'Az aldoszteron a vesében a nátrium visszaszívását fokozza (a vízhez hasonlóan, a nátrium visszaszívása is magával vonja bizonyos mennyiségű víz visszatartását is), miközben a káliumion kiválasztását segíti - ez a hormon elsősorban a szervezet sóháztartásának (és ezen keresztül közvetve a vérnyomásnak) a szabályozásában játszik kulcsszerepet. E hormonok részletesebb szabályozási hátterét a hormonrendszerről szóló fejezetben ismerjük meg tovább.',
+                  'A két hormon összehangolt működése jól szemlélteti, hogy a folyadék- és sóháztartás szabályozása nem egyetlen jelre, hanem több, egymást kiegészítő jelzésre épül: a vazopresszin elsősorban a testfolyadékok töménységére (ozmotikus koncentrációjára), az aldoszteron pedig inkább a szervezet nátriumkészletére és vérnyomására reagál - a kettő együttesen biztosítja, hogy a víz- és sóháztartás finoman, egymástól részben függetlenül is szabályozható maradjon.',
+                  'Ez a hormonális szabályozás gyakorlati jelentőségét jól mutatja, hogy bizonyos vérnyomáscsökkentő gyógyszerek éppen az aldoszteron hatását vagy termelődését gátolják, ezáltal csökkentve a szervezet nátrium- és vízvisszatartását, ami mérsékli a vérnyomást - ez egy konkrét példa arra, hogyan épül a gyógyászati gyakorlat közvetlenül egy élettani szabályozási mechanizmus ismeretére.',
+                  'Mindkét hormon a korábban (Membránok szerepe fejezet) megismert receptor-elven működik: a célsejtek (jelen esetben a vese csatornaszakaszainak sejtjei) felszínén (vagy belsejében) specifikus receptorok ismerik fel a hormont, és ennek hatására módosítják a sejt működését (pl. több vízcsatornát építenek be a sejtmembránba) - enélkül a hormon, bármennyire is jelen van a vérben, nem tudna hatást kifejteni a célsejtre.',
+                ],
+              },
+            ],
+            keyTerms: ['vazopresszin', 'aldoszteron'],
+          },
+        },
+      },
+      {
+        id: 'kivalaszto-rendszer-egeszsegtana',
+        title: 'A kiválasztó szervrendszer egészségtana',
+        order: 24,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Művesekezelés (dialízis)', 'Veseátültetés'],
+          rows: [
+            ['Rendszeresség', 'ismétlődő, jellemzően heti több alkalom, egész életen át', 'egyszeri beavatkozás, utána nincs szükség rendszeres kezelésre'],
+            ['Életminőség', 'jelentősen korlátozott (kezelésekhez kötött mindennapok)', 'jellemzően jobb, szabadabb mindennapi élet'],
+            ['Fő kockázat/korlát', 'nem gyógyítja meg a veseelégtelenséget, csak pótolja a funkciót', 'kilökődés veszélye, ezért tartós immunrendszert gyengítő kezelés szükséges'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (A kiválasztás szabályozása fejezet) megismert szabályozási mechanizmusok után ebben a záró fejezetben a kiválasztó rendszer egészségtanát tekintjük át: milyen jelekből következtethetünk problémára, és milyen kezelési lehetőségek állnak rendelkezésre súlyos veseműködési zavar esetén.',
+            sections: [
+              {
+                heading: 'Kóros anyagok megjelenése a vizeletben',
+                paragraphs: [
+                  'Egészséges vesénél a vizeletben nem jelenik meg jelentős mennyiségű fehérje, glükóz vagy vér, ezért ezek megjelenése fontos figyelmeztető jel: a fehérje a vizeletben (proteinuria) a vese szűrő működésének károsodására utalhat, hiszen egészséges esetben a nagy fehérjemolekulák nem jutnak át a szűrőn; a glükóz megjelenése (glükozúria) jellemzően kezeletlen vagy rosszul beállított cukorbetegségre utal, amikor a vér glükózszintje olyan magasra emelkedik, hogy a vese már nem képes az egészet visszaszívni; a vér megjelenése a vizeletben (hematuria) pedig sérülésre, vesekőre vagy fertőzésre utalhat.',
+                  'Éppen ezért a vizelet laboratóriumi vizsgálata (vizeletvizsgálat) egy egyszerű, nem megterhelő, mégis sokrétű információt adó diagnosztikai eszköz, amely a vese állapotán túl más szervrendszerek (pl. a hasnyálmirigy cukorbetegség esetén) működésére is felhívhatja a figyelmet.',
+                ],
+              },
+              {
+                heading: 'A vesét érintő gyakori betegségek kockázati tényezői',
+                paragraphs: [
+                  'A vese hosszú távú károsodásának kockázatát jelentősen növeli a kezeletlen magasvérnyomás-betegség (amely - ahogy azt korábban, A keringési rendszer egészségtana fejezetben megismertük - tartósan túlterheli az érfalakat, így a vese sűrű hajszálér-hálózatát is), a kezeletlen cukorbetegség, valamint egyes gyógyszerek tartós, szakszerűtlen túlfogyasztása. Ezek a tényezők fokozatosan károsíthatják a nefronokat, csökkentve a vese szűrő kapacitását.',
+                ],
+              },
+              {
+                heading: 'A vesekő',
+                paragraphs: [
+                  'A vesekő a vizeletben oldott anyagok (pl. kalciumsók) kicsapódásából, kristályosodásából kialakuló, szilárd képződmény, amely elzáródást és erős fájdalmat okozhat. Kialakulásának kockázatát növeli a tartósan kevés folyadékbevitel (ami a vizeletet töményebbé teszi, elősegítve a kristályosodást), egyes anyagcsere-rendellenességek, valamint az öröklött hajlam. A megfelelő, bőséges folyadékbevitel az egyik legfontosabb és legegyszerűbb megelőzési mód, mivel a hígabb vizeletben az anyagok kevésbé hajlamosak kicsapódni.',
+                  'A vesekő tünetei jellemzően akkor jelentkeznek, amikor a kő elindul a húgyvezeték felé és részlegesen vagy teljesen elzárja azt: ilyenkor hirtelen, hullámzó, igen erős fájdalom (vesekólika) jelentkezik, amely gyakran a hasba vagy az ágyékba is kisugárzik, és amelyet gyakran hányinger is kísér. A kisebb vesekövek jellemzően maguktól, a vizelettel távoznak, a nagyobbak eltávolítása azonban orvosi beavatkozást (pl. lökéshullámos kőzúzást) igényelhet.',
+                  'A vesekőképződés megelőzésében a bőséges folyadékbevitel mellett az egyoldalú, egyes ásványi anyagokban (pl. bizonyos oxalátokban) különösen gazdag étrend mérséklése is szerepet játszhat, hiszen ez tovább csökkentheti a kristályosodásra hajlamos anyagok töménységét a vizeletben.',
+                ],
+              },
+              {
+                heading: 'A művesekezelés jelentősége',
+                paragraphs: [
+                  'Súlyos, tartós veseműködési zavar esetén a művesekezelés (dialízis) - egy gép, amely a vér szűrését a vese helyett, azon kívül végzi el - életmentő eljárás, mivel a vese kiválasztó működése nélkül a salakanyagok felhalmozódása rövid időn belül végzetes lenne. A művesekezelést rendszeresen, jellemzően heti több alkalommal kell elvégezni, jelentősen befolyásolva az érintett életvitelét.',
+                ],
+              },
+              {
+                heading: 'A vese egészségének megőrzése',
+                paragraphs: [
+                  'A vese egészségének megőrzésében kiemelt szerepe van a megfelelő folyadékbevitelnek, a kiegyensúlyozott, sóban nem túlzottan gazdag étrendnek - ahogy azt korábban (Táplálkozás egészségtana fejezet) általánosságban megismertük -, valamint a magasvérnyomás és a cukorbetegség megfelelő kezelésének, hiszen mindkét betegség hosszú távon jelentősen károsíthatja a vese finom szűrő szerkezetét. Mivel a vese károsodása gyakran hosszú ideig tünetmentes marad, a rendszeres szűrővizsgálat (pl. vizeletvizsgálat, vérvizsgálat) itt is - ahogy azt korábban, a Homeosztázis fejezetben az önvizsgálatnál általánosságban megismertük - kiemelten fontos szerepet játszik a korai felismerésben.',
+                ],
+              },
+            ],
+            keyTerms: ['proteinuria', 'glükozúria', 'hematuria', 'vesekő', 'művesekezelés'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten a művesekezelés mellett a veseátültetés jelentőségét is ismerni kell, mint a tartós veseelégtelenség másik lehetséges megoldását.',
+            sections: [
+              {
+                heading: 'Művesekezelés és veseátültetés',
+                paragraphs: [
+                  'A művesekezelés (dialízis) tartósan, rendszeres ismétléssel képes pótolni a vese szűrő funkcióját, azonban nem gyógyítja meg a veseelégtelenséget, és jelentősen korlátozza az érintett mindennapi életét (a kezelések rendszeressége, időtartama miatt). A veseátültetés (transzplantáció) ezzel szemben egy működő donorvese beültetésével tartósan, a rendszeres kezelés szükségessége nélkül pótolhatja a kiesett funkciót, így az életminőség jelentősen jobb lehet, mint a dialízis mellett - ugyanakkor a beültetett szerv kilökődésének megelőzésére tartós, immunrendszert gyengítő gyógyszeres kezelésre van szükség, ami viszont más (pl. fertőzéses) kockázatokat hordoz.',
+                  'A két eljárás - a művesekezelés és a veseátültetés - éppen ezért nem egymást kizáró, hanem gyakran egymást kiegészítő megoldás: sok beteg előbb hosszabb ideig dialízisre szorul, amíg megfelelő donorvese nem válik elérhetővé, majd az átültetés után a dialízisre már nincs szükség.',
+                  'A veseátültetéshez szükséges donorvese származhat élő donortól (mivel az ember két veséje közül egy is elegendő a szervezet szükségleteinek fedezésére, ha az egészséges) vagy elhunyt donortól egyaránt - ez utóbbi esetben az agyhalál megállapítása és a donorszervek hatékony, gyors elosztási rendszere kulcsfontosságú ahhoz, hogy a szerv még felhasználható állapotban eljusson a várólistán lévő beteghez. Emellett a beültetett vese és a recipiens szövettani összeférhetőségének (szöveti antigének egyezésének) vizsgálata is elengedhetetlen a kilökődés kockázatának csökkentéséhez.',
+                ],
+              },
+            ],
+            keyTerms: ['veseátültetés'],
+          },
+        },
+      },
+      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 25, isFree: false, estimatedMinutes: 30,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 23, isFree: false, estimatedMinutes: 30,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 24, isFree: false, estimatedMinutes: 18,
+      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 26, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },

@@ -661,6 +661,31 @@ export const GLOSSARY = {
   'sokk': 'Súlyos vérveszteség vagy más ok miatt kialakuló, életveszélyes keringési elégtelenség, amelyet sápadtság, hidegverejték és szapora, gyenge pulzus jellemez.',
   'stroke': 'Agyi érkatasztrófa; egy agyi ér elzáródása vagy megrepedése miatt kialakuló, az agyszövet károsodásával járó állapot.',
 
+  // 4. modul, 22. fejezet: A vizeletkiválasztó rendszer működése
+  'vese': 'A vizeletkiválasztó rendszer fő szerve, amely a vér folyamatos szűrésével választja ki a vízoldékony salakanyagokat és a fölösleges vizet, sókat.',
+  'húgyhólyag': 'A vizeletet ideiglenesen tároló szerv, amelybe a húgyvezetékek szállítják a vesékben képződött vizeletet.',
+  'szűrletképzés': 'A vese kiválasztó működésének első lépése, amelynek során a vér egy része a hajszálér-gomolyagból a vesetestecske tokjába szűrődik.',
+  'visszaszívás': 'A vese kiválasztó működésének második lépése, amelynek során a szervezet számára még hasznos anyagok (víz, glükóz, sók) nagy része visszakerül a szűrletből a vérbe.',
+  'exkréció': 'A vese kiválasztó működésének harmadik lépése (kiválasztás), amelynek során egyes anyagok (pl. gyógyszerek, felesleges ionok) aktívan a keletkező vizeletbe kerülnek.',
+  'vizelet': 'A vese kiválasztó működésének végterméke, amely vizet, karbamidot, nátrium-, kálium- és klorid-ionokat, valamint kisebb mennyiségben gyógyszereket és hormonokat tartalmaz.',
+  'nefron': 'A vese működési alapegysége, amely a vesetestecskéből és az abból kiinduló, kanyargós csatornarendszerből épül fel.',
+  'vesetestecske': 'A nefron azon része, amely egy kettős falú tokból (Bowman-tok) és az abba benyúló hajszálér-gomolyagból (glomerulus) épül fel; itt zajlik a szűrletképzés.',
+  'bowman-tok': 'A vesetestecske kettős falú tokja, amely körülveszi a hajszálér-gomolyagot és felfogja a kiszűrődő szűrletet.',
+  'glomerulus': 'A vesetestecskébe benyúló, sűrűn tekeredő hajszálér-gomolyag, amelynek falán át a szűrletképzés zajlik.',
+
+  // 4. modul, 23. fejezet: A kiválasztás szabályozása
+  'folyadékháztartás': 'A szervezet víz- és sóegyensúlyának állapota, amelyet a vese kiválasztó működése és hormonális szabályozás tart fenn.',
+  'vazopresszin': 'Antidiuretikus hormon (ADH), amely a testfolyadékok töménységének emelkedésére választódik ki, és a vesében fokozza a víz visszaszívását.',
+  'aldoszteron': 'Hormon, amely a vesében a nátrium visszaszívását fokozza, miközben a káliumion kiválasztását segíti; a szervezet sóháztartásának szabályozásában játszik kulcsszerepet.',
+
+  // 4. modul, 24. fejezet: A kiválasztó szervrendszer egészségtana
+  'proteinuria': 'Fehérje megjelenése a vizeletben, amely jellemzően a vese szűrő működésének károsodására utal.',
+  'glükozúria': 'Glükóz megjelenése a vizeletben, amely jellemzően kezeletlen vagy rosszul beállított cukorbetegségre utal.',
+  'hematuria': 'Vér megjelenése a vizeletben, amely sérülésre, vesekőre vagy fertőzésre utalhat.',
+  'vesekő': 'A vizeletben oldott anyagok (pl. kalciumsók) kicsapódásából, kristályosodásából kialakuló szilárd képződmény, amely elzáródást és erős fájdalmat okozhat.',
+  'művesekezelés': 'Dialízis; olyan eljárás, amely súlyos, tartós veseműködési zavar esetén egy gép segítségével pótolja a vese szűrő funkcióját.',
+  'veseátültetés': 'Transzplantáció; egy működő donorvese beültetése, amely tartósan, rendszeres kezelés szükségessége nélkül pótolhatja a kiesett vesefunkciót.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
