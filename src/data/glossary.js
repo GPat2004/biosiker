@@ -518,6 +518,149 @@ export const GLOSSARY = {
   'gerincferdülés': 'A gerincoszlop kóros, oldalirányú elgörbülése (scoliosis).',
   'anabolikus szteroid': 'Hormonális hatású, tiltott teljesítményfokozó szer, amelynek szakszerűtlen használata súlyos, akár visszafordíthatatlan károsodásokat okozhat.',
 
+  // 4. modul, 7. fejezet: Táplálkozás
+  'táplálék': 'A szervezetbe felvett étel, amely még emésztésre vár, mielőtt a szervezet ténylegesen fel tudná használni alkotórészeit.',
+  'tápanyag': 'A táplálék emésztés révén felszabadított alkotórésze (szénhidrát, fehérje, zsír, vitamin, ásványi anyag, víz), amelyet a szervezet fel tud szívni és hasznosítani tud.',
+  'bélperisztaltika': 'A bélcsatorna falában lévő izomzat hullámszerű összehúzódása, amely a táplálékot a tápcsatornán végig továbbmozgatja.',
+  'testtömegindex': 'A testtömeg (kg) és a testmagasság négyzetének (m²) hányadosa; tájékoztató jellegű mutató, amely nem veszi figyelembe a testösszetételt.',
+  'alapanyagcsere': 'A szervezet teljes nyugalmi állapotban is elhasznált legkisebb energiamennyisége, amely az alapvető élettani működések fenntartásához szükséges.',
+
+  // 4. modul, 8. fejezet: Emésztés
+  'fogképlet': 'A fogak típusát és számát negyedenként megadó jelölés; felnőtt embernél negyedenként 2 metsző-, 1 szem-, 2 kis- és 3 nagyőrlőfog.',
+  'pepszin': 'A gyomorban termelődő, fehérjebontó enzim, amely erősen savas kémhatáson fejti ki hatását.',
+  'pepszinogén': 'A pepszin inaktív előanyaga, amelyet a gyomor sósava aktivál.',
+  'amiláz': 'A nyálmirigyekben és a hasnyálmirigyben termelődő enzim, amely a keményítőt bontja.',
+  'hasnyál': 'A hasnyálmirigy által termelt, lúgos kémhatású emésztőnedv, amely mind a négy fő tápanyagcsoport bontásához tartalmaz enzimeket.',
+  'epe': 'A máj által termelt, az epehólyagban tárolt váladék, amely nem enzim, hanem a zsírok emulgeálásával segíti azok bontását.',
+  'laktáz': 'A vékonybél nyálkahártyájában termelődő enzim, amely a tejcukrot (laktózt) glükózra és galaktózra bontja.',
+  'lipáz': 'A hasnyálmirigyben termelődő enzim, amely az emulgeált zsírokat (trigliceridek) zsírsavakra és glicerinre bontja.',
+  'nukleáz': 'A hasnyálmirigyben termelődő enzim, amely a nukleinsavakat (DNS, RNS) kisebb egységekre bontja.',
+  'tripszin': 'A hasnyálmirigyben inaktív előanyagként termelődő, a vékonybélben aktiválódó enzim, amely a fehérjebontást folytatja az aminosavakig.',
+
+  // 4. modul, 9. fejezet: Felszívódás
+  'bélbolyh': 'A vékonybél belső falát beborító, ujjszerű nyúlvány, amely hatalmasra növeli a felszívó felületet.',
+  'vastagbél': 'A tápcsatorna azon szakasza, amely a fel nem szívódott anyagokból visszaszívja a vizet és az ásványi anyagokat, tömörítve a székletet.',
+  'máj': 'Sokrétű szerepű mirigyes szerv: emésztőnedvet (epét) termel, fehérjét, glükózt és glikogént szintetizál, tápanyagokat raktároz, és méregtelenít.',
+  'bélflóra': 'A vastagbélben élő, hatalmas számú baktérium, amelyek egy része mutualista kapcsolatban él a szervezettel (pl. K-vitamint termel).',
+  'dezaminálás': 'Az aminosavak feleslegének a májban történő lebontása, amely során a nitrogéntartalmú rész karbamiddá alakul.',
+  'bilirubin': 'A lebontott vörösvértestekből származó festékanyag, amelyet a máj dolgoz fel és választ ki az epével.',
+  'sárgaság': 'A bőr és a szemfehérje sárgás elszíneződése, amelyet a vérben felhalmozódó bilirubin okoz, jellemzően a máj működési zavara miatt.',
+
+  // 4. modul, 10. fejezet: A táplálkozás szabályozása
+  'éhségérzet': 'A vércukorszint csökkenése és a gyomor kiürülése által kiváltott érzet, amely táplálékfelvételre ösztönöz.',
+  'szomjúságérzet': 'A testfolyadékok ozmotikus koncentrációjának megemelkedése által kiváltott érzet, amely folyadékfelvételre ösztönöz.',
+  'minőségi éhezés': 'Olyan éhezési forma, amikor a táplálék mennyisége elegendő, de valamely tápanyag (pl. fehérje, vitamin) tartósan hiányzik belőle.',
+  'mennyiségi éhezés': 'Olyan éhezési forma, amikor általánosan, tartósan túl kevés az elfogyasztott táplálék energiatartalma.',
+  'ghrelin': 'A gyomor által üres állapotban termelt hormon, amely a hipotalamuszra hatva éhségérzetet vált ki.',
+  'leptin': 'A zsírszövet által termelt hormon, amely a jóllakottság érzetét erősíti, csökkentve a táplálékfelvétel iránti igényt.',
+
+  // 4. modul, 11. fejezet: Táplálkozás egészségtana
+  'vitaminhiány': 'Egy adott vitamin tartós, elégtelen bevitele vagy felszívódása miatt kialakuló állapot, amely jellegzetes hiánytünetekkel jár.',
+  'alultápláltság': 'Elégtelen energia- és/vagy tápanyagbevitel miatt kialakuló állapot, amely legyengült immunrendszerhez és fejlődési elmaradáshoz vezethet.',
+  'túltápláltság': 'Tartósan a szükségletnél nagyobb energiabevitel miatt kialakuló állapot, amely elhízáshoz és anyagcsere-betegségekhez vezethet.',
+  'élelmiszer-tartósítás': 'Az élelmiszerek eltarthatóságát növelő eljárások (pl. hűtés, fagyasztás, szárítás), amelyek a mikroorganizmusok szaporodását gátolják.',
+  'e-vitamin': 'Zsírban oldódó vitamin, amely antioxidánsként védi a sejtmembránok zsírsavait a károsító oxidációtól.',
+  'k-vitamin': 'Zsírban oldódó vitamin, amely nélkülözhetetlen a véralvadási folyamatban részt vevő fehérjék előállításához.',
+  'b1-vitamin': 'Vízben oldódó vitamin (tiamin), amely a szénhidrát-anyagcsere egyik kulcsfontosságú koenzimjének alkotórésze.',
+  'b6-vitamin': 'Vízben oldódó vitamin, amely az aminosav-anyagcsere számos lépésében vesz részt koenzimként.',
+  'zsírban oldódó vitamin': 'Olyan vitamin (D, A, E, K), amely a zsírokkal együtt szívódik fel, és a szervezet raktározni képes.',
+  'vízben oldódó vitamin': 'Olyan vitamin (B-vitaminok, C-vitamin), amely nem, vagy csak korlátozottan raktározható, a fölöslege a vizelettel ürül.',
+
+  // 4. modul, 12. fejezet: Légcsere
+  'léghólyagocska': 'A tüdő legmélyebb légúti egységei (alveolusok), amelyek falát sűrű hajszálér-hálózat veszi körül; itt zajlik a gázcsere.',
+  'mellhártya': 'A tüdőt körülvevő kettős hártya (pleura), amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé.',
+  'vitálkapacitás': 'A maximális erőltetett belégzést követő maximális erőltetett kilégzéssel kifújható levegő térfogata.',
+  'légzési perctérfogat': 'A percenkénti légzésszám és az egy légvételre jutó levegőmennyiség (légzési térfogat) szorzata.',
+  'intrapleurális nyomás': 'A mellhártya két lemeze közötti résben uralkodó, normál esetben negatív nyomás, amely a tüdőt tágra húzva tartja.',
+  'alveoláris nyomás': 'A léghólyagocskákban uralkodó nyomás, amely belégzéskor a légköri nyomás alá csökken, kilégzéskor fölé emelkedik.',
+  'donders-modell': 'Klasszikus fizikai szemléltető eszköz (harang-modell), amely gumimembránnal és léggömbökkel szemlélteti a légzőmozgások mechanizmusát.',
+
+  // 4. modul, 13. fejezet: Gázcsere
+  'gázcsere': 'Az oxigén és a szén-dioxid diffúzión alapuló kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között.',
+  'sejtlégzés': 'A sejteken belül, elsősorban a mitokondriumban lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel.',
+  'hemoglobin': 'A vörösvérsejtekben található, négy alegységből álló fehérje, amely megköti és szállítja az oxigént.',
+  'parciális nyomás': 'Egy gázkeverék egyik alkotó gázának a teljes nyomáshoz való hozzájárulása; a gázcsere iránya a parciális nyomáskülönbségtől függ.',
+
+  // 4. modul, 14. fejezet: Hangképzés
+  'gégefő': 'A légcső és a garat találkozásánál elhelyezkedő szerv, amely a pajzsporcból, a gégefedőből és a hangszalagokból épül fel.',
+  'pajzsporc': 'A gége elülső, kiemelkedő porca (az "ádámcsutka"), amely védi a gége belső részeit.',
+  'gégefedő': 'A gégefő azon része, amely nyeléskor reflexesen lezárja a légutat, megakadályozva, hogy táplálék kerüljön a légcsőbe.',
+  'hangszalag': 'A gégefőben elhelyezkedő szalagpár, amely a rajta átáramló levegő hatására rezgésbe jön, ez kelti a hangot.',
+  'kannaporc': 'A gége hátsó részén elhelyezkedő, elmozdítható porcpár, amelyhez a hangszalagok hátsó vége rögzül.',
+  'hangrés': 'A hangszalagok közötti rés, amely nyugodt légzéskor tágra nyílik, hangképzéskor beszűkül.',
+  'rezonátortér': 'A garat, a szájüreg és az orrüreg mint üreg, amely az alaphang egyes felharmonikusait felerősítve alakítja ki a hangszínt.',
+  'felharmonikus': 'Az alaphangnál magasabb frekvenciájú összetevő, amelynek relatív erőssége meghatározza a hangszínt.',
+
+  // 4. modul, 15. fejezet: A légzés szabályozása
+  'légzőközpont': 'Az agytörzsben, a nyúltvelőben található idegi központ, amely a vér szén-dioxid-koncentrációja alapján szabályozza a légzés mélységét és gyakoriságát.',
+  'szén-dioxid': 'A sejtlégzés végterméke, amelynek vérbeli koncentrációja elsődlegesen szabályozza a légzés ütemét.',
+  'kemoreceptor': 'Kémiai ingerekre (pl. a vér szén-dioxid-koncentrációjára) érzékeny érzékelő sejt, amely az agytörzsben és a nagyerek falában található.',
+  'mechanoreceptor': 'Mechanikai ingerekre (pl. a tüdő tágulására) érzékeny érzékelő sejt, amely a tüdő falában található.',
+  'hering-breuer-reflex': 'A tüdő nyúlásérzékelő receptorai által kiváltott reflex, amely a tüdő kellő kitágulásakor leállítja a belégzést.',
+
+  // 4. modul, 16. fejezet: A légzés és a légzőrendszer egészségtana
+  'asztma': 'A hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése, amely nehezített, sípoló légzést okoz.',
+  'dohányzás': 'A légzőrendszert súlyosan károsító szokás, amely tönkreteszi a légutak csillós hámsejtjeit és a léghólyagocskák felületi feszültségét szabályozó surfactant termelését.',
+  'középfülgyulladás': 'A középfül gyulladása, amely gyakran a torokgyulladásból a fülkürtön át terjedő fertőzés következménye.',
+  'fülkürt': 'A garatot és a középfület összekötő járat (Eustach-kürt), amelyen keresztül a fertőzés átterjedhet az egyik szervről a másikra.',
+  'légmell': 'A mellhártyaűr negatív nyomásának megszűnése (pl. sérülés miatt bejutó levegő következtében), amely a tüdő összeeséséhez vezet.',
+  'keszonbetegség': 'Víz alatti, magas nyomáson végzett munka utáni túl gyors felszínre emelkedéskor, a szövetekben feloldódott nitrogén gázbuborékként való felszabadulása miatt kialakuló állapot.',
+  'felületi feszültség': 'A folyadékmolekulák közötti vonzóerő által létrehozott feszültség, amely a léghólyagocskák belső felszínén azok összeesésének irányába hatna.',
+  'surfactant': 'A léghólyagocskák belső felszínét borító, felületaktív anyag, amely csökkenti a felületi feszültséget, megkönnyítve a léghólyagocskák nyitva tartását.',
+
+  // 4. modul, 17. fejezet: A testfolyadékok
+  'vérplazma': 'A vér folyékony állománya, amely vizet, fehérjéket, sókat, tápanyagokat, hormonokat és salakanyagokat tartalmaz.',
+  'alakos elemek': 'A vér sejtes összetevői (vörösvérsejtek, fehérvérsejtek, vérlemezkék), amelyek a vérplazmában úsznak.',
+  'szövetnedv': 'A hajszálerek faláról a szövetek közötti térbe kiszűrődő, a vérplazmához hasonló összetételű folyadék, amely körülveszi a testi sejteket.',
+  'nyirok': 'A szövetnedv azon része, amelyet a hajszálerek nem tudnak visszaszívni, ezért a nyirokereken át jut vissza a vérkeringésbe.',
+  'albumin': 'A vérplazma legnagyobb mennyiségben jelen lévő fehérjéje, amely az ozmotikus nyomás fenntartásáért felelős.',
+  'fibrinogén': 'A vérplazmában oldott, a véralvadás során fibrinné alakuló fehérje.',
+  'vércsoport': 'A vörösvérsejtek felszíni antigénjei alapján meghatározott csoportosítás (A, B, AB, 0), amely a vérátömlesztés összeférhetőségét szabja meg.',
+  'antigén': 'A sejtfelszínen található molekula, amely alapján a szervezet immunrendszere felismeri a saját, illetve az idegen sejteket.',
+  'agglutináció': 'Az idegen antigénű vörösvértestek összecsomósodása az ellenük irányuló antitestek hatására, amely összeférhetetlen vérátömlesztéskor életveszélyes reakciót okoz.',
+
+  // 4. modul, 18. fejezet: A szöveti keringés
+  'vörösvérsejt': 'A csontvelőben keletkező alakos elem, amelynek fő feladata az oxigén (és részben a szén-dioxid) szállítása.',
+  'fehérvérsejt': 'A csontvelőben keletkező alakos elem, amely a szervezet védekezésében vesz részt, egyes típusai amőboid mozgásra is képesek.',
+  'vérlemezke': 'A csontvelőben keletkező alakos elem (trombocita), amely a véralvadási folyamatban játszik kulcsszerepet.',
+  'vérszegénység': 'Anémia; a vörösvérsejtek vagy a hemoglobin mennyiségének csökkenése, amely a szövetek oxigénellátásának romlásához vezet.',
+  'trombózis': 'Kóros vérrögképződés az erek belsejében, amely elzárhatja az adott eret.',
+  'nyirokcsomó': 'A nyirokerek mentén elhelyezkedő szerv, amely kiszűri a kórokozókat és részt vesz a fehérvérsejtek aktiválásában.',
+  'hem': 'A hemoglobin nem fehérje természetű alkotórésze, amely négy nitrogéntartalmú gyűrűből és egy központi vasionból épül fel.',
+  'globin': 'A hemoglobin fehérje természetű alkotórésze; a hemoglobin négy globinláncból és a hozzájuk kapcsolódó hem csoportokból áll.',
+  'trombin': 'A véralvadás során aktiválódó enzim, amely a fibrinogént fibrinné alakítja.',
+  'fibrin': 'A véralvadás során a fibrinogénből képződő, rostos, oldhatatlan fehérje, amely hálót képezve zárja le a sérülést.',
+
+  // 4. modul, 19. fejezet: A szív és az erek
+  'pitvar': 'A szív két felső ürege, amely a beérkező vért fogadja, majd a kamrákba továbbítja.',
+  'kamra': 'A szív két alsó ürege, amely a vért a nagy erekbe (tüdőartéria, testi nagyartéria) löki ki.',
+  'billentyű': 'A szív üregei, illetve a kamrák és a nagy erek között elhelyezkedő szerkezet, amely megakadályozza a vér visszaáramlását.',
+  'koszorúér': 'A szívizom saját vérellátását biztosító ér; elzáródása a szívizom oxigénhiányát és elhalását (szívinfarktust) okozhatja.',
+  'artéria': 'Verőér; a szívtől távolodó irányban, magas nyomású vért szállító, vastag falú, rugalmas ér.',
+  'véna': 'Visszér; a szív felé alacsony nyomású vért szállító, billentyűkkel ellátott ér, amely megakadályozza a vér visszafolyását.',
+  'ozmotikus nyomás': 'A plazmafehérjék által létrehozott, a folyadékot a vér felé "visszahúzó" nyomás, amely a hajszálér végén a szövetnedv visszaszívódását idézi elő.',
+  'verőtérfogat': 'Az a vérmennyiség, amelyet a szív egyetlen összehúzódás (szisztolé) alkalmával kilök.',
+  'perctérfogat': 'A verőtérfogat és a szívfrekvencia szorzata; az egy perc alatt a szív által kilökött vérmennyiség.',
+  'izompumpa': 'A vázizmok összehúzódása által a vénákra és a nyirokerekre gyakorolt összenyomó hatás, amely elősegíti a vér és a nyirok szív felé áramlását.',
+
+  // 4. modul, 20. fejezet: A keringés szabályozása
+  'szívfrekvencia': 'A szív percenkénti összehúzódásainak száma.',
+  'vérnyomás': 'Az artériákban uralkodó nyomás, amelynek felnőttkori normál értéke kb. 120/80 Hgmm.',
+  'lép': 'A hasüregben elhelyezkedő szerv, amely az elhasználódott vörösvértesteket bontja le, vért raktároz, és immunológiai szerepet is betölt.',
+  'érszűkület': 'Az erek falában lévő izomrostok összehúzódása, amely csökkenti az adott érszakaszon átáramló vér mennyiségét.',
+  'értágulat': 'Az erek falában lévő izomrostok elernyedése, amely növeli az adott érszakaszon átáramló vér mennyiségét.',
+  'szinuszcsomó': 'A jobb pitvar falában található, önmagát automatikusan gerjesztő szövet, amely a szív "saját ritmusadója" (pacemakere).',
+  'pitvar-kamrai csomó': 'A szinuszcsomóból érkező ingerületet a pitvarokból a kamrák felé késleltetve továbbító szövet, amely biztosítja a pitvarok és a kamrák egymás utáni összehúzódását.',
+  'pacemaker': 'A szív önmagát automatikusan, ritmikusan gerjesztő "saját ritmusadója"; elsődlegesen a szinuszcsomó tölti be ezt a szerepet.',
+
+  // 4. modul, 21. fejezet: A keringési rendszer egészségtana
+  'érelmeszesedés': 'Az érfal belső felszínén lerakódó zsíros anyagok (elsősorban koleszterin) miatt kialakuló, az ér átmérőjét szűkítő elváltozás.',
+  'visszértágulat': 'A vénák (főként a lábakban) kóros kitágulása, amely a vénák billentyűinek elégtelen működésével jár együtt.',
+  'magasvérnyomás': 'Hipertónia; a tartósan a normálérték felett maradó vérnyomás állapota, amely hosszú távon terheli a szívet és az érfalakat.',
+  'szívinfarktus': 'A szívizom egy részének elhalása a koszorúér elzáródása miatt kialakuló oxigénhiány következtében.',
+  'sokk': 'Súlyos vérveszteség vagy más ok miatt kialakuló, életveszélyes keringési elégtelenség, amelyet sápadtság, hidegverejték és szapora, gyenge pulzus jellemez.',
+  'stroke': 'Agyi érkatasztrófa; egy agyi ér elzáródása vagy megrepedése miatt kialakuló, az agyszövet károsodásával járó állapot.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
