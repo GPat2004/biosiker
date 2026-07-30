@@ -708,7 +708,7 @@ export const GLOSSARY = {
   'jelátvitel': 'Az a folyamat, amelynek során egy jelmolekula receptorhoz kötődése sejten belüli válaszfolyamatot indít el, megváltoztatva a sejt működését.',
 
   // 2. modul, 12. fejezet emelt kiegészítés: crossing over, ivarsejt-képzés
-  'szinapszis': 'A homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején - itt zajlik a crossing over.',
+  'szinapszis': 'Genetikai értelemben: a homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején, itt zajlik a crossing over. Idegrendszeri értelemben (lásd az Emberi szervezet modul azonos nevű fejezetét): két idegsejt, vagy egy idegsejt és egy izom-, illetve mirigysejt közötti érintkezési, jelátviteli hely.',
   'tetrád': 'Négy kromatidából álló szerkezet (bivalens), amely a szinapszis során, a homológ kromoszómapár összetapadásakor jön létre.',
   'kiazma': 'Az a pont, ahol a homológ kromatidák fizikailag elszakadnak és szakaszt cserélnek egymással a crossing over során.',
   'spermatogenezis': 'A hímivarsejt-képzés folyamata, amelynek során mind a négy meiózisból keletkező sejt működőképes spermiummá alakul.',
@@ -896,4 +896,106 @@ export const GLOSSARY = {
   'kromoszóma': 'A DNS és a hozzá kapcsolódó fehérjék tömör, sejtosztódáskor látható formája.',
   'rekombináció': 'A meiózis során a homológ kromoszómák közötti génkicserélődés, amely növeli a genetikai változatosságot.',
   'apoptózis': 'Programozott sejthalál, amely a szervezet számára hasznos, szabályozott folyamat.',
+
+  // 4. modul, 25. fejezet: Sejtszintű folyamatok
+  'idegsejt': 'Az idegrendszer alapvető sejtje (neuron), amelynek feladata az ingerület keletkezése, vezetése és más sejtekre való továbbadása.',
+  'dendrit': 'Az idegsejt rövid, elágazó nyúlványa, amely a bejövő ingereket fogadja.',
+  'axon': 'Az idegsejt hosszú nyúlványa, amely a kialakult ingerületet más sejtek felé továbbítja.',
+  'ingerület': 'Az inger hatására a sejt membránján átmenetileg végigfutó, jellegzetes elektromos jelenség (akciós potenciál).',
+  'ingerküszöb': 'Az a minimális ingererősség, amely már éppen kiváltja az ingerületet.',
+  'lokális potenciál': 'A dendriteken és a sejttesten keletkező, térben korlátozottan terjedő és fokozatosan gyengülő potenciálváltozás.',
+  'csúcspotenciál': 'A tovaterjedő akciós potenciál, amely az axoneredésnél az ingerküszöb elérésekor alakul ki, és csillapítatlanul, változatlan nagysággal terjed tovább.',
+  'axoneredés': 'Az idegsejt sejtteste és axonja találkozásánál lévő terület, ahol a helyi potenciálok összegződése kiválthatja a tovaterjedő akciós potenciált.',
+
+  // 4. modul, 26. fejezet: Szinapszis (a 'szinapszis' idegrendszeri jelentése a fenti, 2. modulbeli bejegyzésben is szerepel)
+  'neurotranszmitter': 'Jelátvivő anyag, amelyet a preszinaptikus sejt szabadít fel a szinaptikus résbe, hogy ingerületet közvetítsen a következő sejt felé.',
+  'szinaptikus rés': 'A pre- és a posztszinaptikus sejt közötti keskeny tér, amelyen át a jelátvivő anyag diffundál.',
+  'preszinaptikus': 'A szinapszis azon oldala, amely az ingerületet szállítja és a jelátvivő anyagot felszabadítja.',
+  'posztszinaptikus': 'A szinapszis azon oldala, amely a jelátvivő anyagot receptorral fogadja.',
+  'reuptake': 'A jelátvivő anyag preszinaptikus sejtbe történő visszavétele, amely megszünteti annak hatását a szinaptikus résben.',
+  'gliasejt': 'Az idegrendszer támogató sejtje, amely nem továbbít ingerületet, de táplálja az idegsejteket és részt vesz a velőshüvely kialakításában.',
+  'velőshüvely': 'Az axonok körül kialakuló szigetelő réteg (mielinhüvely), amely jelentősen felgyorsítja az ingerület vezetési sebességét.',
+  'szklerózis multiplex': 'Autoimmun eredetű betegség, amelyben a szervezet saját immunrendszere károsítja a velőshüvelyt, lassítva vagy megszakítva az ingerületvezetést.',
+
+  // 4. modul, 27. fejezet: Az idegrendszer általános jellemzése
+  'receptor': 'Egy inger felvételére specializálódott sejt vagy sejtrész.',
+  'adekvát inger': 'Az az ingertípus, amelyre egy adott receptor a legérzékenyebb, a legalacsonyabb ingerküszöbbel reagál.',
+  'központi idegrendszer': 'Az idegrendszer agyból és gerincvelőből álló része.',
+  'környéki idegrendszer': 'Az idegrendszer testben mindenhová elágazó idegekből és dúcokból álló része.',
+  'fehérállomány': 'A velőshüvelyes (ezért fehéres színű) axonokból álló idegszövet.',
+  'szürkeállomány': 'Az idegsejttestekből és dendritekből (ezért szürkés színű) álló idegszövet.',
+  'reflexkör': 'A reflexívnek egy visszacsatolási hurokkal kiegészített változata, amely lehetővé teszi a válasz finomítását.',
+  'agykéreg': 'Az agy felszínén elhelyezkedő, idegsejttestekből álló réteg (szürkeállomány), amely a magasabb rendű idegi feldolgozást végzi.',
+  'barázda': 'Az agykéreg felszínének befelé húzódó mélyedése, amely a tekervényekkel együtt megnöveli a kéreg összfelületét.',
+  'tekervény': 'Az agykéreg felszínének kidudorodó redője, amely a barázdákkal együtt megnöveli a kéreg összfelületét.',
+
+  // 4. modul, 28. fejezet: A gerincvelő és az agy
+  'agy-gerincvelői folyadék': 'A központi idegrendszert körülvevő folyadék (liquor), amely párnázó, ütéscsillapító szerepet tölt be.',
+  'agyhártya': 'A központi idegrendszert védő, több rétegű kötőszöveti burok.',
+  'térdreflex': 'Izomeredetű gerincvelői reflex, amelyet az inas gyors megütésével lehet kiváltani, és amely az izomtónus fenntartásában segít.',
+  'agytörzs': 'Az agy azon része (nyúltvelő, híd, középagy), amely az alapvető életfunkciók (pl. légzés, keringés) szabályozásáért felel.',
+  'köztiagy': 'Az agy azon része, amely a talamuszból (érzőpályák átkapcsoló állomása) és a hipotalamuszból (homeosztázis, hormonrendszer irányítása) áll.',
+  'kisagy': 'Az agy azon része, amely elsősorban a mozgások összehangolásáért (koordinációjáért) felelős.',
+  'nagyagy': 'Az agy azon része, amely a magasabb rendű idegi működéseket (tudatos gondolkodás, érzékelés, mozgásirányítás) végzi.',
+  'hálózatos állomány': 'Az agytörzsben elhelyezkedő szerkezet (retikuláris formáció), amely az éberségi szintet és az alvás-ébrenléti ciklust tartja fenn.',
+  'agyfélteke': 'A nagyagy két fele, amelyek funkciói (nyelvi-logikai vs. téri-vizuális feldolgozás) nem teljesen egyenrangúak, de szorosan együttműködnek.',
+
+  // 4. modul, 29. fejezet: Testérző rendszerek
+  'elsődleges érzőkéreg': 'Az agykéreg azon területe, ahol a testérzékelés tudatosul; sérülése az adott testtájékról érkező érzékelés tudatosulásának kiesését okozza.',
+  'mechanikai receptor': 'Nyomást, érintést és rezgést érzékelő receptortípus.',
+  'fájdalomreceptor': 'A szöveti károsodást jelző, potenciálisan veszélyes ingerekre reagáló receptortípus.',
+  'hőreceptor': 'A hideg és a meleg érzékelését lehetővé tevő receptortípus.',
+  'szabad idegvégződés': 'Egyszerű felépítésű, gyakran fájdalom érzékelésére szolgáló receptor, amely nem kapcsolódik specializált érzékelő sejthez.',
+  'kéreg alatti feldolgozás': 'Az érzőpályák kéreg alatti központjaiban (pl. a talamuszban) történő előzetes feldolgozás, mielőtt az információ elérné az agykérget.',
+
+  // 4. modul, 30. fejezet: Érzékelés és látás
+  'érzet': 'Egy inger agyi, szubjektív megélése, amely az ingerület agykéregben történő tudatosulásakor jön létre.',
+  'illúzió': 'Egy valóban létező, fizikai inger téves, a valóságtól eltérő értelmezése.',
+  'hallucináció': 'Olyan érzet, amely valós, külső inger nélkül keletkezik, mégis valóságosnak tűnik.',
+  'retina': 'A szem ideghártyája, amelyben a fényérzékeny receptorok (csapok és pálcikák) helyezkednek el.',
+  'vakfolt': 'A retina receptormentes pontja, ahol a látóideg elhagyja a szemet.',
+  'akkomodáció': 'A szemlencse alakjának izmos szabályozás általi megváltoztatása, amely lehetővé teszi a közeli és távoli tárgyakra való éles fókuszálást.',
+  'rövidlátás': 'Myopia; fénytörési hiba, amelynél a kép a retina elé fókuszálódik, ezért a távoli tárgyak elmosódottak.',
+  'távollátás': 'Hyperopia; fénytörési hiba, amelynél a kép a retina mögé fókuszálódna, ezért a közeli tárgyak elmosódottak.',
+  'zöldhályog': 'Glaukóma; a szem belnyomásának kóros emelkedése, amely kezeletlenül károsíthatja a látóideget és vaksághoz vezethet.',
+  'csap': 'A retina fényérzékeny sejtje, amely erősebb megvilágítást igényel, de lehetővé teszi a színlátást.',
+  'pálcika': 'A retina fényérzékeny sejtje, amely rendkívül fényérzékeny, ezért gyenge megvilágítás mellett is működik, de színek megkülönböztetésére nem képes.',
+  'dúcsejt': 'A retina sejtje, amely a csapoktól és pálcikáktól érkező jeleket összegzi, mielőtt azok a látóidegen keresztül elhagynák a szemet.',
+
+  // 4. modul, 31. fejezet: Hallás és egyensúlyérzés
+  'dobhártya': 'A középfül azon része, amely a beérkező hanghullám hatására rezgésbe jön.',
+  'hallócsontocska': 'A középfülben található apró csont (kalapács, üllő, kengyel), amely a hangrezgést mechanikusan erősíti és továbbítja.',
+  'csiga': 'A belső fül hallásért felelős, csigavonalban tekeredő szerve, amelyben az alaphártya és a Corti-szerv található.',
+  'tömlőcske': 'A belső fül egyensúlyérzékelő szerve, amely a fej egyenes vonalú gyorsulását és gravitációhoz viszonyított helyzetét érzékeli.',
+  'zsákocska': 'A belső fül egyensúlyérzékelő szerve, amely a tömlőcskéhez hasonlóan a fej lineáris gyorsulását és helyzetét érzékeli.',
+  'félkörös ívjárat': 'A belső fül három, egymásra merőleges egyensúlyérzékelő csatornája, amely a fej forgó irányú mozgásait érzékeli.',
+  'alaphártya': 'A csigában húzódó szerkezet, amely a hang frekvenciájától függően más-más pontján rezeg maximálisan, ezáltal kódolva a hangmagasságot.',
+  'corti-szerv': 'Az alaphártyán elhelyezkedő szerv, amely a hallás érzékelő sejtjeit, a szőrsejteket tartalmazza.',
+  'szőrsejt': 'A belső fül mechanoreceptor sejtje, amely mechanikai rezgést vagy elmozdulást alakít át idegi ingerületté a hallásban és az egyensúlyérzékelésben.',
+  'otolit': 'A tömlőcskében és a zsákocskában található apró kristály, amely a gravitáció vagy a gyorsulás hatására elmozdulva ingerli a szőrsejteket.',
+  'izomorsó': 'Az izomban található receptor, amely az izom nyúlásának mértékét érzékeli.',
+  'ínorsó': 'Az ínban található receptor, amely az ín feszülését érzékeli.',
+
+  // 4. modul, 32. fejezet: Kémiai érzékelés
+  'szaglóhám': 'Az orrüreg felső részén elhelyezkedő szövet, amely a szagérzékelő receptorsejteket tartalmazza.',
+  'ízlelőbimbó': 'A nyelven elhelyezkedő érzékszervi egység, amely az öt alapízt (édes, sós, savanyú, keserű, umami) képes megkülönböztetni.',
+  'alapíz': 'Az öt alapvető ízminőség egyike (édes, sós, savanyú, keserű, umami), amelyet az ízlelőbimbók megkülönböztetnek.',
+  'retronazális szaglás': 'A szájüregből a garaton át az orrüregbe jutó illatanyagok érzékelése, amely az étel teljes íz-élményének nagy részéért felelős.',
+  'kombinatorikus kódolás': 'Az az elv, amely szerint egy adott illatanyag több receptortípust is eltérő mértékben aktivál, és az agy ezt az egyedi mintázatot értelmezi jellegzetes illatként.',
+  'szaglási adaptáció': 'Az a jelenség, amikor egy tartósan jelen lévő szag idővel egyre kevésbé tudatosul, majd eltűnik a tudatos érzékelésből.',
+
+  // 4. modul, 33. fejezet: Testmozgató rendszerek
+  'mozgatókéreg': 'Az agykéreg azon területe, amely az akaratlagos mozgások tervezését és kiváltását végzi.',
+  'mozgatópálya': 'Az agykéregből induló idegpálya, amely a gerincvelőn és a mozgatóidegsejteken keresztül a vázizmokhoz juttatja el a mozgásparancsot.',
+  'kereszteződés': 'A mozgatópályák nagy részének átkereszteződése az agytörzs szintjén, amely miatt az egyik agyfélteke az ellenkező oldali testfél mozgását irányítja.',
+  'mozgáskoordináció': 'A mozgások időbeli és erősségbeli összehangolása, amelyet elsősorban a kisagy végez.',
+  'bazális ganglionok': 'Kéreg alatti magvak, amelyek átkapcsolási pontként működve részt vesznek a jól begyakorolt, automatizált mozgások szabályozásában.',
+  'automatizált mozgás': 'Sokat gyakorolt, jól begyakorolt mozgás, amelynek irányítása fokozatosan a kéreg alatti magvakra tevődik át, tudatos odafigyelés nélkül végrehajthatóvá válva.',
+
+  // 4. modul, 34. fejezet: Vegetatív érző és mozgató rendszerek
+  'vegetatív idegrendszer': 'Az idegrendszer azon része (más néven autonóm idegrendszer), amely a belső szervek akaratlan, önműködő szabályozásáért felelős.',
+  'szimpatikus idegrendszer': 'A vegetatív idegrendszer azon része, amely a szervezetet megterhelést, veszélyt vagy fokozott aktivitást igénylő helyzetekre ("harcolj vagy menekülj") készíti fel.',
+  'paraszimpatikus idegrendszer': 'A vegetatív idegrendszer azon része, amely a nyugalmi, "pihenés és emésztés" jellegű állapotot segíti elő.',
+  'noradrenalin': 'A szimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
+  'acetilkolin': 'A paraszimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
 };
