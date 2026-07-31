@@ -6539,15 +6539,278 @@ export const CURRICULUM = [
     icon: 'Leaf',
     color: 'from-lime-500 to-green-600',
     chapters: [
-      { id: 'populacio', title: 'Populáció', order: 1, isFree: true, estimatedMinutes: 14,
+      {
+        id: 'populacio',
+        title: 'Populáció',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'Ezzel a fejezettel egy új témakört kezdünk: az egyed feletti szerveződési szinteket, elsőként a populáció fogalmával. Ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük, a populáció az egyed feletti szerveződés legalsó szintje - azt vizsgáljuk, hogyan határozható meg, és milyen jellemzőkkel írható le.',
+            sections: [
+              {
+                heading: 'A populáció fogalma',
+                paragraphs: [
+                  'A populáció ökológiai értelemben egy adott fajhoz tartozó, egy adott területen, egy időben együtt élő egyedek összessége. Genetikai értelemben ugyanez a populáció egy közös génállományt (génkészletet) alkot: az egyedek egymással szaporodásra képesek, így géneik a következő nemzedékben keveredhetnek - ez a két meghatározás (ökológiai és genetikai) ugyanazt a jelenséget írja le, csak eltérő szempontból.',
+                  'A két meghatározás közötti kapcsolat jól szemlélteti, hogy a populáció egyszerre ökológiai és genetikai fogalom is: az ökológiai meghatározás a térbeli és időbeli együttélésre helyezi a hangsúlyt, míg a genetikai meghatározás arra, hogy az egyedek génjei egy közös, a nemzedékek során folyamatosan keveredő "génkészletet" alkotnak. Ez a génkészlet - ahogy azt egy későbbi modulban (Populációgenetika és evolúciós folyamatok fejezet) részletesen is megismerjük majd - alapvető szerepet játszik a populáció evolúciós változásaiban is.',
+                ],
+              },
+              {
+                heading: 'A populáció jellemzői',
+                paragraphs: [
+                  'A populációt több jellemzővel is le lehet írni: az egyedszám a populációt alkotó egyedek száma; az egyedsűrűség az egységnyi területre (vagy térfogatra) jutó egyedek száma; a koreloszlás azt mutatja meg, hogyan oszlanak meg a populáció egyedei a különböző korcsoportok között; a térbeli eloszlás pedig azt írja le, hogyan helyezkednek el az egyedek az adott területen belül (pl. egyenletesen, csoportosan vagy véletlenszerűen).',
+                  'Ezek a jellemzők gyakorlati problémák megoldására is alkalmazhatók: például egy védett faj állományának felmérésekor az egyedsűrűség és a koreloszlás együttes vizsgálata megmutathatja, hogy a populáció növekszik, stabil, vagy éppen csökkenőben van-e (pl. ha a fiatal korosztály aránya alacsony, az hosszú távon létszámcsökkenésre utalhat).',
+                  'A térbeli eloszlás típusai (egyenletes, csoportos, véletlenszerű) szintén fontos információt hordoznak az adott faj életmódjáról: a csoportos eloszlás gyakran társas életmódra vagy a kedvező élőhelyfoltok egyenlőtlen elhelyezkedésére utal, az egyenletes eloszlás pedig gyakran a fajon belüli, területért folyó versengés jele lehet.',
+                ],
+              },
+              {
+                heading: 'A populáció fogalmának határai',
+                paragraphs: [
+                  'A populáció fogalmának alkalmazásakor mindig meg kell határozni a vizsgált terület és időtartam pontos határait, hiszen ugyanaz a faj más-más populációkat alkothat különböző, egymástól elszigetelt élőhelyeken (pl. egy folyó két partján, ha az egyedek nem tudnak átkelni rajta). Két populáció akkor tekinthető ténylegesen elkülönültnek, ha az egyedeik között tartósan nincs (vagy csak elhanyagolható mértékű) génáramlás, azaz nem, vagy csak ritkán szaporodnak egymással.',
+                ],
+              },
+              {
+                heading: 'Gyakorlati alkalmazás: hazai vadgazdálkodás',
+                paragraphs: [
+                  'A populáció jellemzőinek ismerete a hazai vadgazdálkodásban is gyakorlati jelentőségű: a gímszarvas- vagy az őzállomány egyedszámának és koreloszlásának rendszeres felmérése alapozza meg a fenntartható vadászati kvóták meghatározását, amelyek célja, hogy a kilövés mértéke ne haladja meg azt a szintet, ami a populáció hosszú távú fennmaradását veszélyeztetné.',
+                  'Az emberi tevékenység (pl. élőhelyek beszűkülése, vadászat, táplálékkínálat mesterséges befolyásolása) közvetlenül is hatással lehet egy populáció egyedszámára és eloszlására - ez az egyik oka annak, hogy a populációk jellemzőinek nyomon követése nemcsak tudományos, hanem gyakorlati természetvédelmi és gazdálkodási szempontból is fontos feladat. Hasonló megfontolások érvényesek a védett fajok (pl. egyes ragadozó madarak) állományának kezelésénél is, ahol a cél éppen ellenkezőleg, a populáció növekedésének vagy legalább stabilizálásának elősegítése. A vadgazdálkodási és természetvédelmi célok tehát ugyanazokra a populáció-jellemzőkre (egyedszám, koreloszlás, térbeli eloszlás) épülnek, csupán a kívánt beavatkozás iránya (csökkentés vagy növelés) tér el egymástól. Ez a kettősség jól szemlélteti, hogy a populációökológiai ismeretek gyakorlati alkalmazása mindig az adott faj helyzetétől (túlszaporodás vagy veszélyeztetettség) függ, nem pedig egyetlen, mindenre érvényes szabálytól.',
+                ],
+              },
+            ],
+            keyTerms: ['populáció', 'egyedsűrűség', 'koreloszlás', 'térbeli eloszlás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a populáció egyedszámának növekedési modelljeit és a környezet eltartóképességének fogalmát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Korlátlan és korlátozott növekedési modell',
+                paragraphs: [
+                  'A korlátlan (exponenciális) növekedési modell szerint, ha a populáció korlátlan erőforrásokhoz (táplálék, tér) férne hozzá, egyedszáma egyre gyorsuló ütemben, elméletileg a végtelenségig növekedne. A valóságban azonban az erőforrások végesek: a korlátozott (logisztikus) növekedési modell ezt veszi figyelembe, és azt írja le, hogy a populáció növekedése kezdetben gyors, majd az erőforrások szűkösségével fokozatosan lelassul, és egy stabil szint körül állapodik meg.',
+                  'Ezt a stabil szintet nevezzük a környezet eltartóképességének (K): ez az a maximális egyedszám, amelyet egy adott élőhely erőforrásai tartósan el tudnak tartani. Ha egy populáció egyedszáma átmenetileg meghaladja az eltartóképességet, az erőforrások szűkössége miatt a halálozás megnő vagy a szaporodás csökken, ami visszatéríti a populációt az eltartóképesség közelébe.',
+                  'Az exponenciális növekedési görbe folyamatosan gyorsuló ütemű, "J" alakú, míg a logisztikus növekedési görbe kezdetben hasonlóan gyors, majd az eltartóképesség közelítésével ellaposodó, "S" alakú - ez a két jellegzetes görbealak segít megkülönböztetni egy valós populáció növekedési mintázatát a modellek alapján.',
+                  'A valóságban tisztán exponenciális növekedés csak rövid ideig, kedvező, korlátlannak tűnő körülmények között figyelhető meg (pl. egy új élőhelyre behurcolt, versenytárs nélküli invazív faj esetén) - hosszú távon minden populáció növekedését végül valamilyen korlátozó tényező (táplálék, tér, ragadozók, betegségek) fékezi, ezért a logisztikus modell írja le pontosabban a legtöbb természetes populáció hosszú távú viselkedését.',
+                ],
+              },
+            ],
+            keyTerms: ['eltartóképesség', 'exponenciális növekedés', 'logisztikus növekedés'],
+          },
+        },
+      },
+      {
+        id: 'kornyezeti-kolcsonhatasok',
+        title: 'Környezeti kölcsönhatások',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'r-stratégista', 'K-stratégista'],
+          rows: [
+            ['Utódszám', 'sok', 'kevés'],
+            ['Ivadékgondozás', 'jellemzően kevés vagy nincs', 'kiterjedt'],
+            ['Létszám ingadozása', 'erős', 'stabil, az eltartóképesség közelében'],
+            ['Példa', 'rovarok', 'nagytestű emlősök'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Populáció fejezet) megismert alapfogalmak után ebben a fejezetben azt vizsgáljuk meg, hogyan hat a környezet a populációk létszámára és elterjedésére.',
+            sections: [
+              {
+                heading: 'A populáció létszámának hirtelen változásai: gradáció',
+                paragraphs: [
+                  'A gradáció egy populáció létszámának hirtelen, robbanásszerű megnövekedése, amelyet - a táplálékforrás kimerülése vagy más korlátozó tényező hatására - jellemzően gyors összeomlás követ. Klasszikus példa erre a sáskajárás: kedvező körülmények között (pl. bőséges csapadék utáni növényzet) a sáskák tömegesen elszaporodnak, majd hatalmas rajokban vonulva elpusztítják a termést, mielőtt a populáció létszáma összeomlana. A gradációk ismerete a mezőgazdasági kártevők elleni biológiai védekezés (pl. természetes ellenségek, ragadozók betelepítése) tervezésekor is fontos.',
+                ],
+              },
+              {
+                heading: 'A környezet fogalma és hatásai',
+                paragraphs: [
+                  'A környezet az élő szervezetet körülvevő élettelen (pl. hőmérséklet, fény, víz, talaj) és élő (pl. más fajok, táplálékforrások) tényezők összessége. A környezet hatása nem állandó: az adott szervezet kitettségétől (pl. mennyi ideig, milyen intenzitással éri egy hatás) függően eltérő mértékű választ vált ki - egy rövid, enyhe hatás még tolerálható lehet, míg ugyanaz a hatás tartósan vagy nagyobb intenzitással már károsíthatja a szervezetet.',
+                ],
+              },
+              {
+                heading: 'Tűrőképességi görbék',
+                paragraphs: [
+                  'Minden élőlénynek van egy tűrőképességi tartománya egy adott környezeti tényezőre (pl. hőmérséklet) nézve: ezen belül van egy minimum és egy maximum érték, amelyek között a szervezet még életképes, és egy optimum érték, ahol a szervezet a legjobban teljesít (pl. legjobban szaporodik). Egy fajt szűk tűrésűnek nevezünk, ha ez a tartomány keskeny (kevéssé alkalmazkodóképes egy adott tényező változásaira), és tág tűrésűnek, ha széles (rugalmasan alkalmazkodik a változó feltételekhez).',
+                ],
+              },
+              {
+                heading: 'Biológiai jelzések (indikáció)',
+                paragraphs: [
+                  'Egyes élőlények érzékenysége bizonyos környezeti tényezőkre lehetővé teszi, hogy jelenlétükből vagy hiányukból következtetéseket vonjunk le a környezet állapotára - ezt nevezzük biológiai jelzésnek (indikációnak), az erre alkalmas fajokat pedig bioindikátoroknak. Jó példa erre - ahogy azt korábban (Teleptest és álszövet fejezet) megismertük - a zuzmók levegőszennyezés-érzékenysége: gyakoriságuk és állapotuk egy adott terület levegőminőségét jelzi. Hasonlóan, egyes vízi gerinctelen fajok (pl. bizonyos kérészlárvák) csak tiszta, jól oxigénezett vizekben élnek meg, ezért jelenlétük egy patak vagy folyószakasz jó vízminőségére utal, hiányuk pedig szennyezésre figyelmeztethet.',
+                ],
+              },
+              {
+                heading: 'A talaj kialakulása és a trágyázás jelentősége',
+                paragraphs: [
+                  'A talaj az alapkőzet mállásának, valamint az élő szervezetek (pl. lebontó szervezetek) tevékenységének hosszú távú együttes eredményeként alakul ki - ez egy lassú, évszázadokat, évezredeket igénylő folyamat. A trágyázás a talaj tápanyagtartalmának pótlását szolgálja, ami a növénytermesztés szempontjából fontos, azonban a szakszerűtlen, túlzott műtrágyázás károsíthatja a talaj élővilágát, és a talajvízbe, majd onnan a felszíni vizekbe jutva környezetszennyezést (pl. a vizek eutrofizációját) okozhatja.',
+                  'A fentiek együttesen azt is megmagyarázzák, miért függ össze szorosan egy faj földrajzi elterjedése a környezeti tényezőkkel: egy faj csak ott képes tartósan megtelepedni, ahol a helyi környezeti tényezők (hőmérséklet, víz, talaj stb.) a tűrőképességi tartományán belül maradnak. Ez a felismerés magyarázza például, hogy egyes hazai növényfajok miért csak bizonyos talajtípusokon (pl. meszes vagy savanyú talajon) fordulnak elő, míg máshol, kedvezőtlenebb talajviszonyok között nem képesek megtelepedni, még akkor sem, ha az éghajlati tényezők egyébként megfelelőek lennének.',
+                ],
+              },
+            ],
+            keyTerms: ['gradáció', 'környezet', 'tűrőképesség', 'szűk tűrés', 'tág tűrés', 'bioindikátor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a populációk mennyiségi változásainak mélyebb elemzését, az emberi korfák értelmezését, valamint a niche-elméletet és a populációk közötti versengést ismerjük meg.',
+            sections: [
+              {
+                heading: 'r- és K-stratégista populációk',
+                paragraphs: [
+                  'A populációk szaporodási stratégiája alapján megkülönböztetünk r-stratégista fajokat (amelyek sok utódot hoznak létre, gyorsan szaporodnak, de kevés gondoskodást nyújtanak, és létszámuk erősen ingadozhat - pl. rovarok) és K-stratégista fajokat (amelyek kevesebb utódot hoznak létre, de azokról hosszan gondoskodnak, és létszámuk jellemzően az adott élőhely eltartóképessége közelében stabilizálódik - pl. nagytestű emlősök). Ez a megkülönböztetés - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az utódszám és az ivadékgondozás kapcsolatánál megismertük - szorosan összefügg a szaporodási stratégiával, ahogy azt a fenti táblázat is összefoglalja.',
+                ],
+              },
+              {
+                heading: 'Emberi korfák értelmezése',
+                paragraphs: [
+                  'A korfa egy populáció koreloszlását ábrázolja grafikusan, jellemzően nemenként elkülönítve. A "piramis" alakú, széles alappal rendelkező korfa növekvő populációra utal (sok fiatal, kevés idős), a "urna" alakú, keskenyedő aljú korfa csökkenő (fogyó) populációra utal (kevés fiatal, sok idős), míg a téglalap alakú, egyenletes szélességű korfa stabil, nagyjából állandó létszámú populációt jelez. Egy adott ország korfájának alakjából tehát következtetni lehet a népesség jövőbeli alakulására, illetve olyan gyakorlati kérdésekre is, mint a jövőbeli munkaerő-utánpótlás vagy az egészségügyi/nyugdíjrendszer terhelése.',
+                  'Konkrét példaként: ha egy ország korfáján a 0-14 éves korosztály aránya jóval kisebb, mint a 60 év felettieké, ez urna alakú, fogyó korfára utal - ebből levonható a következtetés, hogy a következő évtizedekben a munkaképes korú lakosság aránya csökkenni fog, miközben az időskori ellátásra szoruló népesség aránya nő, ami a nyugdíj- és egészségügyi rendszer tervezésekor figyelembe veendő, gyakorlati jelentőségű összefüggés.',
+                ],
+              },
+              {
+                heading: 'Biológiai rendszerek térbeli és időbeli változásai',
+                paragraphs: [
+                  'A biológiai rendszerek (pl. populációk, életközösségek) változásai leírhatók térben és időben is. A térbeli változás lehet vízszintes (pl. egy adott terület mentén, a tengerszinttől távolodva vagy egy folyó mentén haladva megváltozó fajösszetétel) vagy függőleges (pl. egy hegy lábától a csúcsáig, vagy egy tó felszínétől a fenekéig változó életkörülmények és fajösszetétel). Az időbeli változás lehet periodikus (rendszeresen, ciklikusan ismétlődő, pl. napszaki vagy évszakos ingadozás) vagy előrehaladó (egy irányba tartó, tartós változás, pl. egy élőhely fokozatos átalakulása).',
+                ],
+              },
+              {
+                heading: 'A niche-elmélet és a minimum-elv',
+                paragraphs: [
+                  'A niche-elmélet szerint egy faj elterjedését nem egyetlen környezeti tényező, hanem több tényező együttes hatása (pl. hőmérséklet, víz, táplálék, más fajok jelenléte) határozza meg egyszerre - ezt a többdimenziós "teret", amelyben egy faj életképes, ökológiai niche-nek nevezzük. Fontos megkülönböztetni az élettani niche-t (amelyben az adott faj elméletileg, versenytársak nélkül életképes lenne) és az ökológiai niche-t (amelyet a versengő fajok jelenléte a gyakorlatban beszűkít).',
+                  'A minimum-elv szerint egy szervezet fejlődését mindig az a környezeti tényező korlátozza leginkább, amelyből relatíve a legkevesebb áll rendelkezésre - ennek az elvnek is megvannak a korlátai, hiszen a valóságban a tényezők gyakran kölcsönhatásban állnak egymással, nem egymástól függetlenül hatnak.',
+                ],
+              },
+              {
+                heading: 'A Gauze-elv és a testméret-hőmérséklet összefüggés',
+                paragraphs: [
+                  'A Gauze-elv (versengési kizárás elve) szerint két faj, amely pontosan ugyanazt az ökológiai niche-t foglalná el, tartósan nem élhet együtt ugyanazon a területen: a versengés hosszú távon az egyik faj kiszorulásához, kipusztulásához, vagy - gyakrabban - a niche-ek fokozatos elkülönüléséhez vezet. Emellett megfigyelhető egy összefüggés a testtömeg, a testfelület és az élőhely átlaghőmérséklete között is: a hidegebb éghajlaton élő rokon fajok jellemzően nagyobb testűek (kisebb a testfelület/testtömeg arányuk, ami csökkenti a hőveszteséget), mint a melegebb éghajlaton élő rokonaik. Ez az összefüggés jól megfigyelhető a sarkvidéki és a trópusi rokon állatfajok testméretének összehasonlításakor is: a nagyobb testű, hidegebb éghajlathoz alkalmazkodott fajok kisebb relatív testfelülete kevesebb hőt enged elveszni a környezet felé.',
+                ],
+              },
+            ],
+            keyTerms: ['r-stratégista', 'K-stratégista', 'korfa', 'niche', 'Gauze-elv'],
+          },
+        },
+      },
+      {
+        id: 'viselkedesbeli-kolcsonhatasok',
+        title: 'Viselkedésbeli kölcsönhatások',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Állati kommunikáció', 'Emberi kommunikáció (nyelv)'],
+          rows: [
+            ['Jelek száma', 'korlátozott, rögzített', 'gyakorlatilag korlátlanul bővíthető'],
+            ['Elvontság', 'jellemzően a jelen konkrét helyzeteire korlátozódik', 'elvont fogalmakat (múlt, jövő) is kifejez'],
+            ['Objektivitás', 'sok jelzés közvetlen kapcsolatban áll a kifejezett tartalommal', 'a jelek gyakran önkényesek, megegyezés alapúak'],
+            ['Hagyományok szerepe', 'kisebb', 'meghatározó'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Környezeti kölcsönhatások fejezet) megismert, élettelen és élő környezeti tényezők után ebben a fejezetben az egyedek közötti viselkedésbeli kölcsönhatásokat, a társas életformák típusait vizsgáljuk meg.',
+            sections: [
+              {
+                heading: 'A társas együttélés formái',
+                paragraphs: [
+                  'Az állatok társas együttélésének több jellegzetes formája ismert: az időleges tömörülés egy adott erőforrás (pl. táplálék, ivóhely) körül alkalomszerűen kialakuló, laza csoportosulás; a család a szülő(ke)t és utódaikat összefogó egység; a kolónia sok egyed tartós, szorosan együtt élő közössége (pl. hangyaboly, méhkaptár); a monogám pár egy hím és egy nőstény tartós, kizárólagos párkapcsolata; a hárem pedig egy hím és több nőstény tartós csoportja (pl. egyes szarvasfajoknál).',
+                  'Ezeknek a társas formáknak a kialakulása szorosan összefügg a környezeti feltételekkel - ahogy azt korábban (Környezeti kölcsönhatások fejezet) általánosságban megismertük -: például szűkös, nehezen védhető táplálékforrások esetén gyakoribb az egyedi életmód vagy a laza tömörülés, míg bőséges, jól védhető erőforrások vagy magas ragadozónyomás mellett a szorosabb társas kötelékek (család, kolónia) válhatnak előnyössé.',
+                  'Hazai példaként a gólyák időleges tömörülése figyelhető meg vonulás előtt (amikor nagy csapatokba verődve gyülekeznek a hosszú útra), míg a mézelő méhek kolóniaként (kaptárközösségként) élnek, szigorú munkamegosztással - ahogy azt korábban (Rovarok fejezet) megismertük. A hárem típusú társas szerveződésre jó hazai példa a gímszarvas: a bőgési időszakban egy erős bika több nősténnyel alkot csoportot, miközben a vetélytárs bikákat agancsviadallal tartja távol.',
+                ],
+              },
+              {
+                heading: 'Az állati és az emberi kommunikáció összehasonlítása',
+                paragraphs: [
+                  'Az állati és az emberi kommunikáció között a fenti táblázatban összefoglalt módon több lényeges különbség figyelhető meg: az emberi nyelv jelkészlete (szókincse) gyakorlatilag korlátlanul bővíthető, míg az állati jelrendszerek jelkészlete jellemzően rögzített és korlátozott számú. Az emberi nyelv elvont fogalmakat (pl. múlt, jövő, elképzelt helyzetek) is képes kifejezni, míg az állati jelzések többnyire a jelen pillanat konkrét helyzeteire korlátozódnak. Az emberi kommunikáció jelei gyakran megegyezés alapján, önkényesen kapcsolódnak a jelentésükhöz (objektivitás hiánya), míg sok állati jelzés közvetlenebb, ösztönösebb kapcsolatban áll azzal, amit kifejez. Végül az emberi kommunikációban a hagyományok, a kulturálisan átadott tudás sokkal nagyobb szerepet játszik, mint az állatvilágban.',
+                  'Ez a négy szempont (a jelek száma, elvontsága, objektivitása és a hagyományok szerepe) együttesen magyarázza, hogy az emberi nyelv miért képes végtelen számú, akár korábban soha el nem hangzott mondat megalkotására, míg az állati kommunikációs rendszerek - bármennyire is kifinomultak (pl. a méhek táncnyelve - ahogy azt korábban az Öröklött és tanult magatartásformák fejezetben megismertük) - jellemzően egy zárt, viszonylag kis számú üzenet közlésére korlátozódnak.',
+                  'Konkrét példával illusztrálva: egy vörösbegy territoriális éneke mindig ugyanazt az egy jelentést közvetíti ("ez az én territóriumom, távozz") függetlenül a helyzettől, míg egy ember ugyanazzal a nyelvi eszközkészlettel képes elvont, a jelen pillanattól teljesen független gondolatokat (pl. egy múltbeli esemény felidézését vagy egy jövőbeli terv megvitatását) is kifejezni - ez a rugalmasság az, ami az emberi nyelvet alapvetően megkülönbözteti az állati jelrendszerektől.',
+                ],
+              },
+            ],
+            keyTerms: ['tömörülés', 'kolónia', 'monogám pár', 'hárem'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a társas kapcsolatokban megnyilvánuló vonzódás okait, a kapcsolatokat fenntartó hatásokat, valamint az agresszió és az altruizmus emberi és állati megnyilvánulásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'A társas vonzódás okai és a kapcsolatot fenntartó hatások',
+                paragraphs: [
+                  'A társas kapcsolatokban megnyilvánuló vonzódás egyik magyarázata a csoportos kohézió: a csoporthoz tartozás biztonságérzetet, hatékonyabb védekezést (pl. a ragadozók elleni éberség megosztását) és jobb erőforrás-hozzáférést biztosíthat az egyednek, mint a magányos életmód. A társas kapcsolatokat fenntartó hatások közé tartozik - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) megismertük - az ivadékgondozás és a rangsor (dominanciahierarchia) is; ezek konkrét, megfigyelhető formái közé tartozik a behódolás (egy alárendelt egyed jelzése, amellyel elkerüli a konfliktust egy magasabb rangú társsal) és a fenyegetés (egy magasabb rangú egyed jelzése, amellyel a rangsort nyílt küzdelem nélkül tartja fenn).',
+                  'A behódolás és a fenyegetés rituális, jelzésszerű formái - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az agressziónál megismertük - éppen azért terjedtek el széles körben az állatvilágban, mert lehetővé teszik a rangsor fenntartását és a konfliktusok rendezését anélkül, hogy a felek súlyos sérülést kockáztatnának egy nyílt, valódi küzdelemben.',
+                  'A kutyaféléknél (pl. a farkasoknál) a behódolás jellegzetes testtartással jár (pl. a fej és a farok leszegése, a has felfedése), amelyet a magasabb rangú egyed jellemzően tiszteletben tart, és nem folytatja a támadást - ez a jelzésrendszer teszi lehetővé, hogy a csoporton belüli konfliktusok gyorsan, komoly sérülés nélkül rendeződjenek.',
+                ],
+              },
+              {
+                heading: 'Agresszió és altruizmus: állati és emberi megnyilvánulások',
+                paragraphs: [
+                  'Az agresszió - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az állatvilágban megismertük - embernél is jellemzően korlátozott erőforrásokért (pl. terület, státusz, anyagi javak) folyó versengésből fakad, de embernél a rituális, jelzésszerű formák mellett a tanult, kulturálisan is alakított viselkedésformák (pl. verbális konfliktus, jogi eljárás) is jelentős szerepet játszanak a konfliktusok rendezésében. Az altruizmus - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet emelt kiegészítése) a rokonszelekciónál megismertük - embernél a rokonok segítésén túl kiterjed a nem rokon egyedek (pl. ismerősök, akár idegenek) önzetlen segítésére is, amit a kölcsönösségen alapuló együttműködés (viszonzás elvárása egy későbbi időpontban) és a kulturálisan kialakult erkölcsi normák is erősítenek.',
+                  'Ez a különbség (a rokonszelekción túlmutató, kölcsönösségen és kulturális normákon alapuló emberi altruizmus) jól mutatja, hogy bár az emberi és az állati társas viselkedés hasonló evolúciós gyökerekre vezethető vissza, az emberi kultúra és nyelv további, jelentős rétegekkel egészíti ki és alakítja tovább ezeket az alapvető biológiai mintázatokat.',
+                ],
+              },
+            ],
+            keyTerms: ['behódolás', 'csoportos kohézió'],
+          },
+        },
+      },
+      {
+        id: 'okologiai-kolcsonhatasok',
+        title: 'Ökológiai kölcsönhatások',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Kölcsönhatás', 'Az egyik fél számára', 'A másik fél számára'],
+          rows: [
+            ['Szimbiózis', 'előnyös', 'előnyös'],
+            ['Asztalközösség', 'előnyös', 'semleges'],
+            ['Versengés', 'hátrányos', 'hátrányos'],
+            ['Antibiózis, élősködés, táplálkozási kölcsönhatás', 'előnyös', 'hátrányos'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Viselkedésbeli kölcsönhatások fejezet) megismert, egyedek közötti viselkedésbeli kölcsönhatások után ebben a fejezetben a különböző fajok populációi közötti, ökológiai jellegű kölcsönhatás-típusokat rendszerezzük.',
+            sections: [
+              {
+                heading: 'A fajok közötti kölcsönhatások típusai',
+                paragraphs: [
+                  'A szimbiózis két faj szoros, mindkét fél számára előnyös együttélése - ahogy azt korábban (pl. a zuzmóknál a Teleptest és álszövet fejezetben) megismertük. A versengés két faj (vagy egy fajon belüli két populáció) között akkor lép fel, ha ugyanazért a korlátozott erőforrásért (pl. táplálék, élettér) folyamodnak - emelt szinten ennek lehetséges kimeneteleit korábban (Környezeti kölcsönhatások fejezet emelt kiegészítése) a Gauze-elvnél is megismerhettük. Az asztalközösség (kommenzalizmus) olyan kapcsolat, amelyben az egyik fél előnyt élvez, a másiknak pedig nem árt és nem is használ (pl. egy nagytestű állat mellett élő, annak felkavart táplálékmaradékán élő faj).',
+                  'Fontos, hogy ezeket a kölcsönhatás-típusokat egy adott, konkrét megfigyelés alapján is tudjuk azonosítani: ha mindkét faj egyedei egyértelműen jobban boldogulnak együtt, mint külön-külön, az szimbiózis; ha csak az egyik fél húz belőle előnyt a másik kárára, az élősködés vagy predáció (attól függően, hogy fokozatos-e a kár, vagy azonnali pusztulással jár); ha mindkét fél veszít az együttélésből, az versengés.',
+                  'Az antibiózis olyan kölcsönhatás, amelyben az egyik faj (pl. egy gombafaj vagy baktérium) olyan anyagot termel, amely gátolja vagy elpusztítja a másik faj egyedeit, anélkül hogy ő maga táplálkozási kapcsolatban lenne velük - erre jó példa a korábban (Sejtfonalak fejezet) megismert ecsetpenész, amely a penicillin nevű antibiotikum-anyagot termeli, gátolva egyes baktériumok szaporodását. Az élősködés (parazitizmus) - ahogy azt korábban (Laposférgek fejezet) megismertük - olyan kapcsolat, amelyben az egyik fél (az élősködő) a másik (a gazdaszervezet) kárára táplálkozik, jellemzően anélkül, hogy azonnal elpusztítaná azt. A táplálkozási kölcsönhatás (predáció) ezzel szemben az egyik faj (a ragadozó) másik faj (a zsákmány) elfogyasztásán alapuló, jellemzően az egyed pusztulásával járó kapcsolata.',
+                  'Ezek a kölcsönhatás-típusok - ahogy azt a fenti táblázat is összefoglalja - jól elkülöníthetők egymástól aszerint, hogy melyik fél számára előnyösek, illetve hátrányosak. Ez a rendszerezés segít áttekinteni, hogy egy adott, természetben megfigyelt kapcsolat melyik kategóriába sorolható.',
+                ],
+              },
+              {
+                heading: 'Hazai példák a kölcsönhatásokra',
+                paragraphs: [
+                  'Hazai környezetben is számos példa figyelhető meg mindegyik kölcsönhatás-típusra: a kullancs élősködő kapcsolatban áll az emlősökkel (pl. az emberrel vagy az őzzel); a hazai erdeinkben élő mókusok és a mogyoróbokrok között táplálkozási kölcsönhatás áll fenn; a pillangók és a virágos növények kapcsolata a beporzás során kölcsönösen előnyös (szimbiózis-jellegű) kapcsolat; a gyertyános-tölgyesekben a fényért folyó versengés jól megfigyelhető a lombkorona- és a cserjeszint fajai között.',
+                  'Az asztalközösségre (kommenzalizmusra) hazai példa lehet egyes madárfajok fészkelése emberi épületeken (pl. a gólya kéményen épített fészke): a madár így védett, kényelmes fészkelőhelyhez jut, míg az épület tulajdonosának ez rendszerint sem előnyt, sem hátrányt nem jelent - bár esetenként (pl. a fészek súlya vagy szennyeződése miatt) ez a viszony a gyakorlatban a kommenzalizmus és az enyhe károkozás határán mozoghat. Ez a példa jól szemlélteti, hogy a valóságban megfigyelt kölcsönhatások nem mindig sorolhatók be egyértelműen és élesen egyetlen kategóriába, hanem gyakran átmenetet képeznek két típus között.',
+                ],
+              },
+            ],
+            keyTerms: ['szimbiózis', 'asztalközösség', 'antibiózis', 'élősködés', 'táplálkozási kölcsönhatás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes hangsúlyozni, hogy egy adott élőlénypopuláció valójában egyszerre több kölcsönhatás-típusban is részt vesz.',
+            sections: [
+              {
+                heading: 'A kölcsönhatások sokrétűsége egyetlen fajnál',
+                paragraphs: [
+                  'Egyetlen faj életében a fent bemutatott kölcsönhatás-típusok jellemzően egyszerre, egymást átfedve vannak jelen: egy adott növényfaj egyszerre lehet versengésben más növényekkel a fényért, szimbiózisban egy gombával (mikorrhiza) a gyökerénél, táplálkozási kölcsönhatásban (mint zsákmány) egy növényevő rovarral, és asztalközösségben egy rajta megtelepedő, ártalmatlan epifita fajjal. Ez a sokrétűség jól mutatja, hogy egy életközösség (amelyet a következő fejezetben ismerünk meg részletesen) valójában rendkívül sok, egyidejűleg zajló kölcsönhatás bonyolult hálózata, nem pedig egymástól elszigetelt fajpárok egyszerű összessége.',
+                  'Ez a rendszerszemlélet azt is megmagyarázza, hogy egyetlen faj eltűnése vagy létszámának drasztikus megváltozása egy életközösségben miért okozhat sokszor beláthatatlan, láncszerű hatásokat: mivel az adott faj egyszerre több más fajjal is kölcsönhatásban áll, a rá épülő vagy vele kapcsolatban lévő fajok közvetve is érintetté válhatnak. Ez a felismerés az egyik legfontosabb elméleti alapja annak, hogy a természetvédelem miért nem szorítkozhat egyetlen, kiemelt faj védelmére, hanem a vele kölcsönhatásban álló többi faj és élőhely együttes megőrzésére is figyelnie kell. Ezt a szemléletet a következő fejezetekben (Életközösségek, Ökoszisztéma) még tovább bővítjük, amikor már nem csupán fajpárok, hanem teljes életközösségek szintjén vizsgáljuk a kölcsönhatások hálózatát. Ez a fokozatos szemléletbővítés (egyedtől a populáción át a fajok közötti kölcsönhatásokig) alkotja az egyed feletti szerveződési szintek tananyagának logikai gerincét.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      { id: 'eletkozossegek', title: 'Életközösségek (élőhelytípusok)', order: 5, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'eletkozossegek', title: 'Életközösségek (élőhelytípusok)', order: 2, isFree: false, estimatedMinutes: 16,
+      { id: 'bioszfera', title: 'Bioszféra', order: 6, isFree: false, estimatedMinutes: 14,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera', title: 'Bioszféra', order: 3, isFree: false, estimatedMinutes: 14,
+      { id: 'okoszisztema', title: 'Ökoszisztéma', order: 7, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'okoszisztema', title: 'Ökoszisztéma', order: 4, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 5, isFree: false, estimatedMinutes: 18,
+      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 8, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
