@@ -6346,8 +6346,190 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 45, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'szaporitoszervek',
+        title: 'Szaporítószervek',
+        order: 45,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Hímivarsejt (spermium)', 'Petesejt'],
+          rows: [
+            ['Méret', 'apró', 'nagyméretű'],
+            ['Mozgékonyság', 'mozgékony (ostorral)', 'mozdulatlan'],
+            ['Termelődés', 'folyamatos, pubertáskortól egész életen át', 'korlátozott készlet, már születéskor kialakul'],
+            ['Mennyiség egy alkalommal', 'nagy szám', 'jellemzően egy (havonta)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az immunrendszer egészségtana fejezet) lezárt immunrendszeri témakör után az emberi szervezet modult a szaporodás és az egyedfejlődés témakörével zárjuk: elsőként a férfi és a női szaporítószervek felépítését és működését, valamint a megtermékenyítés folyamatát tekintjük át.',
+            sections: [
+              {
+                heading: 'A férfi szaporítószervek',
+                paragraphs: [
+                  'A herék - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - kettős szerepű mirigyek: itt termelődik a hímivarsejt (spermium) és a tesztoszteron hormon is. A herékben termelődő spermiumok a mellékherében érnek tovább és tárolódnak, innen az ondóvezeték szállítja őket a húgycsőig, amely a spermiumok mellett a vizelet elvezetésére is szolgál (a két funkció időben elkülönül egymástól).',
+                  'Az ondóvezeték útja során az ondóhólyag és a dülmirigy (prosztata) váladéka keveredik a spermiumokhoz, létrehozva az ondófolyadékot (ondót); ezek a mirigyváladékok tápanyagot és a spermiumok mozgását segítő anyagokat biztosítanak. A hímivarsejt-termelés (spermatogenezis - ahogy azt korábban az Osztódás fejezet emelt kiegészítésében megismertük) folyamatosan, pubertáskortól kezdve egész életen át zajlik a herékben, szemben a nő ivarsejtjeivel, amelyek - ahogy azt lentebb megismerjük - már születéskor kialakult, korlátozott készletet alkotnak.',
+                ],
+              },
+              {
+                heading: 'A női szaporítószervek',
+                paragraphs: [
+                  'A petefészkekben - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - érnek a petesejtek, és itt termelődik az ösztrogén és a progeszteron is. Az ovulációkor kiszabaduló petesejtet a petevezeték fogadja be, amely a méhbe vezet.',
+                  'A méh izmos falú szerv, amelynek belső rétege, a méhnyálkahártya a nemi ciklus során - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az ösztrogénnél és a progeszteronnál megismertük - felépül, majd megtermékenyítés hiányában leválik; sikeres megtermékenyítés esetén itt ágyazódik be és fejlődik a magzat. A hüvely a méhet a testfelszínnel összekötő csatorna, amely a párzás, illetve a szülés útjául is szolgál.',
+                  'A nővel ellentétben, akinél a petesejtek száma már születéskor rögzül, és havonta jellemzően csak egy érik meg és szabadul fel, a hímivarsejtek folyamatosan, nagy számban termelődnek - ez a különbség jól magyarázza, hogy miért van a nőnek korlátozott, a férfinak pedig gyakorlatilag korlátlan termékenységi időszaka.',
+                ],
+              },
+              {
+                heading: 'A megtermékenyítés folyamata',
+                paragraphs: [
+                  'A megtermékenyítés - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) megismertük - a hímivarsejt és a petesejt egyesülése, amelynek eredménye a zigóta. Embernél ez belső megtermékenyítés: a hüvelybe jutott spermiumok közül csak kevés jut el a petevezetékig, ahol - ha éppen jelen van egy petesejt - megtörténhet az egyesülés.',
+                  'Ez az emberi szaporodási stratégia - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az életkörülmények és a szaporodási mód kapcsolatánál megismertük - a belső megtermékenyítésű, kiterjedt ivadékgondozást nyújtó fajokra jellemző mintát követi: kevés utód, de azok túlélési esélye egyedenként jóval nagyobb, mint a külső megtermékenyítésű fajoknál.',
+                  'A megtermékenyítés a petevezetékben, jellemzően az ovulációt követő néhány napon belül történhet meg, mivel mind a petesejt, mind a spermiumok élettartama a női ivarutakban korlátozott - ez magyarázza, hogy a nemi ciklusnak csak egy szűk, néhány napos időszaka alkalmas a sikeres megtermékenyítésre. A hímivarsejt és a petesejt közötti méret- és mozgékonyságbeli különbség - ahogy azt a fenti táblázat is összefoglalja - jól tükrözi a két ivarsejt eltérő "feladatát": a petesejt tartalék tápanyagot raktároz a korai fejlődéshez, a hímivarsejt pedig kizárólag a petesejt eléréséhez és megtermékenyítéséhez szükséges felépítéssel rendelkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['here', 'mellékhere', 'ondóvezeték', 'dülmirigy', 'petefészek', 'petevezeték', 'méh', 'hüvely'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a biológiai nem meghatározottságának több szintjét, valamint a petesejt és a hímivarsejt részletesebb felépítését ismerjük meg.',
+            sections: [
+              {
+                heading: 'A nem meghatározottságának szintjei',
+                paragraphs: [
+                  'A biológiai nem meghatározottsága több, egymásra épülő szinten értelmezhető: a kromoszomális nem az ivari kromoszómák összetétele (embernél jellemzően XX vagy XY); az ivarmirigy általi nem a kromoszomális nem alapján embrionálisan kialakuló ivarmirigy típusa (here vagy petefészek); a másodlagos nem a hormonok hatására kialakuló külső testi jellegek (pl. testalkat, szőrzet, hangmagasság) összessége; a pszichés nem pedig az egyén saját, belső nemi identitása.',
+                  'Ezek a szintek a legtöbb egyénnél egybeesnek, de nem szükségszerűen: a nem meghatározottsága tehát egy biológiailag is összetett, több tényezőből felépülő jelenség, nem redukálható egyetlen szempontra. A kromoszomális nem embernél az apától örökölt ivari kromoszómától (X vagy Y) függ, hiszen az anya mindig X kromoszómát ad tovább - ez magyarázza, hogy biológiai értelemben az utód nemét a hímivarsejt határozza meg.',
+                ],
+              },
+              {
+                heading: 'A petesejt és a hímivarsejt felépítése',
+                paragraphs: [
+                  'A hímivarsejt (spermium) három fő részből épül fel: a fejrészben található a sejtmag és az azt beborító akroszóma (amely a petesejt burkát átható enzimeket tartalmazza), a középrészben a mozgáshoz szükséges energiát biztosító mitokondriumok, a farokrészben pedig az ostor, amely a spermium mozgását teszi lehetővé. A petesejtet - amely a hímivarsejtnél jóval nagyobb, mozdulatlan sejt - egy védő burok (zona pellucida) veszi körül, amelyet a megtermékenyítéskor az akroszóma enzimei tesznek átjárhatóvá az őt elérő spermium számára.',
+                  'Miután egyetlen spermium áthatolt a zona pellucidán és egyesült a petesejttel, a petesejt burka azonnal megváltozik, megakadályozva, hogy további spermiumok is bejussanak - ez a mechanizmus biztosítja, hogy a zigóta mindig csak egyetlen hímivarsejttől kapjon genetikai anyagot, elkerülve a kromoszómaszám-többlettel járó rendellenességeket. Ez a védekező mechanizmus azért is létfontosságú, mert ha egynél több spermium egyesülne a petesejttel, a keletkező sejt kromoszómaszáma megkétszereződne vagy még tovább nőne, ami összeegyeztethetetlen lenne a további életképes fejlődéssel.',
+                ],
+              },
+            ],
+            keyTerms: ['kromoszomális nem', 'akroszóma'],
+          },
+        },
+      },
+      {
+        id: 'egyedfejlodes',
+        title: 'Egyedfejlődés',
+        order: 46,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Klinikai halál', 'Biológiai halál'],
+          rows: [
+            ['Lényege', 'a légzés és a keringés leállása', 'a sejtek, szövetek visszafordíthatatlan pusztulása'],
+            ['Visszafordíthatóság', 'rövid időn belül még visszafordítható (újraélesztéssel)', 'végleges, nem visszafordítható'],
+            ['Agy állapota', 'még nem pusztult el', 'az agysejtek is elpusztulnak'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Szaporítószervek fejezet) megismert megtermékenyítés után ebben a fejezetben az ember születés előtti és születés utáni fejlődését, valamint az élet végét tekintjük át.',
+            sections: [
+              {
+                heading: 'A születés előtti fejlődés',
+                paragraphs: [
+                  'A zigóta - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az embrionális fejlődésnél megismertük - a petevezetékben úszva ismételt sejtosztódásokon (barázdálódáson) megy át, amely során a sejtszám gyorsan nő, a sejtek mérete viszont nem. A barázdálódás eredményeként létrejövő hólyagszerű képlet a méhbe érve beágyazódik a méhnyálkahártyába - ez a beágyazódás jelenti a terhesség tényleges kezdetét.',
+                  'A beágyazódás után fokozatosan kialakul a méhlepény (placenta) - ahogy azt korábban (Emlősök fejezet) megismertük -, amely az anya és a magzat közötti anyagcserét biztosítja, valamint a magzatburkok, amelyek közül az amnion - ahogy azt szintén korábban megismertük - magzatvízzel telt üreget képez a magzat körül; a magzatvíz mechanikai védelmet nyújt és mozgásteret biztosít a fejlődő magzatnak.',
+                  'A terhesség, a szülés és a szoptatás - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az oxitocinnál és a progeszteronnál megismertük - szorosan hormonálisan szabályozott folyamatok: a szülést kiváltó méhösszehúzódásokat az oxitocin, a szoptatáskor a tejleadást szintén az oxitocin váltja ki, míg a terhesség fenntartásáért nagyrészt a progeszteron felelős.',
+                  'A méhlepény nemcsak tápanyag- és oxigénellátást biztosít, hanem - ahogy azt korábban (A hormonrendszer egészségtana fejezet) megismertük, miszerint hormon nemcsak a hagyományos mirigyekben termelődhet - önmaga is termel hormonokat (pl. a terhességi tesztek által kimutatott hCG-t), amelyek fenntartják a terhességet és felkészítik az anyai szervezetet a szülésre és a szoptatásra.',
+                ],
+              },
+              {
+                heading: 'A születés utáni (posztembrionális) fejlődés',
+                paragraphs: [
+                  'A születés utáni fejlődés legjellemzőbb változásai közé tartozik a tömeg- és hosszgyarapodás, a fogak megjelenése, majd a mozgásfejlődés fokozatos lépései (mászás, ülés, majd járás), a beszéd és a finom kézhasználat kialakulása, később a nemi érés, a gondolkodásmód (kognitív képességek) fokozatos fejlődése, majd időskorban az öregedés jelenségei. Az öregedés a szervezet sejtjeinek és szöveteinek fokozatos, természetes hanyatlásával jár, amely valamennyi szervrendszert érinti, és amelynek üteme egyénenként, illetve az életmódtól függően is eltérhet.',
+                  'Ezek a változások jellemzően egy viszonylag kiszámítható sorrendben, de egyénenként eltérő ütemben zajlanak le: a mozgásfejlődés lépései (mászás, ülés, járás) például mindig ebben a sorrendben követik egymást, de az, hogy egy adott gyermek pontosan mely életkorban éri el az egyes lépéseket, egyénenként, sőt kultúránként is eltérhet.',
+                  'A társadalmi és életmódbeli hatások (pl. táplálkozás, ingergazdag vagy ingerszegény környezet, egészségügyi ellátás) jelentősen befolyásolhatják az egyedfejlődés ütemét - ahogy azt korábban (Pszichés fejlődés fejezet) a családi szocializáció szerepénél is megismertük. Ezek a hatások nemcsak a fejlődés sebességét, hanem annak minőségét is alakíthatják: egy kiegyensúlyozott, támogató környezet elősegíti, míg egy hiányos vagy elhanyagoló környezet hátráltathatja az egyes fejlődési szakaszok időben történő elérését. Ez a felismerés jól mutatja, hogy az egyedfejlődés nem kizárólag genetikailag előre meghatározott, "beprogramozott" folyamat, hanem a genetikai adottságok és a környezeti hatások folyamatos kölcsönhatásának eredménye.',
+                ],
+              },
+            ],
+            keyTerms: ['barázdálódás', 'beágyazódás', 'magzatvíz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a magzati és az anyai vérkeringés kapcsolatát, valamint a klinikai és a biológiai halál közötti különbséget ismerjük meg.',
+            sections: [
+              {
+                heading: 'A magzati és az anyai vérkeringés kapcsolata',
+                paragraphs: [
+                  'A magzat vére és az anya vére a méhlepényben nem keveredik közvetlenül: a két vérkeringést egy vékony hártya választja el, amelyen keresztül a tápanyagok, az oxigén és a szén-dioxid diffúzióval átjutnak, míg a vérsejtek jellemzően nem. Ez a kapcsolat a magzat köldökzsinórján keresztül valósul meg, amely a méhlepényt köti össze a magzattal. Ez a kettős, mégis elkülönült keringési rendszer teszi lehetővé, hogy a magzat és az anya vérnyomása, vérösszetétele egymástól függetlenül is a saját szükségleteikhez igazodhasson, miközben az anyagcsere-kapcsolat folyamatosan fennáll. Ez a szoros, de közvetlen keveredés nélküli élettani kapcsolat az egész terhesség alatt fennmarad, egészen a szülésig, amikor a köldökzsinór elvágásával a magzat keringése önállósul.',
+                  'Ennek a kapcsolatnak az immunrendszer szempontjából is jelentősége van - ahogy azt korábban (Vércsoportok fejezet) az Rh-összeférhetetlenségnél megismertük -: bár a vérsejtek rendes körülmények között nem jutnak át a méhlepényen, egyes anyai antitestek (immunglobulinok) igen, ami egyrészt átmeneti védelmet nyújt a magzatnak (hasonlóan az anyatejes passzív immunizáláshoz - ahogy azt korábban az Immunitás fejezetben megismertük), másrészt - összeférhetetlenség esetén - kockázatot is jelenthet, mint azt az Rh-összeférhetetlenség példáján korábban részletesen láttuk.',
+                ],
+              },
+              {
+                heading: 'Klinikai és biológiai halál',
+                paragraphs: [
+                  'A klinikai halál a légzés és a keringés leállását jelenti - ez az állapot rövid időn belül (jellemzően néhány percen belül elkezdett újraélesztéssel) még visszafordítható, hiszen az agysejtek ekkor még nem pusztultak el véglegesen. A biológiai halál ezzel szemben a sejtek, szövetek (elsősorban az agysejtek) visszafordíthatatlan pusztulását jelenti - ez már végleges állapot, amelyből nincs visszaút.',
+                  'Ez a különbségtétel - ahogy azt korábban (Homeosztázis fejezet) az alapfokú újraélesztésnél megismertük - azért kulcsfontosságú, mert az újraélesztés esélye és értelme éppen ezen az időablakon (a klinikai halál még visszafordítható szakaszán) múlik: minél tovább tart a klinikai halál állapota kezelés nélkül, annál nagyobb az esély, hogy az oxigénhiány miatt az agysejtek is visszafordíthatatlanul elpusztulnak, vagyis a klinikai halál biológiai halálba megy át.',
+                ],
+              },
+            ],
+            keyTerms: ['köldökzsinór', 'klinikai halál', 'biológiai halál'],
+          },
+        },
+      },
+      {
+        id: 'szaporodas-fejlodes-egeszsegtana',
+        title: 'A szaporodás, fejlődés egészségtana',
+        order: 47,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Egyedfejlődés fejezet) megismert fejlődési szakaszok után, az emberi szervezet modult lezáró fejezetben a szaporodással és a fejlődéssel kapcsolatos egészségtani ismereteket tekintjük át: a családtervezést, a terhességet és a meddőséget.',
+            sections: [
+              {
+                heading: 'Családtervezés és terhességi tesztek',
+                paragraphs: [
+                  'A családtervezés különböző módszerekkel valósulhat meg: ide tartoznak a hormonális fogamzásgátló módszerek - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük -, valamint a mechanikai (barrier-) módszerek és a természetes családtervezési módszerek is. A terhességi tesztek a magzat méhlepénye által termelt hCG hormont mutatják ki a vizeletből vagy a vérből - ennek a hormonnak a szintje a terhesség korai szakaszában rohamosan emelkedik, ezért már néhány nappal az elmaradt menstruáció után is kimutatható.',
+                  'A terhességmegszakításnak - a beavatkozás jellegéből adódóan - lehetnek fizikai (pl. vérzés, fertőzésveszély) és lelki következményei is, ezért ez mindig alapos mérlegelést és szakszerű orvosi tájékoztatást igénylő döntés. Minél korábbi terhességi szakaszban történik a beavatkozás, annál kisebb jellemzően az egészségügyi kockázat, ez az egyik oka annak, hogy a korai felismerés (pl. terhességi teszttel) fontos szerepet játszik.',
+                ],
+              },
+              {
+                heading: 'A meddőség okai és kezelése',
+                paragraphs: [
+                  'A meddőség hátterében állhat az ivarsejttermelés zavara (pl. elégtelen spermium- vagy petesejtszám/-minőség) vagy hormonzavar (pl. a nemi ciklust szabályozó hormonok - ösztrogén, progeszteron - egyensúlyának felborulása). A meddőség kezelésére szolgáló lehetőségek közé tartozik a hormonkezelés (a hiányzó vagy elégtelen hormonszint pótlása, illetve a peteérés serkentése) és a mesterséges megtermékenyítés (amikor a megtermékenyítés a testen kívül vagy orvosi beavatkozással, természetes úton kívül történik).',
+                  'A meddőség kivizsgálása mindkét partner alapos orvosi vizsgálatát igényli, hiszen az ok mindkét félnél, vagy akár mindkettőjüknél egyszerre is fennállhat - ez a felismerés fontos gyakorlati (és emberi) következménnyel jár: a meddőség nem tekinthető eleve az egyik fél "hibájának".',
+                ],
+              },
+              {
+                heading: 'Várandósság, terhesgondozás és szoptatás',
+                paragraphs: [
+                  'A várandóság jelei közé tartozik többek között az elmaradt menstruáció, a reggeli rosszullét és a mellek érzékenysége. A rendszeres terhesgondozás (orvosi ellenőrzés a terhesség alatt) - ahogy azt korábban (Vércsoportok fejezet) az Rh-szűrésnél is megismertük - lehetővé teszi a lehetséges szövődmények korai felismerését és kezelését. A terhesség és a szoptatás alatt követendő egészséges életmód (kiegyensúlyozott táplálkozás, a káros szenvedélyek - dohányzás, alkohol - kerülése) mind az anya, mind a magzat/csecsemő egészségét szolgálja. A szoptatás - ahogy azt korábban (Immunitás fejezet) a passzív immunizálásnál megismertük - előnyös a csecsemő számára (tápanyag- és antitest-ellátás), és az anya számára is (pl. a méh összehúzódását segíti, érzelmi kötődést erősít).',
+                  'A dohányzás és az alkoholfogyasztás a méhlepényen keresztül - ahogy azt korábban (Egyedfejlődés fejezet) a magzati-anyai vérkeringés kapcsolatánál megismertük - közvetlenül károsíthatja a magzat fejlődését, hiszen a károsanyagok ugyanúgy átjutnak a méhlepényen, mint a tápanyagok és az oxigén, ezért ezek teljes kerülése a terhesség alatt kiemelten fontos.',
+                ],
+              },
+              {
+                heading: 'A nemi úton terjedő betegségek megelőzése',
+                paragraphs: [
+                  'A nemi úton terjedő betegségek (pl. a baktérium okozta szifilisz, a vírus okozta AIDS, illetve egyes gombás fertőzések) - ahogy azt korábban (Immunitás fejezet) a vírus és baktérium okozta betegségek eltérő kezelésénél megismertük - megelőzésének legfontosabb eszköze a védekezés (pl. óvszer használata) és a rendszeres szűrővizsgálat, mivel ezek a betegségek gyakran tünetmentesen is terjedhetnek. A tünetmentes terjedés különösen veszélyessé teszi ezeket a fertőzéseket, hiszen a fertőzött személy tudtán kívül is továbbadhatja a kórokozót, ezért a rendszeres szűrés és a védekezés következetes alkalmazása akkor is fontos, ha az érintett egészségesnek érzi magát. Egyes nemi úton terjedő fertőzések kezelés nélkül hosszú távú, súlyos következményekkel (pl. meddőséggel) is járhatnak, ami tovább hangsúlyozza a korai felismerés és kezelés jelentőségét.',
+                ],
+              },
+            ],
+            keyTerms: ['fogamzásgátlás', 'terhességi teszt', 'meddőség', 'terhesgondozás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény elsősorban esetleírás-elemzési készséget vár el - ez esetben is érdemes megismerni néhány gyakorlati szempontot a meddőséghez vezető okok azonosításához.',
+            sections: [
+              {
+                heading: 'Esetleírások elemzése: meddőséghez vezető okok',
+                paragraphs: [
+                  'Egy esetleírás alapján a meddőség vagy egy egészségügyi állapot (pl. fertőzés, genetikai rendellenesség, korábbi terhességmegszakítás) meddőséghez vezető szerepének azonosításakor érdemes külön megvizsgálni, hogy az adott tényező az ivarsejttermelést, a megtermékenyítés folyamatát, vagy a beágyazódást/terhesség fenntartását érinti-e - ez a megkülönböztetés segít a lehetséges kezelési irány (hormonkezelés vagy mesterséges megtermékenyítés) meghatározásában is.',
+                  'Egy kezeletlen nemi úton terjedő fertőzés (pl. egyes baktériumok okozta gyulladás) esetleírásban gyakran a méhkürtök hegesedéséhez, ezáltal a petesejt petevezetéken való áthaladásának akadályozásához vezethet - ez jó példa arra, hogy egy önmagában más okból (fertőzés) kialakuló egészségügyi probléma hogyan vezethet másodlagosan meddőséghez, alátámasztva a fenti fejezetben tárgyalt megelőzés fontosságát.',
+                  'Genetikai rendellenességek esetén az esetleírás gyakran arra kérdez rá, hogy az adott állapot az ivarsejtek kialakulását (pl. a meiózis során fellépő rendellenesség), vagy már a korai embrionális fejlődést (pl. a beágyazódás sikertelenségét) akadályozza-e - ez a különbségtétel segít megérteni, miért vezethet ugyanaz a genetikai háttér egyes esetekben meddőséghez, más esetekben pedig már korai vetéléshez.',
+                  'Egy korábbi terhességmegszakítás szintén szerepelhet egy esetleírásban a meddőség lehetséges háttértényezőjeként: a beavatkozás szövődményeként (pl. fertőzés vagy a méhnyálkahártya sérülése révén kialakuló hegesedés, összenövés) a méhüreg vagy a méhkürtök károsodhatnak, ami megnehezítheti egy későbbi terhesség beágyazódását. Ez is jól mutatja, hogy a meddőség hátterében álló okokat mindig az adott eset teljes előzménye (korábbi fertőzések, beavatkozások, genetikai tényezők) alapján, együttesen érdemes mérlegelni, nem egyetlen tényezőt kiragadva.',
+                ],
+              },
+            ],
+            keyTerms: ['nemi úton terjedő betegség'],
+          },
+        },
+      },
     ],
   },
   {
