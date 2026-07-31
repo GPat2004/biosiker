@@ -1078,4 +1078,66 @@ export const GLOSSARY = {
   'allergén': 'Önmagában ártalmatlan anyag (pl. pollen, egyes ételek, poratka), amely allergiás reakciót válthat ki.',
   'kilökődés': 'Az átültetett szerv immunrendszer általi, idegenként való felismerése és megtámadása.',
   'immunszupresszió': 'Az immunrendszer működésének gyógyszeres gyengítése, amely a szervátültetés utáni kilökődés megelőzésére szolgál.',
+
+  // 4. modul, 45. fejezet: Szaporítószervek
+  'here': 'A férfi ivarmirigye, amely a hímivarsejteket és a tesztoszteront termeli.',
+  'mellékhere': 'A here mögött elhelyezkedő szerv, amelyben a spermiumok tovább érnek és tárolódnak.',
+  'ondóvezeték': 'A mellékherétől a húgycsőig vezető cső, amely a spermiumokat szállítja.',
+  'dülmirigy': 'A prosztata magyar neve; a húgycső körül elhelyezkedő mirigy, amelynek váladéka az ondófolyadék részét képezi.',
+  'petefészek': 'A női ivarmirigy, amelyben a petesejtek érnek, és amely az ösztrogént és a progeszteront termeli.',
+  'petevezeték': 'A petefészket a méhhel összekötő cső, amelyben a megtermékenyítés is történik.',
+  'méh': 'Izmos falú női szaporítószerv, amelynek belső rétegében (méhnyálkahártya) a magzat beágyazódik és fejlődik.',
+  'hüvely': 'A méhet a testfelszínnel összekötő csatorna, amely a párzás és a szülés útjául is szolgál.',
+  'kromoszomális nem': 'A biológiai nem meghatározottságának egyik szintje: az ivari kromoszómák (embernél XX vagy XY) összetétele.',
+  'akroszóma': 'A hímivarsejt fejrészét beborító képlet, amely a petesejt burkát átható enzimeket tartalmazza.',
+
+  // 4. modul, 46. fejezet: Egyedfejlődés
+  'barázdálódás': 'A zigóta ismételt sejtosztódásai a petevezetékben, amelyek során a sejtszám gyorsan nő, a sejtek mérete viszont nem.',
+  'beágyazódás': 'A barázdálódás eredményeként létrejövő hólyagszerű képlet megtapadása a méhnyálkahártyában, ami a terhesség tényleges kezdetét jelenti.',
+  'magzatvíz': 'Az amnion magzatburok által körülzárt folyadék, amely mechanikai védelmet nyújt és mozgásteret biztosít a fejlődő magzatnak.',
+  'köldökzsinór': 'A magzatot a méhlepénnyel összekötő képlet, amelyen keresztül az anyagcsere-kapcsolat megvalósul.',
+  'klinikai halál': 'A légzés és a keringés leállása; rövid időn belül még visszafordítható állapot, mivel az agysejtek ekkor még nem pusztultak el véglegesen.',
+  'biológiai halál': 'A sejtek, szövetek (elsősorban az agysejtek) visszafordíthatatlan pusztulása; végleges állapot.',
+
+  // 4. modul, 47. fejezet: A szaporodás, fejlődés egészségtana
+  'fogamzásgátlás': 'A nem kívánt terhesség megelőzését szolgáló módszerek összessége (pl. hormonális, mechanikai, természetes módszerek).',
+  'terhességi teszt': 'Vizsgálat, amely a méhlepény által termelt hCG hormont mutatja ki a vizeletből vagy a vérből, jelezve a terhesség fennállását.',
+  'meddőség': 'Az az állapot, amikor egy pár tartósan nem képes teherbe esni; hátterében állhat ivarsejttermelési zavar vagy hormonzavar.',
+  'terhesgondozás': 'A terhesség alatti rendszeres orvosi ellenőrzés, amely lehetővé teszi a lehetséges szövődmények korai felismerését és kezelését.',
+  'nemi úton terjedő betegség': 'Nemi érintkezés során terjedő fertőzés (pl. szifilisz, AIDS, egyes gombás fertőzések), amely gyakran tünetmentesen is terjedhet.',
+
+  // 5. modul, 1. fejezet: Populáció
+  'egyedsűrűség': 'Az egységnyi területre (vagy térfogatra) jutó egyedek száma egy populációban.',
+  'koreloszlás': 'A populáció egyedeinek megoszlása a különböző korcsoportok között.',
+  'térbeli eloszlás': 'Annak leírása, hogyan helyezkednek el egy populáció egyedei az adott területen belül (egyenletesen, csoportosan vagy véletlenszerűen).',
+  'eltartóképesség': 'Az a maximális egyedszám, amelyet egy adott élőhely erőforrásai tartósan el tudnak tartani.',
+  'exponenciális növekedés': 'Korlátlan, folyamatosan gyorsuló ütemű, "J" alakú populáció-növekedési modell, amely a valóságban csak rövid ideig figyelhető meg.',
+  'logisztikus növekedés': 'Korlátozott, kezdetben gyors, majd az eltartóképesség közelítésével ellaposodó, "S" alakú populáció-növekedési modell.',
+
+  // 5. modul, 2. fejezet: Környezeti kölcsönhatások
+  'gradáció': 'Egy populáció létszámának hirtelen, robbanásszerű megnövekedése, amelyet jellemzően gyors összeomlás követ.',
+  'környezet': 'Az élő szervezetet körülvevő élettelen (pl. hőmérséklet, fény, víz, talaj) és élő (pl. más fajok) tényezők összessége.',
+  'tűrőképesség': 'Az a tartomány (minimum és maximum érték között), amelyen belül egy szervezet egy adott környezeti tényező mellett még életképes.',
+  'szűk tűrés': 'Egy faj tűrőképességi tartományának keskeny volta egy adott környezeti tényezőre nézve, ami kevéssé alkalmazkodóképessé teszi.',
+  'tág tűrés': 'Egy faj tűrőképességi tartományának széles volta egy adott környezeti tényezőre nézve, ami rugalmas alkalmazkodást tesz lehetővé.',
+  'r-stratégista': 'Olyan faj, amely sok utódot hoz létre, gyorsan szaporodik, de kevés gondoskodást nyújt, és létszáma erősen ingadozhat.',
+  'k-stratégista': 'Olyan faj, amely kevesebb utódot hoz létre, de azokról hosszan gondoskodik, és létszáma az élőhely eltartóképessége közelében stabilizálódik.',
+  'korfa': 'Egy populáció koreloszlását ábrázoló grafikon, jellemzően nemenként elkülönítve; alakja (piramis, urna, téglalap) a populáció növekedési tendenciájára utal.',
+  'niche': 'Az a többdimenziós "tér" (több környezeti tényező együttes hatása), amelyben egy faj életképes.',
+  'gauze-elv': 'A versengési kizárás elve: két faj, amely pontosan ugyanazt az ökológiai niche-t foglalná el, tartósan nem élhet együtt ugyanazon a területen.',
+
+  // 5. modul, 3. fejezet: Viselkedésbeli kölcsönhatások
+  'tömörülés': 'Egy adott erőforrás körül alkalomszerűen kialakuló, laza állati csoportosulás.',
+  'kolónia': 'Sok egyed tartós, szorosan együtt élő közössége (pl. hangyaboly, méhkaptár).',
+  'monogám pár': 'Egy hím és egy nőstény tartós, kizárólagos párkapcsolata.',
+  'hárem': 'Egy hím és több nőstény tartós társas csoportja.',
+  'csoportos kohézió': 'A csoporthoz tartozás által nyújtott biztonságérzet, hatékonyabb védekezés és jobb erőforrás-hozzáférés, amely a társas vonzódás egyik magyarázata.',
+  'behódolás': 'Egy alárendelt egyed jelzése, amellyel elkerüli a konfliktust egy magasabb rangú társsal.',
+
+  // 5. modul, 4. fejezet: Ökológiai kölcsönhatások
+  'szimbiózis': 'Két faj szoros, mindkét fél számára előnyös együttélése.',
+  'asztalközösség': 'Kölcsönhatás, amelyben az egyik fél előnyt élvez, a másiknak pedig nem árt és nem is használ (kommenzalizmus).',
+  'antibiózis': 'Kölcsönhatás, amelyben az egyik faj olyan anyagot termel, amely gátolja vagy elpusztítja a másik faj egyedeit.',
+  'élősködés': 'Kölcsönhatás (parazitizmus), amelyben az egyik fél a másik kárára táplálkozik, jellemzően anélkül, hogy azonnal elpusztítaná azt.',
+  'táplálkozási kölcsönhatás': 'Az egyik faj (ragadozó) másik faj (zsákmány) elfogyasztásán alapuló kölcsönhatás (predáció).',
 };
