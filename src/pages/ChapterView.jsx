@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info, AlertTriangle, Lightbulb, ListChecks } from 'lucide-react';
+import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info, AlertTriangle, Lightbulb, ListChecks, HelpCircle } from 'lucide-react';
 import { getModuleById, getChapterById, getLevelContent } from '../data/curriculum';
+import { chapterHasQuiz } from '../data/quizzes';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
 import DefinedTerm from '../components/DefinedTerm';
@@ -254,8 +255,23 @@ const ChapterView = () => {
         </div>
       )}
 
+      {accessible && !levelContent?.comingSoon && chapterHasQuiz(chapterId) && (
+        <div className="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800">
+          <Link
+            to={`/tananyag/${moduleId}/${chapterId}/kviz`}
+            className="flex items-center justify-between p-5 rounded-2xl bg-gradient-to-r from-primary-600 to-blue-600 text-white shadow-lg hover:shadow-primary-500/20 transition-all"
+          >
+            <span className="flex items-center font-bold">
+              <HelpCircle className="h-5 w-5 mr-3" />
+              Teszteld a tudásod - Kvíz indítása
+            </span>
+            <ChevronRight className="h-5 w-5" />
+          </Link>
+        </div>
+      )}
+
       {accessible && !levelContent?.comingSoon && (
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
           <button
             onClick={() => markChapterComplete(moduleId, chapterId)}
             disabled={done}
