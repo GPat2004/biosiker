@@ -6804,13 +6804,285 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'eletkozossegek', title: 'Életközösségek (élőhelytípusok)', order: 5, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera', title: 'Bioszféra', order: 6, isFree: false, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'okoszisztema', title: 'Ökoszisztéma', order: 7, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 8, isFree: false, estimatedMinutes: 18,
+      {
+        id: 'eletkozossegek-jellemzoi',
+        title: 'Az életközösségek jellemzői',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Ökológiai kölcsönhatások fejezet) megismert, fajok közötti kölcsönhatás-típusok után ebben a fejezetben azt vizsgáljuk meg, hogyan szerveződnek ezek a kölcsönhatások egy magasabb szerveződési szintté, az életközösséggé.',
+            sections: [
+              {
+                heading: 'Az életközösség fogalma',
+                paragraphs: [
+                  'Az életközösség (biocönózis) egy adott élőhelyen élő, egymással szoros kölcsönhatásban álló populációk összessége - ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük, ez a populáció fölötti szerveződési szint. Egy életközösséget jellemezhetünk a fajösszetételével (mely fajok populációi alkotják), valamint azzal, hogy van-e domináns (uralkodó) faja - egy olyan faj, amely egyedszámával, biomasszájával vagy hatásával kiemelkedik a többi közül, és jelentősen meghatározza az életközösség jellegét (pl. egy erdő domináns fafaja).',
+                  'Fontos hangsúlyozni, hogy egy életközösség határai a valóságban ritkán élesek: a szomszédos életközösségek gyakran fokozatosan, átmeneti zónákon (ökotónokon) keresztül folynak egymásba, ahol mindkét szomszédos életközösség fajai előfordulhatnak - éppen ezért egy adott életközösség lehatárolása mindig valamilyen gyakorlati szempont (pl. a domináns faj vagy az élőhelytípus változása) alapján történik.',
+                  'Az életközösségeket alkotó populációk - ahogy azt korábban (Ökológiai kölcsönhatások fejezet) megismertük - sokféle kölcsönhatásban (szimbiózis, versengés, élősködés, táplálkozási kölcsönhatás stb.) állnak egymással; egy adott életközösség stabilitása és jellege nagymértékben ezeknek a kölcsönhatásoknak az összességéből adódik, nem pusztán az egyes fajok jelenlétéből vagy hiányából. Egy életközösség tehát mindig több, mint az őt alkotó populációk egyszerű összege: a köztük lévő kölcsönhatások hálózata olyan tulajdonságokat (pl. stabilitást, önszabályozó képességet) hoz létre, amelyek egyetlen populáció szintjén nem értelmezhetők.',
+                ],
+              },
+              {
+                heading: 'Domináns fajok és karakterfajok',
+                paragraphs: [
+                  'A domináns faj mellett fontos fogalom a karakterfaj is: ez egy olyan faj, amelynek jelenléte jellegzetes és felismerhető az adott életközösségre, még ha egyedszáma vagy biomasszája nem is a legnagyobb. Egy bükkös erdő domináns faja maga a bükk (hiszen ez adja a lombkorona nagy részét és meghatározza a fényviszonyokat), míg egy karakterfaj lehet egy olyan, kevésbé gyakori, de az adott élőhelyre jellemző állat- vagy növényfaj, amelynek jelenléte önmagában is jelzi az életközösség típusát.',
+                ],
+              },
+              {
+                heading: 'A szintezettség kialakulása',
+                paragraphs: [
+                  'A szintezettség (rétegződés) az életközösségek jellegzetes térbeli szerveződési formája: a fajok függőlegesen elkülönülő szintekben (rétegekben) helyezkednek el. Egy erdei életközösségben például megkülönböztethetünk gyepszintet, cserjeszintet és lombkoronaszintet - ez a rétegződés elsősorban a fényért folyó versengés következménye: a magasabbra növő fajok árnyékolják az alacsonyabban lévőket, ezért az egyes szintek fajai eltérő fényigényhez és -tűréshez alkalmazkodtak.',
+                  'A szintezettség nemcsak a növényzetre jellemző: az egyes növényi szintekhez jellemzően sajátos állatfajok is kötődnek (pl. a lombkoronaszintben élő madarak eltérnek a gyepszint rovarvilágától), ezért a szintezettség az egész életközösség fajgazdagságát és szerkezetét meghatározza.',
+                ],
+              },
+              {
+                heading: 'Az életközösségek gyakorlati jelentősége',
+                paragraphs: [
+                  'Az életközösségek szerkezetének (fajösszetétel, domináns faj, szintezettség) ismerete gyakorlati szempontból is fontos: egy erdőgazdálkodó vagy természetvédelmi szakember csak akkor tudja felmérni egy beavatkozás (pl. fakitermelés) várható hatását, ha ismeri az adott életközösség szerkezetét és a benne lévő fajok egymásra utaltságát. Ha például egy domináns fafajt nagy mennyiségben eltávolítanak egy erdőből, az nemcsak a lombkoronaszintet érinti, hanem - a szintezettségen keresztül - az összes alsóbb szint fényviszonyait, és ezáltal az ott élő fajok életfeltételeit is megváltoztatja. Ez a láncszerű hatásmechanizmus lesz az alapja annak is, amit a következő fejezetben (Hazai életközösségek) az emberi tevékenység életközösségekre gyakorolt hatásairól megismerünk.',
+                ],
+              },
+            ],
+            keyTerms: ['életközösség', 'domináns faj', 'karakterfaj', 'szintezettség'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes egy konkrét, hazai példán keresztül szemléltetni a szintezettséget.',
+            sections: [
+              {
+                heading: 'A szintezettség egy hazai erdő példáján',
+                paragraphs: [
+                  'Egy hazai tölgyes vagy bükkös erdőben jellemzően négy-öt szint különíthető el: a gyepszint (füvek, virágos növények), a cserjeszint (bokrok), az alsó és felső lombkoronaszint (kisebb, illetve nagyobb fák), valamint a talaj alatti gyökérszint. Minden szinthez sajátos mikroklíma (fény-, hőmérséklet- és páraviszonyok) társul, ami magyarázza, hogy miért képes ugyanaz az erdő ilyen sok, eltérő igényű fajnak otthont adni: a szintezettség lényegében megsokszorozza az élőhely által kínált ökológiai niche-ek (ahogy azt korábban a Környezeti kölcsönhatások fejezetben megismertük) számát.',
+                  'Vízi életközösségekben (pl. egy tóban) a szintezettség hasonlóan érvényesül, csak itt a fényellátottság és az oxigénkoncentráció mélységgel változó mértéke szabja meg a rétegek határait: a felszínhez közeli, jól átvilágított réteg fotoszintetizáló szervezeteknek ad otthont, míg a mélyebb, sötétebb rétegekben elsősorban lebontó szervezetek és az oxigénszegény körülményeket is toleráló fajok élnek. A tavak esetében nyáron gyakran egy hőmérsékleti rétegződés (termoklina) is kialakul, amely tovább erősíti a mélységi rétegek elkülönülését, hiszen a hidegebb, mélyebb vízréteg és a melegebb felszíni réteg között csak korlátozott mértékben keveredik a víz. Ez a párhuzam (erdei és vízi szintezettség) jól mutatja, hogy a szintezettség nem egy adott élőhelytípushoz kötött jelenség, hanem egy általános ökológiai elv, amely mindenhol érvényesül, ahol egy környezeti tényező (fény, oxigén, hőmérséklet) a mélységgel vagy magassággal fokozatosan változik. Ez az elv - a fokozatosan változó környezeti tényező mentén kialakuló rétegződés - a következő fejezetben (Hazai életközösségek) tárgyalt térbeli mintázatnak is az egyik alapja, hiszen a mintázat is gyakran valamilyen környezeti tényező fokozatos vagy foltszerű változásából adódik.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'hazai-eletkozossegek',
+        title: 'Hazai életközösségek',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Cseres-tölgyes', 'Gyertyános-tölgyes', 'Bükkös'],
+          rows: [
+            ['Jellemző klíma', 'szárazabb, melegebb', 'köztes', 'hűvösebb, csapadékosabb'],
+            ['Jellemző előfordulás', 'alacsonyabb dombvidék', 'domb- és hegyvidék átmenete', 'hegyvidék, magasabb régiók'],
+            ['Fő fafaj', 'cser, kocsánytalan tölgy', 'gyertyán és tölgy elegyesen', 'bükk'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az életközösségek jellemzői fejezet) megismert alapfogalmak után ebben a fejezetben a hazai életközösségek térbeli és időbeli változásait, valamint jellegzetes hazai élőhelytípusait tekintjük át.',
+            sections: [
+              {
+                heading: 'Térbeli és időbeli változatosság',
+                paragraphs: [
+                  'Az életközösségek térbeli változatossága a szintezettség mellett a mintázatban (a fajok, élőhelyfoltok egymáshoz viszonyított elrendeződésében) is megnyilvánul. Az időbeli változás lehet periodikus (pl. évszakos, rendszeresen ismétlődő) vagy előrehaladó: ez utóbbi a szukcesszió, amelynek során egy életközösség fokozatosan, meghatározott irányban átalakul, míg el nem éri a végállapotát (klimax állapotát).',
+                  'Az emberi tevékenység (pl. kaszálás, legeltetés, tókotrás, fakitermelés) jelentősen befolyásolhatja a szukcesszió menetét: ezek a beavatkozások a folyamatot visszavethetik egy korábbi állapotba, vagy éppen egy adott, ember által kívánt állapotban tarthatják (pl. a rendszeres kaszálás megakadályozza, hogy egy rét fokozatosan cserjéssé, majd erdővé alakuljon).',
+                  'Az emberi tevékenység hatását az életközösségekre gyakran a fajgazdagság és az érintett terület nagysága alapján mérik fel: egy beavatkozás (pl. egy terület beépítése vagy felszántása) nemcsak a helyben élő fajok számát csökkentheti, hanem az élőhely feldarabolásával a szomszédos, érintetlen területek életközösségeit is meggyengítheti, mivel megnehezíti az egyedek és populációk közötti kapcsolatot.',
+                ],
+              },
+              {
+                heading: 'Sokféleség, produktivitás, stabilitás és degradáció',
+                paragraphs: [
+                  'Egy életközösség sokfélesége (fajgazdagsága), termelőképessége (produktivitása) és stabilitása szorosan összefüggenek: általánosságban egy sokfélébb életközösség jobban ellenáll a zavaró hatásoknak, és stabilabban tartja fenn produktivitását, mint egy fajszegény életközösség. A degradáció az életközösség állapotának romlását jelenti (pl. fajszám-csökkenés, a szerkezet leegyszerűsödése) - okai közé tartozik többek között a túlzott emberi terhelés, a szennyezés vagy az élőhelyek feldarabolódása.',
+                  'Ez az összefüggés (sokféleség-produktivitás-stabilitás) azt is megmagyarázza, hogy egy degradált, fajszegény életközösség miért érzékenyebb egy váratlan zavaró hatásra (pl. szélsőséges időjárás, kártevő elszaporodása): kevesebb faj esetén kisebb az esély arra, hogy legyen olyan faj, amely az adott zavaró hatást jól tolerálja, és át tudja venni a kieső fajok szerepét az anyag- és energiaáramlásban.',
+                ],
+              },
+              {
+                heading: 'Hazai élőhelytípusok összehasonlítása',
+                paragraphs: [
+                  'Hazánk jellegzető erdőtípusai (a fenti táblázatban összefoglalva) a klíma és más környezeti tényezők (pl. talajvízszint, alapkőzet) függvényében váltják egymást: a cseres-tölgyes a szárazabb, melegebb dombvidékeken, a gyertyános-tölgyes átmeneti zónában, a bükkös pedig a hűvösebb, csapadékosabb hegyvidéki régiókban jellemző. Az ember jelentősen átalakította ezeket az élőhelyeket: a természetes erdőket sok helyen faültetvények váltották fel, a folyószabályozás és a legeltetés is tartósan megváltoztatta a tájat.',
+                  'A szikes puszták sajátos, magas sótartalmú talajon kialakuló élőhelyek, amelyek kialakulásában a talajvíz párolgása és az így felszínre húzódó sók játszanak szerepet (másodlagos szikesedés esetén ez emberi beavatkozás, pl. az öntözés vagy az erdőirtás következménye is lehet). A sziklagyepek szélsőséges, sekély talajú, gyakran meredek lejtőkön alakulnak ki, jellegzetes, sokszor ritka és védett fajokkal - ezeket az élőhelyeket elsősorban a taposás, a túlzott legeltetés és a beépítés fenyegeti. Mindkét élőhelytípus (szikes puszta, sziklagyep) azért is természetvédelmi szempontból kiemelten fontos, mert a rájuk jellemző, szélsőséges körülményekhez alkalmazkodott fajok más élőhelyeken nem, vagy csak nagyon ritkán fordulnak elő.',
+                  'A gyomnövények megtelepedését az ember által bolygatott talajfelszín (pl. mezőgazdasági művelés, erdészeti fahasználat, taposás) segíti elő: ezek a fajok gyors növekedésű, jó terjedőképességű "úttörő" növények, amelyek a bolygatott, más fajok számára még kedvezőtlen talajon is képesek megtelepedni. Az egyes gyomfajok gyakran az adott bolygatás típusához (pl. mezőgazdasági művelés vagy taposás) specifikusan alkalmazkodnak, ezért egy terület gyomnövényzetéből következtetni lehet az ott zajló emberi tevékenység jellegére is.',
+                ],
+              },
+            ],
+            keyTerms: ['mintázat', 'szukcesszió', 'degradáció', 'szikes puszta', 'sziklagyep'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ökológiai mutatók (T-, W-, R-, N-, Z-értékek) alkalmazását, valamint egy konkrét terület élővilágának esettanulmány-szerű jellemzését ismerjük meg.',
+            sections: [
+              {
+                heading: 'Ökológiai mutatók és terepi jellemzés',
+                paragraphs: [
+                  'Egy terület ökológiai viszonyai az ott élő fajokat jellemző ökológiai mutatók (T - hőmérsékleti, W - vízigényi, R - talaj-kémhatási, N - tápanyagigényi, Z - zavarástűrési érték) alapján is jellemezhetők: az adott területen előforduló fajok mutatóinak összesítése megbízható képet ad a hely környezeti adottságairól, akár közvetlen műszeres mérés nélkül is - ez az elv jól kapcsolódik a korábban (Környezeti kölcsönhatások fejezet) megismert biológiai jelzés (indikáció) fogalmához.',
+                  'Egy iskolához vagy lakóhelyhez közeli terület élővilágának jellemzésekor érdemes rendszerezetten haladni: az élőhelytípus és a fő környezeti tényezők (pl. talaj, vízellátottság) azonosítása után az uralkodó (domináns) állat- és növényfajok, a szintezettség, illetve az évszakos (időbeli) változások megfigyelése adja a teljes képet - ehhez a fajok azonosításához hazai Növényismereti és Állatismereti segédkönyvek nyújtanak támpontot. Egy ilyen terepi jellemzés jó gyakorlati alkalmazása annak, amit korábban (Az életközösségek jellemzői fejezet) elméletben megismertünk a fajösszetételről és a domináns fajokról.',
+                ],
+              },
+              {
+                heading: 'Az életközösségek előrehaladó változása: tófeltöltődés',
+                paragraphs: [
+                  'A tófeltöltődés klasszikus példája a szukcessziónak: egy tó fokozatosan feltöltődik az üledékkel és az elpusztult vízi növények maradványaival, ami miatt a nyíltvízi életközösséget fokozatosan mocsári, majd láprét, végül szárazföldi (pl. erdei) életközösség váltja fel - ez a folyamat évtizedek, évszázadok alatt zajlik le, és jól szemlélteti, hogy egy életközösség előrehaladó változása hogyan vezet egy teljesen más végállapothoz (klimax életközösséghez).',
+                ],
+              },
+            ],
+            keyTerms: ['T-érték', 'W-érték', 'klimax életközösség'],
+          },
+        },
+      },
+      {
+        id: 'bioszfera',
+        title: 'Bioszféra',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hazai életközösségek fejezet) megismert, konkrét hazai életközösségek után ebben a fejezetben a legmagasabb egyed feletti szerveződési szintet, a bioszférát tekintjük át.',
+            sections: [
+              {
+                heading: 'A bioszféra mint globális rendszer',
+                paragraphs: [
+                  'A bioszféra - ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük - a Föld egészének élő rétege, amely az összes életközösséget magában foglalja. A Gaia-elmélet szerint a bioszféra egyetlen, önszabályozó globális rendszerként is felfogható, amelyben az élő szervezetek és az élettelen (abiotikus) környezet folyamatos, kölcsönös kölcsönhatásban állnak egymással - az élővilág nemcsak alkalmazkodik a fizikai-kémiai környezethez, hanem aktívan alakítja is azt (pl. a légkör oxigéntartalmát az élővilág fotoszintetikus tevékenysége tartja fenn).',
+                  'A bioszféra tehát nem csupán az életközösségek egyszerű összeadása: a Gaia-elmélet szerint a globális rendszer egésze olyan önszabályozó tulajdonságokkal (pl. a légköri gázösszetétel, a globális hőmérséklet hosszú távú stabilitása) rendelkezik, amelyeket az élővilág és az élettelen környezet évmilliókon át tartó kölcsönhatása alakított ki és tart fenn.',
+                ],
+              },
+              {
+                heading: 'Civilizációs ártalmak és az ember szerepe',
+                paragraphs: [
+                  'Az emberi tevékenység a bioszféra egészére kiterjedő hatással bír, ezért az ember felelőssége és feladata (környezettudatosság) is ebben a globális léptékben értelmezhető. A civilizációs ártalmak (pl. a feloldatlan stressz, az alkoholizmus, a helytelen életmód, a kábítószer-fogyasztás, a túlzott gyógyszerfogyasztás, a vegyszerek károsító hatásai) az emberi egészséget és közvetve a bioszférát is érintik - ezek jellemzően a modern, iparosodott társadalmak életmódjához kötődnek, és gyakran együtt, egymást erősítve jelentkeznek.',
+                  'Az emberi beavatkozások egy része pusztítja (pl. az esőerdők irtása, a monokultúrás mezőgazdaság, a kőolajszennyezés), más része védi (pl. a nemzeti parkok létrehozása, a nemzetközi környezetvédelmi egyezmények) a természetes növény- és állatvilágot. A nemzeti parkok és a nemzetközi egyezmények (pl. veszélyeztetett fajok kereskedelmét korlátozó megállapodások) azért is fontosak, mert egy adott élőhely vagy faj védelme gyakran csak több ország összehangolt együttműködésével valósítható meg. Hazai szinten is van felelősségünk és lehetőségünk (pl. tudatos vásárlási szokások kialakítása), amellyel hozzájárulhatunk a bioszféra állapotának megőrzéséhez.',
+                  'Az egyéni felelősség és a globális léptékű problémák közötti kapcsolat gyakran nem nyilvánvaló: egy hétköznapi vásárlási döntés (pl. mely termékeket részesítjük előnyben) áttételesen hozzájárulhat távoli élőhelyek (pl. esőerdők) megőrzéséhez vagy pusztulásához is, hiszen a globális kereskedelem összeköti a fogyasztói döntéseket a termelés helyszínén zajló környezeti hatásokkal. Ez a felismerés az alapja annak, hogy a tudatos fogyasztói magatartás (pl. tanúsított, fenntartható forrásból származó termékek választása) ma már a globális környezetvédelem egyik gyakorlati eszközének is tekinthető.',
+                ],
+              },
+              {
+                heading: 'A bioszféra és az egészség kapcsolata',
+                paragraphs: [
+                  'A civilizációs ártalmak (pl. a feloldatlan stressz, a helytelen életmód, a túlzott gyógyszerfogyasztás) nemcsak az egyéni egészséget, hanem közvetve a bioszférát is terhelik: a modern, gyorsan növekvő fogyasztói társadalmak életmódja - ahogy azt korábban (Az idegrendszer egészségtana fejezet) a stresszbetegségeknél is megismertük - jelentős erőforrás- és energiaigénnyel jár, ami hosszú távon a globális környezeti terhelés növekedéséhez vezet.',
+                ],
+              },
+            ],
+            keyTerms: ['bioszféra', 'Gaia-elmélet', 'civilizációs ártalom'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a Kárpát-medence tájtörténetét, a globális környezeti problémákat, valamint az ökológiai válság társadalmi-gazdasági vonatkozásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'A Kárpát-medence tájtörténete és a fenntartható gazdálkodás',
+                paragraphs: [
+                  'A Kárpát-medence jellegzetes életközösségei a történelem során jelentősen átalakultak: az elterjedő mezőgazdasági művelés, a folyószabályozás és a városiasodás mind hozzájárultak a táj mai arculatának kialakulásához - ez a folyamat jó példa arra, hogyan alakítja az emberi tevékenység hosszú távon, akár évszázadok alatt egy egész régió életközösség-mintázatát. Például a folyószabályozások előtt a Kárpát-medence síkvidékein sokkal nagyobb kiterjedésű ártéri, mocsaras élőhelyek húzódtak, amelyek a folyószabályozás és a lecsapolások következtében nagyrészt szántóföldekké alakultak át.',
+                  'A közlekedés (úthálózat kiépítése) is jelentős ökológiai hatással jár: az utak feldarabolják az élőhelyeket, akadályozzák az állatok vándorlását, és zajjal, szennyezéssel terhelik a környező életközösségeket. A fenntartható gazdálkodás olyan gazdálkodási mód, amely a jelen szükségleteit úgy elégíti ki, hogy nem veszélyezteti a jövő nemzedékek lehetőségeit - ennek gyakorlati megvalósítását esettanulmányok (pl. ökológiai gazdálkodás, szelektív fakitermelés) szemléltetik jól.',
+                ],
+              },
+              {
+                heading: 'Globális problémák és az ökológiai válság',
+                paragraphs: [
+                  'A globális problémák közé tartozik a népességrobbanás, a globális felmelegedés, a hulladékprobléma, a savasodás és az ózonpajzs elvékonyodása - ezek mindegyike szorosan összefügg egymással, és együttesen alkotják az ökológiai válságot. Ezek a problémák egymást erősítő módon jelentkeznek: a növekvő népesség fokozódó energia- és erőforrás-igénye hozzájárul a globális felmelegedéshez és a hulladéktermeléshez, míg a savasodás és az ózonpajzs elvékonyodása közvetlenül az ipari és mezőgazdasági tevékenység melléktermékeként jelentkező légszennyező anyagokra vezethető vissza.',
+                  'Az ökológiai válság nem csupán környezeti, hanem társadalmi és gazdasági kérdés is: a demográfiai (népességnövekedési) és gazdasági növekedésnek a Földön véges anyagi és energetikai korlátai vannak, ezért a korlátlan növekedés hosszú távon nem tartható fenn.',
+                  'Az ökológiai lábnyom egy olyan mutató, amely azt fejezi ki, mekkora területre volna szükség egy adott személy vagy közösség fogyasztásának és hulladéktermelésének fenntartásához - ez a mutató jól szemlélteti, hogy egy adott életmód mennyire terheli a bioszférát, és lehetővé teszi különböző életmódok, országok környezeti terhelésének összehasonlítását is. Ha egy ország lakosságának összesített ökológiai lábnyoma meghaladja az ország saját területének eltartóképességét, az azt jelzi, hogy az adott ország fogyasztása csak más területek erőforrásainak igénybevételével (pl. import útján) tartható fenn.',
+                ],
+              },
+            ],
+            keyTerms: ['fenntartható gazdálkodás', 'ökológiai válság', 'ökológiai lábnyom'],
+          },
+        },
+      },
+      {
+        id: 'anyagforgalom',
+        title: 'Anyagforgalom',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Bioszféra fejezet) megismert globális szint után ebben a fejezetben egy konkrétabb, szervezeti szintre térünk vissza: azt vizsgáljuk, hogyan áramlanak az anyagok egy ökoszisztémán belül.',
+            sections: [
+              {
+                heading: 'Termelők, fogyasztók és lebontók',
+                paragraphs: [
+                  'Egy ökoszisztéma (amely az életközösséget és annak élettelen, abiotikus környezetét együtt jelenti) anyagforgalmában és energiaáramlásában három nagy szereplő-csoport vesz részt: a termelők - ahogy azt korábban (Baktériumok fejezet) megismertük - fotoszintézissel (vagy kemoszintézissel) szervetlen anyagokból szerves anyagot állítanak elő; a fogyasztók a termelők vagy más fogyasztók elfogyasztásával jutnak szerves anyaghoz és energiához; a lebontók pedig - ahogy azt korábban (Sejtfonalak fejezet) a gombáknál megismertük - az elhalt szerves anyagot bontják le, visszajuttatva az elemeket a körforgásba.',
+                  'Az ökoszisztéma tagjai folyamatos kölcsönhatásban állnak az abiotikus (élettelen) környezettel is: a termelők a talajból és a levegőből veszik fel a fotoszintézishez szükséges szervetlen anyagokat (víz, szén-dioxid, ásványi sók), a lebontók tevékenysége pedig visszajuttatja ezeket az elemeket a talajba, ahonnan újra felvehetővé válnak - ez a kölcsönös kapcsolat teszi lehetővé, hogy az anyagok az ökoszisztémán belül tartósan körforgásban maradjanak.',
+                  'A fogyasztók tovább is csoportosíthatók aszerint, mit fogyasztanak: az elsődleges fogyasztók (növényevők) közvetlenül a termelőket fogyasztják, a másodlagos és további fogyasztók (húsevők) pedig már más fogyasztókat esznek meg - ez a sorrend adja a táplálkozási lánc trófikus szintjeit, amelyek mindegyikén az adott szintre jellemző szervezetek helyezkednek el.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási lánc és táplálékhálózat',
+                paragraphs: [
+                  'A táplálkozási lánc egy egyenes vonalú sorozat, amely egyetlen úton mutatja be, melyik szervezet táplálkozik melyikkel (pl. növény → növényevő → húsevő). A táplálékhálózat ezzel szemben azt a valóságosabb, összetettebb helyzetet ábrázolja, amelyben egy adott faj több másik fajjal is táplálkozási kapcsolatban áll - egy táplálékhálózat tehát több, egymással összefonódó táplálkozási láncból épül fel.',
+                  'Egy leírás alapján megszerkesztett táplálékhálózatból az is megállapítható, mi történhet a hálózat egyik tagjának eltűnésével vagy elszaporodásával: mivel a legtöbb fogyasztónak több táplálékforrása is van, egyetlen faj kiesése ritkán vezet az egész hálózat összeomlásához, viszont egy kulcsfontosságú (sok más fajjal kapcsolatban álló) faj eltűnése súlyos, láncszerű következményekkel járhat a hálózat más tagjaira nézve. Egy adott faj populációjának hirtelen megnövekedése (pl. egy ragadozó eltűnése miatt) hasonlóan továbbgyűrűzhet a hálózaton: a hirtelen elszaporodó faj táplálékforrásai lecsökkenhetnek, ami áttételesen más, vele táplálkozási kapcsolatban álló fajokat is érint.',
+                  'A táplálékláncokban felhalmozódó peszticidek és más mérgek (pl. nehézfémek) jó példát adnak arra, hogyan okozhat egy önmagában kis koncentrációjú szennyezés súlyos problémát: a méreganyag a táplálkozási lánc egyes szintjein egyre feljebb haladva egyre koncentráltabbá válik (biomagnifikáció), így a lánc csúcsán lévő ragadozók szervezetében veszélyesen magas szintet érhet el, még akkor is, ha a környezetben eredetileg csak nyomokban volt jelen.',
+                ],
+              },
+              {
+                heading: 'A fenntartható fejlődés',
+                paragraphs: [
+                  'A fenntartható fejlődés olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait is - ez a fogalom szorosan kapcsolódik a korábban (Bioszféra fejezet) megismert fenntartható gazdálkodáshoz és ökológiai lábnyomhoz. A fenntartható fejlődés gyakorlati megvalósítása megköveteli, hogy az anyagforgalom (pl. hulladékkezelés, újrahasznosítás) minél inkább kövesse a természetes ökoszisztémák körforgás-elvét, amelyben - a lebontók tevékenységének köszönhetően - gyakorlatilag semmi nem vész el véglegesen "hulladékként".',
+                ],
+              },
+            ],
+            keyTerms: ['termelő', 'fogyasztó', 'lebontó', 'táplálkozási lánc', 'táplálékhálózat', 'fenntartható fejlődés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szén-oxigén körforgást és a nitrogén körforgását ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szén és az oxigén körforgása',
+                paragraphs: [
+                  'A szén és az oxigén körforgásában - ahogy azt korábban (Felépítő folyamatok: a fotoszintézis, illetve Lebontó folyamatok fejezetek) megismertük - az autotróf szervezetek (fotoszintézissel) szervetlen szén-dioxidból építenek szerves anyagot, a heterotróf szervezetek (sejtlégzéssel) pedig a szerves anyagot bontják vissza szén-dioxiddá. Ha az elhalt szerves anyag lebontás nélkül halmozódik fel (pl. oxigénszegény, vízzel telített környezetben), abból hosszú idő alatt humusz, majd tovább alakulva szénhidrogén vagy kőszén keletkezhet; a mészvázas élőlények elhalt maradványaiból pedig karbonát-kőzetek (pl. mészkő) képződhetnek - ezek a folyamatok a szenet évmilliókra "kivonják" a rövid távú körforgásból.',
+                  'Ez a "kivont" szén az ember által kitermelt és elégetett fosszilis energiahordozók (kőszén, kőolaj, földgáz) formájában évmilliók után kerülhet vissza rövid idő alatt a légkörbe szén-dioxid formájában - ez az egyik fő oka annak, hogy a fosszilis energiahordozók elégetése felborítja a szénkörforgás természetes egyensúlyát, és hozzájárul a korábban (Bioszféra fejezet) megismert globális felmelegedéshez.',
+                ],
+              },
+              {
+                heading: 'A nitrogén körforgása',
+                paragraphs: [
+                  'A nitrogén körforgásában több baktériumcsoport is kulcsszerepet játszik: a nitrogéngyűjtő (nitrogénkötő) baktériumok - ahogy azt korábban (Baktériumok fejezet) a hüvelyesek gyökerén élő fajoknál megismertük - a légköri nitrogént a növények számára felvehető formává alakítják; a nitrifikáló baktériumok - ahogy azt korábban (Elemek, ionok fejezet) megismertük - az ammóniát nitritté, majd nitráttá alakítják, amelyet a növények felvehetnek; a denitrifikáló baktériumok pedig a nitrátot visszaalakítják légköri nitrogénné, lezárva ezzel a kört.',
+                  'Ez a három baktériumcsoport együttesen biztosítja, hogy a nitrogén folyamatosan körforgásban maradjon a légkör, a talaj és az élő szervezetek között - enélkül a nitrogén (amely, ahogy azt korábban az Elemek, ionok fejezetben megismertük, a fehérjék és a nukleinsavak nélkülözhetetlen alkotóeleme) fokozatosan felhalmozódna egyetlen formában, és az élővilág számára hozzáférhetetlenné válna. A nitrogénkörforgás ábrán történő elemzésekor érdemes követni, hogy egy adott nitrogénatom milyen formákon (légköri N₂, ammónia, nitrit, nitrát, majd szerves nitrogén) halad végig, mire visszakerül a kiindulási állapotba.',
+                ],
+              },
+            ],
+            keyTerms: ['nitrogéngyűjtő baktérium', 'denitrifikáló baktérium'],
+          },
+        },
+      },
+      {
+        id: 'energiaaramlas-sokfeleseg',
+        title: 'Energiaáramlás és biológiai sokféleség',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Anyagforgalom fejezet) megismert anyagforgalom után ebben a fejezetben az ökoszisztémán belüli energiaáramlást, valamint a biológiai sokféleség fogalmát tekintjük át - ez a fejezet zárja az Egyed feletti szerveződési szintek témakör jelenleg tárgyalt részét. Míg az anyagok (pl. a szén, a nitrogén) körforgásban maradnak egy ökoszisztémán belül, addig az energia csak egy irányban áramlik át a rendszeren: a termelőktől a fogyasztókon át a lebontókig, majd végül hő formájában elhagyja a rendszert - ez az alapvető különbség indokolja, hogy az anyagforgalmat és az energiaáramlást külön-külön érdemes tárgyalni.',
+            sections: [
+              {
+                heading: 'Produkció, biomassza és egyedszám',
+                paragraphs: [
+                  'A produkció egy adott időszak alatt egy életközösségben újonnan létrehozott szerves anyag (és a benne tárolt energia) mennyisége. A biomassza egy adott pillanatban jelen lévő élő szerves anyag teljes tömege. Az egyedszám és a biomassza nem mindig arányos egymással: sok, de apró termetű egyedből álló populáció biomasszája lehet kisebb, mint kevés, de nagytestű egyedből állóé - ezért egy életközösség jellemzésekor mindhárom mutatót (produkció, biomassza, egyedszám) érdemes együtt figyelembe venni.',
+                  'Jó példa erre a különbségre a tengeri planktonikus életközösségek esete: az apró, gyorsan szaporodó fitoplankton biomasszája egy adott pillanatban viszonylag alacsony lehet, miközben a folyamatos, gyors szaporodás miatt a produkciója (az újonnan termelt szerves anyag mennyisége egy adott időszak alatt) igen magas - ez jól mutatja, hogy a produkció és a biomassza két különböző, egymást kiegészítő szempontot ragad meg. Ezzel szemben egy erdő esetében a helyzet fordított: a fák nagy, tartósan felhalmozott biomasszát képviselnek, miközben az évi produkciójuk (az adott évben újonnan létrehozott szerves anyag) a teljes biomasszájukhoz képest viszonylag kicsi.',
+                ],
+              },
+              {
+                heading: 'A biológiai sokféleség szintjei',
+                paragraphs: [
+                  'A biológiai sokféleséget (biodiverzitást) három, egymásra épülő szinten értelmezzük: a genetikai diverzitás az egyes populációkon belüli allél-összetétel változatosságát jelenti; a fajdiverzitás egy adott területen élő fajok számát és egyedszám-arányait fejezi ki; az ökológiai diverzitás pedig az adott területen betöltött ökológiai funkciók (pl. termelő, fogyasztó, lebontó szerepek) változatosságára utal. Mindhárom szint védelme fontos: a genetikai sokféleség biztosítja egy populáció alkalmazkodóképességét a jövőbeli környezeti változásokhoz, a fajdiverzitás az életközösség stabilitását - ahogy azt korábban (Hazai életközösségek fejezet) megismertük -, az ökológiai diverzitás pedig azt, hogy az életközösség a lehető legtöbb ökológiai "feladatot" el tudja látni.',
+                  'A három szint egymástól viszonylag függetlenül is változhat: egy adott területen a fajok száma lehet magas, miközben az egyes populációk genetikai sokfélesége alacsony (pl. ha egy faj csak kevés, egymással rokon egyedből álló, elszigetelt populációkban él) - ez rávilágít arra, hogy a természetvédelemben nem elegendő csupán a fajok számát figyelni, a genetikai és az ökológiai sokféleséget is nyomon kell követni. Egy faj kihalása mindhárom szinten veszteséget okoz: elvész az adott faj teljes génállománya (genetikai diverzitás), csökken a terület fajszáma (fajdiverzitás), és megszűnik az a sajátos ökológiai szerep is, amit az adott faj betöltött (ökológiai diverzitás).',
+                ],
+              },
+            ],
+            keyTerms: ['produkció', 'biomassza', 'genetikai diverzitás', 'fajdiverzitás', 'ökológiai diverzitás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ökológiai piramisok elemzését ismerjük meg, amelyek az anyag- és energiaáramlás mennyiségi viszonyait szemléltetik az ökoszisztémákban.',
+            sections: [
+              {
+                heading: 'Ökológiai piramisok',
+                paragraphs: [
+                  'Az ökológiai piramisok grafikusan ábrázolják, hogyan változik egy adott mennyiség (pl. az energiamennyiség, a biomassza vagy az egyedszám) a táplálkozási lánc egymást követő szintjein (trófikus szintjein). Az energiapiramis szinte mindig szabályosan szűkülő alakú, mert - ahogy azt korábban (Felépítés és lebontás kapcsolata fejezet) megismertük - minden egyes trófikus szint között jelentősen (kb. tizedére) csökken az átadható energia mennyisége, hiszen az energia nagy része már az adott szint szervezeteinek saját anyagcseréjében hő formájában elvész.',
+                  'Egy ökológiai piramis vagy folyamatábra elemzésekor tehát mindig érdemes megkülönböztetni, hogy pontosan melyik mennyiséget (energia, biomassza vagy egyedszám) ábrázolja, mivel - ahogy azt fentebb is láttuk - ezek nem feltétlenül mutatnak azonos irányú változást a trófikus szintek mentén, még ha a legtöbb esetben mindhárom szabályosan szűkül is felfelé haladva.',
+                  'Ez a szabályosság magyarázza, hogy egy táplálkozási lánc miért nem lehet tetszőlegesen hosszú: minden egyes szinttel drasztikusan csökken a rendelkezésre álló energia, ezért a csúcsragadozók szintjén már csak nagyon kevés energia áll rendelkezésre - emiatt a valóságban egy táplálkozási lánc ritkán haladja meg a négy-öt trófikus szintet.',
+                  'Az egyedszám- és a biomassza-piramis alakja ezzel szemben nem mindig szabályosan szűkülő: bár a legtöbb szárazföldi életközösségben ezek is szűkülnek felfelé haladva, egyes vízi életközösségekben (pl. ahol az apró, de gyorsan szaporodó termelők - a fitoplankton - biomasszája alacsonyabb, mint az őket fogyasztó állatoké) a biomassza-piramis fordított is lehet, hiszen - ahogy azt fentebb a produkció és a biomassza kapcsolatánál megismertük - a gyors utánpótlás miatt alacsony biomasszájú termelő-populáció is képes nagy mennyiségű fogyasztót eltartani.',
+                ],
+              },
+            ],
+            keyTerms: ['ökológiai piramis'],
+          },
+        },
+      },
+      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 10, isFree: false, estimatedMinutes: 18,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
