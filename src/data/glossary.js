@@ -1179,4 +1179,32 @@ export const GLOSSARY = {
   'fajdiverzitás': 'A biológiai sokféleség egyik szintje: egy adott területen élő fajok száma és egyedszám-arányai.',
   'ökológiai diverzitás': 'A biológiai sokféleség egyik szintje: az adott területen betöltött ökológiai funkciók változatossága.',
   'ökológiai piramis': 'Grafikus ábrázolás, amely bemutatja, hogyan változik egy adott mennyiség (energia, biomassza vagy egyedszám) a táplálkozási lánc egymást követő trófikus szintjein.',
+
+  // 5. modul, 10. fejezet: A természetvédelem alapjai
+  'természetvédelem': 'A biológiai sokféleség megőrzését szolgáló tevékenységek összessége, amelyet etikai, egészségügyi, kulturális és gazdasági érvek is alátámasztanak.',
+  'nemzeti park': 'Egy adott tájegység jellegzetes életközösségeit és fajait védő, kijelölt terület (pl. a Hortobágyi, a Bükki, az Aggteleki Nemzeti Park).',
+  'biodiverzitás': 'Biológiai sokféleség; a genetikai, a faj- és az ökológiai diverzitás együttese.',
+  'határérték': 'A megengedett szennyezési szint jogi rögzítése, amelynek túllépése bírságot vonhat maga után.',
+
+  // 5. modul, 11. fejezet: Levegőszennyezés és védelme
+  'légszennyező anyag': 'A levegő minőségét rontó, egészségre vagy környezetre károsan ható anyag (pl. CO, CO2, nitrogén-oxidok, ólom, korom, por, halogénezett szénhidrogének).',
+  'szmogriadó': 'Az az állapot, amikor a légszennyezettség mértéke meghalad egy egészségügyi határértéket, jellemzően szélcsendes, hideg időszakokban.',
+  'savas eső': 'A kén-dioxid és a nitrogén-oxidok légköri átalakulásából keletkező kén- és salétromsav által megsavanyított csapadék.',
+  'üvegházhatás': 'Az a jelenség, amikor egyes légköri gázok (szén-dioxid, metán, vízgőz) átengedik a Nap sugárzását, de elnyelik a Föld felszínéről visszaverődő hősugárzás egy részét, melegítve a légkört.',
+
+  // 5. modul, 12. fejezet: Vízszennyezés és energiagazdálkodás
+  'öntisztuló képesség': 'A vízi életközösségek azon képessége, hogy a lebontó szervezetek tevékenysége révén egy bizonyos mértékig maguktól lebontják a beléjük kerülő szerves szennyezőanyagokat.',
+  'eutrofizáció': 'A víz túlzott feldúsulása tápanyagokban (elsősorban nitrátokban és foszfátokban), amely az algák túlzott elszaporodásához, majd oxigénhiányhoz vezethet.',
+  'hőszennyezés': 'Egy ipari vagy energiatermelő létesítmény által felmelegítve visszaengedett víz okozta hőmérséklet-emelkedés a befogadó vízfolyásban.',
+  'biológiai víztisztítás': 'A szennyvíztisztítás azon lépése, amely mikroorganizmusok segítségével bontja le a szerves szennyezőanyagokat.',
+  'megújuló energiaforrás': 'Emberi léptékkel gyakorlatilag kimeríthetetlen energiaforrás (pl. napenergia, szélenergia, vízenergia, geotermikus energia).',
+  'nem megújuló energiaforrás': 'Emberi léptékkel véges készletet jelentő energiaforrás (pl. kőszén, kőolaj, földgáz).',
+  'atomenergia': 'Az uránatommagok hasadásából nyert, jelentős energiasűrűségű, nem megújuló energiaforrás.',
+
+  // 5. modul, 13. fejezet: Talajvédelem és hulladékgazdálkodás
+  'talajerózió': 'A talaj felső, termékeny rétegének víz vagy szél általi elhordása.',
+  'szelektív gyűjtés': 'A hulladék típus szerinti előzetes szétválogatása, amely megkönnyíti a feldolgozást és az újrahasznosítást.',
+  'újrahasznosítás': 'A hulladékból új nyersanyag vagy termék előállítása.',
+  'hulladékhierarchia': 'A hulladékkezelési lehetőségeket kívánatosságuk sorrendjébe állító elv: megelőzés, újrahasználat, újrahasznosítás, energetikai hasznosítás, lerakás.',
+  'komposztálás': 'A szerves hulladék lebontó szervezetek segítségével történő, kontrollált lebontása, amelynek végterméke a talaj tápanyag-utánpótlására alkalmas komposzt.',
 };
