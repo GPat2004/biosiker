@@ -123,6 +123,37 @@ const ChapterView = () => {
                   {renderWithGlossary(p)}
                 </p>
               ))}
+              {section.table && (
+                <div className="my-4 overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+                  {section.table.caption && (
+                    <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                      {section.table.caption}
+                    </p>
+                  )}
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-slate-100 dark:bg-slate-800">
+                        {section.table.headers.map((h, k) => (
+                          <th key={k} className="text-left px-4 py-3 font-bold">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row, r) => (
+                        <tr key={r} className="border-t border-slate-200 dark:border-slate-800">
+                          {row.map((cell, c) => (
+                            <td key={c} className={`px-4 py-3 ${c === 0 ? 'font-bold' : 'text-slate-600 dark:text-slate-400'}`}>
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
             </div>
           ))}
 

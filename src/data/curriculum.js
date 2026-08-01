@@ -7523,9 +7523,285 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'mendeli-genetika', title: 'Mendeli genetika', order: 4, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 5, isFree: false, estimatedMinutes: 20,
+      {
+        id: 'minosegi-jellegek',
+        title: 'Minőségi jellegek',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 26,
+        content: {
+          kozep: {
+            intro: 'A korábban (A génműködés szabályozása fejezet) megismert molekuláris genetikai alapok után ebben a fejezetben rátérünk a klasszikus, Mendel nevéhez köthető genetikára: azt vizsgáljuk, hogyan öröklődnek a jellegek egyik nemzedékről a másikra.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: haploid, diploid, homozigóta, heterozigóta',
+                paragraphs: [
+                  'A haploid egy olyan sejt vagy szervezet, amely minden kromoszómából csak egy példányt tartalmaz (jele: n) - ilyenek az ivarsejtek. A diploid egy olyan sejt vagy szervezet, amely minden kromoszómából két példányt (egy homológ párt) tartalmaz (jele: 2n) - ilyenek az emberi testi sejtek, amelyek egy-egy kromoszómakészletet kaptak mindkét szülőtől. A haploid petesejt és a haploid hímivarsejt egyesülése hozza létre a diploid zigótát - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) megismertük.',
+                  'A homozigóta egyed egy adott génre nézve két egyforma allélt hordoz (pl. AA vagy aa) - mindkét szülőtől ugyanazt az allélváltozatot örökölte. A heterozigóta egyed ezzel szemben két különböző allélt hordoz (pl. Aa) - egyik szülőtől az egyiket, másiktól a másikat örökölte. Ez a megkülönböztetés kulcsfontosságú, mert egy heterozigóta egyed két allélja "versenghet" egymással a jelleg kialakításáért, míg egy homozigóta egyednél nincs ilyen "verseny".',
+                ],
+              },
+              {
+                heading: 'Alapfogalmak: genotípus és fenotípus',
+                paragraphs: [
+                  'A genotípus egy egyed genetikai állományának, egy adott génre vonatkozó allél-összetétele - vagyis az, hogy pontosan mely allélokat hordozza az egyed (pl. Aa, AA vagy aa). A fenotípus ezzel szemben az egyeden ténylegesen megfigyelhető, mérhető tulajdonság (pl. a szemszín, a testmagasság, vagy egy betegség jelenléte/hiánya) - az, amit a genotípus a környezeti hatásokkal együtt ténylegesen "megvalósít". A kettő kapcsolata nem mindig egyértelmű: két eltérő genotípusú egyednek (pl. AA és Aa) lehet pontosan ugyanaz a fenotípusa, ha az A allél domináns - ezt a következő szakaszban vizsgáljuk meg.',
+                ],
+              },
+              {
+                heading: 'Az öröklésmenetek alaptípusai',
+                paragraphs: [
+                  'A domináns-recesszív öröklésmenet esetén egy heterozigóta egyed fenotípusát teljes egészében a domináns allél határozza meg - a recesszív allél hatása "elrejtőzik", csak homozigóta recesszív állapotban jelenik meg. Nézzünk egy konkrét keresztezést: ha mindkét szülő heterozigóta (Aa), az utódok várható genotípus-eloszlását az alábbi Punnett-tábla mutatja.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: Aa × Aa keresztezés (domináns-recesszív öröklésmenet)',
+                  headers: ['', 'A ivarsejt', 'a ivarsejt'],
+                  rows: [
+                    ['A ivarsejt', 'AA', 'Aa'],
+                    ['a ivarsejt', 'Aa', 'aa'],
+                  ],
+                },
+              },
+              {
+                heading: 'A monohibrid kereszt eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy az utódok genotípus szerinti aránya 1 AA : 2 Aa : 1 aa. Mivel az AA és az Aa genotípusú egyedek fenotípusa megegyezik, a fenotípusos arány 3:1 lesz - ez a klasszikus arány Mendel egyik legfontosabb felfedezése volt.',
+                  'Az intermedier öröklésmenetnél a heterozigóta fenotípusa a két szülői jelleg között áll (pl. piros és fehér virágú szülőtől rózsaszín utód), mert egyik allél sem "nyomja el" teljesen a másikat. A kodomináns öröklésmenetnél a heterozigóta egyednél mindkét allél hatása egyszerre, teljes mértékben megnyilvánul (pl. az AB0-vércsoportnál az IAIB egyed vörösvértestjein egyszerre jelenik meg az A és a B felszíni antigén is).',
+                ],
+              },
+              {
+                heading: 'A tesztelő keresztezés',
+                paragraphs: [
+                  'Egy domináns fenotípusú egyedről önmagában nem dönthető el, hogy homozigóta (AA) vagy heterozigóta (Aa) genotípusú-e, hiszen mindkettő ugyanazt a fenotípust mutatja. A tesztelő keresztezés erre ad választ: az ismeretlen genotípusú egyedet egy homozigóta recesszív (aa) egyeddel keresztezik. Ha az ismeretlen egyed AA, minden utód a domináns fenotípust mutatja. Ha Aa, az utódok fele domináns, fele recesszív fenotípusú lesz - vagyis egyetlen recesszív fenotípusú utód születése is bizonyítja, hogy az ismeretlen szülő heterozigóta volt.',
+                ],
+              },
+              {
+                heading: 'Családfaelemzés és emberi jellegek öröklődése',
+                paragraphs: [
+                  'A családfaelemzés során egy adott jelleg (pl. egy öröklődő betegség) több nemzedéken át történő megjelenését vizsgáljuk, hogy megállapítsuk az öröklésmenetét: ha a jelleg minden nemzedékben megjelenik és minden érintett szülőnek van érintett gyermeke, az domináns öröklésmenetre utal; ha a jelleg "kihagy" nemzedékeket, és két egészséges szülőnek is születhet érintett gyermeke, az recesszív öröklésmenetre utal. Emberi jellegek közül domináns például a barna szem és a szabad fülcimpa, recesszív a vörös hajszín és számos anyagcsere-betegség (pl. a korábban megismert fenilketonúria).',
+                  'Nézzünk egy konkrét esetet a szemszín (barna=domináns B, kék=recesszív b) példáján. Az I. generációban egy barna szemű szülőpár (Apa és Anya) két barna szemű gyermeket (II. generáció) nevel fel. A II. generáció egyik tagja egy szintén barna szemű személlyel köt házasságot, és ennek a párnak egy kék szemű gyermeke (III. generáció, az I. generáció unokája) születik. Mivel a kék szem recesszív, az unoka genotípusa csak bb lehet - ez bizonyítja, hogy mindkét szülője (bár fenotípusosan barna szemű) heterozigóta (Bb) hordozó volt. Ebből az is következik, hogy már az I. generációban - vagyis Apa és Anya közül - legalább az egyikük szintén Bb genotípusú volt, hiszen a b allélnak tőlük kellett a családba kerülnie; a rendelkezésre álló adatokból azonban nem állapítható meg pontosan, melyikük volt a hordozó.',
+                ],
+                table: {
+                  caption: 'A szemszín-példa családfájának összegzése (B = barna, domináns; b = kék, recesszív)',
+                  headers: ['Egyén', 'Generáció', 'Fenotípus', 'Levezetett genotípus'],
+                  rows: [
+                    ['Apa', 'I.', 'barna szemű', 'Bb vagy BB (legalább Apa és Anya egyike Bb)'],
+                    ['Anya', 'I.', 'barna szemű', 'Bb vagy BB (legalább Apa és Anya egyike Bb)'],
+                    ['Gyermekük', 'II.', 'barna szemű', 'Bb (mert gyermekük - az unoka - kék szemű lesz)'],
+                    ['Gyermekük házastársa', 'II.', 'barna szemű', 'Bb (mert gyermekük - az unoka - kék szemű lesz)'],
+                    ['Unoka', 'III.', 'kék szemű', 'bb (biztosan, hiszen a kék szem recesszív)'],
+                  ],
+                },
+              },
+              {
+                heading: 'Egygénes enzimbetegség öröklődésének levezetése',
+                paragraphs: [
+                  'A dominanciaviszonyok ismeretében levezethető egy egygénes enzimbetegség (pl. a korábban megismert fenilketonúria) öröklődése is. Legyen F a normál, f a hibás (recesszív) allél. Ha mindkét szülő tünetmentes hordozó (Ff), a keresztezés eredménye megegyezik a fenti Aa × Aa keresztezéssel: 1 FF : 2 Ff : 1 ff, vagyis az utódok negyede (ff) fenilketonúriás lesz, a maradék háromnegyed (FF vagy Ff) egészséges - bár az Ff genotípusúak maguk is hordozzák és továbbadhatják a hibás allélt.',
+                ],
+              },
+              {
+                heading: 'Az AB0-vércsoportrendszer öröklődése',
+                paragraphs: [
+                  'Az AB0-vércsoportrendszer - ahogy azt korábban (A testfolyadékok fejezet) megismertük - három allél (IA, IB, i) által meghatározott rendszer: az IA és az IB allél egymással szemben kodomináns, mindkettő domináns az i alléllal szemben. Nézzünk egy konkrét példát: egy IAi (A vércsoportú) és egy IBi (B vércsoportú) szülő gyermekeit vizsgálva az alábbi Punnett-tábla mutatja a lehetséges genotípusokat.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: IAi × IBi keresztezés (AB0-vércsoport öröklődése)',
+                  headers: ['', 'IA ivarsejt', 'i ivarsejt'],
+                  rows: [
+                    ['IB ivarsejt', 'IAIB (AB vércsoport)', 'IBi (B vércsoport)'],
+                    ['i ivarsejt', 'IAi (A vércsoport)', 'ii (0 vércsoport)'],
+                  ],
+                },
+              },
+              {
+                heading: 'A vércsoport-keresztezés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy ennél a konkrét szülőpárnál egyenlő eséllyel (egyenként 25%) születhet AB, A, B, illetve 0 vércsoportú gyermek - ez a példa is jól szemlélteti, hogy egy IA vércsoportú és egy IB vércsoportú szülőnek akár mind a négy lehetséges vércsoportú gyermeke is születhet, ami sok laikus számára meglepő.',
+                ],
+              },
+              {
+                heading: 'Az Rh-vércsoportrendszer öröklődése',
+                paragraphs: [
+                  'Az Rh-vércsoportrendszer - ahogy azt korábban (Vércsoportok fejezet) megismertük - egyetlen génnel, egyszerű domináns-recesszív öröklésmenettel írható le: az Rh-pozitív (R) allél domináns az Rh-negatív (r) alléllal szemben. Nézzünk egy konkrét keresztezést: ha az apa heterozigóta Rh-pozitív (Rr genotípusú), az anya pedig Rh-negatív (rr genotípusú), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: Rr (Rh-pozitív, heterozigóta apa) × rr (Rh-negatív anya) keresztezés',
+                  headers: ['', 'R ivarsejt (apai)', 'r ivarsejt (apai)'],
+                  rows: [
+                    ['r ivarsejt (anyai)', 'Rr (Rh-pozitív)', 'rr (Rh-negatív)'],
+                    ['r ivarsejt (anyai)', 'Rr (Rh-pozitív)', 'rr (Rh-negatív)'],
+                  ],
+                },
+              },
+              {
+                heading: 'Az Rh-keresztezés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy ennél a szülőpárnál az utódok fele (Rr) Rh-pozitív, fele (rr) Rh-negatív lesz - vagyis egy Rh-pozitív (de heterozigóta) és egy Rh-negatív szülőnek is születhet Rh-negatív gyermeke, hiszen az apa maga is hordozza az r allélt, csak a domináns R allél miatt ez nála nem jelenik meg fenotípusosan.',
+                ],
+              },
+              {
+                heading: 'Az ivar meghatározása és a génkölcsönhatás',
+                paragraphs: [
+                  'Az ember ivarát az ivarsejtek határozzák meg: a petesejt mindig X kromoszómát hordoz, a hímivarsejt vagy X-et, vagy Y-t - X-kromoszómás hímivarsejtnél a zigóta XX (nőivarú), Y-kromoszómásnál XY (hímivarú) lesz. Mivel a hímivarsejt "dönti el" a kombinációt, biológiai értelemben az apa határozza meg az utód nemét - ahogy azt korábban (Szaporítószervek fejezet) megismertük.',
+                  'A génkölcsönhatás azt jelenti, hogy egy tulajdonság kialakításában több gén vesz részt, és ezek kölcsönösen befolyásolják egymás hatását - a legtöbb valós tulajdonság (pl. bőrszín, testmagasság) így, több gén együttes hatására alakul ki.',
+                ],
+              },
+              {
+                heading: 'A génkapcsoltság',
+                paragraphs: [
+                  'A génkapcsoltság azt jelenti, hogy két (vagy több) gén ugyanazon a kromoszómán helyezkedik el, ezért nem függetlenül, hanem "csomagban", együtt öröklődnek - szemben azzal az esettel, amikor két gén különböző kromoszómán van, és egymástól függetlenül szétválik a meiózis során. A génkapcsoltság felismerhető, ha egy keresztezés eredménye jelentősen eltér a független öröklődés esetén várt aránytól (lásd emelt szinten).',
+                ],
+              },
+            ],
+            keyTerms: ['haploid', 'diploid', 'homozigóta', 'heterozigóta', 'genotípus', 'fenotípus', 'domináns-recesszív öröklésmenet', 'intermedier öröklésmenet', 'kodomináns öröklésmenet', 'tesztelő keresztezés', 'génkölcsönhatás', 'génkapcsoltság'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten Mendel kutatási módszerét és annak korlátait, a dihibrid keresztezést teljes Punnett-táblával, a letális allélt, a nemhez kötött öröklődést, valamint a kapcsoltság és a rekombináció összefüggését ismerjük meg.',
+            sections: [
+              {
+                heading: 'Mendel kutatási módszere és a valószínűség',
+                paragraphs: [
+                  'Mendel kutatási módszerének kulcsa a nagy egyedszámú keresztezések gondos, számszerű elemzése volt: nem elégedett meg néhány utód megfigyelésével, hanem több ezer borsónövény keresztezéséből származó adatot elemzett, így a genotípusok/fenotípusok gyakorisága a nagy számok törvénye miatt megbízhatóan közelítette az elméleti valószínűségeket (pl. a fenti 3:1-es arányt). Kevés utód esetén a véletlen ingadozás miatt az arány jelentősen eltérhet az elméletitől, de nagy mintaszámnál a megfigyelt gyakoriság egyre közelebb kerül az elméleti valószínűséghez.',
+                ],
+              },
+              {
+                heading: 'Mendel következtetéseinek érvényességi korlátai',
+                paragraphs: [
+                  'Mendel törvényei nem érvényesek korlátlanul minden esetre. Az egyik fő korlátozó tényező a kapcsoltság (lásd lentebb): ha két gén ugyanazon a kromoszómán van, nem öröklődnek egymástól függetlenül, ellentétben azzal, amit Mendel a független szétválás törvényében feltételezett. A másik fő korlátozó tényező a sejtmagon kívüli öröklés: a mitokondriumok saját, kis DNS-állománya nem a sejtmagi kromoszómákon, hanem a citoplazmában öröklődik, és mivel megtermékenyítéskor jellemzően csak a petesejt citoplazmája épül be a zigótába, ez az öröklésmenet kizárólag anyai ágon valósul meg.',
+                ],
+              },
+              {
+                heading: 'Az ecetmuslica mint genetikai modellorganizmus',
+                paragraphs: [
+                  'Az ecetmuslica (Drosophila melanogaster) azért kiválóan alkalmas genetikai vizsgálatokra, mert nagyon gyorsan (kb. két hét alatt) éri el az ivarérettséget, egyetlen nemzedéken belül nagyon sok utódot hoz létre, kis helyen, olcsón tenyészthető, és mindössze 4 kromoszómapárral rendelkezik, ami leegyszerűsíti az elemzést - ezek együtt tették lehetővé, hogy rövid idő alatt, sok nemzedéken át lehessen vizsgálni az öröklődési mintázatokat.',
+                ],
+              },
+              {
+                heading: 'Dihibrid kereszt: két gén, két allél',
+                paragraphs: [
+                  'Ha két, egymástól független (különböző kromoszómán elhelyezkedő) gén öröklődését vizsgáljuk egyszerre, dihibrid keresztezésről beszélünk. Legyen két heterozigóta egyed genotípusa AaBb. Az AaBb szülő ivarsejtjei (a független szétválás elve szerint) négyféle kombinációban jöhetnek létre: AB, Ab, aB és ab. Az AaBb × AaBb keresztezés teljes eredményét az alábbi, 16 mezős Punnett-tábla mutatja.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: AaBb × AaBb dihibrid keresztezés (teljes 4×4-es tábla)',
+                  headers: ['', 'AB', 'Ab', 'aB', 'ab'],
+                  rows: [
+                    ['AB', 'AABB', 'AABb', 'AaBB', 'AaBb'],
+                    ['Ab', 'AABb', 'AAbb', 'AaBb', 'Aabb'],
+                    ['aB', 'AaBB', 'AaBb', 'aaBB', 'aaBb'],
+                    ['ab', 'AaBb', 'Aabb', 'aaBb', 'aabb'],
+                  ],
+                },
+              },
+              {
+                heading: 'A dihibrid kereszt eredményének értelmezése',
+                paragraphs: [
+                  'A 16 utód genotípusát fenotípus szerint csoportosítva a klasszikus 9:3:3:1 arányt kapjuk: 9 utód mindkét domináns jelleget mutatja (A_B_, négyszer), 3 utód csak az egyik domináns jelleget (A_bb, háromszor), 3 utód csak a másikat (aaB_, háromszor), és 1 utód mindkét recesszív jelleget (aabb, egyszer). Ez az arány csak akkor jelentkezik, ha a két gén egymástól függetlenül öröklődik - ha kapcsolt, az arány jelentősen eltér ettől, ahogy azt lentebb a kapcsoltságnál tárgyaljuk.',
+                ],
+              },
+              {
+                heading: 'A letális allél hatása a keresztezési arányokra',
+                paragraphs: [
+                  'Egyes allélok letálisak lehetnek homozigóta állapotban - az adott genotípusú egyed nem életképes, elpusztul még a fejlődés során. Ha például az A allél heterozigóta állapotban (Aa) egy kedvező tulajdonságot okoz, de homozigóta domináns állapotban (AA) letális, akkor egy Aa × Aa keresztezésből a szokásos 1 AA : 2 Aa : 1 aa arány helyett - mivel az AA genotípusú utódok elpusztulnak - a ténylegesen megszülető, életképes utódok aránya 2 Aa : 1 aa lesz. Ez magyarázza, hogy egyes keresztezéseknél miért tér el a megfigyelt arány a Mendeli szabályok alapján elméletileg várt aránytól.',
+                ],
+              },
+              {
+                heading: 'Nemhez kötött öröklés: vérzékenység és színtévesztés',
+                paragraphs: [
+                  'A nemhez kötött öröklésmenetű jellegek génjei az X-kromoszómán helyezkednek el. Mivel a nő két X-kromoszómát, a férfi viszont csak egy X-et (és egy Y-t) hordoz, egy recesszív, X-kromoszómán elhelyezkedő allél hatása a férfiaknál sokkal gyakrabban jelenik meg fenotípusosan, mert nincs második X-kromoszómájuk, amely "elfedhetné" a recesszív allélt. Ilyen, recesszíven öröklődő jelleg a vérzékenység (hemofília) és a színtévesztés is.',
+                  'Nézzünk egy konkrét példát: legyen XH a normál, Xh pedig a hemofíliát okozó, recesszív allél. Ha az anya hordozó (XHXh, egészséges) és az apa egészséges (XHY), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: XHXh (hordozó anya) × XHY (egészséges apa) keresztezés',
+                  headers: ['', 'XH ivarsejt (apai)', 'Y ivarsejt (apai)'],
+                  rows: [
+                    ['XH ivarsejt (anyai)', 'XHXH (egészséges lány)', 'XHY (egészséges fiú)'],
+                    ['Xh ivarsejt (anyai)', 'XHXh (hordozó lány)', 'XhY (hemofíliás fiú)'],
+                  ],
+                },
+              },
+              {
+                heading: 'A nemhez kötött öröklés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból jól látszik: a lányok közül egyik sem lesz beteg (mindegyik örököl egy XH allélt az apjától), de a lányok fele hordozóvá válik; a fiúk közül viszont a fele (akik az anyától az Xh allélt öröklik) ténylegesen hemofíliás lesz, mivel nincs második X-kromoszómájuk, amely kompenzálhatná a hibás allélt. Ez magyarázza, hogy a hemofília és a színtévesztés miért fordul elő gyakrabban férfiaknál.',
+                ],
+              },
+              {
+                heading: 'Génkölcsönhatás F2 arányaiból',
+                paragraphs: [
+                  'Ha egy F2 nemzedék (két heterozigóta szülő utódai) fenotípusos aránya jelentősen eltér a klasszikus 9:3:3:1 aránytól, az arra utalhat, hogy a két vizsgált gén kölcsönhatásban áll egymással (pl. az egyik gén terméke szükséges a másik gén termékének működéséhez) - ilyenkor egyes elméletileg várt fenotípus-kombinációk egyáltalán nem, vagy más aránnyal jelennek meg.',
+                ],
+              },
+              {
+                heading: 'Kapcsoltság és rekombináció: numerikus levezetés',
+                paragraphs: [
+                  'Ha az eltérés abban nyilvánul meg, hogy a szülői (eredeti) allél-kombinációk aránytalanul gyakrabban fordulnak elő az utódokban, mint az új (rekombináns) kombinációk, az a két gén kapcsoltságára utal: minél közelebb helyezkedik el két gén egymáshoz ugyanazon a kromoszómán, annál ritkábban választja el őket egymástól a crossing over, ezért annál ritkábban jönnek létre rekombináns utódok.',
+                  'Nézzünk egy konkrét, közölt adatokon alapuló számítást. Egy AaBb genotípusú (kapcsolt génekkel rendelkező) egyed és egy aabb genotípusú egyed tesztelő keresztezéséből 1000 utód születik, az alábbi megoszlásban: 460 AaBb (szülői, azaz nem-rekombináns kombináció), 460 aabb (szintén szülői kombináció), 40 Aabb (rekombináns kombináció) és 40 aaBb (szintén rekombináns kombináció). A rekombinációs gyakoriság kiszámítása: rekombináns utódok száma osztva az összes utód számával, vagyis (40+40)/1000 = 80/1000 = 8%. Mivel a szülői kombinációk (460+460=920, azaz 92%) jóval gyakoribbak, mint a rekombinánsok (8%), a két gén egyértelműen kapcsolt (ha függetlenül öröklődnének, a négyféle kombináció egyenlő, 25-25%-os arányban fordulna elő).',
+                  'Ez az összefüggés (a rekombinációs gyakoriság és a gének kromoszómán belüli távolsága közötti kapcsolat) adja a genetikai térképezés alapelvét: minél gyakrabban fordul elő rekombináció két gén között, annál távolabb helyezkednek el egymástól a kromoszómán. A fenti példában a 8%-os rekombinációs gyakoriság azt jelenti, hogy a két gén egymástól 8 térképegységnyi (centiMorgan) távolságra helyezkedik el a kromoszómán - a rekombinációs gyakoriságok méréséből tehát relatív "térkép" rajzolható a gének kromoszómán belüli sorrendjéről és távolságáról.',
+                ],
+              },
+            ],
+            keyTerms: ['dihibrid kereszt', 'letális allél', 'nemhez kötött öröklés', 'hemofília', 'kapcsoltsági térképezés', 'rekombinációs gyakoriság'],
+          },
+        },
+      },
+      {
+        id: 'mennyisegi-jellegek',
+        title: 'Mennyiségi jellegek',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Minőségi jelleg', 'Mennyiségi jelleg'],
+          rows: [
+            ['Gének száma', 'egy gén (vagy kevés gén)', 'sok, egyenként kis hatású gén'],
+            ['Környezet hatása', 'elhanyagolható', 'jelentős'],
+            ['Megjelenés jellege', 'éles, elkülönülő kategóriák', 'folytonos, fokozatos átmenet'],
+            ['Eloszlás a populációban', 'diszkrét arányok (pl. 3:1, 9:3:3:1)', 'haranggörbe (normális eloszlás)'],
+            ['Példa', 'AB0-vércsoport, borsó virágszíne', 'testmagasság, testtömeg, bőrszín'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Minőségi jellegek fejezet) megismert, jól elkülöníthető (minőségi) jellegek után ebben a fejezetben azokat a jellegeket vizsgáljuk meg, amelyek nem éles kategóriákban, hanem fokozatos átmenetekkel jelennek meg.',
+            sections: [
+              {
+                heading: 'Minőségi és mennyiségi jellegek összehasonlítása',
+                paragraphs: [
+                  'A minőségi jellegeket (pl. a borsó virágszíne, az AB0-vércsoport - ahogy azt korábban a Minőségi jellegek fejezetben megismertük) jellemzően egyetlen gén (vagy kevés gén) határozza meg, és a jelleg éles, egymástól jól elkülöníthető kategóriákban jelenik meg (pl. vagy piros, vagy fehér virág, vagy A, vagy B, vagy AB, vagy 0 vércsoport - köztes fokozat nincs). A mennyiségi jellegeket (pl. a testmagasság, a testtömeg, a bőrszín árnyalata) ezzel szemben sok gén együttes hatása alakítja ki, és emellett a környezeti tényezők (pl. táplálkozás, életmód, egészségi állapot) hatása is jelentős - emiatt a mennyiségi jellegek nem éles kategóriákban, hanem folyamatos, fokozatos átmenetekkel jelennek meg a populációban.',
+                  'Vegyük például az emberi testmagasságot: nem létezik éles határ "alacsony" és "magas" emberek között, hanem egy folytonos skálán helyezkedik el minden egyed, a legalacsonyabbtól a legmagasabbig, sok apró lépésben - ez azért van így, mert a testmagasságot sok, egyenként kis hatású gén együttesen alakítja ki, és emellett a gyermekkori táplálkozás, betegségek és egyéb környezeti hatások is jelentősen módosítják a végeredményt. Hasonlóan folytonos, mennyiségi jelleg az emberi testtömeg és a bőr pigmentáltságának (árnyalatának) mértéke is: utóbbit sok gén szabályozza együttesen, ezért a bőrszín a világ népességében nem néhány éles kategóriában, hanem rendkívül sok átmeneti árnyalatban jelenik meg.',
+                ],
+              },
+              {
+                heading: 'Nemesítés és mennyiségi jellegek',
+                paragraphs: [
+                  'A növénynemesítés (pl. hibridvetőmagok előállítása) célja gyakran éppen egy mennyiségi jelleg (pl. a terméshozam, a szárazságtűrés mértéke, a betegségekkel szembeni ellenálló képesség) megváltoztatása, javítása - mivel ezeket a jellegeket sok gén együttesen alakítja ki, a nemesítés jellemzően nem egyetlen gén cseréjével, hanem sok, kedvező allélt hordozó egyed gondos kiválasztásával és keresztezésével valósul meg, több nemzedéken keresztül.',
+                  'Konkrét példa erre a búza terméshozamának nemesítése: a nemesítők olyan búzaegyedeket választanak ki és kereszteznek egymással ismételten, amelyek a kívánt tulajdonságokban (pl. nagyobb szemtermés, rövidebb, döntésnek jobban ellenálló szár, kórokozókkal szembeni ellenállás) a legjobbnak bizonyulnak - mivel ezek a tulajdonságok mennyiségi jellegek, egyetlen keresztezés nem hoz drámai javulást, hanem a sok nemzedéken át tartó, tudatos szelekció fokozatosan tolja el a populáció átlagát a kívánt irányba. A hibridvetőmagok előállításánál emellett gyakran két, egymástól genetikailag távoli nemesített törzs keresztezését használják ki, mert az így létrejövő hibrid utódnemzedék (F1) a szülőknél is nagyobb terméshozamot mutathat (heterózis-hatás).',
+                ],
+              },
+              {
+                heading: 'Az öröklött és a környezeti hatások szétválasztása',
+                paragraphs: [
+                  'Mivel a mennyiségi jellegeket egyszerre alakítja a genetikai állomány és a környezet, esettanulmányok segítenek elkülöníteni a két hatás szerepét. Az ikervizsgálatok (elsősorban az egypetéjű, tehát genetikailag azonos ikrek összehasonlítása) azt vizsgálják, mennyire hasonlítanak egymásra genetikailag azonos, de esetleg eltérő környezetben (pl. külön nevelkedve, más-más családban) felnövő egyedek - minél inkább hasonlítanak egymásra még eltérő környezetben nevelkedve is, annál nagyobb a jelleg kialakításában az öröklött tényezők szerepe; minél inkább eltérnek egymástól, annál nagyobb a környezet szerepe. Ilyen ikervizsgálatokból tudjuk például, hogy a testmagasság kialakításában az öröklött tényezők szerepe igen jelentős, míg számos egyéb, viselkedéssel összefüggő mennyiségi jellegnél a környezeti hatás aránya nagyobb.',
+                  'A környezetváltoztatásos vizsgálatok (pl. ugyanazon növényfajta - tehát azonos genotípusú egyedek - termesztése eltérő talaj- vagy tápanyag-viszonyok, eltérő öntözés vagy fényviszonyok mellett) pedig azt mutatják meg, mennyire változtatja meg a környezet önmagában (azonos genotípus mellett) a mennyiségi jelleg végső megjelenését - ha ugyanaz a genotípus eltérő környezetben jelentősen eltérő terméshozamot ad, az bizonyítja, hogy a jelleg kialakításában a környezetnek is számottevő szerepe van, nem csak a génállománynak.',
+                ],
+              },
+            ],
+            keyTerms: ['mennyiségi jelleg', 'minőségi jelleg', 'ikervizsgálat', 'heterózis-hatás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mennyiségi jellegek eloszlásának jellegzetes, haranggörbe-szerű alakját ismerjük meg.',
+            sections: [
+              {
+                heading: 'A haranggörbe eloszlás',
+                paragraphs: [
+                  'Ha egy populációban egy mennyiségi jelleget (pl. a testmagasságot) ábrázolunk grafikonon (vízszintes tengelyen a jelleg értéke, pl. a testmagasság centiméterben, függőleges tengelyen az adott értéket mutató egyedek száma), az eloszlás jellegzetesen haranggörbe (normális eloszlás) alakú lesz: a legtöbb egyed a közepes tartományba esik, és az egyedek száma fokozatosan, szimmetrikusan csökken a szélsőséges (nagyon alacsony vagy nagyon magas) értékek felé haladva. A görbe legmagasabb pontja a populáció átlagértékének felel meg, a görbe két oldalán pedig egyre ritkábban fordulnak elő az átlagtól egyre távolabbi értékek.',
+                  'Ez a haranggörbe-alak közvetlenül következik abból, hogy a mennyiségi jelleget sok, egyenként kis hatású gén együttesen alakítja ki, és emellett a környezeti tényezők is folyamatosan módosítják a végeredményt: minél több gén (és környezeti tényező) járul hozzá egy jelleghez, annál inkább közelít az eloszlás a szimmetrikus haranggörbéhez, szemben a minőségi jellegek éles, kategorikus (pl. a korábban megismert 3:1 vagy 9:3:3:1 arányú, néhány diszkrét csoportba rendeződő) eloszlásával. Minél kevesebb gén alakít ki egy jelleget, annál kevésbé sima, annál inkább lépcsőzetes az eloszlás görbéje - a valóban sok gén által meghatározott jellegeknél (pl. testmagasság) éri el az eloszlás a legsimább, legjellegzetesebb haranggörbe-alakot.',
+                ],
+              },
+            ],
+            keyTerms: ['normális eloszlás'],
+          },
+        },
+      },
+      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 6, isFree: false, estimatedMinutes: 20,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
       { id: 'bioszfera-evolucioja', title: 'A bioszféra evolúciója', order: 6, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
