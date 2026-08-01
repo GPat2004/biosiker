@@ -1140,4 +1140,43 @@ export const GLOSSARY = {
   'antibiózis': 'Kölcsönhatás, amelyben az egyik faj olyan anyagot termel, amely gátolja vagy elpusztítja a másik faj egyedeit.',
   'élősködés': 'Kölcsönhatás (parazitizmus), amelyben az egyik fél a másik kárára táplálkozik, jellemzően anélkül, hogy azonnal elpusztítaná azt.',
   'táplálkozási kölcsönhatás': 'Az egyik faj (ragadozó) másik faj (zsákmány) elfogyasztásán alapuló kölcsönhatás (predáció).',
+
+  // 5. modul, 5. fejezet: Az életközösségek jellemzői
+  'életközösség': 'Egy adott élőhelyen élő, egymással szoros kölcsönhatásban álló populációk összessége (biocönózis).',
+  'domináns faj': 'Egy életközösségben egyedszámával, biomasszájával vagy hatásával kiemelkedő faj, amely jelentősen meghatározza az életközösség jellegét.',
+  'karakterfaj': 'Egy olyan faj, amelynek jelenléte jellegzetes és felismerhető egy adott életközösségre, még ha egyedszáma nem is a legnagyobb.',
+  'szintezettség': 'Az életközösségek térbeli szerveződési formája, amelynek során a fajok függőlegesen elkülönülő szintekben (rétegekben) helyezkednek el.',
+
+  // 5. modul, 6. fejezet: Hazai életközösségek
+  'mintázat': 'Az életközösség fajainak, élőhelyfoltjainak egymáshoz viszonyított térbeli elrendeződése.',
+  'szukcesszió': 'Egy életközösség fokozatos, meghatározott irányban zajló átalakulása, amíg el nem éri a végállapotát (klimax állapotát).',
+  'degradáció': 'Egy életközösség állapotának romlása (pl. fajszám-csökkenés, a szerkezet leegyszerűsödése).',
+  'szikes puszta': 'Magas sótartalmú talajon kialakuló élőhely, amelynek kialakulásában a talajvíz párolgása és az így felszínre húzódó sók játszanak szerepet.',
+  'sziklagyep': 'Szélsőséges, sekély talajú, gyakran meredek lejtőkön kialakuló élőhely, jellegzetes, sokszor ritka és védett fajokkal.',
+  't-érték': 'Ökológiai mutató, amely egy faj hőmérsékleti igényét fejezi ki.',
+  'w-érték': 'Ökológiai mutató, amely egy faj vízigényét fejezi ki.',
+  'klimax életközösség': 'A szukcesszió végállapota, amely - zavaró hatás nélkül - tartósan fennmarad.',
+
+  // 5. modul, 7. fejezet: Bioszféra
+  'gaia-elmélet': 'Elmélet, amely szerint a bioszféra egyetlen, önszabályozó globális rendszerként fogható fel, amelyben az élővilág és az élettelen környezet kölcsönösen alakítják egymást.',
+  'civilizációs ártalom': 'A modern életmódhoz kötődő, az egészséget károsító hatás (pl. feloldatlan stressz, helytelen életmód, túlzott gyógyszerfogyasztás).',
+  'fenntartható gazdálkodás': 'Olyan gazdálkodási mód, amely a jelen szükségleteit úgy elégíti ki, hogy nem veszélyezteti a jövő nemzedékek lehetőségeit.',
+  'ökológiai válság': 'A globális környezeti problémák (népességrobbanás, felmelegedés, hulladékprobléma, savasodás, ózonpajzs-elvékonyodás) összessége, amely társadalmi és gazdasági kérdésekkel is összefügg.',
+  'ökológiai lábnyom': 'Mutató, amely azt fejezi ki, mekkora területre volna szükség egy adott személy vagy közösség fogyasztásának és hulladéktermelésének fenntartásához.',
+
+  // 5. modul, 8. fejezet: Anyagforgalom
+  'fogyasztó': 'Az az ökológiai szereplő, amely a termelők vagy más fogyasztók elfogyasztásával jut szerves anyaghoz és energiához.',
+  'táplálkozási lánc': 'Egyenes vonalú sorozat, amely egyetlen úton mutatja be, melyik szervezet táplálkozik melyikkel.',
+  'táplálékhálózat': 'Több, egymással összefonódó táplálkozási láncból felépülő, valóságosabb ábrázolása annak, hogy egy faj több másik fajjal is táplálkozási kapcsolatban áll.',
+  'fenntartható fejlődés': 'Olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait.',
+  'nitrogéngyűjtő baktérium': 'Baktérium, amely a légköri nitrogént a növények számára felvehető formává alakítja.',
+  'denitrifikáló baktérium': 'Baktérium, amely a nitrátot visszaalakítja légköri nitrogénné, lezárva a nitrogénkörforgást.',
+
+  // 5. modul, 9. fejezet: Energiaáramlás és biológiai sokféleség
+  'produkció': 'Egy adott időszak alatt egy életközösségben újonnan létrehozott szerves anyag (és a benne tárolt energia) mennyisége.',
+  'biomassza': 'Egy adott pillanatban jelen lévő élő szerves anyag teljes tömege.',
+  'genetikai diverzitás': 'A biológiai sokféleség egyik szintje: az egyes populációkon belüli allél-összetétel változatossága.',
+  'fajdiverzitás': 'A biológiai sokféleség egyik szintje: egy adott területen élő fajok száma és egyedszám-arányai.',
+  'ökológiai diverzitás': 'A biológiai sokféleség egyik szintje: az adott területen betöltött ökológiai funkciók változatossága.',
+  'ökológiai piramis': 'Grafikus ábrázolás, amely bemutatja, hogyan változik egy adott mennyiség (energia, biomassza vagy egyedszám) a táplálkozási lánc egymást követő trófikus szintjein.',
 };
