@@ -77,6 +77,18 @@ függetlenül attól, hogy szerepel-e a PDF adott alpontjában:
   módszertani elvárásokat is (pl. elsősegély-lépések sorszámozva,
   kidolgozott számítási példa) - ezek nem opcionálisak, ha a témakör
   ebbe a két archetípusba tartozik
+- F archetípusnál (genetika: Molekuláris genetika, Mendeli genetika,
+  Populációgenetika stb.) KÜLÖN, TÉTELESEN ellenőrizd az F-KIEGÉSZÍTÉS 2
+  pontjait: minden keresztezési példánál van-e ténylegesen felrajzolt,
+  teljesen kitöltött Punnett-tábla markdown táblázat formátumban
+  (monohibridnél 2x2, dihibridnél/többallélosnál akár 16 mezőig,
+  minden mezőben konkrét genotípussal, a tábla után szöveges
+  arány-összegzéssel), és minden egyenletnél/képletnél (pl.
+  Hardy-Weinberg: p² + 2pq + q² = 1) ki van-e fejtve explicit módon
+  minden változó/szimbólum jelentése, valamint szerepel-e legalább egy
+  behelyettesített, végigszámolt numerikus példa - ⚠️ jelezd, ha egy
+  Punnett-tábla hiányzik, hiányos, vagy ha egy egyenletnél a változók
+  jelentése nincs kifejtve
 
 ## 3. Alfogalom-lefedettség ÉS fejezet-hozzárendelés (a PDF alapján)
 - Listázd ki a PDF-ből az adott fejezethez (pl. "3.2.1 Baktériumok")

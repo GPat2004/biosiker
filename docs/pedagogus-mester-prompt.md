@@ -122,6 +122,33 @@ DNS-replikáció*
   "van-e" számítási példa) - egy hibás levezetés rosszabb, mint ha
   nem lenne példa, mert téves mintát rögzít a diákban
 
+### F-KIEGÉSZÍTÉS 2 - Punnett-táblák és egyenletek KÖTELEZŐ formátuma
+- MINDEN keresztezési (monohibrid, dihibrid, többallélos) példánál
+  KÖTELEZŐ egy ténylegesen felrajzolt Punnett-táblát adni (markdown
+  táblázat formátumban), NEM csak szövegesen leírni az arányt
+- Monohibrid kereszt → 2x2-es (4 mezős) tábla, konkrét allélekkel
+  kitöltve (pl. Aa x Aa → AA, Aa, Aa, aa)
+- Dihibrid vagy többallélos kereszt (pl. AB0-vércsoport, ahol 3 allél
+  van) → a TELJES, kitöltött táblát kell adni, akár 16 mezősig is
+  (pl. AaBb x AaBb → teljes 4x4-es, 16 mezős tábla, minden mezőben a
+  konkrét genotípussal), NEM elég a végeredmény-arányt (9:3:3:1)
+  közölni tábla nélkül
+- Minden táblázat UTÁN kötelező szöveges összegzés: hány féle
+  genotípus/fenotípus jött ki, milyen arányban, ez miért egyezik (vagy
+  tér el) a várt Mendeli aránytól
+- Ha egy témakör egyenletet/képletet használ (pl. populációgenetikánál
+  a Hardy-Weinberg összefüggés: p² + 2pq + q² = 1), KÖTELEZŐ minden
+  egyes változó/szimbólum jelentését explicit kifejteni közvetlenül a
+  képlet mellett (pl. "p = a domináns allél gyakorisága a
+  populációban, q = a recesszív allél gyakorisága, p² = a homozigóta
+  domináns egyedek aránya" stb.) - SOHA nem elég a puszta képletet
+  leírni magyarázat nélkül
+- Legalább egy behelyettesített, végigszámolt numerikus példa is kell
+  minden egyenlethez (nem csak az általános képlet)
+- ⚠️ a pedagogus subagent jelezze, ha egy Punnett-tábla hiányzik,
+  hiányos (nincs minden mező kitöltve), vagy ha egy egyenletnél a
+  változók jelentése nincs kifejtve
+
 ## G) Evolúciós témakör
 *Pl.: Populációgenetika és evolúciós folyamatok, A bioszféra evolúciója*
 
