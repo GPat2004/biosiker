@@ -149,6 +149,12 @@ DNS-replikáció*
   hiányos (nincs minden mező kitöltve), vagy ha egy egyenletnél a
   változók jelentése nincs kifejtve
 
+### F-KIEGÉSZÍTÉS 3 - alapfogalmak bővebb kifejtése
+- Minden genetikai fejezetnél az alapfogalmak (pl. allél, genotípus,
+  fenotípus, homozigóta) definícióját fejtsd ki bővebben, ne csak egy
+  mondatos meghatározást adj - a diák ezen a témán bukik el
+  legkönnyebben félreértés miatt.
+
 ## G) Evolúciós témakör
 *Pl.: Populációgenetika és evolúciós folyamatok, A bioszféra evolúciója*
 
