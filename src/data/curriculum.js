@@ -7801,10 +7801,313 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 6, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera-evolucioja', title: 'A bioszféra evolúciója', order: 6, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'idealis-realis-populacio',
+        title: 'Ideális és reális populáció',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 22,
+        content: {
+          kozep: {
+            intro: 'A korábban (Populáció fejezet) megismert populáció-fogalmat most genetikai szempontból is megvizsgáljuk: azt látjuk majd, hogy egy populáció nemcsak egyedei számával és térbeli eloszlásával, hanem allél- és genotípusgyakoriságaival is jellemezhető.',
+            sections: [
+              {
+                heading: 'Populációk genetikai jellemzése: allél- és genotípusgyakoriság',
+                paragraphs: [
+                  'Egy populáció genetikai szempontból az allélgyakoriságokkal (egy adott allélváltozat aránya az összes, adott génre vonatkozó allél között a populációban) és a genotípusgyakoriságokkal (az egyes genotípusok - pl. AA, Aa, aa - aránya az egyedek között) jellemezhető. Ez a két mutató lehetővé teszi, hogy ne csak egyetlen egyed, hanem egy egész populáció genetikai összetételét számszerűen leírjuk, és nyomon kövessük, hogyan változik ez az összetétel nemzedékről nemzedékre.',
+                ],
+              },
+              {
+                heading: 'A mutáció mint a genetikai változatosság forrása',
+                paragraphs: [
+                  'Ahogy azt korábban (Mutáció fejezet) megismertük, a mutációk új allélváltozatokat hoznak létre - ez teszi a mutációt a populációk genetikai változatosságának (variabilitásának) legfontosabb forrásává. Mutáció nélkül egy populáció allélkészlete hosszú távon nem gazdagodna új változatokkal, ami jelentősen csökkentené a populáció alkalmazkodóképességét a változó környezeti feltételekhez.',
+                ],
+              },
+              {
+                heading: 'A természetes szelekció típusai',
+                paragraphs: [
+                  'A természetes szelekció - a jelleg populáción belüli eloszlásától függően - háromféle típusba sorolható. Az irányító szelekció a jelleg eloszlásának egyik szélső értékét részesíti előnyben, ezáltal a populáció átlaga fokozatosan a szélsőérték felé tolódik el. A stabilizáló szelekció a jelleg középső, átlagos értékeit részesíti előnyben, a szélsőséges egyedeket hátrányosan érinti, ezáltal a populáció homogénebbé válik. A szétválasztó (diverzifikáló) szelekció ezzel szemben mindkét szélsőséges értéket részesíti előnyben a középső értékek rovására, ami a populáció két, egymástól egyre inkább elkülönülő csoportra bomlásához, végső soron akár fajkeletkezéshez is vezethet.',
+                ],
+                table: {
+                  caption: 'A természetes szelekció típusai',
+                  headers: ['Szelekciótípus', 'Melyik érték előnyös', 'Hatás a populációra'],
+                  rows: [
+                    ['Irányító szelekció', 'egyik szélsőérték', 'az átlag a szélsőérték felé tolódik'],
+                    ['Stabilizáló szelekció', 'középső (átlagos) érték', 'a populáció homogénebbé válik'],
+                    ['Szétválasztó szelekció', 'mindkét szélsőérték', 'két elkülönülő csoport alakulhat ki, akár fajkeletkezéssel'],
+                  ],
+                },
+              },
+              {
+                heading: 'A populáció mérete és a természetvédelem',
+                paragraphs: [
+                  'A populáció mérete (egyedszáma) alapvető természetvédelmi jelentőséggel bír: minél kisebb egy populáció, annál kevesebb allélváltozatot hordoz, és annál sebezhetőbb a véletlen események (pl. egy járvány, egy szélsőséges időjárási esemény) genetikai állományt károsító hatásaival szemben - ahogy azt korábban (A természetvédelem alapjai fejezet) a fajmegőrzés kapcsán megismertük.',
+                ],
+              },
+              {
+                heading: 'Konkrét példák a szelekciótípusokra',
+                paragraphs: [
+                  'Az irányító szelekcióra jó példa a rovarölő szerekkel szembeni rezisztencia kialakulása rovarpopulációkban: a rovarölő szer alkalmazása után a kevésbé ellenálló egyedek elpusztulnak, míg a véletlenszerűen már eleve ellenállóbb egyedek túlélnek és szaporodnak, így a populáció átlagos ellenálló képessége nemzedékről nemzedékre nő. A stabilizáló szelekcióra példa az emberi újszülöttek születési testtömege: mind a túl alacsony, mind a túl magas születési testtömeg nagyobb egészségügyi kockázattal jár, ezért a szelekció a középső, átlagos tartományt részesíti előnyben, ami a jelleg populáción belüli szórását csökkenti.',
+                ],
+              },
+            ],
+            keyTerms: ['allélgyakoriság', 'genotípusgyakoriság', 'irányító szelekció', 'stabilizáló szelekció', 'szétválasztó szelekció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ideális populáció matematikai modelljét, a Hardy-Weinberg összefüggést, valamint a populációk létszámváltozását és a beltenyésztés genetikai hatásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az ideális populáció fogalma és feltételei',
+                paragraphs: [
+                  'A populációgenetika matematikai modelleket használ a populációk genetikai összetételének változásának leírására - ezek a modellek a valóságot leegyszerűsítve, bizonyos feltételek mellett írják le a folyamatokat, majd ehhez a leegyszerűsített modellhez hasonlítjuk a ténylegesen megfigyelhető, reális populációkat.',
+                  'Az ideális populáció egy olyan elméleti modell, amelyben az allél- és genotípusgyakoriságok nemzedékről nemzedékre nem változnak. Ennek feltételei: nagyon nagy (elméletileg végtelen) egyedszám, teljesen véletlenszerű párválasztás, nincs mutáció, nincs migráció (be- vagy kivándorlás) és nincs természetes szelekció. Egy valós populáció ezeknek a feltételeknek csak közelítőleg felel meg, ezért a valós populációkban az allélgyakoriságok idővel változnak - ezt a változást nevezzük evolúciónak genetikai szinten.',
+                ],
+              },
+              {
+                heading: 'A Hardy-Weinberg összefüggés',
+                paragraphs: [
+                  'Egy gén két alléljára (domináns és recesszív) vonatkozóan, ideális populációban a genotípusgyakoriságok és az allélgyakoriságok közötti kapcsolatot a Hardy-Weinberg összefüggés írja le: p² + 2pq + q² = 1. A képletben p a domináns allél gyakorisága a populációban, q a recesszív allél gyakorisága (p + q = 1, hiszen a két allél gyakorisága együtt a teljes allélkészletet adja), p² a homozigóta domináns (AA) genotípusú egyedek várható aránya, 2pq a heterozigóta (Aa) genotípusú egyedek várható aránya, q² pedig a homozigóta recesszív (aa) genotípusú egyedek várható aránya a populációban.',
+                  'Nézzünk egy konkrét, behelyettesített numerikus példát. Tegyük fel, hogy egy populációban egy recesszív, öröklődő tulajdonság (pl. egy enzimbetegség) az egyedek 9%-ánál (q² = 0,09) figyelhető meg fenotípusosan. Ebből a recesszív allél gyakorisága: q = √0,09 = 0,3, vagyis a recesszív allél a populáció allélkészletének 30%-át teszi ki. Mivel p + q = 1, a domináns allél gyakorisága p = 1 - 0,3 = 0,7. A homozigóta domináns egyedek várható aránya p² = 0,7² = 0,49, vagyis 49%. A heterozigóta (tünetmentes hordozó) egyedek várható aránya 2pq = 2 × 0,7 × 0,3 = 0,42, vagyis 42%. Ellenőrzésképp: 0,49 + 0,42 + 0,09 = 1,00 - az arányok összege valóban kiadja a teljes populációt.',
+                ],
+              },
+              {
+                heading: 'Születési és halálozási ráta, populációsűrűség',
+                paragraphs: [
+                  'A populáció létszámváltozását a születési ráta (adott idő alatt születő egyedek aránya) és a halálozási ráta (adott idő alatt elpusztuló egyedek aránya) különbsége határozza meg, és - ahogy azt korábban (Populáció fejezet) a logisztikus növekedési modell és az eltartóképesség kapcsán megismertük - mindkét ráta függ a populációsűrűségtől: nagy populációsűrűségnél jellemzően nő a halálozási ráta és csökken a születési ráta, ami visszafogja a további növekedést. Populációgenetikai szempontból ennek az a jelentősége, hogy a sűrűségfüggő létszámváltozás közvetve az allél- és genotípusgyakoriságokra is hatással lehet, hiszen befolyásolja, mely egyedek jutnak el a szaporodásig.',
+                ],
+              },
+              {
+                heading: 'Kihalási küszöb, genetikai sodródás és beltenyészet',
+                paragraphs: [
+                  'A kihalási küszöb az a minimális populációméret, amely alá csökkenve a populáció fennmaradása súlyosan veszélybe kerül. Ennek egyik oka a genetikai sodródás: kis populációkban a véletlen (nem a szelekció) is jelentősen megváltoztathatja az allélgyakoriságokat egyik nemzedékről a másikra, ami könnyen egyes allélok teljes eltűnéséhez vezethet, csökkentve a genetikai változatosságot. A másik ok a beltenyészet (közeli rokonok közötti szaporodás) által okozott genetikai leromlás: kis populációkban elkerülhetetlenné válik a rokonok közötti párosodás, ami növeli a káros recesszív allélok homozigóta formában történő megjelenésének esélyét, és így a populáció életképességének csökkenéséhez vezet. Ezért van kiemelt természetvédelmi jelentősége a fajmegőrzési programoknak, amelyek célja a populációk létszámának a kihalási küszöb fölött tartása.',
+                ],
+              },
+              {
+                heading: 'Beltenyésztés és a nem véletlenszerű párválasztás hatásai',
+                paragraphs: [
+                  'A nem véletlenszerű párválasztás (pl. amikor az egyedek hasonló fenotípusú társat választanak) szintén eltéríti a populációt az ideális populáció modelljétől: megváltoztatja a genotípusgyakoriságokat (jellemzően növeli a homozigóták arányát) anélkül, hogy az allélgyakoriságok maguk megváltoznának. A beltenyésztés ennek egy szélsőséges esete, amely - a fent tárgyalt genetikai leromláson túl - hosszabb távon a populáció alkalmazkodóképességét is csökkentheti, mivel a csökkenő genetikai változatosság kevesebb "nyersanyagot" hagy a természetes szelekció számára.',
+                ],
+              },
+            ],
+            keyTerms: ['ideális populáció', 'Hardy-Weinberg összefüggés', 'kihalási küszöb', 'genetikai sodródás', 'beltenyészet'],
+          },
+        },
+      },
+      {
+        id: 'adaptiv-evolucios-folyamatok',
+        title: 'Adaptív és nem adaptív evolúciós folyamatok',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Homológ szerv', 'Analóg szerv'],
+          rows: [
+            ['Evolúciós eredet', 'közös ős, közös eredetű szerv', 'független eredet'],
+            ['Fejlődéstípus', 'divergens fejlődés', 'konvergens fejlődés'],
+            ['Alapfelépítés', 'azonos alaptervű', 'eltérő alaptervű'],
+            ['Funkció', 'lehet eltérő', 'jellemzően hasonló'],
+            ['Példa', 'bálna uszonya, denevér szárnya, ló lába', 'rovar és madár szárnya'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Ideális és reális populáció fejezet) megismert populációgenetikai alapok után most magára az evolúció mechanizmusára és bizonyítékaira térünk rá.',
+            sections: [
+              {
+                heading: 'A természetes szelekció darwini modellje',
+                paragraphs: [
+                  'Charles Darwin evolúciós modellje szerint egy populáción belül az egyedek között öröklődő változatosság van (ahogy azt korábban a mutáció és az ivaros szaporodás mint változékonyság-források kapcsán megismertük); az erőforrásokért folytatott versengésben azok az egyedek maradnak életben és szaporodnak sikeresebben, amelyek jellegei jobban illeszkednek az adott környezethez (ez a természetes szelekció); és mivel a kedvező jellegek öröklődnek, a populáció nemzedékről nemzedékre egyre inkább alkalmazkodik a környezetéhez. Ez a darwini modell (a változatosság + szelekció + öröklődés hármasa) máig az evolúcióbiológia alapja.',
+                ],
+              },
+              {
+                heading: 'Adaptív és nem adaptív evolúciós folyamatok',
+                paragraphs: [
+                  'Az adaptív evolúciós folyamatok olyan változások, amelyek a populáció környezethez való alkalmazkodását (adaptációját) növelik - ezeket a természetes szelekció hajtja, mert a kedvezőbb jelleget hordozó egyedek nagyobb eséllyel maradnak életben és szaporodnak. A nem adaptív evolúciós folyamatok ezzel szemben nem az alkalmazkodóképesség javulásából erednek, hanem például a korábban (Ideális és reális populáció fejezet) megismert genetikai sodródásból - vagyis a véletlenből -, ezért nem feltétlenül eredményeznek jobb környezeti illeszkedést, csupán megváltoztatják az allélgyakoriságokat.',
+                ],
+              },
+              {
+                heading: 'Homológia és analógia, konvergens és divergens fejlődés',
+                paragraphs: [
+                  'A homológ szervek közös evolúciós eredetűek (azonos ősi szervből fejlődtek ki), még akkor is, ha ma már eltérő funkciót látnak el - például az emlősök végtagcsontjainak alapfelépítése azonos, akár úszásra (bálna uszonya), akár repülésre (denevér szárnya), akár járásra (ló lába) használják. Ez a divergens fejlődés eredménye: egy közös ősi forma különböző környezeti feltételek hatására különböző irányba, eltérő funkciójú szervekké alakult. Az analóg szervek ezzel szemben nem közös evolúciós eredetűek, hanem függetlenül, hasonló környezeti kihívásra adott hasonló válaszként, konvergens fejlődés útján alakultak ki hasonló funkciójú, de eltérő felépítésű szervekké - ilyen például a rovarok és a madarak szárnya, amelyek teljesen eltérő testfelépítésből fejlődtek ki, mégis hasonló funkciót (repülés) látnak el.',
+                ],
+              },
+              {
+                heading: 'Az evolúció közvetlen bizonyítékai',
+                paragraphs: [
+                  'Az evolúció közvetlen bizonyítékai közé tartoznak a kövületek (megkövesedett, ásványi anyagokkal kicserélődött maradványok), a lenyomatok (pl. egy élőlény testének vagy lábnyomának alakja megőrződik a kőzetben), a zárványok (pl. borostyánba zárt rovarok) és a rétegződő üledékes kőzetekben megfigyelhető lerakódások, amelyek egymásra rétegződő korszakok élővilágát őrzik meg - ezek mind fizikailag megfogható bizonyítékai a múltban élt, mára kihalt élőlényeknek és fokozatos változásuknak.',
+                  'Ha egy adott üledékrétegben egyszerűbb, egy magasabban fekvő (tehát fiatalabb) rétegben pedig fokozatosan összetettebb felépítésű élőlények kövületei találhatók, az önmagában is közvetlen bizonyítéka az élővilág időbeli, fokozatos változásának - ezt a jelenséget figyelhetjük meg például a lópatások kövületsorozatán, amelyen jól nyomon követhető a lábujjak számának fokozatos csökkenése és a testméret növekedése a mai lóig vezető fejlődési vonalon.',
+                ],
+              },
+            ],
+            keyTerms: ['adaptív evolúció', 'nem adaptív evolúció', 'homológ szerv', 'analóg szerv', 'konvergens fejlődés', 'divergens fejlődés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az evolúció szintjeit, a kormeghatározás módszereit, valamint az evolúció közvetett bizonyítékait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az evolúció szintjei',
+                paragraphs: [
+                  'Az evolúciós elméletek nemcsak génszinten (allélgyakoriság-változásként), hanem csoportszinten (egy csoport, pl. egy rokonsági kör túlélési előnyeként) és kulturálisan (nem genetikailag, hanem tanulás útján átadott viselkedésminták terjedéseként, pl. embernél és néhány más fajnál) is értelmezhetők - ezek az evolúció különböző szintjeire vonatkozó elméletek.',
+                ],
+              },
+              {
+                heading: 'Relatív és abszolút kormeghatározás',
+                paragraphs: [
+                  'A relatív kormeghatározás csak azt állapítja meg, hogy egy lelet fiatalabb vagy idősebb egy másiknál (pl. az üledékrétegek egymásra rétegződésének sorrendje alapján), konkrét évszámot nem ad. Az abszolút kormeghatározás ezzel szemben konkrét, számszerű életkort határoz meg - erre a legelterjedtebb módszer a radioaktív szén-izotópos (C14/C12) kormeghatározás, amely azon alapul, hogy a szervezetben található radioaktív C14-izotóp az elpusztulás után ismert ütemben, folyamatosan bomlik el stabil nitrogén-izotóppá (N14), miközben a stabil C12-izotóp mennyisége nem változik - így a C14 és a változatlan mennyiségű C12 arányának csökkenéséből kiszámítható, mennyi idő telt el az elpusztulás óta.',
+                ],
+              },
+              {
+                heading: 'Élő kövületek, pollenanalízis és évgyűrűelemzés',
+                paragraphs: [
+                  'Az élő kövület olyan ma is élő faj, amely évmilliók óta alig változott, közeli rokonai pedig már kihaltak - ilyen például a hídgyík vagy a ginkgófa. A pollenanalízis az üledékrétegekben megőrződött pollenszemcsék vizsgálatával következtet az adott korban jellemző növényzetre és éghajlatra, az évgyűrűelemzés (dendrokronológia) pedig a fák évgyűrűinek szélességéből (amely az adott év csapadék- és hőmérsékleti viszonyaitól függ) von le következtetéseket a múltbeli éghajlatra és - közvetve - kormeghatározásra is felhasználható.',
+                ],
+              },
+              {
+                heading: 'Az evolúció közvetett bizonyítékai',
+                paragraphs: [
+                  'Az evolúció közvetett bizonyítékai közé tartozik a DNS-homológia (rokon fajok DNS-szekvenciájának hasonlósága), a molekuláris törzsfák (a DNS- vagy fehérjeszekvenciák eltéréseinek mértékéből felépített rokonsági kapcsolatok), a genetikai kód általános érvényűsége (ahogy azt korábban az Alapfogalmak és a genetikai információ áramlása fejezetben megismertük - gyakorlatilag minden élőlény ugyanazt a genetikai kódot használja, ami közös eredetre utal), a sejtes felépítés egyetemessége, a homológ szervek jelenléte, az embriók fejlődés korai szakaszában megfigyelhető hasonlósága, valamint a funkciójukat vesztett (csökevényes) szervek léte (pl. az ember vakbélfüggeléke). Emellett a háziasítás is genetikai beavatkozásnak tekinthető: az ember évezredek óta tudatosan szelektálja a kívánt tulajdonságú egyedeket, ami - hasonlóan a természetes szelekcióhoz - allélgyakoriság-változást, végső soron evolúciós folyamatot idéz elő a háziasított fajokban.',
+                ],
+              },
+            ],
+            keyTerms: ['relatív kormeghatározás', 'abszolút kormeghatározás', 'élő kövület', 'pollenanalízis', 'évgyűrűelemzés', 'DNS-homológia', 'molekuláris törzsfa'],
+          },
+        },
+      },
+      {
+        id: 'biotechnologia-bioetika',
+        title: 'Biotechnológia és bioetika',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban megismert genetikai alapfogalmak és eljárások (pl. a Baktériumok fejezetben tárgyalt baktériumos inzulintermelés) gyakorlati alkalmazásait és az ezekkel járó etikai kérdéseket tekintjük át.',
+            sections: [
+              {
+                heading: 'A klónozás fogalma',
+                paragraphs: [
+                  'A klónozás egy élőlény genetikailag azonos másolatának (klónjának) létrehozását jelenti - a klónozott egyed teljes genetikai állománya megegyezik az eredeti (donor) egyedével, mivel nem ivaros úton, hanem egyetlen sejtmag felhasználásával jön létre. Mivel a klónozott utód genetikai állománya kizárólag egyetlen donor egyedtől származik (nem kettő szülőtől, mint ivaros szaporodáskor), a klónozás nem hoz létre új allélkombinációt - ez alapvető különbség az ivaros szaporodáshoz képest, amely - ahogy azt korábban a genetikai változékonyság forrásainál megismertük - éppen az új allélkombinációk létrehozása révén növeli a populáció genetikai változatosságát.',
+                ],
+              },
+              {
+                heading: 'A genetikai technológia alkalmazásai',
+                paragraphs: [
+                  'A genetikai technológia számos gyakorlati területen alkalmazott - ilyen például a baktériumok felhasználása emberi fehérjék (pl. a korábban megismert inzulin) előállítására, a génátvitel haszonnövényekbe (pl. kártevőkkel vagy kórokozókkal szembeni ellenállóságot biztosító gének beültetése), valamint a mezőgazdaságban használt, klónozott, egységesen kiváló minőségű fajták előállítása.',
+                  'A génátvitellel létrehozott, ún. genetikailag módosított növényi fajták (pl. rovarkártevőkkel szemben ellenálló kukorica) termesztése csökkentheti a rovarölő szerek felhasználásának szükségességét, ami gazdasági és környezetvédelmi szempontból is előnyös lehet - ugyanakkor éppen ez az a terület, ahol a társadalmi elfogadottság a legvitatottabb, ahogy azt a következő szakaszban részletesebben is megvizsgáljuk.',
+                ],
+              },
+              {
+                heading: 'Érvek a géntechnológia mellett és ellen',
+                paragraphs: [
+                  'A géntechnológia mellett szóló érvek közé tartozik a nagyobb terméshozam és élelmiszerbiztonság, a gyógyszerek (pl. inzulin) olcsóbb és biztonságosabb előállítása, valamint egyes öröklődő betegségek jövőbeli gyógyításának lehetősége. A géntechnológia ellen szóló érvek közé tartozik a beavatkozás előre nem látható hosszú távú ökológiai hatásainak kockázata, a génmódosított szervezetek természetes populációkra gyakorolt esetleges hatása, valamint az emberi genom módosításával kapcsolatos etikai aggályok.',
+                ],
+              },
+              {
+                heading: 'Genetikai tanácsadás',
+                paragraphs: [
+                  'A genetikai tanácsadás olyan szolgáltatás, amely segít a családoknak felmérni egy öröklődő betegség kialakulásának vagy továbbadásának esélyét (pl. családfaelemzés alapján, ahogy azt korábban a Minőségi jellegek fejezetben megismertük), és megalapozott döntést hozni a családtervezéssel kapcsolatban - fontos szerepe van a felelős, tájékozott döntéshozatal támogatásában.',
+                ],
+              },
+              {
+                heading: 'A humángenetika vizsgálati módszerei és etikai kérdései',
+                paragraphs: [
+                  'A humángenetika sajátos vizsgálati módszerei közé tartozik a családfaelemzés (több nemzedéken át követett öröklésmenet-vizsgálat) és a magzati diagnosztika (a magzat genetikai állományának vizsgálata a méhen belüli fejlődés során). Mindkét módszernek vannak korlátai (pl. a családfaelemzés csak korlátozott számú adatra épül, a magzati diagnosztika egyes eljárásai kismértékű kockázattal járhatnak a terhességre nézve) és fontos etikai megfontolásai (pl. mit kezdjünk egy súlyos, gyógyíthatatlan betegségre utaló magzati diagnosztikai eredménnyel).',
+                  'A Human Genom Program (az emberi genom teljes feltérképezésére irányuló nemzetközi kutatási program) alapvető jelentőségű volt: eredményei tették lehetővé számos öröklődő betegség genetikai hátterének megismerését, és megalapozták a mai humángenetikai diagnosztika és genetikai tanácsadás módszereit. A program eredményeként ma egy adott gén kromoszómán belüli pontos helye is azonosítható, ami közvetlenül megkönnyíti egy adott öröklődő betegségért felelős gén megtalálását és a rá irányuló genetikai vizsgálatok kifejlesztését.',
+                ],
+              },
+            ],
+            keyTerms: ['klónozás', 'genetikai tanácsadás', 'családfaelemzés', 'magzati diagnosztika', 'Human Genom Program'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a klónozás típusait és a humángenetikai módszerek mélyebb etikai dilemmáit tekintjük át.',
+            sections: [
+              {
+                heading: 'A klónozás típusai',
+                paragraphs: [
+                  'A reproduktív klónozás célja egy teljes, önállóan élő, az eredetivel genetikailag azonos egyed létrehozása - ismert példája az 1996-ban klónozott Dolly nevű juh, amely az első, felnőtt sejtmagból létrehozott, emlős állat volt. A terápiás klónozás ezzel szemben nem egy teljes egyed, hanem gyógyászati célra felhasználható sejtek (pl. őssejtek) előállítására irányul, és nem jár egy új, önálló egyed létrehozásával - ez a megkülönböztetés áll az emberi klónozással kapcsolatos etikai viták középpontjában, mivel a két eljárás etikai megítélése jelentősen eltér: a terápiás klónozást sokan elfogadhatóbbnak tartják, mivel nem hoz létre új, önálló emberi egyedet, míg a reproduktív emberi klónozást a legtöbb ország törvényileg tiltja.',
+                ],
+              },
+              {
+                heading: 'A humángenetikai módszerek etikai dilemmái',
+                paragraphs: [
+                  'A magzati diagnosztika és a genetikai tanácsadás számos nehéz etikai kérdést vet fel: ki férhet hozzá egy személy genetikai adataihoz (pl. munkáltató, biztosító), hogyan befolyásolja egy súlyos genetikai lelet a családtervezési döntéseket, és hol húzódik a határ a betegségmegelőzés és a - sok szakember és etikus által elutasított - "tervezett tulajdonságú gyermek" gondolata között. Ezekre a kérdésekre nincs egyetlen, mindenki által elfogadott válasz - éppen ezért kiemelten fontos, hogy a genetikai tanácsadás mindig tényszerű, ítélkezésmentes tájékoztatást nyújtson, a végső döntést pedig az érintett családra bízza.',
+                  'Hasonlóan megosztó etikai kérdés a genetikailag módosított élőlények (haszonnövények, háziállatok) engedélyezése: a támogatók a nagyobb terméshozamot és a vegyszerhasználat csökkenését hangsúlyozzák, míg az ellenzők az előre nem látható ökológiai kockázatokra (pl. a módosított gén átterjedése vad rokon fajokba) és a nagy agrárvállalatoktól való esetleges függőségre hívják fel a figyelmet - ez a vita jól mutatja, hogy egy biotechnológiai eljárás elfogadhatósága nemcsak tudományos, hanem gazdasági és társadalmi szempontok mérlegelését is igényli.',
+                ],
+              },
+            ],
+            keyTerms: ['reproduktív klónozás', 'terápiás klónozás'],
+          },
+        },
+      },
+      {
+        id: 'bioszfera-evolucioja',
+        title: 'A bioszféra evolúciója',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Emberszabású majom (pl. csimpánz)', 'Ember'],
+          rows: [
+            ['Testtartás', 'jellemzően négykézláb-járás', 'kétlábú, egyenes testtartás'],
+            ['Agytérfogat', 'lényegesen kisebb', 'jelentősen nagyobb'],
+            ['Hüvelykujj', 'kevésbé fejlett szembeállíthatóság', 'fejlett szembeállíthatóság, finom kézmozgás'],
+            ['Rendszertani hely', 'emberszabásúak (Hominidae) családja', 'emberszabásúak (Hominidae) családja'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) megismert evolúciós mechanizmusok után ebben a fejezetben azt tekintjük át, hogyan alakult ki maga az élet, és hogyan zajlott le az ember evolúciója.',
+            sections: [
+              {
+                heading: 'A kémiai és a biológiai evolúció kapcsolata',
+                paragraphs: [
+                  'A ma ismert élővilág kialakulását a bioszféra evolúciója foglalja össze: ezt megelőzte a fizikai és kémiai evolúció, amely során az élettelen anyagból fokozatosan alakultak ki egyre bonyolultabb szerves molekulák, majd ezekből az első, önmagukat fenntartani és szaporodni képes sejtek - csak ezután, ezekre az egyszerű sejtekre épülve indulhatott meg a biológiai evolúció, amelynek eredményeként jött létre a ma ismert, sokféle élővilág.',
+                  'Ez a három szakasz (fizikai, kémiai, majd biológiai evolúció) egymásra épül: a fizikai evolúció a csillagokban és bolygókon lezajló, elemeket létrehozó folyamatokat jelenti, a kémiai evolúció ezekből az elemekből egyre bonyolultabb szerves vegyületeket hoz létre (ahogy azt lentebb, emelt szinten, Miller kísérletén keresztül részletesen is megvizsgáljuk), a biológiai evolúció pedig már a kialakult, önmagukat szaporítani képes élő rendszerek további változását írja le a korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) megismert mechanizmusok (természetes szelekció, genetikai sodródás) révén.',
+                ],
+              },
+              {
+                heading: 'Az emberszabású majmok és az ember összehasonlítása',
+                paragraphs: [
+                  'Az ember és az emberszabású majmok (pl. csimpánz, gorilla) egyaránt a főemlősök (Primates) rendjébe tartoznak, az emberszabású majmok pedig ezen belül az emberszabásúak (Hominidae) családját alkotják, amelynek az ember is tagja. Az emberszabású majmok és az ember összehasonlítása során számos közös testfelépítési jegy (pl. hasonló csontvázfelépítés, fogazat, belső szervek) mellett jellegzetes eltérések is megfigyelhetők - ilyen az emberre jellemző, kétlábú, egyenes testtartás, a jelentősen nagyobb agytérfogat, valamint a fejlettebb hüvelykujj-szembeállíthatóság, amely a finom kézmozgásokat (pl. eszközhasználatot) teszi lehetővé. A közös testfelépítési jegyek - ahogy azt korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) a homológ szervek kapcsán megismertük - közös evolúciós eredetre, vagyis közös ősre utalnak.',
+                ],
+              },
+              {
+                heading: 'Következtetés töredékes koponyaleletekből',
+                paragraphs: [
+                  'Egy töredékes koponyaleletből is számos következtetés vonható le az adott emberelőd tulajdonságairól: a koponyaűr térfogatából az agytérfogatra, a nyakszirtlyuk elhelyezkedéséből a testtartásra (kétlábú vagy négylábú járásra), a fogazat jellegéből pedig a táplálkozási szokásokra következtethetnek a kutatók.',
+                ],
+              },
+              {
+                heading: 'Az emberi nagyrasszok és a közös örökség',
+                paragraphs: [
+                  'Az ember evolúciója során, a különböző földrajzi régiókhoz való alkalmazkodás eredményeként alakultak ki a ma megkülönböztetett emberi nagyrasszok (pl. eltérő bőrszín, testalkat) - fontos azonban leszögezni, hogy ezek a rasszok biológiai értékükben egyáltalán nem különböznek egymástól, és a biológiai, valamint a kulturális örökség az egész emberiség közös kincse. A bőrszín eltérése - amelynek festéksejtes hátterét korábban (Bőr fejezet) már megismertük - jó példa arra, hogyan alakít ki a természetes szelekció mennyiségi jelleget (ahogy azt korábban a Mennyiségi jellegek fejezetben megismertük): a bőrszín népességenkénti eltérése nem véletlenszerű, hanem a gyengébb napsugárzású területeken a világosabb bőrszín kedvezett a bőrben zajló D-vitamin-termelésnek, ami ellensúlyozta az UV-sugárzással szembeni csökkent védelmet.',
+                ],
+              },
+            ],
+            keyTerms: ['kémiai evolúció', 'emberszabású majom', 'nagyrassz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a prebiológiai evolúció kísérletes bizonyítékait (Miller kísérlete) és a Homo nemzetség evolúciójának főbb lépéseit ismerjük meg.',
+            sections: [
+              {
+                heading: 'Miller kísérlete és a prebiológiai evolúció',
+                paragraphs: [
+                  'A prebiológiai (biológiai élet kialakulása előtti) evolúció során az ősi Föld légkörében jelen lévő egyszerű, szervetlen molekulákból (pl. metán, ammónia, vízgőz, hidrogén) alakultak ki az élet szempontjából alapvető szerves molekulák. Ezt a folyamatot kísérletesen Stanley Miller (és Harold Urey) 1953-as kísérlete igazolta: az ősi légkör feltételezett összetételét modellező gázkeveréket elektromos kisülésekkel (a villámlást szimulálva) kezelve a kísérletben aminosavak és más egyszerű szerves molekulák keletkeztek - ez bizonyította, hogy az élet építőkövei kialakulhattak élettelen, kémiai folyamatok révén, biológiai közreműködés nélkül. A kísérlet jelentősége, hogy kísérletesen igazolta a kémiai evolúció elméletének alapfeltevését, és lökést adott az első sejtek kialakulására vonatkozó további elméletek (pl. önmagukat körülhatároló, membránszerű buborékok kialakulása) kutatásának.',
+                  'A Miller-kísérlet eredményeként kialakult egyszerű szerves molekulák önmagukban még nem élők - az első sejtek kialakulásához arra is szükség volt, hogy ezek a molekulák egy elkülönített térrészben (pl. egy lipidmolekulákból önszerveződő, membránszerű hólyagban) koncentrálódjanak, és képessé váljanak az önmagukat fenntartó anyagcserére, valamint a szaporodásra - ezt az átmenetet az élettelen kémiai rendszerektől az élő sejtekig ma is intenzíven kutatják, pontos lezajlása nem ismert teljes bizonyossággal.',
+                ],
+              },
+              {
+                heading: 'A Homo nemzetség evolúciójának főbb lépései',
+                paragraphs: [
+                  'A korai emberfélék és a Homo nemzetség evolúciója során több jellegzetes, leírásokból és leletekből visszakövethető lépés azonosítható: az agytérfogat fokozatos növekedése (ami a fejlettebb kognitív képességekre utal), a testtartásra utaló bélyegek (pl. a gerinc és a medence alakja) megjelenése, amelyek a kétlábú járásra való áttérést jelzik, valamint a tűzhasználat és az egyre kifinomultabb eszközhasználat megjelenése, amely jelentősen megváltoztatta a táplálkozási szokásokat és a túlélési stratégiákat.',
+                  'Ezek a lépések nem egyetlen ugrásban, hanem fokozatosan, sok százezer év alatt következtek be: a kétlábú járás korábban jelent meg, mint a jelentős agytérfogat-növekedés, a tűz tudatos használata pedig - a leletek tanúsága szerint - jóval később, már a nagyobb agytérfogatú Homo-fajoknál vált általánossá. A tűzhasználat különösen jelentős lépés volt, mivel a főzés révén könnyebben emészthetővé, energetikailag hatékonyabban hasznosíthatóvá tette a táplálékot, ami közvetve hozzájárulhatott az egyre nagyobb energiaigényű agy evolúciós fejlődéséhez is.',
+                ],
+              },
+            ],
+            keyTerms: ['prebiológiai evolúció', 'Miller kísérlete', 'Homo nemzetség'],
+          },
+        },
+      },
     ],
   },
 ];
