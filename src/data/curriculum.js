@@ -7010,7 +7010,7 @@ export const CURRICULUM = [
               {
                 heading: 'A fenntartható fejlődés',
                 paragraphs: [
-                  'A fenntartható fejlődés olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait is - ez a fogalom szorosan kapcsolódik a korábban (Bioszféra fejezet) megismert fenntartható gazdálkodáshoz és ökológiai lábnyomhoz. A fenntartható fejlődés gyakorlati megvalósítása megköveteli, hogy az anyagforgalom (pl. hulladékkezelés, újrahasznosítás) minél inkább kövesse a természetes ökoszisztémák körforgás-elvét, amelyben - a lebontók tevékenységének köszönhetően - gyakorlatilag semmi nem vész el véglegesen "hulladékként".',
+                  'A fenntartható fejlődés olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait is - ez a fogalom szorosan kapcsolódik a korábban (Bioszféra fejezet) megismert fenntartható gazdálkodáshoz és ökológiai lábnyomhoz. A fenntartható fejlődés gyakorlati megvalósítása megköveteli, hogy az anyagforgalom (pl. hulladékkezelés, újrahasznosítás) minél inkább kövesse a természetes ökoszisztémák körforgás-elvét, amelyben - a lebontók tevékenységének köszönhetően - gyakorlatilag semmi nem vész el véglegesen "hulladékként". Ez a szemlélet (körforgásos gazdaság) egyre inkább teret nyer a gyakorlatban is: a tervezés szintjén már eleve úgy alakítanak ki termékeket, hogy azok élettartamuk végén minél könnyebben szétszerelhetők és újrahasznosíthatók legyenek. Ez a szemléletváltás - a hagyományos, "termelés-fogyasztás-hulladék" lineáris modell helyett egy körkörös, körforgásos gazdasági modell felé - napjaink egyik legfontosabb, hosszú távú fenntarthatósági törekvése.',
                 ],
               },
             ],
@@ -7082,8 +7082,243 @@ export const CURRICULUM = [
           },
         },
       },
-      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 10, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'termeszetvedelem-alapjai',
+        title: 'A természetvédelem alapjai',
+        order: 10,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Energiaáramlás és biológiai sokféleség fejezet) megismert biológiai sokféleség után ebben a fejezetben azt vizsgáljuk meg, miért fontos ezt a sokféleséget védeni, és milyen eszközök állnak rendelkezésre a védelmére.',
+            sections: [
+              {
+                heading: 'A természetvédelem melletti érvek',
+                paragraphs: [
+                  'A természetvédelem mellett többféle érv is szól. Etikai érv, hogy más fajoknak önmagukban, az embertől független értékük van, ezért kipusztításuk erkölcsi felelősséggel jár. Egészségügyi érv, hogy a természetes életközösségek (pl. gyógynövények, jövőbeli gyógyszerek forrásaként) és az egészséges környezet (tiszta levegő, víz) közvetlenül szolgálják az emberi egészséget. Kulturális érv, hogy a természeti értékek (tájak, fajok) sok közösség identitásának, hagyományainak részét képezik. Gazdasági érv, hogy a természetes életközösségek olyan szolgáltatásokat (pl. beporzás, vízvisszatartás, talajvédelem) nyújtanak, amelyek pótlása mesterséges úton rendkívül költséges vagy lehetetlen volna.',
+                  'Ez a négyféle érvrendszer (etikai, egészségügyi, kulturális, gazdasági) együttesen ad teljes képet arról, miért nem tekinthető a természetvédelem pusztán "luxusnak": a sokféleség megőrzése egyszerre erkölcsi kötelesség, egészségügyi biztosíték, kulturális örökség védelme és hosszú távú gazdasági érdek is.',
+                ],
+              },
+              {
+                heading: 'A sokféleség védelmének fontossága mindhárom szinten',
+                paragraphs: [
+                  'A biológiai sokféleség mindhárom szintjét - ahogy azt korábban (Energiaáramlás és biológiai sokféleség fejezet) megismertük - védeni kell: a genetikai diverzitás biztosítja egy-egy faj alkalmazkodóképességét, a fajdiverzitás az életközösségek stabilitását, az ökológiai diverzitás pedig azt, hogy egy életközösség a lehető legtöbb ökológiai funkciót el tudja látni. Ha csak egyetlen szintre (pl. a fajok számára) figyelnénk, könnyen elsikkadhatna, hogy egy adott faj genetikailag leszegényedett populációi vagy egy életközösség funkcionális egyensúlya is ugyanolyan veszélyeztetett lehet.',
+                ],
+              },
+              {
+                heading: 'A természetvédelem lehetőségei',
+                paragraphs: [
+                  'A természetvédelem gyakorlati eszközei közé tartozik a fajok védelme (pl. egy adott veszélyeztetett faj vadászatának, gyűjtésének tiltása), a területek védelme (pl. nemzeti parkok, természetvédelmi területek kijelölése) és a kereskedelmi korlátozások (pl. veszélyeztetett fajokból készült termékek kereskedelmének nemzetközi tiltása). E három eszköz gyakran együttesen, egymást kiegészítve alkalmazandó: egy faj hatékony védelme önmagában a vadászati tilalommal ritkán elegendő, ha közben az élőhelye is fokozatosan eltűnik.',
+                  'Magyarországon több nemzeti park is működik (pl. a Hortobágyi, a Bükki, az Aggteleki, a Kiskunsági Nemzeti Park), amelyek mindegyike egy adott tájegység jellegzetes életközösségeit és fajait védi. Egy adott nemzeti park bemutatásakor érdemes kitérni az elhelyezkedésére, a jellemző élőhelytípusaira és az ott élő, kiemelten védett fajaira.',
+                  'A Hortobágyi Nemzeti Park - hazánk legrégebbi nemzeti parkja - elsősorban a pusztai (sztyeppei) életközösségeket, a szikes tavakat és az ott fészkelő madárfajokat (pl. a túzokot) védi, míg az Aggteleki Nemzeti Park a barlangi és a karsztos élőhelyeket, a Bükki Nemzeti Park pedig a hegyvidéki erdőtársulásokat helyezi védelem alá - jól látszik tehát, hogy a hazai nemzeti parkok a táj adottságaihoz igazodva, egymástól eltérő élőhelytípusokat és fajokat védenek. Egy adott lakóhelyhez legközelebb eső nemzeti park bemutatásakor érdemes a fentiekhez hasonlóan strukturáltan haladni: elhelyezkedés, jellemző élőhelyek, majd az ott élő, kiemelten védett fajok bemutatása.',
+                ],
+              },
+            ],
+            keyTerms: ['természetvédelem', 'nemzeti park'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten esettanulmányok alapján a biodiverzitást veszélyeztető tényezők felismerését, valamint a szennyezés csökkentését ösztönző gazdasági és jogi eszközöket ismerjük meg.',
+            sections: [
+              {
+                heading: 'Esettanulmányok: biodiverzitást veszélyeztető tényezők',
+                paragraphs: [
+                  'Egy esettanulmány elemzésekor (pl. egy adott terület fajszám-csökkenéséről vagy egy faj állományának összeomlásáról) érdemes azonosítani a veszélyeztető tényezőt (pl. élőhelyvesztés, szennyezés, túlzott kitermelés, idegenhonos fajok betelepedése) és ennek ökológiai következményeit, majd javaslatot tenni a tényező megelőzésére vagy hatásainak mérséklésére (pl. élőhely-helyreállítás, szigorúbb szabályozás, tudatosságnövelés).',
+                  'Az idegenhonos (invazív) fajok betelepedése különösen alattomos veszélyeztető tényező, mivel az adott terület őshonos fajainak - amelyek nem "számítanak" az új versenytársra vagy ragadozóra - gyakran nincs kialakult védekező stratégiájuk ellene, ezért egy invazív faj viszonylag rövid idő alatt is drasztikusan átalakíthatja egy életközösség fajösszetételét.',
+                ],
+              },
+              {
+                heading: 'Gazdasági és jogi eszközök a szennyezés csökkentésére',
+                paragraphs: [
+                  'A szennyezés csökkentését ösztönző gazdasági és jogi eszközök közé tartoznak a környezetterhelési adók (a szennyező tevékenységet drágábbá teszik), a tiltások (bizonyos anyagok vagy tevékenységek teljes körű megtiltása), a határértékek (a megengedett szennyezési szint jogi rögzítése), a bírságok (a határérték túllépésének szankcionálása) és a polgári perek (a károsultak kártérítési igénye). Ezek hatékonysága eltérő: a tiltások és a szigorú határértékek gyors, egyértelmű hatásúak, de rugalmatlanok, míg az adók és a gazdasági ösztönzők fokozatosabb, de hosszabb távon fenntarthatóbb szemléletváltást segíthetnek elő.',
+                  'Egy adott eszköz hatékonyságának értékelésekor érdemes mérlegelni, hogy az milyen gyorsan és milyen mértékben csökkenti ténylegesen a szennyezést, mekkora a betartatás költsége és nehézsége, valamint hogy jár-e nem szándékolt mellékhatásokkal (pl. egy túl szigorú tiltás feketepiacot generálhat, ha nincs mögötte megfelelő ellenőrzés).',
+                  'A környezetszennyezés káros hatásainak bizonyítására szolgáló kísérlet például összehasonlíthatja egy adott szennyező anyagnak kitett és egy attól mentes kontrollcsoport (pl. két, eltérő vízminőségű élőhelyen élő) populáció egészségi állapotát, szaporodási sikerét vagy túlélési arányát - a kontrollcsoporttal való összevetés nélkül nem lehetne egyértelműen a szennyező anyagnak tulajdonítani a megfigyelt különbségeket.',
+                ],
+              },
+            ],
+            keyTerms: ['biodiverzitás', 'határérték'],
+          },
+        },
+      },
+      {
+        id: 'levegoszennyezes',
+        title: 'Levegőszennyezés és védelme',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A természetvédelem alapjai fejezet) megismert általános természetvédelmi eszközök után ebben a fejezetben a levegő szennyezését és az ellene való védekezést tekintjük át - a levegő az egyik legalapvetőbb, mindenki számára közös erőforrás, ezért állapotának romlása szinte azonnal és széles körben érezteti hatását.',
+            sections: [
+              {
+                heading: 'A levegő mint közös erőforrás',
+                paragraphs: [
+                  'A levegő - a vízhez és a talajhoz hasonlóan - olyan közös erőforrás, amelynek állapotát mindenki egyszerre használja és alakítja: egyetlen ország vagy régió szennyezése is átterjedhet a szomszédos területekre, sőt akár globális léptékben is éreztetheti hatását (pl. az üvegházgázok esetében), ezért a levegő védelme elválaszthatatlan a nemzetközi együttműködéstől.',
+                ],
+              },
+              {
+                heading: 'Fontosabb légszennyező anyagok',
+                paragraphs: [
+                  'A legfontosabb légszennyező anyagok közé tartozik a szén-monoxid (CO, elsősorban tökéletlen égésből származó, mérgező gáz, amely a hemoglobinhoz az oxigénnél is erősebben kötődve akadályozza a szervezet oxigénellátását), a szén-dioxid (CO2, égéstermék, amely önmagában nem mérgező, de üvegházhatású), a nitrogén-oxidok (elsősorban közlekedésből és iparból származnak, hozzájárulnak a savas esőhöz és a szmoghoz), az ólom és ólomvegyületek (korábban elsősorban az ólmozott benzinből származtak, idegrendszeri károsodást okozhatnak), a korom és a por (légúti megbetegedéseket okozhatnak) és a halogénezett szénhidrogének (pl. egyes hűtőközegek, amelyek az ózonpajzsot is károsíthatják).',
+                  'Ezek az anyagok jellemzően két nagy forrásból származnak: a közlekedésből (elsősorban a belső égésű motorok kipufogógázaiból) és az iparból (gyártási folyamatok, energiatermelő erőművek égéstermékei) - mindkét forrás csökkentésének kulcsa a tisztább technológiák (pl. katalizátorok, szűrők) alkalmazása és a fosszilis energiahordozók használatának mérséklése.',
+                ],
+              },
+              {
+                heading: 'A légszennyezés hatása az egészségre és a környezetre',
+                paragraphs: [
+                  'A légszennyező anyagok az emberi egészségre elsősorban a légutakon (belégzéssel) fejtik ki hatásukat: a por és a korom irritálja a légutakat, súlyosbíthatja az asztmát és más légúti betegségeket, a nitrogén-oxidok és az ózon pedig tovább terhelik a tüdőt. Hosszú távon a tartós, magas légszennyezettségnek kitett területeken élők körében gyakrabban fordulnak elő légúti és keringési megbetegedések. A nagyvárosok forgalmas útjai mentén, illetve az ipari létesítmények közelében élők jellemzően fokozottabban vannak kitéve ezeknek a kockázatoknak, mint a vidéki, kevésbé terhelt területeken élők.',
+                ],
+              },
+              {
+                heading: 'Szmogriadó',
+                paragraphs: [
+                  'Szmogriadó idején (amikor a légszennyezettség mértéke meghalad egy egészségügyi határértéket, jellemzően szélcsendes, hideg időszakokban) a lakosságnak érdemes kerülnie a szabadtéri, megterhelő testmozgást, csökkenteni a személygépkocsi-használatot, és az érzékeny csoportoknak (idősek, légúti betegek, kisgyermekek) különösen ajánlott a szabadban töltött idő minimalizálása. A szmog kialakulását éppen a szélcsend segíti elő: mozgó levegő hiányában a szennyező anyagok nem oszlanak szét, hanem egy adott terület fölött felhalmozódnak, ami tovább növeli a koncentrációjukat. Nagyvárosokban a szmogriadó gyakran a közlekedés korlátozásával (pl. ideiglenes behajtási tilalommal) is párosul, hiszen a gépjárműforgalom az egyik legjelentősebb helyi légszennyező forrás.',
+                ],
+              },
+            ],
+            keyTerms: ['légszennyező anyag', 'szmogriadó'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a savas esők kialakulását és az üvegházhatás mechanizmusát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Savas esők',
+                paragraphs: [
+                  'A savas esők kialakulásának hátterében elsősorban a kén-dioxid és a nitrogén-oxidok légköri, vízzel és oxigénnel lezajló kémiai átalakulása áll, amely kén- és salétromsavat eredményez - ezek az anyagok a csapadékkal a talajra és a vizekbe kerülve savasítják azokat. A savas esők károsítják az erdőket (a levelek és a gyökérzet károsodásán keresztül), a vizeket (a vízi élőlények számára kedvezőtlen pH-eltolódás révén) és az épített környezetet (pl. a mészkő építőanyagok korrózióját gyorsítva).',
+                  'A savasodás hatása gyakran a keletkezés helyétől távol jelentkezik: a szennyező anyagok a légkörben akár több száz kilométert is elsodródhatnak, mielőtt csapadék formájában kihullanának - ez az egyik oka annak, hogy a savas esők elleni védekezés csak nemzetközi összefogással lehet igazán hatékony.',
+                ],
+              },
+              {
+                heading: 'Az üvegházhatás',
+                paragraphs: [
+                  'Az üvegházhatás lényege, hogy egyes légköri gázok (elsősorban a szén-dioxid, a metán és a vízgőz) átengedik a Nap rövidhullámú sugárzását, de elnyelik a Föld felszínéről visszaverődő hosszúhullámú (hő-) sugárzás egy részét, ezáltal melegítve a légkört - ez a jelenség önmagában természetes és szükséges (enélkül a Föld felszíne sokkal hidegebb lenne), de az emberi tevékenység (elsősorban a fosszilis energiahordozók elégetése) által megnövelt üvegházgáz-koncentráció - ahogy azt korábban (Bioszféra, illetve Anyagforgalom fejezetek) megismertük - a folyamatot felerősíti, hozzájárulva a globális felmelegedéshez.',
+                  'A globális felmelegedés lehetséges következményei közé tartozik a sarki jégtakarók olvadása és az ezzel járó tengerszint-emelkedés, a szélsőséges időjárási jelenségek (aszályok, áradások) gyakoribbá válása, valamint az életközösségek elterjedési területének eltolódása, ahogy a fajok a számukra még megfelelő hőmérsékletű területek felé húzódnak. A teendők között szerepel az üvegházgáz-kibocsátás csökkentése (pl. energiahatékonyság növelése, megújuló energiaforrások alkalmazása) és az elkerülhetetlen változásokhoz való alkalmazkodás egyaránt.',
+                  'Az egyre gyakoribbá váló szélsőséges időjárási jelenségek (pl. tartós aszályok, hirtelen, heves esőzések) hazánkban is éreztetik hatásukat: ezek nemcsak a mezőgazdasági termelést nehezítik, hanem a hazai életközösségek - ahogy azt korábban (Hazai életközösségek fejezet) a szukcessziónál megismertük - hosszú távú összetételét és stabilitását is befolyásolhatják.',
+                ],
+              },
+            ],
+            keyTerms: ['savas eső', 'üvegházhatás'],
+          },
+        },
+      },
+      {
+        id: 'vizszennyezes-energia',
+        title: 'Vízszennyezés és energiagazdálkodás',
+        order: 12,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Nem megújuló energiaforrás', 'Megújuló energiaforrás'],
+          rows: [
+            ['Készlet', 'emberi léptékkel véges', 'emberi léptékkel gyakorlatilag kimeríthetetlen'],
+            ['Kiszámíthatóság', 'jellemzően állandó', 'egyesek időjárásfüggők (nap, szél)'],
+            ['Környezeti terhelés', 'jelentős (szennyezés, üvegházhatás)', 'jellemzően kisebb'],
+            ['Példa', 'kőszén, kőolaj, földgáz', 'napenergia, szélenergia, vízenergia, geotermikus energia'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Levegőszennyezés és védelme fejezet) megismert légszennyezés után ebben a fejezetben a vizek szennyezését és tisztítását, valamint az energiagazdálkodás alapjait tekintjük át - a levegőhöz hasonlóan a víz is olyan közös, mindenki számára létfontosságú erőforrás, amelynek védelme egyéni és társadalmi felelősség is egyben.',
+            sections: [
+              {
+                heading: 'A vizek öntisztuló képessége és a vízszennyező anyagok',
+                paragraphs: [
+                  'A vizek öntisztuló képessége azt jelenti, hogy a vízi életközösségek (elsősorban a lebontó szervezetek tevékenysége révén) egy bizonyos mértékig képesek maguktól lebontani a beléjük kerülő szerves szennyezőanyagokat. Ennek a képességnek azonban korlátai vannak: ha a szennyezés mértéke meghaladja az öntisztulás sebességét, a víz állapota tartósan leromlik. A fontosabb vízszennyező anyagok közé tartoznak a nitrátok (elsősorban a mezőgazdasági műtrágyázásból származnak, és túlzott algásodást - eutrofizációt - okozhatnak) és a peszticidek (növényvédő szerek maradványai, amelyek - ahogy azt korábban az Anyagforgalom fejezetben a biomagnifikációnál megismertük - a táplálékláncban felhalmozódhatnak).',
+                  'Az eutrofizáció (a víz túlzott feldúsulása tápanyagokban, elsősorban nitrátokban és foszfátokban) az algák és más vízinövények túlzott elszaporodásához vezet; ezek elpusztulása és lebontása során a lebontó szervezetek nagy mennyiségű oxigént fogyasztanak el, ami a vízben oldott oxigén drasztikus csökkenéséhez, súlyos esetben a hal- és más vízi állatállomány pusztulásához vezethet.',
+                ],
+              },
+              {
+                heading: 'A vízkészletek védelmének gyakorlati szempontjai',
+                paragraphs: [
+                  'A felszíni vizek (folyók, tavak) mellett a felszín alatti vízkészletek (talajvíz, rétegvíz) is sérülékenyek a szennyezéssel szemben: mivel ezek a vizek lassabban áramlanak és cserélődnek, egy egyszeri szennyezés hatása is akár évtizedekig fennmaradhat bennük, ezért a megelőzés (pl. a szennyező anyagok talajba jutásának elkerülése) itt még inkább előtérbe kerül, mint a felszíni vizeknél, ahol az áramlás gyorsabb hígulást és cserét tesz lehetővé.',
+                  'Magyarország vízkészletei szempontjából különösen fontos a felszín alatti, jó minőségű ivóvízbázisok védelme, hiszen az ország ivóvízellátásának jelentős része ezekre a készletekre épül - ezek elszennyeződése nemcsak környezeti, hanem közvetlen közegészségügyi kockázatot is jelentene.',
+                ],
+              },
+              {
+                heading: 'Hőszennyezés és víztisztítás',
+                paragraphs: [
+                  'A hőszennyezés azt jelenti, hogy egy ipari vagy energiatermelő létesítmény (pl. erőmű) által hűtésre használt, majd felmelegedve visszaengedett víz megemeli a befogadó vízfolyás hőmérsékletét, ami megváltoztatja az oldott oxigén mennyiségét és az ott élő fajok életfeltételeit. A melegebb víz kevesebb oxigént képes oldva tartani, ráadásul a felmelegedés az élőlények anyagcseréjét is felgyorsítja, ami tovább növeli az oxigénigényüket - ez a kettős hatás különösen veszélyezteti a hidegebb, oxigéndús vizekhez alkalmazkodott fajokat.',
+                  'A mechanikai víztisztítás a szennyvízből fizikai úton (pl. szűréssel, ülepítéssel) távolítja el a durvább szennyeződéseket, a biológiai víztisztítás pedig mikroorganizmusok segítségével bontja le a szerves szennyezőanyagokat - a kettő gyakran egymást követő lépésként, kombinálva alkalmazandó egy szennyvíztisztító telepen.',
+                ],
+              },
+            ],
+            keyTerms: ['öntisztuló képesség', 'eutrofizáció', 'hőszennyezés', 'biológiai víztisztítás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az energiaforrásokat, valamint a megújuló és a nem megújuló energiaforrások közötti különbséget ismerjük meg - ez a témakör szorosan kapcsolódik a korábban (Levegőszennyezés és védelme fejezet) megismert üvegházhatáshoz és globális felmelegedéshez is, hiszen az energiatermelés módja alapvetően meghatározza egy ország üvegházgáz-kibocsátását.',
+            sections: [
+              {
+                heading: 'Energiaforrások: megújuló és nem megújuló',
+                paragraphs: [
+                  'A lehetséges energiaforrások hozzáférhetősége és használatuk korlátai jelentősen eltérnek egymástól. A nem megújuló energiaforrások (pl. a kőszén, a kőolaj, a földgáz) emberi léptékkel mérve véges készletet jelentenek, és felhasználásuk - ahogy azt korábban (Levegőszennyezés és védelme fejezet) az üvegházhatásnál megismertük - jelentős környezeti terheléssel (szennyezés, üvegházhatás) jár. A megújuló energiaforrások (pl. a napenergia, a szélenergia, a vízenergia, a geotermikus energia) emberi léptékkel gyakorlatilag kimeríthetetlenek, és felhasználásuk jellemzően kisebb környezeti terheléssel jár, bár telepítésük és üzemeltetésük is hordozhat környezeti hatásokat (pl. tájkép-változás, élőhely-érintettség) - ahogy azt a fenti táblázat is összefoglalja.',
+                  'A megújuló energiaforrások elterjedésének egyik korlátja a kiszámíthatóságuk hiánya (pl. a napenergia és a szélenergia termelése az időjárástól függ), ezért ezek nagy arányú alkalmazása jellemzően fejlett energiatárolási megoldásokat vagy más energiaforrásokkal való kombinálást is igényel az energiaellátás folyamatosságának biztosításához. A vízenergia és a geotermikus energia ezzel szemben stabilabb, kiszámíthatóbb forrást jelent, de telepítésük gyakran csak bizonyos földrajzi adottságok (pl. megfelelő folyó, geotermikus aktivitás) mellett gazdaságos. Magyarország geotermikus adottságai kifejezetten kedvezőek, ezért a geotermikus energia hazánkban is egyre jelentősebb szerepet játszik, elsősorban a fűtésben és a termálvízhasznosításban. Az energiaforrás megválasztásakor tehát mindig érdemes együttesen mérlegelni a hozzáférhetőséget, a gazdaságosságot és a környezeti terhelést, hiszen egyetlen energiaforrás sem old meg minden szempontot egyformán jól.',
+                ],
+              },
+              {
+                heading: 'Sugárzás mint energiaforrás és kockázat',
+                paragraphs: [
+                  'A radioaktív sugárzás kettős szerepet játszik: egyrészt az atomenergia (amely az uránatommagok hasadásából nyeri az energiáját) a nem megújuló energiaforrások közé tartozó, jelentős energiasűrűségű, üvegházgázt közvetlenül nem termelő energiaforrás, másrészt a szervezetet érő sugárterhelés egészségügyi kockázatot is jelenthet. A sugárzásnak természetes forrásai is vannak (pl. a talajból, a kőzetekből, illetve a kozmikus sugárzásból származó háttérsugárzás), amelyeknek mindannyian folyamatosan ki vagyunk téve, valamint mesterséges forrásai (pl. orvosi diagnosztikai eljárások, atomerőművek).',
+                  'A sugárvédelem alapelve, hogy a szükségtelen sugárterhelést kerülni kell, az elkerülhetetlen sugárterhelést pedig a lehető legalacsonyabb szinten kell tartani - ezt biztosítja többek között a védőtávolság megtartása, a sugárforrással töltött idő minimalizálása és megfelelő árnyékolás alkalmazása.',
+                ],
+              },
+            ],
+            keyTerms: ['megújuló energiaforrás', 'nem megújuló energiaforrás', 'atomenergia'],
+          },
+        },
+      },
+      {
+        id: 'talaj-hulladek',
+        title: 'Talajvédelem és hulladékgazdálkodás',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Vízszennyezés és energiagazdálkodás fejezet) megismert vízvédelem és energiagazdálkodás után, az Egyed feletti szerveződési szintek témakört lezáró fejezetben a talajvédelmet és a hulladékgazdálkodást tekintjük át - ezzel a fejezettel egyben a levegő, a víz, a talaj és a hulladék védelmének teljes köre lezárul, kerek képet adva a környezetvédelem gyakorlati területeiről.',
+            sections: [
+              {
+                heading: 'Talajerózió',
+                paragraphs: [
+                  'A talajerózió a talaj felső, termékeny rétegének víz vagy szél általi elhordását jelenti - ez a folyamat sokkal gyorsabb, mint a talaj - ahogy azt korábban (Környezeti kölcsönhatások fejezet) megismertük - természetes kialakulása, ezért a talajerózió hosszú távon visszafordíthatatlan termőföld-veszteséghez vezethet. Az erózió csökkentésének lehetőségei közé tartozik a növényzettel való borítottság fenntartása (a gyökérzet megköti a talajt), a lejtőre merőleges (szintvonalas) művelés, valamint a szélfogó fasorok telepítése.',
+                  'Az erózió kockázata különösen nagy a meredek lejtésű, növényzet nélkül hagyott (pl. frissen szántott) területeken, mivel ott a csapadékvíz akadálytalanul, nagy sebességgel folyik le, magával sodorva a talaj felső, legtermékenyebb rétegét - ez az oka annak, hogy a hagyományos szántóföldi művelés helyett egyre gyakrabban alkalmaznak talajkímélő módszereket (pl. minimális talajbolygatás, állandó növényi borítottság fenntartása). A szélerózió elleni védekezés hasonló elveken alapul: a szélfogó fasorok és sövények megtörik a szél erejét, csökkentve a talaj felső rétegének elfújását, különösen a nyílt, fátlan mezőgazdasági területeken. Hazánkban a szélerózió különösen a Duna-Tiszaközi Homokhátság laza, homokos talajú, fátlan területein jelentős probléma, ahol a szélfogó erdősávok telepítése bevett gyakorlati védekezési módszer.',
+                ],
+              },
+              {
+                heading: 'A talaj termékenységének megőrzése',
+                paragraphs: [
+                  'A talaj termékenységének hosszú távú megőrzése nemcsak az erózió elleni védekezést jelenti, hanem a talaj szerves anyag- és tápanyagtartalmának fenntartását is - ahogy azt korábban (Anyagforgalom fejezet) a lebontók szerepénél megismertük, a talajban élő lebontó szervezetek folyamatos tevékenysége nélkülözhetetlen ehhez. A talaj túlzott, egyoldalú terhelése (pl. ugyanazon növénykultúra évről évre történő termesztése) kimerítheti a talaj tápanyagkészletét és károsíthatja a talajban élő szervezetek közösségét.',
+                ],
+              },
+              {
+                heading: 'Hulladékgazdálkodás',
+                paragraphs: [
+                  'A hulladékok típusai (pl. kommunális, ipari, veszélyes hulladék) eltérő kezelést igényelnek: a kezelés lehetséges módjai közé tartozik a lerakás (hulladéklerakóban történő elhelyezés), az égetés (energianyerés mellett vagy anélkül) és az újrahasznosítás (a hulladékból új nyersanyag vagy termék előállítása). A veszélyes hulladékok (pl. vegyi anyagok, elhasznált elemek, egyes elektronikai eszközök) különleges, szigorúan szabályozott kezelést igényelnek, mivel nem megfelelő elhelyezésük súlyosan szennyezheti a talajt és a vizeket. A hulladéklerakók kialakításánál is figyelembe kell venni a talaj- és talajvízvédelmi szempontokat: egy szakszerűtlenül kialakított lerakóból a csapadékvízzel kimosódó szennyező anyagok a talajvízbe szivároghatnak - ezért a modern hulladéklerakókat szigetelőréteggel (pl. agyag- vagy műanyag fóliaréteggel) és a szivárgó vizek összegyűjtésére, kezelésére szolgáló rendszerrel látják el, hogy megakadályozzák a szennyező anyagok talajba és talajvízbe jutását.',
+                  'A szelektív gyűjtés (a hulladék típus szerinti előzetes szétválogatása) előnye, hogy jelentősen megkönnyíti és hatékonyabbá teszi a feldolgozást és az újrahasznosítást, hiszen a vegyesen gyűjtött hulladékból utólag sokkal nehezebb és költségesebb szétválogatni az újrahasznosítható anyagokat (pl. papírt, üveget, fémet, egyes műanyagokat). Az újrahasznosítás emellett nyersanyag- és energiamegtakarítást is jelent: egy újrahasznosított anyagból történő gyártás jellemzően kevesebb energiát és nyersanyagot igényel, mintha az adott terméket teljesen új alapanyagból állítanák elő.',
+                ],
+              },
+            ],
+            keyTerms: ['talajerózió', 'szelektív gyűjtés', 'újrahasznosítás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes megismerni a hulladékhierarchia elvét, amely rendszerbe foglalja a hulladékgazdálkodás lehetséges lépéseit, valamint a komposztálás gyakorlati jelentőségét.',
+            sections: [
+              {
+                heading: 'A hulladékhierarchia elve',
+                paragraphs: [
+                  'A hulladékhierarchia a hulladékkezelési lehetőségeket kívánatosságuk sorrendjébe állítja: a legjobb megoldás a hulladék keletkezésének megelőzése (pl. csomagolásmentes vásárlás), ezt követi az újrahasználat (a termék eredeti formájában történő ismételt felhasználása), majd az újrahasznosítás (a hulladékból új nyersanyag előállítása), ezután az energetikai hasznosítás (pl. égetéssel történő energianyerés), és a legkevésbé kívánatos megoldás a lerakás. Ez a sorrend azt az elvet tükrözi, hogy minél korábbi lépésnél avatkozunk be (azaz minél inkább megelőzzük a hulladék keletkezését), annál kisebb a folyamat teljes környezeti terhelése.',
+                  'A hulladékhierarchia elve - ahogy azt korábban (Anyagforgalom fejezet) a fenntartható fejlődésnél és a körforgásos gazdaság elvénél megismertük - szorosan kapcsolódik a természetes ökoszisztémák körforgás-elvéhez: egy jól működő hulladékgazdálkodási rendszer, hasonlóan ahhoz, ahogy egy természetes ökoszisztémában a lebontók biztosítják az anyagok folyamatos újrahasznosulását, arra törekszik, hogy minél kevesebb anyag kerüljön véglegesen "kivonásra" a körforgásból.',
+                ],
+              },
+              {
+                heading: 'Komposztálás: a szerves hulladék helyi újrahasznosítása',
+                paragraphs: [
+                  'A komposztálás a szerves (konyhai és kerti) hulladék - ahogy azt korábban (Anyagforgalom fejezet) a lebontók szerepénél megismertük - lebontó szervezetek segítségével történő, kontrollált lebontása, amelynek végterméke a komposzt: a talaj tápanyag-utánpótlására és szerkezetének javítására kiválóan alkalmas, természetes eredetű anyag. A komposztálás gyakorlati előnye, hogy a szerves hulladék jelentős részét (amely egyébként a hulladéklerakóban oxigénszegény körülmények között bomlana, üvegházgázt, metánt termelve) helyben, hasznosítható formában lehet feldolgozni, ezáltal egyszerre csökkentve a lerakóba kerülő hulladék mennyiségét és javítva a talaj minőségét.',
+                ],
+              },
+            ],
+            keyTerms: ['hulladékhierarchia', 'komposztálás'],
+          },
+        },
+      },
     ],
   },
   {
