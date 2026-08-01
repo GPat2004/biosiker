@@ -7328,13 +7328,206 @@ export const CURRICULUM = [
     icon: 'Sparkle',
     color: 'from-violet-500 to-fuchsia-500',
     chapters: [
-      { id: 'molekularis-genetika', title: 'Molekuláris genetika', order: 1, isFree: true, estimatedMinutes: 18,
+      {
+        id: 'genetikai-alapfogalmak',
+        title: 'Alapfogalmak és a genetikai információ áramlása',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 20,
+        content: {
+          kozep: {
+            intro: 'Ezzel a fejezettel egy új nagy témakört kezdünk: a genetikát. Korábban (Nukleinsavak, nukleotidok fejezet) megismertük, hogy a genetikai információ a DNS-ből az RNS-en keresztül jut el a fehérjeszintézishez - ebben a fejezetben ezt az információáramlást és a hozzá kapcsolódó alapfogalmakat tárgyaljuk részletesen.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: gén és allél',
+                paragraphs: [
+                  'A gén a DNS egy meghatározott szakasza, amely egy adott fehérje (vagy funkcionális RNS-molekula) felépítéséhez szükséges információt hordozza - vagyis egy gén tulajdonképpen egy "recept" egyetlen termékhez. Egy kromoszómán (illetve a homológ kromoszómapár mindkét tagján) egy adott gén mindig ugyanazon a helyen (lókuszon) található.',
+                  'Az allél egy adott gén többféle, egymástól kissé eltérő változata - ugyanannak a "receptnek" a különböző "verziói", amelyek apró különbségeik miatt eltérő formában valósíthatják meg ugyanazt a tulajdonságot (pl. a szemszínt meghatározó gén egyik allélja kék, másik allélja barna szemszínt eredményezhet). Mivel az emberi sejtek (a testi sejtek) kromoszómái párosan fordulnak elő - ahogy azt korábban (Osztódás fejezet) a homológ kromoszómáknál megismertük -, egy adott génből minden testi sejt két allélt hordoz: az egyiket az anyától, a másikat az apától örökölve.',
+                ],
+              },
+              {
+                heading: 'A genetikai kód és a kromoszómák szerkezete',
+                paragraphs: [
+                  'A genetikai kód az a "szótár", amely megfeleltetést teremt a DNS (illetve az RNS) nukleotid-sorrendje és a fehérjék aminosav-sorrendje között: három egymást követő nukleotid (egy kodon) mindig egy adott aminosavat (vagy egy "stop" jelet) kódol. A genetikai kód általánosan érvényes, vagyis gyakorlatilag minden élőlénynél (baktériumtól az emberig) ugyanazt jelenti egy adott kodon - ez a közös "nyelv" teszi lehetővé, hogy egy baktérium akár egy emberi gén alapján is képes legyen emberi fehérjét előállítani.',
+                  'A kromoszóma a sejtmagban lévő, DNS-t és fehérjéket tartalmazó, jól körülhatárolható szerkezet, amely a genetikai információ egy önálló, összefüggő egységét hordozza - egy adott faj sejtjeire jellemző, állandó számú kromoszóma alkotja együttesen a teljes genetikai állományt (embernél például 46 kromoszóma). A kromatinfonál a kromoszóma "laza", feltekeredetlen állapota: a sejtciklus nagy részében (amikor a sejt nem osztódik) a DNS ebben a nyújtott, szálas formában helyezkedik el a sejtmagban, és csak osztódáskor tömörödik a jellegzetes, mikroszkóppal is jól látható, "X" alakú kromoszóma-formába - ahogy azt korábban (Osztódás fejezet) a sejtciklusnál megismertük. A kromatinfonál és a kromoszóma tehát ugyanannak a genetikai anyagnak (a DNS-nek) két különböző, a sejt aktuális állapotától (osztódik-e éppen vagy sem) függő megjelenési formája.',
+                ],
+              },
+              {
+                heading: 'A rekombináció és a homológ kromoszómák',
+                paragraphs: [
+                  'A homológ kromoszómák egy adott kromoszómapár két tagja: az egyik az anyától, a másik az apától származik, és mindkettő ugyanazokat a géneket hordozza (ugyanazokon a helyeken, lókuszokon), bár a rajtuk lévő allélek eltérhetnek egymástól. Az embert alkotó testi sejtek 46 kromoszómája így valójában 23 homológ párt alkot - ez a páros elrendeződés (diploid kromoszómakészlet) teszi lehetővé, hogy egy adott génből minden testi sejt két allélt hordozzon, ahogy azt fentebb is megismertük.',
+                  'A rekombináció az a folyamat, amelynek során a genetikai anyag új kombinációkban rendeződik át - ennek egyik fő formája a crossing over, amelyet korábban (Osztódás fejezet emelt kiegészítése) a meiózis I szakaszánál már megismertünk: a homológ kromoszómák szakaszokat cserélnek egymással, így az utódsejtekbe kerülő kromoszómák már nem pontosan ugyanazok, mint amilyeneket a szülő eredetileg örökölt. A rekombináció - a független szétválással együtt - alapvető forrása annak, hogy az ivaros szaporodás során létrejövő utódok genetikailag különböznek mind egymástól, mind a szüleiktől.',
+                ],
+              },
+              {
+                heading: 'A genetikai információ áramlása: DNS → RNS → fehérje',
+                paragraphs: [
+                  'A sejten belüli információáramlás három fő lépésből áll. Elsőként a DNS megkettőződik (replikálódik): a kettős lánc szétnyílik, majd mindkét szálhoz - a bázispárosodás szabályai szerint - egy-egy új, kiegészítő szál épül, így két, az eredetivel megegyező DNS-molekula jön létre - ez biztosítja, hogy sejtosztódáskor mindkét utódsejt teljes genetikai információt kapjon.',
+                  'Másodikként a DNS egy adott génjéről átíródik (transzkripció) egy hírvivő RNS-molekula (mRNS): a DNS releváns szakasza szétnyílik, és a bázispárosodás szabályai szerint egy RNS-másolat készül róla. Harmadikként az mRNS-t a sejt leolvassa (transzláció): a riboszómán az mRNS kodonjait a genetikai kód alapján aminosavakká "fordítják le", amelyek egymáshoz kapcsolódva alkotják a fehérjeláncot.',
+                ],
+              },
+            ],
+            keyTerms: ['gén', 'allél', 'genetikai kód', 'kromoszóma', 'kromatinfonál', 'rekombináció', 'homológ kromoszóma', 'replikáció', 'transzkripció', 'transzláció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a DNS-fehérje-jelleg összefüggést, a kodonszótár gyakorlati használatát, valamint a fehérjeszintézis eukarióta sejten belüli lépéseit és a géntechnológiai alkalmazásokat ismerjük meg.',
+            sections: [
+              {
+                heading: 'A DNS, a fehérje és a tapasztalható jelleg összefüggése',
+                paragraphs: [
+                  'Az összefüggés láncolata a következő: a DNS nukleotid-sorrendje meghatározza a fehérje aminosav-sorrendjét (elsődleges szerkezetét), az aminosav-sorrend pedig - ahogy azt korábban (Fehérjék fejezet) megismertük - meghatározza a fehérje térszerkezetét (hogyan tekeredik fel), a térszerkezet pedig meghatározza a fehérje biológiai funkcióját. Mivel a szervezet szinte minden tapasztalható jellege (pl. egy enzim aktivitása, egy szerkezeti fehérje tulajdonsága) valamilyen fehérje működésén alapul, ez a láncolat köti össze a DNS-ben tárolt információt a ténylegesen megfigyelhető tulajdonságokkal.',
+                ],
+              },
+              {
+                heading: 'A kodonszótár használata: egy konkrét példa',
+                paragraphs: [
+                  'A kodonszótár egy táblázat, amely minden lehetséges hárombetűs mRNS-kodonhoz megadja a hozzá tartozó aminosavat. Nézzünk egy konkrét példát: ha egy mRNS-szakasz kodonjai sorban AUG-UUU-GGC-UAA, akkor a kodonszótár alapján az AUG a start-kodon (metionin, itt kezdődik a fehérjelánc), az UUU fenilalanint, a GGC glicint kódol, a UAA pedig egy stop-kodon (itt véget ér a fehérjelánc, nem kódol aminosavat) - vagyis ebből a rövid mRNS-szakaszból egy metionin-fenilalanin-glicin sorrendű, három aminosavból álló fehérjelánc (peptid) keletkezik.',
+                  'A kodonszótár egyik fontos tulajdonsága, hogy több kodon is kódolhatja ugyanazt az aminosavat (pl. az UUU mellett az UUC is fenilalanint kódol) - ezt a jelenséget a genetikai kód degeneráltságának nevezzük, és ez azt jelenti, hogy egy adott ponton bekövetkező mutáció nem feltétlenül változtatja meg a beépülő aminosavat.',
+                ],
+              },
+              {
+                heading: 'A fehérjeszintézis fázisai az eukarióta sejtben',
+                paragraphs: [
+                  'Az eukarióta sejtben a fehérjeszintézis lépései jól elkülönülő sejtalkotókhoz köthetők: a transzkripció (DNS → mRNS átírás) a sejtmagban zajlik, ahol a DNS védetten őrződik. Az elkészült mRNS ezután kilép a sejtmagból, és a citoplazmában - ahogy azt korábban (Anyagcsere (sejtszinten) fejezet) a durva endoplazmatikus hálózatnál megismertük - a riboszómákon történik a transzláció (az mRNS "lefordítása" fehérjeláncká). A kész fehérjelánc gyakran a durva endoplazmatikus hálózatban és a Golgi-készülékben esik át további módosításokon (pl. térszerkezet kialakulása, cukoroldalláncok hozzáadása), mielőtt végleges, működőképes formáját elnyerné.',
+                ],
+              },
+              {
+                heading: 'Baktériumok felhasználása emberi fehérje előállítására',
+                paragraphs: [
+                  'Mivel a genetikai kód általánosan érvényes, egy emberi gén (pl. az inzulint kódoló gén) beépíthető egy baktérium (pl. az Escherichia coli) genetikai állományába - a baktérium ezután a saját fehérjeszintézis-gépezetével (amely ugyanazt a genetikai kódot "olvassa") képes lesz a beépített emberi gén alapján emberi fehérjét (pl. inzulint) termelni. Ez a géntechnológiai eljárás teszi lehetővé, hogy ma a cukorbetegek kezelésére használt inzulin nagy része baktériumokban, ipari méretekben, tisztán emberi szerkezetű fehérjeként állítható elő, nem állati eredetű inzulinból kell kinyerni.',
+                ],
+              },
+            ],
+            keyTerms: ['kodonszótár', 'genetikai kód degeneráltsága', 'start-kodon', 'stop-kodon'],
+          },
+        },
+      },
+      {
+        id: 'mutacio',
+        title: 'Mutáció',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Génmutáció', 'Kromoszómamutáció', 'Genommutáció'],
+          rows: [
+            ['Érintett szint', 'egyetlen gén', 'egy teljes kromoszóma', 'a teljes kromoszómakészlet'],
+            ['Típus', 'pontmutáció (bázis-csere/beszúrás/kiesés)', 'szerkezeti vagy számbeli', 'ploidia-változás'],
+            ['Példa', 'sarlósejtes vérszegénység', 'Down-kór (számbeli)', 'triploid/tetraploid sejt'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Alapfogalmak és a genetikai információ áramlása fejezet) megismert genetikai alapfogalmak után ebben a fejezetben a genetikai változékonyság egyik legfontosabb forrását, a mutációt tekintjük át.',
+            sections: [
+              {
+                heading: 'A mutáció fogalma és a genetikai változékonyság forrásai',
+                paragraphs: [
+                  'A mutáció a genetikai állomány (a DNS nukleotid-sorrendjének, vagy egy kromoszóma szerkezetének/számának) hirtelen, véletlenszerű megváltozása. A mutáció és az ivaros szaporodás (a rekombináció és a független szétválás révén) a genetikai változékonyság két alapvetően különböző forrása: a mutáció ÚJ allélváltozatokat hoz létre, amelyek korábban nem léteztek a populációban, míg az ivaros szaporodás a MÁR MEGLÉVŐ allélokat kombinálja új módokon az utódokban - vagyis a mutáció "termeli" a nyersanyagot, az ivaros szaporodás pedig "keveri" azt.',
+                ],
+              },
+              {
+                heading: 'A mutációk lehetséges hatásai',
+                paragraphs: [
+                  'Egy mutáció hatása háromféle lehet: hátrányos (ha rontja az egyed életképességét vagy szaporodóképességét), közömbös (semleges, ha nincs érdemi hatása, pl. mert a genetikai kód degeneráltsága miatt ugyanaz az aminosav épül be), vagy előnyös (ha javítja az egyed alkalmazkodóképességét az adott környezetben). A mutációk evolúciós szerepe éppen abban áll, hogy az előnyös mutációk - a természetes szelekció révén - felhalmozódhatnak egy populációban, ez az egyik alapja az evolúciós változásoknak.',
+                  'Egy esettanulmányban jól elkülöníthető a három hatástípus: hátrányos mutációra példa a fenilketonúriát okozó mutáció (lásd lentebb), amely kezelés nélkül súlyosan károsítja az egyedet; közömbös mutációra példa egy olyan pontmutáció, amely a genetikai kód degeneráltsága miatt nem változtatja meg a beépülő aminosavat, ezért a fehérje működése és az egyed életképessége is változatlan marad; előnyös mutációra pedig az antibiotikum-rezisztenciát okozó baktériumsejtek mutációja hozható fel példaként, amely antibiotikumos kezelés jelenlétében egyértelmű túlélési előnyt biztosít az adott baktériumnak, bár antibiotikum hiányában akár hátrányos is lehetne.',
+                  'Az emberi népességben számos génváltozat (allél) tartósan, egyszerre több formában is jelen marad - jó példa erre az AB0-vércsoport rendszer, amelynek mindhárom allélja (A, B, 0) évezredek óta egyszerre van jelen az emberi populációkban, anélkül hogy bármelyik teljesen kiszorítaná a másikat. Ez a jelenség jól mutatja, hogy egy adott mutáció hatása nem mindig egyértelműen "jó" vagy "rossz", hanem az adott környezeti körülményektől is függhet.',
+                ],
+              },
+              {
+                heading: 'Mutagén hatások',
+                paragraphs: [
+                  'A mutagén hatások (amelyek megnövelik a mutációk gyakoriságát) három nagy csoportba sorolhatók: biológiai mutagének (pl. egyes vírusok), kémiai mutagének (pl. egyes vegyi anyagok, dohányfüst összetevői) és fizikai mutagének (pl. UV-sugárzás, radioaktív sugárzás). Ezek felismerése gyakran nehéz, mivel a mutáció és az esetleges betegség kialakulása között akár évek is eltelhetnek, ezért a közvetlen ok-okozati kapcsolat nem mindig nyilvánvaló. A mutagén hatások csökkentésének vagy kivédésének lehetőségei közé tartozik a védőfelszerelés (pl. napvédelem UV-sugárzás ellen), a veszélyes vegyi anyagok kerülése és a sugárvédelmi előírások betartása.',
+                  'Fontos összefüggés, hogy a mutagén és a rákkeltő (karcinogén) hatás gyakran együtt jár: mivel a rák hátterében - ahogy azt a következő fejezetben (A génműködés szabályozása) részletesebben megismerjük - a sejtosztódást szabályozó gének mutációi állnak, egy erősen mutagén anyag (pl. a dohányfüst) egyúttal jelentős rákkeltő kockázatot is hordoz.',
+                ],
+              },
+            ],
+            keyTerms: ['mutáció', 'mutagén hatás', 'karcinogén hatás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a pontmutációk aminosavsorrendre gyakorolt hatását, konkrét emberi genetikai betegségeket, valamint a gén-, kromoszóma- és genommutációk típusait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Pontmutációk következményei a kodonszótár segítségével',
+                paragraphs: [
+                  'Nézzünk egy konkrét példát arra, hogyan vezethető le egy pontmutáció (egyetlen nukleotid megváltozása) következménye a kodonszótár segítségével. Kiindulásként legyen az eredeti kodon GAA (glutaminsav). Ha a harmadik bázis A-ról G-re változik (GAA → GAG), a kodonszótár szerint a GAG szintén glutaminsavat kódol - ez egy néma (csendes) mutáció, mivel a genetikai kód degeneráltsága miatt nem változik a beépülő aminosav. Ha viszont a második bázis A-ról U-ra változik (GAA → GUA), a GUA már valint kódol glutaminsav helyett - ez egy missense (aminosav-cserélő) mutáció, amely megváltoztatja a fehérje egyetlen aminosavát. Ha pedig a mutáció egy stop-kodont hoz létre idő előtt (pl. GAA → UAA), a fehérjelánc szintézise ott véglegesen megszakad - ez egy nonsense (értelemvesztő) mutáció, amely jellemzően súlyosan károsítja a fehérje működését.',
+                ],
+              },
+              {
+                heading: 'Konkrét genetikai betegségek háttere',
+                paragraphs: [
+                  'A sarlósejtes vérszegénység egy pontmutáció (missense mutáció) következménye a hemoglobin génjében: egyetlen aminosav cseréje miatt a hemoglobin molekulák oxigénszegény körülmények között összetapadnak, sarló alakúvá torzítva a vörösvértesteket, amelyek emiatt elzárhatják a kisebb ereket és könnyebben szét is esnek. Az albinizmus egy olyan mutáció következménye, amely a melanin (a bőr, a haj és a szem festékanyagának) előállításáért felelős enzim génjét érinti, ezáltal a szervezet nem tud (vagy csak korlátozottan tud) melanint termelni.',
+                  'A fenilketonúria egy recesszíven öröklődő enzimbetegség, amelyben a fenilalanin aminosav lebontásáért felelős enzim hibás - emiatt a fenilalanin felhalmozódik a szervezetben, és kezelés nélkül súlyos idegrendszeri károsodást okoz. A recesszív öröklődés azt jelenti, hogy a betegség csak akkor jelentkezik, ha az egyed mindkét szülőjétől a hibás allélt örökli - egyetlen ép allél is elegendő a normál enzimműködéshez, ezért a csak egy hibás allélt hordozó szülők (hordozók) maguk egészségesek maradnak. Ezt a jelenséget és a hozzá tartozó keresztezési példákat a Mendeli genetika fejezetben tárgyaljuk majd részletesen. A betegség kezelése speciális, alacsony fenilalanin-tartalmú diétával történik, amelyet már csecsemőkortól, életen át be kell tartani.',
+                ],
+              },
+              {
+                heading: 'Génmutáció, kromoszómamutáció, genommutáció',
+                paragraphs: [
+                  'A mutációkat a genetikai anyag érintett szintje szerint - ahogy azt a fenti táblázat is összefoglalja - három típusba soroljuk. A génmutáció egyetlen gént érint (pl. egy pontmutáció, mint a fenti sarlósejtes vérszegénységnél). A kromoszómamutáció egy teljes kromoszóma szerkezetét változtatja meg - lehet szerkezeti (pl. egy kromoszómadarab törése, elvesztése, megfordulása vagy egy másik kromoszómára kerülése) vagy számbeli (pl. egy adott kromoszómából eggyel több vagy kevesebb, ahogy azt korábban a nemleválásnál megismertük). A genommutáció a teljes kromoszómakészlet számát változtatja meg (ploidia-változás, pl. amikor egy sejt a normál diploid helyett triploid vagy tetraploid kromoszómakészlettel rendelkezik).',
+                  'A genetikai rendellenességek (pl. a Down-kór, amely a 21-es kromoszómából egy extra példány jelenlétével jár - ez egy számbeli kromoszómamutáció) esélye a szülők, elsősorban az anya életkorával növekszik: ez azzal magyarázható, hogy a petesejtek a meiózis egy korai szakaszában évtizedekig "várakoznak" a folytatásra, és ez alatt az idő alatt egyre nagyobb az esélye annak, hogy a kromoszómák szétválása hibásan megy végbe.',
+                ],
+              },
+            ],
+            keyTerms: ['génmutáció', 'kromoszómamutáció', 'genommutáció', 'sarlósejtes vérszegénység', 'fenilketonúria'],
+          },
+        },
+      },
+      {
+        id: 'genmukodes-szabalyozasa',
+        title: 'A génműködés szabályozása',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Mutáció fejezet) megismert genetikai változékonyság után ebben a fejezetben azt vizsgáljuk meg, hogyan szabályozza a szervezet, mikor és mely gének legyenek aktívak.',
+            sections: [
+              {
+                heading: 'Miért nem mindig aktív minden gén?',
+                paragraphs: [
+                  'Bár a szervezet különböző felépítésű és működésű testi sejtjei (pl. egy idegsejt és egy izomsejt) genetikai információtartalma azonos - hiszen mindegyik testi sejt ugyanabból a megtermékenyített petesejtből, ugyanazon DNS-állomány sokszorosításával jött létre -, a sejtek mégis nagyon különböznek egymástól. Ennek oka, hogy egy adott sejttípusban csak a sejt működéséhez éppen szükséges gének aktívak (íródnak át), a többi gén "elhallgattatott" állapotban van - ez teszi lehetővé, hogy ugyanaz a genetikai információ sok, egymástól teljesen eltérő sejttípust hozzon létre.',
+                  'Fontos ugyanakkor megjegyezni, hogy ez az azonos genetikai információtartalom nem tökéletesen állandó: mutációk - ahogy azt korábban (Mutáció fejezet) megismertük - egyes testi sejtekben megváltoztathatják a DNS-t, ami akár a sejt működésének súlyos zavarához (pl. daganatos elfajuláshoz) is vezethet.',
+                ],
+              },
+              {
+                heading: 'A hormonális állapot hatása a génműködésre',
+                paragraphs: [
+                  'A gének megnyilvánulását (kifejeződését) a szervezet hormonális állapota is jelentősen befolyásolja: egyes hormonok - ahogy azt korábban (Hormonális működések fejezet) a hormonhatás célsejt-függőségénél megismertük - képesek bejutni a sejtmagba, és ott közvetlenül befolyásolni, mely gének íródjanak át, mely gének maradjanak inaktívak. Ez az egyik magyarázata annak, hogy a szervezet hormonális állapotának változásai (pl. pubertáskor) miért járnak együtt új tulajdonságok, jellegek megjelenésével.',
+                  'Ez a hormon-vezérelt génszabályozás jól mutatja, hogy a sejt működését nem kizárólag a genetikai állomány önmagában, hanem a genetikai állomány és a környezeti/szervezeten belüli jelek (pl. hormonok) együttes hatása határozza meg - két genetikailag azonos sejt is eltérően viselkedhet, ha eltérő hormonális jelzéseket kap.',
+                ],
+              },
+              {
+                heading: 'Daganatok: a génműködés-szabályozás felborulása',
+                paragraphs: [
+                  'A daganat a sejtosztódást szabályozó gének mutációi miatt kialakuló, kontrollálatlan sejtszaporodás. A jóindulatú daganat lassan nő, jól körülhatárolt, nem terjed szét a szervezetben. A rosszindulatú daganat gyorsan növekszik, a környező szöveteket beszűri, és képes áttéteket (metasztázisokat) képezni - vagyis a daganatsejtek leszakadnak, a vér- vagy nyirokáramba kerülnek, és a szervezet távoli pontjain új daganatgócokat hoznak létre. Ez a különbség (helyben maradó, illetve terjedő növekedés) magyarázza, hogy a jóindulatú daganatok jellemzően miért kevésbé veszélyesek: eltávolításuk után a betegség jellemzően nem tér vissza, míg a rosszindulatú daganatoknál az áttétek miatt a kezelés jóval összetettebb feladat.',
+                  'Néhány gyakori daganattípusra utaló jel: bőrrák esetén egy anyajegy méretének, alakjának vagy színének hirtelen megváltozása; emlőrák esetén tapintható csomó vagy a mell alakjának megváltozása; here- és prosztatarák esetén tapintható csomó, illetve vizelési panaszok; méhnyakrák esetén rendellenes hüvelyi vérzés. A korai felismerés jelentősége kiemelkedő: minél korábbi stádiumban fedeznek fel egy daganatot, annál nagyobb eséllyel gyógyítható - ezért fontosak a rendszeres szűrővizsgálatok is.',
+                  'A rendszeres önvizsgálat (pl. bőr, emlő, here) és a korosztályhoz kötött szűrővizsgálatok (pl. méhnyakszűrés, emlőszűrés) azért különösen fontosak, mert a korai stádiumú daganatok gyakran még nem okoznak feltűnő, a beteg által is könnyen észrevehető tüneteket - a szűrés így olyan esetekben is felfedheti a betegséget, amikor a beteg még egészségesnek érzi magát. Ez a felismerés (a tünetmentes korai szakasz) az egyik fő oka annak, hogy a rendszeres szűrővizsgálatok elhanyagolása a legtöbb daganattípusnál jelentősen ronthatja a gyógyulási esélyeket.',
+                ],
+              },
+            ],
+            keyTerms: ['génexpresszió', 'jóindulatú daganat', 'rosszindulatú daganat', 'áttét'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a laktóz-operon példáján a génműködés szabályozásának egy konkrét, jól tanulmányozott mechanizmusát ismerjük meg.',
+            sections: [
+              {
+                heading: 'A laktóz-operon',
+                paragraphs: [
+                  'A laktóz-operon a baktériumok génműködés-szabályozásának klasszikus, jól tanulmányozott példája: azokat a géneket foglalja magába, amelyek a laktóz (tejcukor) lebontásához szükséges enzimeket kódolják. Az operon részei közé tartozik a promóter (az a DNS-szakasz, ahová az átírást végző enzim kapcsolódik), az operátor (egy szabályozó DNS-szakasz, amelyhez egy elnyomó fehérje - represszor - kapcsolódhat) és a szerkezeti gének (amelyek magukat az enzimeket kódolják).',
+                  'A szabályozás lényege, hogy laktóz hiányában egy represszor fehérje az operátorhoz kapcsolódva megakadályozza a szerkezeti gének átírását - a baktérium ilyenkor "feleslegesnek" tartja a laktóz-lebontó enzimek termelését, hiszen nincs mit lebontani. Ha laktóz kerül a sejtbe, az a represszorhoz kötődve megváltoztatja annak alakját, ami miatt a represszor leválik az operátorról - ekkor a szerkezeti gének átíródhatnak, és megindul a laktózlebontó enzimek termelése. Ez a mechanizmus jól szemlélteti, hogy a génműködés szabályozása gazdaságos: a sejt csak akkor termel egy adott fehérjét, amikor arra ténylegesen szükség van.',
+                  'A laktóz-operon tehát egy negatív visszacsatoláshoz hasonló, önszabályozó rendszer: a szabályozó jel (a laktóz jelenléte vagy hiánya) közvetlenül határozza meg, hogy a hozzá kapcsolódó gének aktívak legyenek-e - ez az elv (egy környezeti jel közvetlenül befolyásolja a génexpressziót) az eukarióta sejtek génszabályozásában is megjelenik, bár ott jellemzően jóval összetettebb, több lépésből álló mechanizmusok révén.',
+                ],
+              },
+            ],
+            keyTerms: ['laktóz-operon', 'promóter', 'operátor', 'represszor'],
+          },
+        },
+      },
+      { id: 'mendeli-genetika', title: 'Mendeli genetika', order: 4, isFree: false, estimatedMinutes: 20,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'mendeli-genetika', title: 'Mendeli genetika', order: 2, isFree: false, estimatedMinutes: 20,
+      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 5, isFree: false, estimatedMinutes: 20,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 3, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera-evolucioja', title: 'A bioszféra evolúciója', order: 4, isFree: false, estimatedMinutes: 16,
+      { id: 'bioszfera-evolucioja', title: 'A bioszféra evolúciója', order: 6, isFree: false, estimatedMinutes: 16,
         content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
     ],
   },
