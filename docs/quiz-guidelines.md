@@ -140,14 +140,47 @@ fejezetenként, ha a munka batch-elhető).
   nyelvi/szakmai pontosság) minden fejezetnél változatlanul kötelező,
   csak a hívások szervezése legyen hatékonyabb.
 
+**Mért eredmény (2026-08-05, ne teszteld le újra):** Két módszert
+hasonlítottunk össze valós, éles fejezetek megírásán:
+- **Fejezetenkénti szóló hívás** (1 subagent-hívás/fejezet, a subagent maga
+  olvassa a curriculum.js-t): átlagosan **~75 900 token/fejezet** (5 korábbi
+  fejezet átlaga, ~29,6 kérdés/fejezet).
+- **3 fejezet egy batch-hívásban** (a fő munkamenet előre kimásolja a 3
+  fejezet szövegét a promptba, a subagent nem olvassa újra a fájlt): a
+  writer-hívás összesen 81 231 token volt 3 fejezethez (73 kérdés) = **~27
+  100 token/fejezet - kb. 64%-os csökkenés**. A reviewer-hívás (szintén
+  batch-elve, 3 fejezet egy válaszban) 57 745 token volt a 3 fejezet
+  együttes ellenőrzésére.
+- **Csak a kérdésszám csökkentése (3. szabály) önmagában, batch nélkül,
+  NEM hoz érdemi megtakarítást** - a subagent-hívás költségét főleg a
+  fix overhead (rendszerprompt, forrásszöveg beolvasása/feldolgozása)
+  adja, nem a generált szöveg hossza. A tényleges megtakarítás forrása a
+  batch-elés (kevesebb subagent-indítás, kevesebb ismételt
+  kontextus-betöltés), NEM a rövidebb kérdésbank.
+- **Következtetés - ez az alapértelmezett munkamódszer mostantól:** új
+  fejezetek kvízírásakor a fő munkamenet előre másolja ki 3 (max. kb.
+  3-4) fejezet `kozep`/`emeltExtra` szövegét a curriculum.js-ből egy
+  batch writer-prompt-ba (a subagent NE olvassa újra a fájlt), majd
+  ugyanígy egy batch reviewer-hívásban ellenőrizze mindhármat. Nincs
+  szükség ennek a mérésnek a megismétlésére jövőbeli munkamenetekben.
+
 ---
 
 ## Munkafolyamat egy új fejezet kvízéhez (frissítve)
 
-1. quiz-writer megírja a kérdésbankot (kb. 16-18 kozep + 6-9 emelt,
-   1-4. szabály betartásával) - ha több fejezet is várat egyszerre, az
-   5. szabály szerint lehetőleg egy hívásban, batch-elve.
-2. A fő munkamenet beilleszti a `src/data/quizzes.js`-be.
-3. quiz-reviewer ellenőriz - beleértve KIFEJEZETTEN az 1. és 2. pontot is
-   (válaszhossz-egyensúly, stílushű disztraktorok definícióknál).
-4. Csak ✅ után commit/push a `claude-work`-re.
+1. A fő munkamenet kiválaszt 2-4, egymáshoz közeli fejezetet, és
+   kimásolja a `kozep`/`emeltExtra` szövegüket a promptba (ne a
+   subagent olvassa be a curriculum.js-t - lásd az 5. pont mért
+   eredményét).
+2. EGY quiz-writer hívásban megíratja mindhárom/mindnégy fejezet
+   kérdésbankját (kb. 16-18 kozep + 6-9 emelt fejezetenként, 1-4.
+   szabály betartásával).
+3. A fő munkamenet beilleszti mindegyiket a `src/data/quizzes.js`-be.
+4. EGY quiz-reviewer hívásban ellenőrzi mindhárom/mindnégy fejezetet
+   (a forrásszöveget újra mellékelve a promptban) - beleértve
+   KIFEJEZETTEN az 1. és 2. pontot is (válaszhossz-egyensúly, stílushű
+   disztraktorok definícióknál).
+5. A fő munkamenet alkalmazza a javításokat (hossz-kiegyensúlyozás,
+   duplikátum-törlés/összevonás), majd `node -c`, `npm run build`,
+   `npm run lint` és egy gyors böngészős smoke-teszt fut le.
+6. Csak minden fejezetnél ✅ után commit/push a `claude-work`-re.
