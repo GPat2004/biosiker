@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getModuleById } from '../data/curriculum';
 import { getModuleQuizBank } from '../data/quizzes';
 import { useUserData } from '../context/UserDataContext';
-import { prepareQuiz } from '../lib/quizUtils';
 import QuizRunner from '../components/QuizRunner';
 import PaywallGate from '../components/PaywallGate';
 
@@ -14,11 +13,12 @@ const ModuleQuiz = () => {
   const module = getModuleById(moduleId);
   const { examLevel, isPremium } = useUserData();
 
-  const bank = getModuleQuizBank(module);
-  const pool = examLevel === 'emelt' ? bank : bank.filter((q) => q.level === 'kozep');
+  const bank = useMemo(() => getModuleQuizBank(module), [module]);
+  const pool = useMemo(
+    () => (examLevel === 'emelt' ? bank : bank.filter((q) => q.level === 'kozep')),
+    [bank, examLevel]
+  );
   const hasLockedChapter = module?.chapters.some((chapter) => !chapter.isFree) ?? false;
-
-  const [quiz] = useState(() => prepareQuiz(pool, MODULE_QUIZ_COUNT));
 
   if (!module) return <Navigate to="/tananyag" replace />;
   if (pool.length === 0) return <Navigate to={`/tananyag/${moduleId}`} replace />;
@@ -35,7 +35,8 @@ const ModuleQuiz = () => {
     <div className="max-w-3xl mx-auto px-4 py-12">
       <QuizRunner
         title={`${module.title} - modulzáró teszt`}
-        questions={quiz}
+        pool={pool}
+        count={MODULE_QUIZ_COUNT}
         backTo={`/tananyag/${moduleId}`}
         backLabel={module.title}
       />

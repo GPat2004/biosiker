@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getModuleById, getChapterById } from '../data/curriculum';
 import { getChapterQuizBank } from '../data/quizzes';
 import { useUserData } from '../context/UserDataContext';
-import { prepareQuiz } from '../lib/quizUtils';
 import QuizRunner from '../components/QuizRunner';
 
 const CHAPTER_QUIZ_COUNT = 10;
@@ -14,10 +13,11 @@ const ChapterQuiz = () => {
   const chapter = getChapterById(moduleId, chapterId);
   const { examLevel, canAccessChapter } = useUserData();
 
-  const bank = getChapterQuizBank(chapterId);
-  const pool = examLevel === 'emelt' ? bank : bank.filter((q) => q.level === 'kozep');
-
-  const [quiz] = useState(() => prepareQuiz(pool, CHAPTER_QUIZ_COUNT));
+  const bank = useMemo(() => getChapterQuizBank(chapterId), [chapterId]);
+  const pool = useMemo(
+    () => (examLevel === 'emelt' ? bank : bank.filter((q) => q.level === 'kozep')),
+    [bank, examLevel]
+  );
 
   if (!module || !chapter) return <Navigate to="/tananyag" replace />;
   if (!canAccessChapter(moduleId, chapterId)) {
@@ -29,7 +29,8 @@ const ChapterQuiz = () => {
     <div className="max-w-3xl mx-auto px-4 py-12">
       <QuizRunner
         title={`${chapter.title} - kvíz`}
-        questions={quiz}
+        pool={pool}
+        count={CHAPTER_QUIZ_COUNT}
         backTo={`/tananyag/${moduleId}/${chapterId}`}
         backLabel={chapter.title}
       />

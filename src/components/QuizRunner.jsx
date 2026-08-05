@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, XCircle, ChevronLeft, RotateCcw } from 'lucide-react';
+import { prepareQuiz } from '../lib/quizUtils';
 
-const QuizRunner = ({ title, questions, backTo, backLabel }) => {
+// A `pool`-t és a `count`-ot kapja meg a kérdéshalmaz elő-kikeverése helyett,
+// hogy az "Újra próbálom" gomb ténylegesen új, friss random húzást tudjon
+// indítani a teljes bankból - ne csak ugyanazt a 10 kérdést jelenítse meg újra.
+const QuizRunner = ({ title, pool, count, backTo, backLabel }) => {
+  const [questions, setQuestions] = useState(() => prepareQuiz(pool, count));
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
   const [answers, setAnswers] = useState([]);
   const [finished, setFinished] = useState(false);
 
   const restart = () => {
+    setQuestions(prepareQuiz(pool, count));
     setIndex(0);
     setSelected(null);
     setAnswers([]);

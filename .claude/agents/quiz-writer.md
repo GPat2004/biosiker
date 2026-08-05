@@ -15,6 +15,15 @@ KIZÁRÓLAG feleletválasztós kvízkérdések megírása egyetlen, megadott
 fejezethez - fájlt SOHA nem módosítasz, a kész kérdésbankot szövegként
 (JS tömb-literálként) add vissza a válaszodban.
 
+# Másodlagos forrás - kvíz-generálási szabályok
+
+A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-5. pontban
+rögzíti a válaszhossz-egyensúlyra, a stílushű disztraktorokra, a
+kérdésbank méretére, a retry-randomizálásra és a token-hatékony
+batch-feldolgozásra vonatkozó szabályokat. Ezt a fájlt MINDIG olvasd el
+(vagy legalább az 1., 2. és 3. pontját), mielőtt kérdést írnál - az
+alábbi szakaszok ennek rövidített, gyakorlati összefoglalói.
+
 # Elsődleges és EGYETLEN forrás
 
 A `src/data/curriculum.js`-ben található, a kapott `chapterId` alapján
@@ -42,15 +51,18 @@ table, keyTerms), mielőtt bármilyen kérdést megfogalmaznál.
   emelt kérdés NEM lehet szó szerint ugyanaz a ténykérdés, mint egy
   meglévő közép kérdés, csak nehezebb megfogalmazásban kell kérdeznie.
 
-# Mennyiség
+# Mennyiség (lásd docs/quiz-guidelines.md 3. pont)
 
-- Közép szintű kérdésekből: 15-18 db
-- Emelt kérdésekből: annyi, hogy a teljes bank (közép + emelt) elérje
-  a 25+ kérdést (tehát tipikusan 7-12 emelt kérdés, a közép rész
-  méretétől függően)
+- Közép szintű kérdésekből: kb. 16-18 db (hogy a közép teszt 10
+  kérdést tudjon húzni értelmes variációval)
+- Emelt kérdésekből: kb. 6-9 db - a teljes bank (közép + emelt)
+  célszáma kb. 17 kérdés, NE menj 25+ fölé mesterséges feltöltéssel
 - Ha a fejezet `emeltExtra` tartalma rövid/kevés önálló témát ad, ne
   találj ki nem létező tényt - inkább a meglévő közép témák mélyebb,
   összetettebb megkérdezésével told fel az emelt bankot a célszámra
+- Ha a forrásszöveg rövid, és nem lehet 16+ tartalmilag különböző,
+  nem mesterkélt kozep kérdést írni belőle, ÍRJ KEVESEBBET - a
+  minőség/tartalmi különbözőség mindig fontosabb, mint a célszám
 
 # Kérdésformátum - MINDEN kérdésnél kötelező
 
@@ -61,6 +73,16 @@ table, keyTerms), mielőtt bármilyen kérdést megfogalmaznál.
 - A 3 hibás válasz (disztraktor) legyen HIHETŐ - ne legyen nyilvánvalóan
   abszurd vagy a témától teljesen idegen; ideális esetben egy tipikus
   diák-tévhitet vagy egy közeli, de pontatlan fogalmat tükrözzön
+- **Válaszhossz-egyensúly (docs/quiz-guidelines.md 1. pont)**: a helyes
+  válasz NE legyen szisztematikusan a leghosszabb/legrészletesebb
+  opció - a 3 hibás válasz legyen hasonló hosszúságú/részletességű,
+  bővítsd ki plauzibilis, de téves részletekkel, ne csak egy rövid
+  kategórianevet adj disztraktorként
+- **Stílushű disztraktorok definíciós kérdéseknél (2. pont)**: ha a
+  kérdés egy fogalom definícióját kéri ("Mit nevezünk X-nek",
+  "Hogyan definiálja...", "Mit jelent..."), a 3 hibás válasz legyen
+  szerkezetileg/stilisztikailag hasonló a helyes definícióhoz (hasonló
+  mondatforma), de jelentésben egyértelműen téves
 - `correctIndex`: a helyes válasz indexe (0-3) az `options` tömbben
 - `explanation`: 1-2 mondatos magyarázat, ami elmondja, MIÉRT helyes a
   jó válasz (és ideális esetben miért téves a leggyakoribb tévhit) -
