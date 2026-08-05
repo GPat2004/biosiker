@@ -83,7 +83,9 @@ table, keyTerms), mielőtt bármilyen kérdést megfogalmaznál.
   "Hogyan definiálja...", "Mit jelent..."), a 3 hibás válasz legyen
   szerkezetileg/stilisztikailag hasonló a helyes definícióhoz (hasonló
   mondatforma), de jelentésben egyértelműen téves
-- `correctIndex`: a helyes válasz indexe (0-3) az `options` tömbben
+- `correctIndex`: a helyes válasz indexe (0-3) az `options` tömbben - NE
+  kövessen mechanikus mintát (pl. 0,1,2,3,0,1,2,3...) a kérdésbankon belül,
+  keverd változatosan (lásd docs/quiz-guidelines.md 0. pont)
 - `explanation`: 1-2 mondatos magyarázat, ami elmondja, MIÉRT helyes a
   jó válasz (és ideális esetben miért téves a leggyakoribb tévhit) -
   ez a magyarázat a kvíz kiértékelésekor jelenik meg a diáknak

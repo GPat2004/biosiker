@@ -15,6 +15,28 @@ subagent-munkamenetek token-hatékonyságára vonatkozik.
 
 ---
 
+## 0. A `correctIndex` NE kövessen mechanikus mintát
+
+**Szabály:** A `correctIndex` értékek sorozata egy kérdésbankon belül NE
+kövessen felismerhető, ismétlődő mintát (pl. `0,1,2,3,0,1,2,3...` vagy bármilyen
+más ciklikus/mechanikus sorrend). Bár a futásidejű `prepareQuiz` (lásd 4.
+pont) minden megjelenítéskor újrakeveri az opciók sorrendjét, így ez a forrás
+szintű minta a végfelhasználó számára nem kihasználható - mégis, forrás-
+higiéniai okból (és a kód/adat átláthatósága miatt) kerülendő.
+
+**quiz-reviewer feladata:** Ellenőrizze explicit a `correctIndex` sorozatát
+mind a `kozep`, mind az `emelt` csoportban külön-külön - ha felismerhető,
+ismétlődő mintát talál, ⚠️-vel jelezze, és kérje az opciók (és a
+`correctIndex`) kérdésenkénti újrakeverését (a helyes válasz szövegét nem
+szabad megváltoztatni, csak a négy opció sorrendjét).
+
+**Gyakorlati javítás módja:** ha ez a hiba előfordul, NE kézzel írd át a
+kérdéseket - egy egyszerű szkripttel (Node.js, `Math.random()` alapú
+Fisher-Yates az opciókon, a `correctIndex` újraszámításával) gyorsan és
+biztonságosan javítható, a helyes válasz szövegének megőrzése mellett.
+
+---
+
 ## 1. Válaszhossz-egyensúly
 
 **Szabály:** A helyes válasz NEM lehet szisztematikusan a leghosszabb/

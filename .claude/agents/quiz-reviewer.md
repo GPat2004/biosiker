@@ -37,6 +37,9 @@ szövegét, majd ehhez viszonyítva ellenőrizd a kérdésbankot:
   ami NEM szerepel, vagy ELLENTMOND a fejezet tényleges szövegének
 
 ## 2. Formai helyesség
+- **`correctIndex`-minta** (docs/quiz-guidelines.md 0. pont): nézd át a
+  `correctIndex` sorozatát a `kozep` és az `emelt` csoportban külön-külön -
+  ⚠️ jelezd, ha mechanikus, ismétlődő mintát (pl. 0,1,2,3,0,1,2,3...) találsz
 - Minden kérdésnél PONTOSAN 4 `options` van
 - Minden kérdésnél PONTOSAN 1 helyes válasz van (a `correctIndex` a
   ténylegesen helyes választ jelöli - ellenőrizd tartalmilag is, nem
