@@ -4074,7 +4074,7 @@ export const CURRICULUM = [
               {
                 heading: 'A táplálkozási szervrendszer áttekintése',
                 paragraphs: [
-                  'A táplálkozási szervrendszer fő szervei - a táplálék útját követve - a szájüreg (fogak, nyelv, nyálmirigyek), a garat, a nyelőcső, a gyomor, a vékonybél és a vastagbél, majd a végbél; ehhez kapcsolódik két fontos mirigyes szerv, a máj (epehólyaggal) és a hasnyálmirigy, amelyek emésztőnedveiket a vékonybél elejébe (nyombélbe) ürítik.',
+                  'A táplálkozási szervrendszer fő szervei - a táplálék útját követve - a szájüreg (fogak, nyelv, nyálmirigyek), a garat, a nyelőcső, a gyomor, a vékonybél és a vastagbél, majd a végbél; ehhez kapcsolódik két fontos mirigyes szerv, a máj (epehólyaggal) és a hasnyálmirigy, amelyek emésztőnedveiket a vékonybél elejébe (patkóbélbe) ürítik.',
                   'A teljes tápcsatorna hossza felnőtt embernél összecsavarodott állapotban is eléri a 8-9 métert - ez a jelentős hossz biztosítja, hogy a táplálék elegendő ideig érintkezzen az emésztőnedvekkel és a felszívó felületekkel. Az egyes szervek pontos szerepét (fogazat, emésztőnedvek, felszívódás) a következő fejezetek részletezik.',
                 ],
               },
