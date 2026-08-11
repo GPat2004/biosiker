@@ -7,7 +7,7 @@ export const QUIZZES = {
   'a-biologia-tudomanya': [
     {
       id: "a-biologia-tudomanya-k01",
-      question: "Mit végez alapvetően a biológia tudománya a fejezet bevezetője szerint?",
+      question: "Mit végez alapvetően a biológia tudománya?",
       options: [
         "Rendszerezi és vizsgálja az élővilágot",
         "Kizárólag a sejtek belső felépítését írja le",
@@ -15,12 +15,12 @@ export const QUIZZES = {
         "Csak a gyógyászati alkalmazásokkal foglalkozik",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint \"a biológia tudománya rendszerezi és vizsgálja az élővilágot.\"",
+      explanation: "\"A biológia tudománya rendszerezi és vizsgálja az élővilágot.\"",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k02",
-      question: "Mi a taxonómia a szöveg alapján?",
+      question: "Mi a taxonómia?",
       options: [
         "Az élővilág eltérő élőhelyeinek térképezése",
         "Az élővilág rendszerezésének tudománya",
@@ -28,7 +28,7 @@ export const QUIZZES = {
         "Az evolúciós folyamatok kronológiája",
       ],
       correctIndex: 1,
-      explanation: "A szöveg a \"biológiai rendszerezés (taxonómia)\" kifejezést használja, tehát a taxonómia a rendszerezés tudománya.",
+      explanation: "A taxonómia a biológiai rendszerezés tudománya.",
       level: "kozep",
     },
     {
@@ -41,12 +41,12 @@ export const QUIZZES = {
         "Az osztály",
       ],
       correctIndex: 2,
-      explanation: "A szöveg szerint a rendszerezés alapegysége a faj.",
+      explanation: "A rendszerezés alapegysége a faj.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k04",
-      question: "Melyik állítás határozza meg helyesen a faj fogalmát a szöveg szerint?",
+      question: "Melyik állítás határozza meg helyesen a faj fogalmát?",
       options: [
         "Azon egyedek csoportja, amelyek azonos élőhelyen fordulnak elő",
         "Azon egyedek csoportja, amelyek azonos táplálkozási móddal rendelkeznek",
@@ -54,12 +54,12 @@ export const QUIZZES = {
         "Azon egyedek csoportja, amelyek természetes körülmények között egymással szaporodva termékeny utódot hoznak létre",
       ],
       correctIndex: 3,
-      explanation: "Ez a szövegben szereplő pontos faj-definíció.",
+      explanation: "Ez a faj pontos definíciója.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k05",
-      question: "Milyen jellemzők alapján soroljuk az élőlényeket egyre tágabb kategóriákba a szöveg szerint?",
+      question: "Milyen jellemzők alapján soroljuk az élőlényeket egyre tágabb kategóriákba?",
       options: [
         "Közös, jól megfigyelhető jellemzők, például testfelépítés és szaporodásmód alapján",
         "Testtömeg és élettartam alapján, mivel ezek könnyen mérhető, számszerűsíthető adatok minden fajnál",
@@ -67,12 +67,12 @@ export const QUIZZES = {
         "Kizárólag a genetikai kód eltérései alapján, a testfelépítés figyelembevétele nélkül",
       ],
       correctIndex: 0,
-      explanation: "A szöveg a testfelépítést és a szaporodásmódot említi példaként a közös, megfigyelhető jellemzőkre.",
+      explanation: "A testfelépítés és a szaporodásmód a közös, megfigyelhető jellemzők példái.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k06",
-      question: "Hány rendszertani kategóriát sorol fel a fejezet a fajtól az országig?",
+      question: "Hány rendszertani kategória van a fajtól az országig?",
       options: [
         "5",
         "7",
@@ -80,7 +80,7 @@ export const QUIZZES = {
         "8",
       ],
       correctIndex: 1,
-      explanation: "A szövegben felsorolt kategóriák: faj, nem, család, rend, osztály, törzs, ország - összesen 7.",
+      explanation: "A rendszertani kategóriák: faj, nem, család, rend, osztály, törzs, ország - összesen 7.",
       level: "kozep",
     },
     {
@@ -93,12 +93,12 @@ export const QUIZZES = {
         "faj, nem, rend, család, osztály, törzs, ország",
       ],
       correctIndex: 2,
-      explanation: "A szöveg pontosan ebben a sorrendben sorolja fel a kategóriákat.",
+      explanation: "A kategóriák pontosan ebben a sorrendben követik egymást.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k08",
-      question: "Mire szolgál elsősorban a fénymikroszkóp a szöveg szerint?",
+      question: "Mire szolgál elsősorban a fénymikroszkóp?",
       options: [
         "Kémiai összetétel meghatározására, az anyagok atomi felépítésének spektroszkópiai elemzésével",
         "Az élőlények DNS-szekvenciájának leolvasására, a bázissorrend automatikus azonosítása révén",
@@ -111,7 +111,7 @@ export const QUIZZES = {
     },
     {
       id: "a-biologia-tudomanya-k09",
-      question: "Milyen struktúrákat tesz vizsgálhatóvá a fénymikroszkóp a szöveg példái szerint?",
+      question: "Milyen struktúrákat tesz vizsgálhatóvá a fénymikroszkóp?",
       options: [
         "Sejteket és sejtalkotókat",
         "Szerveket és szervrendszereket",
@@ -119,7 +119,7 @@ export const QUIZZES = {
         "Atomokat és molekulákat",
       ],
       correctIndex: 0,
-      explanation: "A szöveg a sejteket és sejtalkotókat említi konkrét példaként.",
+      explanation: "A sejtek és a sejtalkotók a konkrét példák.",
       level: "kozep",
     },
     {
@@ -132,7 +132,7 @@ export const QUIZZES = {
         "Csak az okulár nagyításának értékeként",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint a teljes nagyítást az objektív és az okulár nagyításának szorzata adja.",
+      explanation: "A teljes nagyítást az objektív és az okulár nagyításának szorzata adja.",
       level: "kozep",
     },
     {
@@ -145,7 +145,7 @@ export const QUIZZES = {
         "4000×",
       ],
       correctIndex: 2,
-      explanation: "A szöveg szerinti példa alapján 40 × 10 = 400×-os nagyítást kapunk.",
+      explanation: "40 × 10 = 400×-os nagyítást kapunk.",
       level: "kozep",
     },
     {
@@ -158,12 +158,12 @@ export const QUIZZES = {
         "Kaparékot vagy nyúzatot",
       ],
       correctIndex: 3,
-      explanation: "A szöveg szerint a vizsgálat előkészítéséhez gyakran kaparékot vagy nyúzatot készítünk, pl. hagymahéjból.",
+      explanation: "A vizsgálat előkészítéséhez gyakran kaparékot vagy nyúzatot készítünk, pl. hagymahéjból.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k13",
-      question: "A kaparék vagy nyúzat elkészítése mellett milyen kész mintákat is elemezhetünk mikroszkóp alatt a szöveg szerint?",
+      question: "A kaparék vagy nyúzat elkészítése mellett milyen kész mintákat is elemezhetünk mikroszkóp alatt?",
       options: [
         "Kész metszeteket",
         "Kész tenyészeteket",
@@ -171,12 +171,12 @@ export const QUIZZES = {
         "Kész vérmintákat",
       ],
       correctIndex: 0,
-      explanation: "A szöveg említi, hogy kész metszeteket is elemzünk mikroszkóp alatt.",
+      explanation: "Kész metszeteket is elemezhetünk mikroszkóp alatt.",
       level: "kozep",
     },
     {
       id: "a-biologia-tudomanya-k14",
-      question: "A fejezet bevezetője szerint mire adnak alapot a benne tárgyalt alapfogalmak, rendszerezési elvek és vizsgálati módszerek?",
+      question: "Mire adnak alapot a benne tárgyalt alapfogalmak, rendszerezési elvek és vizsgálati módszerek?",
       options: [
         "Kizárólag a vizsgai feladatlap kitöltéséhez",
         "A további fejezetek megértéséhez",
@@ -184,7 +184,7 @@ export const QUIZZES = {
         "A laboratóriumi munkavédelmi szabályok elsajátításához",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint ezek adják a további fejezetek megértésének alapját.",
+      explanation: "Ezek adják a további fejezetek megértésének alapját.",
       level: "kozep",
     },
     {
@@ -249,7 +249,7 @@ export const QUIZZES = {
         "A hipotézis kísérleti igazolás nélkül is automatikusan elmélet szintjére emelkedik, ha elegen elfogadják",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint a hipotézis nem igazolt, de logikusan megalapozott magyarázat, az elmélet pedig sokszorosan tesztelt, elfogadott magyarázó rendszer.",
+      explanation: "A hipotézis nem igazolt, de logikusan megalapozott magyarázat, az elmélet pedig sokszorosan tesztelt, elfogadott magyarázó rendszer.",
       level: "emelt",
     },
     {
@@ -280,7 +280,7 @@ export const QUIZZES = {
     },
     {
       id: "a-biologia-tudomanya-e08",
-      question: "A szöveg szerint egy biológiai kísérlet értékeléséhez mely három elemet kell felismerni?",
+      question: "Egy biológiai kísérlet értékeléséhez mely három elemet kell felismerni?",
       options: [
         "A hipotézist, az elméletet és a modellt, mint a tudományos magyarázat három egymásra épülő szintjét",
         "Az EKG-t, az EEG-t és a CT-t, mint az élettani vizsgálatok alapvető műszeres eszközeit",
@@ -288,12 +288,12 @@ export const QUIZZES = {
         "A kísérleti (független) változót, a függő változót és a kontrollcsoport szerepét",
       ],
       correctIndex: 3,
-      explanation: "A szöveg szerint ezt a három elemet kell felismerni egy kísérlet értékeléséhez.",
+      explanation: "Ezt a három elemet kell felismerni egy kísérlet értékeléséhez.",
       level: "emelt",
     },
     {
       id: "a-biologia-tudomanya-e09",
-      question: "Mi a modellalkotás lényege a szöveg szerint?",
+      question: "Mi a modellalkotás lényege?",
       options: [
         "Egy bonyolult biológiai rendszer leegyszerűsített, a lényeges összefüggésekre koncentráló ábrázolása",
         "Egy élőlény pontos, méretarányos másolatának elkészítése, minden apró anatómiai részlet megőrzésével",
@@ -332,7 +332,7 @@ export const QUIZZES = {
     },
     {
       id: "a-biologia-tudomanya-e12",
-      question: "Miben tér el az elektronmikroszkóp a fénymikroszkóptól a szöveg szerint?",
+      question: "Miben tér el az elektronmikroszkóp a fénymikroszkóptól?",
       options: [
         "Csak élő minták vizsgálatára alkalmas",
         "Nem igényel mintaelőkészítést",
@@ -386,7 +386,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k02",
-      question: "Hogyan határozza meg a szöveg a populációt?",
+      question: "Mit nevezünk populációnak?",
       options: [
         "Egy faj egyedeinek csoportja egy adott területen",
         "Több populáció együttese egy adott területen",
@@ -399,7 +399,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k03",
-      question: "Miben különbözik a társulás a populációtól a szöveg meghatározása szerint?",
+      question: "Miben különbözik a társulás a populációtól?",
       options: [
         "A társulás már több populáció (tehát több faj) együttese, nem csak egyetlen fajé",
         "A társulás csak egyetlen fajra vonatkozik, a populáció viszont többre",
@@ -412,7 +412,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k04",
-      question: "Hogyan viszonyul egymáshoz a biom és a bioszféra szintje a szöveg szerint?",
+      question: "Hogyan viszonyul egymáshoz a biom és a bioszféra szintje?",
       options: [
         "A biom egy nagy kiterjedésű, jellegzetes életközösség-típus (pl. trópusi esőerdő), a bioszféra pedig a Föld egészének élő rétege, amely az összes biomot magába foglalja",
         "A biom és a bioszféra azonos kiterjedésű fogalmak, csupán eltérő tudományos hagyomány szerint nevezzük el ugyanazt a szerveződési szintet",
@@ -425,7 +425,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k05",
-      question: "Melyik felsorolás tartozik az egyed ALATTI szerveződési szintekhez a szöveg szerint?",
+      question: "Melyik felsorolás tartozik az egyed ALATTI szerveződési szintekhez?",
       options: [
         "Populáció, társulás, biom, bioszféra és a globális ökológiai rendszer szintje",
         "Sejt alatti, sejtszintű, szöveti, szervi, szervrendszeri szint",
@@ -438,7 +438,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k06",
-      question: "Milyen konkrét példát említ a szöveg a biom fogalmára?",
+      question: "Milyen konkrét példa van a biom fogalmára?",
       options: [
         "Sivatag",
         "Óceán",
@@ -446,12 +446,12 @@ export const QUIZZES = {
         "Sztyeppe",
       ],
       correctIndex: 2,
-      explanation: "A szöveg a biomra a trópusi esőerdőt hozza fel példaként, mint nagy kiterjedésű, jellegzetes életközösség-típust.",
+      explanation: "A biomra a trópusi esőerdő a példa, mint nagy kiterjedésű, jellegzetes életközösség-típus.",
       level: "kozep",
     },
     {
       id: "az-elet-jellemzoi-k07",
-      question: "Hogyan viszonyulnak egymáshoz a szerveződési szintek a szöveg szerint?",
+      question: "Hogyan viszonyulnak egymáshoz a szerveződési szintek?",
       options: [
         "Egymástól teljesen függetlenül, elszigetelten léteznek, és semmilyen kölcsönhatás nincs közöttük",
         "Hierarchikusan épülnek egymásra: a magasabb szint az alacsonyabb szintek elemeiből és kölcsönhatásaiból jön létre",
@@ -464,7 +464,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k08",
-      question: "Mi tartozik a sejt alatti szerveződési szinthez a szöveg szerint?",
+      question: "Mi tartozik a sejt alatti szerveződési szinthez?",
       options: [
         "Szövetek és szervek",
         "Molekulák és sejtalkotók",
@@ -477,7 +477,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-k09",
-      question: "Melyik szerveződési szint áll a legmagasabban a szövegben felsorolt szintek közül?",
+      question: "Melyik szerveződési szint áll a legmagasabban a felsorolt szintek közül?",
       options: [
         "Populáció",
         "Társulás",
@@ -485,12 +485,12 @@ export const QUIZZES = {
         "Bioszféra",
       ],
       correctIndex: 3,
-      explanation: "A bioszféra a Föld egészének élő rétege, ez a szövegben tárgyalt legmagasabb szerveződési szint.",
+      explanation: "A bioszféra a Föld egészének élő rétege, ez a legmagasabb szerveződési szint.",
       level: "kozep",
     },
     {
       id: "az-elet-jellemzoi-k10",
-      question: "Melyik felsorolt fogalom NEM tartozik az egyed feletti szerveződési szintek közé a szöveg szerint?",
+      question: "Melyik felsorolt fogalom NEM tartozik az egyed feletti szerveződési szintek közé?",
       options: [
         "Populáció",
         "Társulás",
@@ -524,12 +524,12 @@ export const QUIZZES = {
         "A faj fennmaradását",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint az anyagcsere biztosítja az energiát és az építőanyagokat az élő rendszer számára.",
+      explanation: "Az anyagcsere biztosítja az energiát és az építőanyagokat az élő rendszer számára.",
       level: "emelt",
     },
     {
       id: "az-elet-jellemzoi-e03",
-      question: "Mi az elhatárolódás (pl. a sejthártya) szerepe a szöveg szerint?",
+      question: "Mi az elhatárolódás (pl. a sejthártya) szerepe?",
       options: [
         "Az anyagcsere energiaigényének fedezése",
         "A belső környezet elkülönítése a külvilágtól",
@@ -542,7 +542,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-e04",
-      question: "Mit jelent a homeosztázis fogalma a szöveg alapján?",
+      question: "Mit jelent a homeosztázis fogalma?",
       options: [
         "A belső egyensúly fenntartását",
         "A faj fennmaradását biztosító folyamatot",
@@ -568,7 +568,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-e06",
-      question: "Mely tulajdonságok együttese biztosítja a szöveg szerint a faj fennmaradását és fejlődését (evolúcióját)?",
+      question: "Mely tulajdonságok együttese biztosítja a faj fennmaradását és fejlődését (evolúcióját)?",
       options: [
         "Az anyagcsere és az elhatárolódás, vagyis a környezettel folytatott anyag- és energiacsere, valamint a sejthártya védőfunkciója",
         "Az alkalmazkodás, a növekedés, a szaporodás, valamint az öröklődés és az öröklődő változékonyság",
@@ -581,7 +581,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-e07",
-      question: "Mi az az egyetlen tulajdonság a felsoroltak közül, amely a szöveg zárógondolata szerint minden élőlényre kivétel nélkül igaz?",
+      question: "Mi az az egyetlen tulajdonság a felsoroltak közül, amely minden élőlényre kivétel nélkül igaz?",
       options: [
         "Minden élőlény szaporodik",
         "Minden élőlény mozog",
@@ -589,12 +589,12 @@ export const QUIZZES = {
         "Minden élőlény alkalmazkodik",
       ],
       correctIndex: 2,
-      explanation: "A felsorolt tulajdonságok után a szöveg kiemeli: végül minden élőlény halandó.",
+      explanation: "A felsorolt tulajdonságok mellett fontos kiemelni: végül minden élőlény halandó.",
       level: "emelt",
     },
     {
       id: "az-elet-jellemzoi-e08",
-      question: "Miben különbözik a sejtciklus és a szívciklus fogalma a szöveg szerint?",
+      question: "Miben különbözik a sejtciklus és a szívciklus fogalma?",
       options: [
         "A sejtciklus a sejt osztódásának szakaszait, a szívciklus a szív összehúzódásainak és elernyedéseinek sorozatát jelenti",
         "A sejtciklus a szív működését, a szívciklus a sejtosztódást írja le",
@@ -607,7 +607,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-e09",
-      question: "Miben különbözik a nemi ciklus és az aszpektus fogalma a szöveg szerint?",
+      question: "Miben különbözik a nemi ciklus és az aszpektus fogalma?",
       options: [
         "A nemi ciklus a szaporodással kapcsolatos hormonális változásokat, az aszpektus egy életközösség évszakos változásait jelenti",
         "A nemi ciklus egy életközösség évszakos változásait, az aszpektus a hormonális változásokat jelenti",
@@ -620,7 +620,7 @@ export const QUIZZES = {
     },
     {
       id: "az-elet-jellemzoi-e10",
-      question: "Melyik felsorolt fogalom NEM tartozik a szövegben említett körfolyamatok közé, hanem az élő rendszerek egy másik jellemző tulajdonsága?",
+      question: "Melyik felsorolt fogalom NEM tartozik a körfolyamatok közé, hanem az élő rendszerek egy másik jellemző tulajdonsága?",
       options: [
         "Sejtciklus",
         "Szívciklus",
@@ -635,7 +635,7 @@ export const QUIZZES = {
   'fizikai-kemiai-alapismeretek': [
     {
       id: "fizikai-kemiai-alapismeretek-k01",
-      question: "Mit nevezünk diffúziónak a szöveg szerint?",
+      question: "Mit nevezünk diffúziónak?",
       options: [
         "Az anyagok nagyobb koncentrációjú helyről a kisebb koncentrációjú hely felé történő, energiabefektetés nélküli mozgása",
         "A víz mozgása egy féligáteresztő hártyán át, kisebb oldott anyag-koncentrációjú oldatból a nagyobb felé",
@@ -648,7 +648,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k02",
-      question: "Hogyan definiálja a szöveg az ozmózist?",
+      question: "Mit nevezünk ozmózisnak?",
       options: [
         "Az anyagok nagyobb koncentrációjú helyről kisebb koncentrációjú hely felé történő mozgása",
         "A víz mozgása féligáteresztő hártyán át, a kisebb oldott anyag-koncentrációjú oldatból a nagyobb koncentráció felé",
@@ -661,7 +661,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k03",
-      question: "Mi a fő különbség a diffúzió és az ozmózis között a szöveg alapján?",
+      question: "Mi a fő különbség a diffúzió és az ozmózis között?",
       options: [
         "A diffúzió kizárólag vízmolekulák passzív mozgása a sejthártyán át, az ozmózis pedig bármely oldott anyag szabad mozgására vonatkozik",
         "A diffúzió mindig energiabefektetést igényel a sejt részéről, az ozmózis viszont teljesen energiafüggetlen folyamat",
@@ -700,7 +700,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k06",
-      question: "A szöveg szerint mely három jelenség hátterében áll a felületi megkötődés (adszorpció)?",
+      question: "Mely három jelenség hátterében áll a felületi megkötődés (adszorpció)?",
       options: [
         "Az enzimműködés, a talajkolloidok anyagmegkötő képessége és a kapillaritás",
         "Az ozmózis, a diffúzió és a sejtlégzés",
@@ -708,12 +708,12 @@ export const QUIZZES = {
         "A vér pH-jának szabályozása, az immunválasz és a véralvadás",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint az adszorpció áll az enzimműködés, a talajkolloidok anyagmegkötő képessége és a kapillaritás hátterében.",
+      explanation: "Az adszorpció áll az enzimműködés, a talajkolloidok anyagmegkötő képessége és a kapillaritás hátterében.",
       level: "kozep",
     },
     {
       id: "fizikai-kemiai-alapismeretek-k07",
-      question: "Milyen kísérlettel mutatható ki jól az orvosi szén nagy felületi megkötőképessége a szöveg szerint?",
+      question: "Milyen kísérlettel mutatható ki jól az orvosi szén nagy felületi megkötőképessége?",
       options: [
         "Jódos keményítőoldattal végzett kísérlettel",
         "Mészvízbe fújt levegővel végzett kísérlettel",
@@ -726,7 +726,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k08",
-      question: "Milyen gyakorlati (orvosi) alkalmazása van az orvosi szén adszorpciós képességének a szöveg szerint?",
+      question: "Milyen gyakorlati (orvosi) alkalmazása van az orvosi szén adszorpciós képességének?",
       options: [
         "Sebfertőtlenítésre használják",
         "Mérgezések esetén alkalmazott szenes kezelés hátterében áll",
@@ -739,7 +739,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k09",
-      question: "Milyen összefüggés van az adszorpció és az enzimek működése között a szöveg szerint?",
+      question: "Milyen összefüggés van az adszorpció és az enzimek működése között?",
       options: [
         "Nincs közöttük kapcsolat, teljesen független jelenségek",
         "Az enzimek működésének hátterében is a felületi megkötődés (adszorpció) jelensége áll",
@@ -747,7 +747,7 @@ export const QUIZZES = {
         "Az adszorpció csak élettelen rendszerekben (pl. talajban) fordul elő, sejten belül nem",
       ],
       correctIndex: 1,
-      explanation: "A szöveg az enzimműködést is a felületi megkötődés (adszorpció) egyik megnyilvánulásaként említi.",
+      explanation: "Az enzimműködés is a felületi megkötődés (adszorpció) egyik megnyilvánulása.",
       level: "kozep",
     },
     {
@@ -778,7 +778,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k12",
-      question: "Melyik állítás NEM igaz a diffúzióra vonatkozóan a szöveg szerint?",
+      question: "Melyik állítás NEM igaz a diffúzióra vonatkozóan?",
       options: [
         "A diffúzió az anyagok nagyobb koncentrációjú helyről a kisebb felé történő mozgása",
         "A diffúzió mozgásához a sejtnek energiát (pl. ATP-t) kell befektetnie",
@@ -786,12 +786,12 @@ export const QUIZZES = {
         "A diffúzió energiabefektetés nélkül zajló folyamat",
       ],
       correctIndex: 1,
-      explanation: "A szöveg kifejezetten kiemeli, hogy a diffúzió energiabefektetés nélküli mozgás, tehát ez az állítás hamis.",
+      explanation: "A diffúzió energiabefektetés nélküli mozgás, tehát ez az állítás hamis.",
       level: "kozep",
     },
     {
       id: "fizikai-kemiai-alapismeretek-k13",
-      question: "Egy enzim jelentősen magasabb hőmérsékleten (láz esetén) rosszabb hatásfokkal működik. Mivel magyarázható ez a szöveg alapján?",
+      question: "Egy enzim jelentősen magasabb hőmérsékleten (láz esetén) rosszabb hatásfokkal működik. Mivel magyarázható ez?",
       options: [
         "Mert az enzimek optimális működéséhez meghatározott hőmérséklet és pH szükséges, amely a szervezet jellemző élettani értékeivel függ össze",
         "Mert magasabb hőmérsékleten minden enzim végleg elveszíti aktiválási energia-csökkentő hatását",
@@ -804,7 +804,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-k14",
-      question: "Milyen következménnyel járhat egy enzim hibás működése (enzimhiány vagy -hiba) a szöveg szerint?",
+      question: "Milyen következménnyel járhat egy enzim hibás működése (enzimhiány vagy -hiba)?",
       options: [
         "Kizárólag átmeneti, néhány órás rosszullétet okoz",
         "Örökletes emberi betegséghez vezethet",
@@ -812,12 +812,12 @@ export const QUIZZES = {
         "Nincs egészségügyi következménye, mert más enzimek átveszik a szerepét",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint egy enzim hibás működése örökletes emberi betegséghez vezethet.",
+      explanation: "Egy enzim hibás működése örökletes emberi betegséghez vezethet.",
       level: "kozep",
     },
     {
       id: "fizikai-kemiai-alapismeretek-k15",
-      question: "Milyen szerepe van a korai diagnosztikának az enzimhiányos, örökletes betegségek esetén a szöveg szerint?",
+      question: "Milyen szerepe van a korai diagnosztikának az enzimhiányos, örökletes betegségek esetén?",
       options: [
         "Nincs jelentősége, mert ezek a betegségek nem előzhetők meg",
         "Fontos szerepe van az ilyen betegségek megelőzésében",
@@ -830,7 +830,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e01",
-      question: "Milyen szerepet játszanak a vérfehérjék, mint ozmotikusan aktív anyagok, a szöveg szerint?",
+      question: "Milyen szerepet játszanak a vérfehérjék, mint ozmotikusan aktív anyagok,?",
       options: [
         "Meghatározó szerepük van a vese visszaszívási folyamataiban és a nyirokképzésben",
         "Kizárólag a véralvadási kaszkádban vesznek részt, a trombociták aktiválásának elősegítésével",
@@ -843,7 +843,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e02",
-      question: "Mi a kromatográfia lényege a szöveg szerint?",
+      question: "Mi a kromatográfia lényege?",
       options: [
         "Kémiai reakciók felgyorsítása katalizátor segítségével, az aktiválási energia csökkentése révén",
         "Keverékek komponenseinek szétválasztása a molekulák eltérő megoszlása alapján egy álló és egy mozgó fázis között",
@@ -869,7 +869,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e04",
-      question: "Milyen folyamatot végez a Na-K pumpa, és milyen molekula biztosítja hozzá az energiát a szöveg szerint?",
+      question: "Milyen folyamatot végez a Na-K pumpa, és milyen molekula biztosítja hozzá az energiát?",
       options: [
         "Az izom-összehúzódást végzi, energiaforrása a glükóz közvetlen lebontása",
         "Az ionok aktív szállítását végzi a sejtmembránon át, ehhez ATP-t használ fel",
@@ -882,7 +882,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e05",
-      question: "Milyen élettani folyamatot hajt végre a miozin, mint ATP-bontó enzim, a szöveg szerint?",
+      question: "Milyen élettani folyamatot hajt végre a miozin, mint ATP-bontó enzim,?",
       options: [
         "Az ionok aktív szállítását a sejtmembránon át",
         "Az izom-összehúzódást",
@@ -890,12 +890,12 @@ export const QUIZZES = {
         "A szén-dioxid szállítását a vérben",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint a miozin, mint ATP-bontó enzim, az izom-összehúzódást hajtja végre.",
+      explanation: "A miozin, mint ATP-bontó enzim, az izom-összehúzódást hajtja végre.",
       level: "emelt",
     },
     {
       id: "fizikai-kemiai-alapismeretek-e06",
-      question: "Min alapul az ATP-szintézis a mitokondriumban a szöveg szerint?",
+      question: "Min alapul az ATP-szintézis a mitokondriumban?",
       options: [
         "Közvetlenül a glükózmolekulák lebontásán",
         "Az ozmózis jelenségén, a víz mozgásán a mitokondrium membránján át",
@@ -908,7 +908,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e07",
-      question: "Mi a közös vonás a miozin és a Na-K pumpa működésében a szöveg alapján?",
+      question: "Mi a közös vonás a miozin és a Na-K pumpa működésében?",
       options: [
         "Mindkettő ozmotikusan aktív anyagként a vese visszaszívási folyamataiban vesz részt",
         "Mindkettő ATP-bontó enzim, amely energiaigényes folyamatot hajt végre",
@@ -934,7 +934,7 @@ export const QUIZZES = {
     },
     {
       id: "fizikai-kemiai-alapismeretek-e09",
-      question: "Hogyan kapcsolódik össze a szöveg szerint az ATP-bontás és az ATP-szintézis a sejt energiaháztartásában?",
+      question: "Hogyan kapcsolódik össze az ATP-bontás és az ATP-szintézis a sejt energiaháztartásában?",
       options: [
         "Az ATP-bontó enzimek (pl. miozin, Na-K pumpa) energiaigényes folyamatokhoz használják fel az ATP-t, míg a mitokondriumban zajló ATP-szintézis a hidrogénion-grádiens felhasználásával pótolja az elhasznált ATP-t",
         "Az ATP-bontás és az ATP-szintézis egymástól teljesen függetlenül, egymással soha nem összefüggő, elkülönült sejtszervecskékben zajlik le",
@@ -988,7 +988,7 @@ export const QUIZZES = {
     },
     {
       id: "elemek-ionok-k04",
-      question: "Milyen három terület felépítésében vesz részt a foszfor a szöveg szerint?",
+      question: "Milyen három terület felépítésében vesz részt a foszfor?",
       options: [
         "Vér, izom, bőr",
         "Csontok/fogak, ATP, nukleinsavak",
@@ -1009,7 +1009,7 @@ export const QUIZZES = {
         "Golyva kialakulása",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint az egyensúly felborulása életveszélyes szívritmuszavarhoz vezethet.",
+      explanation: "Az egyensúly felborulása életveszélyes szívritmuszavarhoz vezethet.",
       level: "kozep",
     },
     {
@@ -1126,7 +1126,7 @@ export const QUIZZES = {
         "Kalcium",
       ],
       correctIndex: 2,
-      explanation: "A szöveg szerint növényekben a klorofill molekula központi atomja magnézium.",
+      explanation: "Növényekben a klorofill molekula központi atomja magnézium.",
       level: "kozep",
     },
     {
@@ -1157,7 +1157,7 @@ export const QUIZZES = {
     },
     {
       id: "elemek-ionok-k17",
-      question: "Melyik állítás NEM igaz a fejezet szerint a kalciumra vonatkozóan?",
+      question: "Melyik állítás NEM igaz a kalciumra vonatkozóan?",
       options: [
         "Csontalkotó elem",
         "Jelmolekulaként indítja be az izomösszehúzódást",
@@ -1170,7 +1170,7 @@ export const QUIZZES = {
     },
     {
       id: "elemek-ionok-k18",
-      question: "A fejezet címadása szerint mi különbözteti meg a mikroelemeket a makroelemektől?",
+      question: "Mi különbözteti meg a mikroelemeket a makroelemektől?",
       options: [
         "A mikroelemek egyáltalán nem fordulnak elő a szervezetben",
         "A mikroelemek kis mennyiségben vannak jelen a szervezetben, hatásuk mégis aránytalanul nagy",
@@ -1178,7 +1178,7 @@ export const QUIZZES = {
         "A mikroelemek kizárólag a csontok felépítésében vesznek részt",
       ],
       correctIndex: 1,
-      explanation: "A fejezet a mikroelemeket \"kis mennyiség, aránytalanul nagy hatás\" jelleggel mutatja be - pl. a vas vagy a jód hiánya jelentős élettani zavart okoz, pedig kis mennyiségben van jelen.",
+      explanation: "A mikroelemekre \"kis mennyiség, aránytalanul nagy hatás\" jellemző - pl. a vas vagy a jód hiánya jelentős élettani zavart okoz, pedig kis mennyiségben van jelen.",
       level: "kozep",
     },
     {
@@ -1588,7 +1588,7 @@ export const QUIZZES = {
     },
     {
       id: "szervetlen-molekulak-e02",
-      question: "A szöveg szerint a szén-dioxid melyik szállítási formája teszi ki a vérben a legnagyobb hányadot?",
+      question: "A szén-dioxid melyik szállítási formája teszi ki a vérben a legnagyobb hányadot?",
       options: [
         "A fizikailag oldott forma",
         "A hemoglobinhoz kötött karbamino-vegyület forma",
@@ -1596,7 +1596,7 @@ export const QUIZZES = {
         "Mindhárom forma egyenlő arányban van jelen",
       ],
       correctIndex: 2,
-      explanation: "A szöveg szerint a szén-dioxid nagyobb része hidrogén-karbonát (HCO₃⁻) ionná alakulva szállítódik a vérben.",
+      explanation: "A szén-dioxid nagyobb része hidrogén-karbonát (HCO₃⁻) ionná alakulva szállítódik a vérben.",
       level: "emelt",
     },
     {
@@ -1759,7 +1759,7 @@ export const QUIZZES = {
     },
     {
       id: "lipidek-k03",
-      question: "Melyik vitamincsoport oldódik zsírban a fejezet szerint?",
+      question: "Melyik vitamincsoport oldódik zsírban?",
       options: [
         "A, D, E, K vitaminok",
         "Csak a C-vitamin",
@@ -1811,7 +1811,7 @@ export const QUIZZES = {
     },
     {
       id: "lipidek-k07",
-      question: "Mi a zsírok és olajok fő biológiai szerepe a szövegben leírtak szerint?",
+      question: "Mi a zsírok és olajok fő biológiai szerepe?",
       options: [
         "Energiaraktározás, hőszigetelés és mechanikai védelem",
         "Kizárólag a sejtmembrán felépítése",
@@ -1967,7 +1967,7 @@ export const QUIZZES = {
     },
     {
       id: "lipidek-e03",
-      question: "A felsoroltak közül a szöveg szerint melyik HÁROM molekula/molekulacsoport épül fel ugyanabból a szteránvázból, csak az oldalláncok apró módosításával?",
+      question: "A felsoroltak közül melyik HÁROM molekula/molekulacsoport épül fel ugyanabból a szteránvázból, csak az oldalláncok apró módosításával?",
       options: [
         "Trigliceridek, a foszfatidok és az epesavak, mint a zsírok fő raktározó formái",
         "Nemi hormonok, a mellékvesekéreg hormonjai és a D-vitamin aktív formája",
@@ -1975,7 +1975,7 @@ export const QUIZZES = {
         "A zsírsavak, a glicerin és a foszforsav-egységek, mint a membránlipidek építőkövei",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint ugyanabból a szteránvázból, csak az oldalláncok apró módosításával épül fel a nemi hormonok, a mellékvesekéreg hormonjainak és a D-vitamin aktív formájának szerkezete.",
+      explanation: "Ugyanabból a szteránvázból, csak az oldalláncok apró módosításával épül fel a nemi hormonok, a mellékvesekéreg hormonjainak és a D-vitamin aktív formájának szerkezete.",
       level: "emelt",
     },
     {
@@ -2058,7 +2058,7 @@ export const QUIZZES = {
     },
     {
       id: "lipidek-e10",
-      question: "Mi a közös molekuláris elv a növényi fényelnyelés és az emberi látás között a szöveg szerint?",
+      question: "Mi a közös molekuláris elv a növényi fényelnyelés és az emberi látás között?",
       options: [
         "Mindkettő a klorofill jelenlétén alapul, amely mindkét folyamatban a fényenergia elsődleges elnyelője",
         "Nincs közöttük semmilyen közös molekuláris alap, a két folyamat teljesen eltérő elveken működik",
@@ -2359,7 +2359,7 @@ export const QUIZZES = {
     },
     {
       id: "szenhidratok-e04",
-      question: "Mi teszi a diszacharidokat \"redukálóvá\" a szöveg meghatározása szerint?",
+      question: "Mi teszi a diszacharidokat \"redukálóvá\"?",
       options: [
         "Ha kizárólag glükózegységekből épülnek fel, amelyek gyűrűs formában stabil szerkezetet alkotnak",
         "Ha kondenzációval, vízkilépéssel keletkeznek, ami mindkét monoszacharidot rögzíti a kötésben",
@@ -2372,7 +2372,7 @@ export const QUIZZES = {
     },
     {
       id: "szenhidratok-e05",
-      question: "Melyik két diszacharid tartozik a redukáló diszacharidok közé a szöveg szerint?",
+      question: "Melyik két diszacharid tartozik a redukáló diszacharidok közé?",
       options: [
         "A laktóz és a szacharóz",
         "Csak a maltóz",
@@ -2380,7 +2380,7 @@ export const QUIZZES = {
         "A szacharóz és a maltóz",
       ],
       correctIndex: 2,
-      explanation: "A redukáló diszacharidokra a szöveg a maltózt és a laktózt hozza példaként.",
+      explanation: "A redukáló diszacharidokra a maltóz és a laktóz a példa.",
       level: "emelt",
     },
     {
@@ -2450,7 +2450,7 @@ export const QUIZZES = {
     },
     {
       id: "szenhidratok-e11",
-      question: "Melyik állítás NEM igaz a szacharóz és a maltóz jellemzésére a fejezet alapján?",
+      question: "Melyik állítás NEM igaz a szacharóz és a maltóz jellemzésére?",
       options: [
         "A maltóz redukáló diszacharid, a szacharóz nem",
         "Mindkettő nem redukáló diszacharid",
@@ -2517,7 +2517,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-k05",
-      question: "Az alábbiak közül melyik NEM szerepel a szövegben a denaturációt kiváltó hatások között?",
+      question: "Az alábbiak közül melyik NEM szerepel a denaturációt kiváltó hatások között?",
       options: [
         "Mechanikai hatás (pl. felverés)",
         "Alacsony pH-jú gyümölcslé fogyasztása",
@@ -2525,12 +2525,12 @@ export const QUIZZES = {
         "Nehézfémsók",
       ],
       correctIndex: 1,
-      explanation: "A szöveg szerint denaturációt hő, nehézfémsók (pl. ólom- vagy higanysók) és mechanikai hatás (pl. tojásfehérje felverése) válthat ki.",
+      explanation: "Denaturációt hő, nehézfémsók (pl. ólom- vagy higanysók) és mechanikai hatás (pl. tojásfehérje felverése) válthat ki.",
       level: "kozep",
     },
     {
       id: "feherjek-k06",
-      question: "Milyen mindennapi példát említ a szöveg a denaturációra?",
+      question: "Milyen mindennapi példa van a denaturációra?",
       options: [
         "A kenyér kelesztése",
         "A tej savanyodása",
@@ -2543,7 +2543,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-k07",
-      question: "Milyen nehézfémsók idézhetnek elő fehérjedenaturációt a szöveg szerint?",
+      question: "Milyen nehézfémsók idézhetnek elő fehérjedenaturációt?",
       options: [
         "Ólom- vagy higanysók",
         "Kálium- és nátriumsók",
@@ -2551,7 +2551,7 @@ export const QUIZZES = {
         "Vas- és réz-sók",
       ],
       correctIndex: 0,
-      explanation: "A szöveg az ólom- és higanysókat említi mint a denaturációt kiváltó nehézfémsókat.",
+      explanation: "Az ólom- és higanysók a denaturációt kiváltó nehézfémsók.",
       level: "kozep",
     },
     {
@@ -2616,7 +2616,7 @@ export const QUIZZES = {
         "A tojásfehérje",
       ],
       correctIndex: 3,
-      explanation: "A tojásfehérje a szövegben tartalék tápanyagként raktározódó fehérje példájaként szerepel.",
+      explanation: "A tojásfehérje a tartalék tápanyagként raktározódó fehérje példája.",
       level: "kozep",
     },
     {
@@ -2634,7 +2634,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-k14",
-      question: "Az alábbi hormonok közül melyik fehérje természetű a szöveg szerint?",
+      question: "Az alábbi hormonok közül melyik fehérje természetű?",
       options: [
         "A tesztoszteron",
         "A kortizol",
@@ -2642,7 +2642,7 @@ export const QUIZZES = {
         "Az inzulin",
       ],
       correctIndex: 3,
-      explanation: "A szöveg az inzulint említi példaként fehérje természetű hormonra.",
+      explanation: "Az inzulin a fehérje természetű hormon példája.",
       level: "kozep",
     },
     {
@@ -2673,7 +2673,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-k17",
-      question: "Mit érzékelnek a receptorfehérjék a szöveg szerint?",
+      question: "Mit érzékelnek a receptorfehérjék?",
       options: [
         "Az emésztést",
         "A fehérje aminosav-sorrendjét",
@@ -2725,7 +2725,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-e03",
-      question: "Az alábbiak közül melyik NEM tartozik az oldalláncok közötti, térszerkezetet kialakító kölcsönhatások közé a szöveg szerint?",
+      question: "Az alábbiak közül melyik NEM tartozik az oldalláncok közötti, térszerkezetet kialakító kölcsönhatások közé?",
       options: [
         "Peptidkötések",
         "Hidrogénkötések",
@@ -2803,7 +2803,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-e09",
-      question: "Mit jelent a negyedleges szerkezet, és mi rá a szövegben említett példa?",
+      question: "Mit jelent a negyedleges szerkezet, és mi rá a példa?",
       options: [
         "Több önállóan feltekeredett fehérjelánc együttes elrendeződését egy funkcionális egységgé, pl. a hemoglobin",
         "Egyetlen lánc aminosav-sorrendjét, amelyet a gén határoz meg, pl. a kollagén",
@@ -2816,7 +2816,7 @@ export const QUIZZES = {
     },
     {
       id: "feherjek-e10",
-      question: "Hány alegységből épül fel a hemoglobin a szöveg szerint?",
+      question: "Hány alegységből épül fel a hemoglobin?",
       options: [
         "Háromból",
         "Négyből",
@@ -2922,7 +2922,7 @@ export const QUIZZES = {
     },
     {
       id: "nukleinsavak-nukleotidok-k07",
-      question: "A szöveg hasonlata szerint mi felel meg a \"tervrajznak\", és mi a \"munkapéldánynak\"?",
+      question: "Mi felel meg a \"tervrajznak\", és mi a \"munkapéldánynak\"?",
       options: [
         "A DNS a \"munkapéldány\", az RNS a \"tervrajz\"",
         "Mindkettő egyformán \"tervrajz\" szerepű",
@@ -2948,7 +2948,7 @@ export const QUIZZES = {
     },
     {
       id: "nukleinsavak-nukleotidok-k09",
-      question: "A szöveg hasonlata szerint mi a \"készpénz\", és mi a hosszú távú, \"bankban tartott\" energiatartalék?",
+      question: "Mi a \"készpénz\", és mi a hosszú távú, \"bankban tartott\" energiatartalék?",
       options: [
         "A glükóz a \"készpénz\", az ATP a hosszú távú tartalék",
         "Az ATP és a zsír egyaránt hosszú távú tartalék",
@@ -3000,7 +3000,7 @@ export const QUIZZES = {
     },
     {
       id: "nukleinsavak-nukleotidok-k13",
-      question: "Hogyan jut el a genetikai információ a fehérjeszintézishez a szöveg szerint?",
+      question: "Hogyan jut el a genetikai információ a fehérjeszintézishez?",
       options: [
         "Közvetlenül az ATP-ből",
         "A DNS-ből az RNS-en keresztül",
@@ -3013,7 +3013,7 @@ export const QUIZZES = {
     },
     {
       id: "nukleinsavak-nukleotidok-k14",
-      question: "A szöveg hasonlata szerint mi a nukleinsavak és a fehérjék viszonya?",
+      question: "Mi a nukleinsavak és a fehérjék viszonya?",
       options: [
         "Mindkettő egyformán \"termék\" szerepű",
         "A nukleinsavak és a fehérjék között nincs kapcsolat",
@@ -3190,7 +3190,7 @@ export const QUIZZES = {
         "Az a szakasz stabilabbá válna",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint ha két purin párosodna, az adott szakasz túl széles lenne (míg két pirimidin esetén túl keskeny).",
+      explanation: "Ha két purin párosodna, az adott szakasz túl széles lenne (míg két pirimidin esetén túl keskeny).",
       level: "emelt",
     },
     {
@@ -3236,7 +3236,7 @@ export const QUIZZES = {
   'felepites-lebontas-kapcsolata': [
     {
       id: "felepites-lebontas-kapcsolata-k01",
-      question: "Hogyan csoportosítjuk az élőlényeket energiaforrásuk szerint a szöveg alapján?",
+      question: "Hogyan csoportosítjuk az élőlényeket energiaforrásuk szerint?",
       options: [
         "Fototróf (fényenergiát hasznosító) és kemotróf (kémiai energiát hasznosító) csoportra.",
         "Autotróf (szervetlen energiaforrást használó) és heterotróf (szerves energiaforrásra szoruló) csoportra.",
@@ -3244,7 +3244,7 @@ export const QUIZZES = {
         "Termelő (energiát előállító) és fogyasztó (energiát felhasználó) csoportra.",
       ],
       correctIndex: 0,
-      explanation: "A szöveg szerint energiaforrás szerint fototróf és kemotróf szervezeteket különböztetünk meg, míg a szénforrás szerinti felosztás (autotróf/heterotróf) egy külön szempont.",
+      explanation: "Energiaforrás szerint fototróf és kemotróf szervezeteket különböztetünk meg, míg a szénforrás szerinti felosztás (autotróf/heterotróf) egy külön szempont.",
       level: "kozep",
     },
     {
@@ -3262,7 +3262,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k03",
-      question: "A szöveg szerint melyik anyagcsere-típusba tartoznak tipikusan a növények?",
+      question: "Melyik anyagcsere-típusba tartoznak tipikusan a növények?",
       options: [
         "Kemoautotróf típusba, mert kémiai energiát nyernek a talajból, de a szénforrásuk szervetlen anyag.",
         "Fotoheterotróf típusba, mert fényenergiát hasznosítanak, de szerves szénforrásra szorulnak.",
@@ -3275,7 +3275,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k04",
-      question: "Milyen anyagcsere-típusba sorolható a szöveg szerint az ember és a legtöbb állat?",
+      question: "Milyen anyagcsere-típusba sorolható az ember és a legtöbb állat?",
       options: [
         "Fotoautotróf típusba, mert napfény hatására szervetlen szén-dioxidból építik fel szerves anyagaikat.",
         "Kemoautotróf típusba, mert kémiai energiát nyernek, de a szénforrásuk szervetlen anyag.",
@@ -3288,7 +3288,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k05",
-      question: "Milyen különleges kombinációt képviselnek a szövegben említett kemoautotróf talajbaktériumok?",
+      question: "Milyen különleges kombinációt képviselnek a kemoautotróf talajbaktériumok?",
       options: [
         "Kémiai energiát nyernek pl. ammónia vagy kén-hidrogén oxidációjából, de a szénforrásuk szervetlen szén-dioxid.",
         "Fényenergiát hasznosítanak, akárcsak a növények, de a szénforrásuk szerves vegyület.",
@@ -3301,7 +3301,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k06",
-      question: "Mit szemléltet a kemoautotróf talajbaktériumok példája a szöveg szerint?",
+      question: "Mit szemléltet a kemoautotróf talajbaktériumok példája?",
       options: [
         "Azt, hogy minden autotróf szervezet szükségszerűen fényenergiát is hasznosít a szén-dioxid megkötéséhez.",
         "Azt, hogy az energiaforrás és a szénforrás egymástól függetlenül is variálódhat egy adott élőlénynél.",
@@ -3314,7 +3314,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k07",
-      question: "Mit nevezünk a szöveg alapján kondenzációnak?",
+      question: "Mit nevezünk kondenzációnak?",
       options: [
         "Azt a folyamatot, amikor egy nagyobb molekula víz felvételével kisebb egységekre bomlik.",
         "Azt a folyamatot, amikor két kisebb molekula egy nagyobbá kapcsolódik össze, miközben egy vízmolekula szabadul fel.",
@@ -3327,7 +3327,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k08",
-      question: "Mit nevezünk a szöveg alapján hidrolízisnek?",
+      question: "Mit nevezünk hidrolízisnek?",
       options: [
         "Azt a folyamatot, amikor egy nagyobb molekula víz felvételével bomlik kisebb egységekre.",
         "Azt a folyamatot, amikor két kisebb molekula vízkilépéssel egy nagyobb molekulává kapcsolódik.",
@@ -3340,7 +3340,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k09",
-      question: "Az emésztés során a szöveg szerint melyik állítás igaz a lebontási folyamatokra?",
+      question: "Az emésztés során melyik állítás igaz a lebontási folyamatokra?",
       options: [
         "A szénhidrátok, fehérjék és zsírok lebontása egyaránt kondenzációval, vízmolekula felszabadulásával történik meg.",
         "A szénhidrátok, fehérjék és zsírok is hidrolízissel bomlanak le, mindegyik más enzim (amiláz, pepszin, lipáz) segítségével.",
@@ -3353,7 +3353,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k10",
-      question: "A szöveg szerint melyik állítás igaz a kondenzáció-hidrolízis elvre?",
+      question: "Melyik állítás igaz a kondenzáció-hidrolízis elvre?",
       options: [
         "Csak a szénhidrátokra és a fehérjékre érvényes, a lipidekre és a nukleinsavakra nem terjed ki.",
         "Gyakorlatilag minden makromolekula-csoportra (szénhidrátok, lipidek, fehérjék, nukleinsavak) igaz felépítésnél és lebontásnál is.",
@@ -3366,7 +3366,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k11",
-      question: "Mit nevezünk endocitózisnak a szöveg alapján?",
+      question: "Mit nevezünk endocitózisnak?",
       options: [
         "Azt a folyamatot, amikor egy belső hólyagocska összeolvad a sejtmembránnal, kijuttatva a tartalmát.",
         "Azt a folyamatot, amikor a sejtmembrán beöblösödik és körbezárja a sejtbe juttatandó anyagot.",
@@ -3379,7 +3379,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k12",
-      question: "Mit nevezünk exocitózisnak a szöveg alapján?",
+      question: "Mit nevezünk exocitózisnak?",
       options: [
         "Azt a folyamatot, amikor a sejtmembrán beöblösödik és körbezárja a bejuttatandó anyagot.",
         "Azt a folyamatot, amikor egy belső hólyagocska összeolvad a sejtmembránnal, kijuttatva a tartalmát.",
@@ -3392,7 +3392,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k13",
-      question: "Mi az endocitózis és az exocitózis közös alapja a szöveg szerint?",
+      question: "Mi az endocitózis és az exocitózis közös alapja?",
       options: [
         "Mindkettő a sejtmembrán hólyagocska-képződésén (vezikulázásán) alapul.",
         "Mindkettő kizárólag ATP közvetlen elbontásával valósul meg, hólyagocska-képződés nélkül.",
@@ -3405,7 +3405,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k14",
-      question: "Mit mond ki a szövegben említett energiaveszteség elve?",
+      question: "Mit mond ki az energiaveszteség elve?",
       options: [
         "Minden anyagátépítés energiaveszteséggel jár, a felszabaduló energia egy része hő formájában mindig távozik.",
         "Az anyagátépítések során a felszabaduló energia egy része mindig fény formájában szabadul fel a sejtből.",
@@ -3418,7 +3418,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-k15",
-      question: "A szöveg szerint miért kell a sejtnek folyamatosan újratermelnie az ATP-t?",
+      question: "Miért kell a sejtnek folyamatosan újratermelnie az ATP-t?",
       options: [
         "Mert az ATP molekulák idővel spontán elbomlanak, függetlenül attól, hogy egyáltalán felhasználódtak-e.",
         "Mert az energiaátalakítások sohasem veszteségmentesek, ezért a sejt pótolja az elhasznált energiapénzt.",
@@ -3431,7 +3431,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e01",
-      question: "Milyen negyedik anyagcsere-típust nevez meg a szöveg a középszinten tanult három mellett?",
+      question: "Milyen negyedik anyagcsere-típus van a középszinten tanult három mellett?",
       options: [
         "Kemoheterotróf, amely kémiai energiát hasznosít és szerves szénforrásra szorul.",
         "Fotoheterotróf, amely fényenergiát hasznosít, de szerves szénforrásra szorul.",
@@ -3444,7 +3444,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e02",
-      question: "A szöveg szerint melyik anyagcsere-típus a legritkább a természetben?",
+      question: "Melyik anyagcsere-típus a legritkább a természetben?",
       options: [
         "A fotoautotróf típus, mivel csak néhány algafaj tartozik ide.",
         "A kemoheterotróf típus, mivel kevés állatfaj képes rá.",
@@ -3457,7 +3457,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e03",
-      question: "Hozzávetőlegesen mekkora a biológiai oxidáció hatásfoka a szöveg szerint, vagyis a tápanyagok energiájának hány százaléka alakul át felhasználható ATP-vé?",
+      question: "Hozzávetőlegesen mekkora a biológiai oxidáció hatásfoka, vagyis a tápanyagok energiájának hány százaléka alakul át felhasználható ATP-vé?",
       options: [
         "Kb. 10%, a fennmaradó rész fény formájában távozik.",
         "Kb. 40%, a fennmaradó rész hő formájában távozik.",
@@ -3470,7 +3470,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e04",
-      question: "Milyen kettős szerepe van a szöveg szerint a biológiai oxidáció során felszabaduló hőnek az emlősöknél és madaraknál?",
+      question: "Milyen kettős szerepe van a biológiai oxidáció során felszabaduló hőnek az emlősöknél és madaraknál?",
       options: [
         "Egyrészt hatékonyságvesztésnek tűnik, másrészt éppen ez tartja fenn az állandó testhőmérsékletet.",
         "Kizárólag káros mellékhatás, amelyet a szervezetnek folyamatosan el kell vezetnie magából.",
@@ -3483,7 +3483,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e05",
-      question: "Mivel magyarázza a szöveg, hogy a táplálékláncokban trófikus szintenként jelentősen (kb. tizedére) csökken az átadható energia mennyisége?",
+      question: "Mivel magyarázható, hogy a táplálékláncokban trófikus szintenként jelentősen (kb. tizedére) csökken az átadható energia mennyisége?",
       options: [
         "Azzal, hogy a fogyasztók a táplálékukban lévő energia nagy részét azonnal, hasznosítás nélkül kiválasztják a béltartalommal.",
         "A termelők megkötött energiájának nagy része már saját anyagcseréjükben hő formájában elvész, mielőtt a fogyasztókhoz jutna.",
@@ -3496,7 +3496,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e06",
-      question: "Mit nevezünk receptor-mediált endocitózisnak a szöveg alapján?",
+      question: "Mit nevezünk receptor-mediált endocitózisnak?",
       options: [
         "Azt a folyamatot, amikor a sejtmembrán válogatás nélkül vesz fel minden felszínéhez ütköző anyagot.",
         "Azt a folyamatot, amikor specifikus receptorfehérjék ismernek fel és kötnek meg egy anyagot a bekebelezés előtt.",
@@ -3509,7 +3509,7 @@ export const QUIZZES = {
     },
     {
       id: "felepites-lebontas-kapcsolata-e07",
-      question: "Milyen konkrét példával szemlélteti a szöveg a receptor-mediált endocitózist?",
+      question: "Milyen konkrét példa szemlélteti a receptor-mediált endocitózist?",
       options: [
         "A glükóz sejtbe jutásával, amelyet a sejtfelszíni glükóztranszporterek közvetítenek.",
         "Az LDL-részecskék sejtbe jutásával, amelyeket a sejtfelszíni LDL-receptorok ismernek fel a fehérjeburkuk alapján.",
@@ -3524,7 +3524,7 @@ export const QUIZZES = {
   'fotoszintezis': [
     {
       id: 'fotoszintezis-k01',
-      question: 'Mely élőlénycsoportok szervezetében zajlik fotoszintézis a fejezet szövege szerint?',
+      question: 'Mely élőlénycsoportok szervezetében zajlik fotoszintézis?',
       options: [
         'Kizárólag a magasabb rendű, virágos növényekben',
         'Csak a klorofillt tartalmazó gombákban és zuzmókban',
@@ -3532,7 +3532,7 @@ export const QUIZZES = {
         'Minden eukarióta sejtben, a mitokondrium jelenlététől függetlenül',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint a fotoszintézis a növények, algák és egyes baktériumok színtestjeiben (kloroplasztiszaiban) zajlik.',
+      explanation: 'A fotoszintézis a növények, algák és egyes baktériumok színtestjeiben (kloroplasztiszaiban) zajlik.',
       level: 'kozep',
     },
     {
@@ -3550,7 +3550,7 @@ export const QUIZZES = {
     },
     {
       id: 'fotoszintezis-k03',
-      question: 'Mi veszi körül a kloroplasztiszt a fejezet leírása szerint?',
+      question: 'Mi veszi körül a kloroplasztiszt?',
       options: [
         'Egyetlen, vékony membrán',
         'Sejtfal és egy réteg membrán együtt',
@@ -3719,7 +3719,7 @@ export const QUIZZES = {
     },
     {
       id: 'fotoszintezis-k16',
-      question: 'A fejezet szerint mi szabja meg a fotoszintézis sebességét, ha egyszerre több tényező (fény, CO2, hőmérséklet) is hat a folyamatra?',
+      question: 'Mi szabja meg a fotoszintézis sebességét, ha egyszerre több tényező (fény, CO2, hőmérséklet) is hat a folyamatra?',
       options: [
         'Mindig a fény intenzitása, függetlenül a többi tényezőtől',
         'A tényezők átlagos értéke',
@@ -3981,7 +3981,7 @@ export const QUIZZES = {
     },
     {
       id: 'lebonto-folyamatok-k13',
-      question: 'Milyen hasonlóság van a fejezet szerint a végoxidáció és a fotoszintézis fényszakasza között?',
+      question: 'Milyen hasonlóság van a végoxidáció és a fotoszintézis fényszakasza között?',
       options: [
         'Mindkettő a citoplazmában zajlik, azonos enzimekkel',
         'Hasonló elven működnek, csak más membránban zajlanak',
@@ -4098,7 +4098,7 @@ export const QUIZZES = {
     },
     {
       id: 'lebonto-folyamatok-e08',
-      question: 'Hogyan tud a szervezet fehérjékből is energiát nyerni éhezéskor a fejezet szerint?',
+      question: 'Hogyan tud a szervezet fehérjékből is energiát nyerni éhezéskor?',
       options: [
         'A fehérjék lebomlás nélkül, teljes molekulaként alakulnak közvetlenül glükózzá a citoplazmában, majd ebben a formában lépnek be a glikolízisbe',
         'Az aminosavak nitrogéntartalmú része ammónia/karbamid formájában kiválasztódik, a szénváz pedig a citromsavciklus különböző pontjain kapcsolódhat be',
@@ -4126,7 +4126,7 @@ export const QUIZZES = {
     },
     {
       id: 'elhatarolas-k02',
-      question: 'Milyen fehérjetípusokat sorol fel a fejezet a sejtmembránnal kapcsolatban?',
+      question: 'Milyen fehérjetípusok kapcsolódnak a sejtmembránhoz?',
       options: [
         'Csatornákat, szállítókat, receptorokat és jelfelismerő struktúrákat',
         'Kizárólag enzimeket, hormonokat, antitesteket és vérfehérjéket',
@@ -4139,7 +4139,7 @@ export const QUIZZES = {
     },
     {
       id: 'elhatarolas-k03',
-      question: 'Melyik funkciót NEM sorolja a fejezet a membrán feladatai közé?',
+      question: 'Melyik funkció NEM tartozik a membrán feladatai közé?',
       options: [
         'Anyagforgalom',
         'Határolás',
@@ -4147,7 +4147,7 @@ export const QUIZZES = {
         'Jelfogás',
       ],
       correctIndex: 2,
-      explanation: 'A fejezet a membrán funkciói közé az anyagforgalmat, határolást, összekötést, jelölést és jelfogást sorolja - a fehérjeszintézis nem membránfunkció.',
+      explanation: 'A membrán funkciói közé az anyagforgalom, a határolás, az összekötés, a jelölés és a jelfogás tartozik - a fehérjeszintézis nem membránfunkció.',
       level: 'kozep',
     },
     {
@@ -4308,7 +4308,7 @@ export const QUIZZES = {
     },
     {
       id: 'elhatarolas-k16',
-      question: 'A fejezet összehasonlító táblázata szerint mi a fő különbség a passzív és az aktív szállítás iránya között?',
+      question: 'Mi a fő különbség a passzív és az aktív szállítás iránya között?',
       options: [
         'Mindkét szállítási forma kizárólag nagyobb koncentrációjú helyről kisebb felé irányul',
         'A passzív szállítás nagyobb koncentrációjú helyről kisebb felé, az aktív szállítás kisebb koncentrációjú helyről nagyobb felé irányul',
@@ -5265,7 +5265,7 @@ export const QUIZZES = {
     },
     {
       id: 'virusok-k04',
-      question: 'Milyen alakjai lehetnek a vírusoknak a szöveg szerint?',
+      question: 'Milyen alakjai lehetnek a vírusoknak?',
       options: [
         'Kizárólag gömb alakúak lehetnek, mérettől és fajtól függetlenül.',
         'Gömb, pálcika, valamint "fejjel-farokkal" rendelkező forma, mint például a bakteriofágoké.',
@@ -5411,7 +5411,7 @@ export const QUIZZES = {
     },
     {
       id: 'virusok-k16',
-      question: 'Milyen módokon terjedhetnek a kórokozók a szöveg szerint?',
+      question: 'Milyen módokon terjedhetnek a kórokozók?',
       options: [
         'Kizárólag levegőben terjedő cseppfertőzéssel, más terjedési mód nem lehetséges.',
         'Cseppfertőzéssel, közvetlen érintkezéssel, testnedvekkel vagy rovarcsípés útján.',
@@ -5593,7 +5593,7 @@ export const QUIZZES = {
     },
     {
       id: 'bakteriumok-k07',
-      question: 'Mit állít a szöveg a baktériumok evolúciós jelentőségéről az élet történetében?',
+      question: 'Milyen evolúciós jelentősége van a baktériumoknak az élet történetében?',
       options: [
         'A baktériumok az evolúció legkésőbb megjelenő csoportját alkotják.',
         'A baktériumok kizárólag az emberi tevékenység hatására jelentek meg.',
@@ -5601,7 +5601,7 @@ export const QUIZZES = {
         'A baktériumok voltak az első élőlények a Földön.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a baktériumok voltak a Föld első élőlényei.',
+      explanation: 'A baktériumok voltak a Föld első élőlényei.',
       level: 'kozep',
     },
     {
@@ -5671,7 +5671,7 @@ export const QUIZZES = {
     },
     {
       id: 'bakteriumok-k13',
-      question: 'Az alábbi betegségek közül melyiket okozza a szövegben említettek szerint baktérium?',
+      question: 'Az alábbi betegségek közül melyiket okozza baktérium?',
       options: ['Kanyaró', 'Influenza', 'Lyme-kór', 'HIV-fertőzés'],
       correctIndex: 2,
       explanation: 'A Lyme-kórt baktérium okozza, míg a kanyaró, az influenza és a HIV-fertőzés vírusos eredetű betegségek.',
@@ -5679,7 +5679,7 @@ export const QUIZZES = {
     },
     {
       id: 'bakteriumok-k14',
-      question: 'Az alábbi betegségek közül melyiket NEM baktérium okozza a szövegben leírtak szerint?',
+      question: 'Az alábbi betegségek közül melyiket NEM baktérium okozza?',
       options: ['TBC', 'Szalmonellózis', 'Lyme-kór', 'HIV-fertőzés'],
       correctIndex: 3,
       explanation: 'A HIV-fertőzés vírusos eredetű, míg a TBC, a szalmonellózis és a Lyme-kór baktérium által okozott betegségek.',
@@ -5687,7 +5687,7 @@ export const QUIZZES = {
     },
     {
       id: 'bakteriumok-k15',
-      question: 'Milyen védekezési módokat említ a szöveg a baktériumos fertőzések ellen?',
+      question: 'Milyen védekezési módok vannak a baktériumos fertőzések ellen?',
       options: [
         'Kizárólag antibiotikum-terápia, más védekezési mód nincs említve.',
         'Higiénia, védőoltás, fertőtlenítés és sterilizálás.',
@@ -5827,7 +5827,7 @@ export const QUIZZES = {
     },
     {
       id: 'egysejtu-eukariotak-k03',
-      question: 'Mi a Protiszták országának különlegessége a szöveg szerint?',
+      question: 'Mi a Protiszták országának különlegessége?',
       options: [
         'Ez az egyetlen ország, amelynek tagjai kizárólag többsejtű élőlényekből állnak.',
         'Ez az első ország, amelynek minden tagja valódi sejtmaggal rendelkezik.',
@@ -6046,7 +6046,7 @@ export const QUIZZES = {
     },
     {
       id: 'egysejtu-eukariotak-e04',
-      question: 'Milyen konkrét példát említ a szöveg az endoszimbióta elméletre a zöld szemesostoros esetében?',
+      question: 'Milyen konkrét példa van az endoszimbióta elméletre a zöld szemesostoros esetében?',
       options: [
         'A zöld szemesostoros ostora egy bekebelezett, mozgásra képes baktériumból alakult ki az evolúció során.',
         'A zöld szemesostoros távoli őse egy fotoszintetizáló, cianobaktérium jellegű sejtet kebelezett be, amelyből a színtest alakult ki.',
@@ -6054,7 +6054,7 @@ export const QUIZZES = {
         'A zöld szemesostoros lüktető vacuoluma egy bekebelezett, vízháztartást szabályozó baktériumból ered.',
       ],
       correctIndex: 1,
-      explanation: 'A zöld szemesostoros színtestje a szöveg szerint egy bekebelezett, fotoszintetizáló, cianobaktérium jellegű sejtből alakult ki.',
+      explanation: 'A zöld szemesostoros színtestje egy bekebelezett, fotoszintetizáló, cianobaktérium jellegű sejtből alakult ki.',
       level: 'emelt',
     },
     {
@@ -6069,7 +6069,7 @@ export const QUIZZES = {
   'elkulonules': [
     {
       id: 'elkulonules-k01',
-      question: 'Az öt ország rendszerében melyik három ország elkülönítésével foglalkozik ez a fejezet?',
+      question: 'Az öt ország rendszerében melyik három országot különítjük el egymástól?',
       options: [
         'Monera, Protiszták, Növények',
         'Növények, Gombák, Állatok',
@@ -6077,7 +6077,7 @@ export const QUIZZES = {
         'Protiszták, Gombák, Állatok',
       ],
       correctIndex: 1,
-      explanation: 'A fejezet a Monera és a Protiszták után a Növények, a Gombák és az Állatok elkülönítésével foglalkozik.',
+      explanation: 'A Monera és a Protiszták után a Növények, a Gombák és az Állatok elkülönítése következik.',
       level: 'kozep',
     },
     {
@@ -6669,7 +6669,7 @@ export const QUIZZES = {
     },
     {
       id: 'sejtfonalak-e07',
-      question: 'Mi a különbség a gombák ivartalan és ivaros szaporodása között a szövegben tárgyalt példák alapján?',
+      question: 'Mi a különbség a gombák ivartalan és ivaros szaporodása között?',
       options: [
         'Mindkét szaporodási forma azonos módon, mitózissal zajlik, csak a spóratok mérete tér el',
         'A gombák kizárólag ivaros úton szaporodnak, ivartalan szaporodás nem fordul elő náluk',
@@ -6988,7 +6988,7 @@ export const QUIZZES = {
       question: 'Mely három alcsoportra tagolódik a Harasztok törzse?',
       options: ['Mohák, korpafüvek és zsurlók', 'Páfrányok, mohák és zuzmók', 'Páfrányok, zsurlók és korpafüvek', 'Zsurlók, nyitvatermők és páfrányok'],
       correctIndex: 2,
-      explanation: 'A Harasztok törzsébe a páfrányok, a zsurlók és a korpafüvek tartoznak, ahogy a fejezet is felsorolja.',
+      explanation: 'A Harasztok törzsébe a páfrányok, a zsurlók és a korpafüvek tartoznak.',
       level: 'kozep',
     },
     {
@@ -7553,7 +7553,7 @@ export const QUIZZES = {
     },
     {
       id: 'zarvatermok-k17',
-      question: 'Mi a zárvatermők evolúciós sikerének fő oka a szöveg szerint?',
+      question: 'Mi a zárvatermők evolúciós sikerének fő oka?',
       options: [
         'Kizárólag a rendkívül nagy testméretük és a talajba mélyen hatoló, erős gyökérzetük',
         'A hatékony beporzás, a hatékony magterjesztés és a fejlett szállítószövet együttese',
@@ -11138,7 +11138,7 @@ export const QUIZZES = {
         'Minden pikkelyes hüllőnél, beleértve a gyíkokat is, egyforma mértékben.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint egyes fajoknál, például a csörgőkígyóknál alakult ki hőérzékelő szerv.',
+      explanation: 'Egyes fajoknál, például a csörgőkígyóknál alakult ki hőérzékelő szerv.',
       level: 'kozep',
     },
     {
@@ -11234,7 +11234,7 @@ export const QUIZZES = {
     },
     {
       id: 'hullok-k16',
-      question: 'Mely hüllőcsoportok tértek át másodlagosan vízi életmódra a szöveg szerint?',
+      question: 'Mely hüllőcsoportok tértek át másodlagosan vízi életmódra?',
       options: [
         'A gyíkok és a kígyók, amelyek eredetileg is vízi ősöktől származnak.',
         'Egyik hüllőcsoport sem, a hüllők kizárólag szárazföldi élőhelyeken fordulnak elő.',
@@ -11242,7 +11242,7 @@ export const QUIZZES = {
         'Kizárólag a teknősök, a krokodilok mindig is szárazföldi életmódot folytattak.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint a tengeri teknősök és a krokodilok másodlagosan tértek át vízi életmódra.',
+      explanation: 'A tengeri teknősök és a krokodilok másodlagosan tértek át vízi életmódra.',
       level: 'kozep',
     },
     {
@@ -11548,7 +11548,7 @@ export const QUIZZES = {
     },
     {
       id: 'madarak-k16',
-      question: 'Mely háziasított madárfajok fontosak az emberi élelmezésben a szöveg szerint?',
+      question: 'Mely háziasított madárfajok fontosak az emberi élelmezésben?',
       options: [
         'A galamb és a papagáj, amelyeket kizárólag díszmadárként tartanak, élelmezési céllal nem.',
         'A sólyom és a fecske, amelyeket húsukért és tojásukért tenyésztenek világszerte.',
@@ -11556,7 +11556,7 @@ export const QUIZZES = {
         'A strucc és a pingvin, amelyek húsa és tojása alapvető élelmiszerforrás sok kultúrában.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg a tyúkot és a kacsát emeli ki mint az emberi élelmezés (hús, tojás) fontos forrásait jelentő háziasított madárfajokat.',
+      explanation: 'A tyúk és a kacsa az emberi élelmezés (hús, tojás) fontos forrásait jelentő háziasított madárfajok.',
       level: 'kozep',
     },
     {
@@ -11706,7 +11706,7 @@ export const QUIZZES = {
     },
     {
       id: 'emlosok-k04',
-      question: 'Milyen mozgásformákra módosultak egyes emlősök végtagjai a szöveg szerint?',
+      question: 'Milyen mozgásformákra módosultak egyes emlősök végtagjai?',
       options: [
         'Kizárólag kúszásra, hasonlóan a hüllők testhullámzásához, végtagvesztéssel.',
         'Kizárólag ugrásra, amely minden emlőscsoport közös, egyedüli mozgásformája.',
@@ -11849,7 +11849,7 @@ export const QUIZZES = {
     },
     {
       id: 'emlosok-k15',
-      question: 'Mi jellemzi a méhlepényeseket, és milyen fajok tartoznak ide a szöveg szerint?',
+      question: 'Mi jellemzi a méhlepényeseket, és milyen fajok tartoznak ide?',
       options: [
         'Utódaik a méhben, méhlepényen keresztül táplálkozva, teljesen kifejlődve születnek meg - például az ember, a kutya, a bálna.',
         'Utódaik kizárólag külső tojásban fejlődnek, méhlepény és erszény nélkül, például a kacsacsőrű emlős.',
@@ -12529,7 +12529,7 @@ export const QUIZZES = {
     },
     {
       id: 'gyoker-szar-level-e03',
-      question: 'Milyen példát említ a szöveg a raktározó gyökérre, és mi ennek a szerepe?',
+      question: 'Milyen példa van a raktározó gyökérre, és mi ennek a szerepe?',
       options: [
         'A hagyma, amelynek húsos, tápanyagraktározó rétegei módosult levelek.',
         'A répa és a cékla, amelyek tartalék tápanyagot halmoznak fel módosult gyökerükben.',
@@ -12687,7 +12687,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-anyagszallitas-k08',
-      question: 'Milyen konkrét példákat említ a szöveg arra, hova juttathatja a háncsrész a szerves tápanyagokat?',
+      question: 'Milyen konkrét példák vannak arra, hova juttathatja a háncsrész a szerves tápanyagokat?',
       options: [
         'Kizárólag a levelek felső felszíne felé, ahol a legtöbb a klorofill.',
         'Kizárólag a kambiumgyűrű felé, mivel az igényli a legtöbb szerves anyagot.',
@@ -12778,7 +12778,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-anyagszallitas-k15',
-      question: 'Milyen körülmények jellemzőek a nyitott gázcserenyílásra a szöveg szerint?',
+      question: 'Milyen körülmények jellemzőek a nyitott gázcserenyílásra?',
       options: [
         'Napközben, jó vízellátás mellett.',
         'Tartós esőzés idején, gyenge fényviszonyok mellett.',
@@ -12791,7 +12791,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-anyagszallitas-k16',
-      question: 'Milyen körülmények jellemzőek a zárt gázcserenyílásra a szöveg szerint?',
+      question: 'Milyen körülmények jellemzőek a zárt gázcserenyílásra?',
       options: [
         'Kora tavasszal, mérsékelt páratartalom mellett.',
         'Enyhe, felhős időben, közepes hőmérsékleten.',
@@ -12905,7 +12905,7 @@ export const QUIZZES = {
         'A portokból, amelyben a pollen termelődik, és az azt tartó porzószálból épül fel.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a porzó a portokból (ahol a pollen termelődik) és az azt tartó porzószálból áll.',
+      explanation: 'A porzó a portokból (ahol a pollen termelődik) és az azt tartó porzószálból áll.',
       level: 'kozep',
     },
     {
@@ -12918,7 +12918,7 @@ export const QUIZZES = {
         'Kizárólag a magházból épül fel, bibeszál és bibe nélkül.',
       ],
       correctIndex: 1,
-      explanation: 'A termő a bibéből, a bibeszálból és a magházból épül fel a leírás szerint.',
+      explanation: 'A termő a bibéből, a bibeszálból és a magházból épül fel.',
       level: 'kozep',
     },
     {
@@ -12931,7 +12931,7 @@ export const QUIZZES = {
         'A szaporodás biztosítása: ivarszerveket hordoz, és feltűnő megjelenésével gyakran a beporzó rovarokat is vonzza.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a virág ivarszerveket hordoz, és megjelenésével a beporzó rovarokat vonzza, ezzel a szaporodást szolgálja.',
+      explanation: 'A virág ivarszerveket hordoz, és megjelenésével a beporzó rovarokat vonzza, ezzel a szaporodást szolgálja.',
       level: 'kozep',
     },
     {
@@ -12996,7 +12996,7 @@ export const QUIZZES = {
         'A nővirágokhoz tartozó bibeszálaknak.',
       ],
       correctIndex: 3,
-      explanation: 'A csövön ülő "selyem" a nővirágokhoz tartozó bibeszálakból áll a szöveg szerint.',
+      explanation: 'A csövön ülő "selyem" a nővirágokhoz tartozó bibeszálakból áll.',
       level: 'kozep',
     },
     {
@@ -13009,7 +13009,7 @@ export const QUIZZES = {
         'Egyivarú hímvirágot, amely csak porzókat tartalmaz.',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerint a legtöbb ismert virágos növény, pl. a legtöbb gyümölcsfa, kétivarú virágot fejleszt.',
+      explanation: 'A legtöbb ismert virágos növény, pl. a legtöbb gyümölcsfa, kétivarú virágot fejleszt.',
       level: 'kozep',
     },
     {
@@ -13040,7 +13040,7 @@ export const QUIZZES = {
     },
     {
       id: 'virag-es-termes-k12',
-      question: 'Az alábbi növények közül melyik tekinthető egylakinak a szöveg alapján?',
+      question: 'Az alábbi növények közül melyik tekinthető egylakinak?',
       options: [
         'A spenót, mert hím és nő egyedei külön-külön léteznek.',
         'A kukorica, mert hím- és nővirágai ugyanazon az egyeden, annak különböző részein találhatók.',
@@ -13053,7 +13053,7 @@ export const QUIZZES = {
     },
     {
       id: 'virag-es-termes-k13',
-      question: 'Az alábbi növények közül melyik tekinthető kétlakinak a szöveg alapján?',
+      question: 'Az alábbi növények közül melyik tekinthető kétlakinak?',
       options: [
         'A fűzfa, mert hím- és nővirágai külön-külön egyeden fejlődnek.',
         'Az uborka, mert hím- és nővirágai külön-külön egyeden fejlődnek.',
@@ -13061,7 +13061,7 @@ export const QUIZZES = {
         'A dió, mert hím- és nővirágai külön-külön egyeden fejlődnek.',
       ],
       correctIndex: 0,
-      explanation: 'A fűzfa kétlaki növény: a hím- és nővirágok külön-külön egyeden találhatók, a szöveg szerint a kenderrel és a spenóttal együtt.',
+      explanation: 'A fűzfa kétlaki növény: a hím- és nővirágok külön-külön egyeden találhatók, a kenderrel és a spenóttal együtt.',
       level: 'kozep',
     },
     {
@@ -13074,7 +13074,7 @@ export const QUIZZES = {
         'Mert enélkül a nővirágok nem termékenyülnek meg, és a növény nem hoz termést.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint kétlaki növényeknél hím egyedek hiányában a nővirágok nem termékenyülnek meg, így nem lesz termés.',
+      explanation: 'Kétlaki növényeknél hím egyedek hiányában a nővirágok nem termékenyülnek meg, így nem lesz termés.',
       level: 'kozep',
     },
     {
@@ -13087,7 +13087,7 @@ export const QUIZZES = {
         'Azt kell megvizsgálni, hogy a virág tartalmaz-e egyszerre porzókat és termőt is, vagy csak az egyiket.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a virágot megvizsgálva azt kell eldönteni, tartalmaz-e egyszerre porzókat és termőt (kétivarú), vagy csak az egyiket (egyivarú).',
+      explanation: 'A virágot megvizsgálva azt kell eldönteni, tartalmaz-e egyszerre porzókat és termőt (kétivarú), vagy csak az egyiket (egyivarú).',
       level: 'kozep',
     },
     {
@@ -13100,7 +13100,7 @@ export const QUIZZES = {
         'Azt, hogy az eltérő szerveződési formák (egyivarú-kétivarú, egylaki-kétlaki) mind ugyanazt a célt, a sikeres megtermékenyítést szolgálják.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg összefoglalása szerint az eltérő szerveződési formák mind ugyanazt a célt, a sikeres megtermékenyítést szolgálják.',
+      explanation: 'Az eltérő szerveződési formák mind ugyanazt a célt, a sikeres megtermékenyítést szolgálják.',
       level: 'kozep',
     },
     {
@@ -13198,7 +13198,7 @@ export const QUIZZES = {
   'novenyi-szaporodas-novekedesszabalyozas': [
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k01',
-      question: 'Hányféleképpen tarthatják fenn fajukat a virágos növények a szöveg szerint?',
+      question: 'Hányféleképpen tarthatják fenn fajukat a virágos növények?',
       options: [
         'Háromféleképpen: mag-, termés- és spóraképzéssel egyaránt.',
         'Kétféleképpen: ivaros úton, mag- és termésképzéssel, vagy ivartalan úton, vegetatív szervekkel.',
@@ -13206,7 +13206,7 @@ export const QUIZZES = {
         'Egyféleképpen, kizárólag ivartalan, vegetatív szaporodással.',
       ],
       correctIndex: 1,
-      explanation: 'A szöveg szerint a növények kétféleképpen szaporodhatnak: ivaros (mag-, termésképzés) vagy ivartalan (vegetatív) úton.',
+      explanation: 'A növények kétféleképpen szaporodhatnak: ivaros (mag-, termésképzés) vagy ivartalan (vegetatív) úton.',
       level: 'kozep',
     },
     {
@@ -13237,7 +13237,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k04',
-      question: 'Mi az ivaros szaporodás előnye a szöveg szerint?',
+      question: 'Mi az ivaros szaporodás előnye?',
       options: [
         'Kevesebb energiát igényel, mint a vegetatív szaporodás.',
         'Biztosítja, hogy minden utód genetikailag azonos legyen a szülővel.',
@@ -13250,7 +13250,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k05',
-      question: 'Mi az ivaros szaporodás hátránya a szöveg szerint?',
+      question: 'Mi az ivaros szaporodás hátránya?',
       options: [
         'Az utódok között nincs genetikai változatosság.',
         'Kizárja, hogy a növény vegetatív szervekkel is szaporodjon.',
@@ -13263,7 +13263,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k06',
-      question: 'Mi az ivartalan (vegetatív) szaporodás előnye a szöveg szerint?',
+      question: 'Mi az ivartalan (vegetatív) szaporodás előnye?',
       options: [
         'Kizárólag mag- és termésképzéssel valósul meg, gyorsan és megbízhatóan.',
         'Nagyobb ellenállást biztosít az egész állománynak egy adott kórokozóval szemben.',
@@ -13276,7 +13276,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k07',
-      question: 'Mi az ivartalan (vegetatív) szaporodás hátránya a szöveg szerint?',
+      question: 'Mi az ivartalan (vegetatív) szaporodás hátránya?',
       options: [
         'A genetikai változatosság hiánya miatt az egész állomány egyformán érzékeny lehet egy kórokozóra vagy kedvezőtlen környezeti változásra.',
         'Lassú és kiszámíthatatlan, mert a megtermékenyítés sikere nem garantált.',
@@ -13328,7 +13328,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k11',
-      question: 'Mi az oltás lényege a szöveg szerint?',
+      question: 'Mi az oltás lényege?',
       options: [
         'Egyetlen rügy átültetése egy ellenállóbb gyökérzetű alanyba.',
         'Egy értékes tulajdonságú fajta ágának (nemes ág) beillesztése egy másik, ellenállóbb gyökérzetű növénybe (alany).',
@@ -13354,7 +13354,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k13',
-      question: 'Mi a klónozás alapelve a szöveg szerint?',
+      question: 'Mi a klónozás alapelve?',
       options: [
         'Két különböző fajta keresztezése, amely genetikailag változatos utódot eredményez.',
         'Egy levágott szárdarab gyökereztetése nedves, tápanyagban gazdag talajban.',
@@ -13367,7 +13367,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k14',
-      question: 'Milyen külső feltételek szükségesek a mag csírázásához a szöveg szerint?',
+      question: 'Milyen külső feltételek szükségesek a mag csírázásához?',
       options: [
         'Megfelelő hőmérséklet, elegendő víz és oxigén, egyes fajoknál fény jelenléte vagy hiánya.',
         'Életképes embrió és a nyugalmi állapot megszűnése.',
@@ -13380,7 +13380,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k15',
-      question: 'Milyen belső feltételek szükségesek a mag csírázásához a szöveg szerint?',
+      question: 'Milyen belső feltételek szükségesek a mag csírázásához?',
       options: [
         'Elegendő víz és a nyugalmi állapot fenntartása.',
         'Életképes embrió, valamint a mag nyugalmi állapotának megszűnése.',
@@ -13406,7 +13406,7 @@ export const QUIZZES = {
     },
     {
       id: 'novenyi-szaporodas-novekedesszabalyozas-k17',
-      question: 'Mely növényi életműködéseket szabályozzák hormonok a szöveg szerint?',
+      question: 'Mely növényi életműködéseket szabályozzák hormonok?',
       options: [
         'Kizárólag a mag csírázását és a virágok kinyílásának időpontját.',
         'Például a gyümölcsérést, a növekedés ütemét, valamint a nyugalmi állapotba lépést és az abból való kilépést.',
@@ -13414,7 +13414,7 @@ export const QUIZZES = {
         'Kizárólag a levelek fotoszintetikus aktivitását és a gyökér vízfelvételét.',
       ],
       correctIndex: 1,
-      explanation: 'A szöveg szerint hormonok szabályozzák többek között a gyümölcsérést, a növekedés ütemét, valamint a nyugalmi állapotba lépést és az abból való kilépést.',
+      explanation: 'Hormonok szabályozzák többek között a gyümölcsérést, a növekedés ütemét, valamint a nyugalmi állapotba lépést és az abból való kilépést.',
       level: 'kozep',
     },
     {
@@ -13512,7 +13512,7 @@ export const QUIZZES = {
   'allati-szovetek': [
     {
       id: 'allati-szovetek-k01',
-      question: 'Hány alapvető szövettípusból épül fel az állatok teste a szöveg szerint?',
+      question: 'Hány alapvető szövettípusból épül fel az állatok teste?',
       options: [
         'Négy: hám-, izom-, kötő- és idegszövet.',
         'Kettő: hámszövet és kötőszövet.',
@@ -13525,7 +13525,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k02',
-      question: 'Mi a hámszövet fő elhelyezkedése és szerepe a szöveg szerint?',
+      question: 'Mi a hámszövet fő elhelyezkedése és szerepe?',
       options: [
         'Kizárólag a csontokat és az ízületeket kapcsolja össze.',
         'A test felszínét, a testüregeket, valamint a belső szervek felszínét borítja.',
@@ -13603,7 +13603,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k08',
-      question: 'Mi az izomszövet fő funkciója a szöveg szerint?',
+      question: 'Mi az izomszövet fő funkciója?',
       options: [
         'A test felszínének és a testüregeknek a védelme a mechanikai sérülésektől.',
         'A szervezet szerveinek összekapcsolása és a tápanyagok raktározása.',
@@ -13616,7 +13616,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k09',
-      question: 'Mi jellemzi a vázizmot (harántcsíkolt izmot) a szöveg szerint?',
+      question: 'Mi jellemzi a vázizmot (harántcsíkolt izmot)?',
       options: [
         'A csontvázhoz kapcsolódva biztosítja az akaratlagos mozgást, rostjai harántirányú csíkolatot mutatnak.',
         'Akaratlanul húzódik össze, és a belső szervek falát mozgatja.',
@@ -13642,7 +13642,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k11',
-      question: 'Mi a kötőszövet fő szerepe a szöveg szerint?',
+      question: 'Mi a kötőszövet fő szerepe?',
       options: [
         'Kizárólag a testrészek egymáshoz képesti elmozdulásának biztosítása.',
         'Kizárólag a test felszínének borítása a külső sérülésekkel szemben.',
@@ -13668,7 +13668,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k13',
-      question: 'Mitől szilárd a csontszövet a szöveg szerint?',
+      question: 'Mitől szilárd a csontszövet?',
       options: [
         'Attól, hogy mátrixa ásványi anyagokkal, elsősorban kalcium-sókkal átitatott.',
         'Attól, hogy sejtjei rendezett, harántcsíkolt fehérjéket tartalmaznak.',
@@ -13681,7 +13681,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k14',
-      question: 'Miért sorolható a vér is a kötőszövetek közé a szöveg szerint?',
+      question: 'Miért sorolható a vér is a kötőszövetek közé?',
       options: [
         'Mert sejtjei elszarusodnak és folyamatosan leválnak, hasonlóan a bőr felszínéhez.',
         'Mert sejtjei összehúzódásra képesek, és a szív falát alkotják.',
@@ -13707,7 +13707,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-k16',
-      question: 'Mi az idegszövet fő funkciója a szöveg szerint?',
+      question: 'Mi az idegszövet fő funkciója?',
       options: [
         'A test felszínének védelme a mechanikai sérülésekkel és kórokozókkal szemben.',
         'A szervezet szerveinek összekapcsolása és a tápanyag raktározása.',
@@ -13785,7 +13785,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szovetek-e05',
-      question: 'Mi a csillós hám funkciója a szöveg szerint?',
+      question: 'Mi a csillós hám funkciója?',
       options: [
         'A sejtek felszínét borító csillók összehangolt mozgásukkal anyagokat (pl. nyálkát) továbbítanak a hám felszínén, például a légutakban.',
         'Ásványi anyagokkal átitatott mátrixot termel, amely szilárdságot ad a légutaknak.',
@@ -13826,7 +13826,7 @@ export const QUIZZES = {
   'allati-szaporodas-egyedfejlodes': [
     {
       id: 'allati-szaporodas-egyedfejlodes-k01',
-      question: 'Mi jellemzi a petesejtet a hímivarsejthez képest a fejezet szerint?',
+      question: 'Mi jellemzi a petesejtet a hímivarsejthez képest?',
       options: [
         'Nagyméretű, de aktívan mozgó sejt, amely a hímivarsejtet keresi fel a vízben',
         'Közepes méretű, csillós sejt, amely enzimeket tartalmaz a megtermékenyítés elősegítésére',
@@ -13839,7 +13839,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k02',
-      question: 'Melyik állítás írja le helyesen a hímivarsejtet a fejezet szerint?',
+      question: 'Melyik állítás írja le helyesen a hímivarsejtet?',
       options: [
         'Közepes méretű sejt, amely szikanyagot tartalmaz és lassan sodródik a petesejt felé',
         'Apró, mozdulatlan sejt, amely passzívan várja, hogy a petesejt elérje',
@@ -13878,7 +13878,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k05',
-      question: 'A fejezet szerint mely állatcsoportokra jellemző a hímnősség, és milyen módon szaporodnak jellemzően?',
+      question: 'Mely állatcsoportokra jellemző a hímnősség, és milyen módon szaporodnak jellemzően?',
       options: [
         'A szivacsok, a földigiliszta és a csigák nagy része hímnős, de a megtermékenyítéshez ekkor is jellemzően két egyed szükséges, amelyek kölcsönösen megtermékenyítik egymást',
         'Kizárólag a szivacsok hímnősek, és mindig egyetlen egyed elegendő a szaporodáshoz',
@@ -13904,7 +13904,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k07',
-      question: 'A fejezet szerint mely állatcsoportokat jellemzi kivétel nélkül a váltivarúság?',
+      question: 'Mely állatcsoportokat jellemzi kivétel nélkül a váltivarúság?',
       options: [
         'A csontos halak és a kétéltűek, de a hüllők és madarak hímnősek',
         'A szivacsok, csigák és a földigiliszta',
@@ -13930,7 +13930,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k09',
-      question: 'Milyen szerepet játszik a fejezet szerint az ivari kétalakúság, és milyen példákkal illusztrálható?',
+      question: 'Milyen szerepet játszik az ivari kétalakúság, és milyen példákkal illusztrálható?',
       options: [
         'A partnerválasztásban játszik szerepet, például a pávakakas díszes tollazata vagy az oroszlánhím sörénye vonzza a másik nemet',
         'Az utódgondozás megosztásában játszik szerepet, például az oroszlánhím sörénye jelzi, melyik szülő vadászik',
@@ -13938,7 +13938,7 @@ export const QUIZZES = {
         'A territóriumvédelemben játszik szerepet, függetlenül a szaporodási folyamatoktól',
       ],
       correctIndex: 0,
-      explanation: 'A pávakakas tollazata és az oroszlánhím sörénye a fejezet szerint a partnerválasztásban, a másik nem vonzásában játszik szerepet.',
+      explanation: 'A pávakakas tollazata és az oroszlánhím sörénye a partnerválasztásban, a másik nem vonzásában játszik szerepet.',
       level: 'kozep',
     },
     {
@@ -14008,7 +14008,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k15',
-      question: 'Milyen összefüggés figyelhető meg az utódszám és az ivadékgondozás mértéke között a fejezet szerint?',
+      question: 'Milyen összefüggés figyelhető meg az utódszám és az ivadékgondozás mértéke között?',
       options: [
         'Az utódszám és az ivadékgondozás mértéke között nincs kimutatható összefüggés az állatvilágban, mindkét tényezőt kizárólag a testméret határozza meg',
         'A külső megtermékenyítésű fajok kevesebb, de gondosan nevelt utódot hoznak létre, mint a belső megtermékenyítésű, ivadékgondozást nem nyújtó fajok',
@@ -14034,7 +14034,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-k17',
-      question: 'Mit nevezünk regenerációnak, és melyik állatra jellemző kiemelkedően a fejezet szerint?',
+      question: 'Mit nevezünk regenerációnak, és melyik állatra jellemző kiemelkedően?',
       options: [
         'Az elvesztett testrészek újranövesztésének, akár egy teljes új egyed létrehozásának képességét, amely kiemelkedően jellemzi a planáriát',
         'A szervrendszerek kialakulásának folyamatát az embrionális fejlődés során, amely a szivacsokra jellemző',
@@ -14086,7 +14086,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-e03',
-      question: 'Hogyan határozza meg a parthenogenezis a méhek nemét a fejezet szerint?',
+      question: 'Hogyan határozza meg a parthenogenezis a méhek nemét?',
       options: [
         'A megtermékenyített (diploid) petesejtekből dolgozók vagy anyakirálynők, a megtermékenyítetlen (haploid) petesejtekből pedig hímek (herék) fejlődnek',
         'A here méhek megtermékenyítetlen, de triploid petesejtekből fejlődnek, amely miatt sterilek maradnak',
@@ -14138,7 +14138,7 @@ export const QUIZZES = {
     },
     {
       id: 'allati-szaporodas-egyedfejlodes-e07',
-      question: 'Milyen különleges jelenséget mutatnak be a fejezetben említett gyíkfajok a parthenogenezissel kapcsolatban?',
+      question: 'Milyen különleges jelenséget mutatnak be egyes gyíkfajok a parthenogenezissel kapcsolatban?',
       options: [
         'Náluk a parthenogenezis kizárólag szezonálisan, csak télen fordul elő',
         'Léteznek olyan populációik, amelyek kizárólag parthenogenezissel szaporodó nőstényekből állnak, hím egyedek nélkül',
@@ -14179,7 +14179,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k03',
-      question: 'A szöveg szerint a keresztes pók, amely az Ízeltlábúak törzsébe tartozik, melyik állatcsoport (osztály) tagja?',
+      question: 'A keresztes pók, amely az Ízeltlábúak törzsébe tartozik, melyik állatcsoport (osztály) tagja?',
       options: [
         'A Pókszabásúak osztályáé, a rovaroktól eltérően.',
         'A Rovarok osztályáé, akárcsak a legtöbb ízeltlábú.',
@@ -14187,7 +14187,7 @@ export const QUIZZES = {
         'A Százlábúak osztályáé, amely külön csoportot alkot a rovarok mellett.',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg kiemeli, hogy a pók a rovaroktól eltérően a Pókszabásúak osztályába tartozik, bár mindkettő az Ízeltlábúak törzsének tagja.',
+      explanation: 'A pók a rovaroktól eltérően a Pókszabásúak osztályába tartozik, bár mindkettő az Ízeltlábúak törzsének tagja.',
       level: 'kozep',
     },
     {
@@ -14205,7 +14205,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k05',
-      question: 'A szöveg szerint milyen élethelyzetekben jelennek meg jellemzően az öröklött magatartásformák?',
+      question: 'Milyen élethelyzetekben jelennek meg jellemzően az öröklött magatartásformák?',
       options: [
         'Kizárólag olyan másodlagos, nem életbevágó helyzetekben, amelyeknél a hibázásnak nincs komoly következménye.',
         'Kizárólag a csoporton belüli, fajtársakkal szembeni versengéshez kapcsolódó helyzetekben.',
@@ -14218,7 +14218,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k06',
-      question: 'Mi jellemzi a tanult magatartásformákat a szöveg szerint?',
+      question: 'Mi jellemzi a tanult magatartásformákat?',
       options: [
         'Genetikailag kódoltak, ezért minden egyednél azonos formában, tapasztalat nélkül is megjelennek.',
         'Kizárólag az anyaállattól való elszakadás után, önállóan, próbálkozás nélkül alakulnak ki.',
@@ -14257,7 +14257,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k09',
-      question: 'Mi igaz a macskák egerészési technikájára a szöveg szerint?',
+      question: 'Mi igaz a macskák egerészési technikájára?',
       options: [
         'A teljes vadászati technika kizárólag genetikailag kódolt, ezért az anya jelenléte nélkül is azonos hatékonysággal alakul ki.',
         'A technika kizárólag a testvérmacskák egymás közötti játékos küzdelmeiből alakul ki, az anya megfigyelése nélkül.',
@@ -14270,7 +14270,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k10',
-      question: 'Mi az öröklött magatartásformák fő előnye a szöveg szerint?',
+      question: 'Mi az öröklött magatartásformák fő előnye?',
       options: [
         'Az egyed élete során folyamatosan finomodnak és egyre hatékonyabbá válnak.',
         'Azonnal, gyakorlás nélkül is megbízhatóan rendelkezésre állnak, ami különösen fontos, ha nincs idő tanulásra.',
@@ -14283,7 +14283,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k11',
-      question: 'Mi az öröklött magatartásformák fő hátránya a szöveg szerint?',
+      question: 'Mi az öröklött magatartásformák fő hátránya?',
       options: [
         'Rugalmatlanok: ha a környezet a fajra jellemző mintától eltérően változik meg, nem, vagy csak korlátozottan tudnak alkalmazkodni hozzá.',
         'Egyedenként annyira eltérőek, hogy a faj tagjai gyakran nem képesek egymással hatékonyan kommunikálni.',
@@ -14309,7 +14309,7 @@ export const QUIZZES = {
     },
     {
       id: 'oroklott-tanult-magatartas-k13',
-      question: 'Milyen hátránnyal jár a tanult magatartásformák kialakulása a szöveg szerint?',
+      question: 'Milyen hátránnyal jár a tanult magatartásformák kialakulása?',
       options: [
         'Fajon belül teljesen egységesek, ezért nem tudnak alkalmazkodni az egyedi környezeti különbségekhez.',
         'Kialakításuk időt és gyakorlást igényel, és a tanulási folyamat közben hibák is előfordulhatnak.',
@@ -14454,7 +14454,7 @@ export const QUIZZES = {
       id: 'oroklott-tanult-magatartas-e07',
       question: 'Miben különbözik egymástól az énekesmadarak kritikus periódusa és a rhesusmajmok kígyóktól való félelemtanulási készsége, mint az öröklött-tanult összefonódás két példája?',
       options: [
-        'A kritikus periódus jelensége kizárólag az emlősöknél, a preparedness jelensége pedig kizárólag a madaraknál figyelhető meg a szöveg szerint, ezért a két fogalom valójában nem is hasonlítható össze.',
+        'A kritikus periódus jelensége kizárólag az emlősöknél, a preparedness jelensége pedig kizárólag a madaraknál figyelhető meg, ezért a két fogalom valójában nem is hasonlítható össze.',
         'A két jelenség valójában teljesen ugyanazt jelenti: mindkettő kizárólag azt mutatja, hogy egy adott viselkedést az egyed csakis élete legelső heteiben, egy rövid, meghatározott ablakban képes elsajátítani.',
         'A kritikus periódus egy időbeli korlátot jelent arra, mikor tanulható meg egy viselkedés, míg a majmoknál az öröklött hajlam azt befolyásolja, mit tanulnak meg könnyebben, tartalmi szempontból.',
         'Mindkét jelenség kizárólag és egyértelműen azt mutatja, hogy a tanult magatartás a valóságban teljesen független és elszigetelt az öröklött genetikai tényezőktől, azoktól semmilyen módon nem befolyásolt.',
@@ -14467,7 +14467,7 @@ export const QUIZZES = {
   'onfenntartasi-viselkedesek': [
     {
       id: 'onfenntartasi-viselkedesek-k01',
-      question: 'A szöveg szerint hány fő csoportba sorolhatók jellemzően az önfenntartással kapcsolatos viselkedések?',
+      question: 'Hány fő csoportba sorolhatók jellemzően az önfenntartással kapcsolatos viselkedések?',
       options: [
         'Két csoportba: táplálkozási és védekező viselkedésekbe.',
         'Három csoportba: tájékozódás, szaporodás és menekülés.',
@@ -14475,7 +14475,7 @@ export const QUIZZES = {
         'Négy csoportba: tájékozódás, táplálkozási magatartás, menekülés és védekezés.',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg az önfenntartással kapcsolatos viselkedéseket négy nagy csoportba sorolja: tájékozódás, táplálkozási magatartás, menekülés és védekezés.',
+      explanation: 'Az önfenntartással kapcsolatos viselkedések négy nagy csoportba sorolhatók: tájékozódás, táplálkozási magatartás, menekülés és védekezés.',
       level: 'kozep',
     },
     {
@@ -14545,7 +14545,7 @@ export const QUIZZES = {
     },
     {
       id: 'onfenntartasi-viselkedesek-k07',
-      question: 'Miben tér el a pókok hálóval történő táplálékszerzése az aktív vadászattól a szöveg szerint?',
+      question: 'Miben tér el a pókok hálóval történő táplálékszerzése az aktív vadászattól?',
       options: [
         'A hálóval történő táplálékszerzés jóval több energiát igényel, mint az aktív vadászat, mivel a háló szövése folyamatos munkát jelent.',
         'A hálóval történő táplálékszerzés kizárólag éjszaka működik, míg az aktív vadászat nappal zajlik.',
@@ -14662,7 +14662,7 @@ export const QUIZZES = {
     },
     {
       id: 'onfenntartasi-viselkedesek-k16',
-      question: 'Mit jelent a mimikri, mint védekezési forma, a szöveg szerint?',
+      question: 'Mit jelent a mimikri, mint védekezési forma,?',
       options: [
         'A test hőmérsékletének gyors megváltoztatását, amely megzavarja a ragadozó érzékelését.',
         'Erős szagú váladék kibocsátását, amely elriasztja a ragadozókat.',
@@ -14675,7 +14675,7 @@ export const QUIZZES = {
     },
     {
       id: 'onfenntartasi-viselkedesek-k17',
-      question: 'Mi a kaméleonok színváltoztató képességének elsődleges szerepe a szöveg szerint?',
+      question: 'Mi a kaméleonok színváltoztató képességének elsődleges szerepe?',
       options: [
         'Kizárólag a táplálékszerzésben, a zsákmány megtévesztésére szolgál.',
         'Kizárólag a védekezésben, más funkciója nincs.',
@@ -14683,7 +14683,7 @@ export const QUIZZES = {
         'Elsősorban a testhőmérséklet-szabályozásban és a hangulati, illetve társas jelzésekben van szerepe, bár védekezési célt is szolgálhat.',
       ],
       correctIndex: 3,
-      explanation: 'A kaméleonok színváltoztatása szolgálhat védekezési célt is, de a szöveg szerint elsősorban a testhőmérséklet-szabályozásban és a hangulati/társas jelzésekben van ennél is fontosabb szerepe.',
+      explanation: 'A kaméleonok színváltoztatása szolgálhat védekezési célt is, de elsősorban a testhőmérséklet-szabályozásban és a hangulati/társas jelzésekben van ennél is fontosabb szerepe.',
       level: 'kozep',
     },
     {
@@ -14714,7 +14714,7 @@ export const QUIZZES = {
     },
     {
       id: 'onfenntartasi-viselkedesek-e03',
-      question: 'Milyen példát említ a szöveg a Batesi mimikrire?',
+      question: 'Milyen példa van a Batesi mimikrire?',
       options: [
         'Egyes lepkefajok (pl. lepketrücskök) színezete és mintázata méhekre vagy darazsakra hasonlít, holott ezek a lepkék teljesen ártalmatlanok.',
         'Több, egymással rokon, mérgező pillangófaj rendelkezik hasonló mintázattal, amelyek mindegyike valóban veszélyes.',
@@ -14727,7 +14727,7 @@ export const QUIZZES = {
     },
     {
       id: 'onfenntartasi-viselkedesek-e04',
-      question: 'Milyen példát említ a szöveg a Müller-féle mimikrire?',
+      question: 'Milyen példa van a Müller-féle mimikrire?',
       options: [
         'Egyes ártalmatlan lepkefajok színezete méhekre vagy darazsakra hasonlít, hogy megtévessze a ragadozókat.',
         'A teknősök páncélja és a sünök tüskéi passzív, mechanikai védelmet nyújtanak.',
@@ -14781,7 +14781,7 @@ export const QUIZZES = {
   'fajfenntartasi-viselkedesek': [
     {
       id: 'fajfenntartasi-viselkedesek-k01',
-      question: 'Mi a partnerkeresés és az udvarlás fő célja a szöveg szerint?',
+      question: 'Mi a partnerkeresés és az udvarlás fő célja?',
       options: [
         'A territórium kizárólagos megszerzése, a partnerkeresésnek ebben nincs szerepe.',
         'A táplálékforrások felkutatása és megjelölése a csoport számára.',
@@ -14807,7 +14807,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k03',
-      question: 'Mi példa az ivari kétalakúságra a szöveg szerint?',
+      question: 'Mi példa az ivari kétalakúságra?',
       options: [
         'A szarvasbikák agancsviadala a nőstényekért folytatott versengésben.',
         'A gólyák közös fészeképítése a hím és a nőstény által.',
@@ -14846,7 +14846,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k06',
-      question: 'Mit jelent a párzás fogalma a szöveg szerint?',
+      question: 'Mit jelent a párzás fogalma?',
       options: [
         'Kizárólag a fészek közös építését, amely minden esetben megelőzi a megtermékenyítést.',
         'A megtermékenyítéshez vezető viselkedést, amelyet gyakran versengés előz meg a hímek között a párzási lehetőségért.',
@@ -14859,7 +14859,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k07',
-      question: 'Mit eredményez a szarvasbikák agancsviadala a szöveg szerint?',
+      question: 'Mit eredményez a szarvasbikák agancsviadala?',
       options: [
         'A küzdelem győztese szerzi meg a jogot a nőstényekkel való párzásra, ezáltal az erősebb, egészségesebb egyedek génjei nagyobb eséllyel kerülnek át a következő nemzedékbe.',
         'A küzdelem mindkét fél számára egyenlő eséllyel biztosítja a párzást, függetlenül a végeredménytől.',
@@ -14872,7 +14872,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k08',
-      question: 'Hogyan igazodik a párzási viselkedés a megtermékenyítés módjához (külső vagy belső) a szöveg szerint?',
+      question: 'Hogyan igazodik a párzási viselkedés a megtermékenyítés módjához (külső vagy belső)?',
       options: [
         'A külső megtermékenyítésű fajoknál igényel hosszabb, közelebbi testi kontaktust a párzás, a belső megtermékenyítésű fajoknál nem.',
         'A párzási viselkedés kizárólag a territórium méretétől függ, a megtermékenyítés módjától nem.',
@@ -14885,7 +14885,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k09',
-      question: 'Mit jelent az ivadékgondozás fogalma a szöveg szerint?',
+      question: 'Mit jelent az ivadékgondozás fogalma?',
       options: [
         'A szülők utódaik túlélési esélyét jelentősen növelő viselkedését, amelynek mértéke fajonként igen eltérő.',
         'Kizárólag a fészek megépítését az utódok kikelése előtt, amely után a szülők szerepe véget ér.',
@@ -14924,7 +14924,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k12',
-      question: 'Mit jelent az önzetlen (altruista) viselkedés a szöveg szerint?',
+      question: 'Mit jelent az önzetlen (altruista) viselkedés?',
       options: [
         'Az egyed kizárólag a saját érdekeit követi, még akkor is, ha ez a rokonai számára hátrányos.',
         'Az egyed kizárólag a nem rokon fajtársait segíti, saját rokonait figyelmen kívül hagyja.',
@@ -14937,7 +14937,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k13',
-      question: 'Milyen altruista viselkedést mutatnak a méhek dolgozói a szöveg szerint?',
+      question: 'Milyen altruista viselkedést mutatnak a méhek dolgozói?',
       options: [
         'Kizárólag a saját utódaik táplálásával foglalkoznak, a kaptár többi tagjával nem törődnek.',
         'Rendszeresen elhagyják a kaptárt, hogy önálló, saját kaptárt alapítsanak máshol.',
@@ -14963,7 +14963,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-k15',
-      question: 'Mi az agresszió jellemző kiváltó oka a fajtársak között a szöveg szerint?',
+      question: 'Mi az agresszió jellemző kiváltó oka a fajtársak között?',
       options: [
         'A korlátozott, hozzáférhető erőforrásokért (táplálék, territórium, partner) folyó versengés.',
         'Kizárólag a fiatal egyedek tapasztalatlansága, amely idővel magától megszűnik.',
@@ -15004,7 +15004,7 @@ export const QUIZZES = {
       id: 'fajfenntartasi-viselkedesek-e01',
       question: 'Miért tűnhet első pillantásra ellentmondásosnak az altruista viselkedés kialakulása a természetes szelekció szempontjából?',
       options: [
-        'Mert az altruista viselkedés a szöveg állítása szerint kizárólag az emberi fajra jellemző jelenség, más állatfajok viselkedésében soha, semmilyen formában nem figyelhető meg.',
+        'Mert az altruista viselkedés kizárólag az emberi fajra jellemző jelenség, más állatfajok viselkedésében soha, semmilyen formában nem figyelhető meg.',
         'Mert a természetes szelekció elvben a saját túlélést és szaporodást előnyben részesítő egyedeket "jutalmazza", az altruizmus viszont csökkenti az egyed saját túlélési esélyét mások javára.',
         'Mert a természetes szelekció elmélete kizárólag a különböző fajok közötti versengést és kapcsolatokat szabályozza, az egy fajon belüli, egyedek közötti viselkedést egyáltalán nem érinti vagy alakítja.',
         'Mert az altruista viselkedést a viselkedéstudomány kizárólag a tanult magatartásformák közé sorolja, ezért az elméletileg nem is alakulhatna ki genetikai, öröklött alapon, tanulás nélkül.',
@@ -15028,7 +15028,7 @@ export const QUIZZES = {
     },
     {
       id: 'fajfenntartasi-viselkedesek-e03',
-      question: 'Miért érvényesül a rokonszelekció szélsőségesen a méheknél a szöveg szerint?',
+      question: 'Miért érvényesül a rokonszelekció szélsőségesen a méheknél?',
       options: [
         'Mert a parthenogenezis miatt a nőstény testvérek (dolgozók) egymással genetikailag szorosabb rokonságban állnak, mint amilyenben egy szülővel és utóddal állnának.',
         'Mert a hímek (herék) és a nőstények (dolgozók) egyaránt, teljesen azonos genetikai módon, kizárólag megtermékenyített, diploid petesejtekből fejlődnek ki a kaptárban.',
@@ -15643,7 +15643,7 @@ export const QUIZZES = {
     },
     {
       id: 'tanult-magatartasformak-e06',
-      question: 'A szöveg szerint melyik tanulási forma tipikus példája a "próba-szerencse" tanulásnak, amelynek kockázatait a megfigyeléses tanulás segít elkerülni?',
+      question: 'Melyik tanulási forma tipikus példája a "próba-szerencse" tanulásnak, amelynek kockázatait a megfigyeléses tanulás segít elkerülni?',
       options: [
         'A feltételes reflex (klasszikus kondicionálás).',
         'A bevésődés.',
@@ -15651,7 +15651,7 @@ export const QUIZZES = {
         'A belátásos tanulás.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg az operáns tanulást nevezi meg a próba-szerencse tanulás tipikus példájaként, amelynek kockázatait a megfigyeléses tanulás segít elkerülni.',
+      explanation: 'Az operáns tanulás a próba-szerencse tanulás tipikus példája, amelynek kockázatait a megfigyeléses tanulás segít elkerülni.',
       level: 'emelt',
     },
   ],
@@ -15666,7 +15666,7 @@ export const QUIZZES = {
         'A bevésődés és az érzékenyítés.',
       ],
       correctIndex: 0,
-      explanation: 'A fejezet szerint a motiváció és a kulcsinger együttesen kulcsszerepet játszik minden magatartásforma kialakulásában.',
+      explanation: 'A motiváció és a kulcsinger együttesen kulcsszerepet játszik minden magatartásforma kialakulásában.',
       level: 'kozep',
     },
     {
@@ -15892,7 +15892,7 @@ export const QUIZZES = {
     },
     {
       id: 'motivacio-kulcsinger-e04',
-      question: 'Milyen emberi példával illusztrálja a szöveg a szuperinger jelenségét?',
+      question: 'Milyen emberi példa illusztrálja a szuperinger jelenségét?',
       options: [
         'A csendes, halkan berendezett lakóterek, amelyek a szükségesnél gyengébb reakciót váltanak ki.',
         'A rikítóan élénk színű, feltűnő csomagolású élelmiszerek, amelyek a szükségesnél erősebb reakciót képesek kiváltani.',
@@ -15900,7 +15900,7 @@ export const QUIZZES = {
         'A természetes, tompa színű, kevéssé feltűnő tárgyak, amelyek fokozzák a figyelmet és az éberséget.',
       ],
       correctIndex: 1,
-      explanation: 'A szöveg szerint a rikítóan élénk színű, feltűnő csomagolású élelmiszerek is a szükségesnél erősebb reakciót válthatnak ki, hasonlóan a szuperinger jelenségéhez.',
+      explanation: 'A rikítóan élénk színű, feltűnő csomagolású élelmiszerek is a szükségesnél erősebb reakciót válthatnak ki, hasonlóan a szuperinger jelenségéhez.',
       level: 'emelt',
     },
     {
@@ -15918,7 +15918,7 @@ export const QUIZZES = {
     },
     {
       id: 'motivacio-kulcsinger-e06',
-      question: 'Mikor jelentkezik probléma a kulcsinger-felismerő mechanizmus egyszerűsége miatt, a szöveg szerint?',
+      question: 'Mikor jelentkezik probléma a kulcsinger-felismerő mechanizmus egyszerűsége miatt,?',
       options: [
         'Akkor, amikor egy kulcsinger fokozatosan, lassan, több generáción át alakul ki a természetben.',
         'Akkor, amikor egy mesterséges, ember alkotta inger váratlanul, a természetes szelekció "felkészülése" nélkül jelenik meg.',
@@ -15959,7 +15959,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k03',
-      question: 'Mely szervrendszerek működnek közre a homeosztázis fenntartásában a fejezet szerint?',
+      question: 'Mely szervrendszerek működnek közre a homeosztázis fenntartásában?',
       options: [
         'A hormonrendszer és az emésztőrendszer, mivel csak ezek termelnek szabályozó anyagokat a szervezetben.',
         'Csak a kiválasztó szervek, amelyek egyedül felelősek a belső egyensúly fenntartásáért.',
@@ -15967,7 +15967,7 @@ export const QUIZZES = {
         'Kizárólag az idegrendszer, amely önállóan hangolja össze az összes szerv működését.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint az idegrendszer, a hormonrendszer, a kiválasztó szervek és a légző-keringési rendszer együttesen hangolja össze a homeosztázist.',
+      explanation: 'Az idegrendszer, a hormonrendszer, a kiválasztó szervek és a légző-keringési rendszer együttesen hangolja össze a homeosztázist.',
       level: 'kozep',
     },
     {
@@ -16011,7 +16011,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k07',
-      question: 'Mit jelent a kiválasztás fogalma a fejezet szerint?',
+      question: 'Mit jelent a kiválasztás fogalma?',
       options: [
         'A hormonok mirigyekben történő előállítását, majd azok célszervekhez való eljuttatását a véráramon keresztül.',
         'A tápanyagok felszívódását a bélcsőből, majd azok eljuttatását a vérárammal a sejtekhez.',
@@ -16050,7 +16050,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k10',
-      question: 'Miért különleges a hasnyálmirigy működése a fejezetben leírtak szerint?',
+      question: 'Miért különleges a hasnyálmirigy működése?',
       options: [
         'Mert váladékát kizárólag külső elválasztással üríti, de azt két különböző testüregbe (a bélcsőbe és a hólyagba) is eljuttatja.',
         'Mert egyszerre külső elválasztással emésztőnedvet juttat a bélbe, és belső elválasztással hormonokat (pl. inzulint) a vérbe.',
@@ -16063,7 +16063,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k11',
-      question: 'Miért fontosak a rendszeres szűrővizsgálatok és az önvizsgálat a fejezet szerint?',
+      question: 'Miért fontosak a rendszeres szűrővizsgálatok és az önvizsgálat?',
       options: [
         'Mert enélkül a szervezet nem lenne képes fenntartani a negatív visszacsatolás elvén működő szabályozását.',
         'Mert kizárólag ezek alapján állapítható meg pontosan egy személy vércsoportja és genetikai állománya.',
@@ -16076,7 +16076,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k12',
-      question: 'Mi az önvizsgálat lényege a fejezet szerint?',
+      question: 'Mi az önvizsgálat lényege?',
       options: [
         'Hogy az egyén saját maga állapítsa meg a pontos diagnózist, elkerülve ezzel az orvosi vizsgálatok szükségességét.',
         'Hogy az egyén rendszeresen mérje a testhőmérsékletét és vérnyomását, mert csak ezek árulkodnak a rejtett betegségekről.',
@@ -16089,7 +16089,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k13',
-      question: 'Mi az alapfokú újraélesztés első lépése a fejezet szerint?',
+      question: 'Mi az alapfokú újraélesztés első lépése?',
       options: [
         'A sérült oldalára fordítása, hogy elkerüljük a nyelv hátracsúszását, majd azonnali segélyhívás.',
         'Az eszméletlenség és a légzés hiányának (vagy szabálytalan légzésnek) felismerése: a sérült megszólítása, óvatos megrázása, majd a légzés ellenőrzése.',
@@ -16102,7 +16102,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k14',
-      question: 'Milyen telefonszámon lehet Magyarországon mentőt hívni a fejezet szerint?',
+      question: 'Milyen telefonszámon lehet Magyarországon mentőt hívni?',
       options: [
         'A 112-es vagy a 104-es szám.',
         'A 105-ös szám.',
@@ -16110,7 +16110,7 @@ export const QUIZZES = {
         'A 911-es szám.',
       ],
       correctIndex: 0,
-      explanation: 'A fejezet szerint Magyarországon a 112-es vagy a 104-es számon lehet segélyt hívni.',
+      explanation: 'Magyarországon a 112-es vagy a 104-es számon lehet segélyt hívni.',
       level: 'kozep',
     },
     {
@@ -16123,12 +16123,12 @@ export const QUIZZES = {
         '50 kompresszió és 1 lélegeztetés váltakozó ritmusában.',
       ],
       correctIndex: 1,
-      explanation: 'A fejezet szerint jellemzően 30 kompresszió és 2 lélegeztetés váltakozó ritmusában zajlik az újraélesztés.',
+      explanation: 'Jellemzően 30 kompresszió és 2 lélegeztetés váltakozó ritmusában zajlik az újraélesztés.',
       level: 'kozep',
     },
     {
       id: 'homeosztazis-k16',
-      question: 'Meddig kell folytatni az újraélesztést a fejezet szerint?',
+      question: 'Meddig kell folytatni az újraélesztést?',
       options: [
         'Pontosan öt percig, mert ennél hosszabb ideig végzett szívmasszázs már nem hatékony.',
         'Amíg a sérült magához nem tér, vagy amíg a szakszerű segítség meg nem érkezik és át nem veszi az ellátást.',
@@ -16141,7 +16141,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-k17',
-      question: 'Miért életmentő a mellkaskompresszió szívmegállás esetén, a fejezet magyarázata szerint?',
+      question: 'Miért életmentő a mellkaskompresszió szívmegállás esetén,?',
       options: [
         'Mert közvetlenül újraindítja a szív saját elektromos ingerképzését, hasonlóan egy defibrillátorhoz.',
         'Mert mesterségesen fenntartja a vér áramlását, így az agy és más életfontosságú szervek továbbra is kapnak valamennyi oxigént.',
@@ -16154,7 +16154,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-e01',
-      question: 'Miért nem tekinthetők rögzítettnek a homeosztázis-összetevők (pl. testhőmérséklet, szívfrekvencia) határértékei a szöveg szerint?',
+      question: 'Miért nem tekinthetők rögzítettnek a homeosztázis-összetevők (pl. testhőmérséklet, szívfrekvencia) határértékei?',
       options: [
         'Mert a határértékeket kizárólag genetikai tényezők határozzák meg, amelyeket az aktuális élettani állapot egyáltalán nem befolyásol.',
         'Mert az adott élettani állapottól (pl. testmozgás, terhesség) függően megváltozhatnak, és ilyenkor normálisan is egy más tartományba kerülnek.',
@@ -16188,7 +16188,7 @@ export const QUIZZES = {
         'Az egészség kizárólag genetikailag meghatározott, fix adottság, amelyet az életmód és a környezet nem befolyásol.',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint az egészség a homeosztázis tartós, hatékony fenntartásának képessége, nem pusztán a betegségek hiánya vagy egy fix adottság.',
+      explanation: 'Az egészség a homeosztázis tartós, hatékony fenntartásának képessége, nem pusztán a betegségek hiánya vagy egy fix adottság.',
       level: 'emelt',
     },
     {
@@ -16201,12 +16201,12 @@ export const QUIZZES = {
         'A homeosztázis határértékeinek átmeneti, egészséges kiszélesedése, amely idővel magától visszaáll normálisra.',
       ],
       correctIndex: 0,
-      explanation: 'A betegség a szabályozás felborulásaként, a homeosztázis fenntartásának képtelenségeként értelmezhető a szöveg szerint.',
+      explanation: 'A betegség a szabályozás felborulásaként, a homeosztázis fenntartásának képtelenségeként értelmezhető.',
       level: 'emelt',
     },
     {
       id: 'homeosztazis-e05',
-      question: 'Miért törekszik a szöveg szerint a modern orvostudomány gyakran nem csupán egyetlen tünet kezelésére, hanem a szervezet egészének egyensúlyára?',
+      question: 'Miért törekszik a modern orvostudomány gyakran nem csupán egyetlen tünet kezelésére, hanem a szervezet egészének egyensúlyára?',
       options: [
         'Mert a betegség a homeosztázis felborulásaként értelmezhető, így a tartós gyógyuláshoz az egész belső egyensúlyt helyre kell állítani.',
         'Mert az egyes tünetek kezelése törvényileg csak szakorvosi engedéllyel végezhető, ellentétben az egyensúly helyreállításával.',
@@ -16219,7 +16219,7 @@ export const QUIZZES = {
     },
     {
       id: 'homeosztazis-e06',
-      question: 'Mi következik abból, hogy a homeosztázis fenntartása aktív, energiát igénylő folyamat a szöveg szerint?',
+      question: 'Mi következik abból, hogy a homeosztázis fenntartása aktív, energiát igénylő folyamat?',
       options: [
         'A homeosztázis fenntartásához szükséges energia kizárólag táplálékfelvételből származhat, más forrásból nem pótolható.',
         'Mivel a folyamat energiát igényel, a szervezet csak alvás közben képes ténylegesen fenntartani a belső egyensúlyát.',
@@ -16234,7 +16234,7 @@ export const QUIZZES = {
   'bor': [
     {
       id: 'bor-k01',
-      question: 'Mi a bőr elsődleges funkciója a fejezet szerint?',
+      question: 'Mi a bőr elsődleges funkciója?',
       options: [
         'A vér oxigénszintjének folyamatos szabályozása a bőrfelszínen keresztül történő gázcserével.',
         'A szervezet vízháztartásának kizárólagos szabályozása a vesék működésének teljes helyettesítésével.',
@@ -16247,7 +16247,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k02',
-      question: 'Milyen szerepet tölt be a bőr a hőszabályozásban a fejezet szerint?',
+      question: 'Milyen szerepet tölt be a bőr a hőszabályozásban?',
       options: [
         'A bőr alatti izomrostok folyamatos remegése tartja állandó szinten a testhőmérsékletet, függetlenül a külső hőmérséklettől.',
         'A faggyúmirigyek váladéka párologtatja el a hőt, hasonló módon, mint a verejtékmirigyek váladéka.',
@@ -16260,7 +16260,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k03',
-      question: 'Milyen ingerek érzékelésére specializálódtak a bőr receptorai a fejezet szerint?',
+      question: 'Milyen ingerek érzékelésére specializálódtak a bőr receptorai?',
       options: [
         'Kizárólag az egyensúlyi helyzet és a testhelyzet érzékelésére, a belső fül receptoraihoz hasonlóan.',
         'Kizárólag a fényingerek és a hangrezgések érzékelésére, hasonlóan a szem és a fül receptoraihoz.',
@@ -16273,7 +16273,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k04',
-      question: 'Miért függ össze szorosan a bőr védelmi, hőszabályozási és érzékelési funkciója a fejezet magyarázata szerint?',
+      question: 'Miért függ össze szorosan a bőr védelmi, hőszabályozási és érzékelési funkciója?',
       options: [
         'Mert mindhárom funkciót ugyanaz az egyetlen sejttípus, a melanocita látja el a bőr valamennyi rétegében.',
         'Mert a bőr rétegzett, sokféle sejttípust és mirigyet tartalmazó felépítése teszi lehetővé, hogy egyetlen szerv mindhárom, eltérő feladatot ellássa.',
@@ -16286,7 +16286,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k05',
-      question: 'Melyik három fő rétegből épül fel a bőr a fejezet szerint?',
+      question: 'Melyik három fő rétegből épül fel a bőr?',
       options: [
         'Irha, nyálkahártya és porcszövet, amelyek a testfelszín különböző pontjain váltják egymást.',
         'Felhám, verejtékmirigy-réteg és zsírréteg, amelyek egymástól élesen elkülönült szervekként működnek.',
@@ -16299,7 +16299,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k06',
-      question: 'Milyen szövettípusból épül fel a felhám (epidermisz) a fejezet szerint?',
+      question: 'Milyen szövettípusból épül fel a felhám (epidermisz)?',
       options: [
         'A felhám zsírszövetből épül fel, amely hőszigetelő és energiaraktározó szerepet tölt be.',
         'A felhám kötőszövetből épül fel, amely erekben és idegvégződésekben gazdag.',
@@ -16312,7 +16312,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k07',
-      question: 'Mi jellemzi az irhát (dermiszt) a fejezet szerint?',
+      question: 'Mi jellemzi az irhát (dermiszt)?',
       options: [
         'Kizárólag zsírsejtekből áll, amelyek hőszigetelő párnát képeznek a mélyebb szövetek felett.',
         'Hámszövetből áll, és elsősorban elszarusodott, elhalt sejtekből épül fel, amelyek folyamatosan leválnak.',
@@ -16325,7 +16325,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k08',
-      question: 'Milyen szerepet tölt be a bőr alatti kötőszövet (hypodermisz) a fejezet szerint?',
+      question: 'Milyen szerepet tölt be a bőr alatti kötőszövet (hypodermisz)?',
       options: [
         'A festéksejteket tartalmazza, amelyek az ultraibolya sugárzás elleni védelemért felelősek.',
         'Kizárólag a verejtékmirigyeket és a faggyúmirigyeket tartalmazza, más funkciója nincs.',
@@ -16338,10 +16338,10 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k09',
-      question: 'Hogyan tér el a bőr rétegeinek vastagsága a fejezet szerint a testtájak között?',
+      question: 'Hogyan tér el a bőr rétegeinek vastagsága a testtájak között?',
       options: [
         'A bőr vastagsága minden testtájon teljesen egyenletes, kivéve a tenyeret, amely vékonyabb, mint a szemhéj bőre.',
-        'A bőr vastagsága kizárólag az életkorral változik, a testtájak között a fejezet szerint nincs érdemi különbség.',
+        'A bőr vastagsága kizárólag az életkorral változik, a testtájak között nincs érdemi különbség.',
         'A szemhéjon a felhám és az irha is vastagabb, mint a talpon, mert ott kell a legerősebb védelmet biztosítania.',
         'A talpon és a tenyéren a felhám és az irha is vastagabb, mint a rendkívül vékony és rugalmas szemhéjbőrön.',
       ],
@@ -16377,7 +16377,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k12',
-      question: 'Milyen mirigyből fejlődött ki az evolúció során a tejmirigy a fejezet szerint?',
+      question: 'Milyen mirigyből fejlődött ki az evolúció során a tejmirigy?',
       options: [
         'Egy módosult faggyúmirigyből.',
         'A hasnyálmirigy egy módosult részéből.',
@@ -16385,12 +16385,12 @@ export const QUIZZES = {
         'Egy módosult verejtékmirigyből.',
       ],
       correctIndex: 3,
-      explanation: 'A tejmirigy a fejezet szerint egy módosult verejtékmirigyből fejlődött ki az evolúció során.',
+      explanation: 'A tejmirigy egy módosult verejtékmirigyből fejlődött ki az evolúció során.',
       level: 'kozep',
     },
     {
       id: 'bor-k13',
-      question: 'Hogyan zajlik a felhám megújulása a fejezet szerint?',
+      question: 'Hogyan zajlik a felhám megújulása?',
       options: [
         'A felhám megújulását kizárólag a faggyúmirigyek váladéka biztosítja, amely új sejteket juttat a felszínre.',
         'A felhám sejtjei a legfelső rétegben osztódnak, majd lefelé, az irha irányába vándorolva épülnek be a szövetbe.',
@@ -16403,7 +16403,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k14',
-      question: 'Mi a festéksejtek (melanociták) szerepe a fejezet szerint?',
+      question: 'Mi a festéksejtek (melanociták) szerepe?',
       options: [
         'Melanint termelnek, amely elnyeli az ultraibolya sugárzás egy részét, ezáltal védve a mélyebb bőrrétegeket és a sejtek genetikai állományát.',
         'Verejtéket termelnek, amely elpárolgásával hűti a testet magas hőmérséklet esetén.',
@@ -16416,7 +16416,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-k15',
-      question: 'Mi magyarázza a fejezet szerint az emberi faj bőrszín-skálájának (világostól sötétig terjedő) kialakulását?',
+      question: 'Mi magyarázza az emberi faj bőrszín-skálájának (világostól sötétig terjedő) kialakulását?',
       options: [
         'A faggyúmirigyek működésének intenzitásbeli különbségei, amelyek a bőr kiszáradás elleni védelmét szolgálják eltérő éghajlaton.',
         'A melanin mennyiségének genetikailag meghatározott különbségei, amelyek az adott terület napsugárzás-intenzitásához igazodó alkalmazkodásként alakultak ki.',
@@ -16455,7 +16455,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-e01',
-      question: 'Milyen receptortípusok alkotják együtt a bőr érzékelő funkcióját a kiegészítés szerint?',
+      question: 'Milyen receptortípusok alkotják együtt a bőr érzékelő funkcióját?',
       options: [
         'Kizárólag a melanocitákból átalakult receptorok, amelyek elsődlegesen az ultraibolya sugárzás érzékelésére specializálódtak.',
         'Két, egymással teljesen megegyező szerkezetű receptortípus, amelyek csak elhelyezkedésükben, de nem érzékenységükben térnek el.',
@@ -16468,7 +16468,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-e02',
-      question: 'Miért érzékenyebb és pontosabb a tapintásunk az ujjbegyeken és az ajkakon, mint a hát bőrén, a kiegészítés szerint?',
+      question: 'Miért érzékenyebb és pontosabb a tapintásunk az ujjbegyeken és az ajkakon, mint a hát bőrén,?',
       options: [
         'Mert ezeken a testtájakon a felhám vékonyabb, ezért a receptorok közvetlenül a testfelszínen helyezkednek el.',
         'Mert ezeken a testtájakon nincs szőrzet, és a szőrtüszők hiánya önmagában fokozza az érzékenységet.',
@@ -16481,7 +16481,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-e03',
-      question: 'Mi történik sejtszinten a napbarnulás során, a kiegészítés szerint?',
+      question: 'Mi történik sejtszinten a napbarnulás során,?',
       options: [
         'A melanociták az ultraibolya sugárzás hatására fokozott melanintermelésbe kezdenek, ami a bőr védekező válasza a további UV-károsodás ellen.',
         'Az irha erei kitágulnak, és a bennük megnövekedett vérmennyiség adja a bőr átmenetileg sötétebb színét.',
@@ -16494,7 +16494,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-e04',
-      question: 'Miért csak korlátozott védelmet nyújt a napbarnulás a kiegészítés szerint?',
+      question: 'Miért csak korlátozott védelmet nyújt a napbarnulás?',
       options: [
         'Mert a napbarnulás csak a felhám legalsó rétegében jelenik meg, ezért nem éri el az UV-sugárzás által veszélyeztetett sejteket.',
         'Mert a napbarnulás során termelt melanin mennyisége mindig túl alacsony ahhoz, hogy bármilyen érdemi UV-védelmet nyújtson.',
@@ -16507,7 +16507,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-e05',
-      question: 'Mit határoz meg a bőr UV-érzékenysége a melanin mennyisége mellett, a kiegészítés szerint?',
+      question: 'Mit határoz meg a bőr UV-érzékenysége a melanin mennyisége mellett,?',
       options: [
         'Azt, hogy az egyén tapintóreceptorai milyen sűrűn helyezkednek el a bőr felszínén, testtájanként eltérő módon.',
         'Azt, hogy az egyén milyen gyorsan képes izzadással hűteni a testét meleg időben, a melanintól függetlenül.',
@@ -16522,7 +16522,7 @@ export const QUIZZES = {
   'bor-gondozasa-vedelme': [
     {
       id: 'bor-gondozasa-vedelme-k01',
-      question: 'Milyen hosszú távú kockázatot hordoz a túlzott, védelem nélküli napozás a fejezet szerint?',
+      question: 'Milyen hosszú távú kockázatot hordoz a túlzott, védelem nélküli napozás?',
       options: [
         'Kizárólag a hajszálak színét változtatja meg tartósan, a bőr szerkezetét érdemben nem érinti.',
         'Fokozza a verejtékmirigyek és faggyúmirigyek működését, ami hosszú távon szárazabbá teszi a bőrt.',
@@ -16535,7 +16535,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k02',
-      question: 'Melyek a hatékony védekezés eszközei a napsugárzás ellen a fejezet szerint?',
+      question: 'Melyek a hatékony védekezés eszközei a napsugárzás ellen?',
       options: [
         'Kizárólag a faggyúmirigyek váladékának eltávolítása, amely önmagában is UV-védő hatású.',
         'Napvédő krém, a bőrt eltakaró öltözet, napszemüveg, valamint a déli, legerősebb sugárzású órákban a közvetlen napsütés kerülése.',
@@ -16548,7 +16548,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k03',
-      question: 'Kiknél különösen fontosak a napvédelmi intézkedések a fejezet szerint?',
+      question: 'Kiknél különösen fontosak a napvédelmi intézkedések?',
       options: [
         'A világos bőrű, kevesebb melanint termelő egyéneknél, akiknél a bőr UV-károsodás elleni természetes védelme eleve alacsonyabb.',
         'A sötét bőrű, sok melanint termelő egyéneknél, mivel esetükben a legmagasabb a bőrrák kialakulásának kockázata.',
@@ -16561,7 +16561,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k04',
-      question: 'Milyen elvet követ a fejezet szerint a helyes bőrápolás?',
+      question: 'Milyen elvet követ a helyes bőrápolás?',
       options: [
         'Kizárólag a hidratálás, mert a tisztálkodás önmagában károsítja a bőr természetes védőrétegét.',
         'A tisztálkodás teljes mellőzése, mert a bőr természetes faggyúrétege önmagában is elegendő védelmet nyújt.',
@@ -16574,7 +16574,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k05',
-      question: 'Milyen összefüggést fogalmaz meg a fejezet a hajápolásról?',
+      question: 'Milyen kapcsolat van a fejbőr ápolása és a bőr általános ápolási elvei között?',
       options: [
         'A haj és a fejbőr teljesen független a bőr többi részétől, ezért rá más ápolási elvek vonatkoznak.',
         'A fejbőr is a bőr része, amelyre ugyanazok az általános bőrápolási elvek érvényesek, ezért óvni kell a túlzott vegyi és mechanikai igénybevételtől.',
@@ -16587,7 +16587,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k06',
-      question: 'Milyen szerepet tölt be a bőr felszínén élő baktériumflóra a fejezet szerint?',
+      question: 'Milyen szerepet tölt be a bőr felszínén élő baktériumflóra?',
       options: [
         'Kizárólag betegségeket okoz, ezért a bőr rendszeres fertőtlenítése minden esetben szükséges lenne.',
         'Kizárólag a faggyúmirigyek működését gátolja, ezáltal fokozza a bőr kiszáradásának kockázatát.',
@@ -16600,7 +16600,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k07',
-      question: 'Milyen kapcsolatot alkot a bőr és a rajta élő baktériumflóra a fejezet szerint?',
+      question: 'Milyen kapcsolatot alkot a bőr és a rajta élő baktériumflóra?',
       options: [
         'Parazitizmust: a baktériumok kizárólag a bőr kárára élnek, anélkül hogy bármilyen hasznot nyújtanának cserébe.',
         'Versengést: a baktériumok és a bőrsejtek folyamatosan ugyanazokért a tápanyagokért versengenek, kölcsönös kár nélkül.',
@@ -16613,7 +16613,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k08',
-      question: 'Hogyan keletkezik az anyajegy a fejezet szerint?',
+      question: 'Hogyan keletkezik az anyajegy?',
       options: [
         'A humán papillomavírus fertőzés által kiváltott, helyi hámburjánzásból.',
         'A faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből.',
@@ -16626,7 +16626,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k09',
-      question: 'Mi okozza a szemölcsöt, és milyen jellegű bőrelváltozás a fejezet szerint?',
+      question: 'Mi okozza a szemölcsöt, és milyen jellegű bőrelváltozás?',
       options: [
         'Baktériumfertőzés okozza, amely kizárólag nyílt sebeken keresztül terjedhet egyik személyről a másikra.',
         'A festéksejtek helyi felszaporodása okozza, amely nem fertőző, és kizárólag genetikailag öröklődik.',
@@ -16639,7 +16639,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k10',
-      question: 'Hogyan alakul ki a mitesszer a fejezet szerint?',
+      question: 'Hogyan alakul ki a mitesszer?',
       options: [
         'A humán papillomavírus fertőzésből, amely a felhám sejtjeinek burjánzását idézi elő.',
         'A faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből.',
@@ -16652,7 +16652,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k11',
-      question: 'Hogyan jön létre a pattanás a fejezet szerint, és miért gyakori a serdülőkorban?',
+      question: 'Hogyan jön létre a pattanás, és miért gyakori a serdülőkorban?',
       options: [
         'A verejtékmirigyek túlzott működése hozza létre, amelyet a serdülőkori fokozott izzadás vált ki.',
         'A melanociták túlműködése hozza létre, amely serdülőkorban a hormonális változások miatt átmenetileg felerősödik.',
@@ -16665,7 +16665,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k12',
-      question: 'Hogyan keletkezik a vízhólyag a fejezet szerint?',
+      question: 'Hogyan keletkezik a vízhólyag?',
       options: [
         'A festéksejtek helyi felszaporodásából és az általuk termelt melanin felhalmozódásából.',
         'Az irha ereinek megsérüléséből és az azokból kiszivárgó vérből, jellemzően mélyebb, nyomó jellegű sérülés hatására.',
@@ -16678,7 +16678,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k13',
-      question: 'Miben tér el a vérhólyag a vízhólyagtól a fejezet szerint?',
+      question: 'Miben tér el a vérhólyag a vízhólyagtól?',
       options: [
         'A vérhólyag mélyebb, az irha ereit is érintő sérülésnél alakul ki, ezért tartalma vér, nem csak szövetnedv.',
         'A vérhólyag mindig fájdalommentes, mivel csak az irha alatti, érzéketlen rétegeket érinti.',
@@ -16691,7 +16691,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k14',
-      question: 'Miért veszélyes az égési sérülés a fejezet szerint?',
+      question: 'Miért veszélyes az égési sérülés?',
       options: [
         'A bőr a sérülés helyén elveszti a kórokozók elleni védekező képességét, és a kiterjedt égés jelentős folyadékveszteséggel is járhat, ami veszélyeztetheti a keringést.',
         'Mert az égés hatására a bőr azonnal elveszti a melanintermelő képességét, ami tartós UV-érzékenységhez vezet.',
@@ -16704,7 +16704,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k15',
-      question: 'Mikor igényelnek az égési sérülések a fejezet szerint mindenképpen azonnali szakorvosi ellátást?',
+      question: 'Mikor igényelnek az égési sérülések mindenképpen azonnali szakorvosi ellátást?',
       options: [
         'Nagy kiterjedésű égési sérülés esetén, a fájdalom mértékétől függetlenül is.',
         'Kizárólag akkor, ha a sérült erős fájdalmat érez, kiterjedéstől függetlenül.',
@@ -16717,7 +16717,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k16',
-      question: 'Mi a kisebb égési sérülés ellátásának első lépése a fejezet szerint?',
+      question: 'Mi a kisebb égési sérülés ellátásának első lépése?',
       options: [
         'Zsíros krém vagy vaj azonnali felkenése a sérült területre, hogy megelőzze a kiszáradást.',
         'A sérült terület azonnali, szoros bekötözése, hogy megakadályozza a hólyag kialakulását.',
@@ -16730,7 +16730,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-k17',
-      question: 'Miért fontos a kialakuló hólyagot érintetlenül hagyni égési sérülésnél a fejezet szerint?',
+      question: 'Miért fontos a kialakuló hólyagot érintetlenül hagyni égési sérülésnél?',
       options: [
         'Mert a hólyag tartalma segíti a sérült terület hőszabályozását, felszakítva ez a funkció megszűnne.',
         'Mert a hólyag automatikusan felszívódik, felszakítása feleslegesen fájdalmas beavatkozás lenne.',
@@ -16743,7 +16743,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-e01',
-      question: 'Miben tér el az UVA-sugárzás hatása az UVB-sugárzásétól a fejezet szerint?',
+      question: 'Miben tér el az UVA-sugárzás hatása az UVB-sugárzásétól?',
       options: [
         'Az UVA- és az UVB-sugárzás hatása gyakorlatilag megegyezik, mindkettő egyformán mélyre hatol és egyformán okoz napégést.',
         'Az UVB-sugárzás hatol mélyebbre és felelős a bőr öregedéséért, míg az UVA a felhám szintjén okoz napégést.',
@@ -16756,7 +16756,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-e02',
-      question: 'Miért érheti a bőrt jelentős UV-károsodás borult időben vagy ablakon keresztül is, a fejezet szerint?',
+      question: 'Miért érheti a bőrt jelentős UV-károsodás borult időben vagy ablakon keresztül is,?',
       options: [
         'Mert a felhő és az üveg az UVB-sugárzás nagy részét megszűri, de az UVA-sugárzást jóval kevésbé, így az öregedést okozó UVA-károsodás látható napégés nélkül is felhalmozódhat.',
         'Mert a felhő és az üveg az UVA-sugárzás nagy részét megszűri, de az UVB-sugárzást jóval kevésbé, ezért fokozott a napégés kockázata.',
@@ -16769,7 +16769,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-e03',
-      question: 'Miért fontosabb a széles spektrumú (UVA és UVB elleni) napvédelem, mint kizárólag a napégés elleni védelem, a fejezet szerint?',
+      question: 'Miért fontosabb a széles spektrumú (UVA és UVB elleni) napvédelem, mint kizárólag a napégés elleni védelem,?',
       options: [
         'Mert a széles spektrumú védelem teljesen megszünteti a napbarnulás jelenségét, míg a szűkebb spektrumú védelem nem.',
         'Mert az UVB-sugárzás egyáltalán nem okoz valódi károsodást, csak átmeneti, jelentéktelen bőrpírt.',
@@ -16782,9 +16782,9 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-e04',
-      question: 'Miért kockázatos a szolárium használata a fejezet szerint?',
+      question: 'Miért kockázatos a szolárium használata?',
       options: [
-        'Mert a szolárium kizárólag UVA-sugárzást bocsát ki, amely a fejezet szerint az egyetlen ártalmatlan sugárzástípus.',
+        'Mert a szolárium kizárólag UVA-sugárzást bocsát ki, amely az egyetlen ártalmatlan sugárzástípus.',
         'Mert a mesterségesen kiváltott barnulás ugyanúgy a bőrsejtek genetikai károsodásán keresztül jön létre, mint a természetes napsugárzás okozta barnulás.',
         'Mert a szolárium hatására a bőr elveszíti a melanintermelő képességét, ami teljesen megszünteti a természetes UV-védelmet.',
         'Mert a szolárium használata mindig azonnali, súlyos égési sérülést okoz, szemben a fokozatos természetes napozással.',
@@ -16795,7 +16795,7 @@ export const QUIZZES = {
     },
     {
       id: 'bor-gondozasa-vedelme-e05',
-      question: 'Miért játszik nagyobb szerepet a bőrrák kialakulásában az UVB-sugárzás, mint az UVA, annak ellenére, hogy mindkettő károsítja a bőrt, a fejezet szerint?',
+      question: 'Miért játszik nagyobb szerepet a bőrrák kialakulásában az UVB-sugárzás, mint az UVA, annak ellenére, hogy mindkettő károsítja a bőrt,?',
       options: [
         'Mert az UVB-sugárzás a felhám szintjén közvetlenül okoz genetikai károsodást és napégést, míg az UVA hatása elsősorban az öregedésben (ráncosodásban) nyilvánul meg.',
         'Mert az UVB-sugárzás sokkal mélyebbre hatol a bőrbe, mint az UVA, ezért közvetlenül az irha ereit károsítja.',
@@ -16810,7 +16810,7 @@ export const QUIZZES = {
   'vazrendszer': [
     {
       id: 'vazrendszer-k01',
-      question: 'Milyen funkciókat lát el egyszerre az emberi csontváz a szövegben leírtak szerint?',
+      question: 'Milyen funkciókat lát el egyszerre az emberi csontváz?',
       options: [
         'Kizárólag ásványi anyagok raktározására szolgál, a mozgást teljes egészében az izomrendszer végzi önállóan',
         'Kizárólag mechanikai tartást biztosít, más biológiai szerepe nincs a szervezetben',
@@ -16836,7 +16836,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k03',
-      question: 'A koponya mely két fő részre osztható a szöveg szerint?',
+      question: 'A koponya mely két fő részre osztható?',
       options: [
         'Varratos koponyarészre és ízületes koponyarészre, a mozgathatóság alapján elkülönítve',
         'Agykoponyára és arckoponyára, amelyek közül az előbbi az agyat védi, az utóbbi az arc formáját adja',
@@ -16849,7 +16849,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k04',
-      question: 'Milyen szakaszokra (tájékokra) tagolódik a gerincoszlop a szöveg alapján?',
+      question: 'Milyen szakaszokra (tájékokra) tagolódik a gerincoszlop?',
       options: [
         'Nyaki, mellkasi, hasi és medencei szakaszra, a testüregeknek megfelelően',
         'Nyaki, háti, ágyéki és lábszári szakaszra, a végtagokhoz való kapcsolódás alapján',
@@ -16862,7 +16862,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k05',
-      question: 'Melyik állítás írja le helyesen egy csigolya felépítését a szöveg szerint?',
+      question: 'Melyik állítás írja le helyesen egy csigolya felépítését?',
       options: [
         'Egy tömör csontlemezből és az ahhoz kapcsolódó porcos ízületi felszínből épül fel',
         'Egy csigolyatestből, egy azt hátulról körülölelő csigolyaívből és egy hátrafelé kiálló tövisnyúlványból áll',
@@ -16875,7 +16875,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k06',
-      question: 'Milyen összefüggés áll fenn a gerincoszlop kettős S-alakú görbülete és a kétlábon járás között a szöveg szerint?',
+      question: 'Milyen összefüggés áll fenn a gerincoszlop kettős S-alakú görbülete és a kétlábon járás között?',
       options: [
         'A görbület csak esztétikai jelentőségű, a súlyeloszlásban nincs szerepe',
         'A görbület egyenletesebben osztja el a felsőtest súlyát és a járás közbeni rázkódást, mint egy egyenes gerincoszlop tenné',
@@ -16888,7 +16888,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k07',
-      question: 'Milyen csontok alkotják a mellkast a szöveg szerint?',
+      question: 'Milyen csontok alkotják a mellkast?',
       options: [
         'Kizárólag a szegycsont, amelyhez az izmok közvetlenül, csontkapcsolódás nélkül tapadnak',
         'A lapocka és a bordapár, a szegycsont nélkül, amely csak a hasüreget védi',
@@ -16914,7 +16914,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k09',
-      question: 'Mi a szerves alkotók (elsősorban a kollagén) szerepe a csont felépítésében a szöveg szerint?',
+      question: 'Mi a szerves alkotók (elsősorban a kollagén) szerepe a csont felépítésében?',
       options: [
         'Ez alakítja ki a csont üreges, csöves szerkezetét',
         'Ez felelős a csontvelő védelméért kizárólagosan',
@@ -16953,7 +16953,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k12',
-      question: 'Mi jellemzi a hosszú csöves csontok (pl. a combcsont) felépítését a szöveg szerint?',
+      question: 'Mi jellemzi a hosszú csöves csontok (pl. a combcsont) felépítését?',
       options: [
         'Teljes egészében tömör csontanyagból állnak, csontvelő nélkül, ezért különösen nehezek',
         'Kizárólag porcszövetből épülnek fel, amely fokozatosan csontosodik el felnőttkorra',
@@ -16979,7 +16979,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k14',
-      question: 'Az ízület felépítésében mi az ízületi folyadék szerepe a szöveg szerint?',
+      question: 'Az ízület felépítésében mi az ízületi folyadék szerepe?',
       options: [
         'Kizárólag a csontvégek súrlódásának csökkentésére szolgál, tápanyagszerepe nincs',
         'Kizárólag a csontok táplálását végzi, kenőanyagként nem funkcionál',
@@ -16992,7 +16992,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k15',
-      question: 'Melyik csontsor felel meg egymásnak a felső és az alsó végtagon a szöveg szerinti felsorolásban?',
+      question: 'Melyik csontsor felel meg egymásnak a felső és az alsó végtagon?',
       options: [
         'Felkarcsont a combcsontnak, orsócsont és singcsont a sípcsontnak és a szárkapocscsontnak',
         'Ujjperecek a tövisnyúlványoknak, kéztőcsontok a csigolyatestnek',
@@ -17005,7 +17005,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k16',
-      question: 'Mi a függesztőövek szerepe a szöveg szerint, és melyik csontok tartoznak a vállövhöz?',
+      question: 'Mi a függesztőövek szerepe, és melyik csontok tartoznak a vállövhöz?',
       options: [
         'A végtagokat kapcsolják a törzshöz; a vállövet a kulcscsont és a lapocka alkotja',
         'A csigolyákat kapcsolják egymáshoz; a vállövet a felkarcsont és az orsócsont alkotja',
@@ -17018,7 +17018,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-k17',
-      question: 'Miben tér el jellegzetesen a férfi és a női medence felépítése a szöveg szerint?',
+      question: 'Miben tér el jellegzetesen a férfi és a női medence felépítése?',
       options: [
         'A férfi medence szélesebb és nyitottabb az izomtömeg miatt, a női medence keskenyebb és zártabb',
         'A női medence szélesebb és nyitottabb a szülés miatt, a férfi medence keskenyebb és zártabb',
@@ -17031,7 +17031,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-e01',
-      question: 'Milyen élettani ok áll a csontritkulás (oszteoporózis) jelenségének hátterében a szöveg szerint?',
+      question: 'Milyen élettani ok áll a csontritkulás (oszteoporózis) jelenségének hátterében?',
       options: [
         'A csontok ásványianyag-tartalma és sűrűsége kórosan lecsökken, ezáltal a csontok törékennyé válnak',
         'A csontvelő fokozott vérsejtképzése miatt a csontok belső üregei kitágulnak és elvékonyodnak',
@@ -17044,7 +17044,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-e02',
-      question: 'Miért érinti a csontritkulás a szöveg szerint különösen gyakran a nőket a menopauza után?',
+      question: 'Miért érinti a csontritkulás különösen gyakran a nőket a menopauza után?',
       options: [
         'Mert a menopauza után a nők medencéje fokozatosan visszaalakul férfias formájúra',
         'Mert a menopauza után a kollagén aránya hirtelen lecsökken, míg a szervetlen alkotók aránya nem változik',
@@ -17070,7 +17070,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-e04',
-      question: 'Milyen vázrendszeri átalakulások kapcsolódtak az emberi kétlábon járás (bipedális mozgás) evolúciós kialakulásához a szöveg szerint?',
+      question: 'Milyen vázrendszeri átalakulások kapcsolódtak az emberi kétlábon járás (bipedális mozgás) evolúciós kialakulásához?',
       options: [
         'A bordapár számának csökkenése, amely megkönnyítette a mellkas mozgását járás közben',
         'Az arckoponya csontjainak megnövekedése, amely a rágás hatékonyságát javította a járás közben',
@@ -17083,7 +17083,7 @@ export const QUIZZES = {
     },
     {
       id: 'vazrendszer-e05',
-      question: 'Milyen evolúciós előnnyel járt az emberelődök számára a kétlábon járás kialakulása a szöveg szerint?',
+      question: 'Milyen evolúciós előnnyel járt az emberelődök számára a kétlábon járás kialakulása?',
       options: [
         'Felszabadította a kezeket más feladatokra, például eszközhasználatra a mozgás közben',
         'Lehetővé tette a koponyavarratok végleges összeforrását már gyermekkorban',
@@ -17101,7 +17101,7 @@ export const QUIZZES = {
         'Mert a csontritkulás kizárólag genetikai okokra vezethető vissza, a csontösszetétel változásától teljesen függetlenül',
         'Mert a csontritkulás valójában a kollagén túlzott felhalmozódásának eredménye, nem a szervetlen alkotók arányváltozásáé',
         'Mert a csontritkulás csak a hosszú csöves csontok szerkezeti hibája, más csontokat nem érint',
-        'Mert a szöveg szerint a csontösszetétel életkorral történő eltolódása és a hormonális hatások (pl. menopauza) együttesen, magyarázható módon vezetnek a csontsűrűség csökkenéséhez',
+        'Mert a csontösszetétel életkorral történő eltolódása és a hormonális hatások (pl. menopauza) együttesen, magyarázható módon vezetnek a csontsűrűség csökkenéséhez',
       ],
       correctIndex: 3,
       explanation: 'A csontritkulás hátterében a csontösszetétel életkorral bekövetkező eltolódása és a hormonális hatások (pl. menopauza) állnak, ezek együtt magyarázzák a csontsűrűség kóros csökkenését.',
@@ -17124,7 +17124,7 @@ export const QUIZZES = {
   'izomrendszer': [
     {
       id: 'izomrendszer-k01',
-      question: 'Mi a záróizmok (pl. a szájnyílás vagy a végbélnyílás körüli izmok) feladata a szöveg szerint?',
+      question: 'Mi a záróizmok (pl. a szájnyílás vagy a végbélnyílás körüli izmok) feladata?',
       options: [
         'Az arckifejezések létrehozása az arcbőr mozgatásával',
         'A törzs előrehajlításának végrehajtása',
@@ -17137,7 +17137,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k02',
-      question: 'Miben tér el a mimikai izmok tapadása a legtöbb más vázizométól a szöveg szerint?',
+      question: 'Miben tér el a mimikai izmok tapadása a legtöbb más vázizométól?',
       options: [
         'A mimikai izmok az arc bőrébe tapadnak, míg a legtöbb más vázizom jellemzően két csonthoz kapcsolódik',
         'A mimikai izmok nem rendelkeznek ínnal, míg a legtöbb más vázizom mindkét végén ínnal rögzül',
@@ -17150,7 +17150,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k03',
-      question: 'Milyen szerepet töltenek be a bordaközi izmok és a rekeszizom a szöveg szerint?',
+      question: 'Milyen szerepet töltenek be a bordaközi izmok és a rekeszizom?',
       options: [
         'Az arckifejezések létrehozásában vesznek részt, a mimikai izmokkal együtt',
         'A légzésben vesznek részt: a bordaközi izmok a bordákat mozgatják, a rekeszizom pedig a mellüreget és a hasüreget választja el',
@@ -17163,7 +17163,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k04',
-      question: 'Melyik izompár és funkció szerepel helyesen a szöveg szerinti felsorolásban?',
+      question: 'Melyik izompár és funkció szerepel helyesen a felsorolásban?',
       options: [
         'A mellizom a testnyílások elzárását végzi',
         'A fejbiccentő izom a medencefeneket alkotja',
@@ -17171,7 +17171,7 @@ export const QUIZZES = {
         'A hasizmok a törzs előrehajlításában vesznek részt',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a hasizmok vesznek részt például a törzs előrehajlításában, míg a gátizmok a medencefeneket alkotják, a fejbiccentő izom pedig a fej fordítását és hajlítását végzi.',
+      explanation: 'A hasizmok vesznek részt például a törzs előrehajlításában, míg a gátizmok a medencefeneket alkotják, a fejbiccentő izom pedig a fej fordítását és hajlítását végzi.',
       level: 'kozep',
     },
     {
@@ -17189,7 +17189,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k06',
-      question: 'Miért van szükség minden mozgásirányhoz egy ellentétes hatású (antagonista) izomra a szöveg magyarázata szerint?',
+      question: 'Miért van szükség minden mozgásirányhoz egy ellentétes hatású (antagonista) izomra?',
       options: [
         'Mert az ízületi tok csak akkor marad épen, ha két izom egyszerre feszül neki',
         'Mert az izmok csak akkor tudnak összehúzódni, ha egy másik izom éppen szintén összehúzódik velük párhuzamosan',
@@ -17202,7 +17202,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k07',
-      question: 'Melyik hierarchikus sorrend írja le helyesen a vázizom felépítését a szöveg szerint?',
+      question: 'Melyik hierarchikus sorrend írja le helyesen a vázizom felépítését?',
       options: [
         'Izomrost (izomsejt) → izomköteg → izompálya',
         'Izomköteg → izompálya → izomrost',
@@ -17215,7 +17215,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k08',
-      question: 'Mi rögzíti az izompályát (a teljes izmot) a csontvázhoz a szöveg szerint?',
+      question: 'Mi rögzíti az izompályát (a teljes izmot) a csontvázhoz?',
       options: [
         'A kötőszöveti hártya, amely kizárólag az izomrostokat veszi körül',
         'Az ízületi tok, amely körbezárja az egész izmot',
@@ -17241,7 +17241,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k10',
-      question: 'Mi a bemelegítés célja a szöveg szerint?',
+      question: 'Mi a bemelegítés célja?',
       options: [
         'Az izmok, ízületek fokozatos felkészítése a terhelésre, csökkentve a sérülések kockázatát és javítva a teljesítőképességet',
         'Az izomláz azonnali, teljes megszüntetése edzés előtt',
@@ -17254,7 +17254,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k11',
-      question: 'Mi a leghatékonyabb módja az izomláz megszüntetésének a szöveg szerint?',
+      question: 'Mi a leghatékonyabb módja az izomláz megszüntetésének?',
       options: [
         'A könnyű, fokozatos mozgás, a nyújtás és a megfelelő pihenés',
         'A teljes mozgáshiány, amíg a fájdalom teljesen el nem múlik',
@@ -17262,12 +17262,12 @@ export const QUIZZES = {
         'A további, még intenzívebb terhelés, hogy az izom "átedződjön" rajta',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerint a könnyű, fokozatos mozgás, a nyújtás és a megfelelő pihenés a leghatékonyabb - sem a teljes mozgáshiány, sem a további túlterhelés nem segít.',
+      explanation: 'A könnyű, fokozatos mozgás, a nyújtás és a megfelelő pihenés a leghatékonyabb - sem a teljes mozgáshiány, sem a további túlterhelés nem segít.',
       level: 'kozep',
     },
     {
       id: 'izomrendszer-k12',
-      question: 'Mi az izomtónus a szöveg megfogalmazása szerint?',
+      question: 'Mi az izomtónus?',
       options: [
         'Az izom teljes, tudatosan kiváltott összehúzódása mozgás közben',
         'Az izom nyugalmi állapotban is fennálló, enyhe feszülési állapota',
@@ -17280,7 +17280,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k13',
-      question: 'Miért fontos az izomtónus a testtartás fenntartásában a szöveg szerint?',
+      question: 'Miért fontos az izomtónus a testtartás fenntartásában?',
       options: [
         'Mert enélkül a kötőszöveti hártyák nem védenék az izomrostokat',
         'Mert enélkül a test összeroskadna a gravitáció hatására',
@@ -17293,7 +17293,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k14',
-      question: 'Mi különbözteti meg az izomtónust a tudatosan kiváltott, teljes izomösszehúzódástól a szöveg szerint?',
+      question: 'Mi különbözteti meg az izomtónust a tudatosan kiváltott, teljes izomösszehúzódástól?',
       options: [
         'Az izomtónust az idegrendszer folyamatosan, akaratlanul szabályozza, még alvás közben is',
         'Az izomtónus kizárólag a mimikai izmokra jellemző, más izmoknál nem fordul elő',
@@ -17319,7 +17319,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-k16',
-      question: 'Melyik izompár szerepel példaként a hajlító-feszítő izompárra a szöveg (és a táblázat) szerint?',
+      question: 'Melyik izompár szerepel példaként a hajlító-feszítő izompárra?',
       options: [
         'A mimikai izmok és a záróizmok',
         'A bordaközi izmok és a rekeszizom',
@@ -17327,12 +17327,12 @@ export const QUIZZES = {
         'A kar kétfejű (bicepsz) és háromfejű (tricepsz) izma',
       ],
       correctIndex: 3,
-      explanation: 'A táblázat és a szöveg is a kar hajlító kétfejű (bicepsz) és feszítő háromfejű (tricepsz) izmát adja meg példaként az antagonista izompárra.',
+      explanation: 'A táblázat a kar hajlító kétfejű (bicepsz) és feszítő háromfejű (tricepsz) izmát adja meg példaként az antagonista izompárra.',
       level: 'kozep',
     },
     {
       id: 'izomrendszer-k17',
-      question: 'Mi hozza létre a mozgást az emberi testben a szöveg bevezetője szerint, mivel a csontváz önmagában mozdulatlan?',
+      question: 'Mi hozza létre a mozgást az emberi testben, mivel a csontváz önmagában mozdulatlan?',
       options: [
         'A hozzá kapcsolódó izmok összehúzódása',
         'A csontok folyamatos, önálló elmozdulása egymáshoz képest',
@@ -17358,7 +17358,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-e02',
-      question: 'Milyen összefüggés van az erőkar hossza és a mozgás jellemzői között a szöveg szerint?',
+      question: 'Milyen összefüggés van az erőkar hossza és a mozgás jellemzői között?',
       options: [
         'Rövidebb erőkar esetén nagyobb erő szükséges, de a végtag távolabbi pontja gyorsabban és nagyobb távolságot mozdul el',
         'Az erőkar hossza nincs hatással sem a szükséges erőre, sem a mozgás sebességére',
@@ -17384,7 +17384,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-e04',
-      question: 'Milyen szerepet játszanak a kalciumionok (Ca²⁺) az izomösszehúzódás folyamatában a szöveg szerint?',
+      question: 'Milyen szerepet játszanak a kalciumionok (Ca²⁺) az izomösszehúzódás folyamatában?',
       options: [
         'Ezek biztosítják közvetlenül az izom energiaellátását ATP helyett',
         'Az idegi ingerület hatására szabadulnak fel, és teszik lehetővé az aktin és a miozin kapcsolódását',
@@ -17397,7 +17397,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-e05',
-      question: 'Miért fontos a kreatin-foszfát és a mioglobin szerepe az izom működésében a szöveg szerint?',
+      question: 'Miért fontos a kreatin-foszfát és a mioglobin szerepe az izom működésében?',
       options: [
         'A kreatin-foszfát az aktin, a mioglobin pedig a miozin működését gátolja terhelés közben',
         'A kreatin-foszfát az ATP gyors pótlását segíti, a mioglobin pedig az oxigén rövid távú tárolását végzi az izomban',
@@ -17410,7 +17410,7 @@ export const QUIZZES = {
     },
     {
       id: 'izomrendszer-e06',
-      question: 'Mi az izomláz kialakulásának valódi oka a szöveg szerint, szemben az elterjedt, de téves tejsav-magyarázattal?',
+      question: 'Mi az izomláz kialakulásának valódi oka, szemben az elterjedt, de téves tejsav-magyarázattal?',
       options: [
         'A mioglobin lebomlása az izomsejtekben, amely oxigénhiányt okoz',
         'A szokatlan, intenzív terhelés hatására az izomrostokban kialakuló apró sérülések és az azt követő gyulladásos folyamat',
@@ -17438,7 +17438,7 @@ export const QUIZZES = {
   'mozgasi-rendszer-egeszsegtana': [
     {
       id: 'mozgasi-rendszer-egeszsegtana-k01',
-      question: 'Milyen hatással van a helyes testtartás megőrzése a mozgási rendszerre a szöveg szerint?',
+      question: 'Milyen hatással van a helyes testtartás megőrzése a mozgási rendszerre?',
       options: [
         'Növeli az ízületek mozgástartományát, de nincs hatással a gerincoszlopra',
         'Csökkenti a gerincoszlopra és az ízületekre nehezedő egyenlőtlen terhelést, ezáltal megelőzi a hosszú távú károsodásokat',
@@ -17451,7 +17451,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k02',
-      question: 'Milyen jótékony hatása van a rendszeres, mértékletes testedzésnek a csontokra a szöveg szerint?',
+      question: 'Milyen jótékony hatása van a rendszeres, mértékletes testedzésnek a csontokra?',
       options: [
         'Kizárólag az izmok erősítésére hat, a csontokra nincs kimutatható hatása',
         'Csökkenti a csontok szervetlen alkotóinak arányát, ami rugalmasabbá teszi őket',
@@ -17464,7 +17464,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k03',
-      question: 'Miért fontos a fokozatosság elve a testedzésben a szöveg szerint?',
+      question: 'Miért fontos a fokozatosság elve a testedzésben?',
       options: [
         'Mert csak a fokozatosan növelt terhelés hoz létre izomtónust, hirtelen terhelés esetén az izomtónus megszűnik',
         'Mert a fokozatosság kizárólag a csontritkulás megelőzésében játszik szerepet, sérülések elkerülésében nem',
@@ -17477,7 +17477,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k04',
-      question: 'Mi a törés jellemző tünete a szöveg szerint?',
+      question: 'Mi a törés jellemző tünete?',
       options: [
         'Erős fájdalom, duzzanat, deformitás és mozgásképtelenség',
         'Csak korlátozott mozgástartomány, fájdalom nélkül',
@@ -17490,7 +17490,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k05',
-      question: 'Miért kiemelten veszélyes a gerincsérülés a szöveg szerint, és mit kell tenni ilyen gyanú esetén?',
+      question: 'Miért kiemelten veszélyes a gerincsérülés, és mit kell tenni ilyen gyanú esetén?',
       options: [
         'Mert kizárólag időskorban fordulhat elő, fiataloknál nem jelent veszélyt',
         'Mert a gerincvelő is károsodhat, ezért a sérültet lehetőleg egyáltalán nem szabad mozgatni a szakszerű ellátás megérkezéséig',
@@ -17503,7 +17503,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k06',
-      question: 'Mi a ficam a szöveg definíciója szerint?',
+      question: 'Mi a ficam?',
       options: [
         'A lábboltozat kóros belapulása, amely a terhelés-elosztást rontja',
         'Az ízületi felszínek átmeneti, kóros kimozdulása egymáshoz képest, erős fájdalommal és látható deformitással',
@@ -17516,7 +17516,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k07',
-      question: 'Melyik jel utalhat a szöveg szerint csípőficamra?',
+      question: 'Melyik jel utalhat csípőficamra?',
       options: [
         'A láb aszimmetrikus hossza, a csípőízület korlátozott mozgathatósága és mozgatáskor jelentkező kattanó hang',
         'A gerincoszlop oldalirányú elgörbülése, deformitás nélkül',
@@ -17529,7 +17529,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k08',
-      question: 'Miért kiemelten fontos a veleszületett csípőficam korai felismerése és kezelése a szöveg szerint?',
+      question: 'Miért kiemelten fontos a veleszületett csípőficam korai felismerése és kezelése?',
       options: [
         'Mert kezeletlenül azonnal csonttöréshez vezet a csecsemőknél',
         'Mert kezeletlenül a gerincoszlop görbületét szünteti meg véglegesen',
@@ -17542,7 +17542,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k09',
-      question: 'Mi a fő különbség a ficam és a rándulás között a comparisonTable és a szöveg szerint?',
+      question: 'Mi a fő különbség a ficam és a rándulás között a comparisonTable és?',
       options: [
         'Ficamnál az ízületi felszínek mozdulnak ki, jellemzően látható deformitással, rándulásnál viszont a csontok a helyükön maradnak',
         'Ficamnál nincs fájdalom, rándulásnál viszont mindig erős fájdalom jelentkezik',
@@ -17555,7 +17555,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k10',
-      question: 'Mi történik pontosan az ízülettel rándulás esetén a szöveg szerint?',
+      question: 'Mi történik pontosan az ízülettel rándulás esetén?',
       options: [
         'A csont folytonossága szakad meg, ami erős fájdalommal és deformitással jár',
         'Az izomrostokban mikroszkopikus sérülések és gyulladás alakul ki',
@@ -17568,7 +17568,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k11',
-      question: 'Mi a lúdtalp a szöveg szerint, és milyen hosszú távú következménye lehet?',
+      question: 'Mi a lúdtalp, és milyen hosszú távú következménye lehet?',
       options: [
         'Az ízületi szalagok túlnyúlása, amely csak a boka mozgatásában okoz nehézséget',
         'A lábboltozat kóros belapulása, amely hosszú távon a boka, a térd és a gerincoszlop terhelésében is problémákat okozhat',
@@ -17581,7 +17581,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k12',
-      question: 'Mi a gerincferdülés (scoliosis) a szöveg definíciója szerint?',
+      question: 'Mi a gerincferdülés (scoliosis)?',
       options: [
         'A gerincoszlop előre-hátra irányú, egészséges, kettős S-alakú görbülete',
         'A csigolyák közötti ízületi kapcsolódás teljes elvesztése',
@@ -17594,7 +17594,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k13',
-      question: 'Milyen anyagokat/szereket alkalmaznak szakszerűtlenül egyes sportolók testépítés (izomtömeg-növelés) céljából a szöveg szerint?',
+      question: 'Milyen anyagokat/szereket alkalmaznak szakszerűtlenül egyes sportolók testépítés (izomtömeg-növelés) céljából?',
       options: [
         'Kizárólag vitaminkészítményeket, amelyeknek nincs hormonális hatásuk',
         'Kalcium-sókat tartalmazó készítményeket, amelyek a csontok szilárdságát növelik',
@@ -17602,12 +17602,12 @@ export const QUIZZES = {
         'Túlzott fehérjebevitelt biztosító táplálék-kiegészítőket, illetve tiltott, hormonális hatású szereket, például anabolikus szteroidokat',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint egyes sportolók szakszerűtlenül alkalmazott, túlzott fehérjebevitelt adó táplálék-kiegészítőket vagy tiltott, hormonális hatású szereket (pl. anabolikus szteroidokat) használnak.',
+      explanation: 'Egyes sportolók szakszerűtlenül alkalmazott, túlzott fehérjebevitelt adó táplálék-kiegészítőket vagy tiltott, hormonális hatású szereket (pl. anabolikus szteroidokat) használnak.',
       level: 'kozep',
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k14',
-      question: 'Milyen súlyos következményekkel járhat az anabolikus szteroidok használata a szöveg szerint?',
+      question: 'Milyen súlyos következményekkel járhat az anabolikus szteroidok használata?',
       options: [
         'Kizárólag átmeneti izomfájdalmat okoz, más szervi hatása nincs',
         'Csak a csontsűrűséget csökkenti, más szervrendszert nem érint',
@@ -17620,7 +17620,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-k15',
-      question: 'Miért kockázatos különösen a serdülőkorú, még növésben lévő fiatalok esetében a hormonális hatású szerek használata a szöveg szerint?',
+      question: 'Miért kockázatos különösen a serdülőkorú, még növésben lévő fiatalok esetében a hormonális hatású szerek használata?',
       options: [
         'A serdülőknél a szerek hatástalanok, ezért csak felesleges pénzkidobásnak számítanak',
         'A rövid távú izomtömeg-növekedés hosszú távon a végleges testmagasság csökkenéséhez és tartós egészségkárosodáshoz vezethet',
@@ -17646,7 +17646,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e01',
-      question: 'Miben különbözik a funkcionális és a strukturális gerincferdülés a szöveg szerint?',
+      question: 'Miben különbözik a funkcionális és a strukturális gerincferdülés?',
       options: [
         'A strukturális forma mindig visszafordítható gyógytornával, a funkcionális forma viszont soha',
         'A funkcionális forma a csigolyák szerkezeti elváltozásával jár, a strukturális forma pedig kizárólag testtartási hiba',
@@ -17659,7 +17659,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e02',
-      question: 'Miért fontos a korai felismerés és a rendszeres szűrővizsgálat a gerincferdülés esetében a szöveg szerint?',
+      question: 'Miért fontos a korai felismerés és a rendszeres szűrővizsgálat a gerincferdülés esetében?',
       options: [
         'Mert a korai felismerés kizárja, hogy a gerincferdülés valaha strukturálissá váljon',
         'Mert a funkcionális elváltozások időben történő korrekciója gyakran megelőzheti a súlyosabb, végleges strukturális elváltozások kialakulását',
@@ -17672,7 +17672,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e03',
-      question: 'Milyen eltérő kezelési stratégiát igényel a funkcionális és a strukturális gerincferdülés a szöveg szerint?',
+      question: 'Milyen eltérő kezelési stratégiát igényel a funkcionális és a strukturális gerincferdülés?',
       options: [
         'Mindkét forma kizárólag műtéti beavatkozással kezelhető, gyógytorna egyik esetben sem hatékony',
         'A strukturális forma gyógytornával, a funkcionális forma pedig kizárólag műtéttel kezelhető',
@@ -17685,7 +17685,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e04',
-      question: 'Milyen kiegészítő védelmet nyújt egy erős, jól bemelegített izomzat a szöveg szerint?',
+      question: 'Milyen kiegészítő védelmet nyújt egy erős, jól bemelegített izomzat?',
       options: [
         'Kizárólag az izomláz kialakulását akadályozza meg, más sérülést nem előz meg',
         'Teljesen kiváltja a bemelegítés szükségességét, ha az izomzat eleve erős',
@@ -17698,7 +17698,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e05',
-      question: 'Milyen összefüggés mutatható ki a szöveg alapján a bemelegítés, a fokozatos terhelés és a felszerelés, valamint a mozgási rendszer sérüléseinek kockázata között?',
+      question: 'Milyen összefüggés mutatható ki a bemelegítés, a fokozatos terhelés és a felszerelés, valamint a mozgási rendszer sérüléseinek kockázata között?',
       options: [
         'A bemelegítés önmagában kizárja a sérülések kialakulását, a fokozatosságnak nincs önálló szerepe',
         'A megfelelő bemelegítés, a fokozatos terhelésnövelés és az illő felszerelés együttesen jelentősen csökkenti a rándulás, ficam és egyes törések kockázatát',
@@ -17711,7 +17711,7 @@ export const QUIZZES = {
     },
     {
       id: 'mozgasi-rendszer-egeszsegtana-e06',
-      question: 'Milyen összefüggés áll fenn a szöveg alapján a vázrendszer és az izomrendszer épsége között a sérülések megelőzésében?',
+      question: 'Milyen összefüggés áll fenn a vázrendszer és az izomrendszer épsége között a sérülések megelőzésében?',
       options: [
         'Az izomzat állapota kizárólag az izomlázra van hatással, a csontok és ízületek védelmére nem',
         'A két rendszer teljesen független egymástól, az izomzat állapota nem befolyásolja a csontok terhelését',
@@ -17719,14 +17719,14 @@ export const QUIZZES = {
         'A két rendszer szorosan összefügg: egy erős, edzett izomzat kiegészítő védelmet nyújt a csontoknak és ízületeknek, csökkentve a rájuk ható terhelést',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint a vázrendszer és az izomrendszer épsége szorosan összefügg: egy erős, bemelegített izomzat kiegészítő védelmet nyújt az ízületeknek és a csontoknak.',
+      explanation: 'A vázrendszer és az izomrendszer épsége szorosan összefügg: egy erős, bemelegített izomzat kiegészítő védelmet nyújt az ízületeknek és a csontoknak.',
       level: 'emelt',
     },
   ],
   'taplalkozas': [
     {
       id: 'taplalkozas-k01',
-      question: 'Mi a táplálkozás fő jelentősége a szervezet számára a szöveg szerint?',
+      question: 'Mi a táplálkozás fő jelentősége a szervezet számára?',
       options: [
         'A vér mennyiségének folyamatos pótlása és a keringési rendszer nyomásának szinten tartása a szervezetben',
         'A csontok növekedési zónáinak fenntartása és a testmagasság növekedésének biztosítása felnőttkorig',
@@ -17734,12 +17734,12 @@ export const QUIZZES = {
         'A testhőmérséklet szabályozása és a bőr védőfunkciójának fenntartása, az energiaellátástól és az építőanyag-biztosítástól függetlenül',
       ],
       correctIndex: 2,
-      explanation: 'A táplálkozás a szöveg szerint a szervezet energiaigényét (pl. ATP-termelés) és építőanyag-szükségletét (szövetmegújulás) fedezi.',
+      explanation: 'A táplálkozás a szervezet energiaigényét (pl. ATP-termelés) és építőanyag-szükségletét (szövetmegújulás) fedezi.',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k02',
-      question: 'Mit nevezünk rágásnak a szöveg szerint?',
+      question: 'Mit nevezünk rágásnak?',
       options: [
         'A táplálék garaton és nyelőcsövön keresztül történő továbbítását a gyomorba, a szájüregben lezajlott előkészítés után',
         'A táplálék mechanikai aprítását és nyállal való összekeverését, amely megnöveli a táplálék felületét és megkönnyíti a kémiai bontást',
@@ -17752,7 +17752,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k03',
-      question: 'Mi történik a nyelés folyamata során a szöveg szerint?',
+      question: 'Mi történik a nyelés folyamata során?',
       options: [
         'A bélfal izomzata hullámszerűen összehúzódik, hogy a táplálékot a végbél felé mozgassa',
         'A lenyelt falat garaton, majd nyelőcsövön át jut a gyomorba',
@@ -17765,7 +17765,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k04',
-      question: 'Mit nevezünk bélperisztaltikának a szöveg szerint?',
+      question: 'Mit nevezünk bélperisztaltikának?',
       options: [
         'A táplálék mechanikai aprítását a fogak segítségével',
         'A tápanyagok vékonybélből történő felszívódását a vérbe',
@@ -17778,12 +17778,12 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k05',
-      question: 'Mi a különbség a táplálék és a tápanyag fogalma között a szöveg szerint?',
+      question: 'Mi a különbség a táplálék és a tápanyag fogalma között?',
       options: [
         'A táplálék a szervezetbe felvett, emésztésre váró étel, a tápanyag pedig az emésztés révén felszabadított, felszívható alkotórész',
         'A táplálék a szervezetből kiválasztott anyag, a tápanyag a szervezetbe felvett anyag',
         'A táplálék kizárólag folyékony, a tápanyag kizárólag szilárd halmazállapotú anyag',
-        'A táplálék és a tápanyag a szövegben ugyanazt a fogalmat jelöli, csak eltérő szóhasználattal',
+        'A táplálék és a tápanyag ugyanazt a fogalmat jelöli, csak eltérő szóhasználattal',
       ],
       correctIndex: 0,
       explanation: 'A táplálék az emésztésre váró étel, a tápanyag pedig az emésztés révén felszabadított, hasznosítható alkotórész.',
@@ -17791,7 +17791,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k06',
-      question: 'Melyik felsorolás adja meg helyesen a tápanyagokat a szöveg szerint?',
+      question: 'Melyik felsorolás adja meg helyesen a tápanyagokat?',
       options: [
         'Szénhidrát, fehérje, zsír, vitamin, ásványi anyag és víz',
         'Kizárólag a szénhidrátok, a fehérjék és a zsírok',
@@ -17799,12 +17799,12 @@ export const QUIZZES = {
         'A vitaminok, az ásványi anyagok és a rostok, tápanyagértékkel nem rendelkező alkotóként',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg a tápanyagok közé sorolja a szénhidrátot, fehérjét, zsírt, vitamint, ásványi anyagot és a vizet.',
+      explanation: 'A tápanyagok közé tartozik a szénhidrát, a fehérje, a zsír, a vitamin, az ásványi anyag és a víz.',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k07',
-      question: 'Miért különleges helyzetű tápanyag a víz és az ásványi anyag a szöveg szerint?',
+      question: 'Miért különleges helyzetű tápanyag a víz és az ásványi anyag?',
       options: [
         'Mert energiatartalmuk lényegesen magasabb, mint a zsíroké',
         'Mert csak a hasnyálmirigy enzimei tudják lebontani őket',
@@ -17817,7 +17817,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k08',
-      question: 'Mely tápanyagoknak kell kémiai lebontáson átesniük ahhoz, hogy a szervezet hasznosítani tudja őket, a szöveg szerint?',
+      question: 'Mely tápanyagoknak kell kémiai lebontáson átesniük ahhoz, hogy a szervezet hasznosítani tudja őket,?',
       options: [
         'A szénhidrátoknak, a fehérjéknek és a zsíroknak',
         'A vitaminoknak és az ásványi anyagoknak',
@@ -17830,7 +17830,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k09',
-      question: 'Nagyjából mekkora a szénhidrátok és a fehérjék fajlagos energiatartalma a szöveg szerint?',
+      question: 'Nagyjából mekkora a szénhidrátok és a fehérjék fajlagos energiatartalma?',
       options: [
         'Kb. 38 kJ/g (kb. 9 kcal/g)',
         'Kb. 25 kJ/g (kb. 6 kcal/g)',
@@ -17838,12 +17838,12 @@ export const QUIZZES = {
         'Kb. 17 kJ/g (kb. 4 kcal/g)',
       ],
       correctIndex: 3,
-      explanation: 'A szénhidrátok és a fehérjék energiatartalma a szöveg szerint kb. 17 kJ/g (kb. 4 kcal/g).',
+      explanation: 'A szénhidrátok és a fehérjék energiatartalma kb. 17 kJ/g (kb. 4 kcal/g).',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k10',
-      question: 'Hogyan viszonyul a zsírok fajlagos energiatartalma a szénhidrátokéhoz a szöveg szerint?',
+      question: 'Hogyan viszonyul a zsírok fajlagos energiatartalma a szénhidrátokéhoz?',
       options: [
         'Csak kismértékben, kb. 20%-kal haladja meg a szénhidrátokét',
         'Több mint kétszerese a szénhidrátokénak, kb. 38 kJ/g',
@@ -17856,7 +17856,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k11',
-      question: 'A szövegbeli számítási példa szerint kb. mennyi energiát biztosít 20 g zsír elfogyasztása a szervezetnek?',
+      question: 'Kb. mennyi energiát biztosít 20 g zsír elfogyasztása a szervezetnek?',
       options: [
         'Kb. 1200 kJ',
         'Kb. 760 kJ',
@@ -17864,12 +17864,12 @@ export const QUIZZES = {
         'Kb. 340 kJ',
       ],
       correctIndex: 1,
-      explanation: 'A szöveg szerint 20 g zsír elfogyasztása kb. 760 kJ energiát biztosít (szemben a 20 g szénhidrát kb. 340 kJ-jával).',
+      explanation: '20 g zsír elfogyasztása kb. 760 kJ energiát biztosít (szemben a 20 g szénhidrát kb. 340 kJ-jával).',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k12',
-      question: 'Mi a testtömegindex (BMI) kiszámításának módja a szöveg szerint?',
+      question: 'Mi a testtömegindex (BMI) kiszámításának módja?',
       options: [
         'Testtömeg (kg) osztva a testmagasság négyzetével (m²)',
         'Testmagasság (m) osztva a testtömeggel (kg)',
@@ -17882,7 +17882,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k13',
-      question: 'A szokásos tájékoztató beosztás szerint milyen BMI-érték jelez túlsúlyt a szöveg szerint?',
+      question: 'A szokásos tájékoztató beosztás szerint milyen BMI-érték jelez túlsúlyt?',
       options: [
         '25 felett',
         '25 alatt',
@@ -17890,12 +17890,12 @@ export const QUIZZES = {
         '18,5 alatt',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerinti beosztásban 25 feletti BMI jelez túlsúlyt.',
+      explanation: 'A szokásos tájékoztató beosztásban 25 feletti BMI jelez túlsúlyt.',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k14',
-      question: 'Miért nem tökéletes mutató a BMI a szöveg szerint?',
+      question: 'Miért nem tökéletes mutató a BMI?',
       options: [
         'Mert csak gyermekeknél alkalmazható, felnőtteknél nem',
         'Mert csak a zsírszövet mennyiségét méri, az izomszövetet figyelmen kívül hagyja, de ez nem befolyásolja az eredményt',
@@ -17908,12 +17908,12 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k15',
-      question: 'Miért eshet egy nagy izomtömegű sportoló BMI-je tévesen a túlsúly kategóriájába a szöveg szerint?',
+      question: 'Miért eshet egy nagy izomtömegű sportoló BMI-je tévesen a túlsúly kategóriájába?',
       options: [
         'Mert a rendszeres testmozgás önmagában emeli a BMI határértékeit',
         'Mert a sportolóknál a BMI-képletben a testmagasságot tévesen kétszer kell figyelembe venni',
         'Mert az izomszövet nehezebb, mint az azonos térfogatú zsírszövet, így a nagyobb izomtömeg megnöveli a testtömeget a BMI-képletben',
-        'Mert a sportolók testmagassága a szövegben mindig alacsonyabb az átlagosnál',
+        'Mert a sportolók testmagassága mindig alacsonyabb az átlagosnál',
       ],
       correctIndex: 2,
       explanation: 'Az izomszövet nehezebb, mint az azonos térfogatú zsírszövet, ezért a nagy izomtömeg téves túlsúly-besoroláshoz vezethet a BMI alapján.',
@@ -17921,7 +17921,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k16',
-      question: 'Melyik felsorolás adja helyesen a táplálkozási szervrendszer fő szerveit a táplálék útját követve, a szöveg szerint?',
+      question: 'Melyik felsorolás adja helyesen a táplálkozási szervrendszer fő szerveit a táplálék útját követve,?',
       options: [
         'Szájüreg, garat, nyelőcső, gyomor, vékonybél, vastagbél, végbél',
         'Szájüreg, gyomor, garat, nyelőcső, vastagbél, vékonybél, végbél',
@@ -17929,12 +17929,12 @@ export const QUIZZES = {
         'Szájüreg, nyelőcső, garat, gyomor, végbél, vékonybél, vastagbél',
       ],
       correctIndex: 0,
-      explanation: 'A táplálék útja a szöveg szerint: szájüreg, garat, nyelőcső, gyomor, vékonybél, vastagbél, végbél.',
+      explanation: 'A táplálék útja: szájüreg, garat, nyelőcső, gyomor, vékonybél, vastagbél, végbél.',
       level: 'kozep',
     },
     {
       id: 'taplalkozas-k17',
-      question: 'Hova ürítik emésztőnedvüket a máj és a hasnyálmirigy a szöveg szerint?',
+      question: 'Hova ürítik emésztőnedvüket a máj és a hasnyálmirigy?',
       options: [
         'Közvetlenül a gyomorba',
         'A vastagbélbe',
@@ -17947,7 +17947,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-k18',
-      question: 'Kb. mekkora a teljes tápcsatorna hossza felnőtt embernél, összecsavarodott állapotban is, a szöveg szerint?',
+      question: 'Kb. mekkora a teljes tápcsatorna hossza felnőtt embernél, összecsavarodott állapotban is,?',
       options: [
         'Kb. 12-15 méter',
         'Kb. 2-3 méter',
@@ -17960,7 +17960,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e01',
-      question: 'Mit nevezünk alapanyagcserének (bazális metabolizmusnak) a szöveg szerint?',
+      question: 'Mit nevezünk alapanyagcserének (bazális metabolizmusnak)?',
       options: [
         'Azt a legkisebb energiamennyiséget, amelyet a szervezet teljes nyugalmi állapotban (éhgyomorra, testi-lelki nyugalomban, kényelmes hőmérsékleten) is elhasznál az alapvető élettani működések fenntartásához',
         'Azt az energiamennyiséget, amelyet a szervezet a táplálékból egy nap alatt ténylegesen felszívni és hasznosítani képes',
@@ -17973,7 +17973,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e02',
-      question: 'Milyen élettani működéseket tart fenn az alapanyagcsere során felhasznált energia a szöveg szerint?',
+      question: 'Milyen élettani működéseket tart fenn az alapanyagcsere során felhasznált energia?',
       options: [
         'Kizárólag az izomösszehúzódást biztosítja intenzív testmozgás közben, nyugalmi állapotban nincs szüksége energiára a szervezetnek',
         'Kizárólag a csontok növekedési zónáinak fenntartását biztosítja gyermek- és serdülőkorban',
@@ -17986,7 +17986,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e03',
-      question: 'Miért magasabb jellemzően az alapanyagcsere nagyobb izomtömeg esetén a szöveg szerint?',
+      question: 'Miért magasabb jellemzően az alapanyagcsere nagyobb izomtömeg esetén?',
       options: [
         'Mert az izomszövet nyugalomban is több energiát fogyaszt, mint a zsírszövet',
         'Mert az izomtömeg növekedésével csökken a testfelszín, ami fokozza az energiaigényt',
@@ -17999,7 +17999,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e04',
-      question: 'Milyen tényezőktől függ az alapanyagcsere értéke a szöveg szerint?',
+      question: 'Milyen tényezőktől függ az alapanyagcsere értéke?',
       options: [
         'Kizárólag a napi tápanyagbevitel mennyiségétől',
         'Kizárólag a testtömegtől, más tényezőtől nem',
@@ -18012,12 +18012,12 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e05',
-      question: 'Hogyan viszonyul egymáshoz az energiatartalom és az alapanyagcsere fogalma a szöveg szerint?',
+      question: 'Hogyan viszonyul egymáshoz az energiatartalom és az alapanyagcsere fogalma?',
       options: [
         'A kettő ugyanazt fejezi ki, csak más mértékegységben',
         'Az energiatartalom kizárólag a zsírokra, az alapanyagcsere kizárólag a szénhidrátokra vonatkozik',
         'Az energiatartalom azt mutatja meg, mennyi energiát nyerhetünk egy tápanyagból, az alapanyagcsere pedig azt, mennyi energiára van szükségünk minimálisan, a mozgástól függetlenül',
-        'Az alapanyagcsere az energiatartalom pontos szinonimája a szövegben',
+        'Az alapanyagcsere az energiatartalom pontos szinonimája',
       ],
       correctIndex: 2,
       explanation: 'Az energiatartalom a nyerhető energiát, az alapanyagcsere a mozgástól független minimális energiaigényt mutatja - a kettő együtt adja a reális energiaegyenleg-képet.',
@@ -18025,7 +18025,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e06',
-      question: 'Miből tevődik össze a szervezet napi teljes energiaszükséglete a szöveg szerint?',
+      question: 'Miből tevődik össze a szervezet napi teljes energiaszükséglete?',
       options: [
         'Az alapanyagcsere és a testtömegindex szorzatából',
         'Az alapanyagcsere értékéhez adódik hozzá a napi tevékenységek energiaigénye és az emésztés energiaköltsége',
@@ -18038,7 +18038,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-e07',
-      question: 'Mi történik a szervezet tartalékaival, ha a felvett energia tartósan alacsonyabb a teljes energiaszükségletnél, a szöveg szerint?',
+      question: 'Mi történik a szervezet tartalékaival, ha a felvett energia tartósan alacsonyabb a teljes energiaszükségletnél,?',
       options: [
         'A szervezet kizárólag a zsírraktárakat mozgósítja, a glikogént és a fehérjéket nem érinti',
         'A szervezet elsőként a fehérjéket bontja le, majd a zsírt, végül a glikogént',
@@ -18053,7 +18053,7 @@ export const QUIZZES = {
   'emesztes': [
     {
       id: 'emesztes-k01',
-      question: 'Melyek a fog részei a szöveg szerint?',
+      question: 'Melyek a fog részei?',
       options: [
         'Fogbél, fogíny és állcsont, korona nélkül',
         'Zománc, dentin és fogíny, gyökér nélkül',
@@ -18066,7 +18066,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k02',
-      question: 'Mi jellemzi a fog koronáját a szöveg szerint?',
+      question: 'Mi jellemzi a fog koronáját?',
       options: [
         'Ez az állcsontban rögzítő rész, amely ereket és idegeket tartalmaz',
         'Ez a fog belsejében található, kizárólag idegvégződéseket tartalmazó üreg',
@@ -18079,7 +18079,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k03',
-      question: 'Mit tartalmaz a fogbél (pulpa) a szöveg szerint?',
+      question: 'Mit tartalmaz a fogbél (pulpa)?',
       options: [
         'Kizárólag dentint',
         'Kizárólag zománcot',
@@ -18092,7 +18092,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k04',
-      question: 'Hány foga van egy felnőtt embernek a szöveg szerinti fogképlet alapján?',
+      question: 'Hány foga van egy felnőtt embernek a fogképlet alapján?',
       options: [
         '36',
         '28',
@@ -18105,7 +18105,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k05',
-      question: 'Mit tartalmaz a fogképlet negyedenként a szöveg szerint?',
+      question: 'Mit tartalmaz a fogképlet negyedenként?',
       options: [
         '2 metszőfog, 1 szemfog, 2 kisőrlő és 3 nagyőrlő',
         '3 metszőfog, 1 szemfog, 3 kisőrlő és 1 nagyőrlő',
@@ -18118,7 +18118,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k06',
-      question: 'Mit előz meg a rendszeres szájhigiénia (fogmosás, fogselyem, fogorvosi szűrés) a szöveg szerint?',
+      question: 'Mit előz meg a rendszeres szájhigiénia (fogmosás, fogselyem, fogorvosi szűrés)?',
       options: [
         'A nyálmirigyek gyulladását, más szájüregi problémát nem',
         'A fogak elszíneződését, egészségügyi kockázat nélkül',
@@ -18131,7 +18131,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k07',
-      question: 'Hol kezdődik az emésztés, és milyen enzim kezdi meg a keményítő bontását a szöveg szerint?',
+      question: 'Hol kezdődik az emésztés, és milyen enzim kezdi meg a keményítő bontását?',
       options: [
         'A gyomorban, a pepszin enzim',
         'A vékonybélben, a tripszin enzim',
@@ -18144,7 +18144,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k08',
-      question: 'Melyik három pár mirigy felelős a nyál termeléséért a szöveg szerint?',
+      question: 'Melyik három pár mirigy felelős a nyál termeléséért?',
       options: [
         'Könnymirigy, verejtékmirigy és nyálkamirigy',
         'Pajzsmirigy, mellékvese és hasnyálmirigy',
@@ -18157,7 +18157,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k09',
-      question: 'Milyen szerepe van a nyelőcsőnek a szöveg szerint?',
+      question: 'Milyen szerepe van a nyelőcsőnek?',
       options: [
         'Emésztőenzimeket termel, amelyek megkezdik a fehérjék bontását',
         'Itt semlegesítődik a gyomorból érkező savas béltartalom',
@@ -18170,7 +18170,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k10',
-      question: 'Kb. milyen pH-jú a gyomornedv a sósavtartalma miatt a szöveg szerint?',
+      question: 'Kb. milyen pH-jú a gyomornedv a sósavtartalma miatt?',
       options: [
         'Kb. pH 5 (gyengén savas)',
         'Kb. pH 7 (semleges)',
@@ -18183,7 +18183,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k11',
-      question: 'Milyen enzim működéséhez optimális a gyomor erősen savas kémhatása a szöveg szerint?',
+      question: 'Milyen enzim működéséhez optimális a gyomor erősen savas kémhatása?',
       options: [
         'A pepszin enzim',
         'A tripszin enzim',
@@ -18196,7 +18196,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k12',
-      question: 'Mi védi a gyomor falát attól, hogy a savas gyomornedv károsítsa a szöveg szerint?',
+      question: 'Mi védi a gyomor falát attól, hogy a savas gyomornedv károsítsa?',
       options: [
         'A gyomrot borító vastag nyákréteg',
         'A nyelőcső záróizma, amely megakadályozza a gyomornedv felszabadulását',
@@ -18209,7 +18209,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k13',
-      question: 'Hol termelődik, és hol tárolódik az epe a szöveg szerint?',
+      question: 'Hol termelődik, és hol tárolódik az epe?',
       options: [
         'A vékonybél nyálkahártyája termeli, és a májban tárolódik a kiválasztásig',
         'A hasnyálmirigyben termelődik, és közvetlenül a vékonybélben tárolódik felhasználásig',
@@ -18217,12 +18217,12 @@ export const QUIZZES = {
         'A máj termeli, majd az epehólyagban tárolódik, mielőtt a patkóbélbe jutna',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg szerint az epét a máj termeli, majd az epehólyagban tárolódik, mielőtt a patkóbélbe jutna.',
+      explanation: 'Az epét a máj termeli, majd az epehólyagban tárolódik, mielőtt a patkóbélbe jutna.',
       level: 'kozep',
     },
     {
       id: 'emesztes-k14',
-      question: 'Mi a hasnyál egyik fő szerepe a gyomorból érkező béltartalommal kapcsolatban a szöveg szerint?',
+      question: 'Mi a hasnyál egyik fő szerepe a gyomorból érkező béltartalommal kapcsolatban?',
       options: [
         'Emulgeálja a béltartalomban lévő zsírokat apró cseppekre',
         'Tovább fokozza annak savasságát, hogy a fehérjebontó enzimek jobban működjenek',
@@ -18235,7 +18235,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k15',
-      question: 'Mely tápanyagcsoportok bontásához tartalmaz enzimeket a hasnyál a szöveg szerint?',
+      question: 'Mely tápanyagcsoportok bontásához tartalmaz enzimeket a hasnyál?',
       options: [
         'Csupán a nukleinsavak lebontásához, a többi tápanyagcsoporthoz nem',
         'A fehérjékhez és a szénhidrátokhoz, de a zsírokhoz és a nukleinsavakhoz nem',
@@ -18248,7 +18248,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k16',
-      question: 'Milyen szerepe van az epének a zsírok emésztésében a szöveg szerint?',
+      question: 'Milyen szerepe van az epének a zsírok emésztésében?',
       options: [
         'Enzimként közvetlenül bontja a trigliceridek kémiai kötéseit',
         'Nem enzim, hanem a zsírok emulgeálásával (apró cseppekre bontásával) segíti a hatékonyabb bontást',
@@ -18261,7 +18261,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-k17',
-      question: 'Mit mutat a szövegben leírt kísérleti megfigyelés, ha a gyomornedvet vagy a hasnyálat a természetestől eltérő kémhatásúra állítjuk be?',
+      question: 'Mit mutat a kísérleti megfigyelés, ha a gyomornedvet vagy a hasnyálat a természetestől eltérő kémhatásúra állítjuk be?',
       options: [
         'Az enzimek hatása minden esetben jelentősen felerősödik, függetlenül attól, hogy milyen irányba tér el az új kémhatás az eredetitől',
         'Az enzimek hatása teljesen változatlan marad, mert a kémhatás megváltozása nem befolyásolja a fehérjékből felépülő enzimek térszerkezetét',
@@ -18274,7 +18274,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e01',
-      question: 'Hol termelődik az amiláz enzim, és mit végez a szöveg szerint?',
+      question: 'Hol termelődik az amiláz enzim, és mit végez?',
       options: [
         'A nyálmirigyekben és a hasnyálmirigyben egyaránt termelődik: a keményítőt (poliszacharidot) diszacharidokká, elsősorban maltózzá bontja',
         'Kizárólag a gyomorban termelődik, és a zsírokat emulgeálja',
@@ -18287,7 +18287,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e02',
-      question: 'Hol termelődik a laktáz, mit bont, és mi történik hiányában a szöveg szerint?',
+      question: 'Hol termelődik a laktáz, mit bont, és mi történik hiányában?',
       options: [
         'A gyomorban termelődik, a trigliceridet bontja zsírsavakra és glicerinre; hiányában a zsírok emésztetlenül, felszívódás nélkül távoznak a béltraktusból',
         'A nyálmirigyekben termelődik, a nukleinsavakat bontja nukleotidokra; hiányában a sejtosztódáshoz szükséges DNS-szintézis akadályozott lesz',
@@ -18300,7 +18300,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e03',
-      question: 'Hol termelődik a nukleáz, és mit bont a szöveg szerint?',
+      question: 'Hol termelődik a nukleáz, és mit bont?',
       options: [
         'A nyálmirigyekben termelődik, és a nukleinsavakat bontja aminosavakká',
         'A gyomorban termelődik, és a fehérjéket bontja peptidekké',
@@ -18313,7 +18313,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e04',
-      question: 'Hol termelődik a lipáz, és mit végez a szöveg szerint?',
+      question: 'Hol termelődik a lipáz, és mit végez?',
       options: [
         'A gyomorban termelődik, és a fehérjéket peptidláncokká bontja',
         'A vékonybél nyálkahártyájában termelődik, és a laktózt bontja',
@@ -18326,7 +18326,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e05',
-      question: 'Milyen formában választódik ki a pepszin a gyomor fősejtjeiből, és hogyan aktiválódik a szöveg szerint?',
+      question: 'Milyen formában választódik ki a pepszin a gyomor fősejtjeiből, és hogyan aktiválódik?',
       options: [
         'Aktív formában választódik ki, de csak lúgos közegben fejti ki hatását',
         'Már aktív formában választódik ki, aktiválásra nincs szükség',
@@ -18339,7 +18339,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e06',
-      question: 'Hol termelődik a tripszin, milyen formában, és mit végez a szöveg szerint?',
+      question: 'Hol termelődik a tripszin, milyen formában, és mit végez?',
       options: [
         'A gyomorban termelődik, eleve aktív formában választódik ki, és elsősorban a keményítő lebontását végzi a gyomorüregben',
         'A vékonybél nyálkahártyájában termelődik, már aktív formában, és kizárólag a zsírok emulgeálását és bontását végzi',
@@ -18352,7 +18352,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e07',
-      question: 'Miért nem hasznosítható közvetlenül energiaforrásként egy el nem emésztett, nagy molekula a szöveg szerint?',
+      question: 'Miért nem hasznosítható közvetlenül energiaforrásként egy el nem emésztett, nagy molekula?',
       options: [
         'Mert a sejtek anyagcsere-útjai (pl. a glikolízis) csak a már lebontott, kis egységekkel (pl. a glükózzal) tudnak "elindulni"',
         'Mert a sejtek csak a fehérjéket tudják közvetlenül energiaforrásként hasznosítani',
@@ -18365,7 +18365,7 @@ export const QUIZZES = {
     },
     {
       id: 'emesztes-e08',
-      question: 'Hogyan kapcsolódik a kémiai emésztés a sejtszintű lebontáshoz (glikolízis, citromsavciklus, terminális oxidáció) a szöveg szerint?',
+      question: 'Hogyan kapcsolódik a kémiai emésztés a sejtszintű lebontáshoz (glikolízis, citromsavciklus, terminális oxidáció)?',
       options: [
         'A kémiai emésztés teljes mértékben helyettesíti a sejtszintű lebontást, ezért az ATP-termelés maga a tápcsatornában, a bélnedvek jelenlétében zajlik le',
         'Egyetlen, folytonos lebontási folyamat két egymásra épülő szakasza: az emésztés a nagy tápmolekulákat felszívódásra alkalmas kis egységekre bontja, a sejtszintű lebontás pedig ezekből nyeri ki az energiát ATP formájában',
@@ -19020,7 +19020,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-szabalyozasa-e07',
-      question: 'Milyen egyéb tényezők fokozhatják a hormonális éhségjelzést a szöveg szerint?',
+      question: 'Milyen egyéb tényezők fokozhatják a hormonális éhségjelzést?',
       options: [
         'Kizárólag az időjárás hőmérséklete.',
         'Kizárólag a víz- és rostbevitel csökkenése.',
@@ -19165,7 +19165,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-egeszsegtana-k10',
-      question: 'Milyen tényezőktől függenek jelentősen az étrendi elvárások a szöveg szerint?',
+      question: 'Milyen tényezőktől függenek jelentősen az étrendi elvárások?',
       options: [
         'Kizárólag az adott ország gazdasági fejlettségétől.',
         'A tevékenységtől, a kortól, a nemtől és az adott élettani állapottól.',
@@ -19230,7 +19230,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-egeszsegtana-k15',
-      question: 'Hogyan igazodik a csecsemőkori táplálás a fejlődéshez a szöveg szerint?',
+      question: 'Hogyan igazodik a csecsemőkori táplálás a fejlődéshez?',
       options: [
         'A táplálás kizárólag orvosi felügyelet mellett, mesterséges tápszerrel történik.',
         'Az anyatej összetétele a csecsemő teljes első évében változatlan marad.',
@@ -19261,7 +19261,7 @@ export const QUIZZES = {
         'A stressz csökkenti a gyomorsav termelését, ami közvetve fekélyt okoz.',
         'A stressz fokozhatja a gyomorsav-túltermelést, ezáltal növeli a gyomorfekély kockázatát.',
         'A stressz kizárólag a máj működését befolyásolja, a gyomrot nem érinti.',
-        'A stressz és a gyomorfekély között nincs összefüggés a szöveg szerint.',
+        'A stressz és a gyomorfekély között nincs összefüggés.',
       ],
       correctIndex: 1,
       explanation: 'A fokozott stressz fokozhatja a gyomorsav-túltermelést, ezáltal a gyomorfekély kockázatát.',
@@ -19373,7 +19373,7 @@ export const QUIZZES = {
     },
     {
       id: 'taplalkozas-egeszsegtana-e08',
-      question: 'Miért ritka a K-vitamin-hiány felnőtteknél a szöveg szerint?',
+      question: 'Miért ritka a K-vitamin-hiány felnőtteknél?',
       options: [
         'Mert a K-vitamin kizárólag a bőrben képződik napfény hatására.',
         'Mert a bélflóra is termel belőle.',
@@ -19410,7 +19410,7 @@ export const QUIZZES = {
         'A vér szűrése, a salakanyagok kiválasztása és az immunválasz kialakítása',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerint a légzőrendszer legfontosabb funkciói az oxigénellátás biztosítása, a szén-dioxid eltávolítása és a hangképzés.',
+      explanation: 'A légzőrendszer legfontosabb funkciói az oxigénellátás biztosítása, a szén-dioxid eltávolítása és a hangképzés.',
       level: 'kozep',
     },
     {
@@ -19423,7 +19423,7 @@ export const QUIZZES = {
         'Orrüreg → garat → légcső → gégefő → hörgők → léghólyagocskák',
       ],
       correctIndex: 1,
-      explanation: 'A belélegzett levegő útja a szöveg szerint: orrüreg → garat → gégefő → légcső → hörgők → hörgőcskék → léghólyagocskák.',
+      explanation: 'A belélegzett levegő útja: orrüreg → garat → gégefő → légcső → hörgők → hörgőcskék → léghólyagocskák.',
       level: 'kozep',
     },
     {
@@ -19833,7 +19833,7 @@ export const QUIZZES = {
     },
     {
       id: 'gazcsere-k09',
-      question: 'A szöveg szerint milyen gyorsan kerülhet veszélybe a sejtek oxigénellátása, ha a folyamatos körforgás (légcsere-gázcsere-sejtlégzés) bármelyik ponton megszakad?',
+      question: 'Milyen gyorsan kerülhet veszélybe a sejtek oxigénellátása, ha a folyamatos körforgás (légcsere-gázcsere-sejtlégzés) bármelyik ponton megszakad?',
       options: [
         'Csak órák vagy napok múlva, mert a szervezetnek jelentős oxigéntartaléka van minden szövetben',
         'Azonnal helyreáll, mert a szervezet más szervekkel automatikusan pótolja a kiesést',
@@ -19841,7 +19841,7 @@ export const QUIZZES = {
         'Csak akkor, ha egyszerre több láncszem is megszakad, egyetlen pont sérülése önmagában nem veszélyes',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg szerint, ha a folyamatos körforgás bármelyik ponton megszakad, a sejtek oxigénellátása percek alatt veszélybe kerülhet.',
+      explanation: 'Ha a folyamatos körforgás bármelyik ponton megszakad, a sejtek oxigénellátása percek alatt veszélybe kerülhet.',
       level: 'kozep',
     },
     {
@@ -20293,7 +20293,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k02',
-      question: 'Hol található a légzőközpont a szöveg szerint?',
+      question: 'Hol található a légzőközpont?',
       options: [
         'A kisagyban, a mozgáskoordinációért felelős területen, a halántéklebeny alatt',
         'A gerincvelőben, a hátcsigolyák magasságában, a mellkasi szakasz közelében',
@@ -20340,7 +20340,7 @@ export const QUIZZES = {
         'A negatív visszacsatolás elve, amely csökkenti a kiváltó elváltozást',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg kifejezetten a negatív visszacsatolás egy példájaként említi a légzés szén-dioxid általi szabályozását, ahogy a Homeosztázis fejezetben is tanultuk.',
+      explanation: 'A légzés szén-dioxid általi szabályozása a negatív visszacsatolás egy példája, ahogy a Homeosztázis fejezetben is tanultuk.',
       level: 'kozep',
     },
     {
@@ -20353,12 +20353,12 @@ export const QUIZZES = {
         'Hogy az oxigénszint valójában nem befolyásolja a légzés ütemét semmilyen helyzetben',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerint ez jól mutatja, hogy a szervezet a saját anyagcseréje által termelt melléktermék (szén-dioxid) szintjét folyamatosan, érzékenyen figyeli.',
+      explanation: 'Ez jól mutatja, hogy a szervezet a saját anyagcseréje által termelt melléktermék (szén-dioxid) szintjét folyamatosan, érzékenyen figyeli.',
       level: 'kozep',
     },
     {
       id: 'legzes-szabalyozasa-k07',
-      question: 'Befolyásolható-e a légzés akaratlagosan a szöveg szerint?',
+      question: 'Befolyásolható-e a légzés akaratlagosan?',
       options: [
         'Igen, de csak alvás közben, ébrenlét idején semmilyen tudatos hatás nem érvényesül',
         'Nem, a légzés kizárólag önműködő, tudatos beavatkozásra egyáltalán nem reagál',
@@ -20371,7 +20371,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k08',
-      question: 'Milyen tevékenységhez szükséges a kilégzés hosszának és erősségének tudatos szabályozása a szöveg szerint?',
+      question: 'Milyen tevékenységhez szükséges a kilégzés hosszának és erősségének tudatos szabályozása?',
       options: [
         'Kizárólag a nehéz fizikai munkavégzéshez',
         'Az alváshoz és a pihenéshez',
@@ -20379,12 +20379,12 @@ export const QUIZZES = {
         'A beszédhez és az énekléshez',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg a beszédet és az éneklést említi olyan tevékenységként, amely a kilégzés tudatos szabályozására épül.',
+      explanation: 'A beszéd és az éneklés olyan tevékenység, amely a kilégzés tudatos szabályozására épül.',
       level: 'kozep',
     },
     {
       id: 'legzes-szabalyozasa-k09',
-      question: 'Meddig tartható fenn a légzés tudatos befolyásolása a szöveg szerint?',
+      question: 'Meddig tartható fenn a légzés tudatos befolyásolása?',
       options: [
         'Amíg a testhőmérséklet nem emelkedik a normális fölé, utána automatikusan megszűnik a hatás',
         'Csak korlátozott ideig, mert az emelkedő szén-dioxid-koncentráció végül felülírja a szándékot',
@@ -20397,7 +20397,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k10',
-      question: 'Milyen jellegű rendszer a légzésszabályozás a szöveg összegzése szerint?',
+      question: 'Milyen jellegű rendszer a légzésszabályozás?',
       options: [
         'Egy kizárólag a bordaközti izmok önálló, idegi kontroll nélküli működésén alapuló rendszer',
         'Egy folyamatosan, öntudatlanul működő rendszer, amely csak szükség esetén enged teret a tudatos befolyásolásnak',
@@ -20436,7 +20436,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k13',
-      question: 'Mi lehet a következménye a légzőközpont eltérő reagálásának a szöveg szerint?',
+      question: 'Mi lehet a következménye a légzőközpont eltérő reagálásának?',
       options: [
         'A vitálkapacitás azonnali, tartós növekedése',
         'A légzésszabályozás zavara, szélsőséges esetben légzéskimaradás',
@@ -20449,7 +20449,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k14',
-      question: 'Miért fontos a légzés folyamatos megfigyelése csecsemőknél és időseknél a szöveg szerint?',
+      question: 'Miért fontos a légzés folyamatos megfigyelése csecsemőknél és időseknél?',
       options: [
         'Mert náluk a bordaközti izmok szerepét más izmok veszik át',
         'Mert náluk a rekeszizom fejletlensége miatt a légzés teljesen akaratlagos',
@@ -20475,7 +20475,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k16',
-      question: 'Hogyan hat a rendszeres testmozgás a légzésszabályozásra a szöveg szerint?',
+      question: 'Hogyan hat a rendszeres testmozgás a légzésszabályozásra?',
       options: [
         'Fejleszti a légzőközpont és a légzőizomzat összehangolt működését, így az edzett szervezet hatékonyabban tartja fenn a megfelelő szén-dioxid-szintet',
         'Csökkenti a légzőközpont érzékenységét a szén-dioxidra, ezért az edzett szervezet lassabban és később reagál a fizikai terhelés okozta változásra',
@@ -20488,7 +20488,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-k17',
-      question: 'Mit fejleszt elsősorban a rendszeres testmozgás a légzésszabályozás szempontjából a szöveg szerint?',
+      question: 'Mit fejleszt elsősorban a rendszeres testmozgás a légzésszabályozás szempontjából?',
       options: [
         'A kemoreceptorok érzékenységét az oxigénszintre, a szén-dioxid-érzékelés rovására',
         'A légzőközpont és a légzőizomzat összehangolt működését, amellyel az edzett szervezet hatékonyabban, kevesebb energiával tartja fenn a megfelelő vér-szén-dioxid-szintet',
@@ -20514,7 +20514,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e02',
-      question: 'Hol találhatók a kemoreceptorok a szöveg szerint?',
+      question: 'Hol találhatók a kemoreceptorok?',
       options: [
         'A tüdő léghólyagocskáinak falában és a hörgők nyálkahártyáján elszórtan, kis csoportokban',
         'Részben az agytörzsben, a légzőközpont közelében, részben a nagyerek falában (pl. a nyaki verőérben)',
@@ -20527,7 +20527,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e03',
-      question: 'Mire érzékenyek a mechanoreceptorok a szöveg szerint?',
+      question: 'Mire érzékenyek a mechanoreceptorok?',
       options: [
         'Mechanikai ingerekre, a tüdő és a mellkas feszülésére, tágulására',
         'A vér oxigénkoncentrációjának hirtelen, kritikus csökkenésére',
@@ -20553,7 +20553,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e05',
-      question: 'Hogyan egészítik ki egymást a kemoreceptorok és a mechanoreceptorok a szöveg szerint?',
+      question: 'Hogyan egészítik ki egymást a kemoreceptorok és a mechanoreceptorok?',
       options: [
         'A kemoreceptorok a légzőmozgások fizikai határait szabják meg, a mechanoreceptorok az anyagcsere-igényhez igazítják az intenzitást',
         'A kemoreceptorok az anyagcsere-igényhez igazítják a légzés intenzitását, a mechanoreceptorok a légzőmozgások fizikai határait szabják meg',
@@ -20566,7 +20566,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e06',
-      question: 'Mire érzékenyek emellett a nagyerekben (pl. nyaki verőérben, főverőérben) elhelyezkedő kemoreceptorok a szöveg szerint?',
+      question: 'Mire érzékenyek emellett a nagyerekben (pl. nyaki verőérben, főverőérben) elhelyezkedő kemoreceptorok?',
       options: [
         'A tüdő mechanikai túltágulására',
         'A vér glükózszintjének tartós csökkenésére',
@@ -20579,7 +20579,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e07',
-      question: 'Miért alapozza a szervezet elsődlegesen a szén-dioxid-érzékelésre a légzésszabályozást, nem az oxigénszint mérésére, a szöveg magyarázata szerint?',
+      question: 'Miért alapozza a szervezet elsődlegesen a szén-dioxid-érzékelésre a légzésszabályozást, nem az oxigénszint mérésére,?',
       options: [
         'Mert a szén-dioxid-koncentráció változása gyorsabb és érzékenyebb jelzést ad a pillanatnyi anyagcsere-állapotról, mint az oxigénszint',
         'Mert az oxigénszint mérése az agytörzsi receptorok számára technikailag megvalósíthatatlan volna a nagy távolság miatt',
@@ -20592,7 +20592,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzes-szabalyozasa-e08',
-      question: 'Milyen gyakorlati veszélyre világít rá a szöveg a hiperventilációval kapcsolatban, különösen víz alatti tartózkodás előtt?',
+      question: 'Milyen gyakorlati veszély áll fenn a hiperventilációval kapcsolatban, különösen víz alatti tartózkodás előtt?',
       options: [
         'A hiperventiláció azonnal, közvetlenül és tartósan megemeli a vér oxigénszintjét jóval a normális érték fölé, veszélyeztetve a szervezetet',
         'A hiperventiláció tartósan, visszafordíthatatlanul megnöveli a légzőközpont érzékenységét a szén-dioxid-koncentráció változásaira',
@@ -20607,7 +20607,7 @@ export const QUIZZES = {
   'legzorendszer-egeszsegtana': [
     {
       id: 'legzorendszer-egeszsegtana-k01',
-      question: 'Miért előnyösebb az orron át történő belégzés a szájon át történőnél a szöveg szerint?',
+      question: 'Miért előnyösebb az orron át történő belégzés a szájon át történőnél?',
       options: [
         'Mert az orron át belélegzett levegő nagyobb mennyiségű oxigént tartalmaz',
         'Mert az orron át belélegzett levegő azonnal eléri a léghólyagocskákat, kihagyva a légcsövet',
@@ -20620,7 +20620,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k02',
-      question: 'Mi jellemzi a szájon át történő légzést, például eldugult orr esetén, a szöveg szerint?',
+      question: 'Mi jellemzi a szájon át történő légzést, például eldugult orr esetén,?',
       options: [
         'A légutak jobban felmelegednek, mint orron át légzéskor, ami előnyös télen',
         'A légutak nagyobb eséllyel száradnak ki és fertőződnek, mert megkerülik az orrüreg védő hatását',
@@ -20633,7 +20633,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k03',
-      question: 'Melyek a légzőrendszert leggyakrabban károsító tényezők a szöveg szerint?',
+      question: 'Melyek a légzőrendszert leggyakrabban károsító tényezők?',
       options: [
         'A magas páratartalom, a hideg levegő és a testmozgás hiánya',
         'A cukros ételek fogyasztása, a mozgásszegény életmód és a stressz',
@@ -20641,12 +20641,12 @@ export const QUIZZES = {
         'A napfényhiány, a hideg víz és az erős fizikai megterhelés',
       ],
       correctIndex: 2,
-      explanation: 'A szöveg a dohányzást, a légszennyezettséget és az allergéneket nevezi meg a légzőrendszert leggyakrabban károsító tényezőkként.',
+      explanation: 'A légzőrendszert leggyakrabban károsító tényezők a dohányzás, a légszennyezettség és az allergének.',
       level: 'kozep',
     },
     {
       id: 'legzorendszer-egeszsegtana-k04',
-      question: 'Milyen típusú megbetegedések tartoznak a légzőrendszer gyakori megbetegedései közé a szöveg szerint?',
+      question: 'Milyen típusú megbetegedések tartoznak a légzőrendszer gyakori megbetegedései közé?',
       options: [
         'Csak genetikai eredetű, öröklődő rendellenességek, amelyek nem függenek környezeti hatásoktól',
         'Fertőzéses eredetű (pl. tüdőgyulladás, hörghurut) és daganatos jellegű (pl. tüdőrák) betegségek, illetve az asztma',
@@ -20659,7 +20659,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k05',
-      question: 'Mi történik a léghólyagocskákkal tüdőgyulladás során a szöveg szerint?',
+      question: 'Mi történik a léghólyagocskákkal tüdőgyulladás során?',
       options: [
         'Meggyulladnak és folyadékkal telítődnek, ami lecsökkenti a gázcserére alkalmas felületet',
         'Kitágulnak és rugalmasságuk átmenetileg megnő',
@@ -20672,7 +20672,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k07',
-      question: 'Mi az asztma a szöveg meghatározása szerint?',
+      question: 'Mi az asztma?',
       options: [
         'A hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése',
         'A léghólyagocskák tartós, visszafordíthatatlan összeesése',
@@ -20680,12 +20680,12 @@ export const QUIZZES = {
         'A garat és a középfül közötti fülkürt krónikus elzáródása',
       ],
       correctIndex: 0,
-      explanation: 'Az asztma a hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése a szöveg meghatározása szerint.',
+      explanation: 'Az asztma a hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése.',
       level: 'kozep',
     },
     {
       id: 'legzorendszer-egeszsegtana-k08',
-      question: 'Milyen jellegzetes tünetet okoz az asztma a szöveg szerint?',
+      question: 'Milyen jellegzetes tünetet okoz az asztma?',
       options: [
         'A hangszalagok átmeneti, teljes bénulását',
         'Tartós, magas lázzal járó légzési nehézséget',
@@ -20698,7 +20698,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k09',
-      question: 'Miért jár gyakran együtt a torokgyulladás középfülgyulladással a szöveg szerint?',
+      question: 'Miért jár gyakran együtt a torokgyulladás középfülgyulladással?',
       options: [
         'Mert a hörgőkből a fertőzés a légcsövön keresztül közvetlenül a fülbe jut',
         'Mert a torokgyulladás során a csillós hámsejtek a fülbe vándorolnak',
@@ -20711,7 +20711,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k10',
-      question: 'Miért gyakoribb a torokgyulladáshoz társuló középfülgyulladás gyermekeknél a szöveg szerint?',
+      question: 'Miért gyakoribb a torokgyulladáshoz társuló középfülgyulladás gyermekeknél?',
       options: [
         'Mert gyermekeknél a fülkürt hosszabb és meredekebb lefutású, ami lassítja a kórokozók terjedését a garat felől',
         'Mert gyermekeknél a torokgyulladás szinte mindig súlyosabb lefolyású és tovább tart, mint felnőtteknél',
@@ -20724,7 +20724,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k11',
-      question: 'Hogyan károsítja a dohányzás a légutak belső falát a szöveg szerint?',
+      question: 'Hogyan károsítja a dohányzás a légutak belső falát?',
       options: [
         'Károsítja a légutakat borító csillós hámsejteket, amelyek egészséges esetben a szennyeződéseket és a nyákot kifelé mozgatnák',
         'Károsítja kizárólag a hangszalagokat, amelyek emiatt tartósan berekednek',
@@ -20737,7 +20737,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k12',
-      question: 'Mi a csillós hámsejtek egészséges funkciója a légutakban a szöveg szerint?',
+      question: 'Mi a csillós hámsejtek egészséges funkciója a légutakban?',
       options: [
         'A léghólyagocskák felületi feszültségének csökkentése',
         'A belégzett levegő felmelegítése és páratartalommal való ellátása',
@@ -20750,7 +20750,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k13',
-      question: 'Mi a következménye a csillós hámsejtek dohányzás okozta károsodásának a szöveg szerint?',
+      question: 'Mi a következménye a csillós hámsejtek dohányzás okozta károsodásának?',
       options: [
         'A légzőközpont érzékenysége a szén-dioxid-koncentráció változására jelentősen és véglegesen lecsökken emiatt',
         'A hörgők azonnal, visszafordíthatatlanul kitágulnak, ami tartósan megkönnyíti a levegő áramlását',
@@ -20763,7 +20763,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k14',
-      question: 'Mi történhet a dohányzás abbahagyása után a szöveg szerint?',
+      question: 'Mi történhet a dohányzás abbahagyása után?',
       options: [
         'A fülkürt hossza és lefutása fokozatosan megváltozik, csökkentve a fertőzésveszélyt',
         'A légzőközpont érzékenysége azonnal, véglegesen normalizálódik',
@@ -20776,7 +20776,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k15',
-      question: 'Mit jelent a passzív dohányzás a szöveg szerint?',
+      question: 'Mit jelent a passzív dohányzás?',
       options: [
         'Amikor a dohányzó nem szív le, csak a szájában tartja a füstöt',
         'Amikor a dohányfüst csak a légutak felső szakaszát érinti, a tüdőt nem',
@@ -20789,7 +20789,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k16',
-      question: 'Miért különösen érzékenyek a gyermekek a passzív dohányzás hatásaira a szöveg szerint?',
+      question: 'Miért különösen érzékenyek a gyermekek a passzív dohányzás hatásaira?',
       options: [
         'Mert a gyermekek légzőrendszere még fejlődésben van',
         'Mert a gyermekeknél a fülkürt teljesen zárva van, ami felhalmozza a káros anyagokat',
@@ -20802,7 +20802,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k17',
-      question: 'Mi a cseppfertőzés a szöveg szerint?',
+      question: 'Mi a cseppfertőzés?',
       options: [
         'A kórokozók talajba kerülve, hosszabb idő alatt, közvetett módon, tárgyakon keresztül terjednek tovább',
         'A kórokozók az ivóvízbe kerülve, nagy távolságra, szennyezett forrásokon keresztül terjednek el',
@@ -20815,7 +20815,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-k18',
-      question: 'Melyek a légúti fertőzések terjedésének egyszerű, de hatékony megelőzési módjai a szöveg szerint?',
+      question: 'Melyek a légúti fertőzések terjedésének egyszerű, de hatékony megelőzési módjai?',
       options: [
         'A szájat és orrot eltakaró köhögés/tüsszentés, valamint a rendszeres kézmosás',
         'A napi többszöri orröblítés és az antibiotikum megelőző jellegű szedése',
@@ -20823,12 +20823,12 @@ export const QUIZZES = {
         'A légszűrő maszk folyamatos viselése zárt térben és szabadban egyaránt',
       ],
       correctIndex: 0,
-      explanation: 'A szöveg szerint a szájat és orrot eltakaró köhögés/tüsszentés, valamint a rendszeres kézmosás egyszerű, de hatékony megelőzési módok.',
+      explanation: 'A szájat és orrot eltakaró köhögés/tüsszentés, valamint a rendszeres kézmosás egyszerű, de hatékony megelőzési módok.',
       level: 'kozep',
     },
     {
       id: 'legzorendszer-egeszsegtana-e01',
-      question: 'Mi történik a mellhártya zárt terében légmell (pneumothorax) kialakulásakor a szöveg szerint?',
+      question: 'Mi történik a mellhártya zárt terében légmell (pneumothorax) kialakulásakor?',
       options: [
         'A rekeszizom görcsösen összehúzódik, és tartósan blokkolja a légzést',
         'A mellhártyaűrben a nyomás tovább csökken a normálisnál is alacsonyabb szintre',
@@ -20841,7 +20841,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e02',
-      question: 'Mi a következménye a mellhártyaűr negatív nyomása megszűnésének légmell esetén a szöveg szerint?',
+      question: 'Mi a következménye a mellhártyaűr negatív nyomása megszűnésének légmell esetén?',
       options: [
         'A tüdő összeesik, és az érintett oldalon a légzés hatástalanná válik, ami életveszélyes állapot',
         'A bordaközti izmok fokozott munkával kompenzálják a nyomásváltozást, így a légzés változatlan marad',
@@ -20854,7 +20854,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e03',
-      question: 'Mikor alakulhat ki keszonbetegség (dekompressziós betegség) a szöveg szerint?',
+      question: 'Mikor alakulhat ki keszonbetegség (dekompressziós betegség)?',
       options: [
         'Víz alatti, magas nyomáson végzett munka (pl. mélytengeri búvárkodás) után, ha a felszínre túl gyorsan emelkedik valaki',
         'Nagy magasságban, alacsony légnyomású környezetben végzett hosszas tartózkodás után',
@@ -20867,7 +20867,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e04',
-      question: 'Mi történik a szervezetben a keszonbetegség kialakulásakor a szöveg magyarázata szerint?',
+      question: 'Mi történik a szervezetben a keszonbetegség kialakulásakor?',
       options: [
         'A vér oxigénkoncentrációja hirtelen, veszélyes mértékben lecsökken, mert a magas nyomású környezet gátolja az oxigén felvételét a tüdőben',
         'A tüdő léghólyagocskái a hirtelen nyomásváltozás miatt tartósan összeesnek, és a rugalmas tüdőszövet visszafordíthatatlanul károsodik',
@@ -20880,7 +20880,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e05',
-      question: 'Milyen hasonlattal szemlélteti a szöveg a keszonbetegségben kialakuló buborékképződést?',
+      question: 'Milyen hasonlattal szemléltethető a keszonbetegségben kialakuló buborékképződés?',
       options: [
         'Ahhoz hasonlítja, ahogy egy léggömb hirtelen kilyukad és összeesik',
         'Ahhoz hasonlítja, ahogy a jég hirtelen felmelegítve gyorsan megolvad',
@@ -20888,12 +20888,12 @@ export const QUIZZES = {
         'Ahhoz hasonlítja, ahogy egy hirtelen kinyitott szénsavas üdítőben buborékok jelennek meg',
       ],
       correctIndex: 3,
-      explanation: 'A szöveg a hirtelen kinyitott szénsavas üdítőben megjelenő buborékokhoz hasonlítja a keszonbetegségben kialakuló nitrogénbuborékok képződését.',
+      explanation: 'A keszonbetegségben kialakuló nitrogénbuborékok képződése egy hirtelen kinyitott szénsavas üdítőben megjelenő buborékokhoz hasonlítható.',
       level: 'emelt',
     },
     {
       id: 'legzorendszer-egeszsegtana-e06',
-      question: 'Mi hozza létre a léghólyagocskák belső felszínén a felületi feszültséget a szöveg szerint?',
+      question: 'Mi hozza létre a léghólyagocskák belső felszínén a felületi feszültséget?',
       options: [
         'A léghólyagocskákat borító folyadékréteg folyadékmolekulái közötti vonzóerő',
         'A csillós hámsejtek mozgása által keltett mechanikai súrlódás',
@@ -20906,7 +20906,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e07',
-      question: 'Mi a surfactant szerepe a léghólyagocskákban a szöveg szerint?',
+      question: 'Mi a surfactant szerepe a léghólyagocskákban?',
       options: [
         'Felmelegíti a belégzett levegőt, mielőtt az eléri a léghólyagocskákat',
         'Növeli a felületi feszültséget, hogy a léghólyagocskák stabilan nyitva maradjanak terhelés alatt',
@@ -20919,7 +20919,7 @@ export const QUIZZES = {
     },
     {
       id: 'legzorendszer-egeszsegtana-e08',
-      question: 'Hogyan függ össze a dohányzás és a léghólyagocskák felületi feszültsége a szöveg szerint?',
+      question: 'Hogyan függ össze a dohányzás és a léghólyagocskák felületi feszültsége?',
       options: [
         'A dohányzás károsítja a surfactant-termelő sejteket, így a felületi feszültség kontrollálatlanul megnő, ami hozzájárul a krónikus tüdőkárosodáshoz (pl. tüdőtágulathoz)',
         'A dohányzás tartósan és jelentősen fokozza a surfactant termelését, ami átmenetileg javítja a léghólyagocskák rugalmasságát és a légzésfunkciót',
@@ -21008,7 +21008,7 @@ export const QUIZZES = {
         '8 liter',
       ],
       correctIndex: 1,
-      explanation: 'A szöveg szerint egy felnőtt ember teljes vértérfogata átlagosan kb. 5 liter.',
+      explanation: 'Egy felnőtt ember teljes vértérfogata átlagosan kb. 5 liter.',
       level: 'kozep',
     },
     {
