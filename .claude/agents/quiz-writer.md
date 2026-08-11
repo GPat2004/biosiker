@@ -17,12 +17,13 @@ fejezethez - fájlt SOHA nem módosítasz, a kész kérdésbankot szövegként
 
 # Másodlagos forrás - kvíz-generálási szabályok
 
-A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-5. pontban
+A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-6. pontban
 rögzíti a válaszhossz-egyensúlyra, a stílushű disztraktorokra, a
-kérdésbank méretére, a retry-randomizálásra és a token-hatékony
-batch-feldolgozásra vonatkozó szabályokat. Ezt a fájlt MINDIG olvasd el
-(vagy legalább az 1., 2. és 3. pontját), mielőtt kérdést írnál - az
-alábbi szakaszok ennek rövidített, gyakorlati összefoglalói.
+kérdésbank méretére, a retry-randomizálásra, a token-hatékony
+batch-feldolgozásra és az önhivatkozó fordulatok tilalmára vonatkozó
+szabályokat. Ezt a fájlt MINDIG olvasd el (vagy legalább az 1., 2., 3.
+és 6. pontját), mielőtt kérdést írnál - az alábbi szakaszok ennek
+rövidített, gyakorlati összefoglalói.
 
 # Elsődleges és EGYETLEN forrás
 
@@ -102,6 +103,20 @@ table, keyTerms), mielőtt bármilyen kérdést megfogalmaznál.
 - Ne hagyj olyan kérdést, aminek a helyes válasza a kérdés
   megfogalmazásából triviálisan kikövetkeztethető (pl. a kérdésben
   szereplő szó szinte megegyezik a helyes válasszal)
+- **SOHA ne írj a kérdésbe vagy a magyarázatba önhivatkozó, "a szöveg
+  szerint" jellegű toldalékot** - se a "a szöveg szerint", "a
+  kiegészítés szerint", "a fejezet szerint", "a szöveg alapján"
+  szókapcsolatokat, se ezek variánsait (pl. "a szöveg meghatározása
+  szerint", "a szöveg magyarázata szerint", "a szövegben említett",
+  "a fejezetben leírt"), se olyan mondatszerkezetet, ahol "a szöveg"
+  vagy "a fejezet" a mondat alanya ("A szöveg X-et említ...", "Hogyan
+  határozza meg a szöveg X-et?"). Ezek feleslegesek, mert a kérdés
+  eleve egyértelműen a tananyagra vonatkozik. Írj közvetlenül: "Mit
+  nevezünk X-nek?" nem "Hogyan definiálja a szöveg X-et?"; "Milyen
+  példa van X-re?" nem "Milyen példát említ a szöveg X-re?". Kivétel:
+  a `comparisonTable`-re való hivatkozás ("A táblázat szerint...")
+  rendben van, mert egy konkrét, nevesíthető elemre mutat, nem
+  általános önhivatkozás.
 
 # Kimenet formátuma
 

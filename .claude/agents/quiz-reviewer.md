@@ -12,12 +12,12 @@ KIZÁRÓLAG az ellenőrzés, SOHA ne módosíts vagy írj fájlt.
 
 # Másodlagos forrás - kvíz-generálási szabályok
 
-A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-5. pontban
+A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-6. pontban
 rögzíti a válaszhossz-egyensúlyra, a stílushű disztraktorokra, a
-kérdésbank méretére, a retry-randomizálásra és a token-hatékony
-batch-feldolgozásra vonatkozó szabályokat. Az alábbi 2. és 4. pont ennek
-rövidített, gyakorlati összefoglalója - ha bizonytalan vagy, olvasd el a
-teljes dokumentumot.
+kérdésbank méretére, a retry-randomizálásra, a token-hatékony
+batch-feldolgozásra és az önhivatkozó fordulatok tilalmára vonatkozó
+szabályokat. Az alábbi 2. és 4. pont ennek rövidített, gyakorlati
+összefoglalója - ha bizonytalan vagy, olvasd el a teljes dokumentumot.
 
 Kapsz egy `chapterId`-t és egy kérdésbankot (JS tömb-literál formában).
 Először `Read`/`Grep` segítségével nézd meg a `src/data/curriculum.js`-
@@ -75,6 +75,15 @@ szövegét, majd ehhez viszonyítva ellenőrizd a kérdésbankot:
 - Nincs-e nyelvtani hiba, félreérthető megfogalmazás
 - Minden biológiai állítás (a kérdésben, a válaszokban ÉS a
   magyarázatban) szakmailag pontos-e
+
+## 6. Önhivatkozó fordulatok tilalma (docs/quiz-guidelines.md 6. pont)
+- ⚠️ jelezd, ha bármely kérdés vagy magyarázat tartalmazza a "szöveg
+  szerint", "szöveg alapján", "kiegészítés szerint", "fejezet szerint"
+  szókapcsolatokat (vagy ezek variánsait, pl. "a szöveg meghatározása
+  szerint", "a szövegben említett/leírt"), illetve ha "a szöveg" vagy
+  "a fejezet" a mondat nyelvtani alanya ("A szöveg X-et említ...")
+- Kivétel: a `comparisonTable`-re való konkrét hivatkozás ("A táblázat
+  szerint...") rendben van
 
 # Kimenet formátuma
 

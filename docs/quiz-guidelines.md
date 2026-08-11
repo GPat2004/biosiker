@@ -62,7 +62,7 @@ válasz szövegét és pozícióját (correctIndex) nem szabad megváltoztatni.
 ## 2. Stílushű, de tartalmilag téves disztraktorok definíciós kérdéseknél
 
 **Szabály:** Ha egy kérdés egy fogalom definícióját kéri ("Mit nevezünk
-X-nek?", "Hogyan definiálja a szöveg X-et?", "Mit jelent X fogalma?"), a 3
+X-nek?", "Mit jelent X fogalma?"), a 3
 helytelen válasz legyen szerkezetileg/stilisztikailag hasonló a helyes
 definícióhoz (hasonló mondatforma, hasonló megfogalmazási minta), de
 jelentésben egyértelműen és ellenőrizhetően téves. NE legyen a helyes
@@ -185,6 +185,44 @@ hasonlítottunk össze valós, éles fejezetek megírásán:
   batch writer-prompt-ba (a subagent NE olvassa újra a fájlt), majd
   ugyanígy egy batch reviewer-hívásban ellenőrizze mindhármat. Nincs
   szükség ennek a mérésnek a megismétlésére jövőbeli munkamenetekben.
+
+---
+
+## 6. Tilos az önhivatkozó "a szöveg szerint" jellegű fordulat
+
+**Szabály:** A kérdés vagy a magyarázat szövege SOHA ne hivatkozzon
+önmagára/a forrásra explicit módon - se toldalékként ("a szöveg
+szerint", "a kiegészítés szerint", "a fejezet szerint", "a szöveg
+alapján", "a szöveg meghatározása/magyarázata/definíciója szerint",
+"a szövegben említett/leírt/tárgyalt"), se úgy, hogy "a szöveg" vagy
+"a fejezet" a mondat nyelvtani alanya ("A szöveg X-et említ...",
+"Hogyan határozza meg a szöveg X-et?", "Milyen példát említ a szöveg
+X-re?"). Ez a fordulat felesleges (a kérdés eleve egyértelműen a
+tananyagra vonatkozik), és 2026-08-11-ig visszatérően, szinte minden
+kérdésbe bekerült egy felhasználói visszajelzés szerint, ami miatt
+utólag, egy külön munkamenetben kellett a teljes `quizzes.js`-t
+átfogalmazni (~250+ előfordulás).
+
+**Helyes gyakorlat:** írj közvetlen kérdést a tényről magáról:
+- ROSSZ: "Hogyan definiálja a szöveg az ozmózist?" - JÓ: "Mit
+  nevezünk ozmózisnak?"
+- ROSSZ: "Milyen példát említ a szöveg a biom fogalmára?" - JÓ:
+  "Milyen konkrét példa van a biom fogalmára?"
+- ROSSZ (magyarázatban): "A szöveg az inzulint említi példaként
+  fehérje természetű hormonra." - JÓ: "Az inzulin a fehérje természetű
+  hormon példája."
+
+**Kivétel:** a `comparisonTable`-re való konkrét hivatkozás ("A
+táblázat szerint...") megengedett, mert egy nevesíthető, a diák
+számára is látható elemre (a fejezetben ténylegesen megjelenő
+táblázatra) mutat, nem általános, üres önhivatkozás.
+
+**quiz-reviewer feladata:** Grep-eljen rá a "szöveg szerint", "szöveg
+alapján", "kiegészítés szerint", "fejezet szerint" mintákra, illetve
+figyeljen az "A szöveg ..." / "A fejezet ..." mondatkezdésekre - ha
+találja, ⚠️-vel jelezze, és kérje a mondat átfogalmazását (nem elég
+csak a toldalékot törölni, ha ettől a mondat nyelvtanilag hibás vagy
+esetlen lenne).
 
 ---
 
