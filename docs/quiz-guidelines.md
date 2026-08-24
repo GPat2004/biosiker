@@ -226,6 +226,81 @@ esetlen lenne).
 
 ---
 
+## 7. Családfa-elemzős (rodokgramm) kérdéstípus - genetika fejezetek, csak emelt szint
+
+**Háttér:** a hivatalos érettségi követelmény (33/2015 EMMI rendelet) emelt
+szinten kifejezetten előírja, hogy a diák "legyen képes családfák genetikai
+elemzésére" - ezt a készséget a korábbi, tisztán definíciós/fogalmi
+kérdéstípus nem méri fel. Ez a szabály egy 2026-08-24-es felhasználói
+kéréssel jött létre kifejezetten a genetika modul kvízeihez.
+
+**Szabály:** A genetikai öröklődéssel foglalkozó fejezeteknél (ahol
+releváns - jellemzően Minőségi jellegek/Mendeli genetika és Ideális és
+reális populáció/populációgenetika, illetve bármely további fejezet, amely
+családfaelemzést vagy Punnett-táblát tárgyal) a quiz-writer a szokásos
+definíciós/fogalmi kérdések mellett készítsen **2-3 db, KIZÁRÓLAG emelt
+szintű** családfa-elemzős kérdést is, a hivatalos érettségi feladatok
+stílusában.
+
+**Formátum (kétlépéses, mivel a kvízmotor egyszerű 4-opciós
+feleletválasztós kérdéseket kezel, vizuális családfa-ábrát nem):**
+1. A quiz-writer ír egy rövid, **saját, EREDETI** családfa-leírást
+   szövegesen (pl. "Egy családban az I. generációban egy érintett apa és
+   egészséges anya gyermekei közül..."), generációnkénti érintett/egészséges
+   egyedek felsorolásával. Ez a konkrét család és mintázat SOHA nem
+   másolható semmilyen létező feladatgyűjteményből vagy korábbi érettségi
+   feladatból - csak a formátumot/logikát (generációk, érintettség jelölése,
+   kérdéstípus) kövesse, magát a családot minden egyes kérdéshez újonnan
+   találja ki.
+2. Ezután tesz fel egy konkrét, egyértelműen eldönthető kérdést a leírt
+   családfáról, például:
+   - Melyik öröklésmenet illik a leírt mintázatra? (autoszomális
+     domináns/recesszív, X-hez kötött domináns/recesszív)
+   - Hány heterozigóta hordozó van a leírt generációban?
+   - Mi a genotípusa egy adott, leírt egyénnek?
+
+**Miért csak emelt szinten:** a hivatalos PDF a családfák genetikai
+elemzését kifejezetten csak emelt szintű követelményként nevesíti - közép
+szinten ez a kérdéstípus TILOS, ott csak a meglévő definíciós/fogalmi
+kérdések maradnak.
+
+**Mennyiség:** fejezetenként (ahol releváns) 2-3 db családfa-elemzős
+kérdés elég - ez az emelt bank egy része, nem pótolja a többi emelt
+kérdést. Ha egy fejezet témája nem teszi lehetővé értelmes,
+családfa-alapú kérdés megfogalmazását (pl. nem az öröklésmenetről szól),
+ne erőltesd bele - ez a kérdéstípus opcionális, nem minden genetika
+fejezetnél kötelező.
+
+**quiz-writer feladata:** minden családfa-kérdésnél előbb írd meg a teljes,
+generációnkénti leírást (ki érintett, ki egészséges, ki kivel áll
+rokonságban/szülő-gyermek viszonyban), majd ellenőrizd magadban, hogy a
+leírt mintázatból a kérdésre adott válasz **egyértelműen, más
+öröklésmenettel/genotípussal nem magyarázható módon** levezethető-e - ha a
+mintázat több öröklésmenettel is összeegyeztethető, vagy a kérdezett
+egyén genotípusa a leírásból nem határozható meg egyértelműen, írd át a
+családfát addig, amíg egyértelművé nem válik.
+
+**quiz-reviewer feladata - két KÜLÖN, kifejezetten erre a kérdéstípusra
+vonatkozó ellenőrzési szempont:**
+1. **Logikai konzisztencia:** vezesd le magad is a családfa-leírásból a
+   választ (pl. rajzold fel gondolatban a generációkat, vagd össze az
+   érintett/egészséges mintázatot a lehetséges öröklésmenetekkel) - ⚠️
+   jelezd, ha a megadott `correctIndex` NEM az egyetlen, a leírásból
+   logikailag levezethető válasz (pl. a mintázat több öröklésmenettel is
+   összeegyeztethető, vagy hiányzó információ miatt a genotípus nem
+   határozható meg egyértelműen).
+2. **Eredetiség:** ellenőrizd, hogy a családfa-leírás ne egyezzen (még
+   közelítőleg se) egy általad ismert, klasszikus tankönyvi vagy érettségi
+   példával (pl. hemofília angol királyi család, színvakság-példák
+   szokásos száma/elrendezése) - ⚠️ jelezd, ha a leírás gyanúsan ismerős
+   vagy sablonos mintázatot követ, és kérj tartalmilag új, egyedi családot.
+
+**quiz-writer.md kiegészítés:** a fenti szabály a `.claude/agents/quiz-writer.md`-ben
+és a `.claude/agents/quiz-reviewer.md`-ben is rögzítve van, azok
+tömörebb, gyakorlati összefoglalóként hivatkoznak erre a pontra.
+
+---
+
 ## Munkafolyamat egy új fejezet kvízéhez (frissítve)
 
 1. A fő munkamenet kiválaszt 2-4, egymáshoz közeli fejezetet, és

@@ -12,12 +12,15 @@ KIZÁRÓLAG az ellenőrzés, SOHA ne módosíts vagy írj fájlt.
 
 # Másodlagos forrás - kvíz-generálási szabályok
 
-A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-6. pontban
-rögzíti a válaszhossz-egyensúlyra, a stílushű disztraktorokra, a
-kérdésbank méretére, a retry-randomizálásra, a token-hatékony
-batch-feldolgozásra és az önhivatkozó fordulatok tilalmára vonatkozó
-szabályokat. Az alábbi 2. és 4. pont ennek rövidített, gyakorlati
-összefoglalója - ha bizonytalan vagy, olvasd el a teljes dokumentumot.
+A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: a 0-7. pontban
+rögzíti a `correctIndex` mechanikus mintájának tilalmát, a
+válaszhossz-egyensúlyra, a stílushű disztraktorokra, a kérdésbank
+méretére, a retry-randomizálásra, a token-hatékony batch-feldolgozásra,
+az önhivatkozó fordulatok tilalmára, és (genetika fejezeteknél) a
+családfa-elemzős kérdéstípusra vonatkozó szabályokat. Az alábbi 2. és 4.
+pont, valamint a 7. pont (családfa-kérdéseknél) ennek rövidített,
+gyakorlati összefoglalója - ha bizonytalan vagy, olvasd el a teljes
+dokumentumot.
 
 Kapsz egy `chapterId`-t és egy kérdésbankot (JS tömb-literál formában).
 Először `Read`/`Grep` segítségével nézd meg a `src/data/curriculum.js`-
@@ -84,6 +87,30 @@ szövegét, majd ehhez viszonyítva ellenőrizd a kérdésbankot:
   "a fejezet" a mondat nyelvtani alanya ("A szöveg X-et említ...")
 - Kivétel: a `comparisonTable`-re való konkrét hivatkozás ("A táblázat
   szerint...") rendben van
+
+## 7. Családfa-elemzős (rodokgramm) kérdések - genetika fejezeteknél (docs/quiz-guidelines.md 7. pont)
+
+Ha a kérdésbankban vannak családfa-elemzős kérdések (jellemzően
+Minőségi jellegek, populációgenetika-témájú fejezetekben), ezeket KÉT
+KÜLÖN, a szokásos ellenőrzésen felüli szemponttal is vizsgáld meg:
+
+1. **Szint:** ⚠️ jelezd, ha bármely családfa-elemzős kérdés `level:
+   'kozep'` - ez a kérdéstípus KIZÁRÓLAG emelt szinten megengedett.
+2. **Logikai konzisztencia:** vezesd le magad is a családfa-leírásból a
+   választ (generációnként haladva vedd sorra az érintett/egészséges
+   mintázatot, és vesd össze a lehetséges öröklésmenetekkel/
+   genotípusokkal) - ⚠️ jelezd, ha a megadott `correctIndex` NEM az
+   egyetlen, a leírásból logikailag levezethető válasz (pl. a mintázat
+   több öröklésmenettel is összeegyeztethető, vagy a kérdezett egyén
+   genotípusa a megadott információból nem határozható meg
+   egyértelműen).
+3. **Eredetiség:** ⚠️ jelezd, ha a családfa-leírás gyanúsan egyezik (akár
+   közelítőleg is) egy közismert tankönyvi vagy érettségi példával (pl.
+   hemofília az angol királyi családban, szokásos színvakság-példák) -
+   kérj ilyenkor egy tartalmilag új, egyedi családot.
+4. **Mennyiség:** fejezetenként 2-3 db a célszám - ⚠️ jelezd, ha ennél
+   jelentősen több vagy kevesebb van (kevesebb is elfogadható, ha a
+   fejezet témája nem teszi lehetővé több értelmes családfa-kérdést).
 
 # Kimenet formátuma
 

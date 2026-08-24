@@ -17,13 +17,15 @@ fejezethez - fájlt SOHA nem módosítasz, a kész kérdésbankot szövegként
 
 # Másodlagos forrás - kvíz-generálási szabályok
 
-A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: az 1-6. pontban
-rögzíti a válaszhossz-egyensúlyra, a stílushű disztraktorokra, a
-kérdésbank méretére, a retry-randomizálásra, a token-hatékony
-batch-feldolgozásra és az önhivatkozó fordulatok tilalmára vonatkozó
-szabályokat. Ezt a fájlt MINDIG olvasd el (vagy legalább az 1., 2., 3.
-és 6. pontját), mielőtt kérdést írnál - az alábbi szakaszok ennek
-rövidített, gyakorlati összefoglalói.
+A `docs/quiz-guidelines.md` kiegészíti ezt a fájlt: a 0-7. pontban
+rögzíti a `correctIndex` mechanikus mintájának tilalmát, a
+válaszhossz-egyensúlyra, a stílushű disztraktorokra, a kérdésbank
+méretére, a retry-randomizálásra, a token-hatékony batch-feldolgozásra,
+az önhivatkozó fordulatok tilalmára, és (genetika fejezeteknél) a
+családfa-elemzős kérdéstípusra vonatkozó szabályokat. Ezt a fájlt
+MINDIG olvasd el (vagy legalább az 1., 2., 3. és 6. pontját, genetika
+fejezeteknél a 7. pontot is), mielőtt kérdést írnál - az alábbi
+szakaszok ennek rövidített, gyakorlati összefoglalói.
 
 # Elsődleges és EGYETLEN forrás
 
@@ -117,6 +119,36 @@ table, keyTerms), mielőtt bármilyen kérdést megfogalmaznál.
   a `comparisonTable`-re való hivatkozás ("A táblázat szerint...")
   rendben van, mert egy konkrét, nevesíthető elemre mutat, nem
   általános önhivatkozás.
+
+# Családfa-elemzős (rodokgramm) kérdések genetika fejezeteknél (docs/quiz-guidelines.md 7. pont)
+
+Ha a fejezet genetikai öröklődéssel foglalkozik (jellemzően Minőségi
+jellegek/Mendeli genetika, Ideális és reális populáció/populációgenetika,
+vagy bármely fejezet, amely családfaelemzést/Punnett-táblát tárgyal), a
+szokásos kérdések mellett írj **2-3 db, KIZÁRÓLAG `level: 'emelt'`**
+családfa-elemzős kérdést is (közép szinten TILOS ez a kérdéstípus - a
+hivatalos érettségi PDF ezt a készséget csak emelt szinten követeli meg).
+
+**Formátum, kétlépéses:**
+1. Írj egy rövid, **saját, EREDETI** családfa-leírást szövegesen (a
+   kvízmotor nem tud ábrát megjeleníteni), generációnkénti
+   érintett/egészséges egyedek felsorolásával, pl.: "Egy családban az I.
+   generációban egy érintett apa és egészséges anya gyermekei közül két
+   lány egészséges, egy fiú érintett...". A konkrét családot MINDIG te
+   találod ki - SOHA ne vegyél át egy ismert tankönyvi/érettségi példát
+   (pl. hemofília angol királyi család), csak a formátumot/logikát kövesd.
+2. Tegyél fel egy konkrét, egyértelműen eldönthető kérdést a leírt
+   családfáról - pl. melyik öröklésmenet illik a mintázatra
+   (autoszomális domináns/recesszív, X-hez kötött domináns/recesszív),
+   hány heterozigóta hordozó van egy adott generációban, vagy mi egy
+   megnevezett egyén genotípusa.
+
+**Kritikus önellenőrzés írás közben:** mielőtt lezárnád a kérdést,
+vezesd le magad a leírásból a választ - ha a mintázat több
+öröklésmenettel is összeegyeztethető, vagy a kérdezett genotípus a
+leírásból nem határozható meg egyértelműen, ÍRD ÁT a családfát (adj
+hozzá vagy módosíts egy generációt/egyedet), amíg a válasz egyértelművé
+nem válik.
 
 # Kimenet formátuma
 
