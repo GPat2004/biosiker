@@ -88,7 +88,7 @@ const ChapterView = () => {
       </div>
 
       {!accessible ? (
-        <PaywallGate chapterTitle={chapter.title} />
+        <PaywallGate chapterTitle={chapter.title} previewText={levelContent?.intro} />
       ) : levelContent?.comingSoon ? (
         <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-slate-600 dark:text-slate-400">

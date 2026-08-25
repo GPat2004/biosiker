@@ -2,23 +2,35 @@ import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { X, Plus, Check } from 'lucide-react';
 import { useUserData } from '../context/UserDataContext';
+import { FREE_MAX_CARDS_PER_DECK, FREE_MAX_DECKS } from '../lib/flashcardUtils';
+import FreeLimitBanner from './FreeLimitBanner';
 
 // Egy glosszárium-fogalomból ("term" + "definition") egy kattintással
 // tanulókártyát hoz létre egy meglévő vagy újonnan létrehozott saját
 // paklihoz. A DefinedTerm tooltipjéből nyílik meg.
 const AddToDeckModal = ({ term, definition, onClose }) => {
-  const { getDecks, createDeck, createCard } = useUserData();
+  const { isPremium, getDecks, getDeckCards, createDeck, createCard } = useUserData();
   const decks = getDecks();
-  const [selectedDeckId, setSelectedDeckId] = useState(decks[0]?.id ?? '');
-  const [creatingNew, setCreatingNew] = useState(decks.length === 0);
+  const deckCardCounts = Object.fromEntries(decks.map((d) => [d.id, getDeckCards(d.id).length]));
+  const deckLimitReached = !isPremium && decks.length >= FREE_MAX_DECKS;
+  const availableDecks = decks.filter(
+    (d) => isPremium || deckCardCounts[d.id] < FREE_MAX_CARDS_PER_DECK
+  );
+
+  const [selectedDeckId, setSelectedDeckId] = useState(availableDecks[0]?.id ?? '');
+  const [creatingNew, setCreatingNew] = useState(availableDecks.length === 0 && !deckLimitReached);
   const [newDeckName, setNewDeckName] = useState('');
   const [added, setAdded] = useState(false);
+
+  const noOptionsLeft = availableDecks.length === 0 && deckLimitReached;
 
   const handleAdd = () => {
     let deckId = selectedDeckId;
     if (creatingNew) {
-      if (!newDeckName.trim()) return;
+      if (deckLimitReached || !newDeckName.trim()) return;
       deckId = createDeck({ name: newDeckName.trim() });
+    } else if (!isPremium && (deckCardCounts[deckId] ?? 0) >= FREE_MAX_CARDS_PER_DECK) {
+      return;
     }
     if (!deckId) return;
     createCard(deckId, { front: term, back: definition });
@@ -62,35 +74,47 @@ const AddToDeckModal = ({ term, definition, onClose }) => {
             <Check className="h-5 w-5" />
             Hozzáadva a paklihoz!
           </div>
+        ) : noOptionsLeft ? (
+          <FreeLimitBanner />
         ) : (
           <>
             <p className="text-xs font-bold text-slate-500 mb-2">Melyik paklihoz?</p>
             <div className="space-y-1.5 max-h-40 overflow-y-auto mb-3">
-              {decks.map((deck) => (
-                <button
-                  key={deck.id}
-                  onClick={() => {
-                    setSelectedDeckId(deck.id);
-                    setCreatingNew(false);
-                  }}
-                  className={`w-full text-left px-3 py-2 rounded-xl text-sm font-bold border transition-colors ${
-                    !creatingNew && selectedDeckId === deck.id
-                      ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-400'
-                      : 'border-slate-200 dark:border-slate-800 hover:border-primary-300'
-                  }`}
-                >
-                  {deck.name}
-                </button>
-              ))}
+              {decks.map((deck) => {
+                const isFull = !isPremium && deckCardCounts[deck.id] >= FREE_MAX_CARDS_PER_DECK;
+                return (
+                  <button
+                    key={deck.id}
+                    disabled={isFull}
+                    onClick={() => {
+                      setSelectedDeckId(deck.id);
+                      setCreatingNew(false);
+                    }}
+                    className={`w-full text-left px-3 py-2 rounded-xl text-sm font-bold border transition-colors ${
+                      isFull
+                        ? 'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-600 cursor-not-allowed'
+                        : !creatingNew && selectedDeckId === deck.id
+                          ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-400'
+                          : 'border-slate-200 dark:border-slate-800 hover:border-primary-300'
+                    }`}
+                  >
+                    {deck.name}
+                    {isFull && ` (tele - ${FREE_MAX_CARDS_PER_DECK}/${FREE_MAX_CARDS_PER_DECK})`}
+                  </button>
+                );
+              })}
               <button
+                disabled={deckLimitReached}
                 onClick={() => setCreatingNew(true)}
                 className={`w-full flex items-center gap-1.5 text-left px-3 py-2 rounded-xl text-sm font-bold border transition-colors ${
-                  creatingNew
-                    ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-400'
-                    : 'border-slate-200 dark:border-slate-800 hover:border-primary-300'
+                  deckLimitReached
+                    ? 'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-600 cursor-not-allowed'
+                    : creatingNew
+                      ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-400'
+                      : 'border-slate-200 dark:border-slate-800 hover:border-primary-300'
                 }`}
               >
-                <Plus className="h-4 w-4" /> Új pakli
+                <Plus className="h-4 w-4" /> Új pakli{deckLimitReached && ` (limit elérve)`}
               </button>
             </div>
 
@@ -103,6 +127,12 @@ const AddToDeckModal = ({ term, definition, onClose }) => {
                 placeholder="Új pakli neve"
                 className="w-full mb-3 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
               />
+            )}
+
+            {!isPremium && (
+              <p className="text-xs text-slate-400 mb-3">
+                {decks.length}/{FREE_MAX_DECKS} pakli · ingyenes csomag
+              </p>
             )}
 
             <button

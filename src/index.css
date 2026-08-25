@@ -18,4 +18,17 @@
   .backface-hidden {
     backface-visibility: hidden;
   }
+  .animate-soft-pulse {
+    animation: soft-pulse 2.4s ease-in-out infinite;
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }

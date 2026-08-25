@@ -1,13 +1,14 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Plus, Layers, Trash2 } from 'lucide-react';
+import { Plus, Layers, Lock, Trash2 } from 'lucide-react';
 import { useUserData } from '../context/UserDataContext';
-import { isDue } from '../lib/flashcardUtils';
+import { FREE_MAX_CARDS_PER_DECK, FREE_MAX_DECKS, isDue } from '../lib/flashcardUtils';
 import DeckFormModal from '../components/DeckFormModal';
+import FreeLimitBanner from '../components/FreeLimitBanner';
 
 const NO_SUBJECT = 'Nincs tantárgy megadva';
 
-const DeckCard = ({ deck, cardCount, dueCount, onDelete }) => (
+const DeckCard = ({ deck, cardCount, dueCount, onDelete, isPremium }) => (
   <div className="relative group">
     <Link
       to={`/flashcards/${deck.id}`}
@@ -27,7 +28,9 @@ const DeckCard = ({ deck, cardCount, dueCount, onDelete }) => (
       {deck.description && (
         <p className="text-sm text-slate-500 mt-1 line-clamp-2">{deck.description}</p>
       )}
-      <p className="text-xs text-slate-400 mt-3">{cardCount} kártya</p>
+      <p className="text-xs text-slate-400 mt-3">
+        {cardCount} kártya{!isPremium && ` (max. ${FREE_MAX_CARDS_PER_DECK})`}
+      </p>
     </Link>
     <button
       onClick={(e) => {
@@ -43,9 +46,10 @@ const DeckCard = ({ deck, cardCount, dueCount, onDelete }) => (
 );
 
 const Flashcards = () => {
-  const { getDecks, getDeckCards, createDeck, deleteDeck } = useUserData();
+  const { isPremium, getDecks, getDeckCards, createDeck, deleteDeck } = useUserData();
   const [showCreate, setShowCreate] = useState(false);
   const decks = getDecks();
+  const deckLimitReached = !isPremium && decks.length >= FREE_MAX_DECKS;
 
   const grouped = useMemo(() => {
     const bySubject = new Map();
@@ -74,14 +78,37 @@ const Flashcards = () => {
             Saját paklik, térbeli ismétléssel - gyakorold, amit fontosnak jelöltél.
           </p>
         </div>
-        <button
-          onClick={() => setShowCreate(true)}
-          className="shrink-0 flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-blue-600 text-white font-bold shadow-lg hover:shadow-primary-500/20 transition-all"
-        >
-          <Plus className="h-5 w-5 mr-2" />
-          Új pakli
-        </button>
+        <div className="shrink-0 flex flex-col items-end gap-1.5">
+          {!isPremium && decks.length > 0 && (
+            <p className="text-xs text-slate-400">
+              {decks.length}/{FREE_MAX_DECKS} pakli használva (ingyenes csomag)
+            </p>
+          )}
+          {deckLimitReached ? (
+            <Link
+              to="/pricing"
+              className="flex items-center justify-center px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            >
+              <Lock className="h-4 w-4 mr-2" />
+              Limit elérve
+            </Link>
+          ) : (
+            <button
+              onClick={() => setShowCreate(true)}
+              className="flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-blue-600 text-white font-bold shadow-lg hover:shadow-primary-500/20 transition-all"
+            >
+              <Plus className="h-5 w-5 mr-2" />
+              Új pakli
+            </button>
+          )}
+        </div>
       </div>
+
+      {deckLimitReached && (
+        <div className="mb-8">
+          <FreeLimitBanner />
+        </div>
+      )}
 
       {decks.length === 0 ? (
         <div className="p-10 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
@@ -114,6 +141,7 @@ const Flashcards = () => {
                       cardCount={cards.length}
                       dueCount={cards.filter((c) => isDue(c)).length}
                       onDelete={handleDelete}
+                      isPremium={isPremium}
                     />
                   );
                 })}

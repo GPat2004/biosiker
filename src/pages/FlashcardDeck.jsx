@@ -1,16 +1,17 @@
 import { useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ChevronLeft, Pencil, Plus, Shuffle, Trash2, Zap } from 'lucide-react';
+import { ChevronLeft, Lock, Pencil, Plus, Shuffle, Trash2, Zap } from 'lucide-react';
 import { useUserData } from '../context/UserDataContext';
-import { canUseQuizMode, isDue } from '../lib/flashcardUtils';
+import { canUseQuizMode, FREE_MAX_CARDS_PER_DECK, isDue } from '../lib/flashcardUtils';
 import DeckFormModal from '../components/DeckFormModal';
 import CardFormModal from '../components/CardFormModal';
+import FreeLimitBanner from '../components/FreeLimitBanner';
 
 const BOX_LABELS = { 1: '1. doboz', 2: '2. doboz', 3: '3. doboz', 4: '4. doboz', 5: '5. doboz' };
 
 const FlashcardDeck = () => {
   const { deckId } = useParams();
-  const { getDecks, getDeckCards, updateDeck, createCard, updateCard, deleteCard } = useUserData();
+  const { isPremium, getDecks, getDeckCards, updateDeck, createCard, updateCard, deleteCard } = useUserData();
   const deck = getDecks().find((d) => d.id === deckId);
   const cards = getDeckCards(deckId);
 
@@ -20,6 +21,7 @@ const FlashcardDeck = () => {
 
   const dueCount = useMemo(() => cards.filter((c) => isDue(c)).length, [cards]);
   const quizModeAvailable = useMemo(() => canUseQuizMode(cards), [cards]);
+  const cardLimitReached = !isPremium && cards.length >= FREE_MAX_CARDS_PER_DECK;
 
   if (!deck) return <Navigate to="/flashcards" replace />;
 
@@ -95,13 +97,35 @@ const FlashcardDeck = () => {
 
       <div className="flex items-center justify-between mt-10 mb-4">
         <h2 className="text-lg font-bold">Kártyák ({cards.length})</h2>
-        <button
-          onClick={() => setShowAddCard(true)}
-          className="flex items-center px-4 py-2 rounded-xl bg-primary-600 text-white text-sm font-bold hover:bg-primary-700 transition-colors"
-        >
-          <Plus className="h-4 w-4 mr-1.5" /> Új kártya
-        </button>
+        <div className="flex flex-col items-end gap-1">
+          {!isPremium && cards.length > 0 && (
+            <p className="text-xs text-slate-400">
+              {cards.length}/{FREE_MAX_CARDS_PER_DECK} kártya ebben a paliban (ingyenes csomag)
+            </p>
+          )}
+          {cardLimitReached ? (
+            <Link
+              to="/pricing"
+              className="flex items-center px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            >
+              <Lock className="h-4 w-4 mr-1.5" /> Limit elérve
+            </Link>
+          ) : (
+            <button
+              onClick={() => setShowAddCard(true)}
+              className="flex items-center px-4 py-2 rounded-xl bg-primary-600 text-white text-sm font-bold hover:bg-primary-700 transition-colors"
+            >
+              <Plus className="h-4 w-4 mr-1.5" /> Új kártya
+            </button>
+          )}
+        </div>
       </div>
+
+      {cardLimitReached && (
+        <div className="mb-6">
+          <FreeLimitBanner />
+        </div>
+      )}
 
       {cards.length === 0 ? (
         <div className="p-8 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">

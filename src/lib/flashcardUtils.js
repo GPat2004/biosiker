@@ -1,3 +1,8 @@
+// Ingyenes csomag korlátai a tanulókártyáknál - előfizetéssel ez a
+// korlát nem érvényesül (lásd useUserData().isPremium).
+export const FREE_MAX_DECKS = 2;
+export const FREE_MAX_CARDS_PER_DECK = 20;
+
 // Leitner-doboz jellegű térbeli ismétlés (spaced repetition) a
 // tanulókártyákhoz. 5 "doboz" (szint) - minden szinthez tartozik egy
 // intervallum, ami után a kártya újra esedékessé válik.
