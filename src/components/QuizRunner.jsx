@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, XCircle, ChevronLeft, RotateCcw } from 'lucide-react';
 import { prepareQuiz } from '../lib/quizUtils';
 import { useUserData } from '../context/UserDataContext';
+import { xpForScore } from '../lib/gamificationUtils';
 
 // A `pool`-t és a `count`-ot kapja meg a kérdéshalmaz elő-kikeverése helyett,
 // hogy az "Újra próbálom" gomb ténylegesen új, friss random húzást tudjon
@@ -11,7 +12,7 @@ import { useUserData } from '../context/UserDataContext';
 // a felhasználó progresszébe - hiányzó `quizKey`-nél (pl. vegyes gyakorló
 // kvíznél) az eredmény csak a munkamenetben jelenik meg, nem kerül mentésre.
 const QuizRunner = ({ title, pool, count, backTo, backLabel, quizKey }) => {
-  const { recordQuizResult } = useUserData();
+  const { recordQuizResult, awardXp } = useUserData();
   const [questions, setQuestions] = useState(() => prepareQuiz(pool, count));
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -117,7 +118,9 @@ const QuizRunner = ({ title, pool, count, backTo, backLabel, quizKey }) => {
       setFinished(true);
       if (quizKey) {
         const correctCount = nextAnswers.filter((a, i) => a === questions[i].correctIndex).length;
-        recordQuizResult(quizKey, Math.round((correctCount / questions.length) * 100));
+        const percent = Math.round((correctCount / questions.length) * 100);
+        recordQuizResult(quizKey, percent);
+        awardXp(xpForScore(percent));
       }
     } else {
       setIndex(index + 1);

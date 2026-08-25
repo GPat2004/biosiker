@@ -4,6 +4,7 @@ import { CURRICULUM, getChapterById } from '../data/curriculum';
 import { useAuth } from './AuthContext';
 import { fetchUserProgress, upsertUserProgress } from '../lib/progressApi';
 import { generateId, nextReviewState } from '../lib/flashcardUtils';
+import { COINS_PER_LEVEL, levelFromXp, xpIntoLevelFromXp } from '../lib/gamificationUtils';
 
 const UserDataContext = createContext();
 
@@ -18,8 +19,23 @@ const DEFAULT_STATE = {
   // description, subject, createdAt }], cards: [{ id, deckId, front,
   // back, srsBox, lastReviewedAt, dueAt, createdAt }].
   flashcards: { decks: [], cards: [] },
+  // Kizarolag kviz-eredmeny alapjan no (lasd awardXp) - fejezet
+  // elolvasasanak megjeloleseert NEM jar XP. A szint a xp-bol
+  // szarmaztatott: level = floor(xp / 100) + 1, fix 100 XP/szint.
   xp: 0,
+  // Jatekos, kizarolag aktivitassal szerezheto virtualis penznem -
+  // szintlepesert es napi jutalomert jar, SOHA nem vasarolhato.
+  coins: 0,
   streak: { current: 0, longest: 0, lastActiveDate: null },
+  // Profil-oldal: avatar-valasztas, merfoldkovek, napi jutalmak, erme-bolt.
+  gamification: {
+    avatarId: 'avatar-1',
+    unlockedMilestones: {}, // { [milestoneId]: isoDate }
+    claimedDailyRewards: {}, // { [napszam]: isoDate }
+    lastDailyClaimDate: null,
+    ownedShopItems: [], // [itemId]
+    activeShopItems: [], // [itemId] - jelenleg bekapcsolt kozmetikai extrak
+  },
 };
 
 const todayISO = () => new Date().toISOString().slice(0, 10);
@@ -154,12 +170,9 @@ export const UserDataProvider = ({ children }) => {
           };
         }
 
-        const alreadyDone = prev.progress[moduleId]?.[chapterId]?.completed;
-
         return {
           ...prev,
           streak: newStreak,
-          xp: alreadyDone ? prev.xp : prev.xp + 20,
           progress: {
             ...prev.progress,
             [moduleId]: {
@@ -220,6 +233,28 @@ export const UserDataProvider = ({ children }) => {
     (quizKey) => bundle.data.quizResults[quizKey] || null,
     [bundle.data.quizResults]
   );
+
+  // --- Gamifikacio: XP, szint, coin --------------------------------------
+  // Kizarolag kviz-eredmeny hivja (lasd QuizRunner) - a szint fix 100
+  // XP-nkent lep, es minden szintlepes 100 Coin jutalmat ad automatikusan.
+  const awardXp = useCallback(
+    (amount) => {
+      if (!amount || amount <= 0) return;
+      updateData((prev) => {
+        const newXp = prev.xp + amount;
+        const levelsGained = levelFromXp(newXp) - levelFromXp(prev.xp);
+        return {
+          ...prev,
+          xp: newXp,
+          coins: prev.coins + Math.max(0, levelsGained) * COINS_PER_LEVEL,
+        };
+      });
+    },
+    [updateData]
+  );
+
+  const level = levelFromXp(bundle.data.xp);
+  const xpIntoLevel = xpIntoLevelFromXp(bundle.data.xp);
 
   // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
   const createDeck = useCallback(
@@ -371,6 +406,10 @@ export const UserDataProvider = ({ children }) => {
         getDecks,
         getDeckCards,
         xp: bundle.data.xp,
+        coins: bundle.data.coins,
+        level,
+        xpIntoLevel,
+        awardXp,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,
