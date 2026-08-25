@@ -7620,21 +7620,21 @@ export const CURRICULUM = [
               {
                 heading: 'Az Rh-vércsoportrendszer öröklődése',
                 paragraphs: [
-                  'Az Rh-vércsoportrendszer - ahogy azt korábban (Vércsoportok fejezet) megismertük - egyetlen génnel, egyszerű domináns-recesszív öröklésmenettel írható le: az Rh-pozitív (R) allél domináns az Rh-negatív (r) alléllal szemben. Nézzünk egy konkrét keresztezést: ha az apa heterozigóta Rh-pozitív (Rr genotípusú), az anya pedig Rh-negatív (rr genotípusú), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
+                  'Az Rh-vércsoportrendszer - ahogy azt korábban (Vércsoportok fejezet) megismertük - egyetlen génnel, egyszerű domináns-recesszív öröklésmenettel írható le: az Rh-pozitív (D) allél domináns az Rh-negatív (d) alléllal szemben. Nézzünk egy konkrét keresztezést: ha az apa heterozigóta Rh-pozitív (Dd genotípusú), az anya pedig Rh-negatív (dd genotípusú), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
                 ],
                 table: {
-                  caption: 'Punnett-tábla: Rr (Rh-pozitív, heterozigóta apa) × rr (Rh-negatív anya) keresztezés',
-                  headers: ['', 'R ivarsejt (apai)', 'r ivarsejt (apai)'],
+                  caption: 'Punnett-tábla: Dd (Rh-pozitív, heterozigóta apa) × dd (Rh-negatív anya) keresztezés',
+                  headers: ['', 'D ivarsejt (apai)', 'd ivarsejt (apai)'],
                   rows: [
-                    ['r ivarsejt (anyai)', 'Rr (Rh-pozitív)', 'rr (Rh-negatív)'],
-                    ['r ivarsejt (anyai)', 'Rr (Rh-pozitív)', 'rr (Rh-negatív)'],
+                    ['d ivarsejt (anyai)', 'Dd (Rh-pozitív)', 'dd (Rh-negatív)'],
+                    ['d ivarsejt (anyai)', 'Dd (Rh-pozitív)', 'dd (Rh-negatív)'],
                   ],
                 },
               },
               {
                 heading: 'Az Rh-keresztezés eredményének értelmezése',
                 paragraphs: [
-                  'A táblázatból leolvasható, hogy ennél a szülőpárnál az utódok fele (Rr) Rh-pozitív, fele (rr) Rh-negatív lesz - vagyis egy Rh-pozitív (de heterozigóta) és egy Rh-negatív szülőnek is születhet Rh-negatív gyermeke, hiszen az apa maga is hordozza az r allélt, csak a domináns R allél miatt ez nála nem jelenik meg fenotípusosan.',
+                  'A táblázatból leolvasható, hogy ennél a szülőpárnál az utódok fele (Dd) Rh-pozitív, fele (dd) Rh-negatív lesz - vagyis egy Rh-pozitív (de heterozigóta) és egy Rh-negatív szülőnek is születhet Rh-negatív gyermeke, hiszen az apa maga is hordozza a d allélt, csak a domináns D allél miatt ez nála nem jelenik meg fenotípusosan.',
                 ],
               },
               {

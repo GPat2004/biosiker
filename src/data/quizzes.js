@@ -35827,15 +35827,15 @@ export const QUIZZES = {
     },
     {
       id: 'minosegi-jellegek-k18',
-      question: 'Ha az apa heterozigóta Rh-pozitív (Rr), az anya pedig Rh-negatív (rr) genotípusú, milyen arányban várhatók Rh-pozitív, illetve Rh-negatív gyermekeik?',
+      question: 'Ha az apa heterozigóta Rh-pozitív (Dd), az anya pedig Rh-negatív (dd) genotípusú, milyen arányban várhatók Rh-pozitív, illetve Rh-negatív gyermekeik?',
       options: [
         'Minden gyermek Rh-pozitív lesz, mert az apa Rh-pozitív genotípusa mindig felülkerekedik.',
-        'A gyermekek fele Rr genotípusú (Rh-pozitív), fele rr genotípusú (Rh-negatív) lesz, mert az R allél domináns az r alléllal szemben.',
+        'A gyermekek fele Dd genotípusú (Rh-pozitív), fele dd genotípusú (Rh-negatív) lesz, mert a D allél domináns a d alléllal szemben.',
         'Minden gyermek Rh-negatív lesz, mert az anya Rh-negatív genotípusa domináns az apáéval szemben.',
         'A gyermekek háromnegyede Rh-pozitív, negyede Rh-negatív lesz, hasonlóan egy Aa × Aa keresztezéshez.',
       ],
       correctIndex: 1,
-      explanation: 'Mivel az apa Rr, az r allélt is továbbadhatja; az Rr (apa) × rr (anya) keresztezésből fejenként 50% eséllyel Rr (Rh-pozitív) vagy rr (Rh-negatív) utód születik.',
+      explanation: 'Mivel az apa Dd, a d allélt is továbbadhatja; a Dd (apa) × dd (anya) keresztezésből fejenként 50% eséllyel Dd (Rh-pozitív) vagy dd (Rh-negatív) utód születik.',
       level: 'kozep',
     },
     {
