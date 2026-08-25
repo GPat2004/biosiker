@@ -4,7 +4,13 @@ import { CURRICULUM, getChapterById } from '../data/curriculum';
 import { useAuth } from './AuthContext';
 import { fetchUserProgress, upsertUserProgress } from '../lib/progressApi';
 import { generateId, nextReviewState } from '../lib/flashcardUtils';
-import { COINS_PER_LEVEL, levelFromXp, MILESTONES, xpIntoLevelFromXp } from '../lib/gamificationUtils';
+import {
+  COINS_PER_LEVEL,
+  getDailyRewardForDay,
+  levelFromXp,
+  MILESTONES,
+  xpIntoLevelFromXp,
+} from '../lib/gamificationUtils';
 
 const UserDataContext = createContext();
 
@@ -316,6 +322,42 @@ export const UserDataProvider = ({ children }) => {
     [bundle.data.gamification.unlockedMilestones]
   );
 
+  // --- Napi jutalmak -----------------------------------------------------
+  // A jelenlegi streak-nap alapjan jaro jutalom, naponta csak egyszer
+  // igenyelheto le (lastDailyClaimDate orzi, mikor tortent az utolso
+  // igenyles).
+  const claimDailyReward = useCallback(() => {
+    updateData((prev) => {
+      const today = todayISO();
+      if (prev.gamification.lastDailyClaimDate === today) return prev;
+      const day = prev.streak.current || 1;
+      const reward = getDailyRewardForDay(day);
+      return {
+        ...prev,
+        coins: prev.coins + reward.coins,
+        gamification: {
+          ...prev.gamification,
+          lastDailyClaimDate: today,
+          claimedDailyRewards: {
+            ...prev.gamification.claimedDailyRewards,
+            [today]: { day, coins: reward.coins },
+          },
+        },
+      };
+    });
+  }, [updateData]);
+
+  const getDailyRewardStatus = useCallback(() => {
+    const today = todayISO();
+    const day = bundle.data.streak.current || 1;
+    return {
+      day,
+      reward: getDailyRewardForDay(day),
+      alreadyClaimedToday: bundle.data.gamification.lastDailyClaimDate === today,
+      totalClaimed: Object.keys(bundle.data.gamification.claimedDailyRewards).length,
+    };
+  }, [bundle.data.streak.current, bundle.data.gamification.lastDailyClaimDate, bundle.data.gamification.claimedDailyRewards]);
+
   // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
   const createDeck = useCallback(
     ({ name, description = '', subject = '' }) => {
@@ -473,6 +515,8 @@ export const UserDataProvider = ({ children }) => {
         avatarId: bundle.data.gamification.avatarId,
         setAvatarId,
         getMilestones,
+        claimDailyReward,
+        getDailyRewardStatus,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,
