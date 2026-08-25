@@ -14,9 +14,14 @@ const BENEFITS = [
 // elmosva megjelenítve a doboz mögött - ez érzékelteti, hogy valódi
 // tartalom van a zár mögött, nem csak egy generikus vázlat.
 const PaywallGate = ({ chapterTitle, previewText }) => (
+  // FONTOS: a doboz magassága a FÖLDSZÍNI (előtér) tartalomhoz igazodik,
+  // nem a háttérhez - a háttér elmosott előnézet van abszolút pozícióval
+  // ráfeszítve a dobozra (inset-0), így annak mérete sosem vághatja le az
+  // előtér tényleges (ikon + cím + szöveg + 3 előny-pont + gomb) tartalmát,
+  // függetlenül attól, hogy a valódi bevezető szöveg rövid vagy hosszú.
   <div className="relative rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden">
     {/* Elhomályosított "csali" tartalom a háttérben, hogy érezhető legyen az érték */}
-    <div className="p-8 md:p-12 blur-sm select-none pointer-events-none opacity-60">
+    <div className="absolute inset-0 p-8 md:p-12 blur-sm select-none pointer-events-none opacity-60">
       <div className="h-6 w-2/3 bg-slate-300 dark:bg-slate-700 rounded mb-4" />
       {previewText ? (
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{previewText}</p>
@@ -30,8 +35,8 @@ const PaywallGate = ({ chapterTitle, previewText }) => (
       )}
     </div>
 
-    <div className="absolute inset-0 flex items-center justify-center bg-white/70 dark:bg-slate-950/70 backdrop-blur-[2px]">
-      <div className="text-center px-6 py-10 max-w-md">
+    <div className="relative flex items-center justify-center bg-white/70 dark:bg-slate-950/70 backdrop-blur-[2px] px-6 py-10 md:py-14">
+      <div className="text-center max-w-md">
         <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 mb-5 animate-soft-pulse">
           <Lock className="h-7 w-7" />
         </div>
