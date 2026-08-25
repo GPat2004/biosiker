@@ -5,6 +5,7 @@ import { useUserData } from '../context/UserDataContext';
 import { getAvatar, LEVEL_XP } from '../lib/gamificationUtils';
 import { AvatarIcon } from '../lib/icons';
 import AvatarPickerModal from '../components/AvatarPickerModal';
+import MilestonesTab from '../components/MilestonesTab';
 
 const TABS = [
   { id: 'milestones', label: 'Mérföldkövek', icon: Trophy },
@@ -110,7 +111,7 @@ const Profile = () => {
         ))}
       </div>
 
-      {activeTab === 'milestones' && <ComingSoon label="Mérföldkövek" />}
+      {activeTab === 'milestones' && <MilestonesTab />}
       {activeTab === 'daily' && <ComingSoon label="Napi jutalmak" />}
       {activeTab === 'shop' && <ComingSoon label="Érme-bolt" />}
 

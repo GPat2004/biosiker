@@ -4,7 +4,7 @@ import { CURRICULUM, getChapterById } from '../data/curriculum';
 import { useAuth } from './AuthContext';
 import { fetchUserProgress, upsertUserProgress } from '../lib/progressApi';
 import { generateId, nextReviewState } from '../lib/flashcardUtils';
-import { COINS_PER_LEVEL, levelFromXp, xpIntoLevelFromXp } from '../lib/gamificationUtils';
+import { COINS_PER_LEVEL, levelFromXp, MILESTONES, xpIntoLevelFromXp } from '../lib/gamificationUtils';
 
 const UserDataContext = createContext();
 
@@ -101,6 +101,43 @@ export const UserDataProvider = ({ children }) => {
       storage.set('user-data', bundle.data);
     }
   }, [bundle, user?.id]);
+
+  // Merfoldko-kiertekeles: minden allapotvaltozas utan ujra lefut, es
+  // Coin-jutalommal egyutt feloldja azokat, amik meg nincsenek feloldva,
+  // de mar teljesulnek. Idempotens - miutan feloldotta oket, a kovetkezo
+  // lefutasnal mar nincs ujonnan teljesulo mérföldkő, igy nem hurkol.
+  // Ugyanaz a "setState hatasban" minta, mint a fenti auth-szinkronnal -
+  // ez itt is szandekos: tobb, egymastol fuggetlen allapotszelet (kviz,
+  // szint, streak, tanulokartya) egyuttes, egy helyen tortenő figyeleset
+  // igenyli, kulon-kulon minden mutalo hivas utani checkMilestones()
+  // hivas sokkal torekenyebb es konnyen elfelejtheto lenne.
+  useEffect(() => {
+    if (isSyncingRef.current) return;
+    const newlyUnlocked = MILESTONES.filter(
+      (m) => !bundle.data.gamification.unlockedMilestones[m.id] && m.check(bundle.data)
+    );
+    if (newlyUnlocked.length === 0) return;
+
+    setBundle((prev) => {
+      const unlocked = { ...prev.data.gamification.unlockedMilestones };
+      let coinBonus = 0;
+      for (const m of newlyUnlocked) {
+        if (!unlocked[m.id]) {
+          unlocked[m.id] = new Date().toISOString();
+          coinBonus += m.coinReward;
+        }
+      }
+      if (coinBonus === 0) return prev;
+      return {
+        ...prev,
+        data: {
+          ...prev.data,
+          coins: prev.data.coins + coinBonus,
+          gamification: { ...prev.data.gamification, unlockedMilestones: unlocked },
+        },
+      };
+    });
+  }, [bundle.data]);
 
   const updateData = useCallback((updater) => {
     setBundle((prev) => ({ ...prev, data: updater(prev.data) }));
@@ -266,6 +303,19 @@ export const UserDataProvider = ({ children }) => {
     [updateData]
   );
 
+  // Minden merfoldkohoz hozza fuzi, hogy fel van-e mar oldva (es mikor) -
+  // a Profil oldal ebbol allitja ossze a listat, kiemelt/halvanyitott
+  // megjelenitessel.
+  const getMilestones = useCallback(
+    () =>
+      MILESTONES.map((m) => ({
+        ...m,
+        unlocked: Boolean(bundle.data.gamification.unlockedMilestones[m.id]),
+        unlockedAt: bundle.data.gamification.unlockedMilestones[m.id] || null,
+      })),
+    [bundle.data.gamification.unlockedMilestones]
+  );
+
   // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
   const createDeck = useCallback(
     ({ name, description = '', subject = '' }) => {
@@ -422,6 +472,7 @@ export const UserDataProvider = ({ children }) => {
         awardXp,
         avatarId: bundle.data.gamification.avatarId,
         setAvatarId,
+        getMilestones,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,
