@@ -7,20 +7,13 @@ import { AvatarIcon } from '../lib/icons';
 import AvatarPickerModal from '../components/AvatarPickerModal';
 import MilestonesTab from '../components/MilestonesTab';
 import DailyRewardsTab from '../components/DailyRewardsTab';
+import ShopTab from '../components/ShopTab';
 
 const TABS = [
   { id: 'milestones', label: 'Mérföldkövek', icon: Trophy },
   { id: 'daily', label: 'Napi jutalmak', icon: Gift },
   { id: 'shop', label: 'Érme-bolt', icon: ShoppingBag },
 ];
-
-const ComingSoon = ({ label }) => (
-  <div className="p-10 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
-    <p className="text-slate-600 dark:text-slate-400">
-      A(z) „{label}” szekció hamarosan elérhető lesz.
-    </p>
-  </div>
-);
 
 const Profile = () => {
   const { user } = useAuth();
@@ -114,7 +107,7 @@ const Profile = () => {
 
       {activeTab === 'milestones' && <MilestonesTab />}
       {activeTab === 'daily' && <DailyRewardsTab />}
-      {activeTab === 'shop' && <ComingSoon label="Érme-bolt" />}
+      {activeTab === 'shop' && <ShopTab />}
 
       {showAvatarPicker && (
         <AvatarPickerModal

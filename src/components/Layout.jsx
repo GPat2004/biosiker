@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Sun, Moon, GraduationCap, LogOut, User, Settings as SettingsIcon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
+import CornerMascot from './CornerMascot';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -136,6 +137,7 @@ const Layout = ({ children }) => {
           <p>© 2024 BioSiker. Minden jog fenntartva.</p>
         </div>
       </footer>
+      <CornerMascot />
     </div>
   );
 };

@@ -200,3 +200,69 @@ const DAILY_REWARD_AFTER_LADDER = 150;
 
 export const getDailyRewardForDay = (day) =>
   DAILY_REWARDS[day - 1] ?? { day, coins: DAILY_REWARD_AFTER_LADDER };
+
+// --- Erme-bolt -----------------------------------------------------------
+// KIZAROLAG kozmetikai, jatekos extrak - semmilyen tanulasi tartalom
+// vagy funkcio-hozzaferes nincs itt. 'theme' tipus: az egesz felulet
+// akcentszinet valtja (lasd index.css [data-theme] + ThemeApplier.jsx),
+// egyszerre csak egy lehet aktiv. 'decoration' tipus: egy kis animalt
+// dísz jelenik meg a valasztott sarokban (lasd CornerMascot.jsx),
+// tobb is aktivalhato egyszerre.
+export const SHOP_ITEMS = [
+  {
+    id: 'theme-ocean',
+    type: 'theme',
+    themeId: 'ocean',
+    name: 'Óceán téma',
+    description: 'Kék akcentszín az egész felületen.',
+    price: 300,
+    swatch: 'bg-blue-600',
+  },
+  {
+    id: 'theme-sunset',
+    type: 'theme',
+    themeId: 'sunset',
+    name: 'Naplemente téma',
+    description: 'Meleg narancs akcentszín az egész felületen.',
+    price: 300,
+    swatch: 'bg-orange-600',
+  },
+  {
+    id: 'theme-galaxy',
+    type: 'theme',
+    themeId: 'galaxy',
+    name: 'Galaxis téma',
+    description: 'Lila akcentszín az egész felületen.',
+    price: 300,
+    swatch: 'bg-violet-600',
+  },
+  {
+    id: 'deco-cat',
+    type: 'decoration',
+    icon: 'Cat',
+    corner: 'bottom-left',
+    name: 'Kiscica a sarokban',
+    description: 'Egy aranyos kiscica figyeli a tanulásod a bal alsó sarokból.',
+    price: 150,
+  },
+  {
+    id: 'deco-ghost',
+    type: 'decoration',
+    icon: 'Ghost',
+    corner: 'bottom-right',
+    name: 'Szellem-barát',
+    description: 'Egy barátságos szellem lebeg a jobb alsó sarokban.',
+    price: 150,
+  },
+  {
+    id: 'deco-sparkle',
+    type: 'decoration',
+    icon: 'Sparkles',
+    corner: 'top-right',
+    name: 'Csillogó csillag',
+    description: 'Egy pislákoló csillag díszíti a jobb felső sarkot, munka közben.',
+    price: 150,
+  },
+];
+
+export const getShopItem = (itemId) => SHOP_ITEMS.find((i) => i.id === itemId);

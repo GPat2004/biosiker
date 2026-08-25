@@ -7,8 +7,10 @@ import { generateId, nextReviewState } from '../lib/flashcardUtils';
 import {
   COINS_PER_LEVEL,
   getDailyRewardForDay,
+  getShopItem,
   levelFromXp,
   MILESTONES,
+  SHOP_ITEMS,
   xpIntoLevelFromXp,
 } from '../lib/gamificationUtils';
 
@@ -144,6 +146,23 @@ export const UserDataProvider = ({ children }) => {
       };
     });
   }, [bundle.data]);
+
+  // Az Erme-boltban aktivalt akcentszin-tema (ha van) DOM-attributumkent
+  // valik lathatova - index.css [data-theme] szabalyai ez alapjan iraljak
+  // felul a --color-primary-* valtozokat. Ez a React allapot (aktiv
+  // shop-elem) es egy kulso rendszer (a DOM/CSS) szinkronizalasa - nem
+  // setState, tehat nem esik a fenti ket effektre vonatkozo figyelmeztetes
+  // ala.
+  useEffect(() => {
+    const activeTheme = SHOP_ITEMS.find(
+      (item) => item.type === 'theme' && bundle.data.gamification.activeShopItems.includes(item.id)
+    );
+    if (activeTheme) {
+      document.documentElement.setAttribute('data-theme', activeTheme.themeId);
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }, [bundle.data.gamification.activeShopItems]);
 
   const updateData = useCallback((updater) => {
     setBundle((prev) => ({ ...prev, data: updater(prev.data) }));
@@ -356,7 +375,55 @@ export const UserDataProvider = ({ children }) => {
       alreadyClaimedToday: bundle.data.gamification.lastDailyClaimDate === today,
       totalClaimed: Object.keys(bundle.data.gamification.claimedDailyRewards).length,
     };
-  }, [bundle.data.streak.current, bundle.data.gamification.lastDailyClaimDate, bundle.data.gamification.claimedDailyRewards]);
+  }, [bundle.data.streak, bundle.data.gamification.lastDailyClaimDate, bundle.data.gamification.claimedDailyRewards]);
+
+  // --- Erme-bolt: kizarolag kozmetikai extrak, SOHA nem tanulasi tartalom
+  const purchaseShopItem = useCallback(
+    (itemId) => {
+      updateData((prev) => {
+        const item = getShopItem(itemId);
+        if (!item) return prev;
+        if (prev.gamification.ownedShopItems.includes(itemId)) return prev;
+        if (prev.coins < item.price) return prev;
+        return {
+          ...prev,
+          coins: prev.coins - item.price,
+          gamification: {
+            ...prev.gamification,
+            ownedShopItems: [...prev.gamification.ownedShopItems, itemId],
+          },
+        };
+      });
+    },
+    [updateData]
+  );
+
+  // Dekoraciok fuggetlenul be/kikapcsolhatok, temabol viszont csak egy
+  // lehet aktiv egyszerre - uj tema bekapcsolasa automatikusan lekapcsolja
+  // a korabban aktivat.
+  const toggleShopItem = useCallback(
+    (itemId) => {
+      updateData((prev) => {
+        const item = getShopItem(itemId);
+        if (!item || !prev.gamification.ownedShopItems.includes(itemId)) return prev;
+        const isActive = prev.gamification.activeShopItems.includes(itemId);
+        let nextActive;
+        if (isActive) {
+          nextActive = prev.gamification.activeShopItems.filter((id) => id !== itemId);
+        } else if (item.type === 'theme') {
+          const themeIds = SHOP_ITEMS.filter((i) => i.type === 'theme').map((i) => i.id);
+          nextActive = [...prev.gamification.activeShopItems.filter((id) => !themeIds.includes(id)), itemId];
+        } else {
+          nextActive = [...prev.gamification.activeShopItems, itemId];
+        }
+        return {
+          ...prev,
+          gamification: { ...prev.gamification, activeShopItems: nextActive },
+        };
+      });
+    },
+    [updateData]
+  );
 
   // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
   const createDeck = useCallback(
@@ -517,6 +584,10 @@ export const UserDataProvider = ({ children }) => {
         getMilestones,
         claimDailyReward,
         getDailyRewardStatus,
+        ownedShopItems: bundle.data.gamification.ownedShopItems,
+        activeShopItems: bundle.data.gamification.activeShopItems,
+        purchaseShopItem,
+        toggleShopItem,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,
