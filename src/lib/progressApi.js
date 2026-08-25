@@ -26,6 +26,11 @@ const rowToState = (row) => ({
     longest: row.streak_longest,
     lastActiveDate: row.streak_last_active,
   },
+  // Kizarolag OLVASVA a szerverrol - a Supabase Table/SQL Editorban
+  // kezzel allithato be (lasd supabase/006_admin_flag.sql). SOHA nem
+  // szabad felvenni a lenti stateToRow kimenetebe, kulonben a kliens
+  // sajat maga irhatna felul a mezot egy upsert hivassal.
+  isAdmin: Boolean(row.is_admin),
 });
 
 const stateToRow = (userId, state) => ({

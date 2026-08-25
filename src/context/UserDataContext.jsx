@@ -44,6 +44,11 @@ const DEFAULT_STATE = {
     ownedShopItems: [], // [itemId]
     activeShopItems: [], // [itemId] - jelenleg bekapcsolt kozmetikai extrak
   },
+  // Szerver-oldalon, a Supabase user_progress.is_admin oszlopaban dol el
+  // (lasd progressApi.js rowToState) - a kliens SOHA nem irhatja felul,
+  // mindig false az alapertelmezese, es csak egy hitelesitett Supabase-
+  // olvasas allithatja true-ra.
+  isAdmin: false,
 };
 
 const todayISO = () => new Date().toISOString().slice(0, 10);
@@ -52,6 +57,13 @@ const todayISO = () => new Date().toISOString().slice(0, 10);
 // biztosítja, hogy mindig legyen érvényes alapérték minden kulcshoz.
 const withDefaults = (data) => ({ ...DEFAULT_STATE, ...data });
 
+// Helyi (localStorage) forrásból SOSE bízzunk az isAdmin mezőben - a
+// felhasználó szabadon szerkesztheti a böngészőjében tárolt adatot,
+// tehát ott bármi állhatna. Az isAdmin kizárólag egy tényleges,
+// hitelesített Supabase-sorból (rowToState, lásd lent a "remote"
+// ágat) származhat - minden más esetben kényszerítve false.
+const withLocalDefaults = (data) => ({ ...withDefaults(data), isAdmin: false });
+
 export const UserDataProvider = ({ children }) => {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
 
@@ -59,10 +71,20 @@ export const UserDataProvider = ({ children }) => {
   // EGYETLEN state-objektumban el, hogy egy useEffect-agban sose kelljen
   // ket kulon setState-et hivni (a React Compiler linter ezt jelzi).
   const [bundle, setBundle] = useState(() => ({
-    data: withDefaults(storage.get('user-data', DEFAULT_STATE)),
+    data: withLocalDefaults(storage.get('user-data', DEFAULT_STATE)),
     source: 'local', // 'local' -> vendeg, localStorage | 'cloud' -> Supabase
   }));
   const isSyncingRef = useRef(false);
+
+  // Admin-mod: KIZAROLAG munkamenet-szintu, kliens-oldali kapcsolo, ami
+  // nem perzisztalodik es minden oldalbetoltesnel false-ra all vissza -
+  // onmagaban semmit nem enged meg, csak azt dontheti el, hogy egy MAR
+  // szerver-oldalon hitelesitett admin (bundle.data.isAdmin === true)
+  // eppen be- vagy kikapcsolta-e a korlatlan Erme-bolt attekintest.
+  const [adminModeEnabled, setAdminModeEnabled] = useState(false);
+  const toggleAdminMode = useCallback(() => {
+    setAdminModeEnabled((prev) => !prev);
+  }, []);
 
   // Amint eldol az auth-allapot, betoltjuk (vagy letrehozzuk) a megfelelo
   // progressz-forrast. Elso bejelentkezeskor a helyi (vendeg) progresszt
@@ -71,7 +93,7 @@ export const UserDataProvider = ({ children }) => {
     if (authLoading) return;
 
     if (!isAuthenticated || !user) {
-      setBundle({ data: withDefaults(storage.get('user-data', DEFAULT_STATE)), source: 'local' });
+      setBundle({ data: withLocalDefaults(storage.get('user-data', DEFAULT_STATE)), source: 'local' });
       return;
     }
 
@@ -84,7 +106,7 @@ export const UserDataProvider = ({ children }) => {
 
       let nextData = remote ? withDefaults(remote) : remote;
       if (!nextData) {
-        nextData = withDefaults(storage.get('user-data', DEFAULT_STATE));
+        nextData = withLocalDefaults(storage.get('user-data', DEFAULT_STATE));
         await upsertUserProgress(user.id, nextData);
         if (cancelled) return;
       }
@@ -378,16 +400,22 @@ export const UserDataProvider = ({ children }) => {
   }, [bundle.data.streak, bundle.data.gamification.lastDailyClaimDate, bundle.data.gamification.claimedDailyRewards]);
 
   // --- Erme-bolt: kizarolag kozmetikai extrak, SOHA nem tanulasi tartalom
+  // Admin-modban (kizarolag szerver-oldalon hitelesitett isAdmin=true
+  // eseten, es csak akkor, ha a felhasznalo be is kapcsolta a
+  // munkamenetben) a coin-ellenorzes megkeruli az egyenleget - de a
+  // TENYLEGES coin-egyenleg VALTOZATLAN marad (nincs levonas), csak a
+  // "megengedheted-e magadnak" kapu nyilik ki ideiglenesen.
   const purchaseShopItem = useCallback(
     (itemId) => {
       updateData((prev) => {
         const item = getShopItem(itemId);
         if (!item) return prev;
         if (prev.gamification.ownedShopItems.includes(itemId)) return prev;
-        if (prev.coins < item.price) return prev;
+        const adminBypass = prev.isAdmin && adminModeEnabled;
+        if (!adminBypass && prev.coins < item.price) return prev;
         return {
           ...prev,
-          coins: prev.coins - item.price,
+          coins: adminBypass ? prev.coins : prev.coins - item.price,
           gamification: {
             ...prev.gamification,
             ownedShopItems: [...prev.gamification.ownedShopItems, itemId],
@@ -395,7 +423,7 @@ export const UserDataProvider = ({ children }) => {
         };
       });
     },
-    [updateData]
+    [updateData, adminModeEnabled]
   );
 
   // Dekoraciok fuggetlenul be/kikapcsolhatok, temabol viszont csak egy
@@ -588,6 +616,9 @@ export const UserDataProvider = ({ children }) => {
         activeShopItems: bundle.data.gamification.activeShopItems,
         purchaseShopItem,
         toggleShopItem,
+        isAdmin: bundle.data.isAdmin,
+        adminModeEnabled,
+        toggleAdminMode,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,

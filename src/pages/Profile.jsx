@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Flame, Pencil, Trophy, Gift, ShoppingBag } from 'lucide-react';
+import { Flame, Pencil, Trophy, Gift, ShoppingBag, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useUserData } from '../context/UserDataContext';
 import { getAvatar, LEVEL_XP } from '../lib/gamificationUtils';
@@ -17,7 +17,8 @@ const TABS = [
 
 const Profile = () => {
   const { user } = useAuth();
-  const { level, xp, xpIntoLevel, coins, streak, avatarId, setAvatarId } = useUserData();
+  const { level, xp, xpIntoLevel, coins, streak, avatarId, setAvatarId, isAdmin, adminModeEnabled, toggleAdminMode } =
+    useUserData();
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
   const [activeTab, setActiveTab] = useState('milestones');
 
@@ -31,7 +32,23 @@ const Profile = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-extrabold mb-8">Profil</h1>
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-4xl font-extrabold">Profil</h1>
+        {isAdmin && (
+          <button
+            onClick={toggleAdminMode}
+            title="Admin mód: korlátlan Érme-bolt böngészés - a valódi Coin-egyenleget nem módosítja"
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-colors ${
+              adminModeEnabled
+                ? 'bg-violet-600 text-white border-violet-600'
+                : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-violet-300'
+            }`}
+          >
+            <ShieldCheck className="h-3.5 w-3.5" />
+            Admin mód {adminModeEnabled ? 'be' : 'ki'}
+          </button>
+        )}
+      </div>
 
       {/* Fejléc: avatar, felhasználónév, szint/XP, streak */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 md:p-8 mb-8">

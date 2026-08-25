@@ -1,4 +1,4 @@
-import { Cat, Check, Ghost, Sparkles } from 'lucide-react';
+import { Cat, Check, Ghost, ShieldCheck, Sparkles } from 'lucide-react';
 import { useUserData } from '../context/UserDataContext';
 import { SHOP_ITEMS } from '../lib/gamificationUtils';
 
@@ -7,8 +7,8 @@ const DECORATION_ICONS = { Cat, Ghost, Sparkles };
 // KIZÁRÓLAG kozmetikai, játékos extrák - semmilyen tanulási tartalom
 // vagy funkció-hozzáférés nem vásárolható itt. A Coin soha nem
 // vásárolható valós pénzért - a bolt csak elkölteni engedi.
-const ShopItemCard = ({ item, owned, active, coins, onPurchase, onToggle }) => {
-  const canAfford = coins >= item.price;
+const ShopItemCard = ({ item, owned, active, coins, adminBypass, onPurchase, onToggle }) => {
+  const canAfford = adminBypass || coins >= item.price;
 
   return (
     <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex flex-col">
@@ -56,7 +56,9 @@ const ShopItemCard = ({ item, owned, active, coins, onPurchase, onToggle }) => {
 };
 
 const ShopTab = () => {
-  const { coins, ownedShopItems, activeShopItems, purchaseShopItem, toggleShopItem } = useUserData();
+  const { coins, ownedShopItems, activeShopItems, purchaseShopItem, toggleShopItem, isAdmin, adminModeEnabled } =
+    useUserData();
+  const adminBypass = isAdmin && adminModeEnabled;
 
   return (
     <div>
@@ -64,12 +66,20 @@ const ShopTab = () => {
         Kizárólag kozmetikai extrák - a Coin sosem vásárolható valós pénzért, csak aktivitással
         szerezhető.
       </p>
+      {adminBypass && (
+        <div className="flex items-center gap-2 p-3 mb-4 rounded-xl bg-violet-50 dark:bg-violet-900/10 border border-violet-200 dark:border-violet-900/30 text-violet-700 dark:text-violet-400 text-sm">
+          <ShieldCheck className="h-4 w-4 shrink-0" />
+          Admin mód aktív - minden elem szabadon kipróbálható, a valódi Coin-egyenleged nem
+          csökken.
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {SHOP_ITEMS.map((item) => (
           <ShopItemCard
             key={item.id}
             item={item}
             coins={coins}
+            adminBypass={adminBypass}
             owned={ownedShopItems.includes(item.id)}
             active={activeShopItems.includes(item.id)}
             onPurchase={purchaseShopItem}
