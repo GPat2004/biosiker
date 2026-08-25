@@ -11,6 +11,38 @@
 - `npm run lint` – nem lehet ÚJ hiba a módosított fájlokban
 - Ha van teszt-szkript a szószám/glossary-ellenőrzésre, azt is futtasd le
 
+## Supabase-migráció ellenőrzés (KÖTELEZŐ, minden munkamenet végén)
+Ez a szabály onnan ered, hogy a 003–006. migrációk hónapokig csak a
+repóban léteztek, az éles adatbázison sosem futottak le – emiatt a
+felhő-mentés csendben elbukott, és egy admin-jogosultság beállítása
+is hónapokig "nem működött", mire kiderült az igazi ok.
+
+Minden alkalommal, amikor
+- új `supabase/*.sql` migrációs fájlt hozol létre, VAGY
+- bármilyen adatbázis-sémát érintő kódot módosítasz (pl. `progressApi.js`-ben
+  új mezőt olvasó/író logika, vagy bármi, ami egy oszlop létezését
+  feltételezi),
+
+a munka VÉGÉN kötelezően:
+1. Ellenőrizd (Supabase MCP-vel: `list_migrations`, és/vagy közvetlen
+   `execute_sql`/`list_tables` lekérdezéssel a tényleges oszlopokra),
+   hogy a migráció TÉNYLEGESEN alkalmazva lett-e az éles Supabase
+   projekten. Az, hogy a fájl létrejött és commitolva/push-olva van a
+   repóba, ÖNMAGÁBAN NEM elég – ez csak a szándékot rögzíti, nem a
+   tényleges adatbázis-állapotot.
+2. Ha van közvetlen Supabase MCP-hozzáférésed (`execute_sql`/
+   `apply_migration`) az adott projekthez, HASZNÁLD azt a migráció
+   tényleges lefuttatására – ne csak a fájlt hozd létre, és ne bízd a
+   felhasználóra a manuális Dashboard-futtatást alapértelmezésként.
+3. Ha eltérést találsz a repóban lévő migrációs fájlok és a ténylegesen
+   alkalmazott séma között (akár ennél a feladatnál, akár egy korábbi
+   munkamenetből maradt lemaradást fedezel fel útközben), ez
+   ELSŐBBSÉGET élvező, azonnal jelzendő probléma – ne hallgasd el, ne
+   intézd el egy mellékes megjegyzéssel a válasz végén. Jelezd
+   egyértelműen a felhasználónak, és javítsd ki azonnal (a hiányzó
+   migráció(k) tényleges lefuttatásával), mielőtt bármi mással
+   folytatnád.
+
 ## Tartalmi szabályok
 - A tananyag célja: magyar Biológia Érettségi (közép + emelt szint)
 - Ne keverj bele irreleváns egyetemi anyagot (csak max. 1 mondatos érdekességként)
