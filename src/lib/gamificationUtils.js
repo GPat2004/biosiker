@@ -15,3 +15,17 @@ export const xpForScore = (percent) => {
 };
 
 export const COINS_PER_LEVEL = 100;
+
+// Anonim, semleges illusztrált avatarok - ikon+színpár, NEM valós fénykép.
+export const AVATARS = [
+  { id: 'avatar-1', icon: 'Cat', color: 'from-pink-500 to-rose-500' },
+  { id: 'avatar-2', icon: 'Bird', color: 'from-sky-500 to-blue-500' },
+  { id: 'avatar-3', icon: 'Fish', color: 'from-cyan-500 to-teal-500' },
+  { id: 'avatar-4', icon: 'Rabbit', color: 'from-purple-500 to-fuchsia-500' },
+  { id: 'avatar-5', icon: 'Turtle', color: 'from-emerald-500 to-green-500' },
+  { id: 'avatar-6', icon: 'Squirrel', color: 'from-amber-500 to-orange-500' },
+  { id: 'avatar-7', icon: 'Ghost', color: 'from-slate-500 to-slate-700' },
+  { id: 'avatar-8', icon: 'Rocket', color: 'from-indigo-500 to-violet-500' },
+];
+
+export const getAvatar = (avatarId) => AVATARS.find((a) => a.id === avatarId) ?? AVATARS[0];

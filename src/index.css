@@ -21,6 +21,10 @@
   .animate-soft-pulse {
     animation: soft-pulse 2.4s ease-in-out infinite;
   }
+  .animate-flame {
+    animation: flame-flicker 1.8s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
 }
 
 @keyframes soft-pulse {
@@ -30,5 +34,23 @@
   }
   50% {
     transform: scale(1.08);
+  }
+}
+
+/* Finom, folyamatos "lobogó" mozgás a napi streak láng-ikonjához - nem
+   villog, csak enyhén torzul/billeg, mint egy valódi lángnyelv. */
+@keyframes flame-flicker {
+  0%,
+  100% {
+    transform: scale(1, 1) rotate(-2deg);
+  }
+  25% {
+    transform: scale(1.06, 0.95) rotate(2deg);
+  }
+  50% {
+    transform: scale(0.95, 1.05) rotate(-1deg);
+  }
+  75% {
+    transform: scale(1.03, 0.97) rotate(3deg);
   }
 }

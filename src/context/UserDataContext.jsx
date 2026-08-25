@@ -256,6 +256,16 @@ export const UserDataProvider = ({ children }) => {
   const level = levelFromXp(bundle.data.xp);
   const xpIntoLevel = xpIntoLevelFromXp(bundle.data.xp);
 
+  const setAvatarId = useCallback(
+    (avatarId) => {
+      updateData((prev) => ({
+        ...prev,
+        gamification: { ...prev.gamification, avatarId },
+      }));
+    },
+    [updateData]
+  );
+
   // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
   const createDeck = useCallback(
     ({ name, description = '', subject = '' }) => {
@@ -410,6 +420,8 @@ export const UserDataProvider = ({ children }) => {
         level,
         xpIntoLevel,
         awardXp,
+        avatarId: bundle.data.gamification.avatarId,
+        setAvatarId,
         streak: bundle.data.streak,
         resetProgress,
         progressSource: bundle.source,

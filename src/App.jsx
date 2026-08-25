@@ -15,6 +15,7 @@ import DailyPractice from './pages/DailyPractice';
 import Flashcards from './pages/Flashcards';
 import FlashcardDeck from './pages/FlashcardDeck';
 import FlashcardPractice from './pages/FlashcardPractice';
+import Profile from './pages/Profile';
 // A Vizsga szimuláció oldal ideiglenesen ki van kapcsolva (lásd lent a
 // route-nál) - a fájl és a komponens változatlanul megmaradt, csak nem
 // elérhető. Visszakapcsoláshoz: vedd ki a kommentből ezt az importot és
@@ -48,6 +49,7 @@ function App() {
                 <Route path="/flashcards" element={<Flashcards />} />
                 <Route path="/flashcards/:deckId" element={<FlashcardDeck />} />
                 <Route path="/flashcards/:deckId/gyakorlas" element={<FlashcardPractice />} />
+                <Route path="/profil" element={<Profile />} />
                 {/* <Route path="/simulation" element={<Simulation />} /> */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
