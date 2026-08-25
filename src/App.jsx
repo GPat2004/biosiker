@@ -13,6 +13,8 @@ import ModuleQuiz from './pages/ModuleQuiz';
 import Quizzes from './pages/Quizzes';
 import DailyPractice from './pages/DailyPractice';
 import Flashcards from './pages/Flashcards';
+import FlashcardDeck from './pages/FlashcardDeck';
+import FlashcardPractice from './pages/FlashcardPractice';
 import Simulation from './pages/Simulation';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -40,6 +42,8 @@ function App() {
                 <Route path="/quizzes" element={<Quizzes />} />
                 <Route path="/quizzes/gyakorlas" element={<DailyPractice />} />
                 <Route path="/flashcards" element={<Flashcards />} />
+                <Route path="/flashcards/:deckId" element={<FlashcardDeck />} />
+                <Route path="/flashcards/:deckId/gyakorlas" element={<FlashcardPractice />} />
                 <Route path="/simulation" element={<Simulation />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />

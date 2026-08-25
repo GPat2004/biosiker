@@ -10,6 +10,7 @@ const rowToState = (row) => ({
   examLevel: row.exam_level || 'kozep',
   progress: row.progress || {},
   quizResults: row.quiz_results || {},
+  flashcards: row.flashcards || { decks: [], cards: [] },
   xp: row.xp,
   streak: {
     current: row.streak_current,
@@ -25,6 +26,7 @@ const stateToRow = (userId, state) => ({
   exam_level: state.examLevel || 'kozep',
   progress: state.progress,
   quiz_results: state.quizResults || {},
+  flashcards: state.flashcards || { decks: [], cards: [] },
   xp: state.xp,
   streak_current: state.streak.current,
   streak_longest: state.streak.longest,

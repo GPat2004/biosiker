@@ -3,6 +3,7 @@ import { storage } from '../lib/storage';
 import { CURRICULUM, getChapterById } from '../data/curriculum';
 import { useAuth } from './AuthContext';
 import { fetchUserProgress, upsertUserProgress } from '../lib/progressApi';
+import { generateId, nextReviewState } from '../lib/flashcardUtils';
 
 const UserDataContext = createContext();
 
@@ -13,6 +14,10 @@ const DEFAULT_STATE = {
   // { [quizKey]: { best, last, lastAt, attempts } } - quizKey = chapterId
   // fejezet-kviznel, "module:<moduleId>" modulzaro tesztnel.
   quizResults: {},
+  // Sajat, privat tanulokartya-paklik es -kartyak. decks: [{ id, name,
+  // description, subject, createdAt }], cards: [{ id, deckId, front,
+  // back, srsBox, lastReviewedAt, dueAt, createdAt }].
+  flashcards: { decks: [], cards: [] },
   xp: 0,
   streak: { current: 0, longest: 0, lastActiveDate: null },
 };
@@ -216,6 +221,131 @@ export const UserDataProvider = ({ children }) => {
     [bundle.data.quizResults]
   );
 
+  // --- Tanulokartyak: paklik es kartyak (privat, csak a tulajdonose) ----
+  const createDeck = useCallback(
+    ({ name, description = '', subject = '' }) => {
+      const id = generateId();
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          decks: [
+            ...prev.flashcards.decks,
+            { id, name, description, subject, createdAt: new Date().toISOString() },
+          ],
+        },
+      }));
+      return id;
+    },
+    [updateData]
+  );
+
+  const updateDeck = useCallback(
+    (deckId, updates) => {
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          decks: prev.flashcards.decks.map((d) => (d.id === deckId ? { ...d, ...updates } : d)),
+        },
+      }));
+    },
+    [updateData]
+  );
+
+  const deleteDeck = useCallback(
+    (deckId) => {
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          decks: prev.flashcards.decks.filter((d) => d.id !== deckId),
+          cards: prev.flashcards.cards.filter((c) => c.deckId !== deckId),
+        },
+      }));
+    },
+    [updateData]
+  );
+
+  const createCard = useCallback(
+    (deckId, { front, back }) => {
+      const id = generateId();
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          cards: [
+            ...prev.flashcards.cards,
+            {
+              id,
+              deckId,
+              front,
+              back,
+              srsBox: 1,
+              lastReviewedAt: null,
+              dueAt: new Date().toISOString(),
+              createdAt: new Date().toISOString(),
+            },
+          ],
+        },
+      }));
+      return id;
+    },
+    [updateData]
+  );
+
+  const updateCard = useCallback(
+    (cardId, updates) => {
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          cards: prev.flashcards.cards.map((c) => (c.id === cardId ? { ...c, ...updates } : c)),
+        },
+      }));
+    },
+    [updateData]
+  );
+
+  const deleteCard = useCallback(
+    (cardId) => {
+      updateData((prev) => ({
+        ...prev,
+        flashcards: {
+          ...prev.flashcards,
+          cards: prev.flashcards.cards.filter((c) => c.id !== cardId),
+        },
+      }));
+    },
+    [updateData]
+  );
+
+  // A felhasznalo visszajelzese (hard/medium/easy) alapjan atszamolja a
+  // kartya kovetkezo eseekessegi datumat es doboz-szintjet.
+  const reviewCard = useCallback(
+    (cardId, feedback) => {
+      updateData((prev) => {
+        const card = prev.flashcards.cards.find((c) => c.id === cardId);
+        if (!card) return prev;
+        const nextState = nextReviewState(card, feedback);
+        return {
+          ...prev,
+          flashcards: {
+            ...prev.flashcards,
+            cards: prev.flashcards.cards.map((c) => (c.id === cardId ? { ...c, ...nextState } : c)),
+          },
+        };
+      });
+    },
+    [updateData]
+  );
+
+  const getDecks = useCallback(() => bundle.data.flashcards.decks, [bundle.data.flashcards.decks]);
+
+  const getDeckCards = useCallback(
+    (deckId) => bundle.data.flashcards.cards.filter((c) => c.deckId === deckId),
+    [bundle.data.flashcards.cards]
+  );
+
   return (
     <UserDataContext.Provider
       value={{
@@ -231,6 +361,15 @@ export const UserDataProvider = ({ children }) => {
         getModuleProgress,
         recordQuizResult,
         getQuizResult,
+        createDeck,
+        updateDeck,
+        deleteDeck,
+        createCard,
+        updateCard,
+        deleteCard,
+        reviewCard,
+        getDecks,
+        getDeckCards,
         xp: bundle.data.xp,
         streak: bundle.data.streak,
         resetProgress,

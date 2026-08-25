@@ -1,9 +1,13 @@
 import { useState } from 'react';
+import { Plus } from 'lucide-react';
+import AddToDeckModal from './AddToDeckModal';
 
 // Egy szövegben megjelenő kulcsfogalom: asztali gépen rámutatásra (hover),
-// mobilon/érintőn kattintásra jeleníti meg a definíciót.
+// mobilon/érintőn kattintásra jeleníti meg a definíciót, és lehetővé teszi
+// egy kattintással tanulókártyaként való elmentését.
 const DefinedTerm = ({ term, definition, children }) => {
   const [open, setOpen] = useState(false);
+  const [showAddModal, setShowAddModal] = useState(false);
 
   return (
     <span className="relative inline-block group">
@@ -26,8 +30,22 @@ const DefinedTerm = ({ term, definition, children }) => {
       >
         <span className="block font-bold mb-1">{term}</span>
         {definition}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            setShowAddModal(true);
+          }}
+          className="mt-2 flex items-center gap-1 text-primary-300 hover:text-primary-200 font-bold text-[11px] transition-colors"
+        >
+          <Plus className="h-3 w-3" /> Hozzáadás a tanulókártyákhoz
+        </button>
         <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900 dark:border-t-slate-700" />
       </span>
+
+      {showAddModal && (
+        <AddToDeckModal term={term} definition={definition} onClose={() => setShowAddModal(false)} />
+      )}
     </span>
   );
 };
