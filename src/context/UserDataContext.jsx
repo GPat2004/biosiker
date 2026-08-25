@@ -8,7 +8,7 @@ import { generateId, nextReviewState } from '../lib/flashcardUtils';
 const UserDataContext = createContext();
 
 const DEFAULT_STATE = {
-  subscription: { plan: 'free', since: null }, // 'free' | 'pro' | 'mentor'
+  subscription: { plan: 'free', since: null }, // 'free' | 'pro'
   examLevel: 'kozep', // 'kozep' | 'emelt'
   progress: {}, // { [moduleId]: { [chapterId]: { completed: true, completedAt } } }
   // { [quizKey]: { best, last, lastAt, attempts } } - quizKey = chapterId

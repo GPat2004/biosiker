@@ -42,7 +42,7 @@ const PaywallGate = ({ chapterTitle, previewText }) => (
         </div>
         <h3 className="text-xl font-bold mb-2">Ez a fejezet előfizetéshez kötött</h3>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
-          A(z) „{chapterTitle}” és a modulok további fejezetei csak Pro vagy Mentor
+          A(z) „{chapterTitle}” és a modulok további fejezetei csak Pro
           tagsággal érhetők el. Iratkozz fel, és nyisd meg a teljes tananyagot.
         </p>
         <ul className="inline-flex flex-col items-start gap-2 mb-7 text-left">
