@@ -11,6 +11,7 @@ import ChapterView from './pages/ChapterView';
 import ChapterQuiz from './pages/ChapterQuiz';
 import ModuleQuiz from './pages/ModuleQuiz';
 import Quizzes from './pages/Quizzes';
+import DailyPractice from './pages/DailyPractice';
 import Flashcards from './pages/Flashcards';
 import Simulation from './pages/Simulation';
 import Login from './pages/Login';
@@ -37,6 +38,7 @@ function App() {
                 <Route path="/tananyag/:moduleId/:chapterId" element={<ChapterView />} />
                 <Route path="/tananyag/:moduleId/:chapterId/kviz" element={<ChapterQuiz />} />
                 <Route path="/quizzes" element={<Quizzes />} />
+                <Route path="/quizzes/gyakorlas" element={<DailyPractice />} />
                 <Route path="/flashcards" element={<Flashcards />} />
                 <Route path="/simulation" element={<Simulation />} />
                 <Route path="/login" element={<Login />} />

@@ -33,6 +33,7 @@ const ChapterQuiz = () => {
         count={CHAPTER_QUIZ_COUNT}
         backTo={`/tananyag/${moduleId}/${chapterId}`}
         backLabel={chapter.title}
+        quizKey={chapterId}
       />
     </div>
   );

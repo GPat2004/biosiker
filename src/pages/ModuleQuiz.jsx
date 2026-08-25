@@ -39,6 +39,7 @@ const ModuleQuiz = () => {
         count={MODULE_QUIZ_COUNT}
         backTo={`/tananyag/${moduleId}`}
         backLabel={module.title}
+        quizKey={`module:${moduleId}`}
       />
     </div>
   );

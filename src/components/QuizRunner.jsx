@@ -2,11 +2,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, XCircle, ChevronLeft, RotateCcw } from 'lucide-react';
 import { prepareQuiz } from '../lib/quizUtils';
+import { useUserData } from '../context/UserDataContext';
 
 // A `pool`-t és a `count`-ot kapja meg a kérdéshalmaz elő-kikeverése helyett,
 // hogy az "Újra próbálom" gomb ténylegesen új, friss random húzást tudjon
 // indítani a teljes bankból - ne csak ugyanazt a 10 kérdést jelenítse meg újra.
-const QuizRunner = ({ title, pool, count, backTo, backLabel }) => {
+// `quizKey` megadása esetén a kvíz eredménye (legjobb/legutóbbi %) elmentődik
+// a felhasználó progresszébe - hiányzó `quizKey`-nél (pl. vegyes gyakorló
+// kvíznél) az eredmény csak a munkamenetben jelenik meg, nem kerül mentésre.
+const QuizRunner = ({ title, pool, count, backTo, backLabel, quizKey }) => {
+  const { recordQuizResult } = useUserData();
   const [questions, setQuestions] = useState(() => prepareQuiz(pool, count));
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -110,6 +115,10 @@ const QuizRunner = ({ title, pool, count, backTo, backLabel }) => {
     setSelected(null);
     if (isLast) {
       setFinished(true);
+      if (quizKey) {
+        const correctCount = nextAnswers.filter((a, i) => a === questions[i].correctIndex).length;
+        recordQuizResult(quizKey, Math.round((correctCount / questions.length) * 100));
+      }
     } else {
       setIndex(index + 1);
     }

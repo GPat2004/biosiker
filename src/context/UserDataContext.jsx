@@ -10,6 +10,9 @@ const DEFAULT_STATE = {
   subscription: { plan: 'free', since: null }, // 'free' | 'pro' | 'mentor'
   examLevel: 'kozep', // 'kozep' | 'emelt'
   progress: {}, // { [moduleId]: { [chapterId]: { completed: true, completedAt } } }
+  // { [quizKey]: { best, last, lastAt, attempts } } - quizKey = chapterId
+  // fejezet-kviznel, "module:<moduleId>" modulzaro tesztnel.
+  quizResults: {},
   xp: 0,
   streak: { current: 0, longest: 0, lastActiveDate: null },
 };
@@ -186,6 +189,33 @@ export const UserDataProvider = ({ children }) => {
     updateData(() => DEFAULT_STATE);
   }, [updateData]);
 
+  // --- Kviz-eredmenyek (fejezet- es modulzaro teszt) -------------------
+  const recordQuizResult = useCallback(
+    (quizKey, percent) => {
+      updateData((prev) => {
+        const existing = prev.quizResults[quizKey];
+        return {
+          ...prev,
+          quizResults: {
+            ...prev.quizResults,
+            [quizKey]: {
+              best: existing ? Math.max(existing.best, percent) : percent,
+              last: percent,
+              lastAt: new Date().toISOString(),
+              attempts: (existing?.attempts || 0) + 1,
+            },
+          },
+        };
+      });
+    },
+    [updateData]
+  );
+
+  const getQuizResult = useCallback(
+    (quizKey) => bundle.data.quizResults[quizKey] || null,
+    [bundle.data.quizResults]
+  );
+
   return (
     <UserDataContext.Provider
       value={{
@@ -199,6 +229,8 @@ export const UserDataProvider = ({ children }) => {
         markChapterComplete,
         isChapterComplete,
         getModuleProgress,
+        recordQuizResult,
+        getQuizResult,
         xp: bundle.data.xp,
         streak: bundle.data.streak,
         resetProgress,
