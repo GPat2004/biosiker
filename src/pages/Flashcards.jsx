@@ -1,149 +1,159 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, RotateCcw, Check, X } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Plus, Layers, Lock, Trash2 } from 'lucide-react';
+import { useUserData } from '../context/UserDataContext';
+import { FREE_MAX_CARDS_PER_DECK, FREE_MAX_DECKS, isDue } from '../lib/flashcardUtils';
+import DeckFormModal from '../components/DeckFormModal';
+import FreeLimitBanner from '../components/FreeLimitBanner';
 
-const MOCK_FLASHCARDS = [
-  {
-    id: 1,
-    question: "Mi a sejt energiatermelő központja?",
-    answer: "A mitokondrium. Itt zajlik a sejtlégzés és az ATP szintézis nagy része.",
-    category: "Sejttan"
-  },
-  {
-    id: 2,
-    question: "Melyik vitamin hiánya okoz skorbutot?",
-    answer: "A C-vitamin (aszkorbinsav) hiánya.",
-    category: "Élettan"
-  },
-  {
-    id: 3,
-    question: "Mi a DNS teljes neve?",
-    answer: "Dezoxiribonukleinsav.",
-    category: "Molekuláris biológia"
-  },
-  {
-    id: 4,
-    question: "Hány vérköre van az embernek?",
-    answer: "Kettő: a kis vérkör (tüdő) és a nagy vérkör (test).",
-    category: "Élettan"
-  }
-];
+const NO_SUBJECT = 'Nincs tantárgy megadva';
 
-const Flashcard = ({ card, isFlipped, onFlip }) => {
-  return (
-    <div 
-      className="relative w-full h-80 cursor-pointer perspective-1000"
-      onClick={onFlip}
+const DeckCard = ({ deck, cardCount, dueCount, onDelete, isPremium }) => (
+  <div className="relative group">
+    <Link
+      to={`/flashcards/${deck.id}`}
+      className="block bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 hover:border-primary-500 transition-colors shadow-sm"
     >
-      <motion.div
-        className="w-full h-full relative preserve-3d transition-all duration-500"
-        animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-      >
-        {/* Front */}
-        <div className="absolute inset-0 backface-hidden bg-white dark:bg-slate-900 border-2 border-primary-100 dark:border-primary-900/30 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl">
-          <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 text-xs font-bold uppercase tracking-wider">
-            {card.category}
+      <div className="flex items-start justify-between mb-2">
+        <div className="h-10 w-10 rounded-xl bg-primary-50 dark:bg-primary-900/20 flex items-center justify-center text-primary-600 dark:text-primary-400 shrink-0">
+          <Layers className="h-5 w-5" />
+        </div>
+        {dueCount > 0 && (
+          <span className="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 text-xs font-bold">
+            {dueCount} esedékes
           </span>
-          <h2 className="text-2xl font-bold text-slate-800 dark:text-white">
-            {card.question}
-          </h2>
-          <p className="mt-4 text-slate-400 text-sm">Kattints a megfordításhoz</p>
-        </div>
-
-        {/* Back */}
-        <div 
-          className="absolute inset-0 backface-hidden bg-primary-600 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl text-white"
-          style={{ transform: 'rotateY(180deg)' }}
-        >
-          <h2 className="text-xl font-medium leading-relaxed">
-            {card.answer}
-          </h2>
-        </div>
-      </motion.div>
-    </div>
-  );
-};
+        )}
+      </div>
+      <p className="font-bold truncate pr-6">{deck.name}</p>
+      {deck.description && (
+        <p className="text-sm text-slate-500 mt-1 line-clamp-2">{deck.description}</p>
+      )}
+      <p className="text-xs text-slate-400 mt-3">
+        {cardCount} kártya{!isPremium && ` (max. ${FREE_MAX_CARDS_PER_DECK})`}
+      </p>
+    </Link>
+    <button
+      onClick={(e) => {
+        e.preventDefault();
+        onDelete(deck.id);
+      }}
+      className="absolute top-4 right-4 p-1.5 rounded-lg text-slate-300 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/10 opacity-0 group-hover:opacity-100 transition-all"
+      title="Pakli törlése"
+    >
+      <Trash2 className="h-4 w-4" />
+    </button>
+  </div>
+);
 
 const Flashcards = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [direction, setDirection] = useState(0);
+  const { isPremium, getDecks, getDeckCards, createDeck, deleteDeck } = useUserData();
+  const [showCreate, setShowCreate] = useState(false);
+  const decks = getDecks();
+  const deckLimitReached = !isPremium && decks.length >= FREE_MAX_DECKS;
 
-  const nextCard = () => {
-    setDirection(1);
-    setIsFlipped(false);
-    setCurrentIndex((prev) => (prev + 1) % MOCK_FLASHCARDS.length);
-  };
+  const grouped = useMemo(() => {
+    const bySubject = new Map();
+    for (const deck of decks) {
+      const key = deck.subject || NO_SUBJECT;
+      if (!bySubject.has(key)) bySubject.set(key, []);
+      bySubject.get(key).push(deck);
+    }
+    const subjects = [...bySubject.keys()].filter((s) => s !== NO_SUBJECT).sort((a, b) => a.localeCompare(b, 'hu'));
+    if (bySubject.has(NO_SUBJECT)) subjects.push(NO_SUBJECT);
+    return subjects.map((subject) => ({ subject, decks: bySubject.get(subject) }));
+  }, [decks]);
 
-  const prevCard = () => {
-    setDirection(-1);
-    setIsFlipped(false);
-    setCurrentIndex((prev) => (prev - 1 + MOCK_FLASHCARDS.length) % MOCK_FLASHCARDS.length);
+  const handleDelete = (deckId) => {
+    if (window.confirm('Biztosan törlöd ezt a paklit? A benne lévő kártyák is elvesznek.')) {
+      deleteDeck(deckId);
+    }
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold mb-4">Tanulókártyák</h1>
-        <p className="text-slate-600 dark:text-slate-400">
-          Gyakorolj az alapfogalmakat interaktív módon.
-        </p>
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
+        <div>
+          <h1 className="text-4xl font-extrabold mb-2">Tanulókártyák</h1>
+          <p className="text-slate-600 dark:text-slate-400">
+            Saját paklik, térbeli ismétléssel - gyakorold, amit fontosnak jelöltél.
+          </p>
+        </div>
+        <div className="shrink-0 flex flex-col items-end gap-1.5">
+          {!isPremium && decks.length > 0 && (
+            <p className="text-xs text-slate-400">
+              {decks.length}/{FREE_MAX_DECKS} pakli használva (ingyenes csomag)
+            </p>
+          )}
+          {deckLimitReached ? (
+            <Link
+              to="/pricing"
+              className="flex items-center justify-center px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            >
+              <Lock className="h-4 w-4 mr-2" />
+              Limit elérve
+            </Link>
+          ) : (
+            <button
+              onClick={() => setShowCreate(true)}
+              className="flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-blue-600 text-white font-bold shadow-lg hover:shadow-primary-500/20 transition-all"
+            >
+              <Plus className="h-5 w-5 mr-2" />
+              Új pakli
+            </button>
+          )}
+        </div>
       </div>
 
-      <div className="relative">
-        <AnimatePresence mode="wait" custom={direction}>
-          <motion.div
-            key={currentIndex}
-            custom={direction}
-            initial={{ opacity: 0, x: direction * 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -direction * 50 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Flashcard 
-              card={MOCK_FLASHCARDS[currentIndex]} 
-              isFlipped={isFlipped}
-              onFlip={() => setIsFlipped(!isFlipped)}
-            />
-          </motion.div>
-        </AnimatePresence>
+      {deckLimitReached && (
+        <div className="mb-8">
+          <FreeLimitBanner />
+        </div>
+      )}
 
-        <div className="flex justify-center items-center mt-10 space-x-6">
+      {decks.length === 0 ? (
+        <div className="p-10 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
+          <Layers className="h-10 w-10 mx-auto mb-4 text-slate-300 dark:text-slate-700" />
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
+            Még nincs egyetlen paklid sem. Hozz létre egyet, vagy egy fejezet olvasása közben egy
+            kiemelt fogalom mellett a "Hozzáadás a tanulókártyákhoz" gombbal is indíthatod.
+          </p>
           <button
-            onClick={prevCard}
-            className="p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm"
+            onClick={() => setShowCreate(true)}
+            className="px-5 py-2.5 rounded-xl bg-primary-600 text-white font-bold text-sm hover:bg-primary-700 transition-colors"
           >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          
-          <div className="text-slate-500 font-medium">
-            {currentIndex + 1} / {MOCK_FLASHCARDS.length}
-          </div>
-
-          <button
-            onClick={nextCard}
-            className="p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm"
-          >
-            <ChevronRight className="h-6 w-6" />
+            Első pakli létrehozása
           </button>
         </div>
-      </div>
+      ) : (
+        <div className="space-y-10">
+          {grouped.map(({ subject, decks: subjectDecks }) => (
+            <div key={subject}>
+              <h2 className="text-sm font-bold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-4">
+                {subject}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {subjectDecks.map((deck) => {
+                  const cards = getDeckCards(deck.id);
+                  return (
+                    <DeckCard
+                      key={deck.id}
+                      deck={deck}
+                      cardCount={cards.length}
+                      dueCount={cards.filter((c) => isDue(c)).length}
+                      onDelete={handleDelete}
+                      isPremium={isPremium}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="p-4 rounded-xl bg-green-50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/20 text-center">
-          <div className="text-2xl font-bold text-green-600">12</div>
-          <div className="text-sm text-green-700 dark:text-green-400">Tudom</div>
-        </div>
-        <div className="p-4 rounded-xl bg-orange-50 dark:bg-orange-900/10 border border-orange-100 dark:border-orange-900/20 text-center">
-          <div className="text-2xl font-bold text-orange-600">5</div>
-          <div className="text-sm text-orange-700 dark:text-orange-400">Még tanulom</div>
-        </div>
-        <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 text-center">
-          <div className="text-2xl font-bold text-slate-600">24</div>
-          <div className="text-sm text-slate-500">Összes kártya</div>
-        </div>
-      </div>
+      {showCreate && (
+        <DeckFormModal title="Új pakli" onSave={(data) => createDeck(data)} onClose={() => setShowCreate(false)} />
+      )}
     </div>
   );
 };

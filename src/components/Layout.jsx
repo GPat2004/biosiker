@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, Sun, Moon, GraduationCap, LogOut, User, Settings as SettingsIcon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
+import CornerMascot from './CornerMascot';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -33,7 +34,8 @@ const Navbar = () => {
             <Link to="/tananyag" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tananyag</Link>
             <Link to="/quizzes" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kvízek</Link>
             <Link to="/flashcards" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tanulókártyák</Link>
-            <Link to="/simulation" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Vizsga szimuláció</Link>
+            <Link to="/profil" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Profil</Link>
+            {/* Vizsga szimuláció menüpont ideiglenesen elrejtve - lásd App.jsx */}
             <Link to="/pricing" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Árazás</Link>
             <button
               onClick={toggleDarkMode}
@@ -100,7 +102,8 @@ const Navbar = () => {
             <Link to="/tananyag" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Tananyag</Link>
             <Link to="/quizzes" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Kvízek</Link>
             <Link to="/flashcards" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Tanulókártyák</Link>
-            <Link to="/simulation" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Vizsga szimuláció</Link>
+            <Link to="/profil" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Profil</Link>
+            {/* Vizsga szimuláció menüpont ideiglenesen elrejtve - lásd App.jsx */}
             <Link to="/pricing" className="block px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary-600">Árazás</Link>
             {isAuthenticated ? (
               <>
@@ -134,6 +137,7 @@ const Layout = ({ children }) => {
           <p>© 2024 BioSiker. Minden jog fenntartva.</p>
         </div>
       </footer>
+      <CornerMascot />
     </div>
   );
 };

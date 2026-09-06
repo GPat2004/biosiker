@@ -72,7 +72,7 @@ const Pricing = () => {
         Demó mód: nincs bekötve valódi fizetés, a csomagválasztás helyben, azonnal aktiválódik tesztelés céljából.
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-3xl mx-auto">
         <PricingCard
           planId="free"
           title="Alap"
@@ -102,21 +102,6 @@ const Pricing = () => {
             { text: 'Vizsga szimulációk', included: true },
             { text: 'Havi 5 PDF feldolgozás', included: true },
             { text: 'Személyre szabott statisztika', included: true },
-          ]}
-        />
-        <PricingCard
-          planId="mentor"
-          title="Mentor"
-          price="4.990 Ft"
-          isCurrent={subscription.plan === 'mentor'}
-          onSelect={handleSelect}
-          features={[
-            { text: 'Minden Pro funkció', included: true },
-            { text: 'Korlátlan PDF feldolgozás', included: true },
-            { text: 'Kiemelt támogatás', included: true },
-            { text: 'Egyéni tanulási terv', included: true },
-            { text: 'Heti online konzultáció (csoportos)', included: true },
-            { text: 'Letölthető összefoglalók', included: true },
           ]}
         />
       </div>

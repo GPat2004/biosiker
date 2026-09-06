@@ -9,12 +9,28 @@ const rowToState = (row) => ({
   subscription: { plan: row.subscription_plan, since: row.subscription_since },
   examLevel: row.exam_level || 'kozep',
   progress: row.progress || {},
+  quizResults: row.quiz_results || {},
+  flashcards: row.flashcards || { decks: [], cards: [] },
   xp: row.xp,
+  coins: row.coins || 0,
+  gamification: row.gamification || {
+    avatarId: 'avatar-1',
+    unlockedMilestones: {},
+    claimedDailyRewards: {},
+    lastDailyClaimDate: null,
+    ownedShopItems: [],
+    activeShopItems: [],
+  },
   streak: {
     current: row.streak_current,
     longest: row.streak_longest,
     lastActiveDate: row.streak_last_active,
   },
+  // Kizarolag OLVASVA a szerverrol - a Supabase Table/SQL Editorban
+  // kezzel allithato be (lasd supabase/006_admin_flag.sql). SOHA nem
+  // szabad felvenni a lenti stateToRow kimenetebe, kulonben a kliens
+  // sajat maga irhatna felul a mezot egy upsert hivassal.
+  isAdmin: Boolean(row.is_admin),
 });
 
 const stateToRow = (userId, state) => ({
@@ -23,7 +39,18 @@ const stateToRow = (userId, state) => ({
   subscription_since: state.subscription.since,
   exam_level: state.examLevel || 'kozep',
   progress: state.progress,
+  quiz_results: state.quizResults || {},
+  flashcards: state.flashcards || { decks: [], cards: [] },
   xp: state.xp,
+  coins: state.coins || 0,
+  gamification: state.gamification || {
+    avatarId: 'avatar-1',
+    unlockedMilestones: {},
+    claimedDailyRewards: {},
+    lastDailyClaimDate: null,
+    ownedShopItems: [],
+    activeShopItems: [],
+  },
   streak_current: state.streak.current,
   streak_longest: state.streak.longest,
   streak_last_active: state.streak.lastActiveDate,
