@@ -192,14 +192,23 @@ export const UserDataProvider = ({ children }) => {
 
   // --- Elofizetes -----------------------------------------------------
   // FONTOS: ez egyelore egy DEMO-jellegu kapcsolo, nincs mogotte valodi
-  // fizetesi folyamat. Eles inditas elott egy tenyleges fizetesi
-  // szolgaltatora (pl. Stripe) kell cserelni.
+  // fizetesi folyamat (a Barion meg nincs bekotve) - a "Pro" gombok
+  // kattintasra AZONNAL Pro-hozzaferest adnak, fizetesi lepes nelkul, es
+  // ezt a demoUpgradeNotice uzenet vilagossa is teszi a felhasznalonak.
+  // Eles, fizetos inditas elott egy tenyleges fizetesi szolgaltatora
+  // (pl. Barion) kell cserelni, es a demoUpgradeNotice hivast torolni.
+  const [demoUpgradeNotice, setDemoUpgradeNotice] = useState(null);
+  const dismissDemoUpgradeNotice = useCallback(() => setDemoUpgradeNotice(null), []);
+
   const subscribe = useCallback(
     (plan) => {
       updateData((prev) => ({
         ...prev,
         subscription: { plan, since: new Date().toISOString() },
       }));
+      setDemoUpgradeNotice(
+        'Demó/teszt-időszak — köszönjük, hogy kipróbálod a BioSikert! Jelenleg minden tartalom elérhető.'
+      );
     },
     [updateData]
   );
@@ -585,6 +594,8 @@ export const UserDataProvider = ({ children }) => {
         isPremium,
         subscribe,
         unsubscribe,
+        demoUpgradeNotice,
+        dismissDemoUpgradeNotice,
         examLevel: bundle.data.examLevel,
         setExamLevel,
         canAccessChapter,

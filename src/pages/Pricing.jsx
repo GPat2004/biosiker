@@ -43,7 +43,7 @@ const PricingCard = ({ planId, title, price, features, recommended, isCurrent, o
           : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50'
       }`}
     >
-      {isCurrent ? 'Ez a jelenlegi csomagod' : planId === 'free' ? 'Kezdés most' : `${title} tagság igénylése`}
+      {isCurrent ? 'Ez a jelenlegi csomagod' : planId === 'free' ? 'Kezdés most' : `${title}-hozzáférés aktiválása (demó)`}
     </button>
   </div>
 );

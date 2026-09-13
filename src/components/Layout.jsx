@@ -4,6 +4,7 @@ import { Menu, X, Sun, Moon, GraduationCap, LogOut, User, Settings as SettingsIc
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 import CornerMascot from './CornerMascot';
+import DemoUpgradeToast from './DemoUpgradeToast';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -133,11 +134,19 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <footer className="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center text-slate-500 dark:text-slate-400">
+        <div className="max-w-7xl mx-auto px-4 text-center text-slate-500 dark:text-slate-400 space-y-2">
           <p>© 2024 BioSiker. Minden jog fenntartva.</p>
+          <p className="text-xs text-slate-400 dark:text-slate-500">
+            A BioSiker jelenleg tesztelés/demó alatt áll, Patrik fejleszti. Kérdés vagy adattörlési igény esetén:{' '}
+            <a href="mailto:galimre72@gmail.com" className="underline hover:text-primary-600 dark:hover:text-primary-400">
+              galimre72@gmail.com
+            </a>
+            .
+          </p>
         </div>
       </footer>
       <CornerMascot />
+      <DemoUpgradeToast />
     </div>
   );
 };

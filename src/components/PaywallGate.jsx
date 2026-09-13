@@ -1,5 +1,5 @@
 import { Lock, Sparkles, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useUserData } from '../context/UserDataContext';
 
 // Ezek a Pricing.jsx Pro-csomagjában ténylegesen szereplő, ténylegesen
 // megépített funkciók közül a fejezet-zároláshoz legszorosabban
@@ -13,7 +13,10 @@ const BENEFITS = [
 // `previewText` (opcionális): a zárolt fejezet valódi bevezető szövege,
 // elmosva megjelenítve a doboz mögött - ez érzékelteti, hogy valódi
 // tartalom van a zár mögött, nem csak egy generikus vázlat.
-const PaywallGate = ({ chapterTitle, previewText }) => (
+const PaywallGate = ({ chapterTitle, previewText }) => {
+  const { subscribe } = useUserData();
+
+  return (
   // FONTOS: a doboz magassága a FÖLDSZÍNI (előtér) tartalomhoz igazodik,
   // nem a háttérhez - a háttér elmosott előnézet van abszolút pozícióval
   // ráfeszítve a dobozra (inset-0), így annak mérete sosem vághatja le az
@@ -53,16 +56,17 @@ const PaywallGate = ({ chapterTitle, previewText }) => (
             </li>
           ))}
         </ul>
-        <Link
-          to="/pricing"
+        <button
+          onClick={() => subscribe('pro')}
           className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-blue-600 text-white font-bold shadow-lg hover:shadow-primary-500/20 transition-all transform hover:scale-105"
         >
           <Sparkles className="h-5 w-5 mr-2" />
-          Előfizetési csomagok megtekintése
-        </Link>
+          Pro-hozzáférés aktiválása (demó)
+        </button>
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default PaywallGate;
