@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info, AlertTriangle, Lightbulb, ListChecks } from 'lucide-react';
+import { ChevronLeft, CheckCircle2, Clock, ChevronRight, GraduationCap, Info, AlertTriangle, Lightbulb, ListChecks, HelpCircle } from 'lucide-react';
 import { getModuleById, getChapterById, getLevelContent } from '../data/curriculum';
+import { chapterHasQuiz } from '../data/quizzes';
 import { useUserData } from '../context/UserDataContext';
 import PaywallGate from '../components/PaywallGate';
 import DefinedTerm from '../components/DefinedTerm';
@@ -87,7 +88,7 @@ const ChapterView = () => {
       </div>
 
       {!accessible ? (
-        <PaywallGate chapterTitle={chapter.title} />
+        <PaywallGate chapterTitle={chapter.title} previewText={levelContent?.intro} />
       ) : levelContent?.comingSoon ? (
         <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-slate-600 dark:text-slate-400">
@@ -123,6 +124,37 @@ const ChapterView = () => {
                   {renderWithGlossary(p)}
                 </p>
               ))}
+              {section.table && (
+                <div className="my-4 overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+                  {section.table.caption && (
+                    <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                      {section.table.caption}
+                    </p>
+                  )}
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-slate-100 dark:bg-slate-800">
+                        {section.table.headers.map((h, k) => (
+                          <th key={k} className="text-left px-4 py-3 font-bold">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row, r) => (
+                        <tr key={r} className="border-t border-slate-200 dark:border-slate-800">
+                          {row.map((cell, c) => (
+                            <td key={c} className={`px-4 py-3 ${c === 0 ? 'font-bold' : 'text-slate-600 dark:text-slate-400'}`}>
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
             </div>
           ))}
 
@@ -223,8 +255,23 @@ const ChapterView = () => {
         </div>
       )}
 
+      {accessible && !levelContent?.comingSoon && chapterHasQuiz(chapterId) && (
+        <div className="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800">
+          <Link
+            to={`/tananyag/${moduleId}/${chapterId}/kviz`}
+            className="flex items-center justify-between p-5 rounded-2xl bg-gradient-to-r from-primary-600 to-blue-600 text-white shadow-lg hover:shadow-primary-500/20 transition-all"
+          >
+            <span className="flex items-center font-bold">
+              <HelpCircle className="h-5 w-5 mr-3" />
+              Teszteld a tudásod - Kvíz indítása
+            </span>
+            <ChevronRight className="h-5 w-5" />
+          </Link>
+        </div>
+      )}
+
       {accessible && !levelContent?.comingSoon && (
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200 dark:border-slate-800">
           <button
             onClick={() => markChapterComplete(moduleId, chapterId)}
             disabled={done}

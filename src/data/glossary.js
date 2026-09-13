@@ -85,6 +85,22 @@ export const GLOSSARY = {
   'bacilus': 'Pálcika alakú baktériumsejt.',
   'spirillum': 'Csavarodott alakú baktériumsejt.',
 
+  // 3. modul, 2. fejezet emelt kiegészítés: anyagcsere-/ökológiai típusok, fertőtlenítés, endoszimbióta elmélet
+  'termelő': 'Olyan élőlény (pl. fotoautotróf vagy kemoautotróf baktérium), amely szerves anyagot állít elő, amelyet más élőlények felhasználhatnak.',
+  'lebontó': 'Olyan élőlény (pl. egyes baktériumok), amely elhalt szerves anyagot bont le, ezzel zárva az anyagforgalom körforgását.',
+  'kórokozó': 'Olyan mikroorganizmus (pl. egyes baktériumok, vírusok), amely más élőlények kárára szaporodva betegséget okoz.',
+  'szimbionta': 'Olyan élőlény (pl. a bélflóra baktériumai), amely egy másik fajjal kölcsönösen előnyös, tartós együttélésben (szimbiózisban) él.',
+  'timindimer': 'Az UV-sugárzás által a DNS-ben okozott kóros kötés két szomszédos timinbázis között, amely megakadályozza a DNS helyes megkettőződését és leolvasását.',
+
+  // 3. modul, 3. fejezet: Egysejtű eukarióták
+  'protiszták országa': 'A rendszertan egyik országa, amelybe az egysejtű, valódi sejtmaggal rendelkező (eukarióta) élőlények tartoznak, pl. az óriás amőba, a papucsállatka és a zöld szemesostoros.',
+  'gyökérlábúak': 'A Protiszták országának törzse, amelynek tagjai (pl. az óriás amőba) állábak segítségével mozognak és táplálkoznak.',
+  'csillósok': 'A Protiszták országának törzse, amelynek tagjai (pl. a papucsállatka) egész testüket borító csillókkal mozognak.',
+  'ostorosok': 'A Protiszták országának törzse, amelynek tagjai (pl. a zöld szemesostoros) egy vagy több ostorral mozognak.',
+  'fagocitózis': 'Az endocitózis egyik formája, amelynek során a sejt szilárd táplálékrészecskét kebelez be, körülvéve azt a sejtmembránjával.',
+  'mixotróf': 'Olyan szervezet (pl. a zöld szemesostoros), amely fény jelenlétében fotoautotróf, fény hiányában viszont heterotróf módon táplálkozik.',
+  'lüktető vacuolum': 'Egysejtű élőlények (pl. amőba, papucsállatka) sejtszervecskéje, amely a sejtbe ozmózissal beáramló fölösleges vizet gyűjti össze és rendszeresen kiüríti.',
+
   // 3. modul emelt kiegészítés: vírus-állapotok, litikus/lizogén ciklus
   'természetes szelekció': 'Az evolúció egyik alapmechanizmusa: a környezethez jobban alkalmazkodó egyedek nagyobb eséllyel maradnak életben és szaporodnak, ezáltal az előnyös tulajdonságok gyakorisága nő a populációban.',
   'virion': 'A sejten kívül létező, önálló, fertőzőképes vírusrészecske - a vírus "nyugvó", sejten kívüli formája.',
@@ -119,11 +135,557 @@ export const GLOSSARY = {
   'kemoautotróf': 'Olyan szervezet, amely szervetlen vegyületek kémiai energiáját hasznosítva állítja elő szerves anyagait.',
   'endoszimbióta elmélet': 'Az elmélet, amely szerint a mitokondrium és a színtest egykor önállóan élő prokarióta szervezetekből alakult ki egy ősi eukarióta sejttel való szimbiózis során.',
   'differenciálódás': 'A sejtek szerkezeti és működésbeli specializálódása egy adott feladat ellátására.',
+  'sejttársulás': 'Önállóan is életképes sejtek laza kapcsolódásából álló, még nem valódi többsejtű szerveződési forma (pl. egyes zöldmoszatoknál).',
+  'sejtfonal': 'Egy sorban, egymáshoz kapcsolódó sejtekből álló, fonalszerű testfelépítés (pl. egyes zöldmoszatoknál, fonalas gombáknál).',
   'teleptest': 'Szövetekre még nem tagolódó, de az egysejtű szerveződésnél bonyolultabb testforma (pl. moszatoknál, gombáknál).',
   'zuzmó': 'Egy gomba és egy alga (vagy cianobaktérium) szimbiózisából létrejövő szervezet, amely érzékeny a levegőszennyezésre.',
+  'bioindikátor': 'Olyan élőlény (pl. zuzmó, kétéltűek), amelynek jelenléte, gyakorisága vagy állapota megbízhatóan jelzi a környezet (pl. a levegő vagy a víz) minőségét.',
+  'parazita': 'Élő szervezeten vagy annak belsejében élősködő élőlény, amely a gazdaszervezet kárára táplálkozik.',
+  'sütőélesztő': 'Egysejtű gombafaj, amelynek erjedéses anyagcseréje (a keletkező szén-dioxid) teszi lehetővé a kenyértészta megkelesztését.',
   'gyilkos galóca': 'Halálosan mérgező gombafaj, amelynek felismerése alapvető biztonsági ismeret.',
   'haploid szakasz': 'Az egyedfejlődésnek az a szakasza, amelyben a sejtek egyszeres kromoszómakészlettel rendelkeznek.',
   'diploid szakasz': 'Az egyedfejlődésnek az a szakasza, amelyben a sejtek kettős (páros) kromoszómakészlettel rendelkeznek.',
+  'generációváltakozás': 'A növények többségére jellemző életciklus, amelyben egy hosszú, önálló haploid és egy hosszú, önálló diploid életszakasz váltja egymást.',
+  'spóraképzés': 'A diploid szakasz sejtjeinek meiózisával létrejövő haploid spórák képzése, amelyekből - az ivarsejtekkel ellentétben - megtermékenyítés nélkül is új egyed fejlődhet.',
+  'ivarsejtképzés': 'Az ivarsejtek (petesejt, hímivarsejt) létrejöttének folyamata - állatoknál közvetlenül meiózissal, a legtöbb növénynél a haploid egyed mitózisával.',
+
+  // 3. modul, 5. fejezet: Sejtfonalak
+  'gombák országa': 'A rendszertan egyik országa, amelybe a heterotróf, kitines sejtfallal rendelkező, jellemzően testükön kívül emésztő élőlények tartoznak.',
+  'hifa': 'A fonalas gombák testét felépítő vékony, elágazó fonál.',
+  'micélium': 'A gombafonalak (hifák) összessége, amely a gomba test nagy részét, gyakran láthatatlanul, a táptalajban vagy a tápanyagforrás belsejében alkotja.',
+  'peronoszpóra': 'Növénykórokozó fonalas gomba, amely elsősorban a szőlő és a burgonya leveleit támadja meg.',
+  'fejespenész': 'Fonalas gomba (más néven kenyérpenész), amelyet a hifák végén ülő, gömb alakú spóratokok ("fejek") jellemeznek.',
+  'ecsetpenész': 'Fonalas gomba, amelynek spóratartói ecsetszerűen elágaznak - erről a gombanemzetségről nevezték el a penicillin antibiotikumot.',
+  'penicillin': 'Az ecsetpenészből (Penicillium) származó antibiotikum, amelyet Alexander Fleming fedezett fel véletlenül.',
+  'cönocitikus felépítés': 'Sejthatárokkal nem (vagy csak pórusos keresztfalakkal) tagolt, sok sejtmagot tartalmazó, közös citoplazmájú testfelépítés, amely a legtöbb gombafonalra jellemző.',
+  'csúcsnövekedés': 'A gombafonál (hifa) növekedési módja, amelynél kizárólag a fonál csúcsán zajlik az anyagszállítás és a sejtfalépítés.',
+  'petespóra': 'A peronoszpóra és néhány más gomba vastag falú, ellenálló ivaros spórája, amely két eltérő hifa találkozásakor keletkezik, és akár évekig is életképes maradhat.',
+
+  // 3. modul, 6. fejezet: Teleptest és álszövet
+  'álszövet': 'Összefonódott hifákból álló, szövetszerű, de nem valódi, egységes eredetű, differenciálódott sejtekből álló felépítés (pl. a kalapos gombák termőtestében).',
+  'rizoid': 'A mohák egyszerű, gyökérszerű rögzítőképlete, amely - a valódi gyökérrel ellentétben - elsősorban nem a vízfelvételt, hanem a talajhoz rögzítést szolgálja.',
+  'szivacsok törzse': 'Az Állatok országának törzse, amelynek tagjai (a szivacsok) pórusos testfelépítésűek, és nem rendelkeznek valódi szövetekkel.',
+  'gametofiton': 'A növények (pl. mohák) haploid, ivarszerveket termelő nemzedéke a generációváltakozás során.',
+  'sporofiton': 'A növények (pl. mohák) diploid, meiózissal spórákat termelő nemzedéke a generációváltakozás során.',
+  'archegónium': 'A mohák (és más spórás növények) petesejtet termelő, női ivarszerve.',
+  'antheridium': 'A mohák (és más spórás növények) ostoros hímivarsejtet termelő, hím ivarszerve.',
+  'gallérsejt': 'A szivacsok testfalát bélelő, ostoros sejt, amely a vízáramlást kelti és a táplálékrészecskéket fagocitózissal bekebelezi.',
+  'vázsejt': 'A szivacsok testének alakját fenntartó, mésztűket, kovatűket vagy rugalmas fehérjerostokat kiválasztó sejt.',
+  'amőboid sejt': 'A szivacsokban előforduló, alakváltoztató mozgásra képes sejt, amely a tápanyagokat szállítja a test különböző pontjaira.',
+
+  // 3. modul, 7. fejezet: Harasztok
+  'szállítószövet': 'Növényi szövet, amely a vizet és a tápanyagokat szállítja a növény különböző részei között - a harasztoknál jelenik meg elsőként.',
+  'páfrány': 'Nagy levelű, szövetekkel és szervekkel rendelkező, spórával szaporodó haraszt-csoport.',
+  'zsurló': 'Ízelt, tagolt szárú, spórával szaporodó haraszt-csoport.',
+  'korpafű': 'Apró levelű, spórával szaporodó haraszt-csoport.',
+  'előtenyész': 'A harasztok apró, rövid életű, haploid gametofiton nemzedéke, amely a kicsírázott spórából fejlődik ki, és az ivarszerveket hordozza.',
+
+  // 3. modul, 8. fejezet: Nyitvatermők
+  'mag': 'Védőburokkal és tartalék tápanyaggal ellátott embriót tartalmazó szaporítóképlet, amely a nyitvatermőknél jelenik meg először.',
+  'toboz': 'A nyitvatermők (pl. fenyők) szaporítóképlete - a hímtobozban pollen, a nőtobozban magkezdemény termelődik.',
+  'pollen': 'A magvas növények hímivarsejtet tartalmazó, szél vagy rovarok által terjesztett szaporítóképlete.',
+  'szélbeporzás': 'A pollen szél általi terjedése, amely lehetővé teszi a víztől független megtermékenyítést.',
+  'heterospória': 'Két, egymástól méretben és funkcióban eltérő spóratípus (mikrospóra, megaspóra) képzése - a nyitvatermőknél és a zárvatermőknél jellemző jelenség.',
+  'mikrospóra': 'A heterospória kisebb spóratípusa, amelyből a hím gametofiton (végül a pollenszem) fejlődik ki.',
+  'megaspóra': 'A heterospória nagyobb spóratípusa, amelyből a nő gametofiton fejlődik ki - ez marad a magkezdeményen belül, védett környezetben.',
+
+  // 3. modul, 9. fejezet: Zárvatermők
+  'virág': 'A zárvatermők szaporítóképlete, amely takarólevelekből, ivarszervekből (bibe, porzó) épül fel - elsőként a zárvatermőknél jelenik meg.',
+  'takarólevél': 'A virág csésze- és sziromleveleiből álló része, amely védi a fejlődő ivarszerveket, és sok esetben beporzó rovarokat vonz.',
+  'bibe': 'A virág termőjének felső, ragadós felszíne, amely megköti a ráhulló pollent.',
+  'zárt magház': 'A zárvatermők magkezdeményét körülvevő, védő szövet, amely a megtermékenyítés után termésse alakul.',
+  'termés': 'A zárvatermők megtermékenyített, átalakult magháza, amely a magok védelmét és terjesztését szolgálja.',
+  'szállítócső': 'A zárvatermők fejlett szállítószövetének eleme, amely hatékonyan juttatja el a vizet és a tápanyagokat a növény minden részéhez.',
+  'gyökérszőr': 'A gyökér felszínét beborító apró sejtnyúlvány, amely megnöveli a gyökér felszínét, ezáltal hatékonyabbá téve a vízfelvételt.',
+  'egyszikű': 'Zárvatermő növénycsoport, amelynek embriója egy sziklevelet tartalmaz, levelei párhuzamos erezetűek, gyökérzete szárgyökérrendszer (pl. gabonafélék, liliomfélék).',
+  'kétszikű': 'Zárvatermő növénycsoport, amelynek embriója két sziklevelet tartalmaz, levelei hálózatos erezetűek, gyökérzete jellemzően karógyökér (pl. hüvelyesek, gyümölcsfák).',
+  'sziklevél': 'A növényi embrió első, tartalék tápanyagot felhasználó levélkéje - száma alapján különíthetők el az egyszikű és a kétszikű zárvatermők.',
+
+  // 3. modul, 10. fejezet: Kettős megtermékenyítés
+  'pollentömlő': 'A kicsírázott pollenszemből növekvő képlet, amely a bibeszálon át a magkezdeményig szállítja a két spermasejtet.',
+  'embriózsák': 'A zárvatermők magkezdeményében található, redukált nő gametofiton, amely a petesejtet és a két poláris magot tartalmazó központi sejtet foglalja magába.',
+  'poláris mag': 'Az embriózsák központi sejtjének két haploid sejtmagja, amelyek a második spermasejttel egyesülve hozzák létre a triploid endospermium-sejtmagot.',
+  'endospermium': 'A zárvatermők magjának hármas (triploid) kromoszómakészletű tápanyag-raktározó szövete, amely a második megtermékenyítési eseményből jön létre, és az embriót táplálja.',
+  'triploid': 'Hármas (3n) kromoszómakészletű - a zárvatermők endospermiumára jellemző állapot, amely egy haploid spermasejt és két haploid poláris mag egyesüléséből jön létre.',
+
+  // 3. modul, 11. fejezet: Szivacsok
+  'spongocoel': 'A szivacsok testének belsejében található központi üreg, amelybe a pórusokon átszűrt víz áramlik be.',
+  'oscŭlum': 'A szivacsok testének tetején lévő nagyobb nyílás, amelyen keresztül a megszűrt víz kilövell a spongocoelből.',
+  'szesszilis': 'Helyhez kötött, önálló mozgásra nem képes életmód (pl. a felnőtt szivacsoké).',
+  'hímnős': 'Olyan élőlény (pl. sok szivacsfaj), amelynek egyetlen egyede mindkét ivarsejttípust (hím- és petesejtet is) termeli.',
+  'mészszivacs': 'Mésztűkből felépülő vázzal rendelkező szivacscsoport.',
+  'üvegszivacs': 'Kovatűkből felépülő vázzal rendelkező szivacscsoport.',
+  'szarúszivacs': 'Rugalmas fehérjerostokból (spongin) felépülő vázzal rendelkező szivacscsoport (pl. mosdószivacs).',
+  'archeocita': 'A szivacsok differenciálatlan sejtje, amely bármelyik specializált sejttípussá (gallérsejtté, vázsejtté, amőboid sejtté) átalakulhat - a kiemelkedő regenerációs képesség sejtszintű alapja.',
+  'parazoa': 'A szivacsokat magába foglaló állatcsoport, amelynek tagjai nem rendelkeznek valódi, differenciálódott szövetekkel.',
+  'eumetazoa': 'A valódi szövetekkel és idegrendszerrel rendelkező állatok gyűjtőneve - minden állattörzs ide tartozik a szivacsok kivételével.',
+
+  // 3. modul, 12. fejezet: Csalánozók (kiegészítő, nem hivatalos tananyag)
+  'csalánozók törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. hidra, medúzák, korallok) diploblasztikus, sugarasan szimmetrikus testfelépítésűek, és csalánsejtekkel rendelkeznek.',
+  'csalánsejt': 'A csalánozók tapogatóin található, méreganyaggal töltött, spirálisan feltekeredett tűt tartalmazó sejt (nematociszta), amely érintésre kilövell.',
+  'polip': 'A csalánozók helyhez kötött testformája (pl. hidra, tengeri rózsa, korall).',
+  'medúza': 'A csalánozók szabadon úszó testformája (pl. tűzmedúza).',
+  'bélüreg': 'A csalánozók egyetlen nyílással (száj- és végbélnyílás egyben) rendelkező, emésztést végző testüregre (gastrovascularis üreg).',
+  'ektoderma': 'A csalánozók testfalának külső sejtrétege.',
+  'entoderma': 'A csalánozók testfalának belső sejtrétege.',
+  'diploblasztikus': 'Két csíralemezből (ektoderma, entoderma) felépülő testfelépítés, amely a csalánozókra jellemző.',
+  'ideghálózat': 'Az egész testet behálózó, nem központosított idegsejt-rendszer, amely a csalánozóknál jelenik meg elsőként az állatvilágban.',
+  'sugaras szimmetria': 'Olyan testszimmetria, amelynél a test középpontján átmenő bármely tengely mentén egyforma félre osztható (pl. a csalánozóknál).',
+
+  // 3. modul, 13. fejezet: Laposférgek
+  'laposférgek törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. planária, mételyek, galandférgek) lapított, kétoldalian szimmetrikus, bőrizomtömlővel rendelkező testfelépítésűek.',
+  'kétoldali szimmetria': 'Olyan testszimmetria, amelynél a test csak egyetlen síkban osztható két egyforma (tükörképi) félre - a laposférgeknél jelenik meg elsőként.',
+  'bőrizomtömlő': 'A bőr és az alatta lévő izomrétegek egybefonódásából álló testfal, amely lehetővé teszi a test összehúzódását és a mozgást.',
+  'parenchima': 'A laposférgek testében a szervek közötti teret kitöltő laza kötőszövet, amely a valódi testüreg hiányát pótolja.',
+  'láng-sejt': 'A laposférgek kiválasztószervét (protonefridium) alkotó sejt, amely a fölösleges anyagok összegyűjtésében és kiürítésében vesz részt.',
+  'planária': 'Szabadon élő, csillós kúszással mozgó laposféreg-faj, kiemelkedő regenerációs képességgel.',
+  'galandféreg': 'Bélrendszer nélküli, a gazdaszervezet bélcsatornájában élősködő laposféreg, amely a testfelületén keresztül szívja fel a tápanyagot.',
+  'neoblaszt': 'A laposférgek (pl. planária) testében szétszórtan elhelyezkedő, differenciálatlan sejt, amely bármelyik szövettípussá átalakulhat - a kiemelkedő regenerációs képesség sejtszintű alapja.',
+  'mezoderma': 'A harmadik csíralemez, amely a laposférgeknél jelenik meg először - belőle fejlődik ki a valódi izomszövet és számos belső szerv.',
+  'triploblasztikus': 'Három csíralemezből (ektoderma, mezoderma, entoderma) felépülő testfelépítés, amely a laposférgeknél jelenik meg először.',
+  'cephalizáció': 'Az érzékszervek és az idegi irányítás (agydúc, idegkötegek) koncentrálódása a test elülső végén - a kétoldali szimmetriájú állatoknál jelenik meg.',
+
+  // 3. modul, 14. fejezet: Gyűrűsférgek
+  'gyűrűsférgek törzse': 'Az Állatok országának törzse, amelynek tagjai (pl. földigiliszta, piócák) szelvényezett testfelépítésűek, valódi testüreggel és zárt keringési rendszerrel rendelkeznek.',
+  'szelvényezettség': 'A test ismétlődő, egymáshoz hasonló felépítésű gyűrűkből (szelvényekből) való felépülése - a gyűrűsférgeknél jelenik meg elsőként.',
+  'testüreg': 'A mezoderma két rétege között kialakuló, folyadékkal telt üreg (coeloma), amely hidrosztatikus vázként funkcionál - a gyűrűsférgeknél jelenik meg elsőként.',
+  'serte': 'A gyűrűsférgek testszelvényein található apró, tüskeszerű képlet, amely a mozgás során a talajban vagy az aljzatban való megkapaszkodást segíti.',
+  'zárt keringési rendszer': 'Olyan keringési rendszer, amelyben a vér mindig erekben áramlik, nem szabadon a testüregben - a gyűrűsférgeknél jelenik meg elsőként.',
+  'metanefridium': 'A gyűrűsférgek szelvényenként megismétlődő kiválasztószerve.',
+  'nyeregöv': 'A hímnős gyűrűsférgek (pl. földigiliszta) testén található duzzanat (clitellum), amely a szaporodáshoz szükséges váladékot termeli.',
+  'acoelomata': 'Valódi testüreg nélküli testfelépítés, amelynél a szervek közötti teret parenchima tölti ki (pl. a laposférgeknél).',
+
+  // 3. modul, 15. fejezet: Rovarok
+  'rovarok osztálya': 'Az Ízeltlábúak törzsének osztálya, amelynek tagjait kitines külső váz, három testtag (fej, tor, potroh) és három pár ízelt láb jellemzi.',
+  'exoszkeleton': 'Kitinből álló, kemény, merev külső váz, amely a rovarok (és más ízeltlábúak) testét borítja - védelmet ad, de vedlést igényel a növekedéshez.',
+  'trachea': 'A rovarok légzőrendszerének elágazó légzőcsöve, amely a légzőnyílásokon (stigmákon) keresztül közvetlenül a szövetekhez, sejtekhez szállítja az oxigént.',
+  'nyílt keringési rendszer': 'Olyan keringési rendszer, amelyben a vér (hemolimfa) nem csak erekben, hanem szabadon a testüregben is áramlik - a rovarokra jellemző.',
+  'malpighi-edény': 'A rovarok kiválasztószerve, amely a salakanyagokat közvetlenül a bélbe üríti.',
+  'teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-báb-imágó szakaszok különülnek el (pl. lepkéknél).',
+  'kevésbé teljes átalakulás': 'Egyedfejlődési forma, amelynél a pete-lárva-imágó szakaszok különülnek el, báb nélkül (pl. sáskáknál).',
+
+  // 3. modul, 16. fejezet: Csigák
+  'puhatestűek törzse': 'Az Állatok országának törzse, amelynek tagjait (pl. csigák, kagylók) lágy test, jellemzően köpeny és héj jellemzi.',
+  'csigák osztálya': 'A Puhatestűek törzsének osztálya, amelynek tagjai fej-láb-zsigerzacskó testfelépítésűek, jellemzően csavart héjjal.',
+  'köpeny': 'A puhatestűek zsigerzacskóját beborító szövet, amely a héjat elválasztja (kiválasztja), és köpenyüreget képez.',
+  'köpenyüreg': 'A köpeny alatt kialakuló üreg, amely vízi csigáknál a kopoltyút, szárazföldi csigáknál egy tüdőként funkcionáló felületet rejt.',
+  'radula': 'A csigák kitines, apró fogacskákkal borított táplálkozási szerve (reszelőnyelv), amellyel a táplálékot lekaparják vagy feldarabolják.',
+  'torzió': 'A csigák egyedfejlődése során bekövetkező jelenség, amelynek során a zsigerzacskó és a köpenyüreg mintegy 180 fokban elcsavarodik a fej-láb tengelyhez képest.',
+  'detorzió': 'Egyes csigacsoportoknál (pl. tengeri meztelen csigáknál) másodlagosan végbemenő részleges visszacsavarodás a torzióhoz képest, amely higiéniai hátrányokat csökkent.',
+
+  // 3. modul, 17. fejezet: Kagylók
+  'kagylók osztálya': 'A Puhatestűek törzsének osztálya, amelynek tagjait két, zsanérral összekapcsolt mészhéj, redukált fej és szűrögető táplálkozás jellemzi.',
+  'zsanérszalag': 'A kagylók két héjlemezét összekötő rugalmas szalag, amely a záróizmok elernyedésekor nyitja szét a teknőket.',
+  'szűrögető táplálkozás': 'A kagylókra jellemző táplálkozási mód, amelynek során a kopoltyún átáramló vízből szűrik ki a lebegő planktont és szerves törmeléket.',
+  'veliger lárva': 'A kagylók (és más puhatestűek) szabadon úszó lárvaformája.',
+
+  // 3. modul, 18. fejezet: Előgerinchúrosok
+  'gerinchúrosok törzse': 'Az Állatok országának törzse (Chordata), amelynek tagjait - legalább egyedfejlődésük egy szakaszában - gerinchúr, háti csöves idegrendszer, kopoltyúrések és farok jellemzi.',
+  'gerinchúr': 'A gerinchúrosok hát menti, rugalmas támasztóeleme (notochord), amely legalább az egyedfejlődés egy szakaszában minden tagnál megjelenik.',
+  'neurális cső': 'A gerinchúrosokra jellemző, háti elhelyezkedésű, cső alakú idegrendszer.',
+  'kopoltyúrés': 'A gerinchúrosok garatjában található nyílás, amely legalább az egyedfejlődés egy szakaszában minden tagnál megjelenik.',
+  'tunikás': 'Az előgerinchúrosok másik neve, amely a kifejlett egyedet körülvevő, tunicin nevű anyagból álló köpenyre (tokra) utal.',
+
+  // 3. modul, 19. fejezet: Fejgerinchúrosok
+  'fejgerinchúrosok': 'A Gerinchúrosok törzsének csoportja (Cephalochordata, pl. a lándzsahal), amelynek tagjai egész életükben megőrzik mind a négy chordata-bélyeget.',
+  'lándzsahal': 'A fejgerinchúrosok jellemző képviselője (Amphioxus), kis, áttetsző, lándzsa alakú testű, tengerfenéki, szűrve táplálkozó állat.',
+  'miotóm': 'A fejgerinchúrosok (és a gerincesek) testében található, szelvényekre tagolt izomköteg, amely a hullámzó úszómozgást teszi lehetővé.',
+
+  // 3. modul, 20. fejezet: Csontos halak
+  'gerincesek altörzse': 'A Gerinchúrosok törzsének altörzse (Vertebrata), amelynek tagjainál a gerinchúrt csontos vagy porcos gerincoszlop váltja fel.',
+  'csontos halak osztálya': 'A Gerincesek altörzsének osztálya (Osteichthyes), amelynek tagjait csontos pikkelyek, kopoltyú és úszóhólyag jellemzi.',
+  'oldalvonal-szerv': 'A halak egyedi érzékszerve, amely a vízben terjedő rezgéseket és áramlásokat érzékeli.',
+  'úszóhólyag': 'A csontos halak gázzal töltött szerve, amellyel a hal szabályozza a felhajtóerejét, és energiabefektetés nélkül lebeghet egy adott mélységben.',
+  'porcos halak': 'A halak másik nagy csoportja (Chondrichthyes, pl. cápák, rájak), amelyeknek vázuk porcból épül fel, és nincs úszóhólyaguk.',
+  'gerincoszlop': 'Egymáshoz kapcsolódó csontos (vagy porcos) elemekből (csigolyákból) álló, a gerinchúrt felváltó támasztóelem, amely a gerincesekre jellemző.',
+  'csigolya': 'A gerincoszlopot felépítő, egymáshoz kapcsolódó csontos (vagy porcos) elem.',
+
+  // 3. modul, 21. fejezet: Kétéltűek
+  'kétéltűek osztálya': 'A Gerincesek altörzsének osztálya (Amphibia), amelynek tagjaira a kettős légzés, a háromüregű szív és az átalakulásos egyedfejlődés jellemző.',
+  'bőrlégzés': 'A kétéltűek nedves, csupasz bőrén keresztül történő kiegészítő gázcsere, amely a tüdőlégzést egészíti ki.',
+  'átalakulásos egyedfejlődés': 'Olyan egyedfejlődés, amelynek során a lárva radikális testfelépítés-váltással (metamorfózissal) alakul át kifejlett egyeddé, pl. az ebihal békává.',
+  'kettős vérkör': 'Két, egymástól elkülönülő keringési kör (tüdő-vérkör és test-vérkör) megléte, amely a kétéltűeknél jelenik meg először a gerincesek sorában.',
+  'háromüregű szív': 'A kétéltűekre jellemző szívtípus, amely két pitvarból és egy kamrából áll; a kamrában még keveredik az oxigénben gazdag és szegény vér.',
+  'tüdő': 'A levegőből történő gázcserét végző légzőszerv, amely a kétéltűeknél jelenik meg először a gerincesek sorában, a bőrlégzést kiegészítve.',
+  'amnion': 'Az embriót körülvevő magzatburok, amely a hüllők, madarak és emlősök tojásában/méhében véd a kiszáradástól; a kétéltűek ikrájából ez még hiányzik.',
+
+  // 3. modul, 22. fejezet: Hüllők
+  'hüllők osztálya': 'A Gerincesek altörzsének osztálya (Reptilia), amelynek tagjaira a száraz, szaruréteges bőr, a kizárólagos tüdőlégzés és az amniota tojás jellemző.',
+  'szaruréteg': 'A hüllők bőrét borító, keratinból álló, vízzáró réteg, amely megakadályozza a kiszáradást, de gátolja a bőrlégzést.',
+  'ektoterm szabályozás': 'Olyan testhőmérséklet-szabályozás, amelynél az állat testhőmérséklete a környezeti hőmérséklettől függ (pl. hüllőknél, kétéltűeknél, halaknál).',
+  'jacobson-szerv': 'A szájpadláson elhelyezkedő kémiai érzékszerv, amelyet egyes hüllők (pl. kígyók) a nyelvükkel gyűjtött illatanyagok érzékelésére használnak.',
+  'amniota tojás': 'Magzatburokkal (amnionnal) és szilárd héjjal védett tojás, amely a hüllőknél jelenik meg először, és lehetővé teszi a szaporodás teljes függetlenedését a víztől.',
+  'részlegesen elkülönült kamra': 'A hüllők szívkamráját részben kettéosztó válaszfal, amely csökkenti (de nem szünteti meg) az oxigénben gazdag és szegény vér keveredését.',
+  'húgysav': 'Szilárd, alig vízoldékony nitrogéntartalmú bomlástermék, amelyet a hüllők (és a madarak) választanak ki; kevesebb vizet igényel, mint az ammónia vagy a karbamid kiválasztása.',
+
+  // 3. modul, 23. fejezet: Madarak
+  'madarak osztálya': 'A Gerincesek altörzsének osztálya (Aves), amelynek tagjaira a repülésre specializálódott testfelépítés, a tollazat, az állandó testhőmérséklet és a négyüregű szív jellemző.',
+  'tollazat': 'A madarak szaruból (keratinból) felépülő, módosult pikkelyekből kialakult kültakarója, amely a repülési felületet és a hőszigetelést egyaránt biztosítja.',
+  'légzsák': 'A madarak tüdejéhez kapcsolódó, levegővel telt hártyás zsákrendszer, amely az egyirányú levegőáramlást (kettős légzést) teszi lehetővé.',
+  'zúzógyomor': 'A madarak fogatlansága miatt kialakult gyomorszakasz, amely gyakran lenyelt kavicsok segítségével őrli meg a táplálékot.',
+  'endotermia': 'Az állandó, magas testhőmérséklet fenntartása a szervezet saját anyagcseréje (hőtermelése) révén, függetlenül a környezeti hőmérséklettől; a madaraknál jelenik meg először a gerincesek sorában.',
+  'négyüregű szív': 'Két pitvarból és két, teljesen elkülönült kamrából álló szívtípus, amely teljesen megakadályozza az oxigénben gazdag és szegény vér keveredését; a madaraknál jelenik meg először.',
+  'kettős légzés': 'A madarak légzsákos tüdejére jellemző, egyirányú levegőáramlást biztosító légzési mód, amely hatékonyabb gázcserét tesz lehetővé, mint a kétirányú tüdőlégzés.',
+
+  // 3. modul, 24. fejezet: Emlősök
+  'emlősök osztálya': 'A Gerincesek altörzsének osztálya (Mammalia), amelynek tagjaira a szőrzet, a tejmirigy, a differenciált fogazat és (a kloákások kivételével) az elevenszülés jellemző.',
+  'szőrzet': 'Az emlősök keratinból felépülő, hőszigetelő szerepű szálas kültakarója; a madarak tollazatával konvergens módon, attól függetlenül alakult ki.',
+  'heterodont fogazat': 'Metsző-, szem- és zápfogakra tagolódó, differenciált fogazat, amely lehetővé teszi a táplálék szájban történő mechanikai előfeldolgozását (rágást); az emlősökre jellemző.',
+  'rekeszizom': 'Az emlősök mellüreget a hasüregtől elválasztó izmos lemeze, amely összehúzódásával hatékony tüdőszellőzést biztosít.',
+  'tejmirigy': 'Az emlősök bőrmirigyekből kialakult szerve, amely az utódok táplálására szolgáló tejet termeli; erről kapta nevét az osztály (Mammalia).',
+  'méhlepény (placenta)': 'Az anya és a magzat közötti anyagcserét biztosító szerv a méhlepényes emlősök méhében, amelyen keresztül az embrió táplálékot és oxigént kap.',
+  'kloákások': 'Tojásrakó emlősök csoportja (pl. kacsacsőrű emlős), amelyeknél a szaporodás még a hüllőkéhez hasonló, de utódaikat tejjel táplálják.',
+  'erszényesek': 'Méhlepény nélkül szaporodó emlősök csoportja (pl. kenguru), amelyeknél az utód korán megszületik, és fejlődését az anya erszényében fejezi be.',
+  'nagyagykéreg': 'Az emlősagy legfejlettebb, redőzött felszínű része, amely az összetett viselkedést, tanulást és érzékelést teszi lehetővé.',
+
+  // 3. modul, 25. fejezet: Növényi szövetek
+  'bőrszövet': 'A növény felszínét borító állandósult szövet, amely védelmet nyújt a kiszáradás és a kórokozók ellen; sejtjeit gyakran viaszos kutikula fedi.',
+  'alapszövet': 'A növény tápanyagkészítő (asszimilációs) állandósult szövete, amelynek sejtjei klorofillt tartalmaznak, és fotoszintézist végeznek.',
+  'kutikula': 'A növényi bőrszövet felszínét borító, vízzáró viaszréteg, amely csökkenti a párolgást és védi a szövetet a kiszáradástól.',
+  'kristályzárvány': 'Növényi sejtekben felhalmozódó, jellemzően kalcium-oxalátból álló kristályos képződmény, amely anyagcsere-melléktermékként keletkezik, és védelmi szerepet is betölthet.',
+  'kambium': 'Oldalirányú (másodlagos) osztódószövet, amely a szár és a gyökér vastagságnövekedéséért felelős, és a fás szár kialakulásának alapja.',
+  'totipotencia': 'Az osztódószövet sejtjeinek azon képessége, hogy megfelelő körülmények között egyetlen sejtből is teljes, önálló növény regenerálódhat; a szövettenyésztéses klónozás alapja.',
+
+  // 3. modul, 26. fejezet: Gyökér, szár, levél
+  'gyökérsüveg': 'A gyökércsúcs osztódószövetét védő szövetréteg, amely a talajban történő növekedés közben véd a mechanikai sérülésektől.',
+  'gyökérszőrös zóna': 'A gyökér azon szakasza, ahol a gyökérszőrök a legsűrűbben helyezkednek el, jelentősen megnövelve a víz- és tápanyagfelvételre alkalmas felületet.',
+  'lágy szár': 'Olyan növényi szár, amelynél nincs (vagy csak korlátozott) másodlagos vastagodás, ezért rugalmas és hajlékony marad egész életében.',
+  'fás szár': 'Olyan növényi szár, amelynél a kambium folyamatos működése másodlagos vastagodást (évgyűrűk kialakulását) eredményez.',
+  'évgyűrű': 'A fás szárban a kambium szezonálisan eltérő aktivitása miatt kialakuló, évente egy rétegként megjelenő gyűrűzet, amelyből a fa kora megbecsülhető.',
+  'levéllemez': 'A lomblevél lapos, kiszélesedett része, amely a fotoszintézis fő helyszíne.',
+  'oszlopos alapszövet': 'A levél felső részén elhelyezkedő, klorofillban gazdag alapszövet-típus, amelyben a fotoszintézis nagy része zajlik.',
+  'szivacsos alapszövet': 'A levél alsó részén elhelyezkedő, sejtközötti járatokkal átszőtt alapszövet-típus, amely a gázok levélen belüli áramlását segíti.',
+  'xerofita': 'Száraz élőhelyekhez anatómiailag alkalmazkodott növény (pl. vastag kutikula, csökkent levélfelület), amely csökkenti a vízveszteséget.',
+  'hidrofita': 'Vízi élőhelyekhez anatómiailag alkalmazkodott növény, amelyre vékony kutikula, kevés gázcserenyílás és nagy légjáratok jellemzők.',
+  'léggyökér': 'Módosult gyökér, amely a levegőből is képes nedvességet felvenni; egyes trópusi növényekre jellemző.',
+  'szárgumó': 'Módosult, föld alatti szár, amely tartalék tápanyagot (jellemzően keményítőt) halmoz fel, pl. a burgonyánál.',
+
+  // 3. modul, 27. fejezet: Növényi anyagszállítás
+  'gázcserenyílás': 'Két zárósejt által közrefogott apró nyílás a növény bőrszövetén (elsősorban a levél alsó felszínén), amely a gázcserét és a párologtatást szabályozza.',
+  'zárósejt': 'A gázcserenyílást körülvevő, turgornyomás-változással a nyílás méretét szabályozó növényi sejt.',
+  'transzspiráció': 'A víz gázcserenyíláson keresztüli elpárologtatása a levél felszínéről; a vízszállítás egyik legfontosabb hajtóereje.',
+  'gyökérnyomás': 'A gyökérsejtek aktív, ozmotikus anyagfelvételéből eredő nyomás, amely alulról segíti a víz felfelé áramlását a szállítószövetben.',
+  'kapillaritás': 'A vízmolekulák kohéziójából és adhéziójából eredő jelenség, amely a szállítószövet vékony csövecskéiben felfelé húzza a vizet.',
+  'ozmotikus szívóerő': 'A párologtatás által a szállítószövet vízoszlopában keltett szívóhatás, amely a víz gyökértől a levelekig tartó szállításának legfontosabb hajtóereje.',
+
+  // 3. modul, 28. fejezet: Virág és termés
+  'porzó': 'A virág hímivarszerve, amely a pollent termelő portokból és az azt tartó porzószálból áll.',
+  'termő': 'A virág nőivarszerve, amely a bibéből, a bibeszálból és a magházból épül fel.',
+  'virágzat': 'Egy hajtáson jellegzetes elrendezésben csoportosuló virágok összessége, pl. a kukorica bugavirágzata.',
+  'egyivarú virág': 'Olyan virág, amely csak porzókat (hímvirág) vagy csak termőt (nővirág) tartalmaz.',
+  'kétivarú virág': 'Olyan virág, amelyben mind a porzók, mind a termő megtalálható.',
+  'egylaki növény': 'Olyan növényfaj, amelynek hím- és nővirágai ugyanazon az egyeden, csak eltérő helyen találhatók (pl. kukorica, uborka).',
+  'kétlaki növény': 'Olyan növényfaj, amelynek hím- és nővirágai külön-külön egyedeken fejlődnek (pl. fűzfa, kender).',
+  'fotoperiodizmus': 'A nappal (illetve az éjszaka) hosszának hatása a növény életműködéseire, elsősorban a virágzás időzítésére.',
+  'rövidnappalos növény': 'Olyan növény, amely csak akkor virágzik, ha a nappal egy kritikus hossznál rövidebb (jellemzően ősszel).',
+  'hosszúnappalos növény': 'Olyan növény, amely csak akkor virágzik, ha a nappal egy kritikus hossznál hosszabb (jellemzően tavasszal-nyáron).',
+  'termésfal': 'A magházfalból fejlődő, a magot körülvevő termésrész.',
+  'áltermés': 'Olyan termés, amelynek kialakításában a magházfalon kívül más virágrész (pl. a vacok) is részt vesz, pl. az alma esetében.',
+  'vacok': 'A virág alapját alkotó, kiszélesedett szártag, amely egyes növényeknél (pl. alma) a termés kialakításában is részt vesz.',
+
+  // 3. modul, 29. fejezet: Növényi szaporodás és növekedésszabályozás
+  'vegetatív szaporodás': 'Ivartalan szaporodási mód, amelynek során a szülő növény egy testrészéből (gyökér, szár, levél) - megtermékenyítés nélkül - fejlődik ki egy új, genetikailag azonos egyed.',
+  'tősarj': 'Az anyanövény tövéből kinövő, önálló gyökérzetet fejlesztő hajtás, amely a vegetatív szaporodás egyik természetes formája.',
+  'dugványozás': 'Ivartalan szaporítási mód, amelynek során egy levágott szár- vagy levéldarabot gyökereztetnek meg, hogy abból teljes új növény fejlődjön.',
+  'oltás': 'Ivartalan szaporítási mód, amelynek során egy értékes fajta ágát (nemes ág) egy másik, ellenállóbb gyökérzetű növénybe (alany) illesztik be.',
+  'szemzés': 'Az oltáshoz hasonló ivartalan szaporítási mód, amelynek során egyetlen rügyet ültetnek át az alany növénybe.',
+  'klónozás': 'A totipotencia elvét kihasználó szaporítási eljárás, amelynek során a növény osztódó szövetének egyetlen sejtjéből szövettenyésztéssel genetikailag azonos új egyed nevelhető fel.',
+  'csírázás': 'A mag fejlődésének megindulása, amelyhez külső (hőmérséklet, víz, oxigén, fény) és belső (életképes embrió, a nyugalmi állapot megszűnése) feltételek egyaránt szükségesek.',
+  'nyugalmi állapot': 'Olyan időszak, amikor a mag vagy a rügy nem fejlődik tovább, annak ellenére, hogy a külső körülmények egyébként kedvezőek lehetnének; hormonálisan szabályozott állapot.',
+  'auxin': 'A növények egyik legfontosabb hormoncsoportja, amely a hajtáscsúcs-dominanciát, a tropizmusokat és a gyökeresedést szabályozza.',
+  'hajtáscsúcs-dominancia': 'Az a jelenség, amikor a hajtáscsúcsban termelődő auxin gátolja az oldalrügyek kihajtását.',
+  'fototropizmus': 'A növény fény irányába történő növekedési válasza, amelyet az auxin egyenlőtlen eloszlása okoz.',
+  'geotropizmus': 'A növény gyökerének és hajtásának a nehézségi erő irányához igazodó növekedési válasza, amelyet az auxin egyenlőtlen eloszlása okoz.',
+
+  // 3. modul, 30. fejezet: Állati szövetek
+  'vázizom': 'Harántcsíkolt izomszövet-típus, amely a csontvázhoz kapcsolódva az akaratlagos mozgást biztosítja.',
+  'csontszövet': 'Ásványi anyagokkal átitatott, rendkívül szilárd kötőszövet-típus, amely a testtartást és a belső szervek védelmét szolgálja.',
+  'simaizom': 'Akaratlanul összehúzódó, harántcsíkolatot nem mutató izomszövet-típus, amely a belső szervek (pl. bélcsatorna, erek) mozgatásáért felelős.',
+  'szívizom': 'Harántcsíkolt, de akaratlanul, önállóan és ritmikusan összehúzódó izomszövet-típus, amely kizárólag a szívben található.',
+  'csillós hám': 'Csillókkal borított hámszövet-típus, amely a csillók összehangolt mozgásával anyagokat továbbít a felszínén (pl. a légutakban).',
+  'üvegporc': 'Sima, rugalmas, nyomásra ellenálló kötőszövet-típus, amely rostokat nem tartalmazó mátrixból épül fel, pl. az ízületi felszíneken.',
+
+  // 3. modul, 31. fejezet: Szaporodás és egyedfejlődés
+  'petesejt': 'A nőivarú egyed ivarsejtje: nagyméretű, mozdulatlan, tartalék tápanyagot (szikanyagot) raktároz.',
+  'hímivarsejt': 'A hímivarú egyed ivarsejtje: apró, jellemzően ostoros, mozgékony sejt, amely a petesejt megtermékenyítésére specializálódott.',
+  'zigóta': 'A megtermékenyítés során a hímivarsejt és a petesejt egyesüléséből létrejövő, osztatlan sejt - az új egyed egyedfejlődésének kiindulópontja.',
+  'hímnősség': 'Az a jelenség, amikor egyetlen egyed mindkét ivarsejttípust (petesejtet és hímivarsejtet is) képes termelni, pl. a földigilisztánál vagy a csigák nagy részénél.',
+  'váltivarúság': 'Az a jelenség, amikor egy adott egyed csak az egyik ivarsejttípust termeli, azaz az egyedek ivarilag elkülönültek.',
+  'ivari kétalakúság': 'A hím és a nő egyedek külső megjelenésében (pl. szín, méret, dísz) megnyilvánuló különbség (nemi dimorfizmus).',
+  'embrionális fejlődés': 'Az egyedfejlődés megtermékenyítéstől a születésig (kikelésig) tartó szakasza, amely alatt kialakulnak az alapvető szervrendszerek.',
+  'posztembrionális fejlődés': 'Az egyedfejlődés születés (kikelés) utáni szakasza, amely alatt az egyed eléri a kifejlett állapotot.',
+  'regeneráció': 'Elvesztett testrész újranövesztésének, vagy akár egy leszakadt testrészből teljes új egyed kialakulásának képessége.',
+  'parthenogenezis': 'Szaporodási mód, amelynek során a petesejtből megtermékenyítés nélkül fejlődik ki új egyed (szűznemzés).',
+
+  // Állati viselkedés modul, 1. fejezet: Öröklött és tanult magatartásformák
+  'öröklött magatartásforma': 'Genetikailag kódolt, tanulás nélkül is megjelenő, fajra jellemző, kiszámítható lefolyású viselkedésforma.',
+  'tanult magatartásforma': 'Egyedi tapasztalat vagy környezeti hatás eredményeként kialakuló, egyedenként eltérő, az élet során módosulható viselkedésforma.',
+  'kritikus periódus': 'Az egyedfejlődés genetikailag meghatározott, korlátozott időszaka, amely alatt egy adott tanulási folyamat (pl. az énekmintázat elsajátítása) végbemehet.',
+
+  // Állati viselkedés modul, 2. fejezet: Önfenntartással kapcsolatos viselkedések
+  'tájékozódási viselkedés': 'Az állat útkeresését, élőhelyén és táplálékforrásaihoz vagy fészkéhez való eligazodását szolgáló magatartásforma.',
+  'táplálkozási magatartás': 'A táplálékkeresést, -elfogást és -feldolgozást szolgáló viselkedésformák összessége.',
+  'menekülési viselkedés': 'A ragadozók elől való elmenekülést szolgáló magatartásforma.',
+  'thanatózis': 'Az elhullott állat állapotát imitáló, "tettető halál" védekezési stratégia, amellyel egyes fajok (pl. az oposszum) elveszik a ragadozó érdeklődését.',
+  'védekező viselkedés': 'A ragadozókkal vagy más veszélyforrásokkal szembeni testi és viselkedésbeli védekezési stratégiák összessége.',
+  'álcázás': 'Az állat testfelépítésének vagy színezetének a környezethez való hasonlítása, amely megnehezíti a ragadozók (vagy a zsákmány) általi felismerést.',
+  'batesi mimikri': 'Olyan mimikri, amelynél egy védtelen faj egy védett faj külsejét utánozza, ezzel megtévesztve a ragadozókat.',
+  'müller-féle mimikri': 'Olyan mimikri, amelynél két vagy több, egymástól függetlenül is védett faj hasonló megjelenése kölcsönösen erősíti a ragadozók tanulási hatását.',
+
+  // Állati viselkedés modul, 3. fejezet: Fajfenntartással kapcsolatos viselkedések
+  'udvarlás': 'A partnerkeresést és a párzási hajlandóság kölcsönös jelzését szolgáló magatartásforma.',
+  'párzás': 'A megtermékenyítéshez vezető viselkedés, amelyet gyakran a hímek közötti versengés előz meg.',
+  'ivadékgondozás': 'A szülők utódaik túlélési esélyét növelő viselkedése, amelynek mértéke fajonként igen eltérő.',
+  'altruizmus': 'Önzetlen viselkedés, amelynek során az egyed saját érdekeit (akár túlélési esélyét) háttérbe szorítva segít rokonain.',
+  'agresszió': 'A fajtársak közötti, jellemzően korlátozott erőforrásokért (táplálék, territórium, partner) folyó versengésből fakadó magatartásforma.',
+  'dominanciahierarchia': 'Egy csoporton belüli rangsor, amely szabályozza az erőforrásokhoz és a szaporodási lehetőségekhez való hozzáférést.',
+  'rokonszelekció': 'Evolúciós elmélet, amely szerint az önzetlen viselkedés azért alakulhatott ki, mert a rokonok megsegítése a közös génállomány továbbörökítését szolgálja.',
+
+  // Állati viselkedés modul, 4. fejezet: Veleszületett magatartásformák
+  'feltétlen reflex': 'Egy adott ingerre adott, veleszületett, gyors és egyszerű válasz, amely tanulás nélkül, minden egyeden azonos módon zajlik le.',
+  'irányított mozgás': 'Az egész állat ingerforrás felé (pozitív taxis) vagy attól elfelé (negatív taxis) történő mozgása.',
+  'öröklött mozgásmintázat': 'Összetett, több lépésből álló, sztereotip mozgássorozat, amely egy kulcsinger hatására elindulva a maga teljességében lezajlik, akkor is, ha a kiváltó inger időközben megszűnik.',
+  'reflexív': 'A feltétlen reflexek idegrendszeri alapja: az érző idegsejttől a gerincvelőn (vagy agytörzsön) át a mozgató idegsejtig, majd az effektorig vezető ingerületi útvonal.',
+  'effektor': 'A választ ténylegesen végrehajtó szerv (izom vagy mirigy) egy reflexívben.',
+
+  // Állati viselkedés modul, 5. fejezet: Tanult magatartásformák
+  'bevésődés': 'Fiatal állatnál egy korai, kritikus periódusban kialakuló, tartós kötődés egy adott ingerhez (jellemzően a szülőhöz).',
+  'érzékenyítés': 'Ismétlődő, erős vagy veszélyes inger hatására a válaszkészség fokozatos erősödése.',
+  'megszokás': 'Ismétlődő, veszélytelen inger hatására a válaszkészség fokozatos csökkenése, akár megszűnése.',
+  'feltételes reflex': 'Egy eredetileg semleges inger és egy feltétlen inger ismételt együttes bemutatása után kialakuló, tanult inger-válasz kapcsolat (klasszikus kondicionálás).',
+  'operáns tanulás': 'Olyan tanulási forma, amelynél a viselkedés következménye (jutalom vagy büntetés) határozza meg a viselkedés jövőbeli gyakoriságát.',
+  'belátásos tanulás': 'A legösszetettebb tanulási forma, amelynél az állat egy problémát próba-szerencse nélkül, korábbi tapasztalatok hirtelen kombinálásával old meg.',
+  'megfigyeléses tanulás': 'Olyan tanulási forma, amelynél az állat mások viselkedésének megfigyelésével, saját próbálkozás nélkül sajátít el új viselkedésformákat.',
+
+  // Állati viselkedés modul, 6. fejezet: Motiváció és kulcsinger
+  'motiváció': 'Az állat belső fiziológiai állapota, amely befolyásolja, hogy egy adott inger mennyire váltja ki a rá jellemző viselkedést.',
+  'kulcsinger': 'Egy inger azon specifikus, jellegzetes tulajdonsága, amely önmagában is képes kiváltani egy adott, jellemzően öröklött viselkedést.',
+  'szuperinger': 'Mesterségesen létrehozott vagy ritkán előforduló inger, amely a kulcsinger jellemzőit eltúlzott mértékben tartalmazva az eredetinél is erősebb választ vált ki.',
+
+  // 4. modul, 1. fejezet: Homeosztázis
+  'negatív visszacsatolás': 'Szabályozási elv, amelynél egy mért paraméter (pl. testhőmérséklet) normál tartománytól való eltérése olyan folyamatokat indít el, amelyek az eltérést csökkentik.',
+  'kiválasztás': 'A szervezet anyagcseréje során keletkező, felesleges vagy káros bomlástermékek (salakanyagok) eltávolítása a szervezetből.',
+  'külső elválasztás': 'Mirigyműködési forma (exokrin), amelynél a váladék a testfelszínre vagy egy testüregbe ürül, pl. a verejtékmirigynél vagy a nyálmirigynél.',
+  'belső elválasztás': 'Mirigyműködési forma (endokrin), amelynél a váladék (hormon) közvetlenül a vérbe kerül, és onnan jut el a célszervekhez.',
+  'önvizsgálat': 'Az egyén által rendszeresen végzett, betegségek (pl. daganatos elváltozások) korai felismerését célzó vizsgálat, pl. az anyajegyek ellenőrzése.',
+  'újraélesztés': 'Az eszméletlen, nem lélegző személynél alkalmazott alapfokú elsősegélynyújtási eljárás, amelynek része a segélyhívás és a mellkaskompressziók végzése.',
+
+  // 4. modul, 2. fejezet: Bőr
+  'felhám': 'A bőr külső rétege (epidermisz), amely többrétegű elszarusodott laphámból épül fel, és a testet a külvilágtól választja el.',
+  'irha': 'A bőr középső rétege (dermisz), amely kötőszövetből áll, és amelyben az erek, receptorok, mirigyek és szőrtüszők találhatók.',
+  'verejtékmirigy': 'A bőr mirigye, amely vizes, sótartalmú váladékával (verejtékkel) hűti a testet és kisebb mennyiségű salakanyagot is eltávolít.',
+  'faggyúmirigy': 'A bőr mirigye, amely zsíros váladékával (faggyúval) vékony, védő, vízzáró réteget von a bőr és a szőrszálak felszínére.',
+  'melanocita': 'A felhámban elhelyezkedő festéksejt, amely a melanin nevű bőrpigmentet termeli.',
+  'melanin': 'A melanociták által termelt bőrpigment, amely elnyeli az ultraibolya sugárzás egy részét, védve a mélyebb bőrrétegeket.',
+  'tapintóreceptor': 'A bőrben elhelyezkedő, nyomásra, rezgésre vagy finom érintésre érzékeny érzékelő szerkezet.',
+
+  // 4. modul, 3. fejezet: A bőr gondozása, védelme
+  'anyajegy': 'A festéksejtek (melanociták) helyi felszaporodásából keletkező, jellemzően jóindulatú bőrelváltozás.',
+  'szemölcs': 'Humán papillomavírus (HPV) fertőzés által okozott, jóindulatú, de fertőző bőrelváltozás.',
+  'mitesszer': 'A faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből kialakuló bőrelváltozás.',
+  'pattanás': 'Gyulladásossá vált mitesszer, amely baktériumok elszaporodása miatt alakul ki.',
+  'vízhólyag': 'A felhám rétegeinek elválásából és a köztük felgyülemlő szövetnedvből keletkező bőrelváltozás, pl. dörzsölés vagy enyhébb égés hatására.',
+  'vérhólyag': 'Az irha ereit is érintő, mélyebb sérülésnél kialakuló, vérrel telt hólyag.',
+  'égési sérülés': 'A bőr hő hatására bekövetkező sérülése, amely megszünteti a bőr védőfunkcióját és jelentős folyadékvesztéssel járhat.',
+
+  // 4. modul, 4. fejezet: Vázrendszer
+  'csontváz': 'A test csontos-porcos vázrendszere, amely tartást, védelmet, mozgást, vérképzést és ásványianyag-raktározást biztosít.',
+  'agykoponya': 'A koponya azon része, amely az agyat védő, közvetlenül egymáshoz illeszkedő lapos csontokból áll.',
+  'arckoponya': 'A koponya azon része, amelynek csontjai (pl. orrcsont, járomcsont, állcsontok) az arc formáját és a rágás szervi hátterét adják.',
+  'ízület': 'Két vagy több csont szabad mozgást lehetővé tevő kapcsolódási pontja, amelyet ízületi tok, ízületi porc és ízületi folyadék épít fel.',
+  'kollagén': 'Rostos szerkezetű fehérje, amely a csont (és más kötőszövetek) rugalmasságáért felelős.',
+  'vállöv': 'A felső végtagot a törzshöz kapcsoló függesztőöv, amelyet a kulcscsont és a lapocka alkot.',
+  'medenceöv': 'Az alsó végtagot a törzshöz kapcsoló függesztőöv, amelyet a csípőcsont alkot.',
+  'oszteoporózis': 'Csontritkulás: olyan állapot, amelyben a csontok ásványianyag-tartalma és sűrűsége kórosan lecsökken, ezáltal törékennyé válnak.',
+
+  // 4. modul, 5. fejezet: Izomrendszer
+  'izomköteg': 'Több izomrostot (izomsejtet) összefogó egység a vázizom felépítésében.',
+  'izompálya': 'Több izomköteg együttese, amely a szabad szemmel is látható, teljes izmot alkotja.',
+  'ín': 'Az izmot a csonthoz rögzítő, szívós kötőszöveti képlet.',
+  'izomtónus': 'Az izom nyugalmi állapotban is fennálló, enyhe feszülési állapota, amely a testtartás fenntartásában és a mozgások előkészítésében játszik szerepet.',
+  'aktin': 'A vázizomsejtekben található, a miozinnal együtt az izomösszehúzódásért felelős fehérje.',
+  'miozin': 'A vázizomsejtekben található, az aktinnal együtt az izomösszehúzódásért felelős fehérje.',
+  'kreatin-foszfát': 'Az izomsejtek saját energiatároló molekulája, amely az ATP gyors pótlását segíti.',
+  'mioglobin': 'Az izomsejtek oxigéntároló fehérjéje, amely a vázizom jellegzetes vörös színéért is felelős.',
+
+  // 4. modul, 6. fejezet: A mozgási rendszer egészségtana
+  'törés': 'A csont folytonosságának megszakadása, amelyet erős fájdalom, duzzanat, deformitás és mozgásképtelenség kísér.',
+  'gerincsérülés': 'A gerincoszlop sérülése, amely veszélyes, mert a benne futó gerincvelő is károsodhat, érzészavart vagy bénulást okozva.',
+  'ficam': 'Az ízületi felszínek átmeneti, kóros kimozdulása egymáshoz képest, amelyet erős fájdalom, deformitás és mozgásképtelenség kísér.',
+  'csípőficam': 'A csípőízület kóros helyzete, amely lehet veleszületett fejlődési rendellenesség vagy sérülés következménye; jelei közé tartozik az aszimmetrikus lábhossz és a csípő korlátozott mozgathatósága.',
+  'rándulás': 'Az ízületet stabilizáló szalagok átmeneti túlnyúlása vagy kisebb szakadása, tartós csontelmozdulás nélkül.',
+  'lúdtalp': 'A lábboltozat kóros belapulása, amely kedvezőtlenné teszi a lábfej terhelés-elosztását.',
+  'gerincferdülés': 'A gerincoszlop kóros, oldalirányú elgörbülése (scoliosis).',
+  'anabolikus szteroid': 'Hormonális hatású, tiltott teljesítményfokozó szer, amelynek szakszerűtlen használata súlyos, akár visszafordíthatatlan károsodásokat okozhat.',
+
+  // 4. modul, 7. fejezet: Táplálkozás
+  'táplálék': 'A szervezetbe felvett étel, amely még emésztésre vár, mielőtt a szervezet ténylegesen fel tudná használni alkotórészeit.',
+  'tápanyag': 'A táplálék emésztés révén felszabadított alkotórésze (szénhidrát, fehérje, zsír, vitamin, ásványi anyag, víz), amelyet a szervezet fel tud szívni és hasznosítani tud.',
+  'bélperisztaltika': 'A bélcsatorna falában lévő izomzat hullámszerű összehúzódása, amely a táplálékot a tápcsatornán végig továbbmozgatja.',
+  'testtömegindex': 'A testtömeg (kg) és a testmagasság négyzetének (m²) hányadosa; tájékoztató jellegű mutató, amely nem veszi figyelembe a testösszetételt.',
+  'alapanyagcsere': 'A szervezet teljes nyugalmi állapotban is elhasznált legkisebb energiamennyisége, amely az alapvető élettani működések fenntartásához szükséges.',
+
+  // 4. modul, 8. fejezet: Emésztés
+  'fogképlet': 'A fogak típusát és számát negyedenként megadó jelölés; felnőtt embernél negyedenként 2 metsző-, 1 szem-, 2 kis- és 3 nagyőrlőfog.',
+  'pepszin': 'A gyomorban termelődő, fehérjebontó enzim, amely erősen savas kémhatáson fejti ki hatását.',
+  'pepszinogén': 'A pepszin inaktív előanyaga, amelyet a gyomor sósava aktivál.',
+  'amiláz': 'A nyálmirigyekben és a hasnyálmirigyben termelődő enzim, amely a keményítőt bontja.',
+  'hasnyál': 'A hasnyálmirigy által termelt, lúgos kémhatású emésztőnedv, amely mind a négy fő tápanyagcsoport bontásához tartalmaz enzimeket.',
+  'epe': 'A máj által termelt, az epehólyagban tárolt váladék, amely nem enzim, hanem a zsírok emulgeálásával segíti azok bontását.',
+  'laktáz': 'A vékonybél nyálkahártyájában termelődő enzim, amely a tejcukrot (laktózt) glükózra és galaktózra bontja.',
+  'lipáz': 'A hasnyálmirigyben termelődő enzim, amely az emulgeált zsírokat (trigliceridek) zsírsavakra és glicerinre bontja.',
+  'nukleáz': 'A hasnyálmirigyben termelődő enzim, amely a nukleinsavakat (DNS, RNS) kisebb egységekre bontja.',
+  'tripszin': 'A hasnyálmirigyben inaktív előanyagként termelődő, a vékonybélben aktiválódó enzim, amely a fehérjebontást folytatja az aminosavakig.',
+
+  // 4. modul, 9. fejezet: Felszívódás
+  'bélbolyh': 'A vékonybél belső falát beborító, ujjszerű nyúlvány, amely hatalmasra növeli a felszívó felületet.',
+  'vastagbél': 'A tápcsatorna azon szakasza, amely a fel nem szívódott anyagokból visszaszívja a vizet és az ásványi anyagokat, tömörítve a székletet.',
+  'máj': 'Sokrétű szerepű mirigyes szerv: emésztőnedvet (epét) termel, fehérjét, glükózt és glikogént szintetizál, tápanyagokat raktároz, és méregtelenít.',
+  'bélflóra': 'A vastagbélben élő, hatalmas számú baktérium, amelyek egy része mutualista kapcsolatban él a szervezettel (pl. K-vitamint termel).',
+  'dezaminálás': 'Az aminosavak feleslegének a májban történő lebontása, amely során a nitrogéntartalmú rész karbamiddá alakul.',
+  'bilirubin': 'A lebontott vörösvértestekből származó festékanyag, amelyet a máj dolgoz fel és választ ki az epével.',
+  'sárgaság': 'A bőr és a szemfehérje sárgás elszíneződése, amelyet a vérben felhalmozódó bilirubin okoz, jellemzően a máj működési zavara miatt.',
+
+  // 4. modul, 10. fejezet: A táplálkozás szabályozása
+  'éhségérzet': 'A vércukorszint csökkenése és a gyomor kiürülése által kiváltott érzet, amely táplálékfelvételre ösztönöz.',
+  'szomjúságérzet': 'A testfolyadékok ozmotikus koncentrációjának megemelkedése által kiváltott érzet, amely folyadékfelvételre ösztönöz.',
+  'minőségi éhezés': 'Olyan éhezési forma, amikor a táplálék mennyisége elegendő, de valamely tápanyag (pl. fehérje, vitamin) tartósan hiányzik belőle.',
+  'mennyiségi éhezés': 'Olyan éhezési forma, amikor általánosan, tartósan túl kevés az elfogyasztott táplálék energiatartalma.',
+  'ghrelin': 'A gyomor által üres állapotban termelt hormon, amely a hipotalamuszra hatva éhségérzetet vált ki.',
+  'leptin': 'A zsírszövet által termelt hormon, amely a jóllakottság érzetét erősíti, csökkentve a táplálékfelvétel iránti igényt.',
+
+  // 4. modul, 11. fejezet: Táplálkozás egészségtana
+  'vitaminhiány': 'Egy adott vitamin tartós, elégtelen bevitele vagy felszívódása miatt kialakuló állapot, amely jellegzetes hiánytünetekkel jár.',
+  'alultápláltság': 'Elégtelen energia- és/vagy tápanyagbevitel miatt kialakuló állapot, amely legyengült immunrendszerhez és fejlődési elmaradáshoz vezethet.',
+  'túltápláltság': 'Tartósan a szükségletnél nagyobb energiabevitel miatt kialakuló állapot, amely elhízáshoz és anyagcsere-betegségekhez vezethet.',
+  'élelmiszer-tartósítás': 'Az élelmiszerek eltarthatóságát növelő eljárások (pl. hűtés, fagyasztás, szárítás), amelyek a mikroorganizmusok szaporodását gátolják.',
+  'e-vitamin': 'Zsírban oldódó vitamin, amely antioxidánsként védi a sejtmembránok zsírsavait a károsító oxidációtól.',
+  'k-vitamin': 'Zsírban oldódó vitamin, amely nélkülözhetetlen a véralvadási folyamatban részt vevő fehérjék előállításához.',
+  'b1-vitamin': 'Vízben oldódó vitamin (tiamin), amely a szénhidrát-anyagcsere egyik kulcsfontosságú koenzimjének alkotórésze.',
+  'b6-vitamin': 'Vízben oldódó vitamin, amely az aminosav-anyagcsere számos lépésében vesz részt koenzimként.',
+  'zsírban oldódó vitamin': 'Olyan vitamin (D, A, E, K), amely a zsírokkal együtt szívódik fel, és a szervezet raktározni képes.',
+  'vízben oldódó vitamin': 'Olyan vitamin (B-vitaminok, C-vitamin), amely nem, vagy csak korlátozottan raktározható, a fölöslege a vizelettel ürül.',
+
+  // 4. modul, 12. fejezet: Légcsere
+  'léghólyagocska': 'A tüdő legmélyebb légúti egységei (alveolusok), amelyek falát sűrű hajszálér-hálózat veszi körül; itt zajlik a gázcsere.',
+  'mellhártya': 'A tüdőt körülvevő kettős hártya (pleura), amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé.',
+  'vitálkapacitás': 'A maximális erőltetett belégzést követő maximális erőltetett kilégzéssel kifújható levegő térfogata.',
+  'légzési perctérfogat': 'A percenkénti légzésszám és az egy légvételre jutó levegőmennyiség (légzési térfogat) szorzata.',
+  'intrapleurális nyomás': 'A mellhártya két lemeze közötti résben uralkodó, normál esetben negatív nyomás, amely a tüdőt tágra húzva tartja.',
+  'alveoláris nyomás': 'A léghólyagocskákban uralkodó nyomás, amely belégzéskor a légköri nyomás alá csökken, kilégzéskor fölé emelkedik.',
+  'donders-modell': 'Klasszikus fizikai szemléltető eszköz (harang-modell), amely gumimembránnal és léggömbökkel szemlélteti a légzőmozgások mechanizmusát.',
+
+  // 4. modul, 13. fejezet: Gázcsere
+  'gázcsere': 'Az oxigén és a szén-dioxid diffúzión alapuló kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között.',
+  'sejtlégzés': 'A sejteken belül, elsősorban a mitokondriumban lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel.',
+  'hemoglobin': 'A vörösvérsejtekben található, négy alegységből álló fehérje, amely megköti és szállítja az oxigént.',
+  'parciális nyomás': 'Egy gázkeverék egyik alkotó gázának a teljes nyomáshoz való hozzájárulása; a gázcsere iránya a parciális nyomáskülönbségtől függ.',
+
+  // 4. modul, 14. fejezet: Hangképzés
+  'gégefő': 'A légcső és a garat találkozásánál elhelyezkedő szerv, amely a pajzsporcból, a gégefedőből és a hangszalagokból épül fel.',
+  'pajzsporc': 'A gége elülső, kiemelkedő porca (az "ádámcsutka"), amely védi a gége belső részeit.',
+  'gégefedő': 'A gégefő azon része, amely nyeléskor reflexesen lezárja a légutat, megakadályozva, hogy táplálék kerüljön a légcsőbe.',
+  'hangszalag': 'A gégefőben elhelyezkedő szalagpár, amely a rajta átáramló levegő hatására rezgésbe jön, ez kelti a hangot.',
+  'kannaporc': 'A gége hátsó részén elhelyezkedő, elmozdítható porcpár, amelyhez a hangszalagok hátsó vége rögzül.',
+  'hangrés': 'A hangszalagok közötti rés, amely nyugodt légzéskor tágra nyílik, hangképzéskor beszűkül.',
+  'rezonátortér': 'A garat, a szájüreg és az orrüreg mint üreg, amely az alaphang egyes felharmonikusait felerősítve alakítja ki a hangszínt.',
+  'felharmonikus': 'Az alaphangnál magasabb frekvenciájú összetevő, amelynek relatív erőssége meghatározza a hangszínt.',
+
+  // 4. modul, 15. fejezet: A légzés szabályozása
+  'légzőközpont': 'Az agytörzsben, a nyúltvelőben található idegi központ, amely a vér szén-dioxid-koncentrációja alapján szabályozza a légzés mélységét és gyakoriságát.',
+  'szén-dioxid': 'A sejtlégzés végterméke, amelynek vérbeli koncentrációja elsődlegesen szabályozza a légzés ütemét.',
+  'kemoreceptor': 'Kémiai ingerekre (pl. a vér szén-dioxid-koncentrációjára) érzékeny érzékelő sejt, amely az agytörzsben és a nagyerek falában található.',
+  'mechanoreceptor': 'Mechanikai ingerekre (pl. a tüdő tágulására) érzékeny érzékelő sejt, amely a tüdő falában található.',
+  'hering-breuer-reflex': 'A tüdő nyúlásérzékelő receptorai által kiváltott reflex, amely a tüdő kellő kitágulásakor leállítja a belégzést.',
+
+  // 4. modul, 16. fejezet: A légzés és a légzőrendszer egészségtana
+  'asztma': 'A hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése, amely nehezített, sípoló légzést okoz.',
+  'dohányzás': 'A légzőrendszert súlyosan károsító szokás, amely tönkreteszi a légutak csillós hámsejtjeit és a léghólyagocskák felületi feszültségét szabályozó surfactant termelését.',
+  'középfülgyulladás': 'A középfül gyulladása, amely gyakran a torokgyulladásból a fülkürtön át terjedő fertőzés következménye.',
+  'fülkürt': 'A garatot és a középfület összekötő járat (Eustach-kürt), amelyen keresztül a fertőzés átterjedhet az egyik szervről a másikra.',
+  'légmell': 'A mellhártyaűr negatív nyomásának megszűnése (pl. sérülés miatt bejutó levegő következtében), amely a tüdő összeeséséhez vezet.',
+  'keszonbetegség': 'Víz alatti, magas nyomáson végzett munka utáni túl gyors felszínre emelkedéskor, a szövetekben feloldódott nitrogén gázbuborékként való felszabadulása miatt kialakuló állapot.',
+  'felületi feszültség': 'A folyadékmolekulák közötti vonzóerő által létrehozott feszültség, amely a léghólyagocskák belső felszínén azok összeesésének irányába hatna.',
+  'surfactant': 'A léghólyagocskák belső felszínét borító, felületaktív anyag, amely csökkenti a felületi feszültséget, megkönnyítve a léghólyagocskák nyitva tartását.',
+
+  // 4. modul, 17. fejezet: A testfolyadékok
+  'vérplazma': 'A vér folyékony állománya, amely vizet, fehérjéket, sókat, tápanyagokat, hormonokat és salakanyagokat tartalmaz.',
+  'alakos elemek': 'A vér sejtes összetevői (vörösvérsejtek, fehérvérsejtek, vérlemezkék), amelyek a vérplazmában úsznak.',
+  'szövetnedv': 'A hajszálerek faláról a szövetek közötti térbe kiszűrődő, a vérplazmához hasonló összetételű folyadék, amely körülveszi a testi sejteket.',
+  'nyirok': 'A szövetnedv azon része, amelyet a hajszálerek nem tudnak visszaszívni, ezért a nyirokereken át jut vissza a vérkeringésbe.',
+  'albumin': 'A vérplazma legnagyobb mennyiségben jelen lévő fehérjéje, amely az ozmotikus nyomás fenntartásáért felelős.',
+  'fibrinogén': 'A vérplazmában oldott, a véralvadás során fibrinné alakuló fehérje.',
+  'vércsoport': 'A vörösvérsejtek felszíni antigénjei alapján meghatározott csoportosítás (A, B, AB, 0), amely a vérátömlesztés összeférhetőségét szabja meg.',
+  'antigén': 'A sejtfelszínen található molekula, amely alapján a szervezet immunrendszere felismeri a saját, illetve az idegen sejteket.',
+  'agglutináció': 'Az idegen antigénű vörösvértestek összecsomósodása az ellenük irányuló antitestek hatására, amely összeférhetetlen vérátömlesztéskor életveszélyes reakciót okoz.',
+
+  // 4. modul, 18. fejezet: A szöveti keringés
+  'vörösvérsejt': 'A csontvelőben keletkező alakos elem, amelynek fő feladata az oxigén (és részben a szén-dioxid) szállítása.',
+  'fehérvérsejt': 'A csontvelőben keletkező alakos elem, amely a szervezet védekezésében vesz részt, egyes típusai amőboid mozgásra is képesek.',
+  'vérlemezke': 'A csontvelőben keletkező alakos elem (trombocita), amely a véralvadási folyamatban játszik kulcsszerepet.',
+  'vérszegénység': 'Anémia; a vörösvérsejtek vagy a hemoglobin mennyiségének csökkenése, amely a szövetek oxigénellátásának romlásához vezet.',
+  'trombózis': 'Kóros vérrögképződés az erek belsejében, amely elzárhatja az adott eret.',
+  'nyirokcsomó': 'A nyirokerek mentén elhelyezkedő szerv, amely kiszűri a kórokozókat és részt vesz a fehérvérsejtek aktiválásában.',
+  'hem': 'A hemoglobin nem fehérje természetű alkotórésze, amely négy nitrogéntartalmú gyűrűből és egy központi vasionból épül fel.',
+  'globin': 'A hemoglobin fehérje természetű alkotórésze; a hemoglobin négy globinláncból és a hozzájuk kapcsolódó hem csoportokból áll.',
+  'trombin': 'A véralvadás során aktiválódó enzim, amely a fibrinogént fibrinné alakítja.',
+  'fibrin': 'A véralvadás során a fibrinogénből képződő, rostos, oldhatatlan fehérje, amely hálót képezve zárja le a sérülést.',
+
+  // 4. modul, 19. fejezet: A szív és az erek
+  'pitvar': 'A szív két felső ürege, amely a beérkező vért fogadja, majd a kamrákba továbbítja.',
+  'kamra': 'A szív két alsó ürege, amely a vért a nagy erekbe (tüdőartéria, testi nagyartéria) löki ki.',
+  'billentyű': 'A szív üregei, illetve a kamrák és a nagy erek között elhelyezkedő szerkezet, amely megakadályozza a vér visszaáramlását.',
+  'koszorúér': 'A szívizom saját vérellátását biztosító ér; elzáródása a szívizom oxigénhiányát és elhalását (szívinfarktust) okozhatja.',
+  'artéria': 'Verőér; a szívtől távolodó irányban, magas nyomású vért szállító, vastag falú, rugalmas ér.',
+  'véna': 'Visszér; a szív felé alacsony nyomású vért szállító, billentyűkkel ellátott ér, amely megakadályozza a vér visszafolyását.',
+  'ozmotikus nyomás': 'A plazmafehérjék által létrehozott, a folyadékot a vér felé "visszahúzó" nyomás, amely a hajszálér végén a szövetnedv visszaszívódását idézi elő.',
+  'verőtérfogat': 'Az a vérmennyiség, amelyet a szív egyetlen összehúzódás (szisztolé) alkalmával kilök.',
+  'perctérfogat': 'A verőtérfogat és a szívfrekvencia szorzata; az egy perc alatt a szív által kilökött vérmennyiség.',
+  'izompumpa': 'A vázizmok összehúzódása által a vénákra és a nyirokerekre gyakorolt összenyomó hatás, amely elősegíti a vér és a nyirok szív felé áramlását.',
+
+  // 4. modul, 20. fejezet: A keringés szabályozása
+  'szívfrekvencia': 'A szív percenkénti összehúzódásainak száma.',
+  'vérnyomás': 'Az artériákban uralkodó nyomás, amelynek felnőttkori normál értéke kb. 120/80 Hgmm.',
+  'lép': 'A hasüregben elhelyezkedő szerv, amely az elhasználódott vörösvértesteket bontja le, vért raktároz, és immunológiai szerepet is betölt.',
+  'érszűkület': 'Az erek falában lévő izomrostok összehúzódása, amely csökkenti az adott érszakaszon átáramló vér mennyiségét.',
+  'értágulat': 'Az erek falában lévő izomrostok elernyedése, amely növeli az adott érszakaszon átáramló vér mennyiségét.',
+  'szinuszcsomó': 'A jobb pitvar falában található, önmagát automatikusan gerjesztő szövet, amely a szív "saját ritmusadója" (pacemakere).',
+  'pitvar-kamrai csomó': 'A szinuszcsomóból érkező ingerületet a pitvarokból a kamrák felé késleltetve továbbító szövet, amely biztosítja a pitvarok és a kamrák egymás utáni összehúzódását.',
+  'pacemaker': 'A szív önmagát automatikusan, ritmikusan gerjesztő "saját ritmusadója"; elsődlegesen a szinuszcsomó tölti be ezt a szerepet.',
+
+  // 4. modul, 21. fejezet: A keringési rendszer egészségtana
+  'érelmeszesedés': 'Az érfal belső felszínén lerakódó zsíros anyagok (elsősorban koleszterin) miatt kialakuló, az ér átmérőjét szűkítő elváltozás.',
+  'visszértágulat': 'A vénák (főként a lábakban) kóros kitágulása, amely a vénák billentyűinek elégtelen működésével jár együtt.',
+  'magasvérnyomás': 'Hipertónia; a tartósan a normálérték felett maradó vérnyomás állapota, amely hosszú távon terheli a szívet és az érfalakat.',
+  'szívinfarktus': 'A szívizom egy részének elhalása a koszorúér elzáródása miatt kialakuló oxigénhiány következtében.',
+  'sokk': 'Súlyos vérveszteség vagy más ok miatt kialakuló, életveszélyes keringési elégtelenség, amelyet sápadtság, hidegverejték és szapora, gyenge pulzus jellemez.',
+  'stroke': 'Agyi érkatasztrófa; egy agyi ér elzáródása vagy megrepedése miatt kialakuló, az agyszövet károsodásával járó állapot.',
+
+  // 4. modul, 22. fejezet: A vizeletkiválasztó rendszer működése
+  'vese': 'A vizeletkiválasztó rendszer fő szerve, amely a vér folyamatos szűrésével választja ki a vízoldékony salakanyagokat és a fölösleges vizet, sókat.',
+  'húgyhólyag': 'A vizeletet ideiglenesen tároló szerv, amelybe a húgyvezetékek szállítják a vesékben képződött vizeletet.',
+  'szűrletképzés': 'A vese kiválasztó működésének első lépése, amelynek során a vér egy része a hajszálér-gomolyagból a vesetestecske tokjába szűrődik.',
+  'visszaszívás': 'A vese kiválasztó működésének második lépése, amelynek során a szervezet számára még hasznos anyagok (víz, glükóz, sók) nagy része visszakerül a szűrletből a vérbe.',
+  'exkréció': 'A vese kiválasztó működésének harmadik lépése (kiválasztás), amelynek során egyes anyagok (pl. gyógyszerek, felesleges ionok) aktívan a keletkező vizeletbe kerülnek.',
+  'vizelet': 'A vese kiválasztó működésének végterméke, amely vizet, karbamidot, nátrium-, kálium- és klorid-ionokat, valamint kisebb mennyiségben gyógyszereket és hormonokat tartalmaz.',
+  'nefron': 'A vese működési alapegysége, amely a vesetestecskéből és az abból kiinduló, kanyargós csatornarendszerből épül fel.',
+  'vesetestecske': 'A nefron azon része, amely egy kettős falú tokból (Bowman-tok) és az abba benyúló hajszálér-gomolyagból (glomerulus) épül fel; itt zajlik a szűrletképzés.',
+  'bowman-tok': 'A vesetestecske kettős falú tokja, amely körülveszi a hajszálér-gomolyagot és felfogja a kiszűrődő szűrletet.',
+  'glomerulus': 'A vesetestecskébe benyúló, sűrűn tekeredő hajszálér-gomolyag, amelynek falán át a szűrletképzés zajlik.',
+
+  // 4. modul, 23. fejezet: A kiválasztás szabályozása
+  'folyadékháztartás': 'A szervezet víz- és sóegyensúlyának állapota, amelyet a vese kiválasztó működése és hormonális szabályozás tart fenn.',
+  'vazopresszin': 'Antidiuretikus hormon (ADH), amely a testfolyadékok töménységének emelkedésére választódik ki, és a vesében fokozza a víz visszaszívását.',
+  'aldoszteron': 'Hormon, amely a vesében a nátrium visszaszívását fokozza, miközben a káliumion kiválasztását segíti; a szervezet sóháztartásának szabályozásában játszik kulcsszerepet.',
+
+  // 4. modul, 24. fejezet: A kiválasztó szervrendszer egészségtana
+  'proteinuria': 'Fehérje megjelenése a vizeletben, amely jellemzően a vese szűrő működésének károsodására utal.',
+  'glükozúria': 'Glükóz megjelenése a vizeletben, amely jellemzően kezeletlen vagy rosszul beállított cukorbetegségre utal.',
+  'hematuria': 'Vér megjelenése a vizeletben, amely sérülésre, vesekőre vagy fertőzésre utalhat.',
+  'vesekő': 'A vizeletben oldott anyagok (pl. kalciumsók) kicsapódásából, kristályosodásából kialakuló szilárd képződmény, amely elzáródást és erős fájdalmat okozhat.',
+  'művesekezelés': 'Dialízis; olyan eljárás, amely súlyos, tartós veseműködési zavar esetén egy gép segítségével pótolja a vese szűrő funkcióját.',
+  'veseátültetés': 'Transzplantáció; egy működő donorvese beültetése, amely tartósan, rendszeres kezelés szükségessége nélkül pótolhatja a kiesett vesefunkciót.',
+
   'haraszt': 'Szövetekkel és valódi szervekkel (gyökér, szár, levél) rendelkező, spórával szaporodó növénycsoport.',
   'nyitvatermő': 'Magvas növénycsoport, amelynél a magkezdemény nincs zárt magházban.',
   'zárvatermő': 'Magvas növénycsoport, amelynél a magkezdemény zárt magházban fejlődik, és kettős megtermékenyítés jellemzi.',
@@ -146,7 +708,7 @@ export const GLOSSARY = {
   'jelátvitel': 'Az a folyamat, amelynek során egy jelmolekula receptorhoz kötődése sejten belüli válaszfolyamatot indít el, megváltoztatva a sejt működését.',
 
   // 2. modul, 12. fejezet emelt kiegészítés: crossing over, ivarsejt-képzés
-  'szinapszis': 'A homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején - itt zajlik a crossing over.',
+  'szinapszis': 'Genetikai értelemben: a homológ kromoszómapárok szoros egymás mellé rendeződése a meiózis I elején, itt zajlik a crossing over. Idegrendszeri értelemben (lásd az Emberi szervezet modul azonos nevű fejezetét): két idegsejt, vagy egy idegsejt és egy izom-, illetve mirigysejt közötti érintkezési, jelátviteli hely.',
   'tetrád': 'Négy kromatidából álló szerkezet (bivalens), amely a szinapszis során, a homológ kromoszómapár összetapadásakor jön létre.',
   'kiazma': 'Az a pont, ahol a homológ kromatidák fizikailag elszakadnak és szakaszt cserélnek egymással a crossing over során.',
   'spermatogenezis': 'A hímivarsejt-képzés folyamata, amelynek során mind a négy meiózisból keletkező sejt működőképes spermiummá alakul.',
@@ -334,4 +896,417 @@ export const GLOSSARY = {
   'kromoszóma': 'A DNS és a hozzá kapcsolódó fehérjék tömör, sejtosztódáskor látható formája.',
   'rekombináció': 'A meiózis során a homológ kromoszómák közötti génkicserélődés, amely növeli a genetikai változatosságot.',
   'apoptózis': 'Programozott sejthalál, amely a szervezet számára hasznos, szabályozott folyamat.',
+
+  // 4. modul, 25. fejezet: Sejtszintű folyamatok
+  'idegsejt': 'Az idegrendszer alapvető sejtje (neuron), amelynek feladata az ingerület keletkezése, vezetése és más sejtekre való továbbadása.',
+  'dendrit': 'Az idegsejt rövid, elágazó nyúlványa, amely a bejövő ingereket fogadja.',
+  'axon': 'Az idegsejt hosszú nyúlványa, amely a kialakult ingerületet más sejtek felé továbbítja.',
+  'ingerület': 'Az inger hatására a sejt membránján átmenetileg végigfutó, jellegzetes elektromos jelenség (akciós potenciál).',
+  'ingerküszöb': 'Az a minimális ingererősség, amely már éppen kiváltja az ingerületet.',
+  'lokális potenciál': 'A dendriteken és a sejttesten keletkező, térben korlátozottan terjedő és fokozatosan gyengülő potenciálváltozás.',
+  'csúcspotenciál': 'A tovaterjedő akciós potenciál, amely az axoneredésnél az ingerküszöb elérésekor alakul ki, és csillapítatlanul, változatlan nagysággal terjed tovább.',
+  'axoneredés': 'Az idegsejt sejtteste és axonja találkozásánál lévő terület, ahol a helyi potenciálok összegződése kiválthatja a tovaterjedő akciós potenciált.',
+
+  // 4. modul, 26. fejezet: Szinapszis (a 'szinapszis' idegrendszeri jelentése a fenti, 2. modulbeli bejegyzésben is szerepel)
+  'neurotranszmitter': 'Jelátvivő anyag, amelyet a preszinaptikus sejt szabadít fel a szinaptikus résbe, hogy ingerületet közvetítsen a következő sejt felé.',
+  'szinaptikus rés': 'A pre- és a posztszinaptikus sejt közötti keskeny tér, amelyen át a jelátvivő anyag diffundál.',
+  'preszinaptikus': 'A szinapszis azon oldala, amely az ingerületet szállítja és a jelátvivő anyagot felszabadítja.',
+  'posztszinaptikus': 'A szinapszis azon oldala, amely a jelátvivő anyagot receptorral fogadja.',
+  'reuptake': 'A jelátvivő anyag preszinaptikus sejtbe történő visszavétele, amely megszünteti annak hatását a szinaptikus résben.',
+  'gliasejt': 'Az idegrendszer támogató sejtje, amely nem továbbít ingerületet, de táplálja az idegsejteket és részt vesz a velőshüvely kialakításában.',
+  'velőshüvely': 'Az axonok körül kialakuló szigetelő réteg (mielinhüvely), amely jelentősen felgyorsítja az ingerület vezetési sebességét.',
+  'szklerózis multiplex': 'Autoimmun eredetű betegség, amelyben a szervezet saját immunrendszere károsítja a velőshüvelyt, lassítva vagy megszakítva az ingerületvezetést.',
+
+  // 4. modul, 27. fejezet: Az idegrendszer általános jellemzése
+  'receptor': 'Egy inger felvételére specializálódott sejt vagy sejtrész.',
+  'adekvát inger': 'Az az ingertípus, amelyre egy adott receptor a legérzékenyebb, a legalacsonyabb ingerküszöbbel reagál.',
+  'központi idegrendszer': 'Az idegrendszer agyból és gerincvelőből álló része.',
+  'környéki idegrendszer': 'Az idegrendszer testben mindenhová elágazó idegekből és dúcokból álló része.',
+  'fehérállomány': 'A velőshüvelyes (ezért fehéres színű) axonokból álló idegszövet.',
+  'szürkeállomány': 'Az idegsejttestekből és dendritekből (ezért szürkés színű) álló idegszövet.',
+  'reflexkör': 'A reflexívnek egy visszacsatolási hurokkal kiegészített változata, amely lehetővé teszi a válasz finomítását.',
+  'agykéreg': 'Az agy felszínén elhelyezkedő, idegsejttestekből álló réteg (szürkeállomány), amely a magasabb rendű idegi feldolgozást végzi.',
+  'barázda': 'Az agykéreg felszínének befelé húzódó mélyedése, amely a tekervényekkel együtt megnöveli a kéreg összfelületét.',
+  'tekervény': 'Az agykéreg felszínének kidudorodó redője, amely a barázdákkal együtt megnöveli a kéreg összfelületét.',
+
+  // 4. modul, 28. fejezet: A gerincvelő és az agy
+  'agy-gerincvelői folyadék': 'A központi idegrendszert körülvevő folyadék (liquor), amely párnázó, ütéscsillapító szerepet tölt be.',
+  'agyhártya': 'A központi idegrendszert védő, több rétegű kötőszöveti burok.',
+  'térdreflex': 'Izomeredetű gerincvelői reflex, amelyet az inas gyors megütésével lehet kiváltani, és amely az izomtónus fenntartásában segít.',
+  'agytörzs': 'Az agy azon része (nyúltvelő, híd, középagy), amely az alapvető életfunkciók (pl. légzés, keringés) szabályozásáért felel.',
+  'köztiagy': 'Az agy azon része, amely a talamuszból (érzőpályák átkapcsoló állomása) és a hipotalamuszból (homeosztázis, hormonrendszer irányítása) áll.',
+  'kisagy': 'Az agy azon része, amely elsősorban a mozgások összehangolásáért (koordinációjáért) felelős.',
+  'nagyagy': 'Az agy azon része, amely a magasabb rendű idegi működéseket (tudatos gondolkodás, érzékelés, mozgásirányítás) végzi.',
+  'hálózatos állomány': 'Az agytörzsben elhelyezkedő szerkezet (retikuláris formáció), amely az éberségi szintet és az alvás-ébrenléti ciklust tartja fenn.',
+  'agyfélteke': 'A nagyagy két fele, amelyek funkciói (nyelvi-logikai vs. téri-vizuális feldolgozás) nem teljesen egyenrangúak, de szorosan együttműködnek.',
+
+  // 4. modul, 29. fejezet: Testérző rendszerek
+  'elsődleges érzőkéreg': 'Az agykéreg azon területe, ahol a testérzékelés tudatosul; sérülése az adott testtájékról érkező érzékelés tudatosulásának kiesését okozza.',
+  'mechanikai receptor': 'Nyomást, érintést és rezgést érzékelő receptortípus.',
+  'fájdalomreceptor': 'A szöveti károsodást jelző, potenciálisan veszélyes ingerekre reagáló receptortípus.',
+  'hőreceptor': 'A hideg és a meleg érzékelését lehetővé tevő receptortípus.',
+  'szabad idegvégződés': 'Egyszerű felépítésű, gyakran fájdalom érzékelésére szolgáló receptor, amely nem kapcsolódik specializált érzékelő sejthez.',
+  'kéreg alatti feldolgozás': 'Az érzőpályák kéreg alatti központjaiban (pl. a talamuszban) történő előzetes feldolgozás, mielőtt az információ elérné az agykérget.',
+
+  // 4. modul, 30. fejezet: Érzékelés és látás
+  'érzet': 'Egy inger agyi, szubjektív megélése, amely az ingerület agykéregben történő tudatosulásakor jön létre.',
+  'illúzió': 'Egy valóban létező, fizikai inger téves, a valóságtól eltérő értelmezése.',
+  'hallucináció': 'Olyan érzet, amely valós, külső inger nélkül keletkezik, mégis valóságosnak tűnik.',
+  'retina': 'A szem ideghártyája, amelyben a fényérzékeny receptorok (csapok és pálcikák) helyezkednek el.',
+  'vakfolt': 'A retina receptormentes pontja, ahol a látóideg elhagyja a szemet.',
+  'akkomodáció': 'A szemlencse alakjának izmos szabályozás általi megváltoztatása, amely lehetővé teszi a közeli és távoli tárgyakra való éles fókuszálást.',
+  'rövidlátás': 'Myopia; fénytörési hiba, amelynél a kép a retina elé fókuszálódik, ezért a távoli tárgyak elmosódottak.',
+  'távollátás': 'Hyperopia; fénytörési hiba, amelynél a kép a retina mögé fókuszálódna, ezért a közeli tárgyak elmosódottak.',
+  'zöldhályog': 'Glaukóma; a szem belnyomásának kóros emelkedése, amely kezeletlenül károsíthatja a látóideget és vaksághoz vezethet.',
+  'csap': 'A retina fényérzékeny sejtje, amely erősebb megvilágítást igényel, de lehetővé teszi a színlátást.',
+  'pálcika': 'A retina fényérzékeny sejtje, amely rendkívül fényérzékeny, ezért gyenge megvilágítás mellett is működik, de színek megkülönböztetésére nem képes.',
+  'dúcsejt': 'A retina sejtje, amely a csapoktól és pálcikáktól érkező jeleket összegzi, mielőtt azok a látóidegen keresztül elhagynák a szemet.',
+
+  // 4. modul, 31. fejezet: Hallás és egyensúlyérzés
+  'dobhártya': 'A középfül azon része, amely a beérkező hanghullám hatására rezgésbe jön.',
+  'hallócsontocska': 'A középfülben található apró csont (kalapács, üllő, kengyel), amely a hangrezgést mechanikusan erősíti és továbbítja.',
+  'csiga': 'A belső fül hallásért felelős, csigavonalban tekeredő szerve, amelyben az alaphártya és a Corti-szerv található.',
+  'tömlőcske': 'A belső fül egyensúlyérzékelő szerve, amely a fej egyenes vonalú gyorsulását és gravitációhoz viszonyított helyzetét érzékeli.',
+  'zsákocska': 'A belső fül egyensúlyérzékelő szerve, amely a tömlőcskéhez hasonlóan a fej lineáris gyorsulását és helyzetét érzékeli.',
+  'félkörös ívjárat': 'A belső fül három, egymásra merőleges egyensúlyérzékelő csatornája, amely a fej forgó irányú mozgásait érzékeli.',
+  'alaphártya': 'A csigában húzódó szerkezet, amely a hang frekvenciájától függően más-más pontján rezeg maximálisan, ezáltal kódolva a hangmagasságot.',
+  'corti-szerv': 'Az alaphártyán elhelyezkedő szerv, amely a hallás érzékelő sejtjeit, a szőrsejteket tartalmazza.',
+  'szőrsejt': 'A belső fül mechanoreceptor sejtje, amely mechanikai rezgést vagy elmozdulást alakít át idegi ingerületté a hallásban és az egyensúlyérzékelésben.',
+  'otolit': 'A tömlőcskében és a zsákocskában található apró kristály, amely a gravitáció vagy a gyorsulás hatására elmozdulva ingerli a szőrsejteket.',
+  'izomorsó': 'Az izomban található receptor, amely az izom nyúlásának mértékét érzékeli.',
+  'ínorsó': 'Az ínban található receptor, amely az ín feszülését érzékeli.',
+
+  // 4. modul, 32. fejezet: Kémiai érzékelés
+  'szaglóhám': 'Az orrüreg felső részén elhelyezkedő szövet, amely a szagérzékelő receptorsejteket tartalmazza.',
+  'ízlelőbimbó': 'A nyelven elhelyezkedő érzékszervi egység, amely az öt alapízt (édes, sós, savanyú, keserű, umami) képes megkülönböztetni.',
+  'alapíz': 'Az öt alapvető ízminőség egyike (édes, sós, savanyú, keserű, umami), amelyet az ízlelőbimbók megkülönböztetnek.',
+  'retronazális szaglás': 'A szájüregből a garaton át az orrüregbe jutó illatanyagok érzékelése, amely az étel teljes íz-élményének nagy részéért felelős.',
+  'kombinatorikus kódolás': 'Az az elv, amely szerint egy adott illatanyag több receptortípust is eltérő mértékben aktivál, és az agy ezt az egyedi mintázatot értelmezi jellegzetes illatként.',
+  'szaglási adaptáció': 'Az a jelenség, amikor egy tartósan jelen lévő szag idővel egyre kevésbé tudatosul, majd eltűnik a tudatos érzékelésből.',
+
+  // 4. modul, 33. fejezet: Testmozgató rendszerek
+  'mozgatókéreg': 'Az agykéreg azon területe, amely az akaratlagos mozgások tervezését és kiváltását végzi.',
+  'mozgatópálya': 'Az agykéregből induló idegpálya, amely a gerincvelőn és a mozgatóidegsejteken keresztül a vázizmokhoz juttatja el a mozgásparancsot.',
+  'kereszteződés': 'A mozgatópályák nagy részének átkereszteződése az agytörzs szintjén, amely miatt az egyik agyfélteke az ellenkező oldali testfél mozgását irányítja.',
+  'mozgáskoordináció': 'A mozgások időbeli és erősségbeli összehangolása, amelyet elsősorban a kisagy végez.',
+  'bazális ganglionok': 'Kéreg alatti magvak, amelyek átkapcsolási pontként működve részt vesznek a jól begyakorolt, automatizált mozgások szabályozásában.',
+  'automatizált mozgás': 'Sokat gyakorolt, jól begyakorolt mozgás, amelynek irányítása fokozatosan a kéreg alatti magvakra tevődik át, tudatos odafigyelés nélkül végrehajthatóvá válva.',
+
+  // 4. modul, 34. fejezet: Vegetatív érző és mozgató rendszerek
+  'vegetatív idegrendszer': 'Az idegrendszer azon része (más néven autonóm idegrendszer), amely a belső szervek akaratlan, önműködő szabályozásáért felelős.',
+  'szimpatikus idegrendszer': 'A vegetatív idegrendszer azon része, amely a szervezetet megterhelést, veszélyt vagy fokozott aktivitást igénylő helyzetekre ("harcolj vagy menekülj") készíti fel.',
+  'paraszimpatikus idegrendszer': 'A vegetatív idegrendszer azon része, amely a nyugalmi, "pihenés és emésztés" jellegű állapotot segíti elő.',
+  'noradrenalin': 'A szimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
+  'acetilkolin': 'A paraszimpatikus idegrendszer végződései által felszabadított jelátvivő anyag.',
+
+  // 4. modul, 35. fejezet: Öröklött magatartáselemek
+  'szopóreflex': 'Az újszülöttnél már közvetlenül születés után, tanulás nélkül működő öröklött reflex, amely biztosítja az azonnali táplálékfelvételi képességet.',
+  'evolúciós alap': 'Egy adott emberi viselkedésforma hátterében álló, öröklődés útján biztosított genetikai hajlam.',
+  'ökológiai alap': 'Egy adott emberi viselkedésforma konkrét megvalósulását az adott környezeti feltételekhez (pl. éghajlat, elérhető erőforrások) igazító tényező.',
+  'kulturális alap': 'Egy adott emberi viselkedésforma közösségi hagyományokon, normákon és tanult szokásokon keresztül alakuló összetevője.',
+
+  // 4. modul, 36. fejezet: Tanult elemek és emlékezés
+  'rövid távú memória': 'Korlátozott kapacitású, jellemzően csak néhány másodperctől percekig tartó információtárolásra képes memóriarendszer.',
+  'hosszú távú memória': 'Gyakorlatilag korlátlan kapacitású memóriarendszer, amely az információt akár egész életen át képes megőrizni.',
+  'megerősítés': 'Egy viselkedést követő kellemes következmény, amely növeli a viselkedés megismétlődésének valószínűségét.',
+  'utánzásos tanulás': 'Mások viselkedésének puszta megfigyelésével, saját próbálkozás nélkül történő tanulási forma.',
+
+  // 4. modul, 37. fejezet: Pszichés fejlődés
+  'szocializáció': 'Az a folyamat, amelynek során az egyén elsajátítja a közösség alapvető társadalmi normáit, viselkedési mintáit és érzelemkifejezési módjait.',
+  'érzelmi biztonság': 'A gondozóval kialakuló stabil, bizalmi kapcsolat által megalapozott állapot, amely elősegíti a gyermek nyitottságát és értelmi fejlődését.',
+  'kötődés': 'A csecsemő és az elsődleges gondozó között kialakuló, tartós érzelmi kapcsolat, amely biztonságot nyújt a környezet felfedezéséhez.',
+
+  // 4. modul, 38. fejezet: Az idegrendszer egészségtana
+  'stresszbetegség': 'A tartósan magas stressz-szint által kiváltott vagy súlyosbított betegség (pl. tartós fejfájás, alvászavar, szorongásos tünetek).',
+  'migrén': 'Jellemzően féloldali, lüktető fejfájás, amelyet gyakran fény- és hangérzékenység, illetve hányinger kísér, hátterében az agyhártyát ellátó erek átmeneti összehúzódása majd kitágulása áll.',
+  'epilepszia': 'Az agy kóros, rohamszerű elektromos kisülése által kiváltott tünetegyüttes, jellegzetes megnyilvánulása a görcsroham.',
+  'ortorexia': 'Az egészséges táplálkozás iránti túlzott, már károssá váló megszállottság.',
+  'anorexia': 'Tudatos, súlyos éhezéssel járó táplálkozási zavar, amelyben a fogyás iránti vágy túlzott.',
+  'bulímia': 'Falásrohamokkal jellemezhető táplálkozási zavar, amelyeket kompenzáló viselkedés (pl. hánytatás) követ.',
+  'kémiai függőség': 'Egy anyaghoz (pl. drog, alkohol) kötődő függőség, amely tolerancia és elvonási tünetek kialakulásával jár.',
+  'viselkedési függőség': 'Egy tevékenységhez (pl. szerencsejáték, túlzott internethasználat) kötődő függőség, amely a kémiai függőséghez hasonló mechanizmuson alapul.',
+  'pszichoszomatikus betegség': 'Olyan testi betegség, amelynek kialakulásában vagy súlyosbodásában érzelmi-pszichés tényezők (pl. tartós stressz) is jelentős szerepet játszanak.',
+  'alzheimer-kór': 'Fokozatosan súlyosbodó idegrendszeri betegség, amelynek jellemző tünetei a memóriazavar, a térbeli-időbeli tájékozódási nehézség és a mindennapi tevékenységek elvégzésének fokozatos elvesztése.',
+  'parkinson-kór': 'Elsősorban mozgászavarokkal járó idegrendszeri betegség (nyugalmi remegés, izommerevség, mozgáslassulás), hátterében a bazális ganglionok egyes sejtjeinek pusztulása áll.',
+
+  // 4. modul, 39. fejezet: Hormonális működések
+  'hormon': 'A belső elválasztású mirigyek által termelt és közvetlenül a vérbe kiválasztott jelanyag, amely a célsejtek receptorain keresztül fejti ki hatását.',
+  'belső elválasztású mirigy': 'Olyan mirigy, amely váladékát (hormonját) vezeték nélkül, közvetlenül a véráramba választja ki.',
+  'célsejt': 'Az a sejt, amely rendelkezik egy adott hormonhoz illeszkedő receptorral, ezért az adott hormon rá fejti ki a hatását.',
+  'glükokortikoid': 'A mellékvesekéreg által termelt hormoncsoport, amely többek között a vércukorszintet emeli és a stresszválaszban vesz részt.',
+  'mineralokortikoid': 'A mellékvesekéreg által termelt hormoncsoport (pl. aldoszteron), amely a só- és vízháztartás szabályozásában vesz részt.',
+
+  // 4. modul, 40. fejezet: Belső elválasztású mirigyek
+  'agyalapi mirigy': 'Az agy alján, a hipotalamusz alatt elhelyezkedő mirigy (hipofízis), amely irányító hormonjaival számos más mirigy működését szabályozza.',
+  'pajzsmirigy': 'A gégeporc alatt, a nyak elülső részén elhelyezkedő mirigy, amely a tiroxint termeli.',
+  'mellékvese': 'A vesék felső pólusán elhelyezkedő mirigy, amelynek kérge (glükokortikoidok, mineralokortikoidok) és velőállománya (adrenalin) is hormontermelő.',
+  'inzulin': 'A hasnyálmirigy szigetsejtjeiben termelődő hormon, amely csökkenti a vércukorszintet.',
+  'tiroxin': 'A pajzsmirigyben termelődő hormon, amely a sejtek anyagcseréjének alapszintjét szabályozza.',
+  'tesztoszteron': 'A herékben termelődő hormon, amely a másodlagos nemi jellegek kialakulásáért és a spermiumtermelésért felelős.',
+  'oxitocin': 'Az agyalapi mirigy hátsó lebenyéből kiválasztódó hormon, amely a szülés során a méh összehúzódásait, szoptatáskor a tejleadási reflexet váltja ki, és szerepet játszik a kötődés kialakulásában.',
+  'exokrin mirigy': 'Olyan mirigy, amely váladékát egy vezetéken keresztül a testfelszínre vagy egy testüregbe választja ki.',
+  'hipotalamusz': 'Az agy azon területe, amely irányító hormonjaival szabályozza az agyalapi mirigy hormontermelését.',
+  'ösztrogén': 'A petefészekben, elsősorban az érő tüszőkben termelődő hormon, amely a méhnyálkahártya felépülését segíti elő.',
+  'progeszteron': 'A petefészek sárgatestje által termelt hormon, amely a méhnyálkahártyát a beágyazódásra készíti fel.',
+
+  // 4. modul, 41. fejezet: A hormonrendszer egészségtana
+  'cukorbetegség': 'A vércukorszint szabályozásának kóros zavara; 1-es típusban a hasnyálmirigy szigetsejtjeinek pusztulása, 2-es típusban inzulinrezisztencia áll a hátterében.',
+  'inzulinrezisztencia': 'A szervezet sejtjeinek csökkent érzékenysége az inzulinra, ami miatt a hasnyálmirigynek egyre több inzulint kell termelnie.',
+  'hypothyreosis': 'A pajzsmirigy alulműködése, amely lassult anyagcserét, fáradékonyságot és hidegérzékenységet okoz.',
+  'növekedési hormon': 'Az agyalapi mirigy által termelt hormon, amelynek hiánya törpenövéshez, többlete óriásnövéshez vagy akromegáliához vezethet.',
+  'akromegália': 'Felnőttkorban jelentkező növekedésihormon-többlet okozta állapot, amelyre a végtagok, az áll és az arccsontok jellegzetes megvastagodása jellemző.',
+
+  // 4. modul, 42. fejezet: Immunitás
+  'immunitás': 'A szervezet azon képessége, hogy ellenálljon a kórokozóknak és az általuk okozott betegségeknek.',
+  'falósejt': 'Az immunrendszer sejtje, amely bekebelezi és lebontja a kórokozókat.',
+  'limfocita': 'Nyiroksejt, amely az adaptív immunválaszért felelős, és antitesteket termel.',
+  'memóriasejt': 'Egy kórokozóval való első találkozás után kialakuló immunsejt, amely biztosítja, hogy egy ismételt fertőzés esetén gyorsabb, hatékonyabb másodlagos immunválasz alakuljon ki.',
+  'gyulladás': 'A szervezet védekező reakciója egy sérülés vagy fertőzés helyén, jellemző tünetei a bőrpír, a duzzanat, a melegségérzet és a fájdalom.',
+  'immunglobulin': 'Antitest; olyan fehérje, amelyet az immunrendszer termel, és amely specifikusan felismeri és megköti az adott antigént.',
+  'vérszérum': 'A véralvadás után visszamaradó folyadék, amely tartalmazza az antitesteket.',
+  'autoimmun betegség': 'Olyan betegség, amelynek lényege, hogy az immunrendszer tévesen a szervezet saját sejtjei ellen fordul.',
+
+  // 4. modul, 43. fejezet: Vércsoportok
+  'vérátömlesztés': 'Súlyos vérveszteség esetén alkalmazott életmentő eljárás, amely csak összeférhető vércsoportú vérrel végezhető biztonságosan.',
+  'véradás': 'Egészséges donorok önkéntes vérfelajánlása, amely a vérátömlesztéshez szükséges vérkészletek fenntartásához elengedhetetlen.',
+  'rh-összeférhetetlenség': 'Az a jelenség, amikor egy Rh-negatív édesanya immunrendszere antitesteket termel egy Rh-pozitív magzat vörösvértestjei ellen.',
+  'anti-d immunglobulin': 'Rh-negatív édesanyáknak szülés után adott injekció, amely megelőzi az Rh-összeférhetetlenség kialakulását egy következő terhesség során.',
+
+  // 4. modul, 44. fejezet: Az immunrendszer egészségtana
+  'láz': 'A testhőmérséklet szabályozott emelése, amely megnehezíti egyes kórokozók szaporodását és felgyorsítja az immunrendszer sejtjeinek működését.',
+  'allergia': 'Az immunrendszer túlérzékenységi reakciója egy önmagában ártalmatlan anyaggal (allergénnel) szemben.',
+  'allergén': 'Önmagában ártalmatlan anyag (pl. pollen, egyes ételek, poratka), amely allergiás reakciót válthat ki.',
+  'kilökődés': 'Az átültetett szerv immunrendszer általi, idegenként való felismerése és megtámadása.',
+  'immunszupresszió': 'Az immunrendszer működésének gyógyszeres gyengítése, amely a szervátültetés utáni kilökődés megelőzésére szolgál.',
+
+  // 4. modul, 45. fejezet: Szaporítószervek
+  'here': 'A férfi ivarmirigye, amely a hímivarsejteket és a tesztoszteront termeli.',
+  'mellékhere': 'A here mögött elhelyezkedő szerv, amelyben a spermiumok tovább érnek és tárolódnak.',
+  'ondóvezeték': 'A mellékherétől a húgycsőig vezető cső, amely a spermiumokat szállítja.',
+  'dülmirigy': 'A prosztata magyar neve; a húgycső körül elhelyezkedő mirigy, amelynek váladéka az ondófolyadék részét képezi.',
+  'petefészek': 'A női ivarmirigy, amelyben a petesejtek érnek, és amely az ösztrogént és a progeszteront termeli.',
+  'petevezeték': 'A petefészket a méhhel összekötő cső, amelyben a megtermékenyítés is történik.',
+  'méh': 'Izmos falú női szaporítószerv, amelynek belső rétegében (méhnyálkahártya) a magzat beágyazódik és fejlődik.',
+  'hüvely': 'A méhet a testfelszínnel összekötő csatorna, amely a párzás és a szülés útjául is szolgál.',
+  'kromoszomális nem': 'A biológiai nem meghatározottságának egyik szintje: az ivari kromoszómák (embernél XX vagy XY) összetétele.',
+  'akroszóma': 'A hímivarsejt fejrészét beborító képlet, amely a petesejt burkát átható enzimeket tartalmazza.',
+
+  // 4. modul, 46. fejezet: Egyedfejlődés
+  'barázdálódás': 'A zigóta ismételt sejtosztódásai a petevezetékben, amelyek során a sejtszám gyorsan nő, a sejtek mérete viszont nem.',
+  'beágyazódás': 'A barázdálódás eredményeként létrejövő hólyagszerű képlet megtapadása a méhnyálkahártyában, ami a terhesség tényleges kezdetét jelenti.',
+  'magzatvíz': 'Az amnion magzatburok által körülzárt folyadék, amely mechanikai védelmet nyújt és mozgásteret biztosít a fejlődő magzatnak.',
+  'köldökzsinór': 'A magzatot a méhlepénnyel összekötő képlet, amelyen keresztül az anyagcsere-kapcsolat megvalósul.',
+  'klinikai halál': 'A légzés és a keringés leállása; rövid időn belül még visszafordítható állapot, mivel az agysejtek ekkor még nem pusztultak el véglegesen.',
+  'biológiai halál': 'A sejtek, szövetek (elsősorban az agysejtek) visszafordíthatatlan pusztulása; végleges állapot.',
+
+  // 4. modul, 47. fejezet: A szaporodás, fejlődés egészségtana
+  'fogamzásgátlás': 'A nem kívánt terhesség megelőzését szolgáló módszerek összessége (pl. hormonális, mechanikai, természetes módszerek).',
+  'terhességi teszt': 'Vizsgálat, amely a méhlepény által termelt hCG hormont mutatja ki a vizeletből vagy a vérből, jelezve a terhesség fennállását.',
+  'meddőség': 'Az az állapot, amikor egy pár tartósan nem képes teherbe esni; hátterében állhat ivarsejttermelési zavar vagy hormonzavar.',
+  'terhesgondozás': 'A terhesség alatti rendszeres orvosi ellenőrzés, amely lehetővé teszi a lehetséges szövődmények korai felismerését és kezelését.',
+  'nemi úton terjedő betegség': 'Nemi érintkezés során terjedő fertőzés (pl. szifilisz, AIDS, egyes gombás fertőzések), amely gyakran tünetmentesen is terjedhet.',
+
+  // 5. modul, 1. fejezet: Populáció
+  'egyedsűrűség': 'Az egységnyi területre (vagy térfogatra) jutó egyedek száma egy populációban.',
+  'koreloszlás': 'A populáció egyedeinek megoszlása a különböző korcsoportok között.',
+  'térbeli eloszlás': 'Annak leírása, hogyan helyezkednek el egy populáció egyedei az adott területen belül (egyenletesen, csoportosan vagy véletlenszerűen).',
+  'eltartóképesség': 'Az a maximális egyedszám, amelyet egy adott élőhely erőforrásai tartósan el tudnak tartani.',
+  'exponenciális növekedés': 'Korlátlan, folyamatosan gyorsuló ütemű, "J" alakú populáció-növekedési modell, amely a valóságban csak rövid ideig figyelhető meg.',
+  'logisztikus növekedés': 'Korlátozott, kezdetben gyors, majd az eltartóképesség közelítésével ellaposodó, "S" alakú populáció-növekedési modell.',
+
+  // 5. modul, 2. fejezet: Környezeti kölcsönhatások
+  'gradáció': 'Egy populáció létszámának hirtelen, robbanásszerű megnövekedése, amelyet jellemzően gyors összeomlás követ.',
+  'környezet': 'Az élő szervezetet körülvevő élettelen (pl. hőmérséklet, fény, víz, talaj) és élő (pl. más fajok) tényezők összessége.',
+  'tűrőképesség': 'Az a tartomány (minimum és maximum érték között), amelyen belül egy szervezet egy adott környezeti tényező mellett még életképes.',
+  'szűk tűrés': 'Egy faj tűrőképességi tartományának keskeny volta egy adott környezeti tényezőre nézve, ami kevéssé alkalmazkodóképessé teszi.',
+  'tág tűrés': 'Egy faj tűrőképességi tartományának széles volta egy adott környezeti tényezőre nézve, ami rugalmas alkalmazkodást tesz lehetővé.',
+  'r-stratégista': 'Olyan faj, amely sok utódot hoz létre, gyorsan szaporodik, de kevés gondoskodást nyújt, és létszáma erősen ingadozhat.',
+  'k-stratégista': 'Olyan faj, amely kevesebb utódot hoz létre, de azokról hosszan gondoskodik, és létszáma az élőhely eltartóképessége közelében stabilizálódik.',
+  'korfa': 'Egy populáció koreloszlását ábrázoló grafikon, jellemzően nemenként elkülönítve; alakja (piramis, urna, téglalap) a populáció növekedési tendenciájára utal.',
+  'niche': 'Az a többdimenziós "tér" (több környezeti tényező együttes hatása), amelyben egy faj életképes.',
+  'gauze-elv': 'A versengési kizárás elve: két faj, amely pontosan ugyanazt az ökológiai niche-t foglalná el, tartósan nem élhet együtt ugyanazon a területen.',
+
+  // 5. modul, 3. fejezet: Viselkedésbeli kölcsönhatások
+  'tömörülés': 'Egy adott erőforrás körül alkalomszerűen kialakuló, laza állati csoportosulás.',
+  'kolónia': 'Sok egyed tartós, szorosan együtt élő közössége (pl. hangyaboly, méhkaptár).',
+  'monogám pár': 'Egy hím és egy nőstény tartós, kizárólagos párkapcsolata.',
+  'hárem': 'Egy hím és több nőstény tartós társas csoportja.',
+  'csoportos kohézió': 'A csoporthoz tartozás által nyújtott biztonságérzet, hatékonyabb védekezés és jobb erőforrás-hozzáférés, amely a társas vonzódás egyik magyarázata.',
+  'behódolás': 'Egy alárendelt egyed jelzése, amellyel elkerüli a konfliktust egy magasabb rangú társsal.',
+
+  // 5. modul, 4. fejezet: Ökológiai kölcsönhatások
+  'szimbiózis': 'Két faj szoros, mindkét fél számára előnyös együttélése.',
+  'asztalközösség': 'Kölcsönhatás, amelyben az egyik fél előnyt élvez, a másiknak pedig nem árt és nem is használ (kommenzalizmus).',
+  'antibiózis': 'Kölcsönhatás, amelyben az egyik faj olyan anyagot termel, amely gátolja vagy elpusztítja a másik faj egyedeit.',
+  'élősködés': 'Kölcsönhatás (parazitizmus), amelyben az egyik fél a másik kárára táplálkozik, jellemzően anélkül, hogy azonnal elpusztítaná azt.',
+  'táplálkozási kölcsönhatás': 'Az egyik faj (ragadozó) másik faj (zsákmány) elfogyasztásán alapuló kölcsönhatás (predáció).',
+
+  // 5. modul, 5. fejezet: Az életközösségek jellemzői
+  'életközösség': 'Egy adott élőhelyen élő, egymással szoros kölcsönhatásban álló populációk összessége (biocönózis).',
+  'domináns faj': 'Egy életközösségben egyedszámával, biomasszájával vagy hatásával kiemelkedő faj, amely jelentősen meghatározza az életközösség jellegét.',
+  'karakterfaj': 'Egy olyan faj, amelynek jelenléte jellegzetes és felismerhető egy adott életközösségre, még ha egyedszáma nem is a legnagyobb.',
+  'szintezettség': 'Az életközösségek térbeli szerveződési formája, amelynek során a fajok függőlegesen elkülönülő szintekben (rétegekben) helyezkednek el.',
+
+  // 5. modul, 6. fejezet: Hazai életközösségek
+  'mintázat': 'Az életközösség fajainak, élőhelyfoltjainak egymáshoz viszonyított térbeli elrendeződése.',
+  'szukcesszió': 'Egy életközösség fokozatos, meghatározott irányban zajló átalakulása, amíg el nem éri a végállapotát (klimax állapotát).',
+  'degradáció': 'Egy életközösség állapotának romlása (pl. fajszám-csökkenés, a szerkezet leegyszerűsödése).',
+  'szikes puszta': 'Magas sótartalmú talajon kialakuló élőhely, amelynek kialakulásában a talajvíz párolgása és az így felszínre húzódó sók játszanak szerepet.',
+  'sziklagyep': 'Szélsőséges, sekély talajú, gyakran meredek lejtőkön kialakuló élőhely, jellegzetes, sokszor ritka és védett fajokkal.',
+  't-érték': 'Ökológiai mutató, amely egy faj hőmérsékleti igényét fejezi ki.',
+  'w-érték': 'Ökológiai mutató, amely egy faj vízigényét fejezi ki.',
+  'klimax életközösség': 'A szukcesszió végállapota, amely - zavaró hatás nélkül - tartósan fennmarad.',
+
+  // 5. modul, 7. fejezet: Bioszféra
+  'gaia-elmélet': 'Elmélet, amely szerint a bioszféra egyetlen, önszabályozó globális rendszerként fogható fel, amelyben az élővilág és az élettelen környezet kölcsönösen alakítják egymást.',
+  'civilizációs ártalom': 'A modern életmódhoz kötődő, az egészséget károsító hatás (pl. feloldatlan stressz, helytelen életmód, túlzott gyógyszerfogyasztás).',
+  'fenntartható gazdálkodás': 'Olyan gazdálkodási mód, amely a jelen szükségleteit úgy elégíti ki, hogy nem veszélyezteti a jövő nemzedékek lehetőségeit.',
+  'ökológiai válság': 'A globális környezeti problémák (népességrobbanás, felmelegedés, hulladékprobléma, savasodás, ózonpajzs-elvékonyodás) összessége, amely társadalmi és gazdasági kérdésekkel is összefügg.',
+  'ökológiai lábnyom': 'Mutató, amely azt fejezi ki, mekkora területre volna szükség egy adott személy vagy közösség fogyasztásának és hulladéktermelésének fenntartásához.',
+
+  // 5. modul, 8. fejezet: Anyagforgalom
+  'fogyasztó': 'Az az ökológiai szereplő, amely a termelők vagy más fogyasztók elfogyasztásával jut szerves anyaghoz és energiához.',
+  'táplálkozási lánc': 'Egyenes vonalú sorozat, amely egyetlen úton mutatja be, melyik szervezet táplálkozik melyikkel.',
+  'táplálékhálózat': 'Több, egymással összefonódó táplálkozási láncból felépülő, valóságosabb ábrázolása annak, hogy egy faj több másik fajjal is táplálkozási kapcsolatban áll.',
+  'fenntartható fejlődés': 'Olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait.',
+  'nitrogéngyűjtő baktérium': 'Baktérium, amely a légköri nitrogént a növények számára felvehető formává alakítja.',
+  'denitrifikáló baktérium': 'Baktérium, amely a nitrátot visszaalakítja légköri nitrogénné, lezárva a nitrogénkörforgást.',
+
+  // 5. modul, 9. fejezet: Energiaáramlás és biológiai sokféleség
+  'produkció': 'Egy adott időszak alatt egy életközösségben újonnan létrehozott szerves anyag (és a benne tárolt energia) mennyisége.',
+  'biomassza': 'Egy adott pillanatban jelen lévő élő szerves anyag teljes tömege.',
+  'genetikai diverzitás': 'A biológiai sokféleség egyik szintje: az egyes populációkon belüli allél-összetétel változatossága.',
+  'fajdiverzitás': 'A biológiai sokféleség egyik szintje: egy adott területen élő fajok száma és egyedszám-arányai.',
+  'ökológiai diverzitás': 'A biológiai sokféleség egyik szintje: az adott területen betöltött ökológiai funkciók változatossága.',
+  'ökológiai piramis': 'Grafikus ábrázolás, amely bemutatja, hogyan változik egy adott mennyiség (energia, biomassza vagy egyedszám) a táplálkozási lánc egymást követő trófikus szintjein.',
+
+  // 5. modul, 10. fejezet: A természetvédelem alapjai
+  'természetvédelem': 'A biológiai sokféleség megőrzését szolgáló tevékenységek összessége, amelyet etikai, egészségügyi, kulturális és gazdasági érvek is alátámasztanak.',
+  'nemzeti park': 'Egy adott tájegység jellegzetes életközösségeit és fajait védő, kijelölt terület (pl. a Hortobágyi, a Bükki, az Aggteleki Nemzeti Park).',
+  'biodiverzitás': 'Biológiai sokféleség; a genetikai, a faj- és az ökológiai diverzitás együttese.',
+  'határérték': 'A megengedett szennyezési szint jogi rögzítése, amelynek túllépése bírságot vonhat maga után.',
+
+  // 5. modul, 11. fejezet: Levegőszennyezés és védelme
+  'légszennyező anyag': 'A levegő minőségét rontó, egészségre vagy környezetre károsan ható anyag (pl. CO, CO2, nitrogén-oxidok, ólom, korom, por, halogénezett szénhidrogének).',
+  'szmogriadó': 'Az az állapot, amikor a légszennyezettség mértéke meghalad egy egészségügyi határértéket, jellemzően szélcsendes, hideg időszakokban.',
+  'savas eső': 'A kén-dioxid és a nitrogén-oxidok légköri átalakulásából keletkező kén- és salétromsav által megsavanyított csapadék.',
+  'üvegházhatás': 'Az a jelenség, amikor egyes légköri gázok (szén-dioxid, metán, vízgőz) átengedik a Nap sugárzását, de elnyelik a Föld felszínéről visszaverődő hősugárzás egy részét, melegítve a légkört.',
+
+  // 5. modul, 12. fejezet: Vízszennyezés és energiagazdálkodás
+  'öntisztuló képesség': 'A vízi életközösségek azon képessége, hogy a lebontó szervezetek tevékenysége révén egy bizonyos mértékig maguktól lebontják a beléjük kerülő szerves szennyezőanyagokat.',
+  'eutrofizáció': 'A víz túlzott feldúsulása tápanyagokban (elsősorban nitrátokban és foszfátokban), amely az algák túlzott elszaporodásához, majd oxigénhiányhoz vezethet.',
+  'hőszennyezés': 'Egy ipari vagy energiatermelő létesítmény által felmelegítve visszaengedett víz okozta hőmérséklet-emelkedés a befogadó vízfolyásban.',
+  'biológiai víztisztítás': 'A szennyvíztisztítás azon lépése, amely mikroorganizmusok segítségével bontja le a szerves szennyezőanyagokat.',
+  'megújuló energiaforrás': 'Emberi léptékkel gyakorlatilag kimeríthetetlen energiaforrás (pl. napenergia, szélenergia, vízenergia, geotermikus energia).',
+  'nem megújuló energiaforrás': 'Emberi léptékkel véges készletet jelentő energiaforrás (pl. kőszén, kőolaj, földgáz).',
+  'atomenergia': 'Az uránatommagok hasadásából nyert, jelentős energiasűrűségű, nem megújuló energiaforrás.',
+
+  // 5. modul, 13. fejezet: Talajvédelem és hulladékgazdálkodás
+  'talajerózió': 'A talaj felső, termékeny rétegének víz vagy szél általi elhordása.',
+  'szelektív gyűjtés': 'A hulladék típus szerinti előzetes szétválogatása, amely megkönnyíti a feldolgozást és az újrahasznosítást.',
+  'újrahasznosítás': 'A hulladékból új nyersanyag vagy termék előállítása.',
+  'hulladékhierarchia': 'A hulladékkezelési lehetőségeket kívánatosságuk sorrendjébe állító elv: megelőzés, újrahasználat, újrahasznosítás, energetikai hasznosítás, lerakás.',
+  'komposztálás': 'A szerves hulladék lebontó szervezetek segítségével történő, kontrollált lebontása, amelynek végterméke a talaj tápanyag-utánpótlására alkalmas komposzt.',
+
+  // 6. modul, 1. fejezet: Alapfogalmak és a genetikai információ áramlása
+  'gén': 'A DNS egy meghatározott szakasza, amely egy adott fehérje (vagy funkcionális RNS) felépítéséhez szükséges genetikai információt hordozza.',
+  'allél': 'Egy adott gén lehetséges változatai közül az egyik; egy gén helyén a homológ kromoszómákon elhelyezkedő, egymással "versengő" változat.',
+  'genetikai kód': 'Az a szabályrendszer, amely megfelelteti a DNS/mRNS nukleotid-hármasait (kodonjait) az egyes aminosavaknak.',
+  'kromatinfonál': 'A DNS és a hozzá kapcsolódó fehérjék (hisztonok) osztódás közötti, lazább szerveződésű formája a sejtmagban, amely osztódáskor tömörödik kromoszómává.',
+  'replikáció': 'A DNS önmagáról történő másolása, amelynek eredményeként két, egymással azonos DNS-molekula jön létre.',
+  'transzkripció': 'A DNS-ben tárolt genetikai információ átírása mRNS-molekulává a sejtmagban.',
+  'transzláció': 'Az mRNS-en található genetikai információ fehérjévé (aminosav-sorrenddé) fordítása a riboszómán.',
+
+  // 6. modul, 2. fejezet: Mutáció
+  'kodonszótár': 'Táblázat, amely megadja, hogy az mRNS egyes kodonjai (nukleotid-hármasai) melyik aminosavnak felelnek meg.',
+  'genetikai kód degeneráltsága': 'Az a tulajdonság, hogy egy adott aminosavat gyakran több különböző kodon is kódolhat.',
+  'start-kodon': 'Az a kodon (AUG), amely a fehérjeszintézis kezdőpontját jelöli ki, és egyben a metionin aminosavat kódolja.',
+  'stop-kodon': 'Olyan kodon, amely nem kódol aminosavat, hanem a fehérjeszintézis (transzláció) leállását jelzi.',
+  'mutáció': 'A genetikai állomány (DNS) hirtelen, véletlenszerű megváltozása, amely új allélváltozatot hozhat létre.',
+  'mutagén hatás': 'Olyan biológiai, kémiai vagy fizikai tényező hatása, amely növeli a mutációk kialakulásának gyakoriságát.',
+  'karcinogén hatás': 'Olyan hatás, amely növeli a rosszindulatú daganatok kialakulásának esélyét; gyakran együtt jár a mutagén hatással.',
+  'génmutáció': 'Egyetlen génen belüli, egy vagy néhány nukleotidot érintő elváltozás (pl. egy nukleotid kicserélődése, kiesése vagy beékelődése).',
+  'kromoszómamutáció': 'Egy kromoszómát érintő elváltozás, amely lehet szerkezeti (pl. egy kromoszómaszakasz törése, elvesztése vagy áthelyeződése) vagy számbeli (pl. egyetlen kromoszómából eggyel több vagy kevesebb, mint a Down-kórnál).',
+  'genommutáció': 'A teljes kromoszómakészlet (ploidia) számát érintő elváltozás, pl. egy sejt háromszoros (triploid) vagy négyszeres (tetraploid) kromoszómakészlettel rendelkezik a normál kettős (diploid) készlet helyett.',
+  'sarlósejtes vérszegénység': 'Egy pontmutáció következtében kialakuló öröklődő betegség, amelyben a hibás hemoglobin miatt a vörösvértestek sarló alakúra torzulnak.',
+  'fenilketonúria': 'Recesszíven öröklődő, egygénes enzimbetegség, amelyben egy enzim hiánya miatt a fenilalanin aminosav felhalmozódik és károsítja az idegrendszert; diétával kezelhető.',
+
+  // 6. modul, 3. fejezet: A génműködés szabályozása
+  'génexpresszió': 'Az a folyamat, amelynek során egy gén genetikai információja ténylegesen megnyilvánul (átíródik és lefordítódik), és az adott fehérje elkészül.',
+  'jóindulatú daganat': 'Kontrollálatlanul osztódó sejtekből álló szövetburjánvázás, amely a keletkezés helyén marad, nem képez áttétet.',
+  'rosszindulatú daganat': 'Kontrollálatlanul osztódó, a környező szöveteket beszűrő sejtekből álló szövetburjánzás, amely áttétet is képezhet.',
+  'áttét': 'Egy rosszindulatú daganat sejtjeinek a vér- vagy nyirokkeringés útján történő szóródása és új daganat kialakítása a szervezet más pontjain.',
+  'laktóz-operon': 'Baktériumokban található, egymáshoz kapcsolt géncsoport, amely a laktóz lebontásához szükséges enzimeket kódolja, és a laktóz jelenlététől függően szabályozottan aktiválódik.',
+  'promóter': 'A gén (vagy operon) elején elhelyezkedő DNS-szakasz, amelyhez az RNS-polimeráz kapcsolódik az átírás megkezdéséhez.',
+  'operátor': 'DNS-szakasz a promóter közelében, amelyhez a represszor fehérje kapcsolódva gátolja az átírást.',
+  'represszor': 'Fehérje, amely az operátorhoz kapcsolódva gátolja egy gén (vagy operon) átírását.',
+
+  // 6. modul, 4. fejezet: Minőségi jellegek
+  'haploid': 'Olyan sejt vagy szervezet, amely minden kromoszómából csak egy példányt tartalmaz (jele: n); ilyenek az ivarsejtek.',
+  'diploid': 'Olyan sejt vagy szervezet, amely minden kromoszómából két példányt (egy homológ párt) tartalmaz (jele: 2n); ilyenek az emberi testi sejtek.',
+  'homozigóta': 'Olyan egyed, amely egy adott génre nézve két egyforma allélt hordoz (pl. AA vagy aa).',
+  'heterozigóta': 'Olyan egyed, amely egy adott génre nézve két különböző allélt hordoz (pl. Aa).',
+  'genotípus': 'Egy egyed genetikai állományának, egy adott génre (vagy génekre) vonatkozó allél-összetétele.',
+  'fenotípus': 'Egy egyeden ténylegesen megfigyelhető, mérhető tulajdonság, amelyet a genotípus és a környezeti hatások együttesen alakítanak ki.',
+  'domináns-recesszív öröklésmenet': 'Öröklésmenet, amelyben egy heterozigóta egyed fenotípusát teljes egészében a domináns allél határozza meg.',
+  'intermedier öröklésmenet': 'Öröklésmenet, amelyben a heterozigóta egyed fenotípusa a két szülői jelleg között áll, mert egyik allél sem nyomja el teljesen a másikat.',
+  'kodomináns öröklésmenet': 'Öröklésmenet, amelyben a heterozigóta egyednél mindkét allél hatása egyszerre, teljes mértékben megnyilvánul (pl. AB0-vércsoport).',
+  'tesztelő keresztezés': 'Olyan keresztezés, amelyben egy ismeretlen genotípusú, domináns fenotípusú egyedet egy homozigóta recesszív egyeddel kereszteznek, hogy megállapítsák, homozigóta vagy heterozigóta volt-e.',
+  'génkölcsönhatás': 'Az a jelenség, amikor egy tulajdonság kialakításában több gén vesz részt, és ezek kölcsönösen befolyásolják egymás hatását.',
+  'génkapcsoltság': 'Az a jelenség, amikor két vagy több gén ugyanazon a kromoszómán helyezkedik el, ezért nem egymástól függetlenül, hanem "csomagban" öröklődnek.',
+  'dihibrid kereszt': 'Két, egymástól független gén öröklődését egyszerre vizsgáló keresztezés (pl. AaBb × AaBb).',
+  'letális allél': 'Olyan allél, amely bizonyos genotípusban (pl. homozigóta állapotban) az egyed pusztulását okozza még a fejlődés során.',
+  'nemhez kötött öröklés': 'Olyan öröklésmenet, amelynél a vizsgált gén az X-kromoszómán helyezkedik el, ezért a jelleg megjelenése eltér a nőknél és a férfiaknál.',
+  'hemofília': 'Recesszíven, X-kromoszómához kötötten öröklődő betegség, amelyben a véralvadás zavart szenved.',
+  'kapcsoltsági térképezés': 'A rekombinációs gyakoriságok méréséből a gének kromoszómán belüli relatív sorrendjének és távolságának meghatározása.',
+  'rekombinációs gyakoriság': 'A crossing over során létrejövő, új (rekombináns) allélkombinációjú utódok aránya az összes utódhoz képest.',
+
+  // 6. modul, 5. fejezet: Mennyiségi jellegek
+  'mennyiségi jelleg': 'Sok, egyenként kis hatású gén és jelentős környezeti hatás által kialakított tulajdonság, amely a populációban folytonos, fokozatos eloszlásban jelenik meg (pl. testmagasság).',
+  'minőségi jelleg': 'Egy vagy kevés gén által meghatározott tulajdonság, amely éles, egymástól jól elkülöníthető kategóriákban jelenik meg (pl. AB0-vércsoport).',
+  'ikervizsgálat': 'Egypetéjű (genetikailag azonos) ikrek összehasonlításán alapuló módszer az öröklött és a környezeti hatások arányának elkülönítésére.',
+  'heterózis-hatás': 'Az a jelenség, amikor két, genetikailag távoli törzs keresztezéséből született hibrid utód (F1) a szülőknél nagyobb teljesítményt (pl. terméshozamot) mutat.',
+  'normális eloszlás': 'Szimmetrikus, haranggörbe alakú eloszlás, amely jellemzően a sok gén és környezeti tényező által kialakított mennyiségi jellegeket jellemzi.',
+
+  // 6. modul, 6. fejezet: Ideális és reális populáció
+  'allélgyakoriság': 'Egy adott allélváltozat aránya az összes, adott génre vonatkozó allél között egy populációban.',
+  'genotípusgyakoriság': 'Az egyes genotípusok (pl. AA, Aa, aa) aránya az egyedek között egy populációban.',
+  'irányító szelekció': 'A természetes szelekció olyan típusa, amely a jelleg eloszlásának egyik szélső értékét részesíti előnyben, eltolva a populáció átlagát.',
+  'stabilizáló szelekció': 'A természetes szelekció olyan típusa, amely a jelleg középső, átlagos értékeit részesíti előnyben, homogénebbé téve a populációt.',
+  'szétválasztó szelekció': 'A természetes szelekció olyan típusa, amely mindkét szélsőséges értéket részesíti előnyben a középső értékek rovására, akár fajkeletkezéshez is vezethet.',
+  'ideális populáció': 'Elméleti populációgenetikai modell, amelyben az allél- és genotípusgyakoriságok nemzedékről nemzedékre nem változnak (nagy létszám, véletlen párválasztás, nincs mutáció/migráció/szelekció).',
+  'hardy-weinberg összefüggés': 'Ideális populációban a genotípus- és allélgyakoriságok kapcsolatát leíró képlet: p² + 2pq + q² = 1.',
+  'kihalási küszöb': 'Az a minimális populációméret, amely alá csökkenve a populáció fennmaradása súlyosan veszélybe kerül.',
+  'genetikai sodródás': 'Az allélgyakoriságok véletlenszerű (nem szelekció okozta) megváltozása, amely különösen kis populációkban jelentős.',
+  'beltenyészet': 'Közeli rokonok közötti szaporodás, amely növeli a káros recesszív allélok homozigóta formában történő megjelenésének esélyét.',
+
+  // 6. modul, 7. fejezet: Adaptív és nem adaptív evolúciós folyamatok
+  'adaptív evolúció': 'A populáció környezethez való alkalmazkodását növelő evolúciós folyamat, amelyet a természetes szelekció hajt.',
+  'nem adaptív evolúció': 'Az allélgyakoriságokat megváltoztató, de nem az alkalmazkodóképesség javulásából eredő evolúciós folyamat (pl. genetikai sodródás).',
+  'homológ szerv': 'Közös evolúciós eredetű szerv, amely eltérő fajoknál akár eltérő funkciót is elláthat (divergens fejlődés eredménye).',
+  'analóg szerv': 'Nem közös evolúciós eredetű, de hasonló funkciót ellátó szerv, amely konvergens fejlődés útján, függetlenül alakult ki.',
+  'konvergens fejlődés': 'Az a folyamat, amikor egymástól független eredetű élőlénycsoportok hasonló környezeti kihívásra hasonló megoldással (analóg szervvel) válaszolnak.',
+  'divergens fejlődés': 'Az a folyamat, amikor egy közös ősi forma eltérő környezeti feltételek hatására eltérő funkciójú szervekké (homológ szervekké) alakul.',
+  'relatív kormeghatározás': 'Kormeghatározási módszer, amely csak azt állapítja meg, hogy egy lelet fiatalabb vagy idősebb egy másiknál, konkrét évszám nélkül.',
+  'abszolút kormeghatározás': 'Kormeghatározási módszer, amely konkrét, számszerű életkort határoz meg (pl. a C14/C12 radiokarbon-módszerrel).',
+  'élő kövület': 'Ma is élő faj, amely évmilliók óta alig változott, és amelynek közeli rokonai már kihaltak (pl. hídgyík).',
+  'pollenanalízis': 'Az üledékrétegekben megőrződött pollenszemcsék vizsgálata, amelyből az adott kor növényzetére és éghajlatára lehet következtetni.',
+  'évgyűrűelemzés': 'A fák évgyűrűinek szélességéből a múltbeli éghajlatra következtető módszer (dendrokronológia).',
+  'dns-homológia': 'Rokon fajok DNS-szekvenciájának hasonlósága, amely az evolúció egyik közvetett bizonyítéka.',
+
+  // 6. modul, 8. fejezet: Biotechnológia és bioetika
+  'genetikai tanácsadás': 'Szolgáltatás, amely segít felmérni egy öröklődő betegség kialakulásának vagy továbbadásának esélyét, és megalapozott családtervezési döntést hozni.',
+  'családfaelemzés': 'Egy adott jelleg több nemzedéken át történő megjelenésének vizsgálata egy családban, az öröklésmenet megállapítása céljából.',
+  'magzati diagnosztika': 'A magzat genetikai állományának vizsgálata a méhen belüli fejlődés során.',
+  'human genom program': 'Az emberi genom teljes feltérképezésére irányuló nemzetközi kutatási program, amely megalapozta a mai humángenetikai diagnosztikát.',
+  'reproduktív klónozás': 'Klónozási eljárás, amelynek célja egy teljes, önállóan élő, genetikailag azonos egyed létrehozása.',
+  'terápiás klónozás': 'Klónozási eljárás, amely gyógyászati célra felhasználható sejtek (pl. őssejtek) előállítására irányul, új egyed létrehozása nélkül.',
+
+  // 6. modul, 9. fejezet: A bioszféra evolúciója
+  'kémiai evolúció': 'Az a folyamat, amely során az élettelen anyagból fokozatosan egyre bonyolultabb szerves molekulák alakultak ki, megelőzve a biológiai evolúciót.',
+  'emberszabású majom': 'A főemlősök (Primates) rendjébe, az emberszabásúak (Hominidae) családjába tartozó majomcsoport (pl. csimpánz, gorilla); az ember is ennek a családnak a tagja, közös őstől származnak.',
+  'nagyrassz': 'Az ember evolúciója során a különböző földrajzi régiókhoz való alkalmazkodás eredményeként kialakult, külső jegyekben (pl. bőrszín) eltérő emberi csoport, amelyek biológiai értékükben nem különböznek.',
+  'prebiológiai evolúció': 'A biológiai élet kialakulása előtti folyamatok összessége, amelyek során az egyszerű szervetlen molekulákból szerves molekulák jöttek létre.',
+  'miller kísérlete': 'Stanley Miller és Harold Urey 1953-as kísérlete, amely igazolta, hogy az ősi légkör feltételezett gázösszetételéből elektromos kisülés hatására aminosavak keletkezhetnek.',
+  'homo nemzetség': 'Az a rendszertani nemzetség, amelybe a mai ember és korai emberfélék rokonai tartoznak, fejlődésük során növekvő agytérfogattal, kétlábú járással és eszközhasználattal.',
 };

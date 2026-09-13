@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Brain, Target, Star, 
-  CheckCircle2, Sparkles, GraduationCap 
+import {
+  Brain, Target,
+  Sparkles, GraduationCap
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';

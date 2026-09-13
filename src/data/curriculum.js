@@ -1324,7 +1324,36 @@ export const CURRICULUM = [
             ],
             keyTerms: ['prokarióta', 'eukarióta', 'kokkusz', 'bacilus', 'spirillum', 'antibiotikum-rezisztencia', 'természetes szelekció', 'fertőtlenítés', 'sterilizálás'],
           },
-          emeltExtra: { comingSoon: true },
+          emeltExtra: {
+            intro: 'Emelt szinten a baktériumok anyagcsere- és ökológiai típusainak pontos azonosítását, a fertőtlenítési eljárások biológiai hátterét, valamint az endoszimbióta elmélet mellett szóló bizonyítékokat is ismerni kell.',
+            sections: [
+              {
+                heading: 'Anyagcsere- és ökológiai típusok a baktériumok között',
+                paragraphs: [
+                  'A korábban (Anyagcsere fejezet) megismert fotoautotróf és kemoautotróf fogalompár mellett a baktériumok között megtalálható a heterotróf (pontosabban kemoheterotróf) típus is - ez a három anyagcsere-típus az energiaforrás és a szénforrás alapján különíthető el egymástól, és életfolyamataik leírása alapján bármelyik baktériumfaj besorolható valamelyik kategóriába.',
+                  'A heterotróf baktériumok (a legtöbb ismert baktériumfaj) szerves anyagból nyerik mind az energiájukat, mind az építőanyagaikat - ide tartoznak a bélbaktériumok és a legtöbb kórokozó baktérium is. A fotoautotróf baktériumok (pl. a cianobaktériumok) fényenergiát hasznosítva, szervetlen szén-dioxidból építik fel szerves anyagaikat, hasonlóan a növényekhez. A kemoautotróf baktériumok (pl. a korábban már említett nitrifikáló talajbaktériumok) szervetlen vegyületek - például ammónia - oxidációjából nyert kémiai energiával szintén szervetlen szén-dioxidból építkeznek.',
+                  'Az anyagcsere-típus mellett a baktériumok az életközösségben betöltött szerepük (ökológiai típusuk) alapján is csoportosíthatók. A termelő baktériumok (a fotoautotróf és kemoautotróf fajok) szerves anyagot állítanak elő, amelyet mások felhasználhatnak - ugyanaz az elv, amit a termelők tápláléklánc-beli szerepéről az Anyagcsere fejezetben már megismertünk. A lebontó baktériumok elhalt szerves anyagot bontanak le, ezzel zárva az anyagforgalom körforgását. A kórokozó baktériumok más élőlények kárára szaporodnak, míg a szimbionta baktériumok (pl. a bélflóra tagjai) kölcsönösen előnyös kapcsolatban élnek gazdaszervezetükkel.',
+                ],
+              },
+              {
+                heading: 'A fertőtlenítési eljárások biológiai alapja',
+                paragraphs: [
+                  'A középszinten megismert fertőtlenítési és sterilizálási eljárások mindegyike a kórokozó valamely alapvető sejtszerkezetét károsítja - emelt szinten ennek konkrét biológiai mechanizmusát is érteni kell.',
+                  'A magas hőmérséklet (forralás, gőzölés) roncsolja a fehérjék térszerkezetét, vagyis - ahogy azt a Fehérjék fejezetben már megismertük - denaturálja azokat, ami működésképtelenné teszi a kórokozó enzimeit. Az alkohol- és más vegyszeralapú fertőtlenítőszerek a sejtmembrán lipidrétegét oldják fel, illetve szintén fehérjéket denaturálnak, így a sejt elveszti a határoló funkcióját.',
+                  'Az ultraibolya (UV) sugárzás közvetlenül a DNS-t károsítja: a szomszédos timinbázisok között kóros kötéseket, ún. timindimereket hoz létre, amelyek megakadályozzák a DNS helyes megkettőződését és leolvasását. Az autoklávban alkalmazott túlnyomás azért hatékonyabb sterilizálási eljárás az egyszerű forralásnál, mert a nyomás növelésével a víz forráspontja 100 °C fölé emelhető, így a fehérjedenaturáció minden mikroorganizmusnál gyorsabban és biztosabban következik be.',
+                ],
+              },
+              {
+                heading: 'Az endoszimbióta elmélet és a mellette szóló bizonyítékok',
+                paragraphs: [
+                  'A korábban (Anyagcsere fejezet, illetve e fejezet középszintje) már érintőlegesen említett endoszimbióta elmélet szerint a mitokondrium és a színtest egykor önállóan élő, baktérium jellegű prokarióta szervezetek voltak, amelyeket egy ősi eukarióta sejt bekebelezett, de nem emésztett meg - a bekebelezett sejtek helyette tartós, kölcsönösen előnyös együttélésbe (szimbiózisba) kerültek a befogadó sejttel: az utóbbi védelmet és tápanyagot biztosított, míg az endoszimbionta hatékony energiatermeléssel (mitokondrium), illetve fotoszintézissel (színtest) "fizetett" ezért cserébe.',
+                  'Az elmélet mellett több meggyőző bizonyíték is szól. Mindkét sejtszervecskét kettős membrán határolja (ahogy azt a Fotoszintézis, illetve a Lebontó folyamatok fejezetben már megfigyeltük) - ez pontosan annak felel meg, ahogyan egy bekebelezés során a befogadó sejt membránja körülveszi a bekebelezett sejtet, miközben annak saját, eredeti membránja is megmarad.',
+                  'A mitokondrium és a színtest saját, körkörös DNS-molekulával rendelkezik, amely - a sejtmagi DNS-től eltérően - felépítésében a baktériumok DNS-éhez hasonlít. Saját riboszómáik mérete és típusa is inkább a baktériumok riboszómáira, mint az eukarióta sejt citoplazmatikus riboszómáira emlékeztet, osztódásuk pedig a baktériumok osztódásához hasonlóan, a sejt osztódásától függetlenül is végbemehet. Végül ezek a sejtszervecskék egyes, kifejezetten a baktériumok fehérjeszintézisét gátló antibiotikumokra érzékenyek maradtak, míg a sejt sejtmagi eredetű fehérjeszintézise nem - ez is arra utal, hogy a mitokondrium és a színtest fehérjeszintézis-gépezete eredetileg baktériumi eredetű.',
+                ],
+              },
+            ],
+            keyTerms: ['heterotróf baktérium', 'fotoautotróf', 'kemoautotróf', 'termelő', 'lebontó', 'kórokozó', 'szimbionta', 'timindimer', 'endoszimbióta elmélet'],
+          },
         },
       },
       {
@@ -1333,7 +1362,60 @@ export const CURRICULUM = [
         order: 3,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (Baktériumok fejezet) megismert prokarióta/eukarióta sejtszerveződés fogalompárja itt egy új szempontból válik fontossá: az egysejtű eukarióták olyan önálló élőlények, amelyek egyetlen sejtből állnak, mégis rendelkeznek valódi sejtmaggal és a hozzá tartozó sejtszervecskékkel - ez a fejezet az élővilág rendszerezésének egy új, első alkalommal megismert országát, a Protiszták országát mutatja be.',
+            sections: [
+              {
+                heading: 'Rendszertani helyük: a Protiszták országa',
+                paragraphs: [
+                  'A korábban (A biológia tudománya fejezet) megismert rendszertani hierarchiában (faj → nem → család → rend → osztály → törzs → ország) az "ország" a legtágabb kategória. A korábban megismert baktériumok a Monera (más néven Prokarióták) országába tartoznak; az egysejtű eukarióták ezzel szemben már a Protiszták országának tagjai - ez az első ország, amelynek minden tagja valódi, hártyával határolt sejtmaggal rendelkezik.',
+                  'A Protiszták országán belül az egyes fajok további törzsekbe sorolhatók a mozgásszervecskéik típusa alapján. Az óriás amőba a Gyökérlábúak törzsébe tartozik, a papucsállatka a Csillósok törzsébe, a zöld szemesostoros pedig az Ostorosok törzsébe.',
+                ],
+              },
+              {
+                heading: 'Mozgásformák',
+                paragraphs: [
+                  'Az óriás amőba állábak (ideiglenes sejtnyúlványok) segítségével mozog - ugyanezt a mozgásformát figyeltük meg korábban (Sejtműködések vezérlése fejezet) a fehérvérsejteknél is, amelyek szintén állábakkal változtatják alakjukat.',
+                  'A papucsállatka egész testét sűrű csillósor borítja, amelyek összehangolt, hullámszerű csapkodásával mozog a vízben. A zöld szemesostoros egyetlen hosszú ostorral (flagellummal) hajtja magát előre - mindkét mozgásforma ugyanazon az elven alapul, mint amit emberi sejteknél (légúti hámsejtek csillói, illetve a hímivarsejt ostora) is megfigyelhetünk.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás és felépítő anyagcsere',
+                paragraphs: [
+                  'Az óriás amőba és a papucsállatka heterotróf módon, fagocitózissal táplálkozik: a sejtmembrán körülzárja a táplálékrészecskét, majd a keletkező táplálékvakuólumban - a korábban (Anyagcsere sejtszinten fejezet) megismert lizoszóma enzimeinek segítségével - emésztődik meg.',
+                  'A zöld szemesostoros különleges kivétel: színtestje (kloroplasztisza) van, amellyel fényben fotoautotróf módon szerves anyagot termel, sötétben vagy szerves anyag jelenlétében azonban heterotróf módon is képes táplálkozni. Az ilyen, kétféle anyagcsere-stratégiát egyesítő szervezeteket mixotrófnak nevezzük - ez a tulajdonság teszi a szemesostorost az egyik legérdekesebb, a növény és az állat közötti hagyományos határvonalat elmosó példává.',
+                  'Az emésztés után vissza nem szívódott, emésztetlen maradékot a sejt a membránon keresztül üríti ki - az amőbánál ez a sejtfelszín bármely pontján megtörténhet, a papucsállatkánál viszont egy meghatározott helyen, az úgynevezett sejtvégbélen (citoprokton) keresztül távozik a salakanyag.',
+                ],
+              },
+              {
+                heading: 'Víztartalom-szabályozás és felismerésük mikroszkóp alatt',
+                paragraphs: [
+                  'Mindhárom faj édesvízben él, amely a sejtjükhöz képest hipotóniás közeg - a korábban (Membránok szerepe fejezet) megismert ozmózis miatt ezért folyamatosan víz áramlik be a sejtbe. A fölösleges víz eltávolítására egy különleges sejtszervecske, a lüktető (kontraktilis) vacuolum szolgál, amely rendszeres időközönként összehúzódva kiüríti a felgyülemlett vizet a sejtből.',
+                  'Fénymikroszkóp alatt mindhárom faj jellegzetes sejtalkotói alapján felismerhető: az amőbánál az állandóan változó alak és az állábak, a papucsállatkánál a testet borító csillók és a két sejtmag (egy nagyobb és egy kisebb), a szemesostorosnál pedig az ostor, a színtest és a fényérzékelő szemfolt.',
+                  'A három faj tehát ugyanazokat az alapvető életműködéseket (mozgás, táplálkozás, víztartalom-szabályozás) különböző, egymástól jól megkülönböztethető szervecskékkel valósítja meg - ez a sokféleség jól szemlélteti, hogy az egysejtű lét nem jelenti a funkciók egyszerűségét: egyetlen sejtnek kell ellátnia mindazt, amit egy többsejtű szervezetnél már specializálódott sejtek és szövetek végeznek.',
+                ],
+              },
+            ],
+            keyTerms: ['Protiszták országa', 'gyökérlábúak', 'csillósok', 'ostorosok', 'állábas mozgás', 'ostoros mozgás', 'csillós mozgás', 'fagocitózis', 'mixotróf', 'lüktető vacuolum'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a Protiszták országának kialakulásához köthető, nagy jelentőségű elméletet, az endoszimbióta elméletet kell részletesen ismerni - ez az elmélet éppen az itt tanult egysejtű eukarióta sejtszerveződés kialakulására ad magyarázatot.',
+            sections: [
+              {
+                heading: 'Az endoszimbióta elmélet',
+                paragraphs: [
+                  'Az endoszimbióta elmélet szerint az eukarióta sejt két fontos sejtszervecskéje, a mitokondrium és a színtest, egykor önállóan élő, baktérium jellegű prokarióta szervezetek voltak, amelyeket egy ősi eukarióta sejt bekebelezett, de nem emésztett meg - a bekebelezett sejtek helyette tartós, kölcsönösen előnyös együttélésbe (szimbiózisba) kerültek a befogadó sejttel.',
+                  'Az elmélet mellett szóló legfontosabb bizonyítékok - a kettős membrán, a saját körkörös DNS, a baktériumokéra emlékeztető méretű és típusú riboszómák, az önálló osztódás, valamint a baktériumellenes antibiotikumokra való érzékenység - részletes kifejtését a Baktériumok fejezet emelt része tartalmazza, hiszen ezek a bizonyítékok éppen a baktériumokkal való rokonságot támasztják alá.',
+                  'Az elmélet jelentősége itt, az egysejtű eukarióták fejezetében abban áll, hogy megmagyarázza, miért rendelkezik minden ma élő eukarióta sejt - legyen az egysejtű (mint az óriás amőba vagy a papucsállatka) vagy egy többsejtű szervezet része - energiatermelő mitokondriummal: ez a sejtszervecske egyetlen közös, ősi endoszimbiotikus eseményből származik, amely még az első eukarióta sejtek megjelenésekor történt.',
+                  'A színtest endoszimbiotikus eredete konkrétan is megfigyelhető ebben a fejezetben: a zöld szemesostoros - amely, ahogy azt középszinten megismertük, mixotróf módon képes fotoszintetizálni - éppen azért rendelkezik színtesttel, mert egy távoli őse egykor egy fotoszintetizáló, cianobaktérium jellegű sejtet kebelezett be.',
+                  'Az elméletet az 1960-as-1970-es években Lynn Margulis amerikai biológus dolgozta ki és népszerűsítette részletesen, jelentősen hozzájárulva ahhoz, hogy mára az eukarióta sejt kialakulásának általánosan elfogadott magyarázatává váljon.',
+                ],
+              },
+            ],
+            keyTerms: ['endoszimbióta elmélet'],
+          },
+        },
       },
       {
         id: 'elkulonules',
@@ -1341,7 +1423,61 @@ export const CURRICULUM = [
         order: 4,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        comparisonTable: {
+          headers: ['Szempont', 'Növények', 'Állatok'],
+          rows: [
+            ['Domináns életszakasz', 'haploid ÉS diploid szakasz is hosszú, önálló (generációváltakozás)', 'diploid szakasz domináns és hosszú'],
+            ['Haploid szakasz', 'önálló, spórákkal szaporodó egyed is lehet', 'csak az ivarsejtekre korlátozódik'],
+            ['Ivarsejtképzés', 'a haploid egyed mitózissal termeli', 'közvetlenül meiózissal, a diploid egyedben'],
+            ['Spóraképzés', 'jellemző (a diploid szakasz meiózisával)', 'nem jellemző'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Egysejtű eukarióták fejezet) megismert rendszertani hierarchiában (faj → nem → család → rend → osztály → törzs → ország) eddig két országgal találkoztunk: a Monera (baktériumok) és a Protiszták országával. Ez a fejezet a hagyományos rendszertan három további, kifejezetten többsejtű országát mutatja be - a növényeket, a gombákat és az állatokat -, így mind az öt ország a helyére kerül; azt is megvizsgáljuk, mi indokolja, hogy ezek külön országot alkotnak, és hogyan vezetett az evolúció az egysejtűségtől a valódi többsejtűségig.',
+            sections: [
+              {
+                heading: 'Miért alkotnak külön országot a növények, a gombák és az állatok?',
+                paragraphs: [
+                  'A három ország elkülönítésének alapja a testszerveződés és az anyagcsere-folyamatok különbsége. A növények fotoautotróf módon táplálkoznak - ahogy azt korábban (Anyagcsere sejtszinten fejezet) megismertük -, sejtjeiket pedig a korábban (Szénhidrátok fejezet) tanult cellulózból felépülő sejtfal határolja.',
+                  'A gombák és az állatok ezzel szemben heterotrófok, de eltérő módon táplálkoznak: a gombák sejtjeit kitinből álló sejtfal veszi körül (ahogy azt szintén a Szénhidrátok fejezetben megismertük), és jellemzően a testükön kívül emésztik meg táplálékukat, majd a már megemésztett tápanyagokat szívják fel. Az állati sejteknek nincs sejtfaluk, táplálkozásuk pedig jellemzően bekebelezéssel történik - ehhez hasonló folyamatot (fagocitózis) már megismertünk az Egysejtű eukarióták fejezetben, az óriás amőba és a papucsállatka táplálkozásánál.',
+                ],
+              },
+              {
+                heading: 'A differenciálódás: a többsejtűség kulcsa',
+                paragraphs: [
+                  'A többsejtű szerveződés alapfeltétele a differenciálódás: a sejtek szerkezeti és működésbeli specializálódása egy adott feladat ellátására. Minél összetettebb egy élőlény testfelépítése, annál inkább elkülönülnek egymástól a különböző feladatokat ellátó sejtek - ez a folyamat vezet el végül a valódi szövetek kialakulásához, amelyeket egy későbbi fejezetben (Szövetek, szervek) ismerünk majd meg részletesen.',
+                  'Egy egysejtű élőlénynél - mint amilyeneket a korábban (Egysejtű eukarióták fejezet) megismertünk - minden életműködést egyetlen sejtnek kell ellátnia. Egy differenciálódott, többsejtű szervezetnél viszont a különböző sejtcsoportok - és a belőlük felépülő szövetek - egymás között megosztva, hatékonyabban látják el ugyanezeket a feladatokat.',
+                ],
+              },
+              {
+                heading: 'Az egysejtűségtől a többsejtűségig - a zöldmoszatok példáján',
+                paragraphs: [
+                  'A zöldmoszatok azért különösen alkalmasak a szerveződési szintek bemutatására, mert közöttük mindhárom fokozat - az egysejtű szerveződés, valamint a többsejtű, de még nem szövetes szerveződés két típusa - egyaránt megtalálható.',
+                  'A sejttársulás (kolónia) esetén az egyes sejtek önállóan is életképesek maradnak, csupán lazán kapcsolódnak egymáshoz, érdemi munkamegosztás nélkül. A sejtfonál esetén a sejtek egymáshoz kapcsolódva, egy sorban helyezkednek el, fonalszerű alakzatot alkotva - ezt a szerveződési formát a következő fejezetben (Sejtfonalak) ismerjük meg részletesebben, a gombák példáján is. A teleptest ezeknél bonyolultabb: a sejtek már részleges munkamegosztást mutatnak, de valódi, elkülönült szövetek még nem alakulnak ki - ezzel egy későbbi fejezetben (Teleptest és álszövet) foglalkozunk majd részletesen.',
+                  'Ez a fokozatosság jól szemlélteti, hogy a többsejtűség nem egyetlen lépésben, hanem fokozatosan alakult ki az evolúció során - és éppen ez az oka annak, hogy a növények, a gombák és az állatok, testszerveződésük és anyagcseréjük alapvető különbségei miatt, a rendszertanban külön országot alkotnak.',
+                ],
+              },
+            ],
+            keyTerms: ['differenciálódás', 'sejttársulás', 'sejtfonal', 'teleptest'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a növények és az állatok életciklusát kell összehasonlítani: azt, hogy a kromoszómakészlet szempontjából kétféle (haploid és diploid) állapot hogyan és milyen arányban váltja egymást a két országban.',
+            sections: [
+              {
+                heading: 'Növények és állatok életciklusának összehasonlítása',
+                paragraphs: [
+                  'Az állatoknál a diploid szakasz a domináns és hosszú életszakasz - egy állat teste egész életében diploid sejtekből áll, a haploid állapot pedig kizárólag az ivarsejtekre (a petesejtre és a hímivarsejtre) korlátozódik, amelyek közvetlenül meiózissal keletkeznek a diploid egyed ivarszerveiben - ahogy azt korábban (Osztódás fejezet emelt része) a spermatogenezis és az oogenezis folyamatánál részletesen láttuk. Az állatoknál spóraképzés nem fordul elő.',
+                  'A növényeknél ezzel szemben - a legtöbb csoportnál - mind a haploid, mind a diploid szakasz hosszú, önálló életszakaszként jelenik meg: ezt nevezzük generációváltakozásnak. A diploid szakasz sejtjei meiózissal nem közvetlenül ivarsejteket, hanem spórákat hoznak létre; ezekből a haploid spórákból fejlődik ki egy önálló, haploid egyed, amely már mitózissal termeli az ivarsejteket.',
+                  'A generációváltakozás pontos lépéseit és a haploid, illetve diploid szakasz egymáshoz viszonyított hosszát a következő fejezetekben (Teleptest és álszövet, Harasztok, Zárvatermők), a mohák, a harasztok és a zárvatermők példáján ismerjük meg részletesen - itt elegendő megjegyezni az alapvető különbséget: az állatoknál a haploid szakasz rövid és csak az ivarsejtekre szorítkozik, a növényeknél viszont a haploid szakasz önálló, spórákkal szaporodó életszakaszt is jelenthet.',
+                  'Az "életszakaszok típusa" kifejezés éppen erre a különbségre utal: állatoknál egyetlen domináns (diploid) életszakaszról beszélünk, amelyet csak rövid ideig szakít meg a haploid ivarsejt-állapot, míg a legtöbb növénynél két, egymást váltó, önálló életszakaszról - egy haploidról és egy diploidról - van szó, ez utóbbi az, amit generációváltakozásnak nevezünk.',
+                  'Érdemes megjegyezni a spóra és az ivarsejt közötti alapvető különbséget is: a spóra - szemben az ivarsejttel - önmagában, megtermékenyítés nélkül is képes új egyeddé fejlődni, míg egy ivarsejtnek mindenképp egy másik ivarsejttel kell egyesülnie ehhez.',
+                ],
+              },
+            ],
+            keyTerms: ['haploid szakasz', 'diploid szakasz', 'generációváltakozás', 'spóraképzés', 'ivarsejtképzés'],
+          },
+        },
       },
       {
         id: 'sejtfonalak',
@@ -1349,7 +1485,52 @@ export const CURRICULUM = [
         order: 5,
         isFree: false,
         estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (A gombák, növények, állatok elkülönülése fejezet) megismert Gombák országának első konkrét képviselőit ismerjük meg ebben a fejezetben: a fonalas testfelépítésű gombákat, valamint - összehasonlításképpen - a fonalas zöldmoszatokat.',
+            sections: [
+              {
+                heading: 'A fonalas testfelépítés: hifa és micélium',
+                paragraphs: [
+                  'A fonalas gombák teste vékony, elágazó fonalakból, ún. hifákból épül fel - ezek összessége alkotja a micéliumot, amely gyakran a talajban vagy a tápanyagforrás belsejében terjed szét, láthatatlanul, és csak a szaporítóképletek (pl. a penész "bolyhos" felszíne) jelennek meg a felszínen.',
+                  'A gombák - ahogy azt korábban (A gombák, növények, állatok elkülönülése fejezet) megismertük - heterotróf módon, a testükön kívül megemésztett táplálékukat felszívva táplálkoznak: a hifák nagy felülete kiválóan alkalmas erre a sejten kívüli emésztésre és tápanyagfelvételre.',
+                ],
+              },
+              {
+                heading: 'Fonalas gombák: peronoszpóra, fejespenész, ecsetpenész',
+                paragraphs: [
+                  'A peronoszpóra növénykórokozó gomba, amely elsősorban a szőlő és a burgonya leveleit támadja meg, jelentős gazdasági kárt okozva - felismerése és az ellene való védekezés (pl. rézgálicos permetezés) máig fontos szőlészeti feladat.',
+                  'A fejespenész (más néven kenyérpenész) jellegzetes, gömb alakú spóratokjairól ("fejeiről") ismerhető fel, amelyek a hifák végén, egyenes szárakon ülnek - ez a penészfaj gyakran jelenik meg a megromlott kenyéren és más szénhidráttartalmú élelmiszereken. Az ecsetpenész spóratartói ezzel szemben ecsetszerűen, többszörösen elágaznak - ez a gombanemzetség adta a penicillin nevű antibiotikumot, amelyet Alexander Fleming fedezett fel véletlenül, amikor észrevette, hogy egy ecsetpenésszel szennyeződött baktériumtenyészetben a penész körül nem nőttek baktériumok.',
+                  'Egyes fonalas gombák emberi megbetegedéseket is okozhatnak - ilyenek a bőrgombásodások (pl. a lábgomba), amelyek a bőr felső rétegében szaporodó gombafonalak miatt alakulnak ki, és megfelelő higiéniával, illetve gombaellenes szerekkel kezelhetők.',
+                  'A három gombafaj mikroszkóp vagy akár szabad szem alatt is megkülönböztethető egymástól: a fejespenész spóratokjai gömb alakúak és egyenes száron ülnek, az ecsetpenészé ecsetszerűen elágazó fürtökben helyezkednek el, a peronoszpóra pedig jellemzően a levelek fonákján megjelenő, szürkésfehér penészbevonat formájában ismerhető fel.',
+                ],
+              },
+              {
+                heading: 'Szaporodás, lebontó szerep és mikroszkópos vizsgálat',
+                paragraphs: [
+                  'A gombák - a fonalas fajok is - jellemzően spórákkal szaporodnak: a hifák végén képződő spóratokokban nagy számú, apró spóra keletkezik, amelyek szétszóródva, kedvező körülmények között új micéliummá csíráznak ki.',
+                  'A fonalas gombák (és általában a gombák) az életközösségekben elsősorban lebontó szerepet töltenek be: elhalt növényi és állati maradványokat bontanak le, ezzel kulcsszerepet játszva az anyagforgalom fenntartásában - ezt a szerepkört a Baktériumok fejezet emelt része is tárgyalja, a baktériumok esetében.',
+                  'Fénymikroszkóp alatt vizsgálva a kenyérpenész elágazó hifái és jellegzetes, gömb alakú spóratokjai jól megfigyelhetők. Összehasonlításképpen a fonalas zöldmoszatok (pl. a Spirogyra) is fonalas testfelépítésűek, de esetükben a fonál valódi, egymástól elkülönült sejtekből áll, amelyek mindegyike a korábban (Szénhidrátok fejezet) megismert cellulózból álló sejtfallal rendelkezik - ez a különbség (osztatlan gombafonál vs. sejtekre tagolt moszatfonál) mikroszkóp alatt is jól látható.',
+                ],
+              },
+            ],
+            keyTerms: ['Gombák országa', 'hifa', 'micélium', 'peronoszpóra', 'fejespenész', 'ecsetpenész', 'penicillin', 'lebontó'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni a gombafonalak sejtszintű felépítését és növekedési módját, mert ez sok, egyébként meglepőnek tűnő tulajdonságukat megmagyarázza.',
+            sections: [
+              {
+                heading: 'A gombafonalak sejtszintű felépítése és növekedése',
+                paragraphs: [
+                  'A legtöbb gombafonalat nem valódi, elkülönült sejtek alkotják: a hifát csak helyenként tagolják keresztfalak (szeptumok), amelyeken pórusok maradnak, így a citoplazma - és gyakran a sejtmagok is - szabadon áramolhatnak a "rekeszek" között. Az ilyen felépítést cönocitikus felépítésnek nevezzük - ez lényegesen eltér attól a sejtes felépítéstől, amit a legtöbb élőlénynél (pl. a fonalas zöldmoszatoknál) megszoktunk.',
+                  'A hifa növekedése kizárólag a csúcsán történik (csúcsnövekedés): itt zajlik a legintenzívebb anyagszállítás és sejtfalépítés, míg a fonál idősebb, hátrébb eső szakaszai már nem növekednek tovább. Ez a növekedési mód teszi lehetővé, hogy a gomba rendkívül gyorsan és hatékonyan terjeszkedjen egy új tápanyagforrás (pl. egy darab kenyér) belsejében.',
+                  'A fonalas gombák szaporodása lehet ivartalan (a hifák végén képződő spóratokokban, mitózissal keletkező spórákkal, ahogy azt középszinten megismertük) vagy ivaros: a peronoszpóránál például két, genetikailag eltérő hifa találkozásakor vastag falú, ellenálló ivaros spórák (petespórák) képződnek, amelyek akár évekig is életképesek maradhatnak a talajban, mielőtt kedvező körülmények között kicsíráznának.',
+                ],
+              },
+            ],
+            keyTerms: ['cönocitikus felépítés', 'csúcsnövekedés', 'petespóra'],
+          },
+        },
       },
       {
         id: 'teleptest-alszovet',
@@ -1357,39 +1538,2043 @@ export const CURRICULUM = [
         order: 6,
         isFree: false,
         estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        content: {
+          kozep: {
+            intro: 'A korábban (A gombák, növények, állatok elkülönülése fejezet) megismert teleptest fogalmát ebben a fejezetben konkrét példákon - moszatokon, gombákon és mohákon - mélyítjük el, majd megvizsgáljuk, hogyan jelenik meg egy hasonlóan egyszerű, még nem szövetes testfelépítés az állatvilágban (szivacsok), végül egy különösen fontos, biztonsági szempontból kritikus gombafajjal, a gyilkos galócával ismerkedünk meg.',
+            sections: [
+              {
+                heading: 'Teleptestes szerveződés a moszatok és a gombák világában',
+                paragraphs: [
+                  'A teleptestes szerveződés - ahogy azt korábban megismertük - az egysejtű és a valódi, szövetes többsejtű szerveződés közötti átmeneti forma: a sejtek között már van bizonyos munkamegosztás, de valódi, egységes eredetű, differenciálódott szövetek még nem alakulnak ki. A vörös-, barna- és zöldmoszatok - hasonlóan a korábban (Egysejtű eukarióták fejezet) megismert egysejtű példákhoz - szintén a Protiszták országába tartoznak, annak ellenére, hogy testfelépítésük (teleptest) már összetettebb az egysejtű formáknál. A vörösmoszatok és a barnamoszatok szinte kizárólag tengeri élőlények, teleptestük gyakran méteres nagyságot is elérhet (pl. az óriás barnamoszatok), míg a zöldmoszatok - amelyeket korábban (Sejtfonalak fejezet) fonalas formájukban is megismertünk - édesvízben és tengerben egyaránt előfordulnak.',
+                  'A kalapos gombák teleptestét (termőtestét) - amit köznyelvben "gombának" nevezünk - szintén nem valódi szövetek, hanem összefonódott hifák alkotják; ezt a szövetszerű, de nem valódi szövetből álló felépítést álszövetnek nevezzük. A termőtest feladata a spóraképzés és -szórás: a kalap alsó felén (lemezeken vagy csövecskékben) képződnek a spórák, amelyek innen szóródnak szét.',
+                ],
+              },
+              {
+                heading: 'A mohák testfelépítése',
+                paragraphs: [
+                  'A mohák - a teleptestes szerveződésnél már bonyolultabb, de a valódi szövetes növényeknél (harasztok, magvas növények) egyszerűbb testfelépítésű csoport - nem rendelkeznek valódi gyökérrel, csak rizoidoknak nevezett, egyszerű rögzítőképletekkel, és hiányzik belőlük a szállítószövet is - emiatt méretük néhány centiméterre korlátozódik.',
+                  'Társulásokban gyakran úttörő (pionír) szerepet töltenek be: csupasz sziklafelszíneken, leégett területeken elsőként telepednek meg, elősegítve a talajképződést. A tőzegmohák (Sphagnum) kiemelkedő vízmegkötő képességükkel tőzeglápokat hoznak létre, amelyek jelentős szén-raktárak.',
+                ],
+              },
+              {
+                heading: 'A szivacsok: szövet nélküli testfelépítés az állatvilágban',
+                paragraphs: [
+                  'A szivacsok a korábban (A gombák, növények, állatok elkülönülése fejezet) bevezetett Állatok országának első konkrét képviselői ebben a tananyagban - rendszertani helyük a Szivacsok törzse (Porifera). Testüket pórusok hálózzák be, amelyeken keresztül vizet szűrnek át - ezt a folyamatot a testfalukat bélelő, ostoros gallérsejtek hajtják, amelyek egyúttal a vízáramban lévő táplálékrészecskéket fagocitózissal (ahogy azt az Egysejtű eukarióták fejezetben már megismertük) be is kebelezik.',
+                  'A vázsejtek mésztűket, kovatűket vagy rugalmas fehérjerostokat választanak ki, amelyek megtartják a test alakját, az amőboid sejtek pedig - alakváltoztató mozgásukkal - a tápanyagokat szállítják a test különböző pontjaira. Bár ezek a sejttípusok már egyértelmű munkamegosztást mutatnak, a szivacsoknak sincsenek valódi, elkülönült szöveteik vagy szerveik.',
+                ],
+              },
+              {
+                heading: 'A gyilkos galóca: azonosítás és a mérgezés veszélyei',
+                paragraphs: [
+                  'A gyilkos galóca (Amanita phalloides) Magyarország egyik legveszélyesebb, halálosan mérgező gombafaja. Azonosítására szolgáló legfontosabb bélyegek: fehér lemezek, a tönk felső részén egy fehér gallér (gyűrű), a tönk alján pedig egy hüvelyszerű képlet (volva, "bocskor") - ezek együttes megléte a legbiztosabb figyelmeztető jel, függetlenül a kalap színétől, amely zöldes-olívától akár fehéresig is változhat.',
+                  'A mérgezés különösen veszélyes, mert a tünetek (hasi görcs, hányás, hasmenés) csak jelentős késéssel, jellemzően 6-24 órával a fogyasztás után jelentkeznek - mire ezek megjelennek, a méreganyagok már felszívódtak, és súlyos, akár halálos máj- és vesekárosodást okozhatnak. Éppen ezért gomba gyűjtésekor és fogyasztásakor kiemelten fontos a biztos azonosítás.',
+                ],
+              },
+              {
+                heading: 'Gombák gyakorlati és ökológiai jelentősége, zuzmók',
+                paragraphs: [
+                  'Gombászáskor alapvető biztonsági szabály, hogy kizárólag olyan fajt szabad elfogyasztani, amelyet a gyűjtő teljes bizonyossággal felismer - kétség esetén (pl. a gyilkos galócához hasonló fajoknál) a gombát nem szabad megenni. A gombákat szellős, egymástól elkülönített csomagolásban (pl. kosárban, ne műanyag zacskóban) érdemes tárolni és minél előbb feldolgozni, mivel gyorsan romlanak.',
+                  'A korábban (Sejtfonalak fejezet) megismert fonalas gombák gyakorlati jelentősége jelentős: a peronoszpóra és más növénykórokozó gombák elleni védekezés a mezőgazdaság állandó feladata, míg az ecsetpenészből (Penicillium) nyert penicillin az orvostudomány egyik legfontosabb felfedezése. A sütőélesztő - egy egysejtű gombafaj - anyagcseréje (erjedés) teszi lehetővé a kenyér és egyéb tésztafélék megkelesztését: az élesztő a lisztben lévő cukrokat erjeszti, és az eközben keletkező szén-dioxid-buborékok lazítják fel a tésztát - ez ugyanaz az erjedés, amit korábban (Lebontó folyamatok fejezet) az izomsejteknél már megismertünk, csak itt más szervezetnél és más gyakorlati célra.',
+                  'A zuzmók nem önálló fajok, hanem egy gomba és egy alga (vagy cianobaktérium) szoros szimbiózisából létrejövő szervezetek: a gomba vázat és védelmet, az alga (fotoautotróf partnerként) szerves tápanyagot biztosít a közösségnek. A zuzmók rendkívül érzékenyek a levegőszennyezésre, ezért gyakoriságuk és állapotuk egy adott terület levegőminőségének megbízható biológiai indikátora (bioindikátor).',
+                  'A gombák ökológiai szerepük szerint háromfélék lehetnek: lebontók (elhalt szerves anyagot bontanak le), paraziták (élő szervezeteken vagy azok belsejében élősködve táplálkoznak, kárt okozva a gazdaszervezetnek) és szimbionták (pl. a zuzmókban). Kézinagyítóval és mikroszkóppal vizsgálva a lombosmohák leveles szára és a zuzmók testfelépítése (a gomba- és algasejtek elrendeződése) egyaránt jól megfigyelhető és jellemezhető.',
+                ],
+              },
+            ],
+            keyTerms: ['teleptest', 'álszövet', 'rizoid', 'Szivacsok törzse', 'gallérsejt', 'vázsejt', 'amőboid sejt', 'gyilkos galóca', 'zuzmó', 'bioindikátor', 'parazita', 'sütőélesztő'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mohák kétszakaszos egyedfejlődését (életciklusát) kell lépésről lépésre értelmezni, megérteni ennek fejlődéstörténeti jelentőségét, valamint összefüggésbe hozni a mohák testfelépítését a társulásokban elfoglalt helyükkel.',
+            sections: [
+              {
+                heading: 'A mohák kétszakaszos egyedfejlődése',
+                paragraphs: [
+                  'A mohák életciklusában két, egymástól jól elkülönülő nemzedék váltja egymást - ezt korábban (A gombák, növények, állatok elkülönülése fejezet emelt része) generációváltakozásként ismertük meg. A szemmel is jól látható, zöld, leveles "mohapárnát" a haploid nemzedék, a gametofiton alkotja, amely ivarszerveket - petesejtet termelő archegóniumokat és ostoros hímivarsejtet termelő antheridiumokat - fejleszt.',
+                  'A megtermékenyítéshez víz szükséges, mert az ostoros hímivarsejtnek úsznia kell az archegóniumban ülő petesejthez - ez magyarázza, hogy a mohák miért kötődnek szorosan a nedves élőhelyekhez. A megtermékenyítés eredményeként létrejövő diploid zigóta a gametofitonon marad, és ott fejlődik tovább a diploid nemzedékké, a sporofitonná (nyél és spóratok), amely tápanyagait is a gametofitontól kapja.',
+                  'A sporofiton spóratokjában meiózissal haploid spórák keletkeznek, amelyek szétszóródva, kedvező körülmények között új gametofitonná csíráznak ki - ezzel a ciklus újrakezdődik. Fejlődéstörténeti szempontból különösen fontos, hogy a moháknál a haploid gametofiton a domináns, önállóan élő nemzedék, míg a diploid sporofiton attól függ - ez élesen elüt a később (Harasztok, Nyitvatermők, Zárvatermők fejezetek) megismerendő harasztoktól és magvas növényektől, amelyeknél éppen fordított a helyzet: a diploid sporofiton a domináns, önálló nemzedék.',
+                ],
+              },
+              {
+                heading: 'A mohák testfelépítése és társulásokban elfoglalt helye',
+                paragraphs: [
+                  'A mohák - a korábban középszinten megismert rizoidok és a hiányzó szállítószövet miatt - nem képesek a talajból hatékonyan vizet felvenni és azt a testükben nagy távolságra szállítani, ezért méretük néhány centiméterre korlátozódik, és jellemzően nedves, árnyékos élőhelyeken (erdők alján, sziklákon, lápokban) fordulnak elő.',
+                  'Ez a testfelépítésbeli korlátozottság határozza meg a társulásokban elfoglalt helyüket is: a mohák jellemzően úttörő (pionír) fajok, amelyek elsőként telepednek meg csupasz, más növény számára még alkalmatlan felszíneken (sziklákon, leégett területeken), és ezzel elősegítik a talajképződést, megnyitva az utat a később megtelepedő, fejlettebb növények előtt.',
+                ],
+              },
+            ],
+            keyTerms: ['gametofiton', 'sporofiton', 'archegónium', 'antheridium'],
+          },
+        },
       },
       {
-        id: 'novenyvilag-csoportjai',
-        title: 'A növényvilág főbb csoportjai',
+        id: 'harasztok',
+        title: 'Harasztok',
         order: 7,
         isFree: false,
-        estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Teleptest és álszövet fejezet) megismert mohák után a harasztokkal a Növények országának egy fejlettebb, már valódi szövetekkel és szervekkel rendelkező csoportját ismerjük meg - ez a fejezet azt mutatja be, milyen evolúciós "újítások" tették lehetővé a harasztok számára a hatékonyabb szárazföldi életmódot.',
+            sections: [
+              {
+                heading: 'Szövetek és szervek megjelenése - a szállítószövet jelentősége',
+                paragraphs: [
+                  'A páfrányok, a zsurlók és a korpafüvek a Harasztok törzsén belüli, egymástól jól elkülöníthető alcsoportok - mindegyiküknél a spórákat termelő spóratartók (sporangiumok) jellemzően a levelek fonákján, kisebb csomókban helyezkednek el.',
+                  'A harasztok - közéjük tartoznak a páfrányok, a zsurlók és a korpafüvek is - a mohákkal ellentétben már rendelkeznek valódi szállítószövettel, amely a vizet és a tápanyagokat szállítja a növény különböző részei között. Ez az evolúciós "újítás" teszi lehetővé, hogy a harasztok jóval magasabbra nőjenek, mint a szállítószövet nélküli mohák, hiszen a víz és a tápanyagok hatékonyan eljutnak a föld feletti, magasabban lévő részekhez is.',
+                  'A szállítószövet megjelenésével együtt valódi szervek is kialakultak: a gyökér a vízfelvételt és a rögzítést végzi (sokkal hatékonyabban, mint a mohák egyszerű rizoidjai), a szár a szállítást biztosítja és a növényt magasba emeli, a levél pedig a fotoszintézis fő felülete. Ezekkel a szervekkel a harasztok - a mohákkal együtt - immár a Növények országának tagjai, de azon belül egy fejlettebb, szövetes csoportot alkotnak. Méretük és termetük fajonként igen változatos: az apró korpafüvektől egészen a trópusi, akár fákra hasonlító páfrányokig.',
+                ],
+              },
+              {
+                heading: 'Alkalmazkodás a szárazföldi élethez - és ami még hiányzik',
+                paragraphs: [
+                  'A hatékony vízszállítás és a magasabb növekedés jelentős versenyelőnyt biztosít a fényért folyó versengésben - ez magyarázza, hogy a harasztok miért képesek jóval nagyobb, összetettebb testet felépíteni, mint a mohák.',
+                  'A harasztok szaporodása azonban még mindig nem teljesen független a víztől: bár szövetekkel és szervekkel rendelkeznek, spórákkal szaporodnak, és - a mohákhoz hasonlóan - az ostoros hímivarsejtnek a megtermékenyítéshez vízben kell úsznia a petesejthez. Emiatt a harasztok is jellemzően nedves élőhelyekhez (pl. erdők aljához, patakpartokhoz) kötődnek - a víztől teljesen független szaporodás majd csak a következő fejezetben (Nyitvatermők) megismerendő magvas növényeknél jelenik meg.',
+                  'A nagyobb, összetettebb levelek jóval nagyobb felületet biztosítanak a korábban (Fotoszintézis fejezet) megismert fényszakasz és Calvin-ciklus számára, mint a mohák egyszerű, szövetek nélküli "levélkéi" - ez tovább növeli a harasztok energiatermelő hatékonyságát, és hozzájárul ahhoz, hogy nagyobb testet tudjanak felépíteni és fenntartani.',
+                ],
+              },
+              {
+                heading: 'Rendszertani hely és evolúciós jelentőség',
+                paragraphs: [
+                  'A harasztok - a mohákhoz hasonlóan - a Növények országába tartoznak, de a szövetek és szervek megjelenése miatt már önálló, fejlettebb csoportot alkotnak. Mintegy 400 millió évvel ezelőtt jelentek meg, és a szénkorszakban (kb. 300 millió évvel ezelőtt) a Föld első nagy kiterjedésű erdőit alkották - a ma ismert kőszéntelepek jelentős része ezekből az óriási, elpusztult haraszterdőkből képződött.',
+                  'A kőszén elsősorban azért képződhetett ezekből az ősi haraszterdőkből, mert az akkori mocsaras környezetben az elhalt növényi anyag nem tudott teljesen lebomlani, hanem évmilliók alatt, nyomás és hő hatására szénné alakult át - ez az emberiség egyik legfontosabb fosszilis energiaforrásának eredete.',
+                ],
+              },
+            ],
+            keyTerms: ['haraszt', 'szállítószövet', 'páfrány', 'zsurló', 'korpafű'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a harasztok és a - később (Zárvatermők fejezet) részletesen megismerendő - zárvatermők kétszakaszos egyedfejlődését kell összehasonlítani, különös tekintettel a haploid és a diploid szakasz egymáshoz viszonyított arányára és ennek fejlődéstörténeti jelentőségére.',
+            sections: [
+              {
+                heading: 'A haploid és a diploid szakasz aránya a harasztoknál és a zárvatermőknél',
+                paragraphs: [
+                  'A korábban (Teleptest és álszövet fejezet) megismert moháknál a haploid gametofiton volt a domináns, szemmel is jól látható nemzedék. A harasztoknál ez az arány megfordul: a jól ismert, leveles, gyökeres haraszt-növény már a diploid sporofiton, a haploid gametofiton pedig egy apró, rövid életű, gyakran csak néhány milliméteres képlet (előtenyész), amely a talaj felszínén fejlődik ki a kicsírázott spórából, és csak az ivarszerveket (archegónium, antheridium) hordozza.',
+                  'A megtermékenyítéshez a harasztoknál is - a moháknál megismerthez hasonlóan - víz szükséges, hiszen az apró gametofitonon termelődő ostoros hímivarsejtnek úsznia kell a petesejthez. A megtermékenyítés után a zigótából fejlődik ki az immár domináns, jól látható, diploid sporofiton - ez a haraszt-növény, amelyet a mindennapokban "harasztként" ismerünk.',
+                  'A zárvatermőknél ez a folyamat a legszélsőségesebb: a haploid szakasz olyannyira lecsökken, hogy már nem is önálló, szabadon élő képlet, hanem a diploid sporofiton (a virágos növény) testén belül, védett környezetben fejlődik ki néhány sejtből álló formában - ezzel a víztől teljesen független megtermékenyítés is lehetővé válik. Fejlődéstörténeti szempontból ez a tendencia (a haploid szakasz fokozatos visszaszorulása, a diploid szakasz egyre nagyobb dominanciája) jól mutatja a szárazföldi növények evolúciójának egyik fő irányát: a szaporodás egyre inkább függetlenedik a víztől, miközben a fiatal utódot (embriót) egyre hatékonyabban védi és táplálja az anyanövény.',
+                ],
+              },
+            ],
+            keyTerms: ['előtenyész'],
+          },
+        },
       },
       {
-        id: 'allatvilag-csoportjai',
-        title: 'Az állatvilág főbb csoportjai',
+        id: 'nyitvatermok',
+        title: 'Nyitvatermők',
         order: 8,
         isFree: false,
-        estimatedMinutes: 24,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Harasztok fejezet) megismert, még vízhez kötött szaporodású harasztok után a nyitvatermőkkel (pl. fenyőkkel) a magvas növények első csoportját ismerjük meg - ez a fejezet két olyan evolúciós "újítást" mutat be, amelyek végleg függetlenítik a szaporodást a víztől.',
+            sections: [
+              {
+                heading: 'A mag: az embrió védelme és tartalék tápanyaga',
+                paragraphs: [
+                  'A nyitvatermőknél jelenik meg először a mag, amely a harasztok spórájánál sokkal ellenállóbb és "felkészültebb" szaporítóképlet: a magban lévő embriót védőburok veszi körül, és tartalék tápanyag is kíséri, amely a csírázás kezdeti szakaszában táplálja a fejlődő növénykét. A magkezdemény kívülről nincs körülzárva magházzal - innen ered a csoport neve is: nyitvatermő.',
+                  'A spórával szemben a mag jelentős előnye, hogy az embrió a tartalék tápanyagnak köszönhetően akár hosszú, kedvezőtlen időszakokat (pl. szárazságot, telet) is túlélhet nyugalmi állapotban, és csak akkor csírázik ki, amikor a környezeti feltételek ismét kedvezővé válnak - ez sokkal nagyobb túlélési esélyt biztosít, mint a harasztok apró, tartalék tápanyag nélküli spórái.',
+                  'A nyitvatermők jellegzetes szaporítóképletei a tobozok: a hímtobozokban termelődik a pollen (a hímivarsejtet tartalmazó, szél által terjesztett képlet), a nőtobozokban pedig a magkezdemények találhatók. Fontos pontosítani, hogy ez még nem a szó szoros értelmében vett virág - a valódi virágot a következő fejezetben (Zárvatermők) megismerendő csoport "találja fel". Az érettségi anyagok néha lazábban, "virágként" is hivatkoznak a tobozra - ha egy feladatban ezzel a szóhasználattal találkozol, tudd, hogy az valójában a tobozra vonatkozik.',
+                ],
+              },
+              {
+                heading: 'A víztől független szaporodás',
+                paragraphs: [
+                  'A pollen szél általi terjedése (szélbeporzás) kiváltja azt, hogy a hímivarsejtnek - ahogy azt a harasztoknál megismertük - vízben kellene úsznia a petesejthez: a pollenszem a levegőben jut el a nőtobozig, ahol egy pollentömlő nő ki belőle, és ezen keresztül jut el a hímivarsejt közvetlenül a petesejthez. Ez az evolúciós "újítás" teszi lehetővé, hogy a nyitvatermők a harasztoknál jóval szárazabb, kedvezőtlenebb élőhelyeken (pl. hegyvidéki, hideg vagy száraz területeken) is elterjedjenek.',
+                  'A legtöbb nyitvatermő (pl. a fenyők) tűlevelű és örökzöld: a levelek kisebb felülete csökkenti a párologtatás mértékét, ami szintén hozzájárul a szárazabb, hidegebb élőhelyekhez való alkalmazkodáshoz. Jellegzetes hazai és világszerte elterjedt képviselőik az erdeifenyő, a lucfenyő és a jegenyefenyő, de ide tartozik az élő fosszíliaként is emlegetett ginkgo is.',
+                ],
+              },
+              {
+                heading: 'Rendszertani hely és jelentőségük',
+                paragraphs: [
+                  'A nyitvatermők a Növények országán belül önálló törzset alkotnak, és mintegy 300 millió évvel ezelőtt jelentek meg - hosszú ideig, a dinoszauruszok korában ők voltak a szárazföld domináns növényei, mielőtt a később (Zárvatermők fejezet) megismerendő zárvatermők átvették volna vezető szerepüket.',
+                  'Gazdasági jelentőségük ma is jelentős: a fenyőerdők faanyaga az egyik legfontosabb nyersanyag az építőiparban és a papírgyártásban, tűlevelük pedig illóolajokat is tartalmaz, amelyeket többek között a gyógyászatban is felhasználnak. Örökzöld jellegük miatt télen is jelentős szerepet töltenek be az erdei életközösségek táplálék- és élőhelykínálatában.',
+                ],
+              },
+            ],
+            keyTerms: ['nyitvatermő', 'mag', 'toboz', 'pollen', 'szélbeporzás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni, milyen sejtszintű változás tette lehetővé a mag kialakulását: a heterospóriát.',
+            sections: [
+              {
+                heading: 'Heterospória: az út a maghoz',
+                paragraphs: [
+                  'A harasztok - ahogy azt korábban megismertük - egyetlen típusú spórát termelnek, amelyből egy önálló, mindkét ivarszervet (archegónium és antheridium) hordozó előtenyész fejlődik. A nyitvatermőknél ezzel szemben két, egymástól méretben és funkcióban is eltérő spóratípus alakul ki: ezt a jelenséget heterospóriának nevezzük.',
+                  'A kisebb mikrospórákból fejlődik ki a hím gametofiton (amely végül a pollenszemet alkotja), a nagyobb megaspórákból pedig a nő gametofiton, amely a magkezdeményen belül, védett környezetben marad, és soha nem válik önálló, szabadon élő képletté - ellentétben a harasztok előtenyészével. Ez a védett, a sporofitonon belül maradó női gametofiton az, amelyből végül a megtermékenyítés után a mag embriója és a magban tárolt tartalék tápanyag kialakul.',
+                ],
+              },
+            ],
+            keyTerms: ['heterospória', 'mikrospóra', 'megaspóra'],
+          },
+        },
       },
       {
-        id: 'novenyi-szovetek-szervek',
-        title: 'A növények szövetei, szervei',
+        id: 'zarvatermok',
+        title: 'Zárvatermők',
         order: 9,
         isFree: false,
-        estimatedMinutes: 26,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Egyszikűek', 'Kétszikűek'],
+          rows: [
+            ['Sziklevél száma', '1', '2'],
+            ['Levélerezet', 'párhuzamos', 'hálózatos'],
+            ['Gyökérzet', 'szárgyökérrendszer', 'karógyökér'],
+            ['Példa', 'gabonafélék, liliomfélék', 'hüvelyesek, gyümölcsfák'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Nyitvatermők fejezet) megismert magvas növények után a zárvatermőkkel a növényvilág legelterjedtebb, legváltozatosabb csoportját ismerjük meg - ez a fejezet azokat az újabb evolúciós "újításokat" mutatja be, amelyek a zárvatermőket a nyitvatermőknél is hatékonyabb versenyzővé teszik a fényért és a vízért folyó küzdelemben.',
+            sections: [
+              {
+                heading: 'A virág és a zárt magház',
+                paragraphs: [
+                  'A zárvatermőknél jelenik meg először a valódi virág, amelynek része a takarólevelek (a csésze- és a sziromlevelek), amelyek védik a fejlődő ivarszerveket, és sok esetben - feltűnő színükkel, illatukkal - beporzó rovarokat vonzanak, hatékonyabbá téve a beporzást a korábban (Nyitvatermők fejezet) megismert szélbeporzásnál.',
+                  'A virág termőjének felső, ragadós felszíne a bibe, amely megköti a ráhulló pollent. A magkezdemény itt - szemben a nyitvatermőkkel - zárt magházban fejlődik, amely védi a fejlődő magot, majd a megtermékenyítés után maga is átalakul: ez adja a termést.',
+                  'Bár a virág elsősorban a rovarok általi beporzáshoz alkalmazkodott, egyes zárvatermők (pl. a fűfélék, a nyír vagy a tölgy) visszatértek a szélbeporzáshoz - az ő virágaik jellemzően feltűnés nélküliek, illat és színes szirmok nélküliek, hiszen nem kell beporzó állatokat vonzaniuk.',
+                ],
+              },
+              {
+                heading: 'A termés szerepe és a magterjesztés stratégiái',
+                paragraphs: [
+                  'A termés biológiai szerepe a magok védelme és terjesztésének elősegítése. A magterjesztésnek több stratégiája is kialakult: egyes termések húsosak, édesek (pl. a bogyók) - ezeket az állatok megeszik, a bennük lévő magok pedig sértetlenül áthaladnak az emésztőrendszeren, és az ürülékkel távol a szülőnövénytől jutnak új élőhelyre.',
+                  'Más termések szél általi terjedésre specializálódtak (pl. repülőszőrök, szárnyak), míg megint mások horgas, tapadós felszínükkel az állatok szőrébe vagy tollazatába kapaszkodva jutnak el új helyekre. Ez a sokféleség jól mutatja, hogy a termés nem csupán a mag védelmét szolgálja, hanem aktívan hozzájárul a faj elterjedéséhez is.',
+                ],
+              },
+              {
+                heading: 'Szállítócsövek, gyökérszőrök és a Növényismeret könyv használata',
+                paragraphs: [
+                  'A zárvatermők fejlettebb szállítószövete (a szállítócsövek) hatékonyabban juttatja el a vizet és a tápanyagokat a növény minden részéhez, mint a nyitvatermők szállítószövete - ez teszi lehetővé, hogy a zárvatermők között rendkívül magas fák (pl. tölgyek, bükkök) is kialakulhassanak - ami egyben versenyelőnyt is jelent a fényért folyó küzdelemben, hiszen a magasabbra növő egyedek jutnak több napfényhez. A gyökérszőrök - a gyökér felszínét beborító apró, hajszálvékony sejtnyúlványok - jelentősen megnövelik a gyökér felszínét, ezáltal hatékonyabbá téve a vízfelvételt a talajból, versenyelőnyt biztosítva a vízért folyó küzdelemben.',
+                  'Egy adott terület növényeinek megismeréséhez, illetve élőhelyi és ökológiai igényeik jellemzéséhez a Növényismeret könyv (határozókönyv) használata nyújt segítséget - ez a gyakorlati készség lehetővé teszi, hogy a diák önállóan azonosítsa a környezetében élő fajokat, és jellemezze azok élőhelyi igényeit.',
+                ],
+              },
+              {
+                heading: 'A zárvatermők sikere és sokfélesége',
+                paragraphs: [
+                  'A zárvatermők a Növények országán belül a legfiatalabb, de ma messze a legelterjedtebb és legváltozatosabb törzset alkotják: mintegy 250 000 ismert fajukkal a szárazföldi növényvilág túlnyomó többségét ők teszik ki. Sikerességük hátterében éppen az ebben a fejezetben megismert evolúciós újítások (hatékony beporzás, gyors és sokféle magterjesztés, fejlett szállítószövet) állnak.',
+                ],
+              },
+            ],
+            keyTerms: ['virág', 'takarólevél', 'bibe', 'zárt magház', 'termés', 'szállítócső', 'gyökérszőr'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos, kettős megtermékenyítésre vonatkozó emelt szintű követelmény külön fejezetben (Kettős megtermékenyítés) kerül feldolgozásra - itt egy másik, a zárvatermők sokféleségét megalapozó kérdést járunk körül: mi különbözteti meg egymástól a zárvatermők két nagy csoportját, az egyszikűeket és a kétszikűeket.',
+            sections: [
+              {
+                heading: 'Egyszikűek és kétszikűek',
+                paragraphs: [
+                  'A zárvatermők két nagy csoportra oszthatók aszerint, hogy a mag embriója hány sziklevelet (az embrió első, tartalék tápanyagot felhasználó levélkéjét) tartalmaz: az egyszikűeknél (pl. gabonafélék, hagymafélék, liliomfélék) egy, a kétszikűeknél (pl. a legtöbb gyümölcsfa, hüvelyesek, összetettvirágzatúak) két sziklevél fejlődik.',
+                  'A két csoport a levél erezetében is jellemzően eltér: az egyszikűeknél a levélerek párhuzamosan futnak, a kétszikűeknél hálózatosan elágaznak. A gyökérzet felépítése is különbözik: az egyszikűek jellemzően szárgyökérrendszert (sok, hasonló vastagságú gyökeret) fejlesztenek, míg a kétszikűeknél gyakran karógyökér (egy központi, vastag főgyökér és belőle kiinduló oldalgyökerek) alakul ki.',
+                ],
+              },
+            ],
+            keyTerms: ['egyszikű', 'kétszikű', 'sziklevél'],
+          },
+        },
       },
       {
-        id: 'allati-szovetek-szaporodas-viselkedes',
-        title: 'Az állatok szövetei, szaporodása, viselkedése',
+        id: 'kettos-megtermekenyites',
+        title: 'Kettős megtermékenyítés',
         order: 10,
         isFree: false,
-        estimatedMinutes: 28,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } },
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Zárvatermők fejezet) megismert zárvatermőknél a megtermékenyítés különleges, kettős folyamat - ez a fejezet lépésről lépésre mutatja be, hogyan jön létre egyetlen pollentömlőben szállított két spermasejtből egyszerre az embrió és a magot tápláló szövet.',
+            sections: [
+              {
+                heading: 'A pollentömlő és a két spermasejt útja',
+                paragraphs: [
+                  'A bibére hulló pollenszem kicsírázik, és egy hosszú pollentömlőt növeszt, amely a bibeszálon keresztül lenő egészen a magházban lévő magkezdeményig. A pollentömlőben két spermasejt (hímivarsejt) utazik a magkezdeményhez.',
+                  'A magkezdeményben található az embriózsák, amelyben - a petesejt mellett - egy különleges, két sejtmagot (poláris magvakat) tartalmazó központi sejt is található. Amikor a pollentömlő eléri az embriózsákot, mindkét spermasejt egyszerre, két külön megtermékenyítési eseményben vesz részt.',
+                ],
+              },
+              {
+                heading: 'A két megtermékenyítés: embrió és endospermium',
+                paragraphs: [
+                  'Az egyik spermasejt a petesejttel egyesül, létrehozva a diploid zigótát, amelyből a mag embriója fejlődik ki - ez a "hagyományos" megtermékenyítés, amit már a korábban (Osztódás fejezet) megismert állati megtermékenyítésnél is láttunk.',
+                  'A másik spermasejt ezzel egy időben a központi sejt két poláris magjával olvad össze - mivel itt egy haploid spermasejt (n) két haploid poláris maggal (n+n) egyesül, egy különleges, hármas kromoszómakészletű (triploid, 3n) sejtmag jön létre. Ebből fejlődik ki az endospermium, a mag tápanyag-raktározó szövete, amely az embriót táplálja a csírázás kezdeti szakaszában.',
+                ],
+              },
+              {
+                heading: 'Miért "kettős" ez a megtermékenyítés, és miért előnyös?',
+                paragraphs: [
+                  'A folyamatot azért nevezzük kettős megtermékenyítésnek, mert egyetlen pollentömlő két külön megtermékenyítési eseményt indít el egyszerre: az egyik az embriót, a másik a tápanyagraktárt (endospermiumot) hozza létre.',
+                  'Ez energetikailag hatékonyabb stratégia, mint amit a korábban (Nyitvatermők fejezet) megismert nyitvatermőknél láttunk: ott a tápanyagot tároló szövet már a megtermékenyítés ELŐTT kialakul a magkezdeményben, függetlenül attól, hogy egyáltalán sikerül-e a megtermékenyítés. A zárvatermőknél ezzel szemben a tápszövet (endospermium) csak a sikeres megtermékenyítés eredményeként jön létre - így a növény nem "pazarolja" az energiát olyan magkezdeményekre, amelyek végül nem termékenyülnek meg.',
+                  'A folyamat mindössze néhány óra alatt lezajlik, miután a pollentömlő elérte az embriózsákot - ez a gyorsaság is hozzájárul ahhoz, hogy a zárvatermők rendkívül hatékonyan tudjanak szaporodni.',
+                ],
+              },
+              {
+                heading: 'Az endospermium jelentősége az emberi táplálkozásban',
+                paragraphs: [
+                  'Az endospermium nemcsak a csírázó növény számára fontos tápanyagraktár, hanem az emberi táplálkozásban is kiemelkedő szerepet játszik: a gabonaszemek (pl. a búza, a rizs, a kukorica) nagy részét maga az endospermium alkotja, amely keményítőben gazdag, és a liszt fő alapanyagát adja.',
+                  'A kettős megtermékenyítés jelenségét 1898-ban Szergej Nawaschin orosz botanikus fedezte fel és írta le először - ez a felfedezés fontos mérföldkő volt a növényi szaporodásbiológia történetében, hiszen megmutatta, hogy a zárvatermők szaporodása alapvetően eltér minden korábban ismert élőlénycsoportétól.',
+                ],
+              },
+            ],
+            keyTerms: ['pollentömlő', 'embriózsák', 'poláris mag', 'endospermium', 'triploid'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a triploid endospermium genetikai sajátosságait és a jelenség növénynemesítési, gyakorlati alkalmazásait érdemes mélyebben megismerni.',
+            sections: [
+              {
+                heading: 'A triploiditás genetikai sajátosságai és gyakorlati jelentősége',
+                paragraphs: [
+                  'A triploid (3n) endospermium genetikailag különleges: mivel két poláris mag (amelyek ugyanannak az embriózsáknak, tehát ugyanannak az anyanövénynek a sejtmagjai) és egy apai eredetű spermasejt egyesüléséből jön létre, az endospermium genetikai állományának kétharmada anyai, egyharmada apai eredetű - ez eltér a zigóta (és a belőle fejlődő embrió) 50-50%-os arányától.',
+                  'A triploid sejtek jellegzetessége, hogy páratlan kromoszómakészlettel rendelkeznek, ami miatt nem képesek szabályos meiózisra - az endospermium emiatt önmagában nem szaporodóképes szövet, kizárólag tápanyag-raktározó funkciót lát el. Ezt a tulajdonságot a növénynemesítésben is kihasználják: egyes magvatlan gyümölcsök (pl. bizonyos magvatlan görögdinnye-fajták) mesterségesen előidézett triploid növényekből származnak, amelyek - éppen a szabálytalan meiózis miatt - nem képesek életképes magot érlelni.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'szivacsok',
+        title: 'Szivacsok',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Teleptest és álszövet fejezet) megismert szivacsok testfelépítését ebben a fejezetben az állatvilág rendszeres bemutatásának első állomásaként, valamennyi életműködés szempontjából mélyítjük el - a szivacsok a legegyszerűbb testfelépítésű állatok, ezért esetükben számos életműködés hiánya éppúgy tanulságos, mint a jelenléte.',
+            sections: [
+              {
+                heading: 'Testfelépítés és kültakaró',
+                paragraphs: [
+                  'A szivacsok teste - ahogy azt korábban megismertük - pórusokkal átjárt, zsákszerű forma, amelynek belsejében egy központi üreg (spongocoel) található; az ide beáramló, megszűrt vizet a test tetején lévő nagyobb nyíláson (oscŭlum) keresztül lövellik ki. Testük aszimmetrikus vagy csak sugarasan szimmetrikus, és - mivel nincsenek valódi szöveteik - külső rétegüket (kültakarójukat) egyszerű, laposhám-szerű sejtréteg alkotja.',
+                ],
+              },
+              {
+                heading: 'Életműködések: amik hiányoznak, és amik jelen vannak',
+                paragraphs: [
+                  'A szivacsok felnőtt formájukban helyhez kötöttek (szesszilisek): nincs önálló mozgásra képes izomszövetük, egész életüket egy adott ponthoz rögzülve töltik - egyedül a szabadon úszó, ostoros lárvaállapotuk képes helyváltoztatásra. A lárva rövid ideig (néhány órától néhány napig) tartó vándorlás után egy alkalmas felszínhez rögzül, és csak ekkor alakul át a jellegzetes, helyhez kötött felnőtt formává. Táplálkozásukat és a vízáramlás keltését - ahogy azt korábban megismertük - a gallérsejtek végzik, önálló légzőszervük és keringési rendszerük nincs: a gázcsere egyszerű diffúzióval zajlik, a tápanyagokat pedig az amőboid sejtek szállítják sejtről sejtre.',
+                  'Idegrendszerük és érzékszervük sincs: az egyes sejtek önállóan reagálhatnak ingerekre, de nincs olyan összehangoló rendszer, amely az egész testet egységes válaszra késztetné. Szaporodásuk kétféle lehet: ivartalanul bimbózással (rügyezéssel) új egyedeket hozhatnak létre, ivarosan pedig - mivel a legtöbb faj hímnős (egy egyeden belül mindkét ivarsejttípus termelődik) - ivarsejteket bocsátanak a vízbe, ahol a megtermékenyítés végbemegy.',
+                ],
+              },
+              {
+                heading: 'Kapcsolat a környezettel',
+                paragraphs: [
+                  'A szivacsok kizárólag vízi (túlnyomórészt tengeri, néhány fajuk édesvízi) élőlények, hiszen táplálkozásuk és gázcseréjük is a vízáramláson alapul. Kiemelkedő regenerációs képességgel rendelkeznek: ha testük egy darabja leválik vagy szétesik, abból akár egy teljesen új egyed is kifejlődhet - ez a tulajdonság a legtöbb állatcsoportnál sokkal korlátozottabb. Méretük rendkívül változatos: néhány milliméteres formáktól a két métert is elérő óriás szivacsokig terjed.',
+                ],
+              },
+              {
+                heading: 'A szivacsok csoportosítása és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A szivacsokat vázuk anyaga szerint csoportosíthatjuk: a mészszivacsok mésztűkből, az üvegszivacsok kovatűkből, a szarúszivacsok pedig rugalmas fehérjerostokból (spongin) építik fel vázukat. Ez utóbbi csoport képviselői (pl. a mosdószivacs) régóta ismertek az emberi felhasználásban is: természetes vázukat egykor tisztálkodásra és festékfelvitelre használták, mára azonban ezt a szerepet többnyire szintetikus szivacsok vették át.',
+                  'A szivacsok fontos szerepet töltenek be a tengeri életközösségekben is: hatékony vízszűrő képességük hozzájárul a víz tisztításához, üregeik pedig számos más tengeri állatnak (pl. rákoknak, férgeknek) nyújtanak búvóhelyet - ez a fajta együttélés jó példa arra, hogyan alakíthat ki egy helyhez kötött, egyszerű testfelépítésű élőlény is összetett kapcsolatokat a környezetében élő más fajokkal.',
+                ],
+              },
+            ],
+            keyTerms: ['spongocoel', 'oscŭlum', 'szesszilis', 'hímnős', 'mészszivacs', 'üvegszivacs', 'szarúszivacs'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szivacsok testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni - vagyis azt, hogy mi különbözteti meg őket a korábban megismert, még nem állati szerveződési formáktól.',
+            sections: [
+              {
+                heading: 'A szivacsok evolúciós újítása: a sejtszintű munkamegosztás',
+                paragraphs: [
+                  'A szivacsoknál jelenik meg először az állatvilágban a sejtszintű differenciálódás: a test különböző funkciókra specializálódott sejttípusokból épül fel (gallérsejt, vázsejt, amőboid sejt, kültakaró-sejt) - ez az evolúciós újítás önmagában is jelentős előrelépés az egysejtű eukariótákhoz és a teleptestes szerveződésű élőlényekhez képest, hiszen lehetővé teszi, hogy különböző sejtek különböző feladatokat lássanak el egyetlen testen belül.',
+                  'Ugyanakkor a szivacsok testfelépítése még nem éri el a valódi szövetes szerveződés szintjét: a differenciálódott sejtek nem szerveződnek egységes eredetű, összehangoltan működő szövetekké, és nincs idegrendszerük sem, amely az egyes sejtek működését koordinálná. Ez a "hiányzó láncszem" jelöli ki a következő fejezetekben (Csalánozók, Laposférgek) megismerendő állatcsoportok fő evolúciós előrelépését: a valódi szövetek és az első idegsejtek megjelenését.',
+                  'A gallérsejtek szerkezete és működése rendkívül hasonlít a korábban (Egysejtű eukarióták fejezet) megismert egysejtű, ostoros protisztákéhoz - ez a hasonlóság az egyik legerősebb bizonyíték amellett, hogy a többsejtű állatok evolúciósan egy hasonló, ostoros egysejtű ősből alakulhattak ki, amelynek sejtjei fokozatosan differenciálódtak és specializálódtak.',
+                  'A szivacsok kiemelkedő regenerációs képességének hátterében differenciálatlan, ún. archeociták állnak: ezek a sejtek bármelyik specializált sejttípussá (gallérsejtté, vázsejtté, amőboid sejtté) képesek átalakulni, hasonlóan ahhoz, ahogy az emberi szervezet őssejtjei is különböző sejttípusokká fejlődhetnek. Ez a rugalmasság teszi lehetővé, hogy egy szétesett vagy szétvágott szivacs testrészből akár egy teljesen új, működőképes egyed regenerálódjon.',
+                  'A szivacsokat éppen a valódi szövetek hiánya miatt sorolják a Parazoa ("féligállatok") csoportjába, szemben minden más állattörzzsel, amelyek Eumetazoának ("valódi állatoknak") számítanak, mivel rendelkeznek valódi szövetekkel és - legalábbis egyszerű formában - idegrendszerrel. Ez az alapvető megkülönböztetés jelöli ki a következő fejezetben (Csalánozók) tárgyalandó nagy evolúciós ugrást.',
+                ],
+              },
+            ],
+            keyTerms: ['archeocita', 'Parazoa', 'Eumetazoa'],
+          },
+        },
+      },
+      {
+        id: 'csalanozok',
+        title: 'Csalánozók',
+        order: 12,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Szivacsok fejezet) megismert Parazoa csoport után a csalánozókkal (pl. hidra, medúzák, korallok) az Eumetazoák, vagyis a valódi szövetekkel rendelkező állatok első képviselőit ismerjük meg - ez a csoport nem szerepel a hivatalos érettségi követelmény listáján, de a szivacsok és a laposférgek közötti evolúciós lépés megértéséhez fontos áthidaló pont. A csalánozók az Állatok országán belül a Csalánozók törzsét (Cnidaria) alkotják, és kizárólag vízi, túlnyomórészt tengeri élőlények, bár néhány fajuk (pl. a hidra) édesvízben is előfordul.',
+            sections: [
+              {
+                heading: 'Testfelépítés: sugaras szimmetria és a bélüreg',
+                paragraphs: [
+                  'A csalánozók teste - a szivacsokkal ellentétben - már valódi szövetekből épül fel, de csak két csíralemezből (diploblasztikus szerveződés): egy külső sejtrétegből (ektoderma) és egy belső sejtrétegből (entoderma), közöttük egy kocsonyás rétegecskével (mezoglea). Testük sugarasan szimmetrikus: a test középpontján átmenő bármely tengely mentén egyforma félre osztható - ez az első szimmetriaforma, amellyel az állatvilágban találkozunk.',
+                  'Két alapvető testformájuk van: a polip (helyhez kötött, pl. a hidra vagy a tengeri rózsák) és a medúza (szabadon úszó, pl. a tűzmedúza). Mindkét forma középpontjában egyetlen nyílással rendelkező bélüreg (gastrovascularis üreg) található, amely egyszerre szolgál szájnyílásként és végbélnyílásként is.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás és a csalánsejtek',
+                paragraphs: [
+                  'A csalánozók ragadozó életmódot folytatnak: tapogatóikon elhelyezkedő csalánsejtek (nematociszták) segítségével bénítják meg vagy ölik meg zsákmányukat - ezekben a sejtekben egy méreganyaggal töltött, spirálisan feltekeredett tű található, amely érintésre kilövell. Innen ered a csoport neve is.',
+                  'A megbénított zsákmányt a tapogatók a szájnyíláson át a bélüregbe juttatják, ahol emésztőenzimek részlegesen lebontják, majd a sejtek fagocitózissal veszik fel a még meg nem emésztett táplálékrészecskéket - a bélüregben tehát sejten kívüli és sejten belüli emésztés egyaránt zajlik.',
+                ],
+              },
+              {
+                heading: 'Idegrendszer, mozgás és szaporodás',
+                paragraphs: [
+                  'A csalánozóknál jelennek meg először az állatvilágban a valódi idegsejtek, amelyek egy egyszerű, az egész testet behálózó ideghálózatot (nem központosított agyat vagy idegdúcot) alkotnak - ez teszi lehetővé, hogy a test összehangoltan reagáljon az ingerekre, például egyszerre húzza össze tapogatóit veszély esetén.',
+                  'A polipformák helyhez kötöttek, a medúzaformák pedig a testfaluk ritmikus összehúzásával, sugárhajtásszerűen úsznak. Sok fajnál nemzedékváltakozás figyelhető meg a polip és a medúza alak között: a polip ivartalanul (bimbózással) medúzákat hoz létre, a medúzák pedig ivarosan szaporodnak, és az utódból ismét polip fejlődik.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A korallok kolóniában élő polipok, amelyek mészvázat választanak ki maguk köré - ezek a vázak generációkon át felhalmozódva hozzák létre a korallzátonyokat, a tengeri élővilág egyik legfajgazdagabb élőhelyét. A korallzátonyok pusztulása (pl. a tengervíz felmelegedése vagy elsavasodása miatt) súlyos következményekkel jár a rájuk épülő életközösségek számára.',
+                  'Egyes csalánozók (pl. a tűzmedúza vagy egyes korallok) csípése, illetve érintése az emberre nézve is veszélyes lehet: a csalánsejtek mérge fájdalmas, allergiás reakciót vagy - ritkán, néhány trópusi fajnál - akár életveszélyes tüneteket is okozhat.',
+                ],
+              },
+            ],
+            keyTerms: ['Csalánozók törzse', 'csalánsejt', 'polip', 'medúza', 'bélüreg', 'ektoderma', 'entoderma', 'diploblasztikus'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes az itt megismert testfelépítést a szivacsokéval összehasonlítva megérteni, pontosan milyen evolúciós újítások jelennek meg először a csalánozóknál.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a szivacsokhoz képest',
+                paragraphs: [
+                  'A korábban (Szivacsok fejezet) megismert szivacsokhoz képest a csalánozóknál három alapvető evolúciós újítás jelenik meg egyszerre: a valódi szövetek (bár még csak két csíralemezből), a szervezett testszimmetria (sugaras szimmetria, szemben a szivacsok aszimmetrikus vagy csak részlegesen szimmetrikus testével), és a valódi idegsejtek megjelenése.',
+                  'Az ideghálózat kialakulása kulcsfontosságú előrelépés: míg a szivacsoknál az egyes sejtek egymástól függetlenül reagáltak az ingerekre, a csalánozóknál már összehangolt, az egész testre kiterjedő válasz jöhet létre - ez teszi lehetővé például, hogy egy csalánozó egyetlen érintésre az egész testével (nem csak az érintett ponton) reagáljon, gyorsan összehúzva tapogatóit.',
+                  'A sugaras szimmetria is funkcionális előny: mivel a csalánozók (különösen a polipformák) minden irányból érkező ingerre és zsákmányra egyformán "figyelnek", ez a testforma ideális a helyhez kötött vagy lassan mozgó, minden irányból táplálékra leső életmódhoz - ezzel szemben a később (Laposférgek fejezet) megismerendő kétoldali szimmetria már egy határozott mozgásirányhoz igazodó, fejlettebb testfelépítést tesz lehetővé.',
+                ],
+              },
+            ],
+            keyTerms: ['ideghálózat', 'sugaras szimmetria'],
+          },
+        },
+      },
+      {
+        id: 'laposfergek',
+        title: 'Laposférgek',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Csalánozók fejezet) megismert sugaras szimmetriájú állatok után a laposférgekkel az első kétoldalian szimmetrikus állatcsoportot ismerjük meg - ez a fejezet valamennyi életműködés szempontjából bemutatja őket, kiemelt figyelmet fordítva egészségügyi jelentőségükre is.',
+            sections: [
+              {
+                heading: 'Testfelépítés: kétoldali szimmetria és bőrizomtömlő',
+                paragraphs: [
+                  'A laposférgek három nagy csoportra oszthatók: az örvényférgek (pl. a planária) szabadon élnek, a mételyek és a galandférgek pedig élősködő életmódot folytatnak. Az Állatok országán belül a Laposférgek törzsét (Platyhelminthes) alkotják. Testük lapított, szalagszerű, és - a csalánozók sugaras szimmetriájával szemben - kétoldalian szimmetrikus: a test csak egyetlen síkban osztható két egyforma (tükörképi) félre. Ez a testforma teszi lehetővé az egyértelmű elülső-hátulsó, hasi-háti és jobb-bal irányok megkülönböztetését.',
+                  'A laposférgeknél jelenik meg elsőként a valódi izomszövet: a bőr és az alatta lévő izomrétegek egybefonódva bőrizomtömlőt alkotnak, amely lehetővé teszi a test összehúzódását és a mozgást. Testükben nincs valódi testüreg - a szerveik közötti teret laza kötőszövet (parenchima) tölti ki.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A szabadon élő fajok (pl. a planária) csillós kúszással mozognak, és fejük végén egyszerű szemfoltokkal érzékelik a fényt, amelyek segítségével elkerülik az erős megvilágítást. Az élősködő fajok (pl. a mételyek, galandférgek) ezzel szemben tapadókorongokkal vagy horgokkal rögzülnek a gazdaszervezethez, és gyakran elvesztik mozgásszervüket is.',
+                  'Táplálkozásuk és emésztésük a fajtól függ: a szabadon élő laposférgeknek elágazó, egyetlen nyílással rendelkező bélrendszerük van (hasonlóan a csalánozókéhoz), míg egyes élősködők (pl. a galandféreg) bélrendszer nélkül élnek - a gazda már megemésztett tápanyagát közvetlenül a testfelületükön keresztül szívják fel. Önálló légzőszervük nincs: a szabadon élők diffúzióval, az oxigénszegény bélben élő paraziták pedig jellemzően anaerob úton nyerik energiájukat.',
+                  'Önálló keringési (anyagszállító) rendszerük sincs: mivel testük lapított és vékony, a korábban (Membránok szerepe fejezet) megismert diffúzió önmagában is elegendő ahhoz, hogy a tápanyagok és a gázok eljussanak a test minden sejtjéhez - ez az egyik fő oka annak, hogy a laposférgek teste miért maradt lapos és vékony, szemben a később (Gyűrűsférgek fejezet) megismerendő, már önálló keringési rendszerrel rendelkező, vaskosabb testű állatcsoportokkal.',
+                  'A laposférgeknél jelenik meg elsőként egy valódi kiválasztószerv is: a láng-sejtekből (protonefridiumokból) álló, egyszerű csatornarendszer gyűjti össze és üríti ki a fölösleges anyagokat. Szaporodásuk jellemzően ivaros, és a legtöbb faj hímnős - egyes szabadon élő fajok (pl. a planária) emellett kiemelkedő regenerációs képességgel is rendelkeznek: ha testük egy darabra vágódik, minden egyes darabból önálló, teljes értékű egyed nőhet ki, mert a testükben szétszórtan elhelyezkedő, differenciálatlan sejtek (neoblasztok) bármelyik szövettípussá képesek átalakulni.',
+                ],
+              },
+              {
+                heading: 'Egészségügyi jelentőségük',
+                paragraphs: [
+                  'A laposférgek közül számos faj élősködik emberben vagy más gerincesekben, jelentős egészségügyi kockázatot jelentve. A galandférgek a vékonybélben élnek, és a nem megfelelően hőkezelt hús fogyasztásával kerülhetnek az emberi szervezetbe; a mételyek pedig gyakran szennyezett vízzel vagy alulfőzött halhússal terjednek.',
+                  'A galandféreg-fertőzés sokáig tünetmentes maradhat, vagy enyhe hasi panaszokat, fogyást okozhat - a fertőzés felismerése ezért gyakran csak a székletben megjelenő ízek (a galandféreg testének leváló szakaszai) észlelésekor történik meg. A megelőzés legfontosabb eszközei a húsok alapos átsütése/átfőzése és a rendszeres kézmosás.',
+                ],
+              },
+            ],
+            keyTerms: ['Laposférgek törzse', 'kétoldali szimmetria', 'bőrizomtömlő', 'parenchima', 'láng-sejt', 'planária', 'galandféreg', 'neoblaszt'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a laposférgek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert csalánozókhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a csalánozókhoz képest',
+                paragraphs: [
+                  'A csalánozóknál megismert diploblasztikus (két csíralemezű) szerveződéshez képest a laposférgeknél megjelenik a harmadik csíralemez, a mezoderma - ez a triploblasztikus szerveződés teszi lehetővé a valódi izomszövet (bőrizomtömlő) és a belső szervek (pl. a kiválasztószerv) kialakulását, amelyek a csalánozóknál még nem léteztek.',
+                  'A valódi izomréteg sokkal célzottabb és hatékonyabb mozgást tesz lehetővé, mint a csalánozók egyszerű, az egész testfalra kiterjedő összehúzódása: a laposférgek izomrostjai különböző irányokban (hosszanti, körkörös, ferde rétegekben) rendezettek, ami finomabb, irányított mozgásformákat tesz lehetővé.',
+                  'A kétoldali szimmetria megjelenése szoros összefüggésben áll egy másik fontos evolúciós újítással, a cephalizációval: mivel egy kétoldalian szimmetrikus, meghatározott irányba mozgó állatnál van "eleje" és "hátulja", előnyös, ha az érzékszervek (pl. a szemfoltok) és az idegi irányítás (agydúc, idegkötegek) a mozgás irányában lévő elülső testvégen összpontosulnak - ez ellentétben áll a csalánozók sugarasan szimmetrikus, minden irányból egyformán "figyelő" ideghálózatával.',
+                  'A cephalizáció evolúciós logikája abban áll, hogy egy meghatározott irányba, folytonosan mozgó állat számára az a legelőnyösebb, ha a környezetét először az elülső testrészével "érzékeli" - így a veszélyre vagy a táplálékra még azelőtt reagálhat, hogy a teste nagy része elérné az adott pontot. Ez magyarázza, hogy miért pont az elülső testvégen halmozódtak fel az érzékszervek és az idegi feldolgozó központ, nem pedig valamelyik oldalon vagy a hátulján.',
+                  'Az önálló kiválasztószerv (láng-sejtek) megjelenése is jelentős evolúciós előrelépés: a csalánozóknál a sejtek önállóan, közvetlenül a környezetükbe adták le a fölösleges anyagokat, a laposférgeknél viszont már egy specializált szervrendszer végzi ezt a feladatot - ez a "specializált szervek általi feladatmegoldás" elve, amit a további fejezetekben (Gyűrűsférgek, Rovarok) egyre fejlettebb formákban fogunk viszontlátni.',
+                  'A specializált kiválasztószerv megjelenése azért vált szükségessé, mert a triploblasztikus, mezodermával rendelkező testben a sejtek már nem mindegyike érintkezik közvetlenül a külső környezettel - a testen belül elhelyezkedő sejteknek is el kell jutnia a fölösleges anyagoknak, amit egy kiterjedt csatornarendszer (a láng-sejtek hálózata) tud csak hatékonyan biztosítani, szemben a csalánozók vékony, egysejt-rétegnyi testfalával, ahol minden sejt közvetlenül a környezetbe adhatta le a hulladékanyagot.',
+                ],
+              },
+            ],
+            keyTerms: ['mezoderma', 'triploblasztikus', 'cephalizáció'],
+          },
+        },
+      },
+      {
+        id: 'gyurusfergek',
+        title: 'Gyűrűsférgek',
+        order: 14,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Laposférgek fejezet) megismert lapított testű férgek után a gyűrűsférgekkel egy jóval fejlettebb testfelépítésű csoportot ismerünk meg - esetükben már megjelenik a szelvényezettség és a valódi testüreg is, amelyek alapjaiban új életműködési lehetőségeket nyitnak meg.',
+            sections: [
+              {
+                heading: 'Testfelépítés: szelvényezettség és testüreg',
+                paragraphs: [
+                  'A gyűrűsférgek (pl. a földigiliszta) az Állatok országán belül a Gyűrűsférgek törzsét (Annelida) alkotják. Testük jellegzetesen szelvényezett (metamer): egymást követő, egymáshoz hasonló felépítésű gyűrűkből (szelvényekből) áll, amelyek mindegyike tartalmazza a fontosabb szervek egy-egy példányát (pl. idegdúcot, kiválasztószervet).',
+                  'A laposférgekkel ellentétben a gyűrűsférgeknek már valódi testüregük (coelomájuk) van: a mezoderma két rétege között kialakuló, folyadékkal telt üreg, amely hidrosztatikus vázként funkcionál - a benne lévő folyadék nyomása és az izmok együttes munkája teszi lehetővé a szelvényenkénti, hullámzó mozgást.',
+                  'A test elülső végén (fejtájékon) koncentrálódnak az érzékszervek és az agydúc - ugyanaz a jelenség, amit a korábban (Laposférgek fejezet) megismert szemfoltok és agydúc elülső elhelyezkedésénél már megfigyeltünk, csak itt szelvényenkénti idegdúcokkal kiegészülve, fejlettebb formában.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A gyűrűsférgek nedves, csupasz kültakarójukon keresztül lélegeznek (bőrlégzés), egyes vízi fajoknál kopoltyú is kialakult. Mozgásukat a testfalban lévő körkörös és hosszanti izmok, valamint a szelvényenként megjelenő serték (apró tüskeszerű képletek) segítik, amelyek megkapaszkodnak a talajban vagy az aljzatban.',
+                  'Táplálkozásukhoz egy elejétől a végéig egyenes, két nyílással (szájnyílással és végbélnyílással) rendelkező bélcsatorna szolgál - ez a korábban (Csalánozók, Laposférgek fejezet) megismert egy nyílású béléhez képest jelentős előrelépés, mert lehetővé teszi az egyirányú, folyamatos táplálékáramlást és a hatékonyabb, szakaszos emésztést.',
+                  'A gyűrűsférgeknél jelenik meg elsőként a zárt keringési rendszer: a vér mindig erekben áramlik (nem szabadon a testüregben), a hát- és hasi ér közötti keringést pedig összehúzódó, szívszerű érszakaszok tartják fenn. Kiválasztásukat szelvényenként megismétlődő metanefridiumok végzik, idegrendszerüket pedig egy agydúc és egy hasi idegdúclánc alkotja, amely szelvényenként újabb dúcokat tartalmaz.',
+                ],
+              },
+              {
+                heading: 'Szaporodás és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A gyűrűsférgek jelentős része hímnős (pl. a földigiliszta), de a megtermékenyítéshez ekkor is két egyed szükséges: a nyeregöv (clitellum) által termelt váladék segíti az ivarsejtek cseréjét és a peték védelmét. Más csoportjaik (pl. a tengeri soksertéjűek) ivarilag elkülönültek.',
+                  'A földigiliszták kiemelkedő ökológiai és mezőgazdasági jelentőséggel bírnak: a talajban ásva lazítják és szellőztetik azt, elhalt szerves anyagokat dolgoznak fel, ezzel javítva a talaj termékenységét. A piócák évszázadokon át az orvosi "érvágás" eszközei voltak, ma pedig a mikrosebészetben alkalmazzák őket, mivel nyáluk véralvadásgátló anyagot tartalmaz.',
+                ],
+              },
+              {
+                heading: 'Csoportjaik és élőhelyük',
+                paragraphs: [
+                  'A gyűrűsférgek három nagy csoportra oszthatók: a tengerben élő soksertéjűek (pl. a nereis), a talajban élő kevéssertéjűek (pl. a földigiliszta), és az édesvízben vagy szárazföldön élő piócák.',
+                  'Élőhelyük rendkívül változatos: megtalálhatók a tengerekben, az édesvizekben és a nedves talajban egyaránt - közös vonásuk, hogy nedves környezetet igényelnek, mivel bőrlégzésükhöz a kültakaró állandó nedvessége elengedhetetlen. Méretük is széles skálán mozog: a néhány milliméteres fajoktól a több méter hosszúságot is elérő óriás soksertéjűekig terjed.',
+                ],
+              },
+            ],
+            keyTerms: ['Gyűrűsférgek törzse', 'szelvényezettség', 'testüreg', 'serte', 'zárt keringési rendszer', 'metanefridium', 'nyeregöv'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a gyűrűsférgek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert laposférgekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a laposférgekhez képest',
+                paragraphs: [
+                  'A laposférgeknél megismert triploblasztikus, de testüreg nélküli (acoelomata) szerveződéshez képest a gyűrűsférgeknél megjelenik a valódi testüreg (coeloma) - ez a folyadékkal telt üreg hidrosztatikus vázként működik, ami sokkal hatékonyabb, erőteljesebb mozgást tesz lehetővé, mint a laposférgek parenchimával kitöltött, testüreg nélküli teste.',
+                  'A szelvényezettség (metaméria) megjelenése is jelentős evolúciós előny: mivel a test ismétlődő, egymáshoz hasonló egységekből áll, egy-egy szelvény sérülése vagy elvesztése nem feltétlenül veszélyezteti az egész állat életét, és az izomzat szelvényenkénti, egymástól független működése finomabb, hullámzó mozgásformákat tesz lehetővé, mint a laposférgek egységes bőrizomtömlője.',
+                  'A kétnyílású bélcsatorna (a laposférgek/csalánozók egy nyílású béléhez képest) és a zárt keringési rendszer megjelenése együttesen sokkal hatékonyabb anyagcserét biztosít: a folyamatos, egyirányú táplálékáramlás lehetővé teszi, hogy a bél különböző szakaszai specializálódjanak (pl. előemésztés, felszívás, salakanyag-tömörítés), a zárt erekben áramló vér pedig gyorsabban és célzottabban szállítja a tápanyagokat és a gázokat a test minden pontjára, mint a laposférgek egyszerű diffúziója.',
+                  'A testüreg megjelenésének további fontos következménye, hogy lehetővé teszi a belső szervek egymástól független mozgását és fejlődését: mivel a bélcsatorna és a testfal között folyadék van, a bél önállóan mozoghat (perisztaltikus mozgással továbbítva a táplálékot), függetlenül a test külső mozgásaitól - ez a laposférgeknél, ahol a szervek közvetlenül a parenchimába vannak "beágyazva", nem lehetséges.',
+                  'Ezek az evolúciós újítások (testüreg, szelvényezettség, zárt keringés, kétnyílású bél) együttesen tették lehetővé, hogy a gyűrűsférgek jelentősen nagyobb testméretet és összetettebb életműködéseket érjenek el, mint a laposférgek - ez az a fejlődési irány, amelyet a következő fejezetekben (Rovarok, Csigák) még tovább fejlesztett formákban fogunk viszontlátni.',
+                ],
+              },
+            ],
+            keyTerms: ['acoelomata'],
+          },
+        },
+      },
+      {
+        id: 'rovarok',
+        title: 'Rovarok',
+        order: 15,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Gyűrűsférgek (zárt)', 'Rovarok (nyílt)'],
+          rows: [
+            ['A vér útja', 'mindig erekben áramlik', 'részben szabadon a testüregben'],
+            ['Oxigénszállítás', 'a vér feladata', 'nem a vér feladata (trachea végzi)'],
+            ['Szállítás hatékonysága', 'nagyobb, célzottabb', 'kisebb, de energiatakarékosabb'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gyűrűsférgek fejezet) megismert szelvényezett testű férgek után a rovarokkal a Föld legfajgazdagabb állatcsoportját ismerjük meg - testfelépítésük és életműködéseik számos ponton radikálisan eltérnek az addig tárgyalt csoportokétól.',
+            sections: [
+              {
+                heading: 'Testfelépítés: kitines külső váz és a test hármas tagolódása',
+                paragraphs: [
+                  'A rovarok az Állatok országán belül az Ízeltlábúak törzsének (Arthropoda) egy osztályát, a Rovarok osztályát (Insecta) alkotják - ugyanabba a törzsbe tartoznak, mint a rákok vagy a pókok, de méretük, testfelépítésük és élőhelyeik alapján önálló, jól elkülöníthető csoportot alkotnak. Testüket a korábban (Szénhidrátok fejezet) megismert kitinből álló, kemény, merev külső váz (exoszkeleton) borítja, amely véd, de a növekedést is korlátozza: a rovarok időről időre levetik régi vázukat (vedlenek), és csak addig növekednek, amíg az új váz meg nem szilárdul.',
+                  'Testük három fő tagra osztott: fej, tor és potroh. A fejen található a pár csáp (érintés- és szagérzékelésre), valamint az összetett (facetta-) szem. A torhoz kapcsolódik három pár ízelt láb - ez a rovarok egyik meghatározó bélyege -, és sok fajnál egy vagy két pár szárny is, amelyek a repülést teszik lehetővé: a rovarok voltak a Föld első repülésre képes állatai.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A rovarok szájszervei rendkívül változatosak, a táplálék típusától függően: rágó szájszerv (pl. sáskáknál), szívó szájszerv (pl. lepkéknél) vagy szúró-szívó szájszerv (pl. szúnyogoknál) alakult ki. Légzésüket egy sajátos légzőrendszer, a légzőnyílásokon (stigmákon) keresztül a testbe vezető, elágazó légzőcsövek (tracheák) végzik, amelyek közvetlenül a szövetekhez, sejtekhez szállítják az oxigént.',
+                  'Mivel a légzőrendszer közvetlenül ellátja a sejteket oxigénnel, a vérnek (hemolimfának) nem kell oxigént szállítania - ezért a rovaroknál nyílt keringési rendszer alakult ki, szemben a korábban (Gyűrűsférgek fejezet) megismert zárt keringési rendszerrel: a hemolimfa nem csak erekben, hanem szabadon a testüregben is áramlik, egy hátoldali, pulzáló ér ("szív") hajtja körbe. Kiválasztásukat a Malpighi-edények végzik, amelyek a salakanyagokat közvetlenül a bélbe ürítik.',
+                  'Idegrendszerük agydúcból és hasi idegdúcláncból áll, érzékelésüket összetett (facetta-) szemük és csápjaik szolgálják. Szaporodásuk ivaros, ivarilag elkülönült egyedekkel; egyedfejlődésük során teljes átalakuláson (pete-lárva-báb-imágó, pl. lepkéknél) vagy kevésbé teljes átalakuláson (pete-lárva-imágó, pl. sáskáknál) mennek keresztül.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A rovarok szinte minden szárazföldi élőhelyen megtalálhatók, és a Föld ismert állatfajainak több mint felét ők alkotják - sikerességük hátterében részben éppen a testfelépítésük áll: az exoszkeleton csökkenti a párolgás útján történő vízvesztést (ami a szárazföldi életmódhoz nélkülözhetetlen), a szárnyak pedig lehetővé teszik az új élőhelyek gyors elérését és a táplálékforrások, illetve partnerek hatékony felkutatását. Rendkívül sokfélék: közéjük tartoznak a bogarak (a legfajgazdagabb rovarrend), a lepkék, a hártyásszárnyúak (pl. méhek, hangyák), az egyenesszárnyúak (pl. sáskák) és a kétszárnyúak (pl. legyek, szúnyogok) is - mindegyik rend jellegzetes szájszervvel, szárnyfelépítéssel és életmóddal rendelkezik.',
+                  'Kiemelkedő ökológiai szerepük van beporzóként (pl. a méhek a virágos növények megtermékenyítésében) - a méhek emellett társas rovarok is: egy kaptárban több ezer egyed él együtt, szigorú munkamegosztásban (dolgozók, herék, királynő). Mezőgazdasági kártevőként (pl. egyes lepke- és bogárfajok hernyói) és betegségterjesztőként (pl. a szúnyogok a malária kórokozóját terjesztik) is jelentősek lehetnek.',
+                ],
+              },
+            ],
+            keyTerms: ['Rovarok osztálya', 'exoszkeleton', 'trachea', 'nyílt keringési rendszer', 'Malpighi-edény', 'teljes átalakulás', 'kevésbé teljes átalakulás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a rovarok testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert gyűrűsférgekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a gyűrűsférgekhez képest',
+                paragraphs: [
+                  'A gyűrűsférgek lágy, izmos testfalával szemben a rovaroknál megjelenik a merev, kitines külső váz - ez egyfelől hatékonyabb védelmet nyújt a kiszáradással és a ragadozókkal szemben, másfelől viszont, mivel nem tud folyamatosan növekedni vele a test, szakaszos növekedést (vedlést) tesz szükségessé. Ez egy fontos "kompromisszum" az evolúció során: a védelem előnyéért cserébe a folyamatos növekedés lehetőségét kellett feladni.',
+                  'A tracheás légzőrendszer megjelenése lehetővé tette, hogy a rovarok lemondjanak a korábban (Gyűrűsférgek fejezet) megismert, hatékony, zárt keringési rendszerről anélkül, hogy ez az oxigénellátás rovására menne - ez egy érdekes, evolúciós "visszalépésnek" tűnő, valójában mégis funkcionálisan indokolt megoldás: mivel a légzőrendszer közvetlenül, a véren "megkerülve" látja el a sejteket oxigénnel, a nyílt keringési rendszer energetikailag "elég jó" maradt, nem volt szükség a zárt rendszer fenntartására.',
+                  'A szárny és a repülőképesség megjelenése az egyik legjelentősebb evolúciós újítás az egész állatvilág történetében: a rovarok voltak az első élőlények, amelyek aktív repülésre voltak képesek, ez pedig drámaian megnövelte élőhely-választási és táplálékkeresési lehetőségeiket, valamint segítette elterjedésüket és a ragadozók előli menekülésüket.',
+                  'A teljes átalakulás (metamorfózis) evolúciós előnye, hogy a lárva és az imágó (kifejlett egyed) különböző élőhelyeken élhet és különböző táplálékot fogyaszthat - ezzel elkerülhető a lárvák és a felnőttek közötti táplálékért folyó verseny, és mindkét életszakasz a rá legjellemzőbb feltételekhez optimálisan alkalmazkodhat. A kevésbé teljes átalakulással fejlődő rovaroknál (pl. a sáskáknál) ez a különbség kisebb: a lárva már kis méretben is hasonlít a kifejlett egyedre, és ugyanazt a táplálékot fogyasztja, mint a szülei.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'csigak',
+        title: 'Csigák',
+        order: 16,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Rovarok fejezet) megismert Ízeltlábúak törzse után a csigákkal egy másik nagy állattörzs, a Puhatestűek (Mollusca) képviselőit ismerjük meg - testfelépítésük gyökeresen eltér a rovarokétól, annak ellenére, hogy mindkét csoport a fejlettebb, testüreggel rendelkező állatok közé tartozik. A Puhatestűek törzse a Föld egyik legfajgazdagabb állattörzse a rovarok után, amelybe a csigákon kívül a kagylók és a fejlábúak (pl. polipok, tintahalak) is tartoznak.',
+            sections: [
+              {
+                heading: 'Testfelépítés: fej, láb, zsigerzacskó és a héj',
+                paragraphs: [
+                  'A csigák az Állatok országán belül a Puhatestűek törzsének (Mollusca) egy osztályát, a Csigák osztályát (Gastropoda) alkotják. Testük három fő részre tagolódik: a fejen tapogatók és szemek találhatók, az izmos lábon (erről kapták nevüket) hullámzó összehúzódásokkal csúsznak, a zsigerzacskóban pedig a belső szerveik helyezkednek el.',
+                  'A legtöbb csigafaj testét csavart, mészből álló héj védi, amelyet egy különleges szövet, a köpeny választ el a zsigerzacskótól, és amely magát a héjat is elválasztja (kiválasztja). A köpeny alatt kialakuló köpenyüreg vízi fajoknál a kopoltyút, szárazföldi fajoknál (pl. az éti csigánál) pedig egy erezett, "tüdőként" funkcionáló felületet rejt, amellyel a csiga levegőt lélegzik.',
+                  'Méretük fajonként igen eltérő: néhány milliméteres apró csigáktól egészen a több tíz centiméteres, óriásira növő tengeri fajokig terjed. Veszély esetén sok csigafaj teljesen visszahúzódik a héjába, amelyet egy szaruszerű fedél (operculum) zár el.',
+                ],
+              },
+              {
+                heading: 'Táplálkozás, mozgás és egyéb életműködések',
+                paragraphs: [
+                  'A csigák egyedi táplálkozási szerve a radula (reszelőnyelv): egy kitines, apró fogacskákkal borított szalag, amellyel lekaparják vagy feldarabolják táplálékukat - ez lehet növényi (pl. levelek) vagy állati eredetű, fajtól függően. Mozgásukat izmos talpuk hullámzó összehúzódásai és az általuk termelt nyálka segíti, amely csökkenti a súrlódást a talaj felszínén.',
+                  'Keringési rendszerük - a korábban (Rovarok fejezet) megismerthez hasonlóan - nyílt: egy egyszerű szív pumpálja a vért az erekbe, majd onnan a testüregbe. Idegrendszerüket több pár idegdúc alkotja, érzékszerveik (tapogatók, egyszerű szemek) a fejükön koncentrálódnak. Legtöbbjük hímnős, ivaros szaporodással.',
+                  'Egyedfejlődésük során jellegzetes jelenség a torzió: a zsigerzacskó és a köpenyüreg mintegy 180 fokban elcsavarodik a fej-láb tengelyhez képest - emiatt a végbélnyílás és a köpenyüreg a test elülső részére kerül, ami befolyásolja a belső szervek, köztük az idegrendszer elrendeződését is.',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A csigák három nagy csoportra oszthatók: a tengeri csigák (pl. a kürtcsigák), az édesvízi csigák (pl. a fűszálcsiga) és a szárazföldi, tüdővel lélegző csigák (pl. az éti csiga vagy a héj nélküli meztelen csigák).',
+                  'A csigák a legváltozatosabb élőhelyeken fordulnak elő: tengerben, édesvízben és szárazföldön egyaránt megtalálhatók. Egyes fajaik jelentős mezőgazdasági kártevők (kerti növények leveleit rágják le), mások élelmiszerforrásként hasznosulnak (pl. az éti csiga), néhány vízi csigafaj pedig köztigazdaként vesz részt a korábban (Laposférgek fejezet) megismert mételyek fejlődési ciklusában.',
+                ],
+              },
+            ],
+            keyTerms: ['Puhatestűek törzse', 'Csigák osztálya', 'köpeny', 'köpenyüreg', 'radula', 'torzió'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a csigák testfelépítésében megjelenő egyedi evolúciós újításokat, valamint ezek előnyeit és hátrányait kell elemezni, összefüggésbe hozva őket a Puhatestűek törzsének közös alaptervével.',
+            sections: [
+              {
+                heading: 'A torzió és a héj evolúciós előnyei és hátrányai',
+                paragraphs: [
+                  'A torzió evolúciós előnye, hogy az elcsavarodás következtében a köpenyüreg (és benne az érzékeny kopoltyú) a test elülső részére kerül - így egy esetleges veszély esetén a csiga fejjel előre húzódhat vissza a héjába, és a legsebezhetőbb testrészei (a fej és a légzőszerv) kerülnek először védett helyzetbe.',
+                  'A torziónak azonban van egy jelentős hátránya is: mivel a végbélnyílás is a test elülső részére kerül, a csiga saját salakanyaga a fej és a légzőszerv közelébe kerülhet - ez higiéniai szempontból hátrányos, ezért egyes csigacsoportoknál (pl. egyes tengeri "meztelen csigáknál") az evolúció során másodlagosan részleges detorzió (visszacsavarodás) ment végbe.',
+                  'A mészhéj kialakítása és fenntartása jelentős energiabefektetést igényel a csiga részéről, cserébe viszont hatékony védelmet nyújt a kiszáradással és a ragadozókkal szemben. Egyes csigacsoportok (pl. a meztelen csigák) evolúciósan lemondtak a héjról - ez energiát takarít meg, cserébe viszont sebezhetőbbé teszi őket, ami gyorsabb mozgással vagy más védekezési stratégiákkal (pl. nyálkatermeléssel, rejtőszínnel) kompenzálódik.',
+                ],
+              },
+              {
+                heading: 'A Puhatestűek közös alapterve',
+                paragraphs: [
+                  'A köpeny és a belőle kiválasztott héj a Puhatestűek törzsének egyik legjellemzőbb evolúciós újítása: ugyanez az alapterv (fej-láb-zsigerzacskó-köpeny) módosul a törzs más osztályaiban is - a következő fejezetben (Kagylók) megismerendő kagylóknál például a láb ásásra specializálódott, a fej pedig nagyrészt visszafejlődött, mivel a kagylók szűrve táplálkoznak, és nincs szükségük aktív táplálékkeresésre.',
+                  'A radula szintén egyedülálló a Puhatestűek körében: az állatvilágban kizárólag a csigákban és a fejlábúakban (pl. polipokban) alakult ki ez a fajta, kitines fogacskás reszelőszerv - ez az egyik legerősebb bizonyíték a közös eredetre, annak ellenére, hogy testfelépítésük felnőttkorra igen eltérővé válik. A kagylóknál a radula másodlagosan hiányzik: mivel ők - ahogy azt fentebb említettük - szűrve táplálkoznak, nincs szükségük szilárd táplálék lekaparására vagy feldarabolására, ezért ez a szerv az evolúció során elveszett náluk.',
+                ],
+              },
+            ],
+            keyTerms: ['detorzió'],
+          },
+        },
+      },
+      {
+        id: 'kagylok',
+        title: 'Kagylók',
+        order: 17,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Csigák fejezet) megismert Puhatestűek törzsének másik jelentős osztályát, a kagylókat (Bivalvia) ismerjük meg ebben a fejezetben - testfelépítésük és életmódjuk jelentősen eltér a csigákétól, annak ellenére, hogy ugyanabból az alaptervből (fej-láb-zsigerzacskó-köpeny) fejlődtek ki, és jól illusztrálja, hogyan alakíthatja át az evolúció ugyanazt az alapszerkezetet egy egészen más életmódhoz igazodva.',
+            sections: [
+              {
+                heading: 'Testfelépítés: két héjlemez és a redukált fej',
+                paragraphs: [
+                  'A kagylók az Állatok országán belül a Puhatestűek törzsének (Mollusca) egy osztályát, a Kagylók osztályát (Bivalvia) alkotják. Testüket két, zsanérral összekapcsolt mészhéj (teknő) védi, amelyet záróizmok tartanak zárva - ezek elernyedésekor a héj rugalmas szalagja (a zsanérszalag) nyitja szét a két teknőt. Veszély esetén a záróizmok gyors összehúzódásával a kagyló másodpercek alatt bezárhatja héját, ezzel védve puha testét.',
+                  'A kagylóknál - szemben a korábban (Csigák fejezet) megismert csigákkal - a fej szinte teljesen visszafejlődött, radulájuk (reszelőnyelvük) sincs: mivel szűrve táplálkoznak, nincs szükségük aktív táplálékkeresésre vagy -feldarabolásra. Ahogy azt a Csigák fejezet emelt részében is megismertük, ez nem "hiányosság", hanem a szűrve táplálkozó életmódhoz való tökéletes alkalmazkodás eredménye. Lábuk ásásra módosult, ék alakú - ezzel fúrják be magukat a puha aljzatba (homokba, iszapba).',
+                  'Méretük igen változatos: néhány milliméterestől a több mint egy méteres, óriási méretű óriáskagylóig terjed. Szinte kizárólag vízi (tengeri és édesvízi) élőlények, a szárazföldi élethez nem alkalmazkodtak.',
+                ],
+              },
+              {
+                heading: 'Életműködések: a szűrögető táplálkozás',
+                paragraphs: [
+                  'A kagylók kopoltyúja kettős feladatot lát el: a légzés mellett a táplálkozásban is kulcsszerepet játszik - a köpenyüregen átáramló vízből a kopoltyú szűri ki a lebegő planktont és szerves törmeléket, amelyet aztán a szájba továbbít. Ez a szűrögető (filtráló) táplálkozási mód rendkívül hatékony: egyetlen kagyló naponta akár több tíz liter vizet is átszűrhet.',
+                  'Keringési rendszerük - a korábban megismert csigákéhoz hasonlóan - nyílt. A legtöbb faj helyhez kötött vagy csak lassan mozog, beásva magát az aljzatba, de néhány faj (pl. a fésűkagyló) a két héjlemez gyors összecsapásával rövid távolságokra "úszni" is képes. Idegrendszerük a redukált fejnek megfelelően egyszerű, nincs koncentrált agydúcuk; érzékszerveik is egyszerűek, bár néhány fajnál (pl. a fésűkagylónál) apró szemek találhatók a köpeny szélén. Szaporodásuk ivaros, sok tengeri fajnál szabadon úszó lárvaformával (veliger lárva).',
+                ],
+              },
+              {
+                heading: 'Ökológiai és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A kagylók fontos ökológiai szerepet töltenek be vízszűrőként: hatékonyan tisztítják a vizet, amelyben élnek, és mivel felhalmozzák a vízben lévő szennyezőanyagokat, kiválóan alkalmasak a vízminőség biológiai jelzésére (bioindikátorként). Gyakorlati jelentőségük is jelentős: sok faj (osztriga, kagyló, fésűkagyló) fontos élelmiszerforrás.',
+                  'A gyöngykagylóknál a gyöngyképződés úgy indul el, hogy egy idegen test (pl. egy homokszemcse vagy parazita) kerül a köpeny és a héj közé - a kagyló ekkor gyöngyházanyaggal vonja be az idegen testet, réteg réteg után, és ez a folyamat hozza létre a gyöngyöt.',
+                ],
+              },
+            ],
+            keyTerms: ['Kagylók osztálya', 'zsanérszalag', 'szűrögető táplálkozás', 'veliger lárva'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, hogyan magyarázható evolúciósan a kagylók "leegyszerűsödött" testfelépítése a korábban megismert csigákhoz és rovarokhoz képest.',
+            sections: [
+              {
+                heading: 'Miért "egyszerűsödött" a kagylók testfelépítése?',
+                paragraphs: [
+                  'A kagylók fej- és idegrendszer-redukciója első pillantásra "visszafejlődésnek" tűnhet a korábban (Csigák, Rovarok fejezetek) megismert cephalizációs tendenciához képest, valójában azonban ez egy funkcionálisan tökéletesen indokolt evolúciós alkalmazkodás: mivel a kagylók helyhez kötött vagy csak lassan mozgó, szűrve táplálkozó életmódot folytatnak, nincs szükségük az aktív táplálékkereséshez és a gyors, célzott mozgáshoz elengedhetetlen fejlett érzékszervekre és koncentrált idegi irányításra.',
+                  'Ez a jelenség jól mutatja, hogy az evolúció nem feltétlenül halad egy "egyre bonyolultabb, egyre fejlettebb" irányba: egy adott szerv vagy testrész elvesztése vagy egyszerűsödése éppúgy lehet sikeres evolúciós stratégia, mint egy új, összetettebb szerkezet kialakulása, ha az adott életmódhoz jobban illeszkedik. A kagylók sikeressége (a Föld egyik legelterjedtebb és leghosszabb ideje fennmaradó állatcsoportja) önmagában bizonyítja, hogy ez az "egyszerűsödött" testfelépítés hatékony túlélési stratégia.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'elogerinchurosok',
+        title: 'Előgerinchúrosok',
+        order: 18,
+        isFree: false,
+        estimatedMinutes: 10,
+        comparisonTable: {
+          headers: ['Chordata-bélyeg', 'Lárva', 'Kifejlett egyed'],
+          rows: [
+            ['Gerinchúr', 'megvan', 'eltűnik'],
+            ['Neurális cső', 'megvan', 'nagy része eltűnik'],
+            ['Farok', 'megvan', 'eltűnik'],
+            ['Kopoltyúrés', 'megvan', 'megmarad'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert állattörzsek (Szivacsok, Csalánozók, Laposférgek, Gyűrűsférgek, Ízeltlábúak, Puhatestűek) után az előgerinchúrosokkal az első olyan állatcsoportot ismerjük meg, amely már a Gerinchúrosok törzsébe (Chordata) tartozik - ugyanabba a törzsbe, mint a később megismerendő gerincesek. Ez a fejezet nem szerepel a hivatalos érettségi követelményben, de fontos áthidaló pontot jelent a gerinctelenek és a gerincesek között.',
+            sections: [
+              {
+                heading: 'A Gerinchúrosok törzs meghatározó bélyegei',
+                paragraphs: [
+                  'A Gerinchúrosok törzsének minden tagját - legalább egyedfejlődésük valamely szakaszában - négy közös bélyeg jellemzi: a hát mentén húzódó, rugalmas támasztóelem, a gerinchúr (notochord); egy háti elhelyezkedésű, cső alakú idegrendszer, a neurális cső (a korábban megismert hasi idegdúcláncokkal szemben); a garatban található kopoltyúrések; valamint a végbélnyílás mögött elhelyezkedő farok.',
+                  'Ez a négy bélyeg nem feltétlenül van jelen egyszerre a kifejlett egyednél - ahogy azt az előgerinchúrosok példáján rögtön látni is fogjuk -, de az egyedfejlődés legalább egy szakaszában (jellemzően embrionálisan vagy lárvaként) minden gerinchúros esetében megjelenik. Ez a rendszertani kritérium teszi lehetővé, hogy olyan, egymástól látszólag nagyon eltérő élőlényeket, mint az előgerinchúrosok, a fejgerinchúrosok és a gerincesek, egyetlen közös törzsbe soroljunk.',
+                ],
+              },
+              {
+                heading: 'Az előgerinchúrosok: lárvában fejlettebb, mint felnőttkorban',
+                paragraphs: [
+                  'Az előgerinchúrosok (Tunicata, pl. a zsákállatok) mérete jellemzően néhány milliméterestől néhány centiméteresig terjed. Lárvájuk szabadon úszó, ebihalszerű alak, amely mind a négy chordata-bélyeget egyértelműen mutatja: van gerinchúrja, csöves idegrendszere és farka is. A kifejlett egyed ezzel szemben helyhez kötötté válik, elveszti a gerinchúrt és a farkat, testét egy különleges, tunicinnak nevezett anyagból álló köpeny (tok) veszi körül - innen ered a csoport másik neve, a tunikások.',
+                  'A felnőtt előgerinchúrosok szűrve táplálkoznak: a garat kopoltyúrésein átáramló vízből szűrik ki a táplálékot, hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz - ez a hasonlóság azonban két, egymással nem rokon állatcsoportnál, egymástól függetlenül alakult ki.',
+                  'A lárva-felnőtt közötti radikális átalakulás (amely során elvész a gerinchúr, a farok és a csöves idegrendszer nagy része) egyfajta "fordított fejlődésnek" is tekinthető: míg a legtöbb állatnál az egyedfejlődés során egyre összetettebb szerkezetek alakulnak ki, itt éppen a legjellemzőbb chordata-bélyegek tűnnek el a kifejlett formában.',
+                ],
+              },
+              {
+                heading: 'Élőhelyük, szaporodásuk és jelentőségük',
+                paragraphs: [
+                  'Az előgerinchúrosok kizárólag tengeri élőlények, a világ minden óceánjában megtalálhatók, a sekély parti vizektől egészen a mélytengerig. Sok fajuk kolóniákban él, ahol az egyes egyedek közös köpenybe ágyazva, összekapcsolódva szűrik a vizet.',
+                  'Szaporodásuk lehet ivaros (a legtöbb faj hímnős) vagy ivartalan (bimbózással, ami kolóniák kialakulásához vezet). Az ivaros szaporodásból származó, szabadon úszó lárva csak rövid ideig (néhány órától néhány napig) él ebben a formában, mielőtt egy szilárd felszínhez rögzülve átalakulna a helyhez kötött, felnőtt alakká.',
+                  'Az előgerinchúrosok fontos szerepet játszanak a tengeri táplálékláncokban: hatékony vízszűrő tevékenységükkel hozzájárulnak a víz tisztításához, és egyes tengeri állatok (pl. néhány halfaj) táplálékként fogyasztják őket.',
+                ],
+              },
+            ],
+            keyTerms: ['Gerinchúrosok törzse', 'gerinchúr', 'neurális cső', 'kopoltyúrés', 'tunikás'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, milyen evolúciós jelentősége van annak, hogy az előgerinchúrosok lárvája fejlettebb testfelépítésű, mint a kifejlett egyed.',
+            sections: [
+              {
+                heading: 'Az előgerinchúrosok evolúciós jelentősége',
+                paragraphs: [
+                  'Az előgerinchúrosok lárvájának chordata-bélyegei fontos bizonyítékot szolgáltatnak arra, hogy a Gerinchúrosok törzse egy közös, feltehetően szabadon úszó, farokkal és gerinchúrral rendelkező ősi formából alakult ki - az előgerinchúrosoknál ez az "ősi" testfelépítés a lárvastádiumban őrződött meg, míg a kifejlett egyednél a helyhez kötött, szűrve táplálkozó életmódhoz alkalmazkodva visszafejlődött.',
+                  'Ez a jelenség - amikor egy fejlettebb, mozgékonyabb lárvaforma egy egyszerűbb, helyhez kötött felnőtt formává alakul át - érdekes párhuzamot mutat a korábban (Kagylók fejezet) megismert evolúciós "egyszerűsödéssel": mindkét esetben a szűrve táplálkozó, mozgásszegény életmód vezetett hasonló irányú, de egymástól teljesen független (konvergens) evolúciós változáshoz két, egymással nem rokon állatcsoportnál.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'fejgerinchurosok',
+        title: 'Fejgerinchúrosok',
+        order: 19,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Előgerinchúrosok fejezet) megismert, regresszív fejlődésű csoport után a fejgerinchúrosokkal (Cephalochordata, pl. a lándzsahal) egy olyan chordata csoportot ismerünk meg, amely egész életében megőrzi mind a négy chordata-bélyeget - ezzel a gerincesekhez vezető evolúciós út egyik legfontosabb, ma is élő modelljét adja. Míg az előgerinchúrosoknál a fejlettebb forma csak lárvakorban volt jelen, a fejgerinchúrosoknál ez az állapot végleges és állandó marad. Ez a fejezet nem szerepel a hivatalos érettségi követelményben.',
+            sections: [
+              {
+                heading: 'Testfelépítés: a chordata-bélyegek egész életen át',
+                paragraphs: [
+                  'A fejgerinchúrosok az Állatok országán belül a Gerinchúrosok törzsének (Chordata) egyik alsótörzsét, a Cephalochordata-t alkotják. Jellemző képviselőjük (pl. a lándzsahal, Amphioxus) kis, néhány centiméteres, áttetsző, halványsárgás, hal-szerű, lándzsa alakú testű, és a világ sekély tengerpartjainak homokos aljzatán él, a mérsékelt övtől a trópusi tengerekig. Az előgerinchúrosokkal szemben náluk a gerinchúr, a neurális cső, a kopoltyúrések és a farok a teljes életciklus során, egész felnőtt korukban is megmarad - a gerinchúr a test elejétől (innen a csoport neve) egészen a farok végéig végignyúlik.',
+                  'Testük ízekre (szelvényekre) tagolt izomkötegeket (miotómokat) tartalmaz, amelyek a farokizmokkal együtt oldalirányú, hullámzó mozgást tesznek lehetővé - ez az első alkalom a chordaták között, hogy ilyen hatékony, szelvényezett izomrendszer jelenik meg. A miotómok "V" vagy "W" alakú, egymás mögötti ismétlődő elrendezése jól látható az áttetsző testen keresztül, és ugyanazt az alapelvet követi, mint a később megismerendő halak szelvényezett törzsizomzata.',
+                  'Bár nincs igazi feje a gerinceseknél megismert értelemben (nincs koponyája, nincsenek páros érzékszervei), a neurális cső elülső vége már némileg megvastagodott, kezdetleges agyhólyagszerű képletet alkot - ez az agy kialakulásának egyik legkorábbi evolúciós előfutára.',
+                ],
+              },
+              {
+                heading: 'Életmód és jelentőségük',
+                paragraphs: [
+                  'A fejgerinchúrosok jellemzően a tengerfenék homokjába félig beásva élnek, farokkal előre, csak elülső végük (szájnyílásuk) látszik ki - de szükség esetén (pl. zavarás vagy ragadozó közeledtekor) gyorsan ki is tudnak úszni az üledékből, és rövid ideig szabadon is úszkálhatnak, mielőtt visszaásnák magukat. Táplálkozásuk - a korábban (Kagylók, Előgerinchúrosok fejezetek) megismerthez hasonlóan - szűrve történik: a csillós garaton átáramló vízből szűrik ki a táplálékrészecskéket.',
+                  'A fejgerinchúrosokat a gerincesekhez legközelebb álló, ma is élő, gerincoszlop nélküli chordata csoportnak tartják, ezért fontos modellszervezetei az evolúciós fejlődéstannak: vizsgálatukkal sokat megtudhatunk arról, milyen lehetett a gerincesek közvetlen, még gerinctelen őse. Genomjuk viszonylag egyszerű felépítése miatt a génkutatásban is fontos szerepet töltenek be: segítségükkel tanulmányozható, hogyan alakultak ki a gerincesek összetettebb génkészletei egy egyszerűbb, ősi chordata génkészletből - a lándzsahal genomjában megtalálhatók a gerinceseknél megismert legfontosabb génesaládok egyszerűbb, még nem megsokszorozódott elődei is.',
+                  'Szaporodásuk ivaros, ivarilag elkülönült egyedekkel; a megtermékenyítés a vízben, a testen kívül történik, a megtermékenyített petesejtekből szabadon úszó lárvák kelnek ki, amelyek fokozatosan alakulnak át a felnőtt formává.',
+                ],
+              },
+            ],
+            keyTerms: ['Fejgerinchúrosok', 'lándzsahal', 'miotóm'],
+          },
+          emeltExtra: {
+            intro: 'Bár ez a fejezet nem szerepel a hivatalos érettségi követelményben, érdemes megérteni, miért tekinthetők a fejgerinchúrosok a gerincesekhez vezető evolúciós út egyik legfontosabb élő modelljének.',
+            sections: [
+              {
+                heading: 'A fejgerinchúrosok mint a gerincesek felé vezető lépés',
+                paragraphs: [
+                  'A fejgerinchúrosok testfelépítése számos ponton előrevetíti a később megismerendő gerincesek szerveződését: a szelvényezett miotómok a gerincesek törzsizomzatának előfutárai, a neurális cső elülső végén kialakuló kezdetleges agyhólyag pedig az agy kialakulásának első lépését mutatja - mindkét szerkezet a gerinceseknél sokkal összetettebb, differenciáltabb formában jelenik meg, de az alapelv (szelvényezett izomzat, elöl elhelyezkedő idegi központ) már itt is felismerhető.',
+                  'Fontos ugyanakkor hangsúlyozni, hogy a fejgerinchúrosok NEM a gerincesek közvetlen ősei - nem "átmeneti fajok", hanem egy önálló, ma is élő ág, amely valószínűleg egy közös őstől ágazott el a gerincesekkel egy időben. Éppen ezért olyan értékesek a kutatás számára: mivel testfelépítésük évmilliók óta viszonylag keveset változott, egyfajta "élő modellként" segítenek megérteni, milyen lehetett az a közös ős, amelyből mind a fejgerinchúrosok, mind a gerincesek kialakultak.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'csontos-halak',
+        title: 'Csontos halak',
+        order: 20,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Csontos halak', 'Porcos halak'],
+          rows: [
+            ['Váz anyaga', 'csont', 'porc'],
+            ['Úszóhólyag', 'van', 'nincs'],
+            ['Kopoltyúrés', 'kopoltyúfedővel borított', 'nyitott'],
+            ['Fogazat', 'nem cserélődik folyamatosan', 'folyamatosan cserélődik'],
+            ['Megtermékenyítés', 'jellemzően külső', 'jellemzően belső'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Fejgerinchúrosok fejezet) megismert, még gerinchúrral rendelkező csoport után a csontos halakkal a Gerincesek altörzsének (Vertebrata) első képviselőit ismerjük meg - náluk a gerinchúrt egy sokkal erősebb, csontos elemekből álló gerincoszlop váltja fel.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A csontos halak az Állatok országán belül a Gerinchúrosok törzsének (Chordata) egy altörzsét, a Gerincesek (Vertebrata) altörzsét, azon belül pedig a Csontos halak osztályát (Osteichthyes) alkotják. Testük áramvonalas, csontos pikkelyekkel és nyálkaréteggel borított, amely csökkenti az úszás közbeni súrlódást és véd a fertőzésektől.',
+                  'Úszóikat páros (mell- és hasúszó) és páratlan (hát-, farok- és alfarki úszó) csoportba sorolhatjuk - a páros úszók elsősorban a kormányzást és az egyensúlyt, a farokúszó pedig a hajtóerőt biztosítja. Mozgásukat - hasonlóan a korábban (Fejgerinchúrosok fejezet) megismert lándzsahaléhoz - a törzsizomzat oldalirányú, hullámzó összehúzódása hajtja.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'A csontos halak táplálkozása rendkívül sokféle: vannak közöttük ragadozók (pl. a csuka), növényevők (pl. az amur), planktonszűrők (pl. egyes heringfélék) és mindenevők is. Ez a sokféleség a szájuk és fogazatuk jelentős eltéréseiben is megmutatkozik: a ragadozó fajoknak éles, hátrahajló fogaik vannak a zsákmány megragadására, míg a szűrögető fajoknál a kopoltyútüskék finom hálót alkotnak a plankton kiszűrésére - hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz.',
+                  'A csontos halak kopoltyúval lélegeznek, amely a vízben oldott oxigént vonja ki. Keringési rendszerük zárt, egyszerű, kétüregű (egy pitvar és egy kamra) szívvel, amelyen a vér egyetlen körben áramlik át: szív → kopoltyú → test → vissza a szívhez.',
+                  'Egyedi érzékszervük az oldalvonal-szerv, amely a vízben terjedő rezgéseket és áramlásokat érzékeli - ez segíti a tájékozódást, a zsákmány és a ragadozók észlelését, valamint a rajban úszó halak összehangolt mozgását. Szaporodásuk ivaros, ivarilag elkülönült egyedekkel, jellemzően külső megtermékenyítéssel: az ikrát és a haltejet egyaránt a vízbe bocsátják, ahol a megtermékenyítés végbemegy - emiatt rendkívül nagyszámú ivadékot hoznak létre, hiszen a külső fejlődés kockázatos.',
+                ],
+              },
+              {
+                heading: 'Az úszóhólyag',
+                paragraphs: [
+                  'A csontos halak egyedi szerve az úszóhólyag: egy gázzal töltött, a hasüregben elhelyezkedő szerv, amelynek térfogatát a hal szabályozni tudja. Ezáltal energiabefektetés nélkül, lebegve tud egy adott mélységben maradni, anélkül, hogy folyamatosan úsznia kellene a süllyedés elkerülése érdekében.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A csontos halak a gerincesek legfajgazdagabb osztálya: méretük néhány milliméterestől több méteresig terjed, élőhelyük pedig a tengerek, óceánok és édesvizek szinte minden típusára kiterjed. Gazdasági jelentőségük kiemelkedő: a halászat és a haltenyésztés (akvakultúra) világszerte fontos élelmiszerforrást biztosít az emberiség számára.',
+                ],
+              },
+              {
+                heading: 'Kitekintés: a porcos halak',
+                paragraphs: [
+                  'A halak másik nagy csoportja a porcos halak (Chondrichthyes, pl. a cápák és a rájak) - ez a témakör nem szerepel a hivatalos érettségi követelményben, de érdemes röviden összevetni a csontos halakkal. Bár ők is a Gerincesek altörzsébe tartoznak, testfelépítésük több ponton eltér: vázuk nem csontból, hanem rugalmasabb, könnyebb porcból épül fel, és nincs úszóhólyaguk - emiatt vagy folyamatosan úszniuk kell, hogy ne süllyedjenek a mélybe, vagy a tengerfenéken pihennek.',
+                  'További jellegzetességük, hogy kopoltyúréseik nyitottak (nincs kopoltyúfedőjük, mint a csontos halaknak), fogaik folyamatosan cserélődnek egész életük során, és sok fajuknál belső megtermékenyítés jellemző - szemben a csontos halak külső megtermékenyítésével.',
+                ],
+              },
+            ],
+            keyTerms: ['Gerincesek altörzse', 'Csontos halak osztálya', 'oldalvonal-szerv', 'úszóhólyag', 'porcos halak'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a csontos halak testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert fejgerinchúrosokhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a fejgerinchúrosokhoz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás a gerincoszlop megjelenése: a korábban (Fejgerinchúrosok fejezet) megismert rugalmas, de viszonylag "puha" gerinchúrt egymáshoz kapcsolódó, kemény csontos elemekből (csigolyákból) álló gerincoszlop váltja fel. Ez sokkal erősebb, terhelhetőbb támasztékot ad a testnek, védi a gerincvelőt, és lehetővé teszi a jóval nagyobb testméret és erősebb izomzat kialakulását, mint amire a fejgerinchúrosok képesek voltak.',
+                  'Az úszóhólyag megjelenése azért is jelentős evolúciós újítás, mert lehetővé tette a nyílt vízi (pelágikus) élettér meghódítását: a fenékhez kötött, folyamatos úszásra vagy pihenésre kényszerülő porcos halakkal szemben a csontos halak a vízoszlop bármely rétegében energiatakarékosan tartózkodhatnak. A gyors mélységváltás azonban korlátozott: az úszóhólyag gáztérfogatának beállítása (gázmirigyekkel történő gáztermelés vagy -felszívás) viszonylag lassú folyamat, ezért a hirtelen, nagy mélységváltozások (pl. horgászáskor a felszínre húzás) károsíthatják a halat.',
+                  'A kétüregű szív (egy pitvar, egy kamra) és az egyetlen keringési kör egyszerű, de hatékony megoldás egy vízi, kopoltyús légzésű élőlény számára: a szív mindig oxigénszegény vért pumpál a kopoltyú felé, ahol az frissül, majd egyetlen körben jut el a test szöveteihez - ez a rendszer a későbbi, szárazföldi gerincesek fejlettebb, többüregű szívéhez képest egyszerűbb, de a vízi életmódhoz tökéletesen elegendő. Ennek egyik oka, hogy a vízben élő állatnak nem kell a testsúlyát tartania (a víz felhajtóereje ezt megoldja), így kevésbé van szüksége a szárazföldi mozgáshoz elengedhetetlen, nagy nyomású, kétkörös keringésre.',
+                ],
+              },
+            ],
+            keyTerms: ['gerincoszlop', 'csigolya'],
+          },
+        },
+      },
+      {
+        id: 'ketelt-uek',
+        title: 'Kétéltűek',
+        order: 21,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Lárva (ebihal)', 'Kifejlett kétéltű'],
+          rows: [
+            ['Légzés', 'kopoltyú', 'tüdő + bőrlégzés'],
+            ['Mozgás', 'úszás farokkal', 'ugrás/mászás négy végtaggal'],
+            ['Táplálkozás', 'jellemzően növényevő, szűrögető', 'jellemzően ragadozó'],
+            ['Élőhely', 'kizárólag vízi', 'víz és szárazföld (kétlaki)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Csontos halak fejezet) megismert, kizárólag vízi életmódú gerincesek után a kétéltűekkel a Gerincesek altörzsének első olyan osztályát ismerjük meg, amely - bár még szorosan kötődik a vízhez - a szárazföldi élet felé is megtette az első lépéseket.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A kétéltűek (Amphibia) a Gerincesek altörzsének osztálya. Testük fejre, törzsre és két pár végtagra tagolódik; a farkatlan kétéltűeknél (pl. békák) a farok csak lárvakorban van jelen, a farkos kétéltűeknél (pl. gőték, szalamandrák) felnőttkorban is megmarad.',
+                  'Kültakarójuk csupasz, nyálkás bőr, amelyet nyálkamirigyek védenek a kiszáradástól - ellentétben a korábban (Csontos halak fejezet) megismert pikkelyes kültakaróval. Ez a vékony, nedves bőr egyszerre jelent előnyt (légzésre is alkalmas) és korlátot (könnyen kiszárad, ezért kötődnek a nedves élőhelyekhez).',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásukat a két pár végtag biztosítja: a farkatlan kétéltűek erős hátsó végtagjaikkal ugranak, a farkos kétéltűek inkább másznak vagy úsznak. Lárvakorban a mozgás még farokúszóval történik, a csontos halakhoz hasonló módon.',
+                  'Táplálkozásuk életszakaszonként eltérő: a kifejlett kétéltűek jellemzően ragadozók (rovarokat, férgeket, kisebb állatokat fogyasztanak), míg lárváik (pl. az ebihal) jellemzően növényevők vagy mindenevők, gyakran szűrögető táplálkozással - hasonlóan a korábban (Kagylók fejezet) megismert szűrögető táplálkozáshoz.',
+                  'Légzésük kettős: a lárvák kopoltyúval lélegeznek, akárcsak a csontos halak, a kifejlett egyedek viszont már tüdővel is rendelkeznek, amelyet kiegészítő bőrlégzés egészít ki - ez utóbbi teszi szükségessé a bőr folyamatos nedvességét.',
+                  'Anyagszállító rendszerük szíve háromüregű: két pitvarból és egy kamrából áll. Ez lehetővé teszi a kettős vérkör (kis, azaz tüdő-vérkör és nagy, azaz test-vérkör) kialakulását, bár a kamrában - mivel nincs teljes válaszfal - még keveredik az oxigénben gazdag és szegény vér.',
+                  'Szaporodásuk ivaros, jellemzően vízben lerakott ikrával és külső megtermékenyítéssel, bár néhány fajnál belső megtermékenyítés is előfordul. Érzékszerveik közül kiemelendő a pillás szemhéjjal védett szem és a dobhártyával rendelkező hallószerv, amelyek már a szárazföldi érzékeléshez is alkalmazkodtak.',
+                ],
+              },
+              {
+                heading: 'Az átalakulásos egyedfejlődés',
+                paragraphs: [
+                  'A kétéltűek egyedfejlődésére jellemző az átalakulásos fejlődés (metamorfózis): a vízben kikelő, kopoltyúval és farokúszóval rendelkező lárva (pl. ebihal) fokozatosan alakul át tüdővel és négy végtaggal rendelkező, szárazföldön is életképes kifejlett egyeddé - eközben a kopoltyú eltűnik, a tüdő kialakul, és a végtagok megjelennek.',
+                  'Ez az elv - hogy az egyedfejlődés radikális testfelépítés-váltással jár - más állatcsoportoknál is megjelenik: a korábban (Rovarok fejezet) megismert teljes átalakulás (pete-lárva-báb-imágó) hasonlóan gyökeres átépülést jelent, mint ahogy az Előgerinchúrosok fejezetben megismert zsákállatok lárva-felnőtt átalakulása is.',
+                ],
+              },
+              {
+                heading: 'Kétlaki életmód és környezeti kapcsolat',
+                paragraphs: [
+                  'A "kétéltű" elnevezés arra utal, hogy ezek az állatok életük során két közeghez is kötődnek: a szaporodás és a lárvakor jellemzően vízhez kötött (az ikra kiszáradna szárazon), míg a kifejlett egyedek már szárazföldön is élhetnek, bár a nedves bőr miatt a száraz élőhelyeket továbbra is kerülik.',
+                  'Érzékeny, nedves bőrük miatt a kétéltűek a környezetszennyezés és az élőhelyváltozások kiváló jelzőfajai (bioindikátorok): populációik gyors csökkenése gyakran a vízminőség vagy az élőhely romlását jelzi.',
+                  'Bőrük nyálkamirigyei mellett sok fajnál mérgező váladékot termelő mirigyek is találhatók, amelyek a ragadozók elleni védekezést szolgálják - a hazai fajok közül például a foltos szalamandra bőre enyhén mérgező váladékot bocsát ki, míg trópusi rokonaik (nyílméregbékák) közt rendkívül erős mérgeket termelő fajok is akadnak. Hazánkban él például a zöld levelibéka és az erdei béka is, mindkettő jól példázza a kétéltűekre jellemző, vízhez kötött szaporodást.',
+                ],
+              },
+            ],
+            keyTerms: ['Kétéltűek osztálya', 'bőrlégzés', 'átalakulásos egyedfejlődés', 'bioindikátor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a kétéltűek testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert csontos halakhoz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a csontos halakhoz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás a páros végtagok megjelenése: a csontos halak úszóit ízelt csontokból felépülő, a testsúlyt is megtartani képes végtagok váltják fel, amelyek elengedhetetlenek a szárazföldi mozgáshoz.',
+                  'A tüdő megjelenése szintén alapvető újítás: ez teszi lehetővé a levegőből történő oxigénfelvételt, ami a szárazföldi élet előfeltétele. A kétéltűek tüdeje azonban még egyszerű felépítésű, viszonylag kis belső felülettel, ezért önmagában nem elegendő a teljes oxigénigény fedezésére - ez magyarázza, miért maradt fenn kiegészítésként a bőrlégzés.',
+                  'A háromüregű szív és a kettős vérkör megjelenése az első lépés a csontos halak egyszerű, egykörös keringéséhez képest: a tüdő-vérkör és a test-vérkör elkülönülése hatékonyabb oxigénellátást tesz lehetővé, ugyanakkor a kamrában történő vérkeveredés még korlátozza ennek hatékonyságát - ez a probléma a későbbi (Hüllők, Madarak, Emlősök fejezetekben tárgyalt) gerinces csoportoknál fokozatosan oldódik meg a kamra teljes kettéválásával.',
+                  'A kétéltűek szaporodása azonban még jelentős korlátba ütközik: ikrájuk nem rendelkezik magzatburokkal (amnionnal) és szilárd burokkal, ezért kiszáradna a szárazföldön - emiatt a szaporodás és a lárvakor továbbra is vízhez kötött marad. Ez a korlátozás csak a Hüllők fejezetben tárgyalt, magzatburokkal védett (amniota) tojás megjelenésével oldódik meg, amely lehetővé teszi a szaporodás teljes függetlenedését a víztől.',
+                ],
+              },
+            ],
+            keyTerms: ['kettős vérkör', 'háromüregű szív', 'tüdő', 'amnion'],
+          },
+        },
+      },
+      {
+        id: 'hullok',
+        title: 'Hüllők',
+        order: 22,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Kétéltűek', 'Hüllők'],
+          rows: [
+            ['Kültakaró', 'csupasz, nyálkás bőr', 'száraz, szaruréteggel borított pikkelyek'],
+            ['Légzés', 'tüdő + bőrlégzés', 'kizárólag tüdő'],
+            ['Szaporodás/tojás', 'vízhez kötött ikra, nincs magzatburok', 'szárazföldi, amniota tojás magzatburokkal és héjjal'],
+            ['Szív', 'háromüregű, jelentős vérkeveredés', 'háromüregű, részlegesen elkülönült kamra (krokodiloknál négyüregű)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Kétéltűek fejezet) megismert, még vízhez kötött szaporodású csoport után a hüllőkkel a Gerincesek altörzsének azt az osztályát ismerjük meg, amely már teljesen függetlenedett a víztől, és a szárazföld minden élőhelyét képes volt meghódítani.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A hüllők (Reptilia) a Gerincesek altörzsének osztálya. Testük fejre, törzsre, farokra és jellemzően két pár végtagra tagolódik, bár egyes csoportoknál (pl. kígyók) a végtagok az evolúció során visszafejlődtek, és a mozgást testhullámzással oldják meg.',
+                  'Kültakarójuk száraz, szaruréteggel (keratinnal) borított pikkelyekből áll, amely a korábban (Kétéltűek fejezet) megismert csupasz, nyálkás bőrrel szemben szinte teljesen vízzáró - ez teszi lehetővé, hogy a hüllők a legszárazabb élőhelyeken (pl. sivatagokban) is megéljenek anélkül, hogy kiszáradnának.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásukat a négy végtag (kúszás, futás) vagy - végtagok hiányában - a testhullámzás biztosítja. Táplálkozásuk túlnyomórészt ragadozó jellegű (rovarok, kisebb gerincesek elfogyasztása), bár egyes csoportoknál (pl. egyes teknősfajoknál) növényevés is előfordul.',
+                  'Légzésük - a kétéltűekkel ellentétben - kizárólag tüdővel történik, hiszen a szaruréteg miatt a bőrön keresztül már nem lehetséges a gázcsere; ezt a szaruréteg okozta hátrányt a korábbinál fejlettebb, nagyobb belső felületű tüdő ellensúlyozza.',
+                  'Anyagszállító rendszerük szíve háromüregű, de a kamrában már részleges válaszfal található, amely csökkenti (bár nem szünteti meg teljesen) az oxigénben gazdag és szegény vér keveredését a korábban (Kétéltűek fejezet) megismert állapothoz képest; a krokodiloknál a válaszfal már teljes, így szívük gyakorlatilag négyüregű.',
+                  'Szaporodásuk ivaros, belső megtermékenyítéssel, és jellegzetes szárazföldi, amniota tojással történik: a magzatburok (amnion) és a szilárd, mészhéjú vagy bőrszerű héj együtt védi az embriót a kiszáradástól, így a tojás - a kétéltűek ikrájával ellentétben - szárazföldön is fejlődőképes. Érzékszerveik közül kiemelendő a jól fejlett szem, egyes csoportoknál (pl. kígyóknál) a nyelvvel és a szájpadláson lévő Jacobson-szervvel történő kémiai érzékelés, valamint egyes fajoknál (pl. csörgőkígyók) a hőérzékelő szerv.',
+                ],
+              },
+              {
+                heading: 'Környezeti kapcsolat és testhőmérséklet-szabályozás',
+                paragraphs: [
+                  'A hüllők - a kétéltűekhez és a halakhoz hasonlóan - változó testhőmérsékletűek (ektotermek): testhőmérsékletük a környezeti hőmérséklettől függ, ezért gyakran napoznak a testhőmérséklet emelése, illetve árnyékba húzódnak a hűtés érdekében.',
+                  'A vízzel való takarékos gazdálkodást kiválasztásuk is szolgálja: a korábban (Szervetlen molekulák fejezet) megismert kiválasztási típusok közül a hüllők az urikotelikus utat követik, azaz bomlástermékeiket jellemzően kevés vizet igénylő, szilárd húgysav formájában ürítik, ami tovább csökkenti a szervezet vízveszteségét - ez is hozzájárul ahhoz, hogy száraz élőhelyeken is megéljenek.',
+                  'A szárazságtűrő bőr és az amniota tojás együttesen tették lehetővé, hogy a hüllők a Föld szinte minden szárazföldi élőhelyét meghódítsák, a sivatagoktól a trópusi esőerdőkig, és közülük egyes csoportok (pl. tengeri teknősök, krokodilok) másodlagosan vízi életmódra is áttértek.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük',
+                paragraphs: [
+                  'A hüllők közé tartoznak a pikkelyes hüllők (gyíkok, kígyók), a teknősök (páncéllal védett testű, fogatlan, szarukávával táplálkozó csoport) és a krokodilok (a hüllők legfejlettebb keringési rendszerével rendelkező, vízi ragadozó életmódú csoport) - mindegyik csoport jól példázza a szaruréteg és az amniota tojás közös, ám a testfelépítésben és életmódban igen sokféle megvalósulását.',
+                ],
+              },
+            ],
+            keyTerms: ['Hüllők osztálya', 'szaruréteg', 'ektoterm szabályozás', 'Jacobson-szerv'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hüllők testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert kétéltűekhez képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a kétéltűekhez képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás az amniota tojás megjelenése: a magzatburok (amnion) és a szilárd héj együttesen megszüntetik azt a korlátot, amely a korábban (Kétéltűek fejezet) megismert kétéltűek szaporodását még a vízhez kötötte. Ez a fejlemény tette lehetővé, hogy a gerincesek evolúciója során a szaporodás - és ezáltal az egész életciklus - teljesen függetlenedjen a víztől.',
+                  'A száraz, szaruréteggel borított bőr szintén alapvető újítás: a kétéltűek nedves, kiegészítő légzésre is használt bőréhez képest ez a bőrtípus már nem alkalmas gázcserére, cserébe viszont sokkal hatékonyabban gátolja a párolgást - ez a csere (bőrlégzés elvesztése a jobb vízzáró képességért) tette lehetővé a száraz élőhelyek meghódítását.',
+                  'A szív felépítésében is továbblépés történik: a kamra részleges (krokodiloknál teljes) válaszfala csökkenti az oxigénben gazdag és szegény vér keveredését a kétéltűek háromüregű szívéhez képest, hatékonyabb oxigénellátást biztosítva - ez a folyamat a későbbi (Madarak, Emlősök fejezetekben tárgyalt) csoportoknál a kamra teljes kettéválásával és a négyüregű szív kialakulásával fejeződik be.',
+                  'A kiválasztás átalakulása is a víztől való függetlenedést szolgálja: a kétéltűek (és a legtöbb vízi állat) a mérgező ammóniát nagy mennyiségű vízzel hígítva, vagy kevésbé mérgező, de vízoldékony karbamid formájában ürítik, ami folyamatos vízhozzáférést igényel. A hüllők ezzel szemben szilárd, alig oldódó húgysavat választanak ki, amely az amniota tojáson belül is biztonságosan felhalmozható anélkül, hogy mérgezné a fejlődő embriót - ez az anyagcsere-átalakulás elengedhetetlen előfeltétele volt mind a szárazföldi felnőtt életmódnak, mind a szárazföldi tojásrakásnak.',
+                ],
+              },
+            ],
+            keyTerms: ['amniota tojás', 'részlegesen elkülönült kamra', 'húgysav'],
+          },
+        },
+      },
+      {
+        id: 'madarak',
+        title: 'Madarak',
+        order: 23,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Hüllők', 'Madarak'],
+          rows: [
+            ['Testhőmérséklet', 'változó (ektoterm)', 'állandó (endoterm)'],
+            ['Szív', 'háromüregű, részlegesen elkülönült kamra', 'négyüregű, teljesen elkülönült vérkörök'],
+            ['Légzés', 'tüdő', 'tüdő + légzsákok (kettős légzés)'],
+            ['Kültakaró', 'szaruréteges pikkelyek', 'tollazat'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Hüllők fejezet) megismert, még változó testhőmérsékletű csoport után a madarakkal a Gerincesek altörzsének azt az osztályát ismerjük meg, amely a repülésre specializálódott, és elsőként alakított ki állandó testhőmérsékletet.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'A madarak (Aves) a Gerincesek altörzsének osztálya. Testük a repülésre specializálódott: elülső végtagjaik szárnnyá alakultak, csontjaik nagy része üreges (pneumatikus), ami jelentősen csökkenti a testsúlyt repülés közben. Állkapcsukból hiányoznak a fogak, helyette könnyű, szaru anyagú csőr alakult ki.',
+                  'Kültakarójuk a hüllők szaruréteges pikkelyeiből módosult, ám azoknál sokkal összetettebb szerkezetű tollazat, amely egyszerre biztosítja a repülési felületet (evezőtollak, faroktollak) és a hatékony hőszigetelést (pehelytollak).',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásuk elsődlegesen a repülés, amelyet az erős mellizomzat és a mellcsonton található, izomtapadási felületet növelő szegycsonttaréj tesz lehetővé; egyes csoportok (pl. strucc, pingvin) másodlagosan elvesztették a repülőképességüket, és futásra vagy úszásra specializálódtak.',
+                  'Táplálkozásuk rendkívül sokféle (magevő, rovarevő, ragadozó, halevő), csőrük alakja szorosan illeszkedik a táplálék típusához; mivel foguk nincs, a táplálékot zúzógyomrukban - gyakran lenyelt kavicsok segítségével - őrlik meg.',
+                  'Légzésük egyedülálló: tüdejükhöz légzsákok kapcsolódnak, amelyek egyirányú levegőáramlást biztosítanak a tüdőn keresztül (kettős légzés) - ez a korábban megismert gerinces csoportoknál tapasztaltnál is hatékonyabb gázcserét tesz lehetővé, ami a repüléshez szükséges magas anyagcsere-igény fedezéséhez elengedhetetlen.',
+                  'Anyagszállító rendszerük szíve négyüregű, két pitvarral és két, teljesen elkülönült kamrával: ez - a korábban (Hüllők fejezet) megismert részleges elkülönüléssel szemben - teljesen megakadályozza az oxigénben gazdag és szegény vér keveredését. Szaporodásuk ivaros, belső megtermékenyítéssel és kemény mészhéjú amniota tojással történik, amelyet a szülők jellemzően fészekben költenek ki, és sok fajnál kiterjedt szülői gondoskodás (etetés, védelem) kíséri.',
+                  'Érzékszerveik közül a látás a legfejlettebb: sok fajnál kiváló élességű, színlátásra is képes szem jellemző (a ragadozó madaraknál különösen éles látással), míg a szaglásuk a legtöbb csoportnál kevésbé fejlett.',
+                ],
+              },
+              {
+                heading: 'Állandó testhőmérséklet és környezeti kapcsolat',
+                paragraphs: [
+                  'A madarak - a korábban megismert halakkal, kétéltűekkel és hüllőkkel ellentétben - állandó testhőmérsékletűek (endotermek): testük a környezeti hőmérséklettől függetlenül, anyagcseréjük hőtermelésével tartja fenn a magas, állandó testhőmérsékletet. Ez a tulajdonság teszi lehetővé, hogy hideg élőhelyeken (pl. sarkvidéken) is aktívan mozogjanak, ám cserébe folyamatos, intenzív táplálékfelvételt igényel.',
+                  'Kiválasztásuk - a korábban (Hüllők fejezet) megismert urikotelikus úthoz hasonlóan - húgysav formájában történik, amely alig igényel vizet; ez az ürülékükben jól látható fehér, pépes rész, amely elkülönül a béltartalom sötétebb, emészthetetlen maradékától.',
+                  'A repülőképesség és az állandó testhőmérséklet együttesen tették lehetővé, hogy a madarak a Föld szinte minden élőhelyét meghódítsák, és sok fajuk hosszú távú vonulásra is képes legyen az évszakos táplálékkínálat változásainak követésére.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és gyakorlati jelentőségük',
+                paragraphs: [
+                  'A madarak igen sokféle csoportot alkotnak: vannak közöttük kiváló repülők (fecskék, sólymok), futásra specializálódott, repülésképtelen futómadarak (strucc), és úszásra alkalmazkodott, szintén repülésképtelen csoportok (pingvinek) is - jól mutatva, hogy az osztály közös bélyegei (tollazat, endotermia, amniota tojás) mellett igen változatos életmódok alakultak ki.',
+                  'A madarak gyakorlati jelentősége is jelentős: sok rovarevő faj természetes rovarirtóként segíti a mezőgazdaságot, a húsevő gyümölcsöket fogyasztó fajok pedig fontos szerepet játszanak a magterjesztésben, ahogy azt a korábban (Zárvatermők fejezet) megismert magterjesztési stratégiáknál is láttuk. Egyes háziasított fajok (pl. tyúk, kacsa) pedig az emberi élelmezés (hús, tojás) fontos forrásai.',
+                ],
+              },
+            ],
+            keyTerms: ['Madarak osztálya', 'tollazat', 'légzsák', 'zúzógyomor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a madarak testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert hüllőkhöz képest.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a hüllőkhöz képest',
+                paragraphs: [
+                  'A legjelentősebb evolúciós újítás az állandó testhőmérséklet (endotermia) kialakulása: a korábban (Hüllők fejezet) megismert ektoterm szabályozáshoz képest ez teljesen függetleníti az állat aktivitását a környezeti hőmérséklettől, cserébe azonban jóval magasabb energiaigénnyel jár, amelyet a fokozott táplálékfelvétel és a hatékonyabb anyagcsere fedez.',
+                  'A négyüregű szív és a teljesen elkülönült két vérkör a hüllők részlegesen elkülönült kamrájához képest jelent továbblépést: így a tüdőből visszaérkező, oxigénben gazdag vér egyáltalán nem keveredik az oxigénszegény vérrel, ami az endotermiához szükséges magas anyagcsere-szint fenntartásához elengedhetetlen.',
+                  'A légzsákos, kettős légzésű tüdő szintén az endotermia magas oxigénigényét szolgálja: az egyirányú levegőáramlás biztosítja, hogy a tüdőben mindig friss, oxigéndús levegő legyen jelen, szemben a hüllők (és a legtöbb korábbi gerinces csoport) tüdejének kétirányú, kevésbé hatékony légzésével.',
+                  'A csontozat üregesedése (pneumatikus csontok) a testsúly csökkentését szolgálja, ami a repülés energetikai feltétele; ez a jelenség jól mutatja, hogy egy evolúciós újítás (repülés) hogyan hat vissza több szervrendszer (váz, légzés, anyagcsere) egyidejű átalakulására.',
+                  'A tollazat evolúciós eredete is jól illusztrálja a fokozatos átalakulás elvét: a toll fejlődéstanilag a hüllők szaruréteges pikkelyéből módosult, egyre bonyolultabb szerkezetű képletként alakult ki - a ma élő madarak elődei egyes húsevő dinoszaurusz-csoportokból származnak, amelyeknél a tollazat feltehetően eredetileg hőszigetelő szerepet töltött be, és csak később, a szárny kialakulásával együtt vált alkalmassá a repülésre is - ezt a fokozatos átalakulást számos, tollazat lenyomatát is megőrző kövület (pl. az Archaeopteryx) támasztja alá.',
+                ],
+              },
+            ],
+            keyTerms: ['endotermia', 'négyüregű szív', 'kettős légzés'],
+          },
+        },
+      },
+      {
+        id: 'emlosok',
+        title: 'Emlősök',
+        order: 24,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Kloákások', 'Erszényesek', 'Méhlepényesek'],
+          rows: [
+            ['Szaporodás', 'tojásrakó', 'elevenszülő, méhlepény nélkül', 'elevenszülő, méhlepénnyel (placentával)'],
+            ['Utódfejlődés', 'tojásban, majd tejjel táplálva', 'erszényben fejeződik be', 'méhen belül teljesen kifejlődve'],
+            ['Példa', 'kacsacsőrű emlős', 'kenguru', 'ember, kutya, bálna'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Madarak fejezet) megismert, endoterm és négyüregű szívű csoport után az emlősökkel a Gerincesek altörzsének utolsó, ma élő nagy osztályát ismerjük meg - ez az az osztály, amelybe az ember is tartozik.',
+            sections: [
+              {
+                heading: 'Rendszertani hely és testfelépítés',
+                paragraphs: [
+                  'Az emlősök (Mammalia) a Gerincesek altörzsének osztálya. Testüket szőrzet borítja, amely - a madarak tollazatához hasonlóan, de attól függetlenül kialakulva - elsősorban hőszigetelő szerepet tölt be.',
+                  'Fogazatuk differenciált (heterodont): metsző-, szem- és zápfogakra tagolódik, szemben a korábban megismert gerinces csoportok egyöntetű vagy hiányzó fogazatával. Ez lehetővé teszi a táplálék szájban történő alapos, mechanikai előfeldolgozását (rágást), ami hatékonyabbá teszi az emésztést.',
+                ],
+              },
+              {
+                heading: 'Életműködések',
+                paragraphs: [
+                  'Mozgásuk rendkívül változatos: a legtöbb csoportnál négy végtaggal történő járás/futás jellemző, de egyes csoportok végtagjai úszásra (pl. bálnák uszonya) vagy repülésre (pl. denevérek szárnya) módosultak.',
+                  'Táplálkozásuk a differenciált fogazatnak köszönhetően jól specializálódhat: húsevő, növényevő és mindenevő csoportok egyaránt kialakultak, mindegyik a saját táplálékához illeszkedő fogazattal.',
+                  'Légzésüket - a korábbi gerinces csoportoknál nem tapasztalt - izmos rekeszizom (diafragma) segíti, amely a mellüreg térfogatának változtatásával hatékony szellőztetést biztosít a tüdőben.',
+                  'Anyagszállító rendszerük szíve - a madarakhoz hasonlóan - négyüregű, teljesen elkülönült vérkörökkel, és ők is állandó testhőmérsékletűek (endotermek).',
+                  'Szaporodásuk ivaros, belső megtermékenyítéssel; a legtöbb emlős elevenszülő, az embrió az anya méhében, méhlepényen (placentán) keresztül táplálkozva fejlődik ki. Minden emlősre jellemző a tejmirigyek általi táplálás - erről kapta az osztály a nevét is (Mammalia, a "mamma", azaz emlő szóból).',
+                  'Érzékszerveik közül kiemelkedik a fejlett agy, amelynek nagyagykérge a többi gerinces csoportnál tapasztaltnál jóval fejlettebb, lehetővé téve az összetett viselkedést és a tanulást. Sok fajnál kiemelkedően fejlett a szaglás és a hallás (utóbbit gyakran mozgatható külső fülkagyló is segíti), és számos csoportnál (pl. ragadozóknál) tapintószőrök (bajusz) is kiegészítik az érzékelést.',
+                ],
+              },
+              {
+                heading: 'Sokféleségük és környezeti kapcsolat',
+                paragraphs: [
+                  'Az emlősök szaporodási módja szerint három nagy csoportra oszthatók: a kloákások (pl. a kacsacsőrű emlős) még tojást raknak, az erszényesek (pl. a kenguru) méhlepény nélkül, korán megszülik utódaikat, akik ezután az erszényben fejeznek be a fejlődésüket, míg a méhlepényesek (pl. az ember, a kutya, a bálna) utódai a méhben, méhlepényen keresztül táplálkozva, teljesen kifejlődve születnek meg.',
+                  'Az endotermia, a szőrzet és a fejlett agy együttesen tették lehetővé, hogy az emlősök a Föld szinte minden élőhelyét (szárazföld, víz, levegő) meghódítsák, a sarkvidéktől a sivatagokig. Az ember (Homo sapiens) is ebbe az osztályba tartozó, méhlepényes emlős faj, amelynek szervrendszerei ugyanazokat az alapelveket követik, mint a fejezetben tárgyalt többi emlősé.',
+                  'Az emlősök gyakorlati jelentősége kiemelkedő: számos háziasított fajuk (pl. szarvasmarha, kecske, kutya, macska) évezredek óta szorosan összefonódik az emberi társadalommal, élelmiszer- (hús, tej), munkaerő- és társ-forrásként egyaránt.',
+                ],
+              },
+            ],
+            keyTerms: ['Emlősök osztálya', 'szőrzet', 'heterodont fogazat', 'rekeszizom', 'tejmirigy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az emlősök testfelépítésében és életműködéseiben megjelenő evolúciós újításokat kell azonosítani és elemezni a korábban megismert madarakhoz képest, kiemelt figyelmet fordítva arra, hogy egyes hasonlóságok (pl. endotermia, négyüregű szív) a két csoportnál egymástól függetlenül, konvergens evolúcióval alakultak ki.',
+            sections: [
+              {
+                heading: 'Evolúciós újítások a madarakhoz képest',
+                paragraphs: [
+                  'Bár mind az emlősök, mind a korábban (Madarak fejezet) megismert madarak endoterm szabályozásúak és négyüregű szívvel rendelkeznek, ez a két csoportnál egymástól függetlenül, konvergens evolúcióval alakult ki - a hüllő ősöktől elágazva, két különböző fejlődési vonalon jutottak hasonló megoldásra.',
+                  'A méhlepényen (placentán) keresztüli, méhen belüli fejlődés a méhlepényes emlősöknél a legfejlettebb szaporodási stratégia a gerincesek között: az embrió az anya szervezetében, annak védelme alatt fejlődik ki, szemben a korábban megismert tojásrakó (hüllők, madarak) vagy vízhez kötött (kétéltűek) szaporodási módokkal. Ez nagyobb energiabefektetést igényel az anyától, cserébe azonban jelentősen megnöveli az utódok túlélési esélyét. A kloákások és az erszényesek fennmaradása jól mutatja, hogy ez a stratégia fokozatosan, köztes formákon át alakult ki.',
+                  'A differenciált (heterodont) fogazat és a rágás - szemben a madarak fogatlan csőrével és zúzógyomrával - lehetővé teszi a táplálék hatékony, szájban történő mechanikai előfeldolgozását, ami gyorsabb és teljesebb emésztést eredményez.',
+                  'A nagyagykéreg jelentős fejlődése olyan evolúciós újítás, amely a korábbi gerinces csoportoknál tapasztaltnál összetettebb viselkedést (tanulás, szociális együttműködés) tesz lehetővé - ez az emlősök (különösen az ember) evolúciós sikerének egyik kulcstényezője.',
+                  'Az emlősökkel lezárul a Gerincesek altörzsének ebben a fejezetsorozatban tárgyalt öt osztálya (csontos halak, kétéltűek, hüllők, madarak, emlősök). Végigkövetve a sorozatot jól látható egy közös evolúciós tendencia: a víztől való fokozatos függetlenedés (kopoltyú → tüdő, ikra → amniota tojás → méhlepényes fejlődés) és a keringési rendszer egyre hatékonyabbá válása (egykörös, kétüregű szív → kettős vérkör, háromüregű szív → négyüregű szív, teljesen elkülönült vérkörök) - ezek az újítások együttesen tették lehetővé egyre nagyobb testméretű, egyre aktívabb életmódú állatok kialakulását, egyre szélesebb körű élőhelyeken.',
+                ],
+              },
+            ],
+            keyTerms: ['méhlepény (placenta)', 'kloákások', 'erszényesek', 'nagyagykéreg'],
+          },
+        },
+      },
+      {
+        id: 'novenyi-szovetek',
+        title: 'Növényi szövetek',
+        order: 25,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Fatest (xilém)', 'Háncsrész (floém)'],
+          rows: [
+            ['Szállított anyag', 'víz és oldott ásványi anyagok', 'szerves tápanyagok (elsősorban cukrok)'],
+            ['Irány', 'egy irányba, felfelé (gyökértől a levelekig)', 'mindkét irányba, az igény szerint'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Harasztok fejezet) megismert, valódi szövetekkel rendelkező növénycsoportok után ebben a fejezetben azt vizsgáljuk meg részletesen, milyen szövettípusok épülnek fel a növények testében, és ezek hogyan szolgálják a növény működését.',
+            sections: [
+              {
+                heading: 'Osztódószövet',
+                paragraphs: [
+                  'Az osztódószövet (más néven merisztéma) sejtjei folyamatosan osztódnak, ezáltal biztosítva a növény egész életén át tartó növekedését - ez alapvető különbség az állatokhoz képest, amelyeknél a növekedés jellemzően egy életszakaszra korlátozódik.',
+                  'Az osztódószövet a növény meghatározott pontjain, például a gyökér- és a hajtáscsúcsban található (csúcsi osztódószövet), és ez felelős a növény hossznövekedéséért; egyes növényeknél (pl. fás szárúaknál) emellett oldalirányú osztódószövet is kialakul, amely a szár és a gyökér vastagodását teszi lehetővé.',
+                ],
+              },
+              {
+                heading: 'Állandósult szövetek',
+                paragraphs: [
+                  'Az osztódószövet sejtjeiből az osztódási képesség elvesztésével, meghatározott alakra és funkcióra differenciálódva jönnek létre az állandósult szövetek: a bőrszövet, a tápanyagkészítő alapszövet és a szállítószövet.',
+                  'A bőrszövet a növény felszínét borítja, és elsődleges szerepe a védelem: megakadályozza a kiszáradást és a kórokozók bejutását. Sejtjei szorosan illeszkednek egymáshoz, felszínüket gyakran vízzáró viaszréteg (kutikula) fedi. A bőrszövetben található apró nyílások, a gázcserenyílások (sztómák) teszik lehetővé a szabályozott gázcserét és páraleadást a növény belseje és a külvilág között - ezek működését a következő (Növényi anyagszállítás) fejezetben ismerjük meg részletesen.',
+                  'A tápanyagkészítő (asszimilációs) alapszövet sejtjei tartalmazzák a fotoszintézishez szükséges klorofillt - ez a szövet végzi a korábban (Fotoszintézis fejezet) megismert fotoszintézis folyamatát, elsősorban a levelekben és a fiatal, zöld hajtásokban.',
+                  'A szállítószövet a víz és a tápanyagok szállítását végzi a növény különböző részei között, és két, eltérő irányban működő részből áll: a fatest (xilém) a gyökér által felvett vizet és az oldott ásványi anyagokat szállítja felfelé, a levelek felé, míg a háncsrész (floém) a levelekben termelt szerves tápanyagokat (elsősorban cukrokat) juttatja el a növény minden részéhez, akár felfelé, akár lefelé. Ez a szövettípus a korábban (Harasztok fejezet) megismertek szerint először a harasztoknál jelenik meg, kialakulása révén tudtak a haraszt-ősök a mohák egyszerű testfelépítéséhez képest jóval nagyobbra nőni.',
+                ],
+              },
+              {
+                heading: 'A szövetek mikroszkópos vizsgálata',
+                paragraphs: [
+                  'A növényi szövetek fénymikroszkóppal jól tanulmányozhatók: egy egyszerű, otthon is elkészíthető preparátum a hagyma alsó (húsos) leveléről lehúzott, egyetlen sejtrétegből álló bőrszövet-nyúzat, amelyen jól megfigyelhető a bőrszövet sejtjeinek szorosan illeszkedő, szabálytalan alakja, valamint - kedvező metszetben - a gázcserenyílások felépítése is.',
+                  'Egyes növényi sejtekben mikroszkóp alatt jól látható kristályzárványok (jellemzően kalcium-oxalát kristályok) figyelhetők meg, amelyek a növény anyagcseréjének melléktermékeként halmozódnak fel a sejtekben, gyakran jellegzetes, tűs vagy csillag alakú formában. Egyes növényeknél (pl. a sóskánál vagy a rebarbaránál) a kristályzárványokat felépítő oxálsav olyan nagy mennyiségben halmozódik fel, hogy ez adja e növények jellegzetes savanykás ízét is.',
+                ],
+              },
+              {
+                heading: 'A szövetek és a növényi szervek kapcsolata',
+                paragraphs: [
+                  'A négy szövettípus (osztódószövet, bőrszövet, alapszövet, szállítószövet) minden növényi szervben - a következő fejezetben tárgyalt gyökérben, szárban és levélben egyaránt - megtalálható, csak eltérő arányban és elrendezésben épülnek fel belőlük: a szervek felépítésének és működésének megértéséhez éppen ezért elengedhetetlen az alkotó szövetek ismerete.',
+                ],
+              },
+            ],
+            keyTerms: ['osztódószövet', 'bőrszövet', 'alapszövet', 'szállítószövet', 'kutikula', 'kristályzárvány'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a kristályzárványok biológiai szerepét, valamint az osztódószövetek két típusa közötti funkcionális különbséget érdemes mélyebben megismerni.',
+            sections: [
+              {
+                heading: 'A kristályzárványok védelmi szerepe és az osztódószövetek két típusa',
+                paragraphs: [
+                  'A növényi sejtekben felhalmozódó kalcium-oxalát kristályzárványoknak nemcsak anyagcsere-melléktermék szerepük van, hanem védelmi funkciót is betöltenek: a kristályok éles, szúrós szerkezete és az oxálsav enyhén maró hatása visszatartja a növényevő állatokat a szövet elfogyasztásától, így a kristályzárvány egyfajta kémiai-mechanikai védekezési stratégiának is tekinthető.',
+                  'Az osztódószövetek két típusa eltérő növekedési irányt szolgál: a csúcsi (elsődleges) osztódószövet a hajtás- és gyökércsúcsban működik, és a növény hossznövekedéséért felel, míg az oldalirányú (másodlagos) osztódószövet - amelyet kambiumnak is neveznek - a szár és a gyökér átmérőjének (vastagságának) növelését teszi lehetővé. Ez utóbbi tevékenysége áll a fás szár kialakulása mögött, amelyet a következő (Gyökér, szár, levél) fejezetben ismerünk meg részletesen - ott azt is látni fogjuk, hogy a kambium tevékenysége az évszakok változásával összhangban szezonálisan ingadozik, ami a fatörzsben jellegzetes, évente egy rétegként megjelenő gyűrűzöttséget (évgyűrűket) eredményez.',
+                  'Az osztódószövet sejtjeinek további különleges tulajdonsága a totipotencia: megfelelő körülmények között akár egyetlen ilyen sejtből is regenerálódhat egy teljes, önálló növény. Ez az elv áll a kertészetben és a növénynemesítésben alkalmazott szövettenyésztéses klónozás hátterében is, amelyet a (Növényi szaporodás és növekedésszabályozás) fejezetben ismerünk meg részletesebben.',
+                  'Ez a tulajdonság jelentősen eltér attól, amit a legtöbb állati sejtnél tapasztalunk: a korábban megismert állatcsoportok (pl. gerincesek) legtöbb kifejlett szövetének sejtjei már véglegesen differenciálódtak, és elvesztették azt a képességüket, hogy önmagukból egy teljesen új egyedet hozzanak létre - ez az egyik legfontosabb szervezeti különbség a növényi és az állati szövetek működése között, és részben magyarázza, hogy a növények miért képesek ilyen könnyen regenerálódni sérülés vagy metszés után.',
+                ],
+              },
+            ],
+            keyTerms: ['kambium', 'totipotencia'],
+          },
+        },
+      },
+      {
+        id: 'gyoker-szar-level',
+        title: 'Gyökér, szár, levél',
+        order: 26,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Lágy szár', 'Fás szár'],
+          rows: [
+            ['Kambium működése', 'nincs vagy csak korlátozott', 'folyamatos, évről évre'],
+            ['Vastagodás', 'nincs másodlagos vastagodás', 'másodlagos vastagodás (évgyűrűk)'],
+            ['Szilárdító szövet', 'kevés, a szár lágy, hajlékony', 'sok, a szár kemény, fás'],
+            ['Példa', 'fűfélék, egynyári dísznövények', 'fák, cserjék'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Növényi szövetek fejezet) megismert négy szövettípusból (osztódószövet, bőrszövet, alapszövet, szállítószövet) épül fel a növény három alapvető vegetatív szerve: a gyökér, a szár és a levél - ebben a fejezetben ezek felépítését és alapfunkcióit ismerjük meg.',
+            sections: [
+              {
+                heading: 'A gyökér, a szár és a levél alapfunkciói',
+                paragraphs: [
+                  'A gyökér elsődleges feladata a növény rögzítése a talajban, valamint a víz és az oldott ásványi anyagok felvétele; egyes növényeknél a gyökér tartalék tápanyagok raktározására is szolgál.',
+                  'A szár a növény tengelye, amely összeköti a gyökeret a levelekkel: biztosítja a növény mechanikai tartását, és a benne futó szállítószöveten keresztül közvetíti a víz és a tápanyagok áramlását a gyökér és a levelek között.',
+                  'A levél a növény fő fotoszintetizáló szerve - itt zajlik a korábban (Fotoszintézis fejezet) megismert folyamat -, emellett a levél felszínén található gázcserenyílásokon keresztül történik a gázcsere és a párologtatás (transzspiráció) is.',
+                ],
+              },
+              {
+                heading: 'A gyökér felépítése',
+                paragraphs: [
+                  'A gyökér hosszmetszetén jól elkülöníthető a gyökércsúcsot védő gyökérsüveg, mögötte az osztódó sejtekből álló zóna, majd a megnyúlási zóna, végül a gyökérszőrös zóna, ahol a gyökér felszínét beborító, a korábban (Zárvatermők fejezet) megismert gyökérszőrök jelentősen megnövelik a felszívó felületet.',
+                  'A gyökér keresztmetszetében kívülről befelé haladva a bőrszövet, majd az alapszövet, legbelül pedig a szállítószövet (fatest és háncsrész) helyezkedik el - ez az elrendezés biztosítja, hogy a gyökérszőrökön felvett víz gyorsan eljusson a szállítószövetbe.',
+                ],
+              },
+              {
+                heading: 'A szár felépítése: lágy szár és fás szár',
+                paragraphs: [
+                  'A lágy szárú növényeknél (pl. a legtöbb egynyári dísznövénynél, fűféléknél) nincs jelentős másodlagos vastagodás, a szár rugalmas és hajlékony marad egész életében. Keresztmetszetükben a szállítónyalábok (amelyekben a fatest és a háncsrész is megtalálható) jellemzően szórtan vagy egy körben elrendezve helyezkednek el, folyamatos kambiumgyűrű nélkül.',
+                  'A fás szárú növényeknél (fák, cserjék) a korábban (Növényi szövetek fejezet) megismert kambium egész életen át folyamatosan új szállítószövetet termel, ami a szár fokozatos vastagodásához (másodlagos vastagodáshoz) vezet. Mivel a kambium tavasszal-nyár elején nagyobb, laza szerkezetű, ősszel-télen pedig kisebb, sűrűbb sejteket hoz létre, ez a szezonális különbség adja a fatest jellegzetes, évente egy-egy gyűrűt alkotó rétegződését (évgyűrűk) - ezek megszámolásával megbecsülhető a fa kora. A fás szár keresztmetszetében kívülről befelé haladva a védő kéreg (bőrszövet), majd a háncsrész, ezt követően a folyamatosan osztódó, vékony kambiumgyűrű, majd a legnagyobb térfogatú farész (fatest, benne az évgyűrűkkel), legbelül pedig a szár közepén elhelyezkedő bél következik.',
+                ],
+              },
+              {
+                heading: 'A levél felépítése',
+                paragraphs: [
+                  'A lomblevél jellemzően levéllemezből és levélnyélből áll, a levéllemezt behálózó levélerek (amelyek a szállítószövet folytatásai) biztosítják a víz és a tápanyagok szállítását, egyúttal mechanikai támasztékot is adnak a levélnek.',
+                  'A lomblevél keresztmetszetében felül és alul egy-egy bőrszövet-réteg található, közöttük az alapszövet két rétegre tagolódik: a felső, oszlopos alapszövetben zajlik a fotoszintézis nagy része (itt a legtöbb a klorofill), az alsó, lazább, sejtközötti járatokkal átszőtt szivacsos alapszövet pedig a gázok (szén-dioxid, oxigén, vízgőz) áramlását segíti a levélen belül.',
+                ],
+              },
+              {
+                heading: 'A felépítés és a működés összefüggése',
+                paragraphs: [
+                  'Mindhárom szerv felépítése jól tükrözi a betöltött funkciót: a gyökér elágazó, nagy felületű, gyökérszőrökkel sűrűn borított szerkezete a hatékony víz- és tápanyagfelvételt szolgálja; a szár szállítószövetének folytonossága biztosítja a gyökér és a levelek közötti zavartalan anyagáramlást; a levél lapos, kiterített formája pedig a lehető legnagyobb felületet biztosítja a fényelnyeléshez és a gázcseréhez.',
+                ],
+              },
+            ],
+            keyTerms: ['gyökérsüveg', 'gyökérszőrös zóna', 'lágy szár', 'fás szár', 'évgyűrű', 'levéllemez', 'oszlopos alapszövet', 'szivacsos alapszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a gyökér, a szár és a levél felépítésének környezethez való anatómiai alkalmazkodását, valamint az e szervek módosulásából kialakuló, speciális funkciójú képleteket kell megismerni.',
+            sections: [
+              {
+                heading: 'Anatómiai alkalmazkodás a környezethez',
+                paragraphs: [
+                  'A száraz élőhelyeken élő növények (xerofiták) anatómiája a vízveszteség csökkentésére rendezkedik be: vastagabb kutikula, kisebb levélfelület (esetenként tövissé módosult levél), valamint mélyre hatoló vagy éppen a talaj felszínén szélesen szétterülő gyökérzet jellemzi őket.',
+                  'A vízben élő növények (hidrofiták) ezzel szemben gyakran vékony kutikulával és kevés gázcserenyílással rendelkeznek (hiszen a víz felől nincs kiszáradási veszély), szöveteikben pedig nagy légjáratok biztosítják a levegő eljutását a víz alatti részekhez is; gyökérzetük emellett gyakran kevésbé fejlett, hiszen a vízfelvétel a test felszínén keresztül is megtörténhet.',
+                ],
+              },
+              {
+                heading: 'Módosult szervek',
+                paragraphs: [
+                  'A gyökér, a szár és a levél az evolúció során gyakran különleges, a törzsfejlődés során kialakult, eltérő funkciót ellátó módosult szervvé alakult: a gyökér módosulhat raktározó gyökérré (pl. répa, cékla - tartalék tápanyagot halmoz fel) vagy léggyökérré (egyes trópusi, nagy páratartalmú esőerdőkben élő növényeknél, amelyek fákra kapaszkodva nőnek, a levegőből is képes nedvességet felvenni).',
+                  'A szár módosulhat föld alatti raktározó gumóvá (pl. a burgonya szárgumója), amely tartalék tápanyagot (keményítőt) halmoz fel, vagy indává, amely a vegetatív szaporodást segíti elő. A levél is módosulhat: a kaktuszok tövissé alakult levele csökkenti a párolgást és egyben védelmet is nyújt, míg egyes rovarfogó növényeknél a levél a tápanyagszegény élőhelyen való túlélést segítő csapdává alakult. A hagyma húsos, tápanyagraktározó rétegei szintén módosult levelek, amelyeket egy rövid, korong alakú módosult szár (a hagymatő) tart össze - ez a példa is jól mutatja, hogy egy adott szerv módosulása gyakran több szomszédos szerv (itt: szár és levél) együttes átalakulásával jár.',
+                ],
+              },
+            ],
+            keyTerms: ['xerofita', 'hidrofita', 'léggyökér', 'szárgumó'],
+          },
+        },
+      },
+      {
+        id: 'novenyi-anyagszallitas',
+        title: 'Növényi anyagszállítás',
+        order: 27,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Nyitott gázcserenyílás', 'Zárt gázcserenyílás'],
+          rows: [
+            ['Zárósejtek állapota', 'vízzel telt (nagy turgornyomás)', 'vizet vesztett (kis turgornyomás)'],
+            ['Gázcsere', 'szabad', 'akadályozott'],
+            ['Párologtatás mértéke', 'nagy', 'lecsökkent'],
+            ['Jellemző körülmény', 'napközben, jó vízellátás mellett', 'szárazság, erős napsütés, éjszaka'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gyökér, szár, levél fejezet) megismert szervek felépítése alapozza meg, hogyan jut el a víz a talajtól egészen a levelek gázcserenyílásáig - ebben a fejezetben ezt az anyagszállítási folyamatot vizsgáljuk meg közelebbről.',
+            sections: [
+              {
+                heading: 'A gázcserenyílás felépítése és működése',
+                paragraphs: [
+                  'A gázcserenyílás (sztóma) a korábban (Növényi szövetek fejezet) megismert bőrszövet két, sajátos alakú zárósejtje által közrefogott apró nyílás, amely elsősorban a levelek alsó felszínén, nagy számban helyezkedik el.',
+                  'A zárósejtek vízfelvétele (turgornyomásuk változása) szabályozza a nyílás méretét: ha a zárósejtek megszívják magukat vízzel, a nyílás kinyílik, ha vizet vesztenek, összezáródik. Ez a mechanizmus teszi lehetővé, hogy a növény a fényviszonyoktól és a vízellátástól függően szabályozza a gázcsere és a párologtatás mértékét.',
+                  'A legtöbb szárazföldi növénynél a gázcserenyílások túlnyomó többsége a levél alsó felszínén helyezkedik el, nem pedig a felsőn: ez csökkenti a közvetlen napsugárzásnak kitett felső felszínen történő túlzott vízvesztést, miközben a gázcsere így is zavartalanul zajlik.',
+                  'A gázcserenyílások szabályozása különösen fontos szárazság idején: ha a növény nem tudná időben bezárni a nyílásokat, a túlzott párologtatás miatt gyorsan kiszáradna - ez a szabályozás tehát nemcsak a gázcserét, hanem a növény vízháztartásának egyensúlyát is védi.',
+                ],
+              },
+              {
+                heading: 'A víz útjának megfigyelése',
+                paragraphs: [
+                  'A víz növényen belüli szállítása egyszerű kísérlettel is megfigyelhető: ha egy fehér virágú növény (pl. szegfű) elvágott szárát színes tintával kevert vízbe állítjuk, a festék felszívódik a szárban futó szállítószöveten keresztül, és néhány óra alatt megszínezi a szár ereit, majd a virág szirmait is.',
+                  'Ez a kísérlet bizonyítja, hogy a víz a szárban egy meghatározott, jól elkülöníthető szöveten keresztül, folyamatosan, alulról felfelé áramlik - ezt a folyamatos vízáramot nevezzük vízszállításnak, a levelek gázcserenyílásain keresztüli vízgőz-leadást pedig párologtatásnak (transzspirációnak).',
+                ],
+              },
+              {
+                heading: 'A szerves tápanyagok szállítása',
+                paragraphs: [
+                  'Amíg a fatest (xilém) kizárólag a talajból felvett vizet és ásványi anyagokat szállítja, alulról felfelé, addig a korábban (Növényi szövetek fejezet) megismert háncsrész (floém) a levelekben a fotoszintézis során termelt szerves tápanyagokat (elsősorban cukrokat) juttatja el a növény minden olyan részéhez, ahol azokra szükség van - ez lehet felfelé (pl. a növekvő hajtáscsúcs) vagy lefelé (pl. a raktározó gyökér) is, a pillanatnyi igényektől függően.',
+                ],
+              },
+              {
+                heading: 'Az anyagszállítás jelentősége',
+                paragraphs: [
+                  'A hatékony anyagszállítás nélkülözhetetlen ahhoz, hogy a növény minden sejtje - még a gyökértől távol eső levelek és hajtáscsúcsok is - folyamatosan hozzájusson a szükséges vízhez, ásványi anyagokhoz és a fotoszintézis során termelt szerves tápanyagokhoz.',
+                  'A korábban (Zárvatermők fejezet) megismertek szerint éppen a fejlett szállítószövet tette lehetővé, hogy egyes növények (pl. a tölgy, a bükk) rendkívül magasra nőjenek: minél magasabb a növény, annál nagyobb utat kell megtennie a víznek a gyökértől a lombkorona csúcsáig, ami csak egy jól működő, folyamatos vízoszlopot fenntartó szállítórendszerrel lehetséges.',
+                  'Ha az anyagszállítás bármilyen okból (pl. tartós szárazság, gyökérkárosodás) akadozik, a növény hervadni, fonnyadni kezd: a sejtek elveszítik a turgornyomásukat fenntartó vizet, ami a levelek és a hajtások lekonyulásában is jól látható - ez a jelenség önmagában is bizonyítja, mennyire létfontosságú a folyamatos vízutánpótlás.',
+                ],
+              },
+            ],
+            keyTerms: ['gázcserenyílás', 'zárósejt', 'transzspiráció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a víz növényen belüli szállítását hajtó kémiai és fizikai erőket, valamint a felvett víz- és szén-dioxid-molekulák sorsát kell megismerni és értelmezni.',
+            sections: [
+              {
+                heading: 'A vízszállítás hajtóerői',
+                paragraphs: [
+                  'A víz növényen belüli, gyökértől a levelekig tartó szállítását négy, egymást kiegészítő hajtóerő teszi lehetővé. A gyökérnyomás a gyökérsejtek aktív, ozmózissal történő anyagfelvételéből ered: a gyökérsejtekben a talajénál nagyobb az oldott anyagok koncentrációja, ezért víz áramlik befelé, ami alulról enyhe nyomást fejt ki a szállítószövetre.',
+                  'A kapillaritás a korábban (Szervetlen molekulák fejezet) megismert kohézió és adhézió együttes hatásából ered: a szállítószövet rendkívül vékony csövecskéiben a vízmolekulák egymáshoz (kohézió) és a cső falához (adhézió) is tapadnak, ami a vizet felfelé "húzza" a csövekben.',
+                  'A legfontosabb hajtóerő a párologtatás (transzspiráció): a levelek gázcserenyílásain keresztül elpárolgó víz szívóhatást (ozmotikus szívóerőt) hoz létre, amely a szállítószövet vízoszlopán keresztül egészen a gyökérig érvényesül, és ez húzza fel a vizet a legmagasabb fák csúcsáig is. Minél nagyobb a párologtatás (pl. száraz, meleg, szeles időben), annál erősebb ez a felfelé húzó hatás.',
+                ],
+              },
+              {
+                heading: 'A víz- és a szén-dioxid-molekula sorsa a növényben',
+                paragraphs: [
+                  'A talajból a gyökérszőrökön felvett vízmolekula a gyökér szállítószövetébe jutva a szárban felfelé áramlik, majd a levélbe érve kétféle sorsra juthat: egy része a gázcserenyíláson keresztül elpárolog (párologtatás), másik része pedig a korábban (Fotoszintézis fejezet) megismert fényszakaszban hasad szét - hidrogénje szerves anyagba épül, oxigénje pedig oxigéngázként távozik a levegőbe.',
+                  'A levegőből a gázcserenyíláson bejutó szén-dioxid-molekula a szivacsos alapszöveten át az oszlopos alapszövet sejtjeibe jut, ahol a fotoszintézis korábban (Fotoszintézis fejezet) megismert sötétszakaszában (Calvin-ciklusban) szerves anyag (szőlőcukor) épül fel belőle.',
+                  'A korábban bemutatott színes tintás kísérlet is jól értelmezhető ezen ismeretek fényében: mivel a festék kizárólag a szállítószövetben, alulról felfelé terjed, a kísérlet egyértelműen bizonyítja, hogy a vízszállítás iránya a gyökértől a levelek felé mutat, és hogy erre a folyamatra kizárólag a fatest (nem pedig a háncsrész) alkalmas - ha ugyanis a háncsrész is részt venne a víz felfelé szállításában, a festéknek a szár belsejében, a fatesttől eltérő helyen is meg kellene jelennie, ezt azonban a kísérlet nem mutatja.',
+                ],
+              },
+            ],
+            keyTerms: ['gyökérnyomás', 'kapillaritás', 'ozmotikus szívóerő'],
+          },
+        },
+      },
+      {
+        id: 'virag-es-termes',
+        title: 'Virág és termés',
+        order: 28,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Egylaki növény', 'Kétlaki növény'],
+          rows: [
+            ['Hím és nő virágok helye', 'ugyanazon az egyeden', 'külön-külön egyedeken'],
+            ['Az egyes virágok típusa', 'egyivarú (hím vagy nő)', 'egyivarú (hím vagy nő)'],
+            ['Példa', 'kukorica, uborka', 'fűzfa, kender'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Zárvatermők fejezet) megismert virágot - amely a takarólevelekből, a bibéből és a zárt magházból áll - ebben a fejezetben az ivarszervek szempontjából vizsgáljuk meg részletesebben, és megismerjük, hogy a virágok milyen eltérő módokon szerveződhetnek egy-egy növényfajon belül.',
+            sections: [
+              {
+                heading: 'A virág biológiai szerepe és részei',
+                paragraphs: [
+                  'A virág biológiai szerepe a zárvatermők szaporodásának biztosítása: ivarszerveket hordoz, és sok esetben - a korábban (Zárvatermők fejezet) megismertek szerint - feltűnő megjelenésével a beporzást végző rovarokat is vonzza. A virág hímivarszerve a porzó, amely a portokból (ahol a pollen termelődik) és az azt tartó porzószálból áll. A virág nőivarszerve a termő, amely a korábban megismert bibéből, az azt a magházhoz kapcsoló bibeszálból és a magházból épül fel.',
+                  'Egy adott hajtáson a virágok elhelyezkedhetnek egyesével, vagy jellegzetes csoportokba (virágzatokba) rendeződve is - ez utóbbira példa a kukorica szárának végén található bugavirágzat, amely önmagában sok apró hímvirágból áll.',
+                ],
+              },
+              {
+                heading: 'Egyivarú és kétivarú virág',
+                paragraphs: [
+                  'Ha egyetlen virágban mind a porzók, mind a termő megtalálhatók, kétivarú virágról beszélünk - a legtöbb ismert virágos növény (pl. a legtöbb gyümölcsfa) ilyen virágot fejleszt.',
+                  'Ha egy virágban csak porzók (hímvirág) vagy csak termő (nővirág) van jelen, egyivarú virágról van szó - ezt figyelhetjük meg például a kukoricánál, amelynek a szárán elhelyezkedő bugavirágzata hímvirágokból, a csövön ülő "selyme" pedig a nővirágokhoz tartozó bibeszálakból áll.',
+                  'A megkülönböztetés gyakorlati szempontból egyszerű: egy adott virágot megvizsgálva azt kell eldönteni, hogy tartalmaz-e egyszerre porzókat és termőt is (ekkor kétivarú), vagy csak az egyiket (ekkor egyivarú, és el kell dönteni, hím- vagy nővirágról van-e szó).',
+                ],
+              },
+              {
+                heading: 'Egylaki és kétlaki növény',
+                paragraphs: [
+                  'Ha egy növényfaj egyedei egyivarú virágokat fejlesztenek, további megkülönböztetés szükséges: az egylaki növényeknél mind a hím-, mind a nővirágok ugyanazon az egyeden találhatók (pl. a kukorica, az uborka vagy a dió esetében), csak a növény különböző részein.',
+                  'A kétlaki növényeknél ezzel szemben a hím- és a nővirágok külön-külön egyeden fejlődnek: vannak "hím" és "nő" egyedek is a fajon belül - ilyen például a fűzfa, a kender vagy a spenót, ahol egy adott növényen csak hímvirágok, egy másikon csak nővirágok találhatók.',
+                  'A kétlaki jelleg gyakorlati jelentőséggel is bír: kertészeti vagy mezőgazdasági termesztésnél oda kell figyelni arra, hogy hím és nő egyedek is jelen legyenek egymás közelében, különben a nővirágok nem termékenyülnek meg, és a növény nem hoz termést.',
+                  'Összefoglalva: a virágok szerveződése (egyivarú vagy kétivarú, egylaki vagy kétlaki) fajonként eltérő stratégiát képvisel ugyanarra a célra - a sikeres megtermékenyítés biztosítására -, és ez a sokféleség jól mutatja, hogy a zárvatermők evolúciója többféle, egymással versengő megoldást is kitermelt ugyanannak az alapproblémának a megoldására.',
+                ],
+              },
+            ],
+            keyTerms: ['porzó', 'termő', 'virágzat', 'egyivarú virág', 'kétivarú virág', 'egylaki növény', 'kétlaki növény'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a nappalhosszúság virágzásra gyakorolt hatását, valamint a virág és a termés részei közötti pontos megfelelést kell megismerni.',
+            sections: [
+              {
+                heading: 'A nappalhosszúság szerepe a virágzásban',
+                paragraphs: [
+                  'Sok növényfaj virágzását nem (csak) a hőmérséklet, hanem a nappal hossza (pontosabban az éjszaka hossza) szabályozza - ezt a jelenséget fotoperiodizmusnak nevezzük. A rövidnappalos növények csak akkor virágoznak, ha a nappal egy kritikus hossznál rövidebb (jellemzően ősszel), a hosszúnappalos növények csak akkor, ha a nappal ennél hosszabb (jellemzően tavasszal-nyáron), míg egyes fajok nappalhossz-semlegesek, virágzásukat más tényezők (pl. a növény kora) határozzák meg.',
+                  'A fotoperiodizmus különösen fontossá válik honosításkor, amikor egy növényt az eredeti élőhelyétől eltérő földrajzi szélességre (és ezáltal eltérő éves nappalhossz-mintázatú területre) telepítenek át: az áttelepített növény virágzási időzítése összezavarodhat, ha az új helyszín nappalhossz-ritmusa jelentősen eltér attól, amihez a faj eredetileg alkalmazkodott - például egy alacsonyabb szélességről (ahol a nappalok egész évben kevésbé ingadoznak) magasabb szélességre telepített, rövidnappalos növény könnyen "elkésik" a virágzással, mielőtt a tél beállna.',
+                ],
+              },
+              {
+                heading: 'A virág és a termés részei közötti kapcsolat',
+                paragraphs: [
+                  'A megtermékenyítés után a virág egyes részei jellegzetes átalakuláson mennek keresztül: a magkezdeményből mag lesz, a magházfalból pedig a termésfal (a termés húsos vagy szilárd, a magot körülvevő része) fejlődik.',
+                  'Egyes növényeknél azonban nem (kizárólag) a magházfal alakul termésfallá, hanem más virágrészek (pl. a vacok, a virág alapját alkotó, kiszélesedett szártag) is részt vesznek a termés kialakításában - az így létrejövő képletet áltermésnek nevezzük. Az almánál például a húsos, ehető rész nagy része a vackból fejlődik, a valódi (magházból származó) termésfal csak a mag körüli, porhanyós "mag ház" belső részét adja. Hasonlóan érdekes eset az eper is: a húsos, piros, ehető rész szintén a vackból alakul ki, míg az apró, magnak tűnő felszíni képletek valójában önálló, apró termések - vagyis botanikai értelemben a magok maguk sem a "gyümölcs" belsejében, hanem annak felszínén helyezkednek el.',
+                ],
+              },
+            ],
+            keyTerms: ['fotoperiodizmus', 'rövidnappalos növény', 'hosszúnappalos növény', 'termésfal', 'áltermés', 'vacok'],
+          },
+        },
+      },
+      {
+        id: 'novenyi-szaporodas-novekedesszabalyozas',
+        title: 'Növényi szaporodás és növekedésszabályozás',
+        order: 29,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Ivaros szaporodás', 'Ivartalan (vegetatív) szaporodás'],
+          rows: [
+            ['Utódok genetikai állománya', 'változatos (a szülőkétől eltérő)', 'azonos az anyanövényével'],
+            ['Sebesség, megbízhatóság', 'lassabb, kevésbé kiszámítható', 'gyors, megbízható'],
+            ['Alkalmazkodóképesség', 'nagyobb (változatosság miatt)', 'kisebb (nincs genetikai változatosság)'],
+            ['Példa', 'mag-, termésképzés', 'tősarj, dugványozás, oltás, szemzés, klónozás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Virág és termés fejezet) megismert virágos szaporodás mellett a növények egy egészen más stratégiával, testrészeikből is képesek új egyedet létrehozni - ebben a fejezetben ezt a kétféle szaporodási stratégiát, valamint a csírázást és a növényi hormonok szerepét ismerjük meg.',
+            sections: [
+              {
+                heading: 'A virágos növények fajfenntartó működései',
+                paragraphs: [
+                  'A virágos növények kétféleképpen tarthatják fenn fajukat: ivaros úton, a korábban (Virág és termés fejezet, illetve Kettős megtermékenyítés fejezet) megismert mag- és termésképzéssel, vagy ivartalan úton, vegetatív szervekkel (gyökérrel, szárral, levéllel) történő szaporodással, amelynek során a szülő növény egy darabjából - megtermékenyítés nélkül - fejlődik ki egy új, önálló egyed.',
+                ],
+              },
+              {
+                heading: 'Ivaros és ivartalan szaporítás összehasonlítása',
+                paragraphs: [
+                  'Az ivaros szaporodás előnye, hogy az utódok genetikailag változatosak (a két szülő tulajdonságainak új kombinációit hordozzák), ami hosszú távon nagyobb alkalmazkodóképességet biztosít a változó környezeti feltételekhez - hátránya viszont, hogy lassabb, energiaigényesebb, és a megtermékenyítés sikere sem garantált.',
+                  'Az ivartalan (vegetatív) szaporodás előnye a gyorsaság és a megbízhatóság: az utód genetikailag azonos az anyanövénnyel, így annak minden - akár gazdaságilag is értékes - tulajdonsága biztosan öröklődik. Hátránya, hogy a genetikai változatosság hiánya miatt az egész állomány egyformán érzékeny lehet egy adott kórokozóra vagy kedvezőtlen környezeti változásra - éppen ezért a kertészetben és a mezőgazdaságban gyakran tudatosan kombinálják a kétféle szaporítási módot, hogy a gazdaságilag értékes tulajdonságokat megőrizzék, miközben a génállomány sem szegényedik el teljesen.',
+                ],
+              },
+              {
+                heading: 'A növények ivartalan szaporítási módjai',
+                paragraphs: [
+                  'A tősarjas szaporodás során az anyanövény tövéből új hajtás nő ki, amely előbb-utóbb önálló gyökérzetet fejleszt (pl. sok gyümölcsfajta természetes szaporodása). A dugványozás során egy levágott szár- vagy levéldarabot gyökereztetnek meg, amelyből teljes új növény fejlődik.',
+                  'Az oltás során egy értékes tulajdonságú fajta ágát (nemes ág) egy másik, ellenállóbb gyökérzetű növénybe (alany) illesztik be, míg a szemzés hasonló elven működik, de csak egyetlen rügyet ültetnek át az alanyba. A klónozás a korábban (Növényi szövetek fejezet) megismert totipotencia elvét használja ki: a növény osztódó szövetének akár egyetlen sejtjéből is szövettenyésztéssel felnevelhető egy, az eredetivel genetikailag megegyező új egyed - ez az eljárás teszi lehetővé, hogy egy különösen értékes, ritka tulajdonságú egyedi növényből nagy tömegben, egységesen jó minőségű utódokat állítsanak elő.',
+                ],
+              },
+              {
+                heading: 'A csírázás feltételei',
+                paragraphs: [
+                  'A mag csírázásához külső feltételekre (megfelelő hőmérséklet, elegendő víz és oxigén, egyes fajoknál fény jelenléte vagy hiánya) és belső feltételekre (életképes embrió, valamint a mag nyugalmi állapotának megszűnése) egyaránt szükség van - ezek hiányában a mag akár évekig is csírázás nélkül, nyugalmi állapotban maradhat.',
+                  'Egy egyszerű csírázási kísérlettel jól vizsgálható ezeknek a feltételeknek a szükségessége: ha azonos fajtájú magvakat (pl. babszemeket) nedves vattán, de eltérő körülmények között (pl. eltérő hőmérsékleten, vagy vízhiányos, illetve oxigénelzárt környezetben) csíráztatunk, összehasonlítható, hogy az egyes feltételek hiánya hogyan gátolja vagy lassítja a csírázást.',
+                ],
+              },
+              {
+                heading: 'Hormonális hatásra bekövetkező növényi életműködések',
+                paragraphs: [
+                  'A növények életműködéseinek jelentős részét hormonok szabályozzák: ilyen hormonális hatásra következik be például a gyümölcsérés, a növekedés üteme, valamint a nyugalmi állapotba lépés (pl. a lombhullás előtti rügy-nyugalom) és az abból való kilépés is - ezek konkrét molekuláris hátterét (pl. az auxinok szerepét) emelt szinten ismerjük meg részletesebben.',
+                ],
+              },
+            ],
+            keyTerms: ['vegetatív szaporodás', 'tősarj', 'dugványozás', 'oltás', 'szemzés', 'klónozás', 'csírázás', 'nyugalmi állapot'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a növényi hormonok közül az auxinok általános szerepét kell megismerni a növények életében.',
+            sections: [
+              {
+                heading: 'Az auxinok szerepe a növények életében',
+                paragraphs: [
+                  'Az auxinok a növényi hormonok egyik legfontosabb csoportja, amelyek elsősorban a hajtáscsúcsban termelődnek, és a növény egész testében kifejtik hatásukat. Az auxinok tartják fenn a hajtáscsúcs-dominanciát: a csúcsi rügyben termelődő auxin gátolja az oldalrügyek kihajtását, ezért ha a csúcsi rügyet eltávolítjuk (pl. metszéskor), az oldalrügyek felszabadulnak a gátlás alól, és a növény bokrosabban kezd nőni.',
+                  'Az auxinok egyenlőtlen eloszlása áll a növény fény és nehézségi erő irányába történő növekedési válaszai (tropizmusok) mögött is: a fénnyel ellentétes oldalon felhalmozódó auxin ott gyorsabb sejtmegnyúlást okoz, ezért a hajtás a fény felé hajlik (fototropizmus); hasonló elven, a gravitáció hatására egyenlőtlenül eloszló auxin irányítja a gyökér lefelé, illetve a hajtás felfelé növekedését (geotropizmus).',
+                  'Az auxinok gyökeresedést serkentő hatását a gyakorlatban is kihasználják: a korábban megismert dugványozásnál és oltásnál alkalmazott gyökereztető szerek jellemzően mesterséges auxin-tartalmú vegyületeket tartalmaznak, amelyek felgyorsítják az új gyökerek kialakulását a levágott növényi részeken.',
+                  'Az auxinszint változása a korábban (középszinten) említett gyümölcsérés és -leválás hátterében is szerepet játszik: amíg a fejlődő magban és a fiatal termésben magas az auxinszint, a termés erősen kapcsolódik a növényhez, az auxintermelés csökkenésével azonban a termés (és ősszel a lombhullás során a levél is) leválik a növényről - ez mutatja, hogy ugyanaz a hormon a növény életének több, egymástól látszólag távoli folyamatát (növekedés, tropizmus, leválás) is képes összehangoltan szabályozni - ez a fajta, egyetlen molekulával megvalósuló, sokrétű szabályozás a növényi hormonok egyik legfontosabb, általános jellemzője.',
+                ],
+              },
+            ],
+            keyTerms: ['auxin', 'hajtáscsúcs-dominancia', 'fototropizmus', 'geotropizmus'],
+          },
+        },
+      },
+      {
+        id: 'allati-szovetek',
+        title: 'Állati szövetek',
+        order: 30,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Növényi szövetek', 'Állati szövetek'],
+          rows: [
+            ['Típusok száma', '4 típus (osztódó-, bőr-, alap-, szállítószövet)', '4 típus (hám-, izom-, kötő-, idegszövet)'],
+            ['Regenerációs képesség', 'nagy (totipotens osztódószövet)', 'jellemzően kisebb (a legtöbb sejt véglegesen differenciálódott)'],
+            ['Mozgásra specializált szövet', 'nincs önálló mozgásszövet', 'izomszövet'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Növényi szövetek fejezet) megismert négyféle növényi szövettel szemben az állatok teste is négy alapvető szövettípusból épül fel - ezeket a szöveteket ebben a fejezetben ismerjük meg részletesen, a bennük rejlő funkció és a felépítésük közötti összefüggésre fókuszálva.',
+            sections: [
+              {
+                heading: 'Hámszövet',
+                paragraphs: [
+                  'A hámszövet a test felszínét és a testüregeket, valamint a belső szervek felszínét borítja. Működés szerint megkülönböztetünk védőhámszövetet (amely a mechanikai sérülésekkel és a kórokozókkal szembeni védelmet látja el) és mirigyhámszövetet (amely anyagok - pl. nyál, verejték, hormonok - elválasztására specializálódott). A korábban (Emlősök fejezet) megismert tejmirigy is mirigyhámszövetből épül fel.',
+                  'Felépítés szerint a hámszövet lehet egyrétegű (egyetlen sejtsor alkotja, jellemzően ott, ahol az anyagok gyors átjutása a cél, pl. a tüdő léghólyagocskáiban) vagy többrétegű (több sejtréteg egymáson, ott alkalmazzák, ahol nagyobb mechanikai védelemre van szükség, pl. a bőr felszínén). A bőr felszínét borító többrétegű elszarusodott laphám jellegzetes felépítése (a felszíni sejtrétegek elszarusodása, majd folyamatos leválása) kiválóan tükrözi ezt a védő funkciót.',
+                ],
+              },
+              {
+                heading: 'Izomszövet',
+                paragraphs: [
+                  'Az izomszövet sejtjei összehúzódásra képesek, ez a szövettípus felelős az állatok mozgásáért - mind a testrészek egymáshoz képesti elmozdulásáért, mind a belső szervek (pl. az emésztőrendszer) működéséért.',
+                  'A vázizom (harántcsíkolt izom) a csontvázhoz kapcsolódva biztosítja az akaratlagos mozgást (pl. a végtagok mozgatását); rostjai mikroszkópban jellegzetes, harántirányú csíkolatot mutatnak, amely a szabályosan rendezett összehúzódó fehérjéknek köszönhető.',
+                ],
+              },
+              {
+                heading: 'Kötőszövet',
+                paragraphs: [
+                  'A kötőszövet a szervezet szerveit összekapcsoló, azokat védő és gyakran tápanyagot is raktározó szövettípus - ide tartozik például a korábban megismert zsírszövet is. A kötőszövet sejtjei jellemzően nagy mennyiségű sejtközötti állományt (mátrixot) termelnek, amelynek összetétele határozza meg az adott kötőszövet-típus tulajdonságait.',
+                  'A csontszövet mátrixa ásványi anyagokkal (elsősorban kalcium-sókkal) átitatott, ezért rendkívül szilárd - ez teszi alkalmassá a testtartás és a belső szervek védelmére. Meglepő módon az emberi vér is kötőszövet: sejtjei (vörösvértestek, fehérvérsejtek) folyékony sejtközötti állományban (vérplazmában) úsznak, és a vér is a szervezet részei közötti anyagszállítást (összekapcsolást) végzi.',
+                  'A kötőszövet családjába tartoznak továbbá az inak (amelyek az izmokat a csontokhoz rögzítik) és a szalagok (amelyek a csontokat kötik össze egymással az ízületeknél) is - ezek rostos szerkezete nagy szakítószilárdságot biztosít, ami elengedhetetlen a mozgás közben fellépő erők elviseléséhez.',
+                ],
+              },
+              {
+                heading: 'Idegszövet',
+                paragraphs: [
+                  'Az idegszövet az ingerület felvételét és vezetését végzi: sejtjei (idegsejtek) hosszú nyúlványaikkal képesek elektromos jeleket gyorsan továbbítani a szervezet távoli pontjai között, ezáltal biztosítva az érzékelés és a mozgásszabályozás összehangolását. Az idegsejtek mellett az idegszövetben ún. gliasejtek is találhatók, amelyek az idegsejteket táplálják, védik és szigetelik, önmaguk azonban nem vezetnek ingerületet.',
+                ],
+              },
+              {
+                heading: 'A funkció és a felépítés kapcsolata',
+                paragraphs: [
+                  'Mind a négy szövettípusnál jól látható, hogy a sejtek alakja, elrendeződése és a köztük lévő anyag mennyisége szorosan tükrözi a betöltött funkciót: a hámszövet sejtjei szorosan illeszkednek (védelem), az izomszövet sejtjei megnyúltak és összehúzódásra képesek (mozgás), a kötőszövet sejtjei köré bőséges sejtközötti anyag rakódik (összekötés, raktározás), az idegszövet sejtjei pedig hosszú nyúlványokkal rendelkeznek (gyors jeltovábbítás).',
+                ],
+              },
+            ],
+            keyTerms: ['hámszövet', 'izomszövet', 'kötőszövet', 'idegszövet', 'vázizom', 'csontszövet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten további szövettípusokat kell felismerni, és a látott struktúrák szerepét a szövet működésével összefüggésben kell értelmezni.',
+            sections: [
+              {
+                heading: 'További szövettípusok: simaizom, szívizom, csillós hám, üvegporc',
+                paragraphs: [
+                  'A simaizom - a vázizommal ellentétben - akaratlanul (a tudatos irányítástól függetlenül) húzódik össze, és a belső szervek (pl. a bélcsatorna vagy az erek fala) mozgatásáért felelős; mikroszkópban nem mutat harántcsíkolatot, mert összehúzódó fehérjéi kevésbé szabályosan rendezettek, mint a vázizomban.',
+                  'A szívizom a vázizom és a simaizom tulajdonságait egyesíti: harántcsíkolt (mint a vázizom), de akaratlanul, önállóan, ritmikusan húzódik össze (mint a simaizom) - ezt a saját ritmust a szívizomsejtek különleges, egymást gyorsan ingerlő kapcsolatai teszik lehetővé - ez teszi lehetővé, hogy a szív a szervezet idegi vezérlésétől függetlenül is folyamatosan, ütemesen dobogjon.',
+                  'A csillós hám sejtjeinek felszínét apró, mozgásra képes csillók borítják, amelyek összehangolt mozgással anyagokat (pl. nyálkát, benne porszemcséket) képesek továbbítani a hám felszínén - ez a szerkezet jellemzi például a légutak belső felszínét, ahol a becsípődött porszemcséket és baktériumokat a nyálkával együtt a garat felé továbbítja.',
+                  'Az üvegporc sima, rugalmas, de nyomásra ellenálló kötőszövet-típus, amelynek mátrixa nem tartalmaz látható rostokat - ez a szerkezet teszi alkalmassá az ízületi felszínek súrlódásmentes mozgatására és a légutak (pl. a légcső) rugalmas, de formatartó megtámasztására.',
+                  'Jól látható tehát, hogy mind a négy itt tárgyalt szövet a középszinten megismert alap-szövettípusok (izomszövet, hámszövet, kötőszövet) egy-egy speciális, funkciójában eltérő változata: a simaizom és a szívizom az izomszövet, a csillós hám a hámszövet, az üvegporc pedig a kötőszövet családjába tartozik - ez is jól mutatja, hogy egy adott szövettípuson belül is nagy szerkezeti-funkcionális sokféleség alakulhat ki.',
+                ],
+              },
+            ],
+            keyTerms: ['simaizom', 'szívizom', 'csillós hám', 'üvegporc'],
+          },
+        },
+      },
+      {
+        id: 'allati-szaporodas-egyedfejlodes',
+        title: 'Szaporodás és egyedfejlődés',
+        order: 31,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Külső megtermékenyítés', 'Belső megtermékenyítés'],
+          rows: [
+            ['Helyszín', 'a testen kívül, vízben', 'a nőivarú egyed testében'],
+            ['Utódszám', 'jellemzően nagy (kis túlélési esély/utód)', 'jellemzően kisebb (nagyobb túlélési esély/utód)'],
+            ['Ivadékgondozás', 'jellemzően kevés vagy nincs', 'gyakran kiterjedt'],
+            ['Példa', 'csontos halak', 'hüllők, madarak, emlősök'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert állatcsoportok (szivacsoktól az emlősökig) szaporodási módjainak sokfélesége mögött néhány alapvető fogalom és összefüggés húzódik meg - ebben a fejezetben ezeket rendszerezzük, és megvizsgáljuk, hogyan függ össze az állatok szaporodási stratégiája az életkörülményeikkel.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: ivarsejtek és zigóta',
+                paragraphs: [
+                  'A petesejt a nőivarú egyed ivarsejtje: jellemzően nagyméretű, mozdulatlan, és tartalék tápanyagot (szikanyagot) raktároz, amely a korai egyedfejlődést táplálja. A hímivarsejt ezzel szemben apró, jellemzően ostorral rendelkező, mozgékony sejt, amelynek egyetlen "feladata" a petesejt elérése és megtermékenyítése.',
+                  'A megtermékenyítés során a hímivarsejt és a petesejt sejtmagja egyesül, létrehozva a zigótát - ez az új egyed első, még osztatlan sejtje, amelyből az egyedfejlődés minden további lépése kiindul.',
+                ],
+              },
+              {
+                heading: 'Hímnősség és váltivarúság',
+                paragraphs: [
+                  'Egyes állatfajoknál egyetlen egyed mindkét ivarsejttípust (petesejtet és hímivarsejtet is) képes termelni - ezt hímnősségnek nevezzük. Ilyenek például a korábban megismert szivacsok, a földigiliszta (Gyűrűsférgek fejezet) és a csigák nagy része - esetükben azonban a megtermékenyítéshez jellemzően ekkor is két egyed szükséges, amelyek kölcsönösen megtermékenyítik egymást.',
+                  'A legtöbb állatfajnál ezzel szemben az egyedek ivarilag elkülönültek (váltivarúak): egy adott egyed vagy kizárólag petesejtet, vagy kizárólag hímivarsejtet termel - ez jellemzi a korábban megismert gerinces csoportok (csontos halak, kétéltűek, hüllők, madarak, emlősök) mindegyikét.',
+                ],
+              },
+              {
+                heading: 'Ivari kétalakúság',
+                paragraphs: [
+                  'Sok váltivarú fajnál a hím és a nő egyedek külső megjelenésükben is jelentősen eltérnek egymástól - ezt a jelenséget ivari kétalakúságnak (nemi dimorfizmusnak) nevezzük. Jellegzetes példa a pávakakas feltűnő, díszes tollazata a jóval szerényebb megjelenésű pávatyúkhoz képest, vagy az oroszlánhím jellegzetes sörénye - ezek a különbségek jellemzően a partnerválasztásban (a másik nem vonzásában) játszanak szerepet.',
+                ],
+              },
+              {
+                heading: 'Embrionális és posztembrionális fejlődés',
+                paragraphs: [
+                  'Az egyedfejlődés embrionális szakasza a megtermékenyítéstől a születésig (vagy a tojásból/ikrából történő kikelésig) tart, ez alatt alakulnak ki az egyed alapvető szervrendszerei. A posztembrionális fejlődés a születés (kikelés) utáni időszakot jelenti, amely alatt az egyed eléri a kifejlett állapotot - ez lehet fokozatos (ahogy a legtöbb gerincesnél), vagy magában foglalhat radikális átalakulást is, ahogy azt a korábban (Kétéltűek fejezet) megismert átalakulásos egyedfejlődésnél (metamorfózisnál) láttuk.',
+                ],
+              },
+              {
+                heading: 'Az életkörülmények és a szaporodási mód kapcsolata',
+                paragraphs: [
+                  'A megtermékenyítés helyszíne szorosan összefügg az állat élőhelyével: a vízi élőhelyű fajoknál (pl. a korábban megismert csontos halaknál) gyakori a külső megtermékenyítés, amikor mindkét ivarsejt a vízbe kerül, és ott egyesül. A szárazföldi (illetve másodlagosan szárazföldi életmódú) fajoknál - pl. a hüllőknél, madaraknál, emlősöknél - ezzel szemben a belső megtermékenyítés a jellemző, hiszen az ivarsejtek szárazföldön történő egyesülése kiszáradás nélkül csak a nőivarú egyed testében védetten valósulhat meg.',
+                  'Szoros összefüggés figyelhető meg az utódszám és az ivadékgondozás mértéke között is: a külső megtermékenyítésű fajok jellemzően rendkívül sok utódot (pl. ikrát) hoznak létre, mivel ezek túlélési esélye egyenként alacsony és nincs szülői gondoskodás, míg a belső megtermékenyítésű, kiterjedt ivadékgondozást nyújtó fajok (pl. az emlősök) jellemzően kevesebb utódot hoznak világra, de azok túlélési esélye egyedenként jóval nagyobb.',
+                ],
+              },
+              {
+                heading: 'Ivartalan szaporodás és regeneráció az állatvilágban',
+                paragraphs: [
+                  'Az állatvilágban az ivaros szaporodás mellett ivartalan szaporodás is előfordul, amelynek során az utód egyetlen szülőtől, ivarsejtek egyesülése nélkül jön létre - ilyen a korábban (Csalánozók fejezet) megismert bimbózás, amelynek során a polipformájú egyed testén egy kis kinövés fejlődik önálló egyeddé.',
+                  'Az ivartalan szaporodással rokon jelenség a regeneráció: egyes állatok képesek elvesztett testrészeiket újranöveszteni, vagy akár egy leszakadt testrészből egy teljes, új egyedet regenerálni. Erre a legjobb példa a korábban (Laposférgek fejezet) megismert planária, amely testében szétszórtan elhelyezkedő, differenciálatlan neoblasztjai révén akár egyetlen levágott testdarabból is teljes, új egyeddé képes regenerálódni.',
+                ],
+              },
+            ],
+            keyTerms: ['petesejt', 'hímivarsejt', 'zigóta', 'hímnősség', 'váltivarúság', 'ivari kétalakúság', 'embrionális fejlődés', 'posztembrionális fejlődés', 'regeneráció'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni az ivaros és az ivartalan szaporodás határterületén álló, különleges jelenséget, a parthenogenezist (szűznemzést).',
+            sections: [
+              {
+                heading: 'Parthenogenezis (szűznemzés)',
+                paragraphs: [
+                  'A parthenogenezis olyan szaporodási mód, amelynek során a petesejtből megtermékenyítés (hímivarsejttel való egyesülés) nélkül fejlődik ki új egyed - ez formálisan ivarsejtből indul ki (mint az ivaros szaporodás), de a folyamathoz csak egyetlen szülő szükséges (mint az ivartalan szaporodásnál).',
+                  'A méheknél a parthenogenezis a nemek meghatározásának alapja: a megtermékenyített (diploid) petesejtekből dolgozók vagy anyakirálynők, a megtermékenyítetlen (haploid) petesejtekből pedig hímek (herék) fejlődnek - ez azt jelenti, hogy a hím méheknek nincs apjuk, csak anyjuk.',
+                  'Egyes levéltetű-fajoknál szezonálisan váltakozik a szaporodási mód: nyáron, kedvező körülmények között parthenogenezissel gyorsan szaporodnak (ezzel rövid idő alatt hatalmas populációt hozva létre), ősszel viszont áttérnek az ivaros szaporodásra, amely a genetikai változatosság és a télállóbb, megtermékenyített peték létrehozása miatt előnyösebb a kedvezőtlen évszak túlélésére. Egyes gyíkfajoknál pedig olyan populációk is léteznek, amelyek kizárólag parthenogenezissel szaporodó nőstényekből állnak, hím egyedek nélkül.',
+                ],
+              },
+            ],
+            keyTerms: ['parthenogenezis'],
+          },
+        },
+      },
+    ],
+  },
+  {
+    id: 'allati-viselkedes',
+    title: 'Etológia',
+    description: 'Öröklött és tanult magatartásformák, önfenntartás, fajfenntartás, motiváció.',
+    icon: 'Brain',
+    color: 'from-teal-500 to-cyan-600',
+    chapters: [
+      {
+        id: 'oroklott-tanult-magatartas',
+        title: 'Öröklött és tanult magatartásformák',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Öröklött magatartás', 'Tanult magatartás'],
+          rows: [
+            ['Kialakulás', 'genetikailag kódolt, tapasztalat nélkül is megjelenik', 'egyedi tapasztalat, tanulás alapján alakul ki'],
+            ['Változékonyság', 'fajon belül egységes, nem változik az egyed életében', 'egyedenként eltérhet, az élet során módosulhat'],
+            ['Rugalmasság', 'kicsi - változó körülményekhez nehezen alkalmazkodik', 'nagy - a környezethez igazítható'],
+            ['Kialakulás sebessége/megbízhatósága', 'azonnal rendelkezésre áll, megbízható', 'időt és gyakorlást igényel, hibázhat'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'Ebben a fejezetben - a korábban megismert állatcsoportok testfelépítése és életműködései után - az állatok viselkedésével kezdünk foglalkozni: azt vizsgáljuk meg, hogyan alakul ki egy adott magatartásforma, és milyen fő típusokba sorolhatók az állatok viselkedésformái.',
+            sections: [
+              {
+                heading: 'Öröklött (veleszületett) magatartásformák',
+                paragraphs: [
+                  'Az öröklött magatartásformák genetikailag kódoltak: tanulás vagy előzetes tapasztalat nélkül is megjelennek, és az adott faj minden egyedénél hasonlóan, kiszámítható módon zajlanak le. Jellegzetes példa a keresztes pók hálószövése: a pók - amely az Ízeltlábúak törzsébe tartozik, ahogy azt korábban (Rovarok fejezet) már érintettük, a rovaroktól eltérően azonban a Pókszabásúak osztályát alkotja - korábbi tapasztalat vagy megfigyelés nélkül, első alkalommal is képes a fajára jellemző, bonyolult mintázatú hálót megszőni.',
+                  'Hasonlóan öröklött magatartás a lazacok szülőhelyükre (ahol ők maguk is kikeltek) történő visszavándorlása ívás céljából: ezt az utat korábbi tapasztalat nélkül, kizárólag genetikailag meghatározott mechanizmusok (pl. szaglási emlékek és mágneses tájékozódás) alapján teszik meg. Az öröklött magatartásformák jellemzően a túléléshez (pl. táplálékszerzés, menekülés) vagy a szaporodáshoz kapcsolódó, a faj számára létfontosságú helyzetekben jelennek meg, ahol a hibázás túl nagy kockázattal járna.',
+                ],
+              },
+              {
+                heading: 'Tanult magatartásformák',
+                paragraphs: [
+                  'A tanult magatartásformák egyedi tapasztalat vagy környezeti hatás eredményeként alakulnak ki, ezért egyedenként eltérhetnek, és az egyed élete során módosulhatnak, finomodhatnak. Jellegzetes példa a kutyák betanítása egyszerű parancsokra (pl. "ül"), amely ismételt gyakorlás és megerősítés (jutalmazás) hatására alakul ki.',
+                  'A csimpánzoknál megfigyelhető szerszámhasználat (pl. faágak felhasználása termeszek "kihalászására") szintén tanult magatartás: a fiatal egyedek a csoport tapasztaltabb tagjainak megfigyelésével sajátítják el ezt a technikát, és a technika részletei populációnként eltérhetnek.',
+                  'A macskák egerészési technikája is jó példa a tanulásra: a kölyökmacska ösztönösen ragadozó, de a hatékony vadászati technikát (leselkedés, lopakodás, pontosan időzített ugrás) az anyjától eltanulva finomítja - azok a kölykök, amelyek nem figyelhetik meg élő zsákmány elejtését, jellemzően kevésbé hatékony vadászokká válnak.',
+                ],
+              },
+              {
+                heading: 'Az öröklött és a tanult magatartás összehasonlítása',
+                paragraphs: [
+                  'Az öröklött magatartásformák előnye, hogy azonnal, gyakorlás nélkül is megbízhatóan rendelkezésre állnak - ez különösen fontos olyan helyzetekben, ahol nincs idő tanulásra (pl. egy ragadozó elől menekülésnél). Hátrányuk viszont, hogy rugalmatlanok: ha a környezet a fajra jellemző mintától eltérően változik meg, az öröklött magatartás nem, vagy csak korlátozottan tud alkalmazkodni hozzá.',
+                  'A tanult magatartásformák ezzel szemben rugalmasak, a változó környezeti feltételekhez igazíthatók, ugyanakkor kialakításuk időt és gyakorlást igényel, és a tanulási folyamat közben hibák is előfordulhatnak - ezért azoknál a fajoknál a leghasznosabbak, amelyek hosszú élettartamúak, és így "megtérül" a tanulásba fektetett idő és energia.',
+                  'Ez a különbség magyarázza, hogy a rövid élettartamú, gyorsan szaporodó fajoknál (pl. a rovaroknál) a viselkedés jelentős része öröklött - egyszerűen nincs elég idejük a tanulásra -, míg a hosszú élettartamú, fejlett idegrendszerű fajoknál (pl. az emlősöknél, különösen a főemlősöknél) a tanult magatartásformák aránya jóval nagyobb. Ez utóbbi hátterében a korábban (Emlősök fejezet) megismert, kiemelkedően fejlett nagyagykéreg áll, amely - ahogy azt ott is láttuk - éppen az összetett viselkedés és a tanulás alapja.',
+                ],
+              },
+            ],
+            keyTerms: ['öröklött magatartásforma', 'tanult magatartásforma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt kell megérteni, hogy a tanult magatartásformák sem függetlenek teljesen az öröklött tényezőktől - a kettő gyakran szorosan összefonódik.',
+            sections: [
+              {
+                heading: 'A tanult magatartásformák öröklött háttere',
+                paragraphs: [
+                  'Bár a tanult magatartásformák konkrét tartalma egyedi tapasztalat eredménye, a tanulási képesség maga, valamint az, hogy egy adott faj MIT képes megtanulni, gyakran öröklött korlátok közé szorul. Jellegzetes példa erre az énekesmadarak énektanulása: a fiatal hím madár a saját faja jellegzetes énekmintázatát csak egy genetikailag meghatározott, korlátozott időszakban (kritikus periódusban) képes elsajátítani, és kizárólag a saját fajára jellemző alapmintázatot képes megtanulni - más faj énekét hallva sem sajátítja el azt.',
+                  'Ez azt mutatja, hogy az öröklött és a tanult magatartás nem éles ellentétek, hanem egy folyamatos átmenet két végpontja: a legtöbb valós magatartásforma mindkét tényező (az öröklött "kész keret" és az egyedi tanulási tapasztalat) együttes hatására alakul ki.',
+                  'Hasonló jelenség figyelhető meg a méheknél is: a fiatal dolgozóméhek a táplálékforrás irányát és távolságát jelző, jellegzetes "táncnyelv" alapmozdulatait öröklötten ismerik, ám a tánc pontosságát megfigyeléssel és gyakorlással tovább finomítják - itt is egy öröklött váz épül ki tanult finomhangolással - ez a kettős mechanizmus biztosítja, hogy a méhek kommunikációja egyszerre legyen megbízható és egyre pontosabb.',
+                  'Az öröklött tényezők azt is befolyásolják, hogy egy faj MIT képes könnyen megtanulni: rhesusmajmokkal végzett kísérletek szerint az állatok sokkal könnyebben (akár egyetlen megfigyelés alapján) tanulnak meg félni a kígyóktól, mint a virágoktól, még akkor is, ha mindkettőt semleges tárgyként mutatják be nekik - ez arra utal, hogy az evolúció során veszélyt jelentő ingerekkel (pl. kígyók) szembeni félelem tanulására a fajnak öröklött, "előkészített" hajlama van, míg más, biológiailag közömbös ingerekkel szemben nincs ilyen segítség - ezt a jelenséget a viselkedéstudomány "előkészítettségnek" (preparedness) nevezi - ez is jó példa arra, hogy az evolúció nemcsak a konkrét viselkedést, hanem a tanulási képesség irányultságát is alakíthatja.',
+                ],
+              },
+            ],
+            keyTerms: ['kritikus periódus'],
+          },
+        },
+      },
+      {
+        id: 'onfenntartasi-viselkedesek',
+        title: 'Önfenntartással kapcsolatos viselkedések',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Batesi mimikri', 'Müller-féle mimikri'],
+          rows: [
+            ['Résztvevők', 'egy védtelen és egy védett faj', 'két (vagy több) egyaránt védett faj'],
+            ['A hasonlóság oka', 'a védtelen faj "csal": utánozza a védett fajt', 'kölcsönösen erősítik egymás jelzését'],
+            ['Példa', 'egyes lepkefajok a méhek/darazsak mintázatát utánozzák', 'több egymással rokon, mérgező pillangófaj hasonló mintázata'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák fejezet) megismert alapfogalmak után az önfenntartással kapcsolatos viselkedéseket vizsgáljuk meg: azokat a magatartásformákat, amelyek közvetlenül az egyed túlélését szolgálják, jellemzően négy nagy csoportba sorolva (tájékozódás, táplálkozási magatartás, menekülés, védekezés).',
+            sections: [
+              {
+                heading: 'Tájékozódás',
+                paragraphs: [
+                  'A tájékozódási viselkedés lehetővé teszi, hogy az állatok megtalálják az útjukat élőhelyükön, táplálékforrásukhoz vagy vissza a fészkükhöz. A galambok kiemelkedő tájékozódási képességgel rendelkeznek: több száz kilométerről is haza tudnak találni, feltehetően a Föld mágneses mezejének érzékelése, a nap helyzete és tájékozódási pontok kombinációja alapján.',
+                  'A mézelő méhek a nap helyzetét iránytűként használva tájékozódnak, és képesek a "táncnyelvvel" a táplálékforrás pontos irányát és távolságát is közölni fajtársaikkal - ennek öröklött és tanult összetevőit korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már részletesebben is megvizsgáltuk.',
+                  'A vándorló madarak (pl. a fecskék) hosszú távú vonulásukat több forrás kombinált használatával oldják meg: a csillagok és a nap állása, a Föld mágneses mezeje, valamint - fiatal madaraknál a szülők vezetésével szerzett - tapasztalat egyaránt hozzájárul a helyes útvonal megtalálásához. Ez is jó példa arra, hogy egy önfenntartással kapcsolatos viselkedés ötvözheti az öröklött és a tanult elemeket.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási magatartás',
+                paragraphs: [
+                  'A táplálkozási magatartás a táplálékkeresés, -elfogás és -feldolgozás módjait foglalja magába. A farkasok csoportos (falkában történő) vadászata lehetővé teszi, hogy náluk jóval nagyobb testű zsákmányt (pl. jávorszarvast) is el tudjanak ejteni, mint amire egyetlen egyed önmagában képes lenne.',
+                  'A mókusok ősszel táplálékot (pl. makkot, mogyorót) rejtenek el számos különböző helyen, majd télen memóriájukra és térbeli tájékozódási képességükre támaszkodva keresik meg újra ezeket a raktárakat - ez a viselkedés jelentősen növeli a téli túlélési esélyüket.',
+                  'A pókok hálószövése is táplálkozási magatartás: a háló passzív csapdaként szolgál, amellyel a pók energiabefektetés nélkül, folyamatosan foghat táplálékot, szemben az aktív vadászattal, amely minden egyes alkalommal energiát igényel.',
+                ],
+              },
+              {
+                heading: 'Menekülés',
+                paragraphs: [
+                  'A menekülési viselkedés a ragadozók elől való elmenekülést szolgálja. A gazellák és más patás állatok kiemelkedő futási sebessége és kitartása közvetlen menekülési stratégia, míg a halrajok összehangolt, hirtelen irányváltásokkal teli mozgása megzavarja a ragadozót, megnehezítve egyetlen egyed kiválasztását és üldözését.',
+                  'Egyes fajok a "tettető" halál (thanatózis) stratégiáját alkalmazzák: az oposszum veszély esetén mozdulatlanná dermed, és olyan hitelesen imitálja az elhullott állat állapotát (nyitott szájjal, kilógó nyelvvel), hogy sok ragadozó elveszti érdeklődését az ilyen, számára haszontalannak tűnő zsákmány iránt - ez a stratégia azért működik, mert sok ragadozó kizárólag friss, saját maga ejtette zsákmányt fogyaszt, elkerülve a már elhullott, esetleg megromlott tetemeket.',
+                ],
+              },
+              {
+                heading: 'Védekezés',
+                paragraphs: [
+                  'A védekezési viselkedések és testi adaptációk rendkívül sokfélék: a teknősök páncélja és a sünök tüskéi passzív, mechanikai védelmet nyújtanak, míg a skorpiók fullánkja és a méhek csípése aktív, mérget bevető védekezési eszköz.',
+                  'A bűzösborz és a görény erős szagú váladékot bocsát ki védekezésül, amely elriasztja a ragadozókat. Más fajok álcázással (pl. a levélbogár testalakja és színe a levelekhez hasonlít) vagy mimikrivel (más, veszélyes faj utánzásával) védekeznek a felfedezés, illetve a támadás ellen. A kaméleonok színváltoztató képessége is szolgálhat védekezési célt, bár elsősorban a testhőmérséklet-szabályozásban és a hangulati, illetve társas jelzésekben van ennél is fontosabb szerepe.',
+                ],
+              },
+            ],
+            keyTerms: ['tájékozódási viselkedés', 'táplálkozási magatartás', 'menekülési viselkedés', 'thanatózis', 'védekező viselkedés', 'álcázás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes mélyebben megismerni a mimikri két fő típusát, amelyek jól mutatják, hogy a védekező viselkedés és a testfelépítés hogyan fonódik össze az evolúció során.',
+            sections: [
+              {
+                heading: 'A mimikri két típusa: Batesi és Müller-féle mimikri',
+                paragraphs: [
+                  'A Batesi mimikri esetén egy védtelen (pl. nem mérgező, fullánk nélküli) faj egy védett (pl. mérgező vagy fullánkkal rendelkező) faj külsejét utánozza - ezzel a ragadozókat "megtéveszti", akik elkerülik, mert összetévesztik a veszélyesnek vélt fajjal. Több lepkefaj (pl. egyes lepketrücskök) színezete és mintázata méhekre vagy darazsakra hasonlít, holott ezek a lepkék teljesen ártalmatlanok.',
+                  'A Müller-féle mimikri (amelyet Fritz Müller német természettudósról neveztek el) ezzel szemben két (vagy több), egymástól függetlenül is védett (pl. mindkettő mérgező) faj hasonló megjelenését jelenti: mivel mindkét faj valóban veszélyes vagy kellemetlen ízű, a hasonló, jól felismerhető mintázat kölcsönösen erősíti a tanulási hatást a ragadozóknál - a ragadozónak elég egyetlen fajjal rossz tapasztalatot szereznie ahhoz, hogy mindkét, hasonló megjelenésű fajt elkerülje, ami mindkét faj hosszú távú túlélése szempontjából is előnyös.',
+                  'A két mimikri-típus közötti kulcskülönbség tehát az, hogy a Batesi mimikrinél az egyik faj "csal" (valójában nem veszélyes), a Müller-féle mimikrinél viszont mindkét (vagy minden) résztvevő faj ténylegesen védett - ezért az utóbbi esetben a hasonlóság kölcsönösen, egymást erősítve előnyös, nem pedig kizárólag az egyik fél rovására valósul meg.',
+                ],
+              },
+            ],
+            keyTerms: ['Batesi mimikri', 'Müller-féle mimikri'],
+          },
+        },
+      },
+      {
+        id: 'fajfenntartasi-viselkedesek',
+        title: 'Fajfenntartással kapcsolatos viselkedések',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Önfenntartással kapcsolatos viselkedések fejezet) megismert, az egyed túlélését szolgáló viselkedések után most azokat a magatartásformákat vizsgáljuk meg, amelyek a faj fennmaradását, azaz a sikeres szaporodást és az utódok túlélését szolgálják.',
+            sections: [
+              {
+                heading: 'A partner felkeresése és az udvarlás-nász',
+                paragraphs: [
+                  'A partnerkeresés és az udvarlás fő célja a megfelelő, szaporodásra alkalmas partner megtalálása és a párzási hajlandóság kölcsönös jelzése. Az énekesmadarak hímjei jellegzetes énekükkel egyszerre jelzik territóriumukat és vonzzák a nőstényeket - ennek tanulási hátterét (a kritikus periódust) korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már megismertük.',
+                  'A pávakakas feltűnő tollazatának bemutatása is az udvarlás része, ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) az ivari kétalakúság kapcsán már érintettük. A szentjánosbogarak sajátos módon, fénnyel jelzik magukat: a nőstények jellegzetes fénymintázattal jelzik a hímeknek a párzási készenlétet.',
+                  'A gólyák és sok más madárfaj esetében az udvarlás gyakran a fészek közös építésével vagy díszítésével jár együtt - ez a közös tevékenység egyszerre erősíti a párkapcsolatot, és jelzi a partnernek a leendő szülő elkötelezettségét és alkalmasságát az ivadékgondozásra.',
+                ],
+              },
+              {
+                heading: 'Párzás',
+                paragraphs: [
+                  'A párzás magához a megtermékenyítéshez vezető viselkedés, amelyet gyakran versengés előz meg a hímek között a párzási lehetőségért - a szarvasbikák agancsviadala klasszikus példa erre: a küzdelem győztese szerzi meg a jogot a nőstényekkel való párzásra, ezáltal az erősebb, egészségesebb egyedek génjei nagyobb eséllyel kerülnek át a következő nemzedékbe.',
+                  'A megtermékenyítés konkrét, tényleges módja (külső vagy belső) fajonként eltérő, ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) az élőhely és a szaporodási mód kapcsolatánál részletesen tárgyaltuk - a párzási viselkedés is szorosan ehhez a mechanizmushoz igazodik: a belső megtermékenyítésű fajoknál a párzás jellemzően közelebbi, hosszabb testi kontaktust igényel, mint a külső megtermékenyítésű fajok egyszerű ivarsejt-kibocsátása.',
+                ],
+              },
+              {
+                heading: 'Ivadékgondozás',
+                paragraphs: [
+                  'Az ivadékgondozás a szülők utódaik túlélési esélyét jelentősen növelő viselkedése, amelynek mértéke fajonként igen eltérő. Jó példa erre a korábban (Madarak fejezet) megismert, repülésképtelen pingvinek esete: sok pingvinfajnál a két szülő felváltva jár táplálékért, míg a másik a fiókát melegíti és őrzi - ez a munkamegosztás jelentősen növeli a zord élőhelyen a fióka túlélési esélyét. Az emlősöknél a korábban (Emlősök fejezet) megismert tejmirigyek általi táplálás önmagában is kiterjedt, hosszú ideig tartó szülői gondoskodást feltételez.',
+                ],
+              },
+              {
+                heading: 'Önzetlenség (altruizmus)',
+                paragraphs: [
+                  'Az önzetlen (altruista) viselkedés során az egyed a saját érdekeit tudatosan háttérbe szorítva, akár saját túlélési esélyét is kockáztatva segít a rokonain. A korábban (Rovarok fejezet) megismert méheknél a dolgozók lemondanak saját szaporodásukról, és egész életüket a kaptár (vagyis közeli rokonaik) fenntartásának szentelik.',
+                  'A mókusok és a prérikutyák vészjelzést adnak ragadozó észlelésekor, amivel felhívják magukra a figyelmet, és ezzel megnövelik saját elkapásuk kockázatát - cserébe viszont a csoport (jellemzően rokon) tagjai időben elmenekülhetnek, ami az egyed rövid távú kockázata ellenére hosszú távon előnyös lehet a rokonai számára.',
+                ],
+              },
+              {
+                heading: 'Agresszió',
+                paragraphs: [
+                  'A fajtársak közötti agresszió jellemzően a korlátozott, hozzáférhető erőforrásokért (táplálék, territórium, partner) folyó versengésből fakad. A farkasfalkákban kialakuló rangsor (dominanciahierarchia) szabályozza a hozzáférést az erőforrásokhoz és a szaporodási lehetőségekhez, és jellemzően a nyílt, súlyos sérüléssel járó összecsapások helyett rituális fenyegető testtartásokkal dől el - ez azért is előnyös, mert a rituális küzdelem jóval kisebb sérülési kockázattal jár mindkét fél számára, mint egy komolyabb, akár halálos kimenetelű harc.',
+                ],
+              },
+            ],
+            keyTerms: ['udvarlás', 'párzás', 'ivadékgondozás', 'altruizmus', 'agresszió', 'dominanciahierarchia'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni azt az evolúciós elméletet, amely megmagyarázza, hogyan alakulhatott ki egyáltalán az önzetlen (altruista) viselkedés a természetes szelekció során.',
+            sections: [
+              {
+                heading: 'Rokonszelekció',
+                paragraphs: [
+                  'Első pillantásra ellentmondásosnak tűnhet, hogy a természetes szelekció - amely elvben a saját túlélést és szaporodást előnyben részesítő egyedeket "jutalmazza" - hogyan hozhatott létre olyan viselkedést, amely az egyed saját túlélési esélyét csökkenti mások javára. A megoldást a rokonszelekció elmélete adja: mivel a közeli rokonok genetikailag hasonlóak (pl. egy testvér átlagosan a gének felét örökli a másik testvérrel közösen), egy rokon megsegítése - még ha az egyed saját túlélését veszélyezteti is - közvetve a közös génállomány továbbörökítését szolgálhatja.',
+                  'A korábban (Rovarok fejezet) megismert méheknél ez a jelenség szélsőségesen érvényesül: a dolgozók egymással még szorosabb genetikai rokonságban állnak, mint amilyenben egy szülővel és utóddal állnának, ami tovább erősíti a rokonok (a kaptár) érdekében történő önfeláldozó viselkedés evolúciós "kifizetődését". Ennek hátterében a korábban (Szaporodás és egyedfejlődés fejezet emelt kiegészítése) megismert parthenogenezis áll: mivel a méhkirálynő megtermékenyítetlen petéiből haploid herék, megtermékenyített petéiből pedig diploid nőstények (dolgozók) fejlődnek, a nőstény testvérek (dolgozók) egymással genetikailag szorosabb kapcsolatban állnak, mint amilyenben egy hagyományos, kétszülős szaporodású fajnál a testvérek vagy akár egy szülő és utódja lennének. Ez az egyik legfontosabb magyarázat arra, hogy a rovarok között éppen a hártyásszárnyúaknál (méhek, hangyák) alakult ki a legfejlettebb társas életmód.',
+                  'A mókusok vészjelzésénél hasonló elv érvényesül: a jelzést adó egyed közeli rokonait (a saját génjeit hordozó utódokat és testvéreket) menti meg, ami hosszú távon, sok nemzedéken keresztül nézve a jelzésre "hajlamosító" gének elterjedését segíti elő, még akkor is, ha az adott pillanatban az egyed saját túlélési esélye csökken.',
+                ],
+              },
+            ],
+            keyTerms: ['rokonszelekció'],
+          },
+        },
+      },
+      {
+        id: 'veleszuletett-magatartasformak',
+        title: 'Veleszületett magatartásformák',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Feltétlen reflex', 'Öröklött mozgásmintázat'],
+          rows: [
+            ['Válasz jellege', 'egyszerű, azonnali izom- vagy mirigyválasz', 'összetett, több lépésből álló mozgássorozat'],
+            ['Lefolyás', 'az inger fennállásáig tart', 'egyszer elindulva végig lefut, akkor is, ha az inger közben megszűnik'],
+            ['Példa', 'térdreflex, pupillareflex', 'a lúd tojás-visszagörgetése'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák fejezet) általánosságban megismert öröklött magatartás három jellegzetes, egyre összetettebb típusát különböztetjük meg: a feltétlen reflexet, az irányított mozgást és az öröklött mozgásmintázatot - mindhárom közös jellemzője, hogy genetikailag kódolt, és tanulás nélkül, minden egyeden hasonló módon jelenik meg.',
+            sections: [
+              {
+                heading: 'Feltétlen reflex',
+                paragraphs: [
+                  'A feltétlen reflex egy adott ingerre adott, veleszületett, gyors és egyszerű válasz, amely tanulás nélkül, minden egyeden azonos módon zajlik le. Emberben klasszikus példa a térdreflex (egy ütés hatására a lábszár automatikusan, akaratlanul előrelendül) vagy a pupillareflex (erős fényre a pupilla automatikusan összeszűkül).',
+                  'A csecsemők szopóreflexe szintén feltétlen reflex: az újszülött már születésétől fogva, tanulás nélkül képes a szájába kerülő tárgyra szopó mozdulattal reagálni - ez a fontos reflex biztosítja a táplálékfelvétel azonnali működőképességét. Hasonlóan veleszületett a köhögési és a tüsszentési reflex is, amelyek a légutakba véletlenül bekerülő idegen anyagok gyors eltávolítását szolgálják.',
+                ],
+              },
+              {
+                heading: 'Irányított mozgás (taxis)',
+                paragraphs: [
+                  'Az irányított mozgás (taxis) során az egész állat egy adott ingerforrás felé (pozitív taxis) vagy attól elfelé (negatív taxis) mozog. Az ászkarákok jellemzően a nedvesebb helyek felé mozognak (pozitív higrotaxis), ezáltal elkerülve a kiszáradás veszélyét, míg a legtöbb, korábban (Rovarok fejezet) megismert éjjeli lepkefaj a fényforrások felé repül (pozitív fototaxis) - ez utóbbi teszi lehetővé, hogy éjszaka a mesterséges fényforrások (pl. lámpák) köré gyűljenek.',
+                  'A korábban (Gyűrűsférgek fejezet) megismert földigiliszták a talajban jellemzően lefelé mozognak (pozitív geotaxis), ami segít nekik a felszín kiszáradó, veszélyesebb rétegeit elkerülni, míg egyes baktériumok a tápanyag-koncentráció növekedésének irányába úsznak (pozitív kemotaxis) - a taxis tehát nem csak az állatvilágban, hanem az egysejtű szervezeteknél is jól megfigyelhető, alapvető viselkedésforma.',
+                ],
+              },
+              {
+                heading: 'Öröklött mozgásmintázat',
+                paragraphs: [
+                  'Az öröklött mozgásmintázat (más néven rögzített akcióminta) egy összetett, több lépésből álló, sztereotip mozgássorozat, amelyet egy adott kulcsinger indít el, de amely egyszer elindulva a maga teljességében lezajlik, akkor is, ha az azt eredetileg kiváltó inger időközben megszűnik.',
+                  'Klasszikus, Konrad Lorenz és Niko Tinbergen etológusok által leírt példa a lúd tojás-visszagörgető mozdulata: ha egy kikelt tojás kigördül a fészekből, a lúd nyakát a tojás felé nyújtva, csőrével azt visszagörgeti a fészekbe. Ha kísérletben menet közben eltávolítják a tojást, a lúd akkor is befejezi a teljes görgető mozdulatsort, mintha a tojás még mindig ott lenne - ez bizonyítja, hogy a mozgásmintázat egyszer elindulva önállóan, az eredeti inger nélkül is végigfut.',
+                  'A három bemutatott magatartásforma egyre nagyobb összetettséget mutat: a feltétlen reflex egyetlen izom vagy mirigy egyszerű válasza, az irányított mozgás az egész test elmozdulását igényli, az öröklött mozgásmintázat pedig ezeknél is bonyolultabb, több lépésből álló, időben elhúzódó cselekvéssor - mindhárom azonban közös vonása, hogy genetikailag kódolt, tanulás nélkül is megjelenő viselkedés.',
+                ],
+              },
+              {
+                heading: 'Gyakorlati felismerés',
+                paragraphs: [
+                  'A gyakorlatban a három típus jól elkülöníthető egymástól annak alapján, hogy mekkora testrész vesz részt a válaszban, és mennyi ideig tart: ha csak egyetlen izom vagy mirigy reagál azonnal, feltétlen reflexről van szó; ha az egész állat elmozdul egy inger irányába vagy azzal ellentétes irányba, irányított mozgásról beszélünk; ha pedig egy hosszabb, több lépésből álló, önmagában is összetett cselekvéssor zajlik le, azt öröklött mozgásmintázatnak nevezzük.',
+                ],
+              },
+            ],
+            keyTerms: ['feltétlen reflex', 'irányított mozgás', 'öröklött mozgásmintázat'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a feltétlen reflexek idegrendszeri hátterét, a reflexívet, hiszen ez ad magyarázatot arra, miért olyan gyorsak és megbízhatóak ezek a reakciók.',
+            sections: [
+              {
+                heading: 'A reflexív',
+                paragraphs: [
+                  'A feltétlen reflexek idegrendszeri alapja a reflexív: az inger felvételét végző érzékszerv (a receptor) által keltett ingerület egy érző idegsejten keresztül jut el a gerincvelőbe (vagy egyes esetekben az agytörzsbe), ahol - gyakran egy vagy akár több köztes idegsejt közbeiktatásával - egy megfelelő mozgató idegsejtre tevődik át, amely aztán a választ ténylegesen végrehajtó izmot vagy mirigyet (az effektort) ingerli.',
+                  'A reflexív egyik legfontosabb jellegzetessége, hogy a válasz kialakításához nincs szükség az agykéreg (a tudatos feldolgozás) bevonására - ez teszi lehetővé, hogy a reflexek rendkívül gyorsan, sok esetben már azelőtt lezajoljanak, hogy az egyed tudatosan érzékelné az ingert (pl. a forró tárgytól való kéz-visszahúzás reflexe).',
+                  'Ez a "megkerülő" működés evolúciós szempontból is előnyös: azoknál a helyzeteknél, ahol a válasz sebessége létfontosságú (pl. sérülés elkerülése), a tudatos feldolgozás beiktatása felesleges késleltetést jelentene - a reflexív ezt a késleltetést küszöböli ki azáltal, hogy a döntést gyakorlatilag már a gerincvelő szintjén meghozza, az agy ilyenkor csak utólag, a reflex teljes lezajlása után "értesül" a történtekről - ez az elrendezés jól illusztrálja, hogy az idegrendszer nem minden döntést a legmagasabb szinten (az agyban) hoz meg, hanem a sürgős, egyszerű válaszokat evolúciósan kiszervezi az alacsonyabb, gyorsabban reagáló idegrendszeri szintekre.',
+                ],
+              },
+            ],
+            keyTerms: ['reflexív', 'effektor'],
+          },
+        },
+      },
+      {
+        id: 'tanult-magatartasformak',
+        title: 'Tanult magatartásformák',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Megszokás (habituáció)', 'Érzékenyítés (szenzitizáció)'],
+          rows: [
+            ['Az inger jellege', 'ismétlődő, veszélytelen inger', 'ismétlődő, erős vagy veszélyes inger'],
+            ['A válasz változása', 'fokozatosan csökken, majd megszűnik', 'fokozatosan erősödik'],
+            ['Adaptív jelentősége', 'energiatakarékosság (felesleges válaszok kiszűrése)', 'fokozott éberség valódi veszély esetén'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Veleszületett magatartásformák fejezet) megismert öröklött típusok után most azokat a magatartásformákat vizsgáljuk meg, amelyek egyedi tapasztalat, azaz tanulás eredményeként alakulnak ki.',
+            sections: [
+              {
+                heading: 'Bevésődés és érzékenyítés',
+                paragraphs: [
+                  'A bevésődés (imprinting) során egy fiatal állat egy korai, genetikailag meghatározott kritikus periódusban - amelynek fogalmát korábban (Öröklött és tanult magatartásformák fejezet emelt kiegészítése) már megismertük - tartósan rögzíti egy adott inger (jellemzően a szülő) képét, és ehhez kötődik. Konrad Lorenz klasszikus kísérletében a frissen kikelt lúdfiókák az első mozgó tárgyat (esetenként magát Lorenzt) rögzítették szülőként, és attól kezdve mindenhová követték.',
+                  'A bevésődés kizárólag ebben a szigorúan korlátozott időszakban alakulhat ki - ha a kritikus periódus alatt nem volt jelen a megfelelő inger, később már nem, vagy csak jóval nehezebben pótolható, ez pedig jól mutatja, hogy a tanulási képesség maga is öröklötten meghatározott korlátok között működik.',
+                  'Az érzékenyítés (szenzitizáció) során egy ismételten előforduló, erős vagy veszélyes inger hatására az állat válaszkészsége fokozatosan erősödik: minél többször tapasztalja meg az ingert, annál intenzívebben reagál rá, akár egy egyébként enyhébb ingerre is felerősödött válasszal reagálva ezután. A korábban (Csigák fejezet) megismert Puhatestűek törzsébe tartozó tengeri csigáknál (pl. az Aplysia fajnál) jól tanulmányozható jelenség, hogy ismételt fájdalmas inger hatására az állat kopoltyú-visszahúzó válasza egyre erősebbé válik, akár egy egyébként enyhe érintésre is - ez a viszonylag egyszerű idegrendszerű állat az egyik legfontosabb modellszervezet az érzékenyítés sejtszintű mechanizmusának kutatásában.',
+                ],
+              },
+              {
+                heading: 'Megszokás és feltételes reflex',
+                paragraphs: [
+                  'A megszokás (habituáció) az érzékenyítés pontos ellentéte: egy ismétlődő, veszélytelennek bizonyuló inger hatására az állat válaszkészsége fokozatosan csökken, majd meg is szűnhet. A madárijesztőt kezdetben elkerülő madarak idővel megszokják annak jelenlétét, és megtanulják, hogy az nem jelent valódi veszélyt - éppen ezért a kertészek időnként áthelyezik vagy megváltoztatják a madárijesztő kinézetét, hogy a megszokás ne csökkentse a hatását.',
+                  'A feltételes reflex (klasszikus kondicionálás) során egy eredetileg semleges inger és egy feltétlen inger ismételt együttes bemutatása után a semleges inger önmagában is kiváltja a feltétlen reflexhez hasonló választ. Ivan Pavlov klasszikus kísérletében a kutyák eredetileg csak a táplálékra nyáladzottak (feltétlen reflex), de miután a táplálék megjelenését rendszeresen egy csengőhang előzte meg, a kutyák idővel már magára a csengőhangra is nyáladzani kezdtek. Ha a csengőhangot ezután hosszabb ideig táplálék nélkül ismétlik, a tanult válasz fokozatosan elhalványul (kioltódik) - ez mutatja, hogy a feltételes reflex, ellentétben a feltétlen reflexszel, folyamatos "megerősítést" igényel a fennmaradásához.',
+                ],
+              },
+              {
+                heading: 'Operáns és belátásos tanulás',
+                paragraphs: [
+                  'Az operáns tanulás során az állat saját cselekvésének következménye (jutalom vagy büntetés) határozza meg, hogy a jövőben milyen gyakran ismétli meg az adott viselkedést. B. F. Skinner kísérleteiben a patkányok megtanulták, hogy egy kar lenyomásával táplálékot kapnak, ezért egyre gyakrabban nyomták le a kart - ez az elv áll a háziállatok (pl. kutyák) jutalomalapú betanításának hátterében is, ahogy azt korábban (Öröklött és tanult magatartásformák fejezet) a "ül" parancs betanításánál már érintettük. A viselkedést követő jutalom (pl. táplálék) növeli, a büntetés (pl. kellemetlen inger) pedig csökkenti a viselkedés jövőbeli előfordulásának valószínűségét.',
+                  'A belátásos tanulás a legösszetettebb tanulási forma: az állat a problémát nem próba-szerencse alapon, fokozatosan oldja meg, hanem hirtelen, korábbi tapasztalatok kombinálásával, mintegy "felismerve" a megoldást. A német pszichológus, Wolfgang Köhler csimpánzokkal végzett híres kísérleteiben az állatok - hosszabb megfigyelés után, minden előzetes próbálkozás nélkül - hirtelen rájöttek, hogy egymásra pakolt ládákkal elérhetik a magasban lógó banánt. Ez a fajta tanulás a fejlett idegrendszerű, elsősorban a főemlősöknél és néhány más magas intelligenciájú fajnál (pl. hollóknál, delfineknél) figyelhető meg leginkább.',
+                ],
+              },
+            ],
+            keyTerms: ['bevésődés', 'érzékenyítés', 'megszokás', 'feltételes reflex', 'operáns tanulás', 'belátásos tanulás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni egy további tanulási formát, a megfigyeléses tanulást, valamint azt, hogy a megszokás és az érzékenyítés miért éppen ellentétes irányban működik.',
+            sections: [
+              {
+                heading: 'Megfigyeléses tanulás és a válaszkészség adaptív szűrése',
+                paragraphs: [
+                  'A megfigyeléses tanulás (más néven szociális tanulás) során az állat mások (jellemzően fajtársak) viselkedésének megfigyelésével, saját próbálkozás nélkül sajátít el új viselkedésformákat - ezt korábban (Öröklött és tanult magatartásformák fejezet) a csimpánzok szerszámhasználatánál és a macskák vadászati technikájánál már konkrét példákon keresztül megismertük, anélkül hogy magát a tanulási formát megneveztük volna. A megfigyeléses tanulás előnye, hogy az egyed elkerülheti a próba-szerencse tanulással (pl. operáns tanulással) járó kockázatokat és időveszteséget, hiszen közvetlenül mások sikeres (vagy sikertelen) próbálkozásaiból profitálhat.',
+                  'A korábban bemutatott megszokás és érzékenyítés látszólag teljesen ellentétes iránya valójában egyazon adaptív elvet szolgálja: az idegrendszer folyamatosan "szűri" a bejövő ingereket biológiai jelentőségük szerint. A veszélytelen, jelentéktelen ingerekre adott válasz csökkentése (megszokás) energiát takarít meg, míg a valóban veszélyes ingerekre adott válasz erősítése (érzékenyítés) a túlélési esélyt növeli - a kettő együtt biztosítja, hogy az állat idegrendszere a ténylegesen fontos ingerekre koncentráljon.',
+                ],
+              },
+            ],
+            keyTerms: ['megfigyeléses tanulás'],
+          },
+        },
+      },
+      {
+        id: 'motivacio-kulcsinger',
+        title: 'Motiváció és kulcsinger',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Motiváció', 'Kulcsinger'],
+          rows: [
+            ['Eredet', 'belső (fiziológiai állapot)', 'külső (a környezetből érkező inger)'],
+            ['Szerepe', 'meghatározza a válaszkészséget', 'kiváltja magát a viselkedést'],
+            ['Példa', 'éhségérzet', 'a sirálycsőrön lévő piros folt'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött és tanult magatartásformák, Veleszületett magatartásformák és Tanult magatartásformák fejezetek) megismert magatartásformák mindegyikének kialakulásában két alapvető, egymással szorosan összefüggő fogalom játszik kulcsszerepet: a motiváció és a kulcsinger.',
+            sections: [
+              {
+                heading: 'Motiváció',
+                paragraphs: [
+                  'A motiváció az állat belső fiziológiai állapota, amely befolyásolja, hogy egy adott inger mennyire váltja ki a rá jellemző viselkedést, illetve hogy az állat mennyire aktívan keresi az adott ingert. Egy éhes állat sokkal intenzívebben keres táplálékot, és sokkal erősebben reagál a táplálékot jelző ingerekre, mint egy jóllakott állat, amely akár teljesen figyelmen kívül is hagyhatja ugyanazt a táplálékforrást - a táplálékkeresési motiváció tehát a belső, fiziológiai éhségérzettel szoros arányban változik.',
+                  'Hasonlóan, a szaporodási motiváció (amelyet gyakran hormonális változások indítanak el) határozza meg, hogy egy állat mikor és mennyire aktívan keres párzási partnert - ezt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az udvarlási viselkedéseknél már érintettük, anélkül hogy a mögöttes motivációs állapotot külön kiemeltük volna.',
+                  'A motiváció szintje idővel változhat: minél tovább nem elégül ki egy szükséglet (pl. minél régebben nem evett az állat), a motiváció jellemzően annál magasabb szintre emelkedik, ami egyre alacsonyabb ingerküszöböt (egyre gyengébb ingerekre is választ) és egyre intenzívebb viselkedést eredményez. Miután a szükséglet kielégült (pl. az állat jóllakott), a motiváció szintje jellemzően csökken, és a hozzá kapcsolódó viselkedés is visszaszorul - amíg a szükséglet a szervezet működése miatt ismét fel nem merül.',
+                ],
+              },
+              {
+                heading: 'Kulcsinger',
+                paragraphs: [
+                  'A kulcsinger egy adott inger azon specifikus, jellegzetes tulajdonsága, amely önmagában, más részletektől függetlenül is képes kiváltani egy adott, jellemzően öröklött viselkedést. Niko Tinbergen klasszikus kísérletében a sirályfiókák a szülő csőrén lévő piros foltra csipegetnek, ami kiváltja a szülő táplálék-felöklendezését - Tinbergen kimutatta, hogy a fiókák egy egyszerű, sematikus modellen is ugyanúgy reagálnak a piros foltra, még akkor is, ha a modell egyébként egyáltalán nem hasonlít egy valódi sirályfejre.',
+                  'A kulcsinger tehát nem a teljes, összetett, valós ingert (pl. a teljes szülőmadarat), hanem annak egyetlen, kiugróan feltűnő jellemzőjét (pl. egy adott színfoltot) jelenti - ez az egyszerűsítés teszi lehetővé, hogy az öröklött magatartásformák gyorsan és megbízhatóan aktiválódjanak, anélkül hogy az idegrendszernek a teljes, összetett ingerhelyzetet fel kellene dolgoznia.',
+                ],
+              },
+              {
+                heading: 'Motiváció és kulcsinger együttes szerepe',
+                paragraphs: [
+                  'A motiváció és a kulcsinger együttesen határozzák meg egy viselkedés tényleges megjelenését: ugyanaz a kulcsinger eltérő erősségű választ válthat ki attól függően, hogy az állat éppen milyen motivációs állapotban van. Egy jóllakott állat gyengébben (vagy egyáltalán nem) reagál egy táplálékot jelző kulcsingerre, mint egy éhes állat, még akkor is, ha a kulcsinger fizikailag pontosan ugyanaz.',
+                  'Ez a kettősség magyarázza, hogy ugyanaz az állat ugyanarra a helyzetre miért reagálhat különbözőképpen az idő múlásával: nem a környezet vagy az inger változik meg, hanem az állat belső, motivációs állapota - ezért a viselkedés magyarázatához mindig mindkét tényezőt (a kiváltó ingert és a belső állapotot) egyszerre kell figyelembe venni.',
+                ],
+              },
+            ],
+            keyTerms: ['motiváció', 'kulcsinger'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni azt a meglepő jelenséget, amikor egy mesterségesen eltúlzott kulcsinger az eredetinél is erősebb választ vált ki.',
+            sections: [
+              {
+                heading: 'A szuperinger jelensége',
+                paragraphs: [
+                  'A szuperinger (szupernormális inger) egy olyan, mesterségesen létrehozott vagy a természetben ritkán előforduló inger, amely a kulcsinger jellemző tulajdonságait eltúlzott mértékben tartalmazza, ezért az eredeti, természetes ingernél is erősebb választ vált ki. Tinbergen kísérleteiben egyes madarak (pl. bizonyos partimadárfajok) a saját, valódi tojásuknál nagyobb, feltűnőbb foltozású műtojást előnyben részesítették a kotlásra, sőt, esetenként még a saját tojásukat is elhagyták a "szuperinger" tojás mellett - hiába volt a mesterséges tojás egyértelműen "irreális" méretű, a madár öröklött felismerő mechanizmusa egyszerűen a nagyobb, feltűnőbb ingerre reagált erősebben.',
+                  'A szuperinger jelensége rávilágít arra, hogy az öröklött magatartásformákat kiváltó kulcsingerek felismerése egy viszonylag egyszerű, néhány jellemzőre (pl. méret, szín, mintázat) épülő mechanizmuson alapul, amely bizonyos, mesterségesen előidézett körülmények között "becsapható" - ez a jelenség egyben magyarázatot ad arra is, hogy egyes emberi ingerek (pl. rikítóan élénk színű, feltűnő csomagolású élelmiszerek) miért képesek a szükségesnél erősebb reakciót kiváltani.',
+                  'A jelenség evolúciós szempontból is tanulságos: mivel a természetben a szuperingerhez hasonló, eltúlzott jellemzőjű ingerek rendkívül ritkán fordulnak elő, az öröklött felismerő mechanizmus "egyszerűsítése" (csak néhány kulcsjellemzőre való hagyatkozás) a valós körülmények között tökéletesen megbízható stratégia volt - a probléma csak akkor jelentkezik, amikor egy mesterséges, ember alkotta inger (pl. a Tinbergen-féle műtojás) váratlanul, a természetes szelekció "felkészülése" nélkül jelenik meg - erre a fajta öröklött, egyszerűsített felismerésre a lassú, sok nemzedéken át zajló evolúció egyszerűen nem tudott megoldást kifejleszteni.',
+                ],
+              },
+            ],
+            keyTerms: ['szuperinger'],
+          },
+        },
       },
     ],
   },
@@ -1400,24 +3585,2951 @@ export const CURRICULUM = [
     icon: 'HeartPulse',
     color: 'from-red-500 to-orange-500',
     chapters: [
-      { id: 'homeosztazis', title: 'Homeosztázis', order: 1, isFree: true, estimatedMinutes: 10,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kultakaro', title: 'Kültakaró', order: 2, isFree: false, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'mozgas', title: 'A mozgás', order: 3, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'taplalkozas', title: 'A táplálkozás', order: 4, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'legzes', title: 'A légzés', order: 5, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'anyagszallitas', title: 'Az anyagszállítás (vér, keringés)', order: 6, isFree: false, estimatedMinutes: 22,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kivalasztas', title: 'A kiválasztás', order: 7, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szabalyozas', title: 'A szabályozás (idegrendszer, hormonrendszer, immunrendszer)', order: 8, isFree: false, estimatedMinutes: 30,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'szaporodas-egyedfejlodes', title: 'Szaporodás és egyedfejlődés', order: 9, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'homeosztazis',
+        title: 'Homeosztázis',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 10,
+        comparisonTable: {
+          headers: ['Szempont', 'Külső elválasztás (exokrin)', 'Belső elválasztás (endokrin)'],
+          rows: [
+            ['A váladék útja', 'testfelszínre vagy testüregbe (pl. bélcsőbe) ürül', 'közvetlenül a vérbe kerül'],
+            ['Váladék neve', 'pl. verejték, nyál, emésztőnedv', 'hormon'],
+            ['Példa mirigy', 'verejtékmirigy, nyálmirigy', 'pajzsmirigy'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az élet jellemzői fejezet emelt kiegészítése) röviden már megismert homeosztázis fogalmát ebben a fejezetben mélyítjük el, és megismerjük azt is, hogyan függ össze a kiválasztással, valamint milyen gyakorlati tudás (önvizsgálat, elsősegély) épül erre az alapfogalomra.',
+            sections: [
+              {
+                heading: 'A homeosztázis fogalma és jelentősége',
+                paragraphs: [
+                  'A homeosztázis a szervezet belső környezetének (pl. testhőmérséklet, vércukorszint, a testfolyadékok pH-ja és ozmotikus koncentrációja) dinamikus egyensúlyban tartása, a külső környezet folyamatos változásai ellenére is. A homeosztázis fenntartása létfontosságú: a szervezet sejtjei, szövetei csak egy viszonylag szűk határértékek közötti belső környezetben képesek megfelelően működni.',
+                  'A homeosztázis fenntartásában több szervrendszer is közreműködik: az idegrendszer és a hormonrendszer szabályozó jelekkel hangolja össze a szervek működését, a kiválasztó szervek eltávolítják a felesleges anyagokat, a légző- és keringési rendszer pedig biztosítja a sejtek folyamatos oxigén- és tápanyagellátását - ezekkel a szervrendszerekkel a modul következő fejezeteiben ismerkedünk meg részletesen. A homeosztázis fenntartása jellemzően negatív visszacsatolás elvén működik: ha egy paraméter (pl. a testhőmérséklet) eltér a normál tartománytól, a szervezet olyan folyamatokat indít el, amelyek az eltérést csökkentik, visszatérítve azt a kívánt tartományba. Túl magas testhőmérséklet esetén például izzadás és a bőr felszíni érhálózatának kitágulása fokozza a hőleadást, míg túl alacsony testhőmérséklet esetén a remegés (izomösszehúzódás) és az érszűkület a hőtermeléssel, illetve a hőveszteség csökkentésével ellensúlyozza az eltérést - mindkét esetben a válasz éppen az eredeti eltéréssel ellentétes irányba hat, ezért nevezzük negatív visszacsatolásnak.',
+                ],
+              },
+              {
+                heading: 'Kiválasztás, külső és belső elválasztás',
+                paragraphs: [
+                  'A kiválasztás a szervezet anyagcseréje során keletkező, felesleges vagy káros bomlástermékek (salakanyagok) eltávolítását jelenti a szervezetből - ez a folyamat is a homeosztázis fenntartását szolgálja, hiszen a salakanyagok felhalmozódása felborítaná a belső egyensúlyt.',
+                  'A mirigyek váladéka kétféleképpen távozhat: külső elválasztás (exokrin működés) esetén a váladék a testfelszínre vagy egy testüregbe (pl. a bélcsőbe) ürül, mint például a verejtékmirigy vagy a nyálmirigy esetében. Belső elválasztás (endokrin működés) esetén a mirigy váladéka, a hormon közvetlenül a vérbe kerül, és onnan jut el a célszervekhez - ezt a fajta jelátvitelt korábban (A sejtműködések vezérlése fejezet emelt kiegészítése) endokrin jelátvitelként már megismertük.',
+                  'Egyes mirigyek (pl. a hasnyálmirigy) mindkét működési formát egyesítik: emésztőnedvet választanak ki külső elválasztással a bélbe, ugyanakkor hormonokat (pl. inzulint) is termelnek, amelyeket belső elválasztással közvetlenül a vérbe juttatnak.',
+                ],
+              },
+              {
+                heading: 'Szűrővizsgálatok és önvizsgálat',
+                paragraphs: [
+                  'A rendszeres orvosi szűrővizsgálatok és az önvizsgálat (pl. anyajegyek rendszeres ellenőrzése, emlő-önvizsgálat) kiemelten fontosak, mert sok betegség (köztük daganatos megbetegedések) korai, még tünetmentes szakaszban történő felismerése jelentősen javítja a gyógyulási esélyeket. Az önvizsgálat lényege, hogy az egyén maga is képes legyen felismerni a saját testén megjelenő, aggodalomra okot adó elváltozásokat (pl. egy anyajegy méretének, alakjának vagy színének megváltozását), és ezek esetén időben orvoshoz forduljon.',
+                ],
+              },
+              {
+                heading: 'Alapfokú újraélesztés',
+                paragraphs: [
+                  'Az alapfokú újraélesztés (elsősegélynyújtás) lépései a következők:',
+                  '1. Az eszméletlenség és a légzés hiányának (vagy szabálytalan légzésnek) felismerése: szólítsuk meg és rázzuk meg óvatosan a sérültet, majd ellenőrizzük a légzését.',
+                  '2. Segélyhívás: azonnal hívjuk a mentőket (Magyarországon a 112-es vagy a 104-es számon), és lehetőség szerint kérjünk segítséget másoktól is.',
+                  '3. A mellkaskompressziók (szívmasszázs) megkezdése: a mellkas közepén, erőteljes, ritmusos nyomásokkal, jellemzően 30 kompresszió és 2 lélegeztetés váltakozó ritmusában.',
+                  '4. Az újraélesztés folyamatos, megszakítás nélküli folytatása egészen addig, amíg a sérült magához nem tér, vagy amíg a szakszerű segítség (mentőszolgálat) meg nem érkezik és át nem veszi az ellátást.',
+                  'Az újraélesztés lényege, hogy a mellkaskompressziókkal mesterségesen fenntartjuk a vér áramlását, ezáltal az agy és a többi életfontosságú szerv továbbra is kap valamennyi oxigént - a szívmegállás utáni percek kritikusak, hiszen az oxigénhiány néhány percen belül visszafordíthatatlan agyi károsodáshoz vezethet, ezért a laikusok által is elvégezhető azonnali beavatkozás életmentő lehet. Az elsősegélynyújtás alapjainak ismerete ezért nem csak egészségügyi szakembereknek fontos, hanem minden állampolgár számára hasznos, mindennapi élethelyzetekben is alkalmazható tudás.',
+                ],
+              },
+            ],
+            keyTerms: ['homeosztázis', 'negatív visszacsatolás', 'kiválasztás', 'külső elválasztás', 'belső elválasztás', 'önvizsgálat', 'újraélesztés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a homeosztázis-összetevők határértékeinek változékonyságát, valamint a homeosztázis és az egészség kapcsolatát kell megérteni.',
+            sections: [
+              {
+                heading: 'A homeosztázis határértékei és az egészség kapcsolata',
+                paragraphs: [
+                  'A homeosztázis-összetevők (pl. testhőmérséklet, vércukorszint) határértékei nem rögzítettek, hanem az adott élettani állapottól függően megváltozhatnak: testmozgás közben például a testhőmérséklet és a szívfrekvencia normálisan is jóval magasabb tartományban mozog, mint teljes nyugalomban, terhesség alatt pedig számos élettani paraméter (pl. az anyagcsere-sebesség) átmenetileg egy más "normál" tartományba kerül. Ezért egy adott mérőérték (pl. a szívfrekvencia) önmagában, a pontos helyzet és körülmények ismerete nélkül nem feltétlenül árulja el, hogy az adott pillanatban egészséges vagy éppen kóros állapotról van-e szó.',
+                  'Az egészség a homeosztázis tartós, hatékony fenntartásának képessége: a betegség éppen ennek a szabályozásnak a felborulásaként, illetve a szervezet azon képtelenségeként értelmezhető, hogy a belső környezetet a megváltozott, esetenként szélsőséges körülmények között is a szükséges határértékek között tartsa. Ez a szemlélet magyarázza, hogy miért törekszik a modern orvostudomány gyakran nem csupán egyetlen tünet kezelésére, hanem a szervezet egészének egyensúlyi állapotát figyelembe véve gyógyítani.',
+                  'A homeosztázis fogalma abban is segít megérteni az egészséget, hogy rávilágít: a szervezet folyamatosan, aktívan "dolgozik" az egyensúly fenntartásáért - ez a folyamat energiát igényel, és ha a szabályozó mechanizmusok (pl. az idegrendszer vagy a hormonrendszer) valamiért nem működnek megfelelően, az egyensúly felborulhat annak ellenére is, hogy a szervezet külső körülményei egyáltalán nem változtak meg jelentősen.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'bor',
+        title: 'Bőr',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Felhám (epidermisz)', 'Irha (dermisz)'],
+          rows: [
+            ['Szövettípus', 'hámszövet', 'kötőszövet'],
+            ['Vastagság', 'vékonyabb', 'vastagabb'],
+            ['Tartalma', 'elszarusodó sejtrétegek, festéksejtek', 'erek, receptorok, mirigyek, szőrtüszők'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Homeosztázis fejezet) megismert, a szervezet belső egyensúlyát fenntartó mechanizmusok után a bőrrel az első olyan szervet ismerjük meg részletesen, amely ebben az egyensúly-fenntartásban (pl. a hőszabályozásban) is kulcsszerepet játszik.',
+            sections: [
+              {
+                heading: 'A bőr funkciói',
+                paragraphs: [
+                  'A bőr elsődleges funkciója a védelem: mechanikai sérülésekkel, a kórokozókkal és az ultraibolya sugárzással szemben egyaránt gátat képez. Emellett a bőr kulcsszerepet játszik a hőszabályozásban is - ahogy azt korábban (Homeosztázis fejezet) a negatív visszacsatolásnál már megismertük, az izzadás és a bőr felszíni érhálózatának tágulása/szűkülése szabályozza a hőleadás mértékét.',
+                  'A bőr emellett kiterjedt érzékszerv is: receptorai a fájdalom, a tapintás, a nyomás és a hőingerek (hideg, meleg) érzékelésére specializálódtak - ezek a funkciók szorosan összefüggenek a bőr rétegzett felépítésével, hiszen a különböző típusú receptorok jellemzően a bőr különböző mélységében helyezkednek el.',
+                  'Ez a három fő funkció (védelem, hőszabályozás, érzékelés) szorosan összefügg egymással: a bőr rétegzett, sokféle sejttípust és mirigyet tartalmazó felépítése teszi lehetővé, hogy egyetlen szerv egyszerre lássa el mindhárom, egymástól igen eltérő jellegű feladatot.',
+                ],
+              },
+              {
+                heading: 'A bőr szöveti szerkezete',
+                paragraphs: [
+                  'A bőr három fő rétegből épül fel. A felhám (epidermisz) a korábban (Állati szövetek fejezet) megismert többrétegű elszarusodott laphám egyik konkrét megvalósulása, amely a testet a külvilágtól elválasztja. Alatta helyezkedik el az irha (dermisz), amely kötőszövetből áll, és amelyben az erek, az idegvégződések (receptorok), a mirigyek és a szőrtüszők találhatók.',
+                  'Az irha alatt a bőr alatti kötőszövet (hypodermisz) helyezkedik el, amelynek jelentős részét a korábban (Lipidek fejezet) megismert zsírszövet alkotja - ez hőszigetelő és energiaraktározó szerepet tölt be, emellett mechanikai párnázást is biztosít a mélyebben fekvő szövetek számára. A három réteg vastagsága testtájanként jelentősen eltér: a talpon és a tenyéren például a felhám és az irha is vastagabb, mint a szemhéjon, ahol a bőrnek rendkívül vékonynak és rugalmasnak kell maradnia.',
+                ],
+              },
+              {
+                heading: 'A bőr mirigyei',
+                paragraphs: [
+                  'A bőrben két fő mirigytípus található. A verejtékmirigyek vizes, sótartalmú váladékot (verejtéket) választanak ki, amely elpárolgásával hűti a testet, emellett kisebb mennyiségű salakanyagot (pl. karbamidot) is eltávolít a szervezetből - ez a korábban (Homeosztázis fejezet) megismert külső elválasztás egyik konkrét példája.',
+                  'A faggyúmirigyek zsíros váladékot (faggyút) termelnek, amely a bőr és a szőrszálak felszínét vékony, védő, vízzáró réteggel vonja be, csökkentve a kiszáradást és rugalmasabbá téve a bőrt. A korábban (Emlősök fejezet) megismert tejmirigy is a bőr mirigyeiből, egy módosult verejtékmirigyből fejlődött ki az evolúció során, ez is jól mutatja a bőr mirigyeinek sokféle funkcióra való alkalmazkodóképességét.',
+                ],
+              },
+              {
+                heading: 'A hám megújulása',
+                paragraphs: [
+                  'A felhám legalsó rétegében a sejtek folyamatosan osztódnak; az újonnan keletkező sejtek fokozatosan a felszín felé tolódnak, eközben elszarusodnak (a sejt belsejét egyre inkább a szívós keratin fehérje tölti ki), majd a felszínen elhalt, elszarusodott állapotban leválnak - ez a folyamatos megújulás biztosítja, hogy a bőr védőfunkciója a mindennapi kopás ellenére is fennmaradjon.',
+                ],
+              },
+              {
+                heading: 'Festéksejtek és a bőrszín',
+                paragraphs: [
+                  'A felhámban elhelyezkedő festéksejtek (melanociták) termelik a melanin nevű bőrpigmentet, amely elnyeli az ultraibolya sugárzás egy részét, ezáltal védi a mélyebb bőrrétegeket és a bennük lévő sejtek genetikai állományát a károsodástól.',
+                  'Az emberi faj bőrszín-skálája (a világos bőrtől a sötét bőrig) a melanin mennyiségének genetikailag meghatározott különbségeiből adódik, és a biológiai sokféleség (variabilitás) egyik jól látható példája: a bőrszín az evolúció során az adott földrajzi terület napsugárzás-intenzitásához igazodó alkalmazkodásként alakult ki, nem pedig valamiféle rangsorolható tulajdonságként értelmezendő.',
+                ],
+              },
+            ],
+            keyTerms: ['felhám', 'irha', 'verejtékmirigy', 'faggyúmirigy', 'melanocita', 'melanin'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a napbarnulás mögötti sejtszintű mechanizmust, valamint a bőr tapintóreceptorainak sokféleségét.',
+            sections: [
+              {
+                heading: 'A bőr tapintóreceptorainak sokfélesége',
+                paragraphs: [
+                  'A bőr érzékelő funkciója valójában több, egymástól eltérő szerkezetű receptortípus együttes munkájának eredménye: egyes receptorok a folyamatos nyomásra, mások a rezgésre vagy éppen a finom érintésre érzékenyek leginkább, míg a fájdalomérző receptorok (szabad idegvégződések formájában) a bőr szinte teljes felszínén sűrűn megtalálhatók, hiszen a fájdalomérzet a szervezet sérülés elleni riasztórendszereként létfontosságú.',
+                  'A receptorok eloszlása testtájanként jelentősen eltér: az ujjbegyeken és az ajkakon például sokkal sűrűbben helyezkednek el a tapintóreceptorok, mint a hát bőrén, ami magyarázza, hogy miért sokkal érzékenyebb és pontosabb a tapintásunk ezeken a testtájakon.',
+                ],
+              },
+              {
+                heading: 'A napbarnulás mechanizmusa',
+                paragraphs: [
+                  'Az ultraibolya sugárzás hatására a melanociták fokozott melanintermelésbe kezdenek - ez a folyamat (a napbarnulás) tulajdonképpen a bőr védekező válasza a további UV-károsodás ellen, hiszen a nagyobb mennyiségű melanin hatékonyabban nyeli el a káros sugárzást.',
+                  'Ez a válasz azonban csak korlátozott védelmet nyújt: a napbarnulás megjelenése önmagában is jelzi, hogy a bőrt már érte bizonyos mértékű UV-károsodás, ezért a rendszeres, védelem nélküli napozás hosszú távon növeli a bőrrák kialakulásának kockázatát, még akkor is, ha a bőr közben egyre barnábbá válik.',
+                  'A melanin mennyisége mellett a bőr UV-érzékenysége azt is meghatározza, hogy egy adott egyed mennyi ideig tartózkodhat biztonságosan közvetlen napsütésben - ez az összefüggés áll a bőrtípusok (a világostól a sötét bőrtípusig) elkülönítésének hátterében is, amelyeket a bőrgyógyászati gyakorlatban a napvédelmi ajánlások megalapozására használnak.',
+                ],
+              },
+            ],
+            keyTerms: ['tapintóreceptor'],
+          },
+        },
+      },
+      {
+        id: 'bor-gondozasa-vedelme',
+        title: 'A bőr gondozása, védelme',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Vízhólyag', 'Vérhólyag'],
+          rows: [
+            ['Kiváltó ok', 'súrlódás vagy enyhébb égés', 'mélyebb, nyomó jellegű sérülés'],
+            ['Tartalma', 'szövetnedv (savó)', 'vér'],
+            ['Érintett réteg', 'felhám rétegei válnak el egymástól', 'az irha erei is megsérülnek'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Bőr fejezet) megismert felépítés és működés után ebben a fejezetben azt vizsgáljuk meg, hogyan óvhatjuk meg a bőr egészségét, és milyen gyakori bőrelváltozásokkal, sérülésekkel találkozhatunk a mindennapokban.',
+            sections: [
+              {
+                heading: 'A napsugárzás hatása és a védekezés',
+                paragraphs: [
+                  'A napsugárzás ultraibolya (UV) összetevője a korábban (Bőr fejezet emelt kiegészítése) megismert napbarnulást váltja ki, ugyanakkor túlzott, védelem nélküli napozás esetén tartósan károsítja a bőrsejtek genetikai állományát, ami idő előtti bőröregedéshez és a bőrrák kialakulásának jelentősen megnövekedett kockázatához vezethet.',
+                  'A hatékony védekezés eszközei közé tartozik a napvédő krém rendszeres használata, a megfelelő (a bőrt eltakaró) öltözet, a napszemüveg, valamint a déli, legerősebb sugárzású órákban a közvetlen napsütés kerülése, illetve az árnyék keresése - ezek az intézkedések különösen fontosak világos bőrű, kevesebb melanint termelő egyéneknél, akiknél a bőr UV-károsodás elleni természetes védelme eleve alacsonyabb.',
+                ],
+              },
+              {
+                heading: 'Bőrápolás és hajápolás',
+                paragraphs: [
+                  'A rendszeres, de nem túlzott tisztálkodás eltávolítja a bőr felszínéről a szennyeződéseket és a felesleges faggyút, ugyanakkor a bőr természetes védőrétegének (a faggyúnak) a teljes eltávolítása kiszáradáshoz és irritációhoz vezethet, ezért a bőrápolásnál a kímélő tisztálkodás és a szükség szerinti hidratálás egyaránt fontos. A hajápolás hasonló elveket követ: a hajszálakat és a fejbőrt is óvni kell a túlzott vegyi és mechanikai igénybevételtől, hiszen a fejbőr is a bőr része, amelyre ugyanazok az általános bőrápolási elvek érvényesek.',
+                ],
+              },
+              {
+                heading: 'A bőr baktériumflórája',
+                paragraphs: [
+                  'A bőr felszínén természetes módon nagy számban élnek baktériumok (a bőr normál flórája), amelyek a legtöbb esetben nem okoznak betegséget, sőt védelmet is nyújtanak: elfoglalják a bőrfelszín "élettereit" és tápanyagforrásait, ezzel megnehezítve a valódi kórokozók megtelepedését és elszaporodását. Ez a fajta hasznos együttélés a korábban (Egysejtű eukarióták fejezet emelt kiegészítése) megismert szimbiózis egyik példája - a bőr baktériumflórája cserébe stabil, tápanyagban gazdag élőhelyet kap.',
+                ],
+              },
+              {
+                heading: 'Gyakori bőrelváltozások',
+                paragraphs: [
+                  'Az anyajegy a festéksejtek (melanociták) helyi felszaporodásából keletkező, jellemzően jóindulatú bőrelváltozás, amelyet éppen ezért érdemes a korábban (Homeosztázis fejezet) megismert önvizsgálat keretében rendszeresen ellenőrizni: a méret, az alak vagy a szín hirtelen megváltozása orvosi vizsgálatot indokol. A szemölcs vírusfertőzés (humán papillomavírus) által okozott, jóindulatú, de fertőző bőrelváltozás, amely közvetlen érintkezéssel terjedhet egyik testrészről a másikra, vagy akár egyik személyről a másikra is.',
+                  'A mitesszer a faggyúmirigy nyílásának elhalt hámsejtekkel és faggyúval történő eltömődéséből alakul ki; ha ehhez baktériumok elszaporodása és gyulladás is társul, pattanás jön létre - ez különösen a serdülőkorban gyakori, amikor a hormonális változások fokozzák a faggyúmirigyek működését. A vízhólyag (pl. dörzsölés vagy enyhébb égés hatására) a felhám rétegeinek egymástól való elválásából és a köztük felgyülemlő szövetnedvből keletkezik, míg a vérhólyag ennél mélyebb, az irha ereit is érintő sérülésnél alakul ki, ilyenkor a hólyag tartalma vér.',
+                ],
+              },
+              {
+                heading: 'Égési sérülések és ellátásuk',
+                paragraphs: [
+                  'Az égési sérülés azért veszélyes, mert a bőr - amely a korábban (Bőr fejezet) megismert védő funkciót látja el - a sérülés helyén elveszti a kórokozók elleni védekező képességét, emellett a kiterjedt égés jelentős folyadékveszteséggel is járhat, ami súlyos esetben a keringést is veszélyeztetheti. Minél kiterjedtebb a sérült bőrfelület, annál nagyobb ez a kockázat, ezért a nagy kiterjedésű égési sérülések - a fájdalom mértékétől függetlenül is - mindig azonnali szakorvosi ellátást igényelnek.',
+                  'Kisebb égési sérülés ellátásának lépései a következők:',
+                  '1. Azonnali, hosszan tartó hűtés hűvös (nem jéghideg) folyó vízzel, amely csökkenti a fájdalmat és mérsékli a szövetkárosodás mértékét.',
+                  '2. A sérült területről az ékszerek, szoros ruhadarabok eltávolítása, mielőtt a terület esetleg megduzzadna.',
+                  '3. A kialakuló hólyag érintetlenül hagyása - felszakítása megnyitná az utat a fertőzések előtt.',
+                  '4. A sérült terület tiszta, steril kötszerrel történő fedése, majd - kiterjedtebb vagy mélyebb sérülés esetén - orvosi ellátás igénybevétele.',
+                ],
+              },
+            ],
+            keyTerms: ['anyajegy', 'szemölcs', 'mitesszer', 'pattanás', 'vízhólyag', 'vérhólyag', 'égési sérülés'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni az ultraibolya sugárzás két fő típusa közötti különbséget.',
+            sections: [
+              {
+                heading: 'UVA- és UVB-sugárzás',
+                paragraphs: [
+                  'A napfény ultraibolya összetevője két fő típusra osztható: az UVA-sugárzás sokkal mélyebbre hatol a bőrbe, és elsősorban a bőr korai öregedéséért (ráncosodásáért) felelős, míg az UVB-sugárzás a felhám szintjén fejti ki a hatását, és elsősorban a napégésért és a bőrsejtek genetikai károsodásáért felelős, ezáltal nagyobb szerepet játszik a bőrrák kialakulásában. A felhő és az üveg az UVB-sugárzás nagy részét megszűri, de az UVA-sugárzást jóval kevésbé - ez az oka annak, hogy borult időben vagy ablakon keresztül is érheti a bőrt jelentős, öregedést okozó UV-károsodás, még akkor is, ha látható napégés nem alakul ki.',
+                  'A hatékony napvédő szerek mindkét sugárzástípus ellen védelmet nyújtanak (ún. "széles spektrumú" védelem) - ez fontosabb, mint kizárólag a napégés (UVB) elleni védelemre koncentrálni, hiszen az UVA-sugárzás károsító hatása hosszú távon, látható napégés nélkül is felhalmozódhat. A szolárium (mesterséges UV-fényforrás) használata ugyanezen okból kockázatos: a mesterségesen kiváltott barnulás ugyanúgy a bőrsejtek genetikai károsodásán keresztül jön létre, mint a természetes napsugárzás okozta barnulás.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'vazrendszer',
+        title: 'Vázrendszer',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Varratos és porcos kapcsolódás', 'Ízületes kapcsolódás'],
+          rows: [
+            ['Mozgathatóság', 'nincs vagy csak kismértékű', 'szabad mozgás'],
+            ['Példa', 'koponyavarratok, borda-szegycsont kapcsolat', 'könyök-, térd-, csípőízület'],
+            ['Szerkezet', 'közvetlen csontos vagy porcos összeköttetés', 'ízületi tok, ízületi porc, ízületi folyadék'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban megismert gerinces csoportok (pl. a Csontos halak fejezetben tárgyalt gerincoszlop) után az emberi vázrendszert ismerjük meg részletesen - azt a csontos-porcos szerkezetet, amely a testet tartja, védi és a mozgást lehetővé teszi.',
+            sections: [
+              {
+                heading: 'A csontváz funkciói',
+                paragraphs: [
+                  'A csontváz több biológiai funkciót is ellát egyszerre: mechanikai tartást biztosít a testnek, az izmokkal együttműködve lehetővé teszi a mozgást, védi a létfontosságú belső szerveket (pl. a koponya az agyat, a mellkas a szívet és a tüdőt), emellett a csontvelőben vérsejtek képződnek, a csontállomány pedig ásványi anyagok (elsősorban kalcium) raktáraként is szolgál.',
+                ],
+              },
+              {
+                heading: 'A koponya csontjai',
+                paragraphs: [
+                  'A koponya két fő részre osztható: az agykoponya az agyat védő, közvetlenül egymáshoz illeszkedő lapos csontokból áll, míg az arckoponya csontjai (pl. az orrcsont, a járomcsont, valamint a felső és az alsó állcsont) az arc formáját és a rágás szervi hátterét adják. Az alsó állcsont az egyetlen mozgatható koponyacsont, ez teszi lehetővé a rágást és a beszédet.',
+                ],
+              },
+              {
+                heading: 'A gerincoszlop, a csigolya és a kétlábon járás',
+                paragraphs: [
+                  'A korábban (Csontos halak fejezet) megismert gerincoszlop az emberi testben is a gerinchúr helyét foglalja el, egymáshoz kapcsolódó csigolyákból épül fel, amelyek mindegyike egy tömör csigolyatestből, egy azt hátulról körülölelő csigolyaívből (amely a gerincvelőt védi) és a csigolyaívről hátrafelé kiálló tövisnyúlványból áll. A gerincoszlop szakaszai (tájékai) a nyaki, a háti, az ágyéki, a keresztcsonti és a farkcsonti szakasz.',
+                  'Az emberi gerincoszlop jellegzetes, kettős S-alakú görbülete szorosan összefügg a kétlábon járással: ez a rugalmas, hullámos forma egyenletesebben osztja el a felsőtest súlyát és a járás közben fellépő rázkódásokat, mint egy egyenes gerincoszlop tenné - ez az emberi mozgási szervrendszer egyik legjellegzetesebb sajátossága a más gerinces csoportokhoz képest.',
+                ],
+              },
+              {
+                heading: 'A mellkas csontjai',
+                paragraphs: [
+                  'A mellkast a háti csigolyákhoz kapcsolódó bordapár és az elülső oldalon található szegycsont alkotja - ez a csontos "kosár" védi a benne elhelyezkedő szívet és tüdőt, ugyanakkor a bordák rugalmas, ízületes-porcos kapcsolódása lehetővé teszi a légzéshez szükséges mellkasi térfogatváltozást is.',
+                ],
+              },
+              {
+                heading: 'A csont kémiai összetétele és az életkor hatása',
+                paragraphs: [
+                  'A csont két fő alkotórészből épül fel: a szerves alkotók (elsősorban a korábban - Fehérjék fejezet - vázanyagként már megismert kollagén nevű rostos fehérje) rugalmasságot adnak a csontnak, míg a szervetlen alkotók (elsősorban kalcium-sók) a szilárdságáért felelősek. E kettő aránya az életkorral változik: gyermekkorban a szerves alkotók aránya magasabb, ezért a gyermekek csontja rugalmasabb, és ritkábban törik el teljesen (gyakoribb az ún. "zöldgally-törés"), időskorban viszont a szervetlen alkotók aránya nő meg relatíve, a csont rugalmassága csökken, ami miatt az idősek csontjai könnyebben és súlyosabban törnek el.',
+                ],
+              },
+              {
+                heading: 'Csontok szerkezete: lapos és hosszú csöves csont',
+                paragraphs: [
+                  'A lapos csontok (pl. a koponyacsontok, a lapocka) nagy felületet biztosítanak akár védelemre, akár izomtapadásra, szerkezetük két tömör csontréteg közé zárt, szivacsos csontállományból áll. A hosszú csöves csontok (pl. a combcsont) belsejében üreg található, amelyben a csontvelő helyezkedik el; ez a csőszerű felépítés viszonylag kis anyagfelhasználás mellett is nagy szilárdságot és hajlítással szembeni ellenállást biztosít, ami a mozgás és a testsúly tartása szempontjából egyaránt előnyös.',
+                ],
+              },
+              {
+                heading: 'Csontkapcsolódások és az ízület felépítése',
+                paragraphs: [
+                  'A csontok többféleképpen kapcsolódhatnak egymáshoz: a varratos kapcsolódásnál (pl. a koponyacsontok között) a csontok szorosan, mozgás nélkül illeszkednek egymáshoz; a porcos kapcsolódásnál (pl. a bordák és a szegycsont között) porcszövet biztosít kismértékű, rugalmas elmozdulást; az ízületes kapcsolódásnál (pl. a könyök- vagy a térdízületben) a csontvégek szabadon mozgathatók egymáshoz képest. Egyes csontok az egyedfejlődés során teljesen összenőnek egymással: a keresztcsontot alkotó öt csigolya például felnőttkorra egyetlen, egységes csonttá olvad össze, a koponyavarratok pedig időskorra fokozatosan elcsontosodnak, ezzel a korábban még mozgó kapcsolódás mozdulatlanná válik.',
+                  'Az ízület felépítése jól tükrözi a szabad mozgás biztosításának feladatát: az ízületi tok zárja körbe és rögzíti az ízületet, a csontvégeket borító ízületi porc csökkenti a súrlódást, az ízületi folyadék (amelyet az ízületi tok belső rétege termel) pedig kenőanyagként és tápanyagforrásként szolgál a súrlódásmentes mozgáshoz.',
+                ],
+              },
+              {
+                heading: 'A végtagok csontjai és a függesztőövek',
+                paragraphs: [
+                  'A végtagokat a törzshöz a függesztőövek kapcsolják: a felső végtagot a vállöv (kulcscsont és lapocka), az alsó végtagot a medenceöv (csípőcsont) rögzíti a törzshöz. Mindkét végtag felépítése a szárazföldi gerincesekre jellemző ötujjú végtagtípus emberi megvalósulása: a felső végtagon a felkarcsont, majd az orsócsont és a singcsont, végül a kéztőcsontok, a kézközépcsontok és az ujjperecek követik egymást; az alsó végtagon ennek megfelelője a combcsont, a sípcsont és a szárkapocscsont, majd a lábtőcsontok, a lábközépcsontok és a lábujjperecek.',
+                  'A férfi és a női medence felépítése jellegzetesen eltér: a női medence szélesebb és nyitottabb, ami a szülés során a magzat szülőcsatornán történő áthaladását teszi lehetővé, míg a férfi medence keskenyebb és zártabb felépítésű.',
+                ],
+              },
+            ],
+            keyTerms: ['csontváz', 'agykoponya', 'arckoponya', 'gerincoszlop', 'csigolya', 'ízület', 'kollagén', 'vállöv', 'medenceöv'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a csontritkulás (oszteoporózis) hátterét, valamint az emberi kétlábon járás evolúciós jelentőségét.',
+            sections: [
+              {
+                heading: 'Csontritkulás és az emberi kétlábon járás evolúciós háttere',
+                paragraphs: [
+                  'A csontritkulás (oszteoporózis) olyan állapot, amelyben a csontok ásványianyag-tartalma és sűrűsége kórosan lecsökken, ezáltal a csontok törékennyé válnak - ez a jelenség szorosan összefügg a korábban (középszinten) megismert, életkorral változó csontösszetétellel, és különösen a nőknél gyakori a menopauza utáni hormonális változások miatt, amelyek felgyorsítják a csontállomány lebontását.',
+                  'Az emberi kétlábon járás (bipedális mozgás) kialakulása jelentős evolúciós átalakulással járt az emberelődök vázrendszerében: a gerincoszlop kettős S-alakú görbülete, a medence átalakult formája és a lábfej boltozatos szerkezete mind ehhez a mozgásformához igazodva fejlődött ki, lehetővé téve a kezek felszabadulását más feladatokra (pl. eszközhasználatra) a mozgás közben.',
+                ],
+              },
+            ],
+            keyTerms: ['oszteoporózis'],
+          },
+        },
+      },
+      {
+        id: 'izomrendszer',
+        title: 'Izomrendszer',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Hajlító izmok', 'Feszítő izmok'],
+          rows: [
+            ['Hatás', 'csökkentik az ízületi szöget', 'növelik az ízületi szöget'],
+            ['Példa', 'kétfejű karizom (bicepsz)', 'háromfejű karizom (tricepsz)'],
+            ['Együttműködés', 'egymással ellentétesen (antagonistán) működnek', 'egymással ellentétesen (antagonistán) működnek'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vázrendszer fejezet) megismert csontváz önmagában mozdulatlan - a mozgást a hozzá kapcsolódó izmok összehúzódása teszi lehetővé. Ebben a fejezetben az emberi izomrendszer felépítését és néhány jellegzetes izmát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az emberi test néhány jellegzetes izma',
+                paragraphs: [
+                  'A gyűrű alakú záróizmok (pl. a szájnyílás vagy a végbélnyílás körül) az adott testnyílás szűkítésére, elzárására szolgálnak. A mimikai izmok az arc bőrébe tapadnak, összehúzódásuk hozza létre az arckifejezéseket - ez megkülönbözteti őket a legtöbb más vázizomtól, amelyek jellemzően két csonthoz kapcsolódnak.',
+                  'A bordaközi izmok a bordák mozgatásával, a rekeszizom pedig a mellüreg és a hasüreg közötti, kupola alakú elválasztó izomként vesz részt a légzésben - ezekkel a modul egy későbbi fejezetében foglalkozunk majd részletesebben.',
+                  'A mellizom és a hasizmok a törzs és a felső végtag mozgatásában vesznek részt (pl. a hasizmok a törzs előrehajlításában), a gátizmok a medencefenéket alkotják, a fejbiccentő izom a fej fordítását és hajlítását végzi. A végtagok hajlító és feszítő izmai (pl. a kar hajlító kétfejű és feszítő háromfejű izma) párban, egymással ellentétesen (antagonistán) működnek: amikor az egyik összehúzódik, a másik ellazul, ez teszi lehetővé az ízületek mindkét irányú mozgatását.',
+                  'Ez az antagonista elrendeződés minden, a korábban (Vázrendszer fejezet) megismert ízületnél megfigyelhető: az izmok soha nem "tolják vissza" önmagukat, csak összehúzódni képesek, ezért minden mozgásirányhoz szükség van egy ellentétes hatású izomra, amely a visszamozdulást végzi.',
+                ],
+              },
+              {
+                heading: 'A vázizom felépítése',
+                paragraphs: [
+                  'A korábban (Állati szövetek fejezet) megismert vázizomszövet hierarchikus szerkezetű: az egyedi izomsejtek (más néven izomrostok) izomkötegekbe tömörülnek, több izomköteg alkotja magát az izompályát (a szabad szemmel is látható, teljes izmot), amelyet mindkét végén ínak rögzítenek a csontvázhoz.',
+                  'Ez a rétegzett felépítés (sejt → köteg → teljes izom) minden szinten kötőszöveti hártyákkal van körülvéve, amelyek védik és rendezett szerkezetben tartják az izomrostokat, miközben lehetővé teszik, hogy az egyes rostok összehúzódási ereje összeadódva az egész izomra átterjedjen.',
+                ],
+              },
+              {
+                heading: 'Bemelegítés és izomláz',
+                paragraphs: [
+                  'A bemelegítés célja az izmok, ízületek fokozatos felkészítése a terhelésre: a vérkeringés és az izomhőmérséklet emelésével csökkenti a sérülések (pl. izomhúzódás) kockázatát, és javítja az izmok teljesítőképességét. Az izomláz megszüntetésének leghatékonyabb módja a könnyű, fokozatos mozgás és a nyújtás, valamint a megfelelő pihenés - a teljes mozgáshiány éppúgy nem segít, mint a további túlterhelés. Az izomláz jellemzően pár nap alatt magától is elmúlik, ahogy az apró izomsérülések begyógyulnak.',
+                ],
+              },
+              {
+                heading: 'Az izomtónus szerepe',
+                paragraphs: [
+                  'Az izomtónus az izom nyugalmi állapotban is fennálló, enyhe feszülési állapota, amely alapvető szerepet játszik a testtartás fenntartásában (enélkül a test összeroskadna a gravitáció hatására) és a mozgások előkészítésében, hiszen egy már enyhén feszes izom gyorsabban és hatékonyabban tud teljes összehúzódásba lépni, mint egy teljesen ellazult izom. Az izomtónust az idegrendszer folyamatosan, akaratlanul szabályozza, még alvás közben is - ez különbözteti meg a tudatosan, akaratlagosan kiváltott, teljes izomösszehúzódástól.',
+                ],
+              },
+            ],
+            keyTerms: ['vázizom', 'izomköteg', 'izompálya', 'ín', 'izomtónus'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mozgási szervrendszer működését fizikai (emelő-elv), biokémiai (aktin, miozin, ATP) és élettani szempontból is meg kell érteni.',
+            sections: [
+              {
+                heading: 'A mozgás fizikai háttere: az emelő-elv',
+                paragraphs: [
+                  'A csontok, az ízületek és az izmok együttese fizikai értelemben emelőrendszerként működik: a csont az emelőkar, az ízület a forgáspont, az izom összehúzódása pedig a ható mozgatóerő. Az erőkar (az erő hatásvonala és a forgáspont közötti távolság) hossza határozza meg, hogy mekkora erő szükséges egy adott mozgás létrehozásához: rövidebb erőkar esetén nagyobb erőt kell kifejteni, de a végtag távolabbi pontja gyorsabban és arányaiban nagyobb távolságot mozdul el, mint hosszabb erőkar esetén.',
+                ],
+              },
+              {
+                heading: 'Az izomösszehúzódás biokémiai háttere',
+                paragraphs: [
+                  'A korábban (Fehérjék fejezet) megismert összehúzékony fehérjerendszerek konkrét példájaként a vázizomszövet sejtjeiben két fő összehúzódó fehérje, az aktin és a miozin egymáson való elcsúszása hozza létre az izom megrövidülését. Ehhez a folyamathoz elengedhetetlenül szükség van kalciumionokra (Ca²⁺), amelyek az idegi ingerület hatására szabadulnak fel, és teszik lehetővé az aktin és a miozin kapcsolódását.',
+                  'Az izom összehúzódásának közvetlen energiaforrása az ATP, amelynek nagyon gyors pótlását egy saját energiatároló molekula, a kreatin-foszfát segíti, míg az oxigén rövid távú tárolását az izomban a mioglobin nevű fehérje végzi - ez utóbbi felelős a vázizom jellegzetes vörös színéért is, és lehetővé teszi, hogy az izom rövid ideig oxigénhiányos körülmények között is hatékonyan működjön.',
+                ],
+              },
+              {
+                heading: 'Az izomláz kialakulásának oka',
+                paragraphs: [
+                  'Az izomláz a szokatlan vagy különösen intenzív terhelés hatására az izomrostokban kialakuló apró, mikroszkopikus sérülésekből és az ezt követő gyulladásos folyamatból ered - ez a magyarázat pontosítja azt az elterjedt, de téves nézetet, amely szerint az izomlázat a tejsav felhalmozódása okozná: a tejsav valójában már órákkal az edzés befejezése után lebomlik, az izomláz fájdalma pedig jellemzően csak 1-2 nappal később jelentkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['aktin', 'miozin', 'kreatin-foszfát', 'mioglobin'],
+          },
+        },
+      },
+      {
+        id: 'mozgasi-rendszer-egeszsegtana',
+        title: 'A mozgási rendszer egészségtana',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Ficam', 'Rándulás'],
+          rows: [
+            ['Mi történik', 'az ízületi felszínek átmenetileg kimozdulnak egymáshoz képest', 'az ízületi szalagok átmenetileg túlnyúlnak, esetleg kisebb részük megszakad'],
+            ['Csontelmozdulás', 'igen, jellemzően látható deformitással jár', 'nincs, a csontok a helyükön maradnak'],
+            ['Jellemző tünet', 'erős fájdalom, deformitás, mozgásképtelenség', 'fájdalom, duzzanat, korlátozott mozgás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vázrendszer és Izomrendszer fejezetek) megismert csontok, ízületek és izmok együttműködésén alapuló mozgási rendszer épsége könnyen sérülékeny - ebben a fejezetben azt vizsgáljuk meg, hogyan óvhatjuk meg ezt a rendszert, és milyen gyakori sérülésekkel, elváltozásokkal találkozhatunk a mindennapokban, illetve a sportolás során.',
+            sections: [
+              {
+                heading: 'A mozgási rendszer épségét szolgáló alapelvek',
+                paragraphs: [
+                  'A helyes testtartás megőrzése (pl. egyenes hátú ülés, megfelelő emelési technika) csökkenti a gerincoszlopra és az ízületekre nehezedő egyenlőtlen terhelést, ezáltal megelőzi a hosszú távú károsodásokat. A rendszeres, mértékletes testedzés erősíti az izmokat, javítja az ízületek mozgástartományát, és - ahogy azt korábban (Vázrendszer fejezet) a csont kémiai összetételénél érintettük - a csontokra ható mechanikai terhelés fenntartja, sőt növelheti a csontsűrűséget, csökkentve a csontritkulás kockázatát.',
+                  'Fontos ugyanakkor a fokozatosság elve is: a hirtelen, túlzott terhelés éppen azokat a sérüléseket okozhatja (pl. rándulást, izomhúzódást), amelyek megelőzésére a rendszeres testmozgás egyébként szolgálna - ezért a terhelés fokozatos növelése és a megfelelő pihenőidők beiktatása egyaránt szükséges a mozgási rendszer épségének megőrzéséhez.',
+                ],
+              },
+              {
+                heading: 'Törés, gerincsérülés, ficam, csípőficam',
+                paragraphs: [
+                  'A törés a korábban (Vázrendszer fejezet) megismert csont folytonosságának megszakadása, jelei jellemzően az erős fájdalom, a duzzanat, a deformitás (rendellenes testhelyzet) és a mozgásképtelenség. A gerincsérülés különösen veszélyes, mert a gerincoszlopon belül futó gerincvelő is károsodhat - ennek jele lehet az érzészavar vagy akár a bénulás is, ezért gerincsérülés gyanúja esetén a sérültet lehetőleg egyáltalán nem szabad mozgatni a szakszerű ellátás megérkezéséig.',
+                  'A ficam az ízületi felszínek átmeneti, kóros kimozdulása egymáshoz képest, amelyet erős fájdalom, látható deformitás és mozgásképtelenség kísér. A csípőficam a csípőízület kóros helyzete, amely lehet veleszületett fejlődési rendellenesség (ez csecsemőknél viszonylag gyakori, ezért szűrik is), vagy sérülés következménye; jelei lehetnek a láb aszimmetrikus hossza, a csípőízület korlátozott mozgathatósága (pl. nehezített széttárhatóság), illetve mozgatáskor jelentkező kattanó hang. A veleszületett csípőficam korai felismerése és kezelése kiemelten fontos, mert kezeletlenül tartós mozgászavarhoz és a csípőízület idő előtti kopásához vezethet.',
+                ],
+              },
+              {
+                heading: 'Rándulás, lúdtalp, gerincferdülés',
+                paragraphs: [
+                  'A rándulás az ízületet stabilizáló, korábban (Állati szövetek fejezet) megismert szalagok átmeneti túlnyúlása, esetleg kisebb mértékű szakadása, amelynél - a ficammal ellentétben - a csontok nem mozdulnak el tartósan a helyükről; jellemző tünete a fájdalom, a duzzanat és az érintett ízület korlátozott mozgathatósága.',
+                  'A lúdtalp a lábboltozat kóros belapulása (a talp normál esetben boltozatos formájának elvesztése), amely a lábfej terhelés-elosztását teszi kedvezőtlenné, és hosszú távon a boka, a térd, sőt akár a gerincoszlop terhelésében is komoly problémákat okozhat.',
+                  'A gerincferdülés (scoliosis) a gerincoszlop oldalirányú elgörbülése - ez eltér a korábban (Vázrendszer fejezet) megismert, normális, előre-hátra irányú kettős S-alaktól, amely a kétlábon járáshoz szükséges egyenletes teherelosztást szolgálja.',
+                ],
+              },
+              {
+                heading: 'Táplálék-kiegészítők káros hatásai testépítésnél',
+                paragraphs: [
+                  'A testépítés (izomtömeg-növelés) során egyes sportolók szakszerűtlenül alkalmazott táplálék-kiegészítőket (pl. túlzott fehérjebevitelt) vagy tiltott, hormonális hatású szereket (pl. anabolikus szteroidokat) használnak. Ez utóbbiak súlyos, akár visszafordíthatatlan károsodásokat okozhatnak: felboríthatják a szervezet teljes hormonális egyensúlyát, terhelik a májat és a vesét, fiatalkorban pedig korai csontnövekedés-leálláshoz is vezethetnek, mivel a nemi hormonok szintjének mesterséges megemelése a csontok hosszanti növekedési zónáinak idő előtti záródását idézheti elő.',
+                  'Éppen ezért a serdülőkorú, még növésben lévő fiatalok esetében a szakszerűtlen táplálék-kiegészítés és a hormonális hatású szerek használata különösen kockázatos: a rövid távú, látványos izomtömeg-növekedés hosszú távon akár a végleges testmagasság csökkenéséhez és egyéb, tartós egészségkárosodáshoz is vezethet.',
+                ],
+              },
+            ],
+            keyTerms: ['törés', 'gerincsérülés', 'ficam', 'csípőficam', 'rándulás', 'lúdtalp', 'gerincferdülés', 'anabolikus szteroid'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a gerincferdülés osztályozásának alapjait.',
+            sections: [
+              {
+                heading: 'A gerincferdülés típusai',
+                paragraphs: [
+                  'A gerincferdülés kialakulhat funkcionálisan (pl. tartósan rossz testtartás, egyoldalú terhelés miatt, amely még visszafordítható) vagy strukturálisan (a csigolyák tartós, szerkezeti elváltozásával járó, nehezebben kezelhető formában). A korai felismerés és a rendszeres iskolai vagy háziorvosi szűrővizsgálat - ahogy azt korábban (Homeosztázis fejezet) az önvizsgálat és a szűrővizsgálatok jelentőségénél már megismertük - kiemelten fontos, mert a funkcionális elváltozások időben történő, tudatos korrekciója gyakran megelőzheti a súlyosabb, végleges strukturális elváltozások kialakulását.',
+                  'A funkcionális és a strukturális forma megkülönböztetése azért is fontos, mert eltérő kezelési stratégiát igényelnek: a funkcionális elváltozás jellemzően rendszeres testtartás-korrekcióval, célzott gyógytornával kezelhető, míg a kifejezett strukturális elváltozás esetén súlyosabb esetben ortopédiai fűző viselése vagy akár műtéti beavatkozás is szükségessé válhat.',
+                ],
+              },
+              {
+                heading: 'Az izomrendszer és a vázrendszer sérüléseinek megelőzése',
+                paragraphs: [
+                  'A legtöbb, ebben a fejezetben bemutatott sérülés (rándulás, ficam, egyes törések) kockázata jelentősen csökkenthető megfelelő bemelegítéssel, a korábban (Izomrendszer fejezet) megismert fokozatos terheléssel, valamint a mozgásformához illő, megfelelő felszereléssel (pl. sportcipő) - ez is jól mutatja, hogy a vázrendszer és az izomrendszer épsége szorosan összefügg egymással, hiszen egy erős, jól bemelegített izomzat is jelentős, kiegészítő védelmet nyújt az ízületeknek és a csontoknak, tompítva a mozgás közben rájuk ható erőket.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'taplalkozas',
+        title: 'Táplálkozás',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A mozgási rendszer egészségtana fejezet) lezárt mozgási rendszer után ebben a modulban most a táplálkozási (emésztő-) rendszert kezdjük megismerni: ez a fejezet a táplálkozás alapfogalmait és a szervrendszer felépítését tekinti át, a következő fejezetek (Emésztés, Felszívódás, A táplálkozás szabályozása, Táplálkozás egészségtana) pedig ezt az alapot bontják ki részletesen.',
+            sections: [
+              {
+                heading: 'A táplálkozás jelentősége és fő folyamatai',
+                paragraphs: [
+                  'A táplálkozás a szervezet számára szükséges energia és építőanyag biztosítását szolgálja: a felvett tápanyagokból nyert energia fedezi például a korábban (Izomrendszer fejezet) megismert izomösszehúzódáshoz szükséges ATP-termelést, az építőanyagok pedig a szövetek folyamatos megújulásához és növekedéséhez szükségesek.',
+                  'A táplálkozás fő folyamatai a rágás (a táplálék mechanikai aprítása és nyállal való összekeverése, amely megnöveli a táplálék felületét és ezzel megkönnyíti a későbbi kémiai bontást), a nyelés (a lenyelt falat garaton, majd nyelőcsövön át történő továbbítása a gyomorba), valamint a bélperisztaltika, azaz a bélcsatorna falában lévő izomzat hullámszerű összehúzódása, amely a táplálékot a tápcsatornán végig továbbmozgatja.',
+                ],
+              },
+              {
+                heading: 'Táplálék és tápanyag',
+                paragraphs: [
+                  'Fontos megkülönböztetni a táplálék és a tápanyag fogalmát: a táplálék a szervezetbe felvett étel, amely még emésztésre vár, míg a tápanyag a tápláléknak az az emésztés révén felszabadított alkotórésze (szénhidrát, fehérje, zsír, vitamin, ásványi anyag, víz), amelyet a szervezet ténylegesen fel tud szívni és hasznosítani tud.',
+                  'A víz és az ásványi anyagok különleges helyzetű tápanyagok, mert emésztés nélkül, változatlan formában is felszívódnak - ezzel szemben a szénhidrátoknak, a fehérjéknek és a zsíroknak előbb a következő fejezetben (Emésztés) tárgyalt kémiai lebontáson kell átesniük ahhoz, hogy a szervezet hasznosítani tudja őket.',
+                ],
+              },
+              {
+                heading: 'A tápanyagok energiatartalma és a testtömegindex',
+                paragraphs: [
+                  'A tápanyagok fajlagos energiatartalma eltérő: a szénhidrátok és a fehérjék energiatartalma kb. 17 kJ/g (kb. 4 kcal/g), a zsíroké ennek több mint kétszerese, kb. 38 kJ/g (kb. 9 kcal/g) - egy egyszerű számítási példával: 20 g zsír elfogyasztása kb. 760 kJ energiát biztosít a szervezetnek, míg ugyanennyi szénhidrát csak kb. 340 kJ-t.',
+                  'A testtömegindex (BMI = testtömeg (kg) / testmagasság² (m²)) egy tájékozódásra alkalmas, de nem tökéletes mutató: a szokásos tájékoztató beosztás szerint 18,5 alatt alultápláltságról, 18,5-25 között normál testtömegről, 25 felett túlsúlyról beszélünk, ez a beosztás azonban nem veszi figyelembe a testösszetételt (az izom- és zsírszövet arányát). Éppen ezért a BMI normálértéke valójában a nemtől, az életkortól és a testösszetételtől is függ - például egy nagy izomtömegű sportolónál a BMI tévesen a túlsúly kategóriájába eshet, hiszen az izomszövet nehezebb, mint az azonos térfogatú zsírszövet.',
+                ],
+              },
+              {
+                heading: 'A táplálkozási szervrendszer áttekintése',
+                paragraphs: [
+                  'A táplálkozási szervrendszer fő szervei - a táplálék útját követve - a szájüreg (fogak, nyelv, nyálmirigyek), a garat, a nyelőcső, a gyomor, a vékonybél és a vastagbél, majd a végbél; ehhez kapcsolódik két fontos mirigyes szerv, a máj (epehólyaggal) és a hasnyálmirigy, amelyek emésztőnedveiket a vékonybél elejébe (patkóbélbe) ürítik.',
+                  'A teljes tápcsatorna hossza felnőtt embernél összecsavarodott állapotban is eléri a 8-9 métert - ez a jelentős hossz biztosítja, hogy a táplálék elegendő ideig érintkezzen az emésztőnedvekkel és a felszívó felületekkel. Az egyes szervek pontos szerepét (fogazat, emésztőnedvek, felszívódás) a következő fejezetek részletezik.',
+                ],
+              },
+            ],
+            keyTerms: ['táplálék', 'tápanyag', 'bélperisztaltika', 'testtömegindex'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a táplálkozás energiamérlegét egy pontosabb fogalommal, az alapanyagcserével egészítjük ki, amely megmagyarázza, miért van szüksége a szervezetnek energiára akkor is, ha egyáltalán nem mozog.',
+            sections: [
+              {
+                heading: 'Az alapanyagcsere fogalma',
+                paragraphs: [
+                  'Az alapanyagcsere (bazális metabolizmus) az a legkisebb energiamennyiség, amelyet a szervezet teljes nyugalmi állapotban (éhgyomorra, testi és lelki nyugalomban, kényelmes hőmérsékleten) is elhasznál az alapvető élettani működések (pl. szívverés, légzés, testhőmérséklet fenntartása, sejtek folyamatos anyagcseréje) fenntartásához.',
+                  'Az alapanyagcsere értéke nem állandó: függ a testtömegtől és a testfelszíntől (nagyobb testű szervezetnek több sejtje van, amelyeket fenn kell tartani), az izomtömeg arányától (az izomszövet nyugalomban is több energiát fogyaszt, mint a zsírszövet, ezért nagyobb izomtömeg mellett magasabb az alapanyagcsere), az életkortól (fiatalabb, növésben lévő szervezetben magasabb), a nemtől (férfiaknál - jellemzően nagyobb izomtömegük miatt - átlagosan magasabb, mint nőknél), valamint a pajzsmirigyhormonok szintjétől (ezek a hormonok közvetlenül fokozzák a sejtek anyagcsere-sebességét).',
+                  'Az alapanyagcsere fogalma jól kiegészíti a korábban (közép szinten) megismert fajlagos energiatartalom és testtömegindex fogalmát: míg az energiatartalom azt mutatja meg, mennyi energiát nyerhetünk egy adott tápanyagból, az alapanyagcsere azt mutatja meg, mennyi energiára van szükségünk minimálisan, a mozgástól függetlenül - a kettő együtt ad reális képet a szervezet napi energiaegyenlegéről.',
+                  'A szervezet napi teljes energiaszükséglete az alapanyagcsere értékéhez adódik hozzá a napi tevékenységek (testmozgás, munkavégzés) energiaigénye, valamint az emésztés energiaköltsége (a táplálék feldolgozása maga is energiát igényel). Ha a felvett energia tartósan meghaladja a teljes energiaszükségletet, a felesleg zsírként raktározódik, ha pedig tartósan alatta marad, a szervezet a saját tartalékait (elsőként a glikogént, majd a zsírraktárakat, végül a fehérjéket) kezdi felhasználni - ez az összefüggés magyarázza az energiamérleg és a testtömeg-változás közötti kapcsolatot. Ez a modell azt is megmutatja, miért nem elegendő az energiabevitel puszta csökkentése egy egészséges testtömeg fenntartásához: a fenntartható testtömeg-szabályozás az energiabevitel és az energiafelhasználás (amelyben az alapanyagcsere a legnagyobb, de a testmozgással befolyásolható tétel) tartós, kiegyensúlyozott összhangját igényli.',
+                ],
+              },
+            ],
+            keyTerms: ['alapanyagcsere'],
+          },
+        },
+      },
+      {
+        id: 'emesztes',
+        title: 'Emésztés',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Táplálkozás fejezet) áttekintett táplálkozási szervrendszer felépítése után ebben a fejezetben azt vizsgáljuk meg, hogyan zajlik a táplálék mechanikai és kémiai lebontása - ez utóbbi ugyanazt a hidrolízis elvet követi, amelyet korábban (a szénhidrátok fejezetben) az amiláz enzim keményítőbontásánál már megismertünk.',
+            sections: [
+              {
+                heading: 'Fogazat és a szájüreg egészsége',
+                paragraphs: [
+                  'A fog részei a korona (a látható, a legkeményebb testszövetnek számító zománccal borított rész), az alatta lévő fogcsont (dentin), a fog belsejében található, ereket és idegeket tartalmazó fogbél (pulpa), valamint az állcsontban rögzítő gyökér. Az emberi (felnőtt) fogképlet negyedenként 2 metszőfogat, 1 szemfogat, 2 kisőrlőt és 3 nagyőrlőt tartalmaz, összesen 32 fogat - ez a korábban (Emlősök fejezet) megismert differenciált, heterodont fogazat egy konkrét, emberre jellemző megvalósulása.',
+                  'A száj higiéniája (rendszeres fogmosás, fogselyem használata, rendszeres fogorvosi szűrővizsgálat) kiemelten fontos, mert megelőzi a fogszuvasodást (káriészt) és az ínygyulladást, amelyek kezeletlenül akár fogvesztéshez is vezethetnek.',
+                ],
+              },
+              {
+                heading: 'Az emésztőnedvek és az emésztés folyamata',
+                paragraphs: [
+                  'Az emésztés a szájban kezdődik, ahol a rágás mechanikai hatása mellett a nyál amiláz enzime megkezdi a keményítő bontását; a nyál termeléséért három pár nyálmirigy (fültőmirigy, állkapocs alatti és nyelv alatti mirigy) felel. A megrágott, nyállal átitatott falatot a nyelv a garat felé továbbítja, ahonnan a nyelés reflexes mozgássorozata juttatja tovább a nyelőcsőbe. A nyelőcső ezután pusztán szállító szerv: benne emésztés nem történik, kizárólag a bélperisztaltikához hasonló hullámzó izomösszehúzódás továbbítja a lenyelt falatot a gyomorba.',
+                  'A gyomorban a gyomornedv sósavtartalma erősen savas kémhatást (kb. pH 2) hoz létre, amely a fehérjebontó pepszin enzim működéséhez optimális, emellett elpusztítja a táplálékkal bejutó kórokozók jelentős részét is. A gyomor izmos fala a savas gyomornedvet a táplálékkal folyamatosan összekeveri, ezzel folytatva a mechanikai aprítást; a gyomor falát pedig egy vastag nyákréteg védi attól, hogy a szervezet saját magát emésztő nedve károsítsa.',
+                  'A hasnyálmirigy (amelynek - ahogy azt korábban a Homeosztázis fejezetben már megismertük - egyszerre van külső elválasztású, emésztőnedvet termelő és belső elválasztású, hormontermelő szerepe is) által termelt, lúgos kémhatású hasnyál egyszerre semlegesíti a gyomorból érkező savas béltartalmat, és mind a négy fő tápanyagcsoport (fehérjék, szénhidrátok, zsírok, valamint a nukleinsavak) bontásához tartalmaz enzimeket. A máj által termelt, majd az epehólyagban tárolt epe nem enzim, hanem a zsírok emulgeálásával (apró cseppekre bontásával) segíti azok hatékonyabb, nagyobb felületen történő bontását.',
+                ],
+              },
+              {
+                heading: 'Kísérleti értelmezés: az enzimek optimális kémhatása',
+                paragraphs: [
+                  'Ha egy kísérletben a gyomornedvet (vagy a hasnyálat) a természetestől eltérő kémhatásúra állítjuk be, az adott emésztőnedv enzimeinek hatása lecsökken vagy leáll: a gyomornedv pepszinje csak erősen savas közegben, a hasnyál enzimei pedig csak semleges-lúgos közegben fejtik ki hatásukat - ez azt mutatja, hogy minden enzim működéséhez egy adott, optimális kémhatás szükséges, amelytől eltérve az enzim hatékonysága romlik, akár teljesen meg is szűnhet.',
+                  'Ez a jelenség jól szemlélteti, miért van szükség a tápcsatorna mentén többféle, egymástól eltérő kémhatású emésztőnedvre: egyetlen enzimkészlet nem lenne képes hatékonyan működni a gyomor erősen savas, majd a vékonybél inkább semleges-lúgos közegében is - a szervezet ehelyett minden szakaszhoz a helyi kémhatáshoz optimálisan illeszkedő enzimeket termel.',
+                ],
+              },
+            ],
+            keyTerms: ['fogképlet', 'pepszin', 'amiláz', 'hasnyál', 'epe'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a közép szinten megismert emésztőnedveket enzimszinten pontosítjuk: melyik enzim, hol termelődik, és pontosan mit bont - illetve azt is megvizsgáljuk, hogyan kapcsolódik a kémiai emésztés a korábban (Lebontó folyamatok fejezet) megismert sejtszintű energiatermeléshez.',
+            sections: [
+              {
+                heading: 'Emésztőenzimek termelődési helye és hatásai',
+                paragraphs: [
+                  'Az amiláz a nyálmirigyekben és a hasnyálmirigyben is termelődik: a nyálban lévő amiláz a szájban megkezdi, a hasnyálban lévő amiláz pedig a vékonybélben folytatja és befejezi a keményítő (poliszacharid) diszacharidokká (elsősorban maltózzá) bontását.',
+                  'A laktáz a vékonybél nyálkahártyájában termelődik, és a tejcukrot (laktózt) bontja a két egyszerű cukorra, glükózra és galaktózra - hiánya okozza a laktózérzékenységet (tejcukor-intoleranciát), amikor a bontatlan laktóz a vastagbélbe jutva a bélbaktériumok által erjesztve puffadást és hasmenést okoz.',
+                  'A lipáz a hasnyálmirigyben termelődik, és a - korábban (Emésztés fejezet) megismert epe által már emulgeált - trigliceridek (zsírok) zsírsavakra és glicerinre bontását végzi.',
+                  'A nukleáz szintén a hasnyálmirigyben termelődik, és a nukleinsavakat (DNS, RNS) bontja kisebb egységekre (nukleotidokra).',
+                  'A pepszin a gyomorban termelődik (a fősejtek eleve inaktív pepszinogén formában választják ki, amelyet a gyomor sósava aktivál), és a fehérjéket nagyobb peptidláncokká bontja. A tripszin a hasnyálmirigyben termelődik (szintén inaktív előanyagként, amelyet a vékonybélben egy másik enzim aktivál), és a fehérjebontást folytatja tovább, egészen az aminosavakig.',
+                ],
+              },
+              {
+                heading: 'Az emésztés és a sejtszintű lebontás kapcsolata',
+                paragraphs: [
+                  'A szájban, a gyomorban és a vékonybélben zajló kémiai emésztés (amelyet ebben a fejezetben ismertünk meg) és a korábban (Lebontó folyamatok fejezet) megismert sejtszintű lebontás (glikolízis, citromsavciklus, terminális oxidáció) valójában egyetlen, folytonos lebontási folyamat két egymásra épülő szakasza: az emésztés a nagy, komplex tápmolekulákat (poliszacharidok, fehérjék, zsírok) a felszívódásra alkalmas, kisebb egységekre (monoszacharidok, aminosavak, zsírsavak) bontja, a sejtszintű lebontás pedig ezekből az egységekből (elsősorban a glükózból) nyeri ki a bennük tárolt kémiai energiát ATP formájában.',
+                  'Ez a kapcsolat magyarázza, miért nem hasznosítható közvetlenül energiaforrásként egy el nem emésztett, nagy molekula: a sejtek anyagcsere-útjai (pl. a glikolízis) csak a már lebontott, kis egységekkel (pl. a glükózzal) tudnak "elindulni" - az emésztés tehát nem csupán mechanikai előfeltétele, hanem a sejtszintű energiatermelés nélkülözhetetlen "előkészítő szakasza".',
+                ],
+              },
+            ],
+            keyTerms: ['laktáz', 'lipáz', 'nukleáz', 'tripszin', 'pepszinogén'],
+          },
+        },
+      },
+      {
+        id: 'felszivodas',
+        title: 'Felszívódás',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Emésztés fejezet) tárgyalt kémiai lebontás után ebben a fejezetben azt nézzük meg, hova és hogyan kerülnek be a lebontott tápanyagok a szervezetbe, illetve mi történik velük ezután.',
+            sections: [
+              {
+                heading: 'A bélbolyhok és a tápanyagok felszívódása',
+                paragraphs: [
+                  'A vékonybél belső falát beborító bélbolyhok apró, ujjszerű nyúlványok, amelyek hatalmasra növelik a felszívó felületet; a bélbolyhok felszínén elhelyezkedő sejteken további mikroszkopikus nyúlványok, a mikrobolyhok találhatók, amelyek tovább sokszorozzák a felszívó felület nagyságát. Minden egyes bélbolyhban sűrű hajszálér-hálózat és egy központi nyirokér (tejér) fut, ez biztosítja a felszívódott anyagok elszállítását.',
+                  'Itt szívódnak fel a végső bontási termékek: a monoszacharidok és az aminosavak a hajszálereken keresztül közvetlenül a vérbe jutnak, míg a zsírsavak és a glicerin jellemzően a nyirokereken (tejereken) át szívódnak fel, és csak ezután kerülnek be a vérkeringésbe. A felszívódás egy része passzívan (a koncentrációkülönbség mentén, energiafelhasználás nélkül), más része energiaigényes, aktív folyamatokkal zajlik - hasonlóan ahhoz az elvhez, amelyet korábban (Membránok szerepe fejezet) a passzív és az aktív szállítás megkülönböztetésénél már megismertünk.',
+                  'A bélbolyhok kiterjedt felszíne, sűrű érhálózata és a bennük zajló szüntelen mozgás (a bélbolyhok folyamatosan, lassú hullámmozgással "keverednek" a béltartalommal) együttesen biztosítja, hogy a naponta elfogyasztott táplálék tápanyagtartalmának túlnyomó része hatékonyan felszívódjon, mire a béltartalom eléri a vastagbelet.',
+                ],
+              },
+              {
+                heading: 'A vastagbél és a végbél szerepe',
+                paragraphs: [
+                  'A vékonybélből a fel nem szívódott, emészthetetlen anyagok (pl. a növényi rostok) a vastagbélbe kerülnek, amelynek fő feladata a bélsárból még kivonható víz és ásványi anyagok visszaszívása - ez tömöríti a béltartalmat széklet formájúvá. A vastagbélben élő, hatalmas számú baktérium (bélflóra) egy része hasznos, mutualista kapcsolatban él a szervezettel: egyes vitaminokat (pl. K-vitamint) is termel, amelyeket a szervezet fel tud szívni, cserébe a bélflóra tápanyagot és védett élőhelyet kap a vastagbélben - ez az együttélési forma tehát mindkét fél számára előnyös.',
+                  'A végbél a kialakult széklet ideiglenes tárolására és az ürítés (defekáció) lebonyolítására szolgál; az ürítés tudatosan is késleltethető, mivel a végbélnyílást körülvevő záróizomzat egy része akaratlagosan is irányítható. Ez a rendszer együttesen biztosítja, hogy a tápcsatorna elején lezajló emésztés és felszívódás után a fel nem használt maradék szabályozottan, a szervezet számára megfelelő időpontban távozzon.',
+                ],
+              },
+              {
+                heading: 'A máj szerepe a felszívott tápanyagok feldolgozásában',
+                paragraphs: [
+                  'A bélből felszívódó, vérbe jutó tápanyagok elsőként a májon haladnak át, amely sokrétű szerepet tölt be: fehérjéket, glükózt és glikogént szintetizál (a felesleges glükózból glikogént raktároz, majd éhezéskor ezt bontja vissza glükózzá, ezzel puffereli a vércukorszintet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén alapuló szabályozás egyik konkrét példája); raktároz egyes vitaminokat és a vasat; valamint méregteleníti a szervezetbe kerülő káros anyagokat (pl. az alkoholt vagy a gyógyszerek egy részét).',
+                  'A máj emellett igen jelentős regenerációs képességgel rendelkezik: szövetének akár jelentős részének elvesztése után is képes visszanöveszteni eredeti méretét, ami kiemeli, mennyire létfontosságú szerv a felszívódott tápanyagok feldolgozásában. Éppen ezért a máj tartós károsodása (pl. hosszú távú túlzott alkoholfogyasztás következtében) rendkívül súlyos, az egész szervezet anyagcseréjét felborító következményekkel jár.',
+                ],
+              },
+            ],
+            keyTerms: ['bélbolyh', 'vastagbél', 'máj', 'glikogén', 'bélflóra'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosítjuk, mi történik a felszívódott tápanyagokkal egészen a testi szövetekbe való beépülésükig, illetve megvizsgáljuk, miért függ össze a máj működése a sárgasággal.',
+            sections: [
+              {
+                heading: 'A tápanyagok útja a felszívódástól a szövetekig',
+                paragraphs: [
+                  'A felszívódott monoszacharidok (elsősorban glükóz) a májon áthaladva vagy azonnal a szövetek felé indulnak sejtlégzésre, vagy - ahogy azt korábban (ebben a fejezetben) megismertük - glikogénként raktározódnak; szükség esetén a glikogén ismét glükózzá bomlik, és a vérárammal jut el az energiaigényes szövetekhez (pl. az izomsejtekhez), ahol a sejtlégzés használja fel.',
+                  'A felszívódott aminosavak a szövetekben fehérjeszintézisre (új, a szervezet saját fehérjéinek felépítésére) használódnak fel; a fehérjeszintézishez szükségtelen felesleg a májban dezaminálódik (a nitrogéntartalmú rész karbamiddá alakul és a vesén át kiválasztódik), a megmaradó szénváz pedig energiatermelésre hasznosulhat.',
+                  'A felszívódott zsírsavak és glicerin a szövetekben (elsősorban a zsírszövetben) trigliceridekké épülnek vissza, és energiatartalék formájában raktározódnak, vagy közvetlenül a sejtlégzés energiaforrásaként hasznosulnak. Mindhárom tápanyagcsoport esetében tehát ugyanaz a mintázat figyelhető meg: a felszívódott egységekből a szövetek részben új, saját anyagokat építenek fel (fehérjeszintézis, zsírraktározás), részben pedig közvetlenül energiát nyernek belőlük a sejtlégzés révén - a szervezet pillanatnyi energia- és építőanyag-igénye szabja meg, melyik út valósul meg éppen.',
+                ],
+              },
+              {
+                heading: 'Májbetegségek és a sárgaság kapcsolata',
+                paragraphs: [
+                  'A sárgaság a bőr és a szemfehérje sárgás elszíneződése, amelyet a vérben felhalmozódó bilirubin (a lebontott vörösvértestekből származó, az epével normál esetben a bélbe ürülő festékanyag) okoz. Mivel a bilirubin feldolgozása és epébe történő kiválasztása a máj feladata, a máj bármilyen károsodása (pl. májgyulladás, májzsugorodás) megzavarhatja ezt a folyamatot, és a bilirubin felhalmozódik a vérben, ez okozza a sárgaságot.',
+                  'A sárgaság tehát nem önálló betegség, hanem egy jellegzetes tünet, amely a máj (vagy az epeelvezető rendszer) működési zavarára utal - ez jól mutatja, miért olyan fontos diagnosztikai jelzés a bőr elszíneződésének megfigyelése a máj egészségének felmérésekor.',
+                  'A sárgaság hátterében többféle mechanizmus állhat: kialakulhat a vörösvértestek szokásosnál gyorsabb, fokozott lebomlása miatt (ekkor a májnak egyszerűen több bilirubint kellene feldolgoznia, mint amennyire képes), a máj saját, károsodott feldolgozó-működése miatt (pl. májgyulladásnál a károsodott májsejtek nem tudják hatékonyan az epébe üríteni a bilirubint), vagy az epeelvezető utak elzáródása miatt (pl. epekő esetén, amikor a már feldolgozott bilirubin nem tud kijutni a bélbe) - a három ok elkülönítése fontos diagnosztikai kérdés, hiszen eltérő kezelést igényelnek.',
+                ],
+              },
+            ],
+            keyTerms: ['dezaminálás', 'karbamid', 'bilirubin', 'sárgaság'],
+          },
+        },
+      },
+      {
+        id: 'taplalkozas-szabalyozasa',
+        title: 'A táplálkozás szabályozása',
+        order: 10,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Felszívódás fejezet) megismert folyamatok - hogy a tápanyagok hogyan jutnak be a szervezetbe és hogyan hasznosulnak - után ebben a fejezetben azt vizsgáljuk meg, mi váltja ki magát az étkezési késztetést, és hogyan szabályozza a szervezet a tápcsatorna működését.',
+            sections: [
+              {
+                heading: 'Az éhség- és a szomjúságérzet kiváltása',
+                paragraphs: [
+                  'Az éhségérzetet jellemzően a vércukorszint csökkenése és a gyomor kiürülése váltja ki, míg a szomjúságérzetet a testfolyadékok ozmotikus koncentrációjának (a víztartalom csökkenése miatti) megemelkedése idézi elő. Mindkét érzetet az agy egy erre specializálódott központja, a hipotalamusz dolgozza fel, amely folyamatosan érzékeli a vér összetételének változásait, és ezek alapján váltja ki a megfelelő késztetést.',
+                  'Az étkezés befejeztével a jóllakottság érzete alakul ki: a gyomor megtelése (feszülése) és a felszívódó tápanyagok hatására megemelkedő vércukorszint egyaránt jelzést küld a hipotalamusznak, amely ennek hatására csökkenti, majd megszünteti az éhségérzetet - ez az éhség és a jóllakottság folyamatos, egymást kiegyensúlyozó váltakozása biztosítja a rendszeres táplálékfelvételt.',
+                ],
+              },
+              {
+                heading: 'A tápcsatorna reflexes folyamatai',
+                paragraphs: [
+                  'A tápcsatorna számos reflexes folyamata tudatos befolyásolás nélkül, automatikusan zajlik le: a nyelés egy összetett, részben tudatos, részben reflexes mozgássorozat, a hányás pedig a szervezetbe jutott károsanyagok eltávolítását szolgáló védekező reflex.',
+                  'Különösen érdekes, hogy a táplálék puszta látványa vagy illata már önmagában megindíthatja a nyál- és a gyomornedvtermelést, még mielőtt a táplálék ténylegesen a szájba kerülne - ez a jelenség lényegében ugyanazon az elven alapul, mint a korábban (Tanult magatartásformák fejezet) megismert feltételes reflex (klasszikus kondicionálás): a szervezet a táplálék látványát/illatát idővel összekapcsolja magával az étkezéssel, és erre a "jelzőingerre" is reagálni kezd.',
+                  'Ezek a reflexes folyamatok jól mutatják, hogy a tápcsatorna működése nem várja meg a táplálék tényleges megérkezését az adott szervbe, hanem "előre felkészül" rá - ezzel gyorsítva és hatékonyabbá téve az emésztés megindulását, amint a táplálék ténylegesen megérkezik. A nyelés reflexe egyben védekező szerepet is betölt: garantálja, hogy a lenyelt falat mindig a helyes irányba, a nyelőcső felé haladjon, ne a szomszédos légutak felé.',
+                ],
+              },
+              {
+                heading: 'Minőségi és mennyiségi éhezés',
+                paragraphs: [
+                  'Fontos megkülönböztetni a minőségi éhezést (amikor a táplálék mennyisége elegendő, de valamely tápanyag - jellemzően a fehérje - tartósan hiányzik belőle) a mennyiségi éhezéstől (amikor általánosan, tartósan túl kevés az elfogyasztott táplálék energiatartalma). Mindkét forma tartós fennállása súlyos, akár visszafordíthatatlan egészségkárosodáshoz vezethet: a hosszan tartó fehérjehiány (minőségi éhezés) jellemzően duzzanatokkal (ödémával) is jár, míg a tartós, súlyos mennyiségi éhezés a szervezet teljes leépüléséhez, végső esetben halálhoz vezethet.',
+                  'A két éhezésforma gyakran együtt is előfordulhat, hiszen az egyoldalú, kevés táplálék jellemzően nemcsak energiában, hanem egyes tápanyagokban (pl. fehérjében, vitaminokban) is szegény - ez különösen a fejlődő országokban, illetve szélsőséges élethelyzetekben (pl. éhínség, tartós betegség) okoz súlyos, sokrétű egészségkárosodást, amelynek felismerése és kezelése komplex, orvosi felügyeletet igényel.',
+                  'Fontos megjegyezni, hogy az éhezés nemcsak szegénység vagy élelmiszerhiány következménye lehet: bizonyos evészavarok (pl. az önmegtartóztató étkezési magatartás) esetén az érintett tudatosan korlátozza a táplálékfelvételét annak ellenére, hogy a táplálék rendelkezésre áll - ez is a mennyiségi éhezés egyik, orvosi-pszichológiai kezelést igénylő formája.',
+                ],
+              },
+            ],
+            keyTerms: ['éhségérzet', 'szomjúságérzet', 'minőségi éhezés', 'mennyiségi éhezés'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni, hogy az éhség- és jóllakottság-érzet mögött a hipotalamusz mellett hormonális jelzőrendszer is áll.',
+            sections: [
+              {
+                heading: 'Hormonális éhség- és jóllakottság-szabályozás',
+                paragraphs: [
+                  'A gyomor üres állapotban egy ghrelin nevű hormont választ ki, amely a hipotalamuszra hatva éhségérzetet vált ki; étkezés után a zsírszövet által termelt leptin hormon szintje emelkedik meg, amely ezzel szemben a jóllakottság érzetét erősíti, csökkentve a további táplálékfelvétel iránti igényt.',
+                  'A ghrelin és a leptin egymással ellentétes irányú hatása egy újabb példa a korábban (Homeosztázis fejezet) megismert negatív visszacsatolásra: a szervezet energiaraktárainak (elsősorban a zsírszövetnek) az állapota folyamatosan "visszajelez" az agynak, finoman hangolva az étvágyat a tényleges energiaigényhez.',
+                  'Ez a hormonális szabályozás egyben magyarázatot ad arra is, miért nehéz tartósan fenntartani egy fogyókúra hatását: jelentős testtömegcsökkenés esetén a zsírszövet mérete lecsökken, ezáltal a leptinszint is alacsonyabbá válik, ami a szervezet számára "éhezésjelzésként" értelmeződik, és fokozott éhségérzetet, illetve csökkent energiafelhasználást (alacsonyabb alapanyagcserét) eredményezhet - ez a mechanizmus jelentősen megnehezíti a hosszú távú testtömegcsökkentést pusztán akarati úton.',
+                  'A leptin- és ghrelinszint mellett számos egyéb tényező (pl. alváshiány, tartós stressz) is befolyásolhatja a hormonális éhségjelzést, jellemzően az étvágy fokozásának irányában - ez az egyik biológiai magyarázata annak, hogy a nem megfelelő alvás és a magas stressz-szint miért társul gyakran túlzott energiabevitellel és testtömeg-növekedéssel.',
+                  'A hormonális éhségszabályozás megértése rávilágít arra is, hogy a testtömeg tartós, egészséges szinten tartása miért igényel fokozatos, hosszú távú szemléletváltást a hirtelen, drasztikus étrendi megszorítások helyett: az utóbbiak éppen azt a hormonális választ váltják ki, amely a szervezetet a korábbi étkezési szokások visszaállítására "ösztönzi". Ez a mechanizmus - a korábban (Homeosztázis fejezet) megismert negatív visszacsatolásos szabályozáshoz hasonlóan - a szervezet egyfajta "védekező" reakciója, amely evolúciósan az éhínséggel szembeni túlélést szolgálta, napjaink élelmiszerben bővelkedő környezetében viszont gyakran megnehezíti a tudatos testtömeg-szabályozást.',
+                ],
+              },
+            ],
+            keyTerms: ['ghrelin', 'leptin'],
+          },
+        },
+      },
+      {
+        id: 'taplalkozas-egeszsegtana',
+        title: 'Táplálkozás egészségtana',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Alultápláltság', 'Túltápláltság'],
+          rows: [
+            ['Ok', 'elégtelen energia- és/vagy tápanyagbevitel', 'tartósan a szükségletnél nagyobb energiabevitel'],
+            ['Jellemző következmény', 'legyengült immunrendszer, fejlődési elmaradás, vitaminhiány-betegségek', 'elhízás, cukorbetegség és szív-érrendszeri betegségek fokozott kockázata'],
+            ['Jellemző kiváltó háttér', 'szegénység, étkezési zavarok, felszívódási zavarok', 'mozgásszegény életmód, energiadús, de tápanyagszegény étrend'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (A táplálkozás szabályozása fejezet) megismert éhség-szabályozás után ebben a záró fejezetben - hasonlóan ahhoz, ahogy a mozgási rendszernél is külön fejezetet szenteltünk az egészségtannak (A mozgási rendszer egészségtana fejezet) - azt tekintjük át, hogyan függ össze a táplálkozás az egészséggel, és milyen kockázatokra érdemes figyelni.',
+            sections: [
+              {
+                heading: 'Tápanyagforrások és a vitaminok élettani jelentősége',
+                paragraphs: [
+                  'A fehérjék, szénhidrátok, zsírok, növényi rostok és ásványi anyagok (nyomelemek) természetes forrásai (pl. hús, gabona, olajos magvak, zöldségek, gyümölcsök) mellett ismerni kell hiányuk és túlzott fogyasztásuk kockázatait is: a tartós fehérjehiány izomvesztéshez és duzzanatokhoz (ödémához) vezet, a rostszegény étrend székrekedést és a vastagbél megbetegedéseinek fokozott kockázatát okozhatja, a túlzott zsírfogyasztás pedig elhízáshoz és szív-érrendszeri betegségekhez vezethet.',
+                  'A D-vitamin (amely napfény hatására a bőrben is képződik) hiánya a kalcium felszívódásának zavara miatt csontlágyuláshoz (angolkórhoz) vezet; az A-vitamin hiánya a recehártya fényérzékeny pigmentjének károsodása miatt szürkületi vakságot (farkasvakságot) okoz; a B12-vitamin hiánya a vörösvértestek képzésének zavara miatt vérszegénységhez vezet; a C-vitamin hiánya - mivel a kollagén nélkülözhetetlen alkotóeleme - skorbutot okoz; a folsav hiánya pedig különösen terhesség alatt veszélyes, mert magzati idegcső-záródási rendellenességet okozhat.',
+                ],
+              },
+              {
+                heading: 'Élelmiszer-biztonság és életmódhoz igazodó étrend',
+                paragraphs: [
+                  'Az étrendi elvárások a tevékenységtől, a kortól, a nemtől és az adott élettani állapottól (pl. terhesség, szoptatás) függően jelentősen változnak: egy intenzíven sportoló, növésben lévő fiatalnak jelentősen nagyobb energia- és fehérjebevitelre van szüksége, mint egy ülő életmódot folytató felnőttnek, a várandósság és a szoptatás időszaka pedig fokozott energia- és tápanyagigénnyel (pl. megnövekedett folsav- és vasszükséglettel) jár.',
+                  'Az élelmiszerek tartósításának alapelvei (pl. hűtés, fagyasztás, szárítás, tartósítószerek alkalmazása) egyaránt a mikroorganizmusok szaporodásának gátlásán alapulnak, ezáltal lassítva az élelmiszerek romlását - ezért is fontos az élelmiszerek csomagolásán feltüntetett összetevők, illetve az eltarthatósági idő tudatos figyelembevétele. A helytelenül tárolt vagy lejárt élelmiszerekben elszaporodó mikroorganizmusok (illetve az általuk termelt méreganyagok) súlyos ételmérgezést okozhatnak, ami jól mutatja, hogy az élelmiszer-biztonság nem csak elméleti, hanem gyakorlati, mindennapi jelentőségű kérdés. Az életkorhoz igazodó étrend jó példája a csecsemőkori táplálás is, amikor az anyatej összetétele az adott fejlődési szakasz igényeihez igazodik, majd a táplálás fokozatosan egészül ki egyéb, szilárd táplálékkal.',
+                ],
+              },
+              {
+                heading: 'A tápcsatorna megbetegedéseinek kockázati tényezői és a megelőzés',
+                paragraphs: [
+                  'A tápcsatorna megbetegedéseinek kialakulását veleszületett hajlamosító tényezők mellett életviteli kockázati tényezők is elősegíthetik: a nem megfelelő szájhigiéné a fogszuvasodás és az ínygyulladás kockázatát növeli, a fokozott stressz fokozhatja a gyomorsav-túltermelést (ezáltal a gyomorfekély kockázatát), a túlzott alkohol- és gyógyszerfogyasztás pedig károsítja a májat és a gyomor nyálkahártyáját; ide sorolható még az egyoldalú, nem megfelelő táplálkozás, valamint egyes kedvezőtlen környezeti hatások (pl. szennyezett élelmiszer vagy ivóvíz) is.',
+                  'Éppen ezért egy kiegyensúlyozott, változatos étrend mellett érdemes érvelni: ez biztosítja mind a hiánybetegségek, mind az elhízással összefüggő betegségek (pl. cukorbetegség, szív-érrendszeri betegségek) alacsonyabb kockázatát, és hosszú távon hozzájárul a szervezet minden szervrendszerének - így a korábban (Vázrendszer, Izomrendszer fejezetek) megismert mozgási rendszernek is - az egészséges, hosszú távú működéséhez.',
+                ],
+              },
+            ],
+            keyTerms: ['vitaminhiány', 'alultápláltság', 'túltápláltság', 'élelmiszer-tartósítás'],
+          },
+          emeltExtra: {
+            intro: 'A közép szinten megismert D-, A-, B12-, C-vitamin és folsav mellett emelt szinten további négy vitamin (E, K, B1, B6) élettani jelentőségét is ismerni kell.',
+            sections: [
+              {
+                heading: 'További vitaminok élettani jelentősége',
+                paragraphs: [
+                  'Az E-vitamin fő szerepe az antioxidáns védelem: megvédi a sejtmembránok zsírsavait a károsító oxidációtól, ezáltal hozzájárul a sejtek épségének megőrzéséhez.',
+                  'A K-vitamin - ahogy azt a keringési rendszer témakörénél is látni fogjuk - nélkülözhetetlen a véralvadási folyamatban részt vevő fehérjék előállításához; hiánya vérzékenységhez vezethet.',
+                  'A B1-vitamin (tiamin) a szénhidrát-anyagcsere egyik kulcsfontosságú koenzimjének alkotórésze, hiánya elsősorban az idegrendszer és a szívizom működését károsítja.',
+                  'A B6-vitamin az aminosav-anyagcsere számos lépésében vesz részt koenzimként, hiánya bőrtünetekkel és idegrendszeri zavarokkal járhat.',
+                ],
+              },
+              {
+                heading: 'Zsírban és vízben oldódó vitaminok',
+                paragraphs: [
+                  'A vitaminok egy fontos szempont szerint két csoportba sorolhatók: a zsírban oldódó vitaminok (D, A, E, K) a zsírokkal együtt szívódnak fel, és a szervezet - elsősorban a májban és a zsírszövetben - képes őket raktározni, ezért túlzott, hosszan tartó bevitelük mérgezést is okozhat. A vízben oldódó vitaminok (a B-vitaminok és a C-vitamin) ezzel szemben nem, vagy csak igen korlátozottan raktározhatók, a szervezet a fölösleget a vizelettel kiválasztja - ezért ezekből folyamatos, rendszeres bevitelre van szükség, viszont a túladagolás veszélye jóval kisebb.',
+                  'Ez a megkülönböztetés magyarázza, miért különösen veszélyes a zsírban oldódó vitaminok (pl. az A-vitamin) hosszú távú, szükségesnél nagyobb adagban történő, tudatos pótlása - ellentétben a vízben oldódó vitaminokkal, amelyeknél a szervezet a fölösleget hatékonyan eltávolítja. Éppen ezért a vitaminpótló készítmények szedése is megfontolást igényel: kiegyensúlyozott étrend mellett a legtöbb egészséges embernek nincs szüksége külön vitaminpótlásra, és a zsírban oldódó vitaminokból tudatosan, orvosi javaslat nélkül bevitt túlzott mennyiség inkább kockázatot, mint hasznot jelent. A K-vitamin jelentőségét különösen jól mutatja, hogy - ahogy azt majd a keringési rendszer témakörében is látni fogjuk - nélkülözhetetlen szerepet játszik a véralvadási folyamatban részt vevő fehérjék előállításában; emiatt a K-vitamin tartós hiánya (amely felnőtteknél ritka, mivel a bélflóra is termel belőle, de bizonyos betegségeknél vagy újszülötteknél előfordulhat) fokozott vérzékenységgel járhat.',
+                ],
+              },
+            ],
+            keyTerms: ['E-vitamin', 'K-vitamin', 'B1-vitamin', 'B6-vitamin', 'zsírban oldódó vitamin', 'vízben oldódó vitamin'],
+          },
+        },
+      },
+      {
+        id: 'legcsere',
+        title: 'Légcsere',
+        order: 12,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Mellkasi légzés', 'Hasi légzés'],
+          rows: [
+            ['Domináns izom', 'elsősorban a bordaközti izmok', 'elsősorban a rekeszizom'],
+            ['Mellkas/has mozgása', 'a mellkas jól láthatóan kitágul, "emelkedik"', 'a mellkas kevésbé mozog, inkább a has domborodik előre'],
+            ['Jellemző előfordulás', 'megerőltető légzéskor, illetve terhesség alatt (amikor a megnagyobbodott méh gátolja a rekeszizom lesüllyedését) felerősödik', 'nyugalmi légzéskor jellemzően ez a hatékonyabb, kevesebb energiát igénylő forma'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Táplálkozás egészségtana fejezet) lezárt táplálkozási rendszer után ebben a fejezetben a légzőrendszert ismerjük meg: a korábban (Emlősök fejezet) megismert rekeszizom (diafragma) - amely az emlősöket az addig tanult gerinces csoportoktól megkülönbözteti - és a Madarak fejezetben megismert légzsákos, egyirányú kettős légzéssel szemben az emberi (és általában az emlős) légzésben a levegő nem egyirányban, hanem oda-vissza (be- és kilégzéssel) áramlik.',
+            sections: [
+              {
+                heading: 'A légzőrendszer felépítése',
+                paragraphs: [
+                  'A légzőrendszer legfontosabb funkciói a szervezet oxigénellátásának biztosítása, a sejtlégzés során keletkező szén-dioxid eltávolítása, valamint a hangképzés. A belélegzett levegő útja: orrüreg (illetve szükség esetén szájüreg) → garat → gégefő → légcső → hörgők → a tüdőben egyre finomabban elágazó légutak (hörgőcskék), amelyek végül a léghólyagocskákban (alveolusokban) végződnek. A jobb tüdő három, a bal tüdő - a szomszédos szív helyet igénylő elhelyezkedése miatt - csak két lebenyre tagolódik.',
+                  'A tüdőt kettős hártya, a mellhártya (pleura) veszi körül: a tüdő felszínéhez tapadó és a mellkas belső falát borító lemez között egy vékony, folyadékkal kitöltött rés húzódik, amely a légzőmozgások során a tüdő súrlódásmentes csúszását teszi lehetővé a mellkasfalon, egyúttal "összetapasztja" a tüdőt a mellkasfallal, ami a légzőmozgások hatékony átvitele szempontjából elengedhetetlen.',
+                ],
+              },
+              {
+                heading: 'A légzési mozgások: belégzés és kilégzés',
+                paragraphs: [
+                  'A belégzést és a kilégzést elsősorban a rekeszizom és a bordaközti izmok összehangolt működése biztosítja: a rekeszizom összehúzódásakor lelapul, ezáltal megnöveli a mellüreg (és így a tüdő) térfogatát, ami a levegő beáramlását (belégzés) idézi elő; ellazulásakor a mellüreg térfogata csökken, ez okozza a kilégzést. A bordaközti izmok összehúzódása a bordákat megemeli, tovább növelve a mellüreg térfogatát belégzéskor.',
+                  'Nehézlégzés (megerőltető légzés, pl. intenzív testmozgás közben) esetén további, ún. légzési segédizmok (pl. a nyaki és a vállövi izmok egy része) is bekapcsolódnak, hogy még nagyobb mellüreg-térfogatváltozást tegyenek lehetővé.',
+                ],
+              },
+              {
+                heading: 'Légzési mutatók: vitálkapacitás és légzésszám',
+                paragraphs: [
+                  'A vitálkapacitás a maximális erőltetett belégzést követő maximális erőltetett kilégzéssel kifújható levegő térfogata; a légzési perctérfogat pedig a percenkénti légzésszám és az egy légvételre jutó levegőmennyiség (légzési térfogat) szorzata. Az aktívan sportoló fiatalok vitálkapacitása jellemzően nagyobb, mint a nem sportolóké, mivel a rendszeres, intenzív testmozgás fejleszti a légzőizomzatot és a tüdő rugalmasságát, ezáltal hatékonyabb gázcserét és jobb terhelhetőséget biztosít. A fiúk vitálkapacitása azonos edzettségi szint mellett is jellemzően nagyobb, mint a lányoké, mivel átlagosan nagyobb testméretük nagyobb tüdőtérfogattal és fejlettebb légzőizomzattal párosul.',
+                  'A légzésszám nyugalomban jellemzően alacsonyabb, mint munkavégzés (testmozgás) után: a fokozott izomműködés megnöveli a szövetek oxigénigényét és szén-dioxid-termelését, ami a légzésszám (és a légzési térfogat) növekedését váltja ki.',
+                  'A légzési teljesítmény és a szervezet energiafelhasználása szorosan összefügg: minél nagyobb a szervezet pillanatnyi energiaigénye (pl. intenzív testmozgás közben), annál több oxigénre van szükség a sejtlégzéshez, ez pedig csak a légzés fokozásával (nagyobb légzési térfogattal és/vagy nagyobb légzésszámmal) biztosítható.',
+                ],
+              },
+            ],
+            keyTerms: ['léghólyagocska', 'mellhártya', 'rekeszizom', 'vitálkapacitás', 'légzési perctérfogat'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a légzőmozgásokat nem csak leíró, hanem mennyiségi szinten is meg kell érteni: hogyan változnak a térfogatok és a nyomások a légzési ciklus során, és hogyan szemlélteti ezt egy klasszikus fizikai modell, a Donders-modell.',
+            sections: [
+              {
+                heading: 'Légzési térfogat- és nyomásváltozások',
+                paragraphs: [
+                  'Belégzéskor a rekeszizom és a bordaközti izmok összehúzódása megnöveli a mellüreg térfogatát; mivel a mellhártya két lemeze közötti rés zárt, folyadékkal kitöltött tér, a mellüreg tágulása a mellhártyaűrben (intrapleurális térben) uralkodó nyomást a légköri nyomáshoz képest még negatívabbá teszi. Ez a negatív nyomáskülönbség "húzza tágra" a hozzá tapadó tüdőt, ami a tüdőn belüli (alveoláris) nyomást a légköri nyomás alá csökkenti - ez a nyomáskülönbség hajtja be a levegőt a tüdőbe.',
+                  'Kilégzéskor a folyamat fordítva zajlik: a rekeszizom és a bordaközti izmok elernyednek, a mellüreg térfogata csökken, a mellhártyaűri nyomás kevésbé negatívvá válik, a tüdő összehúzódik, és az alveoláris nyomás a légköri nyomás fölé emelkedik, ami kihajtja a levegőt. Egy ilyen folyamatot bemutató grafikonon tehát a mellhártyaűri nyomás mindvégig negatív, de belégzéskor még inkább lecsökken, míg az alveoláris nyomás a légköri nyomás körül ingadozik, belégzéskor az alá, kilégzéskor fölé kerülve.',
+                ],
+              },
+              {
+                heading: 'A Donders-modell',
+                paragraphs: [
+                  'A Donders-modell (más néven "harang-modell") egy klasszikus fizikai szemléltető eszköz, amely egy zárt, üvegharang alakú edényből áll, amelynek alját egy rugalmas gumimembrán (a rekeszizmot modellezve) zárja le, belsejében pedig egy vagy két léggömb (a tüdőt/tüdőket modellezve) található, amelyek egy csövön keresztül a külvilággal (a légcsövet modellezve) állnak összeköttetésben.',
+                  'Ha a modellben a gumimembránt lefelé húzzuk (ez modellezi a rekeszizom összehúzódását), az edény belsejében a térfogat megnő, a nyomás lecsökken, és a léggömbök (a tüdő) a nyomáskülönbség hatására felfújódnak - ez szemlélteti a belégzést. Ha a membránt elengedjük, az visszaugrik eredeti helyzetébe, a belső térfogat csökken, a nyomás megnő, és a léggömbök kienged(őd)nek - ez szemlélteti a kilégzést. A modell jól mutatja, hogy a tüdő önmagában nem aktív, összehúzódásra képes szerv, hanem a mellüreg térfogatváltozása "mozgatja" passzívan.',
+                ],
+              },
+            ],
+            keyTerms: ['intrapleurális nyomás', 'alveoláris nyomás', 'Donders-modell'],
+          },
+        },
+      },
+      {
+        id: 'gazcsere',
+        title: 'Gázcsere',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Légcsere fejezet) megismert légzőmozgások biztosítják, hogy friss levegő jusson a tüdőbe - ebben a rövid fejezetben azt nézzük meg, mi történik ott a levegővel, és hogyan kapcsolódik ez a korábban (Lebontó folyamatok fejezet) részletesen tárgyalt sejtlégzéshez.',
+            sections: [
+              {
+                heading: 'Légcsere, gázcsere és sejtlégzés - három egymásra épülő fogalom',
+                paragraphs: [
+                  'Fontos megkülönböztetni három, egymásra épülő fogalmat: a légcsere a levegő be- és kiáramlását jelenti a tüdőbe, illetve onnan kifelé; a gázcsere az oxigén és a szén-dioxid kicserélődése a léghólyagocskák és a vér, illetve a szövetek és a vér között; a sejtlégzés pedig a sejteken belül, elsősorban a mitokondriumban lezajló, energiatermelő folyamat, amely oxigént használ fel és szén-dioxidot termel - ezt a folyamatot a korábbi (Lebontó folyamatok fejezet) mutatta be részletesen.',
+                  'A három folyamat szorosan összefügg, akár egy szállítási láncként is elképzelhető: a légcsere biztosítja a gázcseréhez szükséges friss levegőt, a gázcsere pedig a sejtlégzéshez szükséges oxigént juttatja el a sejtekhez, illetve távolítja el az ott képződő szén-dioxidot. Ha bármelyik láncszem sérül (pl. a légcsere elakad, vagy a gázcsere felülete lecsökken egy tüdőbetegség miatt), az a sejtek oxigénellátását és így végső soron a sejtlégzést is veszélyezteti.',
+                ],
+              },
+              {
+                heading: 'A gázcsere helyszíne: a léghólyagocskák',
+                paragraphs: [
+                  'A gázcsere a tüdő legmélyebb légúti egységeiben, a léghólyagocskákban (alveolusokban) zajlik, amelyek falát rendkívül sűrű hajszálér-hálózat veszi körül. A léghólyagocskák nagy száma és vékony fala összességében hatalmas felületet biztosít a gázcseréhez - hasonlóan ahhoz, ahogy korábban (a bélbolyhoknál, a Felszívódás fejezetben) a felszívó felület megnövelésének elvét már megismertük -, a vékony fal pedig azt is biztosítja, hogy a levegő és a vér között a gázok gyorsan és hatékonyan kicserélődhessenek.',
+                  'A léghólyagocskákból a vérbe jutó oxigént a vörösvértestekben található hemoglobin nevű fehérje köti meg és szállítja tovább a szövetekhez, a szövetekben keletkező szén-dioxid pedig jórészt a vérplazmában oldva jut vissza a tüdőbe - ezt a szállítási folyamatot a következő fejezetekben, az anyagszállítás témakörében ismerjük meg részletesebben.',
+                  'A gázcsere iránya mindkét helyszínen (a tüdőben és a szövetekben) a koncentrációkülönbségtől függ: a tüdőben a belélegzett levegőben magas az oxigénkoncentráció, ezért az oxigén a levegőből a vérbe áramlik, míg a szövetekben - ahol a sejtlégzés folyamatosan fogyasztja az oxigént és termeli a szén-dioxidot - éppen fordított irányú koncentrációkülönbség alakul ki, ezért ott az oxigén a vérből a sejtek felé, a szén-dioxid pedig a sejtekből a vér felé áramlik.',
+                  'Ez a kettős, de egymással ellentétes irányú gázcsere - a tüdőben oxigénfelvétel és szén-dioxid-leadás, a szövetekben oxigénleadás és szén-dioxid-felvétel - biztosítja, hogy a szervezet minden sejtje folyamatosan hozzájusson a sejtlégzéshez szükséges oxigénhez, és megszabaduljon az anyagcsere során keletkező szén-dioxidtól. Ha ez a folyamatos körforgás bármelyik ponton megszakad (pl. a légcsere elakad, vagy a szállítást végző vér mennyisége lecsökken), a sejtek oxigénellátása percek alatt veszélybe kerülhet - ez mutatja, hogy a légcsere, a gázcsere és a sejtlégzés valójában egyetlen, megszakítás nélkül működő rendszerként biztosítja a szervezet energiaellátását.',
+                ],
+              },
+            ],
+            keyTerms: ['gázcsere', 'sejtlégzés', 'léghólyagocska', 'hemoglobin'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a gázcsere mechanizmusát is meg kell érteni: pontosan milyen fizikai folyamat áll a gázok mozgása mögött.',
+            sections: [
+              {
+                heading: 'A gázcsere diffúzión alapul',
+                paragraphs: [
+                  'A gázcsere mind a tüdőben, mind a szövetekben passzív diffúzión alapul: az oxigén és a szén-dioxid molekulái a nagyobb koncentrációjú (parciális nyomású) hely felől az alacsonyabb koncentrációjú hely felé áramlanak, energiafelhasználás nélkül - ez ugyanaz az elv, amelyet korábban (Membránok szerepe fejezet) a passzív szállításnál már megismertünk.',
+                  'A diffúzió sebessége - és ezáltal a gázcsere hatékonysága - egyenesen arányos a rendelkezésre álló felszínnel és a koncentrációkülönbség nagyságával, fordítottan arányos viszont a diffúziós úttal (a membrán vastagságával). A léghólyagocskák hatalmas összfelülete és rendkívül vékony fala (mindössze egyetlen sejtréteg, amelyet közvetlenül egyetlen sejtréteg vastagságú hajszálér-fal követ) éppen ezért teszi lehetővé a rendkívül gyors és hatékony gázcserét.',
+                  'Ez az összefüggés magyarázza azt is, miért veszélyesek egyes tüdőbetegségek: a tüdőgyulladás vagy a tüdővizenyő során a léghólyagocskák falában felgyülemlő folyadék megnöveli a diffúziós utat, a tüdőtágulás (emfizéma) pedig a léghólyagocskák falának károsodásával csökkenti az összfelületet - mindkét esetben a diffúzió képlete alapján egyértelműen következik, hogy a gázcsere hatékonysága jelentősen romlik, ami nehézlégzéshez vezet.',
+                  'A diffúzió elve azt is megmagyarázza, miért nem segít a gázcserén, ha valaki nagy magasságban egyszerűen gyorsabban lélegzik: a probléma ott nem a légcsere sebességével, hanem a belélegzett levegő alacsonyabb oxigén-parciálisnyomásával (és ezáltal a koncentrációkülönbség lecsökkenésével) van - ezt gyorsabb légzéssel csak részben lehet ellensúlyozni, ezért van szükség hosszabb akklimatizációra vagy - extrém magasságban - pótlólagos oxigénellátásra.',
+                  'A szervezet hosszabb távon (napok, hetek alatt) képes alkalmazkodni a tartósan alacsonyabb oxigén-parciálisnyomáshoz: ilyenkor megnő a vörösvértestek száma, ezáltal a vér oxigénszállító kapacitása is nagyobb lesz, ami részben ellensúlyozza a levegő alacsonyabb oxigéntartalmát - ez a magyarázata annak, hogy a magashegyi régiókban élők, illetve a magassági edzőtáborozó sportolók vére tartósan magasabb vörösvértest-számmal rendelkezik, mint a tengerszinten élőké.',
+                ],
+              },
+            ],
+            keyTerms: ['diffúzió', 'parciális nyomás'],
+          },
+        },
+      },
+      {
+        id: 'hangkepzes',
+        title: 'Hangképzés',
+        order: 14,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Gázcsere fejezet) megismert gázcsere mellett a légzőrendszernek egy másik, egészen más jellegű funkciója is van: ebben a fejezetben a hangképzésben kulcsszerepet játszó gégét és a hangszalagokat ismerjük meg.',
+            sections: [
+              {
+                heading: 'A gége felépítése',
+                paragraphs: [
+                  'A gégefő (gége) három, ábrán is jól azonosítható része a pajzsporc (ez alkotja a gége elülső, kiemelkedő részét, a "ádámcsutkát"), a gégefedő és a hangszalagok. A gégefő a légcső és a garat találkozásánál helyezkedik el, így minden belélegzett, illetve nyelés során továbbított anyag áthalad rajta.',
+                  'A gégefedő nyeléskor reflexesen lezárja a légutat, megakadályozva, hogy táplálék vagy folyadék kerüljön a légcsőbe. Ha ez a védekező mechanizmus meghibásodik (pl. beszéd közbeni nyeléskor), a szervezet egy heves köhögési reflexszel próbálja a légutakba tévedt anyagot kilökni - ez a mindennapi életben is jól ismert "félrenyelés" jelensége.',
+                  'A hangszalagok közötti rés (a hangrés) mérete a légzés és a hangképzés során eltérő: nyugodt légzéskor tágra nyílik, hogy a levegő akadálytalanul áramolhasson a tüdőbe és onnan kifelé, hangképzéskor viszont beszűkül, hogy a rajta átáramló levegő rezgésbe tudja hozni a hangszalagokat.',
+                  'A gégét kívülről tapintható porcvázas szerkezete védi a mechanikai sérülésektől, ugyanakkor rugalmasan mozgatható is: nyeléskor és hangképzéskor egésze felfelé-lefelé, illetve előre-hátra is elmozdulhat, ez a mozgás jól megfigyelhető és tapintható a nyakon (pl. nyeléskor a pajzsporc jellegzetes "fel-le" mozgásaként).',
+                ],
+              },
+              {
+                heading: 'A hangképzés folyamata',
+                paragraphs: [
+                  'A hangképzés során a kilégzett levegő a hangszalagok közötti szűk résen áramlik át, és ezáltal rezgésbe hozza a hangszalagokat - ez az alaphang forrása. A hangszalagok feszülésének és a rajtuk átáramló levegő mennyiségének változtatásával alakítható a hang magassága és erőssége; az így keletkező alaphangot a garat, a szájüreg és az orrüreg üregei rezonátorterekként tovább alakítják.',
+                  'A hangképzés - a beszéd és az ének alapjaként - az emberi kommunikáció egyik nélkülözhetetlen biológiai feltétele. Serdülőkorban a gége és a hangszalagok mérete (különösen fiúknál) jelentősen megnövekszik, ami a jól ismert hangváltozáshoz (mutációhoz), azaz a hang átmeneti tisztátalanná válásához, majd tartós mélyüléséhez vezet.',
+                  'A hangszalagok hosszabb, folyamatos, kíméletlen igénybevétele (pl. túlzott kiabálás, helytelen éneklési technika) átmeneti berekedéshez, tartósan pedig a hangszalagok gyulladásához vagy akár apró csomók kialakulásához is vezethet, ami a hang minőségének tartós romlását okozhatja - ezért a hangképző szervek kímélete is a légzőrendszer egészségtanának fontos, gyakorlati vonatkozású része.',
+                  'A hangképzés minősége nem csak a hangszalagok állapotától függ: egy megfázás vagy torokgyulladás okozta duzzanat, illetve a légutakban felgyülemlő váladék szintén megváltoztathatja a hang jellegzetes csengését (ezt nevezzük köznyelvben "berekedt" hangnak) - ez jól mutatja, hogy a hangképzés a teljes légzőrendszer pillanatnyi állapotát tükrözi, nem csak a gége működését.',
+                  'A hangképzéshez a korábban (Légcsere fejezet) megismert légzési térfogat is szorosan kapcsolódik: minél nagyobb levegőmennyiséget tudunk egy kilégzés során a hangszalagokon átáramoltatni, annál hosszabb ideig, illetve annál erőteljesebben tudunk beszélni vagy énekelni - ez az egyik oka annak, hogy az éneklés és a fúvós hangszeres játék egyaránt tudatos légzéstechnikát igényel.',
+                ],
+              },
+            ],
+            keyTerms: ['gégefő', 'pajzsporc', 'gégefedő', 'hangszalag'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban meghatározzuk a hangszalagok rögzülési pontjait, illetve azt is megvizsgáljuk, milyen fizikai tényezők határozzák meg a keletkező hang jellemzőit.',
+            sections: [
+              {
+                heading: 'A hangszalagok rögzülése és a gége működése',
+                paragraphs: [
+                  'A hangszalagok a pajzsporc belső fala és a gége hátsó részén elhelyezkedő, elmozdítható kannaporcok között feszülnek ki. A kannaporcok elfordulásukkal képesek a hangszalagok közötti rést (a hangrést) szűkíteni vagy tágítani, illetve a hangszalagok feszességét is szabályozni - ez a mozgékony rögzítés teszi lehetővé a hang tulajdonságainak tudatos, finom szabályozását.',
+                ],
+              },
+              {
+                heading: 'A hang erőssége, magassága és a hangszín',
+                paragraphs: [
+                  'A hang erőssége elsősorban a hangszalagokon átáramló levegő mennyiségétől (a kilégzés erejétől) függ: minél nagyobb nyomással áramlik át a levegő, annál nagyobb amplitúdójú (erősebb) rezgést kelt.',
+                  'A hang magassága a hangszalagok rezgésének frekvenciájától függ, amelyet a hangszalagok feszessége és hossza határoz meg: a feszesebb, rövidebb hangszalagok gyorsabban (magasabb frekvencián) rezegnek, ezáltal magasabb hangot eredményeznek - ez magyarázza, hogy a nőknél és gyermekeknél jellemzően rövidebb hangszalagok miatt átlagosan magasabb a hang, mint a felnőtt férfiaknál.',
+                  'A hangszínt - amely lehetővé teszi, hogy azonos magasságú hangok esetén is megkülönböztessünk egyéni hangokat vagy hangszereket - a garat, a szájüreg és az orrüreg mint rezonátorterek egyedi mérete és alakja befolyásolja: ezek a rezonátorterek az alaphang egyes felharmonikusait (magasabb frekvenciájú összetevőit) különböző mértékben erősítik fel, ez adja a hang egyedi "színezetét".',
+                  'A rezonátorterek tudatos alakítása (pl. a szájüreg és a nyelv helyzetének változtatásával) teszi lehetővé a magánhangzók egymástól való megkülönböztetését is: ugyanaz az alaphang, ugyanolyan magassággal és erősséggel, teljesen eltérő hangzású beszédhanggá alakítható attól függően, hogy a rezonátorterek éppen mely felharmonikusokat erősítik fel leginkább.',
+                  'Ez a három tényező (erősség, magasság, hangszín) együttesen teszi lehetővé, hogy az emberi hang rendkívül változatos legyen: ugyanaz a gégefő és hangszalag-pár képes suttogástól a kiáltásig, mély basszustól a magas szopránig, illetve egymástól tisztán megkülönböztethető magánhangzókig és beszédhangokig terjedő skálát produkálni - ez a sokoldalúság az emberi beszéd és ének biológiai alapja.',
+                ],
+              },
+            ],
+            keyTerms: ['kannaporc', 'hangrés', 'rezonátortér', 'felharmonikus'],
+          },
+        },
+      },
+      {
+        id: 'legzes-szabalyozasa',
+        title: 'A légzés szabályozása',
+        order: 15,
+        isFree: false,
+        estimatedMinutes: 8,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hangképzés fejezet) megismert gége és hangszalagok után ebben a fejezetben azt nézzük meg, mi szabályozza a légzés mélységét és gyakoriságát - hasonlóan ahhoz, ahogy korábban (A táplálkozás szabályozása fejezet) az éhség- és szomjúságérzet szabályozását is megismertük.',
+            sections: [
+              {
+                heading: 'A légzés szabályozásának alapelve',
+                paragraphs: [
+                  'A légzés mélységét és gyakoriságát elsősorban a vér szén-dioxid-koncentrációjának emelkedése szabályozza (nem elsősorban az oxigénszint csökkenése): ha a vérben megemelkedik a szén-dioxid mennyisége, az agytörzsben, a nyúltvelőben található légzőközpont ezt érzékelve idegi jeleket küld a rekeszizomhoz és a bordaközti izmokhoz, felgyorsítva és elmélyítve a légzést. Ez fokozott szén-dioxid-kiürüléshez, majd a koncentráció csökkenéséhez vezet - ez, ahogy azt a Homeosztázis fejezetben már megismertük, a negatív visszacsatolás elvén működő szabályozás egy újabb, konkrét példája.',
+                  'Az, hogy elsősorban a szén-dioxid-koncentráció (és nem közvetlenül az oxigénhiány) váltja ki a légzés fokozódását, jól mutatja, hogy a szervezet a saját anyagcseréje által termelt "melléktermék" szintjét folyamatosan, érzékenyen figyeli, és ez alapján avatkozik be, még mielőtt az oxigénhiány ténylegesen veszélyessé válna.',
+                  'A légzés részben akaratlagosan is befolyásolható: rövid ideig visszatarthatjuk a levegőt, vagy tudatosan szaporábban, mélyebben lélegezhetünk (ez utóbbira épül például a korábban, a Hangképzés fejezetben megismert beszéd és éneklés is, hiszen ezekhez a kilégzés hosszának és erősségének tudatos szabályozására van szükség). Ez a tudatos befolyásolás azonban csak korlátozott ideig tartható fenn, mert a vérben egyre emelkedő szén-dioxid-koncentráció végül felülírja az akaratlagos szándékot, és önműködően kikényszeríti a légvételt - ez is jól szemlélteti a negatív visszacsatolásos szabályozás erejét.',
+                  'A rendszeres testmozgás hosszú távon a légzőközpont és a légzőizomzat összehangolt működését is fejleszti: az edzett szervezet ugyanakkora terhelés mellett hatékonyabban, kevesebb energiával tudja fenntartani a megfelelő vér-szén-dioxid-szintet, mint az edzetlen szervezet - ez az egyik oka annak, hogy a korábban (Légcsere fejezet) megismert vitálkapacitás is nagyobb a rendszeresen sportolóknál.',
+                  'A légzésszabályozás tehát egy folyamatosan, öntudatlanul működő rendszer, amely csak szükség esetén enged teret a tudatos befolyásolásnak - ez biztosítja, hogy alvás közben, vagy amikor a figyelmünk máshova irányul, a légzés akkor is zavartalanul, a szervezet igényeihez igazodva folytatódjon.',
+                  'A légzőközpont érzékenysége nem állandó: kisgyermekkorban és idős korban, illetve bizonyos betegségek (pl. súlyos tüdőbetegségek) esetén a légzőközpont a normálistól eltérően reagálhat a szén-dioxid-koncentráció változására, ami a légzésszabályozás zavarához, szélsőséges esetben légzéskimaradáshoz is vezethet - ez az egyik oka annak, hogy csecsemőknél és időseknél a légzés folyamatos megfigyelése különösen fontos.',
+                  'A légzőközpont tehát folyamatosan "monitorozza" a szervezet anyagcseréjének állapotát, és ennek alapján, önműködően, tized másodperces pontossággal hangolja össze a rekeszizom és a bordaközti izmok munkáját - ez a finomhangolt, automatikus együttműködés teszi lehetővé, hogy a légzés a nap 24 órájában, tudatos odafigyelés nélkül is folyamatosan a szervezet aktuális igényeihez igazodjon.',
+                ],
+              },
+            ],
+            keyTerms: ['negatív visszacsatolás', 'légzőközpont', 'szén-dioxid'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosítjuk, milyen érzékelő struktúrák (receptorok) továbbítják a légzőközpont felé azokat az információkat, amelyek alapján a légzés szabályozása ténylegesen megtörténik.',
+            sections: [
+              {
+                heading: 'Kemoreceptorok és mechanoreceptorok szerepe',
+                paragraphs: [
+                  'A kemoreceptorok kémiai jellegű ingerekre (elsősorban a vér szén-dioxid-koncentrációjának, illetve az ebből következő pH-változásnak a mértékére) érzékeny érzékelő sejtek, amelyek részben magában az agytörzsben (a légzőközpont közelében), részben a nagyerek falában (pl. a nyaki verőérben) találhatók; ezek folyamatosan "jelentik" a légzőközpont felé a vér kémiai állapotát, ez alapján hangolva a légzés mélységét és gyakoriságát.',
+                  'A mechanoreceptorok ezzel szemben mechanikai ingerekre (a tüdő és a mellkas feszülésére, tágulására) érzékenyek: a tüdő falában található nyúlásérzékelő receptorok jelzik a légzőközpont felé, ha a tüdő már kellően kitágult, ez a jelzés váltja ki a belégzés leállítását és a kilégzés megkezdését (ezt a jelenséget Hering-Breuer-reflexnek nevezik) - ezáltal a mechanoreceptorok megvédik a tüdőt a túlzott, károsító mértékű kitágulástól.',
+                  'A kemoreceptorok és a mechanoreceptorok tehát kiegészítik egymást: míg a kemoreceptorok a szervezet anyagcsere-igényéhez igazítják a légzés intenzitását, a mechanoreceptorok a légzőmozgások fizikai határait szabják meg, együtt biztosítva a hatékony és biztonságos légzést.',
+                  'A nagyerekben elhelyezkedő kemoreceptorok (elsősorban a nyaki verőérben és a főverőérben) emellett az oxigénszint jelentős, kritikus mértékű lecsökkenésére is érzékenyek, bár - ahogy azt korábban (közép szinten) megismertük - normál körülmények között elsősorban nem ez, hanem a szén-dioxid-koncentráció változása szabja meg a légzés ütemét. Az oxigénérzékeny kemoreceptorok szerepe elsősorban szélsőséges helyzetekben (pl. nagy magasságban, ahol a levegő oxigéntartalma alacsonyabb) válik meghatározóvá, amikor már ez a "tartalék" szabályozási mechanizmus is aktiválódik.',
+                  'Ez a kettős (elsődlegesen szén-dioxid-, másodlagosan oxigénérzékeny) szabályozási rendszer evolúciósan is jól magyarázható: a szén-dioxid-koncentráció változása gyorsabb és érzékenyebb jelzést ad a szervezet pillanatnyi anyagcsere-állapotáról, mint az oxigénszint, amely csak jóval nagyobb mértékű hiány esetén csökken le észrevehető mértékben - így a szervezet a gyorsabb, megbízhatóbb jelzőrendszerre (a szén-dioxid-érzékelésre) alapozza az elsődleges szabályozást.',
+                  'Ez a kettősség egyben magyarázatot ad egy gyakorlati veszélyre is: mivel a légzést elsősorban a szén-dioxid-szint, nem az oxigénszint szabályozza, elméletileg előfordulhat, hogy valaki tudatos, elhúzódó szapora légzéssel (hiperventilációval) a normálisnál alacsonyabb szén-dioxid-szintet ér el, ezáltal átmenetileg elnyomja a légzési ingert annak ellenére, hogy az oxigénszint közben veszélyesen alacsonyra csökkenhet - ez az egyik oka annak, hogy a hiperventiláció, különösen víz alatti tartózkodás előtt, komoly egészségügyi kockázatot jelenthet.',
+                ],
+              },
+            ],
+            keyTerms: ['kemoreceptor', 'mechanoreceptor', 'Hering-Breuer-reflex'],
+          },
+        },
+      },
+      {
+        id: 'legzorendszer-egeszsegtana',
+        title: 'A légzés és a légzőrendszer egészségtana',
+        order: 16,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A légzés szabályozása fejezet) megismert szabályozási mechanizmus után, ebben a záró fejezetben - hasonlóan ahhoz, ahogy a táplálkozási rendszernél is külön fejezetet szenteltünk az egészségtannak (Táplálkozás egészségtana fejezet) - a légzőrendszer egészségtanát tekintjük át.',
+            sections: [
+              {
+                heading: 'Az orron át történő légzés jelentősége',
+                paragraphs: [
+                  'Az orron át történő belégzés előnyösebb a szájon át történőnél, mert az orrüregben a levegő megszűrődik (a szennyeződések, kórokozók egy része kiszűrődik), felmelegszik és páratartalmat nyer, mielőtt eléri a mélyebb légutakat - ez védi a tüdőt a kiszáradástól és a károsító hatásoktól. A szájon át történő légzés (pl. eldugult orr esetén) ezt a védelmet megkerüli, ezért ilyenkor a légutak nagyobb eséllyel száradnak ki és fertőződnek.',
+                ],
+              },
+              {
+                heading: 'A légzőrendszert károsító tényezők és gyakori betegségek',
+                paragraphs: [
+                  'A légzőrendszert leggyakrabban károsító tényezők közé tartozik a dohányzás, a légszennyezettség és az allergének; ezek hozzájárulnak a légzőrendszer gyakori megbetegedéseihez, amelyek lehetnek fertőzéses eredetűek (pl. tüdőgyulladás, hörghurut) vagy daganatos jellegűek (pl. tüdőrák), illetve idetartozik az asztma is. A tüdőgyulladás során a léghólyagocskák meggyulladnak és folyadékkal telítődnek, ami jelentősen lecsökkenti a gázcserére alkalmas felületet, ezért a betegség jellegzetes tünete a nehézlégzés. Az asztma a hörgők átmeneti, allergiás vagy egyéb ingerre bekövetkező összeszűkülése, amely szintén nehezített, jellegzetesen sípoló légzést okoz.',
+                  'A torokgyulladás gyakran jár együtt középfülgyulladással, mert a garatot és a középfület összekötő fülkürtön (Eustach-kürtön) keresztül a fertőzés könnyen átterjedhet az egyik szervről a másikra - gyermekeknél ez különösen gyakori, mivel náluk a fülkürt rövidebb és vízszintesebb lefutású, ami megkönnyíti a kórokozók átjutását.',
+                ],
+              },
+              {
+                heading: 'A dohányzás kockázatai',
+                paragraphs: [
+                  'A dohányzás különösen súlyos kockázatot jelent: a cigarettafüst károsítja a légutak belső falát borító csillós hámsejteket, amelyek egészséges esetben a beszippantott szennyeződéseket és nyákot folyamatosan kifelé mozgatnák a légutakból - ezek károsodása miatt a szennyeződések és kórokozók tovább maradnak a légutakban, ami jelentősen megnöveli a légzőrendszeri daganatos és fertőzéses megbetegedések, valamint a szív-érrendszeri betegségek kockázatát is.',
+                  'Éppen ezért fontos a dohányzás elkerülése, illetve a leszokás mellett érvelni: a dohányzás abbahagyása után a légutak öntisztuló képessége (a csillós hámsejtek működése) idővel részlegesen helyreállhat, és a súlyos megbetegedések kockázata is fokozatosan csökken - minél korábban történik a leszokás, annál nagyobb ez az egészségnyereség.',
+                  'A dohányzás nemcsak a dohányzó személy légzőrendszerét károsítja: a passzív dohányzás, azaz mások cigarettafüstjének belélegzése ugyanazokat a károsító hatásokat idézheti elő, ráadásul a gyermekek légzőrendszere - mivel még fejlődésben van - különösen érzékeny erre a hatásra, ami tovább erősíti a dohányzás elleni érvelés jogosságát.',
+                  'A gyakori légúti fertőzések (pl. a megfázás) terjedését jelentősen elősegíti a cseppfertőzés: köhögéskor és tüsszentéskor apró, kórokozókat tartalmazó váladékcseppek kerülnek a levegőbe, amelyeket mások belélegezhetnek - ez az egyik oka annak, hogy a szájat és orrot eltakaró köhögés/tüsszentés, valamint a rendszeres kézmosás a légúti fertőzések terjedésének egyszerű, de hatékony megelőzési módja.',
+                  'Összességében a légzőrendszer egészségének megőrzése - hasonlóan ahhoz, ahogy azt korábban (Táplálkozás egészségtana fejezet) a tápcsatornánál is láttuk - nagyrészt tudatos, mindennapi döntéseken (dohányzás elkerülése, tiszta levegőjű környezet, megfelelő testmozgás) múlik, nem csupán a betegségek utólagos kezelésén.',
+                ],
+              },
+            ],
+            keyTerms: ['asztma', 'dohányzás', 'középfülgyulladás', 'fülkürt'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten két olyan jelenséget vizsgálunk meg, amelyek megértéséhez fizikai alapismeretek is szükségesek: a légmell és a keszonbetegség kialakulását, valamint a tüdő felületi feszültségének és a dohányzásnak az összefüggését.',
+            sections: [
+              {
+                heading: 'A légmell és a keszonbetegség',
+                paragraphs: [
+                  'A légmell (pneumothorax) akkor alakul ki, ha a mellhártya zárt tere (amelyben - ahogy azt korábban, a Légcsere fejezet emelt kiegészítésében megismertük - normál esetben negatív nyomás uralkodik) sérülés (pl. mellkasi szúrt seb, vagy egy léghólyagocska megrepedése) következtében megnyílik a külvilág vagy a tüdő belseje felé, és levegő áramlik be a mellhártyaűrbe. Ez megszünteti a negatív nyomáskülönbséget, amely normál esetben "tágra húzva" tartja a tüdőt - a tüdő ennek hatására összeesik, és az érintett oldalon a légzés hatástalanná válik, ami sürgősségi ellátást igénylő, életveszélyes állapot.',
+                  'A keszonbetegség (dekompressziós betegség) a víz alatti, magas nyomáson végzett munka (pl. mélytengeri búvárkodás) után, a felszínre túl gyorsan történő felemelkedéskor alakulhat ki: a magas nyomáson a vérben és a szövetekben nagy mennyiségű nitrogéngáz oldódik fel, amely a nyomás hirtelen csökkenésekor - hasonlóan ahhoz, ahogyan egy hirtelen kinyitott szénsavas üdítőben is buborékok jelennek meg - nem tud elég gyorsan a tüdőn keresztül eltávozni, ezért apró gázbuborékok formájában szabadul fel az erekben és a szövetekben, elzárva a keringést és súlyos fájdalmat, akár bénulást is okozva.',
+                ],
+              },
+              {
+                heading: 'A léghólyagocskák felületi feszültsége és a dohányzás',
+                paragraphs: [
+                  'A léghólyagocskák belső felszínét vékony folyadékréteg borítja, amelyben a folyadékmolekulák közötti vonzóerő felületi feszültséget hoz létre - ez a felületi feszültség önmagában a léghólyagocskák összeesésének (összetapadásának) irányába hatna, amit egy speciális, felületaktív anyag (surfactant) csökkent, megkönnyítve a léghólyagocskák nyitva tartását.',
+                  'A dohányzás károsítja a surfactant-termelő sejteket, ezáltal a léghólyagocskák felületi feszültsége kontrollálatlanul megnő - ez hozzájárul a léghólyagocskák tartós összeeséséhez és a rugalmas tüdőszövet károsodásához, ami az egyik mechanizmusa annak, hogy a hosszú távú dohányzás krónikus, visszafordíthatatlan tüdőkárosodáshoz (pl. tüdőtáguláshoz) vezethet.',
+                  'Ez a felismerés (a surfactant szerepe és a dohányzás károsító hatása) jól mutatja, hogy egy látszólag egyszerű fizikai jelenség - a folyadékok felületi feszültsége - miért lehet kulcsfontosságú egy élettani működés (a légzés) szempontjából, és miért érdemes a biológiai jelenségeket fizikai alapelvekkel is összekapcsolni, ne csak leíró módon szemlélni.',
+                ],
+              },
+            ],
+            keyTerms: ['légmell', 'keszonbetegség', 'felületi feszültség', 'surfactant'],
+          },
+        },
+      },
+      {
+        id: 'testfolyadekok',
+        title: 'A testfolyadékok',
+        order: 17,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A légzés és a légzőrendszer egészségtana fejezet) lezárt légzőrendszer után ebben a fejezetben az anyagszállítás témakörét kezdjük megismerni: azt a három, egymással szoros kapcsolatban álló folyadékteret, amelyeken keresztül a szervezet sejtjei a tápanyagokat, az oxigént és a szabályozó jeleket megkapják, a salakanyagoktól pedig megszabadulnak.',
+            sections: [
+              {
+                heading: 'Vér, szövetnedv, nyirok - a szervezet folyadékterei',
+                paragraphs: [
+                  'A vér zárt érrendszerben, a szív pumpáló munkája által hajtva kering; alkotói a vérplazma (folyékony állomány) és az abban úszó alakos elemek (vörösvérsejtek, fehérvérsejtek, vérlemezkék) - ahogy azt korábban (Állati szövetek fejezet) megismertük, a vér is kötőszövet, amelynek sejtközötti állománya folyékony.',
+                  'A szövetnedv (szöveti folyadék) a hajszálerek faláról a szövetek közötti térbe kiszűrődő, a vérplazmához hasonló összetételű folyadék, amely közvetlenül körülveszi a testi sejteket - ez a folyadék a sejtek és a vér közötti anyagcsere valódi közvetítő közege, hiszen a vér maga nem érintkezik közvetlenül a legtöbb sejttel.',
+                  'A nyirok a szövetnedv azon része, amelyet a hajszálerek nem tudnak visszaszívni, ezért a nyirokerekbe jutva, a nyirokkeringésen át jut vissza a vérkeringésbe. A három folyadéktér tehát szoros kapcsolatban áll egymással: a vérből szövetnedv szűrődik ki, a szövetnedv egy része visszaszívódik a vérbe, más része nyirokká válva a nyirokereken át tér vissza a vérkeringésbe.',
+                ],
+              },
+              {
+                heading: 'A vér mennyisége és összetétele',
+                paragraphs: [
+                  'Egy felnőtt ember teljes vértérfogata átlagosan kb. 5 liter. Ebből az alakos elemek (elsősorban a vörösvértestek) a vér térfogatának kb. 45%-át teszik ki, a vérplazma pedig a fennmaradó kb. 55%-ot.',
+                  'A vérplazma legnagyobb része víz, ebben oldva találhatók a plazmafehérjék (pl. az ozmotikus nyomás fenntartásáért felelős albumin, a szállító- és védekező szerepű globulinok, valamint a véralvadásban kulcsszerepet játszó fibrinogén), a sók és ionok, a felszívódott tápanyagok, a hormonok, valamint a sejtek anyagcseréje során keletkező salakanyagok (pl. a karbamid).',
+                  'Az alakos elemek és a vérplazma pontos arányát hematokritnak nevezzük; ennek értéke tájékoztat a vér vörösvértest-tartalmáról, ezért gyakori laboratóriumi vizsgálati mutató - kórosan alacsony értéke (pl. vérszegénység esetén) vagy kórosan magas értéke (pl. tartós folyadékhiány esetén) egyaránt jelezhet egészségügyi problémát.',
+                ],
+              },
+              {
+                heading: 'Homeosztázis a folyadékterek példáján',
+                paragraphs: [
+                  'A vér kémiai összetételének állandósága - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - létfontosságú: a vér pH-ja csak igen szűk határok között ingadozhat, ezt a korábban (Szervetlen molekulák fejezet) megismert hidrogén-karbonát pufferrendszer, illetve a légzés (a szén-dioxid kilégzésének mértéke, ahogy azt A légzés szabályozása fejezetben megismertük) tartja állandó szinten.',
+                  'A vér glükózszintje is jellemzően szűk tartományban ingadozik: étkezés után a felszívódó glükóz hatására emelkedik, éhezéskor pedig - ahogy azt korábban (Felszívódás fejezet) a máj glikogén-raktározó szerepénél megismertük - a máj glikogénkészletének lebontása pótolja a csökkenő vércukorszintet.',
+                  'A vér kémiai összetételének állandósága azért is kritikus, mert a szervezet szinte minden szövete a véren (pontosabban az abból kiszűrődő szövetnedven) keresztül jut hozzá a szükséges anyagokhoz - ha a vér összetétele (pl. a pH-ja vagy a glükózszintje) tartósan kibillenne az egyensúlyából, az valamennyi szervrendszer működését veszélyeztetné, ezért a szervezet több, egymást kiegészítő szabályozó mechanizmust (pufferrendszer, légzés, máj, majd a következő fejezetekben megismerendő hormonális szabályozás) is működtet ennek megelőzésére. A vér pH-ja normál esetben mindössze egy igen szűk, enyhén lúgos tartományban ingadozhat - már egy ennél jóval kisebb mértékű eltérés is súlyosan zavarná a fehérjék (pl. az enzimek) megfelelő térszerkezetét és működését.',
+                ],
+              },
+            ],
+            keyTerms: ['vérplazma', 'alakos elemek', 'szövetnedv', 'nyirok', 'albumin', 'fibrinogén'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a vércsoportok rendszerét, amely a vérplazma és az alakos elemek témaköréhez szorosan kapcsolódik.',
+            sections: [
+              {
+                heading: 'Az AB0 vércsoportrendszer',
+                paragraphs: [
+                  'A vörösvértestek felszínén jellegzetes szénhidrátláncok (antigének) találhatók - ahogy azt korábban (Membránok szerepe fejezet) a sejtfelismerés kapcsán már megismertük -, amelyek alapján az emberi vér négy fő csoportba (A, B, AB, 0) sorolható: az "A" csoportúak felszínén A-antigén, a "B" csoportúaknál B-antigén, az "AB" csoportúaknál mindkettő, a "0" csoportúaknál egyik sem található meg.',
+                  'A vérplazmában ezekkel ellentétesen jelennek meg az antitestek: az "A" vércsoportúak plazmájában B-antigén elleni, a "B" csoportúakéban A-antigén elleni antitest van jelen - ha összeférhetetlen vércsoportú vért juttatnának valakibe, az antitestek összecsomósítanák (agglutinálnák) az idegen vörösvértesteket, ami életveszélyes reakciót okozna. Éppen ezért a vérátömlesztés előtt mindig gondosan ellenőrzik a vércsoportok összeférhetőségét.',
+                  'A "0" vércsoportú vörösvértesteken egyik antigén sem található, ezért ezek szükség esetén (kis mennyiségben) a legtöbb vércsoportú személynek adhatók anélkül, hogy antigén-antitest reakciót váltanának ki - emiatt nevezik a "0" vércsoportot "univerzális donornak". Az "AB" vércsoportú személyek vérplazmájában viszont egyik antitest sincs jelen, ezért ők (elméletileg) bármilyen vércsoportú vért képesek befogadni, ezért nevezik őket "univerzális recipiensnek". A vércsoport-rendszer mellett az Rh-faktor (Rh-pozitív/Rh-negatív) is fontos szerepet játszik a vérátömlesztés és a várandósság biztonságának megítélésében: egy Rh-negatív édesanya szervezete Rh-pozitív magzat esetén antitesteket termelhet, ami egy esetleges következő terhesség során veszélyeztetheti a magzat egészségét, ezért ezt orvosi felügyelet mellett, célzott kezeléssel meg lehet előzni.',
+                ],
+              },
+            ],
+            keyTerms: ['vércsoport', 'antigén', 'agglutináció'],
+          },
+        },
+      },
+      {
+        id: 'szoveti-keringes',
+        title: 'A szöveti keringés',
+        order: 18,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A testfolyadékok fejezet) megismert vérplazma után ebben a fejezetben a vér alakos elemeit, a véralvadás alapjait, valamint a hajszálér- és nyirokkeringést ismerjük meg részletesen - vagyis azt a szintet, ahol a vér ténylegesen "eléri" a testi szöveteket.',
+            sections: [
+              {
+                heading: 'Az alakos elemek: vörösvérsejt, fehérvérsejt, vérlemezke',
+                paragraphs: [
+                  'A vörösvérsejtek (eritrociták) fő feladata az oxigén (és részben a szén-dioxid) szállítása; mindhárom alakos elem a csontvelőben keletkezik. A normál értéktartománytól való eltérés (pl. tartósan alacsony vörösvérsejtszám) a szervezet oxigénellátásának zavarát jelezheti.',
+                  'A fehérvérsejtek (leukociták) a szervezet védekezésében vesznek részt - ahogy azt korábban (Sejtműködések vezérlése fejezet) megismertük, egyes típusaik állábak segítségével amőboid mozgásra is képesek, így el tudnak jutni a fertőzés helyszínére. A vérlemezkék (trombociták) a véralvadási folyamatban játszanak kulcsszerepet.',
+                  'A vérszegénység (anémia) hátterében állhat vashiány (a vörösvérsejtek nem tudnak elegendő hemoglobint termelni), B12-vitamin- vagy folsavhiány (ahogy azt korábban, a Táplálkozás egészségtana fejezetben megismertük, ezek a vörösvérsejtek képzéséhez szükségesek), illetve jelentős vérveszteség is. Vérszegénység esetén a szövetek oxigénellátása romlik, ami jellegzetesen sápadtságban, fáradékonyságban és teljesítménycsökkenésben nyilvánul meg.',
+                  'A fehérvérsejtek és a vérlemezkék száma is szűk, normál értéktartományban mozog: a normálistól való jelentős eltérés (pl. kórosan magas fehérvérsejtszám fertőzés esetén, vagy alacsony vérlemezkeszám vérzékenység esetén) fontos diagnosztikai jelzés lehet a szervezet aktuális állapotáról.',
+                ],
+              },
+              {
+                heading: 'A véralvadás és rendellenességei',
+                paragraphs: [
+                  'A véralvadás a sérült érfalból induló, a vérlemezkéket és számos plazmafehérjét (pl. a fibrinogént) mozgósító folyamat, amelynek végeredménye egy, a sebet lezáró alvadék. A véralvadási folyamat rendellenessége kétirányú problémát okozhat: ha a véralvadás nem (vagy csak elégtelenül) működik, vérzékenység alakul ki (a sérülések után a vérzés nehezen áll el); ha viszont a véralvadás az erek belsejében, sérülés nélkül is túlzottan aktiválódik, trombózis (kóros vérrögképződés) jöhet létre, amely elzárhatja az adott eret.',
+                  'A trombózis különösen veszélyes, ha a kialakult vérrög leszakad, és a véráramlással egy szűkebb érszakaszhoz sodródva teljesen elzárja azt - ez az elzáródás a mögötte lévő szövet oxigénellátását szüntetheti meg, ami (az elzáródás helyétől függően) akár életveszélyes állapotot is okozhat.',
+                ],
+              },
+              {
+                heading: 'A hajszálér-szintű (szöveti) keringés',
+                paragraphs: [
+                  'A hajszálerek (kapillárisok) rendkívül vékony faluknak köszönhetően teszik lehetővé az anyagcserét a vér és a szövetek között: itt szűrődik ki a korábban (A testfolyadékok fejezetben) megismert szövetnedv, és itt jutnak a sejtekhez a tápanyagok és az oxigén, illetve itt kerülnek a vérbe a sejtek anyagcseretermékei és a szén-dioxid. A hajszálerek olyan sűrű hálózatot alkotnak a szövetekben, hogy gyakorlatilag minden sejt közvetlen közelében található legalább egy hajszálér - ez teszi lehetővé, hogy az anyagcsere-termékek rövid úton, hatékonyan kicserélődhessenek.',
+                ],
+              },
+              {
+                heading: 'A nyirokkeringés',
+                paragraphs: [
+                  'A nyirokerek a szövetek közötti térből gyűjtik össze a fel nem szívódott szövetnedvet (a nyirkot), és egy önálló, a vérkeringéstől elkülönülő, de azzal végül összekapcsolódó útvonalon (a nyirokerek végül nagy vénákba torkollnak) juttatják vissza a vérkeringésbe. A nyirok útja során nyirokcsomókon halad át, amelyek a szervezet védekezésének fontos állomásai: itt szűrődnek ki a kórokozók és egyéb idegen anyagok, és itt aktiválódnak a fehérvérsejtek egy része is - ez magyarázza, miért duzzadnak meg a nyirokcsomók (pl. a nyakon) gyakran egy fertőzés során.',
+                ],
+              },
+            ],
+            keyTerms: ['vörösvérsejt', 'fehérvérsejt', 'vérlemezke', 'vérszegénység', 'trombózis', 'nyirokcsomó'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hemoglobin pontos felépítését, a véralvadás molekuláris mechanizmusát, valamint a nyirok mozgatásának fizikai elvét is ismerni kell.',
+            sections: [
+              {
+                heading: 'A hemoglobin felépítése',
+                paragraphs: [
+                  'A hemoglobin - ahogy azt korábban (a fehérjék fejezetben) a negyedleges szerkezet példájaként már megismertük - négy alegységből álló fehérje. Minden alegység egy globin nevű fehérjeláncból és egy ahhoz kapcsolódó, nem fehérje természetű hem csoportból áll; a hem csoport négy nitrogéntartalmú gyűrűből és egy központi vasionból (Fe) épül fel - az oxigén ehhez a vasionhoz kötődik meg reverzibilisen, majd innen szabadul fel a szövetekben.',
+                ],
+              },
+              {
+                heading: 'A véralvadás mechanizmusa',
+                paragraphs: [
+                  'A véralvadás pontos lépéssora: a sérült érfal felszínre kerülő rostjaihoz a vérlemezkék odatapadnak és aktiválódnak, majd - kalciumion jelenlétében - beindítják a vérplazmában oldott, inaktív trombin-előanyag trombinná alakulását. A trombin ezután a szintén oldott fibrinogént rostos, oldhatatlan fibrinné alakítja, amely sűrű hálót képezve zárja le a sérülést, és amelybe a vérsejtek beleragadva stabilizálják az alvadékot.',
+                  'A folyamathoz K-vitamin is szükséges, mivel több, a véralvadásban részt vevő fehérje előállításához nélkülözhetetlen - ez magyarázza, hogy K-vitamin-hiány esetén (ahogy azt korábban, a Táplálkozás egészségtana fejezetben megismertük) fokozott vérzékenység alakulhat ki, hiszen a véralvadási folyamat egyik láncszeme hiányzik.',
+                ],
+              },
+              {
+                heading: 'A nyirok mozgatásának mechanizmusa',
+                paragraphs: [
+                  'A nyirokerekben - szemben a vérkeringéssel, amelyet a szív pumpál - nincs önálló, központi "szivattyú": a nyirok mozgatását elsősorban a környező vázizmok összehúzódása biztosítja, amely a nyirokereket összenyomva továbblöki a folyadékot, míg a nyirokerekben található billentyűk megakadályozzák a visszaáramlást, biztosítva az egyirányú haladást - ez az elv hasonló ahhoz, ahogy a vénás visszaáramlást is segíti a vázizomzat munkája.',
+                  'Ebből következik, hogy a hosszan tartó mozdulatlanság (pl. hosszú ültés, ágyhoz kötöttség) a nyirok áramlását is lelassítja, ami hozzájárulhat a szövetekben történő folyadék-felhalmozódáshoz (duzzanathoz) - ez az egyik oka annak, hogy az orvosok hosszú utazások vagy műtét utáni felépülés során rendszeres, könnyű mozgást javasolnak.',
+                ],
+              },
+            ],
+            keyTerms: ['hem', 'globin', 'trombin', 'fibrin'],
+          },
+        },
+      },
+      {
+        id: 'sziv-es-erek',
+        title: 'A szív és az erek',
+        order: 19,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Artéria (verőér)', 'Véna (visszér)'],
+          rows: [
+            ['A vér áramlásának iránya', 'a szívtől távolodó irányban', 'a szív felé haladó irányban'],
+            ['Átmérő (lumen)', 'jellemzően szűkebb üregű, de vastag falú', 'jellemzően tágabb üregű, elernyedt állapotban könnyen összenyomható'],
+            ['Fal vastagsága, rugalmassága', 'vastag, izmos, rugalmas fal (bírja a nagy nyomást)', 'vékonyabb, kevésbé rugalmas fal'],
+            ['Billentyűk', 'nincsenek (a szív közelében kivéve)', 'vannak, a visszaáramlást akadályozzák meg'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Gerincesek altörzse: Csontos halak kétüregű, Kétéltűek/Hüllők háromüregű, Madarak/Emlősök négyüregű szíve) fokozatosan megismert szívfejlődési sorozat után ebben a fejezetben az emberi (és általában az emlős) szív felépítését és működését, valamint az erek típusait ismerjük meg részletesen.',
+            sections: [
+              {
+                heading: 'A szív felépítése és működése',
+                paragraphs: [
+                  'Az emberi szív - ahogy azt a korábban megismert emlős-jellemzők alapján várható is - négyüregű: két pitvarból és két kamrából áll, amelyek között, valamint a kamrák és a belőlük kiinduló nagy erek között billentyűk találhatók, amelyek megakadályozzák a vér visszaáramlását.',
+                  'A szívciklus (szívverés) során a pitvarok, majd a kamrák felváltva húzódnak össze (szisztolé) és lazulnak el (diasztolé): a pitvarok összehúzódásakor a bennük lévő vér a kamrákba áramlik, majd a kamrák összehúzódásakor a vér a nagy erekbe (a jobb kamrából a tüdőartériába, a bal kamrából a testi nagyartériába) lökődik ki. A szív felépítése (a vastag falú, izmos kamrák, illetve a köztük lévő billentyűk) szorosan összefügg ezzel a működéssel: a bal kamra fala azért vastagabb a jobbénál, mert neki kell a vért az egész testbe eljuttatnia, míg a jobb kamrának csak a tüdőig.',
+                  'A pitvarok és a kamrák közötti billentyűk, valamint a kamrák és a belőlük kiinduló nagy erek közötti billentyűk együttesen biztosítják, hogy a vér mindig egy irányba, a megfelelő ütemben áramoljon: amikor a kamrák összehúzódnak, a megnövekvő nyomás bezárja a pitvar-kamrai billentyűket (megakadályozva a vér visszaáramlását a pitvarokba), és kinyitja a nagy erek felé vezető billentyűket; amikor a kamrák ellazulnak, a folyamat fordítva zajlik.',
+                ],
+              },
+              {
+                heading: 'A koszorúerek',
+                paragraphs: [
+                  'A koszorúerek a szívizom saját vérellátását biztosítják - hiszen a szívizomnak, akárcsak bármely más szövetnek, önmagának is szüksége van oxigénre és tápanyagra, ezt nem tudja a benne áramló vérből "közvetlenül" megszerezni. A koszorúerek elzáródása ezért különösen életveszélyes: az elzáródás mögötti szívizomrész oxigénellátása megszűnik, ami az érintett terület elhalásához (szívinfarktushoz) vezethet - ezt a témát a keringési rendszer egészségtanáról szóló fejezetben részletesebben is tárgyaljuk.',
+                ],
+              },
+              {
+                heading: 'Az erek típusai: artéria, véna, kapilláris',
+                paragraphs: [
+                  'Az artériák (verőerek) a szívtől távolodó irányban szállítják a vért; mivel bennük magas nyomású vér áramlik, faluk vastag és rugalmas, ez a rugalmasság segít kiegyenlíteni a szívverésenkénti nyomáslökéseket. A vénák (visszerek) a szív felé szállítják vissza a vért; bennük a nyomás jóval alacsonyabb, faluk vékonyabb, és - az artériákkal ellentétben - billentyűkkel rendelkeznek, amelyek megakadályozzák a vér visszafolyását, különösen a végtagokban, a nehézségi erővel szemben. A hajszálerek (kapillárisok) - ahogy azt korábban (A szöveti keringés fejezetben) megismertük - rendkívül vékony falú, apró erek, amelyek felépítése tökéletesen illeszkedik az anyagcsere-cserét biztosító funkciójukhoz.',
+                  'Az erek átmérője (belső üregének, a lumennek a mérete) is jellegzetesen eltér: az artériák üregét a vastag, több izomrétegből álló fal viszonylag szűken tartja, ez segít fenntartani a magas nyomást; a vénák ezzel szemben tágabb üregűek és vékonyabb, kevésbé izmos falúak, ezért laposan összenyomhatók (pl. ha egy izom rájuk nyomódik); a hajszálerek egyedi átmérője a legkisebb - mindössze egyetlen vörösvérsejt átférésére elegendő -, ám óriási számuk miatt összesített keresztmetszetük messze a legnagyobb. Mindhárom értípus felépítése tehát szorosan illeszkedik a betöltött funkcióhoz: az artéria a nagy nyomás elviselésére, a véna a visszaáramlás biztosítására, a kapilláris pedig a hatékony anyagcserére "specializálódott" szerkezetileg.',
+                ],
+              },
+            ],
+            keyTerms: ['pitvar', 'kamra', 'billentyű', 'koszorúér', 'artéria', 'véna'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szövetnedv áramlásának fizikai hátterét, a keringési rendszer nyomás- és sebességviszonyait, valamint a szív- és vénás áramlás mennyiségi jellemzőit ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szövetnedv áramlásának mechanizmusa',
+                paragraphs: [
+                  'A hajszálér elején a vér nyomása (amely kifelé, a szövetek felé "nyomja" a folyadékot) nagyobb, mint a korábban (A testfolyadékok fejezetben) megismert plazmafehérjék ozmotikus nyomása (amely befelé, a vér irányába "húzza vissza" a folyadékot, mivel a fehérjék mérete miatt nem tudnak kiszűrődni) - ezért a hajszálér elején a folyadék kifelé, a szövetek felé szűrődik, létrehozva a szövetnedvet.',
+                  'A hajszálér végére haladva a vérnyomás fokozatosan lecsökken (a súrlódás és az ellenállás miatt), miközben az ozmotikus nyomás gyakorlatilag változatlan marad - ezért a hajszálér végén már az ozmotikus nyomás kerül túlsúlyba, ami a szövetnedv jelentős részének visszaszívódását idézi elő a vérbe. Ami ebből a mérlegből "kimarad", az a korábban megismert nyirokerekbe jut.',
+                ],
+              },
+              {
+                heading: 'Nyomás- és sebességviszonyok a keringési rendszerben',
+                paragraphs: [
+                  'A vérnyomás a nagyartériáktól a vénák felé haladva folyamatosan csökken: legmagasabb az aortában, majd fokozatosan esik az artériákban, a hajszálerekben, és a legalacsonyabb a vénákban. Egy ezt bemutató grafikonon tehát a nyomásgörbe monoton csökken a keringési út mentén.',
+                  'A véráramlás sebessége nem az erek egyedi átmérőjétől, hanem az adottérszakasz összkeresztmetszetétől függ: bár egyetlen hajszálér átmérője rendkívül kicsi, a hajszálerek száma olyan nagy, hogy összkeresztmetszetük messze meghaladja az artériákét vagy a vénákét - ezért a véráramlás éppen a hajszálerekben a leglassabb, ami kedvez a hatékony anyagcserének.',
+                ],
+              },
+              {
+                heading: 'Verőtérfogat és perctérfogat',
+                paragraphs: [
+                  'A verőtérfogat az a vérmennyiség, amelyet a szív egyetlen összehúzódás (szisztolé) alkalmával kilök (átlagosan kb. 70 ml); a perctérfogat pedig a verőtérfogat és a szívfrekvencia szorzata, vagyis az egy perc alatt kilökött vérmennyiség. Egy egyszerű számítási példával: ha a verőtérfogat 70 ml, a szívfrekvencia pedig 70/perc, a perctérfogat kb. 70 ml × 70 = 4900 ml, azaz közel 5 liter/perc - ami nagyjából megegyezik a korábban (A testfolyadékok fejezetben) megismert teljes vértérfogattal, vagyis a szív percenként nagyjából a teljes vérmennyiséget végigpumpálja a keringési rendszeren.',
+                ],
+              },
+              {
+                heading: 'A vénás áramlást segítő tényezők',
+                paragraphs: [
+                  'Mivel a vénákban a vérnyomás alacsony, a vér visszaáramlását a szívhez több kiegészítő mechanizmus is segíti: a vázizmok összehúzódása (izompumpa-hatás) a köztük futó vénákat összenyomva előre "löki" a vért, a vénákban lévő billentyűk megakadályozzák, hogy a vér visszafolyjon, a légzőmozgások során a mellüregben kialakuló negatív nyomás pedig "szívó" hatást fejt ki a mellkas felé áramló vénás vérre.',
+                ],
+              },
+            ],
+            keyTerms: ['ozmotikus nyomás', 'verőtérfogat', 'perctérfogat', 'izompumpa'],
+          },
+        },
+      },
+      {
+        id: 'keringes-szabalyozasa',
+        title: 'A keringés szabályozása',
+        order: 20,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A szív és az erek fejezet) megismert szívműködés és érrendszer után ebben a fejezetben azt vizsgáljuk meg, hogyan igazodik a keringés a szervezet pillanatnyi igényeihez, és milyen szervek segítik ezt a folyamatot.',
+            sections: [
+              {
+                heading: 'Szívfrekvencia és vérnyomás',
+                paragraphs: [
+                  'A szívfrekvencia a szív percenkénti összehúzódásainak száma (felnőtt embernél nyugalomban jellemzően kb. 60-100/perc), amelyet tapintással (pulzusméréssel) vagy automata készülékkel lehet meghatározni. A vérnyomás az artériákban uralkodó nyomás, amelynek felnőttkori normál értéke kb. 120/80 Hgmm (a nagyobb szám a szív összehúzódásakor, azaz szisztolés, a kisebb a szív elernyedésekor, azaz diasztolés nyomást jelöli); ezt ma jellemzően automata vérnyomásmérő eszközzel mérik.',
+                  'A pulzus tapintható például a csuklón vagy a nyakon, ott, ahol egy nagyobb artéria a bőr közelében fut - minden tapintható lüktetés egy-egy szívösszehúzódásnak felel meg, hiszen a szívből kilökött vér nyomáshulláma végigfut az artériákon.',
+                  'A mért pulzus- és vérnyomásértékeket mindig az adott körülmények (pl. nyugalmi állapot vagy terhelés) figyelembevételével kell értelmezni: testmozgás, izgalom vagy koffeinfogyasztás átmenetileg megemeli, míg a pihenés és a relaxáció csökkenti mindkét értéket. A rendszeresen sportolók nyugalmi szívfrekvenciája jellemzően alacsonyabb az edzetlen embereknél megszokottnál, mivel az edzett szívizom egyetlen összehúzódással is nagyobb mennyiségű vért képes kilökni, ezért ritkább összehúzódással is fedezni tudja a szervezet nyugalmi igényét.',
+                ],
+              },
+              {
+                heading: 'A lép szerepe',
+                paragraphs: [
+                  'A lép a hasüregben, a gyomor mellett elhelyezkedő szerv, amely egyszerre tölt be keringési és immunológiai szerepet: itt bomlanak le az elhasználódott, elöregedett vörösvértestek, emellett vért is képes raktározni, és fontos szerepet játszik a fehérvérsejtek egy részének "állomáshelyeként", hozzájárulva a szervezet védekezéséhez.',
+                  'A lép a hasüreg egyik viszonylag sérülékeny szerve, mivel dús érhálózata miatt egy erős ütés (pl. baleset során) könnyen megrepesztheti, ami súlyos belső vérzést okozhat - ezért a lép sérülésének gyanúja sürgősségi orvosi ellátást igényel. Bár a lép eltávolítása (pl. súlyos sérülés esetén) nem összeegyeztethetetlen az élettel, hiszen funkcióinak egy részét más szervek (pl. a máj és a csontvelő) részben átveszik, az eltávolított lépű személyeknél a szervezet fertőzésekkel szembeni védekezőképessége valamelyest gyengébb lehet.',
+                ],
+              },
+              {
+                heading: 'A véreloszlás szabályozása',
+                paragraphs: [
+                  'A szervezet a rendelkezésre álló vérmennyiséget nem egyenletesen, hanem az adott pillanatban legnagyobb igényű szervek felé irányítja: az erek fala izomrostokat tartalmaz, amelyek összehúzódásával (érszűkület) vagy elernyedésével (értágulat) szabályozható, mennyi vér jut az adott szervhez. Testmozgás közben például a vázizmok felé irányuló véráramlás nő meg jelentősen, míg emésztés közben a tápcsatorna felé - ez magyarázza, miért érdemes kerülni a megerőltető testmozgást közvetlenül étkezés után, amikor a szervezet vérellátása éppen a tápcsatorna felé összpontosul.',
+                  'A bőr felszíni ereinek tágulása vagy szűkülése - ahogy azt korábban (Homeosztázis fejezet) a hőszabályozásnál megismertük - szintén a véreloszlás szabályozásának egy formája: meleg környezetben a bőr erei kitágulnak (ez segíti a hőleadást), hidegben pedig összeszűkülnek (ez csökkenti a hőveszteséget), és eközben a véráramlás átmenetileg a testmag felé, a belső szervek irányába tolódik el. Ez a mechanizmus jól mutatja, hogy a véreloszlás szabályozása egyszerre szolgálja az anyagcsere-igények kielégítését és a testhőmérséklet állandóságát is.',
+                ],
+              },
+            ],
+            keyTerms: ['szívfrekvencia', 'vérnyomás', 'lép', 'érszűkület', 'értágulat'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szívverés ütemét meghatározó belső ingerképző rendszert, a szív ingerületvezető rendszerét is ismerni kell.',
+            sections: [
+              {
+                heading: 'A szinuszcsomó és a pitvar-kamrai csomó',
+                paragraphs: [
+                  'A szív ritmusos összehúzódását egy különleges, önmagát automatikusan, ritmikusan gerjesztő szövet, a szinuszcsomó irányítja, amely a jobb pitvar falában található - ez a szív "saját ritmusadója" (pacemakere), amelynek köszönhetően a szív a testből kiemelve, önállóan is tovább tud verni egy ideig.',
+                  'A szinuszcsomóból induló ingerület először a pitvarok izomzatán terjed végig, kiváltva azok összehúzódását, majd eléri a pitvar-kamrai csomót, amely egy rövid ideig "visszatartja", késlelteti az ingerület továbbterjedését, mielőtt azt a kamrák felé továbbítaná. Ez a késleltetés élettanilag kulcsfontosságú: biztosítja, hogy a pitvarok összehúzódása (és a bennük lévő vér kamrákba jutása) után, még a kamrák összehúzódásának megkezdése előtt, elegendő idő álljon rendelkezésre a vér átáramlására - ha ez a késleltetés nem történne meg, a pitvarok és a kamrák egyszerre húzódnának össze, ami jelentősen csökkentené a szív pumpáló hatékonyságát.',
+                  'A szinuszcsomó saját, belső ritmusa magyarázza, hogy a szív miért képes önállóan, külső idegi jelek nélkül is ritmikusan verni: bár a szívfrekvenciát az idegrendszer és a hormonrendszer is befolyásolja (pl. felgyorsítva testmozgás vagy izgalom hatására), az alapütemet maga a szinuszcsomó adja meg. Ha a szinuszcsomó működése zavart szenved, a szív ritmusa szabálytalanná válhat (szívritmuszavar), amely - ahogy azt a keringési rendszer egészségtanáról szóló fejezetben is látni fogjuk - komoly egészségügyi kockázatot jelenthet.',
+                  'A pitvar-kamrai csomó egyfajta "tartalék ritmusadóként" is szolgál: ha valamilyen okból a szinuszcsomó jelzése nem érné el, a pitvar-kamrai csomó - jóval alacsonyabb, önálló ütemben - önmaga is képes ritmikus ingerületet kelteni, fenntartva (bár lassabb ütemű) szívműködést. Ez a "beépített tartalék" jól mutatja, mennyire fontos a szív folyamatos, megbízható működése a szervezet számára.',
+                ],
+              },
+            ],
+            keyTerms: ['szinuszcsomó', 'pitvar-kamrai csomó', 'pacemaker'],
+          },
+        },
+      },
+      {
+        id: 'keringesi-rendszer-egeszsegtana',
+        title: 'A keringési rendszer egészségtana',
+        order: 21,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (A keringés szabályozása fejezet) megismert szabályozási mechanizmusok után ebben a záró fejezetben - hasonlóan ahhoz, ahogy a táplálkozási és a légzőrendszernél is külön fejezetet szenteltünk az egészségtannak - a keringési rendszer egészségtanát, valamint a vérzéssel járó sérülések ellátásának alapjait tekintjük át.',
+            sections: [
+              {
+                heading: 'Érvelés a testedzés és a helyes táplálkozás mellett',
+                paragraphs: [
+                  'A rendszeres testedzés - ahogy azt korábban (A keringés szabályozása fejezet) az edzett szív alacsonyabb nyugalmi frekvenciájánál megismertük - erősíti a szívizmot, javítja az erek rugalmasságát, és hozzájárul az egészséges testtömeg és vérnyomás fenntartásához. A helyes összetételű étrend - ahogy azt korábban (Táplálkozás egészségtana fejezet) megismertük - szintén jelentősen csökkenti a keringési rendszer megbetegedéseinek kockázatát, ezért a kettő (testmozgás és táplálkozás) együttesen a keringési rendszer egészségének megőrzésének két alappillére.',
+                ],
+              },
+              {
+                heading: 'A keringési rendszer főbb betegségei és kockázati tényezői',
+                paragraphs: [
+                  'Az érelmeszesedés az érfal belső felszínén lerakódó zsíros anyagok (elsősorban koleszterin) miatt kialakuló, az ér belső átmérőjét szűkítő elváltozás, amely megnöveli a trombózis és az érelzáródás kockázatát. A visszértágulat a vénák - főként a lábakban lévő vénák - kóros kitágulása, amely a vénák billentyűinek elégtelen működésével jár együtt, ilyenkor a vér könnyebben visszafolyik, összegyűlik és tovább tágítja az eret. A magasvérnyomás-betegség (hipertónia) a tartósan a normálérték felett maradó vérnyomás állapota, amely - kezeletlenül - tartósan terheli a szívet és az érfalakat.',
+                  'A fő kockázati tényezők közé tartozik a dohányzás, a mozgásszegény életmód, a zsírokban és sóban gazdag, egyoldalú táplálkozás, a tartós stressz, valamint az öröklött hajlam - ugyanezek a tényezők nemcsak az érelmeszesedés és a magasvérnyomás, hanem a trombózis (kóros vérrögképződés) és a szívritmuszavar kialakulásának kockázatát is növelik, hiszen mindkettő gyakran az érelmeszesedés és a magasvérnyomás következményeként alakul ki. Ezek közül az életvitelből eredő tényezők (dohányzás, mozgásszegénység, táplálkozás, stressz) tudatos életmódváltással jelentősen csökkenthetők, míg az öröklött hajlam nem, de a rendszeres szűrővizsgálat ez esetben is segíthet a korai felismerésben.',
+                ],
+              },
+              {
+                heading: 'A szívinfarktus fogalma és tünetei',
+                paragraphs: [
+                  'A szívinfarktus - ahogy azt korábban (A szív és az erek fejezet) a koszorúerek szerepénél megismertük - a szívizom egy részének elhalása a koszorúér elzáródása (jellemzően egy trombus, azaz vérrög) miatt kialakuló oxigénhiány következtében. Jellemző tünetei a mellkas közepén jelentkező, gyakran szorító, nyomó jellegű fájdalom, amely kisugározhat a bal karba, a nyakba vagy az állkapocsba, ezt gyakran légszomj, verejtékezés és rosszullét-érzés kíséri.',
+                ],
+              },
+              {
+                heading: 'Elsősegély vérzéssel járó sérülések ellátásánál',
+                paragraphs: [
+                  'A vérzéssel járó sérülések alapvető ellátásának lépései a következők:',
+                  '1. Súlyos, erőteljes (pl. lüktetve, világospiros vér formájában jelentkező) vérzés esetén azonnal hívjunk mentőt (vagy kérjünk meg valaki mást a hívásra), majd haladéktalanul kezdjük meg az ellátást.',
+                  '2. Közvetlen nyomás alkalmazása: nyomjunk tiszta kötszert vagy ruhát határozottan a sebre, ez segíti a véralvadást és csökkenti a vérveszteséget.',
+                  '3. A sérült testrész megemelése: ha lehetséges, emeljük a sérült végtagot a szív magassága fölé, ez tovább csökkenti a vérzés erősségét.',
+                  '4. Ha a kötés átvérzik, NE vegyük le: tegyünk rá egy újabb réteget, és folytassuk a nyomást, a kötés levétele megzavarná a már megindult alvadást.',
+                  '5. Figyeljünk a sokk jeleire (sápadtság, hidegverejték, szapora, gyenge pulzus): ha ezek jelentkeznek, fektessük le a sérültet, emeljük meg a lábát, és tartsuk melegen, amíg a segítség megérkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['érelmeszesedés', 'visszértágulat', 'magasvérnyomás', 'szívinfarktus', 'sokk'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni, hogyan függ össze egymással a fejezetben tárgyalt több betegség.',
+            sections: [
+              {
+                heading: 'A keringési betegségek egymáshoz kapcsolódó láncolata',
+                paragraphs: [
+                  'A fejezetben tárgyalt betegségek gyakran nem elszigetelten, hanem egymást kiváltó, egymásra épülő láncolatban jelentkeznek: a tartós magasvérnyomás felgyorsítja az érelmeszesedés kialakulását (mert a nagyobb nyomás mikrosérüléseket okozhat az érfalban, amelyekhez könnyebben tapadnak a zsíros lerakódások), az érelmeszesedés pedig - ahogy azt korábban (A szöveti keringés fejezet) a trombózisnál megismertük - megnöveli a vérrögképződés kockázatát; ha egy ilyen vérrög egy koszorúeret zár el, szívinfarktus alakul ki, ha pedig egy agyi eret, agyi érkatasztrófa (stroke) - vagyis a szívinfarktus és a stroke gyakran ugyanannak az alapfolyamatnak (magasvérnyomás → érelmeszesedés → trombózis) két különböző célszervben megjelenő végkimenetele. A szívritmuszavar szintén ehhez a láncolathoz kapcsolódhat: az érelmeszesedés által károsított szívizom-területek megzavarhatják a korábban (A keringés szabályozása fejezet) megismert ingerületvezető rendszer (szinuszcsomó, pitvar-kamrai csomó) szabályos működését is.',
+                  'Ez a láncolat jól magyarázza, miért olyan hatékony megelőzési stratégia egyetlen kockázati tényező (pl. a dohányzás elhagyása vagy a rendszeres testmozgás) csökkentése is: mivel a folyamat több lépése egymásra épül, egy korai láncszem megszakítása az egész folyamatot, és ezáltal több, egymástól látszólag független betegség kockázatát is egyszerre mérsékli.',
+                  'Ez egyben azt is megmagyarázza, hogy a rendszeres vérnyomás- és pulzusmérés - ahogy azt korábban (A keringés szabályozása fejezet) megismertük - miért fontos megelőzési eszköz: a magasvérnyomás önmagában sokáig tünetmentes maradhat, ezért a rendszeres, tudatos önellenőrzés nélkül a lánc első láncszeme (a magas vérnyomás) észrevétlenül fennmaradhat és károsíthatja az érrendszert, mire a súlyosabb következmények (érelmeszesedés, trombózis, szívinfarktus vagy stroke) egyáltalán felismerhetővé válnának.',
+                ],
+              },
+            ],
+            keyTerms: ['stroke'],
+          },
+        },
+      },
+      {
+        id: 'vizeletkivalaszto-rendszer',
+        title: 'A vizeletkiválasztó rendszer működése',
+        order: 22,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (A keringési rendszer egészségtana fejezet) lezárt keringési rendszer után ebben a fejezetben a kiválasztás témakörét kezdjük megismerni: azt, hogyan szabadul meg a szervezet a felesleges és káros anyagoktól, elsősorban a vizeletkiválasztó rendszeren keresztül.',
+            sections: [
+              {
+                heading: 'A kiválasztásban részt vevő szervek áttekintése',
+                paragraphs: [
+                  'A kiválasztás nem kizárólag a vese feladata: a bőr - ahogy azt korábban (Homeosztázis fejezet) a verejtékmirigyeknél megismertük - a verejtékkel vizet és kisebb mennyiségű salakanyagot (pl. karbamidot) is kiválaszt; a máj - ahogy azt korábban (Felszívódás fejezet) a dezaminálásnál megismertük - itt alakul karbamiddá az ammónia, amely aztán a vesén át ürül, emellett a máj az epével is választ ki anyagokat; a tüdő a sejtlégzés végtermékét, a szén-dioxidot távolítja el a kilégzéssel; a végbél - ahogy azt korábban (Felszívódás fejezet) megismertük - az emészthetetlen anyagokat (a székletet) üríti; a vese pedig a vér folyamatos szűrésével választja ki a vízoldékony salakanyagokat és a fölösleges vizet, sókat.',
+                ],
+              },
+              {
+                heading: 'A vizeletkiválasztó rendszer felépítése',
+                paragraphs: [
+                  'A vizeletkiválasztó rendszer főbb részei a két vese (itt történik a vér szűrése és a vizelet képződése), a húgyvezetékek (amelyek a vesékből a húgyhólyagba szállítják a vizeletet), a húgyhólyag (amely a vizeletet ideiglenesen tárolja) és a húgycső (amelyen keresztül a vizelet a szervezetből távozik).',
+                ],
+              },
+              {
+                heading: 'A vese kiválasztó működésének három fő részfolyamata',
+                paragraphs: [
+                  'A vese kiválasztó működése három, egymásra épülő részfolyamatból áll: a szűrletképzés során a vér egy része (a benne oldott kisebb molekulákkal együtt, de a vérsejtek és a nagyobb fehérjék nélkül) kiszűrődik; a visszaszívás során a szervezet számára még hasznos anyagok (víz, glükóz, sók) nagy része visszakerül a vérbe; a kiválasztás (exkréció) során pedig egyes anyagok (pl. gyógyszerek, felesleges ionok, köztük a hidrogénion) aktívan a keletkező vizeletbe kerülnek.',
+                  'A víz, a glükóz és a sók jelentős része a szűrletből visszaszívódik a vérbe, hiszen ezek a szervezet számára még hasznosak; a karbamid - mint felesleges salakanyag - ezzel szemben csak részlegesen szívódik vissza, nagy része a vizelettel távozik. A vese emellett aktívan is választ ki egyes anyagokat (pl. gyógyszereket, illetve felesleges ionokat, mint a hidrogénion), amelyek így hatékonyan eltávolíthatók a vérből, még akkor is, ha koncentrációjuk a szűrletben eredetileg alacsony volt.',
+                  'Ez a három részfolyamat együttesen biztosítja, hogy a vese szelektíven működjön: nem egyszerűen "kiszűri" a vért, hanem gondosan válogat a hasznos és a felesleges anyagok között, a hasznosakat visszatartva, a feleslegeseket pedig hatékonyan eltávolítva a szervezetből.',
+                ],
+              },
+              {
+                heading: 'A vizelet összetétele',
+                paragraphs: [
+                  'A vizelet fő alkotórészei a víz, a karbamid - ahogy azt korábban (Szervetlen molekulák fejezet) megismertük, ez az ammóniánál kevésbé mérgező, kiválasztásra alkalmas nitrogéntartalmú vegyület -, valamint a nátrium-, kálium- és klorid-ionok; emellett kisebb mennyiségben gyógyszerek és hormonok bomlástermékei is megjelenhetnek benne. A vizelet összetétele és mennyisége nem állandó: számos tényezőtől (pl. folyadékbevitel, hőmérséklet, egészségi állapot) függően változhat, ezt a következő fejezetben (A kiválasztás szabályozása) tárgyaljuk részletesebben.',
+                ],
+              },
+            ],
+            keyTerms: ['vese', 'húgyhólyag', 'szűrletképzés', 'visszaszívás', 'exkréció', 'vizelet'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a vese működési egységét, a nefront ismerjük meg részletesen, valamint azt, hogyan alakul a vér összetétele fokozatosan vizeletté.',
+            sections: [
+              {
+                heading: 'A nefron felépítése és működése',
+                paragraphs: [
+                  'A vese működési alapegysége a nefron, amely két fő részből áll: a vesetestecskéből és az abból kiinduló, kanyargós lefutású csatornarendszerből. A vesetestecske egy kettős falú tokból (Bowman-tok) és az abba benyúló, sűrűn tekeredő hajszálér-gomolyagból (glomerulus) épül fel - itt zajlik a szűrletképzés, amikor a vér nyomás hatására a hajszálér faván és a tok falán át a tokba szűrődik.',
+                  'A tokból kiinduló csatornarendszer több, egymást követő szakaszból áll, amelyeket kívülről sűrű hajszálér-hálózat vesz körül - ez a szoros érintkezés teszi lehetővé, hogy a csatornafolyadék és a hajszálerekben áramló vér között anyagok (víz, glükóz, sók, karbamid) cserélődjenek ki a csatorna teljes hossza mentén.',
+                ],
+              },
+              {
+                heading: 'A szűrletképzés és a transzportfolyamatok',
+                paragraphs: [
+                  'A szűrletképzés maga passzív folyamat: a vér nyomása hajtja át a kisebb molekulákat a hajszálér és a tok falán, a vérsejtek és a nagy fehérjemolekulák azonban - méretük miatt - nem tudnak átjutni, ezért a szűrlet ezektől mentes. A csatornaszakaszokban ezt követően mind passzív (koncentrációkülönbség menti, pl. a víz egy része ozmózissal), mind aktív (energiaigényes, pl. a glükóz és egyes ionok szelektív) transzportfolyamatok zajlanak - ahogy azt korábban (Membránok szerepe fejezet) a passzív és az aktív szállítás megkülönböztetésénél már megismertük.',
+                ],
+              },
+              {
+                heading: 'A vizeletképződés folyamatának elemzése',
+                paragraphs: [
+                  'A folyadék összetétele a vér, a vesetestecske tokjában lévő szűrlet, a csatornában áramló folyadék és a végleges vizelet állomásain végighaladva fokozatosan változik: a vérben még jelen lévő nagy fehérjék és vérsejtek a szűrletben már nem találhatók meg; a szűrletben még jelentős mennyiségben jelen lévő glükóz és a víz nagy része a csatornaszakaszokon áthaladva fokozatosan visszaszívódik, ezért a végleges vizeletben egészséges szervezetben glükóz gyakorlatilag nem is található; a karbamid koncentrációja ezzel szemben a visszaszívás során fokozatosan feldúsul, hiszen a víz és más hasznos anyagok kivonása közben a karbamid aránylag nagyobb része a csatornában marad.',
+                ],
+              },
+            ],
+            keyTerms: ['nefron', 'vesetestecske', 'Bowman-tok', 'glomerulus'],
+          },
+        },
+      },
+      {
+        id: 'kivalasztas-szabalyozasa',
+        title: 'A kiválasztás szabályozása',
+        order: 23,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (A vizeletkiválasztó rendszer működése fejezet) megismert szűrés-visszaszívás-kiválasztás folyamat után ebben a fejezetben azt vizsgáljuk meg, mi okozza a vizelet mennyiségének és összetételének mindennapi ingadozását.',
+            sections: [
+              {
+                heading: 'A vizelet mennyiségének és összetételének változása',
+                paragraphs: [
+                  'A vizelet mennyisége és összetétele számos tényezőtől függően változhat: bőséges folyadékfogyasztás után a vizelet mennyisége megnő, míg híg lesz (kevésbé koncentrált); meleg időben vagy megerőltető testmozgás közben - ahogy azt korábban (Homeosztázis fejezet) a verejtékezésnél megismertük - a szervezet a bőrön keresztül több vizet veszít, ezért a vese kevesebb, ám töményebb vizeletet termel, hogy a testfolyadék-egyensúlyt fenntartsa.',
+                  'Egyes anyagok fogyasztása is befolyásolja a vizelet mennyiségét: a koffein és az alkohol fokozott vizeletürítést (vizelethajtó hatást) váltanak ki, ezért ezek túlzott fogyasztása hosszabb távon a szervezet kiszáradásához is hozzájárulhat, ha a folyadékbevitel nem kompenzálja a fokozott vízveszteséget.',
+                  'Egyes betegségek is megváltoztathatják a vizelet mennyiségét: kezeletlen cukorbetegségben például a vérben felhalmozódó, vissza nem szívható felesleges glükóz miatt a vizelet mennyisége kórosan megnő (a glükóz "magával vonzza" a vizet is) - ez az egyik jellegzetes, korai tünete a betegségnek. Ezzel szemben egyes vese- vagy szívbetegségek éppen a vizeletmennyiség kóros csökkenéséhez vezethetnek, ha a szervezet a folyadékot visszatartja.',
+                  'A vizelet mennyiségének és összetételének tudatos megfigyelése (pl. a szín és a mennyiség alapján) egyszerű, mindenki számára elérhető módja annak, hogy következtetéseket vonjunk le a szervezet folyadékháztartásának állapotáról: a sötétebb, tömény vizelet jellemzően folyadékhiányra, a nagyon híg, bő mennyiségű vizelet pedig akár túlzott folyadékbevitelre vagy egy alapproblémára (pl. cukorbetegségre) is utalhat.',
+                  'A vese szabályozó képessége nem korlátlan: tartós, súlyos folyadékhiány esetén a vizelet mennyisége csak egy bizonyos minimális szintig csökkenthető, ez alatt a salakanyagok (pl. a karbamid) kiválasztásához mindenképpen szükséges egy minimális vizeletmennyiség - ez az egyik oka annak, hogy a tartós, súlyos kiszáradás még megfelelő vesefunkció mellett is veszélyes lehet.',
+                ],
+              },
+              {
+                heading: 'A vizeletkiválasztás napi ritmusa',
+                paragraphs: [
+                  'A vizeletkiválasztás mennyisége a nap folyamán is ingadozik: éjszaka, alvás közben jellemzően kevesebb, tömény vizelet termelődik, mint napközben, ami lehetővé teszi a megszakítás nélküli alvást - ez a napi ritmus is a szervezet szabályozó rendszereinek finomhangoltságát mutatja.',
+                ],
+              },
+              {
+                heading: 'A folyadékháztartás és a homeosztázis kapcsolata',
+                paragraphs: [
+                  'A vizeletkiválasztás szabályozása - ahogy azt korábban (A testfolyadékok fejezet) a vér kémiai összetételének állandóságánál általánosságban megismertük - a homeosztázis egyik kulcsfontosságú, mindennapi példája: a szervezet folyamatosan érzékeli a testfolyadékok térfogatát és összetételét, és a vese kiválasztó működésének finomhangolásával (a visszaszívás és a kiválasztás arányának módosításával) tartja fenn ezek állandóságát, a külső körülmények (folyadékbevitel, hőmérséklet, testmozgás) jelentős ingadozása ellenére is.',
+                  'Ez a szabályozás azért is különösen fontos, mert a testfolyadékok térfogatának és összetételének akár kis mértékű, tartós eltérése is komoly következményekkel járhat: túl kevés folyadék esetén a vér besűrűsödik, ami megnehezíti a keringést, míg túlzott folyadékfelhalmozódás esetén a szövetekben duzzanat (ödéma) alakulhat ki - a vese szabályozó szerepe tehát mindkét szélsőség ellen véd.',
+                ],
+              },
+            ],
+            keyTerms: ['folyadékháztartás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a vizelet mennyiségét és összetételét hormonálisan szabályozó két kulcsfontosságú hormont, a vazopresszint és az aldoszteront ismerjük meg.',
+            sections: [
+              {
+                heading: 'A vazopresszin (ADH) és az aldoszteron szerepe',
+                paragraphs: [
+                  'A vazopresszin (antidiuretikus hormon, ADH) a testfolyadékok töménységének emelkedésére (pl. folyadékhiány esetén) választódik ki, és a vesében fokozza a víz visszaszívását - ez csökkenti a kiválasztott vizelet mennyiségét, ugyanakkor töményebbé teszi azt, ezáltal a szervezet megőrzi a vizet. Ez a mechanizmus - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - a negatív visszacsatolás elvén működik: a folyadékhiány kiváltja a hormon termelődését, amely csökkenti a további vízveszteséget.',
+                  'Az aldoszteron a vesében a nátrium visszaszívását fokozza (a vízhez hasonlóan, a nátrium visszaszívása is magával vonja bizonyos mennyiségű víz visszatartását is), miközben a káliumion kiválasztását segíti - ez a hormon elsősorban a szervezet sóháztartásának (és ezen keresztül közvetve a vérnyomásnak) a szabályozásában játszik kulcsszerepet. E hormonok részletesebb szabályozási hátterét a hormonrendszerről szóló fejezetben ismerjük meg tovább.',
+                  'A két hormon összehangolt működése jól szemlélteti, hogy a folyadék- és sóháztartás szabályozása nem egyetlen jelre, hanem több, egymást kiegészítő jelzésre épül: a vazopresszin elsősorban a testfolyadékok töménységére (ozmotikus koncentrációjára), az aldoszteron pedig inkább a szervezet nátriumkészletére és vérnyomására reagál - a kettő együttesen biztosítja, hogy a víz- és sóháztartás finoman, egymástól részben függetlenül is szabályozható maradjon.',
+                  'Ez a hormonális szabályozás gyakorlati jelentőségét jól mutatja, hogy bizonyos vérnyomáscsökkentő gyógyszerek éppen az aldoszteron hatását vagy termelődését gátolják, ezáltal csökkentve a szervezet nátrium- és vízvisszatartását, ami mérsékli a vérnyomást - ez egy konkrét példa arra, hogyan épül a gyógyászati gyakorlat közvetlenül egy élettani szabályozási mechanizmus ismeretére.',
+                  'Mindkét hormon a korábban (Membránok szerepe fejezet) megismert receptor-elven működik: a célsejtek (jelen esetben a vese csatornaszakaszainak sejtjei) felszínén (vagy belsejében) specifikus receptorok ismerik fel a hormont, és ennek hatására módosítják a sejt működését (pl. több vízcsatornát építenek be a sejtmembránba) - enélkül a hormon, bármennyire is jelen van a vérben, nem tudna hatást kifejteni a célsejtre.',
+                ],
+              },
+            ],
+            keyTerms: ['vazopresszin', 'aldoszteron'],
+          },
+        },
+      },
+      {
+        id: 'kivalaszto-rendszer-egeszsegtana',
+        title: 'A kiválasztó szervrendszer egészségtana',
+        order: 24,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Művesekezelés (dialízis)', 'Veseátültetés'],
+          rows: [
+            ['Rendszeresség', 'ismétlődő, jellemzően heti több alkalom, egész életen át', 'egyszeri beavatkozás, utána nincs szükség rendszeres kezelésre'],
+            ['Életminőség', 'jelentősen korlátozott (kezelésekhez kötött mindennapok)', 'jellemzően jobb, szabadabb mindennapi élet'],
+            ['Fő kockázat/korlát', 'nem gyógyítja meg a veseelégtelenséget, csak pótolja a funkciót', 'kilökődés veszélye, ezért tartós immunrendszert gyengítő kezelés szükséges'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (A kiválasztás szabályozása fejezet) megismert szabályozási mechanizmusok után ebben a záró fejezetben a kiválasztó rendszer egészségtanát tekintjük át: milyen jelekből következtethetünk problémára, és milyen kezelési lehetőségek állnak rendelkezésre súlyos veseműködési zavar esetén.',
+            sections: [
+              {
+                heading: 'Kóros anyagok megjelenése a vizeletben',
+                paragraphs: [
+                  'Egészséges vesénél a vizeletben nem jelenik meg jelentős mennyiségű fehérje, glükóz vagy vér, ezért ezek megjelenése fontos figyelmeztető jel: a fehérje a vizeletben (proteinuria) a vese szűrő működésének károsodására utalhat, hiszen egészséges esetben a nagy fehérjemolekulák nem jutnak át a szűrőn; a glükóz megjelenése (glükozúria) jellemzően kezeletlen vagy rosszul beállított cukorbetegségre utal, amikor a vér glükózszintje olyan magasra emelkedik, hogy a vese már nem képes az egészet visszaszívni; a vér megjelenése a vizeletben (hematuria) pedig sérülésre, vesekőre vagy fertőzésre utalhat.',
+                  'Éppen ezért a vizelet laboratóriumi vizsgálata (vizeletvizsgálat) egy egyszerű, nem megterhelő, mégis sokrétű információt adó diagnosztikai eszköz, amely a vese állapotán túl más szervrendszerek (pl. a hasnyálmirigy cukorbetegség esetén) működésére is felhívhatja a figyelmet.',
+                ],
+              },
+              {
+                heading: 'A vesét érintő gyakori betegségek kockázati tényezői',
+                paragraphs: [
+                  'A vese hosszú távú károsodásának kockázatát jelentősen növeli a kezeletlen magasvérnyomás-betegség (amely - ahogy azt korábban, A keringési rendszer egészségtana fejezetben megismertük - tartósan túlterheli az érfalakat, így a vese sűrű hajszálér-hálózatát is), a kezeletlen cukorbetegség, valamint egyes gyógyszerek tartós, szakszerűtlen túlfogyasztása. Ezek a tényezők fokozatosan károsíthatják a nefronokat, csökkentve a vese szűrő kapacitását.',
+                ],
+              },
+              {
+                heading: 'A vesekő',
+                paragraphs: [
+                  'A vesekő a vizeletben oldott anyagok (pl. kalciumsók) kicsapódásából, kristályosodásából kialakuló, szilárd képződmény, amely elzáródást és erős fájdalmat okozhat. Kialakulásának kockázatát növeli a tartósan kevés folyadékbevitel (ami a vizeletet töményebbé teszi, elősegítve a kristályosodást), egyes anyagcsere-rendellenességek, valamint az öröklött hajlam. A megfelelő, bőséges folyadékbevitel az egyik legfontosabb és legegyszerűbb megelőzési mód, mivel a hígabb vizeletben az anyagok kevésbé hajlamosak kicsapódni.',
+                  'A vesekő tünetei jellemzően akkor jelentkeznek, amikor a kő elindul a húgyvezeték felé és részlegesen vagy teljesen elzárja azt: ilyenkor hirtelen, hullámzó, igen erős fájdalom (vesekólika) jelentkezik, amely gyakran a hasba vagy az ágyékba is kisugárzik, és amelyet gyakran hányinger is kísér. A kisebb vesekövek jellemzően maguktól, a vizelettel távoznak, a nagyobbak eltávolítása azonban orvosi beavatkozást (pl. lökéshullámos kőzúzást) igényelhet.',
+                  'A vesekőképződés megelőzésében a bőséges folyadékbevitel mellett az egyoldalú, egyes ásványi anyagokban (pl. bizonyos oxalátokban) különösen gazdag étrend mérséklése is szerepet játszhat, hiszen ez tovább csökkentheti a kristályosodásra hajlamos anyagok töménységét a vizeletben.',
+                ],
+              },
+              {
+                heading: 'A művesekezelés jelentősége',
+                paragraphs: [
+                  'Súlyos, tartós veseműködési zavar esetén a művesekezelés (dialízis) - egy gép, amely a vér szűrését a vese helyett, azon kívül végzi el - életmentő eljárás, mivel a vese kiválasztó működése nélkül a salakanyagok felhalmozódása rövid időn belül végzetes lenne. A művesekezelést rendszeresen, jellemzően heti több alkalommal kell elvégezni, jelentősen befolyásolva az érintett életvitelét.',
+                ],
+              },
+              {
+                heading: 'A vese egészségének megőrzése',
+                paragraphs: [
+                  'A vese egészségének megőrzésében kiemelt szerepe van a megfelelő folyadékbevitelnek, a kiegyensúlyozott, sóban nem túlzottan gazdag étrendnek - ahogy azt korábban (Táplálkozás egészségtana fejezet) általánosságban megismertük -, valamint a magasvérnyomás és a cukorbetegség megfelelő kezelésének, hiszen mindkét betegség hosszú távon jelentősen károsíthatja a vese finom szűrő szerkezetét. Mivel a vese károsodása gyakran hosszú ideig tünetmentes marad, a rendszeres szűrővizsgálat (pl. vizeletvizsgálat, vérvizsgálat) itt is - ahogy azt korábban, a Homeosztázis fejezetben az önvizsgálatnál általánosságban megismertük - kiemelten fontos szerepet játszik a korai felismerésben.',
+                ],
+              },
+            ],
+            keyTerms: ['proteinuria', 'glükozúria', 'hematuria', 'vesekő', 'művesekezelés'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten a művesekezelés mellett a veseátültetés jelentőségét is ismerni kell, mint a tartós veseelégtelenség másik lehetséges megoldását.',
+            sections: [
+              {
+                heading: 'Művesekezelés és veseátültetés',
+                paragraphs: [
+                  'A művesekezelés (dialízis) tartósan, rendszeres ismétléssel képes pótolni a vese szűrő funkcióját, azonban nem gyógyítja meg a veseelégtelenséget, és jelentősen korlátozza az érintett mindennapi életét (a kezelések rendszeressége, időtartama miatt). A veseátültetés (transzplantáció) ezzel szemben egy működő donorvese beültetésével tartósan, a rendszeres kezelés szükségessége nélkül pótolhatja a kiesett funkciót, így az életminőség jelentősen jobb lehet, mint a dialízis mellett - ugyanakkor a beültetett szerv kilökődésének megelőzésére tartós, immunrendszert gyengítő gyógyszeres kezelésre van szükség, ami viszont más (pl. fertőzéses) kockázatokat hordoz.',
+                  'A két eljárás - a művesekezelés és a veseátültetés - éppen ezért nem egymást kizáró, hanem gyakran egymást kiegészítő megoldás: sok beteg előbb hosszabb ideig dialízisre szorul, amíg megfelelő donorvese nem válik elérhetővé, majd az átültetés után a dialízisre már nincs szükség.',
+                  'A veseátültetéshez szükséges donorvese származhat élő donortól (mivel az ember két veséje közül egy is elegendő a szervezet szükségleteinek fedezésére, ha az egészséges) vagy elhunyt donortól egyaránt - ez utóbbi esetben az agyhalál megállapítása és a donorszervek hatékony, gyors elosztási rendszere kulcsfontosságú ahhoz, hogy a szerv még felhasználható állapotban eljusson a várólistán lévő beteghez. Emellett a beültetett vese és a recipiens szövettani összeférhetőségének (szöveti antigének egyezésének) vizsgálata is elengedhetetlen a kilökődés kockázatának csökkentéséhez.',
+                ],
+              },
+            ],
+            keyTerms: ['veseátültetés'],
+          },
+        },
+      },
+      {
+        id: 'idegsejtek-mukodese',
+        title: 'Sejtszintű folyamatok',
+        order: 25,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (A kiválasztó szervrendszer egészségtana fejezet) lezárt kiválasztás témakör után ebben a fejezetben a szabályozás egyik legfontosabb rendszerét, az idegrendszert kezdjük megismerni - azzal a sejtszinten zajló alapfolyamattal indulva, amely minden idegi működés hátterében áll.',
+            sections: [
+              {
+                heading: 'Az idegsejt felépítése és funkciója',
+                paragraphs: [
+                  'Az idegsejt (neuron) az idegrendszer alapvető sejtje, amelynek fő feladata az ingerület keletkezése, vezetése, valamint más sejtekre való továbbadása. Felépítése ehhez a funkcióhoz igazodik: a sejttestből (amely a sejtmagot és a többi sejtszervecskét tartalmazza) rövid, elágazó nyúlványok, a dendritek indulnak ki, amelyek a bejövő ingereket fogadják, valamint egy hosszú nyúlvány, az axon, amely a kialakult ingerületet a sejttesttől távolabbra, más sejtek felé továbbítja.',
+                  'Az idegsejtek alakja és mérete rendkívül változatos lehet a betöltött funkciótól függően: vannak rövid axonú, sűrűn elágazó dendritfás idegsejtek (pl. az agykéregben, ahol sok bemenetet kell feldolgozniuk), és vannak igen hosszú axonú idegsejtek is (pl. a gerincvelőtől a lábujjig futó mozgatóidegsejtek), amelyek a jelet nagy távolságra kell, hogy eljuttassák.',
+                  'Az idegsejt tehát háromféle alapvető feladatot lát el egyetlen sejten belül összehangoltan: felveszi a bejövő ingereket (dendritek), feldolgozza és szükség esetén ingerületté alakítja azokat (sejttest), majd továbbítja a keletkező jelet más sejtek (idegsejtek, izomsejtek vagy mirigysejtek) felé (axon) - ez a hármas munkamegosztás teszi lehetővé, hogy az idegrendszer rendkívül gyorsan és pontosan dolgozza fel és közvetítse az információt.',
+                ],
+              },
+              {
+                heading: 'A nyugalmi membránpotenciál',
+                paragraphs: [
+                  'Az élő sejtek membránjának két oldalán az ionok koncentrációja nem azonos: a nátriumionok (Na⁺) koncentrációja a sejten kívül, a káliumionok (K⁺) koncentrációja pedig a sejten belül magasabb - ahogy azt korábban (Elemek, ionok fejezet) a Na⁺/K⁺-pumpa működésénél már megismertük, ez a koncentrációkülönbség (és az azt fenntartó pumpa munkája) alakítja ki a nyugalmi membránpotenciált, vagyis a membrán két oldala közötti elektromos feszültségkülönbséget.',
+                ],
+              },
+              {
+                heading: 'Inger, ingerület, ingerküszöb',
+                paragraphs: [
+                  'Az inger a környezet (vagy a szervezeten belüli állapot) olyan változása, amelyet egy sejt érzékelni képes; ha az inger elég erős, a sejt membránján átmenetileg végigfutó, jellegzetes elektromos jelenség, az ingerület (más néven akciós potenciál) alakul ki. Az ingerküszöb az a minimális ingererősség, amely már éppen kiváltja az ingerületet - egy ennél gyengébb inger nem vált ki választ.',
+                  'Az ingerküszöb nem állandó: külső (pl. hőmérséklet, egyes gyógyszerek vagy mérgek) és belső (pl. fáradtság, éhség, érzelmi állapot) tényezők egyaránt megváltoztathatják - például egy hosszan, megerőltetően dolgozó izom idegsejtjeinek ingerküszöbe megemelkedhet, ezért egyre erősebb ingerre van szükség ugyanolyan mértékű válasz kiváltásához.',
+                  'Az ingerküszöb változékonysága gyakorlati szempontból is fontos: ez magyarázza például, hogy miért érzünk egy adott ingert (pl. egy halk hangot) máskor könnyebben, néha viszont csak nehezebben - a szervezet pillanatnyi állapota folyamatosan finomhangolja, mennyire "érzékenyen" reagálnak idegsejtjeink a környezet ingereire.',
+                ],
+              },
+            ],
+            keyTerms: ['idegsejt', 'dendrit', 'axon', 'nyugalmi membránpotenciál', 'ingerület', 'ingerküszöb'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban megvizsgáljuk, hogyan függ össze a kémiai és az elektromos potenciál az ionmozgásokkal, és hogyan kódolja az idegsejt az inger erősségét.',
+            sections: [
+              {
+                heading: 'A kémiai és az elektromos potenciál összefüggése az ionmozgásokkal',
+                paragraphs: [
+                  'Az ionok mozgását a sejtmembránon át két hajtóerő együttesen szabja meg: a kémiai potenciál (a koncentrációkülönbség, amely a nagyobb koncentrációjú hely felől a kisebb felé "hajtja" az iont) és az elektromos potenciál (a töltéskülönbség, amely az ellentétes töltésű régió felé vonzza az iont). A kettő együttesen alkotja az elektrokémiai grádienst, amely - ahogy azt korábban (Membránok szerepe fejezet) a feszültségfüggő és ligandfüggő csatornáknál megismertük - az ioncsatornákon át valósul meg, amikor azok kinyílnak.',
+                ],
+              },
+              {
+                heading: 'Helyi és tovaterjedő potenciál',
+                paragraphs: [
+                  'A dendriteken és a sejttesten keletkező helyi (lokális) potenciál térben korlátozottan terjed, és útja során fokozatosan gyengül - hasonlóan ahhoz, ahogy egy vízbe dobott kő hulláma is egyre halványul, ahogy távolodik a becsapódás helyétől. Ha azonban a sejttest és az axon találkozásánál (az axoneredésnél) összegződő helyi potenciálok elérik az ingerküszöböt, egy minőségileg más jelenség, a tovaterjedő (csúcs-) potenciál jön létre, amely az axon mentén csillapítatlanul, változatlan nagysággal terjed tovább - ezt nevezzük "mind vagy semmi" elvnek: az akciós potenciál vagy teljes egészében kialakul, vagy egyáltalán nem.',
+                ],
+              },
+              {
+                heading: 'Az inger erősségének kódolása',
+                paragraphs: [
+                  'Mivel az egyes akciós potenciálok mindig azonos nagyságúak (a "mind vagy semmi" elv miatt), az inger erősségét az idegsejt nem az egyes jelek nagyságával, hanem a csúcspotenciálok hullámsorozatának szaporaságával (frekvenciájával) kódolja: minél erősebb az inger, annál sűrűbben, nagyobb gyakorisággal követik egymást az akciós potenciálok az axonon. Ez a frekvenciakódolás elve teszi lehetővé, hogy egyetlen, egységes jelfajtával (az azonos nagyságú akciós potenciállal) az idegrendszer mégis rendkívül finoman, fokozatosan tudja jelezni az ingerek erősségét - hasonlóan ahhoz, ahogyan egy Morse-jel is csak egyetlen jelfajtát (pont-vonás) használ, mégis rendkívül sokféle üzenet közvetítésére alkalmas. Ez a kódolási elv minden idegsejtre és minden érzékszervi modalitásra egyaránt érvényes: legyen szó fájdalomról, nyomásról vagy fényről, az adott inger erősségét mindig ugyanez az elv, a csúcspotenciálok gyakorisága fejezi ki, csak éppen más-más idegpályán.',
+                ],
+              },
+            ],
+            keyTerms: ['elektrokémiai grádiens', 'lokális potenciál', 'csúcspotenciál', 'axoneredés'],
+          },
+        },
+      },
+      {
+        id: 'szinapszis',
+        title: 'Szinapszis',
+        order: 26,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Sejtszintű folyamatok fejezet) megismert akciós potenciál önmagában nem lenne elég: az idegsejtnek valahogyan át is kell adnia a keletkezett ingerületet a következő sejtnek. Ebben a fejezetben azt a kapcsolódási pontot, a szinapszist ismerjük meg, ahol ez az átadás megtörténik.',
+            sections: [
+              {
+                heading: 'A szinapszis fogalma és felépítése',
+                paragraphs: [
+                  'A szinapszis két idegsejt, vagy egy idegsejt és egy izom-, illetve mirigysejt közötti érintkezési, jelátviteli hely. A kémiai szinapszisnál az ingerületet szállító (preszinaptikus) sejt egy jelátvivő anyagot (neurotranszmittert) szabadít fel a köztük lévő keskeny résbe, amely eljutva a következő (posztszinaptikus) sejt felszínéhez, ott specifikus receptorokhoz kötődik.',
+                  'A szinapszis jelentősége abban áll, hogy nem pusztán "átadja" az ingerületet, hanem irányítja is azt: mivel egy idegsejt tipikusan nagyon sok más sejttel áll szinaptikus kapcsolatban, a beérkező jelek (serkentő és gátló hatások) összegződése dönti el, hogy az adott sejtben végül kialakul-e az új ingerület vagy sem - az idegrendszer bonyolult feldolgozó munkájának alapja tehát éppen ez a szinapszisokon zajló "döntéshozatal".',
+                ],
+              },
+              {
+                heading: 'Serkentő és gátló hatás',
+                paragraphs: [
+                  'A jelátvivő anyag és a receptor kölcsönhatása serkentő vagy gátló hatású lehet: serkentő hatás esetén a posztszinaptikus sejt ingerületének kialakulása valószínűbbé válik, gátló hatás esetén pedig éppen ellenkezőleg, nehezebbé. Ugyanaz a jelátvivő anyag a receptor típusától függően különböző sejteken eltérő (akár ellentétes) hatást is kifejthet - ez magyarázza, hogy egyetlen jelátvivő anyag miért képes az idegrendszer különböző pontjain sokféle, egymástól eltérő választ kiváltani.',
+                  'A gátló szinapszisok legalább annyira fontosak, mint a serkentők: enélkül az idegrendszer működése kontrollálatlanná válna, hiszen minden beérkező inger azonnal továbbterjedne, összegződne, felerősödne. A gátló hatások teszik lehetővé a finom szabályozást: azt, hogy a szervezet csak a valóban releváns, kellően erős ingerekre reagáljon, a jelentéktelen vagy ellentmondó jeleket pedig "kiszűrje". Egy idegsejt gyakran egyszerre több ezer szinapszison keresztül is kap serkentő és gátló jeleket, és csak az összegződő hatás dönti el, hogy végül kialakul-e az új ingerület - ez a folyamatos "mérlegelés" adja az idegrendszer feldolgozó képességének alapját.',
+                ],
+              },
+              {
+                heading: 'Drogok hatása és a függőség',
+                paragraphs: [
+                  'A drogok jellemzően éppen a szinapszis működésébe avatkoznak bele: gyakran utánozzák egy természetes jelátvivő anyag hatását, vagy felerősítik, esetleg meghosszabbítják annak jelenlétét a szinaptikus résben. A tartós, ismételt droghasználat a szinapszisok működésének alkalmazkodását (átalakulását) váltja ki, ami idővel függőséghez vezethet: a szervezet egyre nagyobb adagra "szokik rá" ugyanannak a hatásnak az eléréséhez, a drog hiánya pedig kellemetlen, akár súlyos tüneteket okozhat.',
+                  'Ez az alkalmazkodás azért alakul ki, mert a szinapszis - a szervezet többi szabályozási mechanizmusához hasonlóan - igyekszik fenntartani a normál működését: ha egy drog mesterségesen, tartósan felerősíti egy jelátvivő anyag hatását, a szinapszis "ellensúlyozásképpen" csökkentheti a saját érzékenységét (pl. kevesebb receptort termel) - emiatt a drog nélkül a szinapszis működése átmenetileg a normálistól eltérővé, kiegyensúlyozatlanná válik, ami a jellegzetes elvonási tünetekhez vezet.',
+                ],
+              },
+            ],
+            keyTerms: ['szinapszis', 'neurotranszmitter', 'szinaptikus rés', 'preszinaptikus', 'posztszinaptikus'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten pontosabban megvizsgáljuk, milyen konkrét mechanizmusokkal hatnak a drogok és a mérgek a szinapszisra, valamint megismerjük az idegsejt-hálózatok spontán aktivitását és a gliasejtek szerepét.',
+            sections: [
+              {
+                heading: 'A drogok és mérgek hatásmechanizmusai a szinapszison',
+                paragraphs: [
+                  'A drogok és egyes mérgek jellemzően háromféle módon avatkozhatnak be a szinapszis működésébe: fokozhatják a jelátvivő anyag felszabadulását vagy hatását (ezáltal erősítve a jelet); gátolhatják a jelátvivő anyag visszavételét (reuptake-jét) a preszinaptikus sejtbe, ami miatt az anyag tovább és erősebben hat a résben; vagy közvetlenül módosíthatják, blokkolhatják magát a receptort, meghamisítva vagy megakadályozva a normál jelátvitelt.',
+                ],
+              },
+              {
+                heading: 'Az idegsejt-hálózatok spontán aktivitása',
+                paragraphs: [
+                  'Egyes idegsejt-hálózatok külső inger nélkül is, önmaguktól, ritmikusan aktívvá válnak - ez a spontán aktivitás áll a szervezet biológiai ritmusainak (pl. a napi ébrenlét-alvás ciklusnak) a hátterében: ezek a hálózatok folyamatosan, önfenntartó módon "ketyegnek", függetlenül a pillanatnyi külső ingerektől, és ezzel időzítik a szervezet számos élettani folyamatát.',
+                ],
+              },
+              {
+                heading: 'Gliasejtek és a velőshüvely',
+                paragraphs: [
+                  'A gliasejtek nem továbbítanak ingerületet, mégis nélkülözhetetlen támogató szerepet töltenek be az idegrendszerben: táplálják az idegsejteket, és egyes típusaik (pl. a környéki idegrendszerben a Schwann-sejtek) az axonok köré tekeredve velőshüvelyt (mielinhüvelyt) képeznek. A velőshüvely szigetelő hatása jelentősen felgyorsítja az ingerület vezetési sebességét, mivel az ingerület a szigetelt szakaszokat "átugorva", csak a velőshüvely megszakadásainál keletkezik újra.',
+                  'A velőshüvely károsodása komoly következményekkel jár: a szklerózis multiplex (SM) nevű betegségben a szervezet saját immunrendszere támadja meg és károsítja a velőshüvelyt, ami lelassítja, sőt meg is szakíthatja az ingerületvezetést - ez magyarázza a betegségre jellemző, sokféle idegrendszeri tünetet (pl. izomgyengeség, érzészavarok, koordinációs zavarok).',
+                  'A betegség tünetei éppen azért olyan sokfélék és helyenként eltérőek betegenként, mert a károsodás az idegrendszer bármely pontján kialakulhat: attól függően, hogy melyik idegpálya velőshüvelye sérül, teljesen más funkció (pl. látás, mozgás, érzékelés) károsodhat - ez is jól mutatja, mennyire alapvető, általános szerepet tölt be a velőshüvely az egész idegrendszer gyors és megbízható működésében.',
+                ],
+              },
+            ],
+            keyTerms: ['reuptake', 'gliasejt', 'velőshüvely', 'szklerózis multiplex'],
+          },
+        },
+      },
+      {
+        id: 'idegrendszer-altalanos-jellemzese',
+        title: 'Az idegrendszer általános jellemzése',
+        order: 27,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Reflexív', 'Reflexkör'],
+          rows: [
+            ['Felépítés', 'receptor → érzőidegsejt → központi idegrendszer → mozgatóidegsejt → végrehajtó szerv', 'reflexív kiegészítve a válasz hatását jelző visszacsatolással'],
+            ['Iránya', 'egyirányú jelfolyam', 'a végrehajtás hatását is visszajelzi a központnak'],
+            ['Pontossága', 'nem "tudja", hogy a válasz megfelelő volt-e', 'a visszacsatolás révén finomítható, pontosítható a válasz'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Sejtszintű folyamatok és Szinapszis fejezetek) megismert egyedi idegsejt-működés és jelátvitel után ebben a fejezetben azt tekintjük át, hogyan épül fel és hogyan jellemezhető az idegrendszer mint egész.',
+            sections: [
+              {
+                heading: 'Receptorok és az adekvát inger',
+                paragraphs: [
+                  'A receptor egy inger felvételére specializálódott sejt vagy sejtrész. Minden receptorhoz tartozik egy adekvát inger, vagyis az az ingertípus, amelyre az adott receptor a legérzékenyebb, a legalacsonyabb ingerküszöbbel reagál. A receptorok fő típusai az ingertípus szerint: mechanikai receptorok (nyomás, rezgés, érintés érzékelésére), kémiai receptorok (kemoreceptorok, pl. íz- és szagérzékelésre), fényreceptorok (a látás alapjai) és hőreceptorok (a hőmérséklet érzékelésére).',
+                  'Az adekvát inger fogalma azért fontos, mert egy receptor - kellően erős inger hatására - akár más típusú ingerre is reagálhat, de ilyenkor jellemzően csak a rá jellemző érzetet váltja ki: ha például szemünkre nyomást gyakorlunk, a fényreceptorok ettől is ingerületbe jöhetnek, ám az így keltett érzet ilyenkor is fényérzet lesz, nem nyomásérzet - ez mutatja, hogy az érzet minőségét nem az inger fajtája, hanem az, hogy melyik receptor és melyik idegpálya aktiválódik.',
+                ],
+              },
+              {
+                heading: 'Az idegrendszer felépítésének alapfogalmai',
+                paragraphs: [
+                  'Az idegrendszer két nagy részre osztható: a központi idegrendszerre (az agy és a gerincvelő) és a környéki idegrendszerre (a testben mindenhová elágazó idegek és dúcok). A környéki idegrendszerben az axonok kötegét idegnek, az idegsejttestek csoportosulását dúcnak nevezzük; a központi idegrendszeren belül az axonkötegek neve pálya, az idegsejttestek csoportosulásáé pedig mag. A kéreg az agy felszínén elhelyezkedő, idegsejttestekből álló réteg. A fehérállomány a velőshüvelyes (ezért fehéres színű) axonokból, a szürkeállomány pedig az idegsejttestekből és dendritekből (ezért szürkés színű) áll.',
+                  'A testi (szomatikus) idegrendszer az akaratlagosan irányítható vázizom-mozgásokat szabályozza, a vegetatív (autonóm) idegrendszer pedig a belső szervek (pl. szív, tápcsatorna) akaratlan, önműködő szabályozását végzi - ezzel a témával a fejezet sorozat egy későbbi, önálló fejezete (Vegetatív érző és mozgató rendszerek) foglalkozik részletesen.',
+                ],
+              },
+              {
+                heading: 'Az idegrendszer működésének fő folyamatai és sejttípusai',
+                paragraphs: [
+                  'Az idegrendszer működése jellemzően négy lépésből áll, amelyeket más-más sejttípus valósít meg: a receptorsejt érzékeli az ingert; az érzőidegsejt (afferens idegsejt) az ingerületet a receptortól a központi idegrendszer felé szállítja; az asszociációs idegsejtek a központi idegrendszeren belül dolgozzák fel és kapcsolják össze a beérkező jeleket, alakítva ki a választ; végül a mozgatóidegsejt (efferens idegsejt) a kialakult "parancsot" a központi idegrendszertől a végrehajtó szerv (izom vagy mirigy) felé továbbítja. Ez a négy lépés a legegyszerűbb reflextől a legösszetettebb, tudatos döntésig minden idegi működésben megtalálható, csak az asszociációs feldolgozás mélysége és időtartama változik jelentősen a helyzet bonyolultságától függően.',
+                ],
+              },
+              {
+                heading: 'Reflexív és reflexkör',
+                paragraphs: [
+                  'A reflexív fogalmát - ahogy azt korábban (Veleszületett magatartásformák fejezet emelt kiegészítésében, a feltétlen reflexek idegrendszeri hátteréről szólva) már megismertük - az a legrövidebb idegi útvonal alkotja (receptor → érzőidegsejt → központi idegrendszer → mozgatóidegsejt → végrehajtó szerv), amely egy reflex, azaz egy gyors, automatikus, tudatos befolyásolás nélküli válasz alapját képezi. A reflexkör ezzel szemben a reflexívnek egy visszacsatolási hurokkal kiegészített változata: a végrehajtott válasz hatását érzékelő receptorok jeleznek vissza a központi idegrendszer felé, lehetővé téve a válasz finomítását vagy szükség esetén módosítását.',
+                  'A kettő közötti különbség jól szemlélteti az idegrendszer működésének két alapvető szintjét: a reflexív egy egyszerű, gyors, "nyitott hurkú" válasz, míg a reflexkör egy folyamatosan ellenőrzött, "zárt hurkú" szabályozás - ez utóbbi hasonló elven működik, mint a korábban (Homeosztázis fejezet) megismert negatív visszacsatolás, csak itt a szabályozott paraméter egy testmozgás pontossága, nem egy élettani érték.',
+                ],
+              },
+            ],
+            keyTerms: ['receptor', 'adekvát inger', 'központi idegrendszer', 'környéki idegrendszer', 'fehérállomány', 'szürkeállomány', 'reflexív', 'reflexkör'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten érdemes megismerni, hogyan tér el a fehér- és a szürkeállomány elrendeződése az agyban és a gerincvelőben.',
+            sections: [
+              {
+                heading: 'A fehér- és szürkeállomány elrendeződése az agyban és a gerincvelőben',
+                paragraphs: [
+                  'Az agyban a szürkeállomány jellemzően kívül, a felszínen (az agykéregben) helyezkedik el, míg alatta, beljebb a fehérállomány található - ez utóbbi tartalmazza a különböző agyi területeket összekötő pályákat. A gerincvelőben ezzel szemben fordított az elrendeződés: a szürkeállomány (jellegzetes, pillangó alakú keresztmetszettel) belül, a gerincvelő közepén helyezkedik el, körülötte kívül pedig a fehérállomány húzódik, amely a fel- és leszálló pályákat tartalmazza.',
+                  'Ez az eltérő elrendeződés nem véletlen: az agykéregben a szürkeállomány felszíni elhelyezkedése növeli a rendelkezésre álló feldolgozó felületet (ezt szolgálják az agykéreg jellegzetes redői, a barázdák és tekervények is), míg a gerincvelőben a belül elhelyezkedő szürkeállomány a bejövő és kimenő idegek (gerincvelői idegek) számára biztosít rövid, hatékony kapcsolódási pontot a környező fehérállomány pályáival.',
+                  'A barázdák és tekervények kialakulása jelentősen megnöveli az agykéreg összfelületét anélkül, hogy a koponyaüreg mérete ezzel arányosan nagyobbra kellene, hogy nőjön - hasonló elven, mint ahogyan korábban (Felszívódás fejezet) a bélbolyhok is a felszín növelésével biztosítottak nagyobb "feldolgozó kapacitást" egy korlátozott téren belül. Ez a "felület-optimalizáló" megoldás tehát nem egyedi az idegrendszerben, hanem egy általánosan visszatérő biológiai elv konkrét megvalósulása.',
+                ],
+              },
+            ],
+            keyTerms: ['agykéreg', 'barázda', 'tekervény'],
+          },
+        },
+      },
+      {
+        id: 'gerincvelo-es-agy',
+        title: 'A gerincvelő és az agy',
+        order: 28,
+        isFree: false,
+        estimatedMinutes: 20,
+        content: {
+          kozep: {
+            intro: 'A korábban (Az idegrendszer általános jellemzése fejezet) megismert alapfogalmak (központi idegrendszer, fehér-/szürkeállomány) után ebben a fejezetben a központi idegrendszer két fő szervét, a gerincvelőt és az agyat ismerjük meg részletesen.',
+            sections: [
+              {
+                heading: 'A központi idegrendszer védelme',
+                paragraphs: [
+                  'A központi idegrendszer (az agy és a gerincvelő) sérülékeny, ezért a szervezet több szinten is védi: kívülről csontos tok (a koponyacsont, illetve a gerincoszlop csigolyáiból kialakuló gerinccsatorna) veszi körül, ez alatt agyhártyák (több rétegű, védő kötőszöveti burok) találhatók, a legbelső réteg és az idegszövet között pedig agy-gerincvelői folyadék (liquor) helyezkedik el, amely párnázó, ütéscsillapító szerepet tölt be, és részt vesz az idegszövet tápanyagellátásában is.',
+                  'Ez a többszörös védelem - csontos tok, agyhártyák, folyadékpárna - jól mutatja, mennyire létfontosságú az idegszövet épsége: az idegsejtek felnőttkorban csak igen korlátozott mértékben képesek megújulni, ezért egy súlyos sérülés az idegrendszerben sokkal nehezebben, gyakran egyáltalán nem heverhető ki, szemben például a bőr vagy a máj sejtjeinek regenerálódó képességével. Éppen ezért olyan komolyak a fejsérülések és a gerincvelő-sérülések következményei is: a károsodott idegszövet helyére nem, vagy csak igen korlátozottan tud új, működőképes idegsejt keletkezni.',
+                ],
+              },
+              {
+                heading: 'A gerincvelő funkciói és a gerincvelői reflexek',
+                paragraphs: [
+                  'A gerincvelő fő funkciói közé tartozik az izomtónus kialakítása, egyes védekező mechanizmusok (pl. fájdalmas ingerre adott gyors, reflexes végtag-elrántás) megvalósítása, a bőr ereinek reflexes szabályozása, valamint a nemi szervek vérbőségének (pl. merevedésnek) a szabályozása.',
+                  'A gerincvelői reflexek lehetnek izomeredetűek (pl. a korábban, a Veleszületett magatartásformák fejezetben már megemlített térdreflex, amelyet az inas gyors megütésével lehet kiváltani: az izom hirtelen megnyúlása egy azonnali, ellentétes irányú összehúzódást vált ki, ez a reflex az izomtónus és a testtartás fenntartásában segít) vagy bőreredetűek (pl. egy fájdalmas bőringer hatására bekövetkező, védekező célú végtag-visszahúzás).',
+                ],
+              },
+              {
+                heading: 'Az agy fő részei',
+                paragraphs: [
+                  'Az agy nyílirányú metszetén jól elkülöníthető részek az agytörzs (amely a nyúltvelőből, a hídból és a középagyból áll, és amely az alapvető életfunkciók - pl. légzés, keringés - szabályozásáért felel), a köztiagy (a talamusz, amely az érzőpályák egyik fontos átkapcsoló állomása, és a hipotalamusz, amely - ahogy azt korábban, A táplálkozás szabályozása fejezetben az éhség- és jóllakottságérzet kialakulásánál megismertük - a homeosztázis fenntartásában és a hormonrendszer irányításában játszik kulcsszerepet), a kisagy (amely elsősorban a mozgások összehangolásáért, koordinációjáért felelős) és a nagyagy (amely a magasabb rendű idegi működéseket - pl. a tudatos gondolkodást, az érzékelést és a mozgás irányítását - végzi).',
+                ],
+              },
+              {
+                heading: 'Az alvás jelentősége',
+                paragraphs: [
+                  'Az álomalvás (amely alatt jellegzetes agyi aktivitás és álmodás zajlik) létszükséglet, nem elhagyható, "felesleges" tevékenység: tartós, súlyos alváshiány komoly, akár életveszélyes egészségkárosodáshoz vezethet, ami jól mutatja, mennyire alapvető szerepet tölt be az alvás a szervezet egészséges működésében. Ezt támasztja alá az is, hogy az alvás minden eddig vizsgált, fejlettebb idegrendszerrel rendelkező állatfajnál megfigyelhető, ami arra utal, hogy evolúciósan igen régi és alapvető szükségletről van szó.',
+                ],
+              },
+            ],
+            keyTerms: ['agy-gerincvelői folyadék', 'agyhártya', 'térdreflex', 'agytörzs', 'köztiagy', 'kisagy', 'nagyagy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten megismerjük, mi tartja fenn az alvás-ébrenlét ciklust, milyen elméletek magyarázzák az alvás funkcióját, és hogyan térnek el egymástól az agyféltekék funkciói.',
+            sections: [
+              {
+                heading: 'Az agytörzsi hálózatos állomány és az alvás-ébrenléti ciklus',
+                paragraphs: [
+                  'Az agytörzsben elhelyezkedő hálózatos állomány (retikuláris formáció) kulcsszerepet játszik az éberségi szint, valamint az alvás-ébrenléti ciklus fenntartásában: ez a szerkezet folyamatosan "figyeli" a bejövő érzékszervi információkat, és ennek alapján szabályozza, mennyire éber vagy mennyire álmos állapotban van a szervezet. Ez a mechanizmus magyarázza például, hogy egy hirtelen, erős inger (pl. egy hangos zaj) miért képes alvó állapotból is felébreszteni: a hálózatos állomány ilyenkor gyorsan "éberré kapcsolja" az agykérget.',
+                ],
+              },
+              {
+                heading: 'Elméletek az alvás funkciójáról',
+                paragraphs: [
+                  'Az alvás funkciójára több elmélet is született: az energiatakarékossági elmélet szerint az alvás csökkenti a szervezet energiafelhasználását azokban az órákban, amikor az aktív táplálékkeresés és egyéb tevékenységek amúgy sem lennének hatékonyak; a tanuláshoz kapcsolódó elmélet szerint az alvás alatt zajlik a nap folyamán szerzett információk rendszerezése, rögzítése (memóriakonszolidáció); a feltöltődési elmélet pedig azt hangsúlyozza, hogy alvás közben zajlanak a szövetek regenerálódásához, "helyreállításához" szükséges folyamatok. Ezek az elméletek nem zárják ki egymást - valószínűleg az alvás egyszerre több funkciót is betölt.',
+                ],
+              },
+              {
+                heading: 'A jobb és bal agyfélteke eltérő funkciói',
+                paragraphs: [
+                  'A nagyagy két féltekéje (jobb és bal) nem teljesen egyenrangú a funkciók tekintetében: a legtöbb embernél a bal félteke inkább a nyelvi, logikai és analitikus (részletekre bontó) feldolgozásban játszik meghatározó szerepet, míg a jobb félteke inkább a téri-vizuális tájékozódásban és a holisztikus (egészet átfogó) feldolgozásban erősebb - fontos ugyanakkor hangsúlyozni, hogy a két félteke a mindennapi működés során szorosan együttműködik, nem különül el élesen egymástól.',
+                  'A két félteke közötti munkamegosztás (lateralizáció) mértéke egyénenként is eltérő lehet, és nem jelenti azt, hogy bármelyik félteke önmagában, a másik nélkül teljes értékűen működne - a mindennapi feladatok (pl. egy térkép olvasása, amely nyelvi és téri elemeket is igényel) jellemzően mindkét félteke összehangolt együttműködését igénylik.',
+                ],
+              },
+            ],
+            keyTerms: ['hálózatos állomány', 'agyfélteke'],
+          },
+        },
+      },
+      {
+        id: 'testerzo-rendszerek',
+        title: 'Testérző rendszerek',
+        order: 29,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A gerincvelő és az agy fejezet) megismert agyi részek után ebben a fejezetben azt vizsgáljuk meg, hogyan érzékeli a szervezet a saját testének állapotát: a bőr és a belső szervek receptorait, valamint az érzékelés tudatosulásának helyét.',
+            sections: [
+              {
+                heading: 'Az elsődleges érzőkéreg szerepe',
+                paragraphs: [
+                  'A testérzékelés tudatos megélése az agykéreg egy meghatározott, erre specializálódott területén, az elsődleges érzőkéregben történik. Ennek a területnek a sérülése nem szünteti meg magát az érzékelést a receptorok szintjén, hanem az adott testtájékról érkező érzékelés tudatosulásának kiesését okozza - vagyis az inger fizikailag eljuthat a receptorig és az idegpályákig, de a személy tudatosan már nem érzékeli azt.',
+                  'Az elsődleges érzőkéreg egyes területei nem egyenlő arányban felelnek meg a test egyes tájékainak: azok a testrészek, amelyek különösen sok, sűrűn elhelyezkedő receptorral rendelkeznek (pl. az ujjbegyek, az ajkak), az agykéregben is aránytalanul nagy területet foglalnak el a feldolgozásukhoz képest a kevésbé érzékeny testrészekhez (pl. a hát) képest - ez magyarázza, hogy miért sokkal finomabb és pontosabb a tapintásérzékelésünk az ujjbegyeinken, mint a hátunkon.',
+                ],
+              },
+              {
+                heading: 'A bőr és a belső szervek receptorai',
+                paragraphs: [
+                  'A bőrben és a belső szervekben többféle receptortípus található, mindegyik más-más ingerre specializálódva: a mechanikai receptorok a nyomást, az érintést és a rezgést érzékelik; a fájdalomreceptorok a szöveti károsodást jelző, potenciálisan veszélyes ingerekre reagálnak; a hőreceptorok a hideg és a meleg érzékelését teszik lehetővé; a kemoreceptorok kémiai változásokat (pl. egyes belső szervekben a vér összetételének változását) érzékelik; a szabad idegvégződések pedig egyszerű felépítésű, gyakran fájdalom érzékelésére szolgáló receptorok, amelyek nem kapcsolódnak specializált érzékelő sejthez.',
+                  'A kemoreceptorok belső szervi jelenléte nem csupán elméleti érdekesség: ahogy azt korábban (A légzés szabályozása fejezetben) megismertük, a nyúltvelő közelében és a nagyerekben elhelyezkedő kemoreceptorok a vér szén-dioxid-koncentrációjának érzékelésével szabályozzák a légzést - ez jól mutatja, hogy a testérzékelés nem csupán a tudatos érzetekért felel, hanem az öntudatlan, automatikus szabályozási folyamatok (pl. a légzés) elengedhetetlen "bemeneti" forrása is egyben.',
+                  'Ez a sokféle receptortípus együttesen biztosítja, hogy a szervezet folyamatosan, részletes és pontos képet kapjon saját testének állapotáról - a bőr felszínétől egészen a belső szervekig -, ami elengedhetetlen a testtartás fenntartásához, a veszélyek elkerüléséhez és a belső egyensúly (homeosztázis) fenntartásához egyaránt.',
+                  'A belső szervek receptorai (zsigeri érzékelés) jellemzően kevésbé pontosan, "elmosódottabban" jeleznek, mint a bőr receptorai: egy belső szervi fájdalom gyakran nehezen lokalizálható, sőt néha "áttevődött" fájdalomként a test egy másik, a valódi forrástól távol eső pontján érezzük (pl. bizonyos szívpanaszok jellemzően a bal karba is kisugározhatnak) - ez azzal magyarázható, hogy a belső szervekből és az adott bőrterületről érkező érzőpályák részben ugyanazokon az idegeken, közös útvonalon futnak be a gerincvelőbe. Ez az élettani jelenség orvosi szempontból is fontos: egy adott testtájékra kisugárzó fájdalom felismerése segíthet egy belső szervi probléma korai gyanújának felállításában, még mielőtt egyéb tünetek is megjelennének.',
+                ],
+              },
+            ],
+            keyTerms: ['elsődleges érzőkéreg', 'mechanikai receptor', 'fájdalomreceptor', 'hőreceptor', 'szabad idegvégződés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy az érzékszervi információ nem "nyers" formában jut el a tudatosulás helyére, hanem útközben, a kéreg alatti központokban már előzetes feldolgozáson megy keresztül.',
+            sections: [
+              {
+                heading: 'Előzetes feldolgozás a kéreg alatti központokban',
+                paragraphs: [
+                  'Az érzőpályák nem közvetlenül, "nyers" formában szállítják az információt a receptoroktól az agykéregig: útközben, a kéreg alatti központokban (elsősorban a korábban, A gerincvelő és az agy fejezetben megismert talamuszban) már történik bizonyos előzetes feldolgozás, válogatás és csoportosítás. A talamusz szinte minden érzékszervi információ (a szaglás kivételével) számára fontos átkapcsoló állomás - a látópálya esetében például "kéreg alatti látóközpontként" is szokás emlegetni, mivel itt már megtörténik a vizuális információ egy része a kéregbe jutás előtt.',
+                  'Ez az előzetes feldolgozás azért fontos, mert megszűri és rendszerezi a hatalmas mennyiségű, folyamatosan beérkező érzékszervi információt, mielőtt az elérné a kérget - enélkül az agykéregnek minden egyes, akár jelentéktelen ingert is teljes egészében fel kellene dolgoznia, ami jelentősen lelassítaná és túlterhelné a rendszert.',
+                  'A kéreg alatti feldolgozás egyben magyarázatot ad néhány gyors, még a tudatos észlelés előtt lezajló válaszreakcióra is: bizonyos veszélyt jelző ingerek (pl. hirtelen felénk repülő tárgy) esetén a kéreg alatti központok már azelőtt kiválthatnak egy gyors, védekező mozdulatot, mielőtt az inger tudatosan feldolgozásra kerülne az agykéregben - ez az előny életmentő lehet olyan helyzetekben, amikor a teljes tudatos feldolgozásra nincs elég idő.',
+                  'Ez a kettős útvonal - egy gyorsabb, kéreg alatti "sürgősségi" feldolgozás és egy lassabb, de részletesebb, tudatos kérgi feldolgozás - jól szemlélteti az idegrendszer egyik alapvető szervezési elvét: a fontosabb, sürgősebb döntéseket a rendszer igyekszik minél rövidebb, gyorsabb útvonalon meghozni, míg a részletesebb, árnyaltabb elemzést a lassabb, de pontosabb kérgi feldolgozásra bízza - ez a munkamegosztás optimalizálja mind a reakcióidőt, mind a döntések pontosságát.',
+                ],
+              },
+            ],
+            keyTerms: ['kéreg alatti feldolgozás'],
+          },
+        },
+      },
+      {
+        id: 'erzekeles-latas',
+        title: 'Érzékelés és látás',
+        order: 30,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Rövidlátás (myopia)', 'Távollátás (hyperopia)'],
+          rows: [
+            ['A kép fókuszpontja', 'a retina előtt alakul ki', 'a retina mögött alakulna ki'],
+            ['Jellemző probléma', 'távoli tárgyak elmosódottan látszanak', 'közeli tárgyak elmosódottan látszanak'],
+            ['Korrekció szemüveggel', 'szórólencsével (a fókuszpontot hátrébb tolva)', 'gyűjtőlencsével (a fókuszpontot előrébb hozva)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Testérző rendszerek fejezet) megismert receptorok és a kéreg alatti feldolgozás után ebben a fejezetben azt vizsgáljuk meg részletesen, hogyan épül fel az érzékelés folyamata általánosságban, majd a legösszetettebb érzékszervünket, a szemet és a látás folyamatát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az érzékszervek működésének általános elvei',
+                paragraphs: [
+                  'Minden érzékelési folyamat azonos alapséma szerint zajlik: az adekvát inger (az adott érzékszerv számára megfelelő ingertípus) eléri a receptort, amely ingerületté alakítja azt; az ingerület idegpályákon eljut az agykéregbe, ahol tudatosul, és érzetté válik. Az érzet tehát nem maga a fizikai inger, hanem annak agyi, szubjektív megélése.',
+                ],
+              },
+              {
+                heading: 'Érzékcsalódások',
+                paragraphs: [
+                  'Az illúzió egy valóban létező, fizikai inger téves, a valóságtól eltérő értelmezése (pl. egyes optikai csalódásoknál két azonos hosszúságú vonal különböző hosszúságúnak tűnik a környezetük miatt). A hallucináció ezzel szemben egy olyan érzet, amely valós, külső inger nélkül keletkezik, mégis valóságosnak tűnik az érintett számára. Mindkettő kialakulásában szerepet játszhatnak pszichés tényezők (pl. tartós stressz, kimerültség) és egyes drogok is.',
+                ],
+              },
+              {
+                heading: 'A szem felépítése és működése',
+                paragraphs: [
+                  'A szem fő részei: a szaruhártya (a fény első törése itt történik), a szivárványhártya (közepén a pupillával, amely a beeső fény mennyiségét szabályozza), a lencse (amely alakjának változtatásával - akkomodációval - élesre fókuszálja a képet), az üvegtest (a szemgolyó belsejét kitöltő átlátszó anyag), valamint az ideghártya (retina), amelyben a fényérzékeny receptorok (csapok és pálcikák) helyezkednek el. A retinának van egy receptormentes pontja is, a vakfolt, ahol a látóideg elhagyja a szemet.',
+                ],
+              },
+              {
+                heading: 'Fénytörési hibák és a hályogok',
+                paragraphs: [
+                  'A leggyakoribb fénytörési hibák a rövidlátás (myopia, amikor a szemgolyó hossza vagy a törőközegek törőereje miatt a kép a retina elé fókuszálódik, ezért a távoli tárgyak elmosódottak) és a távollátás (hyperopia, amikor a kép a retina mögé fókuszálódna, ezért a közeli tárgyak elmosódottak); mindkettő megfelelő szemüveglencsével (rövidlátásnál szórólencsével, távollátásnál gyűjtőlencsével) korrigálható.',
+                  'A szürkehályog a szemlencse fokozatos elhomályosodása, amely egyre romló látásélességet okoz. A zöldhályog (glaukóma) a szem belnyomásának kóros emelkedése, amely - kezeletlenül - tartósan károsíthatja a látóideget, és akár vaksághoz is vezethet.',
+                ],
+              },
+              {
+                heading: 'Egyszerű kísérletek a látás vizsgálatára',
+                paragraphs: [
+                  'A vakfolt egyszerű kísérlettel kimutatható: ha egy adott ábrát megfelelő távolságból, félszemmel nézünk, egy bizonyos szögben egy pont vagy jel eltűnik a látómezőből, mert éppen a vakfoltra vetül. A színtévesztés speciális, színes pöttyökből álló táblákkal vizsgálható, amelyeken a színtévesztők más számjegyet vagy alakzatot látnak, mint a normál színlátásúak. A látásélesség táblázatos, egyre kisebb betűkből vagy jelekből álló ábrákkal mérhető. A térbeli tájékozódás vizsgálható például úgy, hogy egy tárgy távolságát egy szemmel, majd mindkét szemmel próbáljuk megbecsülni - ez utóbbi jóval pontosabb.',
+                ],
+              },
+              {
+                heading: 'Pupillareflex, akkomodáció és a szemhéjzáró reflex',
+                paragraphs: [
+                  'A pupillareflex során erős fény hatására a pupilla automatikusan összeszűkül, ezzel védve a retinát a túlzott fénymennyiségtől. Az akkomodáció a lencse alakjának (domborúságának) izmos szabályozás általi megváltoztatása, amely lehetővé teszi, hogy a szem közeli és távoli tárgyakra egyaránt élesen tudjon fókuszálni. A szemhéjzáró reflex egy hirtelen közeledő tárgy vagy váratlan érintés hatására a szemhéj gyors, védekező záródása.',
+                  'A távolságészlelés (mélységérzékelés) egyszerre több támponton alapul: a legfontosabb a kétszemes (binokuláris) látás, amely során a két szem enyhén eltérő szögből látja ugyanazt a jelenetet, és az agy ebből az eltérésből következtet a távolságra; emellett egyszemes (monokuláris) támpontok is segítik a térbeli tájékozódást, mint a tárgyak relatív mérete, egymást takarása (átfedése) vagy a mozgás közben tapasztalt mozgási parallaxis (a közelebbi tárgyak gyorsabbnak tűnnek elmozdulni, mint a távoliak).',
+                ],
+              },
+            ],
+            keyTerms: ['érzet', 'illúzió', 'hallucináció', 'retina', 'vakfolt', 'akkomodáció', 'rövidlátás', 'távollátás', 'zöldhályog'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a retina fényérzékeny sejtjeinek szerepét, valamint a kép- és színlátás élettani alapjait ismerjük meg részletesebben.',
+            sections: [
+              {
+                heading: 'Csapok, pálcikák és dúcsejtek szerepe a látásban',
+                paragraphs: [
+                  'A pálcikák rendkívül fényérzékenyek, ezért elsősorban gyenge megvilágítás (szürkületi és éjszakai látás) mellett működnek, ám színek megkülönböztetésére nem képesek. A csapok ezzel szemben erősebb megvilágítást igényelnek, cserébe lehetővé teszik a színlátást - háromféle csaptípus létezik, amelyek a fény eltérő hullámhosszára (nagyjából a vörös, a zöld és a kék tartományra) a legérzékenyebbek. A csapoktól és pálcikáktól érkező jeleket a retina dúcsejtjei gyűjtik össze és összegzik, mielőtt azok a látóidegen keresztül elhagynák a szemet.',
+                ],
+              },
+              {
+                heading: 'Kép- és színlátás, fényerősség-érzékelés',
+                paragraphs: [
+                  'A lencse a retinára fordított állású, kicsinyített képet vetít, amelyet az agykéreg dolgoz fel és "állít helyre" a tudatosuló, valós állású érzetté. A színlátás alapja, hogy egy adott hullámhosszú fény a háromféle csaptípust eltérő mértékben ingerli - az agy ezt a háromféle jelet egymáshoz viszonyítva értékeli ki, és ebből "számítja ki" az észlelt színt. A fényerősség érzékelését elsősorban az adott receptorok (csapok, pálcikák) ingerületének intenzitása (a keletkező akciós potenciálok gyakorisága) közvetíti - minél erősebb a fény, annál nagyobb gyakorisággal keletkeznek akciós potenciálok az érintett receptorokból induló idegrostokon.',
+                  'A retina középpontjában, az éles látás helyén (a sárgafoltban) elsősorban csapok találhatók, sűrű elrendezésben - ez magyarázza, hogy a legélesebb, legrészletgazdagabb látásunk mindig arra a pontra korlátozódik, amelyre közvetlenül nézünk, míg a látótér szélén (ahol inkább pálcikák dominálnak) a látás kevésbé éles, de a gyenge fényre érzékenyebb, ezért sötétben gyakran a szemünk sarkából jobban észrevehetünk egy halvány fényforrást, mint ha egyenesen ránéznénk.',
+                ],
+              },
+            ],
+            keyTerms: ['csap', 'pálcika', 'dúcsejt'],
+          },
+        },
+      },
+      {
+        id: 'hallas-egyensulyerzes',
+        title: 'Hallás és egyensúlyérzés',
+        order: 31,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Érzékelés és látás fejezet) megismert szem és látás után ebben a fejezetben a fület, a hallás folyamatát, valamint a belső fülben elhelyezkedő egyensúlyérzékelő szerveket ismerjük meg.',
+            sections: [
+              {
+                heading: 'A fül felépítése',
+                paragraphs: [
+                  'A fül három nagy részre osztható. A külső fül (fülkagyló és hallójárat) a hangot összegyűjti és a dobhártya felé irányítja. A középfül a dobhártyát és a hozzá kapcsolódó három apró hallócsontocskát (kalapács, üllő, kengyel) foglalja magába, amelyek a hangrezgést mechanikusan erősítik és továbbítják. A belső fül tartalmazza a hallásért felelős csigát, valamint az egyensúlyérzékelésért felelős tömlőcskét, zsákocskát és a három félkörös ívjáratot.',
+                  'A középfület - ahogy azt korábban (A légzés és a légzőrendszer egészségtana fejezetben) a fülkürtnél már megismertük - a garattal egy vékony járat, a fülkürt köti össze, amely kiegyenlíti a dobhártya két oldala közötti légnyomást; ennek hiányában (pl. légnyomás gyors változásakor, repülés vagy búvárkodás közben) a dobhártya megfeszülhet, ami átmeneti hallásromlást vagy fájdalmat okozhat.',
+                ],
+              },
+              {
+                heading: 'A dobhártya és a hallócsontocskák működése',
+                paragraphs: [
+                  'A beérkező hanghullám rezgésbe hozza a dobhártyát, ez a rezgés a hallócsontocskákon (kalapács → üllő → kengyel) keresztül halad tovább, mechanikusan felerősödve, a belső fül felé. A hallócsontocskákhoz kapcsolódó apró izmok képesek csökkenteni a rezgés átvitelének mértékét túl hangos zaj esetén - ez egyfajta védekező mechanizmus, amely tompítja a belső fület érő, potenciálisan károsító rezgést.',
+                  'Ez a szabályozó mechanizmus azonban nem azonnali és nem korlátlan: egy hirtelen, váratlanul erős hang (pl. egy közeli robbanás) ellen nem tud kellő időben védekezni, ezért az ilyen extrém, hirtelen zajok különösen nagy kockázatot jelentenek a hallásra nézve.',
+                ],
+              },
+              {
+                heading: 'A hangirány érzékelése',
+                paragraphs: [
+                  'A hangforrás irányát az agy a két fülbe érkező hang apró időkülönbsége és hangerő-különbsége alapján állapítja meg. Ez egyszerű kísérlettel is bemutatható: ha valakinek bekötjük a szemét, és különböző irányokból szólaltatunk meg egy hangforrást, mindkét füllel jóval pontosabban be tudja azonosítani a hang irányát, mint ha csak az egyik fülét használhatná - ez igazolja, hogy a hangirány-érzékeléshez elengedhetetlen a két fül közötti összehasonlítás.',
+                ],
+              },
+              {
+                heading: 'A zajszennyeződés hatásai',
+                paragraphs: [
+                  'A zajszennyeződés forrásai közé tartozik a közlekedés zaja, az ipari tevékenységek zaja és a tartósan hangos zene is. A tartós, erős zajterhelés maradandóan károsíthatja a belső fül érzékeny szőrsejtjeit, halláskárosodáshoz vezetve - ezek a szőrsejtek felnőttkorban nem képesek megújulni, ezért a károsodásuk véglegesnek bizonyul. Emellett a zaj pszichés hatása sem elhanyagolható: hozzájárulhat a stressz-szint emelkedéséhez, alvászavarokhoz és koncentrációs nehézségekhez is.',
+                ],
+              },
+              {
+                heading: 'A tömlőcske, a zsákocska és a félkörös ívjáratok szerepe',
+                paragraphs: [
+                  'A belső fülben elhelyezkedő tömlőcske és zsákocska a fej egyenes vonalú (lineáris) gyorsulását, illetve a fej gravitációhoz viszonyított helyzetét érzékeli. A három, egymásra merőlegesen elhelyezkedő félkörös ívjárat ezzel szemben a fej forgó irányú mozgásait (elfordulásait) érzékeli - a három egymásra merőleges sík lefedi a tér mindhárom irányát, ezáltal bármilyen irányú fejfordulás érzékelhetővé válik.',
+                  'Ezek a szervek folyamatosan, tudatos odafigyelés nélkül működnek, mégis alapvető fontosságúak a mindennapi mozgásban: enélkül minden egyes lépésnél, fejfordulásnál tudatosan kellene ellenőriznünk, hogy nem veszítettük-e el az egyensúlyunkat, ami rendkívül lelassítaná és megnehezítené a mozgást.',
+                ],
+              },
+            ],
+            keyTerms: ['dobhártya', 'hallócsontocska', 'csiga', 'tömlőcske', 'zsákocska', 'félkörös ívjárat'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a hallószerv részletes felépítését és működését, a helyzetérzékelés receptorait, valamint a látórendszer és az egyensúlyérzés kapcsolatát ismerjük meg.',
+            sections: [
+              {
+                heading: 'A hallószerv részletes felépítése: alaphártya, Corti-szerv, szőrsejtek',
+                paragraphs: [
+                  'A csigában elhelyezkedő alaphártya a hang frekvenciájától függően a hossza mentén más-más ponton rezeg a legerősebben: a magas hangok a csiga bejáratához közelebb, a mély hangok pedig a csiga belsejéhez közelebb váltják ki a legnagyobb rezgést. Az alaphártyán helyezkedik el a Corti-szerv, amely a hallás tényleges érzékelő sejtjeit, a szőrsejteket tartalmazza - ezek alakítják át a mechanikai rezgést idegi ingerületté. Mivel az alaphártya adott pontján elhelyezkedő szőrsejtek egy adott hangmagassághoz tartoznak, a hangmagasság érzékelése lényegében azon alapul, hogy az alaphártya melyik pontjának szőrsejtjei aktiválódnak.',
+                ],
+              },
+              {
+                heading: 'A helyzetérzékelés receptorai',
+                paragraphs: [
+                  'A tömlőcskében és a zsákocskában apró kristályok (otolitok) nyomódnak rá a szőrsejtekre; a fej helyzetének vagy gyorsulásának változásakor ezek a kristályok elmozdulnak, meghajlítva a szőrsejteket, ami ingerületet vált ki. A félkörös ívjáratokban folyadék található, amely a fej forgásakor - a tehetetlensége miatt - kissé "lemarad", és ez a relatív elmozdulás hajlítja meg az ott található szőrsejteket. A testhelyzet és a mozgás érzékeléséhez emellett az izmokban található izomorsók (az izom nyúlásának mértékét érzékelik) és az inakban található ínorsók (az ín feszülését érzékelik) is hozzájárulnak, folyamatos, akaratlagos figyelmet nem igénylő visszajelzést adva a testrészek helyzetéről és mozgásáról.',
+                ],
+              },
+              {
+                heading: 'A látórendszer és az egyensúlyérzés kapcsolata',
+                paragraphs: [
+                  'A látórendszer és az egyensúlyérzékelő rendszer szorosan együttműködik: az egyensúlyszervek jelei segítenek stabilizálni a szemmozgásokat fejmozgás közben, hogy a látott kép éles maradjon (pl. futás közben is), a látás pedig további, vizuális támpontokat szolgáltat a testhelyzet és az egyensúly fenntartásához. Ez a szoros együttműködés magyarázza, hogy csukott szemmel - a vizuális támpontok hiányában - lényegesen nehezebb az egyensúlyozás, mint nyitott szemmel.',
+                  'Az is ebből a kapcsolatból fakad, hogy bizonyos helyzetekben (pl. hajón vagy autóban, amikor a belső fül mozgást érzékel, miközben a szem - mondjuk olvasás közben - viszonylag mozdulatlan tárgyat lát) a két érzékszervi rendszer egymásnak ellentmondó jelet küld az agynak, ami tengeribetegséghez hasonló rosszullétet, szédülést okozhat.',
+                ],
+              },
+            ],
+            keyTerms: ['alaphártya', 'Corti-szerv', 'szőrsejt', 'otolit', 'izomorsó', 'ínorsó'],
+          },
+        },
+      },
+      {
+        id: 'kemiai-erzekeles',
+        title: 'Kémiai érzékelés',
+        order: 32,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hallás és egyensúlyérzés fejezet) megismert mechanikai érzékelés után ebben a fejezetben a kémiai érzékelés két formáját, a szaglást és az ízlelést ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szaglóhám szerepe',
+                paragraphs: [
+                  'Az orrüreg felső részén elhelyezkedő szaglóhám tartalmazza a szagérzékelő receptorsejteket, amelyek a belélegzett levegőben oldott, illékony kémiai anyagokat érzékelik. A szaglás különleges abban a tekintetben, hogy az innen induló idegrostok viszonylag közvetlen, kevés átkapcsolással jutnak el az agykéreg szaglóközpontjába - ez eltér a többi érzékszervtől, amelyeknél - ahogy azt korábban (Testérző rendszerek fejezet) megismertük - jellemzően jelentősebb kéreg alatti (pl. talamuszban történő) feldolgozás előzi meg a kéregbe jutást.',
+                  'Ez a viszonylag közvetlen kapcsolat magyarázza, hogy egy-egy illat miért képes olyan gyorsan és erőteljesen felidézni régi emlékeket vagy érzelmeket: a szaglóközponthoz közeli agyi területek szoros kapcsolatban állnak az érzelmi és emlékezeti feldolgozásért felelős agyi struktúrákkal is. Ez a szoros kapcsolat az egyik oka annak, hogy egy régen nem érzett illat (pl. egy gyermekkori otthon jellegzetes szaga) sokszor élénkebb, hirtelenebb emlékfelidézést vált ki, mint egy vizuális vagy hallási emlék.',
+                ],
+              },
+              {
+                heading: 'Az ízlelőbimbók szerepe',
+                paragraphs: [
+                  'A nyelven (és kisebb mértékben a szájüreg egyéb pontjain) elhelyezkedő ízlelőbimbók az öt alapízt képesek megkülönböztetni: az édeset, a sósat, a savanyút, a keserűt és az umamit (a fehérjében gazdag, "húsos" ízérzetet). Minden ízlelőbimbó több, egy-egy ízirányra specializálódott ízlelősejtet tartalmaz, amelyek folyamatosan megújulnak, néhány hetente lecserélődnek - ez magyarázza, hogy egy nyelvsérülés utáni átmeneti ízérzékelési zavar viszonylag gyorsan helyreállhat.',
+                  'Az öt alapíz felismerése élettani szempontból is fontos tájékozódási funkciót lát el: az édes íz jellemzően energiadús tápanyagra, a keserű íz gyakran mérgező vagy ehetetlen anyagra, a sós íz az ásványi anyagok jelenlétére, a savanyú íz pedig gyakran romlott vagy éretlen élelmiszerre utal - az ízérzékelés tehát nem csupán élvezeti, hanem alapvető védekező és tájékozódási szerepet is betölt a táplálékválasztásban.',
+                ],
+              },
+              {
+                heading: 'A szaglás és az ízlelés kapcsolata',
+                paragraphs: [
+                  'A szaglás és az ízlelés a mindennapi tapasztalatban szorosan összefonódik: egy étel teljes "íz-élménye" nagyrészt nem is az ízlelőbimbók öt alapízéből, hanem a szájüregből a garaton keresztül az orrüregbe jutó illatanyagok érzékeléséből (retronazális szaglásból) származik. Ez magyarázza azt a mindennapi tapasztalatot, hogy nátha idején, amikor az orr eltömődik, az ételek íze is jelentősen "laposabbnak", kevésbé élvezetesnek tűnik, annak ellenére, hogy az ízlelőbimbók önmagukban továbbra is működnek.',
+                  'Ez a jelenség egyszerű, otthon is elvégezhető kísérlettel is igazolható: ha valaki befogott orral kóstol meg egy ételt (különösen olyat, amelynek jellegzetes illata van, de az öt alapíz szempontjából semleges, pl. egy gyümölcslevet), jelentősen nehezebben azonosítja be, pontosan miről van szó, mint szabad orrlégzés mellett - ez jól mutatja, mekkora szerepe van a retronazális szaglásnak a teljes ízérzetben. Hasonló elven alapulnak azok a mindennapi "ízteszt" játékok is, amelyekben befogott orral, bekötött szemmel kell felismerni különböző, hasonló állagú gyümölcsök vagy ételek ízét - ilyenkor a résztvevők gyakran meglepődnek, mennyivel nehezebb a feladat, mint szabad légzéssel.',
+                ],
+              },
+            ],
+            keyTerms: ['szaglóhám', 'ízlelőbimbó', 'alapíz', 'retronazális szaglás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a szaglás kombinatorikus kódolását és a szaglási adaptáció jelenségét.',
+            sections: [
+              {
+                heading: 'A szaglás kombinatorikus kódolása',
+                paragraphs: [
+                  'Az emberi orrban mindössze néhány száz különböző szagreceptor-típus található, mégis több ezer, egymástól jól megkülönböztethető illatot vagyunk képesek érzékelni. Ez azért lehetséges, mert egy adott illatanyag jellemzően nem csak egyetlen receptortípust aktivál, hanem több receptortípust is, csak eltérő mértékben - az agy ezt az egyedi "aktivációs mintázatot" értelmezi egy adott, jellegzetes illatként. Ez a kombinatorikus elv hasonló ahhoz, ahogyan korábban (Érzékelés és látás fejezet) a színlátásnál is csak háromféle csaptípus eltérő arányú aktiválásából "áll össze" rendkívül sokféle szín érzete.',
+                  'Ez a kombinatorikus kódolási elv rendkívül hatékony "tömörítési" megoldás: viszonylag kevés, néhány száz alapvető "építőelemből" (receptortípusból) szinte korlátlan számú, egyedi mintázat állítható elő, hasonlóan ahhoz, ahogyan egy viszonylag kis ábécéből is szinte végtelen számú szó és mondat alkotható a betűk kombinálásával.',
+                ],
+              },
+              {
+                heading: 'A szaglási adaptáció',
+                paragraphs: [
+                  'Egy tartósan jelen lévő szag idővel egyre kevésbé tudatosul, majd gyakorlatilag el is tűnik a tudatos érzékelésből - ezt a jelenséget szaglási adaptációnak nevezzük. Ennek élettani alapja, hogy a szagreceptor-sejtek és az idegrendszer feldolgozó központjai fokozottan reagálnak az újonnan megjelenő vagy változó ingerekre, míg egy állandó, változatlan ingerre egyre gyengébb választ adnak. Ez magyarázza, hogy egy adott térben tartózkodók idővel már nem érzékelik a saját, korábban esetleg zavaróan erősnek tűnő testszaguk vagy otthonuk jellegzetes illatát, miközben egy kívülről érkező látogató azonnal észreveheti azt.',
+                  'A szaglási adaptáció evolúciós szempontból is előnyös: az idegrendszernek nincs értelme folyamatosan, teljes intenzitással feldolgoznia egy olyan ingert, amely már nem hordoz új információt - ehelyett a rendszer szabaddá teszi a figyelmet és a feldolgozó kapacitást az esetlegesen megjelenő, valóban új és releváns illatok érzékelésére. Hasonló adaptációs jelenség más érzékszerveknél is megfigyelhető, bár jellemzően kisebb mértékben, mint a szaglásnál - ez egy általánosan visszatérő idegrendszeri elv, nem csak a kémiai érzékelésre jellemző sajátosság.',
+                ],
+              },
+            ],
+            keyTerms: ['kombinatorikus kódolás', 'szaglási adaptáció'],
+          },
+        },
+      },
+      {
+        id: 'testmozgato-rendszerek',
+        title: 'Testmozgató rendszerek',
+        order: 33,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Kémiai érzékelés fejezet) megismert érzékelési folyamatok után ebben a fejezetben az érme másik oldalát, a mozgás idegrendszeri irányítását tekintjük át: mi váltja ki, hogyan indul el, és hogyan lesz összehangolt egy mozdulat.',
+            sections: [
+              {
+                heading: 'Motivációs állapotok és a magatartás',
+                paragraphs: [
+                  'A motivációs állapotok - ahogy azt korábban (Motiváció és kulcsinger fejezet) az etológiai modulban megismertük - irányítják és aktiválják, hogy egy adott pillanatban milyen magatartásformák valósulnak meg: egy éhes vagy szomjas állapot például élelemkereső, illetve vízkereső mozgásokat indít el, míg egy veszélyt jelző inger menekülési vagy védekező mozgásokat vált ki.',
+                  'Ugyanaz a külső inger tehát a motivációs állapottól függően teljesen eltérő mozgásos választ eredményezhet: egy jóllakott állapotban lévő egyed közömbösen elmegy a táplálék mellett, míg ugyanaz a táplálékinger éhes állapotban azonnal célzott mozgást (odafordulás, megközelítés) vált ki - ez mutatja, hogy a mozgásirányítás nem csupán az ingerre, hanem a szervezet belső állapotára is támaszkodik.',
+                ],
+              },
+              {
+                heading: 'Az agykéreg szerepe az akaratlagos mozgásokban',
+                paragraphs: [
+                  'Az akaratlagos, tudatosan kezdeményezett mozgások tervezése és kiváltása az agykéreg egy erre specializálódott területének (a mozgatókéregnek) a feladata. Innen indulnak azok a mozgatópályák, amelyek az agykéregből a gerincvelőbe, majd onnan a mozgatóidegsejteken keresztül a vázizmokba jutnak el. A mozgatókéreg egyes területei nem egyenlő arányban felelnek meg a test egyes izomcsoportjainak: azok a testrészek, amelyek különösen finom, pontos mozgásokra képesek (pl. az ujjak, az ajkak), a mozgatókéregben is aránytalanul nagy területet foglalnak el - hasonlóan ahhoz, amit korábban (Testérző rendszerek fejezet) az érzőkéregnél is megismertünk.',
+                ],
+              },
+              {
+                heading: 'A mozgatópályák kereszteződése',
+                paragraphs: [
+                  'A mozgatópályák nagy része az agytörzs (a nyúltvelő) szintjén átkereszteződik, ezért a bal agyfélteke a test jobb oldalának mozgását irányítja, a jobb agyfélteke pedig a bal oldalét. Ennek fontos gyakorlati (klinikai) következménye van: ha egy agyféltekét sérülés (pl. agyvérzés) ér, ennek tünete jellemzően az ellenkező oldali testfél mozgászavara vagy bénulása lesz.',
+                ],
+              },
+              {
+                heading: 'A kisagy szerepe: mozgáskoordináció',
+                paragraphs: [
+                  'A kisagy fő funkciója a mozgások összehangolása (koordinációja): ez teszi lehetővé, hogy az egyes izmok mozgásai időben és erősségben pontosan illeszkedjenek egymáshoz, sima, célzott mozdulatsort eredményezve, valamint hozzájárul az egyensúly fenntartásához is. Kisagyi károsodás esetén a mozgások jellemzően szaggatottá, pontatlanná, "remegővé" válnak, még akkor is, ha az érintett izmok önmagukban egészségesek és az akarat is megvan a mozgás végrehajtására - ez jól mutatja, hogy a kisagy nem az izmokat, hanem azok összehangolását irányítja. Az alkohol hatására a kisagy működése az egyik leghamarabb kieső idegrendszeri funkció, ami megmagyarázza az ittas állapotra jellemző bizonytalan járást, összehangolatlan, pontatlan mozdulatokat.',
+                  'A kisagy folyamatosan összeveti a mozgatókéregből induló "tervezett" mozgásparancsot azzal a visszajelzéssel, amelyet a korábban (Hallás és egyensúlyérzés fejezetben) megismert egyensúlyszervektől, illetve az izmokból és ízületekből érkező receptoroktól kap a mozgás tényleges lefolyásáról - ez a folyamatos összehasonlítás teszi lehetővé, hogy útközben, valós időben finomítsa, korrigálja a mozgást, ha az eltér a tervezettől.',
+                ],
+              },
+            ],
+            keyTerms: ['mozgatókéreg', 'mozgatópálya', 'kereszteződés', 'kisagy', 'mozgáskoordináció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogyan válnak egyes, sokat gyakorolt mozgások automatikussá, tudatos odafigyelés nélkül is végrehajthatóvá.',
+            sections: [
+              {
+                heading: 'Kéreg alatti magvak és az automatizált mozgások szabályozása',
+                paragraphs: [
+                  'A gyakran ismételt, jól begyakorolt (automatizált) mozgások - például a kerékpározás vagy a gépelés - végrehajtásában kéreg alatti magvak (pl. a bazális ganglionok) vesznek részt, amelyek átkapcsolási pontként működnek az agykéreg és a mozgatópályák között. Ez az átkapcsolódás lehetővé teszi, hogy egy adott mozgásmintázat aktiválásához a mozgatókéregnek már ne kelljen minden egyes izomösszehúzódást külön-külön, tudatosan megterveznie - elég egy általánosabb "parancsot" adnia, amelyet a kéreg alatti magvak alakítanak konkrét, összehangolt mozgássorozattá. Ezek a magvak fokozatosan "átveszik" az irányítást a jól begyakorolt mozgásminták felett, tehermentesítve az agykérget - ez magyarázza, hogy egy már megtanult mozdulatsort miért lehet tudatos odafigyelés nélkül, gyakorlatilag "automatikusan" végrehajtani, míg egy teljesen új mozgás elsajátításakor még intenzív, tudatos kérgi kontrollra van szükség.',
+                  'Ez az automatizációs folyamat magyarázza a gyakorlás jelentőségét is: minél többször ismétlünk egy mozgást, annál inkább áttevődik annak irányítása a kéreg alatti szintre, ami gyorsabbá, kevésbé fárasztóvá és megbízhatóbbá teszi a mozgás végrehajtását - ez az elv áll a sportbeli és zenei készségek hosszú távú, rendszeres gyakorlás általi fejlesztésének hátterében is.',
+                  'A kéreg alatti magvak és a kisagy tehát kiegészítik egymást az automatizált mozgások szabályozásában: a kéreg alatti magvak elsősorban a mozgás elindításában és az általános mozgásmintázat kiválasztásában, a kisagy pedig a mozgás finom, folyamatos korrekciójában játszik szerepet - a kettő zavara (pl. egyes idegrendszeri betegségekben) ezért jellegzetesen eltérő típusú mozgászavarokat okoz. Ez a munkamegosztás jól illusztrálja az idegrendszer általános szervezési elvét: a magasabb szintű döntéshozatal (mit kell tenni) és a részletes, folyamatos kivitelezés-ellenőrzés (hogyan pontosan) gyakran különálló, egymást kiegészítő agyi struktúrákra van szétosztva - ez a megosztott munka teszi lehetővé, hogy az idegrendszer egyszerre legyen gyors és rugalmas is.',
+                ],
+              },
+            ],
+            keyTerms: ['bazális ganglionok', 'automatizált mozgás'],
+          },
+        },
+      },
+      {
+        id: 'vegetativ-erzo-mozgato-rendszerek',
+        title: 'Vegetatív érző és mozgató rendszerek',
+        order: 34,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Szimpatikus idegrendszer', 'Paraszimpatikus idegrendszer'],
+          rows: [
+            ['Jellemző helyzet', '"harcolj vagy menekülj" - megterhelés, veszély, aktivitás', '"pihenés és emésztés" - nyugalmi állapot'],
+            ['Szívre gyakorolt hatás', 'gyorsítja, erősíti az összehúzódást', 'lassítja az összehúzódást'],
+            ['Pupillára gyakorolt hatás', 'tágítja', 'szűkíti'],
+            ['Tápcsatornára gyakorolt hatás', 'lassítja a mozgást és az emésztést', 'fokozza a mozgást és az emésztést'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Testmozgató rendszerek fejezet) megismert akaratlagos, vázizom-mozgásokat irányító rendszer után ebben a záró fejezetben - ahogy azt korábban, Az idegrendszer általános jellemzése fejezetben már röviden előrevetítettük - a vegetatív (autonóm) idegrendszert ismerjük meg, amely a belső szervek akaratlan, önműködő szabályozásáért felelős.',
+            sections: [
+              {
+                heading: 'A vegetatív szabályozás fogalma',
+                paragraphs: [
+                  'A vegetatív szabályozás a belső szervek (pl. a szív, az erek, a tápcsatorna, a mirigyek) önműködő, tudatos akarattól független szabályozását jelenti, amely a szervezet belső egyensúlyának (homeosztázisának) fenntartását szolgálja anélkül, hogy erről tudatosan kellene döntenünk - miközben olvasunk, a szívünk, az emésztőrendszerünk és a légzésünk (a légzés akaratlagosan is, de alapvetően vegetatívan szabályozott) ekkor is önműködően működik tovább.',
+                  'Ez alapvető különbség a korábban (Testmozgató rendszerek fejezet) megismert szomatikus idegrendszerhez képest: míg a vázizmok mozgását jellemzően tudatosan kezdeményezzük és irányítjuk, a belső szervek működését a vegetatív idegrendszer folyamatosan, tudatos beavatkozásunk nélkül hangolja össze - éppen ezért nem tudjuk pusztán akaraterővel megállítani a szívverésünket vagy leállítani az emésztésünket.',
+                ],
+              },
+              {
+                heading: 'A szimpatikus és a paraszimpatikus idegrendszer összehasonlítása',
+                paragraphs: [
+                  'A vegetatív idegrendszernek két, anatómiailag hasonló felépítésű, de funkciójában ellentétesen ható része van: a szimpatikus és a paraszimpatikus idegrendszer. Mindkettő a központi idegrendszerből indul ki, és mindkettő egy dúcon (idegsejttest-csoporton) keresztül kapcsolódik át, mielőtt elérné a célszervet - felépítésük tehát hasonló elven működik, csak más-más idegpályákon és más-más jelátvivő anyagokkal.',
+                  'Funkcionálisan azonban ellentétes irányban hatnak: a szimpatikus idegrendszer a megterhelést, veszélyt vagy fokozott aktivitást igénylő helyzetekre ("harcolj vagy menekülj" állapotra) készíti fel a szervezetet, míg a paraszimpatikus idegrendszer a nyugalmi, "pihenés és emésztés" jellegű állapotot segíti elő.',
+                ],
+              },
+              {
+                heading: 'Szervspecifikus hatások',
+                paragraphs: [
+                  'A pupillát a szimpatikus idegrendszer tágítja (hogy több fény jusson be, jobb legyen a látótávolság veszély esetén), a paraszimpatikus pedig szűkíti. A szívre a szimpatikus gyorsító és erősítő, a paraszimpatikus lassító hatást fejt ki. Az erek átmérőjét is eltérően befolyásolják: a szimpatikus jellemzően szűkíti azokat (kivéve a dolgozó vázizmok ereit, amelyeket megterhelés közben inkább tágít), a paraszimpatikus hatás pedig jellemzően tágító. A tápcsatorna mozgását és az emésztőnedvek termelését a szimpatikus lassítja, a paraszimpatikus pedig fokozza - ez magyarázza, miért nem javasolt megerőltető testmozgás közvetlenül étkezés után: ilyenkor a szimpatikus és a paraszimpatikus rendszer "igényei" versengenek egymással.',
+                  'Ez a sokrétű, egyszerre több szervre kiterjedő hatás jól mutatja, hogy a szimpatikus és a paraszimpatikus idegrendszer nem egy-egy elszigetelt szervet, hanem a teljes szervezetet egységes, összehangolt módon állítja át az adott helyzethez (megterhelés vagy nyugalom) illeszkedő üzemmódba - ezért beszélhetünk a szimpatikus aktiválódás esetén egy összehangolt "harcolj vagy menekülj" válaszról, nem csupán különálló, egymástól független szervi reakciók véletlen egybeeséséről.',
+                ],
+              },
+              {
+                heading: 'A keringés és a testhőmérséklet szabályozása',
+                paragraphs: [
+                  'A keringést a vegetatív idegrendszer (a szimpatikus és a paraszimpatikus hatások egyensúlya) és a hormonális hatások (pl. az adrenalin) együttesen szabályozzák, a szervezet pillanatnyi igényeihez igazítva a szívfrekvenciát és az erek átmérőjét. A testhőmérséklet szabályozása is vegetatív irányítás alatt áll: ahogy azt korábban (Homeosztázis fejezet) megismertük, az izzadás, illetve a bőr ereinek tágulása vagy szűkülése (mindkettő vegetatív idegi szabályozás alatt áll) segít fenntartani a testhőmérséklet állandóságát a külső hőmérséklet változásai ellenére is.',
+                ],
+              },
+            ],
+            keyTerms: ['vegetatív idegrendszer', 'szimpatikus idegrendszer', 'paraszimpatikus idegrendszer'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz kapcsolódóan emelt szinten érdemes megismerni, milyen jelátvivő anyagok különböztetik meg a szimpatikus és a paraszimpatikus idegrendszer működését.',
+            sections: [
+              {
+                heading: 'A szimpatikus és a paraszimpatikus idegrendszer jelátvivő anyagai',
+                paragraphs: [
+                  'A szimpatikus és a paraszimpatikus idegrendszer végkészülékei - ahogy azt korábban (Szinapszis fejezet) a jelátvivő anyagok szerepéről általánosságban megismertük - eltérő jelátvivő anyagot használnak a célszervek befolyásolására: a szimpatikus idegrendszer végződései jellemzően noradrenalint szabadítanak fel, míg a paraszimpatikus idegrendszer végződései acetilkolint. A célsejteken található, ezekhez a jelátvivő anyagokhoz kapcsolódó receptorok eltérő típusúak, ez magyarázza, hogy ugyanaz a szerv (pl. a szív) miért reagál ellentétesen a két rendszer aktiválására.',
+                  'Fontos hangsúlyozni, hogy a legtöbb belső szervet mindkét rendszer folyamatosan, egyszerre "figyeli", és az adott pillanatban ténylegesen megvalósuló élettani állapotot a kettő egymáshoz viszonyított, dinamikusan változó egyensúlya határozza meg - nem arról van szó, hogy egyszerre csak az egyik rendszer volna aktív, hanem hogy a kettő súlya tolódik el hol az egyik, hol a másik irányba, a szervezet pillanatnyi igényeitől függően.',
+                  'Ez a kémiai megkülönböztetés gyógyszertani szempontból is jelentős: számos gyógyszer éppen ezen receptorok szelektív serkentésén vagy gátlásán keresztül fejti ki hatását (pl. egyes szívritmuszavar elleni vagy vérnyomáscsökkentő szerek a szimpatikus hatást mérséklik), ami jól mutatja, hogy az alapvető élettani mechanizmusok ismerete közvetlenül megalapozza a gyógyászati alkalmazásokat is.',
+                  'A mellékvese velőállománya - amely fejlődéstanilag és működését tekintve is szoros rokonságban áll a szimpatikus idegrendszerrel - szintén noradrenalinhoz hasonló hatású anyagot, adrenalint termel, amelyet közvetlenül a vérbe választ ki: ez lehetővé teszi, hogy a szimpatikus hatás ne csak a helyi idegvégződéseken, hanem a véráram útján, a test egészében, tartósabban is érvényesüljön - ez az egyik magyarázata annak, hogy egy erős ijedtség hatása (szapora szívverés, kitágult pupilla) miért marad fenn még akkor is, amikor a kiváltó inger már megszűnt.',
+                ],
+              },
+            ],
+            keyTerms: ['noradrenalin', 'acetilkolin'],
+          },
+        },
+      },
+      {
+        id: 'orokolt-magatartaselemek',
+        title: 'Öröklött magatartáselemek',
+        order: 35,
+        isFree: false,
+        estimatedMinutes: 12,
+        content: {
+          kozep: {
+            intro: 'A korábban (Vegetatív érző és mozgató rendszerek fejezet) megismert idegrendszeri alapok után ebben a fejezetben az emberi magatartás biológiai-pszichológiai alapjait kezdjük megismerni, elsőként az öröklött, tanulás nélkül is megjelenő magatartáselemekkel.',
+            sections: [
+              {
+                heading: 'Öröklött és tanult elemek együttműködése',
+                paragraphs: [
+                  'Az emberi magatartás - hasonlóan ahhoz, amit korábban (Öröklött és tanult magatartásformák fejezet) általánosságban megismertünk - ritkán tisztán öröklött vagy tisztán tanult: a legtöbb emberi viselkedésforma egy öröklött "alapra" épül, amelyet aztán az egyéni tapasztalatok, a tanulás és a kulturális környezet formál tovább. Az öröklött elemek jellemzően azok a legalapvetőbb, a túléléshez és a korai fejlődéshez nélkülözhetetlen viselkedésformák, amelyeknél nincs idő vagy lehetőség a próba-szerencse alapú tanulásra.',
+                  'Az embernél megfigyelhető, jelentős öröklött összetevővel bíró viselkedés vizsgálatakor mindig érdemes megkülönböztetni azt, hogy egy adott viselkedéselem mennyire jelenik meg egyetemesen, kultúrától és neveltetéstől függetlenül minden emberi közösségben - minél inkább univerzális egy viselkedésforma, annál erősebb a gyanú, hogy jelentős genetikai, öröklött alapja van.',
+                ],
+              },
+              {
+                heading: 'Öröklött emberi magatartásformák',
+                paragraphs: [
+                  'Az embernél is megfigyelhetők olyan magatartásformák, amelyek genetikailag kódoltak, és tanulás nélkül, minden egyeden hasonló módon jelennek meg. Az egyik klasszikus példa a szopóreflex - ahogy azt korábban (Veleszületett magatartásformák fejezet) általánosságban megismertük -, amely már közvetlenül születés után, bármiféle korábbi tapasztalat nélkül működik, és biztosítja az újszülött azonnali táplálékfelvételi képességét.',
+                  'Az öröklött magatartásformák közös jellemzője, hogy nem igényelnek előzetes tapasztalatot vagy gyakorlást: az újszülött nem "tanulja meg" a szopást próba-szerencse alapon, hanem az idegrendszere már születéskor úgy van "bekötve", hogy a megfelelő inger (pl. valami a szájhoz érintése) automatikusan kiváltsa a megfelelő választ. Ez az azonnali működőképesség létfontosságú, hiszen az újszülöttnek nincs ideje kipróbálgatással megtanulnia a táplálékfelvételt.',
+                  'Az érzelmet kifejező mimika (pl. az öröm, a szomorúság vagy a düh arckifejezése) szintén jelentős öröklött összetevővel rendelkezik: ezek az arckifejezések a világ minden kultúrájában feltűnően hasonlóak, és már a veleszületetten vak gyermekeknél is megjelennek, annak ellenére, hogy ők soha nem láthatták mások arckifejezését, amit utánozhattak volna - ez erős bizonyíték arra, hogy ezek a kifejezésformák nem tanulás, hanem genetikai öröklődés útján alakulnak ki.',
+                  'Ez a felismerés fontos gyakorlati (kommunikációs) következménnyel is jár: mivel az alapvető érzelmi arckifejezések univerzálisak, egy idegen kultúrából érkező ember is képes felismerni és értelmezni egy másik ember alapvető érzelmi állapotát pusztán az arckifejezése alapján, közös nyelv vagy előzetes ismeretség nélkül is - ez az egyik legkorábbi és legalapvetőbb emberi kommunikációs csatorna.',
+                  'Az öröklött magatartásformák tehát nem korlátozzák, hanem éppen megalapozzák a későbbi, tanult viselkedésformák kialakulását: a csecsemőkori szopóreflex és az arckifejezések útján történő érzelemkommunikáció olyan biológiai "kiindulópontot" adnak, amelyre a fejlődés során fokozatosan épülnek rá az egyre bonyolultabb, már tanult elemeket is tartalmazó viselkedésformák.',
+                  'Hasonló, jól ismert példa a kapaszkodási reflex is: az újszülött ösztönösen erősen rákulcsolja ujjait a tenyerébe helyezett tárgyra. Ez a reflex a törzsfejlődés során a kapaszkodó életmódot folytató ősök öröksége, és a legtöbb csecsemőnél már néhány hónapos korra fokozatosan eltűnik, ahogy a tanult, célirányos mozgások átveszik a helyét.',
+                ],
+              },
+            ],
+            keyTerms: ['szopóreflex', 'öröklött magatartásforma'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy egy konkrét emberi viselkedésforma hátterében jellemzően nem egyetlen tényező, hanem több, egymást kiegészítő hatás (evolúciós, ökológiai és kulturális) együttesen áll.',
+            sections: [
+              {
+                heading: 'Az emberi viselkedés evolúciós, ökológiai és kulturális alapjai',
+                paragraphs: [
+                  'Egy adott emberi viselkedésforma vizsgálatakor (pl. egy esetleírás elemzésekor) érdemes egyszerre több szempontot figyelembe venni: az evolúciós (genetikai) alapot, amely az adott viselkedésre való hajlamot öröklődés útján biztosítja; az ökológiai alapot, amely az adott környezeti feltételekhez (pl. élelemforrások elérhetősége, éghajlat) igazítja a viselkedés konkrét megvalósulását; valamint a kulturális alapot, amely a közösség hagyományain, normáin és tanult szokásain keresztül alakítja tovább a viselkedést.',
+                  'Például a táplálkozási szokások (mit és hogyan eszünk) hátterében egyaránt kimutatható genetikai összetevő (pl. az édes íz iránti veleszületett vonzódás, amely energiadús táplálékra utal), ökológiai alkalmazkodás (az adott terület éghajlatához és növény-/állatvilágához igazodó étrend kialakulása) és kulturális hatás (a közösségben elfogadott étkezési szokások, ízlésvilág átadása nemzedékről nemzedékre) - egyetlen tényező önmagában nem magyarázná meg a viselkedés teljes komplexitását.',
+                  'Egy hasonló, jól elemezhető esetleírás lehet egy közösség jellegzetes lakóhely-választási vagy csoportos védekező viselkedése: az evolúciós alap egy veleszületett hajlamot ad (pl. a biztonságos, védett helyek keresésére, vagy a csoportban rejlő védelem keresésére), az ökológiai tényezők (éghajlat, terep, elérhető erőforrások) meghatározzák, hogy ez a hajlam konkrétan milyen formában valósul meg egy adott területen, a kulturális hagyományok pedig tovább finomítják és nemzedékről nemzedékre továbbadják a kialakult megoldásokat.',
+                  'Egy esetleírás elemzésekor tehát célszerű mindhárom szempontot végigvenni: melyik elem magyarázható egyszerűen az emberi faj közös genetikai öröksége alapján, melyik elem tulajdonítható az adott konkrét élőhely sajátosságainak, és melyik elem az adott közösség egyedi, tanult hagyományainak eredménye - ez a hármas szempontrendszer segít elkerülni azt a hibát, hogy egy összetett viselkedést tévesen kizárólag egyetlen okra vezessünk vissza. Ez a szemléletmód segít elkerülni azt az egyszerűsítő hibát is, hogy egy összetett emberi viselkedést kizárólag "genetikailag meghatározottnak" vagy kizárólag "kulturálisan tanultnak" minősítsünk, hiszen a valóságban szinte mindig mindhárom tényező együttesen alakítja ki a megfigyelhető viselkedésmintát.',
+                ],
+              },
+            ],
+            keyTerms: ['evolúciós alap', 'ökológiai alap', 'kulturális alap'],
+          },
+        },
+      },
+      {
+        id: 'tanult-elemek-emlekezes',
+        title: 'Tanult elemek és emlékezés',
+        order: 36,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Öröklött magatartáselemek fejezet) megismert veleszületett viselkedésformák után ebben a fejezetben az emberi magatartás tanult elemeit és az emlékezés alapjait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Feltételes reflexek az ember viselkedésében',
+                paragraphs: [
+                  'A feltételes reflex (klasszikus kondicionálás) - ahogy azt korábban (Tanult magatartásformák fejezet) általánosságban megismertük - az embernél is jelentős szerepet játszik: a félelem gyakran feltételes reflexként alakul ki, amikor egy eredetileg semleges inger (pl. egy adott helyszín vagy hang) egy ijesztő vagy fájdalmas eseménnyel társul, és idővel önmagában is félelmi választ vált ki. Hasonló elven alapul a drogtolerancia egy része is: a szervezet a droghasználat megszokott környezeti jeleihez (helyszín, rituálé) társítja a drog hatását, és felkészülő ellenreakciót fejleszt ki - ez az egyik oka annak, hogy szokatlan környezetben (ahol ez a "felkészülés" elmarad) ugyanaz a dózis súlyosabb, akár életveszélyes túladagolást okozhat.',
+                ],
+              },
+              {
+                heading: 'A tanulás és az érzelmek kapcsolata',
+                paragraphs: [
+                  'A tanulást alapvetően befolyásolják az érzelmi állapotok: a megközelítés-elkerülés elve szerint a kellemes ingerek felé közeledünk, a kellemetlenek elől eltávolodunk, és ez az egyszerű elv alapozza meg számos tanulási folyamat irányát. A játék (különösen gyermekkorban) veszélytelen keretek között teszi lehetővé fontos, később hasznosítható készségek (pl. mozgáskoordináció, szociális viselkedés) begyakorlását. A kíváncsiság az új, ismeretlen ingerek felé fordulást, ezáltal új ismeretek megszerzését ösztönzi, míg az unalom - egy ismételt, változatlan inger hatására kialakuló csökkenő motiváció - éppen az új inger keresésére sarkall.',
+                ],
+              },
+              {
+                heading: 'A beszéd tanulásának kritikus periódusa',
+                paragraphs: [
+                  'A beszéd (nyelv) elsajátítása egy meghatározott életkori időablakhoz, kritikus periódushoz kötött: ez idő alatt a gyermek idegrendszere különösen fogékony a nyelvi ingerekre, és ekkor sajátítható el legkönnyebben, anyanyelvi szinten egy nyelv. Ha ez az időszak megfelelő nyelvi inger nélkül telik el (pl. súlyosan elhanyagolt gyermekeknél), a későbbi nyelvi fejlődés jelentősen és tartósan elmaradhat, még intenzív, utólagos fejlesztés mellett is.',
+                ],
+              },
+              {
+                heading: 'Megerősítés, szokás, rászokás és függőség',
+                paragraphs: [
+                  'A megerősítés (egy viselkedést követő kellemes következmény) növeli annak valószínűségét, hogy a viselkedés megismétlődjön (rászoktató hatás), míg a megerősítés elmaradása vagy egy kellemetlen következmény csökkenti azt (leszoktató hatás). Az ismételt megerősítés fokozatosan szokássá alakulhat, amely - különösen erős, gyorsan ható megerősítők (pl. egyes szerek vagy tevékenységek) esetén - rászokássá, súlyosabb esetben függőséggé fejlődhet. A család, az iskola, a hírközlés és a reklám mind jelentős szerepet játszanak abban, mely viselkedésformákat erősítik meg (vagy éppen szoktatnak le) a társadalom tagjainál - ez felveti a felelősség kérdését is: mennyiben felelős az egyén, és mennyiben a környezete egy kialakult szokásért vagy függőségért.',
+                ],
+              },
+              {
+                heading: 'Rövid és hosszú távú memória',
+                paragraphs: [
+                  'A rövid távú memória korlátozott kapacitású, jellemzően csak néhány másodperctől percekig tartó információtárolásra képes (pl. egy telefonszám megjegyzése tárcsázásig). A hosszú távú memória ezzel szemben gyakorlatilag korlátlan kapacitású, és az információt akár egész életen át képes megőrizni. Az információ a rövid távú memóriából jellemzően ismétlés vagy az információ jelentőségteljessége (pl. érzelmi töltete) révén kerülhet át a hosszú távú memóriába.',
+                ],
+              },
+              {
+                heading: 'Utánzásos tanulás',
+                paragraphs: [
+                  'Az utánzásos (megfigyeléses) tanulás során a gyermek mások viselkedésének puszta megfigyelésével, saját próbálkozás nélkül is képes új mozdulatsorokat vagy viselkedésformákat elsajátítani. Ez az emberi tanulás egyik leghatékonyabb formája, hiszen jelentősen lerövidíti azt az időt, ami egy adott készség önálló, próba-szerencse alapú megtanulásához szükséges lenne.',
+                ],
+              },
+            ],
+            keyTerms: ['feltételes reflex', 'kritikus periódus', 'megerősítés', 'rövid távú memória', 'hosszú távú memória', 'utánzásos tanulás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a feltételes reflex élettani vetületét, valamint a tanuláskutatás módszereinek értékelését ismerjük meg.',
+            sections: [
+              {
+                heading: 'A feltételes reflex élettani vetülete',
+                paragraphs: [
+                  'A fájdalmas ingerekre kialakuló feltételes félelmi válasz nem csupán szubjektív érzés, hanem mérhető élettani változásokkal is együtt jár: vérnyomás-növekedéssel és szívfrekvencia-fokozódással - ezek a testi reakciók, akárcsak a viselkedéses válaszok, ugyanúgy kondicionálhatók. Ez magyarázza, hogy egy korábban semleges helyszín vagy inger, amely egyszer már fájdalmas eseményhez társult, önmagában is kiválthat testi stresszválaszt (megemelkedett vérnyomást, felgyorsult szívverést), még mielőtt bármi ténylegesen fájdalmas történne.',
+                  'Ez az élettani kondicionálás - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - a szimpatikus idegrendszer aktiválódásán keresztül valósul meg: a kondicionált félelmi inger ugyanazt a "harcolj vagy menekülj" élettani választ váltja ki, mint egy valódi veszélyhelyzet, annak ellenére, hogy az adott pillanatban ténylegesen semmilyen közvetlen veszély nincs jelen.',
+                ],
+              },
+              {
+                heading: 'Tanuláskutatási módszerek értékelése',
+                paragraphs: [
+                  'A feltételes reflex (klasszikus kondicionálás), az operáns tanulás és a belátásos tanulás vizsgálatára kidolgozott klasszikus kísérleti módszereknek (pl. Pavlov kísérletei, az operáns tanulást vizsgáló berendezések, a belátásos tanulást vizsgáló feladathelyzetek) megvannak a maguk korlátai: az állatkísérletekből nyert eredmények nem mindig ültethetők át közvetlenül az emberi viselkedésre, a mesterséges laboratóriumi körülmények eltérhetnek a természetes élethelyzetektől, és az emberi tanulásnál a nyelv, valamint a tudatos, reflektív gondolkodás olyan további tényezőket is bevisz a folyamatba, amelyek a legtöbb állatkísérletben nincsenek jelen. Ezért egy esetleírás vagy kísérleti eredmény értékelésekor mindig érdemes mérlegelni, mennyire általánosítható az adott módszer eredménye az emberi viselkedésre, és milyen etikai korlátok érvényesek egy adott kísérleti elrendezés emberen történő alkalmazásánál. Ezért egy tudományos esetleírás vagy kísérleti eredmény kritikus értékelésekor célszerű külön megvizsgálni a minta nagyságát, az alkalmazott kontrollcsoportot, valamint azt is, hogy az eredmények megismételhetők-e független kutatók által.',
+                ],
+              },
+            ],
+            keyTerms: ['operáns tanulás', 'belátásos tanulás'],
+          },
+        },
+      },
+      {
+        id: 'psziches-fejlodes',
+        title: 'Pszichés fejlődés',
+        order: 37,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'A korábban (Tanult elemek és emlékezés fejezet) megismert tanulási folyamatok után ebben a fejezetben azt tekintjük át, hogyan függ össze a gyermekkori érzelmi és értelmi fejlődés, és milyen szerepet játszik ebben a család.',
+            sections: [
+              {
+                heading: 'Az érzelmi fejlődés hatása az értelmi fejlődésre',
+                paragraphs: [
+                  'A kisgyermekkori érzelmi biztonság - amelyet elsősorban a gondozóval (jellemzően a szülővel) kialakuló stabil, bizalmi kapcsolat alapoz meg - alapvetően meghatározza, mennyire nyitottan és hatékonyan képes a gyermek a környezetét felfedezni, és új ismereteket befogadni. Egy érzelmileg biztonságos háttérrel rendelkező gyermek bátrabban próbálkozik, nagyobb kíváncsisággal fordul az ismeretlen felé - ahogy azt korábban (Tanult elemek és emlékezés fejezet) a kíváncsiság tanulásban betöltött szerepénél megismertük -, ami elősegíti az értelmi (kognitív) fejlődést is.',
+                  'Ezzel szemben egy tartósan bizonytalan, stresszes vagy elhanyagoló érzelmi környezetben felnövő gyermek figyelme és energiái jelentős részben a bizonytalanság kezelésére fordítódnak, ami hátráltathatja a tanulási folyamatokat és az értelmi fejlődés ütemét - ez mutatja, hogy az érzelmi és az értelmi fejlődés nem egymástól független, hanem szorosan összefonódó folyamatok.',
+                  'Ez a kapcsolat kétirányú is lehet: nemcsak az érzelmi biztonság segíti elő az értelmi fejlődést, hanem a fejlődő értelmi (kognitív) képességek - például a beszéd és a nyelvi megértés gyarapodása - is visszahatnak az érzelmi fejlődésre, hiszen a gyermek egyre inkább képes szavakba önteni és ezáltal jobban kezelni a saját érzelmi állapotait, illetve egyre árnyaltabban érteni mások érzelmi jelzéseit is.',
+                  'Ez a kölcsönhatás azt is megmagyarázza, miért olyan fontos a kisgyermekkori fejlesztő, támogató környezet: egy olyan környezet, amely egyszerre biztosít érzelmi biztonságot és megfelelő mennyiségű, változatos ingert (pl. beszélgetést, közös játékot, mesehallgatást), egyszerre segíti elő mind az érzelmi, mind az értelmi fejlődés kibontakozását, ahelyett hogy a kettőt egymástól elkülönítve próbálná fejleszteni.',
+                ],
+              },
+              {
+                heading: 'A család szocializációs szerepe',
+                paragraphs: [
+                  'A család az elsődleges szocializációs közeg, amelyben a gyermek megismeri az alapvető társadalmi normákat, viselkedési mintákat és érzelemkifejezési módokat. A családban tapasztalt minták (pl. hogyan kezelik a konfliktusokat, hogyan fejezik ki és szabályozzák az érzelmeiket a családtagok) mélyen beépülnek a gyermek saját viselkedési repertoárjába, és hosszú távon meghatározzák felnőttkori kapcsolati és érzelemszabályozási működését is.',
+                  'A család szocializációs szerepét később - ahogy azt korábban (Tanult elemek és emlékezés fejezet) megismertük - kiegészíti, majd fokozatosan részben át is veszi az iskola, a kortárscsoport és a hírközlési eszközök hatása, de a korai, családi mintázatok alapozó jellege a legtöbb esetben egész életen át kimutatható marad.',
+                  'A szocializáció tehát nem egyetlen esemény, hanem egy folyamatos, életen át tartó folyamat, amelynek azonban a kora gyermekkori szakasza kiemelt jelentőségű: az ekkor kialakuló alapmintázatok (bizalom vagy bizalmatlanság mások iránt, önszabályozási képesség, konfliktuskezelési stratégiák) jelentős mértékben meghatározzák, mennyire könnyen és eredményesen épülnek rá a későbbi életszakaszok szocializációs tapasztalatai.',
+                  'Emellett a testvérkapcsolatok is fontos szocializációs terepet jelentenek: a testvérek egymás között gyakorolják be a megosztás, az alkalmazkodás és a konfliktuskezelés olyan alapvető készségeit, amelyeket később a kortárskapcsolatokban és felnőttkori közösségi élethelyzetekben is alkalmazni tudnak.',
+                ],
+              },
+            ],
+            keyTerms: ['szocializáció', 'érzelmi biztonság'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő külön emelt szintű tudást - mégis érdemes megismerni a kötődés alapfogalmát, amely az érzelmi fejlődés egyik kulcsfontosságú, tudományosan jól vizsgált eleme.',
+            sections: [
+              {
+                heading: 'A kötődés fogalma',
+                paragraphs: [
+                  'A kötődés a csecsemő és az elsődleges gondozó között kialakuló, tartós érzelmi kapcsolat, amely biztonságot nyújt a gyermek számára a környezet felfedezéséhez. Egy biztonságos kötődés esetén a gyermek a gondozót "biztos bázisként" használja: onnan indulva fedezi fel a környezetét, majd - stressz vagy veszély esetén - visszatér hozzá megnyugvásért, ami lehetővé teszi, hogy egyre bátrabban és önállóbban próbálkozzon új helyzetekben.',
+                  'A kötődés kialakulásához nem feltétlenül szükséges, hogy a gondozó a gyermek biológiai szülője legyen: a stabil, kiszámítható, a gyermek jelzéseire érzékenyen reagáló gondoskodás a döntő tényező, ezért örökbefogadó vagy nevelőszülőknél is éppúgy kialakulhat biztonságos kötődés, mint vér szerinti szülőknél. Ez a felismerés fontos gyakorlati (pl. gyermekvédelmi) következményekkel is jár: a biztonságos kötődés kialakulásának lehetősége nem a vérségi kapcsolattól, hanem a gondoskodás minőségétől függ.',
+                  'A korai kötődési tapasztalatok mintaként szolgálnak a későbbi, felnőttkori közeli kapcsolatok kialakításához is: a gyermekkori kötődés minősége összefüggésbe hozható azzal, mennyire képes valaki felnőttként bizalommal, kiegyensúlyozottan viszonyulni a szoros érzelmi kapcsolataihoz - ez is jól mutatja, mennyire hosszú távú hatása van a korai, családi érzelmi tapasztalatoknak.',
+                  'Fontos ugyanakkor hangsúlyozni, hogy a korai kötődési tapasztalatok nem jelentenek megváltoztathatatlan, végleges "sorsot": az idegrendszer - ahogy azt korábban (a tanulási folyamatoknál) megismertük - egész életen át képes alkalmazkodni, ezért egy kevésbé biztonságos korai kötődés később, megfelelő, tartósan biztonságot nyújtó kapcsolatok révén részben módosulhat, javulhat.',
+                  'A kötődés vizsgálata jól szemlélteti azt az általánosabb elvet is, hogy a korai életszakaszban szerzett tapasztalatok - hasonlóan a korábban megismert kritikus periódushoz a nyelvtanulásnál - aránytalanul nagy hatással vannak a későbbi fejlődésre, még akkor is, ha ez a hatás nem teljesen visszafordíthatatlan.',
+                ],
+              },
+            ],
+            keyTerms: ['kötődés'],
+          },
+        },
+      },
+      {
+        id: 'idegrendszer-egeszsegtana',
+        title: 'Az idegrendszer egészségtana',
+        order: 38,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Pszichés fejlődés fejezet) megismert fejlődéslélektani alapok után ebben a fejezetben az idegrendszer egészségtanát, gyakori betegségeit, valamint a drogok és a függőségek témakörét tekintjük át.',
+            sections: [
+              {
+                heading: 'Életmód és az idegrendszeri betegségek megelőzése',
+                paragraphs: [
+                  'Az életmód (rendszeres testmozgás, megfelelő mennyiségű alvás, tudatos stresszkezelés) jelentős szerepet játszik az idegrendszeri eredetű betegségek, köztük a stresszbetegségek (pl. tartós fejfájás, alvászavar, szorongásos tünetek) megelőzésében. A tartósan magas stressz-szint - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) a szimpatikus idegrendszer aktiválódásánál megismertük - hosszú távon kimeríti a szervezet alkalmazkodó képességét, ami hozzájárulhat ezen betegségek kialakulásához.',
+                ],
+              },
+              {
+                heading: 'A fájdalomcsillapítás módjai és veszélyei',
+                paragraphs: [
+                  'A fájdalom csillapítható gyógyszeres úton (pl. egyszerű, vény nélkül kapható fájdalomcsillapítókkal) és nem gyógyszeres módokon is (pl. pihenéssel, hideg vagy meleg alkalmazásával). Mindkét módnak megvannak a maga veszélyei: a fájdalomcsillapítók tartós, szakszerűtlen, túlzott használata mellékhatásokat, egyes erősebb szerek esetén pedig akár függőséget is okozhat, ezért ezek alkalmazását mindig az adott helyzethez és orvosi javaslathoz kell igazítani.',
+                ],
+              },
+              {
+                heading: 'Gyakori idegrendszeri betegségek tünetei',
+                paragraphs: [
+                  'Az agyrázkódás fejsérülés utáni átmeneti tudatzavar, amelyet gyakran szédülés és hányinger kísér. A migrén jellemzően féloldali, lüktető fejfájás, amelyet gyakran fény- és hangérzékenység, illetve hányinger kísér; hátterében az agyhártyát ellátó erek átmeneti összehúzódása, majd kitágulása áll, ez utóbbi ingerli a környező érzőidegvégződéseket, ez magyarázza a lüktető jelleget és a kísérő tüneteket. Az epilepszia az agy kóros, rohamszerű elektromos kisülése által kiváltott tünetegyüttes, amelynek jellegzetes megnyilvánulása a görcsroham. A stroke (agyvérzés vagy agyi infarktus) - ahogy azt korábban (A keringési rendszer egészségtana fejezet) röviden megismertük - hirtelen kialakuló féloldali gyengeséggel, zsibbadással vagy beszédzavarral jár, és azonnali orvosi ellátást igénylő, sürgősségi állapot; a tünetek azért jelentkeznek éppen az adott testfélen vagy funkcióban, mert az elzáródott vagy megrepedt ér által ellátott agyi terület pusztulása pontosan azt a mozgató-, érző- vagy beszédközpontot érinti, amelyet ez az érszakasz táplált.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási zavarok',
+                paragraphs: [
+                  'A táplálkozási zavarok (amelyek eltérnek a korábban, a Táplálkozás egészségtana fejezetben megismert, elsősorban tápanyaghiányból eredő alultápláltságtól, hiszen itt a háttérben pszichés okok állnak) közé tartozik az ortorexia (az egészséges táplálkozás iránti túlzott, már károssá váló megszállottság), az anorexia (a tudatos, súlyos éhezés, a fogyás iránti túlzott vágy), a bulímia (falásrohamok, amelyeket kompenzáló viselkedés, pl. hánytatás követ) és az izomdiszmorfia (olyan testképzavar, amelyben az érintett soha nem érzi elég izmosnak magát). Kialakulásukban egyaránt szerepet játszanak társadalmi tényezők (pl. a média és a közösségi oldalak által közvetített, gyakran irreális testkép-elvárások) és biológiai tényezők (pl. genetikai hajlam, az agy jutalmazó rendszerének zavarai).',
+                ],
+              },
+              {
+                heading: 'Kémiai és viselkedési függőségek',
+                paragraphs: [
+                  'A kémiai függőség egy anyaghoz (pl. drog, alkohol) kötődik, míg a viselkedési függőség egy tevékenységhez (pl. szerencsejáték, túlzott internethasználat). A két típus közös jellegzetessége, hogy mindkettő - ahogy azt korábban (Szinapszis fejezet) megismertük - a szinapszisok tartós, ismételt túlingerlésén alapul, tolerancia (egyre nagyobb "adag" szükségessége ugyanahhoz a hatáshoz) és elvonási tünetek kialakulásával jár, és mindkettő súlyosan károsíthatja az érintett mindennapi életét, kapcsolatait és egészségét.',
+                ],
+              },
+              {
+                heading: 'Érvelés a drogfogyasztás ellen',
+                paragraphs: [
+                  'A drogfogyasztás rövid távú, átmeneti "élvezete" hosszú távon súlyos egészségügyi (szervi károsodás, függőség) és társadalmi (kapcsolati, anyagi, jogi) károkat okoz. A szülőnek, a családnak és a tágabb környezetnek (iskola, közösség) egyaránt fontos szerepe és felelőssége van a megelőzésben: a nyílt kommunikáció, a következetes példamutatás és a problémák korai felismerése mind hozzájárulhatnak ahhoz, hogy a fiatalok kevésbé legyenek kitéve a drogfogyasztás kockázatának.',
+                ],
+              },
+            ],
+            keyTerms: ['stresszbetegség', 'migrén', 'epilepszia', 'ortorexia', 'anorexia', 'bulímia', 'kémiai függőség', 'viselkedési függőség'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a zsigeri működések és az érzelmi-pszichikus állapotok kapcsolatát, valamint két gyakori idegrendszeri betegség, az Alzheimer-kór és a Parkinson-kór tüneteit ismerjük meg.',
+            sections: [
+              {
+                heading: 'Zsigeri működések és pszichoszomatikus betegségek',
+                paragraphs: [
+                  'A belső szervek (zsigeri) működése - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - szoros kapcsolatban áll az érzelmi-pszichikus állapotokkal: a tartós stressz vagy szorongás a vegetatív idegrendszeren (elsősorban a szimpatikus idegrendszer tartós túlaktiválásán) keresztül valódi, testi tüneteket és betegségeket okozhat - ezeket nevezzük pszichoszomatikus betegségeknek. Ilyen lehet például a tartós stressz által súlyosbított gyomorfekély vagy a stressz hatására kialakuló, tartósan emelkedett vérnyomás.',
+                ],
+              },
+              {
+                heading: 'Az Alzheimer-kór és a Parkinson-kór tünetei',
+                paragraphs: [
+                  'Az Alzheimer-kór egy fokozatosan súlyosbodó idegrendszeri betegség, amelynek jellemző tünetei a memóriazavar (kezdetben a rövid távú, majd egyre inkább a régebbi emlékek felidézésének nehezítettsége), a térbeli-időbeli tájékozódási nehézség, valamint a mindennapi tevékenységek önálló elvégzésének fokozatos elvesztése.',
+                  'A Parkinson-kór elsősorban mozgászavarokkal jár: jellemző tünete a nyugalmi remegés (tremor), az izommerevség és a mozgások lelassulása. A betegség hátterében - ahogy azt korábban (Testmozgató rendszerek fejezet) a bazális ganglionoknál megismertük - az automatizált mozgások szabályozásában részt vevő kéreg alatti magvak egyes sejtjeinek pusztulása áll, ami megmagyarázza, miért éppen a mozgás finomsága és összehangoltsága károsodik elsősorban ennél a betegségnél.',
+                  'Mindkét betegség közös jellemzője, hogy az idegsejtek fokozatos, visszafordíthatatlan pusztulásával jár - ez alapvetően különbözteti meg őket a korábban megismert, akut lezajlású állapotoktól (pl. az agyrázkódástól), és egyben magyarázza, hogy a kezelésük miért irányul elsősorban a tünetek enyhítésére és a betegség lassítására, nem pedig a teljes gyógyulásra.',
+                ],
+              },
+            ],
+            keyTerms: ['pszichoszomatikus betegség', 'Alzheimer-kór', 'Parkinson-kór'],
+          },
+        },
+      },
+      {
+        id: 'hormonalis-mukodesek',
+        title: 'Hormonális működések',
+        order: 39,
+        isFree: false,
+        estimatedMinutes: 12,
+        comparisonTable: {
+          headers: ['Szempont', 'Idegrendszer', 'Hormonrendszer'],
+          rows: [
+            ['Jelátvivő közeg', 'idegsejt-nyúlvány, szinapszis', 'véráram'],
+            ['Sebesség', 'gyors (ezredmásodperc)', 'lassabb (másodperc-óra)'],
+            ['Hatás időtartama', 'rövid', 'hosszan tartó'],
+            ['Kiterjedés', 'pontosan célzott', 'kiterjedt, több szervrendszert érintő'],
+            ['Példa', 'izom azonnali összehúzódása', 'növekedés, anyagcsere szabályozása'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az idegrendszer egészségtana fejezet) lezárt idegrendszeri témakör után ebben a fejezetben a szabályozás másik nagy rendszerét, a hormonrendszert kezdjük megismerni, összefoglalva és rendszerbe foglalva mindazt, amit a hormonokról már korábbi fejezetekben (pl. Homeosztázis, A kiválasztás szabályozása, Elemek, ionok, Vegetatív érző és mozgató rendszerek) elszórtan megismertünk.',
+            sections: [
+              {
+                heading: 'Az idegrendszeri és a hormonális szabályozás összehasonlítása',
+                paragraphs: [
+                  'A szervezet két nagy szabályozó rendszere, az idegrendszer és a hormonrendszer nem versengenek, hanem kiegészítik egymást: az idegrendszer a gyors, pontosan célzott, rövid ideig tartó válaszokat biztosítja (pl. egy izom azonnali összehúzódását), míg a hormonrendszer a lassabb, de tartósabb, gyakran több szervrendszert egyszerre érintő folyamatokat (pl. a növekedést, az anyagcserét, a szaporodást) szabályozza. Mindkét rendszer gyakran összehangoltan, egymást kiegészítve működik ugyanazon élettani cél elérése érdekében.',
+                  'Erre jó példa a korábban (Vegetatív érző és mozgató rendszerek fejezet) megismert mellékvese-velő is: ez a szerv egyszerre kapcsolódik az idegrendszerhez (szimpatikus beidegzés) és a hormonrendszerhez (adrenalin közvetlen vérbe választásával), így egyetlen szerven belül is jól megfigyelhető a két szabályozó rendszer szoros együttműködése.',
+                ],
+              },
+              {
+                heading: 'A hormonrendszer működésének lényege',
+                paragraphs: [
+                  'A hormonrendszer a belső elválasztású (endokrin) mirigyek segítségével szabályoz: ezek a mirigyek - ahogy azt korábban (Homeosztázis fejezet) megismertük - hormonokat termelnek, amelyeket közvetlenül a vérbe választanak ki. A hormon ezután a véráram által eljut a szervezet szinte minden pontjára, de hatását csak azokon a célsejteken fejti ki, amelyek rendelkeznek a hozzá illeszkedő receptorral.',
+                  'Ez a "szórt", véráramon keresztül történő üzenetküldés alapvetően eltér az idegrendszer korábban (Sejtszintű folyamatok és Szinapszis fejezetek) megismert, pontos, gyors, vezetékszerű jelátvitelétől: a hormonális szabályozás lassabb (a hormonnak el kell jutnia a célsejthez a véráramon át), de hatása jellemzően tartósabb és szélesebb körű, mivel egyetlen hormon egyszerre több, a szervezet különböző pontjain elhelyezkedő célsejtet is elérhet és befolyásolhat.',
+                  'A hormontermelés szabályozása jellemzően - ahogy azt korábban (Homeosztázis fejezet) általánosságban megismertük - a negatív visszacsatolás elvén működik: egy adott paraméter (pl. a vércukorszint vagy a testfolyadékok töménysége) változása kiváltja a megfelelő hormon termelődését, amely a paramétert visszatéríti a normál tartományba, ezután pedig a hormontermelés is csökken.',
+                  'Ez a visszacsatolásos szabályozás biztosítja, hogy a hormonszintek ne emelkedjenek vagy csökkenjenek korlátlanul: amint a szabályozott paraméter visszaáll a normál tartományba, a hormont termelő mirigy "érzékeli" ezt (közvetlenül, vagy egy másik hormon jelzésén keresztül), és ennek megfelelően csökkenti a hormontermelését - enélkül a szabályozás könnyen túllőne a célon, ahelyett hogy stabil egyensúlyt tartana fenn.',
+                  'Ez a folyamatos, önszabályozó működés teszi lehetővé, hogy a szervezet hormonszintjei a napi ritmus, az életkor és a pillanatnyi élettani igények (pl. étkezés, testmozgás, stressz) szerint dinamikusan, mégis kiszámíthatóan, egy viszonylag szűk tartományon belül ingadozzanak.',
+                  'Jó példa erre a pajzsmirigy hormonja, a tiroxin, amely szinte minden testi sejtre hat, és az anyagcsere alapszintjét (alapanyagcserét) szabályozza - ahogy azt korábban (Táplálkozás fejezet) az alapanyagcsere fogalmánál már megismertük.',
+                ],
+              },
+            ],
+            keyTerms: ['hormon', 'belső elválasztású mirigy', 'célsejt'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, miért fejtheti ki ugyanaz a hormon eltérő hatását különböző szerveken, valamint át kell tekinteni a hormonok szerepét a fő anyagcsere-folyamatok szabályozásában.',
+            sections: [
+              {
+                heading: 'A hormonhatás célsejt-függősége',
+                paragraphs: [
+                  'Ez a jelenség (a hormonhatás célsejt-függősége) az egyik kulcsfogalma az emelt szintű hormonrendszer-ismereteknek: ugyanaz a hormon más-más szervben eltérő hatást fejthet ki, mivel a hormon önmagában nem "tudja", mit kell tennie - a hatást a célsejt felszínén (vagy belsejében) található, a hormonhoz illeszkedő receptor típusa és az általa elindított sejten belüli folyamat határozza meg. Ahogy azt korábban (Membránok szerepe fejezet) a receptorfehérjéknél megismertük, egy adott sejt csak akkor reagál egy hormonra, ha rendelkezik a hozzá illeszkedő receptorral - enélkül a hormon hatástalanul "elhalad" a sejt mellett, míg egy másik, megfelelő receptorral rendelkező sejtben jelentős választ vált ki. A receptorok elhelyezkedése alapján két fő típust különböztetünk meg: a fehérje természetű hormonok (pl. az inzulin) jellemzően a sejtmembránon található receptorhoz kötődnek, míg a szteroid természetű hormonok (pl. a mellékvesekéreg hormonjai) képesek átjutni a sejtmembránon, és a sejten belül, gyakran közvetlenül a sejtmagban található receptorhoz kapcsolódnak.',
+                ],
+              },
+              {
+                heading: 'Hormonok szerepe a fő anyagcsere-folyamatok szabályozásában',
+                paragraphs: [
+                  'A szervezet szénhidrát-anyagcseréjét több hormon is befolyásolja: az adrenalin és a glükokortikoidok emelik, az inzulin pedig csökkenti a vércukorszintet - ahogy azt korábban (Homeosztázis fejezet) a hasnyálmirigy kettős elválasztásánál megismertük. A só- és vízháztartás szabályozásában a mineralokortikoidok (pl. az aldoszteron) és a vazopresszin (ADH) vesznek részt - ezek működését korábban (A kiválasztás szabályozása fejezet) már részletesen megismertük. A kalcium-anyagcserét pedig a parathormon, a kalcitonin és a D-vitamin-hormon együttes, egymást kiegészítő hatása szabályozza, ahogy azt korábban (Elemek, ionok fejezet) megismertük.',
+                  'Jól látható, hogy a hormonrendszer egyes elemei nem egymástól elszigetelten, hanem egy nagy, összehangolt szabályozó hálózat részeként működnek, amelynek különböző "szálaival" (vércukorszint, folyadék- és sóháztartás, kalciumszint) a modul korábbi fejezeteiben már külön-külön találkoztunk - ez a fejezet ezeket a szálakat kapcsolja össze egyetlen, áttekinthető rendszerré. A következő fejezetben (Belső elválasztású mirigyek) ezt a rendszerszemléletet folytatva már konkrétan az egyes mirigyek elhelyezkedését és a legfontosabb hormonok termelődési helyét is megismerjük.',
+                ],
+              },
+            ],
+            keyTerms: ['glükokortikoid', 'mineralokortikoid'],
+          },
+        },
+      },
+      {
+        id: 'belso-elvalasztasu-mirigyek',
+        title: 'Belső elválasztású mirigyek',
+        order: 40,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hormonális működések fejezet) megismert általános elveket ebben a fejezetben konkrét mirigyekhez és hormonokhoz kapcsoljuk: áttekintjük, hol helyezkednek el a legfontosabb belső elválasztású mirigyek, és mit termelnek.',
+            sections: [
+              {
+                heading: 'A belső elválasztású mirigyek elhelyezkedése',
+                paragraphs: [
+                  'A szervezet legfontosabb belső elválasztású mirigyei jellegzetes helyeken találhatók: az agyalapi mirigy (hipofízis) az agy alján, a hipotalamusz alatt; a pajzsmirigy a gégeporc alatt, a nyak elülső részén; a mellékvesék a vesék felső pólusán; a hasnyálmirigy a hasüregben, a gyomor mögött (itt a Langerhans-szigetek felelősek a hormontermelésért); az ivarmirigyek (herék, petefészkek) a kismedencében, illetve here esetén a herezacskóban.',
+                  'Ezek a mirigyek - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük - hormonjaikat közvetlenül a véráramba választják ki, innen jutnak el a távoli célsejtekhez.',
+                ],
+              },
+              {
+                heading: 'Exokrin és endokrin mirigyek',
+                paragraphs: [
+                  'Az exokrin (külső elválasztású) és az endokrin (belső elválasztású) mirigyek megkülönböztetését - ahogy azt korábban (Homeosztázis fejezet) megismertük - itt csak felidézzük: a hasnyálmirigy jól szemlélteti, hogy egy szerv egyszerre lehet exokrin és endokrin is - nagy része emésztőenzimeket termel, amelyeket vezetéken át a patkóbélbe juttat (exokrin működés - ahogy azt korábban az Emésztés fejezetben megismertük), míg a benne elszórtan elhelyezkedő Langerhans-szigetek hormonokat (pl. inzulint) választanak közvetlenül a vérbe (endokrin működés).',
+                  'Hasonlóan kettős szerepű mirigy a here és a petefészek is: ivarsejteket (spermiumot, illetve petesejtet) termelnek - a here esetében ez egy vezetékrendszeren (heretubulusok, mellékhere, ondóvezeték) keresztül jut tovább, míg a petefészek esetében az érett petesejt az ovulációkor közvetlenül a hasüregbe szabadul, ahonnan a petevezeték fogja be -, ugyanakkor mindkét szerv - ahogy azt lentebb, a nemi ciklus kapcsán is megismerjük - hormonokat (pl. tesztoszteront, ösztrogént) is termel, amelyeket közvetlenül a vérbe választ ki.',
+                ],
+              },
+              {
+                heading: 'Fontosabb hormonok termelődési helye és hatása',
+                paragraphs: [
+                  'Az inzulin a hasnyálmirigy szigetsejtjeiben termelődik, és - ahogy azt korábban (Homeosztázis fejezet) megismertük - csökkenti a vércukorszintet azáltal, hogy elősegíti a glükóz sejtekbe jutását és glikogénként való raktározását. Az adrenalin a mellékvese velőállományában termelődik, és - ahogy azt korábban (Vegetatív érző és mozgató rendszerek fejezet) megismertük - a szimpatikus idegrendszerrel összehangoltan a "harcolj vagy menekülj" választ erősíti (szívfrekvencia, vércukorszint emelése).',
+                  'A tiroxin a pajzsmirigyben termelődik, és - ahogy azt korábban (Hormonális működések fejezet) az alapanyagcsere kapcsán megismertük - a sejtek anyagcseréjének alapszintjét szabályozza. A tesztoszteron a herékben termelődik, és a másodlagos nemi jellegek (pl. szőrzet, hangmélyülés) kialakulásáért, valamint a spermiumtermelésért felelős. Az oxitocin az agyalapi mirigy hátsó lebenyéből választódik ki, és a szülés során a méh összehúzódásait, szoptatáskor a tejleadási reflexet váltja ki, emellett - ahogy azt korábban (Pszichés fejlődés fejezet) a kötődésnél megismertük - szerepet játszik az anya-gyermek kötődés kialakulásában is. Ezek a mirigyek tehát összességében a szervezet szinte minden fontosabb élettani folyamatát (anyagcsere, stresszválasz, nemi jelleg, szaporodás, szociális kötődés) lefedik.',
+                  'Jól látható, hogy ezek a hormonok igen eltérő élettani folyamatokat szabályoznak (anyagcsere, stresszválasz, nemi jelleg, szülés-szoptatás), mégis közös bennük, hogy mindegyik a véráramon keresztül, a megfelelő célsejtek receptorain keresztül fejti ki hatását - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük. Ez az áttekintés egyben azt is megalapozza, hogy a következő fejezetben (A hormonrendszer egészségtana) miért éppen ezeknek a hormonoknak (elsősorban az inzulinnak és a tiroxinnak) a hiányos vagy túlzott működését tárgyaljuk részletesebben, hiszen ezek zavara okozza a leggyakoribb hormonrendszeri egészségügyi problémákat.',
+                ],
+              },
+            ],
+            keyTerms: ['agyalapi mirigy', 'pajzsmirigy', 'mellékvese', 'inzulin', 'tiroxin', 'tesztoszteron', 'oxitocin', 'exokrin mirigy'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az agyalapi mirigy, a hipotalamusz és a mellékvesekéreg együttműködését, valamint a női nemi ciklus hormonális szabályozását ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az agyalapi mirigy, a hipotalamusz és a mellékvesekéreg együttműködése',
+                paragraphs: [
+                  'A hipotalamusz és az agyalapi mirigy elülső lebenye egy szorosan együttműködő szabályozó egységet alkot: a hipotalamusz irányító hormonjai szabályozzák az agyalapi mirigy elülső lebenyének hormontermelését, az agyalapi mirigy pedig további irányító hormonokkal szabályozza a többi mirigy (pl. a pajzsmirigy, a mellékvesekéreg, az ivarmirigyek) működését - ez egy többszintű, egymásra épülő szabályozási hierarchia.',
+                  'A mellékvesekéreg hormonjai (glükokortikoidok, mineralokortikoidok) - ahogy azt korábban (Hormonális működések fejezet) megismertük - szintén ebbe a hierarchiába illeszkednek: termelődésüket az agyalapi mirigy egy irányító hormonja indítja el, ez jól szemlélteti, hogy egyetlen hormonszint felborulása (pl. az agyalapi mirigy egy daganata miatt) az egész alárendelt mirigy működését felboríthatja. Ez a háromszintű felépítés (hipotalamusz → agyalapi mirigy → célmirigy) teszi lehetővé, hogy a szervezet egyetlen, központi ponton (a hipotalamuszban) összehangolja a legkülönfélébb hormonális folyamatokat, miközben minden szinten önálló negatív visszacsatolás is működik.',
+                ],
+              },
+              {
+                heading: 'A női nemi ciklus hormonális szabályozása',
+                paragraphs: [
+                  'A női nemi ciklus során a petefészekben érő tüszők ösztrogént, a tüsző kiszakadása (ovuláció) után kialakuló sárgatest pedig progeszteront termel; ez a két hormon szabályozza a méhnyálkahártya felépülését és leválását, valamint a testhőmérséklet enyhe, ciklus közbeni ingadozását is. Az ösztrogén elsősorban a méhnyálkahártya megvastagodását segíti elő a ciklus első felében, a progeszteron pedig a sárgatest kialakulása után a nyálkahártyát a beágyazódásra készíti fel, és emeli a testhőmérsékletet - ez az apró hőmérséklet-emelkedés az egyik módja annak, hogyan lehet nyomon követni, hogy megtörtént-e az ovuláció.',
+                  'A hormonális fogamzásgátlás ezen a rendszeren alapul: a mesterségesen, tartósan magas hormonszint (a tablettában lévő hormonok) az agyalapi mirigy felé azt "jelzi", hogy már zajlik a ciklus, ezért az agyalapi mirigy nem indítja el az új tüszőérést kiváltó irányító hormonok termelését, így elmarad a peteérés.',
+                ],
+              },
+            ],
+            keyTerms: ['hipotalamusz', 'ösztrogén', 'progeszteron'],
+          },
+        },
+      },
+      {
+        id: 'hormonrendszer-egeszsegtana',
+        title: 'A hormonrendszer egészségtana',
+        order: 41,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', '1-es típusú cukorbetegség', '2-es típusú cukorbetegség'],
+          rows: [
+            ['Háttér', 'a hasnyálmirigy szigetsejtjeinek pusztulása', 'inzulinrezisztencia, kimerülő inzulintermelés'],
+            ['Jellemző életkor', 'gyakran gyermek-, fiatal felnőttkor', 'jellemzően felnőttkor'],
+            ['Fő kockázati tényező', 'autoimmun folyamat', 'túlsúly, mozgásszegény életmód'],
+            ['Kezelés alapja', 'élethosszig tartó inzulinbevitel', 'életmódváltás, gyógyszerek, szükség esetén inzulin'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Belső elválasztású mirigyek fejezet) megismert hormonok és mirigyek után ebben a fejezetben a hormonrendszer egészségtanát, elsősorban a cukorbetegséget tekintjük át.',
+            sections: [
+              {
+                heading: 'A pajzsmirigy példáján: a hormontermelés szabályozásának alapelve',
+                paragraphs: [
+                  'A pajzsmirigy működése jól szemlélteti a hormontermelés negatív visszacsatolásos szabályozását - ahogy azt korábban (Hormonális működések fejezet) általánosságban megismertük -: ha a vér tiroxinszintje alacsony, az agyalapi mirigy fokozott mennyiségű irányító hormont termel, ami serkenti a pajzsmirigyet; ha a tiroxinszint már megfelelő (vagy magas), ez a serkentés csökken. Ha ez a szabályozás felborul, alul- (hypothyreosis) vagy túlműködés (hyperthyreosis) alakulhat ki, amely a teljes anyagcserét (súlyváltozás, hőérzékelés, szívfrekvencia) érintheti: a hypothyreosis jellemző tünete a lassult anyagcsere, a fáradékonyság, a hidegérzékenység és a hízásra való hajlam, míg a hyperthyreosis felgyorsult anyagcserével, fogyással, fokozott idegességgel és szapora szívveréssel jár.',
+                ],
+              },
+              {
+                heading: 'A hormontermelés szabályozásának általános elve',
+                paragraphs: [
+                  'A hormontermelés szabályozása minden esetben - ahogy azt korábban (Hormonális működések fejezet) megismertük - a negatív visszacsatolás elvén alapul: egy adott hormon szintjének emelkedése idővel csökkenti a további termelést, a szint csökkenése pedig fokozza azt, így a hormonszint egy viszonylag szűk, egészséges tartományban marad. Ha ez a szabályozás bármilyen okból (pl. a mirigy károsodása, daganat vagy autoimmun folyamat miatt) felborul, a hormonszint tartósan a normális tartományon kívülre kerülhet, ami - ahogy azt fentebb a pajzsmirigy és a hasnyálmirigy példáján is láttuk - jellegzetes egészségügyi problémákhoz vezet.',
+                ],
+              },
+              {
+                heading: 'Az adrenalin egészségtani vonatkozásai',
+                paragraphs: [
+                  'Az adrenalin - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - rövid távon életmentő, hiszen felkészíti a szervezetet egy veszélyhelyzetre. Ha azonban a mindennapi, tartós stressz miatt a szervezet folyamatosan magas adrenalin- és glükokortikoidszinttel működik, ez hosszú távon káros: hozzájárulhat a magas vérnyomás kialakulásához, gyengítheti az immunrendszer működését, és - ahogy azt korábban (Az idegrendszer egészségtana fejezet) a stresszbetegségeknél megismertük - fokozhatja a stresszbetegségek kockázatát is. Ez jól mutatja, hogy egy önmagában hasznos, védekező élettani mechanizmus (az adrenalin rövid távú stresszválasza) tartós, indokolatlan aktiválódás esetén a szervezetre nézve károssá válhat.',
+                ],
+              },
+              {
+                heading: 'A cukorbetegség',
+                paragraphs: [
+                  'A cukorbetegség (diabétesz) lényege, hogy a szervezet nem képes megfelelően szabályozni a vércukorszintet - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az inzulinnál megismertük. Az 1-es típusú cukorbetegségben a hasnyálmirigy szigetsejtjei elpusztulnak, és egyáltalán nem (vagy alig) termelnek inzulint, ezért az érintetteknek életük végéig inzulinbevitelre van szükségük. A 2-es típusú cukorbetegségben a szervezet sejtjei egyre kevésbé érzékenyek az inzulinra (inzulinrezisztencia), ezért a hasnyálmirigy egyre több inzulint kényszerül termelni, végül kimerülhet - a két típus közötti fő különbségeket a fenti táblázat foglalja össze.',
+                  'A cukorbetegség jellemző tünetei a tartósan magas vércukorszint (hiperglikémia), a fokozott vizeletürítés és szomjúságérzet, valamint a fáradékonyság; kockázati tényezői közé tartozik (elsősorban a 2-es típusnál) a túlsúly, a mozgásszegény életmód és az öröklött hajlam. Kezelése típustól függően életmódváltásból (táplálkozás, testmozgás), szájon át szedhető gyógyszerekből, illetve - főként az 1-es típusnál - rendszeres inzulinbevitelből és rendszeres vércukor-ellenőrzésből áll. Kezeletlenül a tartósan magas vércukorszint hosszú távon károsíthatja az ereket és az idegeket, ami szem-, vese- és keringési szövődményekhez vezethet.',
+                  'A cukorbetegség napjaink egyik leggyakoribb, tartós odafigyelést igénylő népbetegsége - a rendszeres testmozgás és a kiegyensúlyozott táplálkozás, ahogy azt korábban (Táplálkozás egészségtana fejezet) megismertük, mindkét típus esetén jelentősen csökkentheti a szövődmények kockázatát, a 2-es típus esetén pedig egyenesen megelőzheti a betegség kialakulását.',
+                ],
+              },
+            ],
+            keyTerms: ['cukorbetegség', 'inzulinrezisztencia', 'hypothyreosis'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten azt is meg kell érteni, hogy a hormontermelés nem korlátozódik a hagyományos belső elválasztású mirigyekre, valamint néhány jellegzetes hormonhiányos és hormontöbbletes állapotot ismerünk meg.',
+            sections: [
+              {
+                heading: 'A hormontermelés nem korlátozódik a klasszikus mirigyekre',
+                paragraphs: [
+                  'Bár hagyományosan a belső elválasztású mirigyekhez kötjük a hormontermelést, valójában gyakorlatilag minden szerv képes valamilyen hormon jellegű anyagot előállítani: a szív is termel egy, a folyadékháztartást befolyásoló hormont, a zsírszövet pedig - ahogy azt korábban (Táplálkozás szabályozása fejezet) a leptinnél megismertük - szintén hormontermelő szövetként működik. Ez a felismerés emelt szinten azért fontos, mert megmutatja, hogy a hormonrendszer és a testfelépítés hagyományos, mirigyközpontú szemlélete leegyszerűsítés: a hormontermelés valójában a szervezet szinte minden szövetére kiterjedő, elosztott folyamat, és egy adott szerv egyszerre lehet a hormonrendszer célpontja és aktív résztvevője is.',
+                ],
+              },
+              {
+                heading: 'Hormonhiányos és hormontöbbletes rendellenességek',
+                paragraphs: [
+                  'A növekedési hormon hiánya gyermekkorban törpenövéshez, többlete pedig - ha a csontok növekedési zónáinak záródása előtt jelentkezik - óriásnövéshez vezethet; ha a többlet felnőttkorban alakul ki (amikor a csontok már nem tudnak hosszúságban növekedni), akromegália (a végtagok, az áll és az arccsontok jellegzetes megvastagodása) a következmény. A tiroxin hiánya (hypothyreosis) lassult anyagcserét, fáradékonyságot, hidegérzékenységet, többlete (hyperthyreosis) felgyorsult anyagcserét, fogyást, szapora szívverést okoz. Az inzulin hiánya - ahogy fentebb megismertük - cukorbetegséghez vezet, míg tartós túlzott inzulinbevitel (pl. téves adagolás) veszélyesen alacsony vércukorszintet (hipoglikémiát) okozhat, amely súlyos esetben zavartsághoz, eszméletvesztéshez is vezethet, ezért az inzulinnal kezelt cukorbetegeknek mindig rendszeresen ellenőrizniük kell a vércukorszintjüket.',
+                  'Ezek a példák jól mutatják az emelt szintű hormonrendszer-szemlélet lényegét: egy adott hormon hiánya és többlete jellemzően egymással ellentétes irányú, de mindkettő súlyos zavart okozó tünetegyüttest eredményez, és a kettő közötti keskeny, normális tartomány fenntartása a korábban (Hormonális működések fejezet) megismert negatív visszacsatolásos szabályozás feladata. Egy adott rendellenesség diagnózisakor ezért az orvosi gyakorlatban mindig meg kell határozni, hogy a tünetegyüttes hiányból vagy éppen túltermelésből ered-e, hiszen a kezelés iránya (a hormon pótlása, vagy éppen termelésének csökkentése) ettől függ - ez az elv minden hormonrendszeri betegségre általánosan érvényes, nemcsak a fent tárgyalt néhány példára. A kezelés emellett gyakran hosszú távú, rendszeres orvosi ellenőrzést is igényel, mivel a hormonpótló vagy hormoncsökkentő kezelés dózisát az életkor, a testtömeg és az aktuális hormonszint változásához igazodva időről időre módosítani kell.',
+                ],
+              },
+            ],
+            keyTerms: ['növekedési hormon', 'akromegália'],
+          },
+        },
+      },
+      {
+        id: 'immunitas',
+        title: 'Immunitás',
+        order: 42,
+        isFree: false,
+        estimatedMinutes: 18,
+        comparisonTable: {
+          headers: ['Szempont', 'Természetes immunválasz', 'Adaptív immunválasz'],
+          rows: [
+            ['Kialakulás', 'veleszületett, vagy anyatejjel szerzett', 'a kórokozóval való találkozás során alakul ki'],
+            ['Specifikusság', 'nem specifikus, sokféle kórokozó ellen hat', 'az adott kórokozóra specifikus'],
+            ['Sebesség', 'azonnal működésbe lép', 'napokat vesz igénybe, amíg kialakul'],
+            ['Memória', 'nincs', 'van (memóriasejtek)'],
+            ['Példa', 'falósejtek, bőr mint gát', 'antitest-termelés adott kórokozó ellen'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (A hormonrendszer egészségtana fejezet) lezárt hormonrendszeri témakör után ebben a fejezetben a szervezet másik nagy védekező rendszerét, az immunrendszert kezdjük megismerni.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: antigén, antitest, immunitás',
+                paragraphs: [
+                  'Az antigén egy olyan (jellemzően idegen eredetű) molekula, amely kiváltja az immunrendszer válaszát. Az antitest (immunglobulin) egy olyan fehérje, amelyet az immunrendszer termel, és amely specifikusan felismeri és megköti az adott antigént. Az immunitás a szervezet azon képessége, hogy ellenálljon a kórokozóknak és az általuk okozott betegségeknek.',
+                ],
+              },
+              {
+                heading: 'Természetes és adaptív immunválasz',
+                paragraphs: [
+                  'A természetes (veleszületett, vagy anyatejjel szerzett) immunválasz nem specifikus, azonnal működésbe lép, és nem hagy hátra "emléket" a kórokozóról. Az adaptív immunválasz ezzel szemben az adott kórokozóra specifikusan alakul ki, kialakulása néhány napot vesz igénybe, de emlékezik a kórokozóra - ahogy azt fenti táblázatban összefoglaltuk.',
+                  'Az immunrendszer jellemző sejtjei közé tartoznak a falósejtek (amelyek bekebelezik és lebontják a kórokozókat) és a nyiroksejtek (limfociták, amelyek az adaptív immunválaszért felelősek, és antitesteket termelnek). A memóriasejtek - amelyek egy adott kórokozóval való első találkozás után jönnek létre - biztosítják, hogy egy ismételt fertőzés esetén az immunrendszer sokkal gyorsabb és hatékonyabb másodlagos immunválaszt tudjon adni, mint az első alkalommal: míg az elsődleges immunválasz kialakulása napokat vesz igénybe, a másodlagos válasz a memóriasejteknek köszönhetően órák alatt, gyakran a betegség tüneteinek megjelenése előtt lezajlik.',
+                ],
+              },
+              {
+                heading: 'A gyulladás',
+                paragraphs: [
+                  'A gyulladás a szervezet védekező reakciója egy sérülés vagy fertőzés helyén: jellemző tünetei a bőrpír, a duzzanat, a melegségérzet és a fájdalom, amelyeket a sérült szövet felé áramló, fokozott vérellátás és a odavándorló falósejtek okoznak. A genny a gyulladás helyén elpusztult falósejtekből, elpusztult kórokozókból és szöveti törmelékből álló, sárgás váladék. A gyulladás tehát - bár kellemetlen tünetekkel jár - alapvetően hasznos, célirányos védekező folyamat, amely a kórokozók helyi elszigetelését és elpusztítását szolgálja, és ezért csak akkor indokolt gyógyszeresen elnyomni, ha a tünetek túlzottan erősek, vagy a gyulladás elhúzódik.',
+                ],
+              },
+              {
+                heading: 'Az immunizálás típusai',
+                paragraphs: [
+                  'Az immunizálás lehet aktív (a szervezet saját maga termel antitesteket és memóriasejteket, pl. védőoltás vagy egy lezajlott fertőzés hatására) vagy passzív (a szervezet kész antitesteket kap kívülről, pl. az anyatejjel, vagy antitest-készítmény beadásával); mindkettő lehet természetes (pl. lezajlott betegség, anyatej) vagy mesterséges (pl. védőoltás, antitest-injekció) eredetű. A védőoltás (aktív, mesterséges immunizálás) egy legyengített vagy elölt kórokozóval, illetve annak egy jellegzetes darabjával "tanítja meg" az immunrendszert a kórokozó felismerésére, anélkül hogy a valódi betegséget okozná.',
+                  'Az aktív immunizálás előnye, hogy - mivel memóriasejtek is kialakulnak - tartós, gyakran évekig vagy egész életen át fennmaradó védelmet nyújt, míg a passzív immunizálás hatása csak addig tart, amíg a kapott, kész antitestek le nem bomlanak a szervezetben - ezért a passzív immunizálást elsősorban gyors, azonnali, de átmeneti védelem biztosítására alkalmazzák (pl. súlyos, akut fertőzésveszély esetén). Az anyatejes táplálás jó példa a természetes passzív immunizálásra: a csecsemő - akinek saját adaptív immunrendszere még kevéssé fejlett - az anyatejjel kapott antitestek révén átmeneti védelmet élvez az anya korábban átvészelt fertőzéseivel szemben.',
+                ],
+              },
+            ],
+            keyTerms: ['antigén', 'antitest', 'immunitás', 'falósejt', 'limfocita', 'memóriasejt', 'gyulladás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az immunválasz pontos működési mechanizmusát, az autoimmun betegségeket, valamint a védőoltások és a fertőző betegségek elleni küzdelem tudománytörténeti hátterét ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az immunválasz működésének lényege',
+                paragraphs: [
+                  'Az immunválasz során az immunrendszer sejtjei felismerik az idegen anyag (antigén) jellegzetes felszíni szerkezetét, majd a nyiroksejtek (limfociták) az adott antigénre specifikus immunglobulinokat (antitesteket) kezdenek termelni. Az antitestek megkötik az antigént, ezáltal semlegesítik azt, vagy megjelölik a falósejtek számára, amelyek ezután elpusztítják a kórokozót. A vérszérum a véralvadás után visszamaradó folyadék, amely tartalmazza az antitesteket - ezért alkalmas vizsgálatokra és passzív immunizálásra egyaránt. Ez a felismerés-semlegesítés-megsemmisítés hármas lépéssorozat magyarázza, hogy egy adott kórokozó ellen miért kell mindig specifikusan "megtanulnia" az immunrendszernek védekezni - egy korábban soha nem látott antigén ellen nincs eleve kész antitest.',
+                ],
+              },
+              {
+                heading: 'Autoimmun betegségek és a védőoltások jelentősége',
+                paragraphs: [
+                  'Az autoimmun betegségek lényege, hogy az immunrendszer tévesen a szervezet saját sejtjei ellen fordul, mintha azok idegen antigének lennének, és megtámadja őket. Magyarországon jelenleg is több védőoltás kötelező a gyermekek számára (pl. kanyaró, rubeola, mumpsz, diftéria, szamárköhögés ellen) - ezek indokoltsága abban áll, hogy egyes súlyos, akár halálos kimenetelű fertőző betegségek elterjedését csak a lakosság kellően nagy hányadának immunitása (az ún. nyájimmunitás) képes megakadályozni.',
+                  'A vírus és a baktérium okozta betegségek kezelése alapvetően eltér: az antibiotikumok kizárólag a baktériumok sejtszerkezetét vagy anyagcseréjét célozzák, ezért vírusfertőzések ellen hatástalanok - ez az oka annak, hogy egy megfázást (amelyet jellemzően vírus okoz) nem lehet antibiotikummal gyógyítani, sőt az indokolatlan antibiotikum-használat hozzájárul az antibiotikum-rezisztens baktériumtörzsek kialakulásához is. Pasteur és Semmelweis tudománytörténeti jelentősége abban áll, hogy felismerésükkel megalapozták a modern járványtan és fertőzés-megelőzés tudományát: Semmelweis ismerte fel, hogy az orvosok kézmosás nélküli munkája terjeszti a gyermekágyi lázat, Pasteur pedig igazolta a mikroorganizmusok betegségokozó szerepét, és kidolgozta a veszettség elleni oltást, valamint a róla elnevezett hőkezelési (pasztőrözési) eljárást.',
+                ],
+              },
+            ],
+            keyTerms: ['immunglobulin', 'vérszérum', 'autoimmun betegség'],
+          },
+        },
+      },
+      {
+        id: 'vercsoportok',
+        title: 'Vércsoportok',
+        order: 43,
+        isFree: false,
+        estimatedMinutes: 10,
+        content: {
+          kozep: {
+            intro: 'Az AB0- és az Rh-vércsoportrendszer alapjait - ahogy azt korábban (A testfolyadékok fejezet) bővebben megismertük - itt nem ismételjük meg, hanem a vérátömlesztés és a véradás gyakorlati jelentőségére, valamint az anyai Rh-összeférhetetlenségre fókuszálunk.',
+            sections: [
+              {
+                heading: 'A vércsoport-rendszerek gyakorlati jelentősége',
+                paragraphs: [
+                  'Bár elméletileg négy AB0-vércsoport és két Rh-típus (Rh-pozitív, Rh-negatív) létezik, ezek kombinációja nyolc gyakorlati vércsoportot ad (pl. A Rh-pozitív, 0 Rh-negatív stb.), és ezek gyakorisága népességenként eltérő. Ez a sokféleség az egyik oka annak, hogy egy adott vércsoportú donor vére nem mindig áll azonnal rendelkezésre, ezért a véradó-szolgálatok folyamatosan igyekeznek minden vércsoportból megfelelő készletet fenntartani.',
+                ],
+              },
+              {
+                heading: 'A vérátömlesztés és a véradás jelentősége',
+                paragraphs: [
+                  'A vérátömlesztés életmentő eljárás lehet súlyos vérveszteség (pl. baleset, műtét, szülés) esetén, de - ahogy azt korábban (A testfolyadékok fejezet) az agglutinációnál megismertük - csak összeférhető vércsoportú vér adható be, ezért az átömlesztés előtt mindig gondos vércsoport-meghatározás és keresztpróba történik: a beteg és a felajánlott véradag vérmintáját összekeverik, és csak akkor kerülhet sor az átömlesztésre, ha nem lép fel agglutinációs reakció. A véradás társadalmi jelentősége abban áll, hogy a mesterségesen előállított vér helyettesítésére ma sincs megoldás - az egészséges donorok rendszeres véradása nélkül a sürgősségi ellátás és sok tervezett műtét sem volna biztonságosan elvégezhető.',
+                  'Mivel a "0" vércsoportú, Rh-negatív vér - ahogy azt korábban (A testfolyadékok fejezet) az univerzális donornál megismertük - a legszélesebb körben felhasználható, ezek a véradók különösen fontosak a véradó-szolgálatok számára; ugyanakkor sürgősségi helyzetben, amikor nincs idő a pontos vércsoport meghatározására, gyakran éppen ezt a vércsoportot alkalmazzák.',
+                  'Éppen ezért is fontos, hogy mindenki ismerje a saját vércsoportját: egy sürgősségi helyzetben (pl. súlyos baleset) ez az ismeret időt takaríthat meg, és megkönnyítheti az ellátást végző orvosok munkáját, még akkor is, ha a végleges vércsoport-meghatározást ilyenkor is mindig elvégzik. A véradás emellett nemcsak a beteg számára életmentő, hanem a donor egészségére nézve is biztonságos: a levett vérmennyiséget a szervezet néhány héten belül teljesen pótolja, ezért az alkalmassági feltételeknek megfelelő, egészséges felnőttek rendszeresen, veszély nélkül adhatnak vért.',
+                ],
+              },
+              {
+                heading: 'Az anyai Rh-összeférhetetlenség',
+                paragraphs: [
+                  'Az anyai Rh-összeférhetetlenség akkor alakulhat ki, ha egy Rh-negatív édesanya Rh-pozitív magzatot hord: a szülés során (amikor a magzati és az anyai vér óhatatlanul kis mértékben érintkezhet) az anya immunrendszere - ahogy azt korábban (A testfolyadékok fejezet) röviden megismertük - antitesteket kezdhet termelni a magzat Rh-pozitív vörösvértestjei ellen. Az első ilyen terhesség általában nem veszélyes, mivel az antitestek csak a szülés után alakulnak ki, de egy következő, szintén Rh-pozitív magzattal járó terhesség esetén ezek az antitestek már a terhesség korai szakaszában átjuthatnak a méhlepényen, és súlyosan károsíthatják a magzat vörösvértestjeit (a vörösvértestek tömeges pusztulása súlyos magzati vérszegénységet, sárgaságot, súlyos esetben magzati halált is okozhat).',
+                  'Éppen ezért minden várandósság elején meghatározzák az édesanya Rh-vércsoportját, és Rh-negatív esetben a terhesség alatt rendszeresen ellenőrzik, kialakult-e már az összeférhetetlenséget jelző antitest a vérében - ez a korai felismerés teszi lehetővé a megelőző kezelés időben történő alkalmazását. Ez a rendszeres, tervszerű ellenőrzés jó példája annak, hogyan lehet egy elméletileg súlyos kockázatot (a magzat vörösvértestjeinek tömeges károsodását) a modern terhesgondozás eszközeivel gyakorlatilag elhanyagolható szintre csökkenteni. Az összeférhetetlenség felismerésének és megelőzésének története egyben azt is szemlélteti, hogyan válhat egy alapkutatásból (a vércsoportrendszerek felfedezéséből) néhány évtized alatt mindennapi, életmentő orvosi gyakorlattá.',
+                ],
+              },
+            ],
+            keyTerms: ['vérátömlesztés', 'véradás', 'Rh-összeférhetetlenség'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az Rh-összeférhetetlenség megelőzésének módját ismerjük meg részletesebben.',
+            sections: [
+              {
+                heading: 'Az Rh-összeférhetetlenség megelőzése',
+                paragraphs: [
+                  'Az Rh-összeférhetetlenség napjainkban jól megelőzhető: az Rh-negatív édesanyák a szülés (vagy egy esetleges vetélés, terhességmegszakítás) után rövid időn belül egy ún. anti-D immunglobulin injekciót kapnak, amely megsemmisíti a vérükbe esetleg bekerült magzati Rh-pozitív vörösvértesteket, mielőtt az anya immunrendszere saját, tartós antitest-termelést indítana el ellenük. Ez a megelőző kezelés biztosítja, hogy egy következő, Rh-pozitív magzattal járó terhesség biztonságosan lezajolhasson, jelentősen csökkentve a magzatot veszélyeztető szövődmények kockázatát.',
+                  'Ez az eljárás - ahogy azt korábban (Immunitás fejezet) a passzív immunizálásnál megismertük - lényegében egy célzott, passzív immunizálási módszer: az anti-D injekció nem az anya saját immunválaszát erősíti, hanem eleve megakadályozza, hogy az anya immunrendszere egyáltalán felismerje és "megjegyezze" a magzati Rh-pozitív antigént, így a védekező mechanizmus meg sem indul.',
+                ],
+              },
+              {
+                heading: 'Vércsoport-öröklődés',
+                paragraphs: [
+                  'Az AB0-vércsoport és az Rh-típus is öröklődő tulajdonság: mindkét szülőtől egy-egy allélt öröklünk, ezért egy adott gyermek vércsoportja a szülők vércsoportjától és a náluk található allélkombinációktól függ - ez az egyik oka annak, hogy egy gyermek vércsoportja eltérhet mindkét szülőjéétől (pl. két A vércsoportú, de heterozigóta szülőtől is születhet 0 vércsoportú gyermek). Hasonlóképpen, egy Rh-pozitív apa és egy Rh-negatív anya gyermeke lehet akár Rh-pozitív, akár Rh-negatív is, attól függően, hogy az apa homozigóta vagy heterozigóta-e az Rh-génre nézve - ez magyarázza, hogy egy Rh-negatív anyának miért nem minden terhessége során áll fenn ténylegesen az Rh-összeférhetetlenség kockázata. Ezt a kockázatot a terhesgondozás keretében genetikai szempontból is érdemes mérlegelni, hiszen az apa Rh-státusának ismerete segíthet előre felmérni az összeférhetetlenség valószínűségét.',
+                ],
+              },
+            ],
+            keyTerms: ['anti-D immunglobulin'],
+          },
+        },
+      },
+      {
+        id: 'immunrendszer-egeszsegtana',
+        title: 'Az immunrendszer egészségtana',
+        order: 44,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Allergia', 'Autoimmun betegség'],
+          rows: [
+            ['Célpont', 'ártalmatlan külső anyag (allergén)', 'a szervezet saját sejtjei, szövetei'],
+            ['Az immunválasz jellege', 'túlzott reakció ártalmatlan antigénre', 'téves reakció saját antigénre'],
+            ['Példa', 'pollenallergia, ételallergia', 'autoimmun ízületi gyulladás'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Vércsoportok fejezet) megismert vércsoport-ismeretek után ebben, az emberi szervezet modult lezáró fejezetben az immunrendszer egészségtanát tekintjük át: a lázat, az allergiát és a szervátültetést.',
+            sections: [
+              {
+                heading: 'A láz szerepe és a lázcsillapítás',
+                paragraphs: [
+                  'A láz a szervezet védekező reakciója: a testhőmérséklet szabályozott emelése - ahogy azt korábban (Homeosztázis fejezet) a testhőmérséklet-szabályozásnál megismertük - megnehezíti egyes kórokozók szaporodását, és felgyorsítja az immunrendszer sejtjeinek működését, ezért a láz enyhe-közepes mértéke önmagában hasznos, hasznos védekező folyamat, nem pedig "hiba". Lázcsillapításra (pl. magas láz, kellemetlen tünetek esetén) gyógyszeres módszerek (lázcsillapító szerek) és nem gyógyszeres módszerek (pl. bőséges folyadékbevitel, hűtő borogatás) egyaránt alkalmazhatók, de a láz teljes, indokolatlan elnyomása lassíthatja a szervezet védekezését.',
+                  'Néhány jel arra utal, hogy a láz esetén mindenképp orvoshoz kell fordulni: ha a láz 3 napnál tovább tart vagy 39-40 °C fölé emelkedik; ha a lázhoz nehézlégzés, tartós hányás, kiszáradás jelei vagy erős, szokatlan fájdalom társul; ha csecsemőnél vagy krónikus beteg felnőttnél jelentkezik magas láz; illetve ha a lázas állapotban zavartság vagy tudatzavar alakul ki - ezekben az esetekben a láz már egy súlyosabb, önmagában nem gyógyuló folyamat jele lehet.',
+                ],
+              },
+              {
+                heading: 'Az allergia',
+                paragraphs: [
+                  'Gyakori allergén anyagok közé tartozik a virágpor (pollen), a poratka, egyes ételek (pl. földimogyoró, tej, tojás), a penészgombák spórái és egyes állatok szőre vagy nyála - az allergiás tünetek (pl. tüsszögés, orrfolyás, viszketés, súlyosabb esetben légzési nehézség) az adott allergénnel való érintkezés helyétől és az egyén érzékenységétől függően igen eltérőek lehetnek.',
+                  'Az allergia az immunrendszer túlérzékenységi reakciója egy önmagában ártalmatlan anyaggal (allergénnel, pl. pollen, egyes ételek, poratka, állati szőr) szemben: az immunrendszer tévesen veszélyesnek ítéli az allergént, és túlzott, a szervezetre nézve kellemetlen vagy akár veszélyes immunválaszt indít el ellene - ahogy azt korábban (Immunitás fejezet) az immunválasz mechanizmusánál megismertük, ez esetben az antitest-termelés és a gyulladásos folyamat egy valójában ártalmatlan anyag ellen aktiválódik túlzott mértékben. Az allergiák gyakoriságának növekedése összefüggésbe hozható a környezetszennyezéssel is (pl. a légszennyezés fokozhatja a légúti allergiás tüneteket, és egyes kutatások szerint a túlzottan steril, ingerszegény korai környezet is hozzájárulhat az immunrendszer "félrenevelődéséhez").',
+                  'Az allergia jól elkülöníthető a korábban (Immunitás fejezet) megismert autoimmun betegségektől: mindkettő az immunrendszer téves működésén alapul, de az allergia esetén a célpont egy külső, ártalmatlan anyag, míg autoimmun betegségnél a szervezet saját szövetei válnak a téves immunválasz célpontjává - ahogy azt a fenti táblázat összefoglalja.',
+                ],
+              },
+              {
+                heading: 'Az immunrendszer állapota és a betegségek kialakulása',
+                paragraphs: [
+                  'Az immunrendszer állapota szorosan összefügg a betegségek kialakulásának valószínűségével: egy legyengült immunrendszerű szervezet (pl. tartós stressz, alváshiány, alultápláltság vagy egyes betegségek miatt) sokkal fogékonyabb a fertőzésekre, míg egy túlműködő vagy félrevezetett immunrendszer (mint az allergiák vagy az autoimmun betegségek esetén) saját magának okoz kárt - ez is mutatja, hogy az immunrendszer megfelelő, kiegyensúlyozott működése (sem túl gyenge, sem túl erős, félrevezetett reakció) alapvető az egészség megőrzéséhez.',
+                  'Az egészséges életmód (megfelelő alvás, kiegyensúlyozott táplálkozás, rendszeres testmozgás, a tartós stressz kezelése) - ahogy azt korábban (Az idegrendszer egészségtana fejezet) az életmód és az idegrendszeri betegségek kapcsolatánál megismertük - az immunrendszer működésére nézve is jelentős védőhatással bír, hiszen ezek a tényezők együttesen segítik az immunrendszert abban, hogy se ne gyengüljön le feleslegesen, se ne reagáljon túlzottan. Ez a modul egésze - az idegrendszertől a hormonrendszeren át az immunrendszerig - jól mutatja, hogy a szervezet nagy szabályozó és védekező rendszerei nem elszigetelten, hanem egymással szoros kölcsönhatásban tartják fenn az egészséges működést. Ezzel a felismeréssel zárul az emberi szervezet szabályozó és védekező rendszereinek áttekintése.',
+                ],
+              },
+            ],
+            keyTerms: ['láz', 'allergia', 'allergén'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szervátültetéssel kapcsolatos gyakorlati és etikai problémákat ismerjük meg.',
+            sections: [
+              {
+                heading: 'Szervátültetés: gyakorlati és etikai problémák',
+                paragraphs: [
+                  'A szervátültetés egyik legnagyobb gyakorlati kihívása, hogy az immunrendszer - ahogy azt korábban (Immunitás fejezet) az idegen antigének felismerésénél megismertük - az átültetett szervet is idegennek érzékelheti, és megtámadhatja (kilökődési reakció); ennek elkerülésére az átültetett szervet kapó betegeknek tartósan, gyakran életük végéig immunrendszert gyengítő (immunszupresszív) gyógyszereket kell szedniük, ami viszont fokozott fertőzésveszéllyel jár. További gyakorlati probléma a donorszervek tartós hiánya, ami miatt sok beteg hosszú várólistára kerül. A kilökődés kockázata jelentősen csökkenthető a donor és a recipiens szöveti jellemzőinek gondos összeillesztésével (szöveti tipizálással), ez az egyik oka annak, hogy a közeli hozzátartozók (pl. testvérek) közötti szervátültetés gyakran nagyobb sikerrel jár, mivel köztük nagyobb eséllyel egyeznek meg a szöveti jellemzők.',
+                  'Etikai kérdéseket vet fel a donorszervek elosztásának igazságos módja (ki kapja meg elsőként egy szűkösen rendelkezésre álló szervet), az élő donorság kockázatai és önkéntessége, valamint az elhunytak szerveinek felhasználásához szükséges beleegyezés (hozzájárulási vagy tiltakozási rendszer) kérdése is - ezek olyan társadalmi döntések, amelyeket az orvosi lehetőségek mellett jogi és erkölcsi szempontok is alakítanak. Ezek a kérdések jól szemléltetik, hogy egy önmagában életmentő orvosi eljárás (a szervátültetés) alkalmazása a gyakorlatban elválaszthatatlan a társadalmi méltányosság és az egyéni önrendelkezés kérdéseitől. Éppen ezért a szervátültetéssel kapcsolatos döntéshozatalban orvosok, etikai bizottságok és jogalkotók egyaránt részt vesznek, nem csupán az érintett beteg és családja.',
+                ],
+              },
+            ],
+            keyTerms: ['kilökődés', 'immunszupresszió'],
+          },
+        },
+      },
+      {
+        id: 'szaporitoszervek',
+        title: 'Szaporítószervek',
+        order: 45,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Hímivarsejt (spermium)', 'Petesejt'],
+          rows: [
+            ['Méret', 'apró', 'nagyméretű'],
+            ['Mozgékonyság', 'mozgékony (ostorral)', 'mozdulatlan'],
+            ['Termelődés', 'folyamatos, pubertáskortól egész életen át', 'korlátozott készlet, már születéskor kialakul'],
+            ['Mennyiség egy alkalommal', 'nagy szám', 'jellemzően egy (havonta)'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az immunrendszer egészségtana fejezet) lezárt immunrendszeri témakör után az emberi szervezet modult a szaporodás és az egyedfejlődés témakörével zárjuk: elsőként a férfi és a női szaporítószervek felépítését és működését, valamint a megtermékenyítés folyamatát tekintjük át.',
+            sections: [
+              {
+                heading: 'A férfi szaporítószervek',
+                paragraphs: [
+                  'A herék - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - kettős szerepű mirigyek: itt termelődik a hímivarsejt (spermium) és a tesztoszteron hormon is. A herékben termelődő spermiumok a mellékherében érnek tovább és tárolódnak, innen az ondóvezeték szállítja őket a húgycsőig, amely a spermiumok mellett a vizelet elvezetésére is szolgál (a két funkció időben elkülönül egymástól).',
+                  'Az ondóvezeték útja során az ondóhólyag és a dülmirigy (prosztata) váladéka keveredik a spermiumokhoz, létrehozva az ondófolyadékot (ondót); ezek a mirigyváladékok tápanyagot és a spermiumok mozgását segítő anyagokat biztosítanak. A hímivarsejt-termelés (spermatogenezis - ahogy azt korábban az Osztódás fejezet emelt kiegészítésében megismertük) folyamatosan, pubertáskortól kezdve egész életen át zajlik a herékben, szemben a nő ivarsejtjeivel, amelyek - ahogy azt lentebb megismerjük - már születéskor kialakult, korlátozott készletet alkotnak.',
+                ],
+              },
+              {
+                heading: 'A női szaporítószervek',
+                paragraphs: [
+                  'A petefészkekben - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük - érnek a petesejtek, és itt termelődik az ösztrogén és a progeszteron is. Az ovulációkor kiszabaduló petesejtet a petevezeték fogadja be, amely a méhbe vezet.',
+                  'A méh izmos falú szerv, amelynek belső rétege, a méhnyálkahártya a nemi ciklus során - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az ösztrogénnél és a progeszteronnál megismertük - felépül, majd megtermékenyítés hiányában leválik; sikeres megtermékenyítés esetén itt ágyazódik be és fejlődik a magzat. A hüvely a méhet a testfelszínnel összekötő csatorna, amely a párzás, illetve a szülés útjául is szolgál.',
+                  'A nővel ellentétben, akinél a petesejtek száma már születéskor rögzül, és havonta jellemzően csak egy érik meg és szabadul fel, a hímivarsejtek folyamatosan, nagy számban termelődnek - ez a különbség jól magyarázza, hogy miért van a nőnek korlátozott, a férfinak pedig gyakorlatilag korlátlan termékenységi időszaka.',
+                ],
+              },
+              {
+                heading: 'A megtermékenyítés folyamata',
+                paragraphs: [
+                  'A megtermékenyítés - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) megismertük - a hímivarsejt és a petesejt egyesülése, amelynek eredménye a zigóta. Embernél ez belső megtermékenyítés: a hüvelybe jutott spermiumok közül csak kevés jut el a petevezetékig, ahol - ha éppen jelen van egy petesejt - megtörténhet az egyesülés.',
+                  'Ez az emberi szaporodási stratégia - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az életkörülmények és a szaporodási mód kapcsolatánál megismertük - a belső megtermékenyítésű, kiterjedt ivadékgondozást nyújtó fajokra jellemző mintát követi: kevés utód, de azok túlélési esélye egyedenként jóval nagyobb, mint a külső megtermékenyítésű fajoknál.',
+                  'A megtermékenyítés a petevezetékben, jellemzően az ovulációt követő néhány napon belül történhet meg, mivel mind a petesejt, mind a spermiumok élettartama a női ivarutakban korlátozott - ez magyarázza, hogy a nemi ciklusnak csak egy szűk, néhány napos időszaka alkalmas a sikeres megtermékenyítésre. A hímivarsejt és a petesejt közötti méret- és mozgékonyságbeli különbség - ahogy azt a fenti táblázat is összefoglalja - jól tükrözi a két ivarsejt eltérő "feladatát": a petesejt tartalék tápanyagot raktároz a korai fejlődéshez, a hímivarsejt pedig kizárólag a petesejt eléréséhez és megtermékenyítéséhez szükséges felépítéssel rendelkezik.',
+                ],
+              },
+            ],
+            keyTerms: ['here', 'mellékhere', 'ondóvezeték', 'dülmirigy', 'petefészek', 'petevezeték', 'méh', 'hüvely'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a biológiai nem meghatározottságának több szintjét, valamint a petesejt és a hímivarsejt részletesebb felépítését ismerjük meg.',
+            sections: [
+              {
+                heading: 'A nem meghatározottságának szintjei',
+                paragraphs: [
+                  'A biológiai nem meghatározottsága több, egymásra épülő szinten értelmezhető: a kromoszomális nem az ivari kromoszómák összetétele (embernél jellemzően XX vagy XY); az ivarmirigy általi nem a kromoszomális nem alapján embrionálisan kialakuló ivarmirigy típusa (here vagy petefészek); a másodlagos nem a hormonok hatására kialakuló külső testi jellegek (pl. testalkat, szőrzet, hangmagasság) összessége; a pszichés nem pedig az egyén saját, belső nemi identitása.',
+                  'Ezek a szintek a legtöbb egyénnél egybeesnek, de nem szükségszerűen: a nem meghatározottsága tehát egy biológiailag is összetett, több tényezőből felépülő jelenség, nem redukálható egyetlen szempontra. A kromoszomális nem embernél az apától örökölt ivari kromoszómától (X vagy Y) függ, hiszen az anya mindig X kromoszómát ad tovább - ez magyarázza, hogy biológiai értelemben az utód nemét a hímivarsejt határozza meg.',
+                ],
+              },
+              {
+                heading: 'A petesejt és a hímivarsejt felépítése',
+                paragraphs: [
+                  'A hímivarsejt (spermium) három fő részből épül fel: a fejrészben található a sejtmag és az azt beborító akroszóma (amely a petesejt burkát átható enzimeket tartalmazza), a középrészben a mozgáshoz szükséges energiát biztosító mitokondriumok, a farokrészben pedig az ostor, amely a spermium mozgását teszi lehetővé. A petesejtet - amely a hímivarsejtnél jóval nagyobb, mozdulatlan sejt - egy védő burok (zona pellucida) veszi körül, amelyet a megtermékenyítéskor az akroszóma enzimei tesznek átjárhatóvá az őt elérő spermium számára.',
+                  'Miután egyetlen spermium áthatolt a zona pellucidán és egyesült a petesejttel, a petesejt burka azonnal megváltozik, megakadályozva, hogy további spermiumok is bejussanak - ez a mechanizmus biztosítja, hogy a zigóta mindig csak egyetlen hímivarsejttől kapjon genetikai anyagot, elkerülve a kromoszómaszám-többlettel járó rendellenességeket. Ez a védekező mechanizmus azért is létfontosságú, mert ha egynél több spermium egyesülne a petesejttel, a keletkező sejt kromoszómaszáma megkétszereződne vagy még tovább nőne, ami összeegyeztethetetlen lenne a további életképes fejlődéssel.',
+                ],
+              },
+            ],
+            keyTerms: ['kromoszomális nem', 'akroszóma'],
+          },
+        },
+      },
+      {
+        id: 'egyedfejlodes',
+        title: 'Egyedfejlődés',
+        order: 46,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Klinikai halál', 'Biológiai halál'],
+          rows: [
+            ['Lényege', 'a légzés és a keringés leállása', 'a sejtek, szövetek visszafordíthatatlan pusztulása'],
+            ['Visszafordíthatóság', 'rövid időn belül még visszafordítható (újraélesztéssel)', 'végleges, nem visszafordítható'],
+            ['Agy állapota', 'még nem pusztult el', 'az agysejtek is elpusztulnak'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Szaporítószervek fejezet) megismert megtermékenyítés után ebben a fejezetben az ember születés előtti és születés utáni fejlődését, valamint az élet végét tekintjük át.',
+            sections: [
+              {
+                heading: 'A születés előtti fejlődés',
+                paragraphs: [
+                  'A zigóta - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az embrionális fejlődésnél megismertük - a petevezetékben úszva ismételt sejtosztódásokon (barázdálódáson) megy át, amely során a sejtszám gyorsan nő, a sejtek mérete viszont nem. A barázdálódás eredményeként létrejövő hólyagszerű képlet a méhbe érve beágyazódik a méhnyálkahártyába - ez a beágyazódás jelenti a terhesség tényleges kezdetét.',
+                  'A beágyazódás után fokozatosan kialakul a méhlepény (placenta) - ahogy azt korábban (Emlősök fejezet) megismertük -, amely az anya és a magzat közötti anyagcserét biztosítja, valamint a magzatburkok, amelyek közül az amnion - ahogy azt szintén korábban megismertük - magzatvízzel telt üreget képez a magzat körül; a magzatvíz mechanikai védelmet nyújt és mozgásteret biztosít a fejlődő magzatnak.',
+                  'A terhesség, a szülés és a szoptatás - ahogy azt korábban (Belső elválasztású mirigyek fejezet) az oxitocinnál és a progeszteronnál megismertük - szorosan hormonálisan szabályozott folyamatok: a szülést kiváltó méhösszehúzódásokat az oxitocin, a szoptatáskor a tejleadást szintén az oxitocin váltja ki, míg a terhesség fenntartásáért nagyrészt a progeszteron felelős.',
+                  'A méhlepény nemcsak tápanyag- és oxigénellátást biztosít, hanem - ahogy azt korábban (A hormonrendszer egészségtana fejezet) megismertük, miszerint hormon nemcsak a hagyományos mirigyekben termelődhet - önmaga is termel hormonokat (pl. a terhességi tesztek által kimutatott hCG-t), amelyek fenntartják a terhességet és felkészítik az anyai szervezetet a szülésre és a szoptatásra.',
+                ],
+              },
+              {
+                heading: 'A születés utáni (posztembrionális) fejlődés',
+                paragraphs: [
+                  'A születés utáni fejlődés legjellemzőbb változásai közé tartozik a tömeg- és hosszgyarapodás, a fogak megjelenése, majd a mozgásfejlődés fokozatos lépései (mászás, ülés, majd járás), a beszéd és a finom kézhasználat kialakulása, később a nemi érés, a gondolkodásmód (kognitív képességek) fokozatos fejlődése, majd időskorban az öregedés jelenségei. Az öregedés a szervezet sejtjeinek és szöveteinek fokozatos, természetes hanyatlásával jár, amely valamennyi szervrendszert érinti, és amelynek üteme egyénenként, illetve az életmódtól függően is eltérhet.',
+                  'Ezek a változások jellemzően egy viszonylag kiszámítható sorrendben, de egyénenként eltérő ütemben zajlanak le: a mozgásfejlődés lépései (mászás, ülés, járás) például mindig ebben a sorrendben követik egymást, de az, hogy egy adott gyermek pontosan mely életkorban éri el az egyes lépéseket, egyénenként, sőt kultúránként is eltérhet.',
+                  'A társadalmi és életmódbeli hatások (pl. táplálkozás, ingergazdag vagy ingerszegény környezet, egészségügyi ellátás) jelentősen befolyásolhatják az egyedfejlődés ütemét - ahogy azt korábban (Pszichés fejlődés fejezet) a családi szocializáció szerepénél is megismertük. Ezek a hatások nemcsak a fejlődés sebességét, hanem annak minőségét is alakíthatják: egy kiegyensúlyozott, támogató környezet elősegíti, míg egy hiányos vagy elhanyagoló környezet hátráltathatja az egyes fejlődési szakaszok időben történő elérését. Ez a felismerés jól mutatja, hogy az egyedfejlődés nem kizárólag genetikailag előre meghatározott, "beprogramozott" folyamat, hanem a genetikai adottságok és a környezeti hatások folyamatos kölcsönhatásának eredménye.',
+                ],
+              },
+            ],
+            keyTerms: ['barázdálódás', 'beágyazódás', 'magzatvíz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a magzati és az anyai vérkeringés kapcsolatát, valamint a klinikai és a biológiai halál közötti különbséget ismerjük meg.',
+            sections: [
+              {
+                heading: 'A magzati és az anyai vérkeringés kapcsolata',
+                paragraphs: [
+                  'A magzat vére és az anya vére a méhlepényben nem keveredik közvetlenül: a két vérkeringést egy vékony hártya választja el, amelyen keresztül a tápanyagok, az oxigén és a szén-dioxid diffúzióval átjutnak, míg a vérsejtek jellemzően nem. Ez a kapcsolat a magzat köldökzsinórján keresztül valósul meg, amely a méhlepényt köti össze a magzattal. Ez a kettős, mégis elkülönült keringési rendszer teszi lehetővé, hogy a magzat és az anya vérnyomása, vérösszetétele egymástól függetlenül is a saját szükségleteikhez igazodhasson, miközben az anyagcsere-kapcsolat folyamatosan fennáll. Ez a szoros, de közvetlen keveredés nélküli élettani kapcsolat az egész terhesség alatt fennmarad, egészen a szülésig, amikor a köldökzsinór elvágásával a magzat keringése önállósul.',
+                  'Ennek a kapcsolatnak az immunrendszer szempontjából is jelentősége van - ahogy azt korábban (Vércsoportok fejezet) az Rh-összeférhetetlenségnél megismertük -: bár a vérsejtek rendes körülmények között nem jutnak át a méhlepényen, egyes anyai antitestek (immunglobulinok) igen, ami egyrészt átmeneti védelmet nyújt a magzatnak (hasonlóan az anyatejes passzív immunizáláshoz - ahogy azt korábban az Immunitás fejezetben megismertük), másrészt - összeférhetetlenség esetén - kockázatot is jelenthet, mint azt az Rh-összeférhetetlenség példáján korábban részletesen láttuk.',
+                ],
+              },
+              {
+                heading: 'Klinikai és biológiai halál',
+                paragraphs: [
+                  'A klinikai halál a légzés és a keringés leállását jelenti - ez az állapot rövid időn belül (jellemzően néhány percen belül elkezdett újraélesztéssel) még visszafordítható, hiszen az agysejtek ekkor még nem pusztultak el véglegesen. A biológiai halál ezzel szemben a sejtek, szövetek (elsősorban az agysejtek) visszafordíthatatlan pusztulását jelenti - ez már végleges állapot, amelyből nincs visszaút.',
+                  'Ez a különbségtétel - ahogy azt korábban (Homeosztázis fejezet) az alapfokú újraélesztésnél megismertük - azért kulcsfontosságú, mert az újraélesztés esélye és értelme éppen ezen az időablakon (a klinikai halál még visszafordítható szakaszán) múlik: minél tovább tart a klinikai halál állapota kezelés nélkül, annál nagyobb az esély, hogy az oxigénhiány miatt az agysejtek is visszafordíthatatlanul elpusztulnak, vagyis a klinikai halál biológiai halálba megy át.',
+                ],
+              },
+            ],
+            keyTerms: ['köldökzsinór', 'klinikai halál', 'biológiai halál'],
+          },
+        },
+      },
+      {
+        id: 'szaporodas-fejlodes-egeszsegtana',
+        title: 'A szaporodás, fejlődés egészségtana',
+        order: 47,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Egyedfejlődés fejezet) megismert fejlődési szakaszok után, az emberi szervezet modult lezáró fejezetben a szaporodással és a fejlődéssel kapcsolatos egészségtani ismereteket tekintjük át: a családtervezést, a terhességet és a meddőséget.',
+            sections: [
+              {
+                heading: 'Családtervezés és terhességi tesztek',
+                paragraphs: [
+                  'A családtervezés különböző módszerekkel valósulhat meg: ide tartoznak a hormonális fogamzásgátló módszerek - ahogy azt korábban (Belső elválasztású mirigyek fejezet) megismertük -, valamint a mechanikai (barrier-) módszerek és a természetes családtervezési módszerek is. A terhességi tesztek a magzat méhlepénye által termelt hCG hormont mutatják ki a vizeletből vagy a vérből - ennek a hormonnak a szintje a terhesség korai szakaszában rohamosan emelkedik, ezért már néhány nappal az elmaradt menstruáció után is kimutatható.',
+                  'A terhességmegszakításnak - a beavatkozás jellegéből adódóan - lehetnek fizikai (pl. vérzés, fertőzésveszély) és lelki következményei is, ezért ez mindig alapos mérlegelést és szakszerű orvosi tájékoztatást igénylő döntés. Minél korábbi terhességi szakaszban történik a beavatkozás, annál kisebb jellemzően az egészségügyi kockázat, ez az egyik oka annak, hogy a korai felismerés (pl. terhességi teszttel) fontos szerepet játszik.',
+                ],
+              },
+              {
+                heading: 'A meddőség okai és kezelése',
+                paragraphs: [
+                  'A meddőség hátterében állhat az ivarsejttermelés zavara (pl. elégtelen spermium- vagy petesejtszám/-minőség) vagy hormonzavar (pl. a nemi ciklust szabályozó hormonok - ösztrogén, progeszteron - egyensúlyának felborulása). A meddőség kezelésére szolgáló lehetőségek közé tartozik a hormonkezelés (a hiányzó vagy elégtelen hormonszint pótlása, illetve a peteérés serkentése) és a mesterséges megtermékenyítés (amikor a megtermékenyítés a testen kívül vagy orvosi beavatkozással, természetes úton kívül történik).',
+                  'A meddőség kivizsgálása mindkét partner alapos orvosi vizsgálatát igényli, hiszen az ok mindkét félnél, vagy akár mindkettőjüknél egyszerre is fennállhat - ez a felismerés fontos gyakorlati (és emberi) következménnyel jár: a meddőség nem tekinthető eleve az egyik fél "hibájának".',
+                ],
+              },
+              {
+                heading: 'Várandósság, terhesgondozás és szoptatás',
+                paragraphs: [
+                  'A várandóság jelei közé tartozik többek között az elmaradt menstruáció, a reggeli rosszullét és a mellek érzékenysége. A rendszeres terhesgondozás (orvosi ellenőrzés a terhesség alatt) - ahogy azt korábban (Vércsoportok fejezet) az Rh-szűrésnél is megismertük - lehetővé teszi a lehetséges szövődmények korai felismerését és kezelését. A terhesség és a szoptatás alatt követendő egészséges életmód (kiegyensúlyozott táplálkozás, a káros szenvedélyek - dohányzás, alkohol - kerülése) mind az anya, mind a magzat/csecsemő egészségét szolgálja. A szoptatás - ahogy azt korábban (Immunitás fejezet) a passzív immunizálásnál megismertük - előnyös a csecsemő számára (tápanyag- és antitest-ellátás), és az anya számára is (pl. a méh összehúzódását segíti, érzelmi kötődést erősít).',
+                  'A dohányzás és az alkoholfogyasztás a méhlepényen keresztül - ahogy azt korábban (Egyedfejlődés fejezet) a magzati-anyai vérkeringés kapcsolatánál megismertük - közvetlenül károsíthatja a magzat fejlődését, hiszen a károsanyagok ugyanúgy átjutnak a méhlepényen, mint a tápanyagok és az oxigén, ezért ezek teljes kerülése a terhesség alatt kiemelten fontos.',
+                ],
+              },
+              {
+                heading: 'A nemi úton terjedő betegségek megelőzése',
+                paragraphs: [
+                  'A nemi úton terjedő betegségek (pl. a baktérium okozta szifilisz, a vírus okozta AIDS, illetve egyes gombás fertőzések) - ahogy azt korábban (Immunitás fejezet) a vírus és baktérium okozta betegségek eltérő kezelésénél megismertük - megelőzésének legfontosabb eszköze a védekezés (pl. óvszer használata) és a rendszeres szűrővizsgálat, mivel ezek a betegségek gyakran tünetmentesen is terjedhetnek. A tünetmentes terjedés különösen veszélyessé teszi ezeket a fertőzéseket, hiszen a fertőzött személy tudtán kívül is továbbadhatja a kórokozót, ezért a rendszeres szűrés és a védekezés következetes alkalmazása akkor is fontos, ha az érintett egészségesnek érzi magát. Egyes nemi úton terjedő fertőzések kezelés nélkül hosszú távú, súlyos következményekkel (pl. meddőséggel) is járhatnak, ami tovább hangsúlyozza a korai felismerés és kezelés jelentőségét.',
+                ],
+              },
+            ],
+            keyTerms: ['fogamzásgátlás', 'terhességi teszt', 'meddőség', 'terhesgondozás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény elsősorban esetleírás-elemzési készséget vár el - ez esetben is érdemes megismerni néhány gyakorlati szempontot a meddőséghez vezető okok azonosításához.',
+            sections: [
+              {
+                heading: 'Esetleírások elemzése: meddőséghez vezető okok',
+                paragraphs: [
+                  'Egy esetleírás alapján a meddőség vagy egy egészségügyi állapot (pl. fertőzés, genetikai rendellenesség, korábbi terhességmegszakítás) meddőséghez vezető szerepének azonosításakor érdemes külön megvizsgálni, hogy az adott tényező az ivarsejttermelést, a megtermékenyítés folyamatát, vagy a beágyazódást/terhesség fenntartását érinti-e - ez a megkülönböztetés segít a lehetséges kezelési irány (hormonkezelés vagy mesterséges megtermékenyítés) meghatározásában is.',
+                  'Egy kezeletlen nemi úton terjedő fertőzés (pl. egyes baktériumok okozta gyulladás) esetleírásban gyakran a méhkürtök hegesedéséhez, ezáltal a petesejt petevezetéken való áthaladásának akadályozásához vezethet - ez jó példa arra, hogy egy önmagában más okból (fertőzés) kialakuló egészségügyi probléma hogyan vezethet másodlagosan meddőséghez, alátámasztva a fenti fejezetben tárgyalt megelőzés fontosságát.',
+                  'Genetikai rendellenességek esetén az esetleírás gyakran arra kérdez rá, hogy az adott állapot az ivarsejtek kialakulását (pl. a meiózis során fellépő rendellenesség), vagy már a korai embrionális fejlődést (pl. a beágyazódás sikertelenségét) akadályozza-e - ez a különbségtétel segít megérteni, miért vezethet ugyanaz a genetikai háttér egyes esetekben meddőséghez, más esetekben pedig már korai vetéléshez.',
+                  'Egy korábbi terhességmegszakítás szintén szerepelhet egy esetleírásban a meddőség lehetséges háttértényezőjeként: a beavatkozás szövődményeként (pl. fertőzés vagy a méhnyálkahártya sérülése révén kialakuló hegesedés, összenövés) a méhüreg vagy a méhkürtök károsodhatnak, ami megnehezítheti egy későbbi terhesség beágyazódását. Ez is jól mutatja, hogy a meddőség hátterében álló okokat mindig az adott eset teljes előzménye (korábbi fertőzések, beavatkozások, genetikai tényezők) alapján, együttesen érdemes mérlegelni, nem egyetlen tényezőt kiragadva.',
+                ],
+              },
+            ],
+            keyTerms: ['nemi úton terjedő betegség'],
+          },
+        },
+      },
     ],
   },
   {
@@ -1427,16 +6539,786 @@ export const CURRICULUM = [
     icon: 'Leaf',
     color: 'from-lime-500 to-green-600',
     chapters: [
-      { id: 'populacio', title: 'Populáció', order: 1, isFree: true, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'eletkozossegek', title: 'Életközösségek (élőhelytípusok)', order: 2, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera', title: 'Bioszféra', order: 3, isFree: false, estimatedMinutes: 14,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'okoszisztema', title: 'Ökoszisztéma', order: 4, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'kornyezetvedelem', title: 'Környezet- és természetvédelem', order: 5, isFree: false, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'populacio',
+        title: 'Populáció',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'Ezzel a fejezettel egy új témakört kezdünk: az egyed feletti szerveződési szinteket, elsőként a populáció fogalmával. Ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük, a populáció az egyed feletti szerveződés legalsó szintje - azt vizsgáljuk, hogyan határozható meg, és milyen jellemzőkkel írható le.',
+            sections: [
+              {
+                heading: 'A populáció fogalma',
+                paragraphs: [
+                  'A populáció ökológiai értelemben egy adott fajhoz tartozó, egy adott területen, egy időben együtt élő egyedek összessége. Genetikai értelemben ugyanez a populáció egy közös génállományt (génkészletet) alkot: az egyedek egymással szaporodásra képesek, így géneik a következő nemzedékben keveredhetnek - ez a két meghatározás (ökológiai és genetikai) ugyanazt a jelenséget írja le, csak eltérő szempontból.',
+                  'A két meghatározás közötti kapcsolat jól szemlélteti, hogy a populáció egyszerre ökológiai és genetikai fogalom is: az ökológiai meghatározás a térbeli és időbeli együttélésre helyezi a hangsúlyt, míg a genetikai meghatározás arra, hogy az egyedek génjei egy közös, a nemzedékek során folyamatosan keveredő "génkészletet" alkotnak. Ez a génkészlet - ahogy azt egy későbbi modulban (Populációgenetika és evolúciós folyamatok fejezet) részletesen is megismerjük majd - alapvető szerepet játszik a populáció evolúciós változásaiban is.',
+                ],
+              },
+              {
+                heading: 'A populáció jellemzői',
+                paragraphs: [
+                  'A populációt több jellemzővel is le lehet írni: az egyedszám a populációt alkotó egyedek száma; az egyedsűrűség az egységnyi területre (vagy térfogatra) jutó egyedek száma; a koreloszlás azt mutatja meg, hogyan oszlanak meg a populáció egyedei a különböző korcsoportok között; a térbeli eloszlás pedig azt írja le, hogyan helyezkednek el az egyedek az adott területen belül (pl. egyenletesen, csoportosan vagy véletlenszerűen).',
+                  'Ezek a jellemzők gyakorlati problémák megoldására is alkalmazhatók: például egy védett faj állományának felmérésekor az egyedsűrűség és a koreloszlás együttes vizsgálata megmutathatja, hogy a populáció növekszik, stabil, vagy éppen csökkenőben van-e (pl. ha a fiatal korosztály aránya alacsony, az hosszú távon létszámcsökkenésre utalhat).',
+                  'A térbeli eloszlás típusai (egyenletes, csoportos, véletlenszerű) szintén fontos információt hordoznak az adott faj életmódjáról: a csoportos eloszlás gyakran társas életmódra vagy a kedvező élőhelyfoltok egyenlőtlen elhelyezkedésére utal, az egyenletes eloszlás pedig gyakran a fajon belüli, területért folyó versengés jele lehet.',
+                ],
+              },
+              {
+                heading: 'A populáció fogalmának határai',
+                paragraphs: [
+                  'A populáció fogalmának alkalmazásakor mindig meg kell határozni a vizsgált terület és időtartam pontos határait, hiszen ugyanaz a faj más-más populációkat alkothat különböző, egymástól elszigetelt élőhelyeken (pl. egy folyó két partján, ha az egyedek nem tudnak átkelni rajta). Két populáció akkor tekinthető ténylegesen elkülönültnek, ha az egyedeik között tartósan nincs (vagy csak elhanyagolható mértékű) génáramlás, azaz nem, vagy csak ritkán szaporodnak egymással.',
+                ],
+              },
+              {
+                heading: 'Gyakorlati alkalmazás: hazai vadgazdálkodás',
+                paragraphs: [
+                  'A populáció jellemzőinek ismerete a hazai vadgazdálkodásban is gyakorlati jelentőségű: a gímszarvas- vagy az őzállomány egyedszámának és koreloszlásának rendszeres felmérése alapozza meg a fenntartható vadászati kvóták meghatározását, amelyek célja, hogy a kilövés mértéke ne haladja meg azt a szintet, ami a populáció hosszú távú fennmaradását veszélyeztetné.',
+                  'Az emberi tevékenység (pl. élőhelyek beszűkülése, vadászat, táplálékkínálat mesterséges befolyásolása) közvetlenül is hatással lehet egy populáció egyedszámára és eloszlására - ez az egyik oka annak, hogy a populációk jellemzőinek nyomon követése nemcsak tudományos, hanem gyakorlati természetvédelmi és gazdálkodási szempontból is fontos feladat. Hasonló megfontolások érvényesek a védett fajok (pl. egyes ragadozó madarak) állományának kezelésénél is, ahol a cél éppen ellenkezőleg, a populáció növekedésének vagy legalább stabilizálásának elősegítése. A vadgazdálkodási és természetvédelmi célok tehát ugyanazokra a populáció-jellemzőkre (egyedszám, koreloszlás, térbeli eloszlás) épülnek, csupán a kívánt beavatkozás iránya (csökkentés vagy növelés) tér el egymástól. Ez a kettősség jól szemlélteti, hogy a populációökológiai ismeretek gyakorlati alkalmazása mindig az adott faj helyzetétől (túlszaporodás vagy veszélyeztetettség) függ, nem pedig egyetlen, mindenre érvényes szabálytól.',
+                ],
+              },
+            ],
+            keyTerms: ['populáció', 'egyedsűrűség', 'koreloszlás', 'térbeli eloszlás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a populáció egyedszámának növekedési modelljeit és a környezet eltartóképességének fogalmát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Korlátlan és korlátozott növekedési modell',
+                paragraphs: [
+                  'A korlátlan (exponenciális) növekedési modell szerint, ha a populáció korlátlan erőforrásokhoz (táplálék, tér) férne hozzá, egyedszáma egyre gyorsuló ütemben, elméletileg a végtelenségig növekedne. A valóságban azonban az erőforrások végesek: a korlátozott (logisztikus) növekedési modell ezt veszi figyelembe, és azt írja le, hogy a populáció növekedése kezdetben gyors, majd az erőforrások szűkösségével fokozatosan lelassul, és egy stabil szint körül állapodik meg.',
+                  'Ezt a stabil szintet nevezzük a környezet eltartóképességének (K): ez az a maximális egyedszám, amelyet egy adott élőhely erőforrásai tartósan el tudnak tartani. Ha egy populáció egyedszáma átmenetileg meghaladja az eltartóképességet, az erőforrások szűkössége miatt a halálozás megnő vagy a szaporodás csökken, ami visszatéríti a populációt az eltartóképesség közelébe.',
+                  'Az exponenciális növekedési görbe folyamatosan gyorsuló ütemű, "J" alakú, míg a logisztikus növekedési görbe kezdetben hasonlóan gyors, majd az eltartóképesség közelítésével ellaposodó, "S" alakú - ez a két jellegzetes görbealak segít megkülönböztetni egy valós populáció növekedési mintázatát a modellek alapján.',
+                  'A valóságban tisztán exponenciális növekedés csak rövid ideig, kedvező, korlátlannak tűnő körülmények között figyelhető meg (pl. egy új élőhelyre behurcolt, versenytárs nélküli invazív faj esetén) - hosszú távon minden populáció növekedését végül valamilyen korlátozó tényező (táplálék, tér, ragadozók, betegségek) fékezi, ezért a logisztikus modell írja le pontosabban a legtöbb természetes populáció hosszú távú viselkedését.',
+                ],
+              },
+            ],
+            keyTerms: ['eltartóképesség', 'exponenciális növekedés', 'logisztikus növekedés'],
+          },
+        },
+      },
+      {
+        id: 'kornyezeti-kolcsonhatasok',
+        title: 'Környezeti kölcsönhatások',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'r-stratégista', 'K-stratégista'],
+          rows: [
+            ['Utódszám', 'sok', 'kevés'],
+            ['Ivadékgondozás', 'jellemzően kevés vagy nincs', 'kiterjedt'],
+            ['Létszám ingadozása', 'erős', 'stabil, az eltartóképesség közelében'],
+            ['Példa', 'rovarok', 'nagytestű emlősök'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Populáció fejezet) megismert alapfogalmak után ebben a fejezetben azt vizsgáljuk meg, hogyan hat a környezet a populációk létszámára és elterjedésére.',
+            sections: [
+              {
+                heading: 'A populáció létszámának hirtelen változásai: gradáció',
+                paragraphs: [
+                  'A gradáció egy populáció létszámának hirtelen, robbanásszerű megnövekedése, amelyet - a táplálékforrás kimerülése vagy más korlátozó tényező hatására - jellemzően gyors összeomlás követ. Klasszikus példa erre a sáskajárás: kedvező körülmények között (pl. bőséges csapadék utáni növényzet) a sáskák tömegesen elszaporodnak, majd hatalmas rajokban vonulva elpusztítják a termést, mielőtt a populáció létszáma összeomlana. A gradációk ismerete a mezőgazdasági kártevők elleni biológiai védekezés (pl. természetes ellenségek, ragadozók betelepítése) tervezésekor is fontos.',
+                ],
+              },
+              {
+                heading: 'A környezet fogalma és hatásai',
+                paragraphs: [
+                  'A környezet az élő szervezetet körülvevő élettelen (pl. hőmérséklet, fény, víz, talaj) és élő (pl. más fajok, táplálékforrások) tényezők összessége. A környezet hatása nem állandó: az adott szervezet kitettségétől (pl. mennyi ideig, milyen intenzitással éri egy hatás) függően eltérő mértékű választ vált ki - egy rövid, enyhe hatás még tolerálható lehet, míg ugyanaz a hatás tartósan vagy nagyobb intenzitással már károsíthatja a szervezetet.',
+                ],
+              },
+              {
+                heading: 'Tűrőképességi görbék',
+                paragraphs: [
+                  'Minden élőlénynek van egy tűrőképességi tartománya egy adott környezeti tényezőre (pl. hőmérséklet) nézve: ezen belül van egy minimum és egy maximum érték, amelyek között a szervezet még életképes, és egy optimum érték, ahol a szervezet a legjobban teljesít (pl. legjobban szaporodik). Egy fajt szűk tűrésűnek nevezünk, ha ez a tartomány keskeny (kevéssé alkalmazkodóképes egy adott tényező változásaira), és tág tűrésűnek, ha széles (rugalmasan alkalmazkodik a változó feltételekhez).',
+                ],
+              },
+              {
+                heading: 'Biológiai jelzések (indikáció)',
+                paragraphs: [
+                  'Egyes élőlények érzékenysége bizonyos környezeti tényezőkre lehetővé teszi, hogy jelenlétükből vagy hiányukból következtetéseket vonjunk le a környezet állapotára - ezt nevezzük biológiai jelzésnek (indikációnak), az erre alkalmas fajokat pedig bioindikátoroknak. Jó példa erre - ahogy azt korábban (Teleptest és álszövet fejezet) megismertük - a zuzmók levegőszennyezés-érzékenysége: gyakoriságuk és állapotuk egy adott terület levegőminőségét jelzi. Hasonlóan, egyes vízi gerinctelen fajok (pl. bizonyos kérészlárvák) csak tiszta, jól oxigénezett vizekben élnek meg, ezért jelenlétük egy patak vagy folyószakasz jó vízminőségére utal, hiányuk pedig szennyezésre figyelmeztethet.',
+                ],
+              },
+              {
+                heading: 'A talaj kialakulása és a trágyázás jelentősége',
+                paragraphs: [
+                  'A talaj az alapkőzet mállásának, valamint az élő szervezetek (pl. lebontó szervezetek) tevékenységének hosszú távú együttes eredményeként alakul ki - ez egy lassú, évszázadokat, évezredeket igénylő folyamat. A trágyázás a talaj tápanyagtartalmának pótlását szolgálja, ami a növénytermesztés szempontjából fontos, azonban a szakszerűtlen, túlzott műtrágyázás károsíthatja a talaj élővilágát, és a talajvízbe, majd onnan a felszíni vizekbe jutva környezetszennyezést (pl. a vizek eutrofizációját) okozhatja.',
+                  'A fentiek együttesen azt is megmagyarázzák, miért függ össze szorosan egy faj földrajzi elterjedése a környezeti tényezőkkel: egy faj csak ott képes tartósan megtelepedni, ahol a helyi környezeti tényezők (hőmérséklet, víz, talaj stb.) a tűrőképességi tartományán belül maradnak. Ez a felismerés magyarázza például, hogy egyes hazai növényfajok miért csak bizonyos talajtípusokon (pl. meszes vagy savanyú talajon) fordulnak elő, míg máshol, kedvezőtlenebb talajviszonyok között nem képesek megtelepedni, még akkor sem, ha az éghajlati tényezők egyébként megfelelőek lennének.',
+                ],
+              },
+            ],
+            keyTerms: ['gradáció', 'környezet', 'tűrőképesség', 'szűk tűrés', 'tág tűrés', 'bioindikátor'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a populációk mennyiségi változásainak mélyebb elemzését, az emberi korfák értelmezését, valamint a niche-elméletet és a populációk közötti versengést ismerjük meg.',
+            sections: [
+              {
+                heading: 'r- és K-stratégista populációk',
+                paragraphs: [
+                  'A populációk szaporodási stratégiája alapján megkülönböztetünk r-stratégista fajokat (amelyek sok utódot hoznak létre, gyorsan szaporodnak, de kevés gondoskodást nyújtanak, és létszámuk erősen ingadozhat - pl. rovarok) és K-stratégista fajokat (amelyek kevesebb utódot hoznak létre, de azokról hosszan gondoskodnak, és létszámuk jellemzően az adott élőhely eltartóképessége közelében stabilizálódik - pl. nagytestű emlősök). Ez a megkülönböztetés - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet, állati vonatkozásban) az utódszám és az ivadékgondozás kapcsolatánál megismertük - szorosan összefügg a szaporodási stratégiával, ahogy azt a fenti táblázat is összefoglalja.',
+                ],
+              },
+              {
+                heading: 'Emberi korfák értelmezése',
+                paragraphs: [
+                  'A korfa egy populáció koreloszlását ábrázolja grafikusan, jellemzően nemenként elkülönítve. A "piramis" alakú, széles alappal rendelkező korfa növekvő populációra utal (sok fiatal, kevés idős), a "urna" alakú, keskenyedő aljú korfa csökkenő (fogyó) populációra utal (kevés fiatal, sok idős), míg a téglalap alakú, egyenletes szélességű korfa stabil, nagyjából állandó létszámú populációt jelez. Egy adott ország korfájának alakjából tehát következtetni lehet a népesség jövőbeli alakulására, illetve olyan gyakorlati kérdésekre is, mint a jövőbeli munkaerő-utánpótlás vagy az egészségügyi/nyugdíjrendszer terhelése.',
+                  'Konkrét példaként: ha egy ország korfáján a 0-14 éves korosztály aránya jóval kisebb, mint a 60 év felettieké, ez urna alakú, fogyó korfára utal - ebből levonható a következtetés, hogy a következő évtizedekben a munkaképes korú lakosság aránya csökkenni fog, miközben az időskori ellátásra szoruló népesség aránya nő, ami a nyugdíj- és egészségügyi rendszer tervezésekor figyelembe veendő, gyakorlati jelentőségű összefüggés.',
+                ],
+              },
+              {
+                heading: 'Biológiai rendszerek térbeli és időbeli változásai',
+                paragraphs: [
+                  'A biológiai rendszerek (pl. populációk, életközösségek) változásai leírhatók térben és időben is. A térbeli változás lehet vízszintes (pl. egy adott terület mentén, a tengerszinttől távolodva vagy egy folyó mentén haladva megváltozó fajösszetétel) vagy függőleges (pl. egy hegy lábától a csúcsáig, vagy egy tó felszínétől a fenekéig változó életkörülmények és fajösszetétel). Az időbeli változás lehet periodikus (rendszeresen, ciklikusan ismétlődő, pl. napszaki vagy évszakos ingadozás) vagy előrehaladó (egy irányba tartó, tartós változás, pl. egy élőhely fokozatos átalakulása).',
+                ],
+              },
+              {
+                heading: 'A niche-elmélet és a minimum-elv',
+                paragraphs: [
+                  'A niche-elmélet szerint egy faj elterjedését nem egyetlen környezeti tényező, hanem több tényező együttes hatása (pl. hőmérséklet, víz, táplálék, más fajok jelenléte) határozza meg egyszerre - ezt a többdimenziós "teret", amelyben egy faj életképes, ökológiai niche-nek nevezzük. Fontos megkülönböztetni az élettani niche-t (amelyben az adott faj elméletileg, versenytársak nélkül életképes lenne) és az ökológiai niche-t (amelyet a versengő fajok jelenléte a gyakorlatban beszűkít).',
+                  'A minimum-elv szerint egy szervezet fejlődését mindig az a környezeti tényező korlátozza leginkább, amelyből relatíve a legkevesebb áll rendelkezésre - ennek az elvnek is megvannak a korlátai, hiszen a valóságban a tényezők gyakran kölcsönhatásban állnak egymással, nem egymástól függetlenül hatnak.',
+                ],
+              },
+              {
+                heading: 'A Gauze-elv és a testméret-hőmérséklet összefüggés',
+                paragraphs: [
+                  'A Gauze-elv (versengési kizárás elve) szerint két faj, amely pontosan ugyanazt az ökológiai niche-t foglalná el, tartósan nem élhet együtt ugyanazon a területen: a versengés hosszú távon az egyik faj kiszorulásához, kipusztulásához, vagy - gyakrabban - a niche-ek fokozatos elkülönüléséhez vezet. Emellett megfigyelhető egy összefüggés a testtömeg, a testfelület és az élőhely átlaghőmérséklete között is: a hidegebb éghajlaton élő rokon fajok jellemzően nagyobb testűek (kisebb a testfelület/testtömeg arányuk, ami csökkenti a hőveszteséget), mint a melegebb éghajlaton élő rokonaik. Ez az összefüggés jól megfigyelhető a sarkvidéki és a trópusi rokon állatfajok testméretének összehasonlításakor is: a nagyobb testű, hidegebb éghajlathoz alkalmazkodott fajok kisebb relatív testfelülete kevesebb hőt enged elveszni a környezet felé.',
+                ],
+              },
+            ],
+            keyTerms: ['r-stratégista', 'K-stratégista', 'korfa', 'niche', 'Gauze-elv'],
+          },
+        },
+      },
+      {
+        id: 'viselkedesbeli-kolcsonhatasok',
+        title: 'Viselkedésbeli kölcsönhatások',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Állati kommunikáció', 'Emberi kommunikáció (nyelv)'],
+          rows: [
+            ['Jelek száma', 'korlátozott, rögzített', 'gyakorlatilag korlátlanul bővíthető'],
+            ['Elvontság', 'jellemzően a jelen konkrét helyzeteire korlátozódik', 'elvont fogalmakat (múlt, jövő) is kifejez'],
+            ['Objektivitás', 'sok jelzés közvetlen kapcsolatban áll a kifejezett tartalommal', 'a jelek gyakran önkényesek, megegyezés alapúak'],
+            ['Hagyományok szerepe', 'kisebb', 'meghatározó'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Környezeti kölcsönhatások fejezet) megismert, élettelen és élő környezeti tényezők után ebben a fejezetben az egyedek közötti viselkedésbeli kölcsönhatásokat, a társas életformák típusait vizsgáljuk meg.',
+            sections: [
+              {
+                heading: 'A társas együttélés formái',
+                paragraphs: [
+                  'Az állatok társas együttélésének több jellegzetes formája ismert: az időleges tömörülés egy adott erőforrás (pl. táplálék, ivóhely) körül alkalomszerűen kialakuló, laza csoportosulás; a család a szülő(ke)t és utódaikat összefogó egység; a kolónia sok egyed tartós, szorosan együtt élő közössége (pl. hangyaboly, méhkaptár); a monogám pár egy hím és egy nőstény tartós, kizárólagos párkapcsolata; a hárem pedig egy hím és több nőstény tartós csoportja (pl. egyes szarvasfajoknál).',
+                  'Ezeknek a társas formáknak a kialakulása szorosan összefügg a környezeti feltételekkel - ahogy azt korábban (Környezeti kölcsönhatások fejezet) általánosságban megismertük -: például szűkös, nehezen védhető táplálékforrások esetén gyakoribb az egyedi életmód vagy a laza tömörülés, míg bőséges, jól védhető erőforrások vagy magas ragadozónyomás mellett a szorosabb társas kötelékek (család, kolónia) válhatnak előnyössé.',
+                  'Hazai példaként a gólyák időleges tömörülése figyelhető meg vonulás előtt (amikor nagy csapatokba verődve gyülekeznek a hosszú útra), míg a mézelő méhek kolóniaként (kaptárközösségként) élnek, szigorú munkamegosztással - ahogy azt korábban (Rovarok fejezet) megismertük. A hárem típusú társas szerveződésre jó hazai példa a gímszarvas: a bőgési időszakban egy erős bika több nősténnyel alkot csoportot, miközben a vetélytárs bikákat agancsviadallal tartja távol.',
+                ],
+              },
+              {
+                heading: 'Az állati és az emberi kommunikáció összehasonlítása',
+                paragraphs: [
+                  'Az állati és az emberi kommunikáció között a fenti táblázatban összefoglalt módon több lényeges különbség figyelhető meg: az emberi nyelv jelkészlete (szókincse) gyakorlatilag korlátlanul bővíthető, míg az állati jelrendszerek jelkészlete jellemzően rögzített és korlátozott számú. Az emberi nyelv elvont fogalmakat (pl. múlt, jövő, elképzelt helyzetek) is képes kifejezni, míg az állati jelzések többnyire a jelen pillanat konkrét helyzeteire korlátozódnak. Az emberi kommunikáció jelei gyakran megegyezés alapján, önkényesen kapcsolódnak a jelentésükhöz (objektivitás hiánya), míg sok állati jelzés közvetlenebb, ösztönösebb kapcsolatban áll azzal, amit kifejez. Végül az emberi kommunikációban a hagyományok, a kulturálisan átadott tudás sokkal nagyobb szerepet játszik, mint az állatvilágban.',
+                  'Ez a négy szempont (a jelek száma, elvontsága, objektivitása és a hagyományok szerepe) együttesen magyarázza, hogy az emberi nyelv miért képes végtelen számú, akár korábban soha el nem hangzott mondat megalkotására, míg az állati kommunikációs rendszerek - bármennyire is kifinomultak (pl. a méhek táncnyelve - ahogy azt korábban az Öröklött és tanult magatartásformák fejezetben megismertük) - jellemzően egy zárt, viszonylag kis számú üzenet közlésére korlátozódnak.',
+                  'Konkrét példával illusztrálva: egy vörösbegy territoriális éneke mindig ugyanazt az egy jelentést közvetíti ("ez az én territóriumom, távozz") függetlenül a helyzettől, míg egy ember ugyanazzal a nyelvi eszközkészlettel képes elvont, a jelen pillanattól teljesen független gondolatokat (pl. egy múltbeli esemény felidézését vagy egy jövőbeli terv megvitatását) is kifejezni - ez a rugalmasság az, ami az emberi nyelvet alapvetően megkülönbözteti az állati jelrendszerektől.',
+                ],
+              },
+            ],
+            keyTerms: ['tömörülés', 'kolónia', 'monogám pár', 'hárem'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a társas kapcsolatokban megnyilvánuló vonzódás okait, a kapcsolatokat fenntartó hatásokat, valamint az agresszió és az altruizmus emberi és állati megnyilvánulásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'A társas vonzódás okai és a kapcsolatot fenntartó hatások',
+                paragraphs: [
+                  'A társas kapcsolatokban megnyilvánuló vonzódás egyik magyarázata a csoportos kohézió: a csoporthoz tartozás biztonságérzetet, hatékonyabb védekezést (pl. a ragadozók elleni éberség megosztását) és jobb erőforrás-hozzáférést biztosíthat az egyednek, mint a magányos életmód. A társas kapcsolatokat fenntartó hatások közé tartozik - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) megismertük - az ivadékgondozás és a rangsor (dominanciahierarchia) is; ezek konkrét, megfigyelhető formái közé tartozik a behódolás (egy alárendelt egyed jelzése, amellyel elkerüli a konfliktust egy magasabb rangú társsal) és a fenyegetés (egy magasabb rangú egyed jelzése, amellyel a rangsort nyílt küzdelem nélkül tartja fenn).',
+                  'A behódolás és a fenyegetés rituális, jelzésszerű formái - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az agressziónál megismertük - éppen azért terjedtek el széles körben az állatvilágban, mert lehetővé teszik a rangsor fenntartását és a konfliktusok rendezését anélkül, hogy a felek súlyos sérülést kockáztatnának egy nyílt, valódi küzdelemben.',
+                  'A kutyaféléknél (pl. a farkasoknál) a behódolás jellegzetes testtartással jár (pl. a fej és a farok leszegése, a has felfedése), amelyet a magasabb rangú egyed jellemzően tiszteletben tart, és nem folytatja a támadást - ez a jelzésrendszer teszi lehetővé, hogy a csoporton belüli konfliktusok gyorsan, komoly sérülés nélkül rendeződjenek.',
+                ],
+              },
+              {
+                heading: 'Agresszió és altruizmus: állati és emberi megnyilvánulások',
+                paragraphs: [
+                  'Az agresszió - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet) az állatvilágban megismertük - embernél is jellemzően korlátozott erőforrásokért (pl. terület, státusz, anyagi javak) folyó versengésből fakad, de embernél a rituális, jelzésszerű formák mellett a tanult, kulturálisan is alakított viselkedésformák (pl. verbális konfliktus, jogi eljárás) is jelentős szerepet játszanak a konfliktusok rendezésében. Az altruizmus - ahogy azt korábban (Fajfenntartással kapcsolatos viselkedések fejezet emelt kiegészítése) a rokonszelekciónál megismertük - embernél a rokonok segítésén túl kiterjed a nem rokon egyedek (pl. ismerősök, akár idegenek) önzetlen segítésére is, amit a kölcsönösségen alapuló együttműködés (viszonzás elvárása egy későbbi időpontban) és a kulturálisan kialakult erkölcsi normák is erősítenek.',
+                  'Ez a különbség (a rokonszelekción túlmutató, kölcsönösségen és kulturális normákon alapuló emberi altruizmus) jól mutatja, hogy bár az emberi és az állati társas viselkedés hasonló evolúciós gyökerekre vezethető vissza, az emberi kultúra és nyelv további, jelentős rétegekkel egészíti ki és alakítja tovább ezeket az alapvető biológiai mintázatokat.',
+                ],
+              },
+            ],
+            keyTerms: ['behódolás', 'csoportos kohézió'],
+          },
+        },
+      },
+      {
+        id: 'okologiai-kolcsonhatasok',
+        title: 'Ökológiai kölcsönhatások',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Kölcsönhatás', 'Az egyik fél számára', 'A másik fél számára'],
+          rows: [
+            ['Szimbiózis', 'előnyös', 'előnyös'],
+            ['Asztalközösség', 'előnyös', 'semleges'],
+            ['Versengés', 'hátrányos', 'hátrányos'],
+            ['Antibiózis, élősködés, táplálkozási kölcsönhatás', 'előnyös', 'hátrányos'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Viselkedésbeli kölcsönhatások fejezet) megismert, egyedek közötti viselkedésbeli kölcsönhatások után ebben a fejezetben a különböző fajok populációi közötti, ökológiai jellegű kölcsönhatás-típusokat rendszerezzük.',
+            sections: [
+              {
+                heading: 'A fajok közötti kölcsönhatások típusai',
+                paragraphs: [
+                  'A szimbiózis két faj szoros, mindkét fél számára előnyös együttélése - ahogy azt korábban (pl. a zuzmóknál a Teleptest és álszövet fejezetben) megismertük. A versengés két faj (vagy egy fajon belüli két populáció) között akkor lép fel, ha ugyanazért a korlátozott erőforrásért (pl. táplálék, élettér) folyamodnak - emelt szinten ennek lehetséges kimeneteleit korábban (Környezeti kölcsönhatások fejezet emelt kiegészítése) a Gauze-elvnél is megismerhettük. Az asztalközösség (kommenzalizmus) olyan kapcsolat, amelyben az egyik fél előnyt élvez, a másiknak pedig nem árt és nem is használ (pl. egy nagytestű állat mellett élő, annak felkavart táplálékmaradékán élő faj).',
+                  'Fontos, hogy ezeket a kölcsönhatás-típusokat egy adott, konkrét megfigyelés alapján is tudjuk azonosítani: ha mindkét faj egyedei egyértelműen jobban boldogulnak együtt, mint külön-külön, az szimbiózis; ha csak az egyik fél húz belőle előnyt a másik kárára, az élősködés vagy predáció (attól függően, hogy fokozatos-e a kár, vagy azonnali pusztulással jár); ha mindkét fél veszít az együttélésből, az versengés.',
+                  'Az antibiózis olyan kölcsönhatás, amelyben az egyik faj (pl. egy gombafaj vagy baktérium) olyan anyagot termel, amely gátolja vagy elpusztítja a másik faj egyedeit, anélkül hogy ő maga táplálkozási kapcsolatban lenne velük - erre jó példa a korábban (Sejtfonalak fejezet) megismert ecsetpenész, amely a penicillin nevű antibiotikum-anyagot termeli, gátolva egyes baktériumok szaporodását. Az élősködés (parazitizmus) - ahogy azt korábban (Laposférgek fejezet) megismertük - olyan kapcsolat, amelyben az egyik fél (az élősködő) a másik (a gazdaszervezet) kárára táplálkozik, jellemzően anélkül, hogy azonnal elpusztítaná azt. A táplálkozási kölcsönhatás (predáció) ezzel szemben az egyik faj (a ragadozó) másik faj (a zsákmány) elfogyasztásán alapuló, jellemzően az egyed pusztulásával járó kapcsolata.',
+                  'Ezek a kölcsönhatás-típusok - ahogy azt a fenti táblázat is összefoglalja - jól elkülöníthetők egymástól aszerint, hogy melyik fél számára előnyösek, illetve hátrányosak. Ez a rendszerezés segít áttekinteni, hogy egy adott, természetben megfigyelt kapcsolat melyik kategóriába sorolható.',
+                ],
+              },
+              {
+                heading: 'Hazai példák a kölcsönhatásokra',
+                paragraphs: [
+                  'Hazai környezetben is számos példa figyelhető meg mindegyik kölcsönhatás-típusra: a kullancs élősködő kapcsolatban áll az emlősökkel (pl. az emberrel vagy az őzzel); a hazai erdeinkben élő mókusok és a mogyoróbokrok között táplálkozási kölcsönhatás áll fenn; a pillangók és a virágos növények kapcsolata a beporzás során kölcsönösen előnyös (szimbiózis-jellegű) kapcsolat; a gyertyános-tölgyesekben a fényért folyó versengés jól megfigyelhető a lombkorona- és a cserjeszint fajai között.',
+                  'Az asztalközösségre (kommenzalizmusra) hazai példa lehet egyes madárfajok fészkelése emberi épületeken (pl. a gólya kéményen épített fészke): a madár így védett, kényelmes fészkelőhelyhez jut, míg az épület tulajdonosának ez rendszerint sem előnyt, sem hátrányt nem jelent - bár esetenként (pl. a fészek súlya vagy szennyeződése miatt) ez a viszony a gyakorlatban a kommenzalizmus és az enyhe károkozás határán mozoghat. Ez a példa jól szemlélteti, hogy a valóságban megfigyelt kölcsönhatások nem mindig sorolhatók be egyértelműen és élesen egyetlen kategóriába, hanem gyakran átmenetet képeznek két típus között.',
+                ],
+              },
+            ],
+            keyTerms: ['szimbiózis', 'asztalközösség', 'antibiózis', 'élősködés', 'táplálkozási kölcsönhatás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes hangsúlyozni, hogy egy adott élőlénypopuláció valójában egyszerre több kölcsönhatás-típusban is részt vesz.',
+            sections: [
+              {
+                heading: 'A kölcsönhatások sokrétűsége egyetlen fajnál',
+                paragraphs: [
+                  'Egyetlen faj életében a fent bemutatott kölcsönhatás-típusok jellemzően egyszerre, egymást átfedve vannak jelen: egy adott növényfaj egyszerre lehet versengésben más növényekkel a fényért, szimbiózisban egy gombával (mikorrhiza) a gyökerénél, táplálkozási kölcsönhatásban (mint zsákmány) egy növényevő rovarral, és asztalközösségben egy rajta megtelepedő, ártalmatlan epifita fajjal. Ez a sokrétűség jól mutatja, hogy egy életközösség (amelyet a következő fejezetben ismerünk meg részletesen) valójában rendkívül sok, egyidejűleg zajló kölcsönhatás bonyolult hálózata, nem pedig egymástól elszigetelt fajpárok egyszerű összessége.',
+                  'Ez a rendszerszemlélet azt is megmagyarázza, hogy egyetlen faj eltűnése vagy létszámának drasztikus megváltozása egy életközösségben miért okozhat sokszor beláthatatlan, láncszerű hatásokat: mivel az adott faj egyszerre több más fajjal is kölcsönhatásban áll, a rá épülő vagy vele kapcsolatban lévő fajok közvetve is érintetté válhatnak. Ez a felismerés az egyik legfontosabb elméleti alapja annak, hogy a természetvédelem miért nem szorítkozhat egyetlen, kiemelt faj védelmére, hanem a vele kölcsönhatásban álló többi faj és élőhely együttes megőrzésére is figyelnie kell. Ezt a szemléletet a következő fejezetekben (Életközösségek, Ökoszisztéma) még tovább bővítjük, amikor már nem csupán fajpárok, hanem teljes életközösségek szintjén vizsgáljuk a kölcsönhatások hálózatát. Ez a fokozatos szemléletbővítés (egyedtől a populáción át a fajok közötti kölcsönhatásokig) alkotja az egyed feletti szerveződési szintek tananyagának logikai gerincét.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'eletkozossegek-jellemzoi',
+        title: 'Az életközösségek jellemzői',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Ökológiai kölcsönhatások fejezet) megismert, fajok közötti kölcsönhatás-típusok után ebben a fejezetben azt vizsgáljuk meg, hogyan szerveződnek ezek a kölcsönhatások egy magasabb szerveződési szintté, az életközösséggé.',
+            sections: [
+              {
+                heading: 'Az életközösség fogalma',
+                paragraphs: [
+                  'Az életközösség (biocönózis) egy adott élőhelyen élő, egymással szoros kölcsönhatásban álló populációk összessége - ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük, ez a populáció fölötti szerveződési szint. Egy életközösséget jellemezhetünk a fajösszetételével (mely fajok populációi alkotják), valamint azzal, hogy van-e domináns (uralkodó) faja - egy olyan faj, amely egyedszámával, biomasszájával vagy hatásával kiemelkedik a többi közül, és jelentősen meghatározza az életközösség jellegét (pl. egy erdő domináns fafaja).',
+                  'Fontos hangsúlyozni, hogy egy életközösség határai a valóságban ritkán élesek: a szomszédos életközösségek gyakran fokozatosan, átmeneti zónákon (ökotónokon) keresztül folynak egymásba, ahol mindkét szomszédos életközösség fajai előfordulhatnak - éppen ezért egy adott életközösség lehatárolása mindig valamilyen gyakorlati szempont (pl. a domináns faj vagy az élőhelytípus változása) alapján történik.',
+                  'Az életközösségeket alkotó populációk - ahogy azt korábban (Ökológiai kölcsönhatások fejezet) megismertük - sokféle kölcsönhatásban (szimbiózis, versengés, élősködés, táplálkozási kölcsönhatás stb.) állnak egymással; egy adott életközösség stabilitása és jellege nagymértékben ezeknek a kölcsönhatásoknak az összességéből adódik, nem pusztán az egyes fajok jelenlétéből vagy hiányából. Egy életközösség tehát mindig több, mint az őt alkotó populációk egyszerű összege: a köztük lévő kölcsönhatások hálózata olyan tulajdonságokat (pl. stabilitást, önszabályozó képességet) hoz létre, amelyek egyetlen populáció szintjén nem értelmezhetők.',
+                ],
+              },
+              {
+                heading: 'Domináns fajok és karakterfajok',
+                paragraphs: [
+                  'A domináns faj mellett fontos fogalom a karakterfaj is: ez egy olyan faj, amelynek jelenléte jellegzetes és felismerhető az adott életközösségre, még ha egyedszáma vagy biomasszája nem is a legnagyobb. Egy bükkös erdő domináns faja maga a bükk (hiszen ez adja a lombkorona nagy részét és meghatározza a fényviszonyokat), míg egy karakterfaj lehet egy olyan, kevésbé gyakori, de az adott élőhelyre jellemző állat- vagy növényfaj, amelynek jelenléte önmagában is jelzi az életközösség típusát.',
+                ],
+              },
+              {
+                heading: 'A szintezettség kialakulása',
+                paragraphs: [
+                  'A szintezettség (rétegződés) az életközösségek jellegzetes térbeli szerveződési formája: a fajok függőlegesen elkülönülő szintekben (rétegekben) helyezkednek el. Egy erdei életközösségben például megkülönböztethetünk gyepszintet, cserjeszintet és lombkoronaszintet - ez a rétegződés elsősorban a fényért folyó versengés következménye: a magasabbra növő fajok árnyékolják az alacsonyabban lévőket, ezért az egyes szintek fajai eltérő fényigényhez és -tűréshez alkalmazkodtak.',
+                  'A szintezettség nemcsak a növényzetre jellemző: az egyes növényi szintekhez jellemzően sajátos állatfajok is kötődnek (pl. a lombkoronaszintben élő madarak eltérnek a gyepszint rovarvilágától), ezért a szintezettség az egész életközösség fajgazdagságát és szerkezetét meghatározza.',
+                ],
+              },
+              {
+                heading: 'Az életközösségek gyakorlati jelentősége',
+                paragraphs: [
+                  'Az életközösségek szerkezetének (fajösszetétel, domináns faj, szintezettség) ismerete gyakorlati szempontból is fontos: egy erdőgazdálkodó vagy természetvédelmi szakember csak akkor tudja felmérni egy beavatkozás (pl. fakitermelés) várható hatását, ha ismeri az adott életközösség szerkezetét és a benne lévő fajok egymásra utaltságát. Ha például egy domináns fafajt nagy mennyiségben eltávolítanak egy erdőből, az nemcsak a lombkoronaszintet érinti, hanem - a szintezettségen keresztül - az összes alsóbb szint fényviszonyait, és ezáltal az ott élő fajok életfeltételeit is megváltoztatja. Ez a láncszerű hatásmechanizmus lesz az alapja annak is, amit a következő fejezetben (Hazai életközösségek) az emberi tevékenység életközösségekre gyakorolt hatásairól megismerünk.',
+                ],
+              },
+            ],
+            keyTerms: ['életközösség', 'domináns faj', 'karakterfaj', 'szintezettség'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes egy konkrét, hazai példán keresztül szemléltetni a szintezettséget.',
+            sections: [
+              {
+                heading: 'A szintezettség egy hazai erdő példáján',
+                paragraphs: [
+                  'Egy hazai tölgyes vagy bükkös erdőben jellemzően négy-öt szint különíthető el: a gyepszint (füvek, virágos növények), a cserjeszint (bokrok), az alsó és felső lombkoronaszint (kisebb, illetve nagyobb fák), valamint a talaj alatti gyökérszint. Minden szinthez sajátos mikroklíma (fény-, hőmérséklet- és páraviszonyok) társul, ami magyarázza, hogy miért képes ugyanaz az erdő ilyen sok, eltérő igényű fajnak otthont adni: a szintezettség lényegében megsokszorozza az élőhely által kínált ökológiai niche-ek (ahogy azt korábban a Környezeti kölcsönhatások fejezetben megismertük) számát.',
+                  'Vízi életközösségekben (pl. egy tóban) a szintezettség hasonlóan érvényesül, csak itt a fényellátottság és az oxigénkoncentráció mélységgel változó mértéke szabja meg a rétegek határait: a felszínhez közeli, jól átvilágított réteg fotoszintetizáló szervezeteknek ad otthont, míg a mélyebb, sötétebb rétegekben elsősorban lebontó szervezetek és az oxigénszegény körülményeket is toleráló fajok élnek. A tavak esetében nyáron gyakran egy hőmérsékleti rétegződés (termoklina) is kialakul, amely tovább erősíti a mélységi rétegek elkülönülését, hiszen a hidegebb, mélyebb vízréteg és a melegebb felszíni réteg között csak korlátozott mértékben keveredik a víz. Ez a párhuzam (erdei és vízi szintezettség) jól mutatja, hogy a szintezettség nem egy adott élőhelytípushoz kötött jelenség, hanem egy általános ökológiai elv, amely mindenhol érvényesül, ahol egy környezeti tényező (fény, oxigén, hőmérséklet) a mélységgel vagy magassággal fokozatosan változik. Ez az elv - a fokozatosan változó környezeti tényező mentén kialakuló rétegződés - a következő fejezetben (Hazai életközösségek) tárgyalt térbeli mintázatnak is az egyik alapja, hiszen a mintázat is gyakran valamilyen környezeti tényező fokozatos vagy foltszerű változásából adódik.',
+                ],
+              },
+            ],
+            keyTerms: [],
+          },
+        },
+      },
+      {
+        id: 'hazai-eletkozossegek',
+        title: 'Hazai életközösségek',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Cseres-tölgyes', 'Gyertyános-tölgyes', 'Bükkös'],
+          rows: [
+            ['Jellemző klíma', 'szárazabb, melegebb', 'köztes', 'hűvösebb, csapadékosabb'],
+            ['Jellemző előfordulás', 'alacsonyabb dombvidék', 'domb- és hegyvidék átmenete', 'hegyvidék, magasabb régiók'],
+            ['Fő fafaj', 'cser, kocsánytalan tölgy', 'gyertyán és tölgy elegyesen', 'bükk'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Az életközösségek jellemzői fejezet) megismert alapfogalmak után ebben a fejezetben a hazai életközösségek térbeli és időbeli változásait, valamint jellegzetes hazai élőhelytípusait tekintjük át.',
+            sections: [
+              {
+                heading: 'Térbeli és időbeli változatosság',
+                paragraphs: [
+                  'Az életközösségek térbeli változatossága a szintezettség mellett a mintázatban (a fajok, élőhelyfoltok egymáshoz viszonyított elrendeződésében) is megnyilvánul. Az időbeli változás lehet periodikus (pl. évszakos, rendszeresen ismétlődő) vagy előrehaladó: ez utóbbi a szukcesszió, amelynek során egy életközösség fokozatosan, meghatározott irányban átalakul, míg el nem éri a végállapotát (klimax állapotát).',
+                  'Az emberi tevékenység (pl. kaszálás, legeltetés, tókotrás, fakitermelés) jelentősen befolyásolhatja a szukcesszió menetét: ezek a beavatkozások a folyamatot visszavethetik egy korábbi állapotba, vagy éppen egy adott, ember által kívánt állapotban tarthatják (pl. a rendszeres kaszálás megakadályozza, hogy egy rét fokozatosan cserjéssé, majd erdővé alakuljon).',
+                  'Az emberi tevékenység hatását az életközösségekre gyakran a fajgazdagság és az érintett terület nagysága alapján mérik fel: egy beavatkozás (pl. egy terület beépítése vagy felszántása) nemcsak a helyben élő fajok számát csökkentheti, hanem az élőhely feldarabolásával a szomszédos, érintetlen területek életközösségeit is meggyengítheti, mivel megnehezíti az egyedek és populációk közötti kapcsolatot.',
+                ],
+              },
+              {
+                heading: 'Sokféleség, produktivitás, stabilitás és degradáció',
+                paragraphs: [
+                  'Egy életközösség sokfélesége (fajgazdagsága), termelőképessége (produktivitása) és stabilitása szorosan összefüggenek: általánosságban egy sokfélébb életközösség jobban ellenáll a zavaró hatásoknak, és stabilabban tartja fenn produktivitását, mint egy fajszegény életközösség. A degradáció az életközösség állapotának romlását jelenti (pl. fajszám-csökkenés, a szerkezet leegyszerűsödése) - okai közé tartozik többek között a túlzott emberi terhelés, a szennyezés vagy az élőhelyek feldarabolódása.',
+                  'Ez az összefüggés (sokféleség-produktivitás-stabilitás) azt is megmagyarázza, hogy egy degradált, fajszegény életközösség miért érzékenyebb egy váratlan zavaró hatásra (pl. szélsőséges időjárás, kártevő elszaporodása): kevesebb faj esetén kisebb az esély arra, hogy legyen olyan faj, amely az adott zavaró hatást jól tolerálja, és át tudja venni a kieső fajok szerepét az anyag- és energiaáramlásban.',
+                ],
+              },
+              {
+                heading: 'Hazai élőhelytípusok összehasonlítása',
+                paragraphs: [
+                  'Hazánk jellegzető erdőtípusai (a fenti táblázatban összefoglalva) a klíma és más környezeti tényezők (pl. talajvízszint, alapkőzet) függvényében váltják egymást: a cseres-tölgyes a szárazabb, melegebb dombvidékeken, a gyertyános-tölgyes átmeneti zónában, a bükkös pedig a hűvösebb, csapadékosabb hegyvidéki régiókban jellemző. Az ember jelentősen átalakította ezeket az élőhelyeket: a természetes erdőket sok helyen faültetvények váltották fel, a folyószabályozás és a legeltetés is tartósan megváltoztatta a tájat.',
+                  'A szikes puszták sajátos, magas sótartalmú talajon kialakuló élőhelyek, amelyek kialakulásában a talajvíz párolgása és az így felszínre húzódó sók játszanak szerepet (másodlagos szikesedés esetén ez emberi beavatkozás, pl. az öntözés vagy az erdőirtás következménye is lehet). A sziklagyepek szélsőséges, sekély talajú, gyakran meredek lejtőkön alakulnak ki, jellegzetes, sokszor ritka és védett fajokkal - ezeket az élőhelyeket elsősorban a taposás, a túlzott legeltetés és a beépítés fenyegeti. Mindkét élőhelytípus (szikes puszta, sziklagyep) azért is természetvédelmi szempontból kiemelten fontos, mert a rájuk jellemző, szélsőséges körülményekhez alkalmazkodott fajok más élőhelyeken nem, vagy csak nagyon ritkán fordulnak elő.',
+                  'A gyomnövények megtelepedését az ember által bolygatott talajfelszín (pl. mezőgazdasági művelés, erdészeti fahasználat, taposás) segíti elő: ezek a fajok gyors növekedésű, jó terjedőképességű "úttörő" növények, amelyek a bolygatott, más fajok számára még kedvezőtlen talajon is képesek megtelepedni. Az egyes gyomfajok gyakran az adott bolygatás típusához (pl. mezőgazdasági művelés vagy taposás) specifikusan alkalmazkodnak, ezért egy terület gyomnövényzetéből következtetni lehet az ott zajló emberi tevékenység jellegére is.',
+                ],
+              },
+            ],
+            keyTerms: ['mintázat', 'szukcesszió', 'degradáció', 'szikes puszta', 'sziklagyep'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ökológiai mutatók (T-, W-, R-, N-, Z-értékek) alkalmazását, valamint egy konkrét terület élővilágának esettanulmány-szerű jellemzését ismerjük meg.',
+            sections: [
+              {
+                heading: 'Ökológiai mutatók és terepi jellemzés',
+                paragraphs: [
+                  'Egy terület ökológiai viszonyai az ott élő fajokat jellemző ökológiai mutatók (T - hőmérsékleti, W - vízigényi, R - talaj-kémhatási, N - tápanyagigényi, Z - zavarástűrési érték) alapján is jellemezhetők: az adott területen előforduló fajok mutatóinak összesítése megbízható képet ad a hely környezeti adottságairól, akár közvetlen műszeres mérés nélkül is - ez az elv jól kapcsolódik a korábban (Környezeti kölcsönhatások fejezet) megismert biológiai jelzés (indikáció) fogalmához.',
+                  'Egy iskolához vagy lakóhelyhez közeli terület élővilágának jellemzésekor érdemes rendszerezetten haladni: az élőhelytípus és a fő környezeti tényezők (pl. talaj, vízellátottság) azonosítása után az uralkodó (domináns) állat- és növényfajok, a szintezettség, illetve az évszakos (időbeli) változások megfigyelése adja a teljes képet - ehhez a fajok azonosításához hazai Növényismereti és Állatismereti segédkönyvek nyújtanak támpontot. Egy ilyen terepi jellemzés jó gyakorlati alkalmazása annak, amit korábban (Az életközösségek jellemzői fejezet) elméletben megismertünk a fajösszetételről és a domináns fajokról.',
+                ],
+              },
+              {
+                heading: 'Az életközösségek előrehaladó változása: tófeltöltődés',
+                paragraphs: [
+                  'A tófeltöltődés klasszikus példája a szukcessziónak: egy tó fokozatosan feltöltődik az üledékkel és az elpusztult vízi növények maradványaival, ami miatt a nyíltvízi életközösséget fokozatosan mocsári, majd láprét, végül szárazföldi (pl. erdei) életközösség váltja fel - ez a folyamat évtizedek, évszázadok alatt zajlik le, és jól szemlélteti, hogy egy életközösség előrehaladó változása hogyan vezet egy teljesen más végállapothoz (klimax életközösséghez).',
+                ],
+              },
+            ],
+            keyTerms: ['T-érték', 'W-érték', 'klimax életközösség'],
+          },
+        },
+      },
+      {
+        id: 'bioszfera',
+        title: 'Bioszféra',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Hazai életközösségek fejezet) megismert, konkrét hazai életközösségek után ebben a fejezetben a legmagasabb egyed feletti szerveződési szintet, a bioszférát tekintjük át.',
+            sections: [
+              {
+                heading: 'A bioszféra mint globális rendszer',
+                paragraphs: [
+                  'A bioszféra - ahogy azt korábban (Az élet jellemzői fejezet) a szerveződési szinteknél megismertük - a Föld egészének élő rétege, amely az összes életközösséget magában foglalja. A Gaia-elmélet szerint a bioszféra egyetlen, önszabályozó globális rendszerként is felfogható, amelyben az élő szervezetek és az élettelen (abiotikus) környezet folyamatos, kölcsönös kölcsönhatásban állnak egymással - az élővilág nemcsak alkalmazkodik a fizikai-kémiai környezethez, hanem aktívan alakítja is azt (pl. a légkör oxigéntartalmát az élővilág fotoszintetikus tevékenysége tartja fenn).',
+                  'A bioszféra tehát nem csupán az életközösségek egyszerű összeadása: a Gaia-elmélet szerint a globális rendszer egésze olyan önszabályozó tulajdonságokkal (pl. a légköri gázösszetétel, a globális hőmérséklet hosszú távú stabilitása) rendelkezik, amelyeket az élővilág és az élettelen környezet évmilliókon át tartó kölcsönhatása alakított ki és tart fenn.',
+                ],
+              },
+              {
+                heading: 'Civilizációs ártalmak és az ember szerepe',
+                paragraphs: [
+                  'Az emberi tevékenység a bioszféra egészére kiterjedő hatással bír, ezért az ember felelőssége és feladata (környezettudatosság) is ebben a globális léptékben értelmezhető. A civilizációs ártalmak (pl. a feloldatlan stressz, az alkoholizmus, a helytelen életmód, a kábítószer-fogyasztás, a túlzott gyógyszerfogyasztás, a vegyszerek károsító hatásai) az emberi egészséget és közvetve a bioszférát is érintik - ezek jellemzően a modern, iparosodott társadalmak életmódjához kötődnek, és gyakran együtt, egymást erősítve jelentkeznek.',
+                  'Az emberi beavatkozások egy része pusztítja (pl. az esőerdők irtása, a monokultúrás mezőgazdaság, a kőolajszennyezés), más része védi (pl. a nemzeti parkok létrehozása, a nemzetközi környezetvédelmi egyezmények) a természetes növény- és állatvilágot. A nemzeti parkok és a nemzetközi egyezmények (pl. veszélyeztetett fajok kereskedelmét korlátozó megállapodások) azért is fontosak, mert egy adott élőhely vagy faj védelme gyakran csak több ország összehangolt együttműködésével valósítható meg. Hazai szinten is van felelősségünk és lehetőségünk (pl. tudatos vásárlási szokások kialakítása), amellyel hozzájárulhatunk a bioszféra állapotának megőrzéséhez.',
+                  'Az egyéni felelősség és a globális léptékű problémák közötti kapcsolat gyakran nem nyilvánvaló: egy hétköznapi vásárlási döntés (pl. mely termékeket részesítjük előnyben) áttételesen hozzájárulhat távoli élőhelyek (pl. esőerdők) megőrzéséhez vagy pusztulásához is, hiszen a globális kereskedelem összeköti a fogyasztói döntéseket a termelés helyszínén zajló környezeti hatásokkal. Ez a felismerés az alapja annak, hogy a tudatos fogyasztói magatartás (pl. tanúsított, fenntartható forrásból származó termékek választása) ma már a globális környezetvédelem egyik gyakorlati eszközének is tekinthető.',
+                ],
+              },
+              {
+                heading: 'A bioszféra és az egészség kapcsolata',
+                paragraphs: [
+                  'A civilizációs ártalmak (pl. a feloldatlan stressz, a helytelen életmód, a túlzott gyógyszerfogyasztás) nemcsak az egyéni egészséget, hanem közvetve a bioszférát is terhelik: a modern, gyorsan növekvő fogyasztói társadalmak életmódja - ahogy azt korábban (Az idegrendszer egészségtana fejezet) a stresszbetegségeknél is megismertük - jelentős erőforrás- és energiaigénnyel jár, ami hosszú távon a globális környezeti terhelés növekedéséhez vezet.',
+                ],
+              },
+            ],
+            keyTerms: ['bioszféra', 'Gaia-elmélet', 'civilizációs ártalom'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a Kárpát-medence tájtörténetét, a globális környezeti problémákat, valamint az ökológiai válság társadalmi-gazdasági vonatkozásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'A Kárpát-medence tájtörténete és a fenntartható gazdálkodás',
+                paragraphs: [
+                  'A Kárpát-medence jellegzetes életközösségei a történelem során jelentősen átalakultak: az elterjedő mezőgazdasági művelés, a folyószabályozás és a városiasodás mind hozzájárultak a táj mai arculatának kialakulásához - ez a folyamat jó példa arra, hogyan alakítja az emberi tevékenység hosszú távon, akár évszázadok alatt egy egész régió életközösség-mintázatát. Például a folyószabályozások előtt a Kárpát-medence síkvidékein sokkal nagyobb kiterjedésű ártéri, mocsaras élőhelyek húzódtak, amelyek a folyószabályozás és a lecsapolások következtében nagyrészt szántóföldekké alakultak át.',
+                  'A közlekedés (úthálózat kiépítése) is jelentős ökológiai hatással jár: az utak feldarabolják az élőhelyeket, akadályozzák az állatok vándorlását, és zajjal, szennyezéssel terhelik a környező életközösségeket. A fenntartható gazdálkodás olyan gazdálkodási mód, amely a jelen szükségleteit úgy elégíti ki, hogy nem veszélyezteti a jövő nemzedékek lehetőségeit - ennek gyakorlati megvalósítását esettanulmányok (pl. ökológiai gazdálkodás, szelektív fakitermelés) szemléltetik jól.',
+                ],
+              },
+              {
+                heading: 'Globális problémák és az ökológiai válság',
+                paragraphs: [
+                  'A globális problémák közé tartozik a népességrobbanás, a globális felmelegedés, a hulladékprobléma, a savasodás és az ózonpajzs elvékonyodása - ezek mindegyike szorosan összefügg egymással, és együttesen alkotják az ökológiai válságot. Ezek a problémák egymást erősítő módon jelentkeznek: a növekvő népesség fokozódó energia- és erőforrás-igénye hozzájárul a globális felmelegedéshez és a hulladéktermeléshez, míg a savasodás és az ózonpajzs elvékonyodása közvetlenül az ipari és mezőgazdasági tevékenység melléktermékeként jelentkező légszennyező anyagokra vezethető vissza.',
+                  'Az ökológiai válság nem csupán környezeti, hanem társadalmi és gazdasági kérdés is: a demográfiai (népességnövekedési) és gazdasági növekedésnek a Földön véges anyagi és energetikai korlátai vannak, ezért a korlátlan növekedés hosszú távon nem tartható fenn.',
+                  'Az ökológiai lábnyom egy olyan mutató, amely azt fejezi ki, mekkora területre volna szükség egy adott személy vagy közösség fogyasztásának és hulladéktermelésének fenntartásához - ez a mutató jól szemlélteti, hogy egy adott életmód mennyire terheli a bioszférát, és lehetővé teszi különböző életmódok, országok környezeti terhelésének összehasonlítását is. Ha egy ország lakosságának összesített ökológiai lábnyoma meghaladja az ország saját területének eltartóképességét, az azt jelzi, hogy az adott ország fogyasztása csak más területek erőforrásainak igénybevételével (pl. import útján) tartható fenn.',
+                ],
+              },
+            ],
+            keyTerms: ['fenntartható gazdálkodás', 'ökológiai válság', 'ökológiai lábnyom'],
+          },
+        },
+      },
+      {
+        id: 'anyagforgalom',
+        title: 'Anyagforgalom',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Bioszféra fejezet) megismert globális szint után ebben a fejezetben egy konkrétabb, szervezeti szintre térünk vissza: azt vizsgáljuk, hogyan áramlanak az anyagok egy ökoszisztémán belül.',
+            sections: [
+              {
+                heading: 'Termelők, fogyasztók és lebontók',
+                paragraphs: [
+                  'Egy ökoszisztéma (amely az életközösséget és annak élettelen, abiotikus környezetét együtt jelenti) anyagforgalmában és energiaáramlásában három nagy szereplő-csoport vesz részt: a termelők - ahogy azt korábban (Baktériumok fejezet) megismertük - fotoszintézissel (vagy kemoszintézissel) szervetlen anyagokból szerves anyagot állítanak elő; a fogyasztók a termelők vagy más fogyasztók elfogyasztásával jutnak szerves anyaghoz és energiához; a lebontók pedig - ahogy azt korábban (Sejtfonalak fejezet) a gombáknál megismertük - az elhalt szerves anyagot bontják le, visszajuttatva az elemeket a körforgásba.',
+                  'Az ökoszisztéma tagjai folyamatos kölcsönhatásban állnak az abiotikus (élettelen) környezettel is: a termelők a talajból és a levegőből veszik fel a fotoszintézishez szükséges szervetlen anyagokat (víz, szén-dioxid, ásványi sók), a lebontók tevékenysége pedig visszajuttatja ezeket az elemeket a talajba, ahonnan újra felvehetővé válnak - ez a kölcsönös kapcsolat teszi lehetővé, hogy az anyagok az ökoszisztémán belül tartósan körforgásban maradjanak.',
+                  'A fogyasztók tovább is csoportosíthatók aszerint, mit fogyasztanak: az elsődleges fogyasztók (növényevők) közvetlenül a termelőket fogyasztják, a másodlagos és további fogyasztók (húsevők) pedig már más fogyasztókat esznek meg - ez a sorrend adja a táplálkozási lánc trófikus szintjeit, amelyek mindegyikén az adott szintre jellemző szervezetek helyezkednek el.',
+                ],
+              },
+              {
+                heading: 'Táplálkozási lánc és táplálékhálózat',
+                paragraphs: [
+                  'A táplálkozási lánc egy egyenes vonalú sorozat, amely egyetlen úton mutatja be, melyik szervezet táplálkozik melyikkel (pl. növény → növényevő → húsevő). A táplálékhálózat ezzel szemben azt a valóságosabb, összetettebb helyzetet ábrázolja, amelyben egy adott faj több másik fajjal is táplálkozási kapcsolatban áll - egy táplálékhálózat tehát több, egymással összefonódó táplálkozási láncból épül fel.',
+                  'Egy leírás alapján megszerkesztett táplálékhálózatból az is megállapítható, mi történhet a hálózat egyik tagjának eltűnésével vagy elszaporodásával: mivel a legtöbb fogyasztónak több táplálékforrása is van, egyetlen faj kiesése ritkán vezet az egész hálózat összeomlásához, viszont egy kulcsfontosságú (sok más fajjal kapcsolatban álló) faj eltűnése súlyos, láncszerű következményekkel járhat a hálózat más tagjaira nézve. Egy adott faj populációjának hirtelen megnövekedése (pl. egy ragadozó eltűnése miatt) hasonlóan továbbgyűrűzhet a hálózaton: a hirtelen elszaporodó faj táplálékforrásai lecsökkenhetnek, ami áttételesen más, vele táplálkozási kapcsolatban álló fajokat is érint.',
+                  'A táplálékláncokban felhalmozódó peszticidek és más mérgek (pl. nehézfémek) jó példát adnak arra, hogyan okozhat egy önmagában kis koncentrációjú szennyezés súlyos problémát: a méreganyag a táplálkozási lánc egyes szintjein egyre feljebb haladva egyre koncentráltabbá válik (biomagnifikáció), így a lánc csúcsán lévő ragadozók szervezetében veszélyesen magas szintet érhet el, még akkor is, ha a környezetben eredetileg csak nyomokban volt jelen.',
+                ],
+              },
+              {
+                heading: 'A fenntartható fejlődés',
+                paragraphs: [
+                  'A fenntartható fejlődés olyan fejlődési modell, amely a jelen generáció szükségleteinek kielégítése mellett figyelembe veszi a jövő nemzedékek érdekeit és a bioszféra terhelhetőségének korlátait is - ez a fogalom szorosan kapcsolódik a korábban (Bioszféra fejezet) megismert fenntartható gazdálkodáshoz és ökológiai lábnyomhoz. A fenntartható fejlődés gyakorlati megvalósítása megköveteli, hogy az anyagforgalom (pl. hulladékkezelés, újrahasznosítás) minél inkább kövesse a természetes ökoszisztémák körforgás-elvét, amelyben - a lebontók tevékenységének köszönhetően - gyakorlatilag semmi nem vész el véglegesen "hulladékként". Ez a szemlélet (körforgásos gazdaság) egyre inkább teret nyer a gyakorlatban is: a tervezés szintjén már eleve úgy alakítanak ki termékeket, hogy azok élettartamuk végén minél könnyebben szétszerelhetők és újrahasznosíthatók legyenek. Ez a szemléletváltás - a hagyományos, "termelés-fogyasztás-hulladék" lineáris modell helyett egy körkörös, körforgásos gazdasági modell felé - napjaink egyik legfontosabb, hosszú távú fenntarthatósági törekvése.',
+                ],
+              },
+            ],
+            keyTerms: ['termelő', 'fogyasztó', 'lebontó', 'táplálkozási lánc', 'táplálékhálózat', 'fenntartható fejlődés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a szén-oxigén körforgást és a nitrogén körforgását ismerjük meg.',
+            sections: [
+              {
+                heading: 'A szén és az oxigén körforgása',
+                paragraphs: [
+                  'A szén és az oxigén körforgásában - ahogy azt korábban (Felépítő folyamatok: a fotoszintézis, illetve Lebontó folyamatok fejezetek) megismertük - az autotróf szervezetek (fotoszintézissel) szervetlen szén-dioxidból építenek szerves anyagot, a heterotróf szervezetek (sejtlégzéssel) pedig a szerves anyagot bontják vissza szén-dioxiddá. Ha az elhalt szerves anyag lebontás nélkül halmozódik fel (pl. oxigénszegény, vízzel telített környezetben), abból hosszú idő alatt humusz, majd tovább alakulva szénhidrogén vagy kőszén keletkezhet; a mészvázas élőlények elhalt maradványaiból pedig karbonát-kőzetek (pl. mészkő) képződhetnek - ezek a folyamatok a szenet évmilliókra "kivonják" a rövid távú körforgásból.',
+                  'Ez a "kivont" szén az ember által kitermelt és elégetett fosszilis energiahordozók (kőszén, kőolaj, földgáz) formájában évmilliók után kerülhet vissza rövid idő alatt a légkörbe szén-dioxid formájában - ez az egyik fő oka annak, hogy a fosszilis energiahordozók elégetése felborítja a szénkörforgás természetes egyensúlyát, és hozzájárul a korábban (Bioszféra fejezet) megismert globális felmelegedéshez.',
+                ],
+              },
+              {
+                heading: 'A nitrogén körforgása',
+                paragraphs: [
+                  'A nitrogén körforgásában több baktériumcsoport is kulcsszerepet játszik: a nitrogéngyűjtő (nitrogénkötő) baktériumok - ahogy azt korábban (Baktériumok fejezet) a hüvelyesek gyökerén élő fajoknál megismertük - a légköri nitrogént a növények számára felvehető formává alakítják; a nitrifikáló baktériumok - ahogy azt korábban (Elemek, ionok fejezet) megismertük - az ammóniát nitritté, majd nitráttá alakítják, amelyet a növények felvehetnek; a denitrifikáló baktériumok pedig a nitrátot visszaalakítják légköri nitrogénné, lezárva ezzel a kört.',
+                  'Ez a három baktériumcsoport együttesen biztosítja, hogy a nitrogén folyamatosan körforgásban maradjon a légkör, a talaj és az élő szervezetek között - enélkül a nitrogén (amely, ahogy azt korábban az Elemek, ionok fejezetben megismertük, a fehérjék és a nukleinsavak nélkülözhetetlen alkotóeleme) fokozatosan felhalmozódna egyetlen formában, és az élővilág számára hozzáférhetetlenné válna. A nitrogénkörforgás ábrán történő elemzésekor érdemes követni, hogy egy adott nitrogénatom milyen formákon (légköri N₂, ammónia, nitrit, nitrát, majd szerves nitrogén) halad végig, mire visszakerül a kiindulási állapotba.',
+                ],
+              },
+            ],
+            keyTerms: ['nitrogéngyűjtő baktérium', 'denitrifikáló baktérium'],
+          },
+        },
+      },
+      {
+        id: 'energiaaramlas-sokfeleseg',
+        title: 'Energiaáramlás és biológiai sokféleség',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Anyagforgalom fejezet) megismert anyagforgalom után ebben a fejezetben az ökoszisztémán belüli energiaáramlást, valamint a biológiai sokféleség fogalmát tekintjük át - ez a fejezet zárja az Egyed feletti szerveződési szintek témakör jelenleg tárgyalt részét. Míg az anyagok (pl. a szén, a nitrogén) körforgásban maradnak egy ökoszisztémán belül, addig az energia csak egy irányban áramlik át a rendszeren: a termelőktől a fogyasztókon át a lebontókig, majd végül hő formájában elhagyja a rendszert - ez az alapvető különbség indokolja, hogy az anyagforgalmat és az energiaáramlást külön-külön érdemes tárgyalni.',
+            sections: [
+              {
+                heading: 'Produkció, biomassza és egyedszám',
+                paragraphs: [
+                  'A produkció egy adott időszak alatt egy életközösségben újonnan létrehozott szerves anyag (és a benne tárolt energia) mennyisége. A biomassza egy adott pillanatban jelen lévő élő szerves anyag teljes tömege. Az egyedszám és a biomassza nem mindig arányos egymással: sok, de apró termetű egyedből álló populáció biomasszája lehet kisebb, mint kevés, de nagytestű egyedből állóé - ezért egy életközösség jellemzésekor mindhárom mutatót (produkció, biomassza, egyedszám) érdemes együtt figyelembe venni.',
+                  'Jó példa erre a különbségre a tengeri planktonikus életközösségek esete: az apró, gyorsan szaporodó fitoplankton biomasszája egy adott pillanatban viszonylag alacsony lehet, miközben a folyamatos, gyors szaporodás miatt a produkciója (az újonnan termelt szerves anyag mennyisége egy adott időszak alatt) igen magas - ez jól mutatja, hogy a produkció és a biomassza két különböző, egymást kiegészítő szempontot ragad meg. Ezzel szemben egy erdő esetében a helyzet fordított: a fák nagy, tartósan felhalmozott biomasszát képviselnek, miközben az évi produkciójuk (az adott évben újonnan létrehozott szerves anyag) a teljes biomasszájukhoz képest viszonylag kicsi.',
+                ],
+              },
+              {
+                heading: 'A biológiai sokféleség szintjei',
+                paragraphs: [
+                  'A biológiai sokféleséget (biodiverzitást) három, egymásra épülő szinten értelmezzük: a genetikai diverzitás az egyes populációkon belüli allél-összetétel változatosságát jelenti; a fajdiverzitás egy adott területen élő fajok számát és egyedszám-arányait fejezi ki; az ökológiai diverzitás pedig az adott területen betöltött ökológiai funkciók (pl. termelő, fogyasztó, lebontó szerepek) változatosságára utal. Mindhárom szint védelme fontos: a genetikai sokféleség biztosítja egy populáció alkalmazkodóképességét a jövőbeli környezeti változásokhoz, a fajdiverzitás az életközösség stabilitását - ahogy azt korábban (Hazai életközösségek fejezet) megismertük -, az ökológiai diverzitás pedig azt, hogy az életközösség a lehető legtöbb ökológiai "feladatot" el tudja látni.',
+                  'A három szint egymástól viszonylag függetlenül is változhat: egy adott területen a fajok száma lehet magas, miközben az egyes populációk genetikai sokfélesége alacsony (pl. ha egy faj csak kevés, egymással rokon egyedből álló, elszigetelt populációkban él) - ez rávilágít arra, hogy a természetvédelemben nem elegendő csupán a fajok számát figyelni, a genetikai és az ökológiai sokféleséget is nyomon kell követni. Egy faj kihalása mindhárom szinten veszteséget okoz: elvész az adott faj teljes génállománya (genetikai diverzitás), csökken a terület fajszáma (fajdiverzitás), és megszűnik az a sajátos ökológiai szerep is, amit az adott faj betöltött (ökológiai diverzitás).',
+                ],
+              },
+            ],
+            keyTerms: ['produkció', 'biomassza', 'genetikai diverzitás', 'fajdiverzitás', 'ökológiai diverzitás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ökológiai piramisok elemzését ismerjük meg, amelyek az anyag- és energiaáramlás mennyiségi viszonyait szemléltetik az ökoszisztémákban.',
+            sections: [
+              {
+                heading: 'Ökológiai piramisok',
+                paragraphs: [
+                  'Az ökológiai piramisok grafikusan ábrázolják, hogyan változik egy adott mennyiség (pl. az energiamennyiség, a biomassza vagy az egyedszám) a táplálkozási lánc egymást követő szintjein (trófikus szintjein). Az energiapiramis szinte mindig szabályosan szűkülő alakú, mert - ahogy azt korábban (Felépítés és lebontás kapcsolata fejezet) megismertük - minden egyes trófikus szint között jelentősen (kb. tizedére) csökken az átadható energia mennyisége, hiszen az energia nagy része már az adott szint szervezeteinek saját anyagcseréjében hő formájában elvész.',
+                  'Egy ökológiai piramis vagy folyamatábra elemzésekor tehát mindig érdemes megkülönböztetni, hogy pontosan melyik mennyiséget (energia, biomassza vagy egyedszám) ábrázolja, mivel - ahogy azt fentebb is láttuk - ezek nem feltétlenül mutatnak azonos irányú változást a trófikus szintek mentén, még ha a legtöbb esetben mindhárom szabályosan szűkül is felfelé haladva.',
+                  'Ez a szabályosság magyarázza, hogy egy táplálkozási lánc miért nem lehet tetszőlegesen hosszú: minden egyes szinttel drasztikusan csökken a rendelkezésre álló energia, ezért a csúcsragadozók szintjén már csak nagyon kevés energia áll rendelkezésre - emiatt a valóságban egy táplálkozási lánc ritkán haladja meg a négy-öt trófikus szintet.',
+                  'Az egyedszám- és a biomassza-piramis alakja ezzel szemben nem mindig szabályosan szűkülő: bár a legtöbb szárazföldi életközösségben ezek is szűkülnek felfelé haladva, egyes vízi életközösségekben (pl. ahol az apró, de gyorsan szaporodó termelők - a fitoplankton - biomasszája alacsonyabb, mint az őket fogyasztó állatoké) a biomassza-piramis fordított is lehet, hiszen - ahogy azt fentebb a produkció és a biomassza kapcsolatánál megismertük - a gyors utánpótlás miatt alacsony biomasszájú termelő-populáció is képes nagy mennyiségű fogyasztót eltartani.',
+                ],
+              },
+            ],
+            keyTerms: ['ökológiai piramis'],
+          },
+        },
+      },
+      {
+        id: 'termeszetvedelem-alapjai',
+        title: 'A természetvédelem alapjai',
+        order: 10,
+        isFree: false,
+        estimatedMinutes: 16,
+        content: {
+          kozep: {
+            intro: 'A korábban (Energiaáramlás és biológiai sokféleség fejezet) megismert biológiai sokféleség után ebben a fejezetben azt vizsgáljuk meg, miért fontos ezt a sokféleséget védeni, és milyen eszközök állnak rendelkezésre a védelmére.',
+            sections: [
+              {
+                heading: 'A természetvédelem melletti érvek',
+                paragraphs: [
+                  'A természetvédelem mellett többféle érv is szól. Etikai érv, hogy más fajoknak önmagukban, az embertől független értékük van, ezért kipusztításuk erkölcsi felelősséggel jár. Egészségügyi érv, hogy a természetes életközösségek (pl. gyógynövények, jövőbeli gyógyszerek forrásaként) és az egészséges környezet (tiszta levegő, víz) közvetlenül szolgálják az emberi egészséget. Kulturális érv, hogy a természeti értékek (tájak, fajok) sok közösség identitásának, hagyományainak részét képezik. Gazdasági érv, hogy a természetes életközösségek olyan szolgáltatásokat (pl. beporzás, vízvisszatartás, talajvédelem) nyújtanak, amelyek pótlása mesterséges úton rendkívül költséges vagy lehetetlen volna.',
+                  'Ez a négyféle érvrendszer (etikai, egészségügyi, kulturális, gazdasági) együttesen ad teljes képet arról, miért nem tekinthető a természetvédelem pusztán "luxusnak": a sokféleség megőrzése egyszerre erkölcsi kötelesség, egészségügyi biztosíték, kulturális örökség védelme és hosszú távú gazdasági érdek is.',
+                ],
+              },
+              {
+                heading: 'A sokféleség védelmének fontossága mindhárom szinten',
+                paragraphs: [
+                  'A biológiai sokféleség mindhárom szintjét - ahogy azt korábban (Energiaáramlás és biológiai sokféleség fejezet) megismertük - védeni kell: a genetikai diverzitás biztosítja egy-egy faj alkalmazkodóképességét, a fajdiverzitás az életközösségek stabilitását, az ökológiai diverzitás pedig azt, hogy egy életközösség a lehető legtöbb ökológiai funkciót el tudja látni. Ha csak egyetlen szintre (pl. a fajok számára) figyelnénk, könnyen elsikkadhatna, hogy egy adott faj genetikailag leszegényedett populációi vagy egy életközösség funkcionális egyensúlya is ugyanolyan veszélyeztetett lehet.',
+                ],
+              },
+              {
+                heading: 'A természetvédelem lehetőségei',
+                paragraphs: [
+                  'A természetvédelem gyakorlati eszközei közé tartozik a fajok védelme (pl. egy adott veszélyeztetett faj vadászatának, gyűjtésének tiltása), a területek védelme (pl. nemzeti parkok, természetvédelmi területek kijelölése) és a kereskedelmi korlátozások (pl. veszélyeztetett fajokból készült termékek kereskedelmének nemzetközi tiltása). E három eszköz gyakran együttesen, egymást kiegészítve alkalmazandó: egy faj hatékony védelme önmagában a vadászati tilalommal ritkán elegendő, ha közben az élőhelye is fokozatosan eltűnik.',
+                  'Magyarországon több nemzeti park is működik (pl. a Hortobágyi, a Bükki, az Aggteleki, a Kiskunsági Nemzeti Park), amelyek mindegyike egy adott tájegység jellegzetes életközösségeit és fajait védi. Egy adott nemzeti park bemutatásakor érdemes kitérni az elhelyezkedésére, a jellemző élőhelytípusaira és az ott élő, kiemelten védett fajaira.',
+                  'A Hortobágyi Nemzeti Park - hazánk legrégebbi nemzeti parkja - elsősorban a pusztai (sztyeppei) életközösségeket, a szikes tavakat és az ott fészkelő madárfajokat (pl. a túzokot) védi, míg az Aggteleki Nemzeti Park a barlangi és a karsztos élőhelyeket, a Bükki Nemzeti Park pedig a hegyvidéki erdőtársulásokat helyezi védelem alá - jól látszik tehát, hogy a hazai nemzeti parkok a táj adottságaihoz igazodva, egymástól eltérő élőhelytípusokat és fajokat védenek. Egy adott lakóhelyhez legközelebb eső nemzeti park bemutatásakor érdemes a fentiekhez hasonlóan strukturáltan haladni: elhelyezkedés, jellemző élőhelyek, majd az ott élő, kiemelten védett fajok bemutatása.',
+                ],
+              },
+            ],
+            keyTerms: ['természetvédelem', 'nemzeti park'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten esettanulmányok alapján a biodiverzitást veszélyeztető tényezők felismerését, valamint a szennyezés csökkentését ösztönző gazdasági és jogi eszközöket ismerjük meg.',
+            sections: [
+              {
+                heading: 'Esettanulmányok: biodiverzitást veszélyeztető tényezők',
+                paragraphs: [
+                  'Egy esettanulmány elemzésekor (pl. egy adott terület fajszám-csökkenéséről vagy egy faj állományának összeomlásáról) érdemes azonosítani a veszélyeztető tényezőt (pl. élőhelyvesztés, szennyezés, túlzott kitermelés, idegenhonos fajok betelepedése) és ennek ökológiai következményeit, majd javaslatot tenni a tényező megelőzésére vagy hatásainak mérséklésére (pl. élőhely-helyreállítás, szigorúbb szabályozás, tudatosságnövelés).',
+                  'Az idegenhonos (invazív) fajok betelepedése különösen alattomos veszélyeztető tényező, mivel az adott terület őshonos fajainak - amelyek nem "számítanak" az új versenytársra vagy ragadozóra - gyakran nincs kialakult védekező stratégiájuk ellene, ezért egy invazív faj viszonylag rövid idő alatt is drasztikusan átalakíthatja egy életközösség fajösszetételét.',
+                ],
+              },
+              {
+                heading: 'Gazdasági és jogi eszközök a szennyezés csökkentésére',
+                paragraphs: [
+                  'A szennyezés csökkentését ösztönző gazdasági és jogi eszközök közé tartoznak a környezetterhelési adók (a szennyező tevékenységet drágábbá teszik), a tiltások (bizonyos anyagok vagy tevékenységek teljes körű megtiltása), a határértékek (a megengedett szennyezési szint jogi rögzítése), a bírságok (a határérték túllépésének szankcionálása) és a polgári perek (a károsultak kártérítési igénye). Ezek hatékonysága eltérő: a tiltások és a szigorú határértékek gyors, egyértelmű hatásúak, de rugalmatlanok, míg az adók és a gazdasági ösztönzők fokozatosabb, de hosszabb távon fenntarthatóbb szemléletváltást segíthetnek elő.',
+                  'Egy adott eszköz hatékonyságának értékelésekor érdemes mérlegelni, hogy az milyen gyorsan és milyen mértékben csökkenti ténylegesen a szennyezést, mekkora a betartatás költsége és nehézsége, valamint hogy jár-e nem szándékolt mellékhatásokkal (pl. egy túl szigorú tiltás feketepiacot generálhat, ha nincs mögötte megfelelő ellenőrzés).',
+                  'A környezetszennyezés káros hatásainak bizonyítására szolgáló kísérlet például összehasonlíthatja egy adott szennyező anyagnak kitett és egy attól mentes kontrollcsoport (pl. két, eltérő vízminőségű élőhelyen élő) populáció egészségi állapotát, szaporodási sikerét vagy túlélési arányát - a kontrollcsoporttal való összevetés nélkül nem lehetne egyértelműen a szennyező anyagnak tulajdonítani a megfigyelt különbségeket.',
+                ],
+              },
+            ],
+            keyTerms: ['biodiverzitás', 'határérték'],
+          },
+        },
+      },
+      {
+        id: 'levegoszennyezes',
+        title: 'Levegőszennyezés és védelme',
+        order: 11,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (A természetvédelem alapjai fejezet) megismert általános természetvédelmi eszközök után ebben a fejezetben a levegő szennyezését és az ellene való védekezést tekintjük át - a levegő az egyik legalapvetőbb, mindenki számára közös erőforrás, ezért állapotának romlása szinte azonnal és széles körben érezteti hatását.',
+            sections: [
+              {
+                heading: 'A levegő mint közös erőforrás',
+                paragraphs: [
+                  'A levegő - a vízhez és a talajhoz hasonlóan - olyan közös erőforrás, amelynek állapotát mindenki egyszerre használja és alakítja: egyetlen ország vagy régió szennyezése is átterjedhet a szomszédos területekre, sőt akár globális léptékben is éreztetheti hatását (pl. az üvegházgázok esetében), ezért a levegő védelme elválaszthatatlan a nemzetközi együttműködéstől.',
+                ],
+              },
+              {
+                heading: 'Fontosabb légszennyező anyagok',
+                paragraphs: [
+                  'A legfontosabb légszennyező anyagok közé tartozik a szén-monoxid (CO, elsősorban tökéletlen égésből származó, mérgező gáz, amely a hemoglobinhoz az oxigénnél is erősebben kötődve akadályozza a szervezet oxigénellátását), a szén-dioxid (CO2, égéstermék, amely önmagában nem mérgező, de üvegházhatású), a nitrogén-oxidok (elsősorban közlekedésből és iparból származnak, hozzájárulnak a savas esőhöz és a szmoghoz), az ólom és ólomvegyületek (korábban elsősorban az ólmozott benzinből származtak, idegrendszeri károsodást okozhatnak), a korom és a por (légúti megbetegedéseket okozhatnak) és a halogénezett szénhidrogének (pl. egyes hűtőközegek, amelyek az ózonpajzsot is károsíthatják).',
+                  'Ezek az anyagok jellemzően két nagy forrásból származnak: a közlekedésből (elsősorban a belső égésű motorok kipufogógázaiból) és az iparból (gyártási folyamatok, energiatermelő erőművek égéstermékei) - mindkét forrás csökkentésének kulcsa a tisztább technológiák (pl. katalizátorok, szűrők) alkalmazása és a fosszilis energiahordozók használatának mérséklése.',
+                ],
+              },
+              {
+                heading: 'A légszennyezés hatása az egészségre és a környezetre',
+                paragraphs: [
+                  'A légszennyező anyagok az emberi egészségre elsősorban a légutakon (belégzéssel) fejtik ki hatásukat: a por és a korom irritálja a légutakat, súlyosbíthatja az asztmát és más légúti betegségeket, a nitrogén-oxidok és az ózon pedig tovább terhelik a tüdőt. Hosszú távon a tartós, magas légszennyezettségnek kitett területeken élők körében gyakrabban fordulnak elő légúti és keringési megbetegedések. A nagyvárosok forgalmas útjai mentén, illetve az ipari létesítmények közelében élők jellemzően fokozottabban vannak kitéve ezeknek a kockázatoknak, mint a vidéki, kevésbé terhelt területeken élők.',
+                ],
+              },
+              {
+                heading: 'Szmogriadó',
+                paragraphs: [
+                  'Szmogriadó idején (amikor a légszennyezettség mértéke meghalad egy egészségügyi határértéket, jellemzően szélcsendes, hideg időszakokban) a lakosságnak érdemes kerülnie a szabadtéri, megterhelő testmozgást, csökkenteni a személygépkocsi-használatot, és az érzékeny csoportoknak (idősek, légúti betegek, kisgyermekek) különösen ajánlott a szabadban töltött idő minimalizálása. A szmog kialakulását éppen a szélcsend segíti elő: mozgó levegő hiányában a szennyező anyagok nem oszlanak szét, hanem egy adott terület fölött felhalmozódnak, ami tovább növeli a koncentrációjukat. Nagyvárosokban a szmogriadó gyakran a közlekedés korlátozásával (pl. ideiglenes behajtási tilalommal) is párosul, hiszen a gépjárműforgalom az egyik legjelentősebb helyi légszennyező forrás.',
+                ],
+              },
+            ],
+            keyTerms: ['légszennyező anyag', 'szmogriadó'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a savas esők kialakulását és az üvegházhatás mechanizmusát ismerjük meg.',
+            sections: [
+              {
+                heading: 'Savas esők',
+                paragraphs: [
+                  'A savas esők kialakulásának hátterében elsősorban a kén-dioxid és a nitrogén-oxidok légköri, vízzel és oxigénnel lezajló kémiai átalakulása áll, amely kén- és salétromsavat eredményez - ezek az anyagok a csapadékkal a talajra és a vizekbe kerülve savasítják azokat. A savas esők károsítják az erdőket (a levelek és a gyökérzet károsodásán keresztül), a vizeket (a vízi élőlények számára kedvezőtlen pH-eltolódás révén) és az épített környezetet (pl. a mészkő építőanyagok korrózióját gyorsítva).',
+                  'A savasodás hatása gyakran a keletkezés helyétől távol jelentkezik: a szennyező anyagok a légkörben akár több száz kilométert is elsodródhatnak, mielőtt csapadék formájában kihullanának - ez az egyik oka annak, hogy a savas esők elleni védekezés csak nemzetközi összefogással lehet igazán hatékony.',
+                ],
+              },
+              {
+                heading: 'Az üvegházhatás',
+                paragraphs: [
+                  'Az üvegházhatás lényege, hogy egyes légköri gázok (elsősorban a szén-dioxid, a metán és a vízgőz) átengedik a Nap rövidhullámú sugárzását, de elnyelik a Föld felszínéről visszaverődő hosszúhullámú (hő-) sugárzás egy részét, ezáltal melegítve a légkört - ez a jelenség önmagában természetes és szükséges (enélkül a Föld felszíne sokkal hidegebb lenne), de az emberi tevékenység (elsősorban a fosszilis energiahordozók elégetése) által megnövelt üvegházgáz-koncentráció - ahogy azt korábban (Bioszféra, illetve Anyagforgalom fejezetek) megismertük - a folyamatot felerősíti, hozzájárulva a globális felmelegedéshez.',
+                  'A globális felmelegedés lehetséges következményei közé tartozik a sarki jégtakarók olvadása és az ezzel járó tengerszint-emelkedés, a szélsőséges időjárási jelenségek (aszályok, áradások) gyakoribbá válása, valamint az életközösségek elterjedési területének eltolódása, ahogy a fajok a számukra még megfelelő hőmérsékletű területek felé húzódnak. A teendők között szerepel az üvegházgáz-kibocsátás csökkentése (pl. energiahatékonyság növelése, megújuló energiaforrások alkalmazása) és az elkerülhetetlen változásokhoz való alkalmazkodás egyaránt.',
+                  'Az egyre gyakoribbá váló szélsőséges időjárási jelenségek (pl. tartós aszályok, hirtelen, heves esőzések) hazánkban is éreztetik hatásukat: ezek nemcsak a mezőgazdasági termelést nehezítik, hanem a hazai életközösségek - ahogy azt korábban (Hazai életközösségek fejezet) a szukcessziónál megismertük - hosszú távú összetételét és stabilitását is befolyásolhatják.',
+                ],
+              },
+            ],
+            keyTerms: ['savas eső', 'üvegházhatás'],
+          },
+        },
+      },
+      {
+        id: 'vizszennyezes-energia',
+        title: 'Vízszennyezés és energiagazdálkodás',
+        order: 12,
+        isFree: false,
+        estimatedMinutes: 14,
+        comparisonTable: {
+          headers: ['Szempont', 'Nem megújuló energiaforrás', 'Megújuló energiaforrás'],
+          rows: [
+            ['Készlet', 'emberi léptékkel véges', 'emberi léptékkel gyakorlatilag kimeríthetetlen'],
+            ['Kiszámíthatóság', 'jellemzően állandó', 'egyesek időjárásfüggők (nap, szél)'],
+            ['Környezeti terhelés', 'jelentős (szennyezés, üvegházhatás)', 'jellemzően kisebb'],
+            ['Példa', 'kőszén, kőolaj, földgáz', 'napenergia, szélenergia, vízenergia, geotermikus energia'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Levegőszennyezés és védelme fejezet) megismert légszennyezés után ebben a fejezetben a vizek szennyezését és tisztítását, valamint az energiagazdálkodás alapjait tekintjük át - a levegőhöz hasonlóan a víz is olyan közös, mindenki számára létfontosságú erőforrás, amelynek védelme egyéni és társadalmi felelősség is egyben.',
+            sections: [
+              {
+                heading: 'A vizek öntisztuló képessége és a vízszennyező anyagok',
+                paragraphs: [
+                  'A vizek öntisztuló képessége azt jelenti, hogy a vízi életközösségek (elsősorban a lebontó szervezetek tevékenysége révén) egy bizonyos mértékig képesek maguktól lebontani a beléjük kerülő szerves szennyezőanyagokat. Ennek a képességnek azonban korlátai vannak: ha a szennyezés mértéke meghaladja az öntisztulás sebességét, a víz állapota tartósan leromlik. A fontosabb vízszennyező anyagok közé tartoznak a nitrátok (elsősorban a mezőgazdasági műtrágyázásból származnak, és túlzott algásodást - eutrofizációt - okozhatnak) és a peszticidek (növényvédő szerek maradványai, amelyek - ahogy azt korábban az Anyagforgalom fejezetben a biomagnifikációnál megismertük - a táplálékláncban felhalmozódhatnak).',
+                  'Az eutrofizáció (a víz túlzott feldúsulása tápanyagokban, elsősorban nitrátokban és foszfátokban) az algák és más vízinövények túlzott elszaporodásához vezet; ezek elpusztulása és lebontása során a lebontó szervezetek nagy mennyiségű oxigént fogyasztanak el, ami a vízben oldott oxigén drasztikus csökkenéséhez, súlyos esetben a hal- és más vízi állatállomány pusztulásához vezethet.',
+                ],
+              },
+              {
+                heading: 'A vízkészletek védelmének gyakorlati szempontjai',
+                paragraphs: [
+                  'A felszíni vizek (folyók, tavak) mellett a felszín alatti vízkészletek (talajvíz, rétegvíz) is sérülékenyek a szennyezéssel szemben: mivel ezek a vizek lassabban áramlanak és cserélődnek, egy egyszeri szennyezés hatása is akár évtizedekig fennmaradhat bennük, ezért a megelőzés (pl. a szennyező anyagok talajba jutásának elkerülése) itt még inkább előtérbe kerül, mint a felszíni vizeknél, ahol az áramlás gyorsabb hígulást és cserét tesz lehetővé.',
+                  'Magyarország vízkészletei szempontjából különösen fontos a felszín alatti, jó minőségű ivóvízbázisok védelme, hiszen az ország ivóvízellátásának jelentős része ezekre a készletekre épül - ezek elszennyeződése nemcsak környezeti, hanem közvetlen közegészségügyi kockázatot is jelentene.',
+                ],
+              },
+              {
+                heading: 'Hőszennyezés és víztisztítás',
+                paragraphs: [
+                  'A hőszennyezés azt jelenti, hogy egy ipari vagy energiatermelő létesítmény (pl. erőmű) által hűtésre használt, majd felmelegedve visszaengedett víz megemeli a befogadó vízfolyás hőmérsékletét, ami megváltoztatja az oldott oxigén mennyiségét és az ott élő fajok életfeltételeit. A melegebb víz kevesebb oxigént képes oldva tartani, ráadásul a felmelegedés az élőlények anyagcseréjét is felgyorsítja, ami tovább növeli az oxigénigényüket - ez a kettős hatás különösen veszélyezteti a hidegebb, oxigéndús vizekhez alkalmazkodott fajokat.',
+                  'A mechanikai víztisztítás a szennyvízből fizikai úton (pl. szűréssel, ülepítéssel) távolítja el a durvább szennyeződéseket, a biológiai víztisztítás pedig mikroorganizmusok segítségével bontja le a szerves szennyezőanyagokat - a kettő gyakran egymást követő lépésként, kombinálva alkalmazandó egy szennyvíztisztító telepen.',
+                ],
+              },
+            ],
+            keyTerms: ['öntisztuló képesség', 'eutrofizáció', 'hőszennyezés', 'biológiai víztisztítás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az energiaforrásokat, valamint a megújuló és a nem megújuló energiaforrások közötti különbséget ismerjük meg - ez a témakör szorosan kapcsolódik a korábban (Levegőszennyezés és védelme fejezet) megismert üvegházhatáshoz és globális felmelegedéshez is, hiszen az energiatermelés módja alapvetően meghatározza egy ország üvegházgáz-kibocsátását.',
+            sections: [
+              {
+                heading: 'Energiaforrások: megújuló és nem megújuló',
+                paragraphs: [
+                  'A lehetséges energiaforrások hozzáférhetősége és használatuk korlátai jelentősen eltérnek egymástól. A nem megújuló energiaforrások (pl. a kőszén, a kőolaj, a földgáz) emberi léptékkel mérve véges készletet jelentenek, és felhasználásuk - ahogy azt korábban (Levegőszennyezés és védelme fejezet) az üvegházhatásnál megismertük - jelentős környezeti terheléssel (szennyezés, üvegházhatás) jár. A megújuló energiaforrások (pl. a napenergia, a szélenergia, a vízenergia, a geotermikus energia) emberi léptékkel gyakorlatilag kimeríthetetlenek, és felhasználásuk jellemzően kisebb környezeti terheléssel jár, bár telepítésük és üzemeltetésük is hordozhat környezeti hatásokat (pl. tájkép-változás, élőhely-érintettség) - ahogy azt a fenti táblázat is összefoglalja.',
+                  'A megújuló energiaforrások elterjedésének egyik korlátja a kiszámíthatóságuk hiánya (pl. a napenergia és a szélenergia termelése az időjárástól függ), ezért ezek nagy arányú alkalmazása jellemzően fejlett energiatárolási megoldásokat vagy más energiaforrásokkal való kombinálást is igényel az energiaellátás folyamatosságának biztosításához. A vízenergia és a geotermikus energia ezzel szemben stabilabb, kiszámíthatóbb forrást jelent, de telepítésük gyakran csak bizonyos földrajzi adottságok (pl. megfelelő folyó, geotermikus aktivitás) mellett gazdaságos. Magyarország geotermikus adottságai kifejezetten kedvezőek, ezért a geotermikus energia hazánkban is egyre jelentősebb szerepet játszik, elsősorban a fűtésben és a termálvízhasznosításban. Az energiaforrás megválasztásakor tehát mindig érdemes együttesen mérlegelni a hozzáférhetőséget, a gazdaságosságot és a környezeti terhelést, hiszen egyetlen energiaforrás sem old meg minden szempontot egyformán jól.',
+                ],
+              },
+              {
+                heading: 'Sugárzás mint energiaforrás és kockázat',
+                paragraphs: [
+                  'A radioaktív sugárzás kettős szerepet játszik: egyrészt az atomenergia (amely az uránatommagok hasadásából nyeri az energiáját) a nem megújuló energiaforrások közé tartozó, jelentős energiasűrűségű, üvegházgázt közvetlenül nem termelő energiaforrás, másrészt a szervezetet érő sugárterhelés egészségügyi kockázatot is jelenthet. A sugárzásnak természetes forrásai is vannak (pl. a talajból, a kőzetekből, illetve a kozmikus sugárzásból származó háttérsugárzás), amelyeknek mindannyian folyamatosan ki vagyunk téve, valamint mesterséges forrásai (pl. orvosi diagnosztikai eljárások, atomerőművek).',
+                  'A sugárvédelem alapelve, hogy a szükségtelen sugárterhelést kerülni kell, az elkerülhetetlen sugárterhelést pedig a lehető legalacsonyabb szinten kell tartani - ezt biztosítja többek között a védőtávolság megtartása, a sugárforrással töltött idő minimalizálása és megfelelő árnyékolás alkalmazása.',
+                ],
+              },
+            ],
+            keyTerms: ['megújuló energiaforrás', 'nem megújuló energiaforrás', 'atomenergia'],
+          },
+        },
+      },
+      {
+        id: 'talaj-hulladek',
+        title: 'Talajvédelem és hulladékgazdálkodás',
+        order: 13,
+        isFree: false,
+        estimatedMinutes: 14,
+        content: {
+          kozep: {
+            intro: 'A korábban (Vízszennyezés és energiagazdálkodás fejezet) megismert vízvédelem és energiagazdálkodás után, az Egyed feletti szerveződési szintek témakört lezáró fejezetben a talajvédelmet és a hulladékgazdálkodást tekintjük át - ezzel a fejezettel egyben a levegő, a víz, a talaj és a hulladék védelmének teljes köre lezárul, kerek képet adva a környezetvédelem gyakorlati területeiről.',
+            sections: [
+              {
+                heading: 'Talajerózió',
+                paragraphs: [
+                  'A talajerózió a talaj felső, termékeny rétegének víz vagy szél általi elhordását jelenti - ez a folyamat sokkal gyorsabb, mint a talaj - ahogy azt korábban (Környezeti kölcsönhatások fejezet) megismertük - természetes kialakulása, ezért a talajerózió hosszú távon visszafordíthatatlan termőföld-veszteséghez vezethet. Az erózió csökkentésének lehetőségei közé tartozik a növényzettel való borítottság fenntartása (a gyökérzet megköti a talajt), a lejtőre merőleges (szintvonalas) művelés, valamint a szélfogó fasorok telepítése.',
+                  'Az erózió kockázata különösen nagy a meredek lejtésű, növényzet nélkül hagyott (pl. frissen szántott) területeken, mivel ott a csapadékvíz akadálytalanul, nagy sebességgel folyik le, magával sodorva a talaj felső, legtermékenyebb rétegét - ez az oka annak, hogy a hagyományos szántóföldi művelés helyett egyre gyakrabban alkalmaznak talajkímélő módszereket (pl. minimális talajbolygatás, állandó növényi borítottság fenntartása). A szélerózió elleni védekezés hasonló elveken alapul: a szélfogó fasorok és sövények megtörik a szél erejét, csökkentve a talaj felső rétegének elfújását, különösen a nyílt, fátlan mezőgazdasági területeken. Hazánkban a szélerózió különösen a Duna-Tiszaközi Homokhátság laza, homokos talajú, fátlan területein jelentős probléma, ahol a szélfogó erdősávok telepítése bevett gyakorlati védekezési módszer.',
+                ],
+              },
+              {
+                heading: 'A talaj termékenységének megőrzése',
+                paragraphs: [
+                  'A talaj termékenységének hosszú távú megőrzése nemcsak az erózió elleni védekezést jelenti, hanem a talaj szerves anyag- és tápanyagtartalmának fenntartását is - ahogy azt korábban (Anyagforgalom fejezet) a lebontók szerepénél megismertük, a talajban élő lebontó szervezetek folyamatos tevékenysége nélkülözhetetlen ehhez. A talaj túlzott, egyoldalú terhelése (pl. ugyanazon növénykultúra évről évre történő termesztése) kimerítheti a talaj tápanyagkészletét és károsíthatja a talajban élő szervezetek közösségét.',
+                ],
+              },
+              {
+                heading: 'Hulladékgazdálkodás',
+                paragraphs: [
+                  'A hulladékok típusai (pl. kommunális, ipari, veszélyes hulladék) eltérő kezelést igényelnek: a kezelés lehetséges módjai közé tartozik a lerakás (hulladéklerakóban történő elhelyezés), az égetés (energianyerés mellett vagy anélkül) és az újrahasznosítás (a hulladékból új nyersanyag vagy termék előállítása). A veszélyes hulladékok (pl. vegyi anyagok, elhasznált elemek, egyes elektronikai eszközök) különleges, szigorúan szabályozott kezelést igényelnek, mivel nem megfelelő elhelyezésük súlyosan szennyezheti a talajt és a vizeket. A hulladéklerakók kialakításánál is figyelembe kell venni a talaj- és talajvízvédelmi szempontokat: egy szakszerűtlenül kialakított lerakóból a csapadékvízzel kimosódó szennyező anyagok a talajvízbe szivároghatnak - ezért a modern hulladéklerakókat szigetelőréteggel (pl. agyag- vagy műanyag fóliaréteggel) és a szivárgó vizek összegyűjtésére, kezelésére szolgáló rendszerrel látják el, hogy megakadályozzák a szennyező anyagok talajba és talajvízbe jutását.',
+                  'A szelektív gyűjtés (a hulladék típus szerinti előzetes szétválogatása) előnye, hogy jelentősen megkönnyíti és hatékonyabbá teszi a feldolgozást és az újrahasznosítást, hiszen a vegyesen gyűjtött hulladékból utólag sokkal nehezebb és költségesebb szétválogatni az újrahasznosítható anyagokat (pl. papírt, üveget, fémet, egyes műanyagokat). Az újrahasznosítás emellett nyersanyag- és energiamegtakarítást is jelent: egy újrahasznosított anyagból történő gyártás jellemzően kevesebb energiát és nyersanyagot igényel, mintha az adott terméket teljesen új alapanyagból állítanák elő.',
+                ],
+              },
+            ],
+            keyTerms: ['talajerózió', 'szelektív gyűjtés', 'újrahasznosítás'],
+          },
+          emeltExtra: {
+            intro: 'Ehhez az alponthoz a hivatalos érettségi követelmény nem ír elő sok külön emelt szintű tudást - mégis érdemes megismerni a hulladékhierarchia elvét, amely rendszerbe foglalja a hulladékgazdálkodás lehetséges lépéseit, valamint a komposztálás gyakorlati jelentőségét.',
+            sections: [
+              {
+                heading: 'A hulladékhierarchia elve',
+                paragraphs: [
+                  'A hulladékhierarchia a hulladékkezelési lehetőségeket kívánatosságuk sorrendjébe állítja: a legjobb megoldás a hulladék keletkezésének megelőzése (pl. csomagolásmentes vásárlás), ezt követi az újrahasználat (a termék eredeti formájában történő ismételt felhasználása), majd az újrahasznosítás (a hulladékból új nyersanyag előállítása), ezután az energetikai hasznosítás (pl. égetéssel történő energianyerés), és a legkevésbé kívánatos megoldás a lerakás. Ez a sorrend azt az elvet tükrözi, hogy minél korábbi lépésnél avatkozunk be (azaz minél inkább megelőzzük a hulladék keletkezését), annál kisebb a folyamat teljes környezeti terhelése.',
+                  'A hulladékhierarchia elve - ahogy azt korábban (Anyagforgalom fejezet) a fenntartható fejlődésnél és a körforgásos gazdaság elvénél megismertük - szorosan kapcsolódik a természetes ökoszisztémák körforgás-elvéhez: egy jól működő hulladékgazdálkodási rendszer, hasonlóan ahhoz, ahogy egy természetes ökoszisztémában a lebontók biztosítják az anyagok folyamatos újrahasznosulását, arra törekszik, hogy minél kevesebb anyag kerüljön véglegesen "kivonásra" a körforgásból.',
+                ],
+              },
+              {
+                heading: 'Komposztálás: a szerves hulladék helyi újrahasznosítása',
+                paragraphs: [
+                  'A komposztálás a szerves (konyhai és kerti) hulladék - ahogy azt korábban (Anyagforgalom fejezet) a lebontók szerepénél megismertük - lebontó szervezetek segítségével történő, kontrollált lebontása, amelynek végterméke a komposzt: a talaj tápanyag-utánpótlására és szerkezetének javítására kiválóan alkalmas, természetes eredetű anyag. A komposztálás gyakorlati előnye, hogy a szerves hulladék jelentős részét (amely egyébként a hulladéklerakóban oxigénszegény körülmények között bomlana, üvegházgázt, metánt termelve) helyben, hasznosítható formában lehet feldolgozni, ezáltal egyszerre csökkentve a lerakóba kerülő hulladék mennyiségét és javítva a talaj minőségét.',
+                ],
+              },
+            ],
+            keyTerms: ['hulladékhierarchia', 'komposztálás'],
+          },
+        },
+      },
     ],
   },
   {
@@ -1446,14 +7328,786 @@ export const CURRICULUM = [
     icon: 'Sparkle',
     color: 'from-violet-500 to-fuchsia-500',
     chapters: [
-      { id: 'molekularis-genetika', title: 'Molekuláris genetika', order: 1, isFree: true, estimatedMinutes: 18,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'mendeli-genetika', title: 'Mendeli genetika', order: 2, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'populaciogenetika-evolucio', title: 'Populációgenetika és evolúciós folyamatok', order: 3, isFree: false, estimatedMinutes: 20,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
-      { id: 'bioszfera-evolucioja', title: 'A bioszféra evolúciója', order: 4, isFree: false, estimatedMinutes: 16,
-        content: { kozep: { comingSoon: true }, emeltExtra: { comingSoon: true } } },
+      {
+        id: 'genetikai-alapfogalmak',
+        title: 'Alapfogalmak és a genetikai információ áramlása',
+        order: 1,
+        isFree: true,
+        estimatedMinutes: 20,
+        content: {
+          kozep: {
+            intro: 'Ezzel a fejezettel egy új nagy témakört kezdünk: a genetikát. Korábban (Nukleinsavak, nukleotidok fejezet) megismertük, hogy a genetikai információ a DNS-ből az RNS-en keresztül jut el a fehérjeszintézishez - ebben a fejezetben ezt az információáramlást és a hozzá kapcsolódó alapfogalmakat tárgyaljuk részletesen.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: gén és allél',
+                paragraphs: [
+                  'A gén a DNS egy meghatározott szakasza, amely egy adott fehérje (vagy funkcionális RNS-molekula) felépítéséhez szükséges információt hordozza - vagyis egy gén tulajdonképpen egy "recept" egyetlen termékhez. Egy kromoszómán (illetve a homológ kromoszómapár mindkét tagján) egy adott gén mindig ugyanazon a helyen (lókuszon) található.',
+                  'Az allél egy adott gén többféle, egymástól kissé eltérő változata - ugyanannak a "receptnek" a különböző "verziói", amelyek apró különbségeik miatt eltérő formában valósíthatják meg ugyanazt a tulajdonságot (pl. a szemszínt meghatározó gén egyik allélja kék, másik allélja barna szemszínt eredményezhet). Mivel az emberi sejtek (a testi sejtek) kromoszómái párosan fordulnak elő - ahogy azt korábban (Osztódás fejezet) a homológ kromoszómáknál megismertük -, egy adott génből minden testi sejt két allélt hordoz: az egyiket az anyától, a másikat az apától örökölve.',
+                ],
+              },
+              {
+                heading: 'A genetikai kód és a kromoszómák szerkezete',
+                paragraphs: [
+                  'A genetikai kód az a "szótár", amely megfeleltetést teremt a DNS (illetve az RNS) nukleotid-sorrendje és a fehérjék aminosav-sorrendje között: három egymást követő nukleotid (egy kodon) mindig egy adott aminosavat (vagy egy "stop" jelet) kódol. A genetikai kód általánosan érvényes, vagyis gyakorlatilag minden élőlénynél (baktériumtól az emberig) ugyanazt jelenti egy adott kodon - ez a közös "nyelv" teszi lehetővé, hogy egy baktérium akár egy emberi gén alapján is képes legyen emberi fehérjét előállítani.',
+                  'A kromoszóma a sejtmagban lévő, DNS-t és fehérjéket tartalmazó, jól körülhatárolható szerkezet, amely a genetikai információ egy önálló, összefüggő egységét hordozza - egy adott faj sejtjeire jellemző, állandó számú kromoszóma alkotja együttesen a teljes genetikai állományt (embernél például 46 kromoszóma). A kromatinfonál a kromoszóma "laza", feltekeredetlen állapota: a sejtciklus nagy részében (amikor a sejt nem osztódik) a DNS ebben a nyújtott, szálas formában helyezkedik el a sejtmagban, és csak osztódáskor tömörödik a jellegzetes, mikroszkóppal is jól látható, "X" alakú kromoszóma-formába - ahogy azt korábban (Osztódás fejezet) a sejtciklusnál megismertük. A kromatinfonál és a kromoszóma tehát ugyanannak a genetikai anyagnak (a DNS-nek) két különböző, a sejt aktuális állapotától (osztódik-e éppen vagy sem) függő megjelenési formája.',
+                ],
+              },
+              {
+                heading: 'A rekombináció és a homológ kromoszómák',
+                paragraphs: [
+                  'A homológ kromoszómák egy adott kromoszómapár két tagja: az egyik az anyától, a másik az apától származik, és mindkettő ugyanazokat a géneket hordozza (ugyanazokon a helyeken, lókuszokon), bár a rajtuk lévő allélek eltérhetnek egymástól. Az embert alkotó testi sejtek 46 kromoszómája így valójában 23 homológ párt alkot - ez a páros elrendeződés (diploid kromoszómakészlet) teszi lehetővé, hogy egy adott génből minden testi sejt két allélt hordozzon, ahogy azt fentebb is megismertük.',
+                  'A rekombináció az a folyamat, amelynek során a genetikai anyag új kombinációkban rendeződik át - ennek egyik fő formája a crossing over, amelyet korábban (Osztódás fejezet emelt kiegészítése) a meiózis I szakaszánál már megismertünk: a homológ kromoszómák szakaszokat cserélnek egymással, így az utódsejtekbe kerülő kromoszómák már nem pontosan ugyanazok, mint amilyeneket a szülő eredetileg örökölt. A rekombináció - a független szétválással együtt - alapvető forrása annak, hogy az ivaros szaporodás során létrejövő utódok genetikailag különböznek mind egymástól, mind a szüleiktől.',
+                ],
+              },
+              {
+                heading: 'A genetikai információ áramlása: DNS → RNS → fehérje',
+                paragraphs: [
+                  'A sejten belüli információáramlás három fő lépésből áll. Elsőként a DNS megkettőződik (replikálódik): a kettős lánc szétnyílik, majd mindkét szálhoz - a bázispárosodás szabályai szerint - egy-egy új, kiegészítő szál épül, így két, az eredetivel megegyező DNS-molekula jön létre - ez biztosítja, hogy sejtosztódáskor mindkét utódsejt teljes genetikai információt kapjon.',
+                  'Másodikként a DNS egy adott génjéről átíródik (transzkripció) egy hírvivő RNS-molekula (mRNS): a DNS releváns szakasza szétnyílik, és a bázispárosodás szabályai szerint egy RNS-másolat készül róla. Harmadikként az mRNS-t a sejt leolvassa (transzláció): a riboszómán az mRNS kodonjait a genetikai kód alapján aminosavakká "fordítják le", amelyek egymáshoz kapcsolódva alkotják a fehérjeláncot.',
+                ],
+              },
+            ],
+            keyTerms: ['gén', 'allél', 'genetikai kód', 'kromoszóma', 'kromatinfonál', 'rekombináció', 'homológ kromoszóma', 'replikáció', 'transzkripció', 'transzláció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a DNS-fehérje-jelleg összefüggést, a kodonszótár gyakorlati használatát, valamint a fehérjeszintézis eukarióta sejten belüli lépéseit és a géntechnológiai alkalmazásokat ismerjük meg.',
+            sections: [
+              {
+                heading: 'A DNS, a fehérje és a tapasztalható jelleg összefüggése',
+                paragraphs: [
+                  'Az összefüggés láncolata a következő: a DNS nukleotid-sorrendje meghatározza a fehérje aminosav-sorrendjét (elsődleges szerkezetét), az aminosav-sorrend pedig - ahogy azt korábban (Fehérjék fejezet) megismertük - meghatározza a fehérje térszerkezetét (hogyan tekeredik fel), a térszerkezet pedig meghatározza a fehérje biológiai funkcióját. Mivel a szervezet szinte minden tapasztalható jellege (pl. egy enzim aktivitása, egy szerkezeti fehérje tulajdonsága) valamilyen fehérje működésén alapul, ez a láncolat köti össze a DNS-ben tárolt információt a ténylegesen megfigyelhető tulajdonságokkal.',
+                ],
+              },
+              {
+                heading: 'A kodonszótár használata: egy konkrét példa',
+                paragraphs: [
+                  'A kodonszótár egy táblázat, amely minden lehetséges hárombetűs mRNS-kodonhoz megadja a hozzá tartozó aminosavat. Nézzünk egy konkrét példát: ha egy mRNS-szakasz kodonjai sorban AUG-UUU-GGC-UAA, akkor a kodonszótár alapján az AUG a start-kodon (metionin, itt kezdődik a fehérjelánc), az UUU fenilalanint, a GGC glicint kódol, a UAA pedig egy stop-kodon (itt véget ér a fehérjelánc, nem kódol aminosavat) - vagyis ebből a rövid mRNS-szakaszból egy metionin-fenilalanin-glicin sorrendű, három aminosavból álló fehérjelánc (peptid) keletkezik.',
+                  'A kodonszótár egyik fontos tulajdonsága, hogy több kodon is kódolhatja ugyanazt az aminosavat (pl. az UUU mellett az UUC is fenilalanint kódol) - ezt a jelenséget a genetikai kód degeneráltságának nevezzük, és ez azt jelenti, hogy egy adott ponton bekövetkező mutáció nem feltétlenül változtatja meg a beépülő aminosavat.',
+                ],
+              },
+              {
+                heading: 'A fehérjeszintézis fázisai az eukarióta sejtben',
+                paragraphs: [
+                  'Az eukarióta sejtben a fehérjeszintézis lépései jól elkülönülő sejtalkotókhoz köthetők: a transzkripció (DNS → mRNS átírás) a sejtmagban zajlik, ahol a DNS védetten őrződik. Az elkészült mRNS ezután kilép a sejtmagból, és a citoplazmában - ahogy azt korábban (Anyagcsere (sejtszinten) fejezet) a durva endoplazmatikus hálózatnál megismertük - a riboszómákon történik a transzláció (az mRNS "lefordítása" fehérjeláncká). A kész fehérjelánc gyakran a durva endoplazmatikus hálózatban és a Golgi-készülékben esik át további módosításokon (pl. térszerkezet kialakulása, cukoroldalláncok hozzáadása), mielőtt végleges, működőképes formáját elnyerné.',
+                ],
+              },
+              {
+                heading: 'Baktériumok felhasználása emberi fehérje előállítására',
+                paragraphs: [
+                  'Mivel a genetikai kód általánosan érvényes, egy emberi gén (pl. az inzulint kódoló gén) beépíthető egy baktérium (pl. az Escherichia coli) genetikai állományába - a baktérium ezután a saját fehérjeszintézis-gépezetével (amely ugyanazt a genetikai kódot "olvassa") képes lesz a beépített emberi gén alapján emberi fehérjét (pl. inzulint) termelni. Ez a géntechnológiai eljárás teszi lehetővé, hogy ma a cukorbetegek kezelésére használt inzulin nagy része baktériumokban, ipari méretekben, tisztán emberi szerkezetű fehérjeként állítható elő, nem állati eredetű inzulinból kell kinyerni.',
+                ],
+              },
+            ],
+            keyTerms: ['kodonszótár', 'genetikai kód degeneráltsága', 'start-kodon', 'stop-kodon'],
+          },
+        },
+      },
+      {
+        id: 'mutacio',
+        title: 'Mutáció',
+        order: 2,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Génmutáció', 'Kromoszómamutáció', 'Genommutáció'],
+          rows: [
+            ['Érintett szint', 'egyetlen gén', 'egy teljes kromoszóma', 'a teljes kromoszómakészlet'],
+            ['Típus', 'pontmutáció (bázis-csere/beszúrás/kiesés)', 'szerkezeti vagy számbeli', 'ploidia-változás'],
+            ['Példa', 'sarlósejtes vérszegénység', 'Down-kór (számbeli)', 'triploid/tetraploid sejt'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Alapfogalmak és a genetikai információ áramlása fejezet) megismert genetikai alapfogalmak után ebben a fejezetben a genetikai változékonyság egyik legfontosabb forrását, a mutációt tekintjük át.',
+            sections: [
+              {
+                heading: 'A mutáció fogalma és a genetikai változékonyság forrásai',
+                paragraphs: [
+                  'A mutáció a genetikai állomány (a DNS nukleotid-sorrendjének, vagy egy kromoszóma szerkezetének/számának) hirtelen, véletlenszerű megváltozása. A mutáció és az ivaros szaporodás (a rekombináció és a független szétválás révén) a genetikai változékonyság két alapvetően különböző forrása: a mutáció ÚJ allélváltozatokat hoz létre, amelyek korábban nem léteztek a populációban, míg az ivaros szaporodás a MÁR MEGLÉVŐ allélokat kombinálja új módokon az utódokban - vagyis a mutáció "termeli" a nyersanyagot, az ivaros szaporodás pedig "keveri" azt.',
+                ],
+              },
+              {
+                heading: 'A mutációk lehetséges hatásai',
+                paragraphs: [
+                  'Egy mutáció hatása háromféle lehet: hátrányos (ha rontja az egyed életképességét vagy szaporodóképességét), közömbös (semleges, ha nincs érdemi hatása, pl. mert a genetikai kód degeneráltsága miatt ugyanaz az aminosav épül be), vagy előnyös (ha javítja az egyed alkalmazkodóképességét az adott környezetben). A mutációk evolúciós szerepe éppen abban áll, hogy az előnyös mutációk - a természetes szelekció révén - felhalmozódhatnak egy populációban, ez az egyik alapja az evolúciós változásoknak.',
+                  'Egy esettanulmányban jól elkülöníthető a három hatástípus: hátrányos mutációra példa a fenilketonúriát okozó mutáció (lásd lentebb), amely kezelés nélkül súlyosan károsítja az egyedet; közömbös mutációra példa egy olyan pontmutáció, amely a genetikai kód degeneráltsága miatt nem változtatja meg a beépülő aminosavat, ezért a fehérje működése és az egyed életképessége is változatlan marad; előnyös mutációra pedig az antibiotikum-rezisztenciát okozó baktériumsejtek mutációja hozható fel példaként, amely antibiotikumos kezelés jelenlétében egyértelmű túlélési előnyt biztosít az adott baktériumnak, bár antibiotikum hiányában akár hátrányos is lehetne.',
+                  'Az emberi népességben számos génváltozat (allél) tartósan, egyszerre több formában is jelen marad - jó példa erre az AB0-vércsoport rendszer, amelynek mindhárom allélja (A, B, 0) évezredek óta egyszerre van jelen az emberi populációkban, anélkül hogy bármelyik teljesen kiszorítaná a másikat. Ez a jelenség jól mutatja, hogy egy adott mutáció hatása nem mindig egyértelműen "jó" vagy "rossz", hanem az adott környezeti körülményektől is függhet.',
+                ],
+              },
+              {
+                heading: 'Mutagén hatások',
+                paragraphs: [
+                  'A mutagén hatások (amelyek megnövelik a mutációk gyakoriságát) három nagy csoportba sorolhatók: biológiai mutagének (pl. egyes vírusok), kémiai mutagének (pl. egyes vegyi anyagok, dohányfüst összetevői) és fizikai mutagének (pl. UV-sugárzás, radioaktív sugárzás). Ezek felismerése gyakran nehéz, mivel a mutáció és az esetleges betegség kialakulása között akár évek is eltelhetnek, ezért a közvetlen ok-okozati kapcsolat nem mindig nyilvánvaló. A mutagén hatások csökkentésének vagy kivédésének lehetőségei közé tartozik a védőfelszerelés (pl. napvédelem UV-sugárzás ellen), a veszélyes vegyi anyagok kerülése és a sugárvédelmi előírások betartása.',
+                  'Fontos összefüggés, hogy a mutagén és a rákkeltő (karcinogén) hatás gyakran együtt jár: mivel a rák hátterében - ahogy azt a következő fejezetben (A génműködés szabályozása) részletesebben megismerjük - a sejtosztódást szabályozó gének mutációi állnak, egy erősen mutagén anyag (pl. a dohányfüst) egyúttal jelentős rákkeltő kockázatot is hordoz.',
+                ],
+              },
+            ],
+            keyTerms: ['mutáció', 'mutagén hatás', 'karcinogén hatás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a pontmutációk aminosavsorrendre gyakorolt hatását, konkrét emberi genetikai betegségeket, valamint a gén-, kromoszóma- és genommutációk típusait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Pontmutációk következményei a kodonszótár segítségével',
+                paragraphs: [
+                  'Nézzünk egy konkrét példát arra, hogyan vezethető le egy pontmutáció (egyetlen nukleotid megváltozása) következménye a kodonszótár segítségével. Kiindulásként legyen az eredeti kodon GAA (glutaminsav). Ha a harmadik bázis A-ról G-re változik (GAA → GAG), a kodonszótár szerint a GAG szintén glutaminsavat kódol - ez egy néma (csendes) mutáció, mivel a genetikai kód degeneráltsága miatt nem változik a beépülő aminosav. Ha viszont a második bázis A-ról U-ra változik (GAA → GUA), a GUA már valint kódol glutaminsav helyett - ez egy missense (aminosav-cserélő) mutáció, amely megváltoztatja a fehérje egyetlen aminosavát. Ha pedig a mutáció egy stop-kodont hoz létre idő előtt (pl. GAA → UAA), a fehérjelánc szintézise ott véglegesen megszakad - ez egy nonsense (értelemvesztő) mutáció, amely jellemzően súlyosan károsítja a fehérje működését.',
+                ],
+              },
+              {
+                heading: 'Konkrét genetikai betegségek háttere',
+                paragraphs: [
+                  'A sarlósejtes vérszegénység egy pontmutáció (missense mutáció) következménye a hemoglobin génjében: egyetlen aminosav cseréje miatt a hemoglobin molekulák oxigénszegény körülmények között összetapadnak, sarló alakúvá torzítva a vörösvértesteket, amelyek emiatt elzárhatják a kisebb ereket és könnyebben szét is esnek. Az albinizmus egy olyan mutáció következménye, amely a melanin (a bőr, a haj és a szem festékanyagának) előállításáért felelős enzim génjét érinti, ezáltal a szervezet nem tud (vagy csak korlátozottan tud) melanint termelni.',
+                  'A fenilketonúria egy recesszíven öröklődő enzimbetegség, amelyben a fenilalanin aminosav lebontásáért felelős enzim hibás - emiatt a fenilalanin felhalmozódik a szervezetben, és kezelés nélkül súlyos idegrendszeri károsodást okoz. A recesszív öröklődés azt jelenti, hogy a betegség csak akkor jelentkezik, ha az egyed mindkét szülőjétől a hibás allélt örökli - egyetlen ép allél is elegendő a normál enzimműködéshez, ezért a csak egy hibás allélt hordozó szülők (hordozók) maguk egészségesek maradnak. Ezt a jelenséget és a hozzá tartozó keresztezési példákat a Mendeli genetika fejezetben tárgyaljuk majd részletesen. A betegség kezelése speciális, alacsony fenilalanin-tartalmú diétával történik, amelyet már csecsemőkortól, életen át be kell tartani.',
+                ],
+              },
+              {
+                heading: 'Génmutáció, kromoszómamutáció, genommutáció',
+                paragraphs: [
+                  'A mutációkat a genetikai anyag érintett szintje szerint - ahogy azt a fenti táblázat is összefoglalja - három típusba soroljuk. A génmutáció egyetlen gént érint (pl. egy pontmutáció, mint a fenti sarlósejtes vérszegénységnél). A kromoszómamutáció egy teljes kromoszóma szerkezetét változtatja meg - lehet szerkezeti (pl. egy kromoszómadarab törése, elvesztése, megfordulása vagy egy másik kromoszómára kerülése) vagy számbeli (pl. egy adott kromoszómából eggyel több vagy kevesebb, ahogy azt korábban a nemleválásnál megismertük). A genommutáció a teljes kromoszómakészlet számát változtatja meg (ploidia-változás, pl. amikor egy sejt a normál diploid helyett triploid vagy tetraploid kromoszómakészlettel rendelkezik).',
+                  'A genetikai rendellenességek (pl. a Down-kór, amely a 21-es kromoszómából egy extra példány jelenlétével jár - ez egy számbeli kromoszómamutáció) esélye a szülők, elsősorban az anya életkorával növekszik: ez azzal magyarázható, hogy a petesejtek a meiózis egy korai szakaszában évtizedekig "várakoznak" a folytatásra, és ez alatt az idő alatt egyre nagyobb az esélye annak, hogy a kromoszómák szétválása hibásan megy végbe.',
+                ],
+              },
+            ],
+            keyTerms: ['génmutáció', 'kromoszómamutáció', 'genommutáció', 'sarlósejtes vérszegénység', 'fenilketonúria'],
+          },
+        },
+      },
+      {
+        id: 'genmukodes-szabalyozasa',
+        title: 'A génműködés szabályozása',
+        order: 3,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban (Mutáció fejezet) megismert genetikai változékonyság után ebben a fejezetben azt vizsgáljuk meg, hogyan szabályozza a szervezet, mikor és mely gének legyenek aktívak.',
+            sections: [
+              {
+                heading: 'Miért nem mindig aktív minden gén?',
+                paragraphs: [
+                  'Bár a szervezet különböző felépítésű és működésű testi sejtjei (pl. egy idegsejt és egy izomsejt) genetikai információtartalma azonos - hiszen mindegyik testi sejt ugyanabból a megtermékenyített petesejtből, ugyanazon DNS-állomány sokszorosításával jött létre -, a sejtek mégis nagyon különböznek egymástól. Ennek oka, hogy egy adott sejttípusban csak a sejt működéséhez éppen szükséges gének aktívak (íródnak át), a többi gén "elhallgattatott" állapotban van - ez teszi lehetővé, hogy ugyanaz a genetikai információ sok, egymástól teljesen eltérő sejttípust hozzon létre.',
+                  'Fontos ugyanakkor megjegyezni, hogy ez az azonos genetikai információtartalom nem tökéletesen állandó: mutációk - ahogy azt korábban (Mutáció fejezet) megismertük - egyes testi sejtekben megváltoztathatják a DNS-t, ami akár a sejt működésének súlyos zavarához (pl. daganatos elfajuláshoz) is vezethet.',
+                ],
+              },
+              {
+                heading: 'A hormonális állapot hatása a génműködésre',
+                paragraphs: [
+                  'A gének megnyilvánulását (kifejeződését) a szervezet hormonális állapota is jelentősen befolyásolja: egyes hormonok - ahogy azt korábban (Hormonális működések fejezet) a hormonhatás célsejt-függőségénél megismertük - képesek bejutni a sejtmagba, és ott közvetlenül befolyásolni, mely gének íródjanak át, mely gének maradjanak inaktívak. Ez az egyik magyarázata annak, hogy a szervezet hormonális állapotának változásai (pl. pubertáskor) miért járnak együtt új tulajdonságok, jellegek megjelenésével.',
+                  'Ez a hormon-vezérelt génszabályozás jól mutatja, hogy a sejt működését nem kizárólag a genetikai állomány önmagában, hanem a genetikai állomány és a környezeti/szervezeten belüli jelek (pl. hormonok) együttes hatása határozza meg - két genetikailag azonos sejt is eltérően viselkedhet, ha eltérő hormonális jelzéseket kap.',
+                ],
+              },
+              {
+                heading: 'Daganatok: a génműködés-szabályozás felborulása',
+                paragraphs: [
+                  'A daganat a sejtosztódást szabályozó gének mutációi miatt kialakuló, kontrollálatlan sejtszaporodás. A jóindulatú daganat lassan nő, jól körülhatárolt, nem terjed szét a szervezetben. A rosszindulatú daganat gyorsan növekszik, a környező szöveteket beszűri, és képes áttéteket (metasztázisokat) képezni - vagyis a daganatsejtek leszakadnak, a vér- vagy nyirokáramba kerülnek, és a szervezet távoli pontjain új daganatgócokat hoznak létre. Ez a különbség (helyben maradó, illetve terjedő növekedés) magyarázza, hogy a jóindulatú daganatok jellemzően miért kevésbé veszélyesek: eltávolításuk után a betegség jellemzően nem tér vissza, míg a rosszindulatú daganatoknál az áttétek miatt a kezelés jóval összetettebb feladat.',
+                  'Néhány gyakori daganattípusra utaló jel: bőrrák esetén egy anyajegy méretének, alakjának vagy színének hirtelen megváltozása; emlőrák esetén tapintható csomó vagy a mell alakjának megváltozása; here- és prosztatarák esetén tapintható csomó, illetve vizelési panaszok; méhnyakrák esetén rendellenes hüvelyi vérzés. A korai felismerés jelentősége kiemelkedő: minél korábbi stádiumban fedeznek fel egy daganatot, annál nagyobb eséllyel gyógyítható - ezért fontosak a rendszeres szűrővizsgálatok is.',
+                  'A rendszeres önvizsgálat (pl. bőr, emlő, here) és a korosztályhoz kötött szűrővizsgálatok (pl. méhnyakszűrés, emlőszűrés) azért különösen fontosak, mert a korai stádiumú daganatok gyakran még nem okoznak feltűnő, a beteg által is könnyen észrevehető tüneteket - a szűrés így olyan esetekben is felfedheti a betegséget, amikor a beteg még egészségesnek érzi magát. Ez a felismerés (a tünetmentes korai szakasz) az egyik fő oka annak, hogy a rendszeres szűrővizsgálatok elhanyagolása a legtöbb daganattípusnál jelentősen ronthatja a gyógyulási esélyeket.',
+                ],
+              },
+            ],
+            keyTerms: ['génexpresszió', 'jóindulatú daganat', 'rosszindulatú daganat', 'áttét'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a laktóz-operon példáján a génműködés szabályozásának egy konkrét, jól tanulmányozott mechanizmusát ismerjük meg.',
+            sections: [
+              {
+                heading: 'A laktóz-operon',
+                paragraphs: [
+                  'A laktóz-operon a baktériumok génműködés-szabályozásának klasszikus, jól tanulmányozott példája: azokat a géneket foglalja magába, amelyek a laktóz (tejcukor) lebontásához szükséges enzimeket kódolják. Az operon részei közé tartozik a promóter (az a DNS-szakasz, ahová az átírást végző enzim kapcsolódik), az operátor (egy szabályozó DNS-szakasz, amelyhez egy elnyomó fehérje - represszor - kapcsolódhat) és a szerkezeti gének (amelyek magukat az enzimeket kódolják).',
+                  'A szabályozás lényege, hogy laktóz hiányában egy represszor fehérje az operátorhoz kapcsolódva megakadályozza a szerkezeti gének átírását - a baktérium ilyenkor "feleslegesnek" tartja a laktóz-lebontó enzimek termelését, hiszen nincs mit lebontani. Ha laktóz kerül a sejtbe, az a represszorhoz kötődve megváltoztatja annak alakját, ami miatt a represszor leválik az operátorról - ekkor a szerkezeti gének átíródhatnak, és megindul a laktózlebontó enzimek termelése. Ez a mechanizmus jól szemlélteti, hogy a génműködés szabályozása gazdaságos: a sejt csak akkor termel egy adott fehérjét, amikor arra ténylegesen szükség van.',
+                  'A laktóz-operon tehát egy negatív visszacsatoláshoz hasonló, önszabályozó rendszer: a szabályozó jel (a laktóz jelenléte vagy hiánya) közvetlenül határozza meg, hogy a hozzá kapcsolódó gének aktívak legyenek-e - ez az elv (egy környezeti jel közvetlenül befolyásolja a génexpressziót) az eukarióta sejtek génszabályozásában is megjelenik, bár ott jellemzően jóval összetettebb, több lépésből álló mechanizmusok révén.',
+                ],
+              },
+            ],
+            keyTerms: ['laktóz-operon', 'promóter', 'operátor', 'represszor'],
+          },
+        },
+      },
+      {
+        id: 'minosegi-jellegek',
+        title: 'Minőségi jellegek',
+        order: 4,
+        isFree: false,
+        estimatedMinutes: 26,
+        content: {
+          kozep: {
+            intro: 'A korábban (A génműködés szabályozása fejezet) megismert molekuláris genetikai alapok után ebben a fejezetben rátérünk a klasszikus, Mendel nevéhez köthető genetikára: azt vizsgáljuk, hogyan öröklődnek a jellegek egyik nemzedékről a másikra.',
+            sections: [
+              {
+                heading: 'Alapfogalmak: haploid, diploid, homozigóta, heterozigóta',
+                paragraphs: [
+                  'A haploid egy olyan sejt vagy szervezet, amely minden kromoszómából csak egy példányt tartalmaz (jele: n) - ilyenek az ivarsejtek. A diploid egy olyan sejt vagy szervezet, amely minden kromoszómából két példányt (egy homológ párt) tartalmaz (jele: 2n) - ilyenek az emberi testi sejtek, amelyek egy-egy kromoszómakészletet kaptak mindkét szülőtől. A haploid petesejt és a haploid hímivarsejt egyesülése hozza létre a diploid zigótát - ahogy azt korábban (Szaporodás és egyedfejlődés fejezet) megismertük.',
+                  'A homozigóta egyed egy adott génre nézve két egyforma allélt hordoz (pl. AA vagy aa) - mindkét szülőtől ugyanazt az allélváltozatot örökölte. A heterozigóta egyed ezzel szemben két különböző allélt hordoz (pl. Aa) - egyik szülőtől az egyiket, másiktól a másikat örökölte. Ez a megkülönböztetés kulcsfontosságú, mert egy heterozigóta egyed két allélja "versenghet" egymással a jelleg kialakításáért, míg egy homozigóta egyednél nincs ilyen "verseny".',
+                ],
+              },
+              {
+                heading: 'Alapfogalmak: genotípus és fenotípus',
+                paragraphs: [
+                  'A genotípus egy egyed genetikai állományának, egy adott génre vonatkozó allél-összetétele - vagyis az, hogy pontosan mely allélokat hordozza az egyed (pl. Aa, AA vagy aa). A fenotípus ezzel szemben az egyeden ténylegesen megfigyelhető, mérhető tulajdonság (pl. a szemszín, a testmagasság, vagy egy betegség jelenléte/hiánya) - az, amit a genotípus a környezeti hatásokkal együtt ténylegesen "megvalósít". A kettő kapcsolata nem mindig egyértelmű: két eltérő genotípusú egyednek (pl. AA és Aa) lehet pontosan ugyanaz a fenotípusa, ha az A allél domináns - ezt a következő szakaszban vizsgáljuk meg.',
+                ],
+              },
+              {
+                heading: 'Az öröklésmenetek alaptípusai',
+                paragraphs: [
+                  'A domináns-recesszív öröklésmenet esetén egy heterozigóta egyed fenotípusát teljes egészében a domináns allél határozza meg - a recesszív allél hatása "elrejtőzik", csak homozigóta recesszív állapotban jelenik meg. Nézzünk egy konkrét keresztezést: ha mindkét szülő heterozigóta (Aa), az utódok várható genotípus-eloszlását az alábbi Punnett-tábla mutatja.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: Aa × Aa keresztezés (domináns-recesszív öröklésmenet)',
+                  headers: ['', 'A ivarsejt', 'a ivarsejt'],
+                  rows: [
+                    ['A ivarsejt', 'AA', 'Aa'],
+                    ['a ivarsejt', 'Aa', 'aa'],
+                  ],
+                },
+              },
+              {
+                heading: 'A monohibrid kereszt eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy az utódok genotípus szerinti aránya 1 AA : 2 Aa : 1 aa. Mivel az AA és az Aa genotípusú egyedek fenotípusa megegyezik, a fenotípusos arány 3:1 lesz - ez a klasszikus arány Mendel egyik legfontosabb felfedezése volt.',
+                  'Az intermedier öröklésmenetnél a heterozigóta fenotípusa a két szülői jelleg között áll (pl. piros és fehér virágú szülőtől rózsaszín utód), mert egyik allél sem "nyomja el" teljesen a másikat. A kodomináns öröklésmenetnél a heterozigóta egyednél mindkét allél hatása egyszerre, teljes mértékben megnyilvánul (pl. az AB0-vércsoportnál az IAIB egyed vörösvértestjein egyszerre jelenik meg az A és a B felszíni antigén is).',
+                ],
+              },
+              {
+                heading: 'A tesztelő keresztezés',
+                paragraphs: [
+                  'Egy domináns fenotípusú egyedről önmagában nem dönthető el, hogy homozigóta (AA) vagy heterozigóta (Aa) genotípusú-e, hiszen mindkettő ugyanazt a fenotípust mutatja. A tesztelő keresztezés erre ad választ: az ismeretlen genotípusú egyedet egy homozigóta recesszív (aa) egyeddel keresztezik. Ha az ismeretlen egyed AA, minden utód a domináns fenotípust mutatja. Ha Aa, az utódok fele domináns, fele recesszív fenotípusú lesz - vagyis egyetlen recesszív fenotípusú utód születése is bizonyítja, hogy az ismeretlen szülő heterozigóta volt.',
+                ],
+              },
+              {
+                heading: 'Családfaelemzés és emberi jellegek öröklődése',
+                paragraphs: [
+                  'A családfaelemzés során egy adott jelleg (pl. egy öröklődő betegség) több nemzedéken át történő megjelenését vizsgáljuk, hogy megállapítsuk az öröklésmenetét: ha a jelleg minden nemzedékben megjelenik és minden érintett szülőnek van érintett gyermeke, az domináns öröklésmenetre utal; ha a jelleg "kihagy" nemzedékeket, és két egészséges szülőnek is születhet érintett gyermeke, az recesszív öröklésmenetre utal. Emberi jellegek közül domináns például a barna szem és a szabad fülcimpa, recesszív a vörös hajszín és számos anyagcsere-betegség (pl. a korábban megismert fenilketonúria).',
+                  'Nézzünk egy konkrét esetet a szemszín (barna=domináns B, kék=recesszív b) példáján. Az I. generációban egy barna szemű szülőpár (Apa és Anya) két barna szemű gyermeket (II. generáció) nevel fel. A II. generáció egyik tagja egy szintén barna szemű személlyel köt házasságot, és ennek a párnak egy kék szemű gyermeke (III. generáció, az I. generáció unokája) születik. Mivel a kék szem recesszív, az unoka genotípusa csak bb lehet - ez bizonyítja, hogy mindkét szülője (bár fenotípusosan barna szemű) heterozigóta (Bb) hordozó volt. Ebből az is következik, hogy már az I. generációban - vagyis Apa és Anya közül - legalább az egyikük szintén Bb genotípusú volt, hiszen a b allélnak tőlük kellett a családba kerülnie; a rendelkezésre álló adatokból azonban nem állapítható meg pontosan, melyikük volt a hordozó.',
+                ],
+                table: {
+                  caption: 'A szemszín-példa családfájának összegzése (B = barna, domináns; b = kék, recesszív)',
+                  headers: ['Egyén', 'Generáció', 'Fenotípus', 'Levezetett genotípus'],
+                  rows: [
+                    ['Apa', 'I.', 'barna szemű', 'Bb vagy BB (legalább Apa és Anya egyike Bb)'],
+                    ['Anya', 'I.', 'barna szemű', 'Bb vagy BB (legalább Apa és Anya egyike Bb)'],
+                    ['Gyermekük', 'II.', 'barna szemű', 'Bb (mert gyermekük - az unoka - kék szemű lesz)'],
+                    ['Gyermekük házastársa', 'II.', 'barna szemű', 'Bb (mert gyermekük - az unoka - kék szemű lesz)'],
+                    ['Unoka', 'III.', 'kék szemű', 'bb (biztosan, hiszen a kék szem recesszív)'],
+                  ],
+                },
+              },
+              {
+                heading: 'Egygénes enzimbetegség öröklődésének levezetése',
+                paragraphs: [
+                  'A dominanciaviszonyok ismeretében levezethető egy egygénes enzimbetegség (pl. a korábban megismert fenilketonúria) öröklődése is. Legyen F a normál, f a hibás (recesszív) allél. Ha mindkét szülő tünetmentes hordozó (Ff), a keresztezés eredménye megegyezik a fenti Aa × Aa keresztezéssel: 1 FF : 2 Ff : 1 ff, vagyis az utódok negyede (ff) fenilketonúriás lesz, a maradék háromnegyed (FF vagy Ff) egészséges - bár az Ff genotípusúak maguk is hordozzák és továbbadhatják a hibás allélt.',
+                ],
+              },
+              {
+                heading: 'Az AB0-vércsoportrendszer öröklődése',
+                paragraphs: [
+                  'Az AB0-vércsoportrendszer - ahogy azt korábban (A testfolyadékok fejezet) megismertük - három allél (IA, IB, i) által meghatározott rendszer: az IA és az IB allél egymással szemben kodomináns, mindkettő domináns az i alléllal szemben. Nézzünk egy konkrét példát: egy IAi (A vércsoportú) és egy IBi (B vércsoportú) szülő gyermekeit vizsgálva az alábbi Punnett-tábla mutatja a lehetséges genotípusokat.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: IAi × IBi keresztezés (AB0-vércsoport öröklődése)',
+                  headers: ['', 'IA ivarsejt', 'i ivarsejt'],
+                  rows: [
+                    ['IB ivarsejt', 'IAIB (AB vércsoport)', 'IBi (B vércsoport)'],
+                    ['i ivarsejt', 'IAi (A vércsoport)', 'ii (0 vércsoport)'],
+                  ],
+                },
+              },
+              {
+                heading: 'A vércsoport-keresztezés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy ennél a konkrét szülőpárnál egyenlő eséllyel (egyenként 25%) születhet AB, A, B, illetve 0 vércsoportú gyermek - ez a példa is jól szemlélteti, hogy egy IA vércsoportú és egy IB vércsoportú szülőnek akár mind a négy lehetséges vércsoportú gyermeke is születhet, ami sok laikus számára meglepő.',
+                ],
+              },
+              {
+                heading: 'Az Rh-vércsoportrendszer öröklődése',
+                paragraphs: [
+                  'Az Rh-vércsoportrendszer - ahogy azt korábban (Vércsoportok fejezet) megismertük - egyetlen génnel, egyszerű domináns-recesszív öröklésmenettel írható le: az Rh-pozitív (D) allél domináns az Rh-negatív (d) alléllal szemben. Nézzünk egy konkrét keresztezést: ha az apa heterozigóta Rh-pozitív (Dd genotípusú), az anya pedig Rh-negatív (dd genotípusú), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: Dd (Rh-pozitív, heterozigóta apa) × dd (Rh-negatív anya) keresztezés',
+                  headers: ['', 'D ivarsejt (apai)', 'd ivarsejt (apai)'],
+                  rows: [
+                    ['d ivarsejt (anyai)', 'Dd (Rh-pozitív)', 'dd (Rh-negatív)'],
+                    ['d ivarsejt (anyai)', 'Dd (Rh-pozitív)', 'dd (Rh-negatív)'],
+                  ],
+                },
+              },
+              {
+                heading: 'Az Rh-keresztezés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból leolvasható, hogy ennél a szülőpárnál az utódok fele (Dd) Rh-pozitív, fele (dd) Rh-negatív lesz - vagyis egy Rh-pozitív (de heterozigóta) és egy Rh-negatív szülőnek is születhet Rh-negatív gyermeke, hiszen az apa maga is hordozza a d allélt, csak a domináns D allél miatt ez nála nem jelenik meg fenotípusosan.',
+                ],
+              },
+              {
+                heading: 'Az ivar meghatározása és a génkölcsönhatás',
+                paragraphs: [
+                  'Az ember ivarát az ivarsejtek határozzák meg: a petesejt mindig X kromoszómát hordoz, a hímivarsejt vagy X-et, vagy Y-t - X-kromoszómás hímivarsejtnél a zigóta XX (nőivarú), Y-kromoszómásnál XY (hímivarú) lesz. Mivel a hímivarsejt "dönti el" a kombinációt, biológiai értelemben az apa határozza meg az utód nemét - ahogy azt korábban (Szaporítószervek fejezet) megismertük.',
+                  'A génkölcsönhatás azt jelenti, hogy egy tulajdonság kialakításában több gén vesz részt, és ezek kölcsönösen befolyásolják egymás hatását - a legtöbb valós tulajdonság (pl. bőrszín, testmagasság) így, több gén együttes hatására alakul ki.',
+                ],
+              },
+              {
+                heading: 'A génkapcsoltság',
+                paragraphs: [
+                  'A génkapcsoltság azt jelenti, hogy két (vagy több) gén ugyanazon a kromoszómán helyezkedik el, ezért nem függetlenül, hanem "csomagban", együtt öröklődnek - szemben azzal az esettel, amikor két gén különböző kromoszómán van, és egymástól függetlenül szétválik a meiózis során. A génkapcsoltság felismerhető, ha egy keresztezés eredménye jelentősen eltér a független öröklődés esetén várt aránytól (lásd emelt szinten).',
+                ],
+              },
+            ],
+            keyTerms: ['haploid', 'diploid', 'homozigóta', 'heterozigóta', 'genotípus', 'fenotípus', 'domináns-recesszív öröklésmenet', 'intermedier öröklésmenet', 'kodomináns öröklésmenet', 'tesztelő keresztezés', 'génkölcsönhatás', 'génkapcsoltság'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten Mendel kutatási módszerét és annak korlátait, a dihibrid keresztezést teljes Punnett-táblával, a letális allélt, a nemhez kötött öröklődést, valamint a kapcsoltság és a rekombináció összefüggését ismerjük meg.',
+            sections: [
+              {
+                heading: 'Mendel kutatási módszere és a valószínűség',
+                paragraphs: [
+                  'Mendel kutatási módszerének kulcsa a nagy egyedszámú keresztezések gondos, számszerű elemzése volt: nem elégedett meg néhány utód megfigyelésével, hanem több ezer borsónövény keresztezéséből származó adatot elemzett, így a genotípusok/fenotípusok gyakorisága a nagy számok törvénye miatt megbízhatóan közelítette az elméleti valószínűségeket (pl. a fenti 3:1-es arányt). Kevés utód esetén a véletlen ingadozás miatt az arány jelentősen eltérhet az elméletitől, de nagy mintaszámnál a megfigyelt gyakoriság egyre közelebb kerül az elméleti valószínűséghez.',
+                ],
+              },
+              {
+                heading: 'Mendel következtetéseinek érvényességi korlátai',
+                paragraphs: [
+                  'Mendel törvényei nem érvényesek korlátlanul minden esetre. Az egyik fő korlátozó tényező a kapcsoltság (lásd lentebb): ha két gén ugyanazon a kromoszómán van, nem öröklődnek egymástól függetlenül, ellentétben azzal, amit Mendel a független szétválás törvényében feltételezett. A másik fő korlátozó tényező a sejtmagon kívüli öröklés: a mitokondriumok saját, kis DNS-állománya nem a sejtmagi kromoszómákon, hanem a citoplazmában öröklődik, és mivel megtermékenyítéskor jellemzően csak a petesejt citoplazmája épül be a zigótába, ez az öröklésmenet kizárólag anyai ágon valósul meg.',
+                ],
+              },
+              {
+                heading: 'Az ecetmuslica mint genetikai modellorganizmus',
+                paragraphs: [
+                  'Az ecetmuslica (Drosophila melanogaster) azért kiválóan alkalmas genetikai vizsgálatokra, mert nagyon gyorsan (kb. két hét alatt) éri el az ivarérettséget, egyetlen nemzedéken belül nagyon sok utódot hoz létre, kis helyen, olcsón tenyészthető, és mindössze 4 kromoszómapárral rendelkezik, ami leegyszerűsíti az elemzést - ezek együtt tették lehetővé, hogy rövid idő alatt, sok nemzedéken át lehessen vizsgálni az öröklődési mintázatokat.',
+                ],
+              },
+              {
+                heading: 'Dihibrid kereszt: két gén, két allél',
+                paragraphs: [
+                  'Ha két, egymástól független (különböző kromoszómán elhelyezkedő) gén öröklődését vizsgáljuk egyszerre, dihibrid keresztezésről beszélünk. Legyen két heterozigóta egyed genotípusa AaBb. Az AaBb szülő ivarsejtjei (a független szétválás elve szerint) négyféle kombinációban jöhetnek létre: AB, Ab, aB és ab. Az AaBb × AaBb keresztezés teljes eredményét az alábbi, 16 mezős Punnett-tábla mutatja.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: AaBb × AaBb dihibrid keresztezés (teljes 4×4-es tábla)',
+                  headers: ['', 'AB', 'Ab', 'aB', 'ab'],
+                  rows: [
+                    ['AB', 'AABB', 'AABb', 'AaBB', 'AaBb'],
+                    ['Ab', 'AABb', 'AAbb', 'AaBb', 'Aabb'],
+                    ['aB', 'AaBB', 'AaBb', 'aaBB', 'aaBb'],
+                    ['ab', 'AaBb', 'Aabb', 'aaBb', 'aabb'],
+                  ],
+                },
+              },
+              {
+                heading: 'A dihibrid kereszt eredményének értelmezése',
+                paragraphs: [
+                  'A 16 utód genotípusát fenotípus szerint csoportosítva a klasszikus 9:3:3:1 arányt kapjuk: 9 utód mindkét domináns jelleget mutatja (A_B_, négyszer), 3 utód csak az egyik domináns jelleget (A_bb, háromszor), 3 utód csak a másikat (aaB_, háromszor), és 1 utód mindkét recesszív jelleget (aabb, egyszer). Ez az arány csak akkor jelentkezik, ha a két gén egymástól függetlenül öröklődik - ha kapcsolt, az arány jelentősen eltér ettől, ahogy azt lentebb a kapcsoltságnál tárgyaljuk.',
+                ],
+              },
+              {
+                heading: 'A letális allél hatása a keresztezési arányokra',
+                paragraphs: [
+                  'Egyes allélok letálisak lehetnek homozigóta állapotban - az adott genotípusú egyed nem életképes, elpusztul még a fejlődés során. Ha például az A allél heterozigóta állapotban (Aa) egy kedvező tulajdonságot okoz, de homozigóta domináns állapotban (AA) letális, akkor egy Aa × Aa keresztezésből a szokásos 1 AA : 2 Aa : 1 aa arány helyett - mivel az AA genotípusú utódok elpusztulnak - a ténylegesen megszülető, életképes utódok aránya 2 Aa : 1 aa lesz. Ez magyarázza, hogy egyes keresztezéseknél miért tér el a megfigyelt arány a Mendeli szabályok alapján elméletileg várt aránytól.',
+                ],
+              },
+              {
+                heading: 'Nemhez kötött öröklés: vérzékenység és színtévesztés',
+                paragraphs: [
+                  'A nemhez kötött öröklésmenetű jellegek génjei az X-kromoszómán helyezkednek el. Mivel a nő két X-kromoszómát, a férfi viszont csak egy X-et (és egy Y-t) hordoz, egy recesszív, X-kromoszómán elhelyezkedő allél hatása a férfiaknál sokkal gyakrabban jelenik meg fenotípusosan, mert nincs második X-kromoszómájuk, amely "elfedhetné" a recesszív allélt. Ilyen, recesszíven öröklődő jelleg a vérzékenység (hemofília) és a színtévesztés is.',
+                  'Nézzünk egy konkrét példát: legyen XH a normál, Xh pedig a hemofíliát okozó, recesszív allél. Ha az anya hordozó (XHXh, egészséges) és az apa egészséges (XHY), az alábbi Punnett-tábla mutatja az utódok lehetséges genotípusait.',
+                ],
+                table: {
+                  caption: 'Punnett-tábla: XHXh (hordozó anya) × XHY (egészséges apa) keresztezés',
+                  headers: ['', 'XH ivarsejt (apai)', 'Y ivarsejt (apai)'],
+                  rows: [
+                    ['XH ivarsejt (anyai)', 'XHXH (egészséges lány)', 'XHY (egészséges fiú)'],
+                    ['Xh ivarsejt (anyai)', 'XHXh (hordozó lány)', 'XhY (hemofíliás fiú)'],
+                  ],
+                },
+              },
+              {
+                heading: 'A nemhez kötött öröklés eredményének értelmezése',
+                paragraphs: [
+                  'A táblázatból jól látszik: a lányok közül egyik sem lesz beteg (mindegyik örököl egy XH allélt az apjától), de a lányok fele hordozóvá válik; a fiúk közül viszont a fele (akik az anyától az Xh allélt öröklik) ténylegesen hemofíliás lesz, mivel nincs második X-kromoszómájuk, amely kompenzálhatná a hibás allélt. Ez magyarázza, hogy a hemofília és a színtévesztés miért fordul elő gyakrabban férfiaknál.',
+                ],
+              },
+              {
+                heading: 'Génkölcsönhatás F2 arányaiból',
+                paragraphs: [
+                  'Ha egy F2 nemzedék (két heterozigóta szülő utódai) fenotípusos aránya jelentősen eltér a klasszikus 9:3:3:1 aránytól, az arra utalhat, hogy a két vizsgált gén kölcsönhatásban áll egymással (pl. az egyik gén terméke szükséges a másik gén termékének működéséhez) - ilyenkor egyes elméletileg várt fenotípus-kombinációk egyáltalán nem, vagy más aránnyal jelennek meg.',
+                ],
+              },
+              {
+                heading: 'Kapcsoltság és rekombináció: numerikus levezetés',
+                paragraphs: [
+                  'Ha az eltérés abban nyilvánul meg, hogy a szülői (eredeti) allél-kombinációk aránytalanul gyakrabban fordulnak elő az utódokban, mint az új (rekombináns) kombinációk, az a két gén kapcsoltságára utal: minél közelebb helyezkedik el két gén egymáshoz ugyanazon a kromoszómán, annál ritkábban választja el őket egymástól a crossing over, ezért annál ritkábban jönnek létre rekombináns utódok.',
+                  'Nézzünk egy konkrét, közölt adatokon alapuló számítást. Egy AaBb genotípusú (kapcsolt génekkel rendelkező) egyed és egy aabb genotípusú egyed tesztelő keresztezéséből 1000 utód születik, az alábbi megoszlásban: 460 AaBb (szülői, azaz nem-rekombináns kombináció), 460 aabb (szintén szülői kombináció), 40 Aabb (rekombináns kombináció) és 40 aaBb (szintén rekombináns kombináció). A rekombinációs gyakoriság kiszámítása: rekombináns utódok száma osztva az összes utód számával, vagyis (40+40)/1000 = 80/1000 = 8%. Mivel a szülői kombinációk (460+460=920, azaz 92%) jóval gyakoribbak, mint a rekombinánsok (8%), a két gén egyértelműen kapcsolt (ha függetlenül öröklődnének, a négyféle kombináció egyenlő, 25-25%-os arányban fordulna elő).',
+                  'Ez az összefüggés (a rekombinációs gyakoriság és a gének kromoszómán belüli távolsága közötti kapcsolat) adja a genetikai térképezés alapelvét: minél gyakrabban fordul elő rekombináció két gén között, annál távolabb helyezkednek el egymástól a kromoszómán. A fenti példában a 8%-os rekombinációs gyakoriság azt jelenti, hogy a két gén egymástól 8 térképegységnyi (centiMorgan) távolságra helyezkedik el a kromoszómán - a rekombinációs gyakoriságok méréséből tehát relatív "térkép" rajzolható a gének kromoszómán belüli sorrendjéről és távolságáról.',
+                ],
+              },
+            ],
+            keyTerms: ['dihibrid kereszt', 'letális allél', 'nemhez kötött öröklés', 'hemofília', 'kapcsoltsági térképezés', 'rekombinációs gyakoriság'],
+          },
+        },
+      },
+      {
+        id: 'mennyisegi-jellegek',
+        title: 'Mennyiségi jellegek',
+        order: 5,
+        isFree: false,
+        estimatedMinutes: 16,
+        comparisonTable: {
+          headers: ['Szempont', 'Minőségi jelleg', 'Mennyiségi jelleg'],
+          rows: [
+            ['Gének száma', 'egy gén (vagy kevés gén)', 'sok, egyenként kis hatású gén'],
+            ['Környezet hatása', 'elhanyagolható', 'jelentős'],
+            ['Megjelenés jellege', 'éles, elkülönülő kategóriák', 'folytonos, fokozatos átmenet'],
+            ['Eloszlás a populációban', 'diszkrét arányok (pl. 3:1, 9:3:3:1)', 'haranggörbe (normális eloszlás)'],
+            ['Példa', 'AB0-vércsoport, borsó virágszíne', 'testmagasság, testtömeg, bőrszín'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Minőségi jellegek fejezet) megismert, jól elkülöníthető (minőségi) jellegek után ebben a fejezetben azokat a jellegeket vizsgáljuk meg, amelyek nem éles kategóriákban, hanem fokozatos átmenetekkel jelennek meg.',
+            sections: [
+              {
+                heading: 'Minőségi és mennyiségi jellegek összehasonlítása',
+                paragraphs: [
+                  'A minőségi jellegeket (pl. a borsó virágszíne, az AB0-vércsoport - ahogy azt korábban a Minőségi jellegek fejezetben megismertük) jellemzően egyetlen gén (vagy kevés gén) határozza meg, és a jelleg éles, egymástól jól elkülöníthető kategóriákban jelenik meg (pl. vagy piros, vagy fehér virág, vagy A, vagy B, vagy AB, vagy 0 vércsoport - köztes fokozat nincs). A mennyiségi jellegeket (pl. a testmagasság, a testtömeg, a bőrszín árnyalata) ezzel szemben sok gén együttes hatása alakítja ki, és emellett a környezeti tényezők (pl. táplálkozás, életmód, egészségi állapot) hatása is jelentős - emiatt a mennyiségi jellegek nem éles kategóriákban, hanem folyamatos, fokozatos átmenetekkel jelennek meg a populációban.',
+                  'Vegyük például az emberi testmagasságot: nem létezik éles határ "alacsony" és "magas" emberek között, hanem egy folytonos skálán helyezkedik el minden egyed, a legalacsonyabbtól a legmagasabbig, sok apró lépésben - ez azért van így, mert a testmagasságot sok, egyenként kis hatású gén együttesen alakítja ki, és emellett a gyermekkori táplálkozás, betegségek és egyéb környezeti hatások is jelentősen módosítják a végeredményt. Hasonlóan folytonos, mennyiségi jelleg az emberi testtömeg és a bőr pigmentáltságának (árnyalatának) mértéke is: utóbbit sok gén szabályozza együttesen, ezért a bőrszín a világ népességében nem néhány éles kategóriában, hanem rendkívül sok átmeneti árnyalatban jelenik meg.',
+                ],
+              },
+              {
+                heading: 'Nemesítés és mennyiségi jellegek',
+                paragraphs: [
+                  'A növénynemesítés (pl. hibridvetőmagok előállítása) célja gyakran éppen egy mennyiségi jelleg (pl. a terméshozam, a szárazságtűrés mértéke, a betegségekkel szembeni ellenálló képesség) megváltoztatása, javítása - mivel ezeket a jellegeket sok gén együttesen alakítja ki, a nemesítés jellemzően nem egyetlen gén cseréjével, hanem sok, kedvező allélt hordozó egyed gondos kiválasztásával és keresztezésével valósul meg, több nemzedéken keresztül.',
+                  'Konkrét példa erre a búza terméshozamának nemesítése: a nemesítők olyan búzaegyedeket választanak ki és kereszteznek egymással ismételten, amelyek a kívánt tulajdonságokban (pl. nagyobb szemtermés, rövidebb, döntésnek jobban ellenálló szár, kórokozókkal szembeni ellenállás) a legjobbnak bizonyulnak - mivel ezek a tulajdonságok mennyiségi jellegek, egyetlen keresztezés nem hoz drámai javulást, hanem a sok nemzedéken át tartó, tudatos szelekció fokozatosan tolja el a populáció átlagát a kívánt irányba. A hibridvetőmagok előállításánál emellett gyakran két, egymástól genetikailag távoli nemesített törzs keresztezését használják ki, mert az így létrejövő hibrid utódnemzedék (F1) a szülőknél is nagyobb terméshozamot mutathat (heterózis-hatás).',
+                ],
+              },
+              {
+                heading: 'Az öröklött és a környezeti hatások szétválasztása',
+                paragraphs: [
+                  'Mivel a mennyiségi jellegeket egyszerre alakítja a genetikai állomány és a környezet, esettanulmányok segítenek elkülöníteni a két hatás szerepét. Az ikervizsgálatok (elsősorban az egypetéjű, tehát genetikailag azonos ikrek összehasonlítása) azt vizsgálják, mennyire hasonlítanak egymásra genetikailag azonos, de esetleg eltérő környezetben (pl. külön nevelkedve, más-más családban) felnövő egyedek - minél inkább hasonlítanak egymásra még eltérő környezetben nevelkedve is, annál nagyobb a jelleg kialakításában az öröklött tényezők szerepe; minél inkább eltérnek egymástól, annál nagyobb a környezet szerepe. Ilyen ikervizsgálatokból tudjuk például, hogy a testmagasság kialakításában az öröklött tényezők szerepe igen jelentős, míg számos egyéb, viselkedéssel összefüggő mennyiségi jellegnél a környezeti hatás aránya nagyobb.',
+                  'A környezetváltoztatásos vizsgálatok (pl. ugyanazon növényfajta - tehát azonos genotípusú egyedek - termesztése eltérő talaj- vagy tápanyag-viszonyok, eltérő öntözés vagy fényviszonyok mellett) pedig azt mutatják meg, mennyire változtatja meg a környezet önmagában (azonos genotípus mellett) a mennyiségi jelleg végső megjelenését - ha ugyanaz a genotípus eltérő környezetben jelentősen eltérő terméshozamot ad, az bizonyítja, hogy a jelleg kialakításában a környezetnek is számottevő szerepe van, nem csak a génállománynak.',
+                ],
+              },
+            ],
+            keyTerms: ['mennyiségi jelleg', 'minőségi jelleg', 'ikervizsgálat', 'heterózis-hatás'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a mennyiségi jellegek eloszlásának jellegzetes, haranggörbe-szerű alakját ismerjük meg.',
+            sections: [
+              {
+                heading: 'A haranggörbe eloszlás',
+                paragraphs: [
+                  'Ha egy populációban egy mennyiségi jelleget (pl. a testmagasságot) ábrázolunk grafikonon (vízszintes tengelyen a jelleg értéke, pl. a testmagasság centiméterben, függőleges tengelyen az adott értéket mutató egyedek száma), az eloszlás jellegzetesen haranggörbe (normális eloszlás) alakú lesz: a legtöbb egyed a közepes tartományba esik, és az egyedek száma fokozatosan, szimmetrikusan csökken a szélsőséges (nagyon alacsony vagy nagyon magas) értékek felé haladva. A görbe legmagasabb pontja a populáció átlagértékének felel meg, a görbe két oldalán pedig egyre ritkábban fordulnak elő az átlagtól egyre távolabbi értékek.',
+                  'Ez a haranggörbe-alak közvetlenül következik abból, hogy a mennyiségi jelleget sok, egyenként kis hatású gén együttesen alakítja ki, és emellett a környezeti tényezők is folyamatosan módosítják a végeredményt: minél több gén (és környezeti tényező) járul hozzá egy jelleghez, annál inkább közelít az eloszlás a szimmetrikus haranggörbéhez, szemben a minőségi jellegek éles, kategorikus (pl. a korábban megismert 3:1 vagy 9:3:3:1 arányú, néhány diszkrét csoportba rendeződő) eloszlásával. Minél kevesebb gén alakít ki egy jelleget, annál kevésbé sima, annál inkább lépcsőzetes az eloszlás görbéje - a valóban sok gén által meghatározott jellegeknél (pl. testmagasság) éri el az eloszlás a legsimább, legjellegzetesebb haranggörbe-alakot.',
+                ],
+              },
+            ],
+            keyTerms: ['normális eloszlás'],
+          },
+        },
+      },
+      {
+        id: 'idealis-realis-populacio',
+        title: 'Ideális és reális populáció',
+        order: 6,
+        isFree: false,
+        estimatedMinutes: 22,
+        content: {
+          kozep: {
+            intro: 'A korábban (Populáció fejezet) megismert populáció-fogalmat most genetikai szempontból is megvizsgáljuk: azt látjuk majd, hogy egy populáció nemcsak egyedei számával és térbeli eloszlásával, hanem allél- és genotípusgyakoriságaival is jellemezhető.',
+            sections: [
+              {
+                heading: 'Populációk genetikai jellemzése: allél- és genotípusgyakoriság',
+                paragraphs: [
+                  'Egy populáció genetikai szempontból az allélgyakoriságokkal (egy adott allélváltozat aránya az összes, adott génre vonatkozó allél között a populációban) és a genotípusgyakoriságokkal (az egyes genotípusok - pl. AA, Aa, aa - aránya az egyedek között) jellemezhető. Ez a két mutató lehetővé teszi, hogy ne csak egyetlen egyed, hanem egy egész populáció genetikai összetételét számszerűen leírjuk, és nyomon kövessük, hogyan változik ez az összetétel nemzedékről nemzedékre.',
+                ],
+              },
+              {
+                heading: 'A mutáció mint a genetikai változatosság forrása',
+                paragraphs: [
+                  'Ahogy azt korábban (Mutáció fejezet) megismertük, a mutációk új allélváltozatokat hoznak létre - ez teszi a mutációt a populációk genetikai változatosságának (variabilitásának) legfontosabb forrásává. Mutáció nélkül egy populáció allélkészlete hosszú távon nem gazdagodna új változatokkal, ami jelentősen csökkentené a populáció alkalmazkodóképességét a változó környezeti feltételekhez.',
+                ],
+              },
+              {
+                heading: 'A természetes szelekció típusai',
+                paragraphs: [
+                  'A természetes szelekció - a jelleg populáción belüli eloszlásától függően - háromféle típusba sorolható. Az irányító szelekció a jelleg eloszlásának egyik szélső értékét részesíti előnyben, ezáltal a populáció átlaga fokozatosan a szélsőérték felé tolódik el. A stabilizáló szelekció a jelleg középső, átlagos értékeit részesíti előnyben, a szélsőséges egyedeket hátrányosan érinti, ezáltal a populáció homogénebbé válik. A szétválasztó (diverzifikáló) szelekció ezzel szemben mindkét szélsőséges értéket részesíti előnyben a középső értékek rovására, ami a populáció két, egymástól egyre inkább elkülönülő csoportra bomlásához, végső soron akár fajkeletkezéshez is vezethet.',
+                ],
+                table: {
+                  caption: 'A természetes szelekció típusai',
+                  headers: ['Szelekciótípus', 'Melyik érték előnyös', 'Hatás a populációra'],
+                  rows: [
+                    ['Irányító szelekció', 'egyik szélsőérték', 'az átlag a szélsőérték felé tolódik'],
+                    ['Stabilizáló szelekció', 'középső (átlagos) érték', 'a populáció homogénebbé válik'],
+                    ['Szétválasztó szelekció', 'mindkét szélsőérték', 'két elkülönülő csoport alakulhat ki, akár fajkeletkezéssel'],
+                  ],
+                },
+              },
+              {
+                heading: 'A populáció mérete és a természetvédelem',
+                paragraphs: [
+                  'A populáció mérete (egyedszáma) alapvető természetvédelmi jelentőséggel bír: minél kisebb egy populáció, annál kevesebb allélváltozatot hordoz, és annál sebezhetőbb a véletlen események (pl. egy járvány, egy szélsőséges időjárási esemény) genetikai állományt károsító hatásaival szemben - ahogy azt korábban (A természetvédelem alapjai fejezet) a fajmegőrzés kapcsán megismertük.',
+                ],
+              },
+              {
+                heading: 'Konkrét példák a szelekciótípusokra',
+                paragraphs: [
+                  'Az irányító szelekcióra jó példa a rovarölő szerekkel szembeni rezisztencia kialakulása rovarpopulációkban: a rovarölő szer alkalmazása után a kevésbé ellenálló egyedek elpusztulnak, míg a véletlenszerűen már eleve ellenállóbb egyedek túlélnek és szaporodnak, így a populáció átlagos ellenálló képessége nemzedékről nemzedékre nő. A stabilizáló szelekcióra példa az emberi újszülöttek születési testtömege: mind a túl alacsony, mind a túl magas születési testtömeg nagyobb egészségügyi kockázattal jár, ezért a szelekció a középső, átlagos tartományt részesíti előnyben, ami a jelleg populáción belüli szórását csökkenti.',
+                ],
+              },
+            ],
+            keyTerms: ['allélgyakoriság', 'genotípusgyakoriság', 'irányító szelekció', 'stabilizáló szelekció', 'szétválasztó szelekció'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az ideális populáció matematikai modelljét, a Hardy-Weinberg összefüggést, valamint a populációk létszámváltozását és a beltenyésztés genetikai hatásait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az ideális populáció fogalma és feltételei',
+                paragraphs: [
+                  'A populációgenetika matematikai modelleket használ a populációk genetikai összetételének változásának leírására - ezek a modellek a valóságot leegyszerűsítve, bizonyos feltételek mellett írják le a folyamatokat, majd ehhez a leegyszerűsített modellhez hasonlítjuk a ténylegesen megfigyelhető, reális populációkat.',
+                  'Az ideális populáció egy olyan elméleti modell, amelyben az allél- és genotípusgyakoriságok nemzedékről nemzedékre nem változnak. Ennek feltételei: nagyon nagy (elméletileg végtelen) egyedszám, teljesen véletlenszerű párválasztás, nincs mutáció, nincs migráció (be- vagy kivándorlás) és nincs természetes szelekció. Egy valós populáció ezeknek a feltételeknek csak közelítőleg felel meg, ezért a valós populációkban az allélgyakoriságok idővel változnak - ezt a változást nevezzük evolúciónak genetikai szinten.',
+                ],
+              },
+              {
+                heading: 'A Hardy-Weinberg összefüggés',
+                paragraphs: [
+                  'Egy gén két alléljára (domináns és recesszív) vonatkozóan, ideális populációban a genotípusgyakoriságok és az allélgyakoriságok közötti kapcsolatot a Hardy-Weinberg összefüggés írja le: p² + 2pq + q² = 1. A képletben p a domináns allél gyakorisága a populációban, q a recesszív allél gyakorisága (p + q = 1, hiszen a két allél gyakorisága együtt a teljes allélkészletet adja), p² a homozigóta domináns (AA) genotípusú egyedek várható aránya, 2pq a heterozigóta (Aa) genotípusú egyedek várható aránya, q² pedig a homozigóta recesszív (aa) genotípusú egyedek várható aránya a populációban.',
+                  'Nézzünk egy konkrét, behelyettesített numerikus példát. Tegyük fel, hogy egy populációban egy recesszív, öröklődő tulajdonság (pl. egy enzimbetegség) az egyedek 9%-ánál (q² = 0,09) figyelhető meg fenotípusosan. Ebből a recesszív allél gyakorisága: q = √0,09 = 0,3, vagyis a recesszív allél a populáció allélkészletének 30%-át teszi ki. Mivel p + q = 1, a domináns allél gyakorisága p = 1 - 0,3 = 0,7. A homozigóta domináns egyedek várható aránya p² = 0,7² = 0,49, vagyis 49%. A heterozigóta (tünetmentes hordozó) egyedek várható aránya 2pq = 2 × 0,7 × 0,3 = 0,42, vagyis 42%. Ellenőrzésképp: 0,49 + 0,42 + 0,09 = 1,00 - az arányok összege valóban kiadja a teljes populációt.',
+                ],
+              },
+              {
+                heading: 'Születési és halálozási ráta, populációsűrűség',
+                paragraphs: [
+                  'A populáció létszámváltozását a születési ráta (adott idő alatt születő egyedek aránya) és a halálozási ráta (adott idő alatt elpusztuló egyedek aránya) különbsége határozza meg, és - ahogy azt korábban (Populáció fejezet) a logisztikus növekedési modell és az eltartóképesség kapcsán megismertük - mindkét ráta függ a populációsűrűségtől: nagy populációsűrűségnél jellemzően nő a halálozási ráta és csökken a születési ráta, ami visszafogja a további növekedést. Populációgenetikai szempontból ennek az a jelentősége, hogy a sűrűségfüggő létszámváltozás közvetve az allél- és genotípusgyakoriságokra is hatással lehet, hiszen befolyásolja, mely egyedek jutnak el a szaporodásig.',
+                ],
+              },
+              {
+                heading: 'Kihalási küszöb, genetikai sodródás és beltenyészet',
+                paragraphs: [
+                  'A kihalási küszöb az a minimális populációméret, amely alá csökkenve a populáció fennmaradása súlyosan veszélybe kerül. Ennek egyik oka a genetikai sodródás: kis populációkban a véletlen (nem a szelekció) is jelentősen megváltoztathatja az allélgyakoriságokat egyik nemzedékről a másikra, ami könnyen egyes allélok teljes eltűnéséhez vezethet, csökkentve a genetikai változatosságot. A másik ok a beltenyészet (közeli rokonok közötti szaporodás) által okozott genetikai leromlás: kis populációkban elkerülhetetlenné válik a rokonok közötti párosodás, ami növeli a káros recesszív allélok homozigóta formában történő megjelenésének esélyét, és így a populáció életképességének csökkenéséhez vezet. Ezért van kiemelt természetvédelmi jelentősége a fajmegőrzési programoknak, amelyek célja a populációk létszámának a kihalási küszöb fölött tartása.',
+                ],
+              },
+              {
+                heading: 'Beltenyésztés és a nem véletlenszerű párválasztás hatásai',
+                paragraphs: [
+                  'A nem véletlenszerű párválasztás (pl. amikor az egyedek hasonló fenotípusú társat választanak) szintén eltéríti a populációt az ideális populáció modelljétől: megváltoztatja a genotípusgyakoriságokat (jellemzően növeli a homozigóták arányát) anélkül, hogy az allélgyakoriságok maguk megváltoznának. A beltenyésztés ennek egy szélsőséges esete, amely - a fent tárgyalt genetikai leromláson túl - hosszabb távon a populáció alkalmazkodóképességét is csökkentheti, mivel a csökkenő genetikai változatosság kevesebb "nyersanyagot" hagy a természetes szelekció számára.',
+                ],
+              },
+            ],
+            keyTerms: ['ideális populáció', 'Hardy-Weinberg összefüggés', 'kihalási küszöb', 'genetikai sodródás', 'beltenyészet'],
+          },
+        },
+      },
+      {
+        id: 'adaptiv-evolucios-folyamatok',
+        title: 'Adaptív és nem adaptív evolúciós folyamatok',
+        order: 7,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Homológ szerv', 'Analóg szerv'],
+          rows: [
+            ['Evolúciós eredet', 'közös ős, közös eredetű szerv', 'független eredet'],
+            ['Fejlődéstípus', 'divergens fejlődés', 'konvergens fejlődés'],
+            ['Alapfelépítés', 'azonos alaptervű', 'eltérő alaptervű'],
+            ['Funkció', 'lehet eltérő', 'jellemzően hasonló'],
+            ['Példa', 'bálna uszonya, denevér szárnya, ló lába', 'rovar és madár szárnya'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Ideális és reális populáció fejezet) megismert populációgenetikai alapok után most magára az evolúció mechanizmusára és bizonyítékaira térünk rá.',
+            sections: [
+              {
+                heading: 'A természetes szelekció darwini modellje',
+                paragraphs: [
+                  'Charles Darwin evolúciós modellje szerint egy populáción belül az egyedek között öröklődő változatosság van (ahogy azt korábban a mutáció és az ivaros szaporodás mint változékonyság-források kapcsán megismertük); az erőforrásokért folytatott versengésben azok az egyedek maradnak életben és szaporodnak sikeresebben, amelyek jellegei jobban illeszkednek az adott környezethez (ez a természetes szelekció); és mivel a kedvező jellegek öröklődnek, a populáció nemzedékről nemzedékre egyre inkább alkalmazkodik a környezetéhez. Ez a darwini modell (a változatosság + szelekció + öröklődés hármasa) máig az evolúcióbiológia alapja.',
+                ],
+              },
+              {
+                heading: 'Adaptív és nem adaptív evolúciós folyamatok',
+                paragraphs: [
+                  'Az adaptív evolúciós folyamatok olyan változások, amelyek a populáció környezethez való alkalmazkodását (adaptációját) növelik - ezeket a természetes szelekció hajtja, mert a kedvezőbb jelleget hordozó egyedek nagyobb eséllyel maradnak életben és szaporodnak. A nem adaptív evolúciós folyamatok ezzel szemben nem az alkalmazkodóképesség javulásából erednek, hanem például a korábban (Ideális és reális populáció fejezet) megismert genetikai sodródásból - vagyis a véletlenből -, ezért nem feltétlenül eredményeznek jobb környezeti illeszkedést, csupán megváltoztatják az allélgyakoriságokat.',
+                ],
+              },
+              {
+                heading: 'Homológia és analógia, konvergens és divergens fejlődés',
+                paragraphs: [
+                  'A homológ szervek közös evolúciós eredetűek (azonos ősi szervből fejlődtek ki), még akkor is, ha ma már eltérő funkciót látnak el - például az emlősök végtagcsontjainak alapfelépítése azonos, akár úszásra (bálna uszonya), akár repülésre (denevér szárnya), akár járásra (ló lába) használják. Ez a divergens fejlődés eredménye: egy közös ősi forma különböző környezeti feltételek hatására különböző irányba, eltérő funkciójú szervekké alakult. Az analóg szervek ezzel szemben nem közös evolúciós eredetűek, hanem függetlenül, hasonló környezeti kihívásra adott hasonló válaszként, konvergens fejlődés útján alakultak ki hasonló funkciójú, de eltérő felépítésű szervekké - ilyen például a rovarok és a madarak szárnya, amelyek teljesen eltérő testfelépítésből fejlődtek ki, mégis hasonló funkciót (repülés) látnak el.',
+                ],
+              },
+              {
+                heading: 'Az evolúció közvetlen bizonyítékai',
+                paragraphs: [
+                  'Az evolúció közvetlen bizonyítékai közé tartoznak a kövületek (megkövesedett, ásványi anyagokkal kicserélődött maradványok), a lenyomatok (pl. egy élőlény testének vagy lábnyomának alakja megőrződik a kőzetben), a zárványok (pl. borostyánba zárt rovarok) és a rétegződő üledékes kőzetekben megfigyelhető lerakódások, amelyek egymásra rétegződő korszakok élővilágát őrzik meg - ezek mind fizikailag megfogható bizonyítékai a múltban élt, mára kihalt élőlényeknek és fokozatos változásuknak.',
+                  'Ha egy adott üledékrétegben egyszerűbb, egy magasabban fekvő (tehát fiatalabb) rétegben pedig fokozatosan összetettebb felépítésű élőlények kövületei találhatók, az önmagában is közvetlen bizonyítéka az élővilág időbeli, fokozatos változásának - ezt a jelenséget figyelhetjük meg például a lópatások kövületsorozatán, amelyen jól nyomon követhető a lábujjak számának fokozatos csökkenése és a testméret növekedése a mai lóig vezető fejlődési vonalon.',
+                ],
+              },
+            ],
+            keyTerms: ['adaptív evolúció', 'nem adaptív evolúció', 'homológ szerv', 'analóg szerv', 'konvergens fejlődés', 'divergens fejlődés'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten az evolúció szintjeit, a kormeghatározás módszereit, valamint az evolúció közvetett bizonyítékait ismerjük meg.',
+            sections: [
+              {
+                heading: 'Az evolúció szintjei',
+                paragraphs: [
+                  'Az evolúciós elméletek nemcsak génszinten (allélgyakoriság-változásként), hanem csoportszinten (egy csoport, pl. egy rokonsági kör túlélési előnyeként) és kulturálisan (nem genetikailag, hanem tanulás útján átadott viselkedésminták terjedéseként, pl. embernél és néhány más fajnál) is értelmezhetők - ezek az evolúció különböző szintjeire vonatkozó elméletek.',
+                ],
+              },
+              {
+                heading: 'Relatív és abszolút kormeghatározás',
+                paragraphs: [
+                  'A relatív kormeghatározás csak azt állapítja meg, hogy egy lelet fiatalabb vagy idősebb egy másiknál (pl. az üledékrétegek egymásra rétegződésének sorrendje alapján), konkrét évszámot nem ad. Az abszolút kormeghatározás ezzel szemben konkrét, számszerű életkort határoz meg - erre a legelterjedtebb módszer a radioaktív szén-izotópos (C14/C12) kormeghatározás, amely azon alapul, hogy a szervezetben található radioaktív C14-izotóp az elpusztulás után ismert ütemben, folyamatosan bomlik el stabil nitrogén-izotóppá (N14), miközben a stabil C12-izotóp mennyisége nem változik - így a C14 és a változatlan mennyiségű C12 arányának csökkenéséből kiszámítható, mennyi idő telt el az elpusztulás óta.',
+                ],
+              },
+              {
+                heading: 'Élő kövületek, pollenanalízis és évgyűrűelemzés',
+                paragraphs: [
+                  'Az élő kövület olyan ma is élő faj, amely évmilliók óta alig változott, közeli rokonai pedig már kihaltak - ilyen például a hídgyík vagy a ginkgófa. A pollenanalízis az üledékrétegekben megőrződött pollenszemcsék vizsgálatával következtet az adott korban jellemző növényzetre és éghajlatra, az évgyűrűelemzés (dendrokronológia) pedig a fák évgyűrűinek szélességéből (amely az adott év csapadék- és hőmérsékleti viszonyaitól függ) von le következtetéseket a múltbeli éghajlatra és - közvetve - kormeghatározásra is felhasználható.',
+                ],
+              },
+              {
+                heading: 'Az evolúció közvetett bizonyítékai',
+                paragraphs: [
+                  'Az evolúció közvetett bizonyítékai közé tartozik a DNS-homológia (rokon fajok DNS-szekvenciájának hasonlósága), a molekuláris törzsfák (a DNS- vagy fehérjeszekvenciák eltéréseinek mértékéből felépített rokonsági kapcsolatok), a genetikai kód általános érvényűsége (ahogy azt korábban az Alapfogalmak és a genetikai információ áramlása fejezetben megismertük - gyakorlatilag minden élőlény ugyanazt a genetikai kódot használja, ami közös eredetre utal), a sejtes felépítés egyetemessége, a homológ szervek jelenléte, az embriók fejlődés korai szakaszában megfigyelhető hasonlósága, valamint a funkciójukat vesztett (csökevényes) szervek léte (pl. az ember vakbélfüggeléke). Emellett a háziasítás is genetikai beavatkozásnak tekinthető: az ember évezredek óta tudatosan szelektálja a kívánt tulajdonságú egyedeket, ami - hasonlóan a természetes szelekcióhoz - allélgyakoriság-változást, végső soron evolúciós folyamatot idéz elő a háziasított fajokban.',
+                ],
+              },
+            ],
+            keyTerms: ['relatív kormeghatározás', 'abszolút kormeghatározás', 'élő kövület', 'pollenanalízis', 'évgyűrűelemzés', 'DNS-homológia', 'molekuláris törzsfa'],
+          },
+        },
+      },
+      {
+        id: 'biotechnologia-bioetika',
+        title: 'Biotechnológia és bioetika',
+        order: 8,
+        isFree: false,
+        estimatedMinutes: 18,
+        content: {
+          kozep: {
+            intro: 'A korábban megismert genetikai alapfogalmak és eljárások (pl. a Baktériumok fejezetben tárgyalt baktériumos inzulintermelés) gyakorlati alkalmazásait és az ezekkel járó etikai kérdéseket tekintjük át.',
+            sections: [
+              {
+                heading: 'A klónozás fogalma',
+                paragraphs: [
+                  'A klónozás egy élőlény genetikailag azonos másolatának (klónjának) létrehozását jelenti - a klónozott egyed teljes genetikai állománya megegyezik az eredeti (donor) egyedével, mivel nem ivaros úton, hanem egyetlen sejtmag felhasználásával jön létre. Mivel a klónozott utód genetikai állománya kizárólag egyetlen donor egyedtől származik (nem kettő szülőtől, mint ivaros szaporodáskor), a klónozás nem hoz létre új allélkombinációt - ez alapvető különbség az ivaros szaporodáshoz képest, amely - ahogy azt korábban a genetikai változékonyság forrásainál megismertük - éppen az új allélkombinációk létrehozása révén növeli a populáció genetikai változatosságát.',
+                ],
+              },
+              {
+                heading: 'A genetikai technológia alkalmazásai',
+                paragraphs: [
+                  'A genetikai technológia számos gyakorlati területen alkalmazott - ilyen például a baktériumok felhasználása emberi fehérjék (pl. a korábban megismert inzulin) előállítására, a génátvitel haszonnövényekbe (pl. kártevőkkel vagy kórokozókkal szembeni ellenállóságot biztosító gének beültetése), valamint a mezőgazdaságban használt, klónozott, egységesen kiváló minőségű fajták előállítása.',
+                  'A génátvitellel létrehozott, ún. genetikailag módosított növényi fajták (pl. rovarkártevőkkel szemben ellenálló kukorica) termesztése csökkentheti a rovarölő szerek felhasználásának szükségességét, ami gazdasági és környezetvédelmi szempontból is előnyös lehet - ugyanakkor éppen ez az a terület, ahol a társadalmi elfogadottság a legvitatottabb, ahogy azt a következő szakaszban részletesebben is megvizsgáljuk.',
+                ],
+              },
+              {
+                heading: 'Érvek a géntechnológia mellett és ellen',
+                paragraphs: [
+                  'A géntechnológia mellett szóló érvek közé tartozik a nagyobb terméshozam és élelmiszerbiztonság, a gyógyszerek (pl. inzulin) olcsóbb és biztonságosabb előállítása, valamint egyes öröklődő betegségek jövőbeli gyógyításának lehetősége. A géntechnológia ellen szóló érvek közé tartozik a beavatkozás előre nem látható hosszú távú ökológiai hatásainak kockázata, a génmódosított szervezetek természetes populációkra gyakorolt esetleges hatása, valamint az emberi genom módosításával kapcsolatos etikai aggályok.',
+                ],
+              },
+              {
+                heading: 'Genetikai tanácsadás',
+                paragraphs: [
+                  'A genetikai tanácsadás olyan szolgáltatás, amely segít a családoknak felmérni egy öröklődő betegség kialakulásának vagy továbbadásának esélyét (pl. családfaelemzés alapján, ahogy azt korábban a Minőségi jellegek fejezetben megismertük), és megalapozott döntést hozni a családtervezéssel kapcsolatban - fontos szerepe van a felelős, tájékozott döntéshozatal támogatásában.',
+                ],
+              },
+              {
+                heading: 'A humángenetika vizsgálati módszerei és etikai kérdései',
+                paragraphs: [
+                  'A humángenetika sajátos vizsgálati módszerei közé tartozik a családfaelemzés (több nemzedéken át követett öröklésmenet-vizsgálat) és a magzati diagnosztika (a magzat genetikai állományának vizsgálata a méhen belüli fejlődés során). Mindkét módszernek vannak korlátai (pl. a családfaelemzés csak korlátozott számú adatra épül, a magzati diagnosztika egyes eljárásai kismértékű kockázattal járhatnak a terhességre nézve) és fontos etikai megfontolásai (pl. mit kezdjünk egy súlyos, gyógyíthatatlan betegségre utaló magzati diagnosztikai eredménnyel).',
+                  'A Human Genom Program (az emberi genom teljes feltérképezésére irányuló nemzetközi kutatási program) alapvető jelentőségű volt: eredményei tették lehetővé számos öröklődő betegség genetikai hátterének megismerését, és megalapozták a mai humángenetikai diagnosztika és genetikai tanácsadás módszereit. A program eredményeként ma egy adott gén kromoszómán belüli pontos helye is azonosítható, ami közvetlenül megkönnyíti egy adott öröklődő betegségért felelős gén megtalálását és a rá irányuló genetikai vizsgálatok kifejlesztését.',
+                ],
+              },
+            ],
+            keyTerms: ['klónozás', 'genetikai tanácsadás', 'családfaelemzés', 'magzati diagnosztika', 'Human Genom Program'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a klónozás típusait és a humángenetikai módszerek mélyebb etikai dilemmáit tekintjük át.',
+            sections: [
+              {
+                heading: 'A klónozás típusai',
+                paragraphs: [
+                  'A reproduktív klónozás célja egy teljes, önállóan élő, az eredetivel genetikailag azonos egyed létrehozása - ismert példája az 1996-ban klónozott Dolly nevű juh, amely az első, felnőtt sejtmagból létrehozott, emlős állat volt. A terápiás klónozás ezzel szemben nem egy teljes egyed, hanem gyógyászati célra felhasználható sejtek (pl. őssejtek) előállítására irányul, és nem jár egy új, önálló egyed létrehozásával - ez a megkülönböztetés áll az emberi klónozással kapcsolatos etikai viták középpontjában, mivel a két eljárás etikai megítélése jelentősen eltér: a terápiás klónozást sokan elfogadhatóbbnak tartják, mivel nem hoz létre új, önálló emberi egyedet, míg a reproduktív emberi klónozást a legtöbb ország törvényileg tiltja.',
+                ],
+              },
+              {
+                heading: 'A humángenetikai módszerek etikai dilemmái',
+                paragraphs: [
+                  'A magzati diagnosztika és a genetikai tanácsadás számos nehéz etikai kérdést vet fel: ki férhet hozzá egy személy genetikai adataihoz (pl. munkáltató, biztosító), hogyan befolyásolja egy súlyos genetikai lelet a családtervezési döntéseket, és hol húzódik a határ a betegségmegelőzés és a - sok szakember és etikus által elutasított - "tervezett tulajdonságú gyermek" gondolata között. Ezekre a kérdésekre nincs egyetlen, mindenki által elfogadott válasz - éppen ezért kiemelten fontos, hogy a genetikai tanácsadás mindig tényszerű, ítélkezésmentes tájékoztatást nyújtson, a végső döntést pedig az érintett családra bízza.',
+                  'Hasonlóan megosztó etikai kérdés a genetikailag módosított élőlények (haszonnövények, háziállatok) engedélyezése: a támogatók a nagyobb terméshozamot és a vegyszerhasználat csökkenését hangsúlyozzák, míg az ellenzők az előre nem látható ökológiai kockázatokra (pl. a módosított gén átterjedése vad rokon fajokba) és a nagy agrárvállalatoktól való esetleges függőségre hívják fel a figyelmet - ez a vita jól mutatja, hogy egy biotechnológiai eljárás elfogadhatósága nemcsak tudományos, hanem gazdasági és társadalmi szempontok mérlegelését is igényli.',
+                ],
+              },
+            ],
+            keyTerms: ['reproduktív klónozás', 'terápiás klónozás'],
+          },
+        },
+      },
+      {
+        id: 'bioszfera-evolucioja',
+        title: 'A bioszféra evolúciója',
+        order: 9,
+        isFree: false,
+        estimatedMinutes: 20,
+        comparisonTable: {
+          headers: ['Szempont', 'Emberszabású majom (pl. csimpánz)', 'Ember'],
+          rows: [
+            ['Testtartás', 'jellemzően négykézláb-járás', 'kétlábú, egyenes testtartás'],
+            ['Agytérfogat', 'lényegesen kisebb', 'jelentősen nagyobb'],
+            ['Hüvelykujj', 'kevésbé fejlett szembeállíthatóság', 'fejlett szembeállíthatóság, finom kézmozgás'],
+            ['Rendszertani hely', 'emberszabásúak (Hominidae) családja', 'emberszabásúak (Hominidae) családja'],
+          ],
+        },
+        content: {
+          kozep: {
+            intro: 'A korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) megismert evolúciós mechanizmusok után ebben a fejezetben azt tekintjük át, hogyan alakult ki maga az élet, és hogyan zajlott le az ember evolúciója.',
+            sections: [
+              {
+                heading: 'A kémiai és a biológiai evolúció kapcsolata',
+                paragraphs: [
+                  'A ma ismert élővilág kialakulását a bioszféra evolúciója foglalja össze: ezt megelőzte a fizikai és kémiai evolúció, amely során az élettelen anyagból fokozatosan alakultak ki egyre bonyolultabb szerves molekulák, majd ezekből az első, önmagukat fenntartani és szaporodni képes sejtek - csak ezután, ezekre az egyszerű sejtekre épülve indulhatott meg a biológiai evolúció, amelynek eredményeként jött létre a ma ismert, sokféle élővilág.',
+                  'Ez a három szakasz (fizikai, kémiai, majd biológiai evolúció) egymásra épül: a fizikai evolúció a csillagokban és bolygókon lezajló, elemeket létrehozó folyamatokat jelenti, a kémiai evolúció ezekből az elemekből egyre bonyolultabb szerves vegyületeket hoz létre (ahogy azt lentebb, emelt szinten, Miller kísérletén keresztül részletesen is megvizsgáljuk), a biológiai evolúció pedig már a kialakult, önmagukat szaporítani képes élő rendszerek további változását írja le a korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) megismert mechanizmusok (természetes szelekció, genetikai sodródás) révén.',
+                ],
+              },
+              {
+                heading: 'Az emberszabású majmok és az ember összehasonlítása',
+                paragraphs: [
+                  'Az ember és az emberszabású majmok (pl. csimpánz, gorilla) egyaránt a főemlősök (Primates) rendjébe tartoznak, az emberszabású majmok pedig ezen belül az emberszabásúak (Hominidae) családját alkotják, amelynek az ember is tagja. Az emberszabású majmok és az ember összehasonlítása során számos közös testfelépítési jegy (pl. hasonló csontvázfelépítés, fogazat, belső szervek) mellett jellegzetes eltérések is megfigyelhetők - ilyen az emberre jellemző, kétlábú, egyenes testtartás, a jelentősen nagyobb agytérfogat, valamint a fejlettebb hüvelykujj-szembeállíthatóság, amely a finom kézmozgásokat (pl. eszközhasználatot) teszi lehetővé. A közös testfelépítési jegyek - ahogy azt korábban (Adaptív és nem adaptív evolúciós folyamatok fejezet) a homológ szervek kapcsán megismertük - közös evolúciós eredetre, vagyis közös ősre utalnak.',
+                ],
+              },
+              {
+                heading: 'Következtetés töredékes koponyaleletekből',
+                paragraphs: [
+                  'Egy töredékes koponyaleletből is számos következtetés vonható le az adott emberelőd tulajdonságairól: a koponyaűr térfogatából az agytérfogatra, a nyakszirtlyuk elhelyezkedéséből a testtartásra (kétlábú vagy négylábú járásra), a fogazat jellegéből pedig a táplálkozási szokásokra következtethetnek a kutatók.',
+                ],
+              },
+              {
+                heading: 'Az emberi nagyrasszok és a közös örökség',
+                paragraphs: [
+                  'Az ember evolúciója során, a különböző földrajzi régiókhoz való alkalmazkodás eredményeként alakultak ki a ma megkülönböztetett emberi nagyrasszok (pl. eltérő bőrszín, testalkat) - fontos azonban leszögezni, hogy ezek a rasszok biológiai értékükben egyáltalán nem különböznek egymástól, és a biológiai, valamint a kulturális örökség az egész emberiség közös kincse. A bőrszín eltérése - amelynek festéksejtes hátterét korábban (Bőr fejezet) már megismertük - jó példa arra, hogyan alakít ki a természetes szelekció mennyiségi jelleget (ahogy azt korábban a Mennyiségi jellegek fejezetben megismertük): a bőrszín népességenkénti eltérése nem véletlenszerű, hanem a gyengébb napsugárzású területeken a világosabb bőrszín kedvezett a bőrben zajló D-vitamin-termelésnek, ami ellensúlyozta az UV-sugárzással szembeni csökkent védelmet.',
+                ],
+              },
+            ],
+            keyTerms: ['kémiai evolúció', 'emberszabású majom', 'nagyrassz'],
+          },
+          emeltExtra: {
+            intro: 'Emelt szinten a prebiológiai evolúció kísérletes bizonyítékait (Miller kísérlete) és a Homo nemzetség evolúciójának főbb lépéseit ismerjük meg.',
+            sections: [
+              {
+                heading: 'Miller kísérlete és a prebiológiai evolúció',
+                paragraphs: [
+                  'A prebiológiai (biológiai élet kialakulása előtti) evolúció során az ősi Föld légkörében jelen lévő egyszerű, szervetlen molekulákból (pl. metán, ammónia, vízgőz, hidrogén) alakultak ki az élet szempontjából alapvető szerves molekulák. Ezt a folyamatot kísérletesen Stanley Miller (és Harold Urey) 1953-as kísérlete igazolta: az ősi légkör feltételezett összetételét modellező gázkeveréket elektromos kisülésekkel (a villámlást szimulálva) kezelve a kísérletben aminosavak és más egyszerű szerves molekulák keletkeztek - ez bizonyította, hogy az élet építőkövei kialakulhattak élettelen, kémiai folyamatok révén, biológiai közreműködés nélkül. A kísérlet jelentősége, hogy kísérletesen igazolta a kémiai evolúció elméletének alapfeltevését, és lökést adott az első sejtek kialakulására vonatkozó további elméletek (pl. önmagukat körülhatároló, membránszerű buborékok kialakulása) kutatásának.',
+                  'A Miller-kísérlet eredményeként kialakult egyszerű szerves molekulák önmagukban még nem élők - az első sejtek kialakulásához arra is szükség volt, hogy ezek a molekulák egy elkülönített térrészben (pl. egy lipidmolekulákból önszerveződő, membránszerű hólyagban) koncentrálódjanak, és képessé váljanak az önmagukat fenntartó anyagcserére, valamint a szaporodásra - ezt az átmenetet az élettelen kémiai rendszerektől az élő sejtekig ma is intenzíven kutatják, pontos lezajlása nem ismert teljes bizonyossággal.',
+                ],
+              },
+              {
+                heading: 'A Homo nemzetség evolúciójának főbb lépései',
+                paragraphs: [
+                  'A korai emberfélék és a Homo nemzetség evolúciója során több jellegzetes, leírásokból és leletekből visszakövethető lépés azonosítható: az agytérfogat fokozatos növekedése (ami a fejlettebb kognitív képességekre utal), a testtartásra utaló bélyegek (pl. a gerinc és a medence alakja) megjelenése, amelyek a kétlábú járásra való áttérést jelzik, valamint a tűzhasználat és az egyre kifinomultabb eszközhasználat megjelenése, amely jelentősen megváltoztatta a táplálkozási szokásokat és a túlélési stratégiákat.',
+                  'Ezek a lépések nem egyetlen ugrásban, hanem fokozatosan, sok százezer év alatt következtek be: a kétlábú járás korábban jelent meg, mint a jelentős agytérfogat-növekedés, a tűz tudatos használata pedig - a leletek tanúsága szerint - jóval később, már a nagyobb agytérfogatú Homo-fajoknál vált általánossá. A tűzhasználat különösen jelentős lépés volt, mivel a főzés révén könnyebben emészthetővé, energetikailag hatékonyabban hasznosíthatóvá tette a táplálékot, ami közvetve hozzájárulhatott az egyre nagyobb energiaigényű agy evolúciós fejlődéséhez is.',
+                ],
+              },
+            ],
+            keyTerms: ['prebiológiai evolúció', 'Miller kísérlete', 'Homo nemzetség'],
+          },
+        },
+      },
     ],
   },
 ];

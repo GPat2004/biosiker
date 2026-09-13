@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ChevronLeft, CheckCircle2, Lock, Circle, Clock } from 'lucide-react';
+import { ChevronLeft, CheckCircle2, Lock, Circle, Clock, HelpCircle, ChevronRight } from 'lucide-react';
 import { getModuleById } from '../data/curriculum';
+import { moduleHasQuiz } from '../data/quizzes';
 import { useUserData } from '../context/UserDataContext';
 import { ModuleIcon } from '../lib/icons';
 
@@ -89,6 +90,19 @@ const ModuleDetail = () => {
           );
         })}
       </div>
+
+      {moduleHasQuiz(module) && (
+        <Link
+          to={`/tananyag/${module.id}/kviz`}
+          className="mt-8 flex items-center justify-between p-5 rounded-2xl bg-gradient-to-r from-primary-600 to-blue-600 text-white shadow-lg hover:shadow-primary-500/20 transition-all"
+        >
+          <span className="flex items-center font-bold">
+            <HelpCircle className="h-5 w-5 mr-3" />
+            Modulzáró teszt
+          </span>
+          <ChevronRight className="h-5 w-5" />
+        </Link>
+      )}
     </div>
   );
 };
